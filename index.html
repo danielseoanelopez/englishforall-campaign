@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English for All &middot; Rank Up Campaign &middot; Mapa</title>
+<meta name="description" content="Mapa de campaña English for All — sube de nivel de A1 a C2, lección a lección.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/">
+<meta property="og:title" content="English for All — Rank Up Campaign (A1 → C2)">
+<meta property="og:description" content="El mapa de campaña: sube de nivel de A1 a C2, lección a lección, con un boss test por mundo.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<meta property="og:image:width" content="1980">
+<meta property="og:image:height" content="1080">
+<meta property="og:site_name" content="English for All">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+  :root {
+    --cyan: #00e5ff; --magenta: #ff3df0; --purple: #9d4dff; --gold: #ffc83d;
+    --green: #3dffa0; --red: #ff5d7a; --bg: #05050e; --panel: rgba(20, 22, 48, 0.93);
+    --text: #eaf7ff; --muted: #7fd9e8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Share Tech Mono", monospace; background-color: var(--bg);
+    background-image:
+      radial-gradient(1px 1px at 20% 30%, #ffffff88 50%, transparent 51%),
+      radial-gradient(1px 1px at 70% 15%, #ffffff66 50%, transparent 51%),
+      radial-gradient(2px 2px at 85% 60%, #9d4dff55 50%, transparent 51%),
+      radial-gradient(1px 1px at 40% 80%, #00e5ff55 50%, transparent 51%),
+      radial-gradient(1px 1px at 10% 65%, #ffffff55 50%, transparent 51%),
+      radial-gradient(2px 2px at 60% 45%, #ff3df044 50%, transparent 51%),
+      radial-gradient(1px 1px at 92% 88%, #ffffff66 50%, transparent 51%);
+    background-size: 520px 520px; color: var(--text); line-height: 1.6; padding: 24px 14px 64px; font-size: 17px;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -1;
+    background: linear-gradient(rgba(5, 5, 14, 0.68), rgba(5, 5, 14, 0.82)), url("nebula.jpg") center / cover no-repeat;
+  }
+  .container { max-width: 880px; margin: 0 auto; position: relative; z-index: 2; }
+
+  .side-deco { position: fixed; top: 0; bottom: 0; width: 110px; pointer-events: none; z-index: 0; overflow: hidden; display: none; }
+  .side-deco.left { left: 0; } .side-deco.right { right: 0; }
+  .side-deco span { position: absolute; font-family: "Press Start 2P", monospace; font-size: 0.8rem; opacity: 0; animation: floatUp linear infinite; text-shadow: 0 0 8px currentColor; will-change: transform, opacity; }
+  @keyframes floatUp { 0% { transform: translateY(108vh) rotate(0deg); opacity: 0; } 12% { opacity: 0.5; } 88% { opacity: 0.5; } 100% { transform: translateY(-12vh) rotate(200deg); opacity: 0; } }
+  @media (min-width: 1280px) { .side-deco { display: block; } }
+
+  .mute-btn { position: fixed; top: 12px; right: 12px; z-index: 30; width: 44px; height: 44px; border-radius: 10px; border: 2px solid var(--cyan); background: var(--panel); color: var(--cyan); font-size: 1.1rem; cursor: pointer; box-shadow: 0 0 10px #00e5ff44; transition: box-shadow 0.15s, transform 0.1s; }
+  .mute-btn:hover { transform: translateY(-2px); box-shadow: 0 0 16px #00e5ff88; }
+
+  .brand { text-align: center; margin-bottom: 10px; letter-spacing: 2px; }
+  .brand .logo { height: 120px; max-width: 88%; object-fit: contain; background: #000; padding: 10px 18px; border: 2px solid var(--cyan); border-radius: 16px; box-shadow: 0 0 16px #00e5ff55, inset 0 0 12px #00e5ff22; filter: brightness(1.15) saturate(1.2); }
+  header { text-align: center; margin-bottom: 22px; }
+  header h1 {
+    font-family: "Press Start 2P", monospace; font-size: clamp(1.05rem, 5vw, 2rem); color: var(--purple);
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0 0 14px var(--purple), 0 0 34px #9d4dff88;
+    margin: 14px 0 12px; letter-spacing: 2px; line-height: 1.5;
+  }
+  header .sub { color: var(--gold); font-size: 0.95rem; letter-spacing: 3px; text-transform: uppercase; text-shadow: 0 0 8px #ffc83d66; }
+  header .sub::before, header .sub::after { content: " ✦ "; color: var(--cyan); }
+
+  /* Homeworld base panel */
+  .home { background: var(--panel); border: 2px solid var(--gold); border-radius: 18px; padding: 22px 24px; margin-bottom: 26px; box-shadow: 0 0 16px #ffc83d44, inset 0 0 20px #ffc83d11; text-align: center; }
+  .home .ht { font-family: "Press Start 2P", monospace; font-size: 0.92rem; color: var(--gold); text-shadow: 0 0 10px #ffc83d88; letter-spacing: 1px; margin-bottom: 12px; }
+  .home p { font-size: 0.96rem; }
+  .home .path { font-family: "Press Start 2P", monospace; font-size: 0.6rem; letter-spacing: 1px; margin: 14px 0 4px; color: var(--muted); }
+  .home .path b { color: var(--cyan); text-shadow: 0 0 8px var(--cyan); }
+  .ov-bar { height: 14px; background: #0c0c22; border: 1px solid var(--gold); border-radius: 8px; overflow: hidden; box-shadow: inset 0 0 8px #000; margin: 16px 0 8px; }
+  .ov-fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--cyan), var(--magenta), var(--gold)); box-shadow: 0 0 12px var(--gold); transition: width 0.5s; }
+  .ov-label { font-size: 0.86rem; color: var(--gold); letter-spacing: 1px; }
+  .home-cta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 16px; }
+
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-family: "Press Start 2P", monospace; font-size: 0.66rem; background: linear-gradient(180deg, var(--magenta), #a31bd6); color: #fff; border: 2px solid #ff8df7; border-radius: 12px; padding: 13px 18px; cursor: pointer; letter-spacing: 1px; text-shadow: 0 0 6px #000; box-shadow: 0 0 14px #ff3df077; transition: transform 0.1s, box-shadow 0.15s; text-decoration: none; }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 0 22px #ff3df0aa; }
+  .btn.test { background: linear-gradient(180deg, var(--cyan), #0a7d93); border-color: #9ff1ff; box-shadow: 0 0 14px #00e5ff77; color:#04121f; text-shadow:none; }
+  .btn.test:hover { box-shadow: 0 0 22px #00e5ffaa; }
+  .btn.gold { background: linear-gradient(180deg, #ffd45e, #e8a317); border-color: #ffe08a; box-shadow: 0 0 14px #ffc83d77; color:#fff; text-shadow:0 0 6px #000; }
+  .btn.gold:hover { box-shadow: 0 0 22px #ffc83daa; }
+
+  /* World cards */
+  .world { background: var(--panel); border: 2px solid var(--accent, var(--cyan)); border-radius: 16px; margin-bottom: 16px; box-shadow: 0 0 12px var(--glow, #00e5ff44), inset 0 0 18px #00e5ff09; overflow: hidden; transition: box-shadow 0.2s; }
+  .world.locked { opacity: 0.72; }
+  .w-head { display: flex; align-items: center; gap: 14px; padding: 18px 20px; cursor: pointer; user-select: none; }
+  .w-badge { flex-shrink: 0; width: 58px; height: 58px; border-radius: 12px; border: 2px solid var(--accent); display: flex; align-items: center; justify-content: center; font-family: "Press Start 2P", monospace; font-size: 0.92rem; color: var(--accent); background: #0c0c22; box-shadow: 0 0 12px var(--glow); text-shadow: 0 0 8px var(--accent); }
+  .w-meta { flex: 1; min-width: 0; }
+  .w-name { font-family: "Press Start 2P", monospace; font-size: 0.82rem; color: #fff; text-shadow: 0 0 6px var(--accent); letter-spacing: 1px; line-height: 1.5; }
+  .w-theme { color: var(--muted); font-size: 0.84rem; margin-top: 5px; }
+  .w-right { flex-shrink: 0; text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .w-pill { font-family: "Press Start 2P", monospace; font-size: 0.5rem; letter-spacing: 1px; padding: 5px 9px; border-radius: 20px; border: 1px solid currentColor; white-space: nowrap; }
+  .w-pill.open { color: var(--green); } .w-pill.cur { color: var(--gold); } .w-pill.lock { color: var(--muted); }
+  .w-stars { font-size: 0.82rem; color: var(--gold); letter-spacing: 1px; }
+  .w-chev { flex-shrink: 0; color: var(--accent); font-size: 1rem; transition: transform 0.2s; }
+  .world.expanded .w-chev { transform: rotate(90deg); }
+
+  .w-body { display: none; padding: 0 16px 16px; }
+  .world.expanded .w-body { display: block; }
+
+  .lrow { display: flex; align-items: center; gap: 13px; padding: 12px 14px; border: 1px solid #2a3a5a; border-radius: 11px; margin-top: 9px; background: #10122a66; text-decoration: none; color: var(--text); transition: border-color 0.15s, box-shadow 0.15s, background 0.15s; }
+  a.lrow:hover { border-color: var(--accent); background: #00e5ff0c; box-shadow: 0 0 12px var(--glow); transform: translateY(-1px); }
+  .lrow.locked { opacity: 0.55; cursor: default; }
+  .lnum { flex-shrink: 0; width: 34px; height: 34px; border-radius: 9px; background: var(--accent); color: #060614; font-family: "Press Start 2P", monospace; font-size: 0.62rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 8px var(--glow); }
+  .lrow.locked .lnum { background: #2a3a5a; color: var(--muted); box-shadow: none; }
+  .lrow.boss .lnum { background: var(--gold); color: #1a1000; box-shadow: 0 0 10px var(--gold); }
+  .linfo { flex: 1; min-width: 0; }
+  .ltitle { font-size: 0.98rem; color: var(--text); }
+  .lrow.boss .ltitle { font-family: "Press Start 2P", monospace; font-size: 0.66rem; color: var(--gold); text-shadow: 0 0 6px #ffc83d66; letter-spacing: 1px; }
+  .lsub { color: var(--muted); font-size: 0.8rem; margin-top: 2px; }
+  .lstatus { flex-shrink: 0; text-align: right; font-size: 0.84rem; letter-spacing: 1px; white-space: nowrap; }
+  .lstars { color: var(--gold); } .lstars .off { opacity: 0.25; }
+  .lstatus .play { color: var(--cyan); } .lstatus .soon { color: var(--muted); } .lstatus .lk { color: var(--muted); }
+  .boss-sep { display: flex; align-items: center; gap: 10px; margin: 14px 2px 2px; font-family: "Press Start 2P", monospace; font-size: 0.56rem; color: var(--gold); letter-spacing: 1px; text-shadow: 0 0 8px #ffc83d55; }
+  .boss-sep::before, .boss-sep::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+
+  /* Teacher bar */
+  .profe { display: none; background: #3dffa00d; border: 1px solid var(--green); border-radius: 12px; padding: 12px 16px; margin-bottom: 18px; text-align: center; box-shadow: 0 0 10px #3dffa022; font-size: 0.9rem; }
+  .profe b { color: var(--green); }
+  .profe.on { display: block; }
+
+  .social { display: flex; gap: 14px; justify-content: center; margin-top: 28px; }
+  .social a { display: inline-flex; width: 48px; height: 48px; align-items: center; justify-content: center; border: 2px solid var(--cyan); border-radius: 12px; background: var(--panel); color: var(--cyan); font-size: 1.35rem; text-decoration: none; box-shadow: 0 0 10px #00e5ff44; transition: transform 0.12s, box-shadow 0.15s, color 0.15s, border-color 0.15s; }
+  .social a:hover { transform: translateY(-3px); color: var(--magenta); border-color: var(--magenta); box-shadow: 0 0 18px #ff3df077; }
+  footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin: 32px auto 0; letter-spacing: 2px; background: var(--panel); border: 1px solid #3a5a7a; border-radius: 12px; padding: 12px 20px; width: fit-content; max-width: 100%; }
+  footer .b { font-family: "Press Start 2P", monospace; font-size: 0.68rem; color: #fff; text-shadow: 0 0 8px var(--cyan), 0 0 16px var(--cyan); letter-spacing: 1px; }
+  footer .b em { font-style: normal; color: var(--cyan); }
+  footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px; }
+
+  @media (min-width: 860px) { body { font-size: 18px; } .brand .logo { height: 140px; } }
+  @media (max-width: 520px) { .w-theme { display: none; } .w-head { gap: 11px; padding: 15px 14px; } .w-badge { width: 50px; height: 50px; font-size: 0.8rem; } }
+</style>
+</head>
+<body>
+<div class="side-deco left" id="decoLeft"></div>
+<div class="side-deco right" id="decoRight"></div>
+<button class="mute-btn" id="muteBtn" onclick="toggleMute()" aria-label="Sonido">🔊</button>
+<div class="container">
+
+  <div class="brand" data-aos="fade-up">
+    <img class="logo" src="logo.png" alt="English for All — Rank Up">
+  </div>
+
+  <header data-aos="fade-up" data-aos-delay="80">
+    <h1>RANK UP<br>CAMPAIGN</h1>
+    <p class="sub">Mapa de campaña &middot; A1 → C2</p>
+  </header>
+
+  <div class="profe" id="profeBar"><b>👾 MODO PROFE activo</b> — todos los mundos y bosses desbloqueados. <a href="?reset=1" style="color:var(--cyan)">Reiniciar progreso del alumno</a></div>
+
+  <!-- HOMEWORLD base -->
+  <div class="home" data-aos="fade-up">
+    <div class="ht">🏠 HOMEWORLD</div>
+    <p>Tu base de operaciones. Cada <b style="color:var(--cyan)">mundo</b> es un nivel CEFR con <b>6 lecciones</b> + un <b style="color:var(--gold)">boss test</b>. Supera el boss (≥80%) y <b style="color:var(--magenta)">subes de nivel</b>.</p>
+    <p class="path">¿NO SABES TU NIVEL? EMPIEZA POR EL <b>TEST</b></p>
+    <div class="ov-bar"><div class="ov-fill" id="ovFill"></div></div>
+    <div class="ov-label" id="ovLabel">⭐ 0 / 0 estrellas</div>
+    <div class="home-cta">
+      <a class="btn test" href="https://danielseoanelopez.github.io/englishforall/" target="_blank" rel="noopener"><i class="fa-solid fa-gamepad"></i> TEST DE NIVEL</a>
+    </div>
+  </div>
+
+  <div id="worlds"></div>
+
+  <div class="social" id="socialBar">
+    <a class="so-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a class="so-dc" href="#" target="_blank" rel="noopener" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+    <a class="so-ig" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="so-li" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a class="so-tap" href="#" target="_blank" rel="noopener" aria-label="Taplink"><i class="fa-solid fa-link"></i></a>
+  </div>
+
+  <footer><span class="b">ENGLISH <em>for ALL</em></span><span class="sep">✦</span>Rank Up Campaign<span class="sep">✦</span>A1 → C2</footer>
+</div>
+
+<script>
+// ===== Arcade juice =====
+let muted = false;
+try { muted = localStorage.getItem("efa_muted") === "1"; } catch (e) {}
+let audioCtx = null;
+function beep(freq, dur, vol) {
+  if (muted) return;
+  try {
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    const o = audioCtx.createOscillator(); const g = audioCtx.createGain();
+    o.type = "square"; o.frequency.value = freq; g.gain.value = vol || 0.035;
+    o.connect(g); g.connect(audioCtx.destination); o.start();
+    g.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + dur);
+    o.stop(audioCtx.currentTime + dur);
+  } catch (e) {}
+}
+function blip() { beep(660, 0.07); }
+function toggleMute() {
+  muted = !muted;
+  try { localStorage.setItem("efa_muted", muted ? "1" : "0"); } catch (e) {}
+  document.getElementById("muteBtn").textContent = muted ? "🔇" : "🔊";
+  if (!muted) blip();
+}
+(function initMute() { document.getElementById("muteBtn").textContent = muted ? "🔇" : "🔊"; })();
+
+(function initSideDeco() {
+  const items = ["★", "✦", "🎮", "🎧", "🏆", "👾", "★", "✦", "⭐", "🚀"];
+  const colors = ["#00e5ff", "#ff3df0", "#9d4dff", "#ffc83d"];
+  ["decoLeft", "decoRight"].forEach(id => {
+    const box = document.getElementById(id);
+    for (let i = 0; i < 8; i++) {
+      const s = document.createElement("span");
+      s.textContent = items[Math.floor(Math.random() * items.length)];
+      s.style.left = (10 + Math.random() * 70) + "%";
+      s.style.color = colors[Math.floor(Math.random() * colors.length)];
+      s.style.animationDuration = (14 + Math.random() * 12) + "s";
+      s.style.animationDelay = (-Math.random() * 22) + "s";
+      box.appendChild(s);
+    }
+  });
+})();
+
+// ===== Contact links =====
+const SOCIAL = {
+  whatsapp: "https://wa.me/5491123709477",
+  instagram: "https://www.instagram.com/englishforall_dan/",
+  linkedin: "https://www.linkedin.com/in/danielseoanelopez/",
+  taplink: "https://englishforall.taplink.site",
+  discord: "daniel.s.20"
+};
+(function initSocial() {
+  document.querySelectorAll(".so-wa").forEach(a => a.href = SOCIAL.whatsapp);
+  document.querySelectorAll(".so-ig").forEach(a => a.href = SOCIAL.instagram);
+  document.querySelectorAll(".so-li").forEach(a => a.href = SOCIAL.linkedin);
+  document.querySelectorAll(".so-tap").forEach(a => a.href = SOCIAL.taplink);
+  document.querySelectorAll(".so-dc").forEach(a => { a.setAttribute("onclick", "return copyDiscord(this)"); a.title = "Discord: " + SOCIAL.discord + " (clic para copiar)"; });
+})();
+function copyDiscord(el){ var r=el.innerHTML; var done=function(){ el.innerHTML='<i class="fa-solid fa-check"></i>'; setTimeout(function(){el.innerHTML=r;},1500); }; try{ navigator.clipboard.writeText(SOCIAL.discord).then(done,done); }catch(e){ done(); } return false; }
+
+// ===== Teacher / reset params =====
+let TEACHER = false;
+try {
+  const p = new URLSearchParams(location.search);
+  if (p.get("reset") === "1") { Object.keys(localStorage).filter(k => k.indexOf("rankup_") === 0).forEach(k => localStorage.removeItem(k)); }
+  TEACHER = (p.get("profe") === "rankup");
+  if (TEACHER) document.getElementById("profeBar").classList.add("on");
+} catch (e) {}
+
+// ===== Campaign data =====
+const COLORS = {
+  cyan:   ["var(--cyan)",   "#00e5ff44"],
+  magenta:["var(--magenta)","#ff3df044"],
+  purple: ["var(--purple)", "#9d4dff44"],
+  green:  ["var(--green)",  "#3dffa044"],
+  gold:   ["var(--gold)",   "#ffc83d44"]
+};
+const CAMPAIGN = [
+  { id: "A1", name: "First Contact", theme: "Saludos, datos personales, primeros pasos", color: "cyan",
+    lessons: [
+      { t: "Greetings & introductions", sp: "Saludos y presentarse", url: null },
+      { t: "Personal info & numbers", sp: "Datos personales y números", url: null },
+      { t: "To be / have got", sp: "Verbos ser/estar y tener", url: null },
+      { t: "Everyday objects", sp: "Objetos cotidianos", url: null },
+      { t: "Simple questions & answers", sp: "Preguntas y respuestas simples", url: null },
+      { t: "Days, times & dates", sp: "Días, horas y fechas", url: null }
+    ], boss: null },
+  { id: "A2", name: "On the Job", theme: "Inglés laboral y de trabajo remoto", color: "magenta",
+    lessons: [
+      { t: "Daily Routines & Present Simple", sp: "Rutinas y presente simple", url: "daily-routines.html" },
+      { t: "Remote Work Vocab & Emails", sp: "Trabajo remoto y emails", url: "remote-work.html" },
+      { t: "Past Simple", sp: "Pasado simple", url: null },
+      { t: "Requests & Offers (phone/chat)", sp: "Pedidos y ofrecimientos", url: null },
+      { t: "Comparatives & Describing", sp: "Comparativos y describir", url: null },
+      { t: "Plans: going to / present continuous", sp: "Planes a futuro", url: null }
+    ], boss: { t: "A2 BOSS TEST", url: "a2-final.html" } },
+  { id: "B1", name: "Holding Your Own", theme: "Reuniones, opiniones, contar historias", color: "purple",
+    lessons: [
+      { t: "Present Perfect", sp: "Presente perfecto", url: null },
+      { t: "Meetings & opinions", sp: "Reuniones y opiniones", url: null },
+      { t: "First conditional", sp: "Primer condicional", url: null },
+      { t: "Storytelling", sp: "Contar historias", url: null },
+      { t: "Phone & email etiquette", sp: "Etiqueta de teléfono/email", url: null },
+      { t: "Travel & getting around", sp: "Viajes", url: null }
+    ], boss: null },
+  { id: "B2", name: "The Professional", theme: "Entrevistas, presentaciones, negociar", color: "green",
+    lessons: [
+      { t: "Job interviews", sp: "Entrevistas de trabajo", url: null },
+      { t: "Presentations", sp: "Presentaciones", url: null },
+      { t: "The passive voice", sp: "Voz pasiva", url: null },
+      { t: "Reported speech", sp: "Estilo indirecto", url: null },
+      { t: "Negotiation", sp: "Negociación", url: null },
+      { t: "Formal writing", sp: "Escritura formal", url: null }
+    ], boss: null },
+  { id: "C1", name: "Advanced Operator", theme: "Idioms, debate, escucha rápida", color: "gold",
+    lessons: [
+      { t: "Idioms & collocations", sp: "Modismos", url: null },
+      { t: "Cohesion & linking", sp: "Cohesión del discurso", url: null },
+      { t: "Inversion & emphasis", sp: "Inversión y énfasis", url: null },
+      { t: "Debating", sp: "Debatir", url: null },
+      { t: "Fast-speech listening", sp: "Escucha de habla rápida", url: null },
+      { t: "Cross-cultural communication", sp: "Comunicación intercultural", url: null }
+    ], boss: null },
+  { id: "C2", name: "Mastery", theme: "Matiz, registro, fluidez espontánea", color: "cyan",
+    lessons: [
+      { t: "Nuance & precision", sp: "Matiz y precisión", url: null },
+      { t: "Register & humor", sp: "Registro y humor", url: null },
+      { t: "Academic argument", sp: "Argumentación académica", url: null },
+      { t: "Figurative language", sp: "Lenguaje figurado", url: null },
+      { t: "Editing & polishing", sp: "Edición y pulido", url: null },
+      { t: "Spontaneous fluency", sp: "Fluidez espontánea", url: null }
+    ], boss: null }
+];
+
+// ===== Progress helpers =====
+function getStars(key) { try { return parseInt(localStorage.getItem(key) || "0", 10) || 0; } catch (e) { return 0; } }
+function starStr(n) { return '<span class="lstars">' + "★".repeat(n) + '<span class="off">' + "★".repeat(5 - n) + "</span></span>"; }
+
+// A world is "built/playable" if it has at least one lesson with a url.
+function worldBuilt(w) { return w.lessons.some(l => l.url); }
+
+// ===== Render =====
+function render() {
+  const host = document.getElementById("worlds");
+  let totalEarned = 0, totalPossible = 0;
+  let firstCurrent = true;
+
+  CAMPAIGN.forEach((w, wi) => {
+    const [accent, glow] = COLORS[w.color];
+    const built = worldBuilt(w);
+    const unlocked = TEACHER || built;          // current slice: built worlds open, rest "coming soon"
+    let worldStars = 0, worldMax = 0;
+
+    // lesson rows
+    let rows = "";
+    w.lessons.forEach((l, li) => {
+      const key = "rankup_" + w.id + "_L" + (li + 1);
+      const available = l.url && unlocked;
+      let status, cls = "", attrs = "";
+      if (available) {
+        worldMax += 5;
+        const st = getStars(key);
+        worldStars += st;
+        if (st > 0) { status = starStr(st); }
+        else { status = '<span class="play">JUGAR ▸</span>'; }
+        attrs = `href="${l.url}"` + (l.ext ? ' target="_blank" rel="noopener"' : "");
+      } else if (l.url && !unlocked) {
+        cls = "locked"; status = '<span class="lk">🔒</span>';
+      } else {
+        cls = "locked"; status = '<span class="soon">PRÓXIMA</span>';
+      }
+      const tag = available ? "a" : "div";
+      rows += `<${tag} class="lrow ${cls}" ${attrs}>
+        <div class="lnum">${li + 1}</div>
+        <div class="linfo"><div class="ltitle">${l.t}</div><div class="lsub">${l.sp}</div></div>
+        <div class="lstatus">${status}</div>
+      </${tag}>`;
+    });
+
+    // boss row
+    let bossRow = "";
+    if (w.boss) {
+      const bkey = "rankup_" + w.id + "_boss";
+      const bAvail = w.boss.url && unlocked;
+      let bstatus, bcls = "", battrs = "", btag = "div";
+      if (bAvail) {
+        const bs = getStars(bkey);
+        bstatus = bs > 0 ? starStr(bs) : '<span class="play">RETAR ▸</span>';
+        battrs = `href="${w.boss.url}"` + (w.boss.ext ? ' target="_blank" rel="noopener"' : "");
+        btag = "a";
+      } else { bcls = "locked"; bstatus = '<span class="lk">🔒</span>'; }
+      bossRow = `<div class="boss-sep">⚔ JEFE FINAL · RANK UP</div>
+      <${btag} class="lrow boss ${bcls}" ${battrs}>
+        <div class="lnum">★</div>
+        <div class="linfo"><div class="ltitle">${w.boss.t}</div><div class="lsub">Supera ≥80% para subir de nivel · se rinde en clase</div></div>
+        <div class="lstatus">${bstatus}</div>
+      </${btag}>`;
+    } else {
+      bossRow = `<div class="boss-sep">⚔ JEFE FINAL · RANK UP</div>
+      <div class="lrow boss locked"><div class="lnum">★</div>
+        <div class="linfo"><div class="ltitle">Boss Test</div><div class="lsub">Próximamente</div></div>
+        <div class="lstatus"><span class="soon">PRÓXIMA</span></div></div>`;
+    }
+
+    totalEarned += worldStars; totalPossible += worldMax;
+
+    // status pill — a world is SUPERADO only when its boss is beaten (rank up)
+    const bossStars = (w.boss && w.boss.url && unlocked) ? getStars("rankup_" + w.id + "_boss") : 0;
+    let pill, expanded = "";
+    if (!unlocked) { pill = '<span class="w-pill lock">🔒 PRÓXIMO</span>'; }
+    else if (bossStars > 0) { pill = '<span class="w-pill open">✓ SUPERADO</span>'; }
+    else if (built && firstCurrent) { pill = '<span class="w-pill cur">▶ EN CURSO</span>'; expanded = "expanded"; firstCurrent = false; }
+    else { pill = '<span class="w-pill open">DISPONIBLE</span>'; }
+
+    const starsLine = worldMax > 0 ? `<div class="w-stars">⭐ ${worldStars}/${worldMax}</div>` : "";
+
+    host.insertAdjacentHTML("beforeend", `
+      <div class="world ${unlocked ? "" : "locked"} ${expanded}" style="--accent:${accent};--glow:${glow}" data-aos="fade-up">
+        <div class="w-head" onclick="toggleWorld(this)">
+          <div class="w-badge">${w.id}</div>
+          <div class="w-meta"><div class="w-name">${w.name}</div><div class="w-theme">${w.theme}</div></div>
+          <div class="w-right">${pill}${starsLine}</div>
+          <div class="w-chev">▶</div>
+        </div>
+        <div class="w-body">${rows}${bossRow}</div>
+      </div>`);
+  });
+
+  const pct = totalPossible > 0 ? Math.round(totalEarned / totalPossible * 100) : 0;
+  document.getElementById("ovFill").style.width = pct + "%";
+  document.getElementById("ovLabel").innerHTML = `⭐ ${totalEarned} / ${totalPossible} estrellas &middot; ${pct}% del contenido disponible`;
+}
+
+function toggleWorld(head) {
+  const w = head.closest(".world");
+  w.classList.toggle("expanded");
+  blip();
+}
+
+render();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  try {
+    AOS.init({ duration: 700, once: true, offset: 30 });
+    setTimeout(function () { document.querySelectorAll("[data-aos]:not(.aos-animate)").forEach(function (el) { el.classList.add("aos-animate"); }); }, 4000);
+  } catch (e) {
+    document.querySelectorAll("[data-aos]").forEach(function (el) { el.removeAttribute("data-aos"); });
+  }
+</script>
+<!-- GoatCounter analytics — privacy-friendly, no cookies. -->
+<script data-goatcounter="https://englishforall.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
