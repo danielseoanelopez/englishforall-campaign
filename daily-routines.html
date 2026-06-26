@@ -322,8 +322,8 @@
     <div class="ex-score" id="score-ex-l1"></div>
     <div class="verbal">
       <p class="vq"><span class="mic">🎤</span><b>Speaking:</b> Describe Sofia's morning routine. Use <i>always</i> and <i>usually</i>.</p>
-      <button class="toggle-btn" data-show="💡 Respuesta modelo" data-hide="🙈 Ocultar" onclick="toggleReveal('m1', this)">💡 Respuesta modelo</button>
-      <div class="reveal model-box" id="m1"><span class="lbl">MODEL ANSWER</span>She usually starts at nine o'clock. She always checks her emails first, and then the team has a short standup meeting.</div>
+      <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('m1', this)">💡 Pista para empezar</button>
+      <div class="reveal model-box" id="m1"><span class="lbl">EMPIEZA ASÍ</span>She usually starts at nine o'clock, and she always checks…</div>
     </div>
     <button class="toggle-btn" data-show="📄 Mostrar transcripción" data-hide="📄 Ocultar transcripción" onclick="toggleReveal('t1', this)">📄 Mostrar transcripción</button>
     <div class="reveal transcript" id="t1">
@@ -372,8 +372,8 @@
     <div class="ex-score" id="score-ex-l2"></div>
     <div class="verbal">
       <p class="vq"><span class="mic">🎤</span><b>Speaking:</b> What is Marcos's morning routine? Tell it in 2–3 sentences.</p>
-      <button class="toggle-btn" data-show="💡 Respuesta modelo" data-hide="🙈 Ocultar" onclick="toggleReveal('m2', this)">💡 Respuesta modelo</button>
-      <div class="reveal model-box" id="m2"><span class="lbl">MODEL ANSWER</span>He usually wakes up at seven o'clock. First, he has breakfast and a big coffee, and then he logs on at eight thirty and starts his tasks.</div>
+      <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('m2', this)">💡 Pista para empezar</button>
+      <div class="reveal model-box" id="m2"><span class="lbl">EMPIEZA ASÍ</span>He usually wakes up at seven, has breakfast and a coffee, and then…</div>
     </div>
     <button class="toggle-btn" data-show="📄 Mostrar transcripción" data-hide="📄 Ocultar transcripción" onclick="toggleReveal('t2', this)">📄 Mostrar transcripción</button>
     <div class="reveal transcript" id="t2">
@@ -411,8 +411,8 @@
     <div class="ex-score" id="score-ex-l3"></div>
     <div class="verbal">
       <p class="vq"><span class="mic">🎤</span><b>Speaking:</b> When does the team meet, and why is that time good for Marcos?</p>
-      <button class="toggle-btn" data-show="💡 Respuesta modelo" data-hide="🙈 Ocultar" onclick="toggleReveal('m3', this)">💡 Respuesta modelo</button>
-      <div class="reveal model-box" id="m3"><span class="lbl">MODEL ANSWER</span>They meet every day at two o'clock, Sofia's time. That is nine o'clock for Marcos, and he is always free then.</div>
+      <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('m3', this)">💡 Pista para empezar</button>
+      <div class="reveal model-box" id="m3"><span class="lbl">EMPIEZA ASÍ</span>They meet every day at two o'clock (Sofia's time), which is…</div>
     </div>
     <button class="toggle-btn" data-show="📄 Mostrar transcripción" data-hide="📄 Ocultar transcripción" onclick="toggleReveal('t3', this)">📄 Mostrar transcripción</button>
     <div class="reveal transcript" id="t3">
@@ -458,8 +458,8 @@
     <div class="ex-score" id="score-ex-l4"></div>
     <div class="verbal">
       <p class="vq"><span class="mic">🎤</span><b>Speaking:</b> Summarize the team's daily routine in 2–3 sentences.</p>
-      <button class="toggle-btn" data-show="💡 Respuesta modelo" data-hide="🙈 Ocultar" onclick="toggleReveal('m4', this)">💡 Respuesta modelo</button>
-      <div class="reveal model-box" id="m4"><span class="lbl">MODEL ANSWER</span>They always start the day with emails and a short standup meeting. They work in the morning because it's quiet, have lunch around one, and usually finish at five. They never work on weekends.</div>
+      <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('m4', this)">💡 Pista para empezar</button>
+      <div class="reveal model-box" id="m4"><span class="lbl">EMPIEZA ASÍ</span>They always start the day with emails and a short meeting, then…</div>
     </div>
   </div>
 
@@ -482,8 +482,10 @@
 
   <!-- ===================== SEE MY RANK ===================== -->
   <div class="btn-row" id="finalRow" data-aos="fade-up">
+    <div style="margin-bottom:14px"><input id="studentName" type="text" placeholder="Tu nombre" autocomplete="given-name" style="width:100%;max-width:320px;padding:10px 14px;background:#10122a;border:2px solid var(--cyan);border-radius:10px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:0.95rem;outline:none;box-shadow:inset 0 0 10px #00e5ff22"><br><span class="es" style="font-size:0.78rem;display:inline-block;margin-top:7px"><i class="fa-solid fa-lock"></i> Tu nombre + score se le envían a tu profe para tu seguimiento.</span></div>
     <button class="btn" id="rankBtn" onclick="seeRank()">★ SEE MY RANK</button>
     <p class="es" id="rankWarn" style="display:none; color:var(--red); margin-top:10px">⚠ Escucha y responde los 4 audios primero (botón ✓ CHECK en cada uno).</p>
+    <div style="margin-top:18px"><a class="btn wa-btn" id="hwWa" href="#" onclick="return sendHomework(this)"><i class="fa-brands fa-whatsapp"></i> ENVIAR MI TAREA</a></div>
   </div>
 
   <div id="results" class="card">
@@ -567,6 +569,7 @@ const SOCIAL = {
   taplink: "https://englishforall.taplink.site",
   discord: "daniel.s.20"
 };
+const FORM_ENDPOINT = "https://formspree.io/f/mbdewbrp";
 (function initSocial() {
   document.querySelectorAll(".so-wa").forEach(a => a.href = SOCIAL.whatsapp);
   document.querySelectorAll(".so-ig").forEach(a => a.href = SOCIAL.instagram);
@@ -634,6 +637,9 @@ function saveStars(stars) {
   } catch (e) {}
 }
 
+const LESSON_NAME = "Daily Routines & Present Simple (A2)";
+function sendHomework(el){ var nf=document.getElementById("studentName"); var name=(nf?nf.value.trim():"")||"Alumno/a"; var msg="¡Hola Daniel! Soy "+name+". Terminé la lección \""+LESSON_NAME+"\". Te envío mi tarea: mi escrito y un audio leyendo en voz alta."; el.href=SOCIAL.whatsapp+"?text="+encodeURIComponent(msg); return true; }
+
 function seeRank() {
   if (Object.keys(scores).length < EXERCISES.length) {
     document.getElementById("rankWarn").style.display = "block";
@@ -648,8 +654,13 @@ function seeRank() {
   saveStars(stars);
   document.getElementById("starRow").innerHTML = "⭐".repeat(stars) + `<span class="off">${"⭐".repeat(5 - stars)}</span>`;
   document.getElementById("scoreText").textContent = `LISTENING: ${correct} / ${total}`;
-  const waMsg = `¡Hola Daniel! Terminé la Lección 1 (Daily Routines & Present Simple). Mi score: ${correct}/${total} (${stars}⭐). Aquí van mi rutina escrita y mi audio:`;
+  const studentName = (document.getElementById("studentName").value || "").trim() || "Alumno/a";
+  const waMsg = `¡Hola Daniel! Soy ${studentName}. Terminé la Lección 1 (Daily Routines & Present Simple). Mi score: ${correct}/${total} (${stars}⭐). Aquí van mi rutina escrita y mi audio:`;
   document.getElementById("waCta").href = SOCIAL.whatsapp + "?text=" + encodeURIComponent(waMsg);
+  try {
+    fetch(FORM_ENDPOINT, { method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"},
+      body: JSON.stringify({ _subject:"Lección 1 Daily Routines — "+studentName, leccion:"Daily Routines & Present Simple (A2)", nombre:studentName, score:`${correct}/${total}`, estrellas:`${stars}/5`, fecha:new Date().toLocaleString() }) }).catch(function(){});
+  } catch (e) {}
   document.getElementById("finalRow").style.display = "none";
   document.getElementById("results").style.display = "block";
   document.getElementById("results").scrollIntoView({ behavior: "smooth", block: "start" });

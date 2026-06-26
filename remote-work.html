@@ -74,6 +74,8 @@
   .card { background: var(--panel); border: 2px solid var(--cyan); border-radius: 16px; padding: 22px 24px; margin-bottom: 18px; box-shadow: 0 0 12px #00e5ff44, inset 0 0 18px #00e5ff11; }
   .card.alt { border-color: var(--magenta); box-shadow: 0 0 12px #ff3df044, inset 0 0 18px #ff3df011; }
   .card.purple { border-color: var(--purple); box-shadow: 0 0 12px #9d4dff44, inset 0 0 18px #9d4dff11; }
+  .card.grammar { border-color: var(--gold); box-shadow: 0 0 12px #ffc83d44, inset 0 0 18px #ffc83d11; }
+  .card.grammar .panel-title { color: var(--gold); text-shadow: 0 0 8px var(--gold); }
   .panel-title { font-family: "Press Start 2P", monospace; font-size: 0.76rem; color: var(--cyan); text-shadow: 0 0 8px var(--cyan); margin-bottom: 12px; letter-spacing: 1px; line-height: 1.6; }
   .card.alt .panel-title { color: var(--magenta); text-shadow: 0 0 8px var(--magenta); }
   .card.purple .panel-title { color: var(--purple); text-shadow: 0 0 8px var(--purple); }
@@ -215,29 +217,33 @@
       <div class="term"><span class="en">Marcos</span> <span class="sp">su compañero del equipo 🇺🇸</span></div>
       <div class="term"><span class="en">David</span> <span class="sp">el cliente (GreenMarket) 🇬🇧</span></div>
     </div>
-    <div class="note"><b>Cómo funciona:</b> escucha cada audio 2 veces 🎧, responde el <b>multiple choice</b>, y contesta la pregunta de <b>speaking</b> en voz alta. ¡Sin traductor! El vocabulario ya lo viste — esto es práctica de <i>listening</i>.</div>
-    <button class="toggle-btn" data-show="📒 Ver repaso de vocabulario" data-hide="📒 Ocultar vocabulario" onclick="toggleReveal('vocabRef', this)">📒 Ver repaso de vocabulario</button>
-    <div class="reveal" id="vocabRef">
-      <div class="gloss" style="margin-top:14px">
-        <div class="term"><span class="en">team lead</span><span class="sp">líder / supervisor</span></div>
-        <div class="term"><span class="en">price estimate</span><span class="sp">cotización</span></div>
-        <div class="term"><span class="en">request</span><span class="sp">solicitud</span></div>
-        <div class="term"><span class="en">issue</span><span class="sp">asunto / problema</span></div>
-        <div class="term"><span class="en">available</span><span class="sp">disponible</span></div>
-        <div class="term"><span class="en">pending</span><span class="sp">pendiente</span></div>
-        <div class="term"><span class="en">details</span><span class="sp">detalles / datos</span></div>
-        <div class="term"><span class="en">update</span><span class="sp">actualización</span></div>
-        <div class="term"><span class="en">task</span><span class="sp">tarea</span></div>
-        <div class="term"><span class="en">attached</span><span class="sp">adjunto</span></div>
-      </div>
-      <ul class="phrase-list">
-        <li><span class="en">Let me check that for you.</span><span class="sp">Déjame revisar eso.</span></li>
-        <li><span class="en">Could you please confirm the details?</span><span class="sp">¿Podrías confirmar los detalles, por favor?</span></li>
-        <li><span class="en">I will send you the price estimate.</span><span class="sp">Te enviaré la cotización.</span></li>
-        <li><span class="en">I'm waiting for an update.</span><span class="sp">Estoy esperando una actualización.</span></li>
-        <li><span class="en">I'll get back to you soon.</span><span class="sp">Te responderé pronto.</span></li>
-      </ul>
+    <div class="note"><b>Cómo funciona:</b> escucha cada audio 2 veces 🎧, responde el <b>multiple choice</b>, y contesta la pregunta de <b>speaking</b> en voz alta. ¡Sin traductor! Primero aprende el <b>vocabulario nuevo</b> 👇 y luego practica con los audios.</div>
+  </div>
+
+  <!-- ===================== VOCAB · primera vez ===================== -->
+  <div class="card grammar" data-aos="fade-up">
+    <div class="panel-title">📒 VOCABULARIO NUEVO · palabras clave</div>
+    <p class="es">Aprende estas palabras y frases antes de escuchar. Las vas a oír en los 4 audios.</p>
+    <div class="gloss" style="margin-top:12px">
+      <div class="term"><span class="en">team lead</span><span class="sp">líder / supervisor</span></div>
+      <div class="term"><span class="en">price estimate</span><span class="sp">cotización</span></div>
+      <div class="term"><span class="en">request</span><span class="sp">solicitud</span></div>
+      <div class="term"><span class="en">issue</span><span class="sp">asunto / problema</span></div>
+      <div class="term"><span class="en">available</span><span class="sp">disponible</span></div>
+      <div class="term"><span class="en">pending</span><span class="sp">pendiente</span></div>
+      <div class="term"><span class="en">details</span><span class="sp">detalles / datos</span></div>
+      <div class="term"><span class="en">update</span><span class="sp">actualización</span></div>
+      <div class="term"><span class="en">task</span><span class="sp">tarea</span></div>
+      <div class="term"><span class="en">attached</span><span class="sp">adjunto</span></div>
     </div>
+    <p class="es" style="margin-top:16px">Frases útiles:</p>
+    <ul class="phrase-list">
+      <li><span class="en">Let me check that for you.</span><span class="sp">Déjame revisar eso.</span></li>
+      <li><span class="en">Could you please confirm the details?</span><span class="sp">¿Podrías confirmar los detalles, por favor?</span></li>
+      <li><span class="en">I will send you the price estimate.</span><span class="sp">Te enviaré la cotización.</span></li>
+      <li><span class="en">I'm waiting for an update.</span><span class="sp">Estoy esperando una actualización.</span></li>
+      <li><span class="en">I'll get back to you soon.</span><span class="sp">Te responderé pronto.</span></li>
+    </ul>
   </div>
 
   <!-- ===================== LISTENING 1 ===================== -->
@@ -272,8 +278,8 @@
     <div class="ex-score" id="score-ex-l1"></div>
     <div class="verbal">
       <p class="vq"><span class="mic">🎤</span><b>Speaking:</b> What is Marcos's issue? Explain in one sentence.</p>
-      <button class="toggle-btn" data-show="💡 Respuesta modelo" data-hide="🙈 Ocultar" onclick="toggleReveal('m1', this)">💡 Respuesta modelo</button>
-      <div class="reveal model-box" id="m1"><span class="lbl">MODEL ANSWER</span>He can't finish the price estimate because he is waiting for an update from the client.</div>
+      <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('m1', this)">💡 Pista para empezar</button>
+      <div class="reveal model-box" id="m1"><span class="lbl">EMPIEZA ASÍ</span>He can't finish the price estimate because…</div>
     </div>
     <button class="toggle-btn" data-show="📄 Mostrar transcripción" data-hide="📄 Ocultar transcripción" onclick="toggleReveal('t1', this)">📄 Mostrar transcripción</button>
     <div class="reveal transcript" id="t1">
@@ -322,8 +328,8 @@
     <div class="ex-score" id="score-ex-l2"></div>
     <div class="verbal">
       <p class="vq"><span class="mic">🎤</span><b>Speaking:</b> What did David send, and what does he want the team to do?</p>
-      <button class="toggle-btn" data-show="💡 Respuesta modelo" data-hide="🙈 Ocultar" onclick="toggleReveal('m2', this)">💡 Respuesta modelo</button>
-      <div class="reveal model-box" id="m2"><span class="lbl">MODEL ANSWER</span>He sent (attached) the product list. He wants the team to confirm they received it and to send him the price estimate.</div>
+      <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('m2', this)">💡 Pista para empezar</button>
+      <div class="reveal model-box" id="m2"><span class="lbl">EMPIEZA ASÍ</span>He sent the product list, and he wants the team to…</div>
     </div>
   </div>
 
@@ -357,8 +363,8 @@
     <div class="ex-score" id="score-ex-l3"></div>
     <div class="verbal">
       <p class="vq"><span class="mic">🎤</span><b>Speaking:</b> Why is the price estimate higher now?</p>
-      <button class="toggle-btn" data-show="💡 Respuesta modelo" data-hide="🙈 Ocultar" onclick="toggleReveal('m3', this)">💡 Respuesta modelo</button>
-      <div class="reveal model-box" id="m3"><span class="lbl">MODEL ANSWER</span>Because the client also wants an online payment system, so there is more work.</div>
+      <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('m3', this)">💡 Pista para empezar</button>
+      <div class="reveal model-box" id="m3"><span class="lbl">EMPIEZA ASÍ</span>Because the client also wants…</div>
     </div>
     <button class="toggle-btn" data-show="📄 Mostrar transcripción" data-hide="📄 Ocultar transcripción" onclick="toggleReveal('t3', this)">📄 Mostrar transcripción</button>
     <div class="reveal transcript" id="t3">
@@ -406,8 +412,8 @@
     <div class="ex-score" id="score-ex-l4"></div>
     <div class="verbal">
       <p class="vq"><span class="mic">🎤</span><b>Speaking:</b> Summarize the good news in one or two sentences.</p>
-      <button class="toggle-btn" data-show="💡 Respuesta modelo" data-hide="🙈 Ocultar" onclick="toggleReveal('m4', this)">💡 Respuesta modelo</button>
-      <div class="reveal model-box" id="m4"><span class="lbl">MODEL ANSWER</span>The client confirmed the project and accepted the price estimate, so the task is finished and the team can start on Monday.</div>
+      <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('m4', this)">💡 Pista para empezar</button>
+      <div class="reveal model-box" id="m4"><span class="lbl">EMPIEZA ASÍ</span>The client confirmed the project and accepted…</div>
     </div>
   </div>
 
@@ -433,6 +439,7 @@
     <div style="margin-bottom:14px"><input id="studentName" type="text" placeholder="Tu nombre" autocomplete="given-name" style="width:100%;max-width:320px;padding:10px 14px;background:#10122a;border:2px solid var(--cyan);border-radius:10px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:0.95rem;outline:none;box-shadow:inset 0 0 10px #00e5ff22"><br><span class="es" style="font-size:0.78rem;display:inline-block;margin-top:7px"><i class="fa-solid fa-lock"></i> Tu nombre + score se le envían a tu profe para tu seguimiento.</span></div>
     <button class="btn" id="rankBtn" onclick="seeRank()">★ SEE MY RANK</button>
     <p class="es" id="rankWarn" style="display:none; color:var(--red); margin-top:10px">⚠ Escucha y responde los 4 audios primero (botón ✓ CHECK en cada uno).</p>
+    <div style="margin-top:18px"><a class="btn wa-btn" id="hwWa" href="#" onclick="return sendHomework(this)"><i class="fa-brands fa-whatsapp"></i> ENVIAR MI TAREA</a></div>
   </div>
 
   <div id="results" class="card">
@@ -575,6 +582,9 @@ function updateProgress() {
   document.getElementById("progressFill").style.width = (done / EXERCISES.length * 100) + "%";
   document.getElementById("progressLabel").textContent = `${done} / ${EXERCISES.length} audios`;
 }
+
+const LESSON_NAME = "Remote Work Listening (A2)";
+function sendHomework(el){ var nf=document.getElementById("studentName"); var name=(nf?nf.value.trim():"")||"Alumno/a"; var msg="¡Hola Daniel! Soy "+name+". Terminé la lección \""+LESSON_NAME+"\". Te envío mi tarea: mi escrito y un audio leyendo en voz alta."; el.href=SOCIAL.whatsapp+"?text="+encodeURIComponent(msg); return true; }
 
 function seeRank() {
   if (Object.keys(scores).length < EXERCISES.length) {
