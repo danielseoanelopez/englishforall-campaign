@@ -1,0 +1,113 @@
+{
+  "level": "A2", "num": 1, "totalLessons": 6, "world": "ON THE JOB",
+  "key": "rankup_A2_L1",
+  "title": "DAILY ROUTINES<br>&amp; PRESENT SIMPLE",
+  "titlePlain": "Daily Routines & Present Simple (A2)",
+  "subtitle": "Grammar &amp; Listening · A2 · ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "next": { "href": "lesson.html?id=a2-l2", "label": "LESSON 2 ▸ REMOTE WORK" },
+  "blocks": [
+    {
+      "type": "grammar", "tag": "present simple",
+      "title": "📘 PRESENT SIMPLE & FREQUENCY",
+      "intro": "Usamos el <b style='color:var(--gold)'>present simple</b> para rutinas y cosas que pasan siempre. Repasa y luego practica con varios ejercicios.",
+      "cells": [
+        { "h": "✓ Affirmative", "body": "I / you / we / they <code>work</code><br>he / she / it <code>works</code> <span class='es'>(+s)</span>" },
+        { "h": "✗ Negative", "body": "I <code>don't</code> work<br>she <code>doesn't</code> work" },
+        { "h": "? Questions", "body": "<code>Do</code> you work?<br><code>Does</code> she work?<br>What time <code>do</code> you start?" },
+        { "h": "⚠ Watch out", "body": "<span class='ok'>She works here.</span><br><span class='x'>She work here.</span><br><span class='ok'>He doesn't work.</span> <span class='es'>(no \"doesn't works\")</span>" }
+      ],
+      "ladderLabel": "<b style='color:var(--purple)'>Adverbios de frecuencia</b> — van antes del verbo: <i>I <u>always</u> check emails.</i>",
+      "ladder": ["always 100%", "usually", "often", "sometimes", "rarely", "never 0%"],
+      "vocabBtn": "📒 Ver vocabulario de rutina",
+      "vocab": [
+        { "en": "wake up", "sp": "despertarse" }, { "en": "get up", "sp": "levantarse" },
+        { "en": "have breakfast", "sp": "desayunar" }, { "en": "log on / log off", "sp": "conectarse / desconectarse" },
+        { "en": "check emails", "sp": "revisar correos" }, { "en": "standup meeting", "sp": "reunión breve diaria" },
+        { "en": "take a break", "sp": "tomar un descanso" }, { "en": "finish work", "sp": "terminar el trabajo" }
+      ],
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Hacé el ✓ CHECK en cada ejercicio."
+    },
+    {
+      "type": "story", "tag": "conoce al equipo",
+      "title": "★ MARCOS'S FIRST WEEK",
+      "intro": "Marcos empieza en un equipo de trabajo remoto. Su jefa, Sofia, le explica la rutina. Practica las formas y después escucha.",
+      "cast": [
+        { "en": "Sofia", "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧" },
+        { "en": "Marcos", "sp": "el nuevo developer 🇲🇽" }
+      ]
+    },
+    {
+      "type": "gapFill", "id": "ex-gap", "title": "COMPLETÁ EN PRESENTE",
+      "intro": "Elegí la forma correcta del present simple.",
+      "items": [
+        { "q": "She ___ her emails every morning.", "options": ["checks", "check", "checking"], "answer": 0 },
+        { "q": "We ___ at nine o'clock.", "options": ["start", "starts", "starting"], "answer": 0 },
+        { "q": "He ___ work on weekends.", "options": ["doesn't", "don't", "isn't"], "answer": 0 },
+        { "q": "___ you work remotely?", "options": ["Do", "Does", "Are"], "answer": 0 },
+        { "q": "Marcos always ___ a coffee in the morning.", "options": ["needs", "need", "needing"], "answer": 0 },
+        { "q": "She is ___ late for the meeting. (0%)", "options": ["never", "always", "often"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l1",
+      "title": "AUDIO 1 · THE WELCOME CALL",
+      "desc": "Sofia le da la bienvenida a Marcos y le explica la rutina del equipo.",
+      "src": "daily-routines-1.mp3", "dur": "1:12", "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "questions": [
+        { "type": "mcq", "q": "What time does the team usually start?", "options": ["At nine o'clock", "At eight thirty", "At eleven"], "answer": 0 },
+        { "type": "mcq", "q": "What does Sofia always do first?", "options": ["She writes reports", "She checks her emails", "She has lunch"], "answer": 1 },
+        { "type": "trueFalse", "q": "Sofia works on weekends.", "answer": false }
+      ],
+      "speaking": { "prompt": "Describe Sofia's morning routine. Use <i>always</i> and <i>usually</i>.", "starter": "She usually starts at nine o'clock, and she always checks…" },
+      "transcript": [
+        { "spk": "Sofia", "html": "Hi Marcos, welcome to the team! How are you today?" },
+        { "spk": "Marcos", "b": true, "html": "Hi Sofia, thank you! I'm great, but a little nervous. It's my first day." },
+        { "spk": "Sofia", "html": "Don't worry. We <span class='tg'>work</span> remotely, so we have a simple routine." },
+        { "spk": "Marcos", "b": true, "html": "What time <span class='tg'>does</span> the team <span class='tg'>start</span>?" },
+        { "spk": "Sofia", "html": "We <span class='tg'>usually start</span> at nine. I <span class='tg'>always check</span> my emails first, then we have a short meeting." },
+        { "spk": "Marcos", "b": true, "html": "And when do you <span class='tg'>take a break</span>?" },
+        { "spk": "Sofia", "html": "I usually take a break at eleven, and we have lunch at one. I <span class='tg'>often</span> write reports in the afternoon." },
+        { "spk": "Sofia", "html": "I normally finish at five, but I <span class='tg'>never</span> work on weekends. Family time!" }
+      ]
+    },
+    {
+      "type": "order", "id": "ex-order", "title": "ORDENÁ LA FRASE",
+      "intro": "Tocá las palabras para formar la frase.",
+      "items": [
+        { "words": ["She", "always", "checks", "her", "emails"], "answer": "She always checks her emails" },
+        { "words": ["We", "start", "at", "nine"], "answer": "We start at nine" },
+        { "words": ["He", "doesn't", "work", "on", "weekends"], "answer": "He doesn't work on weekends" }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l2",
+      "title": "AUDIO 2 · MARCOS'S DAY",
+      "desc": "Marcos describe su propio día. Vive en otra zona horaria.",
+      "src": "daily-routines-2.mp3", "dur": "0:49", "speakers": "🗣 Marcos 🇲🇽",
+      "questions": [
+        { "type": "mcq", "q": "What does Marcos always need in the morning?", "options": ["A meeting", "Coffee", "A walk"], "answer": 1 },
+        { "type": "mcq", "q": "When does Marcos often work on the website?", "options": ["In the morning, because it's quiet", "Late at night", "During lunch"], "answer": 0 },
+        { "type": "trueFalse", "q": "Marcos works late every day.", "answer": false }
+      ],
+      "speaking": { "prompt": "What is Marcos's morning routine? Tell it in 2–3 sentences.", "starter": "He usually wakes up at seven, has breakfast and a coffee, and then…" },
+      "transcript": [
+        { "spk": "Marcos", "b": true, "html": "Hi everyone, I'm Marcos, the new developer. I usually <span class='tg'>wake up</span> at seven. First, I <span class='tg'>have breakfast</span> and drink a big coffee. I <span class='tg'>always</span> need coffee! Then I <span class='tg'>log on</span> at eight thirty. I <span class='tg'>often</span> work on the website in the morning, because it's quiet. I usually <span class='tg'>have lunch</span> at one. I <span class='tg'>rarely</span> work late, but on busy days I finish at six. I <span class='tg'>never</span> forget to log off!" }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ MY DAILY ROUTINE",
+      "intro": "Describe tu día normal (5–6 frases) en present simple:",
+      "checklist": [
+        "Usa <b>I + verbo</b> (I wake up, I start…)",
+        "Una frase con <b>he/she + verbo+s</b> (My colleague <b>works</b>…)",
+        "Usa <b>3 adverbios de frecuencia</b> (always / usually / often / sometimes / never)",
+        "Incluye horas (<b>at nine</b>, <b>in the morning</b>)"
+      ],
+      "placeholder": "I usually wake up at...",
+      "example": "I usually wake up at seven o'clock. I always have a coffee before work. I start at nine and I often check my emails first. My colleague Ana usually works in the afternoon. I never work on Sundays.",
+      "hw": "Escribe tu rutina y graba un audio leyéndola. Envíame ambos por WhatsApp y lo corregimos."
+    }
+  ]
+}

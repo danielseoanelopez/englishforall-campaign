@@ -1,0 +1,112 @@
+{
+  "level": "A2", "num": 6, "totalLessons": 6, "world": "ON THE JOB",
+  "key": "rankup_A2_L6",
+  "title": "WHAT ARE YOU<br>GOING TO DO?",
+  "titlePlain": "Future Plans — going to / present continuous (A2)",
+  "subtitle": "Listening &amp; Grammar · A2 · ~45 min",
+  "rankup": "WORLD COMPLETE!",
+  "resultTitle": "LESSON 6 SCORE",
+  "next": { "href": "a2-final.html", "label": "⚔ A2 BOSS TEST" },
+  "blocks": [
+    {
+      "type": "grammar", "tag": "going to / present continuous",
+      "title": "📘 PLANES A FUTURO · going to / present continuous",
+      "intro": "Dos formas de hablar del futuro: <b style='color:var(--gold)'>going to</b> (planes) y el <b style='color:var(--gold)'>present continuous</b> (citas con día/hora). Es la última lección antes del examen.",
+      "cells": [
+        { "h": "🎯 be going to (planes)", "body": "am/is/are + <code>going to</code> + base<br>I'm <code>going to study</code>.<br>We're <code>going to launch</code> it." },
+        { "h": "📅 present continuous (citas)", "body": "am/is/are + verbo<code>-ing</code> + hora<br>I'm <code>meeting</code> the client at 3.<br>We're <code>flying</code> on Monday." },
+        { "h": "? / negative", "body": "<code>Are you going to</code> start?<br>I'm <code>not going to</code> wait.<br><span class='es'>Yes, I am. / No, I'm not.</span>" },
+        { "h": "⚠ Watch out", "body": "no olvides <code>be</code>: <span class='x'>I going to go</span><br><span class='ok'>I'm going to go.</span><br>going to = plan · present cont. = cita fija" }
+      ],
+      "ladderLabel": "<b style='color:var(--purple)'>Marcadores de futuro</b> — cuándo va a pasar:",
+      "ladder": ["tomorrow", "tonight", "next week", "on Monday", "next month", "in summer"],
+      "vocabBtn": "📒 Ver vocabulario de planes",
+      "vocab": [
+        { "en": "a plan / a goal", "sp": "un plan / una meta" }, { "en": "to arrange", "sp": "organizar / acordar" },
+        { "en": "a trip", "sp": "un viaje" }, { "en": "to fly", "sp": "volar / viajar en avión" },
+        { "en": "to book (a table)", "sp": "reservar (una mesa)" }, { "en": "to launch", "sp": "lanzar" },
+        { "en": "to improve", "sp": "mejorar" }, { "en": "excited about", "sp": "entusiasmado con" }
+      ],
+      "note": "<b>Cómo funciona:</b> escucha los planes 🎧, completa 📝 y ordená 🧩. ¡Última lección del mundo A2 — después viene el examen!"
+    },
+    {
+      "type": "story", "tag": "planeando lo que viene",
+      "title": "★ WHAT'S NEXT?",
+      "intro": "El equipo mira hacia adelante: un proyecto nuevo y un viaje de trabajo. Después de esta lección viene el <b>examen del mundo A2</b>.",
+      "cast": [
+        { "en": "Sofia", "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧" },
+        { "en": "Marcos", "sp": "el developer 🇲🇽" }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l1",
+      "title": "AUDIO 1 · PLANS FOR THE NEW PROJECT",
+      "desc": "Sofia y Marcos planean el próximo proyecto. Fíjate en \"going to\".",
+      "src": "plans-1.mp3", "dur": "0:43", "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "questions": [
+        { "type": "mcq", "q": "What are they going to build?", "options": ["An app for a travel company", "A website for a bank", "A game"], "answer": 0 },
+        { "type": "mcq", "q": "What is Marcos going to do on the project?", "options": ["Lead the design", "Hire developers", "Write the code"], "answer": 2 },
+        { "type": "trueFalse", "q": "They are going to have the first meeting on Monday.", "answer": true }
+      ],
+      "speaking": { "prompt": "Describe a plan for a project or trip. Use <i>I'm going to…</i> three times.", "starter": "We're going to create a new app. I'm going to write the code, and…" },
+      "transcript": [
+        { "spk": "Sofia", "html": "Marcos, we're <span class='tg'>going to start</span> a new project next month. Are you ready?" },
+        { "spk": "Marcos", "b": true, "html": "Yes! What <span class='tg'>are we going to build</span>?" },
+        { "spk": "Sofia", "html": "We're <span class='tg'>going to create</span> an app for a travel company. It's <span class='tg'>going to be</span> big." },
+        { "spk": "Marcos", "b": true, "html": "How <span class='tg'>are we going to organize</span> the team?" },
+        { "spk": "Sofia", "html": "I'm <span class='tg'>going to lead</span> the design, and you're <span class='tg'>going to write</span> the code." },
+        { "spk": "Marcos", "b": true, "html": "When <span class='tg'>are we going to start</span>?" },
+        { "spk": "Sofia", "html": "We're <span class='tg'>going to have</span> the first meeting on Monday. I'm <span class='tg'>going to send</span> the plan tomorrow." }
+      ]
+    },
+    {
+      "type": "gapFill", "id": "ex-gap", "title": "COMPLETÁ EL FUTURO",
+      "intro": "Elegí going to o present continuous.",
+      "items": [
+        { "q": "Next month we ___ start a new project.", "options": ["are going to", "going to", "go to"], "answer": 0 },
+        { "q": "I can't meet on Friday — I ___ the client at three.", "options": ["am meeting", "meet", "met"], "answer": 0 },
+        { "q": "She ___ run a marathon this year.", "options": ["is going to", "going", "goes to"], "answer": 0 },
+        { "q": "On Monday, I ___ to Madrid at nine.", "options": ["am flying", "fly", "flew"], "answer": 0 },
+        { "q": "I'm ___ going to use the translator so much.", "options": ["not", "don't", "isn't"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l2",
+      "title": "AUDIO 2 · A WORK TRIP",
+      "desc": "Marcos cuenta su agenda para un viaje. Fíjate en el present continuous con horas.",
+      "src": "plans-2.mp3", "dur": "0:33", "speakers": "🗣 Marcos 🇲🇽",
+      "questions": [
+        { "type": "mcq", "q": "Where is Marcos traveling next week?", "options": ["Mexico City", "Madrid, for work", "London, on holiday"], "answer": 1 },
+        { "type": "mcq", "q": "What is he doing on Tuesday?", "options": ["Meeting the client and having lunch", "Flying to Madrid", "Coming back home"], "answer": 0 },
+        { "type": "trueFalse", "q": "Marcos is working on Friday.", "answer": false }
+      ],
+      "speaking": { "prompt": "Describe your schedule for next week. Use the present continuous with times (<i>I'm meeting… at…</i>).", "starter": "On Monday, I'm flying to Madrid at nine. On Tuesday, I'm meeting…" },
+      "transcript": [
+        { "spk": "Marcos", "b": true, "html": "Next week is <span class='tg'>going to be</span> busy, because I'm <span class='tg'>traveling</span> to Madrid for work. On Monday, I'm <span class='tg'>flying</span> to Madrid at nine. On Tuesday, I'm <span class='tg'>meeting</span> the client at ten, and we're <span class='tg'>having</span> lunch at one. On Wednesday, I'm <span class='tg'>giving</span> a presentation. I'm <span class='tg'>not working</span> on Friday, so I'm <span class='tg'>going to relax</span>." }
+      ]
+    },
+    {
+      "type": "order", "id": "ex-order", "title": "ORDENÁ EL PLAN",
+      "intro": "Tocá las palabras para formar la frase.",
+      "items": [
+        { "words": ["We", "are", "going", "to", "launch", "it"], "answer": "We are going to launch it" },
+        { "words": ["I", "am", "meeting", "the", "client"], "answer": "I am meeting the client" },
+        { "words": ["She", "is", "going", "to", "run", "a", "marathon"], "answer": "She is going to run a marathon" }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ MY PLANS",
+      "intro": "Escribe tus planes (5–6 frases): tus metas y tu agenda de la próxima semana.",
+      "checklist": [
+        "Usa <b>2 planes</b> con <b>going to</b>",
+        "Usa <b>1 cita fija</b> con present continuous + hora (I'm meeting… at…)",
+        "Incluye <b>1 frase negativa</b> (I'm not going to…)",
+        "Usa un marcador de futuro (<b>next week</b>, <b>on Monday</b>, <b>in summer</b>)"
+      ],
+      "placeholder": "Next month, I'm going to...",
+      "example": "Next month, I'm going to start a new English course. I'm going to study every evening. On Tuesday, I'm meeting my teacher at five, and on Saturday, I'm taking a level test. In summer, I'm going to travel to use my English. I'm really excited!",
+      "hw": "Escribe tus planes y graba un audio. Envíame ambos por WhatsApp. Después, ¡a por el examen del mundo A2!"
+    }
+  ]
+}

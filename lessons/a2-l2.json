@@ -1,0 +1,123 @@
+{
+  "level": "A2", "num": 2, "totalLessons": 6, "world": "ON THE JOB",
+  "key": "rankup_A2_L2",
+  "title": "REMOTE WORK<br>VOCAB &amp; EMAILS",
+  "titlePlain": "Remote Work Vocab & Emails (A2)",
+  "subtitle": "Vocab &amp; Listening · A2 · ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "next": { "href": "lesson.html?id=a2-l3", "label": "LESSON 3 ▸ PAST SIMPLE" },
+  "blocks": [
+    {
+      "type": "grammar", "tag": "frases de trabajo",
+      "title": "📒 FRASES CLAVE · teléfono y email",
+      "intro": "Frases útiles para el trabajo remoto. Apréndelas, luego practica con los ejercicios y los audios.",
+      "cells": [
+        { "h": "📞 Empezar", "body": "<code>Do you have a minute?</code><br><code>Are you available?</code><br>Let me <code>check</code> that for you." },
+        { "h": "✉ Pedir / confirmar", "body": "<code>Could you confirm</code> the details?<br>Can you <code>send</code> me…?<br>It's <code>attached</code> to the email." },
+        { "h": "⏳ Estado", "body": "I'm <code>waiting for</code> an update.<br>There's a task <code>pending</code>.<br>I'll <code>get back to you</code> soon." },
+        { "h": "⚠ Watch out", "body": "<span class='ok'>price estimate</span> = cotización<br><span class='ok'>request</span> = solicitud<br><span class='es'>'attach' = adjuntar (un archivo)</span>" }
+      ],
+      "vocabBtn": "📒 Ver vocabulario nuevo",
+      "vocab": [
+        { "en": "team lead", "sp": "líder / supervisor" }, { "en": "price estimate", "sp": "cotización" },
+        { "en": "request", "sp": "solicitud" }, { "en": "issue", "sp": "asunto / problema" },
+        { "en": "available", "sp": "disponible" }, { "en": "pending", "sp": "pendiente" },
+        { "en": "details", "sp": "detalles" }, { "en": "update", "sp": "actualización" },
+        { "en": "task", "sp": "tarea" }, { "en": "attached", "sp": "adjunto" }
+      ],
+      "note": "<b>Cómo funciona:</b> primero <b>uní</b> 🔗 el vocabulario, después <b>escucha</b> 🎧 y <b>completa</b> 📝 los emails. ✓ CHECK en cada uno."
+    },
+    {
+      "type": "story", "tag": "el proyecto GreenMarket",
+      "title": "★ THE STORY · GREENMARKET",
+      "intro": "Sigues una historia de trabajo remoto: un nuevo cliente (GreenMarket) pide una cotización para su web.",
+      "cast": [
+        { "en": "Sofia", "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧" },
+        { "en": "Marcos", "sp": "su compañero 🇺🇸" },
+        { "en": "David", "sp": "el cliente (GreenMarket) 🇬🇧" }
+      ]
+    },
+    {
+      "type": "match", "id": "ex-match", "title": "UNÍ VOCABULARIO E INGLÉS",
+      "intro": "Tocá la palabra en inglés y luego su significado.",
+      "pairs": [
+        { "l": "price estimate", "r": "cotización" },
+        { "l": "request", "r": "solicitud" },
+        { "l": "pending", "r": "pendiente" },
+        { "l": "attached", "r": "adjunto" },
+        { "l": "available", "r": "disponible" },
+        { "l": "update", "r": "actualización" }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l1",
+      "title": "AUDIO 1 · THE VIDEO CALL",
+      "desc": "Sofia llama a Marcos. ¿Cuál es el problema con el cliente?",
+      "src": "audio1_video_call.mp3", "dur": "1:18", "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇺🇸",
+      "questions": [
+        { "type": "mcq", "q": "What does GreenMarket want?", "options": ["A price estimate for a website", "A new team lead", "A list of new tasks"], "answer": 0 },
+        { "type": "mcq", "q": "Why isn't the price estimate ready yet?", "options": ["Marcos is not available today", "Marcos is waiting for an update from the client", "Sofia lost the email"], "answer": 1 },
+        { "type": "trueFalse", "q": "Sofia offers to call the client to check.", "answer": true }
+      ],
+      "speaking": { "prompt": "Explain the problem with the price estimate. Use <i>pending</i> and <i>waiting for an update</i>.", "starter": "The estimate isn't ready because there's a task pending — Marcos is…" },
+      "transcript": [
+        { "spk": "Sofia", "html": "Hi Marcos, do you have a minute? Are you <span class='tg'>available</span> for a quick call?" },
+        { "spk": "Marcos", "b": true, "html": "Hi Sofia, sure, I'm <span class='tg'>available</span>. Is everything OK?" },
+        { "spk": "Sofia", "html": "It's about GreenMarket, the new client. They sent us a <span class='tg'>request</span> this morning. They want a <span class='tg'>price estimate</span> for the website today." },
+        { "spk": "Marcos", "b": true, "html": "OK. I already have most of the <span class='tg'>details</span>. The estimate is almost ready." },
+        { "spk": "Sofia", "html": "Is it <span class='tg'>attached</span> to your email? I didn't see it." },
+        { "spk": "Marcos", "b": true, "html": "Not yet, sorry. There's still one <span class='tg'>task pending</span>. I'm <span class='tg'>waiting for an update</span> from the client." },
+        { "spk": "Sofia", "html": "Ah, so that's the <span class='tg'>issue</span>. <span class='tg'>Let me check that for you</span>. I'll call them now." },
+        { "spk": "Marcos", "b": true, "html": "Thanks, Sofia! <span class='tg'>I'll get back to you soon</span>." }
+      ]
+    },
+    {
+      "type": "gapFill", "id": "ex-gap", "title": "COMPLETÁ EL EMAIL / LA LLAMADA",
+      "intro": "Elegí la palabra correcta para cada frase de trabajo.",
+      "items": [
+        { "q": "Let me ___ that for you.", "options": ["check", "checking", "checks"], "answer": 0 },
+        { "q": "Could you please ___ the details?", "options": ["confirm", "confirms", "confirming"], "answer": 0 },
+        { "q": "I'll ___ you the price estimate today.", "options": ["send", "sends", "sending"], "answer": 0 },
+        { "q": "I'm ___ for an update from the client.", "options": ["waiting", "wait", "waits"], "answer": 0 },
+        { "q": "The product list is ___ to my email.", "options": ["attached", "attach", "attaching"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l2",
+      "title": "AUDIO 2 · THE CLIENT CALL",
+      "desc": "Marcos llama a David para confirmar los detalles del proyecto.",
+      "src": "audio3_client_call.mp3", "dur": "1:15", "speakers": "🗣 Marcos 🇺🇸 + David 🇬🇧",
+      "questions": [
+        { "type": "mcq", "q": "What does David want to add to the project?", "options": ["More products", "An online payment system", "A second website"], "answer": 1 },
+        { "type": "mcq", "q": "What happens to the price estimate with the payment system?", "options": ["It is a little higher", "It is a little lower", "It stays the same"], "answer": 0 },
+        { "type": "trueFalse", "q": "The team can start next Monday if David confirms today.", "answer": true }
+      ],
+      "speaking": { "prompt": "Why is the price estimate higher now? Explain in 1–2 sentences.", "starter": "Because the client also wants an online payment system, so…" },
+      "transcript": [
+        { "spk": "Marcos", "html": "Hi David, this is Marcos from the web team. Thanks for the product list. Do you have a minute?" },
+        { "spk": "David", "b": true, "html": "Hi Marcos! Yes, of course. Did you get everything you need?" },
+        { "spk": "Marcos", "html": "Almost. I have the <span class='tg'>details</span>, but do you need the online payment system too?" },
+        { "spk": "David", "b": true, "html": "Yes, please. The payment system is very important for us." },
+        { "spk": "Marcos", "html": "Perfect. With the payment system, the <span class='tg'>price estimate</span> is a little higher." },
+        { "spk": "David", "b": true, "html": "That's OK. Could you send me the final <span class='tg'>price estimate</span> today?" },
+        { "spk": "Marcos", "html": "Of course. It will be <span class='tg'>attached</span> to my email this afternoon." },
+        { "spk": "David", "b": true, "html": "Great. And when can you start?" },
+        { "spk": "Marcos", "html": "If you confirm today, we can start next Monday." }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ A SHORT WORK EMAIL",
+      "intro": "Escribe un email corto (4–6 frases) a un cliente o compañero:",
+      "checklist": [
+        "Saluda y di por qué escribes",
+        "Usa <b>2 palabras nuevas</b> (price estimate, request, attached, pending…)",
+        "Pide o confirma algo (<b>Could you confirm…?</b>)",
+        "Cierra: <b>I'll get back to you soon.</b>"
+      ],
+      "placeholder": "Hi David,",
+      "example": "Hi David, Thank you for your request. The price estimate is almost ready — I'm just waiting for one update. I attached the product list to this email. Could you confirm the details? I'll get back to you soon. Best, Marcos",
+      "hw": "Escribe tu email y envíamelo por WhatsApp para corregirlo juntos."
+    }
+  ]
+}
