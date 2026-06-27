@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title id="pageTitle">English for All · Rank Up</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+<div class="side-deco left" id="decoLeft"></div>
+<div class="side-deco right" id="decoRight"></div>
+<a class="backmap" href="index.html">◄ MAPA</a>
+<button class="mute-btn" id="muteBtn" onclick="toggleMute()" aria-label="Sonido">🔊</button>
+<div class="container">
+  <div class="brand" data-aos="fade-up"><img class="logo" src="logo.png" alt="English for All — Rank Up"></div>
+  <header data-aos="fade-up" data-aos-delay="80">
+    <p class="crumb" id="crumb"></p>
+    <h1 id="h1"></h1>
+    <p class="sub" id="sub"></p>
+  </header>
+  <div class="progress-wrap">
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="progress-label" id="progressLabel">0 / 0 audios</div>
+  </div>
+
+  <!-- grammar + story + listening + writing are injected here -->
+  <div id="lessonRoot"></div>
+
+  <!-- SEE MY RANK -->
+  <div class="btn-row" id="finalRow" data-aos="fade-up" style="display:none">
+    <div style="margin-bottom:14px"><input id="studentName" type="text" placeholder="Tu nombre" autocomplete="given-name" style="width:100%;max-width:320px;padding:10px 14px;background:#10122a;border:2px solid var(--cyan);border-radius:10px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:0.95rem;outline:none;box-shadow:inset 0 0 10px #00e5ff22"><br><span class="es" style="font-size:0.78rem;display:inline-block;margin-top:7px"><i class="fa-solid fa-lock"></i> Tu nombre + score se le envían a tu profe para tu seguimiento.</span></div>
+    <button class="btn" id="rankBtn" onclick="seeRank()">★ SEE MY RANK</button>
+    <p class="es" id="rankWarn" style="display:none; color:var(--red); margin-top:10px">⚠ Escucha y responde todos los audios primero (botón ✓ CHECK en cada uno).</p>
+    <div style="margin-top:18px"><a class="btn wa-btn" id="hwWa" href="#" onclick="return sendHomework(this)"><i class="fa-brands fa-whatsapp"></i> ENVIAR MI TAREA</a></div>
+  </div>
+
+  <div id="results" class="card">
+    <div class="trophy">🏆</div>
+    <h2 id="resultName">LESSON SCORE</h2>
+    <div class="stars" id="starRow"></div>
+    <p class="score" id="scoreText"></p>
+    <p class="rankup" id="rankupLine">LESSON CLEAR!</p>
+    <p class="rankup-sub">¡Práctica un poco cada día y sube de nivel!</p>
+    <div class="contact-box">
+      <div class="panel-title">★ ¿DUDAS? LO VEMOS EN CLASE</div>
+      <p>Envíame tu <b>tarea escrita</b> + tu <b>grabación leyéndola</b> por WhatsApp y lo corregimos juntos. ¡Vas por buen camino!</p>
+      <a class="btn wa-btn" id="waCta" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WHATSAPP</a>
+      <a class="btn next-btn" id="nextCta" href="index.html">◄ MAPA</a>
+      <p class="es" style="margin-top:12px"><a href="index.html" style="color:var(--cyan)">◄ Volver al mapa de campaña</a></p>
+    </div>
+    <div class="btn-row"><button class="btn" onclick="location.reload()">↻ TRY AGAIN</button></div>
+  </div>
+
+  <div class="social" id="socialBar">
+    <a class="so-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a class="so-dc" href="#" target="_blank" rel="noopener" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+    <a class="so-ig" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="so-li" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a class="so-tap" href="#" target="_blank" rel="noopener" aria-label="Taplink"><i class="fa-solid fa-link"></i></a>
+  </div>
+  <footer id="footer"><span class="b">ENGLISH <em>for ALL</em></span><span class="sep">✦</span>Rank Up</footer>
+</div>
+
+<script>
+// ================= DATA-DRIVEN LESSON RENDERER =================
+// One renderer for every lesson. Each lesson is a JSON file in lessons/<id>.json.
+// Load with  lesson.html?id=a2-l3
+const SOCIAL = { whatsapp:"https://wa.me/5491123709477", instagram:"https://www.instagram.com/englishforall_dan/", linkedin:"https://www.linkedin.com/in/danielseoanelopez/", taplink:"https://englishforall.taplink.site", discord:"daniel.s.20" };
+const FORM_ENDPOINT = "https://formspree.io/f/mbdewbrp";
+
+let LESSON = null, LESSON_KEY = "", LESSON_NAME = "", EXERCISES = [];
+const scores = {};
+const esc = s => String(s == null ? "" : s);
+
+// ---------- builders ----------
+function grammarHtml(g){
+  if(!g) return "";
+  let h = `<div class="stage-tag">① GRAMMAR <span class="es">· ${esc(g.tag)}</span></div>
+  <div class="card grammar" data-aos="fade-up"><div class="panel-title">${esc(g.title)}</div><p>${esc(g.intro)}</p>
+  <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}</div>`).join("")}</div>`;
+  if(g.ladderLabel) h += `<p style="margin-top:16px">${esc(g.ladderLabel)}</p>`;
+  if(g.ladder && g.ladder.length){
+    h += `<div class="freq-bar">${g.ladder.map((c,i)=>`<span class="chip">${esc(c)}</span>${i<g.ladder.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
+  }
+  if(g.vocab && g.vocab.length){
+    h += `<button class="toggle-btn" data-show="${esc(g.vocabBtn||'📒 Ver vocabulario')}" data-hide="📒 Ocultar vocabulario" onclick="toggleReveal('vocabRef', this)">${esc(g.vocabBtn||'📒 Ver vocabulario')}</button>
+    <div class="reveal" id="vocabRef"><div class="gloss" style="margin-top:14px">${g.vocab.map(v=>`<div class="term"><span class="en">${esc(v.en)}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
+  }
+  if(g.note) h += `<div class="note">${esc(g.note)}</div>`;
+  return h + `</div>`;
+}
+function storyHtml(s){
+  if(!s) return "";
+  return `<div class="stage-tag">② THE STORY <span class="es">· ${esc(s.tag)}</span></div>
+  <div class="card alt" data-aos="fade-up"><div class="panel-title">${esc(s.title)}</div><p>${esc(s.intro)}</p>
+  <div class="gloss">${(s.cast||[]).map(c=>`<div class="term"><span class="en">${esc(c.en)}</span> <span class="sp">${esc(c.sp)}</span></div>`).join("")}</div></div>`;
+}
+function audioHtml(a, i){
+  const n = i+1, exId = "ex-l"+n, alt = (i%2)? " alt":"";
+  let h = (i===0) ? `<div class="stage-tag">③ LISTENING <span class="es">· escucha y comprende</span></div>` : "";
+  h += `<div class="card${alt}" id="${exId}" data-aos="fade-up"><div class="panel-title">${esc(a.title)}</div><p class="es">${esc(a.desc)}</p>
+  <div class="player"><audio controls preload="metadata" src="${esc(a.src)}"></audio><div class="meta"><span>⏱ <b>${esc(a.dur)}</b></span><span>${esc(a.speakers)}</span></div></div>`;
+  h += (a.questions||[]).map((q,qi)=>`<div class="q" data-correct="${"abc"[q.answer]}"><p><span class="qnum">${String(qi+1).padStart(2,"0")}</span>${esc(q.q)}</p>${q.options.map((opt,oi)=>`<label class="option"><input type="radio" name="l${n}q${qi+1}" value="${"abc"[oi]}"><span>${esc(opt)}</span></label>`).join("")}</div>`).join("");
+  h += `<div class="btn-row"><button class="btn check" onclick="checkExercise('${exId}')">✓ CHECK</button></div><div class="ex-score" id="score-${exId}"></div>`;
+  if(a.speaking){
+    h += `<div class="verbal"><p class="vq"><span class="mic">🎤</span><b>Speaking:</b> ${esc(a.speaking.prompt)}</p>
+    <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('m${n}', this)">💡 Pista para empezar</button>
+    <div class="reveal model-box" id="m${n}"><span class="lbl">EMPIEZA ASÍ</span>${esc(a.speaking.starter)}</div></div>`;
+  }
+  if(a.transcript && a.transcript.length){
+    h += `<button class="toggle-btn" data-show="📄 Mostrar transcripción" data-hide="📄 Ocultar transcripción" onclick="toggleReveal('t${n}', this)">📄 Mostrar transcripción</button>
+    <div class="reveal transcript" id="t${n}">${a.transcript.map(l=>`<p class="line"><span class="spk ${l.b?'b':''}">${esc(l.spk)}:</span> ${esc(l.html)}</p>`).join("")}</div>`;
+  }
+  return h + `</div>`;
+}
+function writingHtml(w){
+  if(!w) return "";
+  return `<div class="stage-tag">④ WRITING <span class="es">· en clase o tarea (HW)</span></div>
+  <div class="card purple" data-aos="fade-up"><div class="panel-title">${esc(w.title)}</div><p>${esc(w.intro)}</p>
+  <ul class="checklist">${(w.checklist||[]).map(li=>`<li>${esc(li)}</li>`).join("")}</ul>
+  <textarea class="writing-area" id="writingBox" placeholder="${esc(w.placeholder||'')}"></textarea>
+  <button class="toggle-btn" data-show="💡 Ver ejemplo" data-hide="🙈 Ocultar ejemplo" onclick="toggleReveal('mw', this)">💡 Ver ejemplo</button>
+  <div class="reveal model-box" id="mw"><span class="lbl">EXAMPLE</span>${esc(w.example)}</div>
+  <div class="note gold"><b>📌 Tarea (HW):</b> ${esc(w.hw)}</div></div>`;
+}
+
+function build(L){
+  LESSON = L;
+  LESSON_KEY = L.key; LESSON_NAME = L.titlePlain;
+  EXERCISES = (L.audios||[]).map((_,i)=>"ex-l"+(i+1));
+  document.getElementById("pageTitle").textContent = "English for All · " + (L.titlePlain||"Lesson");
+  document.getElementById("crumb").innerHTML = `<span class="w">WORLD ${esc(L.level)} · ${esc(L.world)}</span> ▸ LESSON ${esc(L.num)} / ${esc(L.totalLessons||6)}`;
+  document.getElementById("h1").innerHTML = esc(L.title);
+  document.getElementById("sub").innerHTML = esc(L.subtitle||"");
+  document.getElementById("progressLabel").textContent = `0 / ${EXERCISES.length} audios`;
+  document.getElementById("lessonRoot").innerHTML =
+    grammarHtml(L.grammar) + storyHtml(L.story) + (L.audios||[]).map(audioHtml).join("") + writingHtml(L.writing);
+  document.getElementById("finalRow").style.display = "";
+  if(L.resultTitle) document.getElementById("resultName").textContent = L.resultTitle;
+  if(L.rankup) document.getElementById("rankupLine").textContent = L.rankup;
+  if(L.next){ const n=document.getElementById("nextCta"); n.href=L.next.href; n.textContent=L.next.label; }
+  document.getElementById("footer").innerHTML = `<span class="b">ENGLISH <em>for ALL</em></span><span class="sep">✦</span>Rank Up<span class="sep">✦</span>${esc(L.level)} · Lesson ${esc(L.num)}`;
+  shuffleOptions();
+  try { AOS.refreshHard(); } catch(e){}
+}
+
+// ---------- loader ----------
+(function load(){
+  const id = new URLSearchParams(location.search).get("id");
+  if(!id){ document.getElementById("lessonRoot").innerHTML = '<div class="card">Falta <code>?id=</code> en la URL. Ej: <code>lesson.html?id=a2-l3</code></div>'; return; }
+  fetch("lessons/"+id+".json").then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(build)
+    .catch(()=>{ document.getElementById("lessonRoot").innerHTML = '<div class="card">No pude cargar la lección <code>'+id+'</code>.</div>'; });
+})();
+
+// ================= shared interactive logic =================
+let muted = false; try { muted = localStorage.getItem("efa_muted") === "1"; } catch (e) {}
+let audioCtx = null;
+function beep(freq, dur, vol){ if(muted) return; try { audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)(); const o=audioCtx.createOscillator(), g=audioCtx.createGain(); o.type="square"; o.frequency.value=freq; g.gain.value=vol||0.035; o.connect(g); g.connect(audioCtx.destination); o.start(); g.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime+dur); o.stop(audioCtx.currentTime+dur); } catch(e){} }
+function blip(){ beep(660,0.07); } function okBeep(){ beep(784,0.1,0.04); } function noBeep(){ beep(220,0.18,0.04); }
+function victory(){ [523,659,784,1047].forEach((f,i)=>setTimeout(()=>beep(f,0.18,0.045), i*110)); }
+function toggleMute(){ muted=!muted; try{ localStorage.setItem("efa_muted", muted?"1":"0"); }catch(e){} document.getElementById("muteBtn").textContent = muted?"🔇":"🔊"; if(!muted) blip(); }
+(function(){ document.getElementById("muteBtn").textContent = muted?"🔇":"🔊"; })();
+(function initSideDeco(){ const items=["★","✦","☕","🎧","💬","🏆","★","✦","⭐","📧"], colors=["#00e5ff","#ff3df0","#9d4dff","#ffc83d"]; ["decoLeft","decoRight"].forEach(id=>{ const box=document.getElementById(id); for(let i=0;i<8;i++){ const s=document.createElement("span"); s.textContent=items[Math.floor(Math.random()*items.length)]; s.style.left=(10+Math.random()*70)+"%"; s.style.color=colors[Math.floor(Math.random()*colors.length)]; s.style.animationDuration=(14+Math.random()*12)+"s"; s.style.animationDelay=(-Math.random()*22)+"s"; box.appendChild(s);} }); })();
+
+(function initSocial(){ document.querySelectorAll(".so-wa").forEach(a=>a.href=SOCIAL.whatsapp); document.querySelectorAll(".so-ig").forEach(a=>a.href=SOCIAL.instagram); document.querySelectorAll(".so-li").forEach(a=>a.href=SOCIAL.linkedin); document.querySelectorAll(".so-tap").forEach(a=>a.href=SOCIAL.taplink); document.querySelectorAll(".so-dc").forEach(a=>{ a.setAttribute("onclick","return copyDiscord(this)"); a.title="Discord: "+SOCIAL.discord+" (clic para copiar)"; }); })();
+function copyDiscord(el){ var r=el.innerHTML; var done=function(){ el.innerHTML='<i class="fa-solid fa-check"></i>'+(el.classList.contains("btn")?" ¡COPIADO!":""); setTimeout(function(){el.innerHTML=r;},1500); }; try{ navigator.clipboard.writeText(SOCIAL.discord).then(done,done); }catch(e){ done(); } return false; }
+
+function toggleReveal(id, btn){ const el=document.getElementById(id); const open=el.classList.toggle("open"); btn.textContent = open?btn.dataset.hide:btn.dataset.show; blip(); }
+
+function shuffleOptions(){ document.querySelectorAll(".q[data-correct]").forEach(function(q){ var opts=Array.prototype.slice.call(q.querySelectorAll(".option")); for(var i=opts.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=opts[i]; opts[i]=opts[j]; opts[j]=t; } opts.forEach(function(o){ q.appendChild(o); }); }); }
+
+function checkExercise(exId){
+  const ex=document.getElementById(exId); let correct=0, total=0;
+  ex.querySelectorAll(".q[data-correct]").forEach(q=>{ total++; const chosen=q.querySelector("input:checked"); const val=chosen?chosen.value:null; if(val===q.dataset.correct) correct++;
+    q.querySelectorAll(".option").forEach(opt=>{ const inp=opt.querySelector("input"); opt.classList.remove("opt-correct","opt-wrong"); const tick=opt.querySelector(".tick"); if(tick) tick.remove();
+      if(inp.value===q.dataset.correct){ opt.classList.add("opt-correct"); opt.insertAdjacentHTML("beforeend",'<span class="tick" style="color:var(--green)">✓</span>'); }
+      else if(inp.checked){ opt.classList.add("opt-wrong"); opt.insertAdjacentHTML("beforeend",'<span class="tick" style="color:var(--red)">✗</span>'); }
+      inp.disabled=true; }); });
+  scores[exId]={correct,total};
+  const box=document.getElementById("score-"+exId); const cls = correct===total?"good":(correct===0?"bad":"");
+  box.innerHTML=`<span class="${cls}">${correct} / ${total} correcto${total===1?"":"s"}</span>`+(correct===total?" 🎉 ¡Perfecto!":"");
+  ex.querySelector(".btn.check").disabled=true; if(correct===total) okBeep(); else noBeep(); updateProgress();
+}
+function updateProgress(){ const done=Object.keys(scores).length; document.getElementById("progressFill").style.width=(done/EXERCISES.length*100)+"%"; document.getElementById("progressLabel").textContent=`${done} / ${EXERCISES.length} audios`; }
+function saveStars(stars){ try{ const prev=parseInt(localStorage.getItem(LESSON_KEY)||"0",10); if(stars>prev) localStorage.setItem(LESSON_KEY,String(stars)); }catch(e){} }
+function sendHomework(el){ var nf=document.getElementById("studentName"); var name=(nf?nf.value.trim():"")||"Alumno/a"; var msg="¡Hola Daniel! Soy "+name+". Terminé la lección \""+LESSON_NAME+"\". Te envío mi tarea: mi escrito y un audio leyendo en voz alta."; el.href=SOCIAL.whatsapp+"?text="+encodeURIComponent(msg); return true; }
+
+function seeRank(){
+  if(Object.keys(scores).length < EXERCISES.length){ document.getElementById("rankWarn").style.display="block"; for(const id of EXERCISES){ if(!scores[id]){ document.getElementById(id).scrollIntoView({behavior:"smooth",block:"center"}); break; } } return; }
+  let correct=0,total=0; EXERCISES.forEach(id=>{ correct+=scores[id].correct; total+=scores[id].total; });
+  const pct=correct/total; let stars=1; if(pct>=0.9)stars=5; else if(pct>=0.75)stars=4; else if(pct>=0.6)stars=3; else if(pct>=0.4)stars=2;
+  saveStars(stars);
+  document.getElementById("starRow").innerHTML="⭐".repeat(stars)+`<span class="off">${"⭐".repeat(5-stars)}</span>`;
+  document.getElementById("scoreText").textContent=`LISTENING: ${correct} / ${total}`;
+  const studentName=(document.getElementById("studentName").value||"").trim()||"Alumno/a";
+  const waMsg=`¡Hola Daniel! Soy ${studentName}. Terminé la Lección ${LESSON.num} (${LESSON.titlePlain}). Mi score: ${correct}/${total} (${stars}⭐). Aquí van mi tarea escrita y mi audio:`;
+  document.getElementById("waCta").href=SOCIAL.whatsapp+"?text="+encodeURIComponent(waMsg);
+  try { fetch(FORM_ENDPOINT,{ method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"}, body: JSON.stringify({ _subject:`Lección ${LESSON.level} L${LESSON.num} ${LESSON.titlePlain} — ${studentName}`, leccion:LESSON.titlePlain, nivel:LESSON.level, nombre:studentName, score:`${correct}/${total}`, estrellas:`${stars}/5`, fecha:new Date().toLocaleString() }) }).catch(function(){}); } catch(e){}
+  document.getElementById("finalRow").style.display="none";
+  document.getElementById("results").style.display="block";
+  document.getElementById("results").scrollIntoView({behavior:"smooth",block:"start"});
+  if(window.launchConfetti) launchConfetti(); victory();
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script>
+  function launchConfetti(){ if(typeof confetti!=="function")return; var c=["#00e5ff","#ff3df0","#9d4dff","#ffc83d"]; confetti({particleCount:140,spread:90,startVelocity:45,origin:{y:0.3},colors:c,zIndex:60}); setTimeout(function(){confetti({particleCount:90,angle:60,spread:75,origin:{x:0,y:0.65},colors:c,zIndex:60});},150); setTimeout(function(){confetti({particleCount:90,angle:120,spread:75,origin:{x:1,y:0.65},colors:c,zIndex:60});},300); }
+  try { AOS.init({duration:700,once:true,offset:40}); setTimeout(function(){document.querySelectorAll("[data-aos]:not(.aos-animate)").forEach(function(el){el.classList.add("aos-animate");});},4000); } catch(e){ document.querySelectorAll("[data-aos]").forEach(function(el){el.removeAttribute("data-aos");}); }
+</script>
+<script data-goatcounter="https://englishforall.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
