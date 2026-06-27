@@ -1,0 +1,123 @@
+{
+  "level": "A1", "num": 5, "totalLessons": 6, "world": "FIRST CONTACT",
+  "key": "rankup_A1_L5",
+  "title": "EVERYDAY OBJECTS<br>&amp; PLACES",
+  "titlePlain": "Everyday Objects & Places (A1)",
+  "subtitle": "Vocab · a/an · there is/are · A1 · ~40 min",
+  "rankup": "LESSON CLEAR!",
+  "next": { "href": "lesson.html?id=a1-l6", "label": "LESSON 6 ▸ QUESTIONS & ANSWERS" },
+  "blocks": [
+    {
+      "type": "grammar", "tag": "objetos y lugares",
+      "title": "📘 a / an · this/that · there is/are",
+      "intro": "Aprende objetos de cada día y cómo decir dónde están. Estudia con las tarjetas y juega con las imágenes.",
+      "cells": [
+        { "h": "a / an", "body": "<code>a</code> book, <code>a</code> pen<br><code>an</code> apple, <code>an</code> umbrella<br><span class='es'>(an + vocal: a-e-i-o-u)</span>" },
+        { "h": "this / that", "body": "<code>this</code> (aquí)<br><code>that</code> (allí)<br>What's <code>this</code>? It's a phone." },
+        { "h": "there is / are", "body": "<code>There is</code> a chair. (1)<br><code>There are</code> two chairs. (2+)<br>plurales: book → book<code>s</code>" },
+        { "h": "⚠ Watch out", "body": "<span class='x'>a apple</span> → <span class='ok'>an apple</span><br><span class='x'>there is two</span> → <span class='ok'>there are two</span>" }
+      ],
+      "ladderLabel": "<b style='color:var(--purple)'>Lugares</b> — dónde están las cosas:",
+      "ladder": ["in", "on", "under", "next to", "behind", "in front of"],
+      "vocabBtn": "📒 Ver objetos y lugares",
+      "vocab": [
+        { "en": "book 📖", "sp": "libro" }, { "en": "pen 🖊️", "sp": "lapicera" },
+        { "en": "phone 📱", "sp": "teléfono" }, { "en": "key 🔑", "sp": "llave" },
+        { "en": "bag 🎒", "sp": "mochila / bolso" }, { "en": "chair 🪑", "sp": "silla" },
+        { "en": "table", "sp": "mesa" }, { "en": "window 🪟", "sp": "ventana" }
+      ],
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> 🃏, <b>imágenes</b> 🖼️, <b>memoria</b> 🧠, <b>escucha</b> 🎧 y <b>completar</b> 📝. ✓ CHECK donde lo veas."
+    },
+    {
+      "type": "flashcards", "id": "fc-obj", "title": "FLASHCARDS · objetos",
+      "intro": "Tocá cada tarjeta para ver el significado.",
+      "cards": [
+        { "front": "book 📖", "back": "libro" },
+        { "front": "pen 🖊️", "back": "lapicera" },
+        { "front": "phone 📱", "back": "teléfono" },
+        { "front": "key 🔑", "back": "llave" },
+        { "front": "bag 🎒", "back": "mochila" },
+        { "front": "umbrella ☂️", "back": "paraguas" }
+      ]
+    },
+    {
+      "type": "picMatch", "id": "ex-pic", "title": "UNÍ OBJETO E IMAGEN",
+      "intro": "Tocá la imagen y luego la palabra correcta.",
+      "pairs": [
+        { "img": "📖", "word": "book" },
+        { "img": "🔑", "word": "key" },
+        { "img": "📱", "word": "phone" },
+        { "img": "🪑", "word": "chair" },
+        { "img": "☂️", "word": "umbrella" },
+        { "img": "🎒", "word": "bag" }
+      ]
+    },
+    {
+      "type": "memory", "id": "mem-obj", "title": "MEMORY · objeto y palabra",
+      "intro": "Encontrá cada imagen con su palabra. Tocá dos cartas.",
+      "pairs": [
+        { "a": "🖊️", "b": "pen" },
+        { "a": "🪟", "b": "window" },
+        { "a": "🍎", "b": "apple" },
+        { "a": "⌚", "b": "watch" }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l1",
+      "title": "AUDIO 1 · WHAT'S IN THE BAG?",
+      "desc": "Ana y Tom hablan de las cosas en una mochila. Escucha los objetos.",
+      "src": "a1-l5-1.mp3", "dur": "0:27", "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
+      "questions": [
+        { "type": "mcq", "q": "What is in the bag?", "options": ["A book, a pen and a phone", "A key and an apple", "A laptop and a watch"], "answer": 0 },
+        { "type": "mcq", "q": "How many books are there?", "options": ["One", "Two", "Three"], "answer": 1 },
+        { "type": "trueFalse", "q": "Tom's keys are in the bag.", "answer": true }
+      ],
+      "speaking": { "prompt": "Say three things in your bag. Use <i>There is</i> / <i>There are</i> + a/an.", "starter": "In my bag, there is a phone, and there are two…" },
+      "transcript": [
+        { "spk": "Ana", "html": "Tom, what's in your <span class='tg'>bag</span>?" },
+        { "spk": "Tom", "b": true, "html": "Let me see. <span class='tg'>There is</span> a <span class='tg'>book</span>, a <span class='tg'>pen</span>, and my <span class='tg'>phone</span>." },
+        { "spk": "Ana", "html": "Only one book?" },
+        { "spk": "Tom", "b": true, "html": "No, <span class='tg'>there are</span> two books. And my <span class='tg'>keys</span> are here too." },
+        { "spk": "Ana", "html": "Is there an <span class='tg'>umbrella</span>?" },
+        { "spk": "Tom", "b": true, "html": "No, there isn't. But there is an <span class='tg'>apple</span> for lunch!" }
+      ]
+    },
+    {
+      "type": "gapFill", "id": "ex-gap", "title": "a / an / there is / there are",
+      "intro": "Elegí la opción correcta.",
+      "items": [
+        { "q": "It's ___ apple.", "options": ["an", "a", "the"], "answer": 0 },
+        { "q": "It's ___ book.", "options": ["a", "an", "two"], "answer": 0 },
+        { "q": "___ a chair in the room.", "options": ["There is", "There are", "It is"], "answer": 0 },
+        { "q": "___ two windows here.", "options": ["There are", "There is", "It is"], "answer": 0 },
+        { "q": "I have ___ umbrella.", "options": ["an", "a", "the"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ MY DESK / MY BAG",
+      "intro": "Describe tu escritorio o tu mochila en 4–5 frases:",
+      "checklist": [
+        "Usa <b>There is</b> (1) y <b>There are</b> (2+)",
+        "Usa <b>a</b> y <b>an</b> correctamente",
+        "Nombra <b>4–5 objetos</b> (book, pen, phone, key…)",
+        "Di dónde están (<b>on the table</b>, <b>in the bag</b>)"
+      ],
+      "placeholder": "On my desk, there is...",
+      "example": "On my desk, there is a laptop and a lamp. There are two books and a pen. There is an apple next to the phone. My keys are in my bag. I like my desk!",
+      "hw": "Escribe tu descripción y mándame una foto + el texto por WhatsApp."
+    }
+  ],
+  "voices": { "ana": "en-US-AriaNeural", "tom": "en-US-GuyNeural" },
+  "audioRate": "-12%",
+  "audioScripts": [
+    { "file": "a1-l5-1.mp3", "lines": [
+      ["ana", "Tom, what's in your bag?"],
+      ["tom", "Let me see. There is a book, a pen, and my phone."],
+      ["ana", "Only one book?"],
+      ["tom", "No, there are two books. And my keys are here too."],
+      ["ana", "Is there an umbrella?"],
+      ["tom", "No, there isn't. But there is an apple for lunch!"]
+    ]}
+  ]
+}

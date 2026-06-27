@@ -75,11 +75,11 @@
 // is auto-assembled into the classic layout.
 const SOCIAL = { whatsapp:"https://wa.me/5491123709477", instagram:"https://www.instagram.com/englishforall_dan/", linkedin:"https://www.linkedin.com/in/danielseoanelopez/", taplink:"https://englishforall.taplink.site", discord:"daniel.s.20" };
 const FORM_ENDPOINT = "https://formspree.io/f/mbdewbrp";
-const SCORED = ["listening","gapFill","dialogue","match","order"];
+const SCORED = ["listening","gapFill","dialogue","match","order","picMatch"];
 
 let LESSON = null, LESSON_KEY = "", LESSON_NAME = "", EXERCISES = [];
 const scores = {};                 // blockId -> {correct,total}
-const matchState = {}, orderState = {};
+const matchState = {}, orderState = {}, memoryState = {};
 const esc = s => String(s == null ? "" : s);
 const escAttr = s => String(s == null ? "" : s).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 const LET = "abcd";
@@ -88,7 +88,7 @@ function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.
 // ---------- question helper (mcq / trueFalse) — used by listening, gapFill, dialogue ----------
 function qHtml(q, name, num){
   let opts, correct;
-  if(q.type === "trueFalse"){ opts = ["✔ Verdadero","✘ Falso"]; correct = (q.answer === true || q.answer === 0) ? 0 : 1; }
+  if(q.type === "trueFalse"){ opts = ["✔ True","✘ False"]; correct = (q.answer === true || q.answer === 0) ? 0 : 1; }
   else { opts = q.options; correct = q.answer; }
   const order = shuffle(opts.map((_,i)=>i));
   const numHtml = (num!=null) ? `<span class="qnum">${String(num).padStart(2,"0")}</span>` : "";
@@ -163,6 +163,32 @@ function orderHtml(b, id){
   return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🧩 ${esc(b.title||'ORDENÁ LAS PALABRAS')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   ${body}<div class="btn-row"><button class="btn check" onclick="checkOrder('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
+function picMatchHtml(b, id){
+  const pairs = (b.pairs||[]).map(p=>({l:p.img, r:p.word}));
+  matchState[id] = { sel:null, slots:{}, pairs };
+  const rights = shuffle(pairs.map(p=>p.r));
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🖼️ ${esc(b.title||'UNÍ IMAGEN Y PALABRA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  <div class="match-grid"><div class="match-col">${
+    pairs.map((p,i)=>`<button type="button" class="match-l pic" id="${id}-l-${i}" onclick="mLeft('${id}',${i})"><span class="pic-em">${esc(p.l)}</span><span class="ml-slot" id="${id}-slot-${i}"></span></button>`).join("")
+  }</div><div class="match-col">${
+    rights.map(r=>`<button type="button" class="match-r" data-r="${escAttr(r)}" onclick="mRight('${id}',this)">${esc(r)}</button>`).join("")
+  }</div></div>
+  <div class="btn-row"><button class="btn check" onclick="checkMatch('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
+}
+function memoryHtml(b, id){
+  const cards=[];
+  (b.pairs||[]).forEach((p,i)=>{ cards.push({pair:i, face:p.a}); cards.push({pair:i, face:p.b}); });
+  const sh = shuffle(cards);
+  memoryState[id] = { flipped:[], matched:0, total:(b.pairs||[]).length, lock:false };
+  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title">🧠 ${esc(b.title||'MEMORY · encontrá los pares')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><span class="mem-q">❓</span><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
+  <div class="mem-status" id="${id}-status">0 / ${(b.pairs||[]).length} pares</div></div>`;
+}
+function flashcardsHtml(b, id){
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🃏 ${esc(b.title||'FLASHCARDS · tocá para girar')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  <div class="fc-deck">${(b.cards||[]).map(c=>`<button type="button" class="flashcard" onclick="this.classList.toggle('flipped'); blip();"><span class="fc-inner"><span class="fc-front">${esc(c.front)}</span><span class="fc-back">${esc(c.back)}</span></span></button>`).join("")}</div>
+  <p class="es" style="margin-top:8px">👆 Tocá cada tarjeta para ver la traducción.</p></div>`;
+}
 function writingHtml(w){
   return `<div class="stage-tag">✍️ WRITING <span class="es">· en clase o tarea (HW)</span></div>
   <div class="card purple" data-aos="fade-up"><div class="panel-title">${esc(w.title)}</div><p>${esc(w.intro)}</p>
@@ -206,10 +232,13 @@ function build(L){
       if(b.type==="dialogue") return dialogueHtml(b, id);
       if(b.type==="match")    return matchHtml(b, id);
       if(b.type==="order")    return orderHtml(b, id);
+      if(b.type==="picMatch") return picMatchHtml(b, id);
     }
     if(b.type==="grammar") return grammarHtml(b);
     if(b.type==="story")   return storyHtml(b);
     if(b.type==="writing") return writingHtml(b);
+    if(b.type==="memory")     return memoryHtml(b, b.id || ("mem"+i));
+    if(b.type==="flashcards") return flashcardsHtml(b, b.id || ("fc"+i));
     return "";
   }).join("");
   document.getElementById("lessonRoot").innerHTML = html;
@@ -276,6 +305,20 @@ function checkOrder(id){ const st=orderState[id]; st.done=true; let correct=0; s
   setScore(id, correct, st.answers.length);
 }
 
+// memory game (non-scored)
+function mFlip(id, cardId){
+  const st=memoryState[id]; const card=document.getElementById(cardId);
+  if(st.lock || card.classList.contains("matched") || card.classList.contains("flip")) return;
+  card.classList.add("flip"); st.flipped.push(card);
+  if(st.flipped.length===2){
+    st.lock=true; const a=st.flipped[0], bb=st.flipped[1];
+    if(a.dataset.pair===bb.dataset.pair){
+      okBeep();
+      setTimeout(()=>{ a.classList.add("matched"); bb.classList.add("matched"); st.flipped=[]; st.lock=false; st.matched++;
+        document.getElementById(id+"-status").textContent = st.matched+" / "+st.total+" pares"+(st.matched===st.total?"  🎉 ¡Completo!":""); }, 320);
+    } else { noBeep(); setTimeout(()=>{ a.classList.remove("flip"); bb.classList.remove("flip"); st.flipped=[]; st.lock=false; }, 850); }
+  } else { blip(); }
+}
 function updateProgress(){ const done=Object.keys(scores).length; document.getElementById("progressFill").style.width=(done/Math.max(EXERCISES.length,1)*100)+"%"; document.getElementById("progressLabel").textContent=`${done} / ${EXERCISES.length}`; }
 function saveStars(stars){ try{ const prev=parseInt(localStorage.getItem(LESSON_KEY)||"0",10); if(stars>prev) localStorage.setItem(LESSON_KEY,String(stars)); }catch(e){} }
 function sendHomework(el){ var nf=document.getElementById("studentName"); var name=(nf?nf.value.trim():"")||"Alumno/a"; var msg="¡Hola Daniel! Soy "+name+". Terminé la lección \""+LESSON_NAME+"\". Te envío mi tarea: mi escrito y un audio leyendo en voz alta."; el.href=SOCIAL.whatsapp+"?text="+encodeURIComponent(msg); return true; }

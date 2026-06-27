@@ -8,8 +8,10 @@
   "titlePlain": "Greetings & Introductions (A1)",
   "subtitle": "Listening &amp; Speaking · A1 · ~40 min",
   "rankup": "LESSON CLEAR!",
-  "next": { "href": "lesson.html?id=a1-l2", "label": "LESSON 2 ▸ PERSONAL INFO" },
-
+  "next": {
+    "href": "lesson.html?id=a1-l2",
+    "label": "LESSON 2 ▸ PERSONAL INFO"
+  },
   "blocks": [
     {
       "type": "grammar",
@@ -17,27 +19,81 @@
       "title": "📘 SAY HELLO · saludar y presentarte",
       "intro": "En esta primera lección aprendes a <b style='color:var(--gold)'>saludar</b>, <b style='color:var(--gold)'>presentarte</b> y preguntar el nombre. Repasa y luego practica con varios ejercicios.",
       "cells": [
-        { "h": "👋 Greetings", "body": "<code>Hello</code> / <code>Hi</code><br>Good <code>morning</code> / <code>afternoon</code> / <code>evening</code><br><code>Goodbye</code> / <code>Bye</code>" },
-        { "h": "🙋 Introduce yourself", "body": "<code>I'm</code> Ana. = <code>My name is</code> Ana.<br><code>Nice to meet you.</code><br>This is my friend, Tom." },
-        { "h": "❓ Questions", "body": "<code>What's your name?</code><br><code>Where are you from?</code><br><code>How are you?</code> — I'm fine, thanks." },
-        { "h": "⚠ Watch out", "body": "<code>I'm</code> = I am<br><span class='ok'>Nice to meet you</span> <span class='es'>(la primera vez)</span><br>Nombres y <span class='ok'>I</span> siempre con mayúscula" }
+        {
+          "h": "👋 Greetings",
+          "body": "<code>Hello</code> / <code>Hi</code><br>Good <code>morning</code> / <code>afternoon</code> / <code>evening</code><br><code>Goodbye</code> / <code>Bye</code>"
+        },
+        {
+          "h": "🙋 Introduce yourself",
+          "body": "<code>I'm</code> Ana. = <code>My name is</code> Ana.<br><code>Nice to meet you.</code><br>This is my friend, Tom."
+        },
+        {
+          "h": "❓ Questions",
+          "body": "<code>What's your name?</code><br><code>Where are you from?</code><br><code>How are you?</code> — I'm fine, thanks."
+        },
+        {
+          "h": "⚠ Watch out",
+          "body": "<code>I'm</code> = I am<br><span class='ok'>Nice to meet you</span> <span class='es'>(la primera vez)</span><br>Nombres y <span class='ok'>I</span> siempre con mayúscula"
+        }
       ],
       "ladderLabel": "<b style='color:var(--purple)'>Saludos por el día</b> — según la hora:",
-      "ladder": ["Good morning", "Good afternoon", "Good evening", "Good night", "Goodbye"],
+      "ladder": [
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Good night",
+        "Goodbye"
+      ],
       "vocabBtn": "📒 Ver vocabulario de saludos",
       "vocab": [
-        { "en": "Hello / Hi", "sp": "hola" },
-        { "en": "Goodbye / Bye", "sp": "adiós / chau" },
-        { "en": "please", "sp": "por favor" },
-        { "en": "thank you / thanks", "sp": "gracias" },
-        { "en": "What's your name?", "sp": "¿cómo te llamás?" },
-        { "en": "My name is…", "sp": "me llamo…" },
-        { "en": "Nice to meet you", "sp": "mucho gusto / encantado" },
-        { "en": "Where are you from?", "sp": "¿de dónde sos?" },
-        { "en": "How are you?", "sp": "¿cómo estás?" },
-        { "en": "This is…", "sp": "te presento a…" },
-        { "en": "a friend / a teacher", "sp": "un amigo / un profe" },
-        { "en": "See you (soon)!", "sp": "¡nos vemos (pronto)!" }
+        {
+          "en": "Hello / Hi",
+          "sp": "hola"
+        },
+        {
+          "en": "Goodbye / Bye",
+          "sp": "adiós / chau"
+        },
+        {
+          "en": "please",
+          "sp": "por favor"
+        },
+        {
+          "en": "thank you / thanks",
+          "sp": "gracias"
+        },
+        {
+          "en": "What's your name?",
+          "sp": "¿cómo te llamás?"
+        },
+        {
+          "en": "My name is…",
+          "sp": "me llamo…"
+        },
+        {
+          "en": "Nice to meet you",
+          "sp": "mucho gusto / encantado"
+        },
+        {
+          "en": "Where are you from?",
+          "sp": "¿de dónde sos?"
+        },
+        {
+          "en": "How are you?",
+          "sp": "¿cómo estás?"
+        },
+        {
+          "en": "This is…",
+          "sp": "te presento a…"
+        },
+        {
+          "en": "a friend / a teacher",
+          "sp": "un amigo / un profe"
+        },
+        {
+          "en": "See you (soon)!",
+          "sp": "¡nos vemos (pronto)!"
+        }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>escucha</b> 🎧, <b>unir pares</b> 🔗, <b>elegir respuestas</b> 💬 y <b>ordenar palabras</b> 🧩. Hacé el ✓ CHECK en cada uno. ¡Sin traductor!"
     },
@@ -47,89 +103,323 @@
       "title": "★ MEETING NEW PEOPLE",
       "intro": "Hoy varias personas se conocen por primera vez: en la calle, en una escuela y entre amigos. ¡Vamos a practicar!",
       "cast": [
-        { "en": "Ana", "sp": "una estudiante 🇲🇽 (México)" },
-        { "en": "Tom", "sp": "un estudiante 🇨🇦 (Canadá)" },
-        { "en": "Emma", "sp": "la recepcionista 🇬🇧" },
-        { "en": "Leo", "sp": "un estudiante nuevo 🇬🇧" }
+        {
+          "en": "Ana",
+          "sp": "una estudiante 🇲🇽 (México)"
+        },
+        {
+          "en": "Tom",
+          "sp": "un estudiante 🇨🇦 (Canadá)"
+        },
+        {
+          "en": "Emma",
+          "sp": "la recepcionista 🇬🇧"
+        },
+        {
+          "en": "Leo",
+          "sp": "un estudiante nuevo 🇬🇧"
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l1",
+      "type": "flashcards",
+      "id": "fc-greet",
+      "title": "FLASHCARDS · saludos",
+      "intro": "Tocá cada tarjeta para ver el significado. Estúdialas antes de los ejercicios.",
+      "cards": [
+        {
+          "front": "Hello / Hi 👋",
+          "back": "Hola"
+        },
+        {
+          "front": "Good morning ☀️",
+          "back": "Buenos días"
+        },
+        {
+          "front": "Goodbye 👋",
+          "back": "Adiós"
+        },
+        {
+          "front": "Nice to meet you 🤝",
+          "back": "Mucho gusto"
+        },
+        {
+          "front": "How are you? 🙂",
+          "back": "¿Cómo estás?"
+        },
+        {
+          "front": "See you soon! 👀",
+          "back": "¡Nos vemos pronto!"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
       "title": "AUDIO 1 · MEETING SOMEONE NEW",
       "desc": "Ana y Tom se conocen por primera vez. Escucha los nombres y de dónde son.",
-      "src": "a1-l1-1.mp3", "dur": "0:38", "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
+      "src": "a1-l1-1.mp3",
+      "dur": "0:38",
+      "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
       "questions": [
-        { "type": "mcq", "q": "What is the man's name?", "options": ["Tom", "Leo", "Ben"], "answer": 0 },
-        { "type": "mcq", "q": "Where is Ana from?", "options": ["Canada", "Mexico", "Spain"], "answer": 1 },
-        { "type": "trueFalse", "q": "Tom is from Canada.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "What is the man's name?",
+          "options": [
+            "Tom",
+            "Leo",
+            "Ben"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Where is Ana from?",
+          "options": [
+            "Canada",
+            "Mexico",
+            "Spain"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "trueFalse",
+          "q": "Tom is from Canada.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "Introduce yourself: say your name, where you're from, and how you are.", "starter": "Hello, I'm… I'm from… and I'm fine, thank you." },
+      "speaking": {
+        "prompt": "Introduce yourself: say your name, where you're from, and how you are.",
+        "starter": "Hello, I'm… I'm from… and I'm fine, thank you."
+      },
       "transcript": [
-        { "spk": "Ana", "html": "<span class='tg'>Hello!</span> I'm Ana. <span class='tg'>What's your name?</span>" },
-        { "spk": "Tom", "b": true, "html": "<span class='tg'>Hi</span> Ana. <span class='tg'>My name is</span> Tom. <span class='tg'>Nice to meet you.</span>" },
-        { "spk": "Ana", "html": "Nice to meet you too. <span class='tg'>Where are you from</span>, Tom?" },
-        { "spk": "Tom", "b": true, "html": "I'm <span class='tg'>from Canada</span>. And you?" },
-        { "spk": "Ana", "html": "I'm <span class='tg'>from Mexico</span>." },
-        { "spk": "Tom", "b": true, "html": "Cool! <span class='tg'>How are you</span> today?" },
-        { "spk": "Ana", "html": "I'm <span class='tg'>fine, thank you</span>. And you?" },
-        { "spk": "Tom", "b": true, "html": "I'm <span class='tg'>great, thanks!</span>" }
+        {
+          "spk": "Ana",
+          "html": "<span class='tg'>Hello!</span> I'm Ana. <span class='tg'>What's your name?</span>"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "<span class='tg'>Hi</span> Ana. <span class='tg'>My name is</span> Tom. <span class='tg'>Nice to meet you.</span>"
+        },
+        {
+          "spk": "Ana",
+          "html": "Nice to meet you too. <span class='tg'>Where are you from</span>, Tom?"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "I'm <span class='tg'>from Canada</span>. And you?"
+        },
+        {
+          "spk": "Ana",
+          "html": "I'm <span class='tg'>from Mexico</span>."
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "Cool! <span class='tg'>How are you</span> today?"
+        },
+        {
+          "spk": "Ana",
+          "html": "I'm <span class='tg'>fine, thank you</span>. And you?"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "I'm <span class='tg'>great, thanks!</span>"
+        }
       ]
     },
     {
-      "type": "match", "id": "ex-match",
+      "type": "match",
+      "id": "ex-match",
       "title": "UNÍ INGLÉS Y ESPAÑOL",
       "intro": "Tocá una frase en inglés y luego su traducción.",
       "pairs": [
-        { "l": "Hello", "r": "Hola" },
-        { "l": "Goodbye", "r": "Adiós" },
-        { "l": "Nice to meet you", "r": "Mucho gusto" },
-        { "l": "Where are you from?", "r": "¿De dónde sos?" },
-        { "l": "How are you?", "r": "¿Cómo estás?" }
+        {
+          "l": "Hello",
+          "r": "Hola"
+        },
+        {
+          "l": "Goodbye",
+          "r": "Adiós"
+        },
+        {
+          "l": "Nice to meet you",
+          "r": "Mucho gusto"
+        },
+        {
+          "l": "Where are you from?",
+          "r": "¿De dónde sos?"
+        },
+        {
+          "l": "How are you?",
+          "r": "¿Cómo estás?"
+        }
       ]
     },
     {
-      "type": "dialogue", "id": "ex-dlg",
+      "type": "dialogue",
+      "id": "ex-dlg",
       "title": "ELEGÍ LA RESPUESTA",
       "intro": "Tom te hace preguntas. Elegí la mejor respuesta.",
       "lines": [
-        { "spk": "Tom", "html": "Hello! What's your name?" },
-        { "gap": true, "q": "Tu respuesta:", "options": ["My name is Ana.", "I'm from Mexico.", "Goodbye!"], "answer": 0 },
-        { "spk": "Tom", "html": "Where are you from?" },
-        { "gap": true, "q": "Tu respuesta:", "options": ["I'm fine, thanks.", "I'm from Mexico.", "Nice to meet you."], "answer": 1 },
-        { "spk": "Tom", "html": "How are you today?" },
-        { "gap": true, "q": "Tu respuesta:", "options": ["I'm fine, thank you!", "My name is Ana.", "See you!"], "answer": 0 }
+        {
+          "spk": "Tom",
+          "html": "Hello! What's your name?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "My name is Ana.",
+            "I'm from Mexico.",
+            "Goodbye!"
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Tom",
+          "html": "Where are you from?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I'm fine, thanks.",
+            "I'm from Mexico.",
+            "Nice to meet you."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Tom",
+          "html": "How are you today?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I'm fine, thank you!",
+            "My name is Ana.",
+            "See you!"
+          ],
+          "answer": 0
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l2",
+      "type": "listening",
+      "id": "ex-l2",
       "title": "AUDIO 2 · GOOD MORNING!",
       "desc": "Leo llega a una escuela de inglés. Escucha el saludo y dónde está su clase.",
-      "src": "a1-l1-2.mp3", "dur": "0:34", "speakers": "🗣 Emma 🇬🇧 + Leo 🇬🇧",
+      "src": "a1-l1-2.mp3",
+      "dur": "0:34",
+      "speakers": "🗣 Emma 🇬🇧 + Leo 🇬🇧",
       "questions": [
-        { "type": "mcq", "q": "What time of day is it?", "options": ["Morning", "Afternoon", "Night"], "answer": 0 },
-        { "type": "trueFalse", "q": "Leo is a new student.", "answer": true },
-        { "type": "mcq", "q": "Where is Leo's class?", "options": ["On the first floor", "On the second floor", "Outside"], "answer": 1 }
+        {
+          "type": "mcq",
+          "q": "What time of day is it?",
+          "options": [
+            "Morning",
+            "Afternoon",
+            "Night"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "Leo is a new student.",
+          "answer": true
+        },
+        {
+          "type": "mcq",
+          "q": "Where is Leo's class?",
+          "options": [
+            "On the first floor",
+            "On the second floor",
+            "Outside"
+          ],
+          "answer": 1
+        }
       ],
-      "speaking": { "prompt": "Greet someone for the morning and say who you are.", "starter": "Good morning! I'm… I'm a new student." },
+      "speaking": {
+        "prompt": "Greet someone for the morning and say who you are.",
+        "starter": "Good morning! I'm… I'm a new student."
+      },
       "transcript": [
-        { "spk": "Emma", "html": "<span class='tg'>Good morning!</span> Welcome to Star English School." },
-        { "spk": "Leo", "b": true, "html": "Good morning. I'm Leo. I'm a <span class='tg'>new student</span>." },
-        { "spk": "Emma", "html": "<span class='tg'>Nice to meet you</span>, Leo. I'm Emma." },
-        { "spk": "Leo", "b": true, "html": "Nice to meet you, Emma." },
-        { "spk": "Emma", "html": "<span class='tg'>How are you?</span>" },
-        { "spk": "Leo", "b": true, "html": "I'm a little nervous, but I'm okay!" },
-        { "spk": "Emma", "html": "Don't worry. Your class is <span class='tg'>on the second floor</span>. Have a nice day!" },
-        { "spk": "Leo", "b": true, "html": "Thank you. <span class='tg'>Goodbye!</span>" }
+        {
+          "spk": "Emma",
+          "html": "<span class='tg'>Good morning!</span> Welcome to Star English School."
+        },
+        {
+          "spk": "Leo",
+          "b": true,
+          "html": "Good morning. I'm Leo. I'm a <span class='tg'>new student</span>."
+        },
+        {
+          "spk": "Emma",
+          "html": "<span class='tg'>Nice to meet you</span>, Leo. I'm Emma."
+        },
+        {
+          "spk": "Leo",
+          "b": true,
+          "html": "Nice to meet you, Emma."
+        },
+        {
+          "spk": "Emma",
+          "html": "<span class='tg'>How are you?</span>"
+        },
+        {
+          "spk": "Leo",
+          "b": true,
+          "html": "I'm a little nervous, but I'm okay!"
+        },
+        {
+          "spk": "Emma",
+          "html": "Don't worry. Your class is <span class='tg'>on the second floor</span>. Have a nice day!"
+        },
+        {
+          "spk": "Leo",
+          "b": true,
+          "html": "Thank you. <span class='tg'>Goodbye!</span>"
+        }
       ]
     },
     {
-      "type": "order", "id": "ex-order",
+      "type": "order",
+      "id": "ex-order",
       "title": "ORDENÁ LAS PALABRAS",
       "intro": "Tocá las palabras para formar la frase correcta.",
       "items": [
-        { "words": ["My", "name", "is", "Ana"], "answer": "My name is Ana" },
-        { "words": ["I", "am", "from", "Mexico"], "answer": "I am from Mexico" },
-        { "words": ["Nice", "to", "meet", "you"], "answer": "Nice to meet you" }
+        {
+          "words": [
+            "My",
+            "name",
+            "is",
+            "Ana"
+          ],
+          "answer": "My name is Ana"
+        },
+        {
+          "words": [
+            "I",
+            "am",
+            "from",
+            "Mexico"
+          ],
+          "answer": "I am from Mexico"
+        },
+        {
+          "words": [
+            "Nice",
+            "to",
+            "meet",
+            "you"
+          ],
+          "answer": "Nice to meet you"
+        }
       ]
     },
     {
@@ -148,29 +438,88 @@
       "hw": "Escribe tu presentación y graba un audio diciéndola en voz alta. Envíame ambos por WhatsApp y lo corregimos. ¡Cualquier duda la vemos en clase!"
     }
   ],
-
-  "voices": { "ana": "en-US-AriaNeural", "tom": "en-US-GuyNeural", "emma": "en-GB-SoniaNeural", "leo": "en-GB-RyanNeural", "maria": "en-AU-NatashaNeural" },
+  "voices": {
+    "ana": "en-US-AriaNeural",
+    "tom": "en-US-GuyNeural",
+    "emma": "en-GB-SoniaNeural",
+    "leo": "en-GB-RyanNeural",
+    "maria": "en-AU-NatashaNeural"
+  },
   "audioRate": "-12%",
   "audioScripts": [
-    { "file": "a1-l1-1.mp3", "lines": [
-      ["ana", "Hello! I'm Ana. What's your name?"],
-      ["tom", "Hi Ana. My name is Tom. Nice to meet you."],
-      ["ana", "Nice to meet you too. Where are you from, Tom?"],
-      ["tom", "I'm from Canada. And you?"],
-      ["ana", "I'm from Mexico."],
-      ["tom", "Cool! How are you today?"],
-      ["ana", "I'm fine, thank you. And you?"],
-      ["tom", "I'm great, thanks!"]
-    ]},
-    { "file": "a1-l1-2.mp3", "lines": [
-      ["emma", "Good morning! Welcome to Star English School."],
-      ["leo", "Good morning. I'm Leo. I'm a new student."],
-      ["emma", "Nice to meet you, Leo. I'm Emma."],
-      ["leo", "Nice to meet you, Emma."],
-      ["emma", "How are you?"],
-      ["leo", "I'm a little nervous, but I'm okay!"],
-      ["emma", "Don't worry. Your class is on the second floor. Have a nice day!"],
-      ["leo", "Thank you. Goodbye!"]
-    ]}
+    {
+      "file": "a1-l1-1.mp3",
+      "lines": [
+        [
+          "ana",
+          "Hello! I'm Ana. What's your name?"
+        ],
+        [
+          "tom",
+          "Hi Ana. My name is Tom. Nice to meet you."
+        ],
+        [
+          "ana",
+          "Nice to meet you too. Where are you from, Tom?"
+        ],
+        [
+          "tom",
+          "I'm from Canada. And you?"
+        ],
+        [
+          "ana",
+          "I'm from Mexico."
+        ],
+        [
+          "tom",
+          "Cool! How are you today?"
+        ],
+        [
+          "ana",
+          "I'm fine, thank you. And you?"
+        ],
+        [
+          "tom",
+          "I'm great, thanks!"
+        ]
+      ]
+    },
+    {
+      "file": "a1-l1-2.mp3",
+      "lines": [
+        [
+          "emma",
+          "Good morning! Welcome to Star English School."
+        ],
+        [
+          "leo",
+          "Good morning. I'm Leo. I'm a new student."
+        ],
+        [
+          "emma",
+          "Nice to meet you, Leo. I'm Emma."
+        ],
+        [
+          "leo",
+          "Nice to meet you, Emma."
+        ],
+        [
+          "emma",
+          "How are you?"
+        ],
+        [
+          "leo",
+          "I'm a little nervous, but I'm okay!"
+        ],
+        [
+          "emma",
+          "Don't worry. Your class is on the second floor. Have a nice day!"
+        ],
+        [
+          "leo",
+          "Thank you. Goodbye!"
+        ]
+      ]
+    }
   ]
 }

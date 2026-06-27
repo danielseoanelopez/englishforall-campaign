@@ -169,3 +169,26 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .dlg-line { margin-bottom: 7px; font-size: 0.97rem; }
 .dlg-line .spk { color: var(--cyan); font-weight: bold; }
 .dlg-line .spk.b { color: var(--magenta); }
+/* Picture match (emoji vocab) */
+.match-l.pic { display: flex; align-items: center; gap: 12px; }
+.match-l.pic .pic-em { font-size: 1.9rem; line-height: 1; }
+/* Memory game */
+.mem-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
+@media (max-width: 520px) { .mem-grid { grid-template-columns: repeat(3, 1fr); } }
+.mem-card { position: relative; aspect-ratio: 1 / 1; border: 2px solid var(--purple); border-radius: 10px; background: #9d4dff14; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text); font-family: "Share Tech Mono", monospace; transition: border-color 0.15s, box-shadow 0.15s, background 0.15s; }
+.mem-card:hover { box-shadow: 0 0 10px #9d4dff55; }
+.mem-card .mem-q { font-size: 1.5rem; }
+.mem-card .mem-face { display: none; font-size: 1.4rem; text-align: center; padding: 4px; word-break: break-word; }
+.mem-card.flip { background: #00e5ff12; border-color: var(--cyan); }
+.mem-card.flip .mem-q { display: none; } .mem-card.flip .mem-face { display: block; }
+.mem-card.matched { background: #3dffa016; border-color: var(--green); box-shadow: 0 0 10px #3dffa044; cursor: default; }
+.mem-card.matched .mem-q { display: none; } .mem-card.matched .mem-face { display: block; }
+.mem-status { margin-top: 12px; letter-spacing: 1px; color: var(--gold); font-size: 0.9rem; }
+/* Flashcards (flip to study) */
+.fc-deck { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; margin-top: 10px; }
+.flashcard { perspective: 700px; border: none; background: none; padding: 0; height: 92px; cursor: pointer; }
+.fc-inner { position: relative; width: 100%; height: 100%; transition: transform 0.4s; transform-style: preserve-3d; display: block; }
+.flashcard.flipped .fc-inner { transform: rotateY(180deg); }
+.fc-front, .fc-back { position: absolute; inset: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; border-radius: 12px; padding: 8px; text-align: center; font-family: "Share Tech Mono", monospace; }
+.fc-front { background: #10122a; border: 2px solid var(--cyan); color: var(--text); box-shadow: 0 0 10px #00e5ff33; font-size: 1.02rem; }
+.fc-back { background: #1a0f2e; border: 2px solid var(--gold); color: var(--gold); transform: rotateY(180deg); font-size: 0.95rem; }

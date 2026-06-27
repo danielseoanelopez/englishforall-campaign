@@ -1,0 +1,143 @@
+{
+  "level": "A1", "num": 2, "totalLessons": 6, "world": "FIRST CONTACT",
+  "key": "rankup_A1_L2",
+  "title": "PERSONAL INFO<br>NAME · COUNTRY · JOB",
+  "titlePlain": "Personal Info (A1)",
+  "subtitle": "Vocab &amp; to be · A1 · ~40 min",
+  "rankup": "LESSON CLEAR!",
+  "next": { "href": "lesson.html?id=a1-l3", "label": "LESSON 3 ▸ NUMBERS & TIME" },
+  "blocks": [
+    {
+      "type": "grammar", "tag": "to be + datos personales",
+      "title": "📘 TO BE · I am, you are, he is",
+      "intro": "Para dar datos personales usamos el verbo <b style='color:var(--gold)'>to be</b>. Estudia con las tarjetas y practica con los juegos.",
+      "cells": [
+        { "h": "✓ to be", "body": "I <code>am</code> (I'm)<br>he / she / it <code>is</code><br>you / we / they <code>are</code>" },
+        { "h": "❓ Preguntas", "body": "<code>What's your name?</code><br><code>Where are you from?</code><br><code>What's your job?</code>" },
+        { "h": "🎂 Edad", "body": "<code>How old are you?</code><br>I'm <code>twenty</code>.<br><code>a</code> teacher · <code>an</code> engineer" },
+        { "h": "⚠ Watch out", "body": "<span class='x'>I have 20 years</span><br><span class='ok'>I'm 20 (years old)</span><br><span class='es'>edad con 'be', no 'have'</span>" }
+      ],
+      "ladderLabel": "<b style='color:var(--purple)'>Formas cortas</b> — así se habla normalmente:",
+      "ladder": ["I'm", "you're", "he's", "she's", "we're", "they're"],
+      "vocabBtn": "📒 Ver países y trabajos",
+      "vocab": [
+        { "en": "country", "sp": "país" }, { "en": "job", "sp": "trabajo" },
+        { "en": "teacher", "sp": "profesor/a" }, { "en": "doctor", "sp": "médico/a" },
+        { "en": "engineer", "sp": "ingeniero/a" }, { "en": "student", "sp": "estudiante" },
+        { "en": "How old are you?", "sp": "¿cuántos años tenés?" }, { "en": "years old", "sp": "años (de edad)" }
+      ],
+      "note": "<b>Cómo funciona:</b> esta lección tiene <b>tarjetas</b> 🃏, <b>imágenes</b> 🖼️, un <b>juego de memoria</b> 🧠, <b>escucha</b> 🎧 y <b>completar</b> 📝. ✓ CHECK donde lo veas."
+    },
+    {
+      "type": "flashcards", "id": "fc-jobs", "title": "FLASHCARDS · trabajos",
+      "intro": "Tocá cada tarjeta para ver la traducción. Estúdialas antes de los ejercicios.",
+      "cards": [
+        { "front": "teacher 👨‍🏫", "back": "profesor/a" },
+        { "front": "doctor 👨‍⚕️", "back": "médico/a" },
+        { "front": "engineer 👷", "back": "ingeniero/a" },
+        { "front": "student 🧑‍🎓", "back": "estudiante" },
+        { "front": "cook 👨‍🍳", "back": "cocinero/a" },
+        { "front": "nurse 👩‍⚕️", "back": "enfermero/a" }
+      ]
+    },
+    {
+      "type": "picMatch", "id": "ex-pic", "title": "UNÍ TRABAJO E IMAGEN",
+      "intro": "Tocá la imagen y luego el trabajo correcto.",
+      "pairs": [
+        { "img": "👨‍🏫", "word": "teacher" },
+        { "img": "👨‍⚕️", "word": "doctor" },
+        { "img": "👮", "word": "police officer" },
+        { "img": "👨‍🍳", "word": "cook" },
+        { "img": "👷", "word": "builder" },
+        { "img": "🧑‍💻", "word": "programmer" }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l1",
+      "title": "AUDIO 1 · NICE TO MEET YOU",
+      "desc": "Ana y Tom hablan de su país, trabajo y edad.",
+      "src": "a1-l2-1.mp3", "dur": "0:44", "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
+      "questions": [
+        { "type": "mcq", "q": "What is Tom's job?", "options": ["An engineer", "A teacher", "A doctor"], "answer": 0 },
+        { "type": "mcq", "q": "Where is Ana from?", "options": ["Canada", "Mexico", "Brazil"], "answer": 1 },
+        { "type": "trueFalse", "q": "Ana is twenty years old.", "answer": true }
+      ],
+      "speaking": { "prompt": "Give your personal info: name, country, job and age.", "starter": "Hi, I'm… I'm from… I'm a… and I'm … years old." },
+      "transcript": [
+        { "spk": "Ana", "html": "Hi! I'm Ana. I'm <span class='tg'>from Mexico</span>. I'm <span class='tg'>a student</span>." },
+        { "spk": "Tom", "b": true, "html": "Nice to meet you, Ana. I'm Tom. I'm <span class='tg'>from Canada</span>, and I'm <span class='tg'>an engineer</span>." },
+        { "spk": "Ana", "html": "An engineer? Cool! <span class='tg'>How old are you?</span>" },
+        { "spk": "Tom", "b": true, "html": "I'm <span class='tg'>twenty-five</span>. And you?" },
+        { "spk": "Ana", "html": "I'm <span class='tg'>twenty</span>. Where do you work, Tom?" },
+        { "spk": "Tom", "b": true, "html": "I work in a big company. What about you?" },
+        { "spk": "Ana", "html": "I'm a student. I study English at university." }
+      ]
+    },
+    {
+      "type": "gapFill", "id": "ex-gap", "title": "COMPLETÁ CON TO BE",
+      "intro": "Elegí am, is o are.",
+      "items": [
+        { "q": "I ___ from Mexico.", "options": ["am", "is", "are"], "answer": 0 },
+        { "q": "She ___ a teacher.", "options": ["is", "am", "are"], "answer": 0 },
+        { "q": "They ___ from Canada.", "options": ["are", "is", "am"], "answer": 0 },
+        { "q": "He ___ twenty-five years old.", "options": ["is", "are", "am"], "answer": 0 },
+        { "q": "___ you a student?", "options": ["Are", "Is", "Am"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "memory", "id": "mem-countries", "title": "MEMORY · países y banderas",
+      "intro": "Encontrá cada país con su bandera. Tocá dos cartas.",
+      "pairs": [
+        { "a": "Mexico", "b": "🇲🇽" },
+        { "a": "Canada", "b": "🇨🇦" },
+        { "a": "Brazil", "b": "🇧🇷" },
+        { "a": "Spain", "b": "🇪🇸" }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l2",
+      "title": "AUDIO 2 · THIS IS MY FRIEND",
+      "desc": "María presenta a su amigo Leo. Escucha su país, trabajo y edad.",
+      "src": "a1-l2-2.mp3", "dur": "0:19", "speakers": "🗣 María 🇬🇧",
+      "questions": [
+        { "type": "mcq", "q": "What is Leo's job?", "options": ["A teacher", "A doctor", "A cook"], "answer": 1 },
+        { "type": "mcq", "q": "Where is Leo from?", "options": ["Spain", "Mexico", "Brazil"], "answer": 2 },
+        { "type": "trueFalse", "q": "Leo is thirty years old.", "answer": true }
+      ],
+      "speaking": { "prompt": "Introduce a friend: name, country, job, age. Use <i>He's / She's…</i>", "starter": "This is my friend… He's from… He's a… and he's … years old." },
+      "transcript": [
+        { "spk": "María", "html": "Hello! This is my friend Leo. He's <span class='tg'>from Brazil</span>. He's <span class='tg'>a doctor</span>. He's <span class='tg'>thirty</span> years old. He works in a hospital in São Paulo. He speaks Portuguese, English, and a little Spanish. He's very friendly!" }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ ABOUT ME",
+      "intro": "Escribe sobre ti en 4–5 frases:",
+      "checklist": [
+        "Tu nombre: <b>My name is… / I'm…</b>",
+        "Tu país: <b>I'm from…</b>",
+        "Tu trabajo: <b>I'm a / an…</b>",
+        "Tu edad: <b>I'm … years old.</b>"
+      ],
+      "placeholder": "My name is...",
+      "example": "My name is Sofia. I'm from Argentina. I'm a student and I work in a café. I'm twenty years old. I speak Spanish and a little English. Nice to meet you!",
+      "hw": "Escribe tu presentación y graba un audio diciéndola. Envíame ambos por WhatsApp."
+    }
+  ],
+  "voices": { "ana": "en-US-AriaNeural", "tom": "en-US-GuyNeural", "maria": "en-GB-SoniaNeural" },
+  "audioRate": "-12%",
+  "audioScripts": [
+    { "file": "a1-l2-1.mp3", "lines": [
+      ["ana", "Hi! I'm Ana. I'm from Mexico. I'm a student."],
+      ["tom", "Nice to meet you, Ana. I'm Tom. I'm from Canada, and I'm an engineer."],
+      ["ana", "An engineer? Cool! How old are you?"],
+      ["tom", "I'm twenty-five. And you?"],
+      ["ana", "I'm twenty. Where do you work, Tom?"],
+      ["tom", "I work in a big company. What about you?"],
+      ["ana", "I'm a student. I study English at university."]
+    ]},
+    { "file": "a1-l2-2.mp3", "lines": [
+      ["maria", "Hello! This is my friend Leo. He's from Brazil. He's a doctor. He's thirty years old. He works in a hospital in Sao Paulo. He speaks Portuguese, English, and a little Spanish. He's very friendly!"]
+    ]}
+  ]
+}
