@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
 <title>English for All &middot; Comparatives &amp; Describing (A2)</title>
 <meta name="description" content="Lección A2 de English for All: comparativos y describir (bigger / more expensive), con 4 audios.">
 <meta property="og:type" content="website">
@@ -592,6 +593,14 @@ function toggleReveal(id, btn) {
 
 // ===== Scoring =====
 const EXERCISES = ["ex-l1", "ex-l2", "ex-l3", "ex-l4"];
+// ===== Shuffle answer positions (anti memorize-the-slot) =====
+(function shuffleOptions(){
+  document.querySelectorAll(".q[data-correct]").forEach(function(q){
+    var opts = Array.prototype.slice.call(q.querySelectorAll(".option"));
+    for (var i = opts.length - 1; i > 0; i--){ var j = Math.floor(Math.random()*(i+1)); var t=opts[i]; opts[i]=opts[j]; opts[j]=t; }
+    opts.forEach(function(o){ q.appendChild(o); });
+  });
+})();
 const scores = {}; // id -> {correct, total}
 
 function checkExercise(exId) {
