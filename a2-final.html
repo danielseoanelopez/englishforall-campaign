@@ -123,7 +123,7 @@
 
     <div class="card purple" id="writingCard">
       <div class="panel-title">✍️ PARTE E · WRITING (obligatoria)</div>
-      <p>Escribe un email corto (<b>40–60 palabras</b>) a un compañero de trabajo: cuéntale cómo es un día normal en tu trabajo y pregúntale por una reunión de esta semana.</p>
+      <p>Escribe un email corto (<b>40–60 palabras</b>) a un compañero: contale qué <b>hiciste la semana pasada</b> en el trabajo y qué <b>vas a hacer la próxima semana</b>.</p>
       <textarea class="writing-area" id="writingBox" placeholder="Hi ...," oninput="updateWordCount()"></textarea>
       <div class="wc" id="wordCount">0 palabras (mínimo 40)</div>
     </div>
@@ -134,6 +134,8 @@
       <ul class="checklist">
         <li>Tell me about your typical day. <span class="es">(presente simple)</span></li>
         <li>What did you do last weekend? <span class="es">(pasado simple)</span></li>
+        <li>Ask me for two favours at work. <span class="es">(pedidos: could you...?)</span></li>
+        <li>Compare two phones or two jobs. <span class="es">(comparativos)</span></li>
         <li>What are your plans for next month? <span class="es">(going to)</span></li>
       </ul>
     </div>
@@ -177,29 +179,29 @@ const FORM_ENDPOINT = "https://formspree.io/f/mbdewbrp";
 function copyDiscord(el){var r=el.innerHTML;var done=function(){el.innerHTML='<i class="fa-solid fa-check"></i>'+(el.classList.contains("btn")?" ¡COPIADO!":"");setTimeout(function(){el.innerHTML=r;},1500);};try{navigator.clipboard.writeText(SOCIAL.discord).then(done,done);}catch(e){done();}return false;}
 
 const SECTIONS = { A:"PARTE A · GRAMÁTICA Y USO", B:"PARTE B · VOCABULARIO", C:"PARTE C · LISTENING (escucha y responde)", D:"PARTE D · READING" };
-const READING = "Hi Tom,\nThanks for your email. The English course starts on Monday, the 5th of March. Classes are on Mondays and Wednesdays, from 6 to 7:30 pm. The price is $80 per month, and the first class is free. Please bring a notebook. If you have any questions, call me at 555-1234.\nBest, Laura";
+const READING = "Hi Sam,\nThanks for your message! Last week we finished the new project. It was hard work, but I am happy with the result. The new app is faster and easier than the old one.\nNext week we are going to launch it. On Monday, I am meeting the client at ten to show her the app. We usually start at nine, but that day we are starting earlier.\nOne more thing: could you help me with the slides? I am not very good at design!\nSee you soon,\nMarcos";
 
 const QUESTIONS = [
-  { sec:"A", q:"Look! It ____ outside.", o:["rains","is raining","rain"], a:1, fb:"'Look!' = ahora mismo → presente continuo: is raining." },
+  { sec:"A", q:"My sister ____ in a hospital.", o:["work","works","working"], a:1, fb:"Present simple, 3ra persona: she works (+s)." },
+  { sec:"A", q:"She ____ late for work.", o:["is never","never is","be never"], a:0, fb:"El adverbio de frecuencia va despues de 'to be': 'is never'." },
   { sec:"A", q:"Yesterday I ____ a great film.", o:["see","saw","seen"], a:1, fb:"Pasado simple de 'see' = saw." },
-  { sec:"A", q:"They ____ at home last night.", o:["was","were","is"], a:1, fb:"'They' → were." },
-  { sec:"A", q:"Next summer we ____ travel to Spain.", o:["go","are going to","went"], a:1, fb:"Planes futuros → be going to." },
+  { sec:"A", q:"They ____ at home last night.", o:["was","were","is"], a:1, fb:"'They' -> were (pasado de 'to be')." },
+  { sec:"A", q:"We ____ to work yesterday - it was a holiday.", o:["didn't go","don't go","didn't went"], a:0, fb:"Negativo en pasado: didn't + verbo base = didn't go." },
+  { sec:"A", q:"____ you help me with this, please?", o:["Could","Do","Are"], a:0, fb:"Pedido cortes: 'Could you...?' + verbo base." },
+  { sec:"A", q:"You look tired. ____ I make you a coffee?", o:["Shall","Do","Am"], a:0, fb:"Ofrecimiento: 'Shall I...?'." },
   { sec:"A", q:"This book is ____ than the other one.", o:["interesting","more interesting","most interesting"], a:1, fb:"Adjetivo largo: 'more interesting than'." },
-  { sec:"A", q:"There aren't ____ apples in the fridge.", o:["some","any","a"], a:1, fb:"En frases negativas se usa 'any'." },
-  { sec:"A", q:"How ____ people came to the party?", o:["much","many","lot"], a:1, fb:"'people' es contable → many." },
-  { sec:"A", q:"You ____ wear a helmet here. It's the law.", o:["don't have to","have to","shouldn't"], a:1, fb:"Obligación (ley) → 'have to'." },
-  { sec:"A", q:"She ____ late for work.", o:["is never","never is","be never"], a:0, fb:"El adverbio de frecuencia va después de 'to be': 'is never'." },
-  { sec:"A", q:"I love ____ to music.", o:["listen","listening","to listening"], a:1, fb:"love/like + -ing → 'listening'." },
+  { sec:"A", q:"Her English is ____ than mine.", o:["gooder","better","more good"], a:1, fb:"Comparativo irregular: good -> better." },
+  { sec:"A", q:"I can't meet on Friday. I ____ a client at three.", o:["meet","am meeting","met"], a:1, fb:"Cita fija futura -> present continuous: 'I'm meeting...'." },
   { sec:"B", q:"Every morning I ____ a shower.", o:["make","take","do"], a:1, fb:"'take a shower' (no make/do)." },
-  { sec:"B", q:"How much does this jacket ____?", o:["cost","price","pay"], a:0, fb:"'How much does it cost?'" },
-  { sec:"B", q:"I have a ____ with my boss at 3 pm.", o:["meeting","meet","reunion"], a:0, fb:"reunión = 'meeting' ('reunion' es un reencuentro)." },
-  { sec:"C", q:"What time is the meeting now?", o:["At seven","At eight","At nine"], a:0, fb:"Dice 'at seven, not eight'.", audio:"a2f1.mp3" },
-  { sec:"C", q:"What does the customer order?", o:["A coffee and a sandwich","Tea and cake","Only a coffee"], a:0, fb:"Pide un café y un sándwich de queso.", audio:"a2f2.mp3" },
-  { sec:"C", q:"What is happening?", o:["The supermarket is closing soon","There is a sale","It is opening"], a:0, fb:"'will close in fifteen minutes'.", audio:"a2f3.mp3" },
-  { sec:"C", q:"What does she do after work?", o:["Has lunch","Goes to the gym","Starts work"], a:1, fb:"'After work, I go to the gym'.", audio:"a2f4.mp3" },
-  { sec:"D", q:"When does the course start?", o:["Monday, March 5th","Wednesday","At 6 pm"], a:0, fb:"'starts on Monday, the 5th of March'." },
-  { sec:"D", q:"How much does it cost?", o:["It's free","$80 per month","$15"], a:1, fb:"'$80 per month' (la primera clase es gratis)." },
-  { sec:"D", q:"What should Tom bring?", o:["A notebook","A laptop","Money"], a:0, fb:"'Please bring a notebook'." }
+  { sec:"B", q:"We work from home, so we ____ at nine and check our messages.", o:["log on","wake up","hang up"], a:0, fb:"Trabajo remoto: 'log on' = conectarse." },
+  { sec:"B", q:"Could you ____ the file to your email?", o:["attach","cost","book"], a:0, fb:"'attach a file' = adjuntar un archivo." },
+  { sec:"C", q:"What did the person do in the afternoon?", o:["Fixed two problems on the website","Had three meetings","Wrote a new report"], a:0, fb:"'In the afternoon, I fixed two problems on the website.'", audio:"a2f1.mp3" },
+  { sec:"C", q:"What does Emma ask Marcos to do?", o:["Send the report today","Call her tomorrow","Book a meeting room"], a:0, fb:"'Could you send me the report today?'", audio:"a2f2.mp3" },
+  { sec:"C", q:"Why is the black laptop the better choice for work?", o:["It is faster and more reliable","It is cheaper","It is lighter"], a:0, fb:"'The black one is faster and more reliable.'", audio:"a2f3.mp3" },
+  { sec:"C", q:"What is the person going to do on Friday?", o:["Relax at home","Fly to Madrid","Meet a client"], a:0, fb:"'On Friday I'm not working, so I'm going to relax at home.'", audio:"a2f4.mp3" },
+  { sec:"D", q:"When did Marcos finish the new project?", o:["Last week","Next week","On Monday"], a:0, fb:"'Last week we finished the new project.'" },
+  { sec:"D", q:"How is the new app compared to the old one?", o:["Faster and easier","Slower but cheaper","Bigger and heavier"], a:0, fb:"'The new app is faster and easier than the old one.'" },
+  { sec:"D", q:"What does Marcos ask Sam to do?", o:["Help with the slides","Call the client","Book a restaurant"], a:0, fb:"'Could you help me with the slides?'" }
 ];
 
 function shuffled(n){ const a=[...Array(n).keys()]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
