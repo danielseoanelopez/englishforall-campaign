@@ -1,0 +1,135 @@
+{
+  "level": "B1", "num": 6, "totalLessons": 6, "world": "HOLDING YOUR OWN",
+  "key": "rankup_B1_L6",
+  "title": "LOOKING<br>AHEAD",
+  "titlePlain": "Looking Ahead — Future Forms (B1)",
+  "subtitle": "Grammar &amp; Listening · B1 · ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "next": { "href": "b1-final.html", "label": "👑 BOSS ▸ THE BIG PITCH" },
+  "blocks": [
+    {
+      "type": "grammar", "tag": "futuro",
+      "title": "📘 WILL vs GOING TO vs -ING",
+      "intro": "El inglés tiene tres futuros y cada uno dice algo distinto: <b style='color:var(--gold)'>will</b> (decisión ahora / promesa / predicción), <b style='color:var(--gold)'>going to</b> (plan / evidencia) y <b style='color:var(--gold)'>present continuous</b> (cita ya fijada).",
+      "cells": [
+        { "h": "⚡ will", "body": "Decisión del momento, promesa, predicción:<br><span class='ok'>I<b>'ll</b> get it!</span> <span class='es'>(ahora)</span><br><span class='ok'>I<b>'ll</b> send it tonight, promise.</span>" },
+        { "h": "🎯 going to", "body": "Plan / intención, o evidencia visible:<br><span class='ok'>I'm <b>going to</b> improve the checkout.</span><br><span class='ok'>Look at those clouds — it's <b>going to</b> rain.</span>" },
+        { "h": "📅 present continuous", "body": "Cita / arreglo ya fijado (con fecha):<br><span class='ok'>I'm <b>meeting</b> the designers on Monday.</span>" },
+        { "h": "⏰ by + tiempo", "body": "<code>by Friday</code> = antes del/para el viernes<br><code>by then</code> = para entonces<br><span class='ok'>I'll have it done <b>by</b> the fifteenth.</span>" },
+        { "h": "⚠ Watch out", "body": "<span class='x'>I will meet the designers on Monday at 9.</span> <span class='es'>(cita fijada → continuous)</span><br><span class='ok'>I'm meeting the designers on Monday at 9.</span>" }
+      ],
+      "ladderLabel": "<b style='color:var(--purple)'>¿Qué tan planeado está?</b> — de improvisado a agendado:",
+      "ladder": ["I'll get it! (ahora)", "I think it'll rain (predicción)", "I'm going to learn Python (intención)", "It's going to rain — look! (evidencia)", "I'm meeting Ana at 9 (agendado)"],
+      "vocabBtn": "📒 Ver vocabulario de planificación",
+      "vocab": [
+        { "en": "roadmap", "sp": "hoja de ruta" }, { "en": "quarter", "sp": "trimestre" },
+        { "en": "goal", "sp": "objetivo / meta" }, { "en": "forecast", "sp": "pronóstico" },
+        { "en": "to expand", "sp": "expandirse" }, { "en": "growth", "sp": "crecimiento" },
+        { "en": "pitch", "sp": "presentación (para convencer)" }, { "en": "to present", "sp": "presentar" },
+        { "en": "milestone", "sp": "hito" }, { "en": "by the end of…", "sp": "para el final de…" }
+      ],
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>memory</b> 🧠, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>unir</b> 🔗. Hacé el ✓ CHECK en cada ejercicio. Al terminar… te espera el <b>BOSS</b> 👑."
+    },
+    {
+      "type": "story", "tag": "el próximo trimestre",
+      "title": "★ THE ROADMAP",
+      "intro": "Fin de trimestre. Priya reúne al equipo para planear el que viene: fase dos, metas, fechas. Y al final de la reunión, una noticia grande: David tiene planes de expansión… y alguien va a tener que presentar <b style='color:var(--gold)'>the big pitch</b>. 👑",
+      "cast": [
+        { "en": "Priya", "sp": "quiere el roadmap 🇮🇳" },
+        { "en": "Sofia", "sp": "lidera la fase dos 🇬🇧" },
+        { "en": "Marcos", "sp": "promete fechas 🇲🇽" }
+      ]
+    },
+    {
+      "type": "memory", "id": "mem-future",
+      "title": "MEMORY · forma y uso",
+      "intro": "Encontrá cada forma de futuro con su uso. Tocá dos cartas.",
+      "pairs": [
+        { "a": "I'll get it!", "b": "decisión de ahora" },
+        { "a": "I'm going to…", "b": "plan / intención" },
+        { "a": "I'm meeting him at 9", "b": "cita ya fijada" },
+        { "a": "It's going to rain!", "b": "evidencia visible" },
+        { "a": "by Friday", "b": "para el viernes" },
+        { "a": "by then", "b": "para entonces" }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l1",
+      "title": "AUDIO 1 · THE PLANNING CALL",
+      "desc": "Priya, Sofia y Marcos planean el próximo trimestre. Fechas, promesas y predicciones — los tres futuros en acción.",
+      "src": "b1-l6-1.mp3", "dur": "1:10", "speakers": "🗣 Priya 🇮🇳 + Sofia 🇬🇧 + Marcos 🇲🇽",
+      "questions": [
+        { "type": "mcq", "q": "When are they launching the mobile app?", "options": ["In October", "This week", "Next year"], "answer": 0 },
+        { "type": "mcq", "q": "What is Marcos going to improve first?", "options": ["The checkout speed", "The logo", "The office wifi"], "answer": 0 },
+        { "type": "mcq", "q": "What is Sofia doing on Monday?", "options": ["Meeting the designers", "Flying to India", "Writing the report"], "answer": 0 },
+        { "type": "trueFalse", "q": "Priya thinks GreenMarket's sales will double next year.", "answer": true }
+      ],
+      "speaking": { "prompt": "Describe the team's roadmap in 3 sentences. Use <i>going to</i>, present continuous, and <i>by + time</i>.", "starter": "They're launching the app in October. Marcos is going to… and by the end of the month…" },
+      "transcript": [
+        { "spk": "Priya", "html": "Okay team, last meeting of the quarter. Let's look ahead — what's the roadmap?" },
+        { "spk": "Sofia", "html": "Phase two. We<span class='tg'>'re launching</span> the mobile app <b>in October</b>. It's all arranged — I<span class='tg'>'m meeting</span> the designers <b>on Monday</b> to start." },
+        { "spk": "Priya", "html": "Good. Marcos, what about you?" },
+        { "spk": "Marcos", "b": true, "html": "First, I<span class='tg'>'m going to</span> improve the checkout speed — that's my main goal. <span class='tg'>By the end of the month</span>, the page will load in under two seconds." },
+        { "spk": "Priya", "html": "Under two seconds? <span class='tg'>Will</span> you really finish <span class='tg'>by then</span>?" },
+        { "spk": "Marcos", "b": true, "html": "Don't worry — I<span class='tg'>'ll have it done</span> by the fifteenth. I promise." },
+        { "spk": "Priya", "html": "Then I'm happy. And here's my forecast: with the app and a faster checkout, I think GreenMarket's sales <span class='tg'>will double</span> next year." },
+        { "spk": "Sofia", "html": "Double? I<span class='tg'>'ll hold</span> you to that prediction, Priya!" },
+        { "spk": "Priya", "html": "Ha! Let's see. Right — great quarter, everyone. And Marcos… check your messages after this. I have news." }
+      ]
+    },
+    {
+      "type": "gapFill", "id": "ex-gap", "title": "WILL, GOING TO o -ING",
+      "intro": "Elegí el futuro correcto según la situación.",
+      "items": [
+        { "q": "Look at those clouds — it ___ rain.", "options": ["is going to", "will", "rains"], "answer": 0 },
+        { "q": "I promise I ___ send the report tonight.", "options": ["will", "would", "did"], "answer": 0 },
+        { "q": "We ___ launching phase two in October.", "options": ["are", "will", "going"], "answer": 0 },
+        { "q": "She ___ to study English in Canada next year.", "options": ["is going", "will", "goes"], "answer": 0 },
+        { "q": "I'll have the report ready ___ Friday.", "options": ["by", "until", "at"], "answer": 0 },
+        { "q": "The phone's ringing! — Don't worry, I ___ get it.", "options": ["'ll", "'m going to", "was going to"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "match", "id": "ex-match", "title": "UNÍ LAS EXPRESIONES DE TIEMPO",
+      "intro": "Tocá la expresión en inglés y luego su significado.",
+      "pairs": [
+        { "l": "by Friday", "r": "para el viernes" },
+        { "l": "by the end of the year", "r": "para fin de año" },
+        { "l": "the day after tomorrow", "r": "pasado mañana" },
+        { "l": "in two weeks", "r": "en dos semanas" },
+        { "l": "next quarter", "r": "el próximo trimestre" },
+        { "l": "from Monday on", "r": "a partir del lunes" }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l2",
+      "title": "AUDIO 2 · THE MESSAGE 👑",
+      "desc": "El mensaje que Priya le dejó a Marcos después de la reunión. Una noticia grande… y un desafío más grande.",
+      "src": "b1-l6-2.mp3", "dur": "0:52", "speakers": "🗣 Priya 🇮🇳",
+      "questions": [
+        { "type": "mcq", "q": "What is David going to do?", "options": ["Expand to three new countries", "Cancel the project", "Sell his company"], "answer": 0 },
+        { "type": "mcq", "q": "What is Marcos doing next Friday?", "options": ["Presenting the expansion plan to David", "Going on holiday", "Meeting the designers"], "answer": 0 },
+        { "type": "trueFalse", "q": "Priya believes Marcos will do a great job.", "answer": true }
+      ],
+      "speaking": { "prompt": "You are Marcos. Answer Priya's message: accept the challenge and say TWO things you're going to prepare.", "starter": "Hi Priya, thanks for trusting me! I'll do it. First, I'm going to prepare… and by Thursday I'll…" },
+      "transcript": [
+        { "spk": "Priya", "html": "Marcos, it's Priya. Here's the news. David called me this morning — GreenMarket <span class='tg'>is going to expand</span>. Three new countries next year. Spain, Portugal… and Mexico. It's huge. He<span class='tg'>'s visiting</span> our office <b>next Friday</b>, and he wants to see the full plan. And here's the thing: I'm not <span class='tg'>going to</span> present it. <b>You are.</b> You've grown so much this quarter — you run meetings, you negotiate, you push back with data. You're ready. So, next Friday, <b>the big pitch</b>. Prepare well, get some rest before it… and don't worry. I know you<span class='tg'>'ll be</span> brilliant. Talk soon." }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ MY ROADMAP",
+      "intro": "Escribí TU roadmap personal para los próximos 3 meses (inglés, trabajo, vida — 6–8 frases):",
+      "checklist": [
+        "2 planes con <b>going to</b> (I'm going to…)",
+        "1 cita ya fijada con <b>present continuous</b> + fecha (I'm …ing on…)",
+        "1 promesa o decisión con <b>will</b> (I'll…)",
+        "2 fechas límite con <b>by</b> (by August, by the end of…)",
+        "1 predicción (I think… will…)"
+      ],
+      "placeholder": "Next quarter is going to be big for me. First, I'm going to…",
+      "example": "Next quarter is going to be big for me. First, I'm going to finish the B1 course — by September, I'll speak with much more confidence. I'm also going to apply for remote jobs in August. I'm meeting my teacher on Monday to practise interviews. I'll practise speaking every single day, I promise! By the end of the year, I think my English will open new doors for me.",
+      "hw": "Escribí tu roadmap y grabate leyéndolo. Enviame texto y audio por WhatsApp. ¡Y preparate: el BOSS te espera! 👑"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "level": "B1", "num": 1, "totalLessons": 6, "world": "HOLDING YOUR OWN",
+  "key": "rankup_B1_L1",
+  "title": "PRESENT PERFECT<br>WHAT I'VE DONE",
+  "titlePlain": "Present Perfect — What I've Done (B1)",
+  "subtitle": "Grammar &amp; Listening · B1 · ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "next": { "href": "lesson.html?id=b1-l2", "label": "LESSON 2 ▸ RUNNING A MEETING" },
+  "blocks": [
+    {
+      "type": "grammar", "tag": "present perfect",
+      "title": "📘 PRESENT PERFECT vs PAST SIMPLE",
+      "intro": "Usamos el <b style='color:var(--gold)'>present perfect</b> (have/has + participio) para acciones con resultado <i>ahora</i> o sin tiempo específico. El <b style='color:var(--gold)'>past simple</b> es para tiempo terminado y concreto. Repasa y luego practica.",
+      "cells": [
+        { "h": "✓ Form", "body": "I / you / we / they <code>have worked</code><br>he / she / it <code>has worked</code><br><span class='es'>have/has + participio (worked, done, gone)</span>" },
+        { "h": "🔗 vs Past Simple", "body": "<span class='ok'>I've finished it.</span> <span class='es'>(resultado ahora)</span><br><span class='ok'>I finished it yesterday.</span> <span class='es'>(tiempo terminado)</span>" },
+        { "h": "⏳ for / since", "body": "<code>for</code> + período: <i>for three months</i><br><code>since</code> + punto: <i>since March</i>" },
+        { "h": "✓ already / yet / just", "body": "<code>already</code> = ya <span class='es'>(afirmativo)</span><br><code>yet</code> = todavía <span class='es'>(? y negativo)</span><br><code>just</code> = recién / acabo de" },
+        { "h": "⚠ Watch out", "body": "<span class='ok'>Have you finished yet?</span><br><span class='x'>Did you finish yet?</span><br><span class='ok'>I've worked here for a year.</span> <span class='es'>(no 'since a year')</span>" }
+      ],
+      "ladderLabel": "<b style='color:var(--purple)'>Palabras señal</b> del present perfect — te avisan que uses have/has + participio:",
+      "ladder": ["just — recién", "already — ya", "yet — todavía", "ever / never", "for + período", "since + punto"],
+      "vocabBtn": "📒 Ver vocabulario del review",
+      "vocab": [
+        { "en": "performance review", "sp": "evaluación de desempeño" }, { "en": "achievement", "sp": "logro" },
+        { "en": "deadline", "sp": "fecha límite" }, { "en": "to launch / ship", "sp": "lanzar (un producto)" },
+        { "en": "to deploy", "sp": "desplegar / publicar código" }, { "en": "milestone", "sp": "hito" },
+        { "en": "feedback", "sp": "retroalimentación" }, { "en": "on track", "sp": "en buen camino" },
+        { "en": "behind schedule", "sp": "atrasado" }, { "en": "bug", "sp": "error de software" }
+      ],
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> 🃏, <b>escucha</b> 🎧 y <b>completar</b> 📝. Hacé el ✓ CHECK en cada ejercicio."
+    },
+    {
+      "type": "story", "tag": "la nueva jefa",
+      "title": "★ THE REVIEW",
+      "intro": "Priya, la nueva <b style='color:var(--magenta)'>Project Director</b>, llega para el nuevo trimestre. Hoy tiene la primera evaluación de Marcos: quiere saber qué ha logrado y qué falta. Practica el present perfect y después escucha.",
+      "cast": [
+        { "en": "Priya", "sp": "la nueva <b style='color:var(--magenta)'>Project Director</b> 🇮🇳" },
+        { "en": "Marcos", "sp": "el developer 🇲🇽" }
+      ]
+    },
+    {
+      "type": "flashcards", "id": "ex-fc",
+      "title": "PAST PARTICIPLES · tocá para girar",
+      "intro": "Repasa los participios irregulares — los necesitas para el present perfect (have/has + participio).",
+      "cards": [
+        { "front": "do", "back": "done" },
+        { "front": "go", "back": "gone / been" },
+        { "front": "write", "back": "written" },
+        { "front": "send", "back": "sent" },
+        { "front": "make", "back": "made" },
+        { "front": "take", "back": "taken" },
+        { "front": "begin", "back": "begun" },
+        { "front": "speak", "back": "spoken" },
+        { "front": "see", "back": "seen" },
+        { "front": "give", "back": "given" }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l1",
+      "title": "AUDIO 1 · THE PERFORMANCE REVIEW",
+      "desc": "Priya revisa el trabajo de Marcos este trimestre. ¿Qué ha terminado y qué no?",
+      "src": "b1-l1-1.mp3", "dur": "1:10", "speakers": "🗣 Priya 🇮🇳 + Marcos 🇲🇽",
+      "questions": [
+        { "type": "mcq", "q": "How long has Marcos worked on the GreenMarket site?", "options": ["For three months", "Since last week", "For three years"], "answer": 0 },
+        { "type": "mcq", "q": "What hasn't Marcos done yet?", "options": ["Tested the payment system", "Sent the client an update", "Finished the design"], "answer": 0 },
+        { "type": "trueFalse", "q": "Marcos has already deployed the site to production.", "answer": false }
+      ],
+      "speaking": { "prompt": "Summarize Marcos's progress. Use present perfect with <i>already</i> and <i>yet</i>.", "starter": "He's already finished the design, but he hasn't tested the payments yet…" },
+      "transcript": [
+        { "spk": "Priya", "html": "Hi Marcos, thanks for joining. This is your first review with me, so — tell me, what <span class='tg'>have</span> you <span class='tg'>achieved</span> this quarter?" },
+        { "spk": "Marcos", "b": true, "html": "Hi Priya. Well, I've <span class='tg'>worked</span> on the GreenMarket site <span class='tg'>for three months</span> now, and I've <span class='tg'>already finished</span> the main design." },
+        { "spk": "Priya", "html": "That's good. <span class='tg'>Have</span> you launched it <span class='tg'>yet</span>?" },
+        { "spk": "Marcos", "b": true, "html": "Not yet. I've <span class='tg'>just deployed</span> it to the test server, but I <span class='tg'>haven't tested</span> the payment system <span class='tg'>yet</span>." },
+        { "spk": "Priya", "html": "I see. And how long <span class='tg'>have</span> you <span class='tg'>been</span> on the team?" },
+        { "spk": "Marcos", "b": true, "html": "I've been here <span class='tg'>since</span> last March — so about a year." },
+        { "spk": "Priya", "html": "Right. <span class='tg'>Have</span> you spoken to the client about the delay?" },
+        { "spk": "Marcos", "b": true, "html": "Yes, I've <span class='tg'>already sent</span> David an update this morning. He's happy with the progress." },
+        { "spk": "Priya", "html": "Good. You've <span class='tg'>done</span> a lot, but the payments are critical. When can you finish them?" },
+        { "spk": "Marcos", "b": true, "html": "I've nearly finished — I just need two more days." },
+        { "spk": "Priya", "html": "Perfect. Let's review again on Friday." }
+      ]
+    },
+    {
+      "type": "gapFill", "id": "ex-gap", "title": "PRESENT PERFECT o PAST SIMPLE",
+      "intro": "Elegí la forma correcta. Pensá: ¿tiempo terminado y específico (past simple) o resultado/experiencia ahora (present perfect)?",
+      "items": [
+        { "q": "I ___ the report yesterday.", "options": ["finished", "have finished", "finish"], "answer": 0 },
+        { "q": "She ___ on this team since March.", "options": ["has worked", "worked", "works"], "answer": 0 },
+        { "q": "We ___ to the client last week.", "options": ["spoke", "have spoken", "speak"], "answer": 0 },
+        { "q": "He hasn't tested the payments ___.", "options": ["yet", "already", "ever"], "answer": 0 },
+        { "q": "I've ___ sent David the update.", "options": ["already", "yet", "since"], "answer": 0 },
+        { "q": "They ___ for this company for ten years.", "options": ["have worked", "worked", "work"], "answer": 0 }
+      ]
+    },
+    {
+      "type": "listening", "id": "ex-l2",
+      "title": "AUDIO 2 · THE VOICEMAIL",
+      "desc": "Marcos le deja un mensaje de voz a Sofia con las novedades del proyecto.",
+      "src": "b1-l1-2.mp3", "dur": "0:32", "speakers": "🗣 Marcos 🇲🇽",
+      "questions": [
+        { "type": "mcq", "q": "What has Marcos just finished?", "options": ["The payment tests", "The main design", "The performance review"], "answer": 0 },
+        { "type": "mcq", "q": "What hasn't he done yet?", "options": ["Deployed to production", "Fixed the bugs", "Tested the payments"], "answer": 0 },
+        { "type": "trueFalse", "q": "Marcos has already told Priya the news.", "answer": false }
+      ],
+      "speaking": { "prompt": "Leave a similar voicemail: say what you've finished and what you haven't done <i>yet</i>.", "starter": "Hi, it's… I've just finished…, but I haven't … yet." },
+      "transcript": [
+        { "spk": "Marcos", "b": true, "html": "Hi Sofia, it's Marcos. Quick update on the GreenMarket site. Good news — I've <span class='tg'>just finished</span> the payment tests, and everything works! I've <span class='tg'>also fixed</span> the two bugs we talked about. I <span class='tg'>haven't deployed</span> it to production <span class='tg'>yet</span>, because I want you to check it first. Oh, and I <span class='tg'>haven't told</span> Priya <span class='tg'>yet</span> — could you mention it in the standup? I've <span class='tg'>had</span> a really busy week, but we're finally <span class='tg'>on track</span>. Call me back when you have a minute. Thanks!" }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ WHAT I'VE ACHIEVED",
+      "intro": "Escribe 5–6 frases sobre lo que has logrado este mes (en el trabajo, los estudios o en casa):",
+      "checklist": [
+        "Usa <b>present perfect</b> (I have + participio): <i>I've finished…, I've learned…</i>",
+        "Una frase con <b>already</b> y una con <b>yet</b> (I've already…, I haven't … yet)",
+        "Usa <b>for</b> y <b>since</b> (for two weeks / since January)",
+        "Contrasta con <b>past simple</b> + tiempo específico (<i>Last week I…</i>)"
+      ],
+      "placeholder": "This month I've…",
+      "example": "This month I've achieved a lot. I've finished two big projects and I've learned a new tool at work. I've worked on the same team since January, so for about six months now. I've already updated my CV, but I haven't applied for any new jobs yet. Last week I gave my first presentation in English — I was nervous, but it went well!",
+      "hw": "Escribe tu párrafo y grábate leyéndolo en voz alta. Envíame el texto y el audio por WhatsApp y lo corregimos juntos."
+    }
+  ]
+}
