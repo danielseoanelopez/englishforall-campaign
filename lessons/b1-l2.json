@@ -1,143 +1,430 @@
 {
-  "level": "B1", "num": 2, "totalLessons": 6, "world": "HOLDING YOUR OWN",
+  "level": "B1",
+  "num": 2,
+  "totalLessons": 6,
+  "world": "HOLDING YOUR OWN",
   "key": "rankup_B1_L2",
   "title": "RUNNING<br>A MEETING",
   "titlePlain": "Running a Meeting (B1)",
   "subtitle": "Meetings &amp; Listening · B1 · ~45 min",
   "rankup": "LESSON CLEAR!",
-  "next": { "href": "lesson.html?id=b1-l3", "label": "LESSON 3 ▸ TELLING THE STORY" },
+  "next": {
+    "href": "lesson.html?id=b1-l3",
+    "label": "LESSON 3 ▸ TELLING THE STORY"
+  },
   "blocks": [
     {
-      "type": "grammar", "tag": "meetings",
+      "type": "grammar",
+      "tag": "meetings",
       "title": "📘 RUNNING A MEETING · frases clave",
       "intro": "En B1, no solo participas en reuniones: las <b style='color:var(--gold)'>diriges</b>. Aprende a estructurar, estar de acuerdo o discrepar, e interrumpir con educación. Repasa y luego practica.",
       "cells": [
-        { "h": "🎤 Estructurar", "body": "<code>Let's get started.</code><br><code>Let's move on to…</code><br><code>Let's wrap up.</code> <span class='es'>(cerrar)</span>" },
-        { "h": "👍 De acuerdo", "body": "<code>I completely agree.</code><br><code>Good point.</code><br><code>You're right.</code>" },
-        { "h": "👎 Discrepar (con tacto)", "body": "<code>I see your point, but…</code><br><code>I'm not sure I agree.</code><br><code>I'd say…</code>" },
-        { "h": "✋ Interrumpir / aclarar", "body": "<code>Sorry to jump in, but…</code><br><code>Can I add something?</code><br><code>Could you clarify that?</code>" },
-        { "h": "⚠ Watch out", "body": "<span class='x'>You're wrong.</span> <span class='es'>(brusco)</span><br><span class='ok'>I see your point, but I'm not sure that works.</span>" }
+        {
+          "h": "🎤 Estructurar",
+          "body": "<code>Let's get started.</code><br><code>Let's move on to…</code><br><code>Let's wrap up.</code> <span class='es'>(cerrar)</span>"
+        },
+        {
+          "h": "👍 De acuerdo",
+          "body": "<code>I completely agree.</code><br><code>Good point.</code><br><code>You're right.</code>"
+        },
+        {
+          "h": "👎 Discrepar (con tacto)",
+          "body": "<code>I see your point, but…</code><br><code>I'm not sure I agree.</code><br><code>I'd say…</code>"
+        },
+        {
+          "h": "✋ Interrumpir / aclarar",
+          "body": "<code>Sorry to jump in, but…</code><br><code>Can I add something?</code><br><code>Could you clarify that?</code>"
+        },
+        {
+          "h": "⚠ Watch out",
+          "body": "<span class='x'>You're wrong.</span> <span class='es'>(brusco)</span><br><span class='ok'>I see your point, but I'm not sure that works.</span>"
+        }
       ],
       "ladderLabel": "<b style='color:var(--purple)'>Escala de diplomacia</b> — de brusco (✗) a profesional (✓). En el trabajo, movete a la derecha:",
-      "ladder": ["No.", "I don't think so.", "I'm not sure I agree.", "I see your point, but…", "That's a good idea, though maybe…"],
+      "ladder": [
+        "No.",
+        "I don't think so.",
+        "I'm not sure I agree.",
+        "I see your point, but…",
+        "That's a good idea, though maybe…"
+      ],
       "vocabBtn": "📒 Ver vocabulario de reuniones",
       "vocab": [
-        { "en": "agenda", "sp": "orden del día" }, { "en": "minutes", "sp": "acta / notas" },
-        { "en": "standup", "sp": "reunión breve diaria" }, { "en": "to chair a meeting", "sp": "dirigir una reunión" },
-        { "en": "action item", "sp": "tarea pendiente" }, { "en": "next steps", "sp": "próximos pasos" },
-        { "en": "to follow up", "sp": "dar seguimiento" }, { "en": "to wrap up", "sp": "terminar / cerrar" },
-        { "en": "on the same page", "sp": "de acuerdo / alineados" }, { "en": "deadline", "sp": "fecha límite" }
+        {
+          "en": "Agenda",
+          "sp": "orden del día"
+        },
+        {
+          "en": "Minutes",
+          "sp": "acta / notas"
+        },
+        {
+          "en": "Standup",
+          "sp": "reunión breve diaria"
+        },
+        {
+          "en": "To chair a meeting",
+          "sp": "dirigir una reunión"
+        },
+        {
+          "en": "Action item",
+          "sp": "tarea pendiente"
+        },
+        {
+          "en": "Next steps",
+          "sp": "próximos pasos"
+        },
+        {
+          "en": "To follow up",
+          "sp": "dar seguimiento"
+        },
+        {
+          "en": "To wrap up",
+          "sp": "terminar / cerrar"
+        },
+        {
+          "en": "On the same page",
+          "sp": "de acuerdo / alineados"
+        },
+        {
+          "en": "Deadline",
+          "sp": "fecha límite"
+        }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>unir</b> 🔗, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Hacé el ✓ CHECK en cada ejercicio."
     },
     {
-      "type": "story", "tag": "el primer standup",
+      "type": "story",
+      "tag": "el primer standup",
       "title": "★ MARCOS LEADS THE STANDUP",
       "intro": "Sofia confía en Marcos para dirigir el standup diario por primera vez. Pero Priya está mirando, y la agenda se complica: el cliente pide un cambio de último minuto. Marcos tiene que mantener el control… con diplomacia.",
       "cast": [
-        { "en": "Marcos", "sp": "hoy <b style='color:var(--magenta)'>dirige el standup</b> 🇲🇽" },
-        { "en": "Sofia", "sp": "la team lead 🇬🇧" },
-        { "en": "Priya", "sp": "la Project Director 🇮🇳" }
+        {
+          "en": "Marcos",
+          "sp": "hoy <b style='color:var(--magenta)'>dirige el standup</b> 🇲🇽"
+        },
+        {
+          "en": "Sofia",
+          "sp": "la team lead 🇬🇧"
+        },
+        {
+          "en": "Priya",
+          "sp": "la Project Director 🇮🇳"
+        }
       ]
     },
     {
-      "type": "match", "id": "ex-match", "title": "UNÍ LA FRASE CON SU FUNCIÓN",
+      "type": "match",
+      "id": "ex-match",
+      "title": "UNÍ LA FRASE CON SU FUNCIÓN",
       "intro": "Tocá la frase en inglés y luego su función en una reunión.",
       "pairs": [
-        { "l": "Let's get started.", "r": "empezar la reunión" },
-        { "l": "Sorry to jump in, but…", "r": "interrumpir con cortesía" },
-        { "l": "I see your point, but…", "r": "discrepar con diplomacia" },
-        { "l": "Could you clarify that?", "r": "pedir aclaración" },
-        { "l": "Let's move on to…", "r": "cambiar de tema" },
-        { "l": "Let's wrap up.", "r": "terminar / cerrar" }
+        {
+          "l": "Let's get started.",
+          "r": "empezar la reunión"
+        },
+        {
+          "l": "Sorry to jump in, but…",
+          "r": "interrumpir con cortesía"
+        },
+        {
+          "l": "I see your point, but…",
+          "r": "discrepar con diplomacia"
+        },
+        {
+          "l": "Could you clarify that?",
+          "r": "pedir aclaración"
+        },
+        {
+          "l": "Let's move on to…",
+          "r": "cambiar de tema"
+        },
+        {
+          "l": "Let's wrap up.",
+          "r": "terminar / cerrar"
+        }
       ]
     },
     {
-      "type": "dialogue", "id": "ex-dlg", "title": "ELEGÍ LA RESPUESTA DIPLOMÁTICA",
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "ELEGÍ LA RESPUESTA DIPLOMÁTICA",
       "intro": "Estás en una reunión. Elegí la opción más profesional y educada.",
       "lines": [
-        { "spk": "Priya", "html": "We're behind schedule. I think we should cancel the new feature." },
-        { "gap": true, "q": "Discrepás, pero con tacto:", "options": [
-          "I see your point, but maybe we could delay it instead of cancelling?",
-          "No, that's a bad idea.",
-          "Whatever you say."
-        ], "answer": 0 },
-        { "spk": "Sofia", "b": true, "html": "Marcos, can you summarise where we are with GreenMarket?" },
-        { "gap": true, "q": "Tomás la palabra y resumís:", "options": [
-          "Sure. So far, we've finished the design and we're testing the payments.",
-          "I don't know, ask David.",
-          "It was last week."
-        ], "answer": 0 },
-        { "spk": "Colleague", "html": "…and back in 2019 we also tried a different layout, and then we changed the colours, and…" },
-        { "gap": true, "q": "Querés interrumpir con cortesía:", "options": [
-          "Sorry to jump in, but can we focus on the next steps?",
-          "Stop talking, please.",
-          "Yes, I went there yesterday."
-        ], "answer": 0 },
-        { "spk": "Priya", "html": "So, are we all agreed on the new plan?" },
-        { "gap": true, "q": "Confirmás y cerrás la reunión:", "options": [
-          "Yes, I think we're all on the same page. Let's wrap up.",
-          "I'm from Mexico.",
-          "She is a teacher."
-        ], "answer": 0 }
+        {
+          "spk": "Priya",
+          "html": "We're behind schedule. I think we should cancel the new feature."
+        },
+        {
+          "gap": true,
+          "q": "Discrepás, pero con tacto:",
+          "options": [
+            "I see your point, but maybe we could delay it instead of cancelling?",
+            "No, that's a bad idea.",
+            "Whatever you say."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Sofia",
+          "b": true,
+          "html": "Marcos, can you summarise where we are with GreenMarket?"
+        },
+        {
+          "gap": true,
+          "q": "Tomás la palabra y resumís:",
+          "options": [
+            "Sure. So far, we've finished the design and we're testing the payments.",
+            "I don't know, ask David.",
+            "It was last week."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Colleague",
+          "html": "…and back in 2019 we also tried a different layout, and then we changed the colours, and…"
+        },
+        {
+          "gap": true,
+          "q": "Querés interrumpir con cortesía:",
+          "options": [
+            "Sorry to jump in, but can we focus on the next steps?",
+            "Stop talking, please.",
+            "Yes, I went there yesterday."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Priya",
+          "html": "So, are we all agreed on the new plan?"
+        },
+        {
+          "gap": true,
+          "q": "Confirmás y cerrás la reunión:",
+          "options": [
+            "Yes, I think we're all on the same page. Let's wrap up.",
+            "I'm from Mexico.",
+            "She is a teacher."
+          ],
+          "answer": 0
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l1",
+      "type": "listening",
+      "id": "ex-l1",
       "title": "AUDIO 1 · THE STANDUP",
       "desc": "Marcos dirige el standup. El cliente quiere una función nueva. ¿Cómo lo maneja Marcos?",
-      "src": "b1-l2-1.mp3", "dur": "1:19", "speakers": "🗣 Marcos 🇲🇽 + Sofia 🇬🇧 + Priya 🇮🇳",
+      "src": "b1-l2-1.mp3",
+      "dur": "1:19",
+      "speakers": "🗣 Marcos 🇲🇽 + Sofia 🇬🇧 + Priya 🇮🇳",
       "questions": [
-        { "type": "mcq", "q": "What does the client want to add?", "options": ["A live chat", "A payment system", "A new logo"], "answer": 0 },
-        { "type": "mcq", "q": "What does Marcos suggest about the new feature?", "options": ["Plan it for the next phase", "Cancel the whole project", "Add it immediately today"], "answer": 0 },
-        { "type": "trueFalse", "q": "They agree to launch the site on Friday.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "What does the client want to add?",
+          "options": [
+            "A live chat",
+            "A payment system",
+            "A new logo"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does Marcos suggest about the new feature?",
+          "options": [
+            "Plan it for the next phase",
+            "Cancel the whole project",
+            "Add it immediately today"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "They agree to launch the site on Friday.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "How did Marcos disagree with Priya politely? Give the phrase he used and what he suggested.", "starter": "He said, 'I see your point, but…', and he suggested they…" },
+      "speaking": {
+        "prompt": "How did Marcos disagree with Priya politely? Give the phrase he used and what he suggested.",
+        "starter": "He said, 'I see your point, but…', and he suggested they…"
+      },
       "transcript": [
-        { "spk": "Marcos", "b": true, "html": "Okay everyone, <span class='tg'>let's get started</span>. This is a quick standup, so let's keep it short. Sofia, could you start with GreenMarket?" },
-        { "spk": "Sofia", "html": "Sure. We've finished the design, and Marcos has just tested the payments. So we're on track for Friday." },
-        { "spk": "Marcos", "b": true, "html": "Thanks, Sofia. <span class='tg'>Let's move on to</span> the next steps. Priya, you wanted to add something?" },
-        { "spk": "Priya", "html": "Yes. The client has asked for a new feature — a live chat. I think we should add it this week." },
-        { "spk": "Marcos", "b": true, "html": "<span class='tg'>I see your point, but</span> if we add it now, we might miss the deadline. Could we plan it for the next phase?" },
-        { "spk": "Priya", "html": "Hmm. But the client really wants it." },
-        { "spk": "Sofia", "html": "<span class='tg'>Sorry to jump in</span> — what if we show them a demo first, and add the chat next week?" },
-        { "spk": "Priya", "html": "That's a good idea. Let's do that." },
-        { "spk": "Marcos", "b": true, "html": "Great. So, to <span class='tg'>confirm the next steps</span>: we launch on Friday, and we start the live chat on Monday. Are we all agreed?" },
-        { "spk": "Priya", "html": "Agreed." },
-        { "spk": "Marcos", "b": true, "html": "Perfect. <span class='tg'>Let's wrap up</span>. Thanks, everyone." }
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Okay everyone, <span class='tg'>let's get started</span>. This is a quick standup, so let's keep it short. Sofia, could you start with GreenMarket?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "Sure. We've finished the design, and Marcos has just tested the payments. So we're on track for Friday."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Thanks, Sofia. <span class='tg'>Let's move on to</span> the next steps. Priya, you wanted to add something?"
+        },
+        {
+          "spk": "Priya",
+          "html": "Yes. The client has asked for a new feature — a live chat. I think we should add it this week."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>I see your point, but</span> if we add it now, we might miss the deadline. Could we plan it for the next phase?"
+        },
+        {
+          "spk": "Priya",
+          "html": "Hmm. But the client really wants it."
+        },
+        {
+          "spk": "Sofia",
+          "html": "<span class='tg'>Sorry to jump in</span> — what if we show them a demo first, and add the chat next week?"
+        },
+        {
+          "spk": "Priya",
+          "html": "That's a good idea. Let's do that."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Great. So, to <span class='tg'>confirm the next steps</span>: we launch on Friday, and we start the live chat on Monday. Are we all agreed?"
+        },
+        {
+          "spk": "Priya",
+          "html": "Agreed."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Perfect. <span class='tg'>Let's wrap up</span>. Thanks, everyone."
+        }
       ]
     },
     {
-      "type": "order", "id": "ex-order", "title": "ORDENÁ LA FRASE DIPLOMÁTICA",
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENÁ LA FRASE DIPLOMÁTICA",
       "intro": "Tocá las palabras para formar frases educadas de reunión.",
       "items": [
-        { "words": ["I", "see", "your", "point", "but"], "answer": "I see your point but" },
-        { "words": ["Sorry", "to", "jump", "in"], "answer": "Sorry to jump in" },
-        { "words": ["Could", "we", "focus", "on", "the", "next", "steps"], "answer": "Could we focus on the next steps" }
+        {
+          "words": [
+            "I",
+            "see",
+            "your",
+            "point",
+            "but"
+          ],
+          "answer": "I see your point but"
+        },
+        {
+          "words": [
+            "Sorry",
+            "to",
+            "jump",
+            "in"
+          ],
+          "answer": "Sorry to jump in"
+        },
+        {
+          "words": [
+            "Could",
+            "we",
+            "focus",
+            "on",
+            "the",
+            "next",
+            "steps"
+          ],
+          "answer": "Could we focus on the next steps"
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l2",
+      "type": "listening",
+      "id": "ex-l2",
       "title": "AUDIO 2 · THE CLIENT SYNC",
       "desc": "Marcos llama a David. El cliente presiona por la función nueva. Marcos gestiona sus expectativas.",
-      "src": "b1-l2-2.mp3", "dur": "1:08", "speakers": "🗣 Marcos 🇲🇽 + David 🇬🇧",
+      "src": "b1-l2-2.mp3",
+      "dur": "1:08",
+      "speakers": "🗣 Marcos 🇲🇽 + David 🇬🇧",
       "questions": [
-        { "type": "mcq", "q": "When does Marcos suggest launching the live chat?", "options": ["Next Monday", "This Friday", "Never"], "answer": 0 },
-        { "type": "mcq", "q": "Why doesn't Marcos want to add the chat by Friday?", "options": ["It might cause bugs", "He is on holiday", "The client didn't pay"], "answer": 0 },
-        { "type": "trueFalse", "q": "David agrees with Marcos's suggestion in the end.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "When does Marcos suggest launching the live chat?",
+          "options": [
+            "Next Monday",
+            "This Friday",
+            "Never"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why doesn't Marcos want to add the chat by Friday?",
+          "options": [
+            "It might cause bugs",
+            "He is on holiday",
+            "The client didn't pay"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "David agrees with Marcos's suggestion in the end.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "How did Marcos manage David's expectations? Use <i>I understand…</i> and <i>I'd suggest…</i>.", "starter": "He said he understood it was important, but he'd suggest they launch the main site first and…" },
+      "speaking": {
+        "prompt": "How did Marcos manage David's expectations? Use <i>I understand…</i> and <i>I'd suggest…</i>.",
+        "starter": "He said he understood it was important, but he'd suggest they launch the main site first and…"
+      },
       "transcript": [
-        { "spk": "Marcos", "b": true, "html": "Hi David, thanks for joining. I wanted to update you on the project and the new live chat." },
-        { "spk": "David", "html": "Hi Marcos. Yes, the chat is really important for us. Can you add it by Friday?" },
-        { "spk": "Marcos", "b": true, "html": "<span class='tg'>I understand</span> it's important. The thing is, if we add it by Friday, we might rush it and cause bugs." },
-        { "spk": "David", "html": "I see. So what do you suggest?" },
-        { "spk": "Marcos", "b": true, "html": "<span class='tg'>I'd suggest</span> we launch the main site on Friday as planned, and add the live chat next week. That way it's stable." },
-        { "spk": "David", "html": "Hmm. Can you guarantee the chat for next Monday?" },
-        { "spk": "Marcos", "b": true, "html": "Yes, I'm confident we can have it ready <span class='tg'>by Monday</span>. We'll test it properly first." },
-        { "spk": "David", "html": "Okay, that sounds reasonable. Let's do that." },
-        { "spk": "Marcos", "b": true, "html": "Great. I'll send you a summary email with the <span class='tg'>next steps</span>. Thanks for understanding, David." },
-        { "spk": "David", "html": "No problem. Thanks, Marcos." }
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Hi David, thanks for joining. I wanted to update you on the project and the new live chat."
+        },
+        {
+          "spk": "David",
+          "html": "Hi Marcos. Yes, the chat is really important for us. Can you add it by Friday?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>I understand</span> it's important. The thing is, if we add it by Friday, we might rush it and cause bugs."
+        },
+        {
+          "spk": "David",
+          "html": "I see. So what do you suggest?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>I'd suggest</span> we launch the main site on Friday as planned, and add the live chat next week. That way it's stable."
+        },
+        {
+          "spk": "David",
+          "html": "Hmm. Can you guarantee the chat for next Monday?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Yes, I'm confident we can have it ready <span class='tg'>by Monday</span>. We'll test it properly first."
+        },
+        {
+          "spk": "David",
+          "html": "Okay, that sounds reasonable. Let's do that."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Great. I'll send you a summary email with the <span class='tg'>next steps</span>. Thanks for understanding, David."
+        },
+        {
+          "spk": "David",
+          "html": "No problem. Thanks, Marcos."
+        }
       ]
     },
     {

@@ -1,103 +1,330 @@
 {
-  "level": "A1", "num": 3, "totalLessons": 6, "world": "FIRST CONTACT",
+  "level": "A1",
+  "num": 3,
+  "totalLessons": 6,
+  "world": "FIRST CONTACT",
   "key": "rankup_A1_L3",
   "title": "NUMBERS, DAYS<br>&amp; THE TIME",
   "titlePlain": "Numbers, Days & Telling Time (A1)",
   "subtitle": "Listening · numbers &amp; time · A1 · ~40 min",
   "rankup": "LESSON CLEAR!",
-  "next": { "href": "lesson.html?id=a1-l4", "label": "LESSON 4 ▸ TO BE / HAVE GOT" },
+  "next": {
+    "href": "lesson.html?id=a1-l4",
+    "label": "LESSON 4 ▸ TO BE / HAVE GOT"
+  },
   "blocks": [
     {
-      "type": "grammar", "tag": "números, días y la hora",
+      "type": "grammar",
+      "tag": "números, días y la hora",
       "title": "📘 NUMBERS · DAYS · TIME",
       "intro": "Aprende los números, los días y cómo decir la hora. Estudia con las tarjetas y practica.",
       "cells": [
-        { "h": "🔢 Numbers", "body": "1 one · 2 two · 3 three<br>10 ten · 20 twenty<br>13 thir<code>teen</code> · 30 thir<code>ty</code>" },
-        { "h": "🕐 Time", "body": "3:00 = <code>three o'clock</code><br>3:30 = <code>half past three</code><br>3:15 = <code>quarter past three</code>" },
-        { "h": "📅 at / on / in", "body": "<code>at</code> + hora: at six<br><code>on</code> + día: on Monday<br><code>in</code> + mes: in June" },
-        { "h": "⚠ Watch out", "body": "<span class='x'>in Monday</span> → <span class='ok'>on Monday</span><br><span class='x'>on six o'clock</span> → <span class='ok'>at six</span>" }
+        {
+          "h": "🔢 Numbers",
+          "body": "1 one · 2 two · 3 three<br>10 ten · 20 twenty<br>13 thir<code>teen</code> · 30 thir<code>ty</code>"
+        },
+        {
+          "h": "🕐 Time",
+          "body": "3:00 = <code>three o'clock</code><br>3:30 = <code>half past three</code><br>3:15 = <code>quarter past three</code>"
+        },
+        {
+          "h": "📅 at / on / in",
+          "body": "<code>at</code> + hora: at six<br><code>on</code> + día: on Monday<br><code>in</code> + mes: in June"
+        },
+        {
+          "h": "⚠ Watch out",
+          "body": "<span class='x'>in Monday</span> → <span class='ok'>on Monday</span><br><span class='x'>on six o'clock</span> → <span class='ok'>at six</span>"
+        }
       ],
       "ladderLabel": "<b style='color:var(--purple)'>Los días</b> de la semana:",
-      "ladder": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "ladder": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
       "vocabBtn": "📒 Ver números y tiempo",
       "vocab": [
-        { "en": "o'clock", "sp": "en punto" }, { "en": "half past", "sp": "y media" },
-        { "en": "quarter past", "sp": "y cuarto" }, { "en": "quarter to", "sp": "menos cuarto" },
-        { "en": "today / tomorrow", "sp": "hoy / mañana" }, { "en": "week / weekend", "sp": "semana / fin de semana" },
-        { "en": "What time is it?", "sp": "¿qué hora es?" }, { "en": "phone number", "sp": "número de teléfono" }
+        {
+          "en": "O'clock",
+          "sp": "en punto"
+        },
+        {
+          "en": "Half past",
+          "sp": "y media"
+        },
+        {
+          "en": "Quarter past",
+          "sp": "y cuarto"
+        },
+        {
+          "en": "Quarter to",
+          "sp": "menos cuarto"
+        },
+        {
+          "en": "Today / Tomorrow",
+          "sp": "hoy / mañana"
+        },
+        {
+          "en": "Week / Weekend",
+          "sp": "semana / fin de semana"
+        },
+        {
+          "en": "What time is it?",
+          "sp": "¿qué hora es?"
+        },
+        {
+          "en": "Phone number",
+          "sp": "número de teléfono"
+        }
       ],
       "note": "<b>Cómo funciona:</b> <b>tarjetas</b> 🃏, <b>unir horas</b> 🔗, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>memoria</b> 🧠. ✓ CHECK donde lo veas."
     },
     {
-      "type": "flashcards", "id": "fc-days", "title": "FLASHCARDS · días de la semana",
+      "type": "flashcards",
+      "id": "fc-days",
+      "title": "FLASHCARDS · días de la semana",
       "intro": "Tocá cada tarjeta para ver el día en español.",
       "cards": [
-        { "front": "Monday", "back": "lunes" }, { "front": "Tuesday", "back": "martes" },
-        { "front": "Wednesday", "back": "miércoles" }, { "front": "Thursday", "back": "jueves" },
-        { "front": "Friday", "back": "viernes" }, { "front": "weekend", "back": "fin de semana" }
+        {
+          "front": "Monday",
+          "back": "lunes"
+        },
+        {
+          "front": "Tuesday",
+          "back": "martes"
+        },
+        {
+          "front": "Wednesday",
+          "back": "miércoles"
+        },
+        {
+          "front": "Thursday",
+          "back": "jueves"
+        },
+        {
+          "front": "Friday",
+          "back": "viernes"
+        },
+        {
+          "front": "weekend",
+          "back": "fin de semana"
+        }
       ]
     },
     {
-      "type": "match", "id": "ex-time", "title": "UNÍ LA HORA",
+      "type": "match",
+      "id": "ex-time",
+      "title": "UNÍ LA HORA",
       "intro": "Tocá el reloj y luego cómo se dice.",
       "pairs": [
-        { "l": "3:00", "r": "three o'clock" },
-        { "l": "3:30", "r": "half past three" },
-        { "l": "3:15", "r": "quarter past three" },
-        { "l": "3:45", "r": "quarter to four" }
+        {
+          "l": "3:00",
+          "r": "three o'clock"
+        },
+        {
+          "l": "3:30",
+          "r": "half past three"
+        },
+        {
+          "l": "3:15",
+          "r": "quarter past three"
+        },
+        {
+          "l": "3:45",
+          "r": "quarter to four"
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l1",
+      "type": "listening",
+      "id": "ex-l1",
       "title": "AUDIO 1 · PHONE & CLASS TIMES",
       "desc": "Ana y Tom hablan de un número y de horarios de clase.",
-      "src": "a1-l3-1.mp3", "dur": "0:28", "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
+      "src": "a1-l3-1.mp3",
+      "dur": "0:28",
+      "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
       "questions": [
-        { "type": "mcq", "q": "What is Tom's phone number?", "options": ["555-1234", "555-4321", "555-1243"], "answer": 0 },
-        { "type": "mcq", "q": "What time is the Monday class?", "options": ["At four o'clock", "At five o'clock", "At nine o'clock"], "answer": 0 },
-        { "type": "trueFalse", "q": "There is also a class on Wednesday.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "What is Tom's phone number?",
+          "options": [
+            "555-1234",
+            "555-4321",
+            "555-1243"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What time is the Monday class?",
+          "options": [
+            "At four o'clock",
+            "At five o'clock",
+            "At nine o'clock"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "There is also a class on Wednesday.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "Say a phone number and a class time. Use <i>at</i> and <i>on</i>.", "starter": "My number is… and my class is at … on …" },
+      "speaking": {
+        "prompt": "Say a phone number and a class time. Use <i>at</i> and <i>on</i>.",
+        "starter": "My number is… and my class is at … on …"
+      },
       "transcript": [
-        { "spk": "Ana", "html": "Hi Tom! <span class='tg'>What's your phone number?</span>" },
-        { "spk": "Tom", "b": true, "html": "It's five, five, five, one, two, three, four." },
-        { "spk": "Ana", "html": "Thanks. And <span class='tg'>what time</span> is our English class?" },
-        { "spk": "Tom", "b": true, "html": "It's <span class='tg'>at four o'clock</span> <span class='tg'>on Monday</span>. And there's another <span class='tg'>at half past five</span> <span class='tg'>on Wednesday</span>." },
-        { "spk": "Ana", "html": "OK. See you on Monday at four!" }
+        {
+          "spk": "Ana",
+          "html": "Hi Tom! <span class='tg'>What's your phone number?</span>"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "It's five, five, five, one, two, three, four."
+        },
+        {
+          "spk": "Ana",
+          "html": "Thanks. And <span class='tg'>what time</span> is our English class?"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "It's <span class='tg'>at four o'clock</span> <span class='tg'>on Monday</span>. And there's another <span class='tg'>at half past five</span> <span class='tg'>on Wednesday</span>."
+        },
+        {
+          "spk": "Ana",
+          "html": "OK. See you on Monday at four!"
+        }
       ]
     },
     {
-      "type": "gapFill", "id": "ex-gap", "title": "at / on / in",
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "at / on / in",
       "intro": "Elegí la preposición de tiempo correcta.",
       "items": [
-        { "q": "The class is ___ four o'clock.", "options": ["at", "on", "in"], "answer": 0 },
-        { "q": "I don't work ___ Sunday.", "options": ["on", "at", "in"], "answer": 0 },
-        { "q": "My birthday is ___ June.", "options": ["in", "on", "at"], "answer": 0 },
-        { "q": "We have lunch ___ one o'clock.", "options": ["at", "on", "in"], "answer": 0 },
-        { "q": "The meeting is ___ Monday.", "options": ["on", "at", "in"], "answer": 0 }
+        {
+          "q": "The class is ___ four o'clock.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I don't work ___ Sunday.",
+          "options": [
+            "on",
+            "at",
+            "in"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "My birthday is ___ June.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We have lunch ___ one o'clock.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The meeting is ___ Monday.",
+          "options": [
+            "on",
+            "at",
+            "in"
+          ],
+          "answer": 0
+        }
       ]
     },
     {
-      "type": "memory", "id": "mem-num", "title": "MEMORY · número y palabra",
+      "type": "memory",
+      "id": "mem-num",
+      "title": "MEMORY · número y palabra",
       "intro": "Encontrá cada número con su palabra. Tocá dos cartas.",
       "pairs": [
-        { "a": "1", "b": "one" }, { "a": "5", "b": "five" },
-        { "a": "10", "b": "ten" }, { "a": "20", "b": "twenty" }
+        {
+          "a": "1",
+          "b": "one"
+        },
+        {
+          "a": "5",
+          "b": "five"
+        },
+        {
+          "a": "10",
+          "b": "ten"
+        },
+        {
+          "a": "20",
+          "b": "twenty"
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l2",
+      "type": "listening",
+      "id": "ex-l2",
       "title": "AUDIO 2 · MY DAY",
       "desc": "Marcos cuenta los horarios de su día. Escucha las horas.",
-      "src": "a1-l3-2.mp3", "dur": "0:21", "speakers": "🗣 Marcos 🇲🇽",
+      "src": "a1-l3-2.mp3",
+      "dur": "0:21",
+      "speakers": "🗣 Marcos 🇲🇽",
       "questions": [
-        { "type": "mcq", "q": "What time does Marcos have breakfast?", "options": ["At seven", "At half past seven", "At nine"], "answer": 1 },
-        { "type": "mcq", "q": "What time is his English class?", "options": ["At nine o'clock", "At one o'clock", "At five o'clock"], "answer": 0 },
-        { "type": "trueFalse", "q": "Marcos works on Saturday.", "answer": false }
+        {
+          "type": "mcq",
+          "q": "What time does Marcos have breakfast?",
+          "options": [
+            "At seven",
+            "At half past seven",
+            "At nine"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What time is his English class?",
+          "options": [
+            "At nine o'clock",
+            "At one o'clock",
+            "At five o'clock"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "Marcos works on Saturday.",
+          "answer": false
+        }
       ],
-      "speaking": { "prompt": "Say three times in your day. Use <i>at</i> + the time.", "starter": "I get up at… I have lunch at… I finish at…" },
+      "speaking": {
+        "prompt": "Say three times in your day. Use <i>at</i> + the time.",
+        "starter": "I get up at… I have lunch at… I finish at…"
+      },
       "transcript": [
-        { "spk": "Marcos", "b": true, "html": "Here is my day. I get up <span class='tg'>at seven o'clock</span>. I have breakfast <span class='tg'>at half past seven</span>. My English class is <span class='tg'>at nine</span>. I have lunch <span class='tg'>at one o'clock</span>. I finish work <span class='tg'>at five</span>. <span class='tg'>On Saturday and Sunday</span>, I don't work — I relax!" }
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Here is my day. I get up <span class='tg'>at seven o'clock</span>. I have breakfast <span class='tg'>at half past seven</span>. My English class is <span class='tg'>at nine</span>. I have lunch <span class='tg'>at one o'clock</span>. I finish work <span class='tg'>at five</span>. <span class='tg'>On Saturday and Sunday</span>, I don't work — I relax!"
+        }
       ]
     },
     {
@@ -115,18 +342,46 @@
       "hw": "Escribe tu horario y mándamelo por WhatsApp."
     }
   ],
-  "voices": { "ana": "en-US-AriaNeural", "tom": "en-US-GuyNeural", "marcos": "en-US-GuyNeural" },
+  "voices": {
+    "ana": "en-US-AriaNeural",
+    "tom": "en-US-GuyNeural",
+    "marcos": "en-US-GuyNeural"
+  },
   "audioRate": "-12%",
   "audioScripts": [
-    { "file": "a1-l3-1.mp3", "lines": [
-      ["ana", "Hi Tom! What's your phone number?"],
-      ["tom", "It's five, five, five, one, two, three, four."],
-      ["ana", "Thanks. And what time is our English class?"],
-      ["tom", "It's at four o'clock on Monday. And there's another at half past five on Wednesday."],
-      ["ana", "OK. See you on Monday at four!"]
-    ]},
-    { "file": "a1-l3-2.mp3", "lines": [
-      ["marcos", "Here is my day. I get up at seven o'clock. I have breakfast at half past seven. My English class is at nine. I have lunch at one o'clock. I finish work at five. On Saturday and Sunday, I don't work, I relax!"]
-    ]}
+    {
+      "file": "a1-l3-1.mp3",
+      "lines": [
+        [
+          "ana",
+          "Hi Tom! What's your phone number?"
+        ],
+        [
+          "tom",
+          "It's five, five, five, one, two, three, four."
+        ],
+        [
+          "ana",
+          "Thanks. And what time is our English class?"
+        ],
+        [
+          "tom",
+          "It's at four o'clock on Monday. And there's another at half past five on Wednesday."
+        ],
+        [
+          "ana",
+          "OK. See you on Monday at four!"
+        ]
+      ]
+    },
+    {
+      "file": "a1-l3-2.mp3",
+      "lines": [
+        [
+          "marcos",
+          "Here is my day. I get up at seven o'clock. I have breakfast at half past seven. My English class is at nine. I have lunch at one o'clock. I finish work at five. On Saturday and Sunday, I don't work, I relax!"
+        ]
+      ]
+    }
   ]
 }

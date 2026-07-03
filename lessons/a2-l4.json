@@ -1,108 +1,337 @@
 {
-  "level": "A2", "num": 4, "totalLessons": 6, "world": "ON THE JOB",
+  "level": "A2",
+  "num": 4,
+  "totalLessons": 6,
+  "world": "ON THE JOB",
   "key": "rankup_A2_L4",
   "title": "CAN YOU HELP?<br>REQUESTS &amp; OFFERS",
   "titlePlain": "Requests & Offers (A2)",
   "subtitle": "Speaking &amp; Listening · A2 · ~45 min",
   "rankup": "LESSON CLEAR!",
-  "next": { "href": "lesson.html?id=a2-l5", "label": "LESSON 5 ▸ COMPARATIVES" },
+  "next": {
+    "href": "lesson.html?id=a2-l5",
+    "label": "LESSON 5 ▸ COMPARATIVES"
+  },
   "blocks": [
     {
-      "type": "grammar", "tag": "requests & offers",
+      "type": "grammar",
+      "tag": "requests & offers",
       "title": "📘 PEDIR & OFRECER · can / could / would",
       "intro": "En el trabajo pedimos y ofrecemos cosas todo el día. Usamos <b style='color:var(--gold)'>modales</b> + verbo base. Repasa y practica.",
       "cells": [
-        { "h": "↗ Requests (pedir)", "body": "<code>Can you</code> help me?<br><code>Could you</code> send it? <span class='es'>(más cortés)</span><br><code>Can I</code> have your number?" },
-        { "h": "✋ Offers (ofrecer)", "body": "<code>I'll</code> call the client.<br><code>Shall I</code> help you?<br><code>Would you like</code> a coffee?" },
-        { "h": "💬 Responding", "body": "<span class='ok'>Sure! / Of course.</span><br><span class='ok'>No problem.</span><br><span class='x'>Sorry, I can't right now.</span>" },
-        { "h": "⚠ Watch out", "body": "verbo base: <span class='x'>Can you to send?</span><br><span class='ok'>Can you send?</span><br><code>could</code> &gt; <code>can</code> <span class='es'>(más formal)</span>" }
+        {
+          "h": "↗ Requests (pedir)",
+          "body": "<code>Can you</code> help me?<br><code>Could you</code> send it? <span class='es'>(más cortés)</span><br><code>Can I</code> have your number?"
+        },
+        {
+          "h": "✋ Offers (ofrecer)",
+          "body": "<code>I'll</code> call the client.<br><code>Shall I</code> help you?<br><code>Would you like</code> a coffee?"
+        },
+        {
+          "h": "💬 Responding",
+          "body": "<span class='ok'>Sure! / Of course.</span><br><span class='ok'>No problem.</span><br><span class='x'>Sorry, I can't right now.</span>"
+        },
+        {
+          "h": "⚠ Watch out",
+          "body": "verbo base: <span class='x'>Can you to send?</span><br><span class='ok'>Can you send?</span><br><code>could</code> &gt; <code>can</code> <span class='es'>(más formal)</span>"
+        }
       ],
       "ladderLabel": "<b style='color:var(--purple)'>Escalera de cortesía</b> — de directo a muy cortés:",
-      "ladder": ["Can you…?", "Could you…?", "Would you mind…?"],
+      "ladder": [
+        "Can you…?",
+        "Could you…?",
+        "Would you mind…?"
+      ],
       "vocabBtn": "📒 Ver vocabulario de teléfono/chat",
       "vocab": [
-        { "en": "take a message", "sp": "tomar un mensaje" }, { "en": "call back", "sp": "devolver la llamada" },
-        { "en": "a favor", "sp": "un favor" }, { "en": "send / forward", "sp": "enviar / reenviar" },
-        { "en": "attach a file", "sp": "adjuntar un archivo" }, { "en": "share my screen", "sp": "compartir pantalla" },
-        { "en": "book a room", "sp": "reservar una sala" }, { "en": "would you mind…?", "sp": "¿te molestaría…?" }
+        {
+          "en": "Take a message",
+          "sp": "tomar un mensaje"
+        },
+        {
+          "en": "Call back",
+          "sp": "devolver la llamada"
+        },
+        {
+          "en": "A favor",
+          "sp": "un favor"
+        },
+        {
+          "en": "Send / Forward",
+          "sp": "enviar / reenviar"
+        },
+        {
+          "en": "Attach a file",
+          "sp": "adjuntar un archivo"
+        },
+        {
+          "en": "Share my screen",
+          "sp": "compartir pantalla"
+        },
+        {
+          "en": "Book a room",
+          "sp": "reservar una sala"
+        },
+        {
+          "en": "Would you mind…?",
+          "sp": "¿te molestaría…?"
+        }
       ],
       "note": "<b>Cómo funciona:</b> elegí respuestas 💬, uní funciones 🔗 y escucha llamadas 🎧. ✓ CHECK en cada uno."
     },
     {
-      "type": "story", "tag": "un día de llamadas y chats",
+      "type": "story",
+      "tag": "un día de llamadas y chats",
       "title": "★ A BUSY DAY AT THE OFFICE",
       "intro": "Marcos atiende una llamada de una clienta y ayuda a Sofia por chat. Todo el día pide y ofrece ayuda.",
       "cast": [
-        { "en": "Sofia", "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧" },
-        { "en": "Marcos", "sp": "el developer 🇲🇽" },
-        { "en": "Emma", "sp": "una clienta 🇺🇸" }
+        {
+          "en": "Sofia",
+          "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧"
+        },
+        {
+          "en": "Marcos",
+          "sp": "el developer 🇲🇽"
+        },
+        {
+          "en": "Emma",
+          "sp": "una clienta 🇺🇸"
+        }
       ]
     },
     {
-      "type": "dialogue", "id": "ex-dlg", "title": "ELEGÍ LA RESPUESTA",
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "ELEGÍ LA RESPUESTA",
       "intro": "Alguien te pide u ofrece algo. Elegí la respuesta correcta.",
       "lines": [
-        { "spk": "Colleague", "html": "Could you send me the report today?" },
-        { "gap": true, "q": "Tu respuesta:", "options": ["Of course, I'll send it this afternoon.", "No problem, I'm from Mexico.", "Yes, I went there yesterday."], "answer": 0 },
-        { "spk": "Colleague", "b": true, "html": "Shall I help you with the slides?" },
-        { "gap": true, "q": "Tu respuesta:", "options": ["Yes, please, that would be great.", "I'm fine, thank you.", "She is a teacher."], "answer": 0 },
-        { "spk": "Boss", "html": "Can you book a meeting room for ten o'clock?" },
-        { "gap": true, "q": "Tu respuesta:", "options": ["Sure, no problem.", "I'm from Canada.", "It was last week."], "answer": 0 }
+        {
+          "spk": "Colleague",
+          "html": "Could you send me the report today?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Of course, I'll send it this afternoon.",
+            "No problem, I'm from Mexico.",
+            "Yes, I went there yesterday."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Colleague",
+          "b": true,
+          "html": "Shall I help you with the slides?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Yes, please, that would be great.",
+            "I'm fine, thank you.",
+            "She is a teacher."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Boss",
+          "html": "Can you book a meeting room for ten o'clock?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Sure, no problem.",
+            "I'm from Canada.",
+            "It was last week."
+          ],
+          "answer": 0
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l1",
+      "type": "listening",
+      "id": "ex-l1",
       "title": "AUDIO 1 · A CALL FROM A CLIENT",
       "desc": "Marcos atiende una llamada. La clienta quiere hablar con Sofia.",
-      "src": "requests-offers-1.mp3", "dur": "1:01", "speakers": "🗣 Marcos 🇲🇽 + Emma 🇺🇸",
+      "src": "requests-offers-1.mp3",
+      "dur": "1:01",
+      "speakers": "🗣 Marcos 🇲🇽 + Emma 🇺🇸",
       "questions": [
-        { "type": "mcq", "q": "Who does Emma want to speak to?", "options": ["Sofia", "Marcos", "David"], "answer": 0 },
-        { "type": "mcq", "q": "Why can't she speak to her now?", "options": ["She is on holiday", "She left the company", "She is in a meeting"], "answer": 2 },
-        { "type": "trueFalse", "q": "Marcos offers to take a message.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "Who does Emma want to speak to?",
+          "options": [
+            "Sofia",
+            "Marcos",
+            "David"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why can't she speak to her now?",
+          "options": [
+            "She is on holiday",
+            "She left the company",
+            "She is in a meeting"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "trueFalse",
+          "q": "Marcos offers to take a message.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "You answer the phone; the caller wants your busy boss. What do you say? Use <i>Can I…?</i> and <i>I'll…</i>.", "starter": "I'm sorry, she's in a meeting. Can I take a message? I'll ask her to…" },
+      "speaking": {
+        "prompt": "You answer the phone; the caller wants your busy boss. What do you say? Use <i>Can I…?</i> and <i>I'll…</i>.",
+        "starter": "I'm sorry, she's in a meeting. Can I take a message? I'll ask her to…"
+      },
       "transcript": [
-        { "spk": "Marcos", "b": true, "html": "Good morning, English for All, this is Marcos speaking. How can I help you?" },
-        { "spk": "Emma", "html": "Hi, this is Emma from Bright Company. <span class='tg'>Could I speak</span> to Sofia, please?" },
-        { "spk": "Marcos", "b": true, "html": "I'm sorry, Sofia is in a meeting right now. <span class='tg'>Can I take</span> a message?" },
-        { "spk": "Emma", "html": "Yes, please. <span class='tg'>Could you ask</span> her to call me back this afternoon?" },
-        { "spk": "Marcos", "b": true, "html": "Of course. <span class='tg'>Can I have</span> your number?" },
-        { "spk": "Emma", "html": "Sure. And <span class='tg'>could you tell</span> her it's about the new project?" },
-        { "spk": "Marcos", "b": true, "html": "No problem, Emma. <span class='tg'>I'll give</span> her the message. <span class='tg'>Would you like</span> her to email you too?" },
-        { "spk": "Emma", "html": "Yes, please. That would be great. Thank you so much!" }
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Good morning, English for All, this is Marcos speaking. How can I help you?"
+        },
+        {
+          "spk": "Emma",
+          "html": "Hi, this is Emma from Bright Company. <span class='tg'>Could I speak</span> to Sofia, please?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I'm sorry, Sofia is in a meeting right now. <span class='tg'>Can I take</span> a message?"
+        },
+        {
+          "spk": "Emma",
+          "html": "Yes, please. <span class='tg'>Could you ask</span> her to call me back this afternoon?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Of course. <span class='tg'>Can I have</span> your number?"
+        },
+        {
+          "spk": "Emma",
+          "html": "Sure. And <span class='tg'>could you tell</span> her it's about the new project?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "No problem, Emma. <span class='tg'>I'll give</span> her the message. <span class='tg'>Would you like</span> her to email you too?"
+        },
+        {
+          "spk": "Emma",
+          "html": "Yes, please. That would be great. Thank you so much!"
+        }
       ]
     },
     {
-      "type": "match", "id": "ex-match", "title": "UNÍ FUNCIÓN Y FRASE",
+      "type": "match",
+      "id": "ex-match",
+      "title": "UNÍ FUNCIÓN Y FRASE",
       "intro": "¿Para qué sirve cada frase? Tocá la función y luego la frase.",
       "pairs": [
-        { "l": "Pedir (request)", "r": "Could you help me?" },
-        { "l": "Ofrecer (offer)", "r": "Shall I help you?" },
-        { "l": "Aceptar (accept)", "r": "Sure, of course!" },
-        { "l": "Rechazar (decline)", "r": "Sorry, I can't right now." },
-        { "l": "Pedir permiso", "r": "Can I ask a question?" }
+        {
+          "l": "Pedir (request)",
+          "r": "Could you help me?"
+        },
+        {
+          "l": "Ofrecer (offer)",
+          "r": "Shall I help you?"
+        },
+        {
+          "l": "Aceptar (accept)",
+          "r": "Sure, of course!"
+        },
+        {
+          "l": "Rechazar (decline)",
+          "r": "Sorry, I can't right now."
+        },
+        {
+          "l": "Pedir permiso",
+          "r": "Can I ask a question?"
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l2",
+      "type": "listening",
+      "id": "ex-l2",
       "title": "AUDIO 2 · A CHAT AT WORK",
       "desc": "Sofia le pide ayuda a Marcos con un informe.",
-      "src": "requests-offers-2.mp3", "dur": "0:47", "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "src": "requests-offers-2.mp3",
+      "dur": "0:47",
+      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
       "questions": [
-        { "type": "mcq", "q": "What does Sofia ask Marcos to check?", "options": ["The emails", "The numbers on page two", "The meeting room"], "answer": 1 },
-        { "type": "mcq", "q": "What does Marcos offer to do as well?", "options": ["Call the client", "Write the report again", "Fix the formatting and add the logo"], "answer": 2 },
-        { "type": "trueFalse", "q": "Sofia wants it sent to the client before five.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "What does Sofia ask Marcos to check?",
+          "options": [
+            "The emails",
+            "The numbers on page two",
+            "The meeting room"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does Marcos offer to do as well?",
+          "options": [
+            "Call the client",
+            "Write the report again",
+            "Fix the formatting and add the logo"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "trueFalse",
+          "q": "Sofia wants it sent to the client before five.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "A colleague is busy. Offer to help with two things. Use <i>I'll…</i> and <i>Shall I…?</i>", "starter": "Don't worry, I'll check the numbers now. Shall I also…?" },
+      "speaking": {
+        "prompt": "A colleague is busy. Offer to help with two things. Use <i>I'll…</i> and <i>Shall I…?</i>",
+        "starter": "Don't worry, I'll check the numbers now. Shall I also…?"
+      },
       "transcript": [
-        { "spk": "Sofia", "html": "Marcos, <span class='tg'>can you help</span> me with the report? I'm very busy today." },
-        { "spk": "Marcos", "b": true, "html": "Sure, Sofia. What do you need?" },
-        { "spk": "Sofia", "html": "<span class='tg'>Could you check</span> the numbers on page two? I think there's a mistake." },
-        { "spk": "Marcos", "b": true, "html": "No problem. <span class='tg'>I'll check</span> them now. <span class='tg'>Do you want me to</span> fix the formatting too?" },
-        { "spk": "Sofia", "html": "Yes, please. And <span class='tg'>could you send</span> it to the client before five?" },
-        { "spk": "Marcos", "b": true, "html": "Of course. <span class='tg'>Shall I add</span> the new logo as well?" },
-        { "spk": "Sofia", "html": "Good idea! Thank you so much, Marcos." },
-        { "spk": "Marcos", "b": true, "html": "Happy to help. <span class='tg'>I'll send</span> it to you first to review." }
+        {
+          "spk": "Sofia",
+          "html": "Marcos, <span class='tg'>can you help</span> me with the report? I'm very busy today."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Sure, Sofia. What do you need?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "<span class='tg'>Could you check</span> the numbers on page two? I think there's a mistake."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "No problem. <span class='tg'>I'll check</span> them now. <span class='tg'>Do you want me to</span> fix the formatting too?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "Yes, please. And <span class='tg'>could you send</span> it to the client before five?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Of course. <span class='tg'>Shall I add</span> the new logo as well?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "Good idea! Thank you so much, Marcos."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Happy to help. <span class='tg'>I'll send</span> it to you first to review."
+        }
       ]
     },
     {

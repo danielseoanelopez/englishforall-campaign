@@ -1,117 +1,398 @@
 {
-  "level": "B1", "num": 5, "totalLessons": 6, "world": "HOLDING YOUR OWN",
+  "level": "B1",
+  "num": 5,
+  "totalLessons": 6,
+  "world": "HOLDING YOUR OWN",
   "key": "rankup_B1_L5",
   "title": "OPINIONS &amp;<br>PUSHING BACK",
   "titlePlain": "Giving Opinions & Pushing Back (B1)",
   "subtitle": "Speaking &amp; Listening · B1 · ~45 min",
   "rankup": "LESSON CLEAR!",
-  "next": { "href": "lesson.html?id=b1-l6", "label": "LESSON 6 ▸ LOOKING AHEAD" },
+  "next": {
+    "href": "lesson.html?id=b1-l6",
+    "label": "LESSON 6 ▸ LOOKING AHEAD"
+  },
   "blocks": [
     {
-      "type": "grammar", "tag": "deducción y tacto",
+      "type": "grammar",
+      "tag": "deducción y tacto",
       "title": "📘 MUST / MIGHT / CAN'T + SUAVIZAR",
       "intro": "Dos herramientas de B1: los <b style='color:var(--gold)'>modales de deducción</b> (must / might / can't) para decir qué tan seguro estás, y las <b style='color:var(--gold)'>frases suavizantes</b> para dar opiniones sin sonar agresivo.",
       "cells": [
-        { "h": "💯 must be", "body": "Casi seguro que SÍ:<br><span class='ok'>The server <b>must be</b> overloaded — look at these numbers.</span>" },
-        { "h": "🤔 might / could be", "body": "Posible, no seguro:<br><span class='ok'>It <b>might be</b> a caching problem.</span>" },
-        { "h": "🚫 can't be", "body": "Casi seguro que NO:<br><span class='ok'>It <b>can't be</b> the design — we tested it twice.</span>" },
-        { "h": "🪶 Suavizar tu opinión", "body": "<code>I'd suggest…</code><br><code>It might be worth + -ing</code><br><code>Have you considered…?</code>" },
-        { "h": "⚠ Watch out", "body": "<span class='x'>You must change it.</span> <span class='es'>(orden)</span><br><span class='ok'>It might be worth changing it.</span> <span class='es'>(sugerencia)</span>" }
+        {
+          "h": "💯 must be",
+          "body": "Casi seguro que SÍ:<br><span class='ok'>The server <b>must be</b> overloaded — look at these numbers.</span>"
+        },
+        {
+          "h": "🤔 might / could be",
+          "body": "Posible, no seguro:<br><span class='ok'>It <b>might be</b> a caching problem.</span>"
+        },
+        {
+          "h": "🚫 can't be",
+          "body": "Casi seguro que NO:<br><span class='ok'>It <b>can't be</b> the design — we tested it twice.</span>"
+        },
+        {
+          "h": "🪶 Suavizar tu opinión",
+          "body": "<code>I'd suggest…</code><br><code>It might be worth + -ing</code><br><code>Have you considered…?</code>"
+        },
+        {
+          "h": "⚠ Watch out",
+          "body": "<span class='x'>You must change it.</span> <span class='es'>(orden)</span><br><span class='ok'>It might be worth changing it.</span> <span class='es'>(sugerencia)</span>"
+        }
       ],
       "ladderLabel": "<b style='color:var(--purple)'>Escala de certeza</b> — de seguro que no a seguro que sí:",
-      "ladder": ["can't be 0%", "probably isn't", "might be", "could be", "probably is", "must be 100%"],
+      "ladder": [
+        "can't be 0%",
+        "probably isn't",
+        "might be",
+        "could be",
+        "probably is",
+        "must be 100%"
+      ],
       "vocabBtn": "📒 Ver vocabulario del debate",
       "vocab": [
-        { "en": "to push back", "sp": "objetar / resistir" }, { "en": "evidence", "sp": "evidencia / pruebas" },
-        { "en": "data", "sp": "datos" }, { "en": "layout", "sp": "diseño / disposición" },
-        { "en": "checkout page", "sp": "página de pago" }, { "en": "conversion", "sp": "conversión (ventas)" },
-        { "en": "to load", "sp": "cargar (una página)" }, { "en": "trade-off", "sp": "compromiso / costo-beneficio" },
-        { "en": "to test", "sp": "probar" }, { "en": "worth + -ing", "sp": "vale la pena + verbo" }
+        {
+          "en": "To push back",
+          "sp": "objetar / resistir"
+        },
+        {
+          "en": "Evidence",
+          "sp": "evidencia / pruebas"
+        },
+        {
+          "en": "Data",
+          "sp": "datos"
+        },
+        {
+          "en": "Layout",
+          "sp": "diseño / disposición"
+        },
+        {
+          "en": "Checkout page",
+          "sp": "página de pago"
+        },
+        {
+          "en": "Conversion",
+          "sp": "conversión (ventas)"
+        },
+        {
+          "en": "To load",
+          "sp": "cargar (una página)"
+        },
+        {
+          "en": "Trade-off",
+          "sp": "compromiso / costo-beneficio"
+        },
+        {
+          "en": "To test",
+          "sp": "probar"
+        },
+        {
+          "en": "Worth + -ing",
+          "sp": "vale la pena + verbo"
+        }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> 🃏, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>ordenar</b> 🧩. Hacé el ✓ CHECK en cada ejercicio."
     },
     {
-      "type": "story", "tag": "el desacuerdo",
+      "type": "story",
+      "tag": "el desacuerdo",
       "title": "★ THE DESIGN DEBATE",
       "intro": "Las ventas de GreenMarket bajaron y Priya cree que el problema es el nuevo diseño de Marcos. Él no está de acuerdo — y tiene datos. ¿Puede defender su trabajo <b style='color:var(--gold)'>sin quemar la relación</b>?",
       "cast": [
-        { "en": "Priya", "sp": "cree que es el diseño 🇮🇳" },
-        { "en": "Marcos", "sp": "defiende su trabajo <b style='color:var(--magenta)'>con datos</b> 🇲🇽" }
+        {
+          "en": "Priya",
+          "sp": "cree que es el diseño 🇮🇳"
+        },
+        {
+          "en": "Marcos",
+          "sp": "defiende su trabajo <b style='color:var(--magenta)'>con datos</b> 🇲🇽"
+        }
       ]
     },
     {
-      "type": "flashcards", "id": "ex-fc",
+      "type": "flashcards",
+      "id": "ex-fc",
       "title": "FRASES SUAVIZANTES · tocá para girar",
       "intro": "El mismo mensaje, dicho con tacto. Aprendé estas frases — las vas a escuchar en el audio.",
       "cards": [
-        { "front": "I'd suggest…", "back": "Yo sugeriría… (suave)" },
-        { "front": "It might be worth testing", "back": "Valdría la pena probarlo" },
-        { "front": "Have you considered…?", "back": "¿Consideraste…?" },
-        { "front": "I see it differently", "back": "Yo lo veo distinto" },
-        { "front": "With respect,", "back": "Con respeto, / Respetuosamente," },
-        { "front": "The data suggests…", "back": "Los datos indican…" },
-        { "front": "I take your point", "back": "Entiendo tu punto" },
-        { "front": "Let's look at the evidence", "back": "Miremos la evidencia" }
+        {
+          "front": "I'd suggest…",
+          "back": "Yo sugeriría… (suave)"
+        },
+        {
+          "front": "It might be worth testing",
+          "back": "Valdría la pena probarlo"
+        },
+        {
+          "front": "Have you considered…?",
+          "back": "¿Consideraste…?"
+        },
+        {
+          "front": "I see it differently",
+          "back": "Yo lo veo distinto"
+        },
+        {
+          "front": "With respect,",
+          "back": "Con respeto, / Respetuosamente,"
+        },
+        {
+          "front": "The data suggests…",
+          "back": "Los datos indican…"
+        },
+        {
+          "front": "I take your point",
+          "back": "Entiendo tu punto"
+        },
+        {
+          "front": "Let's look at the evidence",
+          "back": "Miremos la evidencia"
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l1",
+      "type": "listening",
+      "id": "ex-l1",
       "title": "AUDIO 1 · THE DEBATE",
       "desc": "Priya culpa al diseño por la caída de ventas. Marcos discrepa — con datos y con tacto. ¿Quién tiene razón?",
-      "src": "b1-l5-1.mp3", "dur": "1:27", "speakers": "🗣 Priya 🇮🇳 + Marcos 🇲🇽",
+      "src": "b1-l5-1.mp3",
+      "dur": "1:27",
+      "speakers": "🗣 Priya 🇮🇳 + Marcos 🇲🇽",
       "questions": [
-        { "type": "mcq", "q": "What does Priya think is the problem?", "options": ["The new design", "The prices", "The server"], "answer": 0 },
-        { "type": "mcq", "q": "According to Marcos, what might the real problem be?", "options": ["The checkout page loading slowly", "The colours of the logo", "The client's emails"], "answer": 0 },
-        { "type": "mcq", "q": "How does Marcos know it can't be the design?", "options": ["The data shows people leave at checkout, not the home page", "Priya told him", "He just feels it"], "answer": 0 },
-        { "type": "trueFalse", "q": "They agree to test the checkout page speed for one week.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "What does Priya think is the problem?",
+          "options": [
+            "The new design",
+            "The prices",
+            "The server"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "According to Marcos, what might the real problem be?",
+          "options": [
+            "The checkout page loading slowly",
+            "The colours of the logo",
+            "The client's emails"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How does Marcos know it can't be the design?",
+          "options": [
+            "The data shows people leave at checkout, not the home page",
+            "Priya told him",
+            "He just feels it"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "They agree to test the checkout page speed for one week.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "How did Marcos push back politely? Quote one softening phrase and one deduction (must/might/can't).", "starter": "He said 'I see it differently' and 'it can't be the design, because…'. Then he suggested…" },
+      "speaking": {
+        "prompt": "How did Marcos push back politely? Quote one softening phrase and one deduction (must/might/can't).",
+        "starter": "He said 'I see it differently' and 'it can't be the design, because…'. Then he suggested…"
+      },
       "transcript": [
-        { "spk": "Priya", "html": "Marcos, I've seen the numbers. Sales are down fifteen percent since the redesign. It <span class='tg'>must be</span> the new design. We should go back to the old one." },
-        { "spk": "Marcos", "b": true, "html": "<span class='tg'>I take your point</span>, Priya — the timing looks bad. But <span class='tg'>I see it differently</span>. Can we look at the evidence together?" },
-        { "spk": "Priya", "html": "Go on." },
-        { "spk": "Marcos", "b": true, "html": "The data shows people love the new home page — they stay longer than before. But they leave at the <b>checkout page</b>. So it <span class='tg'>can't be</span> the design. Something else is wrong." },
-        { "spk": "Priya", "html": "Hmm. Then what is it?" },
-        { "spk": "Marcos", "b": true, "html": "I'm not one hundred percent sure. It <span class='tg'>might be</span> the new payment system — the checkout <span class='tg'>could be</span> loading too slowly on phones. Slow pages kill sales." },
-        { "spk": "Priya", "html": "That's possible. But we can't wait forever." },
-        { "spk": "Marcos", "b": true, "html": "Agreed. So <span class='tg'>I'd suggest</span> a one-week test: we measure the checkout speed, and <span class='tg'>it might be worth trying</span> a faster payment option too. If I'm wrong, we go back to the old design. Fair?" },
-        { "spk": "Priya", "html": "Okay, Marcos. One week. Show me the data next Friday. And… good pushback. I like it when people bring evidence." }
+        {
+          "spk": "Priya",
+          "html": "Marcos, I've seen the numbers. Sales are down fifteen percent since the redesign. It <span class='tg'>must be</span> the new design. We should go back to the old one."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>I take your point</span>, Priya — the timing looks bad. But <span class='tg'>I see it differently</span>. Can we look at the evidence together?"
+        },
+        {
+          "spk": "Priya",
+          "html": "Go on."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "The data shows people love the new home page — they stay longer than before. But they leave at the <b>checkout page</b>. So it <span class='tg'>can't be</span> the design. Something else is wrong."
+        },
+        {
+          "spk": "Priya",
+          "html": "Hmm. Then what is it?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I'm not one hundred percent sure. It <span class='tg'>might be</span> the new payment system — the checkout <span class='tg'>could be</span> loading too slowly on phones. Slow pages kill sales."
+        },
+        {
+          "spk": "Priya",
+          "html": "That's possible. But we can't wait forever."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Agreed. So <span class='tg'>I'd suggest</span> a one-week test: we measure the checkout speed, and <span class='tg'>it might be worth trying</span> a faster payment option too. If I'm wrong, we go back to the old design. Fair?"
+        },
+        {
+          "spk": "Priya",
+          "html": "Okay, Marcos. One week. Show me the data next Friday. And… good pushback. I like it when people bring evidence."
+        }
       ]
     },
     {
-      "type": "gapFill", "id": "ex-gap", "title": "MUST, MIGHT o CAN'T",
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "MUST, MIGHT o CAN'T",
       "intro": "Elegí el modal correcto según la certeza.",
       "items": [
-        { "q": "Sales dropped the day we changed servers. It ___ be a coincidence!", "options": ["can't", "must", "might"], "answer": 0 },
-        { "q": "The office lights are on and I hear voices. Someone ___ be working late.", "options": ["must", "can't", "couldn't"], "answer": 0 },
-        { "q": "I'm not sure why it's slow — it ___ be the wifi.", "options": ["might", "must", "can't"], "answer": 0 },
-        { "q": "He answered in perfect French. He ___ be a beginner.", "options": ["can't", "must", "might"], "answer": 0 },
-        { "q": "It ___ be worth testing the page on a phone.", "options": ["might", "can't", "must not"], "answer": 0 },
-        { "q": "She's not answering. She ___ be in a meeting.", "options": ["might", "can't", "mustn't"], "answer": 0 }
+        {
+          "q": "Sales dropped the day we changed servers. It ___ be a coincidence!",
+          "options": [
+            "can't",
+            "must",
+            "might"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The office lights are on and I hear voices. Someone ___ be working late.",
+          "options": [
+            "must",
+            "can't",
+            "couldn't"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I'm not sure why it's slow — it ___ be the wifi.",
+          "options": [
+            "might",
+            "must",
+            "can't"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "He answered in perfect French. He ___ be a beginner.",
+          "options": [
+            "can't",
+            "must",
+            "might"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "It ___ be worth testing the page on a phone.",
+          "options": [
+            "might",
+            "can't",
+            "must not"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "She's not answering. She ___ be in a meeting.",
+          "options": [
+            "might",
+            "can't",
+            "mustn't"
+          ],
+          "answer": 0
+        }
       ]
     },
     {
-      "type": "order", "id": "ex-order", "title": "ORDENÁ LA FRASE DIPLOMÁTICA",
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENÁ LA FRASE DIPLOMÁTICA",
       "intro": "Tocá las palabras para formar la sugerencia suave.",
       "items": [
-        { "words": ["It", "might", "be", "worth", "testing", "the", "speed"], "answer": "It might be worth testing the speed" },
-        { "words": ["Have", "you", "considered", "a", "faster", "option"], "answer": "Have you considered a faster option" },
-        { "words": ["I", "take", "your", "point", "but", "I", "see", "it", "differently"], "answer": "I take your point but I see it differently" }
+        {
+          "words": [
+            "It",
+            "might",
+            "be",
+            "worth",
+            "testing",
+            "the",
+            "speed"
+          ],
+          "answer": "It might be worth testing the speed"
+        },
+        {
+          "words": [
+            "Have",
+            "you",
+            "considered",
+            "a",
+            "faster",
+            "option"
+          ],
+          "answer": "Have you considered a faster option"
+        },
+        {
+          "words": [
+            "I",
+            "take",
+            "your",
+            "point",
+            "but",
+            "I",
+            "see",
+            "it",
+            "differently"
+          ],
+          "answer": "I take your point but I see it differently"
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l2",
+      "type": "listening",
+      "id": "ex-l2",
       "title": "AUDIO 2 · ONE WEEK LATER",
       "desc": "Viernes siguiente: Priya le deja un mensaje a Marcos con el resultado del test. ¿Quién tenía razón?",
-      "src": "b1-l5-2.mp3", "dur": "0:45", "speakers": "🗣 Priya 🇮🇳",
+      "src": "b1-l5-2.mp3",
+      "dur": "0:45",
+      "speakers": "🗣 Priya 🇮🇳",
       "questions": [
-        { "type": "mcq", "q": "What did the test show?", "options": ["The checkout was loading nine seconds on phones", "The design was the problem", "Nothing useful"], "answer": 0 },
-        { "type": "mcq", "q": "What happened to sales after the fix?", "options": ["They recovered", "They dropped more", "They stayed the same"], "answer": 0 },
-        { "type": "trueFalse", "q": "Priya admits Marcos was right.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "What did the test show?",
+          "options": [
+            "The checkout was loading nine seconds on phones",
+            "The design was the problem",
+            "Nothing useful"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What happened to sales after the fix?",
+          "options": [
+            "They recovered",
+            "They dropped more",
+            "They stayed the same"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "Priya admits Marcos was right.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "You are Marcos. Reply to Priya's message in 2–3 sentences — be professional, don't say 'I told you so'!", "starter": "Hi Priya, thanks for the update. I'm glad the test helped — I'd suggest we also…" },
+      "speaking": {
+        "prompt": "You are Marcos. Reply to Priya's message in 2–3 sentences — be professional, don't say 'I told you so'!",
+        "starter": "Hi Priya, thanks for the update. I'm glad the test helped — I'd suggest we also…"
+      },
       "transcript": [
-        { "spk": "Priya", "html": "Hi Marcos, it's Priya. It's Friday, so — the results. Well… you were right. It <span class='tg'>wasn't</span> the design. The test showed the checkout page <span class='tg'>was taking</span> nine seconds to load on phones. Nine! No wonder people were leaving. The team switched to the faster payment option on Tuesday, and sales have already recovered. So, I owe you one. Thank you for <span class='tg'>pushing back</span> — and for doing it with data, not drama. That's exactly how I like to work. Enjoy your weekend, Marcos. You've earned it." }
+        {
+          "spk": "Priya",
+          "html": "Hi Marcos, it's Priya. It's Friday, so — the results. Well… you were right. It <span class='tg'>wasn't</span> the design. The test showed the checkout page <span class='tg'>was taking</span> nine seconds to load on phones. Nine! No wonder people were leaving. The team switched to the faster payment option on Tuesday, and sales have already recovered. So, I owe you one. Thank you for <span class='tg'>pushing back</span> — and for doing it with data, not drama. That's exactly how I like to work. Enjoy your weekend, Marcos. You've earned it."
+        }
       ]
     },
     {

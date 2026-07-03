@@ -1,143 +1,444 @@
 {
-  "level": "B1", "num": 4, "totalLessons": 6, "world": "HOLDING YOUR OWN",
+  "level": "B1",
+  "num": 4,
+  "totalLessons": 6,
+  "world": "HOLDING YOUR OWN",
   "key": "rankup_B1_L4",
   "title": "IF THIS,<br>THEN THAT",
   "titlePlain": "If This, Then That — Conditionals (B1)",
   "subtitle": "Grammar &amp; Listening · B1 · ~45 min",
   "rankup": "LESSON CLEAR!",
-  "next": { "href": "lesson.html?id=b1-l5", "label": "LESSON 5 ▸ OPINIONS & PUSHBACK" },
+  "next": {
+    "href": "lesson.html?id=b1-l5",
+    "label": "LESSON 5 ▸ OPINIONS & PUSHBACK"
+  },
   "blocks": [
     {
-      "type": "grammar", "tag": "conditionals",
+      "type": "grammar",
+      "tag": "conditionals",
       "title": "📘 CONDICIONALES · 1st & 2nd",
       "intro": "Para negociar necesitás condicionales: el <b style='color:var(--gold)'>1st conditional</b> para cosas posibles y reales, y el <b style='color:var(--gold)'>2nd conditional</b> para situaciones hipotéticas. Repasa y luego practica.",
       "cells": [
-        { "h": "1️⃣ First conditional", "body": "<code>If + present, will + verbo</code><br><span class='ok'>If you confirm today, we <b>will start</b> Monday.</span> <span class='es'>(posible / real)</span>" },
-        { "h": "2️⃣ Second conditional", "body": "<code>If + past, would + verbo</code><br><span class='ok'>If we <b>had</b> more time, we <b>would add</b> more features.</span> <span class='es'>(hipotético)</span>" },
-        { "h": "🚫 unless", "body": "<code>unless</code> = if not:<br><i>We can't start <b>unless</b> you confirm.</i> <span class='es'>(a menos que)</span>" },
-        { "h": "🤝 as long as", "body": "<code>as long as</code> = siempre que:<br><i>We'll finish on time <b>as long as</b> nothing changes.</i>" },
-        { "h": "⚠ Watch out", "body": "<span class='x'>If you will confirm…</span><br><span class='ok'>If you confirm…</span> <span class='es'>(no 'will' después de if)</span><br><span class='ok'>If I <b>were</b> you, I'd…</span>" }
+        {
+          "h": "1️⃣ First conditional",
+          "body": "<code>If + present, will + verbo</code><br><span class='ok'>If you confirm today, we <b>will start</b> Monday.</span> <span class='es'>(posible / real)</span>"
+        },
+        {
+          "h": "2️⃣ Second conditional",
+          "body": "<code>If + past, would + verbo</code><br><span class='ok'>If we <b>had</b> more time, we <b>would add</b> more features.</span> <span class='es'>(hipotético)</span>"
+        },
+        {
+          "h": "🚫 unless",
+          "body": "<code>unless</code> = if not:<br><i>We can't start <b>unless</b> you confirm.</i> <span class='es'>(a menos que)</span>"
+        },
+        {
+          "h": "🤝 as long as",
+          "body": "<code>as long as</code> = siempre que:<br><i>We'll finish on time <b>as long as</b> nothing changes.</i>"
+        },
+        {
+          "h": "⚠ Watch out",
+          "body": "<span class='x'>If you will confirm…</span><br><span class='ok'>If you confirm…</span> <span class='es'>(no 'will' después de if)</span><br><span class='ok'>If I <b>were</b> you, I'd…</span>"
+        }
       ],
       "ladderLabel": "<b style='color:var(--purple)'>Escala de negociación</b> — frases con condicionales, de más directa a más diplomática:",
-      "ladder": ["If you don't pay, we stop.", "Unless you confirm, we can't start.", "If you confirm today, we'll start Monday.", "As long as the scope stays, we're fine.", "If we had more budget, we'd do it all."],
+      "ladder": [
+        "If you don't pay, we stop.",
+        "Unless you confirm, we can't start.",
+        "If you confirm today, we'll start Monday.",
+        "As long as the scope stays, we're fine.",
+        "If we had more budget, we'd do it all."
+      ],
       "vocabBtn": "📒 Ver vocabulario de negociación",
       "vocab": [
-        { "en": "scope", "sp": "alcance (del proyecto)" }, { "en": "budget", "sp": "presupuesto" },
-        { "en": "discount", "sp": "descuento" }, { "en": "to negotiate", "sp": "negociar" },
-        { "en": "deal", "sp": "trato / acuerdo" }, { "en": "extra cost", "sp": "costo adicional" },
-        { "en": "to confirm", "sp": "confirmar" }, { "en": "phase", "sp": "fase / etapa" },
-        { "en": "to deliver", "sp": "entregar" }, { "en": "agreement", "sp": "acuerdo" }
+        {
+          "en": "Scope",
+          "sp": "alcance (del proyecto)"
+        },
+        {
+          "en": "Budget",
+          "sp": "presupuesto"
+        },
+        {
+          "en": "Discount",
+          "sp": "descuento"
+        },
+        {
+          "en": "To negotiate",
+          "sp": "negociar"
+        },
+        {
+          "en": "Deal",
+          "sp": "trato / acuerdo"
+        },
+        {
+          "en": "Extra cost",
+          "sp": "costo adicional"
+        },
+        {
+          "en": "To confirm",
+          "sp": "confirmar"
+        },
+        {
+          "en": "Phase",
+          "sp": "fase / etapa"
+        },
+        {
+          "en": "To deliver",
+          "sp": "entregar"
+        },
+        {
+          "en": "Agreement",
+          "sp": "acuerdo"
+        }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>unir</b> 🔗. Hacé el ✓ CHECK en cada ejercicio."
     },
     {
-      "type": "story", "tag": "la negociación",
+      "type": "story",
+      "tag": "la negociación",
       "title": "★ THE SCOPE NEGOTIATION",
       "intro": "David quiere más funciones para GreenMarket… pero Priya controla el presupuesto y no cede fácil. Marcos queda en el medio: tiene que negociar el alcance con condicionales — ofertas, condiciones y consecuencias.",
       "cast": [
-        { "en": "Marcos", "sp": "negocia el alcance 🇲🇽" },
-        { "en": "David", "sp": "el cliente, quiere más 🇬🇧" },
-        { "en": "Priya", "sp": "controla el <b style='color:var(--magenta)'>presupuesto</b> 🇮🇳" }
+        {
+          "en": "Marcos",
+          "sp": "negocia el alcance 🇲🇽"
+        },
+        {
+          "en": "David",
+          "sp": "el cliente, quiere más 🇬🇧"
+        },
+        {
+          "en": "Priya",
+          "sp": "controla el <b style='color:var(--magenta)'>presupuesto</b> 🇮🇳"
+        }
       ]
     },
     {
-      "type": "gapFill", "id": "ex-gap", "title": "COMPLETÁ EL CONDICIONAL",
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "COMPLETÁ EL CONDICIONAL",
       "intro": "Elegí la forma correcta. Pensá: ¿posible y real (1st) o hipotético (2nd)?",
       "items": [
-        { "q": "If you confirm today, we ___ on Monday.", "options": ["will start", "would start", "started"], "answer": 0 },
-        { "q": "If we ___ more time, we would add a mobile app.", "options": ["had", "have", "will have"], "answer": 0 },
-        { "q": "We can't begin ___ you sign the agreement.", "options": ["unless", "if", "as long as"], "answer": 0 },
-        { "q": "If the budget ___ bigger, we'd hire another developer.", "options": ["were", "is", "will be"], "answer": 0 },
-        { "q": "We'll deliver on time ___ the scope doesn't change.", "options": ["as long as", "unless", "would"], "answer": 0 },
-        { "q": "If you ___ the extra feature, there will be an extra cost.", "options": ["want", "will want", "wanted"], "answer": 0 }
+        {
+          "q": "If you confirm today, we ___ on Monday.",
+          "options": [
+            "will start",
+            "would start",
+            "started"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "If we ___ more time, we would add a mobile app.",
+          "options": [
+            "had",
+            "have",
+            "will have"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We can't begin ___ you sign the agreement.",
+          "options": [
+            "unless",
+            "if",
+            "as long as"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "If the budget ___ bigger, we'd hire another developer.",
+          "options": [
+            "were",
+            "is",
+            "will be"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We'll deliver on time ___ the scope doesn't change.",
+          "options": [
+            "as long as",
+            "unless",
+            "would"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "If you ___ the extra feature, there will be an extra cost.",
+          "options": [
+            "want",
+            "will want",
+            "wanted"
+          ],
+          "answer": 0
+        }
       ]
     },
     {
-      "type": "dialogue", "id": "ex-dlg", "title": "ELEGÍ TU OFERTA",
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "ELEGÍ TU OFERTA",
       "intro": "Estás negociando con un cliente. Elegí la respuesta con el condicional correcto — y el tono profesional.",
       "lines": [
-        { "spk": "Client", "html": "We need the app AND the website for the same price." },
-        { "gap": true, "q": "Ofrecés una alternativa realista:", "options": [
-          "If you increase the budget a little, we'll build both.",
-          "If you will pay more, we build both.",
-          "No. Goodbye."
-        ], "answer": 0 },
-        { "spk": "Client", "b": true, "html": "And what would you do with a bigger budget, hypothetically?" },
-        { "gap": true, "q": "Respondés a la hipótesis (2nd conditional):", "options": [
-          "If we had a bigger budget, we would add a mobile app too.",
-          "If we have a bigger budget, we will added apps.",
-          "I am from the web team."
-        ], "answer": 0 },
-        { "spk": "Client", "html": "Can you guarantee the deadline?" },
-        { "gap": true, "q": "Ponés una condición clara pero amable:", "options": [
-          "Yes — as long as the scope doesn't change, we'll deliver on time.",
-          "Unless we deliver, the deadline is Friday.",
-          "It was last week."
-        ], "answer": 0 },
-        { "spk": "Client", "b": true, "html": "And if I don't confirm this week?" },
-        { "gap": true, "q": "Explicás la consecuencia con tacto:", "options": [
-          "Unless you confirm this week, we can't start until next month.",
-          "If you don't confirm, is your problem.",
-          "She is a teacher."
-        ], "answer": 0 }
+        {
+          "spk": "Client",
+          "html": "We need the app AND the website for the same price."
+        },
+        {
+          "gap": true,
+          "q": "Ofrecés una alternativa realista:",
+          "options": [
+            "If you increase the budget a little, we'll build both.",
+            "If you will pay more, we build both.",
+            "No. Goodbye."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Client",
+          "b": true,
+          "html": "And what would you do with a bigger budget, hypothetically?"
+        },
+        {
+          "gap": true,
+          "q": "Respondés a la hipótesis (2nd conditional):",
+          "options": [
+            "If we had a bigger budget, we would add a mobile app too.",
+            "If we have a bigger budget, we will added apps.",
+            "I am from the web team."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Client",
+          "html": "Can you guarantee the deadline?"
+        },
+        {
+          "gap": true,
+          "q": "Ponés una condición clara pero amable:",
+          "options": [
+            "Yes — as long as the scope doesn't change, we'll deliver on time.",
+            "Unless we deliver, the deadline is Friday.",
+            "It was last week."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Client",
+          "b": true,
+          "html": "And if I don't confirm this week?"
+        },
+        {
+          "gap": true,
+          "q": "Explicás la consecuencia con tacto:",
+          "options": [
+            "Unless you confirm this week, we can't start until next month.",
+            "If you don't confirm, is your problem.",
+            "She is a teacher."
+          ],
+          "answer": 0
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l1",
+      "type": "listening",
+      "id": "ex-l1",
       "title": "AUDIO 1 · THE NEGOTIATION CALL",
       "desc": "David pide más funciones. Priya defiende el presupuesto. Marcos busca el acuerdo. ¿Quién consigue qué?",
-      "src": "b1-l4-1.mp3", "dur": "1:16", "speakers": "🗣 Marcos 🇲🇽 + David 🇬🇧 + Priya 🇮🇳",
+      "src": "b1-l4-1.mp3",
+      "dur": "1:16",
+      "speakers": "🗣 Marcos 🇲🇽 + David 🇬🇧 + Priya 🇮🇳",
       "questions": [
-        { "type": "mcq", "q": "What does David want to add to the project?", "options": ["A mobile app", "A new logo", "More payment options"], "answer": 0 },
-        { "type": "mcq", "q": "What is Priya's condition for building the app?", "options": ["A bigger budget", "More time", "A new team"], "answer": 0 },
-        { "type": "mcq", "q": "What do they agree in the end?", "options": ["The app will be phase two, with a discount", "The app is cancelled forever", "David gets everything for free"], "answer": 0 },
-        { "type": "trueFalse", "q": "Marcos promises to deliver the website on time as long as the scope doesn't change.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "What does David want to add to the project?",
+          "options": [
+            "A mobile app",
+            "A new logo",
+            "More payment options"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is Priya's condition for building the app?",
+          "options": [
+            "A bigger budget",
+            "More time",
+            "A new team"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What do they agree in the end?",
+          "options": [
+            "The app will be phase two, with a discount",
+            "The app is cancelled forever",
+            "David gets everything for free"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "Marcos promises to deliver the website on time as long as the scope doesn't change.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "Summarize the deal. Use <i>if</i>, <i>unless</i> and <i>as long as</i>.", "starter": "If David confirms this week, the team will… The app will be phase two, and as long as…" },
+      "speaking": {
+        "prompt": "Summarize the deal. Use <i>if</i>, <i>unless</i> and <i>as long as</i>.",
+        "starter": "If David confirms this week, the team will… The app will be phase two, and as long as…"
+      },
       "transcript": [
-        { "spk": "Marcos", "b": true, "html": "Thanks for joining, both. David, you wanted to talk about the scope?" },
-        { "spk": "David", "html": "Yes. The website looks great, but we also want a mobile app. <span class='tg'>If</span> we launch without an app, we <span class='tg'>'ll lose</span> younger customers." },
-        { "spk": "Priya", "html": "I understand, David, but the app isn't in the budget. <span class='tg'>If</span> we <span class='tg'>had</span> a bigger budget, we <span class='tg'>would build</span> it — happily. Right now, we can't." },
-        { "spk": "David", "html": "Hmm. What <span class='tg'>would</span> it cost, hypothetically?" },
-        { "spk": "Priya", "html": "Roughly thirty percent more. And <span class='tg'>unless</span> we start planning it early, it won't be ready this year." },
-        { "spk": "Marcos", "b": true, "html": "Can I suggest something? <span class='tg'>If</span> we make the app <b>phase two</b>, we <span class='tg'>'ll finish</span> the website on time — and David, <span class='tg'>if</span> you confirm phase two this week, we <span class='tg'>'ll give</span> you a ten percent discount on it." },
-        { "spk": "David", "html": "That sounds fair. And the website deadline?" },
-        { "spk": "Marcos", "b": true, "html": "<span class='tg'>As long as</span> the scope doesn't change again, we'll deliver on the fifteenth. Deal?" },
-        { "spk": "David", "html": "Deal. I'll confirm phase two on Friday." },
-        { "spk": "Priya", "html": "Perfect. Good negotiation, everyone." }
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Thanks for joining, both. David, you wanted to talk about the scope?"
+        },
+        {
+          "spk": "David",
+          "html": "Yes. The website looks great, but we also want a mobile app. <span class='tg'>If</span> we launch without an app, we <span class='tg'>'ll lose</span> younger customers."
+        },
+        {
+          "spk": "Priya",
+          "html": "I understand, David, but the app isn't in the budget. <span class='tg'>If</span> we <span class='tg'>had</span> a bigger budget, we <span class='tg'>would build</span> it — happily. Right now, we can't."
+        },
+        {
+          "spk": "David",
+          "html": "Hmm. What <span class='tg'>would</span> it cost, hypothetically?"
+        },
+        {
+          "spk": "Priya",
+          "html": "Roughly thirty percent more. And <span class='tg'>unless</span> we start planning it early, it won't be ready this year."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Can I suggest something? <span class='tg'>If</span> we make the app <b>phase two</b>, we <span class='tg'>'ll finish</span> the website on time — and David, <span class='tg'>if</span> you confirm phase two this week, we <span class='tg'>'ll give</span> you a ten percent discount on it."
+        },
+        {
+          "spk": "David",
+          "html": "That sounds fair. And the website deadline?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>As long as</span> the scope doesn't change again, we'll deliver on the fifteenth. Deal?"
+        },
+        {
+          "spk": "David",
+          "html": "Deal. I'll confirm phase two on Friday."
+        },
+        {
+          "spk": "Priya",
+          "html": "Perfect. Good negotiation, everyone."
+        }
       ]
     },
     {
-      "type": "match", "id": "ex-match", "title": "UNÍ LA CONDICIÓN CON SU RESULTADO",
+      "type": "match",
+      "id": "ex-match",
+      "title": "UNÍ LA CONDICIÓN CON SU RESULTADO",
       "intro": "Tocá la cláusula con if y luego su resultado lógico.",
       "pairs": [
-        { "l": "If you confirm today,", "r": "we'll start on Monday." },
-        { "l": "If we had more budget,", "r": "we'd build the app now." },
-        { "l": "Unless you sign,", "r": "we can't begin the work." },
-        { "l": "As long as nothing changes,", "r": "we'll deliver on time." },
-        { "l": "If the site crashes again,", "r": "we'll call you immediately." },
-        { "l": "If I were you,", "r": "I'd accept the deal." }
+        {
+          "l": "If you confirm today,",
+          "r": "we'll start on Monday."
+        },
+        {
+          "l": "If we had more budget,",
+          "r": "we'd build the app now."
+        },
+        {
+          "l": "Unless you sign,",
+          "r": "we can't begin the work."
+        },
+        {
+          "l": "As long as nothing changes,",
+          "r": "we'll deliver on time."
+        },
+        {
+          "l": "If the site crashes again,",
+          "r": "we'll call you immediately."
+        },
+        {
+          "l": "If I were you,",
+          "r": "I'd accept the deal."
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l2",
+      "type": "listening",
+      "id": "ex-l2",
       "title": "AUDIO 2 · THE DEBRIEF",
       "desc": "Después de la llamada, Marcos y Sofia repasan el acuerdo y planean la fase dos.",
-      "src": "b1-l4-2.mp3", "dur": "0:49", "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "src": "b1-l4-2.mp3",
+      "dur": "0:49",
+      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
       "questions": [
-        { "type": "mcq", "q": "What discount did Marcos offer David?", "options": ["Ten percent", "Thirty percent", "Fifty percent"], "answer": 0 },
-        { "type": "mcq", "q": "What will Sofia do if David confirms on Friday?", "options": ["Start planning phase two", "Cancel the website", "Take a holiday"], "answer": 0 },
-        { "type": "trueFalse", "q": "Sofia thinks the deal was a bad idea.", "answer": false }
+        {
+          "type": "mcq",
+          "q": "What discount did Marcos offer David?",
+          "options": [
+            "Ten percent",
+            "Thirty percent",
+            "Fifty percent"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What will Sofia do if David confirms on Friday?",
+          "options": [
+            "Start planning phase two",
+            "Cancel the website",
+            "Take a holiday"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "Sofia thinks the deal was a bad idea.",
+          "answer": false
+        }
       ],
-      "speaking": { "prompt": "What would YOU do if a client asked for more features without more budget? Use 1–2 conditionals.", "starter": "If a client asked for more features, I would… Unless they increased the budget, I…" },
+      "speaking": {
+        "prompt": "What would YOU do if a client asked for more features without more budget? Use 1–2 conditionals.",
+        "starter": "If a client asked for more features, I would… Unless they increased the budget, I…"
+      },
       "transcript": [
-        { "spk": "Sofia", "html": "Marcos! I heard the call went well. So, what's the deal?" },
-        { "spk": "Marcos", "b": true, "html": "Pretty good. <span class='tg'>If</span> David confirms this week, we <span class='tg'>'ll build</span> the app as phase two — with a ten percent discount." },
-        { "spk": "Sofia", "html": "Smart. And Priya accepted that?" },
-        { "spk": "Marcos", "b": true, "html": "Yes. She said <span class='tg'>if</span> we <span class='tg'>had</span> a bigger budget, she <span class='tg'>would build</span> it now — but phase two works for everyone." },
-        { "spk": "Sofia", "html": "Great. <span class='tg'>If</span> he confirms on Friday, I <span class='tg'>'ll start</span> planning phase two next week. And the website?" },
-        { "spk": "Marcos", "b": true, "html": "On track. <span class='tg'>As long as</span> nothing changes, we deliver on the fifteenth. <span class='tg'>Unless</span> the server crashes again, of course!" },
-        { "spk": "Sofia", "html": "Don't even joke about that! Nice work, Marcos. You're getting good at this." }
+        {
+          "spk": "Sofia",
+          "html": "Marcos! I heard the call went well. So, what's the deal?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Pretty good. <span class='tg'>If</span> David confirms this week, we <span class='tg'>'ll build</span> the app as phase two — with a ten percent discount."
+        },
+        {
+          "spk": "Sofia",
+          "html": "Smart. And Priya accepted that?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Yes. She said <span class='tg'>if</span> we <span class='tg'>had</span> a bigger budget, she <span class='tg'>would build</span> it now — but phase two works for everyone."
+        },
+        {
+          "spk": "Sofia",
+          "html": "Great. <span class='tg'>If</span> he confirms on Friday, I <span class='tg'>'ll start</span> planning phase two next week. And the website?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "On track. <span class='tg'>As long as</span> nothing changes, we deliver on the fifteenth. <span class='tg'>Unless</span> the server crashes again, of course!"
+        },
+        {
+          "spk": "Sofia",
+          "html": "Don't even joke about that! Nice work, Marcos. You're getting good at this."
+        }
       ]
     },
     {

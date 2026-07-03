@@ -1,109 +1,356 @@
 {
-  "level": "A2", "num": 5, "totalLessons": 6, "world": "ON THE JOB",
+  "level": "A2",
+  "num": 5,
+  "totalLessons": 6,
+  "world": "ON THE JOB",
   "key": "rankup_A2_L5",
   "title": "WHICH IS BETTER?<br>COMPARATIVES",
   "titlePlain": "Comparatives & Describing (A2)",
   "subtitle": "Vocab &amp; Listening · A2 · ~45 min",
   "rankup": "LESSON CLEAR!",
-  "next": { "href": "lesson.html?id=a2-l6", "label": "LESSON 6 ▸ FUTURE PLANS" },
+  "next": {
+    "href": "lesson.html?id=a2-l6",
+    "label": "LESSON 6 ▸ FUTURE PLANS"
+  },
   "blocks": [
     {
-      "type": "grammar", "tag": "comparatives",
+      "type": "grammar",
+      "tag": "comparatives",
       "title": "📘 COMPARATIVES · comparar A con B",
       "intro": "Para comparar dos cosas usamos el <b style='color:var(--gold)'>comparativo</b> + <code>than</code>. Repasa y practica.",
       "cells": [
-        { "h": "+er · adj. cortos", "body": "cheap → <code>cheaper</code><br>fast → <code>faster</code><br>big → <code>bigger</code> <span class='es'>(doble g)</span>" },
-        { "h": "more · adj. largos", "body": "<code>more expensive</code><br><code>more comfortable</code><br><code>more reliable</code>" },
-        { "h": "★ Irregulares", "body": "good → <code>better</code><br>bad → <code>worse</code><br>far → <code>further</code>" },
-        { "h": "⚠ Watch out", "body": "siempre <code>than</code>: A is faster <b>than</b> B<br><span class='x'>more bigger</span> · <span class='x'>more better</span><br><span class='ok'>bigger</span> · <span class='ok'>better</span>" }
+        {
+          "h": "+er · adj. cortos",
+          "body": "cheap → <code>cheaper</code><br>fast → <code>faster</code><br>big → <code>bigger</code> <span class='es'>(doble g)</span>"
+        },
+        {
+          "h": "more · adj. largos",
+          "body": "<code>more expensive</code><br><code>more comfortable</code><br><code>more reliable</code>"
+        },
+        {
+          "h": "★ Irregulares",
+          "body": "good → <code>better</code><br>bad → <code>worse</code><br>far → <code>further</code>"
+        },
+        {
+          "h": "⚠ Watch out",
+          "body": "siempre <code>than</code>: A is faster <b>than</b> B<br><span class='x'>more bigger</span> · <span class='x'>more better</span><br><span class='ok'>bigger</span> · <span class='ok'>better</span>"
+        }
       ],
       "ladderLabel": "<b style='color:var(--purple)'>Adjetivos útiles</b> para describir cosas y personas:",
-      "ladder": ["fast", "cheap", "light", "powerful", "reliable", "comfortable", "modern"],
+      "ladder": [
+        "fast",
+        "cheap",
+        "light",
+        "powerful",
+        "reliable",
+        "comfortable",
+        "modern"
+      ],
       "vocabBtn": "📒 Ver vocabulario para describir",
       "vocab": [
-        { "en": "cheap / expensive", "sp": "barato / caro" }, { "en": "light / heavy", "sp": "liviano / pesado" },
-        { "en": "fast / slow", "sp": "rápido / lento" }, { "en": "big / small", "sp": "grande / chico" },
-        { "en": "reliable", "sp": "confiable" }, { "en": "comfortable", "sp": "cómodo" },
-        { "en": "battery / screen", "sp": "batería / pantalla" }, { "en": "worth it", "sp": "vale la pena" }
+        {
+          "en": "Cheap / Expensive",
+          "sp": "barato / caro"
+        },
+        {
+          "en": "Light / Heavy",
+          "sp": "liviano / pesado"
+        },
+        {
+          "en": "Fast / Slow",
+          "sp": "rápido / lento"
+        },
+        {
+          "en": "Big / Small",
+          "sp": "grande / chico"
+        },
+        {
+          "en": "Reliable",
+          "sp": "confiable"
+        },
+        {
+          "en": "Comfortable",
+          "sp": "cómodo"
+        },
+        {
+          "en": "Battery / Screen",
+          "sp": "batería / pantalla"
+        },
+        {
+          "en": "Worth it",
+          "sp": "vale la pena"
+        }
       ],
       "note": "<b>Cómo funciona:</b> uní adjetivos 🔗, completa comparativos 📝 y escucha al equipo comparar 🎧. ✓ CHECK en cada uno."
     },
     {
-      "type": "story", "tag": "comparar para decidir",
+      "type": "story",
+      "tag": "comparar para decidir",
       "title": "★ MAKING DECISIONS",
       "intro": "El equipo decide entre opciones: qué laptop comprar y a qué candidato contratar. Para decidir, comparan.",
       "cast": [
-        { "en": "Sofia", "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧" },
-        { "en": "Marcos", "sp": "el developer 🇲🇽" }
+        {
+          "en": "Sofia",
+          "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧"
+        },
+        {
+          "en": "Marcos",
+          "sp": "el developer 🇲🇽"
+        }
       ]
     },
     {
-      "type": "match", "id": "ex-match", "title": "UNÍ ADJETIVO E INGLÉS",
+      "type": "match",
+      "id": "ex-match",
+      "title": "UNÍ ADJETIVO E INGLÉS",
       "intro": "Tocá la palabra en inglés y luego su traducción.",
       "pairs": [
-        { "l": "cheap", "r": "barato" },
-        { "l": "expensive", "r": "caro" },
-        { "l": "light", "r": "liviano" },
-        { "l": "heavy", "r": "pesado" },
-        { "l": "reliable", "r": "confiable" },
-        { "l": "fast", "r": "rápido" }
+        {
+          "l": "cheap",
+          "r": "barato"
+        },
+        {
+          "l": "expensive",
+          "r": "caro"
+        },
+        {
+          "l": "light",
+          "r": "liviano"
+        },
+        {
+          "l": "heavy",
+          "r": "pesado"
+        },
+        {
+          "l": "reliable",
+          "r": "confiable"
+        },
+        {
+          "l": "fast",
+          "r": "rápido"
+        }
       ]
     },
     {
-      "type": "gapFill", "id": "ex-gap", "title": "COMPLETÁ EL COMPARATIVO",
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "COMPLETÁ EL COMPARATIVO",
       "intro": "Elegí el comparativo correcto.",
       "items": [
-        { "q": "This laptop is ___ than mine.", "options": ["faster", "fastest", "more fast"], "answer": 0 },
-        { "q": "The black one is more ___ than the silver one.", "options": ["expensive", "expensiver", "expensives"], "answer": 0 },
-        { "q": "Her English is ___ than mine.", "options": ["better", "gooder", "more good"], "answer": 0 },
-        { "q": "This phone is ___ than that one.", "options": ["cheaper", "cheapest", "more cheap"], "answer": 0 },
-        { "q": "The new office is ___ than the old one.", "options": ["bigger", "biggest", "more big"], "answer": 0 },
-        { "q": "My old laptop was ___ than this one.", "options": ["worse", "badder", "more bad"], "answer": 0 }
+        {
+          "q": "This laptop is ___ than mine.",
+          "options": [
+            "faster",
+            "fastest",
+            "more fast"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The black one is more ___ than the silver one.",
+          "options": [
+            "expensive",
+            "expensiver",
+            "expensives"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Her English is ___ than mine.",
+          "options": [
+            "better",
+            "gooder",
+            "more good"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "This phone is ___ than that one.",
+          "options": [
+            "cheaper",
+            "cheapest",
+            "more cheap"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The new office is ___ than the old one.",
+          "options": [
+            "bigger",
+            "biggest",
+            "more big"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "My old laptop was ___ than this one.",
+          "options": [
+            "worse",
+            "badder",
+            "more bad"
+          ],
+          "answer": 0
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l1",
+      "type": "listening",
+      "id": "ex-l1",
       "title": "AUDIO 1 · CHOOSING A NEW LAPTOP",
       "desc": "Marcos necesita una laptop y Sofia lo ayuda a comparar dos modelos.",
-      "src": "comparatives-1.mp3", "dur": "0:46", "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "src": "comparatives-1.mp3",
+      "dur": "0:46",
+      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
       "questions": [
-        { "type": "mcq", "q": "Which laptop is cheaper?", "options": ["The silver one", "The black one", "They cost the same"], "answer": 0 },
-        { "type": "mcq", "q": "Why is the silver one better for travel?", "options": ["It is faster", "It has a bigger screen", "It is lighter"], "answer": 2 },
-        { "type": "trueFalse", "q": "The black one has a better battery.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "Which laptop is cheaper?",
+          "options": [
+            "The silver one",
+            "The black one",
+            "They cost the same"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why is the silver one better for travel?",
+          "options": [
+            "It is faster",
+            "It has a bigger screen",
+            "It is lighter"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "trueFalse",
+          "q": "The black one has a better battery.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "Compare two phones or laptops you know. Use <i>cheaper</i>, <i>faster</i> and <i>better</i> with <i>than</i>.", "starter": "The black laptop is faster than the silver one, but it's more…" },
+      "speaking": {
+        "prompt": "Compare two phones or laptops you know. Use <i>cheaper</i>, <i>faster</i> and <i>better</i> with <i>than</i>.",
+        "starter": "The black laptop is faster than the silver one, but it's more…"
+      },
       "transcript": [
-        { "spk": "Marcos", "b": true, "html": "Sofia, I need a new laptop for work. Can you help me choose?" },
-        { "spk": "Sofia", "html": "Sure! The silver one is <span class='tg'>cheaper</span>, but the black one is <span class='tg'>faster</span>." },
-        { "spk": "Marcos", "b": true, "html": "How big is the difference?" },
-        { "spk": "Sofia", "html": "The black one is <span class='tg'>more expensive</span>, but it has a <span class='tg'>better</span> battery." },
-        { "spk": "Marcos", "b": true, "html": "Is it <span class='tg'>heavier</span>?" },
-        { "spk": "Sofia", "html": "A little. The silver one is <span class='tg'>lighter</span>, so it's <span class='tg'>better</span> for travel. But the screen is <span class='tg'>smaller</span>." },
-        { "spk": "Marcos", "b": true, "html": "I think the black one is <span class='tg'>more powerful</span>. The battery is <span class='tg'>more important</span> for me." },
-        { "spk": "Sofia", "html": "Good choice. It's also <span class='tg'>more reliable</span>." }
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Sofia, I need a new laptop for work. Can you help me choose?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "Sure! The silver one is <span class='tg'>cheaper</span>, but the black one is <span class='tg'>faster</span>."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "How big is the difference?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "The black one is <span class='tg'>more expensive</span>, but it has a <span class='tg'>better</span> battery."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Is it <span class='tg'>heavier</span>?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "A little. The silver one is <span class='tg'>lighter</span>, so it's <span class='tg'>better</span> for travel. But the screen is <span class='tg'>smaller</span>."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I think the black one is <span class='tg'>more powerful</span>. The battery is <span class='tg'>more important</span> for me."
+        },
+        {
+          "spk": "Sofia",
+          "html": "Good choice. It's also <span class='tg'>more reliable</span>."
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l2",
+      "type": "listening",
+      "id": "ex-l2",
       "title": "AUDIO 2 · COMPARING TWO CANDIDATES",
       "desc": "Sofia y Marcos comparan a dos candidatos para un puesto.",
-      "src": "comparatives-3.mp3", "dur": "0:52", "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "src": "comparatives-3.mp3",
+      "dur": "0:52",
+      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
       "questions": [
-        { "type": "mcq", "q": "Who has more experience?", "options": ["Ana", "Ben", "They have the same"], "answer": 0 },
-        { "type": "mcq", "q": "What is Ben better at?", "options": ["He is more organized", "His English is better", "He is faster, more creative and more confident"], "answer": 2 },
-        { "type": "trueFalse", "q": "They choose Ana because experience is more important.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "Who has more experience?",
+          "options": [
+            "Ana",
+            "Ben",
+            "They have the same"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is Ben better at?",
+          "options": [
+            "He is more organized",
+            "His English is better",
+            "He is faster, more creative and more confident"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "trueFalse",
+          "q": "They choose Ana because experience is more important.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "Compare two people you know (two colleagues, two friends). Use <i>more…</i> and <i>better</i>.", "starter": "Ana has more experience than Ben, but Ben is more…" },
+      "speaking": {
+        "prompt": "Compare two people you know (two colleagues, two friends). Use <i>more…</i> and <i>better</i>.",
+        "starter": "Ana has more experience than Ben, but Ben is more…"
+      },
       "transcript": [
-        { "spk": "Sofia", "html": "We have two candidates. Can you help me decide?" },
-        { "spk": "Marcos", "b": true, "html": "Of course. Tell me about them." },
-        { "spk": "Sofia", "html": "Ana has <span class='tg'>more experience</span>. Ben is <span class='tg'>younger</span>, but he's <span class='tg'>faster</span> and <span class='tg'>more creative</span>." },
-        { "spk": "Marcos", "b": true, "html": "Is Ana's English <span class='tg'>better</span>?" },
-        { "spk": "Sofia", "html": "A bit <span class='tg'>better</span>. But Ben is <span class='tg'>more confident</span> in meetings." },
-        { "spk": "Marcos", "b": true, "html": "Who is <span class='tg'>more reliable</span>?" },
-        { "spk": "Sofia", "html": "Ana is <span class='tg'>more organized</span>. Ben is <span class='tg'>more relaxed</span>." },
-        { "spk": "Marcos", "b": true, "html": "I think experience is <span class='tg'>more important</span>. Ana is the <span class='tg'>safer</span> choice." },
-        { "spk": "Sofia", "html": "I agree. Let's offer the job to Ana." }
+        {
+          "spk": "Sofia",
+          "html": "We have two candidates. Can you help me decide?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Of course. Tell me about them."
+        },
+        {
+          "spk": "Sofia",
+          "html": "Ana has <span class='tg'>more experience</span>. Ben is <span class='tg'>younger</span>, but he's <span class='tg'>faster</span> and <span class='tg'>more creative</span>."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Is Ana's English <span class='tg'>better</span>?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "A bit <span class='tg'>better</span>. But Ben is <span class='tg'>more confident</span> in meetings."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Who is <span class='tg'>more reliable</span>?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "Ana is <span class='tg'>more organized</span>. Ben is <span class='tg'>more relaxed</span>."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I think experience is <span class='tg'>more important</span>. Ana is the <span class='tg'>safer</span> choice."
+        },
+        {
+          "spk": "Sofia",
+          "html": "I agree. Let's offer the job to Ana."
+        }
       ]
     },
     {

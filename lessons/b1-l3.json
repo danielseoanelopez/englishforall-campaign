@@ -1,113 +1,377 @@
 {
-  "level": "B1", "num": 3, "totalLessons": 6, "world": "HOLDING YOUR OWN",
+  "level": "B1",
+  "num": 3,
+  "totalLessons": 6,
+  "world": "HOLDING YOUR OWN",
   "key": "rankup_B1_L3",
   "title": "TELLING<br>THE STORY",
   "titlePlain": "Telling the Story — Past Narration (B1)",
   "subtitle": "Grammar &amp; Listening · B1 · ~45 min",
   "rankup": "LESSON CLEAR!",
-  "next": { "href": "lesson.html?id=b1-l4", "label": "LESSON 4 ▸ IF THIS, THEN THAT" },
+  "next": {
+    "href": "lesson.html?id=b1-l4",
+    "label": "LESSON 4 ▸ IF THIS, THEN THAT"
+  },
   "blocks": [
     {
-      "type": "grammar", "tag": "past narration",
+      "type": "grammar",
+      "tag": "past narration",
       "title": "📘 PAST CONTINUOUS vs PAST SIMPLE",
       "intro": "Para contar historias usamos los dos: el <b style='color:var(--gold)'>past continuous</b> (was/were + -ing) pinta la escena de fondo, y el <b style='color:var(--gold)'>past simple</b> cuenta las acciones que pasaron. Repasa y luego practica.",
       "cells": [
-        { "h": "✓ Form", "body": "I / he / she <code>was working</code><br>you / we / they <code>were working</code><br><span class='es'>was/were + verbo-ing</span>" },
-        { "h": "🎬 Escena vs acción", "body": "<span class='ok'>I <b>was watching</b> a film</span> <span class='es'>(fondo, en progreso)</span><br><span class='ok'>when my phone <b>rang</b>.</span> <span class='es'>(acción corta)</span>" },
-        { "h": "🔗 while / when", "body": "<code>While</code> + continuo: <i>While I was checking…</i><br><code>When</code> + simple: <i>When the server crashed…</i>" },
-        { "h": "⏱ as soon as", "body": "<code>As soon as</code> = en cuanto:<br><i>As soon as we fixed it, the site came back.</i>" },
-        { "h": "⚠ Watch out", "body": "Evento terminado = past simple:<br><span class='ok'>The server crashed at eleven.</span><br><span class='x'>The server was crashing at eleven.</span>" }
+        {
+          "h": "✓ Form",
+          "body": "I / he / she <code>was working</code><br>you / we / they <code>were working</code><br><span class='es'>was/were + verbo-ing</span>"
+        },
+        {
+          "h": "🎬 Escena vs acción",
+          "body": "<span class='ok'>I <b>was watching</b> a film</span> <span class='es'>(fondo, en progreso)</span><br><span class='ok'>when my phone <b>rang</b>.</span> <span class='es'>(acción corta)</span>"
+        },
+        {
+          "h": "🔗 while / when",
+          "body": "<code>While</code> + continuo: <i>While I was checking…</i><br><code>When</code> + simple: <i>When the server crashed…</i>"
+        },
+        {
+          "h": "⏱ as soon as",
+          "body": "<code>As soon as</code> = en cuanto:<br><i>As soon as we fixed it, the site came back.</i>"
+        },
+        {
+          "h": "⚠ Watch out",
+          "body": "Evento terminado = past simple:<br><span class='ok'>The server crashed at eleven.</span><br><span class='x'>The server was crashing at eleven.</span>"
+        }
       ],
       "ladderLabel": "<b style='color:var(--purple)'>Secuenciadores</b> — ordenan tu historia y suenan naturales:",
-      "ladder": ["First…", "Then…", "Suddenly…", "As soon as…", "After that…", "In the end…"],
+      "ladder": [
+        "First…",
+        "Then…",
+        "Suddenly…",
+        "As soon as…",
+        "After that…",
+        "In the end…"
+      ],
       "vocabBtn": "📒 Ver vocabulario de la crisis",
       "vocab": [
-        { "en": "server", "sp": "servidor" }, { "en": "to crash", "sp": "caerse / fallar" },
-        { "en": "to be down", "sp": "estar caído (un sitio)" }, { "en": "outage", "sp": "caída / interrupción" },
-        { "en": "alert", "sp": "alerta / aviso" }, { "en": "logs", "sp": "registros del sistema" },
-        { "en": "to fix", "sp": "arreglar" }, { "en": "to restart", "sp": "reiniciar" },
-        { "en": "on call", "sp": "de guardia" }, { "en": "launch night", "sp": "noche de lanzamiento" }
+        {
+          "en": "Server",
+          "sp": "servidor"
+        },
+        {
+          "en": "To crash",
+          "sp": "caerse / fallar"
+        },
+        {
+          "en": "To be down",
+          "sp": "estar caído (un sitio)"
+        },
+        {
+          "en": "Outage",
+          "sp": "caída / interrupción"
+        },
+        {
+          "en": "Alert",
+          "sp": "alerta / aviso"
+        },
+        {
+          "en": "Logs",
+          "sp": "registros del sistema"
+        },
+        {
+          "en": "To fix",
+          "sp": "arreglar"
+        },
+        {
+          "en": "To restart",
+          "sp": "reiniciar"
+        },
+        {
+          "en": "On call",
+          "sp": "de guardia"
+        },
+        {
+          "en": "Launch night",
+          "sp": "noche de lanzamiento"
+        }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>ordenar</b> 🧩, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>memory</b> 🧠. Hacé el ✓ CHECK en cada ejercicio."
     },
     {
-      "type": "story", "tag": "la noche del lanzamiento",
+      "type": "story",
+      "tag": "la noche del lanzamiento",
       "title": "★ THE NIGHT EVERYTHING CRASHED",
       "intro": "El viernes lanzaron el sitio de GreenMarket… y a las once de la noche todo se cayó. El lunes, Priya quiere saber qué pasó. Marcos cuenta su versión de la historia — y después Sofia cuenta la suya. <b style='color:var(--gold)'>¿Dicen lo mismo?</b> 👀",
       "cast": [
-        { "en": "Marcos", "sp": "cuenta <b style='color:var(--magenta)'>su versión</b> 🇲🇽" },
-        { "en": "Sofia", "sp": "cuenta <b style='color:var(--magenta)'>la suya</b> 🇬🇧" },
-        { "en": "Priya", "sp": "quiere la historia completa 🇮🇳" }
+        {
+          "en": "Marcos",
+          "sp": "cuenta <b style='color:var(--magenta)'>su versión</b> 🇲🇽"
+        },
+        {
+          "en": "Sofia",
+          "sp": "cuenta <b style='color:var(--magenta)'>la suya</b> 🇬🇧"
+        },
+        {
+          "en": "Priya",
+          "sp": "quiere la historia completa 🇮🇳"
+        }
       ]
     },
     {
-      "type": "order", "id": "ex-order", "title": "ORDENÁ LA HISTORIA",
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENÁ LA HISTORIA",
       "intro": "Tocá las palabras para reconstruir las frases de la noche del lanzamiento.",
       "items": [
-        { "words": ["Suddenly", "the", "website", "went", "down"], "answer": "Suddenly the website went down" },
-        { "words": ["I", "was", "watching", "a", "film", "when", "my", "phone", "rang"], "answer": "I was watching a film when my phone rang" },
-        { "words": ["While", "I", "was", "checking", "the", "logs", "I", "found", "the", "problem"], "answer": "While I was checking the logs I found the problem" }
+        {
+          "words": [
+            "Suddenly",
+            "the",
+            "website",
+            "went",
+            "down"
+          ],
+          "answer": "Suddenly the website went down"
+        },
+        {
+          "words": [
+            "I",
+            "was",
+            "watching",
+            "a",
+            "film",
+            "when",
+            "my",
+            "phone",
+            "rang"
+          ],
+          "answer": "I was watching a film when my phone rang"
+        },
+        {
+          "words": [
+            "While",
+            "I",
+            "was",
+            "checking",
+            "the",
+            "logs",
+            "I",
+            "found",
+            "the",
+            "problem"
+          ],
+          "answer": "While I was checking the logs I found the problem"
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l1",
+      "type": "listening",
+      "id": "ex-l1",
       "title": "AUDIO 1 · MARCOS'S VERSION",
       "desc": "Priya le pregunta a Marcos qué pasó la noche del lanzamiento. Escucha su versión.",
-      "src": "b1-l3-1.mp3", "dur": "0:57", "speakers": "🗣 Priya 🇮🇳 + Marcos 🇲🇽",
+      "src": "b1-l3-1.mp3",
+      "dur": "0:57",
+      "speakers": "🗣 Priya 🇮🇳 + Marcos 🇲🇽",
       "questions": [
-        { "type": "mcq", "q": "What was Marcos doing when his phone rang?", "options": ["Watching a film", "Sleeping", "Checking the logs"], "answer": 0 },
-        { "type": "mcq", "q": "What did he find while he was checking the logs?", "options": ["The payment system was sending too many requests", "The server was too old", "Someone deleted the website"], "answer": 0 },
-        { "type": "trueFalse", "q": "According to Marcos, the site was down for about one hour.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "What was Marcos doing when his phone rang?",
+          "options": [
+            "Watching a film",
+            "Sleeping",
+            "Checking the logs"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What did he find while he was checking the logs?",
+          "options": [
+            "The payment system was sending too many requests",
+            "The server was too old",
+            "Someone deleted the website"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "According to Marcos, the site was down for about one hour.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "Retell Marcos's story in 3–4 sentences. Use <i>was/were + -ing</i> for the background and past simple for the actions.", "starter": "He was watching a film when his phone rang. While he was checking the logs, he…" },
+      "speaking": {
+        "prompt": "Retell Marcos's story in 3–4 sentences. Use <i>was/were + -ing</i> for the background and past simple for the actions.",
+        "starter": "He was watching a film when his phone rang. While he was checking the logs, he…"
+      },
       "transcript": [
-        { "spk": "Priya", "html": "Marcos, I read the report about Friday night. Tell me — <span class='tg'>what happened</span>?" },
-        { "spk": "Marcos", "b": true, "html": "Well, it was about eleven o'clock. I <span class='tg'>was watching</span> a film at home <span class='tg'>when</span> my phone <span class='tg'>rang</span>. It was Sofia — the website <span class='tg'>was down</span>." },
-        { "spk": "Priya", "html": "The night of the launch! What did you do?" },
-        { "spk": "Marcos", "b": true, "html": "I logged on immediately. <span class='tg'>While</span> I <span class='tg'>was checking</span> the logs, I <span class='tg'>found</span> the problem: the payment system <span class='tg'>was sending</span> too many requests, and the server crashed." },
-        { "spk": "Priya", "html": "And how did you fix it?" },
-        { "spk": "Marcos", "b": true, "html": "I restarted the payment service. <span class='tg'>As soon as</span> we fixed it, the site <span class='tg'>came back</span>. It was down for about an hour. <span class='tg'>In the end</span>, the client never noticed — David called on Saturday just to say congratulations!" },
-        { "spk": "Priya", "html": "Good work. But let's make sure it never happens again." }
+        {
+          "spk": "Priya",
+          "html": "Marcos, I read the report about Friday night. Tell me — <span class='tg'>what happened</span>?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Well, it was about eleven o'clock. I <span class='tg'>was watching</span> a film at home <span class='tg'>when</span> my phone <span class='tg'>rang</span>. It was Sofia — the website <span class='tg'>was down</span>."
+        },
+        {
+          "spk": "Priya",
+          "html": "The night of the launch! What did you do?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I logged on immediately. <span class='tg'>While</span> I <span class='tg'>was checking</span> the logs, I <span class='tg'>found</span> the problem: the payment system <span class='tg'>was sending</span> too many requests, and the server crashed."
+        },
+        {
+          "spk": "Priya",
+          "html": "And how did you fix it?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I restarted the payment service. <span class='tg'>As soon as</span> we fixed it, the site <span class='tg'>came back</span>. It was down for about an hour. <span class='tg'>In the end</span>, the client never noticed — David called on Saturday just to say congratulations!"
+        },
+        {
+          "spk": "Priya",
+          "html": "Good work. But let's make sure it never happens again."
+        }
       ]
     },
     {
-      "type": "gapFill", "id": "ex-gap", "title": "CONTINUO o SIMPLE",
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "CONTINUO o SIMPLE",
       "intro": "Elegí la forma correcta. Pensá: ¿escena de fondo (was/were + -ing) o acción que pasó (past simple)?",
       "items": [
-        { "q": "I ___ a film when my phone rang.", "options": ["was watching", "watched", "am watching"], "answer": 0 },
-        { "q": "While I was checking the logs, I ___ the problem.", "options": ["found", "was finding", "find"], "answer": 0 },
-        { "q": "The server ___ at eleven o'clock.", "options": ["crashed", "was crashing", "crashes"], "answer": 0 },
-        { "q": "We ___ still testing when the sun came up.", "options": ["were", "was", "are"], "answer": 0 },
-        { "q": "___ soon as we fixed it, the site came back.", "options": ["As", "While", "When"], "answer": 0 },
-        { "q": "Sofia ___ working late when the alert arrived.", "options": ["was", "were", "is"], "answer": 0 }
+        {
+          "q": "I ___ a film when my phone rang.",
+          "options": [
+            "was watching",
+            "watched",
+            "am watching"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "While I was checking the logs, I ___ the problem.",
+          "options": [
+            "found",
+            "was finding",
+            "find"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The server ___ at eleven o'clock.",
+          "options": [
+            "crashed",
+            "was crashing",
+            "crashes"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We ___ still testing when the sun came up.",
+          "options": [
+            "were",
+            "was",
+            "are"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "___ soon as we fixed it, the site came back.",
+          "options": [
+            "As",
+            "While",
+            "When"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Sofia ___ working late when the alert arrived.",
+          "options": [
+            "was",
+            "were",
+            "is"
+          ],
+          "answer": 0
+        }
       ]
     },
     {
-      "type": "memory", "id": "mem-past",
+      "type": "memory",
+      "id": "mem-past",
       "title": "MEMORY · verbo y pasado",
       "intro": "Encontrá cada verbo con su past simple irregular. Tocá dos cartas.",
       "pairs": [
-        { "a": "find", "b": "found" },
-        { "a": "ring", "b": "rang" },
-        { "a": "come", "b": "came" },
-        { "a": "go", "b": "went" },
-        { "a": "break", "b": "broke" },
-        { "a": "fall", "b": "fell" }
+        {
+          "a": "find",
+          "b": "found"
+        },
+        {
+          "a": "ring",
+          "b": "rang"
+        },
+        {
+          "a": "come",
+          "b": "came"
+        },
+        {
+          "a": "go",
+          "b": "went"
+        },
+        {
+          "a": "break",
+          "b": "broke"
+        },
+        {
+          "a": "fall",
+          "b": "fell"
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l2",
+      "type": "listening",
+      "id": "ex-l2",
       "title": "AUDIO 2 · SOFIA'S VERSION",
       "desc": "Ahora Sofia cuenta SU versión de esa noche… y no coincide del todo con la de Marcos. 👀 ¿Qué cambia?",
-      "src": "b1-l3-2.mp3", "dur": "0:41", "speakers": "🗣 Sofia 🇬🇧",
+      "src": "b1-l3-2.mp3",
+      "dur": "0:41",
+      "speakers": "🗣 Sofia 🇬🇧",
       "questions": [
-        { "type": "mcq", "q": "According to Sofia, who saw the problem first?", "options": ["Sofia", "Marcos", "David"], "answer": 0 },
-        { "type": "mcq", "q": "How long does Sofia say the site was down?", "options": ["Almost two hours", "About one hour", "Ten minutes"], "answer": 0 },
-        { "type": "trueFalse", "q": "Sofia's story is exactly the same as Marcos's story.", "answer": false }
+        {
+          "type": "mcq",
+          "q": "According to Sofia, who saw the problem first?",
+          "options": [
+            "Sofia",
+            "Marcos",
+            "David"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How long does Sofia say the site was down?",
+          "options": [
+            "Almost two hours",
+            "About one hour",
+            "Ten minutes"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "trueFalse",
+          "q": "Sofia's story is exactly the same as Marcos's story.",
+          "answer": false
+        }
       ],
-      "speaking": { "prompt": "What are TWO differences between Sofia's version and Marcos's version?", "starter": "Marcos said the site was down for one hour, but Sofia says… And according to Sofia, she…" },
+      "speaking": {
+        "prompt": "What are TWO differences between Sofia's version and Marcos's version?",
+        "starter": "Marcos said the site was down for one hour, but Sofia says… And according to Sofia, she…"
+      },
       "transcript": [
-        { "spk": "Sofia", "html": "So, Marcos told you about launch night? Ha! Let me tell you what <span class='tg'>really</span> happened. I <span class='tg'>was working</span> late that Friday — I <span class='tg'>was writing</span> the launch report <span class='tg'>when</span> an alert <span class='tg'>appeared</span> on my screen. The website was down! I <span class='tg'>saw</span> the problem first, not Marcos — he says he found it, but I <span class='tg'>was already looking</span> at the logs when I called him! And one more thing: it wasn't down for one hour. It was down for <span class='tg'>almost two hours</span>. I know, because I <span class='tg'>was watching</span> the clock the whole time. But okay, I'll be fair: <span class='tg'>as soon as</span> he logged on, he worked really fast. <span class='tg'>In the end</span>, we fixed it together. That's the true story!" }
+        {
+          "spk": "Sofia",
+          "html": "So, Marcos told you about launch night? Ha! Let me tell you what <span class='tg'>really</span> happened. I <span class='tg'>was working</span> late that Friday — I <span class='tg'>was writing</span> the launch report <span class='tg'>when</span> an alert <span class='tg'>appeared</span> on my screen. The website was down! I <span class='tg'>saw</span> the problem first, not Marcos — he says he found it, but I <span class='tg'>was already looking</span> at the logs when I called him! And one more thing: it wasn't down for one hour. It was down for <span class='tg'>almost two hours</span>. I know, because I <span class='tg'>was watching</span> the clock the whole time. But okay, I'll be fair: <span class='tg'>as soon as</span> he logged on, he worked really fast. <span class='tg'>In the end</span>, we fixed it together. That's the true story!"
+        }
       ]
     },
     {
