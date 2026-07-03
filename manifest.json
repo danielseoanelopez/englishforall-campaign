@@ -1,0 +1,17 @@
+{
+  "name": "Rank Up City — English for All",
+  "short_name": "Rank Up",
+  "description": "Learn English like a game. Serve customers at the Neon Café, level up A1 to C2, and rank up. Play free.",
+  "start_url": "city.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#05050e",
+  "theme_color": "#05050e",
+  "lang": "en",
+  "categories": ["education", "games"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-rankup.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
