@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Card Album — Rank Up City</title>
+<link rel="icon" href="icon-rankup.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cyan: #00e5ff; --magenta: #ff3df0; --purple: #9d4dff; --gold: #ffc83d;
+  --green: #3dffa0; --red: #ff5d7a; --bg: #05050e; --panel: rgba(20, 22, 48, 0.93);
+  --text: #eaf7ff; --muted: #7fd9e8;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: "Share Tech Mono", monospace; background-color: var(--bg);
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #ffffff88 50%, transparent 51%),
+    radial-gradient(1px 1px at 70% 15%, #ffffff66 50%, transparent 51%),
+    radial-gradient(2px 2px at 85% 60%, #9d4dff55 50%, transparent 51%),
+    radial-gradient(1px 1px at 40% 80%, #00e5ff55 50%, transparent 51%),
+    radial-gradient(2px 2px at 60% 45%, #ff3df044 50%, transparent 51%);
+  background-size: 520px 520px; color: var(--text); line-height: 1.6;
+  padding: 18px 10px 50px; font-size: 16px; min-height: 100vh;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1;
+  background: linear-gradient(rgba(5,5,14,0.72), rgba(5,5,14,0.86)), url("nebula.jpg") center / cover no-repeat;
+}
+.wrap { max-width: 560px; margin: 0 auto; position: relative; z-index: 2; }
+.marquee { text-align: center; margin-bottom: 10px; }
+.marquee img { height: 72px; max-width: 84%; object-fit: contain; background: #000; padding: 7px 13px; border: 2px solid var(--cyan); border-radius: 14px; box-shadow: 0 0 16px #00e5ff55, inset 0 0 12px #00e5ff22; }
+h1 { font-family: "Press Start 2P", monospace; font-size: clamp(0.95rem, 4.4vw, 1.4rem); color: var(--gold); text-shadow: 2px 0 0 #000, 0 0 16px var(--gold); letter-spacing: 2px; text-align: center; margin: 10px 0 6px; }
+.count { text-align: center; font-family: "Press Start 2P", monospace; font-size: 0.6rem; color: var(--muted); letter-spacing: 1px; margin-bottom: 6px; }
+.bar { width: 200px; height: 8px; margin: 0 auto 18px; background: #10122a; border-radius: 999px; overflow: hidden; border: 1px solid #2a3a5a; }
+.bar > div { height: 100%; background: var(--gold); border-radius: 999px; box-shadow: 0 0 8px var(--gold); transition: width 0.4s; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+@media (min-width: 460px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+
+.card { position: relative; border: 2px solid var(--rc, #2a3a5a); border-radius: 14px; background: #0c0c22; padding: 10px 8px 12px; text-align: center; box-shadow: 0 0 12px var(--rg, transparent); animation: popIn 0.35s ease-out backwards; }
+.card:nth-child(2){animation-delay:.04s}.card:nth-child(3){animation-delay:.08s}.card:nth-child(4){animation-delay:.12s}.card:nth-child(5){animation-delay:.16s}.card:nth-child(6){animation-delay:.2s}.card:nth-child(7){animation-delay:.24s}.card:nth-child(8){animation-delay:.28s}
+.card.locked { border-style: dashed; opacity: 0.7; }
+.rar { font-family: "Press Start 2P", monospace; font-size: 0.42rem; letter-spacing: 1px; color: var(--rc); text-shadow: 0 0 6px var(--rg); }
+.face { height: 88px; display: flex; align-items: center; justify-content: center; margin: 8px 0 6px; }
+.face img { max-height: 88px; max-width: 90%; object-fit: contain; }
+.face .q { font-family: "Press Start 2P", monospace; font-size: 1.8rem; color: #2a3a5a; }
+.cname { font-family: "Press Start 2P", monospace; font-size: 0.55rem; color: #fff; letter-spacing: 1px; margin-bottom: 5px; }
+.card.locked .cname { color: #5a6a8a; }
+.cquote { font-size: 0.74rem; color: var(--muted); font-style: italic; line-height: 1.4; min-height: 2.4em; }
+.cpaws { font-family: "Press Start 2P", monospace; font-size: 0.46rem; color: var(--gold); margin-top: 7px; }
+.clock { font-size: 0.72rem; color: #5a6a8a; margin-top: 7px; }
+.newtag { position: absolute; top: -8px; right: -6px; font-family: "Press Start 2P", monospace; font-size: 0.42rem; color: #04180d; background: var(--green); border-radius: 6px; padding: 3px 6px; box-shadow: 0 0 8px var(--green); }
+
+.actions { display: flex; gap: 9px; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
+.btn { display: inline-flex; align-items: center; gap: 7px; font-family: "Press Start 2P", monospace; font-size: 0.58rem; background: linear-gradient(180deg, var(--magenta), #a31bd6); color: #fff; border: 2px solid #ff8df7; border-radius: 11px; padding: 12px 16px; cursor: pointer; letter-spacing: 1px; text-shadow: 0 0 6px #000; box-shadow: 0 0 14px #ff3df077; text-decoration: none; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 0 20px #ff3df0aa; }
+.btn.cyan { background: linear-gradient(180deg, var(--cyan), #0a7d93); border-color: #9ff1ff; box-shadow: 0 0 14px #00e5ff77; color: #04121f; text-shadow: none; }
+@keyframes popIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="marquee"><img src="logo.png" alt="English for All — Rank Up"></div>
+  <h1>★ CARD ALBUM ★</h1>
+  <div class="count" id="count">0 / 8 COLLECTED</div>
+  <div class="bar"><div id="bar" style="width:0%"></div></div>
+  <div class="grid" id="grid"></div>
+  <div class="actions">
+    <a class="btn cyan" href="neon-cafe.html">☕ PLAY THE CAFÉ</a>
+    <a class="btn" href="city.html">🏙 CITY MAP</a>
+  </div>
+</div>
+
+<script>
+"use strict";
+let prog = {};
+try { prog = JSON.parse(localStorage.getItem("nc_prog") || "{}"); } catch (e) {}
+const MAXPAWS = { s1: 9, s2: 12, s3: 12, s4: 12, s5: 12, s6: 12, sb: 12 };
+const STAGE_NAME = { s1: "First shift", s2: "The regulars", s3: "Rush hour", s4: "Lost & found", s5: "The delivery", s6: "Quiz night", sb: "The inspection" };
+const RARITY = {
+  COMMON:    { c: "#00e5ff", g: "#00e5ff44" },
+  RARE:      { c: "#3dffa0", g: "#3dffa044" },
+  EPIC:      { c: "#9d4dff", g: "#9d4dff55" },
+  LEGENDARY: { c: "#ffc83d", g: "#ffc83d66" },
+  SECRET:    { c: "#ff3df0", g: "#ff3df066" }
+};
+const CARDS = [
+  { id: "neoncup", stage: "s1", name: "NEON CUP", rarity: "COMMON", img: "item-flatwhite.png", quote: "Full of potential. Refill and retry." },
+  { id: "mia",     stage: "s2", name: "MIA",      rarity: "RARE",   img: "sprite-mia.png",  quote: "The regular. Bright, kind, from Brazil." },
+  { id: "jack",    stage: "s3", name: "JACK",     rarity: "RARE",   img: "sprite-jack.png", quote: "Big order, bigger heart. Cheers, mate." },
+  { id: "dan",     stage: "s4", name: "DAN",      rarity: "RARE",   img: "sprite-dan.png",  quote: "The manager on the radio. Believes in you." },
+  { id: "enri",    stage: "s5", name: "ENRI",     rarity: "EPIC",   img: "sprite-enri.png", quote: "I nap, and success finds me." },
+  { id: "vera",    stage: "s6", name: "VERA",     rarity: "EPIC",   img: "sprite-vera.png", quote: "One latte. And I am always watching." },
+  { id: "totti",   stage: "sb", name: "TOTTI",    rarity: "LEGENDARY", img: "sprite-totti.png", quote: "I observe. I judge. Then I nap." },
+  { id: "inspector", stage: "sb", perfect: true, name: "INSPECTOR VERA", rarity: "SECRET", img: "sprite-vera-inspector.png", quote: "Inspection passed. A perfect café." }
+];
+
+function earned(c) {
+  const p = prog[c.stage];
+  if (!p) return false;
+  if (c.perfect) return p.best >= MAXPAWS[c.stage];
+  return true;
+}
+
+const grid = document.getElementById("grid");
+let got = 0;
+CARDS.forEach(c => {
+  const has = earned(c);
+  if (has) got++;
+  const r = RARITY[c.rarity];
+  const p = prog[c.stage];
+  const card = document.createElement("div");
+  card.className = "card" + (has ? "" : " locked");
+  card.style.setProperty("--rc", has ? r.c : "#2a3a5a");
+  card.style.setProperty("--rg", has ? r.g : "transparent");
+  if (has) {
+    card.innerHTML =
+      '<div class="rar">' + (c.rarity === "SECRET" ? "★ SECRET ★" : c.rarity) + '</div>' +
+      '<div class="face"><img src="' + c.img + '" alt="' + c.name + '"></div>' +
+      '<div class="cname">' + c.name + '</div>' +
+      '<div class="cquote">"' + c.quote + '"</div>' +
+      (p ? '<div class="cpaws">BEST ' + p.best + '/' + MAXPAWS[c.stage] + ' 🐾</div>' : "");
+  } else {
+    const how = c.perfect ? "Perfect the inspection" : "Clear " + STAGE_NAME[c.stage];
+    card.innerHTML =
+      '<div class="rar" style="color:#5a6a8a">' + (c.rarity === "SECRET" ? "??? SECRET" : c.rarity) + '</div>' +
+      '<div class="face"><span class="q">?</span></div>' +
+      '<div class="cname">? ? ?</div>' +
+      '<div class="clock">🔒 ' + how + '</div>';
+  }
+  grid.appendChild(card);
+});
+
+document.getElementById("count").textContent = got + " / " + CARDS.length + " COLLECTED";
+document.getElementById("bar").style.width = Math.round(got / CARDS.length * 100) + "%";
+</script>
+</body>
+</html>

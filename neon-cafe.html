@@ -243,6 +243,9 @@ const CAST = {
   vera: { name: "VERA", sub: "food critic",     ava: "vera",    color: "var(--gold)" }
 };
 const AVIMG = { mia: "sprite-mia.png", jack: "sprite-jack.png", vera: "sprite-vera.png", headset: "sprite-dan.png", cat: "sprite-enri.png" };
+let spriteOverride = {};
+function avaFile(ava) { return spriteOverride[ava] || AVIMG[ava]; }
+function custFile(who) { return spriteOverride[who] || ("sprite-" + who + ".png"); }
 
 /* ============ STAGES ============ */
 const STAGES = {
@@ -412,6 +415,7 @@ const STAGES = {
   },
   sb: {
     num: "1-B", name: "The inspection", tag: "BOSS · everything you learned", boss: true,
+    spriteOverride: { vera: "sprite-vera-inspector.png" },
     intro: "Rookie... head office called. Vera is not just a critic — she is the CITY INSPECTOR. Everything you learned. One shift. Go.",
     introKey: "sb-intro",
     words: ["inspection", "flawless", "attention"],
@@ -533,7 +537,7 @@ function hud() {
 function el(html) { const d = document.createElement("div"); d.innerHTML = html; return d.firstElementChild; }
 function bubble(castKey, text, audioKey, subOverride) {
   const c = CAST[castKey];
-  const avaHTML = AVIMG[c.ava] ? '<img src="' + AVIMG[c.ava] + '" alt="">' : "";
+  const avaHTML = avaFile(c.ava) ? '<img src="' + avaFile(c.ava) + '" alt="">' : "";
   const r = el('<div class="row" style="--c:' + c.color + '">' +
     '<div class="ava">' + avaHTML + '</div>' +
     '<div class="bub"><div class="who">' + c.name + ' · ' + (subOverride || c.sub) + '</div><div class="say">' + text + '</div></div>' +
@@ -565,7 +569,7 @@ function pawRow(paws) {
 }
 function sceneSVG(custId) {
   return '<div class="scene-wrap"><div class="scene2" role="img" aria-label="The Neon Café counter">' +
-    (custId ? '<img class="sc-cust cust" src="sprite-' + custId + '.png" alt="">' : '') +
+    (custId ? '<img class="sc-cust cust" src="' + custFile(custId) + '" alt="">' : '') +
     '<div class="sc-bar"></div>' +
     '<img class="sc-enri" src="sprite-enri.png" alt="">' +
     '<span class="zz sc-z1">z</span><span class="zz2 sc-z2">z</span>' +
@@ -635,6 +639,7 @@ function showSelect() {
 function startStage(sid) {
   resetState(sid); hud();
   const st = STAGES[sid];
+  spriteOverride = st.spriteOverride || {};
   document.getElementById("marqueeTag").textContent = "RANK UP CITY · STAGE " + st.num + " · " + st.name.toUpperCase();
   stage.innerHTML = '<div class="scene-tag">STAGE ' + st.num + ' · ' + st.name.toUpperCase() + '</div>';
   stage.appendChild(bubble("dan", st.intro, st.introKey));
@@ -813,7 +818,7 @@ function showResult(R, paws, xp, tip, bonus, elapsed) {
   stage.innerHTML =
     '<div class="scene-tag">ROUND COMPLETE</div>' +
     '<div class="center">' +
-      '<div class="ava" style="--c:' + c.color + '; margin:8px auto; width:68px; height:68px;"><img src="' + AVIMG[c.ava] + '" alt=""></div>' +
+      '<div class="ava" style="--c:' + c.color + '; margin:8px auto; width:68px; height:68px;"><img src="' + avaFile(c.ava) + '" alt=""></div>' +
       '<p style="font-size:1rem; color:var(--muted); font-style:italic;">"' + R.thanks + '"</p>' +
       '<div class="ava" style="--c:var(--gold); margin:16px auto 7px; width:46px; height:46px;"><img src="sprite-totti.png" alt="" style="object-position:42% 4%"></div>' +
       '<div class="px" style="font-size:0.52rem; color:var(--gold); letter-spacing:1px;">TOTTI\'S JUDGMENT</div>' +
@@ -883,6 +888,7 @@ function showSummary() {
     (hasNext ? '<button class="btn serve" id="nextStageBtn">▶ NEXT SHIFT</button>' : '') +
     (isBossWin ? '<a class="btn serve" href="a1-final.html">🎓 OFFICIAL A1 EXAM</a>' : '') +
     '<button class="btn cyan" id="selBtn">SHIFT SELECT</button>' +
+    '<a class="btn gold" href="cards.html">🃏 CARD ALBUM</a>' +
     '<a class="btn" href="city.html">🏙 CITY MAP</a>' +
     '<a class="btn gold" href="' + waLink + '" target="_blank" rel="noopener">★ CLAIM FREE TRIAL LESSON</a>' +
     '<button class="btn" id="shareBtn">➤ SHARE SCORE</button></div>');

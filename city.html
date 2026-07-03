@@ -94,6 +94,18 @@ a.district:hover { transform: translateY(-3px); box-shadow: 0 0 20px var(--dg, #
 @keyframes zfloat { 0% { transform: translateY(0); opacity: 0; } 30% { opacity: 0.9; } 100% { transform: translateY(-14px); opacity: 0; } }
 .zz { position: absolute; font-family: "Press Start 2P", monospace; font-size: 9px; color: #ffd9a8; animation: zfloat 2.4s infinite; }
 .footer { text-align: center; margin-top: 22px; font-size: 0.78rem; color: #5a6a8a; }
+
+.strip { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+.pod { display: inline-flex; align-items: center; gap: 8px; background: var(--panel); border: 1.5px solid var(--pc, #2a3a5a); border-radius: 12px; padding: 8px 13px; font-family: "Press Start 2P", monospace; font-size: 0.56rem; letter-spacing: 1px; color: var(--pc, var(--muted)); text-decoration: none; box-shadow: 0 0 10px var(--pg, transparent); }
+a.pod:hover { transform: translateY(-2px); }
+.pod .big { font-size: 0.82rem; }
+.modal { position: fixed; inset: 0; z-index: 50; background: rgba(5,5,14,0.8); display: none; align-items: center; justify-content: center; padding: 20px; }
+.modal.on { display: flex; }
+.sheet { max-width: 420px; width: 100%; background: var(--panel); border: 2px solid var(--cyan); border-radius: 16px; padding: 20px 18px; box-shadow: 0 0 24px #00e5ff55; }
+.sheet h2 { font-family: "Press Start 2P", monospace; font-size: 0.7rem; color: var(--cyan); letter-spacing: 1px; margin-bottom: 12px; text-align: center; }
+.sheet p { font-size: 0.86rem; color: var(--muted); margin-bottom: 12px; text-align: center; }
+.sheet textarea { width: 100%; height: 90px; background: #0a0a1a; border: 1.5px solid #2a3a5a; border-radius: 10px; color: var(--green); font-family: "Share Tech Mono", monospace; font-size: 0.82rem; padding: 10px; resize: none; margin-bottom: 12px; }
+.sheet .row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
 </style>
 </head>
 <body>
@@ -102,6 +114,11 @@ a.district:hover { transform: translateY(-3px); box-shadow: 0 0 20px var(--dg, #
   <div class="marquee"><img src="logo.png" alt="English for All — Rank Up"></div>
   <h1>RANK UP CITY</h1>
   <div class="sub">Choose your district</div>
+
+  <div class="strip">
+    <span class="pod" style="--pc: #ff9d3d; --pg: #ff9d3d33;" id="streakPod">🔥 <span class="big" id="streakN">0</span> DAY STREAK</span>
+    <a class="pod" href="cards.html" style="--pc: var(--gold); --pg: #ffc83d33;">🃏 CARDS <span class="big" id="cardsN">0/8</span></a>
+  </div>
 
   <div class="grid" id="grid"></div>
 
@@ -129,8 +146,36 @@ a.district:hover { transform: translateY(-3px); box-shadow: 0 0 20px var(--dg, #
     <a class="btn cyan" href="index.html">🎓 ACADEMY LESSONS</a>
     <a class="btn gold" href="https://wa.me/5491123709477?text=Hola%20Dan!%20%F0%9F%8E%AE%20I%20found%20RANK%20UP%20CITY%20and%20I%20want%20my%20FREE%20trial%20lesson!%20%F0%9F%9A%80" target="_blank" rel="noopener">★ FREE TRIAL LESSON</a>
   </div>
+  <div class="actions" style="margin-top:10px;">
+    <button class="btn" id="saveBtn">💾 SAVE CODE</button>
+    <button class="btn" id="loadBtn">📥 LOAD CODE</button>
+  </div>
 
-  <div class="footer">English for All · Rank Up — speak English with confidence 🎤</div>
+  <div class="footer">English for All · Rank Up — speak English with confidence 🎤<br>Progress is saved on this device. Use a save code to move it to another.</div>
+</div>
+
+<div class="modal" id="saveModal">
+  <div class="sheet">
+    <h2>💾 SAVE CODE</h2>
+    <p>Copy this code. Paste it on another device to carry your progress over.</p>
+    <textarea id="saveText" readonly></textarea>
+    <div class="row">
+      <button class="btn cyan" id="copyBtn">📋 COPY</button>
+      <button class="btn" id="saveClose">CLOSE</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="loadModal">
+  <div class="sheet">
+    <h2>📥 LOAD CODE</h2>
+    <p>Paste a save code here to restore that progress. This replaces what's on this device.</p>
+    <textarea id="loadText" placeholder="paste your code..."></textarea>
+    <div class="row">
+      <button class="btn cyan" id="applyBtn">✓ RESTORE</button>
+      <button class="btn" id="loadClose">CLOSE</button>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -287,6 +332,67 @@ document.getElementById("enriImg").addEventListener("click", () => {
   enriSay.textContent = ENRI_TIPS[ei];
   purr();
 });
+
+/* ---- daily streak ---- */
+function dayStr(d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
+let streak = {};
+try { streak = JSON.parse(localStorage.getItem("nc_streak") || "{}"); } catch (e) {}
+(function () {
+  const today = dayStr(new Date());
+  if (streak.last !== today) {
+    const yest = dayStr(new Date(Date.now() - 86400000));
+    streak.count = (streak.last === yest) ? (streak.count || 0) + 1 : 1;
+    streak.last = today;
+    streak.best = Math.max(streak.best || 0, streak.count);
+    localStorage.setItem("nc_streak", JSON.stringify(streak));
+  }
+})();
+document.getElementById("streakN").textContent = streak.count || 0;
+
+/* ---- card count ---- */
+const CARD_STAGES = ["s1", "s2", "s3", "s4", "s5", "s6", "sb"];
+let cardsGot = CARD_STAGES.filter(s => prog[s]).length;
+if (prog.sb && prog.sb.best >= 12) cardsGot++;
+document.getElementById("cardsN").textContent = cardsGot + "/8";
+
+/* ---- save / load codes ---- */
+function encodeSave() {
+  const json = JSON.stringify({ v: 1, p: prog, s: streak });
+  return btoa(String.fromCharCode.apply(null, new TextEncoder().encode(json)));
+}
+function decodeSave(code) {
+  const bin = atob(code.trim());
+  const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
+  return JSON.parse(new TextDecoder().decode(bytes));
+}
+const saveModal = document.getElementById("saveModal");
+const loadModal = document.getElementById("loadModal");
+document.getElementById("saveBtn").addEventListener("click", () => {
+  blip(); document.getElementById("saveText").value = encodeSave(); saveModal.classList.add("on");
+});
+document.getElementById("saveClose").addEventListener("click", () => saveModal.classList.remove("on"));
+document.getElementById("loadClose").addEventListener("click", () => loadModal.classList.remove("on"));
+document.getElementById("copyBtn").addEventListener("click", async () => {
+  const t = document.getElementById("saveText");
+  try { await navigator.clipboard.writeText(t.value); } catch (e) { t.select(); document.execCommand("copy"); }
+  document.getElementById("copyBtn").textContent = "✓ COPIED!";
+});
+document.getElementById("loadBtn").addEventListener("click", () => { blip(); loadModal.classList.add("on"); });
+document.getElementById("applyBtn").addEventListener("click", () => {
+  const code = document.getElementById("loadText").value;
+  if (!code.trim()) return;
+  try {
+    const data = decodeSave(code);
+    if (!data || typeof data.p !== "object") throw new Error("bad");
+    localStorage.setItem("nc_prog", JSON.stringify(data.p));
+    if (data.s) localStorage.setItem("nc_streak", JSON.stringify(data.s));
+    alert("Progress restored! / ¡Progreso restaurado! ✓");
+    location.reload();
+  } catch (e) {
+    alert("That code doesn't look right. / Ese código no es válido. ✗");
+  }
+});
+[saveModal, loadModal].forEach(m => m.addEventListener("click", e => { if (e.target === m) m.classList.remove("on"); }));
 </script>
 </body>
 </html>
