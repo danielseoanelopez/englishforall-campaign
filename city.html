@@ -43,62 +43,51 @@ body::before {
   content: ""; position: fixed; inset: 0; z-index: -1;
   background: linear-gradient(rgba(5,5,14,0.72), rgba(5,5,14,0.86)), url("nebula.jpg") center / cover no-repeat;
 }
-.px { font-family: "Press Start 2P", monospace; }
-.es { color: var(--muted); font-size: 0.78rem; }
-
-.wrap { max-width: 560px; margin: 0 auto; position: relative; z-index: 2; }
-.marquee { text-align: center; margin-bottom: 12px; }
-.marquee img { height: 84px; max-width: 86%; object-fit: contain; background: #000; padding: 8px 14px; border: 2px solid var(--cyan); border-radius: 14px; box-shadow: 0 0 16px #00e5ff55, inset 0 0 12px #00e5ff22; }
-h1 { font-family: "Press Start 2P", monospace; font-size: clamp(1rem, 4.6vw, 1.5rem); color: var(--magenta); text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 0 0 16px var(--magenta); letter-spacing: 2px; text-align: center; margin: 14px 0 6px; line-height: 1.6; }
-.sub { text-align: center; color: var(--gold); font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 8px #ffc83d66; margin-bottom: 18px; }
+.wrap { max-width: 480px; margin: 0 auto; position: relative; z-index: 2; }
+.marquee { text-align: center; margin-bottom: 10px; }
+.marquee img { height: 76px; max-width: 84%; object-fit: contain; background: #000; padding: 7px 13px; border: 2px solid var(--cyan); border-radius: 14px; box-shadow: 0 0 16px #00e5ff55, inset 0 0 12px #00e5ff22; }
+h1 { font-family: "Press Start 2P", monospace; font-size: clamp(1rem, 4.6vw, 1.5rem); color: var(--magenta); text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 0 0 16px var(--magenta); letter-spacing: 2px; text-align: center; margin: 12px 0 4px; line-height: 1.6; }
+.sub { text-align: center; color: var(--gold); font-size: 0.86rem; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 8px #ffc83d66; margin-bottom: 14px; }
 .sub::before, .sub::after { content: " ✦ "; color: var(--cyan); }
 
-.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-@media (max-width: 430px) { .grid { grid-template-columns: 1fr; } }
+.strip { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+.pod { display: inline-flex; align-items: center; gap: 8px; background: var(--panel); border: 1.5px solid var(--pc, #2a3a5a); border-radius: 12px; padding: 8px 13px; font-family: "Press Start 2P", monospace; font-size: 0.56rem; letter-spacing: 1px; color: var(--pc, var(--muted)); text-decoration: none; box-shadow: 0 0 10px var(--pg, transparent); }
+a.pod:hover { transform: translateY(-2px); }
+.pod .big { font-size: 0.82rem; }
 
-.district { position: relative; background: var(--panel); border: 2px solid var(--dc, var(--cyan)); border-radius: 14px; padding: 14px 12px 12px; text-align: center; box-shadow: 0 0 12px var(--dg, #00e5ff44), inset 0 0 16px #00e5ff0a; transition: transform 0.12s, box-shadow 0.15s; text-decoration: none; color: var(--text); display: block; }
-a.district:hover { transform: translateY(-3px); box-shadow: 0 0 20px var(--dg, #00e5ff88); }
-.district.locked { opacity: 0.55; border-style: dashed; }
-.district svg { display: block; width: 100%; height: 110px; margin-bottom: 8px; }
-.d-name { font-family: "Press Start 2P", monospace; font-size: 0.6rem; color: #fff; letter-spacing: 1px; line-height: 1.6; text-shadow: 0 0 6px var(--dc); }
-.d-world { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
-.d-pill { display: inline-block; font-family: "Press Start 2P", monospace; font-size: 0.46rem; letter-spacing: 1px; padding: 5px 10px; border-radius: 20px; border: 1px solid currentColor; margin-top: 9px; }
-.d-pill.open { color: var(--green); }
-.d-pill.prog { color: var(--gold); }
-.d-pill.lock { color: #6a7a9a; }
-.d-level { position: absolute; top: 9px; left: 9px; font-family: "Press Start 2P", monospace; font-size: 0.5rem; color: var(--dc); border: 1.5px solid var(--dc); border-radius: 8px; padding: 4px 7px; background: #0c0c22; text-shadow: 0 0 6px var(--dc); }
+.map { position: relative; border: 2px solid #2a3a5a; border-radius: 16px; overflow: hidden; box-shadow: 0 0 18px #9d4dff33, inset 0 0 30px #00000066; margin-bottom: 16px; }
+.map svg { display: block; width: 100%; height: auto; }
+.node { cursor: default; }
+.node.open { cursor: pointer; }
+.node text { pointer-events: none; }
+.map .lvl { font-family: "Press Start 2P", monospace; font-size: 7px; }
+.map .nm { font-family: "Press Start 2P", monospace; font-size: 6px; letter-spacing: 0.5px; }
+.map .paw { font-family: "Press Start 2P", monospace; font-size: 5.5px; }
+.map .tag { font-family: "Press Start 2P", monospace; font-size: 5.5px; letter-spacing: 0.5px; }
+@keyframes halopulse { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.95; } }
+.halo { animation: halopulse 2s ease-in-out infinite; transform-origin: center; }
+@keyframes nodewiggle { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+.node.wiggle { animation: nodewiggle 0.4s; }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+.here { animation: bob 1.4s ease-in-out infinite; transform-origin: center; }
 
-.cats { margin-top: 18px; display: flex; flex-direction: column; gap: 12px; }
+.cats { margin-bottom: 6px; display: flex; flex-direction: column; gap: 10px; }
 .catrow { display: flex; gap: 10px; align-items: flex-end; }
 .catrow.rev { flex-direction: row-reverse; }
-.catimg { flex-shrink: 0; width: 92px; cursor: pointer; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6)); transition: transform 0.12s; }
+.catimg { flex-shrink: 0; width: 78px; cursor: pointer; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6)); transition: transform 0.12s; }
 .catimg:hover { transform: translateY(-3px); }
-.catbub { flex: 1; border: 2px solid var(--cc); background: #0c0e26; border-radius: 14px; padding: 10px 14px; position: relative; }
-.catbub .cwho { font-family: "Press Start 2P", monospace; font-size: 0.5rem; color: var(--cc); letter-spacing: 1px; margin-bottom: 5px; }
-.catbub .csay { font-size: 0.94rem; line-height: 1.55; }
-.catbub .chint { font-size: 0.72rem; color: #5a6a8a; margin-top: 6px; }
+.catbub { flex: 1; border: 2px solid var(--cc); background: #0c0e26; border-radius: 14px; padding: 9px 13px; }
+.catbub .cwho { font-family: "Press Start 2P", monospace; font-size: 0.48rem; color: var(--cc); letter-spacing: 1px; margin-bottom: 5px; }
+.catbub .csay { font-size: 0.9rem; line-height: 1.5; }
+.catbub .chint { font-size: 0.68rem; color: #5a6a8a; margin-top: 5px; }
 
-.actions { display: flex; gap: 9px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
-.btn { display: inline-flex; align-items: center; gap: 7px; font-family: "Press Start 2P", monospace; font-size: 0.58rem; background: linear-gradient(180deg, var(--magenta), #a31bd6); color: #fff; border: 2px solid #ff8df7; border-radius: 11px; padding: 12px 16px; cursor: pointer; letter-spacing: 1px; text-shadow: 0 0 6px #000; box-shadow: 0 0 14px #ff3df077; transition: transform 0.1s, box-shadow 0.15s; text-decoration: none; }
+.actions { display: flex; gap: 9px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
+.btn { display: inline-flex; align-items: center; gap: 7px; font-family: "Press Start 2P", monospace; font-size: 0.58rem; background: linear-gradient(180deg, var(--magenta), #a31bd6); color: #fff; border: 2px solid #ff8df7; border-radius: 11px; padding: 12px 16px; cursor: pointer; letter-spacing: 1px; text-shadow: 0 0 6px #000; box-shadow: 0 0 14px #ff3df077; text-decoration: none; }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 0 20px #ff3df0aa; }
 .btn.cyan { background: linear-gradient(180deg, var(--cyan), #0a7d93); border-color: #9ff1ff; box-shadow: 0 0 14px #00e5ff77; color: #04121f; text-shadow: none; }
 .btn.gold { background: linear-gradient(180deg, #ffd45e, #e8a317); border-color: #ffe08a; box-shadow: 0 0 14px #ffc83d77; }
 
-@keyframes popIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-.district, .catrow { animation: popIn 0.35s ease-out backwards; }
-.district:nth-child(2) { animation-delay: 0.05s; } .district:nth-child(3) { animation-delay: 0.1s; }
-.district:nth-child(4) { animation-delay: 0.15s; } .district:nth-child(5) { animation-delay: 0.2s; }
-.district:nth-child(6) { animation-delay: 0.25s; }
-@keyframes twk { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
-.wl { animation: twk 2.8s infinite; }
-@keyframes zfloat { 0% { transform: translateY(0); opacity: 0; } 30% { opacity: 0.9; } 100% { transform: translateY(-14px); opacity: 0; } }
-.zz { position: absolute; font-family: "Press Start 2P", monospace; font-size: 9px; color: #ffd9a8; animation: zfloat 2.4s infinite; }
 .footer { text-align: center; margin-top: 22px; font-size: 0.78rem; color: #5a6a8a; }
-
-.strip { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
-.pod { display: inline-flex; align-items: center; gap: 8px; background: var(--panel); border: 1.5px solid var(--pc, #2a3a5a); border-radius: 12px; padding: 8px 13px; font-family: "Press Start 2P", monospace; font-size: 0.56rem; letter-spacing: 1px; color: var(--pc, var(--muted)); text-decoration: none; box-shadow: 0 0 10px var(--pg, transparent); }
-a.pod:hover { transform: translateY(-2px); }
-.pod .big { font-size: 0.82rem; }
 .modal { position: fixed; inset: 0; z-index: 50; background: rgba(5,5,14,0.8); display: none; align-items: center; justify-content: center; padding: 20px; }
 .modal.on { display: flex; }
 .sheet { max-width: 420px; width: 100%; background: var(--panel); border: 2px solid var(--cyan); border-radius: 16px; padding: 20px 18px; box-shadow: 0 0 24px #00e5ff55; }
@@ -106,21 +95,22 @@ a.pod:hover { transform: translateY(-2px); }
 .sheet p { font-size: 0.86rem; color: var(--muted); margin-bottom: 12px; text-align: center; }
 .sheet textarea { width: 100%; height: 90px; background: #0a0a1a; border: 1.5px solid #2a3a5a; border-radius: 10px; color: var(--green); font-family: "Share Tech Mono", monospace; font-size: 0.82rem; padding: 10px; resize: none; margin-bottom: 12px; }
 .sheet .row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+@keyframes popIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.wrap > * { animation: popIn 0.35s ease-out backwards; }
 </style>
 </head>
 <body>
-
 <div class="wrap">
   <div class="marquee"><img src="logo.png" alt="English for All — Rank Up"></div>
   <h1>RANK UP CITY</h1>
-  <div class="sub">Choose your district</div>
+  <div class="sub">Your journey · A1 to C2</div>
 
   <div class="strip">
     <span class="pod" style="--pc: #ff9d3d; --pg: #ff9d3d33;" id="streakPod">🔥 <span class="big" id="streakN">0</span> DAY STREAK</span>
     <a class="pod" href="cards.html" style="--pc: var(--gold); --pg: #ffc83d33;">🃏 CARDS <span class="big" id="cardsN">0/8</span></a>
   </div>
 
-  <div class="grid" id="grid"></div>
+  <div class="map" id="map"></div>
 
   <div class="cats">
     <div class="catrow">
@@ -128,16 +118,15 @@ a.pod:hover { transform: translateY(-2px); }
       <div class="catbub" style="--cc: #b5b5d0;">
         <div class="cwho">TOTTI · your guide</div>
         <div class="csay" id="tottiSay"></div>
-        <div class="chint">tap Totti for advice · tocá a Totti</div>
+        <div class="chint">tap a building, or tap Totti for advice</div>
       </div>
     </div>
-    <div class="catrow rev" style="position:relative;">
-      <span class="zz" style="right: 70px; bottom: 60px;">z</span>
-      <img class="catimg" id="enriImg" src="sprite-enri.png" alt="Enri" style="width:110px;">
+    <div class="catrow rev">
+      <img class="catimg" id="enriImg" src="sprite-enri.png" alt="Enri" style="width:96px;">
       <div class="catbub" style="--cc: #ff9d3d;">
         <div class="cwho">ENRI · moral support</div>
         <div class="csay" id="enriSay">...zzz...</div>
-        <div class="chint">tap Enri at your own risk · tocá a Enri</div>
+        <div class="chint">tap Enri at your own risk</div>
       </div>
     </div>
   </div>
@@ -159,28 +148,21 @@ a.pod:hover { transform: translateY(-2px); }
     <h2>💾 SAVE CODE</h2>
     <p>Copy this code. Paste it on another device to carry your progress over.</p>
     <textarea id="saveText" readonly></textarea>
-    <div class="row">
-      <button class="btn cyan" id="copyBtn">📋 COPY</button>
-      <button class="btn" id="saveClose">CLOSE</button>
-    </div>
+    <div class="row"><button class="btn cyan" id="copyBtn">📋 COPY</button><button class="btn" id="saveClose">CLOSE</button></div>
   </div>
 </div>
-
 <div class="modal" id="loadModal">
   <div class="sheet">
     <h2>📥 LOAD CODE</h2>
     <p>Paste a save code here to restore that progress. This replaces what's on this device.</p>
     <textarea id="loadText" placeholder="paste your code..."></textarea>
-    <div class="row">
-      <button class="btn cyan" id="applyBtn">✓ RESTORE</button>
-      <button class="btn" id="loadClose">CLOSE</button>
-    </div>
+    <div class="row"><button class="btn cyan" id="applyBtn">✓ RESTORE</button><button class="btn" id="loadClose">CLOSE</button></div>
   </div>
 </div>
 
 <script>
 "use strict";
-/* ---- sfx ---- */
+/* ---------- sfx ---------- */
 let AC = null;
 function tone(f, d, t, w, v) {
   try {
@@ -195,145 +177,136 @@ function tone(f, d, t, w, v) {
 }
 const blip = () => tone(660, 0.07);
 const purr = () => { tone(220, 0.3, "sine", 0, 0.05); tone(196, 0.3, "sine", 0.15, 0.05); };
+const denied = () => { tone(200, 0.12, "sawtooth", 0, 0.06); tone(150, 0.16, "sawtooth", 0.1, 0.06); };
 
-/* ---- progress ---- */
+/* ---------- progress ---------- */
 let prog = {};
 try { prog = JSON.parse(localStorage.getItem("nc_prog") || "{}"); } catch (e) {}
 const CAFE_STAGES = ["s1", "s2", "s3", "s4", "s5", "s6", "sb"];
-const CAFE_MAX = { s1: 9, s2: 12, s3: 12, s4: 12, s5: 12, s6: 12, sb: 12 };
+const CAFE_MAX_TOTAL = 81;
 const cafePaws = CAFE_STAGES.reduce((t, s) => t + (prog[s] ? prog[s].best : 0), 0);
-const cafeDone = CAFE_STAGES.filter(s => prog[s]).length;
-const cafeMaxTotal = Object.values(CAFE_MAX).reduce((a, b) => a + b, 0);
 const bossDone = !!prog.sb;
 
-/* ---- buildings ---- */
-function windows(x0, y0, cols, rows, color, litEvery) {
-  let s = "";
-  for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
-    const lit = ((r * cols + c) % litEvery === 0);
-    s += '<rect x="' + (x0 + c * 9) + '" y="' + (y0 + r * 11) + '" width="5" height="6" fill="' + (lit ? color : "#1a1c3f") + '"' + (lit ? ' class="wl" style="animation-delay:' + ((r + c) * 0.4) + 's"' : "") + '/>';
+/* ---------- the map ---------- */
+const NODES = [
+  { id: "cafe",   x: 190, y: 540, color: "#00e5ff", level: "A1", short: "CAFÉ",   name: "The Neon Café",   motif: "cafe",   open: true,  href: "neon-cafe.html" },
+  { id: "office", x: 300, y: 452, color: "#ffc83d", level: "A2", short: "OFFICE", name: "The Office Tower", motif: "office", teaser: "The Office Tower — A2. Dan's old workplace. Head office is still wiring the lights. Soon." },
+  { id: "agency", x: 90,  y: 384, color: "#9d4dff", level: "B1", short: "AGENCY", name: "Detective Agency", motif: "agency", teaser: "The Detective Agency — B1. Something's missing in the city. We'll need your English to crack the case." },
+  { id: "vault",  x: 296, y: 308, color: "#ff3df0", level: "B2", short: "VAULT",  name: "Corporate Vault",  motif: "vault",  teaser: "The Corporate Vault — B2. Locked tight. You'll have to talk your way out of this one." },
+  { id: "radio",  x: 100, y: 222, color: "#3dffa0", level: "C1", short: "RADIO",  name: "The Radio Tower",   motif: "radio",  teaser: "The Radio Tower — C1. My territory. You won't get in by tapping — you'll have to SPEAK." },
+  { id: "hotel",  x: 200, y: 118, color: "#ff5d7a", level: "C2", short: "HOTEL",  name: "The Grand Hotel",   motif: "hotel",  teaser: "The Grand Hotel — C2. The summit of the city. The guests up there... talk back." }
+];
+const TRAIL = "M190,540 C 250,512 300,500 300,452 C 300,410 120,440 90,384 C 66,346 300,352 296,308 C 292,266 108,268 100,222 C 94,182 214,182 200,118";
+
+function motif(n) {
+  const c = n.color, x = n.x, y = n.y;
+  switch (n.motif) {
+    case "cafe":   return '<circle cx="' + (x-8) + '" cy="' + (y-6) + '" r="3.5" fill="' + c + '" opacity=".7"/><circle cx="' + (x+7) + '" cy="' + (y+4) + '" r="3.5" fill="' + c + '" opacity=".7"/><rect x="' + (x-11) + '" y="' + (y+8) + '" width="22" height="4" rx="2" fill="' + c + '" opacity=".5"/>';
+    case "office": { let s = ""; for (let r = 0; r < 3; r++) for (let cc = 0; cc < 3; cc++) s += '<rect x="' + (x-10+cc*8) + '" y="' + (y-11+r*8) + '" width="4" height="5" fill="' + c + '" opacity=".7"/>'; return s; }
+    case "agency": return '<circle cx="' + (x-3) + '" cy="' + (y-3) + '" r="7" fill="none" stroke="' + c + '" stroke-width="2" opacity=".8"/><path d="M' + (x+3) + ',' + (y+3) + ' l6,6" stroke="' + c + '" stroke-width="2.5" opacity=".8"/>';
+    case "vault":  return '<circle cx="' + x + '" cy="' + y + '" r="11" fill="none" stroke="' + c + '" stroke-width="2" opacity=".8"/><circle cx="' + x + '" cy="' + y + '" r="4.5" fill="none" stroke="' + c + '" stroke-width="1.5" opacity=".8"/><path d="M' + x + ',' + (y-11) + 'v-3 M' + x + ',' + (y+11) + 'v3 M' + (x-11) + ',' + y + 'h-3 M' + (x+11) + ',' + y + 'h3" stroke="' + c + '" stroke-width="2" opacity=".7"/>';
+    case "radio":  return '<circle cx="' + x + '" cy="' + (y+6) + '" r="3" fill="' + c + '"/><path d="M' + x + ',' + (y+3) + ' V' + (y-12) + '" stroke="' + c + '" stroke-width="2"/><path d="M' + (x-8) + ',' + (y-4) + ' a10 10 0 0 1 16 0 M' + (x-13) + ',' + y + ' a16 16 0 0 1 26 0" stroke="' + c + '" stroke-width="1.4" fill="none" opacity=".6"/>';
+    case "hotel":  return '<rect x="' + (x-9) + '" y="' + (y-6) + '" width="18" height="12" rx="6" fill="none" stroke="' + c + '" stroke-width="2" opacity=".8"/><path d="M' + (x-4) + ',' + (y-6) + ' v12 M' + (x+4) + ',' + (y-6) + ' v12" stroke="' + c + '" stroke-width="1.2" opacity=".6"/>';
   }
+  return "";
+}
+
+function nodeSVG(n) {
+  const c = n.color, x = n.x, y = n.y;
+  const dim = "#3a4a6a";
+  const stroke = n.open ? c : dim;
+  const halo = n.open ? '<circle class="halo" cx="' + x + '" cy="' + y + '" r="33" fill="none" stroke="' + c + '" stroke-width="2"/>' : "";
+  const foot = '<rect x="' + (x-22) + '" y="' + (y-22) + '" width="44" height="44" rx="9" fill="#0b0e2a" stroke="' + stroke + '" stroke-width="2.5"' + (n.open ? '' : ' stroke-dasharray="4 3"') + '/>';
+  const mot = n.open ? motif(n) : '<rect x="' + (x-5) + '" y="' + (y-4) + '" width="10" height="8" rx="1.5" fill="none" stroke="' + dim + '" stroke-width="1.6"/><path d="M' + (x-3.5) + ',' + (y-4) + ' a3.5 3.5 0 0 1 7 0" fill="none" stroke="' + dim + '" stroke-width="1.6"/>';
+  // level badge above
+  const lbl = '<rect x="' + (x-13) + '" y="' + (y-33) + '" width="26" height="13" rx="4" fill="#0b0e2a" stroke="' + stroke + '" stroke-width="1.2"/><text x="' + x + '" y="' + (y-23.5) + '" text-anchor="middle" class="lvl" fill="' + stroke + '">' + n.level + '</text>';
+  // name plate below
+  const w = n.short.length * 7 + 14;
+  const nmY = y + 34;
+  const plate = '<rect x="' + (x - w/2) + '" y="' + (nmY-10) + '" width="' + w + '" height="15" rx="4" fill="rgba(11,14,42,0.9)" stroke="' + stroke + '" stroke-width="1"/><text x="' + x + '" y="' + (nmY+0.5) + '" text-anchor="middle" class="nm" fill="#eaf7ff">' + n.short + '</text>';
+  // extra: café paw badge or start tag; locked lock
+  let extra = "";
+  if (n.id === "cafe") {
+    extra = '<rect x="' + (x-27) + '" y="' + (y+9) + '" width="54" height="12" rx="4" fill="#0b0e2a" stroke="#ffc83d" stroke-width="1"/><text x="' + x + '" y="' + (y+18) + '" text-anchor="middle" class="paw" fill="#ffc83d">' + cafePaws + '/' + CAFE_MAX_TOTAL + ' PAWS</text>';
+    extra += '<g class="here"><path d="M' + x + ',' + (y-42) + ' l-6,-9 h12 z" fill="#3dffa0"/><text x="' + x + '" y="' + (y-53) + '" text-anchor="middle" class="tag" fill="#3dffa0">' + (cafePaws > 0 ? "CONTINUE" : "START") + '</text></g>';
+  } else {
+    extra = '<g transform="translate(' + (x+14) + ',' + (y-20) + ')"><rect x="-6" y="-2" width="12" height="9" rx="1.5" fill="#0b0e2a" stroke="' + dim + '" stroke-width="1.3"/><path d="M-4,-2 a4 4 0 0 1 8 0" fill="none" stroke="' + dim + '" stroke-width="1.3"/></g>';
+  }
+  return '<g class="node ' + (n.open ? "open" : "locked") + '" data-id="' + n.id + '">' + halo + foot + mot + lbl + plate + extra + '</g>';
+}
+
+function buildBlocks() {
+  const blocks = [[36,470,30,36],[318,536,34,30],[326,150,32,40],[30,110,36,30],[150,258,30,26],[244,404,26,30],[40,300,26,24],[300,214,28,24]];
+  let s = "";
+  blocks.forEach((b, i) => {
+    s += '<rect x="' + b[0] + '" y="' + b[1] + '" width="' + b[2] + '" height="' + b[3] + '" rx="2" fill="#101534" stroke="#1b2048" stroke-width="1"/>';
+    for (let k = 0; k < 3; k++) {
+      const col = ["#00e5ff", "#ff3df0", "#ffc83d"][(i + k) % 3];
+      s += '<rect x="' + (b[0] + 4 + (k % 2) * 9) + '" y="' + (b[1] + 5 + Math.floor(k / 2) * 8) + '" width="3" height="3.5" fill="' + col + '" opacity="0.55"/>';
+    }
+  });
   return s;
 }
-function building(kind, color) {
-  const W = 150, H = 120;
-  let inner = "";
-  if (kind === "cafe") {
-    inner = '<rect x="25" y="50" width="100" height="62" rx="4" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
-      '<rect x="25" y="62" width="100" height="9" fill="' + color + '" opacity="0.75"/>' +
-      '<rect x="38" y="80" width="20" height="24" fill="#1a1c3f" stroke="' + color + '" stroke-width="1"/>' +
-      '<rect x="66" y="80" width="44" height="18" rx="2" fill="#0a0a1a" stroke="' + color + '" stroke-width="1"/>' +
-      windows(70, 84, 4, 1, color, 2) +
-      '<text x="75" y="45" text-anchor="middle" font-family="\'Press Start 2P\', monospace" font-size="9" fill="' + color + '" class="wl">CAFÉ</text>' +
-      '<path d="M60 28 q2 -6 0 -10 M68 28 q2 -6 0 -10" stroke="' + color + '" stroke-width="1.5" fill="none" opacity="0.7"/>';
-  } else if (kind === "office") {
-    inner = '<rect x="45" y="14" width="60" height="98" rx="3" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
-      windows(52, 22, 5, 8, color, 3) +
-      '<rect x="60" y="4" width="30" height="10" rx="2" fill="#141433" stroke="' + color + '" stroke-width="1.5"/>';
-  } else if (kind === "agency") {
-    inner = '<rect x="35" y="38" width="80" height="74" rx="3" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
-      windows(43, 46, 6, 5, color, 4) +
-      '<circle cx="75" cy="26" r="9" fill="none" stroke="' + color + '" stroke-width="2" class="wl"/>' +
-      '<path d="M75 35 v3" stroke="' + color + '" stroke-width="2"/>';
-  } else if (kind === "vault") {
-    inner = '<rect x="38" y="30" width="74" height="82" rx="3" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
-      '<circle cx="75" cy="66" r="17" fill="none" stroke="' + color + '" stroke-width="2.5"/>' +
-      '<circle cx="75" cy="66" r="7" fill="none" stroke="' + color + '" stroke-width="1.5" class="wl"/>' +
-      '<path d="M75 49 v-6 M75 89 v-6 M58 66 h-6 M98 66 h-6" stroke="' + color + '" stroke-width="2"/>';
-  } else if (kind === "radio") {
-    inner = '<rect x="55" y="52" width="40" height="60" rx="3" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
-      windows(61, 60, 3, 4, color, 2) +
-      '<path d="M75 52 L75 12" stroke="' + color + '" stroke-width="2.5"/>' +
-      '<circle cx="75" cy="12" r="3" fill="' + color + '" class="wl"/>' +
-      '<path d="M62 26 a15 15 0 0 1 26 0 M56 34 a22 22 0 0 1 38 0" stroke="' + color + '" stroke-width="1.5" fill="none" opacity="0.7" class="wl"/>';
-  } else {
-    inner = '<rect x="40" y="20" width="70" height="92" rx="3" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
-      windows(48, 30, 5, 6, color, 5) +
-      '<rect x="40" y="20" width="70" height="8" fill="' + color + '" opacity="0.8"/>' +
-      '<path d="M55 12 l20 -8 20 8" stroke="' + color + '" stroke-width="2" fill="none"/>';
-  }
-  return '<svg viewBox="0 0 ' + W + ' ' + H + '" aria-hidden="true"><path d="M0 112 h150" stroke="#2a2a4d" stroke-width="2"/>' + inner + '</svg>';
+
+function renderMap() {
+  const grid = (function () {
+    let g = "";
+    for (let x = 40; x < 380; x += 40) g += '<line x1="' + x + '" y1="0" x2="' + x + '" y2="600" stroke="#131734" stroke-width="1"/>';
+    for (let y = 40; y < 600; y += 40) g += '<line x1="0" y1="' + y + '" x2="380" y2="' + y + '" stroke="#131734" stroke-width="1"/>';
+    return g;
+  })();
+  const river = '<path d="M-10,308 C 120,350 250,300 390,344 L390,378 C250,334 120,384 -10,342 Z" fill="#0e2a5c" opacity="0.8"/>' +
+    '<path d="M-10,326 C 120,368 250,318 390,361" stroke="#2166b8" stroke-width="1.5" fill="none" opacity="0.55"/>';
+  const parks = '<rect x="28" y="150" width="52" height="42" rx="6" fill="#123420" stroke="#1d5a2e" stroke-width="1"/>' +
+    '<rect x="300" y="86" width="48" height="38" rx="6" fill="#123420" stroke="#1d5a2e" stroke-width="1"/>' +
+    '<circle cx="46" cy="168" r="4" fill="#1d5a2e"/><circle cx="62" cy="178" r="5" fill="#1d5a2e"/><circle cx="318" cy="104" r="4" fill="#1d5a2e"/>';
+  const trail = '<path d="' + TRAIL + '" fill="none" stroke="#20244a" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<path d="' + TRAIL + '" fill="none" stroke="#3a4070" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 11"/>';
+  const nodes = NODES.map(nodeSVG).join("");
+  const svg = '<svg viewBox="0 0 380 600" role="img" aria-label="Rank Up City map">' +
+    '<rect width="380" height="600" fill="#090b20"/>' + grid + buildBlocks() + parks + river + trail + nodes +
+    '</svg>';
+  document.getElementById("map").innerHTML = svg;
+
+  document.querySelectorAll(".node").forEach(g => {
+    g.addEventListener("click", () => {
+      const n = NODES.find(nn => nn.id === g.dataset.id);
+      if (n.open) { blip(); location.href = n.href; }
+      else {
+        denied();
+        g.classList.add("wiggle");
+        setTimeout(() => g.classList.remove("wiggle"), 450);
+        document.getElementById("tottiSay").textContent = n.teaser;
+      }
+    });
+  });
 }
+renderMap();
 
-const DISTRICTS = [
-  { kind: "cafe",  name: "THE NEON CAFÉ",     world: "First contact · café tycoon",   level: "A1", color: "#00e5ff", glow: "#00e5ff55", href: "neon-cafe.html", open: true },
-  { kind: "office", name: "THE OFFICE TOWER", world: "On the job · work-shift sim",    level: "A2", color: "#ffc83d", glow: "#ffc83d44" },
-  { kind: "agency", name: "DETECTIVE AGENCY", world: "Hold your own · word detective", level: "B1", color: "#9d4dff", glow: "#9d4dff44" },
-  { kind: "vault",  name: "CORPORATE VAULT",  world: "The professional · escape room", level: "B2", color: "#ff3df0", glow: "#ff3df044" },
-  { kind: "radio",  name: "THE RADIO TOWER",  world: "Advanced operator · speak it",   level: "C1", color: "#3dffa0", glow: "#3dffa044" },
-  { kind: "tower",  name: "THE GRAND HOTEL",  world: "Mastery · the living story",     level: "C2", color: "#ff5d7a", glow: "#ff5d7a44" }
-];
-
-const grid = document.getElementById("grid");
-DISTRICTS.forEach(d => {
-  const isOpen = !!d.open;
-  const tag = isOpen
-    ? (cafeDone > 0
-        ? '<span class="d-pill prog">' + cafePaws + '/' + cafeMaxTotal + ' 🐾 · ' + cafeDone + '/7 SHIFTS</span>'
-        : '<span class="d-pill open">▶ OPEN — PLAY NOW</span>')
-    : '<span class="d-pill lock">🔒 IN CONSTRUCTION</span>';
-  const html = '<div class="d-level">' + d.level + '</div>' +
-    building(d.kind, d.color) +
-    '<div class="d-name">' + d.name + '</div>' +
-    '<div class="d-world">' + d.world + '</div>' + tag;
-  let node;
-  if (isOpen) {
-    node = document.createElement("a");
-    node.href = d.href;
-    node.className = "district";
-    node.addEventListener("click", () => blip());
-  } else {
-    node = document.createElement("div");
-    node.className = "district locked";
-  }
-  node.style.setProperty("--dc", d.color);
-  node.style.setProperty("--dg", d.glow);
-  node.innerHTML = html;
-  grid.appendChild(node);
-});
-
-/* ---- cat guides ---- */
+/* ---------- cat guides ---------- */
 const nextStage = CAFE_STAGES.find(s => !prog[s]);
+const cafeDone = CAFE_STAGES.filter(s => prog[s]).length;
 const STAGE_NAMES = { s1: "First shift", s2: "The regulars", s3: "Rush hour", s4: "Lost & found", s5: "The delivery", s6: "Quiz night", sb: "The inspection (BOSS)" };
-
 let tottiMain;
-if (bossDone) tottiMain = "Café Master. Hm. I am... not unimpressed. The Office Tower is under construction — head office is slow. Meanwhile: beat your paw records.";
-else if (cafeDone === 0) tottiMain = "New in the city? Start at the Neon Café. Dan needs a barista, and I need someone to judge. I'll be watching.";
-else tottiMain = "You've earned " + cafePaws + " paws at the Café. Next up: \"" + STAGE_NAMES[nextStage] + "\". Do not embarrass me.";
-
+if (bossDone) tottiMain = "Café Master. Hm. Not unimpressive. The rest of the city is still under construction — head office is slow. Meanwhile: beat your paw records.";
+else if (cafeDone === 0) tottiMain = "New in the city? Tap the Neon Café at the bottom of the map to start. I'll be judging.";
+else tottiMain = "You've earned " + cafePaws + " paws. Next stop on the map: \"" + STAGE_NAMES[nextStage] + "\". Don't embarrass me.";
 const TOTTI_TIPS = [
   tottiMain,
-  "Get EVERY paw in a shift and my Legendary card is yours. Few are worthy.",
-  "Vera runs the inspection on stage 1-B. Bring everything you've learned.",
-  "Fast answers earn bonus XP. But wrong answers cost hearts. Think, THEN be fast.",
-  "The Academy has full lessons for every level. The city is where you train; the Academy is where you study.",
-  "Enri's hints are good. His work ethic is not."
+  "The road runs A1 to C2 — café to hotel. Six districts. One long night.",
+  "Full paws in a shift earns my Legendary card. Check your album.",
+  "Locked buildings glow grey. They open as head office finishes them.",
+  "The Academy has the full lessons. The city is where you train.",
+  "Tap a building to travel there. Tap Enri to... watch him sleep."
 ];
-const ENRI_TIPS = [
-  "...zzz...",
-  "Prrrr... you again.",
-  "I believe in you. From here. Horizontally.",
-  "If you get stuck in a shift... I know things. Purr Boost. Two per shift.",
-  "Success is a nap away. Everything is a nap away.",
-  "...five more minutes."
-];
-
-const tottiSay = document.getElementById("tottiSay");
-const enriSay = document.getElementById("enriSay");
+const ENRI_TIPS = ["...zzz...", "Prrrr... you again.", "I believe in you. From here. Horizontally.", "Two Purr Boosts per shift. Use them. I won't move.", "The hotel has room service. One day, kid.", "...five more minutes."];
+const tottiSay = document.getElementById("tottiSay"), enriSay = document.getElementById("enriSay");
 tottiSay.textContent = tottiMain;
 let ti = 0, ei = 0;
-document.getElementById("tottiImg").addEventListener("click", () => {
-  ti = (ti + 1) % TOTTI_TIPS.length;
-  tottiSay.textContent = TOTTI_TIPS[ti];
-  blip();
-});
-document.getElementById("enriImg").addEventListener("click", () => {
-  ei = (ei + 1) % ENRI_TIPS.length;
-  enriSay.textContent = ENRI_TIPS[ei];
-  purr();
-});
+document.getElementById("tottiImg").addEventListener("click", () => { ti = (ti + 1) % TOTTI_TIPS.length; tottiSay.textContent = TOTTI_TIPS[ti]; blip(); });
+document.getElementById("enriImg").addEventListener("click", () => { ei = (ei + 1) % ENRI_TIPS.length; enriSay.textContent = ENRI_TIPS[ei]; purr(); });
 
-/* ---- daily streak ---- */
+/* ---------- daily streak ---------- */
 function dayStr(d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
 let streak = {};
 try { streak = JSON.parse(localStorage.getItem("nc_streak") || "{}"); } catch (e) {}
@@ -342,34 +315,28 @@ try { streak = JSON.parse(localStorage.getItem("nc_streak") || "{}"); } catch (e
   if (streak.last !== today) {
     const yest = dayStr(new Date(Date.now() - 86400000));
     streak.count = (streak.last === yest) ? (streak.count || 0) + 1 : 1;
-    streak.last = today;
-    streak.best = Math.max(streak.best || 0, streak.count);
+    streak.last = today; streak.best = Math.max(streak.best || 0, streak.count);
     localStorage.setItem("nc_streak", JSON.stringify(streak));
   }
 })();
 document.getElementById("streakN").textContent = streak.count || 0;
 
-/* ---- card count ---- */
-const CARD_STAGES = ["s1", "s2", "s3", "s4", "s5", "s6", "sb"];
-let cardsGot = CARD_STAGES.filter(s => prog[s]).length;
+/* ---------- card count ---------- */
+let cardsGot = CAFE_STAGES.filter(s => prog[s]).length;
 if (prog.sb && prog.sb.best >= 12) cardsGot++;
 document.getElementById("cardsN").textContent = cardsGot + "/8";
 
-/* ---- save / load codes ---- */
+/* ---------- save / load ---------- */
 function encodeSave() {
   const json = JSON.stringify({ v: 1, p: prog, s: streak });
   return btoa(String.fromCharCode.apply(null, new TextEncoder().encode(json)));
 }
 function decodeSave(code) {
   const bin = atob(code.trim());
-  const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
-  return JSON.parse(new TextDecoder().decode(bytes));
+  return JSON.parse(new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))));
 }
-const saveModal = document.getElementById("saveModal");
-const loadModal = document.getElementById("loadModal");
-document.getElementById("saveBtn").addEventListener("click", () => {
-  blip(); document.getElementById("saveText").value = encodeSave(); saveModal.classList.add("on");
-});
+const saveModal = document.getElementById("saveModal"), loadModal = document.getElementById("loadModal");
+document.getElementById("saveBtn").addEventListener("click", () => { blip(); document.getElementById("saveText").value = encodeSave(); saveModal.classList.add("on"); });
 document.getElementById("saveClose").addEventListener("click", () => saveModal.classList.remove("on"));
 document.getElementById("loadClose").addEventListener("click", () => loadModal.classList.remove("on"));
 document.getElementById("copyBtn").addEventListener("click", async () => {
@@ -388,9 +355,7 @@ document.getElementById("applyBtn").addEventListener("click", () => {
     if (data.s) localStorage.setItem("nc_streak", JSON.stringify(data.s));
     alert("Progress restored! / ¡Progreso restaurado! ✓");
     location.reload();
-  } catch (e) {
-    alert("That code doesn't look right. / Ese código no es válido. ✗");
-  }
+  } catch (e) { alert("That code doesn't look right. / Ese código no es válido. ✗"); }
 });
 [saveModal, loadModal].forEach(m => m.addEventListener("click", e => { if (e.target === m) m.classList.remove("on"); }));
 </script>
