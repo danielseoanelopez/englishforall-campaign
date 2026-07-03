@@ -38,6 +38,8 @@ body::before {
 
 .mute-btn { position: fixed; top: 10px; right: 10px; z-index: 30; width: 42px; height: 42px; border-radius: 10px; border: 2px solid var(--cyan); background: var(--panel); color: var(--cyan); cursor: pointer; box-shadow: 0 0 10px #00e5ff44; }
 .mute-btn:hover { box-shadow: 0 0 16px #00e5ff88; }
+.map-btn { position: fixed; top: 10px; left: 10px; z-index: 30; display: inline-flex; align-items: center; gap: 7px; height: 42px; padding: 0 13px; border-radius: 10px; border: 2px solid var(--purple); background: var(--panel); color: var(--purple); font-family: "Press Start 2P", monospace; font-size: 0.52rem; letter-spacing: 1px; text-decoration: none; box-shadow: 0 0 10px #9d4dff44; }
+.map-btn:hover { box-shadow: 0 0 16px #9d4dff99; }
 
 .cab { max-width: 560px; margin: 0 auto; position: relative; z-index: 2; }
 .marquee { text-align: center; margin-bottom: 10px; }
@@ -57,7 +59,6 @@ body::before {
 .timer { width: fit-content; margin: -4px auto 12px; padding: 5px 12px; border: 1px solid currentColor; border-radius: 20px; font-family: "Press Start 2P", monospace; font-size: 0.6rem; letter-spacing: 1px; color: var(--green); text-shadow: 0 0 8px currentColor; animation: popIn 0.25s ease-out; }
 
 .scene-wrap { margin: 0 0 12px; animation: popIn 0.3s ease-out; }
-.scene-wrap svg { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid #2a3a5a; }
 .scene2 { position: relative; height: 240px; border-radius: 10px; border: 1px solid #2a3a5a; overflow: hidden; background: url("bg-cafe.jpg") center 62% / cover no-repeat; }
 .scene2::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, transparent 40%, rgba(5,5,14,0.38) 100%); pointer-events: none; z-index: 5; }
 .sc-bar { position: absolute; inset: 0; background: url("bg-cafe.jpg") center 62% / cover no-repeat; clip-path: inset(72% 0 0 0); z-index: 2; }
@@ -69,20 +70,6 @@ body::before {
 .sc-z2 { position: absolute; right: 10%; bottom: 47%; font-family: "Press Start 2P", monospace; font-size: 8px; color: #ffd9a8; z-index: 4; }
 .mimg { height: 24px; vertical-align: -7px; margin-right: 2px; }
 .ava img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 6%; border-radius: 8px; display: block; }
-@keyframes steamUp { 0% { transform: translateY(0); opacity: 0; } 25% { opacity: 0.65; } 100% { transform: translateY(-15px); opacity: 0; } }
-.steam path { animation: steamUp 2.6s ease-out infinite; }
-.steam path:nth-child(2) { animation-delay: 1.3s; }
-@keyframes flick { 0%, 91%, 96%, 100% { opacity: 1; } 93%, 95% { opacity: 0.3; } }
-.flicker { animation: flick 3.6s infinite; }
-@keyframes twk { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
-.twinkle { animation: twk 2.6s infinite; }
-@keyframes sway { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(14deg); } }
-.tail { animation: sway 3.2s ease-in-out infinite; }
-@keyframes zfloat { 0% { transform: translateY(0); opacity: 0; } 30% { opacity: 0.9; } 100% { transform: translateY(-16px); opacity: 0; } }
-.zz { animation: zfloat 2.4s infinite; }
-.zz2 { animation: zfloat 2.4s 1.2s infinite; }
-@keyframes custIn { from { transform: translateX(38px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
-.cust { animation: custIn 0.5s ease-out; }
 
 .row { display: flex; gap: 9px; align-items: flex-start; margin-bottom: 12px; animation: popIn 0.25s ease-out; }
 .ava { flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px; border: 2px solid var(--c, var(--cyan)); background: #0c0c22; display: flex; align-items: center; justify-content: center; color: var(--c, var(--cyan)); box-shadow: 0 0 10px var(--c, var(--cyan)); }
@@ -91,6 +78,8 @@ body::before {
 .bub .say { font-size: 0.98rem; line-height: 1.55; }
 .replay { flex-shrink: 0; background: none; border: 1px solid var(--gold); color: var(--gold); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; }
 .replay:hover { box-shadow: 0 0 10px #ffc83d66; }
+
+.note-board { border: 1.5px solid var(--gold); background: #2a1f0a66; border-radius: 10px; padding: 8px 12px; margin: 0 0 12px; font-size: 0.9rem; color: var(--gold); text-align: center; letter-spacing: 1px; }
 
 .tray { border: 2px dashed #3a4a7a; border-radius: 12px; padding: 10px 12px; margin: 14px 0 10px; min-height: 64px; }
 .tray .tl { font-family: "Press Start 2P", monospace; font-size: 0.5rem; color: var(--muted); letter-spacing: 1px; margin-bottom: 8px; }
@@ -101,6 +90,11 @@ body::before {
 .chip.intray { border-color: var(--green); color: var(--green); background: #3dffa011; }
 .menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 7px; margin-bottom: 14px; }
 .menu-grid .chip { text-align: center; }
+
+.opt { display: block; width: 100%; text-align: left; font-family: "Share Tech Mono", monospace; font-size: 0.98rem; border: 1.5px solid var(--cyan); color: var(--text); background: #00e5ff0a; border-radius: 11px; padding: 12px 14px; margin-bottom: 9px; cursor: pointer; transition: transform 0.08s, box-shadow 0.12s; }
+.opt:hover { box-shadow: 0 0 12px #00e5ff55; transform: translateY(-1px); }
+.opt .ol { font-family: "Press Start 2P", monospace; font-size: 0.6rem; color: var(--cyan); margin-right: 9px; }
+.opt.wrong { border-color: var(--red); color: var(--red); background: #ff5d7a11; opacity: 0.55; pointer-events: none; }
 
 .actions { display: flex; gap: 9px; justify-content: space-between; flex-wrap: wrap; }
 .btn { display: inline-flex; align-items: center; gap: 7px; font-family: "Press Start 2P", monospace; font-size: 0.58rem; background: linear-gradient(180deg, var(--magenta), #a31bd6); color: #fff; border: 2px solid #ff8df7; border-radius: 11px; padding: 12px 16px; cursor: pointer; letter-spacing: 1px; text-shadow: 0 0 6px #000; box-shadow: 0 0 14px #ff3df077; transition: transform 0.1s, box-shadow 0.15s; text-decoration: none; }
@@ -119,9 +113,27 @@ body::before {
 @keyframes popIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
 .shake { animation: shake 0.3s ease-in-out 2; }
+@keyframes custIn { from { transform: translateX(38px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes zfloat { 0% { transform: translateY(0); opacity: 0; } 30% { opacity: 0.9; } 100% { transform: translateY(-16px); opacity: 0; } }
+.zz { animation: zfloat 2.4s infinite; }
+.zz2 { animation: zfloat 2.4s 1.2s infinite; }
 
 .paws .ic { width: 27px; height: 27px; margin: 0 3px; }
 .paws .off { opacity: 0.22; }
+
+.shift-row { display: flex; align-items: center; gap: 12px; border: 1.5px solid #2a3a5a; border-radius: 12px; padding: 11px 13px; margin-bottom: 9px; background: #10122a66; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; }
+.shift-row:hover { border-color: var(--cyan); box-shadow: 0 0 12px #00e5ff44; }
+.shift-row.locked { opacity: 0.45; cursor: not-allowed; }
+.shift-row.locked:hover { border-color: #2a3a5a; box-shadow: none; }
+.shift-row.bossrow { border-color: var(--gold); }
+.shift-row.bossrow:hover { box-shadow: 0 0 12px #ffc83d55; }
+.sh-num { flex-shrink: 0; width: 42px; height: 42px; border-radius: 10px; background: #0c0c22; border: 2px solid var(--cyan); color: var(--cyan); font-family: "Press Start 2P", monospace; font-size: 0.55rem; display: flex; align-items: center; justify-content: center; }
+.bossrow .sh-num { border-color: var(--gold); color: var(--gold); }
+.locked .sh-num { border-color: #3a4a6a; color: #4a5a7a; }
+.sh-info { flex: 1; min-width: 0; }
+.sh-name { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: #fff; letter-spacing: 1px; line-height: 1.5; }
+.sh-tag { font-size: 0.8rem; color: var(--muted); margin-top: 3px; }
+.sh-paws { flex-shrink: 0; font-size: 0.72rem; color: var(--gold); font-family: "Press Start 2P", monospace; }
 
 .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 14px 0; }
 .stat { border: 1px solid #2a3a5a; border-radius: 10px; padding: 10px 6px; text-align: center; background: #10122a66; }
@@ -143,86 +155,12 @@ body::before {
 <body>
 
 <svg style="display:none" aria-hidden="true">
-  <symbol id="i-cup" viewBox="0 0 24 24">
-    <path d="M5 8h11v5.5a4.5 4.5 0 0 1-4.5 4.5h-2A4.5 4.5 0 0 1 5 13.5z"/>
-    <path d="M16 9.5h1.5a2.5 2.5 0 0 1 0 5H16"/>
-    <path d="M4 21h14"/>
-    <circle cx="10.5" cy="12" r="1.6"/>
-  </symbol>
-  <symbol id="i-latte" viewBox="0 0 24 24">
-    <path d="M7.5 3h9L15 21H9z"/>
-    <path d="M8.2 8.5h7.6"/>
-    <path d="M8.6 5.5h6.8"/>
-  </symbol>
-  <symbol id="i-tea" viewBox="0 0 24 24">
-    <path d="M4 8h11v5.5A4.5 4.5 0 0 1 10.5 18h-2A4.5 4.5 0 0 1 4 13.5z"/>
-    <path d="M3 21h14"/>
-    <path d="M11 9l3.5 4"/>
-    <rect x="14" y="12.5" width="4.2" height="3.4" rx="0.6"/>
-  </symbol>
-  <symbol id="i-juice" viewBox="0 0 24 24">
-    <path d="M6.5 5h11L16 21H8z"/>
-    <path d="M7.1 10h9.8"/>
-    <path d="M13 5l3.5-3.5"/>
-  </symbol>
-  <symbol id="i-toast" viewBox="0 0 24 24">
-    <path d="M4.5 20v-9a5 5 0 0 1 5-5h5a5 5 0 0 1 5 5v9z"/>
-    <circle cx="12" cy="14" r="3.2"/>
-    <circle cx="12" cy="14" r="1" fill="currentColor" stroke="none"/>
-  </symbol>
-  <symbol id="i-bagel" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="8.5"/>
-    <circle cx="12" cy="12" r="3"/>
-  </symbol>
-  <symbol id="i-muffin" viewBox="0 0 24 24">
-    <path d="M5.5 13.5a6.5 6.5 0 0 1 13 0"/>
-    <path d="M6 13.5h12l-1.5 7h-9z"/>
-    <circle cx="9.5" cy="10.5" r="0.9" fill="currentColor" stroke="none"/>
-    <circle cx="13.5" cy="9" r="0.9" fill="currentColor" stroke="none"/>
-  </symbol>
-  <symbol id="i-cookie" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="8.5"/>
-    <circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"/>
-    <circle cx="14.5" cy="9" r="1" fill="currentColor" stroke="none"/>
-    <circle cx="12" cy="14.5" r="1" fill="currentColor" stroke="none"/>
-    <circle cx="15.5" cy="13.5" r="1" fill="currentColor" stroke="none"/>
-  </symbol>
   <symbol id="i-paw" viewBox="0 0 24 24">
     <ellipse cx="12" cy="15.5" rx="4.6" ry="4" fill="currentColor" stroke="none"/>
     <circle cx="5.5" cy="11" r="2" fill="currentColor" stroke="none"/>
     <circle cx="9.5" cy="7.5" r="2.1" fill="currentColor" stroke="none"/>
     <circle cx="14.5" cy="7.5" r="2.1" fill="currentColor" stroke="none"/>
     <circle cx="18.5" cy="11" r="2" fill="currentColor" stroke="none"/>
-  </symbol>
-  <symbol id="i-cat" viewBox="0 0 24 24">
-    <path d="M12 20.5c-4.6 0-7.5-2.9-7.5-6.5 0-1.9 0.6-3.5 1.7-4.7L5.5 3.5 10 6.1a8.6 8.6 0 0 1 4 0l4.5-2.6-0.7 5.8c1.1 1.2 1.7 2.8 1.7 4.7 0 3.6-2.9 6.5-7.5 6.5z"/>
-    <circle cx="9.2" cy="12.5" r="1" fill="currentColor" stroke="none"/>
-    <circle cx="14.8" cy="12.5" r="1" fill="currentColor" stroke="none"/>
-    <path d="M10.9 15.8h2.2l-1.1 1.2z" fill="currentColor" stroke="none"/>
-  </symbol>
-  <symbol id="i-headset" viewBox="0 0 24 24">
-    <path d="M4.5 14v-1.5a7.5 7.5 0 0 1 15 0V14"/>
-    <rect x="3.5" y="13" width="4" height="6.5" rx="1.8"/>
-    <rect x="16.5" y="13" width="4" height="6.5" rx="1.8"/>
-    <path d="M19 19.5a5.5 5.5 0 0 1-4.8 2.4"/>
-    <circle cx="13.4" cy="22" r="1" fill="currentColor" stroke="none"/>
-  </symbol>
-  <symbol id="i-mia" viewBox="0 0 24 24">
-    <circle cx="11" cy="9" r="4"/>
-    <path d="M3.5 20.5a7.5 7.5 0 0 1 15 0"/>
-    <path d="M19.5 3v4M17.5 5h4"/>
-  </symbol>
-  <symbol id="i-jack" viewBox="0 0 24 24">
-    <circle cx="12" cy="10" r="4"/>
-    <path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/>
-    <path d="M8 7.5a4 4 0 0 1 8 0"/>
-    <path d="M8 7.5h10"/>
-  </symbol>
-  <symbol id="i-vera" viewBox="0 0 24 24">
-    <circle cx="12" cy="9" r="4"/>
-    <path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/>
-    <circle cx="13.6" cy="9.2" r="1.7"/>
-    <path d="M15 10.6l1.8 3.4"/>
   </symbol>
   <symbol id="i-clock" viewBox="0 0 24 24">
     <circle cx="12" cy="13.5" r="7.5"/>
@@ -238,14 +176,19 @@ body::before {
     <path d="M4 9.5v5h3.5L13 19V5L7.5 9.5z" fill="currentColor" stroke="none"/>
     <path d="M16 9.5l5 5M21 9.5l-5 5"/>
   </symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24">
+    <rect x="5.5" y="11" width="13" height="9" rx="2"/>
+    <path d="M8 11V8a4 4 0 0 1 8 0v3"/>
+  </symbol>
 </svg>
 
+<a class="map-btn" href="city.html">◀ CITY MAP</a>
 <button class="mute-btn" id="muteBtn" title="Sound on/off" aria-label="Sound on/off"></button>
 
 <div class="cab">
   <div class="marquee">
     <img src="logo.png" alt="English for All — Rank Up">
-    <div class="stage">RANK UP CITY · STAGE 1-1 · THE NEON CAFÉ</div>
+    <div class="stage" id="marqueeTag">RANK UP CITY · BUILDING 1 · THE NEON CAFÉ</div>
   </div>
 
   <div class="screen">
@@ -263,59 +206,253 @@ body::before {
 
 <script>
 "use strict";
-/* ============ ICONS ============ */
 function ic(name, size) {
   const s = size || 17;
   return '<svg class="ic" style="width:' + s + 'px;height:' + s + 'px" aria-hidden="true"><use href="#i-' + name + '"/></svg>';
 }
 
-/* ============ DATA ============ */
+/* ============ MENU & CAST ============ */
 const MENU = [
-  { id: "flatwhite", label: "Flat white",       icon: "cup" },
-  { id: "latte",     label: "Latte",             icon: "latte" },
-  { id: "tea",       label: "Tea",               icon: "tea" },
-  { id: "juice",     label: "Orange juice",      icon: "juice" },
-  { id: "avotoast",  label: "Avocado toast",     icon: "toast" },
-  { id: "bagel",     label: "Bagel",             icon: "bagel" },
-  { id: "muffin",    label: "Blueberry muffin",  icon: "muffin" },
-  { id: "cookie",    label: "Cookie",            icon: "cookie" }
+  { id: "flatwhite", label: "Flat white" },
+  { id: "latte",     label: "Latte" },
+  { id: "tea",       label: "Tea" },
+  { id: "juice",     label: "Orange juice" },
+  { id: "avotoast",  label: "Avocado toast" },
+  { id: "bagel",     label: "Bagel" },
+  { id: "muffin",    label: "Blueberry muffin" },
+  { id: "cookie",    label: "Cookie" }
 ];
 const byId = id => MENU.find(m => m.id === id);
 
-const ROUNDS = [
-  {
-    who: "MIA", sub: "customer", ava: "mia", color: "var(--cyan)",
-    line: "Hi! Can I get a flat white and an avocado toast, please?", audio: "mia-order",
-    order: ["flatwhite", "avotoast"],
-    retryLine: "That's not my order! A flat white and an avocado toast, please.", retryAudio: "mia-retry",
-    thanks: "Perfect, thank you!", thanksAudio: "mia-thanks",
-    par: 20, words: ["Can I get...?", "please"]
+const CAST = {
+  dan:  { name: "DAN",  sub: "manager (radio)", ava: "headset", color: "var(--cyan)" },
+  mia:  { name: "MIA",  sub: "customer",        ava: "mia",     color: "var(--cyan)" },
+  jack: { name: "JACK", sub: "customer",        ava: "jack",    color: "var(--magenta)" },
+  vera: { name: "VERA", sub: "food critic",     ava: "vera",    color: "var(--gold)" }
+};
+const AVIMG = { mia: "sprite-mia.png", jack: "sprite-jack.png", vera: "sprite-vera.png", headset: "sprite-dan.png", cat: "sprite-enri.png" };
+
+/* ============ STAGES ============ */
+const STAGES = {
+  s1: {
+    num: "1-1", name: "First shift", tag: "Greetings & orders",
+    intro: "Rookie! Welcome to your first shift at the Neon Café. Customers order — you build the tray. And heads up: Totti is on quality control today. He judges EVERY tray you serve. Good luck!",
+    introKey: "dan-intro", tutorial: true,
+    words: ["Can I get...?", "please", "actually...", "to go"],
+    rounds: [
+      { type: "order", who: "mia", line: "Hi! Can I get a flat white and an avocado toast, please?",
+        keys: { line: "mia-order", retry: "mia-retry", thanks: "mia-thanks" },
+        retryLine: "That's not my order! A flat white and an avocado toast, please.",
+        thanks: "Perfect, thank you!", order: ["flatwhite", "avotoast"], par: 20 },
+      { type: "order", who: "jack", line: "Hello! One tea and two cookies, please.",
+        keys: { line: "jack-order", twist: "jack-twist", retry: "jack-retry", thanks: "jack-thanks" },
+        twist: "Oh wait — actually, make that an orange juice. No tea, sorry!",
+        retryLine: "Hmm, that's not it. Remember — an orange juice and two cookies!",
+        thanks: "Nice! Keep the change.", order: ["juice", "cookie", "cookie"], par: 18 },
+      { type: "order", who: "vera",
+        preIntro: "Heads up, rookie — food critic at the door. Impress her and we're famous. And remember: Totti is watching.", preIntroKey: "dan-vera",
+        line: "One latte. Two bagels. And a blueberry muffin. To go — I'm in a hurry.",
+        keys: { line: "vera-order", retry: "vera-retry", thanks: "vera-thanks" },
+        retryLine: "Wrong. Again: one latte, two bagels, and one blueberry muffin. Quickly, please.",
+        thanks: "Hmm. Quick service. Noted.", order: ["latte", "bagel", "bagel", "muffin"], par: 32 }
+    ]
   },
-  {
-    who: "JACK", sub: "customer", ava: "jack", color: "var(--magenta)",
-    line: "Hello! One tea and two cookies, please.", audio: "jack-order",
-    twist: "Oh wait — actually, make that an orange juice. No tea, sorry!", twistAudio: "jack-twist",
-    order: ["juice", "cookie", "cookie"],
-    retryLine: "Hmm, that's not it. Remember — an orange juice and two cookies!", retryAudio: "jack-retry",
-    thanks: "Nice! Keep the change.", thanksAudio: "jack-thanks",
-    par: 18, words: ["actually...", "make that..."]
+  s2: {
+    num: "1-2", name: "The regulars", tag: "Personal info & small talk",
+    intro: "Day two! The regulars are coming in. They love to chat — listen carefully and answer right.",
+    introKey: "s2-intro",
+    words: ["I'm from…", "Nice to meet you", "by the way"],
+    rounds: [
+      { type: "talk", who: "mia", line: "Morning! I'm Mia, by the way. I'm from Brazil. Where are you from?",
+        keys: { line: "s2-r1-line", retry: "s2-r1-retry", thanks: "s2-r1-thanks" },
+        retryLine: "No, no — WHERE are you from? Your country!",
+        thanks: "Nice! Argentina! Cool.",
+        options: ["I'm from Argentina.", "I'm 25 years old.", "At half past two."], correct: 0, par: 15 },
+      { type: "talk", who: "jack", line: "Hey! Are you the manager here?",
+        keys: { line: "s2-r2-line", retry: "s2-r2-retry", thanks: "s2-r2-thanks" },
+        retryLine: "Hmm? I asked about YOUR job.",
+        thanks: "Barista! Nice to meet you, mate.",
+        options: ["No, I'm the barista.", "Yes, it's two dollars.", "It's next to the bank."], correct: 0, par: 15 },
+      { type: "order", who: "vera", line: "A latte and one cookie. And remember my name — Vera. V-E-R-A.",
+        keys: { line: "s2-r3-line", retry: "s2-r3-retry", thanks: "s2-r3-thanks" },
+        retryLine: "Wrong again? The latte. The cookie. Focus.",
+        thanks: "Correct. And I trust you remembered my name.",
+        order: ["latte", "cookie"], par: 18 },
+      { type: "talk", who: "mia", line: "This is my friend Jack. Jack — this is the new barista!",
+        keys: { line: "s2-r4-line", retry: "s2-r4-retry", thanks: "s2-r4-thanks" },
+        retryLine: "Say hello to Jack!",
+        thanks: "See? Now you two are friends.",
+        options: ["Nice to meet you, Jack!", "How much is it?", "I'm sorry, we're closed."], correct: 0, par: 15 }
+    ]
   },
-  {
-    who: "VERA", sub: "food critic", ava: "vera", color: "var(--gold)", boss: true,
-    intro: "Heads up, rookie — food critic at the door. Impress her and we're famous. And remember: Totti is watching.", introAudio: "dan-vera",
-    line: "One latte. Two bagels. And a blueberry muffin. To go — I'm in a hurry.", audio: "vera-order",
-    order: ["latte", "bagel", "bagel", "muffin"],
-    retryLine: "Wrong. Again: one latte, two bagels, and one blueberry muffin. Quickly, please.", retryAudio: "vera-retry",
-    thanks: "Hmm. Quick service. Noted.", thanksAudio: "vera-thanks",
-    par: 32, words: ["to go", "in a hurry"]
+  s3: {
+    num: "1-3", name: "Rush hour", tag: "Numbers, prices & time",
+    intro: "Rush hour, rookie. Numbers, prices, times. Stay sharp.",
+    introKey: "s3-intro",
+    words: ["How much is it?", "half past two", "ten to five"],
+    rounds: [
+      { type: "order", who: "jack", line: "Morning! THREE flat whites and TWO bagels. The whole office is downstairs.",
+        keys: { line: "s3-r1-line", retry: "s3-r1-retry", thanks: "s3-r1-thanks" },
+        retryLine: "Count again, mate — three coffees, two bagels!",
+        thanks: "You're a machine. Cheers!",
+        order: ["flatwhite", "flatwhite", "flatwhite", "bagel", "bagel"], par: 24 },
+      { type: "talk", who: "mia", line: "One flat white and one cookie... how much is it?",
+        note: "PRICE BOARD — flat white: $3 · cookie: $2",
+        keys: { line: "s3-r2-line", retry: "s3-r2-retry", thanks: "s3-r2-thanks" },
+        retryLine: "Check the board — three plus two!",
+        thanks: "Here you go. Keep the change!",
+        options: ["Five dollars, please.", "Seven dollars, please.", "Two dollars, please."], correct: 0, par: 16 },
+      { type: "talk", who: "vera", line: "I will collect my order at half past two. What time is that?",
+        keys: { line: "s3-r3-line", retry: "s3-r3-retry", thanks: "s3-r3-thanks" },
+        retryLine: "HALF. PAST. TWO. It is not difficult.",
+        thanks: "Precisely. Two thirty. Don't be late.",
+        options: ["2:30", "2:15", "3:30"], correct: 0, par: 14 },
+      { type: "order", who: "mia", line: "Quick quick! One tea, one juice, one muffin — my train is at ten to five!",
+        keys: { line: "s3-r4-line", retry: "s3-r4-retry", thanks: "s3-r4-thanks" },
+        retryLine: "The train! Tea, juice, muffin!",
+        thanks: "Made it! Thank youuu!",
+        order: ["tea", "juice", "muffin"], par: 14 }
+    ]
+  },
+  s4: {
+    num: "1-4", name: "Lost & found", tag: "It's got… / Have you got…?",
+    intro: "Busy day. Everything is lost, mixed up, or confused. Fix it with your words.",
+    introKey: "s4-intro",
+    words: ["It's got…", "Has it got…?", "mine"],
+    rounds: [
+      { type: "talk", who: "jack", line: "Wait — this isn't my order! MINE has got no sugar, and it's a LARGE tea.",
+        keys: { line: "s4-r1-line", retry: "s4-r1-retry", thanks: "s4-r1-thanks" },
+        retryLine: "No sugar! Large! Tea!",
+        thanks: "That's the one. Lifesaver.",
+        options: ["The large tea with no sugar — here.", "The small coffee with sugar — here.", "A cookie — here you go."], correct: 0, par: 16 },
+      { type: "talk", who: "mia", line: "Excuse me — has this café got wifi?",
+        keys: { line: "s4-r2-line", retry: "s4-r2-retry", thanks: "s4-r2-thanks" },
+        retryLine: "Wifi? Internet? Yes or no?",
+        thanks: "Perfect, thanks! I've got big files to send.",
+        options: ["Yes, it has. The password is on the board.", "No, I'm from Argentina.", "It's half past two."], correct: 0, par: 15 },
+      { type: "talk", who: "vera", line: "Someone has left an umbrella. It's blue, and it's got little STARS on it. Whose is it?",
+        keys: { line: "s4-r3-line", retry: "s4-r3-retry", thanks: "s4-r3-thanks" },
+        retryLine: "Stars. Blue. Think. WHO loves stars?",
+        thanks: "Correct. The girl with the star clip. Elementary.",
+        options: ["It's Mia's umbrella!", "It's Jack's umbrella!", "It's your umbrella, Vera!"], correct: 0, par: 16 },
+      { type: "order", who: "jack", line: "One more tea — large, and it's got to be hot! And a bagel.",
+        keys: { line: "s4-r4-line", retry: "s4-r4-retry", thanks: "s4-r4-thanks" },
+        retryLine: "Large hot tea! And a bagel!",
+        thanks: "Magic. Cheers, mate.",
+        order: ["tea", "bagel"], par: 15 }
+    ]
+  },
+  s5: {
+    num: "1-5", name: "The delivery", tag: "There is / there are · places",
+    intro: "The delivery truck is here! Stock the café and answer the questions. There is, there are — you know the drill.",
+    introKey: "s5-intro",
+    words: ["there is / there are", "next to", "Where are…?"],
+    rounds: [
+      { type: "order", who: "dan", trayLabel: "DISPLAY CASE", line: "Put TWO bagels and THREE muffins in the display case.",
+        keys: { line: "s5-r1-line", retry: "s5-r1-retry", thanks: "s5-r1-thanks" },
+        retryLine: "Two bagels! Three muffins! The case, rookie!",
+        thanks: "Good. The case looks great.",
+        order: ["bagel", "bagel", "muffin", "muffin", "muffin"], par: 22 },
+      { type: "talk", who: "mia", line: "Hi! Is there any orange juice today?",
+        keys: { line: "s5-r2-line", retry: "s5-r2-retry", thanks: "s5-r2-thanks" },
+        retryLine: "Juice! Is there juice?",
+        thanks: "Yes! One, please. Fresh!",
+        options: ["Yes, there is. One juice?", "No, I'm the barista.", "It's got stars on it."], correct: 0, par: 15 },
+      { type: "talk", who: "jack", line: "Where are the napkins, mate?",
+        keys: { line: "s5-r3-line", retry: "s5-r3-retry", thanks: "s5-r3-thanks" },
+        retryLine: "Napkins! WHERE?",
+        thanks: "Found them. Legend.",
+        options: ["They're on the counter, next to the cookies.", "They're from Brazil.", "At half past two."], correct: 0, par: 15 },
+      { type: "order", who: "vera", line: "There are four of us. Four teas. And ONE muffin — we share. We are not made of money.",
+        keys: { line: "s5-r4-line", retry: "s5-r4-retry", thanks: "s5-r4-thanks" },
+        retryLine: "FOUR teas. ONE muffin. Simple mathematics.",
+        thanks: "Adequate service. The group agrees.",
+        order: ["tea", "tea", "tea", "tea", "muffin"], par: 24 }
+    ]
+  },
+  s6: {
+    num: "1-6", name: "Quiz night", tag: "Simple questions & answers",
+    intro: "It's QUIZ NIGHT at the café! Vera is the quizmaster. Answer fast, serve faster.",
+    introKey: "s6-intro",
+    words: ["Can I…?", "of course", "Good morning!"],
+    rounds: [
+      { type: "talk", who: "vera", sub: "quizmaster", line: "First question! What do you say to a customer at nine in the MORNING?",
+        keys: { line: "s6-r1-line", retry: "s6-r1-retry", thanks: "s6-r1-thanks" },
+        retryLine: "At NINE. In the MORNING.",
+        thanks: "Point to the barista!",
+        options: ["Good morning!", "Good night!", "Goodbye!"], correct: 0, par: 13 },
+      { type: "talk", who: "jack", line: "Team question! Can I pay by card here?",
+        keys: { line: "s6-r2-line", retry: "s6-r2-retry", thanks: "s6-r2-thanks" },
+        retryLine: "Card? Can I? Yes or no!",
+        thanks: "Get in! Another point!",
+        options: ["Yes, of course you can.", "No, I'm from Argentina.", "It's on the board."], correct: 0, par: 14 },
+      { type: "order", who: "mia", line: "Winners' round! Two juices, one muffin and one cookie for the champions!",
+        keys: { line: "s6-r3-line", retry: "s6-r3-retry", thanks: "s6-r3-thanks" },
+        retryLine: "Two juices! A muffin! A cookie!",
+        thanks: "Champions served! Woohoo!",
+        order: ["juice", "juice", "muffin", "cookie"], par: 20 },
+      { type: "talk", who: "vera", sub: "quizmaster", line: "Final question, for the WIN: how do you ask about the price?",
+        keys: { line: "s6-r4-line", retry: "s6-r4-retry", thanks: "s6-r4-thanks" },
+        retryLine: "The PRICE. The money question.",
+        thanks: "Correct! Quiz night: complete.",
+        options: ["How much is it?", "How old are you?", "Where are you from?"], correct: 0, par: 13 }
+    ]
+  },
+  sb: {
+    num: "1-B", name: "The inspection", tag: "BOSS · everything you learned", boss: true,
+    intro: "Rookie... head office called. Vera is not just a critic — she is the CITY INSPECTOR. Everything you learned. One shift. Go.",
+    introKey: "sb-intro",
+    words: ["inspection", "flawless", "attention"],
+    rounds: [
+      { type: "order", who: "vera", sub: "city inspector", line: "Inspection, part one. Two flat whites, two bagels, and one muffin. Flawless, please.",
+        keys: { line: "sb-r1-line", retry: "sb-r1-retry", thanks: "sb-r1-thanks" },
+        retryLine: "Part one, AGAIN. Two flat whites. Two bagels. One muffin.",
+        thanks: "Hm. Acceptable speed.",
+        order: ["flatwhite", "flatwhite", "bagel", "bagel", "muffin"], par: 26 },
+      { type: "talk", who: "vera", sub: "city inspector", line: "Part two. A flat white is three dollars. A muffin is two. I had two flat whites and one muffin. Total?",
+        keys: { line: "sb-r2-line", retry: "sb-r2-retry", thanks: "sb-r2-thanks" },
+        retryLine: "Three, plus three, plus two. Again.",
+        thanks: "Your arithmetic survives.",
+        options: ["Eight dollars.", "Seven dollars.", "Five dollars."], correct: 0, par: 20 },
+      { type: "order", who: "vera", sub: "city inspector", line: "Part three. One tea and one cookie.",
+        keys: { line: "sb-r3-line", twist: "sb-r3-twist", retry: "sb-r3-retry", thanks: "sb-r3-thanks" },
+        twist: "Actually — make that TWO cookies. I am testing your attention.",
+        retryLine: "One tea. TWO cookies. As I SAID.",
+        thanks: "You listen. Rare.",
+        order: ["tea", "cookie", "cookie"], par: 16 },
+      { type: "talk", who: "vera", sub: "city inspector", line: "Final part. A customer arrives at nine a.m. What do you say?",
+        keys: { line: "sb-r4-line", retry: "sb-r4-retry", thanks: "sb-r4-thanks" },
+        retryLine: "It is MORNING. The customer is THERE. Speak.",
+        thanks: "...Inspection passed. The café stays open. Well done, barista.",
+        options: ["Good morning! What can I get you?", "Goodbye! See you!", "It's got stars on it."], correct: 0, par: 16 }
+    ]
   }
-];
+};
+const ORDER = ["s1", "s2", "s3", "s4", "s5", "s6", "sb"];
+
+/* ============ PROGRESS ============ */
+function loadProg() {
+  let p = {};
+  try { p = JSON.parse(localStorage.getItem("nc_prog") || "{}"); } catch (e) {}
+  const legacy = parseInt(localStorage.getItem("nc_best") || "0", 10);
+  if (legacy > 0 && !p.s1) { p.s1 = { best: legacy }; saveProg(p); }
+  return p;
+}
+function saveProg(p) { localStorage.setItem("nc_prog", JSON.stringify(p)); }
+function isUnlocked(sid) {
+  const p = loadProg();
+  const i = ORDER.indexOf(sid);
+  if (i === 0) return true;
+  if (sid === "sb") return ORDER.slice(0, 6).every(s => p[s]);
+  return !!p[ORDER[i - 1]];
+}
+function maxPaws(sid) { return STAGES[sid].rounds.length * 3; }
 
 /* ============ STATE ============ */
 let S;
-function resetState() {
-  S = { hearts: 3, xp: 0, coins: 0, pawsTotal: 0, round: 0, tries: 0,
-        hints: 2, tray: [], twistShown: false, words: [] };
+function resetState(sid) {
+  S = { sid: sid, hearts: 3, xp: 0, coins: 0, pawsTotal: 0, round: 0, tries: 0,
+        hints: 2, tray: [], twistShown: false };
 }
 
 /* ============ AUDIO ============ */
@@ -337,6 +474,7 @@ function tone(freq, dur, type, when, vol) {
 const blip   = () => tone(660, 0.07);
 const coinFx = () => { tone(880, 0.09); tone(1320, 0.18, "square", 0.09); };
 const buzz   = () => tone(140, 0.28, "sawtooth", 0, 0.08);
+const purr   = () => { tone(220, 0.3, "sine", 0, 0.05); tone(196, 0.3, "sine", 0.15, 0.05); };
 const fanfare = () => { [523, 659, 784, 1047].forEach((f, i) => tone(f, 0.16, "square", i * 0.13)); };
 
 const TEXTS = {};
@@ -357,7 +495,7 @@ function stopVoice() {
 }
 function say(key, text) {
   if (text) TEXTS[key] = text;
-  if (muted) return;
+  if (muted || !key) return;
   stopVoice();
   player.src = "nc-" + key + ".mp3";
   player.onerror = () => speak(TEXTS[key] || "");
@@ -381,18 +519,21 @@ function hud() {
   document.getElementById("hudCoins").textContent = "TIPS $" + S.coins;
 }
 function el(html) { const d = document.createElement("div"); d.innerHTML = html; return d.firstElementChild; }
-const AVIMG = { mia: "sprite-mia.png", jack: "sprite-jack.png", vera: "sprite-vera.png", headset: "sprite-dan.png", cat: "sprite-enri.png" };
-const AVPOS = { cat: "22% 40%" };
-function bubble(who, sub, avaIcon, color, text, audioKey) {
-  const avaHTML = AVIMG[avaIcon]
-    ? '<img src="' + AVIMG[avaIcon] + '" alt=""' + (AVPOS[avaIcon] ? ' style="object-position:' + AVPOS[avaIcon] + '"' : "") + '>'
-    : ic(avaIcon, 26);
-  const r = el('<div class="row" style="--c:' + color + '">' +
+function bubble(castKey, text, audioKey, subOverride) {
+  const c = CAST[castKey];
+  const avaHTML = AVIMG[c.ava] ? '<img src="' + AVIMG[c.ava] + '" alt="">' : "";
+  const r = el('<div class="row" style="--c:' + c.color + '">' +
     '<div class="ava">' + avaHTML + '</div>' +
-    '<div class="bub"><div class="who">' + who + ' · ' + sub + '</div><div class="say">' + text + '</div></div>' +
+    '<div class="bub"><div class="who">' + c.name + ' · ' + (subOverride || c.sub) + '</div><div class="say">' + text + '</div></div>' +
     (audioKey ? '<button class="replay" title="Listen again" aria-label="Listen again">' + ic("vol", 16) + '</button>' : "") +
   '</div>');
   if (audioKey) r.querySelector(".replay").addEventListener("click", () => say(audioKey, text));
+  return r;
+}
+function enriBubble(text) {
+  const r = el('<div class="row" style="--c:#ff9d3d">' +
+    '<div class="ava"><img src="sprite-enri.png" alt="" style="object-position:22% 40%"></div>' +
+    '<div class="bub"><div class="who">ENRI · purr boost</div><div class="say">' + text + '</div></div></div>');
   return r;
 }
 function sameOrder(tray, target) {
@@ -405,32 +546,11 @@ function orderText(target) {
   const count = target.reduce((m, x) => (m[x] = (m[x] || 0) + 1, m), {});
   return Object.keys(count).map(k => count[k] + "× " + byId(k).label).join(" · ");
 }
-/* ============ CAFÉ SCENE ============ */
-function custSprite(id) {
-  const base = (hair, extra, accent) =>
-    '<g class="cust" transform="translate(240,55)">' +
-      '<rect x="16" y="56" width="48" height="70" rx="14" fill="#1c2140" stroke="' + accent + '" stroke-width="1.5"/>' +
-      '<rect x="16" y="56" width="48" height="12" rx="6" fill="' + accent + '" opacity="0.85"/>' +
-      '<circle cx="40" cy="34" r="21" fill="#f2c9a4"/>' +
-      hair +
-      '<circle cx="33" cy="36" r="2.3" fill="#1a1a2e"/><circle cx="47" cy="36" r="2.3" fill="#1a1a2e"/>' +
-      '<path d="M34 45 q6 5 12 0" stroke="#1a1a2e" stroke-width="1.6" fill="none" stroke-linecap="round"/>' +
-      extra +
-    '</g>';
-  if (id === "mia") return base(
-    '<path d="M19 34 a21 21 0 0 1 42 0 l0 4 q-7 -9 -15 -9 h-12 q-8 0 -15 9 z" fill="#00c5dc"/><circle cx="21" cy="46" r="5" fill="#00c5dc"/>',
-    '<path d="M58 14 v8 M54 18 h8" stroke="#00e5ff" stroke-width="2" stroke-linecap="round"/>',
-    "#00b4cc");
-  if (id === "jack") return base(
-    '<path d="M20 30 a20 20 0 0 1 40 0 z" fill="#e03ad6"/><rect x="16" y="27" width="50" height="6" rx="3" fill="#e03ad6"/>',
-    '',
-    "#c02eb8");
-  return base(
-    '<path d="M21 30 a20.5 20.5 0 0 1 38 0 l-4 -2 q-15 -8 -30 0 z" fill="#e8b02e"/><circle cx="40" cy="10" r="9" fill="#e8b02e"/>',
-    '<circle cx="47" cy="36" r="6.5" fill="none" stroke="#ffc83d" stroke-width="1.8"/><path d="M52 41 l4 9" stroke="#ffc83d" stroke-width="1.3"/>',
-    "#d09a1e");
+function pawRow(paws) {
+  let s = '<div class="paws" style="color:var(--gold)">';
+  for (let i = 0; i < 3; i++) s += i < paws ? ic("paw", 27) : '<span class="off">' + ic("paw", 27) + '</span>';
+  return s + '</div>';
 }
-
 function sceneSVG(custId) {
   return '<div class="scene-wrap"><div class="scene2" role="img" aria-label="The Neon Café counter">' +
     (custId ? '<img class="sc-cust cust" src="sprite-' + custId + '.png" alt="">' : '') +
@@ -439,68 +559,6 @@ function sceneSVG(custId) {
     '<span class="zz sc-z1">z</span><span class="zz2 sc-z2">z</span>' +
     '<img class="sc-tot" src="sprite-totti.png" alt="">' +
   '</div></div>';
-}
-
-function sceneSVG_old(custId) {
-  const bulbs = [60, 130, 200, 270, 340, 410, 480].map((x, i) =>
-    '<circle class="twinkle" style="animation-delay:' + (i * 0.4) + 's" cx="' + x + '" cy="' + (10 + (i % 2) * 5) + '" r="3" fill="' + ["#00e5ff", "#ffc83d", "#ff3df0"][i % 3] + '"/>').join("");
-  const cityWin = [[372, 60, 20, 55], [398, 42, 24, 73], [428, 68, 18, 47], [452, 36, 26, 79], [484, 58, 22, 57]].map(b =>
-    '<rect x="' + b[0] + '" y="' + b[1] + '" width="' + b[2] + '" height="' + b[3] + '" fill="#191b45"/>').join("") +
-    [[376, 66], [384, 80], [404, 50], [414, 64], [432, 74], [458, 44], [466, 60], [458, 76], [488, 64], [496, 80]].map((p, i) =>
-    '<rect x="' + p[0] + '" y="' + p[1] + '" width="3.5" height="4.5" fill="' + ["#ffc83d", "#00e5ff", "#ff3df0"][i % 3] + '" opacity="0.9"/>').join("");
-  return '<div class="scene-wrap"><svg viewBox="0 0 560 240" role="img" aria-label="The Neon Café counter">' +
-    '<rect width="560" height="240" fill="#0d0f2a"/>' +
-    '<path d="M0 12 Q140 26 280 14 T560 12" stroke="#2a2a4d" stroke-width="1.5" fill="none"/>' + bulbs +
-    '<text x="30" y="52" font-family="\'Press Start 2P\', monospace" font-size="14" fill="#ff3df0" class="flicker" style="text-shadow:0 0 10px #ff3df0">NEON CAFÉ</text>' +
-    '<rect x="30" y="58" width="150" height="2" fill="#ff3df0" opacity="0.6"/>' +
-    '<rect x="30" y="86" width="130" height="3" fill="#2a2a4d"/><rect x="30" y="120" width="130" height="3" fill="#2a2a4d"/>' +
-    '<rect x="42" y="66" width="9" height="20" rx="3" fill="#00e5ff" opacity="0.8"/><rect x="60" y="70" width="9" height="16" rx="3" fill="#9d4dff" opacity="0.8"/><rect x="78" y="64" width="9" height="22" rx="3" fill="#ffc83d" opacity="0.8"/><rect x="96" y="70" width="9" height="16" rx="3" fill="#ff3df0" opacity="0.8"/><rect x="114" y="66" width="9" height="20" rx="3" fill="#3dffa0" opacity="0.8"/>' +
-    '<rect x="44" y="102" width="12" height="18" rx="2" fill="#e8ecff" opacity="0.85"/><rect x="62" y="102" width="12" height="18" rx="2" fill="#e8ecff" opacity="0.7"/><rect x="80" y="102" width="12" height="18" rx="2" fill="#e8ecff" opacity="0.85"/>' +
-    '<rect x="360" y="20" width="160" height="108" rx="8" fill="#070714" stroke="#6a4dc9" stroke-width="2"/>' +
-    cityWin +
-    '<circle cx="500" cy="34" r="8" fill="#eaf7ff" opacity="0.9"/><circle cx="496" cy="31" r="7" fill="#070714"/>' +
-    '<circle cx="380" cy="30" r="1.3" fill="#fff" opacity="0.8"/><circle cx="440" cy="26" r="1.2" fill="#fff" opacity="0.6"/><circle cx="470" cy="90" r="1.2" fill="#fff" opacity="0.5"/>' +
-    (custId ? custSprite(custId) : "") +
-    '<rect x="0" y="152" width="560" height="4" fill="#ff3df0" opacity="0.75"/>' +
-    '<rect x="0" y="156" width="560" height="10" fill="#2a1650"/>' +
-    '<rect x="0" y="166" width="560" height="74" fill="#191233"/>' +
-    '<path d="M60 166v74M140 166v74M220 166v74M300 166v74M380 166v74M460 166v74" stroke="#241a45" stroke-width="2"/>' +
-    '<g transform="translate(45,88)">' +
-      '<rect x="5" y="0" width="60" height="14" rx="4" fill="#30356b"/>' +
-      '<rect x="0" y="12" width="70" height="52" rx="6" fill="#262a52" stroke="#3a3f77" stroke-width="1.5"/>' +
-      '<circle cx="16" cy="30" r="6" fill="none" stroke="#ffc83d" stroke-width="1.5"/><path d="M16 30 l3 -3" stroke="#ffc83d" stroke-width="1.3"/>' +
-      '<circle cx="34" cy="26" r="3" fill="#00e5ff"/><circle cx="46" cy="26" r="3" fill="#ff3df0"/>' +
-      '<rect x="32" y="38" width="10" height="9" fill="#3a3f77"/>' +
-      '<rect x="27" y="52" width="20" height="12" rx="2" fill="#e8ecff"/>' +
-      '<g class="steam"><path d="M32 6 q-4 -8 0 -14" stroke="#bfe9ff" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M42 6 q4 -8 0 -14" stroke="#bfe9ff" stroke-width="2" fill="none" stroke-linecap="round"/></g>' +
-    '</g>' +
-    '<g transform="translate(150,120)">' +
-      '<ellipse cx="32" cy="46" rx="32" ry="6" fill="#3a3f77"/>' +
-      '<path d="M6 44 a26 26 0 0 1 52 0 z" fill="rgba(120,180,255,0.09)" stroke="rgba(160,220,255,0.45)" stroke-width="1.5"/>' +
-      '<path d="M22 42 a10 8 0 0 1 20 0 z" fill="#b98a4f"/><rect x="24" y="36" width="16" height="7" rx="1.5" fill="#7a5a33"/>' +
-    '</g>' +
-    '<g transform="translate(408,110)">' +
-      '<path class="tail" d="M46 46 q14 -4 12 -20" stroke="#3f4054" stroke-width="7" fill="none" stroke-linecap="round"/>' +
-      '<ellipse cx="28" cy="42" rx="23" ry="17" fill="#3f4054"/>' +
-      '<ellipse cx="28" cy="48" rx="12" ry="9" fill="#cfd0e2"/>' +
-      '<circle cx="28" cy="14" r="14" fill="#3f4054"/>' +
-      '<path d="M16 6 l-2 -10 8 5z" fill="#3f4054"/><path d="M40 6 l2 -10 -8 5z" fill="#3f4054"/>' +
-      '<path d="M17 4 l-1 -5 4 2.5z" fill="#8d8da8"/><path d="M39 4 l1 -5 -4 2.5z" fill="#8d8da8"/>' +
-      '<ellipse cx="23" cy="13" rx="2.2" ry="3" fill="#ffc83d"/><ellipse cx="33" cy="13" rx="2.2" ry="3" fill="#ffc83d"/>' +
-      '<path d="M26 19 h4 l-2 2.5z" fill="#e88" opacity="0.9"/>' +
-      '<path d="M8 16 h-8 M9 20 l-7 2 M48 16 h8 M47 20 l7 2" stroke="#9a9ab5" stroke-width="1"/>' +
-      '<rect x="18" y="24" width="20" height="3.5" rx="1.7" fill="#3dffa0"/>' +
-    '</g>' +
-    '<g transform="translate(332,180)">' +
-      '<ellipse cx="30" cy="30" rx="28" ry="15" fill="#ff9d3d"/>' +
-      '<circle cx="10" cy="24" r="11" fill="#ff9d3d"/>' +
-      '<path d="M4 16 l-2 -7 6 3.5z" fill="#ff9d3d"/><path d="M15 15 l2 -7 -6 4z" fill="#ff9d3d"/>' +
-      '<path d="M4 24 q3 2 6 0" stroke="#8a4a10" stroke-width="1.4" fill="none" stroke-linecap="round"/>' +
-      '<path d="M26 20 a12 12 0 0 1 8 0 M40 22 a10 10 0 0 1 7 2" stroke="#d97617" stroke-width="2.5" fill="none" stroke-linecap="round"/>' +
-      '<text class="zz" x="24" y="8" font-family="\'Press Start 2P\', monospace" font-size="9" fill="#ffd9a8">z</text>' +
-      '<text class="zz2" x="36" y="2" font-family="\'Press Start 2P\', monospace" font-size="7" fill="#ffd9a8">z</text>' +
-    '</g>' +
-  '</svg></div>';
 }
 
 let timerInt = null, tStart = 0;
@@ -521,63 +579,100 @@ function stopTimer() {
   clearInterval(timerInt);
   return (performance.now() - tStart) / 1000;
 }
-function pawRow(paws) {
-  let s = '<div class="paws" style="color:var(--gold)">';
-  for (let i = 0; i < 3; i++) s += i < paws ? ic("paw", 27) : '<span class="off">' + ic("paw", 27) + '</span>';
-  return s + '</div>';
-}
 
 /* ============ SCREENS ============ */
 function showTitle() {
-  resetState(); hud();
-  const best = localStorage.getItem("nc_best");
+  const p = loadProg();
+  const total = ORDER.reduce((t, s) => t + (p[s] ? p[s].best : 0), 0);
+  const totalMax = ORDER.reduce((t, s) => t + maxPaws(s), 0);
   stage.innerHTML =
     '<div class="center">' +
       '<div class="scene-tag">STREET VERSION · FREE PLAY</div>' +
       sceneSVG(null) +
       '<div class="title-big">THE NEON CAFÉ</div>' +
       '<p style="margin:10px 0 4px;">Serve the customers. Survive the rush.<br>Impress the cat.</p>' +
-      '<p class="es">Escuchá el pedido, armá la bandeja y tocá SERVE.</p>' +
-      (best ? '<p class="px" style="font-size:0.55rem; color:var(--gold); margin-top:12px;">HIGH SCORE: ' + best + '/9 ' + ic("paw", 13) + '</p>' : "") +
-      '<div style="margin-top:18px;"><button class="btn" id="startBtn">▶ START SHIFT</button></div>' +
+      '<p class="es">Escuchá, respondé y serví. Sumá patitas 🐾 en cada turno.</p>' +
+      (total > 0 ? '<p class="px" style="font-size:0.55rem; color:var(--gold); margin-top:12px;">CAFÉ PAWS: ' + total + '/' + totalMax + '</p>' : "") +
+      '<div style="margin-top:18px;"><button class="btn" id="startBtn">▶ SHIFT SELECT</button></div>' +
       '<p class="es" style="margin-top:12px;">' + ic("vol", 14) + ' Mejor con sonido / best with sound on</p>' +
     '</div>';
-  document.getElementById("startBtn").addEventListener("click", () => { blip(); showIntro(); });
+  document.getElementById("startBtn").addEventListener("click", () => { blip(); showSelect(); });
 }
 
-function showIntro() {
-  stage.innerHTML = '<div class="scene-tag">DAY 1 · 7:55 AM</div>';
-  const msg = "Rookie! Welcome to your first shift at the Neon Café. Customers order — you build the tray. And heads up: Totti is on quality control today. He judges EVERY tray you serve. Good luck!";
-  stage.appendChild(bubble("DAN", "manager (radio)", "headset", "var(--cyan)", msg, "dan-intro"));
-  say("dan-intro", msg);
-  const choices = el('<div class="actions" style="justify-content:flex-end; margin-top:14px;">' +
-    '<button class="btn cyan" id="c1">I\'M READY!</button>' +
-    '<button class="btn" id="c2">WAIT — WHAT DO I DO?</button></div>');
-  stage.appendChild(choices);
-  document.getElementById("c1").addEventListener("click", () => { blip(); startRound(0); });
-  document.getElementById("c2").addEventListener("click", () => {
-    blip(); choices.remove();
-    const help = "Easy: LISTEN to the order, TAP the food to add it to your tray, then hit SERVE. If you're stuck, Enri's PURR BOOST gives you a hint. You've got this.";
-    stage.appendChild(bubble("DAN", "manager (radio)", "headset", "var(--cyan)", help, "dan-help"));
-    say("dan-help", help);
-    const go = el('<div class="actions" style="justify-content:flex-end; margin-top:14px;"><button class="btn cyan">OK — LET\'S GO!</button></div>');
+function showSelect() {
+  const p = loadProg();
+  stage.innerHTML = '<div class="scene-tag">THE NEON CAFÉ · SHIFT SELECT</div>';
+  ORDER.forEach(sid => {
+    const st = STAGES[sid];
+    const open = isUnlocked(sid);
+    const best = p[sid] ? p[sid].best : null;
+    const row = el('<div class="shift-row' + (open ? "" : " locked") + (st.boss ? " bossrow" : "") + '">' +
+      '<div class="sh-num">' + (open ? st.num : ic("lock", 16)) + '</div>' +
+      '<div class="sh-info"><div class="sh-name">' + st.name.toUpperCase() + '</div><div class="sh-tag">' + st.tag + '</div></div>' +
+      '<div class="sh-paws">' + (best !== null ? best + "/" + maxPaws(sid) + " 🐾" : (open ? "NEW" : "")) + '</div>' +
+    '</div>');
+    if (open) row.addEventListener("click", () => { blip(); startStage(sid); });
+    stage.appendChild(row);
+  });
+  const foot = el('<div class="actions" style="justify-content:center; margin-top:14px;">' +
+    '<a class="btn cyan" href="city.html">🏙 CITY MAP</a>' +
+    '<a class="btn gold" href="https://wa.me/5491123709477?text=' + encodeURIComponent("Hola Dan! 🎮 I'm playing THE NEON CAFÉ and I want my FREE trial lesson! 🚀") + '" target="_blank" rel="noopener">★ FREE TRIAL LESSON</a></div>');
+  stage.appendChild(foot);
+}
+
+function startStage(sid) {
+  resetState(sid); hud();
+  const st = STAGES[sid];
+  document.getElementById("marqueeTag").textContent = "RANK UP CITY · STAGE " + st.num + " · " + st.name.toUpperCase();
+  stage.innerHTML = '<div class="scene-tag">STAGE ' + st.num + ' · ' + st.name.toUpperCase() + '</div>';
+  stage.appendChild(bubble("dan", st.intro, st.introKey));
+  say(st.introKey, st.intro);
+
+  if (st.tutorial) {
+    const choices = el('<div class="actions" style="justify-content:flex-end; margin-top:14px;">' +
+      '<button class="btn cyan" id="c1">I\'M READY!</button>' +
+      '<button class="btn" id="c2">WAIT — WHAT DO I DO?</button></div>');
+    stage.appendChild(choices);
+    document.getElementById("c1").addEventListener("click", () => { blip(); startRound(0); });
+    document.getElementById("c2").addEventListener("click", () => {
+      blip(); choices.remove();
+      const help = "Easy: LISTEN to the order, TAP the food to add it to your tray, then hit SERVE. If you're stuck, Enri's PURR BOOST gives you a hint. You've got this.";
+      stage.appendChild(bubble("dan", help, "dan-help"));
+      say("dan-help", help);
+      const go = el('<div class="actions" style="justify-content:flex-end; margin-top:14px;"><button class="btn cyan">OK — LET\'S GO!</button></div>');
+      stage.appendChild(go);
+      go.querySelector("button").addEventListener("click", () => { blip(); startRound(0); });
+    });
+  } else {
+    const go = el('<div class="actions" style="justify-content:flex-end; margin-top:14px;"><button class="btn cyan">▶ START SHIFT</button></div>');
     stage.appendChild(go);
     go.querySelector("button").addEventListener("click", () => { blip(); startRound(0); });
-  });
+  }
 }
 
 function startRound(i) {
+  const st = STAGES[S.sid];
   S.round = i; S.tries = 0; S.tray = []; S.twistShown = false;
-  const R = ROUNDS[i];
-  stage.innerHTML = '<div class="scene-tag">CUSTOMER ' + (i + 1) + ' OF ' + ROUNDS.length + (R.boss ? " · ⚠ BOSS CUSTOMER" : "") + '</div>' + sceneSVG(R.ava);
+  const R = st.rounds[i];
+  const custSprite = R.who === "dan" ? null : R.who;
+  stage.innerHTML = '<div class="scene-tag">ROUND ' + (i + 1) + ' OF ' + st.rounds.length + (st.boss ? " · ⚠ INSPECTION" : "") + '</div>' + sceneSVG(custSprite);
 
-  if (R.intro) {
-    stage.appendChild(bubble("DAN", "manager (radio)", "headset", "var(--cyan)", R.intro, R.introAudio));
-    TEXTS[R.introAudio] = R.intro;
+  if (R.preIntro) {
+    stage.appendChild(bubble("dan", R.preIntro, R.preIntroKey));
+    TEXTS[R.preIntroKey] = R.preIntro;
   }
-  stage.appendChild(bubble(R.who, R.sub, R.ava, R.color, R.line, R.audio));
+  stage.appendChild(bubble(R.who, R.line, R.keys.line, R.sub));
+  if (R.note) stage.appendChild(el('<div class="note-board">' + R.note + '</div>'));
 
-  const trayBox = el('<div class="tray"><div class="tl">YOUR TRAY <span class="es" style="text-transform:none;">· tu bandeja (tocá para quitar)</span></div><div class="chips" id="trayChips"><span class="es">empty / vacía</span></div></div>');
+  if (R.type === "order") buildOrderUI(R);
+  else buildTalkUI(R);
+
+  if (R.preIntro) { say(R.preIntroKey, R.preIntro); setTimeout(() => { if (S.round === i && S.sid === st.id) say(R.keys.line, R.line); }, 11000); }
+  else say(R.keys.line, R.line);
+}
+
+function buildOrderUI(R) {
+  const trayBox = el('<div class="tray"><div class="tl">' + (R.trayLabel || "YOUR TRAY") + ' <span class="es" style="text-transform:none;">· tocá para quitar</span></div><div class="chips" id="trayChips"><span class="es">empty / vacía</span></div></div>');
   stage.appendChild(trayBox);
 
   const grid = el('<div class="menu-grid"></div>');
@@ -600,28 +695,27 @@ function startRound(i) {
   if (R.twist) {
     serveBtn.disabled = true;
     setTimeout(() => {
-      stage.insertBefore(bubble(R.who, R.sub, R.ava, R.color, R.twist, R.twistAudio), trayBox);
+      if (!document.getElementById("serveBtn")) return;
+      stage.insertBefore(bubble(R.who, R.twist, R.keys.twist, R.sub), document.querySelector(".tray"));
       tone(392, 0.12); tone(523, 0.12, "square", 0.12);
-      say(R.twistAudio, R.twist);
-      S.twistShown = true; serveBtn.disabled = false;
+      say(R.keys.twist, R.twist);
+      S.twistShown = true;
+      document.getElementById("serveBtn").disabled = false;
       startTimer(R.par, stage.querySelector(".scene-tag"));
     }, 4200);
   } else {
     startTimer(R.par, stage.querySelector(".scene-tag"));
   }
-  if (R.intro) { say(R.introAudio, R.intro); setTimeout(() => { if (S.round === i) say(R.audio, R.line); }, 11000); }
-  else say(R.audio, R.line);
 
   hintBtn.addEventListener("click", () => {
     if (S.hints <= 0) return;
     S.hints--; hintBtn.innerHTML = ic("paw", 15) + ' PURR BOOST ×' + S.hints;
     if (S.hints <= 0) hintBtn.disabled = true;
-    const hint = "Prrrr... they want: " + orderText(R.order) + ". You didn't hear it from me. *goes back to sleep*";
-    stage.insertBefore(bubble("ENRI", "purr boost", "cat", "#ff9d3d", hint, "enri-" + i), trayBox);
-    say("enri-" + i, hint);
+    stage.insertBefore(enriBubble("Prrrr... they want: " + orderText(R.order) + ". You didn't hear it from me. *goes back to sleep*"), document.querySelector(".tray"));
+    purr();
   });
 
-  serveBtn.addEventListener("click", () => judge());
+  serveBtn.addEventListener("click", () => judgeOrder(R));
 
   function renderTray() {
     const t = document.getElementById("trayChips");
@@ -636,36 +730,78 @@ function startRound(i) {
   }
 }
 
-function judge() {
-  const R = ROUNDS[S.round];
-  if (sameOrder(S.tray, R.order)) {
-    const elapsed = stopTimer();
-    const bonus = Math.min(25, Math.max(0, Math.round((R.par - elapsed) * 2)));
-    const paws = Math.max(1, 3 - S.tries);
-    const xp = R.boss ? paws * 15 : paws * 10;
-    const tip = paws === 3 ? (R.boss ? 3 : 2) : 1;
-    S.pawsTotal += paws; S.xp += xp + bonus; S.coins += tip; hud();
-    coinFx(); if (R.boss) fanfare();
-    if (bonus > 0) { tone(1568, 0.09); tone(2093, 0.14, "square", 0.09); }
-    showResult(paws, xp, tip, bonus, elapsed);
-  } else {
-    S.tries++; S.hearts--; hud(); buzz();
-    document.querySelector(".screen").classList.add("shake");
-    setTimeout(() => document.querySelector(".screen").classList.remove("shake"), 700);
-    if (S.hearts <= 0) { showGameOver(); return; }
-    stage.insertBefore(bubble(R.who, R.sub, R.ava, R.color, R.retryLine, R.retryAudio), document.querySelector(".tray"));
-    say(R.retryAudio, R.retryLine);
-  }
+function buildTalkUI(R) {
+  const opts = R.options.map((t, i) => ({ t: t, ok: i === R.correct }));
+  for (let i = opts.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [opts[i], opts[j]] = [opts[j], opts[i]]; }
+  const wrap = el('<div style="margin-top:14px;"></div>');
+  const letters = ["A", "B", "C", "D"];
+  opts.forEach((o, i) => {
+    const b = el('<button class="opt"><span class="ol">' + letters[i] + '</span>' + o.t + '</button>');
+    b.addEventListener("click", () => {
+      if (o.ok) { succeed(R); }
+      else {
+        b.classList.add("wrong");
+        fail(R);
+      }
+    });
+    wrap.appendChild(b);
+  });
+  stage.appendChild(wrap);
+
+  const act = el('<div class="actions" style="justify-content:flex-start;">' +
+    '<button class="btn hint" id="hintBtn">' + ic("paw", 15) + ' PURR BOOST ×' + S.hints + '</button></div>');
+  stage.appendChild(act);
+  const hintBtn = document.getElementById("hintBtn");
+  if (S.hints <= 0) hintBtn.disabled = true;
+  hintBtn.addEventListener("click", () => {
+    if (S.hints <= 0) return;
+    S.hints--; hintBtn.innerHTML = ic("paw", 15) + ' PURR BOOST ×' + S.hints;
+    if (S.hints <= 0) hintBtn.disabled = true;
+    stage.insertBefore(enriBubble('Prrrr... try saying: "' + R.options[R.correct] + '" ...you didn\'t hear it from me. *yawn*'), wrap);
+    purr();
+  });
+
+  startTimer(R.par, stage.querySelector(".scene-tag"));
 }
 
-function showResult(paws, xp, tip, bonus, elapsed) {
-  const R = ROUNDS[S.round];
+function judgeOrder(R) {
+  if (sameOrder(S.tray, R.order)) succeed(R);
+  else fail(R);
+}
+
+function succeed(R) {
+  const st = STAGES[S.sid];
+  const elapsed = stopTimer();
+  const bonus = Math.min(25, Math.max(0, Math.round((R.par - elapsed) * 2)));
+  const paws = Math.max(1, 3 - S.tries);
+  const xp = st.boss ? paws * 15 : paws * 10;
+  const tip = paws === 3 ? (st.boss ? 3 : 2) : 1;
+  S.pawsTotal += paws; S.xp += xp + bonus; S.coins += tip; hud();
+  coinFx(); if (st.boss) fanfare();
+  if (bonus > 0) { tone(1568, 0.09); tone(2093, 0.14, "square", 0.09); }
+  showResult(R, paws, xp, tip, bonus, elapsed);
+}
+
+function fail(R) {
+  S.tries++; S.hearts--; hud(); buzz();
+  document.querySelector(".screen").classList.add("shake");
+  setTimeout(() => document.querySelector(".screen").classList.remove("shake"), 700);
+  if (S.hearts <= 0) { showGameOver(); return; }
+  const anchor = document.querySelector(".tray") || stage.children[2] || null;
+  const bub = bubble(R.who, R.retryLine, R.keys.retry, R.sub);
+  if (anchor) stage.insertBefore(bub, anchor); else stage.appendChild(bub);
+  say(R.keys.retry, R.retryLine);
+}
+
+function showResult(R, paws, xp, tip, bonus, elapsed) {
+  const st = STAGES[S.sid];
   const quips = { 3: "...Acceptable. *slow blink of approval*", 2: "Adequate. I have seen worse.", 1: "*judges you silently* ...Next time, LISTEN." };
+  const c = CAST[R.who];
   const speedLine = '<p class="px" style="font-size:0.55rem; color:' + (bonus > 0 ? "var(--gold)" : "var(--muted)") + '; margin-top:8px;">' + ic("clock", 13) + ' TIME ' + elapsed.toFixed(1) + 'S' + (bonus > 0 ? ' · ⚡ SPEED BONUS +' + bonus + ' XP' : '') + '</p>';
   stage.innerHTML =
-    '<div class="scene-tag">ORDER COMPLETE</div>' +
+    '<div class="scene-tag">ROUND COMPLETE</div>' +
     '<div class="center">' +
-      '<div class="ava" style="--c:' + R.color + '; margin:8px auto; width:68px; height:68px;">' + (AVIMG[R.ava] ? '<img src="' + AVIMG[R.ava] + '" alt="">' : ic(R.ava, 34)) + '</div>' +
+      '<div class="ava" style="--c:' + c.color + '; margin:8px auto; width:68px; height:68px;"><img src="' + AVIMG[c.ava] + '" alt=""></div>' +
       '<p style="font-size:1rem; color:var(--muted); font-style:italic;">"' + R.thanks + '"</p>' +
       '<div class="ava" style="--c:var(--gold); margin:16px auto 7px; width:46px; height:46px;"><img src="sprite-totti.png" alt="" style="object-position:42% 4%"></div>' +
       '<div class="px" style="font-size:0.52rem; color:var(--gold); letter-spacing:1px;">TOTTI\'S JUDGMENT</div>' +
@@ -674,37 +810,42 @@ function showResult(paws, xp, tip, bonus, elapsed) {
       '<p class="px" style="font-size:0.6rem; color:var(--green); margin-top:10px;">+$' + tip + ' TIP &nbsp; +' + xp + ' XP</p>' +
       speedLine +
     '</div>';
-  say(R.thanksAudio, R.thanks);
-  R.words.forEach(w => { if (!S.words.includes(w)) S.words.push(w); });
-  const next = S.round + 1 < ROUNDS.length;
-  const btn = el('<div class="center" style="margin-top:16px;"><button class="btn cyan">' + (next ? "▶ NEXT CUSTOMER" : "🏁 END SHIFT") + '</button></div>');
+  say(R.keys.thanks, R.thanks);
+  const next = S.round + 1 < st.rounds.length;
+  const btn = el('<div class="center" style="margin-top:16px;"><button class="btn cyan">' + (next ? "▶ NEXT ROUND" : "🏁 END SHIFT") + '</button></div>');
   stage.appendChild(btn);
   btn.querySelector("button").addEventListener("click", () => { blip(); next ? startRound(S.round + 1) : showSummary(); });
 }
 
 function showSummary() {
   fanfare();
-  const best = Math.max(S.pawsTotal, parseInt(localStorage.getItem("nc_best") || "0", 10));
-  localStorage.setItem("nc_best", String(best));
+  const st = STAGES[S.sid];
+  const max = maxPaws(S.sid);
+  const p = loadProg();
+  const prev = p[S.sid] ? p[S.sid].best : 0;
+  p[S.sid] = { best: Math.max(prev, S.pawsTotal) };
+  saveProg(p);
 
+  const ratio = S.pawsTotal / max;
   let card;
-  if (S.pawsTotal >= 9)      card = { rar: "★ LEGENDARY ★", img: "sprite-totti.png", name: "TOTTI", quote: "I observe. I judge. Then I nap." };
-  else if (S.pawsTotal >= 6) card = { rar: "◆ EPIC ◆",       img: "sprite-enri.png",  name: "ENRI",  quote: "I don't chase success. I nap and it finds me." };
-  else                       card = { rar: "● COMMON ●",     img: "item-flatwhite.png", name: "NEON CUP", quote: "Full of potential. Refill and retry!" };
+  if (ratio >= 1)         card = { rar: "★ LEGENDARY ★", img: "sprite-totti.png", name: "TOTTI", quote: "I observe. I judge. Then I nap." };
+  else if (ratio >= 0.66) card = { rar: "◆ EPIC ◆",       img: "sprite-enri.png",  name: "ENRI",  quote: "I don't chase success. I nap and it finds me." };
+  else                    card = { rar: "● COMMON ●",     img: "item-flatwhite.png", name: "NEON CUP", quote: "Full of potential. Refill and retry!" };
 
-  const waMsg = encodeURIComponent("Hola Dan! 🎮 I finished THE NEON CAFÉ with " + S.pawsTotal + "/9 paws 🐾 — I want to claim my FREE trial lesson! 🚀");
+  const isBossWin = st.boss;
+  const waMsg = encodeURIComponent("Hola Dan! 🎮 I finished stage " + st.num + " of THE NEON CAFÉ with " + S.pawsTotal + "/" + max + " paws 🐾 — I want to claim my FREE trial lesson! 🚀");
   const waLink = "https://wa.me/5491123709477?text=" + waMsg;
 
   stage.innerHTML =
-    '<div class="scene-tag">SHIFT COMPLETE · DAY 1</div>' +
-    '<div class="center"><div class="title-big" style="font-size:0.95rem;">RANK UP!</div></div>' +
+    '<div class="scene-tag">' + (isBossWin ? "★ BUILDING COMPLETE ★" : "SHIFT COMPLETE · " + st.name.toUpperCase()) + '</div>' +
+    '<div class="center"><div class="title-big" style="font-size:0.95rem;">' + (isBossWin ? "CAFÉ MASTER!" : "RANK UP!") + '</div></div>' +
     '<div class="stat-grid">' +
-      '<div class="stat"><div class="sl">PAWS</div><div class="sv">' + S.pawsTotal + '/9</div></div>' +
+      '<div class="stat"><div class="sl">PAWS</div><div class="sv">' + S.pawsTotal + '/' + max + '</div></div>' +
       '<div class="stat"><div class="sl">TIPS</div><div class="sv">$' + S.coins + '</div></div>' +
       '<div class="stat"><div class="sl">XP</div><div class="sv">' + S.xp + '</div></div>' +
     '</div>' +
     '<p class="px center" style="font-size:0.5rem; color:var(--muted); letter-spacing:1px;">ENGLISH YOU USED TODAY</p>' +
-    '<div class="wordchips">' + S.words.map(w => "<span>" + w + "</span>").join("") + '</div>' +
+    '<div class="wordchips">' + st.words.map(w => "<span>" + w + "</span>").join("") + '</div>' +
     '<div class="card-reveal">' +
       '<div class="rar">' + card.rar + '</div>' +
       '<div class="cface"><img src="' + card.img + '" alt="" style="height:80px;"></div>' +
@@ -712,21 +853,34 @@ function showSummary() {
       '<div class="cquote">"' + card.quote + '"</div>' +
     '</div>';
 
-  const good = S.pawsTotal >= 7;
-  const danSay = good ? "Not bad for day one, rookie. Not bad at ALL. Your prize is waiting — claim it!" : "Hey, day one is hard! Run it back for a better card — or claim your prize anyway.";
-  stage.appendChild(bubble("DAN", "manager (radio)", "headset", "var(--cyan)", danSay, good ? "dan-good" : "dan-ok"));
-  say(good ? "dan-good" : "dan-ok", danSay);
+  let danSay, danKey;
+  if (isBossWin) {
+    danSay = "YES! Rookie — you did it! The Neon Café is officially five stars. Rank up! The Office Tower is waiting for you... when you're ready.";
+    danKey = "sb-win";
+  } else if (S.pawsTotal >= max * 0.75) {
+    danSay = "Not bad, rookie. Not bad at ALL. Your prize is waiting — claim it!"; danKey = "dan-good";
+  } else {
+    danSay = "Hey, that was hard! Run it back for a better card — or claim your prize anyway."; danKey = "dan-ok";
+  }
+  stage.appendChild(bubble("dan", danSay, danKey));
+  say(danKey, danSay);
 
+  const iNext = ORDER.indexOf(S.sid) + 1;
+  const hasNext = !isBossWin && iNext < ORDER.length && isUnlocked(ORDER[iNext]);
   const acts = el('<div class="actions" style="justify-content:center; margin-top:14px;">' +
+    (hasNext ? '<button class="btn serve" id="nextStageBtn">▶ NEXT SHIFT</button>' : '') +
+    (isBossWin ? '<a class="btn serve" href="a1-final.html">🎓 OFFICIAL A1 EXAM</a>' : '') +
+    '<button class="btn cyan" id="selBtn">SHIFT SELECT</button>' +
+    '<a class="btn" href="city.html">🏙 CITY MAP</a>' +
     '<a class="btn gold" href="' + waLink + '" target="_blank" rel="noopener">★ CLAIM FREE TRIAL LESSON</a>' +
-    '<button class="btn cyan" id="againBtn">↻ PLAY AGAIN</button>' +
     '<button class="btn" id="shareBtn">➤ SHARE SCORE</button></div>');
   stage.appendChild(acts);
 
-  document.getElementById("againBtn").addEventListener("click", () => { blip(); showTitle(); });
+  if (hasNext) document.getElementById("nextStageBtn").addEventListener("click", () => { blip(); startStage(ORDER[iNext]); });
+  document.getElementById("selBtn").addEventListener("click", () => { blip(); showSelect(); });
   document.getElementById("shareBtn").addEventListener("click", async () => {
     blip();
-    const txt = "I scored " + S.pawsTotal + "/9 🐾 at THE NEON CAFÉ — English for All · Rank Up! 🕹️ Can you beat me? " + location.href;
+    const txt = "I scored " + S.pawsTotal + "/" + max + " 🐾 on stage " + st.num + " of THE NEON CAFÉ — English for All · Rank Up! 🕹️ Can you beat me? " + location.href.split("?")[0];
     try {
       if (navigator.share) await navigator.share({ text: txt });
       else { await navigator.clipboard.writeText(txt); alert("Copied! / ¡Copiado! 📋"); }
@@ -735,21 +889,28 @@ function showSummary() {
 }
 
 function showGameOver() {
-  buzz();
+  buzz(); stopTimer();
   stage.innerHTML =
     '<div class="center">' +
       '<div class="title-big" style="color:var(--red); text-shadow: 0 0 16px var(--red);">SHIFT OVER</div>' +
-      '<div style="color:var(--red); margin:12px 0;">' + ic("cup", 44) + '</div>' +
     '</div>';
-  const danSay = "Hey — the breakfast rush gets EVERYBODY on day one. Take a breath and run it back. Enri believes in you. Probably.";
-  stage.appendChild(bubble("DAN", "manager (radio)", "headset", "var(--cyan)", danSay, "dan-over"));
+  const danSay = "Hey — the breakfast rush gets EVERYBODY. Take a breath and run it back. Enri believes in you. Probably.";
+  stage.appendChild(bubble("dan", danSay, "dan-over"));
   say("dan-over", danSay);
-  const btn = el('<div class="center" style="margin-top:16px;"><button class="btn cyan">↻ TRY AGAIN</button></div>');
+  const btn = el('<div class="actions" style="justify-content:center; margin-top:16px;">' +
+    '<button class="btn cyan" id="retryBtn">↻ TRY AGAIN</button>' +
+    '<button class="btn" id="selBtn2">SHIFT SELECT</button></div>');
   stage.appendChild(btn);
-  btn.querySelector("button").addEventListener("click", () => { blip(); showTitle(); });
+  document.getElementById("retryBtn").addEventListener("click", () => { blip(); startStage(S.sid); });
+  document.getElementById("selBtn2").addEventListener("click", () => { blip(); showSelect(); });
 }
 
-showTitle();
+/* ============ BOOT ============ */
+Object.keys(STAGES).forEach(k => { STAGES[k].id = k; });
+resetState("s1"); hud();
+const urlStage = new URLSearchParams(location.search).get("stage");
+if (urlStage && STAGES[urlStage] && isUnlocked(urlStage)) startStage(urlStage);
+else showTitle();
 </script>
 </body>
 </html>

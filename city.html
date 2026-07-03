@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Rank Up City — English for All</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cyan: #00e5ff; --magenta: #ff3df0; --purple: #9d4dff; --gold: #ffc83d;
+  --green: #3dffa0; --red: #ff5d7a; --bg: #05050e; --panel: rgba(20, 22, 48, 0.93);
+  --text: #eaf7ff; --muted: #7fd9e8;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: "Share Tech Mono", monospace; background-color: var(--bg);
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #ffffff88 50%, transparent 51%),
+    radial-gradient(1px 1px at 70% 15%, #ffffff66 50%, transparent 51%),
+    radial-gradient(2px 2px at 85% 60%, #9d4dff55 50%, transparent 51%),
+    radial-gradient(1px 1px at 40% 80%, #00e5ff55 50%, transparent 51%),
+    radial-gradient(2px 2px at 60% 45%, #ff3df044 50%, transparent 51%);
+  background-size: 520px 520px; color: var(--text); line-height: 1.6;
+  padding: 18px 10px 50px; font-size: 16px; min-height: 100vh;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1;
+  background: linear-gradient(rgba(5,5,14,0.72), rgba(5,5,14,0.86)), url("nebula.jpg") center / cover no-repeat;
+}
+.px { font-family: "Press Start 2P", monospace; }
+.es { color: var(--muted); font-size: 0.78rem; }
+
+.wrap { max-width: 560px; margin: 0 auto; position: relative; z-index: 2; }
+.marquee { text-align: center; margin-bottom: 12px; }
+.marquee img { height: 84px; max-width: 86%; object-fit: contain; background: #000; padding: 8px 14px; border: 2px solid var(--cyan); border-radius: 14px; box-shadow: 0 0 16px #00e5ff55, inset 0 0 12px #00e5ff22; }
+h1 { font-family: "Press Start 2P", monospace; font-size: clamp(1rem, 4.6vw, 1.5rem); color: var(--magenta); text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 0 0 16px var(--magenta); letter-spacing: 2px; text-align: center; margin: 14px 0 6px; line-height: 1.6; }
+.sub { text-align: center; color: var(--gold); font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 8px #ffc83d66; margin-bottom: 18px; }
+.sub::before, .sub::after { content: " ✦ "; color: var(--cyan); }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+@media (max-width: 430px) { .grid { grid-template-columns: 1fr; } }
+
+.district { position: relative; background: var(--panel); border: 2px solid var(--dc, var(--cyan)); border-radius: 14px; padding: 14px 12px 12px; text-align: center; box-shadow: 0 0 12px var(--dg, #00e5ff44), inset 0 0 16px #00e5ff0a; transition: transform 0.12s, box-shadow 0.15s; text-decoration: none; color: var(--text); display: block; }
+a.district:hover { transform: translateY(-3px); box-shadow: 0 0 20px var(--dg, #00e5ff88); }
+.district.locked { opacity: 0.55; border-style: dashed; }
+.district svg { display: block; width: 100%; height: 110px; margin-bottom: 8px; }
+.d-name { font-family: "Press Start 2P", monospace; font-size: 0.6rem; color: #fff; letter-spacing: 1px; line-height: 1.6; text-shadow: 0 0 6px var(--dc); }
+.d-world { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+.d-pill { display: inline-block; font-family: "Press Start 2P", monospace; font-size: 0.46rem; letter-spacing: 1px; padding: 5px 10px; border-radius: 20px; border: 1px solid currentColor; margin-top: 9px; }
+.d-pill.open { color: var(--green); }
+.d-pill.prog { color: var(--gold); }
+.d-pill.lock { color: #6a7a9a; }
+.d-level { position: absolute; top: 9px; left: 9px; font-family: "Press Start 2P", monospace; font-size: 0.5rem; color: var(--dc); border: 1.5px solid var(--dc); border-radius: 8px; padding: 4px 7px; background: #0c0c22; text-shadow: 0 0 6px var(--dc); }
+
+.cats { margin-top: 18px; display: flex; flex-direction: column; gap: 12px; }
+.catrow { display: flex; gap: 10px; align-items: flex-end; }
+.catrow.rev { flex-direction: row-reverse; }
+.catimg { flex-shrink: 0; width: 92px; cursor: pointer; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6)); transition: transform 0.12s; }
+.catimg:hover { transform: translateY(-3px); }
+.catbub { flex: 1; border: 2px solid var(--cc); background: #0c0e26; border-radius: 14px; padding: 10px 14px; position: relative; }
+.catbub .cwho { font-family: "Press Start 2P", monospace; font-size: 0.5rem; color: var(--cc); letter-spacing: 1px; margin-bottom: 5px; }
+.catbub .csay { font-size: 0.94rem; line-height: 1.55; }
+.catbub .chint { font-size: 0.72rem; color: #5a6a8a; margin-top: 6px; }
+
+.actions { display: flex; gap: 9px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+.btn { display: inline-flex; align-items: center; gap: 7px; font-family: "Press Start 2P", monospace; font-size: 0.58rem; background: linear-gradient(180deg, var(--magenta), #a31bd6); color: #fff; border: 2px solid #ff8df7; border-radius: 11px; padding: 12px 16px; cursor: pointer; letter-spacing: 1px; text-shadow: 0 0 6px #000; box-shadow: 0 0 14px #ff3df077; transition: transform 0.1s, box-shadow 0.15s; text-decoration: none; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 0 20px #ff3df0aa; }
+.btn.cyan { background: linear-gradient(180deg, var(--cyan), #0a7d93); border-color: #9ff1ff; box-shadow: 0 0 14px #00e5ff77; color: #04121f; text-shadow: none; }
+.btn.gold { background: linear-gradient(180deg, #ffd45e, #e8a317); border-color: #ffe08a; box-shadow: 0 0 14px #ffc83d77; }
+
+@keyframes popIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.district, .catrow { animation: popIn 0.35s ease-out backwards; }
+.district:nth-child(2) { animation-delay: 0.05s; } .district:nth-child(3) { animation-delay: 0.1s; }
+.district:nth-child(4) { animation-delay: 0.15s; } .district:nth-child(5) { animation-delay: 0.2s; }
+.district:nth-child(6) { animation-delay: 0.25s; }
+@keyframes twk { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+.wl { animation: twk 2.8s infinite; }
+@keyframes zfloat { 0% { transform: translateY(0); opacity: 0; } 30% { opacity: 0.9; } 100% { transform: translateY(-14px); opacity: 0; } }
+.zz { position: absolute; font-family: "Press Start 2P", monospace; font-size: 9px; color: #ffd9a8; animation: zfloat 2.4s infinite; }
+.footer { text-align: center; margin-top: 22px; font-size: 0.78rem; color: #5a6a8a; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="marquee"><img src="logo.png" alt="English for All — Rank Up"></div>
+  <h1>RANK UP CITY</h1>
+  <div class="sub">Choose your district</div>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="cats">
+    <div class="catrow">
+      <img class="catimg" id="tottiImg" src="sprite-totti.png" alt="Totti">
+      <div class="catbub" style="--cc: #b5b5d0;">
+        <div class="cwho">TOTTI · your guide</div>
+        <div class="csay" id="tottiSay"></div>
+        <div class="chint">tap Totti for advice · tocá a Totti</div>
+      </div>
+    </div>
+    <div class="catrow rev" style="position:relative;">
+      <span class="zz" style="right: 70px; bottom: 60px;">z</span>
+      <img class="catimg" id="enriImg" src="sprite-enri.png" alt="Enri" style="width:110px;">
+      <div class="catbub" style="--cc: #ff9d3d;">
+        <div class="cwho">ENRI · moral support</div>
+        <div class="csay" id="enriSay">...zzz...</div>
+        <div class="chint">tap Enri at your own risk · tocá a Enri</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <a class="btn cyan" href="index.html">🎓 ACADEMY LESSONS</a>
+    <a class="btn gold" href="https://wa.me/5491123709477?text=Hola%20Dan!%20%F0%9F%8E%AE%20I%20found%20RANK%20UP%20CITY%20and%20I%20want%20my%20FREE%20trial%20lesson!%20%F0%9F%9A%80" target="_blank" rel="noopener">★ FREE TRIAL LESSON</a>
+  </div>
+
+  <div class="footer">English for All · Rank Up — speak English with confidence 🎤</div>
+</div>
+
+<script>
+"use strict";
+/* ---- sfx ---- */
+let AC = null;
+function tone(f, d, t, w, v) {
+  try {
+    if (!AC) AC = new (window.AudioContext || window.webkitAudioContext)();
+    const o = AC.createOscillator(), g = AC.createGain();
+    o.type = t || "square"; o.frequency.value = f;
+    g.gain.setValueAtTime(v || 0.05, AC.currentTime + (w || 0));
+    g.gain.exponentialRampToValueAtTime(0.0001, AC.currentTime + (w || 0) + d);
+    o.connect(g); g.connect(AC.destination);
+    o.start(AC.currentTime + (w || 0)); o.stop(AC.currentTime + (w || 0) + d + 0.02);
+  } catch (e) {}
+}
+const blip = () => tone(660, 0.07);
+const purr = () => { tone(220, 0.3, "sine", 0, 0.05); tone(196, 0.3, "sine", 0.15, 0.05); };
+
+/* ---- progress ---- */
+let prog = {};
+try { prog = JSON.parse(localStorage.getItem("nc_prog") || "{}"); } catch (e) {}
+const CAFE_STAGES = ["s1", "s2", "s3", "s4", "s5", "s6", "sb"];
+const CAFE_MAX = { s1: 9, s2: 12, s3: 12, s4: 12, s5: 12, s6: 12, sb: 12 };
+const cafePaws = CAFE_STAGES.reduce((t, s) => t + (prog[s] ? prog[s].best : 0), 0);
+const cafeDone = CAFE_STAGES.filter(s => prog[s]).length;
+const cafeMaxTotal = Object.values(CAFE_MAX).reduce((a, b) => a + b, 0);
+const bossDone = !!prog.sb;
+
+/* ---- buildings ---- */
+function windows(x0, y0, cols, rows, color, litEvery) {
+  let s = "";
+  for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
+    const lit = ((r * cols + c) % litEvery === 0);
+    s += '<rect x="' + (x0 + c * 9) + '" y="' + (y0 + r * 11) + '" width="5" height="6" fill="' + (lit ? color : "#1a1c3f") + '"' + (lit ? ' class="wl" style="animation-delay:' + ((r + c) * 0.4) + 's"' : "") + '/>';
+  }
+  return s;
+}
+function building(kind, color) {
+  const W = 150, H = 120;
+  let inner = "";
+  if (kind === "cafe") {
+    inner = '<rect x="25" y="50" width="100" height="62" rx="4" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
+      '<rect x="25" y="62" width="100" height="9" fill="' + color + '" opacity="0.75"/>' +
+      '<rect x="38" y="80" width="20" height="24" fill="#1a1c3f" stroke="' + color + '" stroke-width="1"/>' +
+      '<rect x="66" y="80" width="44" height="18" rx="2" fill="#0a0a1a" stroke="' + color + '" stroke-width="1"/>' +
+      windows(70, 84, 4, 1, color, 2) +
+      '<text x="75" y="45" text-anchor="middle" font-family="\'Press Start 2P\', monospace" font-size="9" fill="' + color + '" class="wl">CAFÉ</text>' +
+      '<path d="M60 28 q2 -6 0 -10 M68 28 q2 -6 0 -10" stroke="' + color + '" stroke-width="1.5" fill="none" opacity="0.7"/>';
+  } else if (kind === "office") {
+    inner = '<rect x="45" y="14" width="60" height="98" rx="3" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
+      windows(52, 22, 5, 8, color, 3) +
+      '<rect x="60" y="4" width="30" height="10" rx="2" fill="#141433" stroke="' + color + '" stroke-width="1.5"/>';
+  } else if (kind === "agency") {
+    inner = '<rect x="35" y="38" width="80" height="74" rx="3" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
+      windows(43, 46, 6, 5, color, 4) +
+      '<circle cx="75" cy="26" r="9" fill="none" stroke="' + color + '" stroke-width="2" class="wl"/>' +
+      '<path d="M75 35 v3" stroke="' + color + '" stroke-width="2"/>';
+  } else if (kind === "vault") {
+    inner = '<rect x="38" y="30" width="74" height="82" rx="3" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
+      '<circle cx="75" cy="66" r="17" fill="none" stroke="' + color + '" stroke-width="2.5"/>' +
+      '<circle cx="75" cy="66" r="7" fill="none" stroke="' + color + '" stroke-width="1.5" class="wl"/>' +
+      '<path d="M75 49 v-6 M75 89 v-6 M58 66 h-6 M98 66 h-6" stroke="' + color + '" stroke-width="2"/>';
+  } else if (kind === "radio") {
+    inner = '<rect x="55" y="52" width="40" height="60" rx="3" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
+      windows(61, 60, 3, 4, color, 2) +
+      '<path d="M75 52 L75 12" stroke="' + color + '" stroke-width="2.5"/>' +
+      '<circle cx="75" cy="12" r="3" fill="' + color + '" class="wl"/>' +
+      '<path d="M62 26 a15 15 0 0 1 26 0 M56 34 a22 22 0 0 1 38 0" stroke="' + color + '" stroke-width="1.5" fill="none" opacity="0.7" class="wl"/>';
+  } else {
+    inner = '<rect x="40" y="20" width="70" height="92" rx="3" fill="#141433" stroke="' + color + '" stroke-width="2"/>' +
+      windows(48, 30, 5, 6, color, 5) +
+      '<rect x="40" y="20" width="70" height="8" fill="' + color + '" opacity="0.8"/>' +
+      '<path d="M55 12 l20 -8 20 8" stroke="' + color + '" stroke-width="2" fill="none"/>';
+  }
+  return '<svg viewBox="0 0 ' + W + ' ' + H + '" aria-hidden="true"><path d="M0 112 h150" stroke="#2a2a4d" stroke-width="2"/>' + inner + '</svg>';
+}
+
+const DISTRICTS = [
+  { kind: "cafe",  name: "THE NEON CAFÉ",     world: "First contact · café tycoon",   level: "A1", color: "#00e5ff", glow: "#00e5ff55", href: "neon-cafe.html", open: true },
+  { kind: "office", name: "THE OFFICE TOWER", world: "On the job · work-shift sim",    level: "A2", color: "#ffc83d", glow: "#ffc83d44" },
+  { kind: "agency", name: "DETECTIVE AGENCY", world: "Hold your own · word detective", level: "B1", color: "#9d4dff", glow: "#9d4dff44" },
+  { kind: "vault",  name: "CORPORATE VAULT",  world: "The professional · escape room", level: "B2", color: "#ff3df0", glow: "#ff3df044" },
+  { kind: "radio",  name: "THE RADIO TOWER",  world: "Advanced operator · speak it",   level: "C1", color: "#3dffa0", glow: "#3dffa044" },
+  { kind: "tower",  name: "THE PENTHOUSE",    world: "Mastery · the living story",     level: "C2", color: "#ff5d7a", glow: "#ff5d7a44" }
+];
+
+const grid = document.getElementById("grid");
+DISTRICTS.forEach(d => {
+  const isOpen = !!d.open;
+  const tag = isOpen
+    ? (cafeDone > 0
+        ? '<span class="d-pill prog">' + cafePaws + '/' + cafeMaxTotal + ' 🐾 · ' + cafeDone + '/7 SHIFTS</span>'
+        : '<span class="d-pill open">▶ OPEN — PLAY NOW</span>')
+    : '<span class="d-pill lock">🔒 IN CONSTRUCTION</span>';
+  const html = '<div class="d-level">' + d.level + '</div>' +
+    building(d.kind, d.color) +
+    '<div class="d-name">' + d.name + '</div>' +
+    '<div class="d-world">' + d.world + '</div>' + tag;
+  let node;
+  if (isOpen) {
+    node = document.createElement("a");
+    node.href = d.href;
+    node.className = "district";
+    node.addEventListener("click", () => blip());
+  } else {
+    node = document.createElement("div");
+    node.className = "district locked";
+  }
+  node.style.setProperty("--dc", d.color);
+  node.style.setProperty("--dg", d.glow);
+  node.innerHTML = html;
+  grid.appendChild(node);
+});
+
+/* ---- cat guides ---- */
+const nextStage = CAFE_STAGES.find(s => !prog[s]);
+const STAGE_NAMES = { s1: "First shift", s2: "The regulars", s3: "Rush hour", s4: "Lost & found", s5: "The delivery", s6: "Quiz night", sb: "The inspection (BOSS)" };
+
+let tottiMain;
+if (bossDone) tottiMain = "Café Master. Hm. I am... not unimpressed. The Office Tower is under construction — head office is slow. Meanwhile: beat your paw records.";
+else if (cafeDone === 0) tottiMain = "New in the city? Start at the Neon Café. Dan needs a barista, and I need someone to judge. I'll be watching.";
+else tottiMain = "You've earned " + cafePaws + " paws at the Café. Next up: \"" + STAGE_NAMES[nextStage] + "\". Do not embarrass me.";
+
+const TOTTI_TIPS = [
+  tottiMain,
+  "Get EVERY paw in a shift and my Legendary card is yours. Few are worthy.",
+  "Vera runs the inspection on stage 1-B. Bring everything you've learned.",
+  "Fast answers earn bonus XP. But wrong answers cost hearts. Think, THEN be fast.",
+  "The Academy has full lessons for every level. The city is where you train; the Academy is where you study.",
+  "Enri's hints are good. His work ethic is not."
+];
+const ENRI_TIPS = [
+  "...zzz...",
+  "Prrrr... you again.",
+  "I believe in you. From here. Horizontally.",
+  "If you get stuck in a shift... I know things. Purr Boost. Two per shift.",
+  "Success is a nap away. Everything is a nap away.",
+  "...five more minutes."
+];
+
+const tottiSay = document.getElementById("tottiSay");
+const enriSay = document.getElementById("enriSay");
+tottiSay.textContent = tottiMain;
+let ti = 0, ei = 0;
+document.getElementById("tottiImg").addEventListener("click", () => {
+  ti = (ti + 1) % TOTTI_TIPS.length;
+  tottiSay.textContent = TOTTI_TIPS[ti];
+  blip();
+});
+document.getElementById("enriImg").addEventListener("click", () => {
+  ei = (ei + 1) % ENRI_TIPS.length;
+  enriSay.textContent = ENRI_TIPS[ei];
+  purr();
+});
+</script>
+</body>
+</html>
