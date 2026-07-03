@@ -89,27 +89,27 @@
       "intro": "Tocá cada tarjeta para ver la traducción. Estúdialas antes de los ejercicios.",
       "cards": [
         {
-          "front": "teacher 📚",
+          "front": "teacher <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-1f3eb.svg' alt='teacher'>",
           "back": "profesor/a"
         },
         {
-          "front": "doctor 🩺",
+          "front": "doctor <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-2695-fe0f.svg' alt='doctor'>",
           "back": "médico/a"
         },
         {
-          "front": "engineer ⚙️",
+          "front": "engineer <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9d1-200d-1f527.svg' alt='engineer'>",
           "back": "ingeniero/a"
         },
         {
-          "front": "student 🎓",
+          "front": "student <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9d1-200d-1f393.svg' alt='student'>",
           "back": "estudiante"
         },
         {
-          "front": "cook 🍳",
+          "front": "cook <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-1f373.svg' alt='cook'>",
           "back": "cocinero/a"
         },
         {
-          "front": "nurse 💉",
+          "front": "nurse <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f469-200d-2695-fe0f.svg' alt='nurse'>",
           "back": "enfermero/a"
         }
       ]
@@ -121,27 +121,27 @@
       "intro": "Tocá la imagen y luego el trabajo correcto.",
       "pairs": [
         {
-          "img": "📚",
+          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-1f3eb.svg' alt='teacher'>",
           "word": "teacher"
         },
         {
-          "img": "🩺",
+          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-2695-fe0f.svg' alt='doctor'>",
           "word": "doctor"
         },
         {
-          "img": "👮",
+          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f46e.svg' alt='police officer'>",
           "word": "police officer"
         },
         {
-          "img": "🍳",
+          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-1f373.svg' alt='cook'>",
           "word": "cook"
         },
         {
-          "img": "👷",
+          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f477.svg' alt='builder'>",
           "word": "builder"
         },
         {
-          "img": "💻",
+          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9d1-200d-1f4bb.svg' alt='programmer'>",
           "word": "programmer"
         }
       ]

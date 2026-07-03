@@ -195,3 +195,7 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 
 /* country flags as images (Windows shows emoji flags as letters) — same approach as REVIEWS.html */
 .flag { width: 1.25em; height: 0.95em; object-fit: cover; vertical-align: -0.15em; border-radius: 2px; box-shadow: 0 0 5px #00000088; }
+
+/* emoji artwork as images (consistent cross-platform) — Twemoji SVGs via jsdelivr */
+.emo { height: 1.35em; width: auto; vertical-align: -0.28em; }
+.pic-em .emo { height: 1.9rem; vertical-align: middle; }
