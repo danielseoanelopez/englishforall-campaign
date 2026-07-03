@@ -89,27 +89,27 @@
       "intro": "Tocá cada tarjeta para ver la traducción. Estúdialas antes de los ejercicios.",
       "cards": [
         {
-          "front": "teacher 👨‍🏫",
+          "front": "teacher 📚",
           "back": "profesor/a"
         },
         {
-          "front": "doctor 👨‍⚕️",
+          "front": "doctor 🩺",
           "back": "médico/a"
         },
         {
-          "front": "engineer 👷",
+          "front": "engineer ⚙️",
           "back": "ingeniero/a"
         },
         {
-          "front": "student 🧑‍🎓",
+          "front": "student 🎓",
           "back": "estudiante"
         },
         {
-          "front": "cook 👨‍🍳",
+          "front": "cook 🍳",
           "back": "cocinero/a"
         },
         {
-          "front": "nurse 👩‍⚕️",
+          "front": "nurse 💉",
           "back": "enfermero/a"
         }
       ]
@@ -121,11 +121,11 @@
       "intro": "Tocá la imagen y luego el trabajo correcto.",
       "pairs": [
         {
-          "img": "👨‍🏫",
+          "img": "📚",
           "word": "teacher"
         },
         {
-          "img": "👨‍⚕️",
+          "img": "🩺",
           "word": "doctor"
         },
         {
@@ -133,7 +133,7 @@
           "word": "police officer"
         },
         {
-          "img": "👨‍🍳",
+          "img": "🍳",
           "word": "cook"
         },
         {
@@ -141,7 +141,7 @@
           "word": "builder"
         },
         {
-          "img": "🧑‍💻",
+          "img": "💻",
           "word": "programmer"
         }
       ]
