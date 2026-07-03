@@ -192,3 +192,6 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .fc-front, .fc-back { position: absolute; inset: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; border-radius: 12px; padding: 8px; text-align: center; font-family: "Share Tech Mono", monospace; }
 .fc-front { background: #10122a; border: 2px solid var(--cyan); color: var(--text); box-shadow: 0 0 10px #00e5ff33; font-size: 1.02rem; }
 .fc-back { background: #1a0f2e; border: 2px solid var(--gold); color: var(--gold); transform: rotateY(180deg); font-size: 0.95rem; }
+
+/* country flags as images (Windows shows emoji flags as letters) — same approach as REVIEWS.html */
+.flag { width: 1.25em; height: 0.95em; object-fit: cover; vertical-align: -0.15em; border-radius: 2px; box-shadow: 0 0 5px #00000088; }

@@ -67,7 +67,7 @@
       "type": "listening", "id": "ex-l1",
       "title": "AUDIO 1 · GETTING TO KNOW YOU",
       "desc": "Ana le hace preguntas a Tom. Escucha las respuestas.",
-      "src": "a1-l6-1.mp3", "dur": "0:27", "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
+      "src": "a1-l6-1.mp3", "dur": "0:27", "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
       "questions": [
         { "type": "mcq", "q": "Where does Tom live?", "options": ["Toronto", "Madrid", "Mexico City"], "answer": 0 },
         { "type": "mcq", "q": "Can Tom swim?", "options": ["Yes, he can", "No, he can't", "He doesn't say"], "answer": 1 },

@@ -153,7 +153,7 @@
       "desc": "Ana y Tom hablan de su país, trabajo y edad.",
       "src": "a1-l2-1.mp3",
       "dur": "0:44",
-      "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
+      "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
       "questions": [
         {
           "type": "mcq",
@@ -183,7 +183,7 @@
       ],
       "speaking": {
         "prompt": "Give your personal info: name, country, job and age.",
-        "starter": "Hi, I'm… I'm from… I'm a… and I'm … years old."
+        "starter": "Hi, I'm (name). I'm from (country). I'm a (job) and I'm (age) years old."
       },
       "transcript": [
         {
@@ -280,19 +280,19 @@
       "pairs": [
         {
           "a": "Mexico",
-          "b": "🇲🇽"
+          "b": "<img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         },
         {
           "a": "Canada",
-          "b": "🇨🇦"
+          "b": "<img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>"
         },
         {
           "a": "Brazil",
-          "b": "🇧🇷"
+          "b": "<img class='flag' src='https://flagcdn.com/br.svg' alt='Brasil'>"
         },
         {
           "a": "Spain",
-          "b": "🇪🇸"
+          "b": "<img class='flag' src='https://flagcdn.com/es.svg' alt='España'>"
         }
       ]
     },
@@ -303,7 +303,7 @@
       "desc": "María presenta a su amigo Leo. Escucha su país, trabajo y edad.",
       "src": "a1-l2-2.mp3",
       "dur": "0:19",
-      "speakers": "🗣 María 🇬🇧",
+      "speakers": "🗣 María <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>",
       "questions": [
         {
           "type": "mcq",

@@ -89,15 +89,15 @@
       "cast": [
         {
           "en": "Sofia",
-          "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧"
+          "sp": "la <b style='color:var(--magenta)'>team lead</b> <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
         },
         {
           "en": "Marcos",
-          "sp": "su compañero 🇺🇸"
+          "sp": "su compañero <img class='flag' src='https://flagcdn.com/us.svg' alt='EE. UU.'>"
         },
         {
           "en": "David",
-          "sp": "el cliente (GreenMarket) 🇬🇧"
+          "sp": "el cliente (GreenMarket) <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
         }
       ]
     },
@@ -140,7 +140,7 @@
       "desc": "Sofia llama a Marcos. ¿Cuál es el problema con el cliente?",
       "src": "audio1_video_call.mp3",
       "dur": "1:18",
-      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇺🇸",
+      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/us.svg' alt='EE. UU.'>",
       "questions": [
         {
           "type": "mcq",
@@ -271,7 +271,7 @@
       "desc": "Marcos llama a David para confirmar los detalles del proyecto.",
       "src": "audio3_client_call.mp3",
       "dur": "1:15",
-      "speakers": "🗣 Marcos 🇺🇸 + David 🇬🇧",
+      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/us.svg' alt='EE. UU.'> + David <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>",
       "questions": [
         {
           "type": "mcq",

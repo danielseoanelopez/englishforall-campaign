@@ -90,11 +90,11 @@
       "cast": [
         {
           "en": "Sofia",
-          "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧"
+          "sp": "la <b style='color:var(--magenta)'>team lead</b> <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
         },
         {
           "en": "Marcos",
-          "sp": "el developer 🇲🇽"
+          "sp": "el developer <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         }
       ]
     },
@@ -167,7 +167,7 @@
       "desc": "Sofia entrevista a Marcos sobre su trabajo anterior. Fíjate en los verbos en pasado.",
       "src": "past-simple-1.mp3",
       "dur": "0:58",
-      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",
@@ -282,7 +282,7 @@
       "desc": "Sofia cuenta el primer gran lanzamiento del equipo. Escucha el orden: first, then, after that.",
       "src": "past-simple-2.mp3",
       "dur": "0:37",
-      "speakers": "🗣 Sofia 🇬🇧",
+      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>",
       "questions": [
         {
           "type": "mcq",

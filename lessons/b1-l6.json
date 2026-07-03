@@ -101,15 +101,15 @@
       "cast": [
         {
           "en": "Priya",
-          "sp": "quiere el roadmap 🇮🇳"
+          "sp": "quiere el roadmap <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>"
         },
         {
           "en": "Sofia",
-          "sp": "lidera la fase dos 🇬🇧"
+          "sp": "lidera la fase dos <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
         },
         {
           "en": "Marcos",
-          "sp": "promete fechas 🇲🇽"
+          "sp": "promete fechas <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         }
       ]
     },
@@ -152,7 +152,7 @@
       "desc": "Priya, Sofia y Marcos planean el próximo trimestre. Fechas, promesas y predicciones — los tres futuros en acción.",
       "src": "b1-l6-1.mp3",
       "dur": "1:10",
-      "speakers": "🗣 Priya 🇮🇳 + Sofia 🇬🇧 + Marcos 🇲🇽",
+      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'> + Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",
@@ -336,7 +336,7 @@
       "desc": "El mensaje que Priya le dejó a Marcos después de la reunión. Una noticia grande… y un desafío más grande.",
       "src": "b1-l6-2.mp3",
       "dur": "0:52",
-      "speakers": "🗣 Priya 🇮🇳",
+      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>",
       "questions": [
         {
           "type": "mcq",

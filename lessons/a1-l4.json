@@ -174,7 +174,7 @@
       "desc": "Ana le pregunta a Tom por su familia. Escucha have got.",
       "src": "a1-l4-1.mp3",
       "dur": "0:29",
-      "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
+      "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
       "questions": [
         {
           "type": "mcq",
@@ -305,7 +305,7 @@
       "desc": "Marcos describe su cuarto y sus cosas. Escucha have got / haven't got.",
       "src": "a1-l4-2.mp3",
       "dur": "0:20",
-      "speakers": "🗣 Marcos 🇲🇽",
+      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",

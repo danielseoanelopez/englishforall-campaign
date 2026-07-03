@@ -102,11 +102,11 @@
       "cast": [
         {
           "en": "Priya",
-          "sp": "cree que es el diseño 🇮🇳"
+          "sp": "cree que es el diseño <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>"
         },
         {
           "en": "Marcos",
-          "sp": "defiende su trabajo <b style='color:var(--magenta)'>con datos</b> 🇲🇽"
+          "sp": "defiende su trabajo <b style='color:var(--magenta)'>con datos</b> <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         }
       ]
     },
@@ -157,7 +157,7 @@
       "desc": "Priya culpa al diseño por la caída de ventas. Marcos discrepa — con datos y con tacto. ¿Quién tiene razón?",
       "src": "b1-l5-1.mp3",
       "dur": "1:27",
-      "speakers": "🗣 Priya 🇮🇳 + Marcos 🇲🇽",
+      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",
@@ -356,7 +356,7 @@
       "desc": "Viernes siguiente: Priya le deja un mensaje a Marcos con el resultado del test. ¿Quién tenía razón?",
       "src": "b1-l5-2.mp3",
       "dur": "0:45",
-      "speakers": "🗣 Priya 🇮🇳",
+      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>",
       "questions": [
         {
           "type": "mcq",

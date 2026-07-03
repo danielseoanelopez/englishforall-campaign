@@ -90,11 +90,11 @@
       "cast": [
         {
           "en": "Sofia",
-          "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧"
+          "sp": "la <b style='color:var(--magenta)'>team lead</b> <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
         },
         {
           "en": "Marcos",
-          "sp": "el nuevo developer 🇲🇽"
+          "sp": "el nuevo developer <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         }
       ]
     },
@@ -167,7 +167,7 @@
       "desc": "Sofia le da la bienvenida a Marcos y le explica la rutina del equipo.",
       "src": "daily-routines-1.mp3",
       "dur": "1:12",
-      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",
@@ -281,7 +281,7 @@
       "desc": "Marcos describe su propio día. Vive en otra zona horaria.",
       "src": "daily-routines-2.mp3",
       "dur": "0:49",
-      "speakers": "🗣 Marcos 🇲🇽",
+      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",

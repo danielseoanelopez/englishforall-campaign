@@ -146,7 +146,7 @@
       "desc": "Ana y Tom hablan de un número y de horarios de clase.",
       "src": "a1-l3-1.mp3",
       "dur": "0:28",
-      "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
+      "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
       "questions": [
         {
           "type": "mcq",
@@ -287,7 +287,7 @@
       "desc": "Marcos cuenta los horarios de su día. Escucha las horas.",
       "src": "a1-l3-2.mp3",
       "dur": "0:21",
-      "speakers": "🗣 Marcos 🇲🇽",
+      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",

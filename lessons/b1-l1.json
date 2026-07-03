@@ -102,11 +102,11 @@
       "cast": [
         {
           "en": "Priya",
-          "sp": "la nueva <b style='color:var(--magenta)'>Project Director</b> 🇮🇳"
+          "sp": "la nueva <b style='color:var(--magenta)'>Project Director</b> <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>"
         },
         {
           "en": "Marcos",
-          "sp": "el developer 🇲🇽"
+          "sp": "el developer <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         }
       ]
     },
@@ -165,7 +165,7 @@
       "desc": "Priya revisa el trabajo de Marcos este trimestre. ¿Qué ha terminado y qué no?",
       "src": "b1-l1-1.mp3",
       "dur": "1:10",
-      "speakers": "🗣 Priya 🇮🇳 + Marcos 🇲🇽",
+      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",
@@ -318,7 +318,7 @@
       "desc": "Marcos le deja un mensaje de voz a Sofia con las novedades del proyecto.",
       "src": "b1-l1-2.mp3",
       "dur": "0:32",
-      "speakers": "🗣 Marcos 🇲🇽",
+      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",
@@ -348,7 +348,7 @@
       ],
       "speaking": {
         "prompt": "Leave a similar voicemail: say what you've finished and what you haven't done <i>yet</i>.",
-        "starter": "Hi, it's… I've just finished…, but I haven't … yet."
+        "starter": "Hi, it's (name). I've just finished…, but I haven't … yet."
       },
       "transcript": [
         {

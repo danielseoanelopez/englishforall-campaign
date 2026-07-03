@@ -91,11 +91,11 @@
       "cast": [
         {
           "en": "Sofia",
-          "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧"
+          "sp": "la <b style='color:var(--magenta)'>team lead</b> <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
         },
         {
           "en": "Marcos",
-          "sp": "el developer 🇲🇽"
+          "sp": "el developer <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         }
       ]
     },
@@ -200,7 +200,7 @@
       "desc": "Marcos necesita una laptop y Sofia lo ayuda a comparar dos modelos.",
       "src": "comparatives-1.mp3",
       "dur": "0:46",
-      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",
@@ -278,7 +278,7 @@
       "desc": "Sofia y Marcos comparan a dos candidatos para un puesto.",
       "src": "comparatives-3.mp3",
       "dur": "0:52",
-      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",

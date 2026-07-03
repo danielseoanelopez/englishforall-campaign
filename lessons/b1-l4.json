@@ -101,15 +101,15 @@
       "cast": [
         {
           "en": "Marcos",
-          "sp": "negocia el alcance 🇲🇽"
+          "sp": "negocia el alcance <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         },
         {
           "en": "David",
-          "sp": "el cliente, quiere más 🇬🇧"
+          "sp": "el cliente, quiere más <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
         },
         {
           "en": "Priya",
-          "sp": "controla el <b style='color:var(--magenta)'>presupuesto</b> 🇮🇳"
+          "sp": "controla el <b style='color:var(--magenta)'>presupuesto</b> <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>"
         }
       ]
     },
@@ -248,7 +248,7 @@
       "desc": "David pide más funciones. Priya defiende el presupuesto. Marcos busca el acuerdo. ¿Quién consigue qué?",
       "src": "b1-l4-1.mp3",
       "dur": "1:16",
-      "speakers": "🗣 Marcos 🇲🇽 + David 🇬🇧 + Priya 🇮🇳",
+      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + David <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>",
       "questions": [
         {
           "type": "mcq",
@@ -375,7 +375,7 @@
       "desc": "Después de la llamada, Marcos y Sofia repasan el acuerdo y planean la fase dos.",
       "src": "b1-l4-2.mp3",
       "dur": "0:49",
-      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",

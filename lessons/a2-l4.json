@@ -87,15 +87,15 @@
       "cast": [
         {
           "en": "Sofia",
-          "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧"
+          "sp": "la <b style='color:var(--magenta)'>team lead</b> <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
         },
         {
           "en": "Marcos",
-          "sp": "el developer 🇲🇽"
+          "sp": "el developer <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         },
         {
           "en": "Emma",
-          "sp": "una clienta 🇺🇸"
+          "sp": "una clienta <img class='flag' src='https://flagcdn.com/us.svg' alt='EE. UU.'>"
         }
       ]
     },
@@ -157,7 +157,7 @@
       "desc": "Marcos atiende una llamada. La clienta quiere hablar con Sofia.",
       "src": "requests-offers-1.mp3",
       "dur": "1:01",
-      "speakers": "🗣 Marcos 🇲🇽 + Emma 🇺🇸",
+      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Emma <img class='flag' src='https://flagcdn.com/us.svg' alt='EE. UU.'>",
       "questions": [
         {
           "type": "mcq",
@@ -263,7 +263,7 @@
       "desc": "Sofia le pide ayuda a Marcos con un informe.",
       "src": "requests-offers-2.mp3",
       "dur": "0:47",
-      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",

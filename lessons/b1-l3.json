@@ -102,15 +102,15 @@
       "cast": [
         {
           "en": "Marcos",
-          "sp": "cuenta <b style='color:var(--magenta)'>su versión</b> 🇲🇽"
+          "sp": "cuenta <b style='color:var(--magenta)'>su versión</b> <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         },
         {
           "en": "Sofia",
-          "sp": "cuenta <b style='color:var(--magenta)'>la suya</b> 🇬🇧"
+          "sp": "cuenta <b style='color:var(--magenta)'>la suya</b> <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
         },
         {
           "en": "Priya",
-          "sp": "quiere la historia completa 🇮🇳"
+          "sp": "quiere la historia completa <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>"
         }
       ]
     },
@@ -168,7 +168,7 @@
       "desc": "Priya le pregunta a Marcos qué pasó la noche del lanzamiento. Escucha su versión.",
       "src": "b1-l3-1.mp3",
       "dur": "0:57",
-      "speakers": "🗣 Priya 🇮🇳 + Marcos 🇲🇽",
+      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",
@@ -335,7 +335,7 @@
       "desc": "Ahora Sofia cuenta SU versión de esa noche… y no coincide del todo con la de Marcos. 👀 ¿Qué cambia?",
       "src": "b1-l3-2.mp3",
       "dur": "0:41",
-      "speakers": "🗣 Sofia 🇬🇧",
+      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>",
       "questions": [
         {
           "type": "mcq",

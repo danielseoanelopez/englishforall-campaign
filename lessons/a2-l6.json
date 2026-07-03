@@ -91,11 +91,11 @@
       "cast": [
         {
           "en": "Sofia",
-          "sp": "la <b style='color:var(--magenta)'>team lead</b> 🇬🇧"
+          "sp": "la <b style='color:var(--magenta)'>team lead</b> <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
         },
         {
           "en": "Marcos",
-          "sp": "el developer 🇲🇽"
+          "sp": "el developer <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         }
       ]
     },
@@ -106,7 +106,7 @@
       "desc": "Sofia y Marcos planean el próximo proyecto. Fíjate en \"going to\".",
       "src": "plans-1.mp3",
       "dur": "0:43",
-      "speakers": "🗣 Sofia 🇬🇧 + Marcos 🇲🇽",
+      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",
@@ -232,7 +232,7 @@
       "desc": "Marcos cuenta su agenda para un viaje. Fíjate en el present continuous con horas.",
       "src": "plans-2.mp3",
       "dur": "0:33",
-      "speakers": "🗣 Marcos 🇲🇽",
+      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
       "questions": [
         {
           "type": "mcq",

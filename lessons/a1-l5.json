@@ -177,7 +177,7 @@
       "desc": "Ana y Tom hablan de las cosas en una mochila. Escucha los objetos.",
       "src": "a1-l5-1.mp3",
       "dur": "0:27",
-      "speakers": "🗣 Ana 🇲🇽 + Tom 🇨🇦",
+      "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
       "questions": [
         {
           "type": "mcq",
