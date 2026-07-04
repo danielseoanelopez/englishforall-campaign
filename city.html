@@ -57,21 +57,21 @@ h1 { font-family: "Press Start 2P", monospace; font-size: clamp(1rem, 4.6vw, 1.5
 a.pod:hover { transform: translateY(-2px); }
 .pod .big { font-size: 0.82rem; }
 
-.map { position: relative; border: 2px solid #2a3a5a; border-radius: 16px; overflow: hidden; box-shadow: 0 0 18px #9d4dff33, inset 0 0 30px #00000066; margin-bottom: 16px; }
-.map svg { display: block; width: 100%; height: auto; }
-.node { cursor: default; }
-.node.open { cursor: pointer; }
-.node text { pointer-events: none; }
-.map .lvl { font-family: "Press Start 2P", monospace; font-size: 7px; }
-.map .nm { font-family: "Press Start 2P", monospace; font-size: 6px; letter-spacing: 0.5px; }
-.map .paw { font-family: "Press Start 2P", monospace; font-size: 5.5px; }
-.map .tag { font-family: "Press Start 2P", monospace; font-size: 5.5px; letter-spacing: 0.5px; }
-@keyframes halopulse { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.95; } }
-.halo { animation: halopulse 2s ease-in-out infinite; transform-origin: center; }
-@keyframes nodewiggle { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
-.node.wiggle { animation: nodewiggle 0.4s; }
-@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
-.here { animation: bob 1.4s ease-in-out infinite; transform-origin: center; }
+.map { position: relative; border: 2px solid #2a3a5a; border-radius: 16px; overflow: hidden; box-shadow: 0 0 18px #9d4dff44; margin-bottom: 16px; background: #090b20; line-height: 0; }
+.map .mapimg { display: block; width: 100%; height: auto; }
+.spot { position: absolute; transform: translate(-50%, -50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 2px; background: rgba(8,10,28,0.74); border: 2px solid var(--sc, #3a4a6a); border-radius: 11px; padding: 5px 7px; cursor: pointer; box-shadow: 0 0 12px var(--sg, transparent); line-height: 1; }
+.spot:hover { z-index: 3; }
+.spot.locked { border-style: dashed; }
+.spot .lv { font-family: "Press Start 2P", monospace; font-size: 0.52rem; color: var(--sc); text-shadow: 0 0 6px var(--sg); }
+.spot.locked .lv { color: #93a0c0; }
+.spot .nm { font-family: "Press Start 2P", monospace; font-size: 0.44rem; color: #eaf7ff; letter-spacing: 0.5px; }
+.spot .paw { font-family: "Press Start 2P", monospace; font-size: 0.42rem; color: #ffc83d; margin-top: 2px; }
+.spot .play { font-family: "Press Start 2P", monospace; font-size: 0.42rem; color: #3dffa0; margin-top: 1px; }
+.spot .lk { font-size: 0.72rem; }
+@keyframes ring { 0%, 100% { box-shadow: 0 0 0 2px var(--sc), 0 0 14px var(--sg); } 50% { box-shadow: 0 0 0 4px var(--sc), 0 0 24px var(--sg); } }
+.spot.open { animation: ring 1.9s ease-in-out infinite; }
+@keyframes swiggle { 0%, 100% { transform: translate(-50%, -50%); } 25% { transform: translate(calc(-50% - 5px), -50%); } 75% { transform: translate(calc(-50% + 5px), -50%); } }
+.spot.wiggle { animation: swiggle 0.4s; }
 
 .cats { margin-bottom: 6px; display: flex; flex-direction: column; gap: 10px; }
 .catrow { display: flex; gap: 10px; align-items: flex-end; }
@@ -189,98 +189,40 @@ const CAFE_MAX_TOTAL = 81;
 const cafePaws = CAFE_STAGES.reduce((t, s) => t + (prog[s] ? prog[s].best : 0), 0);
 const bossDone = !!prog.sb;
 
-/* ---------- the map ---------- */
+/* ---------- the map (hotspots over the art) ---------- */
 const NODES = [
-  { id: "cafe",   x: 190, y: 540, color: "#00e5ff", level: "A1", short: "CAFÉ",   name: "The Neon Café",   motif: "cafe",   open: true,  href: "neon-cafe.html" },
-  { id: "office", x: 300, y: 452, color: "#ffc83d", level: "A2", short: "OFFICE", name: "The Office Tower", motif: "office", teaser: "The Office Tower — A2. Dan's old workplace. Head office is still wiring the lights. Soon." },
-  { id: "agency", x: 90,  y: 384, color: "#9d4dff", level: "B1", short: "AGENCY", name: "Detective Agency", motif: "agency", teaser: "The Detective Agency — B1. Something's missing in the city. We'll need your English to crack the case." },
-  { id: "vault",  x: 296, y: 308, color: "#ff3df0", level: "B2", short: "VAULT",  name: "Corporate Vault",  motif: "vault",  teaser: "The Corporate Vault — B2. Locked tight. You'll have to talk your way out of this one." },
-  { id: "radio",  x: 100, y: 222, color: "#3dffa0", level: "C1", short: "RADIO",  name: "The Radio Tower",   motif: "radio",  teaser: "The Radio Tower — C1. My territory. You won't get in by tapping — you'll have to SPEAK." },
-  { id: "hotel",  x: 200, y: 118, color: "#ff5d7a", level: "C2", short: "HOTEL",  name: "The Grand Hotel",   motif: "hotel",  teaser: "The Grand Hotel — C2. The summit of the city. The guests up there... talk back." }
+  { id: "cafe",   px: 77, py: 24,   color: "#00e5ff", level: "A1", short: "CAFÉ",   open: true, href: "neon-cafe.html" },
+  { id: "office", px: 35, py: 19.5, color: "#ffc83d", level: "A2", short: "OFFICE", teaser: "The Office Tower — A2. Dan's old workplace. Head office is still wiring the lights. Soon." },
+  { id: "agency", px: 18, py: 42,   color: "#9d4dff", level: "B1", short: "AGENCY", teaser: "The Detective Agency — B1. Something's missing in the city. We'll need your English to crack the case." },
+  { id: "vault",  px: 29, py: 63,   color: "#ff3df0", level: "B2", short: "VAULT",  teaser: "The Corporate Vault — B2. Locked tight. You'll have to talk your way out of this one." },
+  { id: "radio",  px: 78, py: 47,   color: "#3dffa0", level: "C1", short: "RADIO",  teaser: "The Radio Tower — C1. My territory. You won't get in by tapping — you'll have to SPEAK." },
+  { id: "hotel",  px: 73, py: 76,   color: "#ff5d7a", level: "C2", short: "HOTEL",  teaser: "The Grand Hotel — C2. The summit of the city. The guests up there... talk back." }
 ];
-const TRAIL = "M190,540 C 250,512 300,500 300,452 C 300,410 120,440 90,384 C 66,346 300,352 296,308 C 292,266 108,268 100,222 C 94,182 214,182 200,118";
-
-function motif(n) {
-  const c = n.color, x = n.x, y = n.y;
-  switch (n.motif) {
-    case "cafe":   return '<circle cx="' + (x-8) + '" cy="' + (y-6) + '" r="3.5" fill="' + c + '" opacity=".7"/><circle cx="' + (x+7) + '" cy="' + (y+4) + '" r="3.5" fill="' + c + '" opacity=".7"/><rect x="' + (x-11) + '" y="' + (y+8) + '" width="22" height="4" rx="2" fill="' + c + '" opacity=".5"/>';
-    case "office": { let s = ""; for (let r = 0; r < 3; r++) for (let cc = 0; cc < 3; cc++) s += '<rect x="' + (x-10+cc*8) + '" y="' + (y-11+r*8) + '" width="4" height="5" fill="' + c + '" opacity=".7"/>'; return s; }
-    case "agency": return '<circle cx="' + (x-3) + '" cy="' + (y-3) + '" r="7" fill="none" stroke="' + c + '" stroke-width="2" opacity=".8"/><path d="M' + (x+3) + ',' + (y+3) + ' l6,6" stroke="' + c + '" stroke-width="2.5" opacity=".8"/>';
-    case "vault":  return '<circle cx="' + x + '" cy="' + y + '" r="11" fill="none" stroke="' + c + '" stroke-width="2" opacity=".8"/><circle cx="' + x + '" cy="' + y + '" r="4.5" fill="none" stroke="' + c + '" stroke-width="1.5" opacity=".8"/><path d="M' + x + ',' + (y-11) + 'v-3 M' + x + ',' + (y+11) + 'v3 M' + (x-11) + ',' + y + 'h-3 M' + (x+11) + ',' + y + 'h3" stroke="' + c + '" stroke-width="2" opacity=".7"/>';
-    case "radio":  return '<circle cx="' + x + '" cy="' + (y+6) + '" r="3" fill="' + c + '"/><path d="M' + x + ',' + (y+3) + ' V' + (y-12) + '" stroke="' + c + '" stroke-width="2"/><path d="M' + (x-8) + ',' + (y-4) + ' a10 10 0 0 1 16 0 M' + (x-13) + ',' + y + ' a16 16 0 0 1 26 0" stroke="' + c + '" stroke-width="1.4" fill="none" opacity=".6"/>';
-    case "hotel":  return '<rect x="' + (x-9) + '" y="' + (y-6) + '" width="18" height="12" rx="6" fill="none" stroke="' + c + '" stroke-width="2" opacity=".8"/><path d="M' + (x-4) + ',' + (y-6) + ' v12 M' + (x+4) + ',' + (y-6) + ' v12" stroke="' + c + '" stroke-width="1.2" opacity=".6"/>';
-  }
-  return "";
-}
-
-function nodeSVG(n) {
-  const c = n.color, x = n.x, y = n.y;
-  const dim = "#3a4a6a";
-  const stroke = n.open ? c : dim;
-  const halo = n.open ? '<circle class="halo" cx="' + x + '" cy="' + y + '" r="33" fill="none" stroke="' + c + '" stroke-width="2"/>' : "";
-  const foot = '<rect x="' + (x-22) + '" y="' + (y-22) + '" width="44" height="44" rx="9" fill="#0b0e2a" stroke="' + stroke + '" stroke-width="2.5"' + (n.open ? '' : ' stroke-dasharray="4 3"') + '/>';
-  const mot = n.open ? motif(n) : '<rect x="' + (x-5) + '" y="' + (y-4) + '" width="10" height="8" rx="1.5" fill="none" stroke="' + dim + '" stroke-width="1.6"/><path d="M' + (x-3.5) + ',' + (y-4) + ' a3.5 3.5 0 0 1 7 0" fill="none" stroke="' + dim + '" stroke-width="1.6"/>';
-  // level badge above
-  const lbl = '<rect x="' + (x-13) + '" y="' + (y-33) + '" width="26" height="13" rx="4" fill="#0b0e2a" stroke="' + stroke + '" stroke-width="1.2"/><text x="' + x + '" y="' + (y-23.5) + '" text-anchor="middle" class="lvl" fill="' + stroke + '">' + n.level + '</text>';
-  // name plate below
-  const w = n.short.length * 7 + 14;
-  const nmY = y + 34;
-  const plate = '<rect x="' + (x - w/2) + '" y="' + (nmY-10) + '" width="' + w + '" height="15" rx="4" fill="rgba(11,14,42,0.9)" stroke="' + stroke + '" stroke-width="1"/><text x="' + x + '" y="' + (nmY+0.5) + '" text-anchor="middle" class="nm" fill="#eaf7ff">' + n.short + '</text>';
-  // extra: café paw badge or start tag; locked lock
-  let extra = "";
-  if (n.id === "cafe") {
-    extra = '<rect x="' + (x-27) + '" y="' + (y+9) + '" width="54" height="12" rx="4" fill="#0b0e2a" stroke="#ffc83d" stroke-width="1"/><text x="' + x + '" y="' + (y+18) + '" text-anchor="middle" class="paw" fill="#ffc83d">' + cafePaws + '/' + CAFE_MAX_TOTAL + ' PAWS</text>';
-    extra += '<g class="here"><path d="M' + x + ',' + (y-42) + ' l-6,-9 h12 z" fill="#3dffa0"/><text x="' + x + '" y="' + (y-53) + '" text-anchor="middle" class="tag" fill="#3dffa0">' + (cafePaws > 0 ? "CONTINUE" : "START") + '</text></g>';
-  } else {
-    extra = '<g transform="translate(' + (x+14) + ',' + (y-20) + ')"><rect x="-6" y="-2" width="12" height="9" rx="1.5" fill="#0b0e2a" stroke="' + dim + '" stroke-width="1.3"/><path d="M-4,-2 a4 4 0 0 1 8 0" fill="none" stroke="' + dim + '" stroke-width="1.3"/></g>';
-  }
-  return '<g class="node ' + (n.open ? "open" : "locked") + '" data-id="' + n.id + '">' + halo + foot + mot + lbl + plate + extra + '</g>';
-}
-
-function buildBlocks() {
-  const blocks = [[36,470,30,36],[318,536,34,30],[326,150,32,40],[30,110,36,30],[150,258,30,26],[244,404,26,30],[40,300,26,24],[300,214,28,24]];
-  let s = "";
-  blocks.forEach((b, i) => {
-    s += '<rect x="' + b[0] + '" y="' + b[1] + '" width="' + b[2] + '" height="' + b[3] + '" rx="2" fill="#101534" stroke="#1b2048" stroke-width="1"/>';
-    for (let k = 0; k < 3; k++) {
-      const col = ["#00e5ff", "#ff3df0", "#ffc83d"][(i + k) % 3];
-      s += '<rect x="' + (b[0] + 4 + (k % 2) * 9) + '" y="' + (b[1] + 5 + Math.floor(k / 2) * 8) + '" width="3" height="3.5" fill="' + col + '" opacity="0.55"/>';
-    }
-  });
-  return s;
-}
 
 function renderMap() {
-  const grid = (function () {
-    let g = "";
-    for (let x = 40; x < 380; x += 40) g += '<line x1="' + x + '" y1="0" x2="' + x + '" y2="600" stroke="#131734" stroke-width="1"/>';
-    for (let y = 40; y < 600; y += 40) g += '<line x1="0" y1="' + y + '" x2="380" y2="' + y + '" stroke="#131734" stroke-width="1"/>';
-    return g;
-  })();
-  const river = '<path d="M-10,308 C 120,350 250,300 390,344 L390,378 C250,334 120,384 -10,342 Z" fill="#0e2a5c" opacity="0.8"/>' +
-    '<path d="M-10,326 C 120,368 250,318 390,361" stroke="#2166b8" stroke-width="1.5" fill="none" opacity="0.55"/>';
-  const parks = '<rect x="28" y="150" width="52" height="42" rx="6" fill="#123420" stroke="#1d5a2e" stroke-width="1"/>' +
-    '<rect x="300" y="86" width="48" height="38" rx="6" fill="#123420" stroke="#1d5a2e" stroke-width="1"/>' +
-    '<circle cx="46" cy="168" r="4" fill="#1d5a2e"/><circle cx="62" cy="178" r="5" fill="#1d5a2e"/><circle cx="318" cy="104" r="4" fill="#1d5a2e"/>';
-  const trail = '<path d="' + TRAIL + '" fill="none" stroke="#20244a" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>' +
-    '<path d="' + TRAIL + '" fill="none" stroke="#3a4070" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 11"/>';
-  const nodes = NODES.map(nodeSVG).join("");
-  const svg = '<svg viewBox="0 0 380 600" role="img" aria-label="Rank Up City map">' +
-    '<rect width="380" height="600" fill="#090b20"/>' + grid + buildBlocks() + parks + river + trail + nodes +
-    '</svg>';
-  document.getElementById("map").innerHTML = svg;
-
-  document.querySelectorAll(".node").forEach(g => {
-    g.addEventListener("click", () => {
-      const n = NODES.find(nn => nn.id === g.dataset.id);
+  const map = document.getElementById("map");
+  map.innerHTML = '<img class="mapimg" src="map-city.jpg" alt="Rank Up City map — six neon districts">';
+  NODES.forEach(n => {
+    const b = document.createElement("button");
+    b.className = "spot " + (n.open ? "open" : "locked");
+    b.style.left = n.px + "%"; b.style.top = n.py + "%";
+    b.style.setProperty("--sc", n.open ? n.color : "#3a4a6a");
+    b.style.setProperty("--sg", n.open ? n.color + "77" : "transparent");
+    b.setAttribute("aria-label", n.short + (n.open ? " — play" : " — locked"));
+    let inner = '<span class="lv">' + n.level + '</span><span class="nm">' + n.short + '</span>';
+    if (n.id === "cafe") inner += '<span class="paw">' + cafePaws + '/' + CAFE_MAX_TOTAL + ' 🐾</span><span class="play">▶ ' + (cafePaws > 0 ? "CONTINUE" : "PLAY") + '</span>';
+    else inner += '<span class="lk">🔒</span>';
+    b.innerHTML = inner;
+    b.addEventListener("click", () => {
       if (n.open) { blip(); location.href = n.href; }
       else {
         denied();
-        g.classList.add("wiggle");
-        setTimeout(() => g.classList.remove("wiggle"), 450);
+        b.classList.add("wiggle");
+        setTimeout(() => b.classList.remove("wiggle"), 450);
         document.getElementById("tottiSay").textContent = n.teaser;
       }
     });
+    map.appendChild(b);
   });
 }
 renderMap();
@@ -291,13 +233,13 @@ const cafeDone = CAFE_STAGES.filter(s => prog[s]).length;
 const STAGE_NAMES = { s1: "First shift", s2: "The regulars", s3: "Rush hour", s4: "Lost & found", s5: "The delivery", s6: "Quiz night", sb: "The inspection (BOSS)" };
 let tottiMain;
 if (bossDone) tottiMain = "Café Master. Hm. Not unimpressive. The rest of the city is still under construction — head office is slow. Meanwhile: beat your paw records.";
-else if (cafeDone === 0) tottiMain = "New in the city? Tap the Neon Café at the bottom of the map to start. I'll be judging.";
-else tottiMain = "You've earned " + cafePaws + " paws. Next stop on the map: \"" + STAGE_NAMES[nextStage] + "\". Don't embarrass me.";
+else if (cafeDone === 0) tottiMain = "New in the city? Tap the Neon Café — the cyan one with the coffee sign. Dan needs a barista, and I need someone to judge.";
+else tottiMain = "You've earned " + cafePaws + " paws. Next stop: \"" + STAGE_NAMES[nextStage] + "\" at the Café. Don't embarrass me.";
 const TOTTI_TIPS = [
   tottiMain,
-  "The road runs A1 to C2 — café to hotel. Six districts. One long night.",
+  "Six districts, A1 to C2 — café to hotel. One long night across the city.",
   "Full paws in a shift earns my Legendary card. Check your album.",
-  "Locked buildings glow grey. They open as head office finishes them.",
+  "Locked buildings show a padlock. They open as head office finishes them.",
   "The Academy has the full lessons. The city is where you train.",
   "Tap a building to travel there. Tap Enri to... watch him sleep."
 ];
