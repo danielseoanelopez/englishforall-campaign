@@ -66,6 +66,8 @@ h1 { font-family: "Press Start 2P", monospace; font-size: clamp(0.95rem, 4.4vw, 
 .btn:hover { transform: translateY(-2px); box-shadow: 0 0 20px #ff3df0aa; }
 .btn.cyan { background: linear-gradient(180deg, var(--cyan), #0a7d93); border-color: #9ff1ff; box-shadow: 0 0 14px #00e5ff77; color: #04121f; text-shadow: none; }
 @keyframes popIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.music-btn { position: fixed; top: 10px; right: 10px; z-index: 40; width: 42px; height: 42px; border-radius: 10px; border: 2px solid var(--magenta); background: var(--panel); color: var(--magenta); font-size: 1.05rem; cursor: pointer; box-shadow: 0 0 10px #ff3df044; }
+.music-btn:hover { box-shadow: 0 0 16px #ff3df088; }
 </style>
 </head>
 <body>
@@ -143,6 +145,26 @@ CARDS.forEach(c => {
 
 document.getElementById("count").textContent = got + " / " + CARDS.length + " COLLECTED";
 document.getElementById("bar").style.width = Math.round(got / CARDS.length * 100) + "%";
+
+/* ---------- background music ---------- */
+(function(){
+  if(!window.Audio) return;
+  var KEY="nc_music";
+  var on=(localStorage.getItem(KEY)||"on")==="on";
+  var m=new Audio("efa-theme.mp3"); m.loop=true; m.preload="auto"; m.volume=0.3;
+  window.__ncMusic=m; window.__ncMusicVol=0.3;
+  var last=parseFloat(sessionStorage.getItem("nc_music_t")||"0");
+  if(last>0){ m.addEventListener("loadedmetadata",function(){ try{ m.currentTime=last%(m.duration||1);}catch(e){} },{once:true}); }
+  var btn=document.createElement("button");
+  btn.className="music-btn"; btn.title="Music on/off"; btn.setAttribute("aria-label","Music on/off");
+  function draw(){ btn.textContent=on?"🎵":"🔇"; btn.style.opacity=on?"1":"0.5"; }
+  draw(); document.body.appendChild(btn);
+  var started=false;
+  function start(){ if(started||!on) return; started=true; m.play().catch(function(){ started=false; }); }
+  ["pointerdown","keydown","touchstart"].forEach(function(ev){ document.addEventListener(ev,start,{once:true,passive:true}); });
+  btn.addEventListener("click",function(e){ e.stopPropagation(); on=!on; localStorage.setItem(KEY,on?"on":"off"); draw(); if(on){ started=true; m.play().catch(function(){}); } else { m.pause(); } });
+  window.addEventListener("pagehide",function(){ try{ sessionStorage.setItem("nc_music_t",String(m.currentTime||0)); }catch(e){} });
+})();
 </script>
 </body>
 </html>

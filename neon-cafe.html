@@ -52,6 +52,8 @@ body::before {
 
 .mute-btn { position: fixed; top: 10px; right: 10px; z-index: 30; width: 42px; height: 42px; border-radius: 10px; border: 2px solid var(--cyan); background: var(--panel); color: var(--cyan); cursor: pointer; box-shadow: 0 0 10px #00e5ff44; }
 .mute-btn:hover { box-shadow: 0 0 16px #00e5ff88; }
+.music-btn { position: fixed; top: 10px; right: 60px; z-index: 30; width: 42px; height: 42px; border-radius: 10px; border: 2px solid var(--magenta); background: var(--panel); color: var(--magenta); font-size: 1.05rem; cursor: pointer; box-shadow: 0 0 10px #ff3df044; }
+.music-btn:hover { box-shadow: 0 0 16px #ff3df088; }
 .map-btn { position: fixed; top: 10px; left: 10px; z-index: 30; display: inline-flex; align-items: center; gap: 7px; height: 42px; padding: 0 13px; border-radius: 10px; border: 2px solid var(--purple); background: var(--panel); color: var(--purple); font-family: "Press Start 2P", monospace; font-size: 0.52rem; letter-spacing: 1px; text-decoration: none; box-shadow: 0 0 10px #9d4dff44; }
 .map-btn:hover { box-shadow: 0 0 16px #9d4dff99; }
 
@@ -477,6 +479,10 @@ function resetState(sid) {
 let muted = false;
 let AC = null;
 const player = new Audio();
+function duckMusic() { if (window.__ncMusic) { try { window.__ncMusic.volume = 0.09; } catch (e) {} } }
+function unduckMusic() { if (window.__ncMusic) { try { window.__ncMusic.volume = window.__ncMusicVol || 0.3; } catch (e) {} } }
+player.addEventListener("ended", unduckMusic);
+player.addEventListener("pause", unduckMusic);
 function ac() { if (!AC) AC = new (window.AudioContext || window.webkitAudioContext)(); return AC; }
 function tone(freq, dur, type, when, vol) {
   if (muted) return;
@@ -517,6 +523,7 @@ function say(key, text) {
   stopVoice();
   player.src = "nc-" + key + ".mp3";
   player.onerror = () => speak(TEXTS[key] || "");
+  duckMusic();
   player.play().catch(() => speak(TEXTS[key] || ""));
 }
 if ("speechSynthesis" in window) speechSynthesis.getVoices();
@@ -931,6 +938,26 @@ resetState("s1"); hud();
 const urlStage = new URLSearchParams(location.search).get("stage");
 if (urlStage && STAGES[urlStage] && isUnlocked(urlStage)) startStage(urlStage);
 else showTitle();
+</script>
+<script>
+(function(){
+  if(!window.Audio) return;
+  var KEY="nc_music";
+  var on=(localStorage.getItem(KEY)||"on")==="on";
+  var m=new Audio("efa-theme.mp3"); m.loop=true; m.preload="auto"; m.volume=0.3;
+  window.__ncMusic=m; window.__ncMusicVol=0.3;
+  var last=parseFloat(sessionStorage.getItem("nc_music_t")||"0");
+  if(last>0){ m.addEventListener("loadedmetadata",function(){ try{ m.currentTime=last%(m.duration||1);}catch(e){} },{once:true}); }
+  var btn=document.createElement("button");
+  btn.className="music-btn"; btn.title="Music on/off"; btn.setAttribute("aria-label","Music on/off");
+  function draw(){ btn.textContent=on?"🎵":"🔇"; btn.style.opacity=on?"1":"0.5"; }
+  draw(); document.body.appendChild(btn);
+  var started=false;
+  function start(){ if(started||!on) return; started=true; m.play().catch(function(){ started=false; }); }
+  ["pointerdown","keydown","touchstart"].forEach(function(ev){ document.addEventListener(ev,start,{once:true,passive:true}); });
+  btn.addEventListener("click",function(e){ e.stopPropagation(); on=!on; localStorage.setItem(KEY,on?"on":"off"); draw(); if(on){ started=true; m.play().catch(function(){}); } else { m.pause(); } });
+  window.addEventListener("pagehide",function(){ try{ sessionStorage.setItem("nc_music_t",String(m.currentTime||0)); }catch(e){} });
+})();
 </script>
 </body>
 </html>
