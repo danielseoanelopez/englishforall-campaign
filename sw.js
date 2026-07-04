@@ -1,6 +1,6 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v2";
+const CACHE = "rankup-v3";
 const CORE = [
   "city.html", "neon-cafe.html", "cards.html", "manifest.json",
   "logo.png", "bg-cafe.jpg", "nebula.jpg", "map-city.jpg",

@@ -87,8 +87,8 @@ h1 { font-family: "Press Start 2P", monospace; font-size: clamp(0.95rem, 4.4vw, 
 "use strict";
 let prog = {};
 try { prog = JSON.parse(localStorage.getItem("nc_prog") || "{}"); } catch (e) {}
-const MAXPAWS = { s1: 9, s2: 12, s3: 12, s4: 12, s5: 12, s6: 12, sb: 12 };
-const STAGE_NAME = { s1: "First shift", s2: "The regulars", s3: "Rush hour", s4: "Lost & found", s5: "The delivery", s6: "Quiz night", sb: "The inspection" };
+const MAXPAWS = { s1: 15, s2: 12, s3: 15, s4: 12, sb: 12 };
+const STAGE_NAME = { s1: "First shift", s2: "Rush hour", s3: "Lost & found", s4: "Quiz night", sb: "The inspection" };
 const RARITY = {
   COMMON:    { c: "#00e5ff", g: "#00e5ff44" },
   RARE:      { c: "#3dffa0", g: "#3dffa044" },
@@ -98,11 +98,11 @@ const RARITY = {
 };
 const CARDS = [
   { id: "neoncup", stage: "s1", name: "NEON CUP", rarity: "COMMON", img: "item-flatwhite.png", quote: "Full of potential. Refill and retry." },
-  { id: "mia",     stage: "s2", name: "MIA",      rarity: "RARE",   img: "sprite-mia.png",  quote: "The regular. Bright, kind, from Brazil." },
-  { id: "jack",    stage: "s3", name: "JACK",     rarity: "RARE",   img: "sprite-jack.png", quote: "Big order, bigger heart. Cheers, mate." },
-  { id: "dan",     stage: "s4", name: "DAN",      rarity: "RARE",   img: "sprite-dan.png",  quote: "The manager on the radio. Believes in you." },
-  { id: "enri",    stage: "s5", name: "ENRI",     rarity: "EPIC",   img: "sprite-enri.png", quote: "I nap, and success finds me." },
-  { id: "vera",    stage: "s6", name: "VERA",     rarity: "EPIC",   img: "sprite-vera.png", quote: "One latte. And I am always watching." },
+  { id: "mia",     stage: "s1", name: "MIA",      rarity: "RARE",   img: "sprite-mia.png",  quote: "The regular. Bright, kind, from Brazil." },
+  { id: "jack",    stage: "s2", name: "JACK",     rarity: "RARE",   img: "sprite-jack.png", quote: "Big order, bigger heart. Cheers, mate." },
+  { id: "dan",     stage: "s3", name: "DAN",      rarity: "RARE",   img: "sprite-dan.png",  quote: "The manager on the radio. Believes in you." },
+  { id: "enri",    stage: "s3", name: "ENRI",     rarity: "EPIC",   img: "sprite-enri.png", quote: "I nap, and success finds me." },
+  { id: "vera",    stage: "s4", name: "VERA",     rarity: "EPIC",   img: "sprite-vera.png", quote: "One latte. And I am always watching." },
   { id: "totti",   stage: "sb", name: "TOTTI",    rarity: "LEGENDARY", img: "sprite-totti.png", quote: "I observe. I judge. Then I nap." },
   { id: "inspector", stage: "sb", perfect: true, name: "INSPECTOR VERA", rarity: "SECRET", img: "sprite-vera-inspector.png", quote: "Inspection passed. A perfect café." }
 ];

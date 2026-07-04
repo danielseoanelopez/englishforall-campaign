@@ -149,7 +149,10 @@ body::before {
 .sh-info { flex: 1; min-width: 0; }
 .sh-name { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: #fff; letter-spacing: 1px; line-height: 1.5; }
 .sh-tag { font-size: 0.8rem; color: var(--muted); margin-top: 3px; }
-.sh-paws { flex-shrink: 0; font-size: 0.72rem; color: var(--gold); font-family: "Press Start 2P", monospace; }
+.sh-paws { flex-shrink: 0; font-size: 0.72rem; color: var(--gold); font-family: "Press Start 2P", monospace; white-space: nowrap; }
+.sh-paws .ic { margin: 0 1px; vertical-align: middle; }
+.sh-paws .off { opacity: 0.22; }
+.sh-new { font-size: 0.6rem; }
 
 .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 14px 0; }
 .stat { border: 1px solid #2a3a5a; border-radius: 10px; padding: 10px 6px; text-align: center; background: #10122a66; }
@@ -254,10 +257,10 @@ function custFile(who) { return spriteOverride[who] || ("sprite-" + who + ".png"
 /* ============ STAGES ============ */
 const STAGES = {
   s1: {
-    num: "1-1", name: "First shift", tag: "Greetings & orders",
-    intro: "Rookie! Welcome to your first shift at the Neon Café. Customers order — you build the tray. And heads up: Totti is on quality control today. He judges EVERY tray you serve. Good luck!",
+    num: "1-1", name: "First shift", tag: "Greetings, orders & meeting people",
+    intro: "Rookie! Welcome to your first shift at the Neon Café. Customers order — you build the tray. And heads up: Totti checks every tray you serve. Good luck!",
     introKey: "dan-intro", tutorial: true,
-    words: ["Can I get...?", "please", "actually...", "to go"],
+    words: ["Can I get...?", "please", "I'm from…", "Nice to meet you"],
     rounds: [
       { type: "order", who: "mia", line: "Hi! Can I get a flat white and an avocado toast, please?",
         keys: { line: "mia-order", retry: "mia-retry", thanks: "mia-thanks" },
@@ -268,20 +271,6 @@ const STAGES = {
         twist: "Oh wait — actually, make that an orange juice. No tea, sorry!",
         retryLine: "Hmm, that's not it. Remember — an orange juice and two cookies!",
         thanks: "Nice! Keep the change.", order: ["juice", "cookie", "cookie"], par: 18 },
-      { type: "order", who: "vera",
-        preIntro: "Heads up, rookie — food critic at the door. Impress her and we're famous. And remember: Totti is watching.", preIntroKey: "dan-vera",
-        line: "One latte. Two bagels. And a blueberry muffin. To go — I'm in a hurry.",
-        keys: { line: "vera-order", retry: "vera-retry", thanks: "vera-thanks" },
-        retryLine: "Wrong. Again: one latte, two bagels, and one blueberry muffin. Quickly, please.",
-        thanks: "Hmm. Quick service. Noted.", order: ["latte", "bagel", "bagel", "muffin"], par: 32 }
-    ]
-  },
-  s2: {
-    num: "1-2", name: "The regulars", tag: "Personal info & small talk",
-    intro: "Day two! The regulars are coming in. They love to chat — listen carefully and answer right.",
-    introKey: "s2-intro",
-    words: ["I'm from…", "Nice to meet you", "by the way"],
-    rounds: [
       { type: "talk", who: "mia", line: "Morning! I'm Mia, by the way. I'm from Brazil. Where are you from?",
         keys: { line: "s2-r1-line", retry: "s2-r1-retry", thanks: "s2-r1-thanks" },
         retryLine: "No, no — WHERE are you from? Your country!",
@@ -292,20 +281,16 @@ const STAGES = {
         retryLine: "Hmm? I asked about YOUR job.",
         thanks: "Barista! Nice to meet you, mate.",
         options: ["No, I'm the barista.", "Yes, it's two dollars.", "It's next to the bank."], correct: 0, par: 15 },
-      { type: "order", who: "vera", line: "A latte and one cookie. And remember my name — Vera. V-E-R-A.",
-        keys: { line: "s2-r3-line", retry: "s2-r3-retry", thanks: "s2-r3-thanks" },
-        retryLine: "Wrong again? The latte. The cookie. Focus.",
-        thanks: "Correct. And I trust you remembered my name.",
-        order: ["latte", "cookie"], par: 18 },
-      { type: "talk", who: "mia", line: "This is my friend Jack. Jack — this is the new barista!",
-        keys: { line: "s2-r4-line", retry: "s2-r4-retry", thanks: "s2-r4-thanks" },
-        retryLine: "Say hello to Jack!",
-        thanks: "See? Now you two are friends.",
-        options: ["Nice to meet you, Jack!", "How much is it?", "I'm sorry, we're closed."], correct: 0, par: 15 }
+      { type: "order", who: "vera",
+        preIntro: "Heads up, rookie — food critic at the door. Impress her and we're famous. And remember: Totti is watching.", preIntroKey: "dan-vera",
+        line: "One latte. Two bagels. And a blueberry muffin. To go — I'm in a hurry.",
+        keys: { line: "vera-order", retry: "vera-retry", thanks: "vera-thanks" },
+        retryLine: "Wrong. Again: one latte, two bagels, and one blueberry muffin. Quickly, please.",
+        thanks: "Hmm. Quick service. Noted.", order: ["latte", "bagel", "bagel", "muffin"], par: 32 }
     ]
   },
-  s3: {
-    num: "1-3", name: "Rush hour", tag: "Numbers, prices & time",
+  s2: {
+    num: "1-2", name: "Rush hour", tag: "Numbers, prices & time",
     intro: "Rush hour, rookie. Numbers, prices, times. Stay sharp.",
     introKey: "s3-intro",
     words: ["How much is it?", "half past two", "ten to five"],
@@ -324,7 +309,7 @@ const STAGES = {
       { type: "talk", who: "vera", line: "I will collect my order at half past two. What time is that?",
         keys: { line: "s3-r3-line", retry: "s3-r3-retry", thanks: "s3-r3-thanks" },
         retryLine: "HALF. PAST. TWO. It is not difficult.",
-        thanks: "Precisely. Two thirty. Don't be late.",
+        thanks: "Exactly. Two thirty. Don't be late.",
         options: ["2:30", "2:15", "3:30"], correct: 0, par: 14 },
       { type: "order", who: "mia", line: "Quick quick! One tea, one juice, one muffin — my train is at ten to five!",
         keys: { line: "s3-r4-line", retry: "s3-r4-retry", thanks: "s3-r4-thanks" },
@@ -333,11 +318,11 @@ const STAGES = {
         order: ["tea", "juice", "muffin"], par: 14 }
     ]
   },
-  s4: {
-    num: "1-4", name: "Lost & found", tag: "It's got… / Have you got…?",
-    intro: "Busy day. Everything is lost, mixed up, or confused. Fix it with your words.",
+  s3: {
+    num: "1-3", name: "Lost & found", tag: "Have got · there is / there are · places",
+    intro: "Busy day. Things are lost, mixed up, and the delivery just arrived. Fix it all with your words.",
     introKey: "s4-intro",
-    words: ["It's got…", "Has it got…?", "mine"],
+    words: ["It's got…", "there is / there are", "next to", "Where are…?"],
     rounds: [
       { type: "talk", who: "jack", line: "Wait — this isn't my order! MINE has got no sugar, and it's a LARGE tea.",
         keys: { line: "s4-r1-line", retry: "s4-r1-retry", thanks: "s4-r1-thanks" },
@@ -349,24 +334,6 @@ const STAGES = {
         retryLine: "Wifi? Internet? Yes or no?",
         thanks: "Perfect, thanks! I've got big files to send.",
         options: ["Yes, it has. The password is on the board.", "No, I'm from Argentina.", "It's half past two."], correct: 0, par: 15 },
-      { type: "talk", who: "vera", line: "Someone has left an umbrella. It's blue, and it's got little STARS on it. Whose is it?",
-        keys: { line: "s4-r3-line", retry: "s4-r3-retry", thanks: "s4-r3-thanks" },
-        retryLine: "Stars. Blue. Think. WHO loves stars?",
-        thanks: "Correct. The girl with the star clip. Elementary.",
-        options: ["It's Mia's umbrella!", "It's Jack's umbrella!", "It's your umbrella, Vera!"], correct: 0, par: 16 },
-      { type: "order", who: "jack", line: "One more tea — large, and it's got to be hot! And a bagel.",
-        keys: { line: "s4-r4-line", retry: "s4-r4-retry", thanks: "s4-r4-thanks" },
-        retryLine: "Large hot tea! And a bagel!",
-        thanks: "Magic. Cheers, mate.",
-        order: ["tea", "bagel"], par: 15 }
-    ]
-  },
-  s5: {
-    num: "1-5", name: "The delivery", tag: "There is / there are · places",
-    intro: "The delivery truck is here! Stock the café and answer the questions. There is, there are — you know the drill.",
-    introKey: "s5-intro",
-    words: ["there is / there are", "next to", "Where are…?"],
-    rounds: [
       { type: "order", who: "dan", trayLabel: "DISPLAY CASE", line: "Put TWO bagels and THREE muffins in the display case.",
         keys: { line: "s5-r1-line", retry: "s5-r1-retry", thanks: "s5-r1-thanks" },
         retryLine: "Two bagels! Three muffins! The case, rookie!",
@@ -381,16 +348,11 @@ const STAGES = {
         keys: { line: "s5-r3-line", retry: "s5-r3-retry", thanks: "s5-r3-thanks" },
         retryLine: "Napkins! WHERE?",
         thanks: "Found them. Legend.",
-        options: ["They're on the counter, next to the cookies.", "They're from Brazil.", "At half past two."], correct: 0, par: 15 },
-      { type: "order", who: "vera", line: "There are four of us. Four teas. And ONE muffin — we share. We are not made of money.",
-        keys: { line: "s5-r4-line", retry: "s5-r4-retry", thanks: "s5-r4-thanks" },
-        retryLine: "FOUR teas. ONE muffin. Simple mathematics.",
-        thanks: "Adequate service. The group agrees.",
-        order: ["tea", "tea", "tea", "tea", "muffin"], par: 24 }
+        options: ["They're on the counter, next to the cookies.", "They're from Brazil.", "At half past two."], correct: 0, par: 15 }
     ]
   },
-  s6: {
-    num: "1-6", name: "Quiz night", tag: "Simple questions & answers",
+  s4: {
+    num: "1-4", name: "Quiz night", tag: "Simple questions & answers",
     intro: "It's QUIZ NIGHT at the café! Vera is the quizmaster. Answer fast, serve faster.",
     introKey: "s6-intro",
     words: ["Can I…?", "of course", "Good morning!"],
@@ -422,9 +384,9 @@ const STAGES = {
     spriteOverride: { vera: "sprite-vera-inspector.png" },
     intro: "Rookie... head office called. Vera is not just a critic — she is the CITY INSPECTOR. Everything you learned. One shift. Go.",
     introKey: "sb-intro",
-    words: ["inspection", "flawless", "attention"],
+    words: ["Good morning!", "How much is it?", "please"],
     rounds: [
-      { type: "order", who: "vera", sub: "city inspector", line: "Inspection, part one. Two flat whites, two bagels, and one muffin. Flawless, please.",
+      { type: "order", who: "vera", sub: "city inspector", line: "Inspection, part one. Two flat whites, two bagels, and one muffin. All correct, please.",
         keys: { line: "sb-r1-line", retry: "sb-r1-retry", thanks: "sb-r1-thanks" },
         retryLine: "Part one, AGAIN. Two flat whites. Two bagels. One muffin.",
         thanks: "Hm. Acceptable speed.",
@@ -432,13 +394,13 @@ const STAGES = {
       { type: "talk", who: "vera", sub: "city inspector", line: "Part two. A flat white is three dollars. A muffin is two. I had two flat whites and one muffin. Total?",
         keys: { line: "sb-r2-line", retry: "sb-r2-retry", thanks: "sb-r2-thanks" },
         retryLine: "Three, plus three, plus two. Again.",
-        thanks: "Your arithmetic survives.",
+        thanks: "Good. Your numbers are correct.",
         options: ["Eight dollars.", "Seven dollars.", "Five dollars."], correct: 0, par: 20 },
       { type: "order", who: "vera", sub: "city inspector", line: "Part three. One tea and one cookie.",
         keys: { line: "sb-r3-line", twist: "sb-r3-twist", retry: "sb-r3-retry", thanks: "sb-r3-thanks" },
-        twist: "Actually — make that TWO cookies. I am testing your attention.",
+        twist: "Actually — make that TWO cookies. Are you listening?",
         retryLine: "One tea. TWO cookies. As I SAID.",
-        thanks: "You listen. Rare.",
+        thanks: "You listen well. Good.",
         order: ["tea", "cookie", "cookie"], par: 16 },
       { type: "talk", who: "vera", sub: "city inspector", line: "Final part. A customer arrives at nine a.m. What do you say?",
         keys: { line: "sb-r4-line", retry: "sb-r4-retry", thanks: "sb-r4-thanks" },
@@ -448,7 +410,7 @@ const STAGES = {
     ]
   }
 };
-const ORDER = ["s1", "s2", "s3", "s4", "s5", "s6", "sb"];
+const ORDER = ["s1", "s2", "s3", "s4", "sb"];
 
 /* ============ PROGRESS ============ */
 function loadProg() {
@@ -463,7 +425,7 @@ function isUnlocked(sid) {
   const p = loadProg();
   const i = ORDER.indexOf(sid);
   if (i === 0) return true;
-  if (sid === "sb") return ORDER.slice(0, 6).every(s => p[s]);
+  if (sid === "sb") return ORDER.slice(0, 4).every(s => p[s]);
   return !!p[ORDER[i - 1]];
 }
 function maxPaws(sid) { return STAGES[sid].rounds.length * 3; }
@@ -631,10 +593,16 @@ function showSelect() {
     const st = STAGES[sid];
     const open = isUnlocked(sid);
     const best = p[sid] ? p[sid].best : null;
+    let pawHtml;
+    if (best !== null) {
+      const m = maxPaws(sid), r = best >= m ? 3 : best >= m * 0.66 ? 2 : best > 0 ? 1 : 0;
+      pawHtml = "";
+      for (let i = 0; i < 3; i++) pawHtml += i < r ? ic("paw", 16) : '<span class="off">' + ic("paw", 16) + '</span>';
+    } else pawHtml = open ? '<span class="sh-new">NEW</span>' : "";
     const row = el('<div class="shift-row' + (open ? "" : " locked") + (st.boss ? " bossrow" : "") + '">' +
       '<div class="sh-num">' + (open ? st.num : ic("lock", 16)) + '</div>' +
       '<div class="sh-info"><div class="sh-name">' + st.name.toUpperCase() + '</div><div class="sh-tag">' + st.tag + '</div></div>' +
-      '<div class="sh-paws">' + (best !== null ? best + "/" + maxPaws(sid) + " 🐾" : (open ? "NEW" : "")) + '</div>' +
+      '<div class="sh-paws">' + pawHtml + '</div>' +
     '</div>');
     if (open) row.addEventListener("click", () => { blip(); startStage(sid); });
     stage.appendChild(row);

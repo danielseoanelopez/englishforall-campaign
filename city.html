@@ -66,6 +66,9 @@ a.pod:hover { transform: translateY(-2px); }
 .spot.locked .lv { color: #93a0c0; }
 .spot .nm { font-family: "Press Start 2P", monospace; font-size: 0.44rem; color: #eaf7ff; letter-spacing: 0.5px; }
 .spot .paw { font-family: "Press Start 2P", monospace; font-size: 0.42rem; color: #ffc83d; margin-top: 2px; }
+.spot .track { display: flex; gap: 4px; justify-content: center; margin: 4px 0 2px; }
+.spot .td { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--sc); background: transparent; box-shadow: 0 0 4px var(--sg); }
+.spot .td.on { background: var(--sc); }
 .spot .play { font-family: "Press Start 2P", monospace; font-size: 0.42rem; color: #3dffa0; margin-top: 1px; }
 .spot .lk { font-size: 0.72rem; }
 @keyframes ring { 0%, 100% { box-shadow: 0 0 0 2px var(--sc), 0 0 14px var(--sg); } 50% { box-shadow: 0 0 0 4px var(--sc), 0 0 24px var(--sg); } }
@@ -186,8 +189,8 @@ const denied = () => { tone(200, 0.12, "sawtooth", 0, 0.06); tone(150, 0.16, "sa
 /* ---------- progress ---------- */
 let prog = {};
 try { prog = JSON.parse(localStorage.getItem("nc_prog") || "{}"); } catch (e) {}
-const CAFE_STAGES = ["s1", "s2", "s3", "s4", "s5", "s6", "sb"];
-const CAFE_MAX_TOTAL = 81;
+const CAFE_STAGES = ["s1", "s2", "s3", "s4", "sb"];
+const CAFE_MAX_TOTAL = 66;
 const cafePaws = CAFE_STAGES.reduce((t, s) => t + (prog[s] ? prog[s].best : 0), 0);
 const bossDone = !!prog.sb;
 
@@ -212,8 +215,10 @@ function renderMap() {
     b.style.setProperty("--sg", n.open ? n.color + "77" : "transparent");
     b.setAttribute("aria-label", n.short + (n.open ? " — play" : " — locked"));
     let inner = '<span class="lv">' + n.level + '</span><span class="nm">' + n.short + '</span>';
-    if (n.id === "cafe") inner += '<span class="paw">' + cafePaws + '/' + CAFE_MAX_TOTAL + ' 🐾</span><span class="play">▶ ' + (cafePaws > 0 ? "CONTINUE" : "PLAY") + '</span>';
-    else inner += '<span class="lk">🔒</span>';
+    if (n.id === "cafe") {
+      const track = CAFE_STAGES.map(s => '<i class="td' + (prog[s] ? ' on' : '') + '"></i>').join('');
+      inner += '<span class="track">' + track + '</span><span class="play">▶ ' + (cafePaws > 0 ? "CONTINUE" : "PLAY") + '</span>';
+    } else inner += '<span class="lk">🔒</span>';
     b.innerHTML = inner;
     b.addEventListener("click", () => {
       if (n.open) { blip(); location.href = n.href; }
@@ -232,7 +237,7 @@ renderMap();
 /* ---------- cat guides ---------- */
 const nextStage = CAFE_STAGES.find(s => !prog[s]);
 const cafeDone = CAFE_STAGES.filter(s => prog[s]).length;
-const STAGE_NAMES = { s1: "First shift", s2: "The regulars", s3: "Rush hour", s4: "Lost & found", s5: "The delivery", s6: "Quiz night", sb: "The inspection (BOSS)" };
+const STAGE_NAMES = { s1: "First shift", s2: "Rush hour", s3: "Lost & found", s4: "Quiz night", sb: "The inspection (BOSS)" };
 let tottiMain;
 if (bossDone) tottiMain = "Café Master. Hm. Not unimpressive. The rest of the city is still under construction — head office is slow. Meanwhile: beat your paw records.";
 else if (cafeDone === 0) tottiMain = "New in the city? Tap the Neon Café — the cyan one with the coffee sign. Dan needs a barista, and I need someone to judge.";
