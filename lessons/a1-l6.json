@@ -25,13 +25,13 @@
         { "en": "What…?", "sp": "¿qué…?" }, { "en": "Where…?", "sp": "¿dónde…?" },
         { "en": "When…?", "sp": "¿cuándo…?" }, { "en": "Who…?", "sp": "¿quién…?" },
         { "en": "How…?", "sp": "¿cómo…?" }, { "en": "Why…?", "sp": "¿por qué…?" },
-        { "en": "Can you…?", "sp": "¿sabés / podés…?" }, { "en": "Do you like…?", "sp": "¿te gusta…?" }
+        { "en": "Can you…?", "sp": "¿sabes / puedes…?" }, { "en": "Do you like…?", "sp": "¿te gusta…?" }
       ],
       "note": "<b>Cómo funciona:</b> <b>tarjetas</b> 🃏, <b>elegir respuestas</b> 💬, <b>unir</b> 🔗, <b>escucha</b> 🎧 y <b>completar</b> 📝. ✓ CHECK donde lo veas."
     },
     {
       "type": "flashcards", "id": "fc-wh", "title": "FLASHCARDS · question words",
-      "intro": "Tocá cada tarjeta para ver el significado.",
+      "intro": "Toca cada tarjeta para ver el significado.",
       "cards": [
         { "front": "What?", "back": "¿Qué?" }, { "front": "Where?", "back": "¿Dónde?" },
         { "front": "When?", "back": "¿Cuándo?" }, { "front": "Who?", "back": "¿Quién?" },
@@ -40,7 +40,7 @@
     },
     {
       "type": "dialogue", "id": "ex-dlg", "title": "ELEGÍ LA RESPUESTA",
-      "intro": "Alguien te hace una pregunta. Elegí la mejor respuesta.",
+      "intro": "Alguien te hace una pregunta. Elige la mejor respuesta.",
       "lines": [
         { "spk": "Ana", "html": "What's your name?" },
         { "gap": true, "q": "Tu respuesta:", "options": ["My name is Pablo.", "I'm from Spain.", "I'm fine."], "answer": 0 },
@@ -54,7 +54,7 @@
     },
     {
       "type": "match", "id": "ex-match", "title": "UNÍ PREGUNTA Y QUÉ PIDE",
-      "intro": "¿Qué información pide cada palabra? Tocá la palabra y luego su uso.",
+      "intro": "¿Qué información pide cada palabra? Toca la palabra y luego su uso.",
       "pairs": [
         { "l": "What…?", "r": "una cosa" },
         { "l": "Where…?", "r": "un lugar" },
@@ -87,7 +87,7 @@
     },
     {
       "type": "gapFill", "id": "ex-gap", "title": "do / does / can",
-      "intro": "Elegí la palabra correcta para cada pregunta.",
+      "intro": "Elige la palabra correcta para cada pregunta.",
       "items": [
         { "q": "___ you like coffee?", "options": ["Do", "Does", "Are"], "answer": 0 },
         { "q": "Where ___ she live?", "options": ["does", "do", "is"], "answer": 0 },

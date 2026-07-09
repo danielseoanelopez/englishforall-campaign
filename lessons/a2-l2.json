@@ -79,7 +79,7 @@
           "sp": "adjunto"
         }
       ],
-      "note": "<b>Cómo funciona:</b> primero <b>uní</b> 🔗 el vocabulario, después <b>escucha</b> 🎧 y <b>completa</b> 📝 los emails. ✓ CHECK en cada uno."
+      "note": "<b>Cómo funciona:</b> primero <b>une</b> 🔗 el vocabulario, después <b>escucha</b> 🎧 y <b>completa</b> 📝 los emails. ✓ CHECK en cada uno."
     },
     {
       "type": "story",
@@ -105,7 +105,7 @@
       "type": "match",
       "id": "ex-match",
       "title": "UNÍ VOCABULARIO E INGLÉS",
-      "intro": "Tocá la palabra en inglés y luego su significado.",
+      "intro": "Toca la palabra en inglés y luego su significado.",
       "pairs": [
         {
           "l": "price estimate",
@@ -215,7 +215,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "COMPLETÁ EL EMAIL / LA LLAMADA",
-      "intro": "Elegí la palabra correcta para cada frase de trabajo.",
+      "intro": "Elige la palabra correcta para cada frase de trabajo.",
       "items": [
         {
           "q": "Let me ___ that for you.",

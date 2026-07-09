@@ -102,7 +102,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "COMPLETÁ EN PASADO",
-      "intro": "Elegí la forma correcta del pasado simple.",
+      "intro": "Elige la forma correcta del pasado simple.",
       "items": [
         {
           "q": "Yesterday I ___ to the office early.",
@@ -242,7 +242,7 @@
       "type": "order",
       "id": "ex-order",
       "title": "ORDENÁ LA FRASE EN PASADO",
-      "intro": "Tocá las palabras para formar la frase correcta.",
+      "intro": "Toca las palabras para formar la frase correcta.",
       "items": [
         {
           "words": [

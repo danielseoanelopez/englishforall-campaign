@@ -176,7 +176,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "COMPLETÁ EL FUTURO",
-      "intro": "Elegí going to o present continuous.",
+      "intro": "Elige going to o present continuous.",
       "items": [
         {
           "q": "Next month we ___ start a new project.",
@@ -276,7 +276,7 @@
       "type": "order",
       "id": "ex-order",
       "title": "ORDENÁ EL PLAN",
-      "intro": "Tocá las palabras para formar la frase.",
+      "intro": "Toca las palabras para formar la frase.",
       "items": [
         {
           "words": [

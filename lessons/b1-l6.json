@@ -117,7 +117,7 @@
       "type": "memory",
       "id": "mem-future",
       "title": "MEMORY · forma y uso",
-      "intro": "Encontrá cada forma de futuro con su uso. Tocá dos cartas.",
+      "intro": "Encuentra cada forma de futuro con su uso. Toca dos cartas.",
       "pairs": [
         {
           "a": "I'll get it!",
@@ -239,7 +239,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "WILL, GOING TO o -ING",
-      "intro": "Elegí el futuro correcto según la situación.",
+      "intro": "Elige el futuro correcto según la situación.",
       "items": [
         {
           "q": "Look at those clouds — it ___ rain.",
@@ -301,7 +301,7 @@
       "type": "match",
       "id": "ex-match",
       "title": "UNÍ LAS EXPRESIONES DE TIEMPO",
-      "intro": "Tocá la expresión en inglés y luego su significado.",
+      "intro": "Toca la expresión en inglés y luego su significado.",
       "pairs": [
         {
           "l": "by Friday",
@@ -378,7 +378,7 @@
     {
       "type": "writing",
       "title": "✍️ MY ROADMAP",
-      "intro": "Escribí TU roadmap personal para los próximos 3 meses (inglés, trabajo, vida — 6–8 frases):",
+      "intro": "Escribe TU roadmap personal para los próximos 3 meses (inglés, trabajo, vida — 6–8 frases):",
       "checklist": [
         "2 planes con <b>going to</b> (I'm going to…)",
         "1 cita ya fijada con <b>present continuous</b> + fecha (I'm …ing on…)",
@@ -388,7 +388,7 @@
       ],
       "placeholder": "Next quarter is going to be big for me. First, I'm going to…",
       "example": "Next quarter is going to be big for me. First, I'm going to finish the B1 course — by September, I'll speak with much more confidence. I'm also going to apply for remote jobs in August. I'm meeting my teacher on Monday to practise interviews. I'll practise speaking every single day, I promise! By the end of the year, I think my English will open new doors for me.",
-      "hw": "Escribí tu roadmap y grabate leyéndolo. Enviame texto y audio por WhatsApp. ¡Y preparate: el BOSS te espera! 👑"
+      "hw": "Escribe tu roadmap y grábate leyéndolo. Envíame texto y audio por WhatsApp. ¡Y prepárate: el BOSS te espera! 👑"
     }
   ]
 }

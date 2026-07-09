@@ -75,7 +75,7 @@
         },
         {
           "en": "Where are you from?",
-          "sp": "¿de dónde sos?"
+          "sp": "¿de dónde eres?"
         },
         {
           "en": "How are you?",
@@ -124,7 +124,7 @@
       "type": "flashcards",
       "id": "fc-greet",
       "title": "FLASHCARDS · saludos",
-      "intro": "Tocá cada tarjeta para ver el significado. Estúdialas antes de los ejercicios.",
+      "intro": "Toca cada tarjeta para ver el significado. Estúdialas antes de los ejercicios.",
       "cards": [
         {
           "front": "Hello / Hi 👋",
@@ -234,7 +234,7 @@
       "type": "match",
       "id": "ex-match",
       "title": "UNÍ INGLÉS Y ESPAÑOL",
-      "intro": "Tocá una frase en inglés y luego su traducción.",
+      "intro": "Toca una frase en inglés y luego su traducción.",
       "pairs": [
         {
           "l": "Hello",
@@ -250,7 +250,7 @@
         },
         {
           "l": "Where are you from?",
-          "r": "¿De dónde sos?"
+          "r": "¿De dónde eres?"
         },
         {
           "l": "How are you?",
@@ -262,7 +262,7 @@
       "type": "dialogue",
       "id": "ex-dlg",
       "title": "ELEGÍ LA RESPUESTA",
-      "intro": "Tom te hace preguntas. Elegí la mejor respuesta.",
+      "intro": "Tom te hace preguntas. Elige la mejor respuesta.",
       "lines": [
         {
           "spk": "Tom",
@@ -390,7 +390,7 @@
       "type": "order",
       "id": "ex-order",
       "title": "ORDENÁ LAS PALABRAS",
-      "intro": "Tocá las palabras para formar la frase correcta.",
+      "intro": "Toca las palabras para formar la frase correcta.",
       "items": [
         {
           "words": [

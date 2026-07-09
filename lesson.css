@@ -5,6 +5,7 @@
   --text: #eaf7ff; --muted: #7fd9e8;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
 body {
   font-family: "Share Tech Mono", monospace; background-color: var(--bg);
   background-image:
@@ -169,6 +170,13 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .dlg-line { margin-bottom: 7px; font-size: 0.97rem; }
 .dlg-line .spk { color: var(--cyan); font-weight: bold; }
 .dlg-line .spk.b { color: var(--magenta); }
+/* Speaker button — tap to hear a line/option read aloud (listen & repeat) */
+.spk-btn { flex: 0 0 auto; margin-left: auto; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border: 1px solid var(--cyan); border-radius: 9px; background: #00e5ff0e; color: var(--cyan); font-size: 0.95rem; line-height: 1; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s, background 0.15s, transform 0.1s; }
+.spk-btn:hover { background: #00e5ff1c; box-shadow: 0 0 10px #00e5ff55; transform: translateY(-1px); }
+.spk-btn:active { transform: translateY(0); }
+.spk-btn.playing { background: #ffc83d1c; border-color: var(--gold); color: var(--gold); animation: spkPulse 0.65s ease-in-out infinite; }
+@keyframes spkPulse { 0%, 100% { box-shadow: 0 0 7px #ffc83d55; } 50% { box-shadow: 0 0 16px #ffc83daa; } }
+.dlg-line .spk-btn { margin: 0 8px 0 0; vertical-align: middle; width: 30px; height: 30px; font-size: 0.85rem; }
 /* Picture match (emoji vocab) */
 .match-l.pic { display: flex; align-items: center; gap: 12px; }
 .match-l.pic .pic-em { font-size: 1.9rem; line-height: 1; }
@@ -199,3 +207,11 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 /* emoji artwork as images (consistent cross-platform) — Twemoji SVGs via jsdelivr */
 .emo { height: 1.35em; width: auto; vertical-align: -0.28em; }
 .pic-em .emo { height: 1.9rem; vertical-align: middle; }
+
+/* ===== tablet / iPad responsiveness ===== */
+@media (min-width: 768px) {
+  body { font-size: 18px; padding: 30px 22px 72px; }
+  .container { max-width: 900px; }
+  .card { padding: 24px 30px; }
+}
+@media (min-width: 1180px) { .container { max-width: 960px; } }

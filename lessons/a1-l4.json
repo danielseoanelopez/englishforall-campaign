@@ -73,7 +73,7 @@
         },
         {
           "en": "Have you got…?",
-          "sp": "¿tenés…?"
+          "sp": "¿tienes…?"
         },
         {
           "en": "Years old",
@@ -86,7 +86,7 @@
       "type": "flashcards",
       "id": "fc-fam",
       "title": "FLASHCARDS · familia",
-      "intro": "Tocá cada tarjeta para ver el significado.",
+      "intro": "Toca cada tarjeta para ver el significado.",
       "cards": [
         {
           "front": "mother 👩",
@@ -118,7 +118,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "have got / has got / to be",
-      "intro": "Elegí la opción correcta.",
+      "intro": "Elige la opción correcta.",
       "items": [
         {
           "q": "I ___ got a sister.",
@@ -240,7 +240,7 @@
       "type": "order",
       "id": "ex-order",
       "title": "ORDENÁ LA FRASE",
-      "intro": "Tocá las palabras para formar la frase.",
+      "intro": "Toca las palabras para formar la frase.",
       "items": [
         {
           "words": [
@@ -278,7 +278,7 @@
       "type": "memory",
       "id": "mem-fam",
       "title": "MEMORY · familia",
-      "intro": "Encontrá cada imagen con su palabra. Tocá dos cartas.",
+      "intro": "Encuentra cada imagen con su palabra. Toca dos cartas.",
       "pairs": [
         {
           "a": "👩",

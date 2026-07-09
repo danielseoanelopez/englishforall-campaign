@@ -77,7 +77,7 @@
           "sp": "¿te molestaría…?"
         }
       ],
-      "note": "<b>Cómo funciona:</b> elegí respuestas 💬, uní funciones 🔗 y escucha llamadas 🎧. ✓ CHECK en cada uno."
+      "note": "<b>Cómo funciona:</b> elige respuestas 💬, une funciones 🔗 y escucha llamadas 🎧. ✓ CHECK en cada uno."
     },
     {
       "type": "story",
@@ -103,7 +103,7 @@
       "type": "dialogue",
       "id": "ex-dlg",
       "title": "ELEGÍ LA RESPUESTA",
-      "intro": "Alguien te pide u ofrece algo. Elegí la respuesta correcta.",
+      "intro": "Alguien te pide u ofrece algo. Elige la respuesta correcta.",
       "lines": [
         {
           "spk": "Colleague",
@@ -232,7 +232,7 @@
       "type": "match",
       "id": "ex-match",
       "title": "UNÍ FUNCIÓN Y FRASE",
-      "intro": "¿Para qué sirve cada frase? Tocá la función y luego la frase.",
+      "intro": "¿Para qué sirve cada frase? Toca la función y luego la frase.",
       "pairs": [
         {
           "l": "Pedir (request)",

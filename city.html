@@ -28,8 +28,8 @@
   --green: #3dffa0; --red: #ff5d7a; --bg: #05050e; --panel: rgba(20, 22, 48, 0.93);
   --text: #eaf7ff; --muted: #7fd9e8;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { -webkit-text-size-adjust: 100%; }
+* { box-sizing: border-box; margin: 0; padding: 0; touch-action: manipulation; }
+html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
 body {
   font-family: "Share Tech Mono", monospace; background-color: var(--bg);
   background-image:
@@ -104,9 +104,25 @@ a.pod:hover { transform: translateY(-2px); }
 .wrap > * { animation: popIn 0.35s ease-out backwards; }
 .music-btn { position: fixed; top: 10px; right: 10px; z-index: 40; width: 42px; height: 42px; border-radius: 10px; border: 2px solid var(--magenta); background: var(--panel); color: var(--magenta); font-size: 1.05rem; cursor: pointer; box-shadow: 0 0 10px #ff3df044; }
 .music-btn:hover { box-shadow: 0 0 16px #ff3df088; }
+
+/* ---- landscape / horizontal layout (phones + tablets) ---- */
+@media (orientation: landscape) {
+  .wrap { max-width: min(720px, 96vw); }
+}
+@media (orientation: landscape) and (max-height: 600px) {
+  body { padding: 8px 12px 24px; }
+  .marquee img { height: 50px; }
+  h1 { margin: 6px 0 2px; }
+  .sub { margin-bottom: 8px; }
+  .strip { margin-bottom: 8px; }
+  .catimg { width: 60px; }
+}
 </style>
 </head>
 <body>
+<!-- iOS 17.4+ haptic bridge (Vibration API isn't exposed on Safari) -->
+<input type="checkbox" id="hapticSwitch" switch aria-hidden="true" tabindex="-1" style="position:fixed;left:-9999px;top:-9999px;width:0;height:0;opacity:0;pointer-events:none">
+<label for="hapticSwitch" aria-hidden="true" style="position:fixed;left:-9999px;top:-9999px;width:0;height:0;opacity:0;pointer-events:none"></label>
 <div class="wrap">
   <div class="marquee"><img src="logo.png" alt="English for All — Rank Up"></div>
   <h1>RANK UP CITY</h1>
@@ -183,7 +199,13 @@ function tone(f, d, t, w, v) {
   } catch (e) {}
 }
 const blip = () => tone(660, 0.07);
-const purr = () => { tone(220, 0.3, "sine", 0, 0.05); tone(196, 0.3, "sine", 0.15, 0.05); };
+/* haptics — navigator.vibrate on Android; iOS 17.4+ uses the hidden <input switch> bridge */
+const hapticSwitch = document.getElementById("hapticSwitch");
+function haptic(pattern) {
+  try { if (navigator.vibrate) navigator.vibrate(pattern); } catch (e) {}
+  try { if (hapticSwitch) hapticSwitch.click(); } catch (e) {}
+}
+const purr = () => { tone(220, 0.3, "sine", 0, 0.05); tone(196, 0.3, "sine", 0.15, 0.05); haptic([16, 34, 16, 34, 22]); };
 const denied = () => { tone(200, 0.12, "sawtooth", 0, 0.06); tone(150, 0.16, "sawtooth", 0.1, 0.06); };
 
 /* ---------- progress ---------- */
@@ -194,10 +216,15 @@ const CAFE_MAX_TOTAL = 66;
 const cafePaws = CAFE_STAGES.reduce((t, s) => t + (prog[s] ? prog[s].best : 0), 0);
 const bossDone = !!prog.sb;
 
+const OFFICE_STAGES = ["s1", "s2", "s3", "s4", "sb"];
+let oprog = {};
+try { oprog = JSON.parse(localStorage.getItem("no_prog") || "{}"); } catch (e) {}
+const officePaws = OFFICE_STAGES.reduce((t, s) => t + (oprog[s] ? oprog[s].best : 0), 0);
+
 /* ---------- the map (hotspots over the art) ---------- */
 const NODES = [
   { id: "cafe",   px: 77, py: 24,   color: "#00e5ff", level: "A1", short: "CAFÉ",   open: true, href: "neon-cafe.html" },
-  { id: "office", px: 35, py: 19.5, color: "#ffc83d", level: "A2", short: "OFFICE", teaser: "The Office Tower — A2. Dan's old workplace. Head office is still wiring the lights. Soon." },
+  { id: "office", px: 35, py: 19.5, color: "#ffc83d", level: "A2", short: "OFFICE", open: bossDone, href: "neon-office.html", teaser: "The Office Tower — A2. Finish the Café first — beat the Inspection — and the lights come on. Almost there." },
   { id: "agency", px: 18, py: 42,   color: "#9d4dff", level: "B1", short: "AGENCY", teaser: "The Detective Agency — B1. Something's missing in the city. We'll need your English to crack the case." },
   { id: "vault",  px: 29, py: 63,   color: "#ff3df0", level: "B2", short: "VAULT",  teaser: "The Corporate Vault — B2. Locked tight. You'll have to talk your way out of this one." },
   { id: "radio",  px: 78, py: 47,   color: "#3dffa0", level: "C1", short: "RADIO",  teaser: "The Radio Tower — C1. My territory. You won't get in by tapping — you'll have to SPEAK." },
@@ -218,6 +245,9 @@ function renderMap() {
     if (n.id === "cafe") {
       const track = CAFE_STAGES.map(s => '<i class="td' + (prog[s] ? ' on' : '') + '"></i>').join('');
       inner += '<span class="track">' + track + '</span><span class="play">▶ ' + (cafePaws > 0 ? "CONTINUE" : "PLAY") + '</span>';
+    } else if (n.id === "office" && n.open) {
+      const track = OFFICE_STAGES.map(s => '<i class="td' + (oprog[s] ? ' on' : '') + '"></i>').join('');
+      inner += '<span class="track">' + track + '</span><span class="play">▶ ' + (officePaws > 0 ? "CONTINUE" : "PLAY") + '</span>';
     } else inner += '<span class="lk">🔒</span>';
     b.innerHTML = inner;
     b.addEventListener("click", () => {
@@ -239,7 +269,7 @@ const nextStage = CAFE_STAGES.find(s => !prog[s]);
 const cafeDone = CAFE_STAGES.filter(s => prog[s]).length;
 const STAGE_NAMES = { s1: "First shift", s2: "Rush hour", s3: "Lost & found", s4: "Quiz night", sb: "The inspection (BOSS)" };
 let tottiMain;
-if (bossDone) tottiMain = "Café Master. Hm. Not unimpressive. The rest of the city is still under construction — head office is slow. Meanwhile: beat your paw records.";
+if (bossDone) tottiMain = "Café Master. Hm. Not unimpressive. And look — the Office Tower's lights just came on. Dan pulled some strings, got you a desk job. Go on, tap the gold building.";
 else if (cafeDone === 0) tottiMain = "New in the city? Tap the Neon Café — the cyan one with the coffee sign. Dan needs a barista, and I need someone to judge.";
 else tottiMain = "You've earned " + cafePaws + " paws. Next stop: \"" + STAGE_NAMES[nextStage] + "\" at the Café. Don't embarrass me.";
 const TOTTI_TIPS = [
@@ -254,7 +284,7 @@ const ENRI_TIPS = ["...zzz...", "Prrrr... you again.", "I believe in you. From h
 const tottiSay = document.getElementById("tottiSay"), enriSay = document.getElementById("enriSay");
 tottiSay.textContent = tottiMain;
 let ti = 0, ei = 0;
-document.getElementById("tottiImg").addEventListener("click", () => { ti = (ti + 1) % TOTTI_TIPS.length; tottiSay.textContent = TOTTI_TIPS[ti]; blip(); });
+document.getElementById("tottiImg").addEventListener("click", () => { ti = (ti + 1) % TOTTI_TIPS.length; tottiSay.textContent = TOTTI_TIPS[ti]; blip(); haptic([14, 40, 14]); });
 document.getElementById("enriImg").addEventListener("click", () => { ei = (ei + 1) % ENRI_TIPS.length; enriSay.textContent = ENRI_TIPS[ei]; purr(); });
 
 /* ---------- daily streak ---------- */

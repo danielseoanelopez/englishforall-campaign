@@ -113,8 +113,8 @@
     {
       "type": "flashcards",
       "id": "ex-fc",
-      "title": "FRASES SUAVIZANTES · tocá para girar",
-      "intro": "El mismo mensaje, dicho con tacto. Aprendé estas frases — las vas a escuchar en el audio.",
+      "title": "FRASES SUAVIZANTES · toca para girar",
+      "intro": "El mismo mensaje, dicho con tacto. Aprende estas frases — las vas a escuchar en el audio.",
       "cards": [
         {
           "front": "I'd suggest…",
@@ -246,7 +246,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "MUST, MIGHT o CAN'T",
-      "intro": "Elegí el modal correcto según la certeza.",
+      "intro": "Elige el modal correcto según la certeza.",
       "items": [
         {
           "q": "Sales dropped the day we changed servers. It ___ be a coincidence!",
@@ -308,7 +308,7 @@
       "type": "order",
       "id": "ex-order",
       "title": "ORDENÁ LA FRASE DIPLOMÁTICA",
-      "intro": "Tocá las palabras para formar la sugerencia suave.",
+      "intro": "Toca las palabras para formar la sugerencia suave.",
       "items": [
         {
           "words": [
@@ -398,7 +398,7 @@
     {
       "type": "writing",
       "title": "✍️ DISAGREE, BUT NICELY",
-      "intro": "Tu jefe/a propone algo que te parece un error (elegí vos la situación). Escribí tu respuesta (5–7 frases):",
+      "intro": "Tu jefe/a propone algo que te parece un error (elige la situación). Escribe tu respuesta (5–7 frases):",
       "checklist": [
         "Reconocé su punto primero (<b>I take your point…</b>)",
         "Marcá tu desacuerdo con tacto (<b>I see it differently / With respect,…</b>)",
@@ -408,7 +408,7 @@
       ],
       "placeholder": "Hi …, I take your point about…",
       "example": "Hi Priya, I take your point about the deadline — it's important. But I see it differently. If we launch this Friday, the payment system might be unstable, and that could cost us sales. The data suggests we need three more days of testing. I'd suggest we launch on Tuesday instead — it might be worth waiting to get it right. What do you think? Best, Marcos",
-      "hw": "Escribí tu respuesta y grabate leyéndola con tono calmado y profesional. Enviame texto y audio por WhatsApp."
+      "hw": "Escribe tu respuesta y grábate leyéndola con tono calmado y profesional. Envíame texto y audio por WhatsApp."
     }
   ]
 }

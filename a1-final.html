@@ -25,7 +25,9 @@
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <style>
   :root { --cyan:#00e5ff; --magenta:#ff3df0; --purple:#9d4dff; --gold:#ffc83d; --green:#3dffa0; --red:#ff5d7a; --bg:#05050e; --panel:rgba(20,22,48,0.93); --text:#eaf7ff; --muted:#7fd9e8; }
-  * { box-sizing:border-box; margin:0; padding:0; }
+  * { box-sizing:border-box; margin:0; padding:0; touch-action:manipulation; }
+  html { -webkit-text-size-adjust:100%; }
+  @media (min-width:768px){ body{ font-size:18px; } .container{ max-width:860px; } }
   body { font-family:"Share Tech Mono",monospace; background-color:var(--bg);
     background-image:radial-gradient(1px 1px at 20% 30%,#ffffff88 50%,transparent 51%),radial-gradient(1px 1px at 70% 15%,#ffffff66 50%,transparent 51%),radial-gradient(2px 2px at 85% 60%,#9d4dff55 50%,transparent 51%),radial-gradient(1px 1px at 40% 80%,#00e5ff55 50%,transparent 51%),radial-gradient(2px 2px at 60% 45%,#ff3df044 50%,transparent 51%);
     background-size:520px 520px; color:var(--text); line-height:1.6; padding:24px 14px 64px; font-size:17px; }
@@ -113,7 +115,7 @@
 
   <div id="intro" class="card" data-aos="fade-up">
     <div class="panel-title">★ INSTRUCCIONES</div>
-    <p>Este es tu <b>examen de salida del nivel A1</b>. Lo haces <b>en clase con tu profe</b>. Tiene 5 partes: gramática y uso, vocabulario, listening, reading y un <b>writing obligatorio</b>. Al final hacés un <b>mini-oral en vivo</b> con tu profe.</p>
+    <p>Este es tu <b>examen de salida del nivel A1</b>. Lo haces <b>en clase con tu profe</b>. Tiene 5 partes: gramática y uso, vocabulario, listening, reading y un <b>writing obligatorio</b>. Al final haces un <b>mini-oral en vivo</b> con tu profe.</p>
     <div class="note"><b>Para pasar a A2:</b> 80% o más en las partes A–D <b>+</b> writing OK <b>+</b> speaking en vivo OK. Tu profe confirma el RANK UP. Sin diccionario ni traductor.</div>
     <div style="margin:16px 0 4px"><input id="studentName" type="text" placeholder="Tu nombre" autocomplete="given-name" style="width:100%;padding:11px 14px;background:#10122a;border:2px solid var(--cyan);border-radius:10px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:1rem;outline:none;box-shadow:inset 0 0 10px #00e5ff22"></div>
     <p class="es" style="font-size:0.8rem;margin-bottom:4px"><i class="fa-solid fa-lock"></i> Tu nombre y tu resultado se le envían a tu profe para tu seguimiento. Nada más.</p>
@@ -125,7 +127,7 @@
 
     <div class="card purple" id="writingCard">
       <div class="panel-title">✍️ PARTE E · WRITING (obligatoria)</div>
-      <p>Escribe sobre ti (<b>40–60 palabras</b>): tu nombre, de dónde sos, tu edad, tu trabajo o estudios, tu familia y qué te gusta.</p>
+      <p>Escribe sobre ti (<b>40–60 palabras</b>): tu nombre, de dónde eres, tu edad, tu trabajo o estudios, tu familia y qué te gusta.</p>
       <textarea class="writing-area" id="writingBox" placeholder="Hi ...," oninput="updateWordCount()"></textarea>
       <div class="wc" id="wordCount">0 palabras (mínimo 40)</div>
     </div>
@@ -254,7 +256,7 @@ function submitExam(){
   try { var __bs = pct>=0.9?5:(pass?4:0); if(__bs>0){ var __bp=parseInt(localStorage.getItem("rankup_A1_boss")||"0",10); if(__bs>__bp) localStorage.setItem("rankup_A1_boss", String(__bs)); } } catch(e){}
 
   document.getElementById("verdict").innerHTML = pass ? '<span class="verdict pass">✓ APROBADO (auto)</span>' : '<span class="verdict fail">✗ NO ALCANZADO</span>';
-  document.getElementById("scoreText").textContent = `PUNTUACIÓN: ${correct} / ${QUESTIONS.length} (${Math.round(pct*100)}%) · necesitás 80%`;
+  document.getElementById("scoreText").textContent = `PUNTUACIÓN: ${correct} / ${QUESTIONS.length} (${Math.round(pct*100)}%) · necesitas 80%`;
   document.getElementById("desglose").innerHTML =
     `<div class="dg-row"><span>📝 Gramática y uso</span><b style="color:var(--gold)">${sec.A[0]}/${sec.A[1]}</b></div>`+
     `<div class="dg-row"><span>🔤 Vocabulario</span><b style="color:var(--gold)">${sec.B[0]}/${sec.B[1]}</b></div>`+

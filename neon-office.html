@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>The Office Tower — English for All · Rank Up</title>
+<link rel="icon" href="icon-rankup.png">
+<link rel="apple-touch-icon" href="icon-rankup.png">
+<meta name="theme-color" content="#05050e">
+<link rel="manifest" href="manifest.json">
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Office Tower — English for All · Rank Up">
+<meta property="og:description" content="You got the job. Take the calls, answer the emails, ace the interview. Practise real work English in a neon arcade office. Play free.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/og-city.jpg">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/neon-office.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Office Tower — English for All · Rank Up">
+<meta name="twitter:description" content="You got the job. Take the calls, answer the emails, ace the interview. Play free.">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/og-city.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cyan: #00e5ff; --magenta: #ff3df0; --purple: #9d4dff; --gold: #ffc83d;
+  --green: #3dffa0; --red: #ff5d7a; --bg: #05050e; --panel: rgba(20, 22, 48, 0.93);
+  --text: #eaf7ff; --muted: #7fd9e8;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; touch-action: manipulation; }
+html { -webkit-text-size-adjust: 100%; touch-action: manipulation; }
+body {
+  font-family: "Share Tech Mono", monospace; background-color: var(--bg);
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #ffffff88 50%, transparent 51%),
+    radial-gradient(1px 1px at 70% 15%, #ffffff66 50%, transparent 51%),
+    radial-gradient(2px 2px at 85% 60%, #9d4dff55 50%, transparent 51%),
+    radial-gradient(1px 1px at 40% 80%, #00e5ff55 50%, transparent 51%),
+    radial-gradient(2px 2px at 60% 45%, #ff3df044 50%, transparent 51%);
+  background-size: 520px 520px; color: var(--text); line-height: 1.6;
+  padding: 18px 10px 50px; font-size: 16px; min-height: 100vh;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1;
+  background: linear-gradient(rgba(5,5,14,0.72), rgba(5,5,14,0.86)), url("nebula.jpg") center / cover no-repeat;
+}
+.px { font-family: "Press Start 2P", monospace; }
+.es { color: var(--muted); font-size: 0.78rem; }
+
+.ic { width: 17px; height: 17px; vertical-align: -3px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 3px currentColor); }
+
+.mute-btn { position: fixed; top: 10px; right: 10px; z-index: 30; width: 42px; height: 42px; border-radius: 10px; border: 2px solid var(--cyan); background: var(--panel); color: var(--cyan); cursor: pointer; box-shadow: 0 0 10px #00e5ff44; }
+.mute-btn:hover { box-shadow: 0 0 16px #00e5ff88; }
+.music-btn { position: fixed; top: 10px; right: 60px; z-index: 30; width: 42px; height: 42px; border-radius: 10px; border: 2px solid var(--magenta); background: var(--panel); color: var(--magenta); font-size: 1.05rem; cursor: pointer; box-shadow: 0 0 10px #ff3df044; }
+.music-btn:hover { box-shadow: 0 0 16px #ff3df088; }
+.map-btn { position: fixed; top: 10px; left: 10px; z-index: 30; display: inline-flex; align-items: center; gap: 7px; height: 42px; padding: 0 13px; border-radius: 10px; border: 2px solid var(--purple); background: var(--panel); color: var(--purple); font-family: "Press Start 2P", monospace; font-size: 0.52rem; letter-spacing: 1px; text-decoration: none; box-shadow: 0 0 10px #9d4dff44; }
+.map-btn:hover { box-shadow: 0 0 16px #9d4dff99; }
+
+.cab { max-width: 560px; margin: 0 auto; position: relative; z-index: 2; }
+.marquee { text-align: center; margin-bottom: 10px; }
+.marquee img { height: 84px; max-width: 86%; object-fit: contain; background: #000; padding: 8px 14px; border: 2px solid var(--cyan); border-radius: 14px; box-shadow: 0 0 16px #00e5ff55, inset 0 0 12px #00e5ff22; }
+.marquee .stage { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: var(--gold); letter-spacing: 1px; margin-top: 10px; text-shadow: 0 0 8px #ffc83d55; }
+
+.screen { position: relative; background: var(--panel); border: 2px solid var(--purple); border-radius: 16px; box-shadow: 0 0 14px #9d4dff44, inset 0 0 18px #9d4dff11; overflow: hidden; }
+.screen::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, transparent 0 2px, #00000018 2px 4px); border-radius: 14px; }
+
+.hud { display: flex; justify-content: space-between; align-items: center; gap: 6px; flex-wrap: wrap; padding: 10px 14px; border-bottom: 1px solid #2a3a5a; font-family: "Press Start 2P", monospace; font-size: 0.56rem; letter-spacing: 1px; }
+.hud .hearts { color: var(--red); font-size: 0.8rem; letter-spacing: 2px; }
+.hud .xp { color: var(--gold); } .hud .coins { color: var(--green); } .hud .lvl { color: var(--cyan); }
+
+#stage { padding: 16px 14px 20px; min-height: 340px; }
+
+.scene-tag { font-family: "Press Start 2P", monospace; font-size: 0.6rem; color: var(--purple); text-align: center; letter-spacing: 1px; margin-bottom: 14px; text-shadow: 0 0 8px #9d4dff66; }
+.timer { width: fit-content; margin: -4px auto 12px; padding: 5px 12px; border: 1px solid currentColor; border-radius: 20px; font-family: "Press Start 2P", monospace; font-size: 0.6rem; letter-spacing: 1px; color: var(--green); text-shadow: 0 0 8px currentColor; animation: popIn 0.25s ease-out; }
+
+.scene-wrap { margin: 0 0 12px; animation: fadeIn 0.3s ease-out; }
+.scene2 { position: relative; height: 240px; border-radius: 10px; border: 1px solid #2a3a5a; overflow: hidden; background: url("bg-cafe.jpg") center 62% / cover no-repeat; }
+.scene2::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, transparent 40%, rgba(5,5,14,0.38) 100%); pointer-events: none; z-index: 5; }
+.sc-bar { position: absolute; inset: 0; background: url("bg-cafe.jpg") center 62% / cover no-repeat; clip-path: inset(72% 0 0 0); z-index: 2; }
+.sc-cust { position: absolute; left: 50%; transform: translateX(-50%); bottom: 13%; height: 66%; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.55)); z-index: 1; }
+.sc-cust.cust { animation: custIn 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) both; will-change: transform, opacity; backface-visibility: hidden; }
+.sc-tot { position: absolute; right: 17%; bottom: 11%; height: 46%; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.55)); z-index: 3; }
+.sc-enri { position: absolute; right: 2%; bottom: 11%; height: 30%; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.55)); z-index: 3; }
+.sc-z1 { position: absolute; right: 13%; bottom: 42%; font-family: "Press Start 2P", monospace; font-size: 10px; color: #ffd9a8; z-index: 4; }
+.sc-z2 { position: absolute; right: 10%; bottom: 47%; font-family: "Press Start 2P", monospace; font-size: 8px; color: #ffd9a8; z-index: 4; }
+.mimg { height: 24px; vertical-align: -7px; margin-right: 2px; }
+.ava img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 6%; border-radius: 8px; display: block; }
+.avin { font-family: "Press Start 2P", monospace; font-size: 0.72rem; color: var(--c, var(--cyan)); }
+.scene2.office { background: linear-gradient(160deg, #0a0f2e 0%, #0c0a24 55%, #140a24 100%); }
+.scene2.office::after { background: radial-gradient(ellipse at 50% 40%, transparent 45%, rgba(5,5,14,0.5) 100%); }
+
+.row { display: flex; gap: 9px; align-items: flex-start; margin-bottom: 12px; animation: popIn 0.25s ease-out; }
+.ava { flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px; border: 2px solid var(--c, var(--cyan)); background: #0c0c22; display: flex; align-items: center; justify-content: center; color: var(--c, var(--cyan)); box-shadow: 0 0 10px var(--c, var(--cyan)); }
+.bub { flex: 1; border: 2px solid var(--c, var(--cyan)); background: #0c0e26; border-radius: 12px; border-top-left-radius: 3px; padding: 9px 12px; }
+.bub .who { font-family: "Press Start 2P", monospace; font-size: 0.5rem; color: var(--c, var(--cyan)); letter-spacing: 1px; margin-bottom: 5px; }
+.bub .say { font-size: 0.98rem; line-height: 1.55; }
+.replay { flex-shrink: 0; background: none; border: 1px solid var(--gold); color: var(--gold); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; }
+.replay:hover { box-shadow: 0 0 10px #ffc83d66; }
+
+.note-board { border: 1.5px solid var(--gold); background: #2a1f0a66; border-radius: 10px; padding: 8px 12px; margin: 0 0 12px; font-size: 0.9rem; color: var(--gold); text-align: center; letter-spacing: 1px; }
+
+.tray { border: 2px dashed #3a4a7a; border-radius: 12px; padding: 10px 12px; margin: 14px 0 10px; min-height: 64px; }
+.tray .tl { font-family: "Press Start 2P", monospace; font-size: 0.5rem; color: var(--muted); letter-spacing: 1px; margin-bottom: 8px; }
+.chips { display: flex; gap: 7px; flex-wrap: wrap; }
+.chip { font-family: "Share Tech Mono", monospace; font-size: 0.92rem; border: 1px solid var(--cyan); color: var(--cyan); background: #00e5ff0d; border-radius: 9px; padding: 6px 11px; cursor: pointer; transition: transform 0.08s, box-shadow 0.12s; user-select: none; }
+.chip:hover { box-shadow: 0 0 10px #00e5ff55; transform: translateY(-1px); }
+.chip:active { transform: scale(0.95); }
+.chip.intray { border-color: var(--green); color: var(--green); background: #3dffa011; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 7px; margin-bottom: 14px; }
+.menu-grid .chip { text-align: center; }
+
+.opt { display: block; width: 100%; text-align: left; font-family: "Share Tech Mono", monospace; font-size: 0.98rem; border: 1.5px solid var(--cyan); color: var(--text); background: #00e5ff0a; border-radius: 11px; padding: 12px 14px; margin-bottom: 9px; cursor: pointer; transition: transform 0.08s, box-shadow 0.12s; }
+.opt:hover { box-shadow: 0 0 12px #00e5ff55; transform: translateY(-1px); }
+.opt .ol { font-family: "Press Start 2P", monospace; font-size: 0.6rem; color: var(--cyan); margin-right: 9px; }
+.opt.wrong { border-color: var(--red); color: var(--red); background: #ff5d7a11; opacity: 0.55; pointer-events: none; }
+
+.actions { display: flex; gap: 9px; justify-content: space-between; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 7px; font-family: "Press Start 2P", monospace; font-size: 0.58rem; background: linear-gradient(180deg, var(--magenta), #a31bd6); color: #fff; border: 2px solid #ff8df7; border-radius: 11px; padding: 12px 16px; cursor: pointer; letter-spacing: 1px; text-shadow: 0 0 6px #000; box-shadow: 0 0 14px #ff3df077; transition: transform 0.1s, box-shadow 0.15s; text-decoration: none; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 0 20px #ff3df0aa; }
+.btn:disabled { opacity: 0.35; cursor: not-allowed; transform: none; box-shadow: none; }
+.btn.serve { background: linear-gradient(180deg, var(--green), #0e9c5c); border-color: #9fffce; box-shadow: 0 0 14px #3dffa077; color: #04180d; text-shadow: none; }
+.btn.hint { background: linear-gradient(180deg, #ffb35e, #d97617); border-color: #ffd9a8; box-shadow: 0 0 14px #ff9d3d77; }
+.btn.cyan { background: linear-gradient(180deg, var(--cyan), #0a7d93); border-color: #9ff1ff; box-shadow: 0 0 14px #00e5ff77; color: #04121f; text-shadow: none; }
+.btn.gold { background: linear-gradient(180deg, #ffd45e, #e8a317); border-color: #ffe08a; box-shadow: 0 0 14px #ffc83d77; }
+.btn .ic { filter: none; }
+
+.center { text-align: center; }
+.title-big { font-family: "Press Start 2P", monospace; font-size: clamp(1rem, 4.6vw, 1.5rem); color: var(--magenta); text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 0 0 16px var(--magenta); letter-spacing: 2px; line-height: 1.6; margin: 16px 0 8px; }
+.blink { animation: blink 1.1s steps(2, start) infinite; }
+@keyframes blink { to { visibility: hidden; } }
+@keyframes popIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+.shake { animation: shake 0.3s ease-in-out 2; }
+@keyframes custIn { from { transform: translateX(-50%) translateX(40px); opacity: 0; } to { transform: translateX(-50%) translateX(0); opacity: 1; } }
+@keyframes zfloat { 0% { transform: translateY(0); opacity: 0; } 30% { opacity: 0.9; } 100% { transform: translateY(-16px); opacity: 0; } }
+.zz { animation: zfloat 2.4s infinite; }
+.zz2 { animation: zfloat 2.4s 1.2s infinite; }
+
+.paws .ic { width: 27px; height: 27px; margin: 0 3px; }
+.paws .off { opacity: 0.22; }
+
+.shift-row { display: flex; align-items: center; gap: 12px; border: 1.5px solid #2a3a5a; border-radius: 12px; padding: 11px 13px; margin-bottom: 9px; background: #10122a66; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; }
+.shift-row:hover { border-color: var(--cyan); box-shadow: 0 0 12px #00e5ff44; }
+.shift-row.locked { opacity: 0.45; cursor: not-allowed; }
+.shift-row.locked:hover { border-color: #2a3a5a; box-shadow: none; }
+.shift-row.bossrow { border-color: var(--gold); }
+.shift-row.bossrow:hover { box-shadow: 0 0 12px #ffc83d55; }
+.sh-num { flex-shrink: 0; width: 42px; height: 42px; border-radius: 10px; background: #0c0c22; border: 2px solid var(--cyan); color: var(--cyan); font-family: "Press Start 2P", monospace; font-size: 0.55rem; display: flex; align-items: center; justify-content: center; }
+.bossrow .sh-num { border-color: var(--gold); color: var(--gold); }
+.locked .sh-num { border-color: #3a4a6a; color: #4a5a7a; }
+.sh-info { flex: 1; min-width: 0; }
+.sh-name { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: #fff; letter-spacing: 1px; line-height: 1.5; }
+.sh-tag { font-size: 0.8rem; color: var(--muted); margin-top: 3px; }
+.sh-paws { flex-shrink: 0; font-size: 0.72rem; color: var(--gold); font-family: "Press Start 2P", monospace; white-space: nowrap; }
+.sh-paws .ic { margin: 0 1px; vertical-align: middle; }
+.sh-paws .off { opacity: 0.22; }
+.sh-new { font-size: 0.6rem; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 14px 0; }
+.stat { border: 1px solid #2a3a5a; border-radius: 10px; padding: 10px 6px; text-align: center; background: #10122a66; }
+.stat .sl { font-family: "Press Start 2P", monospace; font-size: 0.45rem; color: var(--muted); letter-spacing: 1px; }
+.stat .sv { font-family: "Press Start 2P", monospace; font-size: 0.85rem; margin-top: 7px; color: var(--gold); }
+
+.wordchips { display: flex; gap: 7px; flex-wrap: wrap; justify-content: center; margin: 10px 0 4px; }
+.wordchips span { border: 1px solid var(--purple); color: #d9c4ff; background: #9d4dff14; border-radius: 20px; padding: 4px 12px; font-size: 0.85rem; }
+
+.card-reveal { width: 190px; margin: 16px auto; border: 3px solid var(--gold); border-radius: 14px; background: #0c0c22; padding: 12px 10px; text-align: center; box-shadow: 0 0 22px #ffc83d66; animation: popIn 0.5s ease-out; }
+.card-reveal .rar { font-family: "Press Start 2P", monospace; font-size: 0.48rem; letter-spacing: 1px; color: var(--gold); }
+.card-reveal .cface { margin: 10px 0 6px; }
+.card-reveal .cname { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: #fff; letter-spacing: 1px; }
+.card-reveal .cquote { font-size: 0.8rem; color: var(--muted); margin-top: 7px; font-style: italic; line-height: 1.45; }
+
+.insert { text-align: center; font-family: "Press Start 2P", monospace; font-size: 0.58rem; color: var(--green); letter-spacing: 1px; margin-top: 14px; text-shadow: 0 0 10px #3dffa066; }
+
+/* ---- landscape / horizontal layout (phones + tablets) ---- */
+@media (orientation: landscape) {
+  .cab { max-width: min(820px, 96vw); }
+  .menu-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+}
+@media (orientation: landscape) and (max-height: 600px) {
+  body { padding: 8px 12px 22px; }
+  .marquee img { height: 46px; padding: 5px 10px; }
+  .marquee .stage { margin-top: 5px; font-size: 0.52rem; }
+  .scene2 { height: 148px; }
+  #stage { min-height: 0; padding: 12px 14px 16px; }
+  .mute-btn, .music-btn, .map-btn { height: 36px; top: 8px; }
+  .mute-btn, .music-btn { width: 36px; }
+  .music-btn { right: 52px; }
+  .insert { margin-top: 8px; }
+}
+</style>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-paw" viewBox="0 0 24 24">
+    <ellipse cx="12" cy="15.5" rx="4.6" ry="4" fill="currentColor" stroke="none"/>
+    <circle cx="5.5" cy="11" r="2" fill="currentColor" stroke="none"/>
+    <circle cx="9.5" cy="7.5" r="2.1" fill="currentColor" stroke="none"/>
+    <circle cx="14.5" cy="7.5" r="2.1" fill="currentColor" stroke="none"/>
+    <circle cx="18.5" cy="11" r="2" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24">
+    <circle cx="12" cy="13.5" r="7.5"/>
+    <path d="M12 9.5v4l2.5 2"/>
+    <path d="M10 2.5h4M12 2.5V6"/>
+  </symbol>
+  <symbol id="i-vol" viewBox="0 0 24 24">
+    <path d="M4 9.5v5h3.5L13 19V5L7.5 9.5z" fill="currentColor" stroke="none"/>
+    <path d="M16 9a4.5 4.5 0 0 1 0 6"/>
+    <path d="M18.5 6.5a8 8 0 0 1 0 11"/>
+  </symbol>
+  <symbol id="i-mute" viewBox="0 0 24 24">
+    <path d="M4 9.5v5h3.5L13 19V5L7.5 9.5z" fill="currentColor" stroke="none"/>
+    <path d="M16 9.5l5 5M21 9.5l-5 5"/>
+  </symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24">
+    <rect x="5.5" y="11" width="13" height="9" rx="2"/>
+    <path d="M8 11V8a4 4 0 0 1 8 0v3"/>
+  </symbol>
+</svg>
+
+<a class="map-btn" href="city.html">◀ CITY MAP</a>
+<button class="mute-btn" id="muteBtn" title="Sound on/off" aria-label="Sound on/off"></button>
+<!-- iOS 17.4+ haptic bridge (Vibration API isn't exposed on Safari) -->
+<input type="checkbox" id="hapticSwitch" switch aria-hidden="true" tabindex="-1" style="position:fixed;left:-9999px;top:-9999px;width:0;height:0;opacity:0;pointer-events:none">
+<label for="hapticSwitch" aria-hidden="true" style="position:fixed;left:-9999px;top:-9999px;width:0;height:0;opacity:0;pointer-events:none"></label>
+
+<div class="cab">
+  <div class="marquee">
+    <img src="logo.png" alt="English for All — Rank Up">
+    <div class="stage" id="marqueeTag">RANK UP CITY · BUILDING 2 · THE OFFICE TOWER</div>
+  </div>
+
+  <div class="screen">
+    <div class="hud">
+      <span class="hearts" id="hudHearts">♥♥♥</span>
+      <span class="xp" id="hudXP">XP 0000</span>
+      <span class="coins" id="hudCoins">TIPS $0</span>
+      <span class="lvl">LVL A2</span>
+    </div>
+    <div id="stage"></div>
+  </div>
+
+  <div class="insert blink" id="insertLine">▶ INSERT KNOWLEDGE ◀</div>
+</div>
+
+<script>
+"use strict";
+function ic(name, size) {
+  const s = size || 17;
+  return '<svg class="ic" style="width:' + s + 'px;height:' + s + 'px" aria-hidden="true"><use href="#i-' + name + '"/></svg>';
+}
+
+/* ============ MENU & CAST ============ */
+const MENU = [
+  { id: "flatwhite", label: "Flat white" },
+  { id: "latte",     label: "Latte" },
+  { id: "tea",       label: "Tea" },
+  { id: "juice",     label: "Orange juice" },
+  { id: "avotoast",  label: "Avocado toast" },
+  { id: "bagel",     label: "Bagel" },
+  { id: "muffin",    label: "Blueberry muffin" },
+  { id: "cookie",    label: "Cookie" }
+];
+const byId = id => MENU.find(m => m.id === id);
+
+const CAST = {
+  dan:      { name: "DAN",      sub: "manager (comms)", ava: "headset", color: "var(--cyan)" },
+  sofia:    { name: "SOFIA",    sub: "team lead 🇬🇧",   ava: null,      color: "var(--magenta)" },
+  marcos:   { name: "MARCOS",   sub: "developer 🇲🇽",   ava: null,      color: "var(--green)" },
+  ana:      { name: "ANA",      sub: "client",          ava: null,      color: "var(--gold)" },
+  director: { name: "DIRECTOR", sub: "head office",     ava: null,      color: "var(--purple)" }
+};
+const AVIMG = { headset: "sprite-dan.png", cat: "sprite-enri.png" };
+let spriteOverride = {};
+function avaFile(ava) { return spriteOverride[ava] || AVIMG[ava]; }
+function custFile(who) { return spriteOverride[who] || ("sprite-" + who + ".png"); }
+
+/* ============ STAGES ============ */
+const STAGES = {
+  s1: {
+    num: "2-1", name: "First day", tag: "Routines & work emails",
+    intro: "New hire! Welcome to the Office Tower. Up here it's calls, chats and emails — no coffee, but the game's the same: read the message, then PICK or BUILD the right English. Totti's still watching. Let's go.",
+    introKey: "s1-intro", tutorial: true,
+    words: ["I usually…", "every day", "How often…?", "Best regards"],
+    rounds: [
+      { type: "talk", who: "sofia", line: "Hi! I'm Sofia, the team lead. Welcome aboard! What do you usually do every morning before work?",
+        keys: { line: "s1-r1-line", retry: "s1-r1-retry", thanks: "s1-r1-thanks" },
+        retryLine: "Every morning — your ROUTINE. What do you usually do?",
+        thanks: "Ha, a coffee person. We'll get along.",
+        options: ["I usually check my email and make a coffee.", "I checked my email yesterday.", "I'm going to check my email."], correct: 0, par: 16 },
+      { type: "talk", who: "marcos", line: "Hey, I'm Marcos, a developer. We work from home on Fridays. How often do you work remotely?",
+        keys: { line: "s1-r2-line", retry: "s1-r2-retry", thanks: "s1-r2-thanks" },
+        retryLine: "How OFTEN — once a week? Twice?",
+        thanks: "Same as me. The commute is brutal.",
+        options: ["I work from home twice a week.", "I worked from home last week.", "I'm working from home now."], correct: 0, par: 16 },
+      { type: "compose", who: "sofia", line: "First task — reply to this email. Start it politely.",
+        note: "EMAIL — Hi, can you send the report? — Ana (client)",
+        keys: { line: "s1-r3-line", retry: "s1-r3-retry", thanks: "s1-r3-thanks" },
+        retryLine: "Start with a polite thank-you.",
+        thanks: "Perfect. Polite and professional.",
+        answer: "Thank you for your email", words: ["your", "Thank", "email", "for", "you"], par: 22 },
+      { type: "talk", who: "marcos", line: "I just messaged you 'Welcome to the team!' on the chat. What do you reply?",
+        keys: { line: "s1-r4-line", retry: "s1-r4-retry", thanks: "s1-r4-thanks" },
+        retryLine: "He said welcome — be friendly!",
+        thanks: "You'll fit right in.",
+        options: ["Thanks, Marcos! Nice to meet you.", "No, I'm from Argentina.", "It's half past two."], correct: 0, par: 15 },
+      { type: "compose", who: "sofia", line: "Now finish the email. Sign off like a professional.",
+        keys: { line: "s1-r5-line", retry: "s1-r5-retry", thanks: "s1-r5-thanks" },
+        retryLine: "End it politely — 'Best…'.",
+        thanks: "Signed and sent. Welcome aboard!",
+        answer: "Best regards and thank you", words: ["regards", "Best", "you", "and", "thank"], par: 22 }
+    ]
+  },
+  s2: {
+    num: "2-2", name: "Work stories", tag: "Past simple",
+    intro: "Coffee break — well, virtual coffee. The team swaps work stories, and it's all PAST tense up here: worked, built, didn't. Listen and answer.",
+    introKey: "s2-intro",
+    words: ["worked", "didn't", "Did you…?", "last year"],
+    rounds: [
+      { type: "talk", who: "marcos", line: "So, before this job — where did you work?",
+        keys: { line: "s2-r1-line", retry: "s2-r1-retry", thanks: "s2-r1-thanks" },
+        retryLine: "Before — in the PAST. Use 'worked'.",
+        thanks: "A startup! Same as me. Small world.",
+        options: ["I worked at a small startup for two years.", "I work at a startup.", "I'm working at a startup."], correct: 0, par: 16 },
+      { type: "compose", who: "marcos", line: "Nice. Tell me what you did there — build the sentence.",
+        keys: { line: "s2-r2-line", retry: "s2-r2-retry", thanks: "s2-r2-thanks" },
+        retryLine: "Past simple — 'built', 'fixed'.",
+        thanks: "A real developer. Respect.",
+        answer: "I built websites and fixed bugs", words: ["built", "I", "fixed", "websites", "bugs", "and"], par: 24 },
+      { type: "talk", who: "sofia", line: "And why did you leave your last job?",
+        keys: { line: "s2-r3-line", retry: "s2-r3-retry", thanks: "s2-r3-thanks" },
+        retryLine: "Why did you LEAVE? A past reason.",
+        thanks: "Makes sense. Their loss, our gain.",
+        options: ["The project finished, so I looked for something new.", "The project finishes next week.", "I don't leave my job."], correct: 0, par: 18 },
+      { type: "compose", who: "sofia", line: "One more — make it negative. You didn't study computer science, right?",
+        keys: { line: "s2-r4-line", retry: "s2-r4-retry", thanks: "s2-r4-thanks" },
+        retryLine: "Negative past — 'didn't' + base verb.",
+        thanks: "Self-taught. Even better.",
+        answer: "I didn't study computer science", words: ["didn't", "I", "computer", "study", "science"], par: 22 },
+      { type: "talk", who: "marcos", line: "Quick one — did you finish the report I sent yesterday?",
+        keys: { line: "s2-r5-line", retry: "s2-r5-retry", thanks: "s2-r5-thanks" },
+        retryLine: "'Did you…?' → 'Yes, I did.'",
+        thanks: "Legend. You're fast.",
+        options: ["Yes, I did. I sent it back this morning.", "Yes, I do.", "Yes, I will finish it."], correct: 0, par: 15 }
+    ]
+  },
+  s3: {
+    num: "2-3", name: "The client call", tag: "Requests, offers & comparatives",
+    intro: "Big moment — a client's on the line. Be POLITE: could, would, can. And she'll compare our plans, so know your comparatives. Breathe. Totti's listening.",
+    introKey: "s3-intro",
+    words: ["Could you…?", "I'd be happy to", "cheaper than", "more powerful"],
+    rounds: [
+      { type: "talk", who: "ana", line: "Hello, this is Ana, the client. Could you send me your two plans?",
+        keys: { line: "s3-r1-line", retry: "s3-r1-retry", thanks: "s3-r1-thanks" },
+        retryLine: "Be polite and helpful — you'd be happy to…",
+        thanks: "Wonderful, thank you so much.",
+        options: ["Of course — I'd be happy to send them right now.", "No, send them yourself.", "I sent them yesterday."], correct: 0, par: 16 },
+      { type: "talk", who: "ana", line: "Thanks. Which plan is cheaper?",
+        note: "PLANS — Basic: $40/mo · Pro: $75/mo",
+        keys: { line: "s3-r2-line", retry: "s3-r2-retry", thanks: "s3-r2-thanks" },
+        retryLine: "Compare the TWO plans — 'cheaper THAN'.",
+        thanks: "Clear. I like that.",
+        options: ["The Basic plan is cheaper than the Pro plan.", "The Basic plan is the cheapest.", "The Basic plan is more cheap."], correct: 0, par: 18 },
+      { type: "compose", who: "ana", line: "And why is the Pro plan better? Tell me.",
+        keys: { line: "s3-r3-line", retry: "s3-r3-retry", thanks: "s3-r3-thanks" },
+        retryLine: "Use 'more + adjective'.",
+        thanks: "Convincing. Go on.",
+        answer: "The Pro plan is more powerful", words: ["Pro", "The", "plan", "more", "is", "powerful"], par: 24 },
+      { type: "talk", who: "ana", line: "Good. Could you start the project next week?",
+        keys: { line: "s3-r4-line", retry: "s3-r4-retry", thanks: "s3-r4-thanks" },
+        retryLine: "Polite ability — 'we could…'.",
+        thanks: "Perfect. Let's do it.",
+        options: ["Yes, we could start on Monday.", "Yes, we start yesterday.", "No, we can't never."], correct: 0, par: 16 },
+      { type: "compose", who: "dan", line: "Close the call politely — offer to help more.",
+        keys: { line: "s3-r5-line", retry: "s3-r5-retry", thanks: "s3-r5-thanks" },
+        retryLine: "Offer more help — 'Please call me if…'.",
+        thanks: "Smooth. The client loves you.",
+        answer: "Please call me if you need help", words: ["call", "Please", "me", "need", "if", "you", "help"], par: 24 }
+    ]
+  },
+  s4: {
+    num: "2-4", name: "The big project", tag: "Plans: going to / present continuous",
+    intro: "We won the client! Now we plan the project. Talk FUTURE: 'going to', and present continuous for arrangements. Let's build it.",
+    introKey: "s4-intro",
+    words: ["going to", "We're launching…", "next Monday", "this week"],
+    rounds: [
+      { type: "talk", who: "sofia", line: "So — what's the plan? When are we going to start?",
+        keys: { line: "s4-r1-line", retry: "s4-r1-retry", thanks: "s4-r1-thanks" },
+        retryLine: "A future plan — 'going to start'.",
+        thanks: "Monday it is.",
+        options: ["We're going to start on Monday.", "We started on Monday.", "We start Monday always."], correct: 0, par: 16 },
+      { type: "compose", who: "marcos", line: "Put my task on the board. I'm building the app this week.",
+        keys: { line: "s4-r2-line", retry: "s4-r2-retry", thanks: "s4-r2-thanks" },
+        retryLine: "Present continuous — 'I am building…'.",
+        thanks: "On it. Added to the board.",
+        answer: "I am building the app this week", words: ["am", "I", "building", "app", "the", "week", "this"], par: 24 },
+      { type: "talk", who: "ana", line: "The client asks — what are you doing on Friday?",
+        keys: { line: "s4-r3-line", retry: "s4-r3-retry", thanks: "s4-r3-thanks" },
+        retryLine: "An arrangement for Friday — 'We're launching…'.",
+        thanks: "Big day. I'll bring the pizza.",
+        options: ["We're launching the app on Friday.", "We launched the app on Friday.", "We launch always on Friday."], correct: 0, par: 16 },
+      { type: "compose", who: "sofia", line: "Tell the team the goal. Use 'going to'.",
+        keys: { line: "s4-r4-line", retry: "s4-r4-retry", thanks: "s4-r4-thanks" },
+        retryLine: "'going to' + base verb.",
+        thanks: "That's the spirit.",
+        answer: "We are going to finish on time", words: ["are", "We", "going", "finish", "to", "time", "on"], par: 24 },
+      { type: "talk", who: "marcos", line: "Last thing — are you nervous about the launch?",
+        keys: { line: "s4-r5-line", retry: "s4-r5-retry", thanks: "s4-r5-thanks" },
+        retryLine: "Predict the future — 'it's going to be…'.",
+        thanks: "That's confidence. Let's ship it.",
+        options: ["A little, but I think it's going to be great.", "Yes, it was great.", "No, I launched it yesterday."], correct: 0, par: 15 }
+    ]
+  },
+  sb: {
+    num: "2-B", name: "The interview", tag: "BOSS · everything you learned", boss: true,
+    intro: "This is it. The Director came down for your interview — everything you've learned: your past, polite requests, comparisons, your plans. Ace it and you rank up to B1. Go get it.",
+    introKey: "sb-intro",
+    words: ["I worked…", "I could…", "faster than", "I'm going to…"],
+    rounds: [
+      { type: "talk", who: "director", sub: "your interview", line: "Let's begin. Tell me about your last job.",
+        keys: { line: "sb-r1-line", retry: "sb-r1-retry", thanks: "sb-r1-thanks" },
+        retryLine: "Your LAST job — past simple.",
+        thanks: "Hm. Experience. Noted.",
+        options: ["I worked at a startup, where I built websites.", "I work at a startup now.", "I'm going to work at a startup."], correct: 0, par: 20 },
+      { type: "compose", who: "director", sub: "your interview", line: "Everyone says they work hard. Prove it — one thing you did last year.",
+        keys: { line: "sb-r2-line", retry: "sb-r2-retry", thanks: "sb-r2-thanks" },
+        retryLine: "Past simple, and add a time marker.",
+        thanks: "Results. I like results.",
+        answer: "Last year I finished a big project", words: ["year", "Last", "finished", "I", "big", "a", "project"], par: 26 },
+      { type: "talk", who: "director", sub: "your interview", line: "Could you work under pressure, with a hard deadline?",
+        keys: { line: "sb-r3-line", retry: "sb-r3-retry", thanks: "sb-r3-thanks" },
+        retryLine: "Polite ability — 'I could…'.",
+        thanks: "Good. Pressure is this job.",
+        options: ["Yes, I could. I work well with deadlines.", "Yes, I can yesterday.", "No, I couldn't never."], correct: 0, par: 20 },
+      { type: "compose", who: "director", sub: "your interview", line: "Why are you better than the other candidates?",
+        keys: { line: "sb-r4-line", retry: "sb-r4-retry", thanks: "sb-r4-thanks" },
+        retryLine: "Compare yourself — 'faster THAN…'.",
+        thanks: "Confidence, backed by skill. Good.",
+        answer: "I learn faster than the others", words: ["learn", "I", "faster", "the", "than", "others"], par: 26 },
+      { type: "talk", who: "director", sub: "your interview", line: "Final question. Where do you see yourself next year?",
+        keys: { line: "sb-r5-line", retry: "sb-r5-retry", thanks: "sb-r5-thanks" },
+        retryLine: "Your future plan — 'going to…'.",
+        thanks: "...The job is yours. Welcome to B1. Rank up, rookie.",
+        options: ["I'm going to grow and take on bigger projects.", "I grew last year.", "I don't know nothing."], correct: 0, par: 20 }
+    ]
+  }
+};
+const ORDER = ["s1", "s2", "s3", "s4", "sb"];
+
+/* ============ PROGRESS ============ */
+function loadProg() {
+  let p = {};
+  try { p = JSON.parse(localStorage.getItem("no_prog") || "{}"); } catch (e) {}
+  return p;
+}
+function saveProg(p) { localStorage.setItem("no_prog", JSON.stringify(p)); }
+function isUnlocked(sid) {
+  const p = loadProg();
+  const i = ORDER.indexOf(sid);
+  if (i === 0) return true;
+  if (sid === "sb") return ORDER.slice(0, 4).every(s => p[s]);
+  return !!p[ORDER[i - 1]];
+}
+function maxPaws(sid) { return STAGES[sid].rounds.length * 3; }
+
+/* ============ STATE ============ */
+let S;
+function resetState(sid) {
+  S = { sid: sid, hearts: 3, xp: 0, coins: 0, pawsTotal: 0, round: 0, tries: 0,
+        hints: 2, tray: [], twistShown: false };
+}
+
+/* ============ AUDIO ============ */
+let muted = false;
+let AC = null;
+const player = new Audio();
+function duckMusic() { if (window.__ncMusic) { try { window.__ncMusic.volume = 0.09; } catch (e) {} } }
+function unduckMusic() { if (window.__ncMusic) { try { window.__ncMusic.volume = window.__ncMusicVol || 0.3; } catch (e) {} } }
+player.addEventListener("ended", unduckMusic);
+player.addEventListener("pause", unduckMusic);
+function ac() { if (!AC) AC = new (window.AudioContext || window.webkitAudioContext)(); return AC; }
+function tone(freq, dur, type, when, vol) {
+  if (muted) return;
+  try {
+    const c = ac(), o = c.createOscillator(), g = c.createGain();
+    o.type = type || "square"; o.frequency.value = freq;
+    g.gain.setValueAtTime(vol || 0.06, c.currentTime + (when || 0));
+    g.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + (when || 0) + dur);
+    o.connect(g); g.connect(c.destination);
+    o.start(c.currentTime + (when || 0)); o.stop(c.currentTime + (when || 0) + dur + 0.02);
+  } catch (e) {}
+}
+const blip   = () => tone(660, 0.07);
+const coinFx = () => { tone(880, 0.09); tone(1320, 0.18, "square", 0.09); };
+const buzz   = () => tone(140, 0.28, "sawtooth", 0, 0.08);
+/* haptics — navigator.vibrate on Android; iOS 17.4+ uses the hidden <input switch> bridge */
+const hapticSwitch = document.getElementById("hapticSwitch");
+function haptic(pattern) {
+  try { if (navigator.vibrate) navigator.vibrate(pattern); } catch (e) {}
+  try { if (hapticSwitch) hapticSwitch.click(); } catch (e) {}
+}
+const purr   = () => { tone(220, 0.3, "sine", 0, 0.05); tone(196, 0.3, "sine", 0.15, 0.05); haptic([16, 34, 16, 34, 22]); };
+const fanfare = () => { [523, 659, 784, 1047].forEach((f, i) => tone(f, 0.16, "square", i * 0.13)); };
+
+const TEXTS = {};
+function speak(text) {
+  if (muted || !("speechSynthesis" in window)) return;
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/\*[^*]*\*/g, ""));
+    u.lang = "en-US"; u.rate = 0.92;
+    const v = speechSynthesis.getVoices().find(v => v.lang.startsWith("en"));
+    if (v) u.voice = v;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+function stopVoice() {
+  try { player.pause(); } catch (e) {}
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
+}
+function say(key, text) {
+  if (text) TEXTS[key] = text;
+  if (muted || !key) return;
+  stopVoice();
+  player.src = "no-" + key + ".mp3";
+  player.onerror = () => speak(TEXTS[key] || "");
+  duckMusic();
+  player.play().catch(() => speak(TEXTS[key] || ""));
+}
+if ("speechSynthesis" in window) speechSynthesis.getVoices();
+
+const muteBtn = document.getElementById("muteBtn");
+muteBtn.innerHTML = ic("vol", 20);
+muteBtn.addEventListener("click", function () {
+  muted = !muted;
+  this.innerHTML = ic(muted ? "mute" : "vol", 20);
+  if (muted) stopVoice();
+});
+
+/* ============ HELPERS ============ */
+const stage = document.getElementById("stage");
+function hud() {
+  document.getElementById("hudHearts").textContent = "♥".repeat(S.hearts) + "♡".repeat(3 - S.hearts);
+  document.getElementById("hudXP").textContent = "XP " + String(S.xp).padStart(4, "0");
+  document.getElementById("hudCoins").textContent = "TIPS $" + S.coins;
+}
+function el(html) { const d = document.createElement("div"); d.innerHTML = html; return d.firstElementChild; }
+function bubble(castKey, text, audioKey, subOverride) {
+  const c = CAST[castKey];
+  const avaHTML = avaFile(c.ava) ? '<img src="' + avaFile(c.ava) + '" alt="">' : '<span class="avin">' + c.name.charAt(0) + '</span>';
+  const r = el('<div class="row" style="--c:' + c.color + '">' +
+    '<div class="ava">' + avaHTML + '</div>' +
+    '<div class="bub"><div class="who">' + c.name + ' · ' + (subOverride || c.sub) + '</div><div class="say">' + text + '</div></div>' +
+    (audioKey ? '<button class="replay" title="Listen again" aria-label="Listen again">' + ic("vol", 16) + '</button>' : "") +
+  '</div>');
+  if (audioKey) r.querySelector(".replay").addEventListener("click", () => say(audioKey, text));
+  return r;
+}
+function enriBubble(text) {
+  const r = el('<div class="row" style="--c:#ff9d3d">' +
+    '<div class="ava"><img src="sprite-enri.png" alt="" style="object-position:22% 40%"></div>' +
+    '<div class="bub"><div class="who">ENRI · purr boost</div><div class="say">' + text + '</div></div></div>');
+  return r;
+}
+function sameOrder(tray, target) {
+  if (tray.length !== target.length) return false;
+  const count = a => a.reduce((m, x) => (m[x] = (m[x] || 0) + 1, m), {});
+  const ct = count(tray), cg = count(target);
+  return Object.keys(cg).every(k => ct[k] === cg[k]) && Object.keys(ct).every(k => cg[k]);
+}
+function orderText(target) {
+  const count = target.reduce((m, x) => (m[x] = (m[x] || 0) + 1, m), {});
+  return Object.keys(count).map(k => count[k] + "× " + byId(k).label).join(" · ");
+}
+function pawRow(paws) {
+  let s = '<div class="paws" style="color:var(--gold)">';
+  for (let i = 0; i < 3; i++) s += i < paws ? ic("paw", 27) : '<span class="off">' + ic("paw", 27) + '</span>';
+  return s + '</div>';
+}
+function sceneSVG(custId) {
+  return '<div class="scene-wrap"><div class="scene2 office" role="img" aria-label="Your desk at the Office Tower">' +
+    officeArt() +
+    '<img class="sc-enri" src="sprite-enri.png" alt="">' +
+    '<span class="zz sc-z1">z</span><span class="zz2 sc-z2">z</span>' +
+    '<img class="sc-tot" src="sprite-totti.png" alt="">' +
+  '</div></div>';
+}
+function officeArt() {
+  return '<svg viewBox="0 0 560 240" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;z-index:1" aria-hidden="true">' +
+    '<rect x="24" y="26" width="150" height="120" rx="6" fill="#060a1e" stroke="#00e5ff" stroke-width="2"/>' +
+    '<g opacity="0.85">' +
+      '<rect x="34" y="86" width="16" height="52" fill="#0e2a44"/><rect x="56" y="66" width="18" height="72" fill="#13324f"/>' +
+      '<rect x="80" y="98" width="14" height="40" fill="#0e2a44"/><rect x="100" y="54" width="20" height="84" fill="#15203f"/>' +
+      '<rect x="126" y="90" width="16" height="48" fill="#0e2a44"/><rect x="148" y="72" width="16" height="66" fill="#13324f"/>' +
+    '</g>' +
+    '<g fill="#ffc83d"><circle cx="62" cy="80" r="1.6"/><circle cx="108" cy="70" r="1.6"/><circle cx="154" cy="88" r="1.6"/><circle cx="40" cy="100" r="1.4"/></g>' +
+    '<line x1="99" y1="26" x2="99" y2="146" stroke="#00e5ff" stroke-width="1" opacity="0.5"/>' +
+    '<rect x="0" y="176" width="560" height="64" fill="#0c1030"/>' +
+    '<rect x="0" y="171" width="560" height="7" fill="#9d4dff" opacity="0.9"/>' +
+    '<rect x="250" y="96" width="120" height="76" rx="6" fill="#04101c" stroke="#00e5ff" stroke-width="2.5"/>' +
+    '<g opacity="0.9"><rect x="262" y="108" width="60" height="6" rx="3" fill="#3dffa0"/><rect x="262" y="122" width="90" height="6" rx="3" fill="#ff3df0"/><rect x="262" y="136" width="46" height="6" rx="3" fill="#00e5ff"/><rect x="262" y="150" width="74" height="6" rx="3" fill="#3dffa0"/></g>' +
+    '<rect x="300" y="172" width="20" height="6" fill="#0a1430"/>' +
+    '<rect x="384" y="110" width="92" height="62" rx="6" fill="#04101c" stroke="#ff3df0" stroke-width="2.5"/>' +
+    '<g opacity="0.85"><rect x="394" y="120" width="52" height="5" rx="2" fill="#00e5ff"/><rect x="394" y="132" width="70" height="5" rx="2" fill="#ffc83d"/><rect x="394" y="144" width="40" height="5" rx="2" fill="#ff3df0"/><rect x="394" y="156" width="60" height="5" rx="2" fill="#3dffa0"/></g>' +
+    '<g stroke="#ffc83d" stroke-width="2" fill="none"><rect x="196" y="150" width="40" height="22" rx="4" fill="#0c1030"/><path d="M204 150c0-6 24-6 24 0"/></g>' +
+    '<g><rect x="150" y="150" width="20" height="20" rx="3" fill="#0c1030" stroke="#3dffa0" stroke-width="2"/><path d="M170 155c7 0 7 10 0 10" fill="none" stroke="#3dffa0" stroke-width="2"/></g>' +
+  '</svg>';
+}
+
+let timerInt = null, tStart = 0;
+function startTimer(par, anchor) {
+  clearInterval(timerInt);
+  const box = el('<div class="timer" id="timerBox">' + ic("clock", 14) + ' <span id="timerVal">0.0</span>s</div>');
+  anchor.insertAdjacentElement("afterend", box);
+  tStart = performance.now();
+  timerInt = setInterval(() => {
+    const b = document.getElementById("timerBox");
+    if (!b) { clearInterval(timerInt); return; }
+    const e = (performance.now() - tStart) / 1000;
+    document.getElementById("timerVal").textContent = e.toFixed(1);
+    b.style.color = e > par ? "var(--red)" : e > par * 0.66 ? "var(--gold)" : "var(--green)";
+  }, 100);
+}
+function stopTimer() {
+  clearInterval(timerInt);
+  return (performance.now() - tStart) / 1000;
+}
+
+/* ============ SCREENS ============ */
+function showTitle() {
+  const p = loadProg();
+  const total = ORDER.reduce((t, s) => t + (p[s] ? p[s].best : 0), 0);
+  const totalMax = ORDER.reduce((t, s) => t + maxPaws(s), 0);
+  stage.innerHTML =
+    '<div class="center">' +
+      '<div class="scene-tag">STREET VERSION · FREE PLAY</div>' +
+      sceneSVG(null) +
+      '<div class="title-big">THE OFFICE TOWER</div>' +
+      '<p style="margin:10px 0 4px;">Take the calls. Answer the emails.<br>Ace the interview.</p>' +
+      '<p class="es">Escucha, responde y arma frases. Suma patitas 🐾 en cada turno.</p>' +
+      (total > 0 ? '<p class="px" style="font-size:0.55rem; color:var(--gold); margin-top:12px;">OFFICE PAWS: ' + total + '/' + totalMax + '</p>' : "") +
+      '<div style="margin-top:18px;"><button class="btn" id="startBtn">▶ SHIFT SELECT</button></div>' +
+      '<p class="es" style="margin-top:12px;">' + ic("vol", 14) + ' Mejor con sonido / best with sound on</p>' +
+    '</div>';
+  document.getElementById("startBtn").addEventListener("click", () => { blip(); showSelect(); });
+}
+
+function showSelect() {
+  const p = loadProg();
+  stage.innerHTML = '<div class="scene-tag">THE OFFICE TOWER · SHIFT SELECT</div>';
+  ORDER.forEach(sid => {
+    const st = STAGES[sid];
+    const open = isUnlocked(sid);
+    const best = p[sid] ? p[sid].best : null;
+    let pawHtml;
+    if (best !== null) {
+      const m = maxPaws(sid), r = best >= m ? 3 : best >= m * 0.66 ? 2 : best > 0 ? 1 : 0;
+      pawHtml = "";
+      for (let i = 0; i < 3; i++) pawHtml += i < r ? ic("paw", 16) : '<span class="off">' + ic("paw", 16) + '</span>';
+    } else pawHtml = open ? '<span class="sh-new">NEW</span>' : "";
+    const row = el('<div class="shift-row' + (open ? "" : " locked") + (st.boss ? " bossrow" : "") + '">' +
+      '<div class="sh-num">' + (open ? st.num : ic("lock", 16)) + '</div>' +
+      '<div class="sh-info"><div class="sh-name">' + st.name.toUpperCase() + '</div><div class="sh-tag">' + st.tag + '</div></div>' +
+      '<div class="sh-paws">' + pawHtml + '</div>' +
+    '</div>');
+    if (open) row.addEventListener("click", () => { blip(); startStage(sid); });
+    stage.appendChild(row);
+  });
+  const foot = el('<div class="actions" style="justify-content:center; margin-top:14px;">' +
+    '<a class="btn cyan" href="city.html">🏙 CITY MAP</a>' +
+    '<a class="btn gold" href="https://wa.me/5491123709477?text=' + encodeURIComponent("Hola Dan! 🎮 I'm playing THE OFFICE TOWER and I want my FREE trial lesson! 🚀") + '" target="_blank" rel="noopener">★ FREE TRIAL LESSON</a></div>');
+  stage.appendChild(foot);
+}
+
+function startStage(sid) {
+  resetState(sid); hud();
+  const st = STAGES[sid];
+  spriteOverride = st.spriteOverride || {};
+  document.getElementById("marqueeTag").textContent = "RANK UP CITY · STAGE " + st.num + " · " + st.name.toUpperCase();
+  stage.innerHTML = '<div class="scene-tag">STAGE ' + st.num + ' · ' + st.name.toUpperCase() + '</div>';
+  stage.appendChild(bubble("dan", st.intro, st.introKey));
+  say(st.introKey, st.intro);
+
+  if (st.tutorial) {
+    const choices = el('<div class="actions" style="justify-content:flex-end; margin-top:14px;">' +
+      '<button class="btn cyan" id="c1">I\'M READY!</button>' +
+      '<button class="btn" id="c2">WAIT — WHAT DO I DO?</button></div>');
+    stage.appendChild(choices);
+    document.getElementById("c1").addEventListener("click", () => { blip(); startRound(0); });
+    document.getElementById("c2").addEventListener("click", () => {
+      blip(); choices.remove();
+      const help = "Easy: READ the message, then PICK the best reply — or TAP the words to build a sentence and hit SEND. Stuck? Enri's PURR BOOST gives you a hint. You've got this.";
+      stage.appendChild(bubble("dan", help, "dan-help"));
+      say("dan-help", help);
+      const go = el('<div class="actions" style="justify-content:flex-end; margin-top:14px;"><button class="btn cyan">OK — LET\'S GO!</button></div>');
+      stage.appendChild(go);
+      go.querySelector("button").addEventListener("click", () => { blip(); startRound(0); });
+    });
+  } else {
+    const go = el('<div class="actions" style="justify-content:flex-end; margin-top:14px;"><button class="btn cyan">▶ START SHIFT</button></div>');
+    stage.appendChild(go);
+    go.querySelector("button").addEventListener("click", () => { blip(); startRound(0); });
+  }
+}
+
+function startRound(i) {
+  const st = STAGES[S.sid];
+  S.round = i; S.tries = 0; S.tray = []; S.twistShown = false;
+  const R = st.rounds[i];
+  const custSprite = R.who === "dan" ? null : R.who;
+  stage.innerHTML = '<div class="scene-tag">ROUND ' + (i + 1) + ' OF ' + st.rounds.length + (st.boss ? " · ⚠ INSPECTION" : "") + '</div>' + sceneSVG(custSprite);
+
+  if (R.preIntro) {
+    stage.appendChild(bubble("dan", R.preIntro, R.preIntroKey));
+    TEXTS[R.preIntroKey] = R.preIntro;
+  }
+  stage.appendChild(bubble(R.who, R.line, R.keys.line, R.sub));
+  if (R.note) stage.appendChild(el('<div class="note-board">' + R.note + '</div>'));
+
+  if (R.type === "compose") buildComposeUI(R);
+  else buildTalkUI(R);
+
+  if (R.preIntro) { say(R.preIntroKey, R.preIntro); setTimeout(() => { if (S.round === i && S.sid === st.id) say(R.keys.line, R.line); }, 11000); }
+  else say(R.keys.line, R.line);
+}
+
+function buildOrderUI(R) {
+  const trayBox = el('<div class="tray"><div class="tl">' + (R.trayLabel || "YOUR TRAY") + ' <span class="es" style="text-transform:none;">· toca para quitar</span></div><div class="chips" id="trayChips"><span class="es">empty / vacía</span></div></div>');
+  stage.appendChild(trayBox);
+
+  const grid = el('<div class="menu-grid"></div>');
+  MENU.forEach(m => {
+    const c = el('<button class="chip"><img class="mimg" src="item-' + m.id + '.png" alt=""> ' + m.label + '</button>');
+    c.addEventListener("click", () => { blip(); S.tray.push(m.id); renderTray(); });
+    grid.appendChild(c);
+  });
+  stage.appendChild(grid);
+
+  const act = el('<div class="actions">' +
+    '<button class="btn hint" id="hintBtn">' + ic("paw", 15) + ' PURR BOOST ×' + S.hints + '</button>' +
+    '<button class="btn serve" id="serveBtn">✓ SERVE</button></div>');
+  stage.appendChild(act);
+
+  const serveBtn = document.getElementById("serveBtn");
+  const hintBtn = document.getElementById("hintBtn");
+  if (S.hints <= 0) hintBtn.disabled = true;
+
+  if (R.twist) {
+    serveBtn.disabled = true;
+    setTimeout(() => {
+      if (!document.getElementById("serveBtn")) return;
+      stage.insertBefore(bubble(R.who, R.twist, R.keys.twist, R.sub), document.querySelector(".tray"));
+      tone(392, 0.12); tone(523, 0.12, "square", 0.12);
+      say(R.keys.twist, R.twist);
+      S.twistShown = true;
+      document.getElementById("serveBtn").disabled = false;
+      startTimer(R.par, stage.querySelector(".scene-tag"));
+    }, 4200);
+  } else {
+    startTimer(R.par, stage.querySelector(".scene-tag"));
+  }
+
+  hintBtn.addEventListener("click", () => {
+    if (S.hints <= 0) return;
+    S.hints--; hintBtn.innerHTML = ic("paw", 15) + ' PURR BOOST ×' + S.hints;
+    if (S.hints <= 0) hintBtn.disabled = true;
+    stage.insertBefore(enriBubble("Prrrr... they want: " + orderText(R.order) + ". You didn't hear it from me. *goes back to sleep*"), document.querySelector(".tray"));
+    purr();
+  });
+
+  serveBtn.addEventListener("click", () => judgeOrder(R));
+
+  function renderTray() {
+    const t = document.getElementById("trayChips");
+    if (!S.tray.length) { t.innerHTML = '<span class="es">empty / vacía</span>'; return; }
+    t.innerHTML = "";
+    S.tray.forEach((id, idx) => {
+      const m = byId(id);
+      const c = el('<button class="chip intray"><img class="mimg" src="item-' + m.id + '.png" alt=""> ' + m.label + ' ✕</button>');
+      c.addEventListener("click", () => { blip(); S.tray.splice(idx, 1); renderTray(); });
+      t.appendChild(c);
+    });
+  }
+}
+
+function buildTalkUI(R) {
+  const opts = R.options.map((t, i) => ({ t: t, ok: i === R.correct }));
+  for (let i = opts.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [opts[i], opts[j]] = [opts[j], opts[i]]; }
+  const wrap = el('<div style="margin-top:14px;"></div>');
+  const letters = ["A", "B", "C", "D"];
+  opts.forEach((o, i) => {
+    const b = el('<button class="opt"><span class="ol">' + letters[i] + '</span>' + o.t + '</button>');
+    b.addEventListener("click", () => {
+      if (o.ok) { succeed(R); }
+      else {
+        b.classList.add("wrong");
+        fail(R);
+      }
+    });
+    wrap.appendChild(b);
+  });
+  stage.appendChild(wrap);
+
+  const act = el('<div class="actions" style="justify-content:flex-start;">' +
+    '<button class="btn hint" id="hintBtn">' + ic("paw", 15) + ' PURR BOOST ×' + S.hints + '</button></div>');
+  stage.appendChild(act);
+  const hintBtn = document.getElementById("hintBtn");
+  if (S.hints <= 0) hintBtn.disabled = true;
+  hintBtn.addEventListener("click", () => {
+    if (S.hints <= 0) return;
+    S.hints--; hintBtn.innerHTML = ic("paw", 15) + ' PURR BOOST ×' + S.hints;
+    if (S.hints <= 0) hintBtn.disabled = true;
+    stage.insertBefore(enriBubble('Prrrr... try saying: "' + R.options[R.correct] + '" ...you didn\'t hear it from me. *yawn*'), wrap);
+    purr();
+  });
+
+  startTimer(R.par, stage.querySelector(".scene-tag"));
+}
+
+function buildComposeUI(R) {
+  const pool = R.words.slice();
+  for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+  S.tray = [];
+  const trayBox = el('<div class="tray"><div class="tl">YOUR MESSAGE <span class="es" style="text-transform:none;">· toca una palabra para quitarla</span></div><div class="chips" id="trayChips"><span class="es">empty / vacía</span></div></div>');
+  stage.appendChild(trayBox);
+  const grid = el('<div class="menu-grid" id="wordPool"></div>');
+  stage.appendChild(grid);
+  const act = el('<div class="actions">' +
+    '<button class="btn hint" id="hintBtn">' + ic("paw", 15) + ' PURR BOOST ×' + S.hints + '</button>' +
+    '<button class="btn serve" id="serveBtn">✓ SEND</button></div>');
+  stage.appendChild(act);
+  const serveBtn = document.getElementById("serveBtn");
+  const hintBtn = document.getElementById("hintBtn");
+  if (S.hints <= 0) hintBtn.disabled = true;
+
+  function renderPool() {
+    grid.innerHTML = "";
+    pool.forEach((w, i) => {
+      const used = S.tray.indexOf(i) !== -1;
+      const c = el('<button class="chip"' + (used ? ' disabled style="opacity:.3"' : '') + '>' + w + '</button>');
+      if (!used) c.addEventListener("click", () => { blip(); S.tray.push(i); renderPool(); renderTray(); });
+      grid.appendChild(c);
+    });
+  }
+  function renderTray() {
+    const t = document.getElementById("trayChips");
+    if (!S.tray.length) { t.innerHTML = '<span class="es">empty / vacía</span>'; return; }
+    t.innerHTML = "";
+    S.tray.forEach((pi, idx) => {
+      const c = el('<button class="chip intray">' + pool[pi] + ' ✕</button>');
+      c.addEventListener("click", () => { blip(); S.tray.splice(idx, 1); renderPool(); renderTray(); });
+      t.appendChild(c);
+    });
+  }
+  renderPool();
+
+  hintBtn.addEventListener("click", () => {
+    if (S.hints <= 0) return;
+    S.hints--; hintBtn.innerHTML = ic("paw", 15) + ' PURR BOOST ×' + S.hints;
+    if (S.hints <= 0) hintBtn.disabled = true;
+    stage.insertBefore(enriBubble('Prrrr... it should read: "' + R.answer + '". You didn\'t hear it from me. *yawn*'), document.querySelector(".tray"));
+    purr();
+  });
+  serveBtn.addEventListener("click", () => {
+    if (S.tray.map(i => pool[i]).join(" ") === R.answer) succeed(R);
+    else fail(R);
+  });
+  startTimer(R.par, stage.querySelector(".scene-tag"));
+}
+
+function judgeOrder(R) {
+  if (sameOrder(S.tray, R.order)) succeed(R);
+  else fail(R);
+}
+
+function succeed(R) {
+  const st = STAGES[S.sid];
+  const elapsed = stopTimer();
+  const bonus = Math.min(25, Math.max(0, Math.round((R.par - elapsed) * 2)));
+  const paws = Math.max(1, 3 - S.tries);
+  const xp = st.boss ? paws * 15 : paws * 10;
+  const tip = paws === 3 ? (st.boss ? 3 : 2) : 1;
+  S.pawsTotal += paws; S.xp += xp + bonus; S.coins += tip; hud();
+  coinFx(); if (st.boss) fanfare();
+  if (bonus > 0) { tone(1568, 0.09); tone(2093, 0.14, "square", 0.09); }
+  showResult(R, paws, xp, tip, bonus, elapsed);
+}
+
+function fail(R) {
+  S.tries++; S.hearts--; hud(); buzz();
+  document.querySelector(".screen").classList.add("shake");
+  setTimeout(() => document.querySelector(".screen").classList.remove("shake"), 700);
+  if (S.hearts <= 0) { showGameOver(); return; }
+  const anchor = document.querySelector(".tray") || stage.children[2] || null;
+  const bub = bubble(R.who, R.retryLine, R.keys.retry, R.sub);
+  if (anchor) stage.insertBefore(bub, anchor); else stage.appendChild(bub);
+  say(R.keys.retry, R.retryLine);
+}
+
+function showResult(R, paws, xp, tip, bonus, elapsed) {
+  const st = STAGES[S.sid];
+  haptic(paws >= 3 ? [12, 45, 12, 45, 90] : [50]);   // Totti's judgment buzz
+  const quips = { 3: "...Acceptable. *slow blink of approval*", 2: "Adequate. I have seen worse.", 1: "*judges you silently* ...Next time, LISTEN." };
+  const c = CAST[R.who];
+  const speedLine = '<p class="px" style="font-size:0.55rem; color:' + (bonus > 0 ? "var(--gold)" : "var(--muted)") + '; margin-top:8px;">' + ic("clock", 13) + ' TIME ' + elapsed.toFixed(1) + 'S' + (bonus > 0 ? ' · ⚡ SPEED BONUS +' + bonus + ' XP' : '') + '</p>';
+  stage.innerHTML =
+    '<div class="scene-tag">ROUND COMPLETE</div>' +
+    '<div class="center">' +
+      '<div class="ava" style="--c:' + c.color + '; margin:8px auto; width:68px; height:68px;">' + (avaFile(c.ava) ? '<img src="' + avaFile(c.ava) + '" alt="">' : '<span class="avin" style="font-size:1.15rem">' + c.name.charAt(0) + '</span>') + '</div>' +
+      '<p style="font-size:1rem; color:var(--muted); font-style:italic;">"' + R.thanks + '"</p>' +
+      '<div class="ava" style="--c:var(--gold); margin:16px auto 7px; width:46px; height:46px;"><img src="sprite-totti.png" alt="" style="object-position:42% 4%"></div>' +
+      '<div class="px" style="font-size:0.52rem; color:var(--gold); letter-spacing:1px;">TOTTI\'S JUDGMENT</div>' +
+      '<div style="margin:8px 0;">' + pawRow(paws) + '</div>' +
+      '<p style="font-size:0.88rem; color:var(--muted); font-style:italic;">"' + quips[paws] + '"</p>' +
+      '<p class="px" style="font-size:0.6rem; color:var(--green); margin-top:10px;">+$' + tip + ' TIP &nbsp; +' + xp + ' XP</p>' +
+      speedLine +
+    '</div>';
+  say(R.keys.thanks, R.thanks);
+  const next = S.round + 1 < st.rounds.length;
+  const btn = el('<div class="center" style="margin-top:16px;"><button class="btn cyan">' + (next ? "▶ NEXT ROUND" : "🏁 END SHIFT") + '</button></div>');
+  stage.appendChild(btn);
+  btn.querySelector("button").addEventListener("click", () => { blip(); next ? startRound(S.round + 1) : showSummary(); });
+}
+
+function showSummary() {
+  fanfare();
+  const st = STAGES[S.sid];
+  const max = maxPaws(S.sid);
+  const p = loadProg();
+  const prev = p[S.sid] ? p[S.sid].best : 0;
+  p[S.sid] = { best: Math.max(prev, S.pawsTotal) };
+  saveProg(p);
+
+  const ratio = S.pawsTotal / max;
+  let card;
+  if (ratio >= 1)         card = { rar: "★ LEGENDARY ★", img: "sprite-totti.png", name: "TOTTI", quote: "I observe. I judge. Then I nap." };
+  else if (ratio >= 0.66) card = { rar: "◆ EPIC ◆",       img: "sprite-enri.png",  name: "ENRI",  quote: "I don't chase success. I nap and it finds me." };
+  else                    card = { rar: "● COMMON ●",     img: "building-office.png", name: "OFFICE PASS", quote: "Everyone starts on day one. Clock in and retry!" };
+
+  const isBossWin = st.boss;
+  const waMsg = encodeURIComponent("Hola Dan! 🎮 I finished stage " + st.num + " of THE OFFICE TOWER with " + S.pawsTotal + "/" + max + " paws 🐾 — I want to claim my FREE trial lesson! 🚀");
+  const waLink = "https://wa.me/5491123709477?text=" + waMsg;
+
+  stage.innerHTML =
+    '<div class="scene-tag">' + (isBossWin ? "★ BUILDING COMPLETE ★" : "SHIFT COMPLETE · " + st.name.toUpperCase()) + '</div>' +
+    '<div class="center"><div class="title-big" style="font-size:0.95rem;">' + (isBossWin ? "PROMOTED!" : "RANK UP!") + '</div></div>' +
+    '<div class="stat-grid">' +
+      '<div class="stat"><div class="sl">PAWS</div><div class="sv">' + S.pawsTotal + '/' + max + '</div></div>' +
+      '<div class="stat"><div class="sl">TIPS</div><div class="sv">$' + S.coins + '</div></div>' +
+      '<div class="stat"><div class="sl">XP</div><div class="sv">' + S.xp + '</div></div>' +
+    '</div>' +
+    '<p class="px center" style="font-size:0.5rem; color:var(--muted); letter-spacing:1px;">ENGLISH YOU USED TODAY</p>' +
+    '<div class="wordchips">' + st.words.map(w => "<span>" + w + "</span>").join("") + '</div>' +
+    '<div class="card-reveal">' +
+      '<div class="rar">' + card.rar + '</div>' +
+      '<div class="cface"><img src="' + card.img + '" alt="" style="height:80px;"></div>' +
+      '<div class="cname">' + card.name + '</div>' +
+      '<div class="cquote">"' + card.quote + '"</div>' +
+    '</div>';
+
+  let danSay, danKey;
+  if (isBossWin) {
+    danSay = "YES! You did it — the Office Tower is yours. You're promoted! Rank up to B1. The Detective Agency is next... when you're ready.";
+    danKey = "sb-win";
+  } else if (S.pawsTotal >= max * 0.75) {
+    danSay = "Not bad, rookie. Not bad at ALL. Your prize is waiting — claim it!"; danKey = "dan-good";
+  } else {
+    danSay = "Hey, that was hard! Run it back for a better card — or claim your prize anyway."; danKey = "dan-ok";
+  }
+  stage.appendChild(bubble("dan", danSay, danKey));
+  say(danKey, danSay);
+
+  const iNext = ORDER.indexOf(S.sid) + 1;
+  const hasNext = !isBossWin && iNext < ORDER.length && isUnlocked(ORDER[iNext]);
+  const acts = el('<div class="actions" style="justify-content:center; margin-top:14px;">' +
+    (hasNext ? '<button class="btn serve" id="nextStageBtn">▶ NEXT SHIFT</button>' : '') +
+    (isBossWin ? '<a class="btn serve" href="a2-final.html">🎓 OFFICIAL A2 EXAM</a>' : '') +
+    '<button class="btn cyan" id="selBtn">SHIFT SELECT</button>' +
+    '<a class="btn" href="city.html">🏙 CITY MAP</a>' +
+    '<a class="btn gold" href="' + waLink + '" target="_blank" rel="noopener">★ CLAIM FREE TRIAL LESSON</a>' +
+    '<button class="btn" id="shareBtn">➤ SHARE SCORE</button></div>');
+  stage.appendChild(acts);
+
+  if (hasNext) document.getElementById("nextStageBtn").addEventListener("click", () => { blip(); startStage(ORDER[iNext]); });
+  document.getElementById("selBtn").addEventListener("click", () => { blip(); showSelect(); });
+  document.getElementById("shareBtn").addEventListener("click", async () => {
+    blip();
+    const txt = "I scored " + S.pawsTotal + "/" + max + " 🐾 on stage " + st.num + " of THE OFFICE TOWER — English for All · Rank Up! 🕹️ Can you beat me? " + location.href.split("?")[0];
+    try {
+      if (navigator.share) await navigator.share({ text: txt });
+      else { await navigator.clipboard.writeText(txt); alert("Copied! / ¡Copiado! 📋"); }
+    } catch (e) {}
+  });
+}
+
+function showGameOver() {
+  buzz(); stopTimer();
+  stage.innerHTML =
+    '<div class="center">' +
+      '<div class="title-big" style="color:var(--red); text-shadow: 0 0 16px var(--red);">SHIFT OVER</div>' +
+    '</div>';
+  const danSay = "Hey — a tough first week gets EVERYBODY. Take a breath and run it back. Enri believes in you. Probably.";
+  stage.appendChild(bubble("dan", danSay, "dan-over"));
+  say("dan-over", danSay);
+  const btn = el('<div class="actions" style="justify-content:center; margin-top:16px;">' +
+    '<button class="btn cyan" id="retryBtn">↻ TRY AGAIN</button>' +
+    '<button class="btn" id="selBtn2">SHIFT SELECT</button></div>');
+  stage.appendChild(btn);
+  document.getElementById("retryBtn").addEventListener("click", () => { blip(); startStage(S.sid); });
+  document.getElementById("selBtn2").addEventListener("click", () => { blip(); showSelect(); });
+}
+
+/* ============ BOOT ============ */
+Object.keys(STAGES).forEach(k => { STAGES[k].id = k; });
+resetState("s1"); hud();
+const urlStage = new URLSearchParams(location.search).get("stage");
+if (urlStage && STAGES[urlStage] && isUnlocked(urlStage)) startStage(urlStage);
+else showTitle();
+</script>
+<script>
+(function(){
+  if(!window.Audio) return;
+  var KEY="nc_music";
+  var on=(localStorage.getItem(KEY)||"on")==="on";
+  var m=new Audio("efa-theme.mp3"); m.loop=true; m.preload="auto"; m.volume=0.3;
+  window.__ncMusic=m; window.__ncMusicVol=0.3;
+  var last=parseFloat(sessionStorage.getItem("nc_music_t")||"0");
+  if(last>0){ m.addEventListener("loadedmetadata",function(){ try{ m.currentTime=last%(m.duration||1);}catch(e){} },{once:true}); }
+  var btn=document.createElement("button");
+  btn.className="music-btn"; btn.title="Music on/off"; btn.setAttribute("aria-label","Music on/off");
+  function draw(){ btn.textContent=on?"🎵":"🔇"; btn.style.opacity=on?"1":"0.5"; }
+  draw(); document.body.appendChild(btn);
+  var started=false;
+  function start(){ if(started||!on) return; started=true; m.play().catch(function(){ started=false; }); }
+  ["pointerdown","keydown","touchstart"].forEach(function(ev){ document.addEventListener(ev,start,{once:true,passive:true}); });
+  btn.addEventListener("click",function(e){ e.stopPropagation(); on=!on; localStorage.setItem(KEY,on?"on":"off"); draw(); if(on){ started=true; m.play().catch(function(){}); } else { m.pause(); } });
+  window.addEventListener("pagehide",function(){ try{ sessionStorage.setItem("nc_music_t",String(m.currentTime||0)); }catch(e){} });
+})();
+</script>
+</body>
+</html>

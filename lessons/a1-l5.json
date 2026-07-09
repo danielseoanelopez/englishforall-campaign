@@ -86,7 +86,7 @@
       "type": "flashcards",
       "id": "fc-obj",
       "title": "FLASHCARDS · objetos",
-      "intro": "Tocá cada tarjeta para ver el significado.",
+      "intro": "Toca cada tarjeta para ver el significado.",
       "cards": [
         {
           "front": "book 📖",
@@ -118,7 +118,7 @@
       "type": "picMatch",
       "id": "ex-pic",
       "title": "UNÍ OBJETO E IMAGEN",
-      "intro": "Tocá la imagen y luego la palabra correcta.",
+      "intro": "Toca la imagen y luego la palabra correcta.",
       "pairs": [
         {
           "img": "📖",
@@ -150,7 +150,7 @@
       "type": "memory",
       "id": "mem-obj",
       "title": "MEMORY · objeto y palabra",
-      "intro": "Encontrá cada imagen con su palabra. Tocá dos cartas.",
+      "intro": "Encuentra cada imagen con su palabra. Toca dos cartas.",
       "pairs": [
         {
           "a": "🖊️",
@@ -243,7 +243,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "a / an / there is / there are",
-      "intro": "Elegí la opción correcta.",
+      "intro": "Elige la opción correcta.",
       "items": [
         {
           "q": "It's ___ apple.",

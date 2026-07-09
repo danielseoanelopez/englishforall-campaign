@@ -118,7 +118,7 @@
       "type": "order",
       "id": "ex-order",
       "title": "ORDENÁ LA HISTORIA",
-      "intro": "Tocá las palabras para reconstruir las frases de la noche del lanzamiento.",
+      "intro": "Toca las palabras para reconstruir las frases de la noche del lanzamiento.",
       "items": [
         {
           "words": [
@@ -238,7 +238,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "CONTINUO o SIMPLE",
-      "intro": "Elegí la forma correcta. Pensá: ¿escena de fondo (was/were + -ing) o acción que pasó (past simple)?",
+      "intro": "Elige la forma correcta. Piensa: ¿escena de fondo (was/were + -ing) o acción que pasó (past simple)?",
       "items": [
         {
           "q": "I ___ a film when my phone rang.",
@@ -300,7 +300,7 @@
       "type": "memory",
       "id": "mem-past",
       "title": "MEMORY · verbo y pasado",
-      "intro": "Encontrá cada verbo con su past simple irregular. Tocá dos cartas.",
+      "intro": "Encuentra cada verbo con su past simple irregular. Toca dos cartas.",
       "pairs": [
         {
           "a": "find",
@@ -377,7 +377,7 @@
     {
       "type": "writing",
       "title": "✍️ MY 'EVERYTHING WENT WRONG' STORY",
-      "intro": "Contá una historia real (o inventada) de un día en que algo salió mal — en el trabajo, un viaje, un examen… (6–8 frases):",
+      "intro": "Cuenta una historia real (o inventada) de un día en que algo salió mal — en el trabajo, un viaje, un examen… (6–8 frases):",
       "checklist": [
         "Empezá con la escena de fondo: <b>I was …ing</b> (I was working late / I was travelling…)",
         "La acción que interrumpe en <b>past simple</b>: <i>…when my phone rang</i>",
@@ -387,7 +387,7 @@
       ],
       "placeholder": "It was a normal Friday. I was…",
       "example": "It was a normal Friday. I was working from home, and everything was quiet. Suddenly, my computer stopped working — five minutes before an important meeting! While I was restarting it, I called my colleague from my phone. She started the meeting without me. As soon as my computer came back, I joined the call. In the end, nobody noticed the problem, but my heart was still racing!",
-      "hw": "Escribí tu historia y grabate contándola en voz alta (¡sin leer, si podés!). Enviame el texto y el audio por WhatsApp y lo corregimos."
+      "hw": "Escribe tu historia y grábate contándola en voz alta (¡sin leer, si puedes!). Envíame el texto y el audio por WhatsApp y lo corregimos."
     }
   ]
 }

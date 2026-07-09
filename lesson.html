@@ -46,7 +46,7 @@
     <div class="stars" id="starRow"></div>
     <p class="score" id="scoreText"></p>
     <p class="rankup" id="rankupLine">LESSON CLEAR!</p>
-    <p class="rankup-sub">¡Práctica un poco cada día y sube de nivel!</p>
+    <p class="rankup-sub">¡Practica un poco cada día y sube de nivel!</p>
     <div class="contact-box">
       <div class="panel-title">★ ¿DUDAS? LO VEMOS EN CLASE</div>
       <p>Envíame tu <b>tarea escrita</b> + tu <b>grabación leyéndola</b> por WhatsApp y lo corregimos juntos. ¡Vas por buen camino!</p>
@@ -84,18 +84,22 @@ const scores = {};                 // blockId -> {correct,total}
 const matchState = {}, orderState = {}, memoryState = {};
 const esc = s => String(s == null ? "" : s);
 const escAttr = s => String(s == null ? "" : s).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+const stripTags = s => String(s == null ? "" : s).replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 const LET = "abcd";
+// speaker button: tap to hear the text read aloud (Web Speech). Used on dialogue lines & options.
+function spkBtn(text){ return `<button type="button" class="spk-btn" title="Escuchar y repetir" aria-label="Escuchar y repetir" data-say="${escAttr(stripTags(text))}" onclick="event.preventDefault();event.stopPropagation();speakText(this)">🔊</button>`; }
 function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
 // ---------- question helper (mcq / trueFalse) — used by listening, gapFill, dialogue ----------
-function qHtml(q, name, num){
+function qHtml(q, name, num, withSpeak){
   let opts, correct;
   if(q.type === "trueFalse"){ opts = ["✔ True","✘ False"]; correct = (q.answer === true || q.answer === 0) ? 0 : 1; }
   else { opts = q.options; correct = q.answer; }
   const order = shuffle(opts.map((_,i)=>i));
   const numHtml = (num!=null) ? `<span class="qnum">${String(num).padStart(2,"0")}</span>` : "";
+  const speak = withSpeak && q.type !== "trueFalse";
   return `<div class="q" data-correct="${LET[correct]}"><p>${numHtml}${esc(q.q)}</p>${
-    order.map(oi=>`<label class="option"><input type="radio" name="${name}" value="${LET[oi]}"><span>${esc(opts[oi])}</span></label>`).join("")
+    order.map(oi=>`<label class="option"><input type="radio" name="${name}" value="${LET[oi]}"><span>${esc(opts[oi])}</span>${speak?spkBtn(opts[oi]):""}</label>`).join("")
   }</div>`;
 }
 
@@ -138,8 +142,8 @@ function gapFillHtml(b, id){
 function dialogueHtml(b, id){
   let n=0;
   const body = (b.lines||[]).map(l=>{
-    if(l.gap) return qHtml(l, id+"q"+(n++), null);
-    return `<p class="dlg-line"><span class="spk ${l.b?'b':''}">${esc(l.spk)}:</span> ${esc(l.html)}</p>`;
+    if(l.gap) return qHtml(l, id+"q"+(n++), null, true);
+    return `<p class="dlg-line">${spkBtn(l.html)}<span class="spk ${l.b?'b':''}">${esc(l.spk)}:</span> ${esc(l.html)}</p>`;
   }).join("");
   return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title">💬 ${esc(b.title||'ELEGÍ LA RESPUESTA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   ${body}<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
@@ -182,14 +186,14 @@ function memoryHtml(b, id){
   (b.pairs||[]).forEach((p,i)=>{ cards.push({pair:i, face:p.a}); cards.push({pair:i, face:p.b}); });
   const sh = shuffle(cards);
   memoryState[id] = { flipped:[], matched:0, total:(b.pairs||[]).length, lock:false };
-  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title">🧠 ${esc(b.title||'MEMORY · encontrá los pares')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title">🧠 ${esc(b.title||'MEMORY · encuentra los pares')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><span class="mem-q">❓</span><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
   <div class="mem-status" id="${id}-status">0 / ${(b.pairs||[]).length} pares</div></div>`;
 }
 function flashcardsHtml(b, id){
-  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🃏 ${esc(b.title||'FLASHCARDS · tocá para girar')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🃏 ${esc(b.title||'FLASHCARDS · toca para girar')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="fc-deck">${(b.cards||[]).map(c=>`<button type="button" class="flashcard" onclick="this.classList.toggle('flipped'); blip();"><span class="fc-inner"><span class="fc-front">${esc(c.front)}</span><span class="fc-back">${esc(c.back)}</span></span></button>`).join("")}</div>
-  <p class="es" style="margin-top:8px">👆 Tocá cada tarjeta para ver la traducción.</p></div>`;
+  <p class="es" style="margin-top:8px">👆 Toca cada tarjeta para ver la traducción.</p></div>`;
 }
 function writingHtml(w){
   return `<div class="stage-tag">✍️ WRITING <span class="es">· en clase o tarea (HW)</span></div>
@@ -263,6 +267,30 @@ let audioCtx = null;
 function beep(freq, dur, vol){ if(muted) return; try { audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)(); const o=audioCtx.createOscillator(), g=audioCtx.createGain(); o.type="square"; o.frequency.value=freq; g.gain.value=vol||0.035; o.connect(g); g.connect(audioCtx.destination); o.start(); g.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime+dur); o.stop(audioCtx.currentTime+dur); } catch(e){} }
 function blip(){ beep(660,0.07); } function okBeep(){ beep(784,0.1,0.04); } function noBeep(){ beep(220,0.18,0.04); }
 function victory(){ [523,659,784,1047].forEach((f,i)=>setTimeout(()=>beep(f,0.18,0.045), i*110)); }
+// ---- speech: read a line/option aloud so students can listen & repeat (independent of the beep mute) ----
+let VOICES = [];
+function loadVoices(){ try{ VOICES = speechSynthesis.getVoices() || []; }catch(e){} }
+if("speechSynthesis" in window){ loadVoices(); try{ speechSynthesis.onvoiceschanged = loadVoices; }catch(e){} }
+function pickEnVoice(){ return VOICES.find(v=>/en[-_]us/i.test(v.lang)) || VOICES.find(v=>/^en/i.test(v.lang)) || null; }
+function speak(text, onend){
+  text = String(text==null?"":text).trim();
+  if(!text || !("speechSynthesis" in window)){ if(onend) onend(); return; }
+  try{
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US"; u.rate = 0.9;
+    if(!VOICES.length) loadVoices();
+    const v = pickEnVoice(); if(v) u.voice = v;
+    u.onend = u.onerror = function(){ if(onend){ try{ onend(); }catch(e){} } };
+    speechSynthesis.speak(u);
+  }catch(e){ if(onend) onend(); }
+}
+function speakText(btn){
+  if(!btn) return;
+  document.querySelectorAll(".spk-btn.playing").forEach(b=>{ if(b!==btn) b.classList.remove("playing"); });
+  btn.classList.add("playing");
+  speak(btn.dataset.say || btn.getAttribute("data-say") || "", function(){ btn.classList.remove("playing"); });
+}
 function toggleMute(){ muted=!muted; try{ localStorage.setItem("efa_muted", muted?"1":"0"); }catch(e){} document.getElementById("muteBtn").textContent = muted?"🔇":"🔊"; if(!muted) blip(); }
 (function(){ document.getElementById("muteBtn").textContent = muted?"🔇":"🔊"; })();
 (function initSideDeco(){ const items=["★","✦","☕","🎧","💬","🏆","★","✦","⭐","📧"], colors=["#00e5ff","#ff3df0","#9d4dff","#ffc83d"]; ["decoLeft","decoRight"].forEach(id=>{ const box=document.getElementById(id); for(let i=0;i<8;i++){ const s=document.createElement("span"); s.textContent=items[Math.floor(Math.random()*items.length)]; s.style.left=(10+Math.random()*70)+"%"; s.style.color=colors[Math.floor(Math.random()*colors.length)]; s.style.animationDuration=(14+Math.random()*12)+"s"; s.style.animationDelay=(-Math.random()*22)+"s"; box.appendChild(s);} }); })();

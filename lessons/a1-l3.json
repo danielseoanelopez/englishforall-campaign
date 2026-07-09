@@ -87,7 +87,7 @@
       "type": "flashcards",
       "id": "fc-days",
       "title": "FLASHCARDS · días de la semana",
-      "intro": "Tocá cada tarjeta para ver el día en español.",
+      "intro": "Toca cada tarjeta para ver el día en español.",
       "cards": [
         {
           "front": "Monday",
@@ -119,7 +119,7 @@
       "type": "match",
       "id": "ex-time",
       "title": "UNÍ LA HORA",
-      "intro": "Tocá el reloj y luego cómo se dice.",
+      "intro": "Toca el reloj y luego cómo se dice.",
       "pairs": [
         {
           "l": "3:00",
@@ -207,7 +207,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "at / on / in",
-      "intro": "Elegí la preposición de tiempo correcta.",
+      "intro": "Elige la preposición de tiempo correcta.",
       "items": [
         {
           "q": "The class is ___ four o'clock.",
@@ -260,7 +260,7 @@
       "type": "memory",
       "id": "mem-num",
       "title": "MEMORY · número y palabra",
-      "intro": "Encontrá cada número con su palabra. Tocá dos cartas.",
+      "intro": "Encuentra cada número con su palabra. Toca dos cartas.",
       "pairs": [
         {
           "a": "1",

@@ -102,7 +102,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "COMPLETÁ EN PRESENTE",
-      "intro": "Elegí la forma correcta del present simple.",
+      "intro": "Elige la forma correcta del present simple.",
       "items": [
         {
           "q": "She ___ her emails every morning.",
@@ -241,7 +241,7 @@
       "type": "order",
       "id": "ex-order",
       "title": "ORDENÁ LA FRASE",
-      "intro": "Tocá las palabras para formar la frase.",
+      "intro": "Toca las palabras para formar la frase.",
       "items": [
         {
           "words": [

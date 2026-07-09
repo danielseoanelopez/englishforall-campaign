@@ -17,7 +17,7 @@
       "type": "grammar",
       "tag": "conditionals",
       "title": "📘 CONDICIONALES · 1st & 2nd",
-      "intro": "Para negociar necesitás condicionales: el <b style='color:var(--gold)'>1st conditional</b> para cosas posibles y reales, y el <b style='color:var(--gold)'>2nd conditional</b> para situaciones hipotéticas. Repasa y luego practica.",
+      "intro": "Para negociar necesitas condicionales: el <b style='color:var(--gold)'>1st conditional</b> para cosas posibles y reales, y el <b style='color:var(--gold)'>2nd conditional</b> para situaciones hipotéticas. Repasa y luego practica.",
       "cells": [
         {
           "h": "1️⃣ First conditional",
@@ -117,7 +117,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "COMPLETÁ EL CONDICIONAL",
-      "intro": "Elegí la forma correcta. Pensá: ¿posible y real (1st) o hipotético (2nd)?",
+      "intro": "Elige la forma correcta. Piensa: ¿posible y real (1st) o hipotético (2nd)?",
       "items": [
         {
           "q": "If you confirm today, we ___ on Monday.",
@@ -179,7 +179,7 @@
       "type": "dialogue",
       "id": "ex-dlg",
       "title": "ELEGÍ TU OFERTA",
-      "intro": "Estás negociando con un cliente. Elegí la respuesta con el condicional correcto — y el tono profesional.",
+      "intro": "Estás negociando con un cliente. Elige la respuesta con el condicional correcto — y el tono profesional.",
       "lines": [
         {
           "spk": "Client",
@@ -216,7 +216,7 @@
         },
         {
           "gap": true,
-          "q": "Ponés una condición clara pero amable:",
+          "q": "Pones una condición clara pero amable:",
           "options": [
             "Yes — as long as the scope doesn't change, we'll deliver on time.",
             "Unless we deliver, the deadline is Friday.",
@@ -340,7 +340,7 @@
       "type": "match",
       "id": "ex-match",
       "title": "UNÍ LA CONDICIÓN CON SU RESULTADO",
-      "intro": "Tocá la cláusula con if y luego su resultado lógico.",
+      "intro": "Toca la cláusula con if y luego su resultado lógico.",
       "pairs": [
         {
           "l": "If you confirm today,",
@@ -454,7 +454,7 @@
       ],
       "placeholder": "Hi David, Thanks for your message about…",
       "example": "Hi David, Thanks for your message about the mobile app — it's a great idea. If you confirm phase two this week, we'll give you a ten percent discount. If we had a bigger budget, we would build everything at once, but phase two protects the website deadline. As long as the scope stays the same, we'll deliver on the fifteenth. Could you confirm by Friday? Best, Marcos",
-      "hw": "Escribí tu email de contraoferta y enviámelo por WhatsApp para corregirlo juntos."
+      "hw": "Escribe tu email de contraoferta y envíamelo por WhatsApp para corregirlo juntos."
     }
   ]
 }

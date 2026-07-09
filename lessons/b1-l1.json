@@ -113,7 +113,7 @@
     {
       "type": "flashcards",
       "id": "ex-fc",
-      "title": "PAST PARTICIPLES · tocá para girar",
+      "title": "PAST PARTICIPLES · toca para girar",
       "intro": "Repasa los participios irregulares — los necesitas para el present perfect (have/has + participio).",
       "cards": [
         {
@@ -253,7 +253,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "PRESENT PERFECT o PAST SIMPLE",
-      "intro": "Elegí la forma correcta. Pensá: ¿tiempo terminado y específico (past simple) o resultado/experiencia ahora (present perfect)?",
+      "intro": "Elige la forma correcta. Piensa: ¿tiempo terminado y específico (past simple) o resultado/experiencia ahora (present perfect)?",
       "items": [
         {
           "q": "I ___ the report yesterday.",

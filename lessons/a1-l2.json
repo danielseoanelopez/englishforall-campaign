@@ -73,7 +73,7 @@
         },
         {
           "en": "How old are you?",
-          "sp": "¿cuántos años tenés?"
+          "sp": "¿cuántos años tienes?"
         },
         {
           "en": "Years old",
@@ -86,7 +86,7 @@
       "type": "flashcards",
       "id": "fc-jobs",
       "title": "FLASHCARDS · trabajos",
-      "intro": "Tocá cada tarjeta para ver la traducción. Estúdialas antes de los ejercicios.",
+      "intro": "Toca cada tarjeta para ver la traducción. Estúdialas antes de los ejercicios.",
       "cards": [
         {
           "front": "teacher <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-1f3eb.svg' alt='teacher'>",
@@ -118,7 +118,7 @@
       "type": "picMatch",
       "id": "ex-pic",
       "title": "UNÍ TRABAJO E IMAGEN",
-      "intro": "Tocá la imagen y luego el trabajo correcto.",
+      "intro": "Toca la imagen y luego el trabajo correcto.",
       "pairs": [
         {
           "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-1f3eb.svg' alt='teacher'>",
@@ -223,7 +223,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "COMPLETÁ CON TO BE",
-      "intro": "Elegí am, is o are.",
+      "intro": "Elige am, is o are.",
       "items": [
         {
           "q": "I ___ from Mexico.",
@@ -276,7 +276,7 @@
       "type": "memory",
       "id": "mem-countries",
       "title": "MEMORY · países y banderas",
-      "intro": "Encontrá cada país con su bandera. Tocá dos cartas.",
+      "intro": "Encuentra cada país con su bandera. Toca dos cartas.",
       "pairs": [
         {
           "a": "Mexico",

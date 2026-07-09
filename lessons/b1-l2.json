@@ -117,7 +117,7 @@
       "type": "match",
       "id": "ex-match",
       "title": "UNÍ LA FRASE CON SU FUNCIÓN",
-      "intro": "Tocá la frase en inglés y luego su función en una reunión.",
+      "intro": "Toca la frase en inglés y luego su función en una reunión.",
       "pairs": [
         {
           "l": "Let's get started.",
@@ -149,7 +149,7 @@
       "type": "dialogue",
       "id": "ex-dlg",
       "title": "ELEGÍ LA RESPUESTA DIPLOMÁTICA",
-      "intro": "Estás en una reunión. Elegí la opción más profesional y educada.",
+      "intro": "Estás en una reunión. Elige la opción más profesional y educada.",
       "lines": [
         {
           "spk": "Priya",
@@ -305,7 +305,7 @@
       "type": "order",
       "id": "ex-order",
       "title": "ORDENÁ LA FRASE DIPLOMÁTICA",
-      "intro": "Tocá las palabras para formar frases educadas de reunión.",
+      "intro": "Toca las palabras para formar frases educadas de reunión.",
       "items": [
         {
           "words": [

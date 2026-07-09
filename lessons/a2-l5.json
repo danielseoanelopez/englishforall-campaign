@@ -81,7 +81,7 @@
           "sp": "vale la pena"
         }
       ],
-      "note": "<b>Cómo funciona:</b> uní adjetivos 🔗, completa comparativos 📝 y escucha al equipo comparar 🎧. ✓ CHECK en cada uno."
+      "note": "<b>Cómo funciona:</b> une adjetivos 🔗, completa comparativos 📝 y escucha al equipo comparar 🎧. ✓ CHECK en cada uno."
     },
     {
       "type": "story",
@@ -103,7 +103,7 @@
       "type": "match",
       "id": "ex-match",
       "title": "UNÍ ADJETIVO E INGLÉS",
-      "intro": "Tocá la palabra en inglés y luego su traducción.",
+      "intro": "Toca la palabra en inglés y luego su traducción.",
       "pairs": [
         {
           "l": "cheap",
@@ -135,7 +135,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "COMPLETÁ EL COMPARATIVO",
-      "intro": "Elegí el comparativo correcto.",
+      "intro": "Elige el comparativo correcto.",
       "items": [
         {
           "q": "This laptop is ___ than mine.",
