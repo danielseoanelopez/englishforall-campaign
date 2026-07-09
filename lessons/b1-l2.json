@@ -91,7 +91,7 @@
           "sp": "fecha límite"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>unir</b> 🔗, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Hacé el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>unir</b> 🔗, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
     },
     {
       "type": "story",
@@ -116,7 +116,7 @@
     {
       "type": "match",
       "id": "ex-match",
-      "title": "UNÍ LA FRASE CON SU FUNCIÓN",
+      "title": "UNE LA FRASE CON SU FUNCIÓN",
       "intro": "Toca la frase en inglés y luego su función en una reunión.",
       "pairs": [
         {
@@ -148,7 +148,7 @@
     {
       "type": "dialogue",
       "id": "ex-dlg",
-      "title": "ELEGÍ LA RESPUESTA DIPLOMÁTICA",
+      "title": "ELIGE LA RESPUESTA DIPLOMÁTICA",
       "intro": "Estás en una reunión. Elige la opción más profesional y educada.",
       "lines": [
         {
@@ -157,7 +157,7 @@
         },
         {
           "gap": true,
-          "q": "Discrepás, pero con tacto:",
+          "q": "Discrepas, pero con tacto:",
           "options": [
             "I see your point, but maybe we could delay it instead of cancelling?",
             "No, that's a bad idea.",
@@ -172,7 +172,7 @@
         },
         {
           "gap": true,
-          "q": "Tomás la palabra y resumís:",
+          "q": "Tomas la palabra y resumes:",
           "options": [
             "Sure. So far, we've finished the design and we're testing the payments.",
             "I don't know, ask David.",
@@ -186,7 +186,7 @@
         },
         {
           "gap": true,
-          "q": "Querés interrumpir con cortesía:",
+          "q": "Quieres interrumpir con cortesía:",
           "options": [
             "Sorry to jump in, but can we focus on the next steps?",
             "Stop talking, please.",
@@ -200,7 +200,7 @@
         },
         {
           "gap": true,
-          "q": "Confirmás y cerrás la reunión:",
+          "q": "Confirmas y cierras la reunión:",
           "options": [
             "Yes, I think we're all on the same page. Let's wrap up.",
             "I'm from Mexico.",
@@ -304,7 +304,7 @@
     {
       "type": "order",
       "id": "ex-order",
-      "title": "ORDENÁ LA FRASE DIPLOMÁTICA",
+      "title": "ORDENA LA FRASE DIPLOMÁTICA",
       "intro": "Toca las palabras para formar frases educadas de reunión.",
       "items": [
         {

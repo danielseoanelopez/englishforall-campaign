@@ -92,7 +92,7 @@
           "sp": "vale la pena + verbo"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> 🃏, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>ordenar</b> 🧩. Hacé el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> 🃏, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>ordenar</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
     },
     {
       "type": "story",
@@ -307,7 +307,7 @@
     {
       "type": "order",
       "id": "ex-order",
-      "title": "ORDENÁ LA FRASE DIPLOMÁTICA",
+      "title": "ORDENA LA FRASE DIPLOMÁTICA",
       "intro": "Toca las palabras para formar la sugerencia suave.",
       "items": [
         {
@@ -400,11 +400,11 @@
       "title": "✍️ DISAGREE, BUT NICELY",
       "intro": "Tu jefe/a propone algo que te parece un error (elige la situación). Escribe tu respuesta (5–7 frases):",
       "checklist": [
-        "Reconocé su punto primero (<b>I take your point…</b>)",
-        "Marcá tu desacuerdo con tacto (<b>I see it differently / With respect,…</b>)",
-        "Usá un modal de deducción (<b>must / might / can't be</b>)",
+        "Reconoce su punto primero (<b>I take your point…</b>)",
+        "Marca tu desacuerdo con tacto (<b>I see it differently / With respect,…</b>)",
+        "Usa un modal de deducción (<b>must / might / can't be</b>)",
         "Apoyate en evidencia (<b>The data suggests…</b>)",
-        "Proponé un paso siguiente (<b>I'd suggest… / It might be worth…</b>)"
+        "Propón un paso siguiente (<b>I'd suggest… / It might be worth…</b>)"
       ],
       "placeholder": "Hi …, I take your point about…",
       "example": "Hi Priya, I take your point about the deadline — it's important. But I see it differently. If we launch this Friday, the payment system might be unstable, and that could cost us sales. The data suggests we need three more days of testing. I'd suggest we launch on Tuesday instead — it might be worth waiting to get it right. What do you think? Best, Marcos",

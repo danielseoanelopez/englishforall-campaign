@@ -102,7 +102,7 @@
     {
       "type": "match",
       "id": "ex-match",
-      "title": "UNÍ ADJETIVO E INGLÉS",
+      "title": "UNE ADJETIVO E INGLÉS",
       "intro": "Toca la palabra en inglés y luego su traducción.",
       "pairs": [
         {
@@ -134,7 +134,7 @@
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "COMPLETÁ EL COMPARATIVO",
+      "title": "COMPLETA EL COMPARATIVO",
       "intro": "Elige el comparativo correcto.",
       "items": [
         {

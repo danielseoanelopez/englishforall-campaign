@@ -80,7 +80,7 @@
           "sp": "terminar el trabajo"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Hacé el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
     },
     {
       "type": "story",
@@ -101,7 +101,7 @@
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "COMPLETÁ EN PRESENTE",
+      "title": "COMPLETA EN PRESENTE",
       "intro": "Elige la forma correcta del present simple.",
       "items": [
         {
@@ -240,7 +240,7 @@
     {
       "type": "order",
       "id": "ex-order",
-      "title": "ORDENÁ LA FRASE",
+      "title": "ORDENA LA FRASE",
       "intro": "Toca las palabras para formar la frase.",
       "items": [
         {

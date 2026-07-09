@@ -223,7 +223,7 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>Her</span> name is Lucy. She's <span class='tg'>got</span> blue eyes and brown hair."
+          "html": "<span class='tg'>Her</span> name is Lucy. She <span class='tg'>has got</span> blue eyes and brown hair."
         },
         {
           "spk": "Ana",
@@ -232,14 +232,14 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "Yes, he's an engineer."
+          "html": "Yes, he is an engineer."
         }
       ]
     },
     {
       "type": "order",
       "id": "ex-order",
-      "title": "ORDENÁ LA FRASE",
+      "title": "ORDENA LA FRASE",
       "intro": "Toca las palabras para formar la frase.",
       "items": [
         {
@@ -384,7 +384,7 @@
         ],
         [
           "tom",
-          "Her name is Lucy. She's got blue eyes and brown hair."
+          "Her name is Lucy. She has got blue eyes and brown hair."
         ],
         [
           "ana",
@@ -392,7 +392,7 @@
         ],
         [
           "tom",
-          "Yes, he's an engineer."
+          "Yes, he is an engineer."
         ]
       ]
     },

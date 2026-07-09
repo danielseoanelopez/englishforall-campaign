@@ -91,7 +91,7 @@
           "sp": "para el final de…"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>memory</b> 🧠, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>unir</b> 🔗. Hacé el ✓ CHECK en cada ejercicio. Al terminar… te espera el <b>BOSS</b> 👑."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>memory</b> 🧠, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>unir</b> 🔗. Haz el ✓ CHECK en cada ejercicio. Al terminar… te espera el <b>BOSS</b> 👑."
     },
     {
       "type": "story",
@@ -300,7 +300,7 @@
     {
       "type": "match",
       "id": "ex-match",
-      "title": "UNÍ LAS EXPRESIONES DE TIEMPO",
+      "title": "UNE LAS EXPRESIONES DE TIEMPO",
       "intro": "Toca la expresión en inglés y luego su significado.",
       "pairs": [
         {

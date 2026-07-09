@@ -80,7 +80,7 @@
           "sp": "irse → dejó"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar frases</b> 📝, <b>escucha</b> 🎧 y <b>ordenar palabras</b> 🧩. Hacé el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar frases</b> 📝, <b>escucha</b> 🎧 y <b>ordenar palabras</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
     },
     {
       "type": "story",
@@ -101,7 +101,7 @@
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "COMPLETÁ EN PASADO",
+      "title": "COMPLETA EN PASADO",
       "intro": "Elige la forma correcta del pasado simple.",
       "items": [
         {
@@ -241,7 +241,7 @@
     {
       "type": "order",
       "id": "ex-order",
-      "title": "ORDENÁ LA FRASE EN PASADO",
+      "title": "ORDENA LA FRASE EN PASADO",
       "intro": "Toca las palabras para formar la frase correcta.",
       "items": [
         {

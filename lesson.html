@@ -86,20 +86,27 @@ const esc = s => String(s == null ? "" : s);
 const escAttr = s => String(s == null ? "" : s).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 const stripTags = s => String(s == null ? "" : s).replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 const LET = "abcd";
-// speaker button: tap to hear the text read aloud (Web Speech). Used on dialogue lines & options.
-function spkBtn(text){ return `<button type="button" class="spk-btn" title="Escuchar y repetir" aria-label="Escuchar y repetir" data-say="${escAttr(stripTags(text))}" onclick="event.preventDefault();event.stopPropagation();speakText(this)">🔊</button>`; }
+// sayText: what the speaker button reads — tags out, emoji out, "/" becomes a pause
+const sayText = s => stripTags(s).replace(/[\u{1F1E6}-\u{1F1FF}\u{1F300}-\u{1FAFF}\u{2190}-\u{2BFF}\u{FE0F}\u{200D}]/gu, "").replace(/\s*\/\s*/g, ", ").replace(/\s+/g, " ").trim();
+// speaker button: tap to hear the text read aloud (Web Speech). Used across every block type.
+// Rendered as <span role="button"> — NOT <button> — because it must live inside flashcards,
+// match tiles and option labels, and HTML forbids nesting a button inside a button.
+function spkBtn(text, extra){ const say = escAttr(sayText(text)); if(!say) return ""; return `<span class="spk-btn${extra?" "+extra:""}" role="button" tabindex="0" title="Escuchar y repetir" aria-label="Escuchar y repetir" data-say="${say}" onclick="event.preventDefault();event.stopPropagation();speakText(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();speakText(this);}">🔊</span>`; }
+// codeSay: pull just the ENGLISH targets (inside <code>/.ok/.tg tags) out of a bilingual grammar cell, so an English voice never reads the Spanish glosses.
+function codeSay(html){ const out=[]; const re=/<code>([\s\S]*?)<\/code>|<span class=['"](?:ok|tg)['"]>([\s\S]*?)<\/span>/g; let m; while((m=re.exec(html))){ let t=(m[1]!=null?m[1]:m[2]).replace(/<[^>]*>/g,"").replace(/\//g,", ").replace(/\s+/g," ").trim(); if(t) out.push(t); } return out.join("; "); }
 function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
 // ---------- question helper (mcq / trueFalse) — used by listening, gapFill, dialogue ----------
-function qHtml(q, name, num, withSpeak){
+function qHtml(q, name, num, sp){
+  sp = sp || {};                       // sp.q: speak the question line · sp.opt: speak each option
   let opts, correct;
   if(q.type === "trueFalse"){ opts = ["✔ True","✘ False"]; correct = (q.answer === true || q.answer === 0) ? 0 : 1; }
   else { opts = q.options; correct = q.answer; }
   const order = shuffle(opts.map((_,i)=>i));
   const numHtml = (num!=null) ? `<span class="qnum">${String(num).padStart(2,"0")}</span>` : "";
-  const speak = withSpeak && q.type !== "trueFalse";
-  return `<div class="q" data-correct="${LET[correct]}"><p>${numHtml}${esc(q.q)}</p>${
-    order.map(oi=>`<label class="option"><input type="radio" name="${name}" value="${LET[oi]}"><span>${esc(opts[oi])}</span>${speak?spkBtn(opts[oi]):""}</label>`).join("")
+  const optSpeak = sp.opt && q.type !== "trueFalse";
+  return `<div class="q" data-correct="${LET[correct]}"><p>${numHtml}${esc(q.q)}${sp.q?spkBtn(q.q,"mini"):""}</p>${
+    order.map(oi=>`<label class="option"><input type="radio" name="${name}" value="${LET[oi]}"><span>${esc(opts[oi])}</span>${optSpeak?spkBtn(opts[oi]):""}</label>`).join("")
   }</div>`;
 }
 
@@ -107,12 +114,12 @@ function qHtml(q, name, num, withSpeak){
 function grammarHtml(g){
   let h = `<div class="stage-tag">📘 GRAMMAR <span class="es">· ${esc(g.tag)}</span></div>
   <div class="card grammar" data-aos="fade-up"><div class="panel-title">${esc(g.title)}</div><p>${esc(g.intro)}</p>
-  <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}</div>`).join("")}</div>`;
+  <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}${spkBtn(codeSay(c.body),"mini")}</span>${esc(c.body)}</div>`).join("")}</div>`;
   if(g.ladderLabel) h += `<p style="margin-top:16px">${esc(g.ladderLabel)}</p>`;
-  if(g.ladder && g.ladder.length) h += `<div class="freq-bar">${g.ladder.map((c,i)=>`<span class="chip">${esc(c)}</span>${i<g.ladder.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
+  if(g.ladder && g.ladder.length) h += `<div class="freq-bar">${g.ladder.map((c,i)=>`<span class="chip">${esc(c)}${spkBtn(c,"mini")}</span>${i<g.ladder.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
   if(g.vocab && g.vocab.length){
     h += `<button class="toggle-btn" data-show="${esc(g.vocabBtn||'📒 Ver vocabulario')}" data-hide="📒 Ocultar vocabulario" onclick="toggleReveal('vocabRef', this)">${esc(g.vocabBtn||'📒 Ver vocabulario')}</button>
-    <div class="reveal" id="vocabRef"><div class="gloss" style="margin-top:14px">${g.vocab.map(v=>`<div class="term"><span class="en">${esc(v.en)}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
+    <div class="reveal" id="vocabRef"><div class="gloss" style="margin-top:14px">${g.vocab.map(v=>`<div class="term"><span class="en">${esc(v.en)}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
   }
   if(g.note) h += `<div class="note">${esc(g.note)}</div>`;
   return h + `</div>`;
@@ -125,7 +132,7 @@ function storyHtml(s){
 function listeningHtml(b, id, alt){
   let h = `<div class="card${alt?' alt':''}" id="${id}" data-aos="fade-up"><div class="panel-title">🎧 ${esc(b.title)}</div><p class="es">${esc(b.desc)}</p>
   <div class="player"><audio controls preload="metadata" src="${esc(b.src)}"></audio><div class="meta"><span>⏱ <b>${esc(b.dur)}</b></span><span>${esc(b.speakers)}</span></div></div>`;
-  h += (b.questions||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1)).join("");
+  h += (b.questions||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {q:true, opt:true})).join("");
   h += `<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div>`;
   if(b.speaking) h += `<div class="verbal"><p class="vq"><span class="mic">🎤</span><b>Speaking:</b> ${esc(b.speaking.prompt)}</p>
     <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('${id}-m', this)">💡 Pista para empezar</button>
@@ -135,27 +142,28 @@ function listeningHtml(b, id, alt){
   return h + `</div>`;
 }
 function gapFillHtml(b, id){
-  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">📝 ${esc(b.title||'COMPLETÁ LA FRASE')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  ${(b.items||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1)).join("")}
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">📝 ${esc(b.title||'COMPLETA LA FRASE')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  ${(b.items||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {opt:true})).join("")}
   <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function dialogueHtml(b, id){
   let n=0;
   const body = (b.lines||[]).map(l=>{
-    if(l.gap) return qHtml(l, id+"q"+(n++), null, true);
+    if(l.gap) return qHtml(l, id+"q"+(n++), null, {opt:true});
     return `<p class="dlg-line">${spkBtn(l.html)}<span class="spk ${l.b?'b':''}">${esc(l.spk)}:</span> ${esc(l.html)}</p>`;
   }).join("");
-  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title">💬 ${esc(b.title||'ELEGÍ LA RESPUESTA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title">💬 ${esc(b.title||'ELIGE LA RESPUESTA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   ${body}<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function matchHtml(b, id){
   matchState[id] = { sel:null, slots:{}, pairs:b.pairs };
   const rights = shuffle(b.pairs.map(p=>p.r));
-  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🔗 ${esc(b.title||'UNÍ LOS PARES')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  const side = b.speakSide || "l";   // which column is English: "l" (default), "r", or "none"
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🔗 ${esc(b.title||'UNE LOS PARES')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="match-grid"><div class="match-col">${
-    b.pairs.map((p,i)=>`<button type="button" class="match-l" id="${id}-l-${i}" onclick="mLeft('${id}',${i})"><span>${esc(p.l)}</span><span class="ml-slot" id="${id}-slot-${i}"></span></button>`).join("")
+    b.pairs.map((p,i)=>`<button type="button" class="match-l" id="${id}-l-${i}" onclick="mLeft('${id}',${i})"><span>${esc(p.l)}</span><span class="ml-slot" id="${id}-slot-${i}"></span>${side==="l"?spkBtn(p.l,"mini"):""}</button>`).join("")
   }</div><div class="match-col">${
-    rights.map(r=>`<button type="button" class="match-r" data-r="${escAttr(r)}" onclick="mRight('${id}',this)">${esc(r)}</button>`).join("")
+    rights.map(r=>`<button type="button" class="match-r" data-r="${escAttr(r)}" onclick="mRight('${id}',this)"><span>${esc(r)}</span>${side==="r"?spkBtn(r,"mini"):""}</button>`).join("")
   }</div></div>
   <div class="btn-row"><button class="btn check" onclick="checkMatch('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
@@ -166,18 +174,18 @@ function orderHtml(b, id){
     return `<div class="order-item" id="${id}-it-${k}"><div class="order-line" id="${id}-line-${k}"></div>
       <div class="order-bank" id="${id}-bank-${k}">${words.map(w=>`<button type="button" class="word" onclick="oMove('${id}',${k},this)">${esc(w)}</button>`).join("")}</div></div>`;
   }).join("");
-  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🧩 ${esc(b.title||'ORDENÁ LAS PALABRAS')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🧩 ${esc(b.title||'ORDENA LAS PALABRAS')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   ${body}<div class="btn-row"><button class="btn check" onclick="checkOrder('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function picMatchHtml(b, id){
   const pairs = (b.pairs||[]).map(p=>({l:p.img, r:p.word}));
   matchState[id] = { sel:null, slots:{}, pairs };
   const rights = shuffle(pairs.map(p=>p.r));
-  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🖼️ ${esc(b.title||'UNÍ IMAGEN Y PALABRA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🖼️ ${esc(b.title||'UNE IMAGEN Y PALABRA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="match-grid"><div class="match-col">${
     pairs.map((p,i)=>`<button type="button" class="match-l pic" id="${id}-l-${i}" onclick="mLeft('${id}',${i})"><span class="pic-em">${esc(p.l)}</span><span class="ml-slot" id="${id}-slot-${i}"></span></button>`).join("")
   }</div><div class="match-col">${
-    rights.map(r=>`<button type="button" class="match-r" data-r="${escAttr(r)}" onclick="mRight('${id}',this)">${esc(r)}</button>`).join("")
+    rights.map(r=>`<button type="button" class="match-r" data-r="${escAttr(r)}" onclick="mRight('${id}',this)"><span>${esc(r)}</span>${spkBtn(r,"mini")}</button>`).join("")
   }</div></div>
   <div class="btn-row"><button class="btn check" onclick="checkMatch('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
@@ -192,7 +200,7 @@ function memoryHtml(b, id){
 }
 function flashcardsHtml(b, id){
   return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🃏 ${esc(b.title||'FLASHCARDS · toca para girar')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  <div class="fc-deck">${(b.cards||[]).map(c=>`<button type="button" class="flashcard" onclick="this.classList.toggle('flipped'); blip();"><span class="fc-inner"><span class="fc-front">${esc(c.front)}</span><span class="fc-back">${esc(c.back)}</span></span></button>`).join("")}</div>
+  <div class="fc-deck">${(b.cards||[]).map(c=>`<button type="button" class="flashcard" onclick="this.classList.toggle('flipped'); blip();"><span class="fc-inner"><span class="fc-front">${esc(c.front)}${spkBtn(c.front,"mini fc-spk")}</span><span class="fc-back">${esc(c.back)}</span></span></button>`).join("")}</div>
   <p class="es" style="margin-top:8px">👆 Toca cada tarjeta para ver la traducción.</p></div>`;
 }
 function writingHtml(w){
@@ -340,6 +348,9 @@ function mFlip(id, cardId){
   const st=memoryState[id]; const card=document.getElementById(cardId);
   if(st.lock || card.classList.contains("matched") || card.classList.contains("flip")) return;
   card.classList.add("flip"); st.flipped.push(card);
+  // read the face aloud if it's a word (flag-only faces stay silent)
+  const faceSay = sayText((card.querySelector(".mem-face")||{innerHTML:""}).innerHTML);
+  if(faceSay && /[a-z]/i.test(faceSay)) speak(faceSay);
   if(st.flipped.length===2){
     st.lock=true; const a=st.flipped[0], bb=st.flipped[1];
     if(a.dataset.pair===bb.dataset.pair){

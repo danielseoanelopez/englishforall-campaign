@@ -104,7 +104,7 @@
     {
       "type": "match",
       "id": "ex-match",
-      "title": "UNÍ VOCABULARIO E INGLÉS",
+      "title": "UNE VOCABULARIO E INGLÉS",
       "intro": "Toca la palabra en inglés y luego su significado.",
       "pairs": [
         {
@@ -214,7 +214,7 @@
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "COMPLETÁ EL EMAIL / LA LLAMADA",
+      "title": "COMPLETA EL EMAIL / LA LLAMADA",
       "intro": "Elige la palabra correcta para cada frase de trabajo.",
       "items": [
         {

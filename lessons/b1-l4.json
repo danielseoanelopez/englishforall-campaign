@@ -91,7 +91,7 @@
           "sp": "acuerdo"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>unir</b> 🔗. Hacé el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>unir</b> 🔗. Haz el ✓ CHECK en cada ejercicio."
     },
     {
       "type": "story",
@@ -116,7 +116,7 @@
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "COMPLETÁ EL CONDICIONAL",
+      "title": "COMPLETA EL CONDICIONAL",
       "intro": "Elige la forma correcta. Piensa: ¿posible y real (1st) o hipotético (2nd)?",
       "items": [
         {
@@ -178,7 +178,7 @@
     {
       "type": "dialogue",
       "id": "ex-dlg",
-      "title": "ELEGÍ TU OFERTA",
+      "title": "ELIGE TU OFERTA",
       "intro": "Estás negociando con un cliente. Elige la respuesta con el condicional correcto — y el tono profesional.",
       "lines": [
         {
@@ -187,7 +187,7 @@
         },
         {
           "gap": true,
-          "q": "Ofrecés una alternativa realista:",
+          "q": "Ofreces una alternativa realista:",
           "options": [
             "If you increase the budget a little, we'll build both.",
             "If you will pay more, we build both.",
@@ -202,7 +202,7 @@
         },
         {
           "gap": true,
-          "q": "Respondés a la hipótesis (2nd conditional):",
+          "q": "Respondes a la hipótesis (2nd conditional):",
           "options": [
             "If we had a bigger budget, we would add a mobile app too.",
             "If we have a bigger budget, we will added apps.",
@@ -231,7 +231,7 @@
         },
         {
           "gap": true,
-          "q": "Explicás la consecuencia con tacto:",
+          "q": "Explicas la consecuencia con tacto:",
           "options": [
             "Unless you confirm this week, we can't start until next month.",
             "If you don't confirm, is your problem.",
@@ -339,7 +339,7 @@
     {
       "type": "match",
       "id": "ex-match",
-      "title": "UNÍ LA CONDICIÓN CON SU RESULTADO",
+      "title": "UNE LA CONDICIÓN CON SU RESULTADO",
       "intro": "Toca la cláusula con if y luego su resultado lógico.",
       "pairs": [
         {
@@ -446,11 +446,11 @@
       "title": "✍️ THE COUNTER-OFFER EMAIL",
       "intro": "Un cliente pide más funciones sin más presupuesto. Escribe tu contraoferta (5–7 frases):",
       "checklist": [
-        "Agradecé el interés y resumí el pedido",
+        "Agradece el interés y resume el pedido",
         "Una condición real con <b>1st conditional</b> (If you…, we will…)",
         "Una hipótesis con <b>2nd conditional</b> (If we had…, we would…)",
-        "Usá <b>unless</b> o <b>as long as</b> una vez",
-        "Cerrá pidiendo confirmación (<i>Could you confirm by…?</i>)"
+        "Usa <b>unless</b> o <b>as long as</b> una vez",
+        "Cierra pidiendo confirmación (<i>Could you confirm by…?</i>)"
       ],
       "placeholder": "Hi David, Thanks for your message about…",
       "example": "Hi David, Thanks for your message about the mobile app — it's a great idea. If you confirm phase two this week, we'll give you a ten percent discount. If we had a bigger budget, we would build everything at once, but phase two protects the website deadline. As long as the scope stays the same, we'll deliver on the fifteenth. Could you confirm by Friday? Best, Marcos",

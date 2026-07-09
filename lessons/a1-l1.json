@@ -63,7 +63,7 @@
         },
         {
           "en": "What's your name?",
-          "sp": "¿cómo te llamás?"
+          "sp": "¿cómo te llamas?"
         },
         {
           "en": "My name is…",
@@ -94,7 +94,7 @@
           "sp": "¡nos vemos (pronto)!"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>escucha</b> 🎧, <b>unir pares</b> 🔗, <b>elegir respuestas</b> 💬 y <b>ordenar palabras</b> 🧩. Hacé el ✓ CHECK en cada uno. ¡Sin traductor!"
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>escucha</b> 🎧, <b>unir pares</b> 🔗, <b>elegir respuestas</b> 💬 y <b>ordenar palabras</b> 🧩. Haz el ✓ CHECK en cada uno. ¡Sin traductor!"
     },
     {
       "type": "story",
@@ -159,7 +159,7 @@
       "desc": "Ana y Tom se conocen por primera vez. Escucha los nombres y de dónde son.",
       "src": "a1-l1-1.mp3",
       "dur": "0:38",
-      "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
+      "speakers": "🗣 Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -233,7 +233,7 @@
     {
       "type": "match",
       "id": "ex-match",
-      "title": "UNÍ INGLÉS Y ESPAÑOL",
+      "title": "UNE INGLÉS Y ESPAÑOL",
       "intro": "Toca una frase en inglés y luego su traducción.",
       "pairs": [
         {
@@ -261,7 +261,7 @@
     {
       "type": "dialogue",
       "id": "ex-dlg",
-      "title": "ELEGÍ LA RESPUESTA",
+      "title": "ELIGE LA RESPUESTA",
       "intro": "Tom te hace preguntas. Elige la mejor respuesta.",
       "lines": [
         {
@@ -389,7 +389,7 @@
     {
       "type": "order",
       "id": "ex-order",
-      "title": "ORDENÁ LAS PALABRAS",
+      "title": "ORDENA LAS PALABRAS",
       "intro": "Toca las palabras para formar la frase correcta.",
       "items": [
         {

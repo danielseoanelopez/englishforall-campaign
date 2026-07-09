@@ -102,7 +102,7 @@
     {
       "type": "dialogue",
       "id": "ex-dlg",
-      "title": "ELEGÍ LA RESPUESTA",
+      "title": "ELIGE LA RESPUESTA",
       "intro": "Alguien te pide u ofrece algo. Elige la respuesta correcta.",
       "lines": [
         {
@@ -231,7 +231,7 @@
     {
       "type": "match",
       "id": "ex-match",
-      "title": "UNÍ FUNCIÓN Y FRASE",
+      "title": "UNE FUNCIÓN Y FRASE",
       "intro": "¿Para qué sirve cada frase? Toca la función y luego la frase.",
       "pairs": [
         {
@@ -254,7 +254,8 @@
           "l": "Pedir permiso",
           "r": "Can I ask a question?"
         }
-      ]
+      ],
+      "speakSide": "r"
     },
     {
       "type": "listening",

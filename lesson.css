@@ -171,12 +171,25 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .dlg-line .spk { color: var(--cyan); font-weight: bold; }
 .dlg-line .spk.b { color: var(--magenta); }
 /* Speaker button — tap to hear a line/option read aloud (listen & repeat) */
-.spk-btn { flex: 0 0 auto; margin-left: auto; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border: 1px solid var(--cyan); border-radius: 9px; background: #00e5ff0e; color: var(--cyan); font-size: 0.95rem; line-height: 1; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s, background 0.15s, transform 0.1s; }
+.spk-btn { flex: 0 0 auto; margin-left: auto; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border: 1px solid var(--cyan); border-radius: 9px; background: #00e5ff0e; color: var(--cyan); font-size: 0.95rem; line-height: 1; cursor: pointer; user-select: none; -webkit-user-select: none; transition: border-color 0.15s, box-shadow 0.15s, background 0.15s, transform 0.1s; }
 .spk-btn:hover { background: #00e5ff1c; box-shadow: 0 0 10px #00e5ff55; transform: translateY(-1px); }
 .spk-btn:active { transform: translateY(0); }
 .spk-btn.playing { background: #ffc83d1c; border-color: var(--gold); color: var(--gold); animation: spkPulse 0.65s ease-in-out infinite; }
 @keyframes spkPulse { 0%, 100% { box-shadow: 0 0 7px #ffc83d55; } 50% { box-shadow: 0 0 16px #ffc83daa; } }
 .dlg-line .spk-btn { margin: 0 8px 0 0; vertical-align: middle; width: 30px; height: 30px; font-size: 0.85rem; }
+/* Mini speaker — for grammar cells, ladder chips, vocab terms, questions, flashcards, match games */
+.spk-btn.mini { width: 24px; height: 24px; font-size: 0.72rem; border-radius: 7px; margin-left: 6px; }
+.q > p .spk-btn.mini { vertical-align: middle; margin-left: 8px; }
+.fc-front .spk-btn.mini { position: absolute; top: 5px; right: 5px; margin: 0; }
+.match-l { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.match-l .spk-btn.mini { margin-left: auto; }
+.match-r { display: flex; align-items: center; gap: 8px; }
+.match-r .spk-btn.mini { margin-left: auto; }
+.gram-cell .gh { display: flex; align-items: center; }
+.gram-cell .gh .spk-btn.mini { margin-left: auto; }
+.freq-bar .chip { display: inline-flex; align-items: center; }
+.term .en { display: flex; align-items: center; }
+.term .en .spk-btn.mini { margin-left: auto; }
 /* Picture match (emoji vocab) */
 .match-l.pic { display: flex; align-items: center; gap: 12px; }
 .match-l.pic .pic-em { font-size: 1.9rem; line-height: 1; }

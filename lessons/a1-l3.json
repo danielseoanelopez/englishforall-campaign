@@ -118,7 +118,7 @@
     {
       "type": "match",
       "id": "ex-time",
-      "title": "UNÍ LA HORA",
+      "title": "UNE LA HORA",
       "intro": "Toca el reloj y luego cómo se dice.",
       "pairs": [
         {
@@ -137,7 +137,8 @@
           "l": "3:45",
           "r": "quarter to four"
         }
-      ]
+      ],
+      "speakSide": "r"
     },
     {
       "type": "listening",

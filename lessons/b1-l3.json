@@ -92,7 +92,7 @@
           "sp": "noche de lanzamiento"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>ordenar</b> 🧩, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>memory</b> 🧠. Hacé el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>ordenar</b> 🧩, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>memory</b> 🧠. Haz el ✓ CHECK en cada ejercicio."
     },
     {
       "type": "story",
@@ -117,7 +117,7 @@
     {
       "type": "order",
       "id": "ex-order",
-      "title": "ORDENÁ LA HISTORIA",
+      "title": "ORDENA LA HISTORIA",
       "intro": "Toca las palabras para reconstruir las frases de la noche del lanzamiento.",
       "items": [
         {
@@ -379,11 +379,11 @@
       "title": "✍️ MY 'EVERYTHING WENT WRONG' STORY",
       "intro": "Cuenta una historia real (o inventada) de un día en que algo salió mal — en el trabajo, un viaje, un examen… (6–8 frases):",
       "checklist": [
-        "Empezá con la escena de fondo: <b>I was …ing</b> (I was working late / I was travelling…)",
+        "Empieza con la escena de fondo: <b>I was …ing</b> (I was working late / I was travelling…)",
         "La acción que interrumpe en <b>past simple</b>: <i>…when my phone rang</i>",
-        "Usá <b>while</b> + continuo y <b>when</b> + simple",
-        "Usá 2 secuenciadores (<b>Suddenly / As soon as / In the end…</b>)",
-        "Cerrá con cómo terminó todo (<b>In the end,…</b>)"
+        "Usa <b>while</b> + continuo y <b>when</b> + simple",
+        "Usa 2 secuenciadores (<b>Suddenly / As soon as / In the end…</b>)",
+        "Cierra con cómo terminó todo (<b>In the end,…</b>)"
       ],
       "placeholder": "It was a normal Friday. I was…",
       "example": "It was a normal Friday. I was working from home, and everything was quiet. Suddenly, my computer stopped working — five minutes before an important meeting! While I was restarting it, I called my colleague from my phone. She started the meeting without me. As soon as my computer came back, I joined the call. In the end, nobody noticed the problem, but my heart was still racing!",

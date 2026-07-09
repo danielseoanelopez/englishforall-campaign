@@ -81,7 +81,7 @@
           "sp": "entusiasmado con"
         }
       ],
-      "note": "<b>Cómo funciona:</b> escucha los planes 🎧, completa 📝 y ordená 🧩. ¡Última lección del mundo A2 — después viene el examen!"
+      "note": "<b>Cómo funciona:</b> escucha los planes 🎧, completa 📝 y ordena 🧩. ¡Última lección del mundo A2 — después viene el examen!"
     },
     {
       "type": "story",
@@ -175,7 +175,7 @@
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "COMPLETÁ EL FUTURO",
+      "title": "COMPLETA EL FUTURO",
       "intro": "Elige going to o present continuous.",
       "items": [
         {
@@ -275,7 +275,7 @@
     {
       "type": "order",
       "id": "ex-order",
-      "title": "ORDENÁ EL PLAN",
+      "title": "ORDENA EL PLAN",
       "intro": "Toca las palabras para formar la frase.",
       "items": [
         {

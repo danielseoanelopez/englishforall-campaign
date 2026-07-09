@@ -117,7 +117,7 @@
     {
       "type": "picMatch",
       "id": "ex-pic",
-      "title": "UNÍ TRABAJO E IMAGEN",
+      "title": "UNE TRABAJO E IMAGEN",
       "intro": "Toca la imagen y luego el trabajo correcto.",
       "pairs": [
         {
@@ -137,12 +137,12 @@
           "word": "cook"
         },
         {
-          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f477.svg' alt='builder'>",
-          "word": "builder"
+          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9b7.svg' alt='dentist'>",
+          "word": "dentist"
         },
         {
-          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9d1-200d-1f4bb.svg' alt='programmer'>",
-          "word": "programmer"
+          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9d1-200d-1f4bb.svg' alt='software developer'>",
+          "word": "software developer"
         }
       ]
     },
@@ -153,7 +153,7 @@
       "desc": "Ana y Tom hablan de su país, trabajo y edad.",
       "src": "a1-l2-1.mp3",
       "dur": "0:44",
-      "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
+      "speakers": "🗣 Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -187,42 +187,47 @@
       },
       "transcript": [
         {
+          "spk": "Tom",
+          "b": true,
+          "html": "Hi Ana! Good to see you again."
+        },
+        {
           "spk": "Ana",
-          "html": "Hi! I'm Ana. I'm <span class='tg'>from Mexico</span>. I'm <span class='tg'>a student</span>."
+          "html": "Hi Tom! So, tell me, <span class='tg'>what is your job?</span>"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "Nice to meet you, Ana. I'm Tom. I'm <span class='tg'>from Canada</span>, and I'm <span class='tg'>an engineer</span>."
+          "html": "I am <span class='tg'>an engineer</span>. I work in a big company. What about you?"
         },
         {
           "spk": "Ana",
-          "html": "An engineer? Cool! <span class='tg'>How old are you?</span>"
+          "html": "I am <span class='tg'>a student</span>. I study English at university."
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "I'm <span class='tg'>twenty-five</span>. And you?"
+          "html": "Nice! You are from Mexico, right?"
         },
         {
           "spk": "Ana",
-          "html": "I'm <span class='tg'>twenty</span>. Where do you work, Tom?"
+          "html": "Yes, I am <span class='tg'>from Mexico</span>, from Guadalajara. <span class='tg'>How old are you</span>, Tom?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "I work in a big company. What about you?"
+          "html": "I am <span class='tg'>twenty-five</span>. And you?"
         },
         {
           "spk": "Ana",
-          "html": "I'm a student. I study English at university."
+          "html": "I am <span class='tg'>twenty</span>."
         }
       ]
     },
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "COMPLETÁ CON TO BE",
+      "title": "COMPLETA CON TO BE",
       "intro": "Elige am, is o are.",
       "items": [
         {
@@ -283,8 +288,8 @@
           "b": "<img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
         },
         {
-          "a": "Canada",
-          "b": "<img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>"
+          "a": "United States",
+          "b": "<img class='flag' src='https://flagcdn.com/us.svg' alt='Estados Unidos'>"
         },
         {
           "a": "Brazil",
@@ -302,8 +307,8 @@
       "title": "AUDIO 2 · THIS IS MY FRIEND",
       "desc": "María presenta a su amigo Leo. Escucha su país, trabajo y edad.",
       "src": "a1-l2-2.mp3",
-      "dur": "0:19",
-      "speakers": "🗣 María <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>",
+      "dur": "0:14",
+      "speakers": "🗣 María",
       "questions": [
         {
           "type": "mcq",
@@ -338,7 +343,7 @@
       "transcript": [
         {
           "spk": "María",
-          "html": "Hello! This is my friend Leo. He's <span class='tg'>from Brazil</span>. He's <span class='tg'>a doctor</span>. He's <span class='tg'>thirty</span> years old. He works in a hospital in São Paulo. He speaks Portuguese, English, and a little Spanish. He's very friendly!"
+          "html": "Hello! This is my friend Leo. He is <span class='tg'>from Brazil</span>. He is <span class='tg'>a doctor</span>, and he works in a big hospital in São Paulo. He is <span class='tg'>thirty</span> years old, and he is very friendly!"
         }
       ]
     },
@@ -368,32 +373,36 @@
       "file": "a1-l2-1.mp3",
       "lines": [
         [
+          "tom",
+          "Hi Ana! Good to see you again."
+        ],
+        [
           "ana",
-          "Hi! I'm Ana. I'm from Mexico. I'm a student."
+          "Hi Tom! So, tell me, what is your job?"
         ],
         [
           "tom",
-          "Nice to meet you, Ana. I'm Tom. I'm from Canada, and I'm an engineer."
+          "I am an engineer. I work in a big company. What about you?"
         ],
         [
           "ana",
-          "An engineer? Cool! How old are you?"
+          "I am a student. I study English at university."
         ],
         [
           "tom",
-          "I'm twenty-five. And you?"
+          "Nice! You are from Mexico, right?"
         ],
         [
           "ana",
-          "I'm twenty. Where do you work, Tom?"
+          "Yes, I am from Mexico, from Guadalajara. How old are you, Tom?"
         ],
         [
           "tom",
-          "I work in a big company. What about you?"
+          "I am twenty-five. And you?"
         ],
         [
           "ana",
-          "I'm a student. I study English at university."
+          "I am twenty."
         ]
       ]
     },
@@ -402,7 +411,7 @@
       "lines": [
         [
           "maria",
-          "Hello! This is my friend Leo. He's from Brazil. He's a doctor. He's thirty years old. He works in a hospital in Sao Paulo. He speaks Portuguese, English, and a little Spanish. He's very friendly!"
+          "Hello! This is my friend Leo. He is from Brazil. He is a doctor, and he works in a big hospital in Sao Paulo. He is thirty years old, and he is very friendly!"
         ]
       ]
     }

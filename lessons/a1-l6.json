@@ -39,7 +39,7 @@
       ]
     },
     {
-      "type": "dialogue", "id": "ex-dlg", "title": "ELEGÍ LA RESPUESTA",
+      "type": "dialogue", "id": "ex-dlg", "title": "ELIGE LA RESPUESTA",
       "intro": "Alguien te hace una pregunta. Elige la mejor respuesta.",
       "lines": [
         { "spk": "Ana", "html": "What's your name?" },
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "type": "match", "id": "ex-match", "title": "UNÍ PREGUNTA Y QUÉ PIDE",
+      "type": "match", "id": "ex-match", "title": "UNE PREGUNTA Y QUÉ PIDE",
       "intro": "¿Qué información pide cada palabra? Toca la palabra y luego su uso.",
       "pairs": [
         { "l": "What…?", "r": "una cosa" },
