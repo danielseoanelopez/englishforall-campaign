@@ -114,7 +114,7 @@ function qHtml(q, name, num, sp){
 function grammarHtml(g){
   let h = `<div class="stage-tag">📘 GRAMMAR <span class="es">· ${esc(g.tag)}</span></div>
   <div class="card grammar" data-aos="fade-up"><div class="panel-title">${esc(g.title)}</div><p>${esc(g.intro)}</p>
-  <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}${spkBtn(codeSay(c.body),"mini")}</span>${esc(c.body)}</div>`).join("")}</div>`;
+  <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}${spkBtn(c.say!=null?c.say:codeSay(c.body),"mini")}</span>${esc(c.body)}</div>`).join("")}</div>`;
   if(g.ladderLabel) h += `<p style="margin-top:16px">${esc(g.ladderLabel)}</p>`;
   if(g.ladder && g.ladder.length) h += `<div class="freq-bar">${g.ladder.map((c,i)=>`<span class="chip">${esc(c)}${spkBtn(c,"mini")}</span>${i<g.ladder.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
   if(g.vocab && g.vocab.length){
@@ -327,12 +327,13 @@ function checkRadio(id){
 }
 // match
 function mLeft(id, i){ const st=matchState[id]; if(st.done) return;
-  if(st.slots[i]!=null){ const r=st.slots[i]; delete st.slots[i]; document.getElementById(id+"-slot-"+i).textContent=""; const rb=document.querySelector('#'+id+' .match-r[data-r="'+r.replace(/"/g,'\\"')+'"]'); if(rb){ rb.disabled=false; rb.classList.remove("used"); } }
+  if(st.slots[i]!=null){ const r=st.slots[i]; delete st.slots[i]; document.getElementById(id+"-slot-"+i).textContent=""; const rb=document.querySelector('#'+id+' .match-r[data-r="'+r.replace(/"/g,'\\"')+'"]'); if(rb){ rb.classList.remove("used"); } }
   st.sel=i; document.querySelectorAll("#"+id+" .match-l").forEach(el=>el.classList.remove("sel")); document.getElementById(id+"-l-"+i).classList.add("sel"); blip();
 }
-function mRight(id, el){ const st=matchState[id]; if(st.done||st.sel==null||el.disabled) return; const r=el.dataset.r; st.slots[st.sel]=r; el.disabled=true; el.classList.add("used"); document.getElementById(id+"-slot-"+st.sel).textContent=" → "+r; document.getElementById(id+"-l-"+st.sel).classList.remove("sel"); st.sel=null; blip(); }
+// tiles lock via classes, never the disabled attribute — a disabled button would also kill the 🔊 speaker inside it
+function mRight(id, el){ const st=matchState[id]; if(st.done||st.sel==null||el.classList.contains("used")) return; const r=el.dataset.r; st.slots[st.sel]=r; el.classList.add("used"); document.getElementById(id+"-slot-"+st.sel).textContent=" → "+r; document.getElementById(id+"-l-"+st.sel).classList.remove("sel"); st.sel=null; blip(); }
 function checkMatch(id){ const st=matchState[id]; st.done=true; let correct=0; st.pairs.forEach((p,i)=>{ const got=st.slots[i]; const lEl=document.getElementById(id+"-l-"+i); lEl.classList.remove("sel"); if(got===p.r){ correct++; lEl.classList.add("ok"); } else { lEl.classList.add("no"); document.getElementById(id+"-slot-"+i).textContent=" → "+(got||"—")+"  ✓ "+p.r; } });
-  document.querySelectorAll("#"+id+" .match-r").forEach(b=>b.disabled=true);
+  document.querySelectorAll("#"+id+" .match-r").forEach(b=>b.classList.add("locked"));
   setScore(id, correct, st.pairs.length);
 }
 // order

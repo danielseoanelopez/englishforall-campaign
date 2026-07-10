@@ -152,6 +152,8 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .match-l:hover, .match-r:hover { border-color: var(--cyan); box-shadow: 0 0 10px #00e5ff33; }
 .match-l.sel { border-color: var(--gold); box-shadow: 0 0 10px #ffc83d55; background: #ffc83d12; }
 .match-r.used { opacity: 0.32; cursor: default; }
+.match-r.locked { cursor: default; }
+.match-r.used:hover, .match-r.locked:hover { border-color: #2a4a6a; box-shadow: none; background: #181a3a88; }
 .match-l .ml-slot { color: var(--cyan); }
 .match-l.ok { border-color: var(--green) !important; background: #3dffa016 !important; }
 .match-l.no { border-color: var(--red) !important; background: #ff5d7a16 !important; }

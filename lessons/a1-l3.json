@@ -21,7 +21,8 @@
       "cells": [
         {
           "h": "🔢 Numbers",
-          "body": "1 one · 2 two · 3 three<br>10 ten · 20 twenty<br>13 thir<code>teen</code> · 30 thir<code>ty</code>"
+          "body": "1 one · 2 two · 3 three<br>10 ten · 20 twenty<br>13 thir<code>teen</code> · 30 thir<code>ty</code>",
+          "say": "one, two, three; ten; twenty; thirteen; thirty"
         },
         {
           "h": "🕐 Time",
@@ -29,7 +30,8 @@
         },
         {
           "h": "📅 at / on / in",
-          "body": "<code>at</code> + hora: at six<br><code>on</code> + día: on Monday<br><code>in</code> + mes: in June"
+          "body": "<code>at</code> + hora: at six<br><code>on</code> + día: on Monday<br><code>in</code> + mes: in June",
+          "say": "at six; on Monday; in June"
         },
         {
           "h": "⚠ Watch out",
