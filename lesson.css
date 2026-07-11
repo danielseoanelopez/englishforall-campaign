@@ -202,9 +202,10 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 /* Memory game */
 .mem-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
 @media (max-width: 520px) { .mem-grid { grid-template-columns: repeat(3, 1fr); } }
-.mem-card { position: relative; aspect-ratio: 1 / 1; border: 2px solid var(--purple); border-radius: 10px; background: #9d4dff14; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text); font-family: "Share Tech Mono", monospace; transition: border-color 0.15s, box-shadow 0.15s, background 0.15s; }
+.mem-card { position: relative; aspect-ratio: 2 / 3; border: 2px solid var(--purple); border-radius: 10px; background: #9d4dff14; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text); font-family: "Share Tech Mono", monospace; transition: border-color 0.15s, box-shadow 0.15s, background 0.15s; overflow: hidden; }
 .mem-card:hover { box-shadow: 0 0 10px #9d4dff55; }
 .mem-card .mem-q { font-size: 1.5rem; }
+.mem-card .mem-q.mem-fancy { font-family: Georgia, "Times New Roman", serif; font-size: 1.7rem; letter-spacing: 2px; color: var(--gold); text-shadow: 0 0 10px #ffc83d99, 0 0 24px #ffc83d44; }
 .mem-card .mem-face { display: none; font-size: 1.4rem; text-align: center; padding: 4px; word-break: break-word; }
 .mem-card.flip { background: #00e5ff12; border-color: var(--cyan); }
 .mem-card.flip .mem-q { display: none; } .mem-card.flip .mem-face { display: block; }
@@ -212,8 +213,9 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .mem-card.matched .mem-q { display: none; } .mem-card.matched .mem-face { display: block; }
 .mem-status { margin-top: 12px; letter-spacing: 1px; color: var(--gold); font-size: 0.9rem; }
 /* Flashcards (flip to study) */
+.fc-round { color: var(--gold); font-size: 0.8rem; letter-spacing: 1px; margin-top: 10px; }
 .fc-deck { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; margin-top: 10px; }
-.flashcard { perspective: 700px; border: none; background: none; padding: 0; height: 112px; cursor: pointer; }
+.flashcard { perspective: 700px; border: none; background: none; padding: 0; height: 132px; cursor: pointer; }
 .fc-inner { position: relative; width: 100%; height: 100%; transition: transform 0.4s; transform-style: preserve-3d; display: block; }
 .flashcard.flipped .fc-inner { transform: rotateY(180deg); }
 .fc-front, .fc-back { position: absolute; inset: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; border-radius: 12px; padding: 8px; text-align: center; font-family: "Share Tech Mono", monospace; }
@@ -226,6 +228,15 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 /* emoji artwork as images (consistent cross-platform) — Twemoji SVGs via jsdelivr */
 .emo { height: 1.35em; width: auto; vertical-align: -0.28em; }
 .pic-em .emo { height: 1.9rem; vertical-align: middle; }
+
+/* brand pixel-art job portraits (job-*.png) */
+.job { border-radius: 8px; }
+.fc-front .job { display: block; height: 56px; width: auto; }
+.pic-em .job { display: block; height: 3.4rem; width: auto; }
+
+/* brand memory-game art: flag faces (flag-*.png) + card back (mem-back.png) */
+.mem-card .flag { width: 82%; height: auto; border-radius: 10px; box-shadow: none; }
+.mem-card .mem-back { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
 /* ===== mobile: MAPA + sound buttons scroll with the page and sit above the logo (no overlap) ===== */
 @media (max-width: 720px) {

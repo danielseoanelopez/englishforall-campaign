@@ -89,28 +89,89 @@
       "intro": "Toca cada tarjeta para ver la traducción. Estúdialas antes de los ejercicios.",
       "cards": [
         {
-          "front": "teacher <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-1f3eb.svg' alt='teacher'>",
+          "front": "<img class='job' src='job-teacher.png' alt=''> teacher",
           "back": "profesor/a"
         },
         {
-          "front": "doctor <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-2695-fe0f.svg' alt='doctor'>",
+          "front": "<img class='job' src='job-doctor.png' alt=''> doctor",
           "back": "médico/a"
         },
         {
-          "front": "engineer <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9d1-200d-1f527.svg' alt='engineer'>",
+          "front": "<img class='job' src='job-engineer.png' alt=''> engineer",
           "back": "ingeniero/a"
         },
         {
-          "front": "student <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9d1-200d-1f393.svg' alt='student'>",
+          "front": "<img class='job' src='job-student.png' alt=''> student",
           "back": "estudiante"
         },
         {
-          "front": "cook <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-1f373.svg' alt='cook'>",
+          "front": "<img class='job' src='job-cook.png' alt=''> cook",
           "back": "cocinero/a"
         },
         {
-          "front": "nurse <img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f469-200d-2695-fe0f.svg' alt='nurse'>",
+          "front": "<img class='job' src='job-nurse.png' alt=''> nurse",
           "back": "enfermero/a"
+        }
+      ],
+      "deckLabel": "trabajos",
+      "altDecks": [
+        {
+          "label": "más trabajos",
+          "cards": [
+            {
+              "front": "waiter",
+              "back": "mesero/a"
+            },
+            {
+              "front": "driver",
+              "back": "conductor/a"
+            },
+            {
+              "front": "police officer",
+              "back": "policía"
+            },
+            {
+              "front": "lawyer",
+              "back": "abogado/a"
+            },
+            {
+              "front": "shop assistant",
+              "back": "vendedor/a"
+            },
+            {
+              "front": "programmer",
+              "back": "programador/a"
+            }
+          ]
+        },
+        {
+          "label": "datos personales",
+          "cards": [
+            {
+              "front": "How old are you?",
+              "back": "¿Cuántos años tienes?"
+            },
+            {
+              "front": "I'm 30 years old",
+              "back": "Tengo 30 años"
+            },
+            {
+              "front": "Where are you from?",
+              "back": "¿De dónde eres?"
+            },
+            {
+              "front": "What's your job?",
+              "back": "¿En qué trabajas?"
+            },
+            {
+              "front": "I'm a student",
+              "back": "Soy estudiante"
+            },
+            {
+              "front": "phone number",
+              "back": "número de teléfono"
+            }
+          ]
         }
       ]
     },
@@ -121,27 +182,27 @@
       "intro": "Toca la imagen y luego el trabajo correcto.",
       "pairs": [
         {
-          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-1f3eb.svg' alt='teacher'>",
+          "img": "<img class='job' src='job-teacher.png' alt='teacher'>",
           "word": "teacher"
         },
         {
-          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-2695-fe0f.svg' alt='doctor'>",
+          "img": "<img class='job' src='job-doctor.png' alt='doctor'>",
           "word": "doctor"
         },
         {
-          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f46e.svg' alt='police officer'>",
+          "img": "<img class='job' src='job-police-officer.png' alt='police officer'>",
           "word": "police officer"
         },
         {
-          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f468-200d-1f373.svg' alt='cook'>",
+          "img": "<img class='job' src='job-cook.png' alt='cook'>",
           "word": "cook"
         },
         {
-          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9b7.svg' alt='dentist'>",
+          "img": "<img class='job' src='job-dentist.png' alt='dentist'>",
           "word": "dentist"
         },
         {
-          "img": "<img class='emo' src='https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f9d1-200d-1f4bb.svg' alt='software developer'>",
+          "img": "<img class='job' src='job-software-developer.png' alt='software developer'>",
           "word": "software developer"
         }
       ]
@@ -282,22 +343,23 @@
       "id": "mem-countries",
       "title": "MEMORY · países y banderas",
       "intro": "Encuentra cada país con su bandera. Toca dos cartas.",
+      "back": "<img class='mem-back' src='mem-back.png' alt=''>",
       "pairs": [
         {
           "a": "Mexico",
-          "b": "<img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
+          "b": "<img class='flag' src='flag-mx.png' alt='México'>"
         },
         {
           "a": "United States",
-          "b": "<img class='flag' src='https://flagcdn.com/us.svg' alt='Estados Unidos'>"
+          "b": "<img class='flag' src='flag-us.png' alt='Estados Unidos'>"
         },
         {
           "a": "Brazil",
-          "b": "<img class='flag' src='https://flagcdn.com/br.svg' alt='Brasil'>"
+          "b": "<img class='flag' src='flag-br.png' alt='Brasil'>"
         },
         {
           "a": "Spain",
-          "b": "<img class='flag' src='https://flagcdn.com/es.svg' alt='España'>"
+          "b": "<img class='flag' src='flag-es.png' alt='España'>"
         }
       ]
     },
@@ -338,7 +400,7 @@
       ],
       "speaking": {
         "prompt": "Introduce a friend: name, country, job, age. Use <i>He's / She's…</i>",
-        "starter": "This is my friend… He's from… He's a… and he's … years old."
+        "starter": "This is my friend (name). He's from (country). He's a (job) and he's (age) years old."
       },
       "transcript": [
         {

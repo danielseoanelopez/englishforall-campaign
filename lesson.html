@@ -81,7 +81,7 @@ const SCORED = ["listening","gapFill","dialogue","match","order","picMatch"];
 
 let LESSON = null, LESSON_KEY = "", LESSON_NAME = "", EXERCISES = [];
 const scores = {};                 // blockId -> {correct,total}
-const matchState = {}, orderState = {}, memoryState = {};
+const matchState = {}, orderState = {}, memoryState = {}, fcState = {};
 const esc = s => String(s == null ? "" : s);
 const escAttr = s => String(s == null ? "" : s).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 const stripTags = s => String(s == null ? "" : s).replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
@@ -195,13 +195,30 @@ function memoryHtml(b, id){
   const sh = shuffle(cards);
   memoryState[id] = { flipped:[], matched:0, total:(b.pairs||[]).length, lock:false };
   return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title">🧠 ${esc(b.title||'MEMORY · encuentra los pares')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><span class="mem-q">❓</span><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
+  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><span class="mem-q${b.back?' mem-fancy':''}">${esc(b.back||"❓")}</span><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
   <div class="mem-status" id="${id}-status">0 / ${(b.pairs||[]).length} pares</div></div>`;
 }
+function fcDeckHtml(cards){
+  return (cards||[]).map(c=>`<button type="button" class="flashcard" onclick="this.classList.toggle('flipped'); blip();"><span class="fc-inner"><span class="fc-front">${esc(c.front)}${spkBtn(c.front,"mini fc-spk")}</span><span class="fc-back">${esc(c.back)}</span></span></button>`).join("");
+}
 function flashcardsHtml(b, id){
+  const decks = [{label: b.deckLabel||"", cards: b.cards||[]}].concat(b.altDecks||[]);
+  fcState[id] = { decks: decks, cur: 0 };
   return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🃏 ${esc(b.title||'FLASHCARDS · toca para girar')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  <div class="fc-deck">${(b.cards||[]).map(c=>`<button type="button" class="flashcard" onclick="this.classList.toggle('flipped'); blip();"><span class="fc-inner"><span class="fc-front">${esc(c.front)}${spkBtn(c.front,"mini fc-spk")}</span><span class="fc-back">${esc(c.back)}</span></span></button>`).join("")}</div>
-  <p class="es" style="margin-top:8px">👆 Toca cada tarjeta para ver la traducción.</p></div>`;
+  ${decks.length>1?`<p class="fc-round" id="${id}-round">🔁 RONDA 1/${decks.length}${decks[0].label?` · ${esc(decks[0].label)}`:''}</p>`:''}
+  <div class="fc-deck" id="${id}-deck">${fcDeckHtml(decks[0].cards)}</div>
+  <p class="es" style="margin-top:8px">👆 Toca cada tarjeta para ver la traducción.</p>
+  ${decks.length>1?`<button type="button" class="toggle-btn" id="${id}-next" onclick="fcNextDeck('${id}')">🔄 Otra ronda: ${esc(decks[1].label||'más cartas')}</button>`:''}</div>`;
+}
+function fcNextDeck(id){
+  const st=fcState[id]; st.cur=(st.cur+1)%st.decks.length;
+  const d=st.decks[st.cur];
+  document.getElementById(id+"-deck").innerHTML = fcDeckHtml(d.cards);
+  const r=document.getElementById(id+"-round");
+  if(r) r.innerHTML = `🔁 RONDA ${st.cur+1}/${st.decks.length}${d.label?` · ${esc(d.label)}`:''}`;
+  const nd=st.decks[(st.cur+1)%st.decks.length];
+  document.getElementById(id+"-next").textContent = `🔄 Otra ronda: ${nd.label||'más cartas'}`;
+  blip();
 }
 function writingHtml(w){
   return `<div class="stage-tag">✍️ WRITING <span class="es">· en clase o tarea (HW)</span></div>
