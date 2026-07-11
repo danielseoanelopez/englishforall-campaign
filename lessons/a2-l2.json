@@ -89,15 +89,15 @@
       "cast": [
         {
           "en": "Sofia",
-          "sp": "la <b style='color:var(--magenta)'>team lead</b> <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
+          "sp": "la <b style='color:var(--magenta)'>team lead</b>"
         },
         {
           "en": "Marcos",
-          "sp": "su compañero <img class='flag' src='https://flagcdn.com/us.svg' alt='EE. UU.'>"
+          "sp": "su compañero"
         },
         {
           "en": "David",
-          "sp": "el cliente (GreenMarket) <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
+          "sp": "el cliente (GreenMarket)"
         }
       ]
     },
@@ -140,7 +140,7 @@
       "desc": "Sofia llama a Marcos. ¿Cuál es el problema con el cliente?",
       "src": "audio1_video_call.mp3",
       "dur": "1:18",
-      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/us.svg' alt='EE. UU.'>",
+      "speakers": "🗣 Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -271,7 +271,7 @@
       "desc": "Marcos llama a David para confirmar los detalles del proyecto.",
       "src": "audio3_client_call.mp3",
       "dur": "1:15",
-      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/us.svg' alt='EE. UU.'> + David <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>",
+      "speakers": "🗣 Marcos + David",
       "questions": [
         {
           "type": "mcq",
@@ -357,7 +357,7 @@
         "Cierra: <b>I'll get back to you soon.</b>"
       ],
       "placeholder": "Hi David,",
-      "example": "Hi David, Thank you for your request. The price estimate is almost ready — I'm just waiting for one update. I attached the product list to this email. Could you confirm the details? I'll get back to you soon. Best, Marcos",
+      "example": "Hi (name), Thank you for your (email / request). The (document) is almost ready — I'm just waiting for (something). I attached the (document) to this email. Could you (request)? I'll get back to you (when). Best, (your name)",
       "hw": "Escribe tu email y envíamelo por WhatsApp para corregirlo juntos."
     }
   ]

@@ -104,19 +104,19 @@
       "cast": [
         {
           "en": "Ana",
-          "sp": "una estudiante <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> (México)"
+          "sp": "una estudiante"
         },
         {
           "en": "Tom",
-          "sp": "un estudiante <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'> (Canadá)"
+          "sp": "un estudiante"
         },
         {
           "en": "Emma",
-          "sp": "la recepcionista <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
+          "sp": "la recepcionista"
         },
         {
           "en": "Leo",
-          "sp": "un estudiante nuevo <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
+          "sp": "un estudiante nuevo"
         }
       ]
     },
@@ -315,7 +315,7 @@
       "desc": "Leo llega a una escuela de inglés. Escucha el saludo y dónde está su clase.",
       "src": "a1-l1-2.mp3",
       "dur": "0:34",
-      "speakers": "🗣 Emma <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Leo <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>",
+      "speakers": "🗣 Emma + Leo",
       "questions": [
         {
           "type": "mcq",
@@ -433,7 +433,7 @@
         "Termina: <b>Nice to meet you!</b>"
       ],
       "placeholder": "Hello! My name is...",
-      "example": "Hello! My name is Sofia. I'm from Argentina. I'm a student and I work in a café. I'm twenty years old. Nice to meet you!",
+      "example": "Hello! My name is (name). I'm from (country). I'm a (job) and I work in (place). I'm (age) years old. Nice to meet you!",
       "hw": "Escribe tu presentación y graba un audio diciéndola en voz alta. Envíame ambos por WhatsApp y lo corregimos. ¡Cualquier duda la vemos en clase!"
     }
   ],

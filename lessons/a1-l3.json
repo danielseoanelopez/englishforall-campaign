@@ -149,7 +149,7 @@
       "desc": "Ana y Tom hablan de un número y de horarios de clase.",
       "src": "a1-l3-1.mp3",
       "dur": "0:28",
-      "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
+      "speakers": "🗣 Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -290,7 +290,7 @@
       "desc": "Marcos cuenta los horarios de su día. Escucha las horas.",
       "src": "a1-l3-2.mp3",
       "dur": "0:21",
-      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
+      "speakers": "🗣 Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -341,7 +341,7 @@
         "Di qué haces el fin de semana"
       ],
       "placeholder": "I get up at...",
-      "example": "I get up at seven o'clock. My English class is at six on Monday and Wednesday. I have lunch at one. I finish work at five. On the weekend, I don't work — I see my friends!",
+      "example": "I get up at (time). My English class is at (time) on (day) and (day). I have lunch at (time). I finish work at (time). On the weekend, I (activity)!",
       "hw": "Escribe tu horario y mándamelo por WhatsApp."
     }
   ],

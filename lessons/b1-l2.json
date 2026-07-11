@@ -101,15 +101,15 @@
       "cast": [
         {
           "en": "Marcos",
-          "sp": "hoy <b style='color:var(--magenta)'>dirige el standup</b> <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
+          "sp": "hoy <b style='color:var(--magenta)'>dirige el standup</b>"
         },
         {
           "en": "Sofia",
-          "sp": "la team lead <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
+          "sp": "la team lead"
         },
         {
           "en": "Priya",
-          "sp": "la Project Director <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>"
+          "sp": "la Project Director"
         }
       ]
     },
@@ -217,7 +217,7 @@
       "desc": "Marcos dirige el standup. El cliente quiere una función nueva. ¿Cómo lo maneja Marcos?",
       "src": "b1-l2-1.mp3",
       "dur": "1:19",
-      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>",
+      "speakers": "🗣 Marcos + Sofia + Priya",
       "questions": [
         {
           "type": "mcq",
@@ -347,7 +347,7 @@
       "desc": "Marcos llama a David. El cliente presiona por la función nueva. Marcos gestiona sus expectativas.",
       "src": "b1-l2-2.mp3",
       "dur": "1:08",
-      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + David <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>",
+      "speakers": "🗣 Marcos + David",
       "questions": [
         {
           "type": "mcq",
@@ -439,7 +439,7 @@
         "Cierra (<i>Let me know if you have any questions.</i>)"
       ],
       "placeholder": "Hi team, Following our meeting today,",
-      "example": "Hi team, Following our meeting today, here's a quick recap. We agreed to launch the GreenMarket site on Friday. We also agreed to add the live chat next week, not now — I'd suggest we test it properly first to avoid bugs. Next steps: Marcos will finish the final tests by Thursday, and Sofia will send the client a demo. Let me know if you have any questions. Best, Marcos",
+      "example": "Hi team, Following our meeting (when), here's a quick recap. We agreed to (decision) on (day). We also agreed to (decision) — I'd suggest we (suggestion). Next steps: (name) will (task) by (day), and (name) will (task). Let me know if you have any questions. Best, (your name)",
       "hw": "Escribe tu email de resumen de una reunión (real o inventada) y envíamelo por WhatsApp para corregirlo juntos."
     }
   ]

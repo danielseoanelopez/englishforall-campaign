@@ -358,7 +358,7 @@
         "Tu edad: <b>I'm … years old.</b>"
       ],
       "placeholder": "My name is...",
-      "example": "My name is Sofia. I'm from Argentina. I'm a student and I work in a café. I'm twenty years old. I speak Spanish and a little English. Nice to meet you!",
+      "example": "My name is (name). I'm from (country). I'm a (job) and I work in (place). I'm (age) years old. I speak (language) and a little (language). Nice to meet you!",
       "hw": "Escribe tu presentación y graba un audio diciéndola. Envíame ambos por WhatsApp."
     }
   ],

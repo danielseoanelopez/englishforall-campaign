@@ -101,15 +101,15 @@
       "cast": [
         {
           "en": "Priya",
-          "sp": "quiere el roadmap <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>"
+          "sp": "quiere el roadmap"
         },
         {
           "en": "Sofia",
-          "sp": "lidera la fase dos <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
+          "sp": "lidera la fase dos"
         },
         {
           "en": "Marcos",
-          "sp": "promete fechas <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
+          "sp": "promete fechas"
         }
       ]
     },
@@ -152,7 +152,7 @@
       "desc": "Priya, Sofia y Marcos planean el próximo trimestre. Fechas, promesas y predicciones — los tres futuros en acción.",
       "src": "b1-l6-1.mp3",
       "dur": "1:10",
-      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'> + Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
+      "speakers": "🗣 Priya + Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -336,7 +336,7 @@
       "desc": "El mensaje que Priya le dejó a Marcos después de la reunión. Una noticia grande… y un desafío más grande.",
       "src": "b1-l6-2.mp3",
       "dur": "0:52",
-      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>",
+      "speakers": "🗣 Priya",
       "questions": [
         {
           "type": "mcq",
@@ -387,7 +387,7 @@
         "1 predicción (I think… will…)"
       ],
       "placeholder": "Next quarter is going to be big for me. First, I'm going to…",
-      "example": "Next quarter is going to be big for me. First, I'm going to finish the B1 course — by September, I'll speak with much more confidence. I'm also going to apply for remote jobs in August. I'm meeting my teacher on Monday to practise interviews. I'll practise speaking every single day, I promise! By the end of the year, I think my English will open new doors for me.",
+      "example": "Next (quarter / year) is going to be big for me. First, I'm going to (plan) — by (month), I'll (prediction). I'm also going to (plan) in (month). I'm (arrangement) on (day) to (purpose). I'll (promise) every single day, I promise! By the end of the year, I think (prediction).",
       "hw": "Escribe tu roadmap y grábate leyéndolo. Envíame texto y audio por WhatsApp. ¡Y prepárate: el BOSS te espera! 👑"
     }
   ]

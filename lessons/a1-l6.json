@@ -67,7 +67,7 @@
       "type": "listening", "id": "ex-l1",
       "title": "AUDIO 1 · GETTING TO KNOW YOU",
       "desc": "Ana le hace preguntas a Tom. Escucha las respuestas.",
-      "src": "a1-l6-1.mp3", "dur": "0:27", "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
+      "src": "a1-l6-1.mp3", "dur": "0:27", "speakers": "🗣 Ana + Tom",
       "questions": [
         { "type": "mcq", "q": "Where does Tom live?", "options": ["Toronto", "Madrid", "Mexico City"], "answer": 0 },
         { "type": "mcq", "q": "Can Tom swim?", "options": ["Yes, he can", "No, he can't", "He doesn't say"], "answer": 1 },
@@ -107,7 +107,7 @@
         "Can you…? — <b>Yes, I can / No, I can't</b>"
       ],
       "placeholder": "I live in...",
-      "example": "I live in Buenos Aires. I'm a student and I work in a shop. Yes, I like music and I play the guitar. I can cook, but I can't drive. On weekends, I see my family.",
+      "example": "I live in (city). I'm a (job) and I work in (place). I like (thing) and I play (instrument / sport). I can (verb), but I can't (verb). On weekends, I (activity).",
       "hw": "Responde las preguntas y graba un audio. Mándame ambos por WhatsApp. ¡Después, a por el examen del mundo A1!"
     }
   ],

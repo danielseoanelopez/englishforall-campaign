@@ -102,11 +102,11 @@
       "cast": [
         {
           "en": "Priya",
-          "sp": "cree que es el diseño <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>"
+          "sp": "cree que es el diseño"
         },
         {
           "en": "Marcos",
-          "sp": "defiende su trabajo <b style='color:var(--magenta)'>con datos</b> <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
+          "sp": "defiende su trabajo <b style='color:var(--magenta)'>con datos</b>"
         }
       ]
     },
@@ -157,7 +157,7 @@
       "desc": "Priya culpa al diseño por la caída de ventas. Marcos discrepa — con datos y con tacto. ¿Quién tiene razón?",
       "src": "b1-l5-1.mp3",
       "dur": "1:27",
-      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
+      "speakers": "🗣 Priya + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -356,7 +356,7 @@
       "desc": "Viernes siguiente: Priya le deja un mensaje a Marcos con el resultado del test. ¿Quién tenía razón?",
       "src": "b1-l5-2.mp3",
       "dur": "0:45",
-      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>",
+      "speakers": "🗣 Priya",
       "questions": [
         {
           "type": "mcq",
@@ -407,7 +407,7 @@
         "Propón un paso siguiente (<b>I'd suggest… / It might be worth…</b>)"
       ],
       "placeholder": "Hi …, I take your point about…",
-      "example": "Hi Priya, I take your point about the deadline — it's important. But I see it differently. If we launch this Friday, the payment system might be unstable, and that could cost us sales. The data suggests we need three more days of testing. I'd suggest we launch on Tuesday instead — it might be worth waiting to get it right. What do you think? Best, Marcos",
+      "example": "Hi (name), I take your point about (topic) — it's important. But I see it differently. If we (action), (possible problem), and that could (consequence). The data suggests (evidence). I'd suggest we (alternative) instead — it might be worth (waiting / testing). What do you think? Best, (your name)",
       "hw": "Escribe tu respuesta y grábate leyéndola con tono calmado y profesional. Envíame texto y audio por WhatsApp."
     }
   ]

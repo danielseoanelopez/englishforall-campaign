@@ -91,11 +91,11 @@
       "cast": [
         {
           "en": "Sofia",
-          "sp": "la <b style='color:var(--magenta)'>team lead</b> <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
+          "sp": "la <b style='color:var(--magenta)'>team lead</b>"
         },
         {
           "en": "Marcos",
-          "sp": "el developer <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
+          "sp": "el developer"
         }
       ]
     },
@@ -106,7 +106,7 @@
       "desc": "Sofia y Marcos planean el próximo proyecto. Fíjate en \"going to\".",
       "src": "plans-1.mp3",
       "dur": "0:43",
-      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
+      "speakers": "🗣 Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -232,7 +232,7 @@
       "desc": "Marcos cuenta su agenda para un viaje. Fíjate en el present continuous con horas.",
       "src": "plans-2.mp3",
       "dur": "0:33",
-      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
+      "speakers": "🗣 Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -324,7 +324,7 @@
         "Usa un marcador de futuro (<b>next week</b>, <b>on Monday</b>, <b>in summer</b>)"
       ],
       "placeholder": "Next month, I'm going to...",
-      "example": "Next month, I'm going to start a new English course. I'm going to study every evening. On Tuesday, I'm meeting my teacher at five, and on Saturday, I'm taking a level test. In summer, I'm going to travel to use my English. I'm really excited!",
+      "example": "Next (month / week), I'm going to (plan). I'm going to (activity) every (day / evening). On (day), I'm (arrangement) at (time), and on (day), I'm (arrangement). In (season), I'm going to (plan). I'm really excited!",
       "hw": "Escribe tus planes y graba un audio. Envíame ambos por WhatsApp. Después, ¡a por el examen del mundo A2!"
     }
   ]

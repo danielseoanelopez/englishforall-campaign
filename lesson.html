@@ -92,8 +92,8 @@ const sayText = s => stripTags(s).replace(/[\u{1F1E6}-\u{1F1FF}\u{1F300}-\u{1FAF
 // Rendered as <span role="button"> — NOT <button> — because it must live inside flashcards,
 // match tiles and option labels, and HTML forbids nesting a button inside a button.
 function spkBtn(text, extra){ const say = escAttr(sayText(text)); if(!say) return ""; return `<span class="spk-btn${extra?" "+extra:""}" role="button" tabindex="0" title="Escuchar y repetir" aria-label="Escuchar y repetir" data-say="${say}" onclick="event.preventDefault();event.stopPropagation();speakText(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();speakText(this);}">🔊</span>`; }
-// codeSay: pull just the ENGLISH targets (inside <code>/.ok/.tg tags) out of a bilingual grammar cell, so an English voice never reads the Spanish glosses.
-function codeSay(html){ const out=[]; const re=/<code>([\s\S]*?)<\/code>|<span class=['"](?:ok|tg)['"]>([\s\S]*?)<\/span>/g; let m; while((m=re.exec(html))){ let t=(m[1]!=null?m[1]:m[2]).replace(/<[^>]*>/g,"").replace(/\//g,", ").replace(/\s+/g," ").trim(); if(t) out.push(t); } return out.join("; "); }
+// noFlags: characters are introduced by role only — never with a country flag (students guess the accent themselves)
+function noFlags(s){ return String(s==null?"":s).replace(/<img[^>]*class=['"]flag['"][^>]*>/g,"").replace(/\s+/g," ").trim(); }
 function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
 // ---------- question helper (mcq / trueFalse) — used by listening, gapFill, dialogue ----------
@@ -114,7 +114,7 @@ function qHtml(q, name, num, sp){
 function grammarHtml(g){
   let h = `<div class="stage-tag">📘 GRAMMAR <span class="es">· ${esc(g.tag)}</span></div>
   <div class="card grammar" data-aos="fade-up"><div class="panel-title">${esc(g.title)}</div><p>${esc(g.intro)}</p>
-  <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}${spkBtn(c.say!=null?c.say:codeSay(c.body),"mini")}</span>${esc(c.body)}</div>`).join("")}</div>`;
+  <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}</div>`).join("")}</div>`;
   if(g.ladderLabel) h += `<p style="margin-top:16px">${esc(g.ladderLabel)}</p>`;
   if(g.ladder && g.ladder.length) h += `<div class="freq-bar">${g.ladder.map((c,i)=>`<span class="chip">${esc(c)}${spkBtn(c,"mini")}</span>${i<g.ladder.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
   if(g.vocab && g.vocab.length){
@@ -127,11 +127,11 @@ function grammarHtml(g){
 function storyHtml(s){
   return `<div class="stage-tag">★ THE STORY <span class="es">· ${esc(s.tag)}</span></div>
   <div class="card alt" data-aos="fade-up"><div class="panel-title">${esc(s.title)}</div><p>${esc(s.intro)}</p>
-  <div class="gloss">${(s.cast||[]).map(c=>`<div class="term"><span class="en">${esc(c.en)}</span> <span class="sp">${esc(c.sp)}</span></div>`).join("")}</div></div>`;
+  <div class="gloss">${(s.cast||[]).map(c=>`<div class="term"><span class="en">${esc(c.en)}</span> <span class="sp">${noFlags(c.sp)}</span></div>`).join("")}</div></div>`;
 }
 function listeningHtml(b, id, alt){
   let h = `<div class="card${alt?' alt':''}" id="${id}" data-aos="fade-up"><div class="panel-title">🎧 ${esc(b.title)}</div><p class="es">${esc(b.desc)}</p>
-  <div class="player"><audio controls preload="metadata" src="${esc(b.src)}"></audio><div class="meta"><span>⏱ <b>${esc(b.dur)}</b></span><span>${esc(b.speakers)}</span></div></div>`;
+  <div class="player"><audio controls preload="metadata" src="${esc(b.src)}"></audio><div class="meta"><span>⏱ <b>${esc(b.dur)}</b></span><span>${noFlags(b.speakers)}</span></div></div>`;
   h += (b.questions||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {q:true, opt:true})).join("");
   h += `<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div>`;
   if(b.speaking) h += `<div class="verbal"><p class="vq"><span class="mic">🎤</span><b>Speaking:</b> ${esc(b.speaking.prompt)}</p>
@@ -206,10 +206,10 @@ function flashcardsHtml(b, id){
 function writingHtml(w){
   return `<div class="stage-tag">✍️ WRITING <span class="es">· en clase o tarea (HW)</span></div>
   <div class="card purple" data-aos="fade-up"><div class="panel-title">${esc(w.title)}</div><p>${esc(w.intro)}</p>
-  <ul class="checklist">${(w.checklist||[]).map(li=>`<li>${esc(li)}</li>`).join("")}</ul>
+  <ul class="checklist">${(w.checklist||[]).map(li=>`<li class="ck" role="checkbox" aria-checked="false" tabindex="0" onclick="ckToggle(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();ckToggle(this);}">${esc(li)}</li>`).join("")}</ul>
   <textarea class="writing-area" id="writingBox" placeholder="${escAttr(w.placeholder||'')}"></textarea>
-  <button class="toggle-btn" data-show="💡 Ver ejemplo" data-hide="🙈 Ocultar ejemplo" onclick="toggleReveal('mw', this)">💡 Ver ejemplo</button>
-  <div class="reveal model-box" id="mw"><span class="lbl">EXAMPLE</span>${esc(w.example)}</div>
+  <button class="toggle-btn" data-show="💡 Guía para empezar" data-hide="🙈 Ocultar guía" onclick="toggleReveal('mw', this)">💡 Guía para empezar</button>
+  <div class="reveal model-box" id="mw"><span class="lbl">EMPIEZA ASÍ</span>${esc(w.example)}</div>
   <div class="note gold"><b>📌 Tarea (HW):</b> ${esc(w.hw)}</div></div>`;
 }
 
@@ -259,6 +259,7 @@ function build(L){
   document.getElementById("progressLabel").textContent = `0 / ${EXERCISES.length}`;
   document.getElementById("finalRow").style.display = "";
   shuffleOptions();
+  ckRestore();
   try { AOS.refreshHard(); } catch(e){}
 }
 
@@ -305,6 +306,10 @@ function toggleMute(){ muted=!muted; try{ localStorage.setItem("efa_muted", mute
 (function initSocial(){ document.querySelectorAll(".so-wa").forEach(a=>a.href=SOCIAL.whatsapp); document.querySelectorAll(".so-ig").forEach(a=>a.href=SOCIAL.instagram); document.querySelectorAll(".so-li").forEach(a=>a.href=SOCIAL.linkedin); document.querySelectorAll(".so-tap").forEach(a=>a.href=SOCIAL.taplink); document.querySelectorAll(".so-dc").forEach(a=>{ a.setAttribute("onclick","return copyDiscord(this)"); a.title="Discord: "+SOCIAL.discord+" (clic para copiar)"; }); })();
 function copyDiscord(el){ var r=el.innerHTML; var done=function(){ el.innerHTML='<i class="fa-solid fa-check"></i>'+(el.classList.contains("btn")?" ¡COPIADO!":""); setTimeout(function(){el.innerHTML=r;},1500); }; try{ navigator.clipboard.writeText(SOCIAL.discord).then(done,done); }catch(e){ done(); } return false; }
 function toggleReveal(id, btn){ const el=document.getElementById(id); const open=el.classList.toggle("open"); btn.textContent = open?btn.dataset.hide:btn.dataset.show; blip(); }
+// writing checklist: tap each step to tick it off (saved per lesson)
+function ckToggle(el){ const on=el.classList.toggle("done"); el.setAttribute("aria-checked", on?"true":"false"); if(on) okBeep(); else blip();
+  try{ const state=Array.prototype.map.call(document.querySelectorAll(".checklist .ck"), li=>li.classList.contains("done")?1:0); localStorage.setItem(LESSON_KEY+"_ck", JSON.stringify(state)); }catch(e){} }
+function ckRestore(){ try{ const state=JSON.parse(localStorage.getItem(LESSON_KEY+"_ck")||"[]"); document.querySelectorAll(".checklist .ck").forEach((li,i)=>{ if(state[i]){ li.classList.add("done"); li.setAttribute("aria-checked","true"); } }); }catch(e){} }
 function shuffleOptions(){ document.querySelectorAll(".q[data-correct]").forEach(function(q){ var opts=Array.prototype.slice.call(q.querySelectorAll(".option")); for(var i=opts.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=opts[i]; opts[i]=opts[j]; opts[j]=t; } opts.forEach(function(o){ q.appendChild(o); }); }); }
 
 function setScore(blockId, correct, total){

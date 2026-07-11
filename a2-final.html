@@ -35,6 +35,8 @@
   .container { max-width:780px; margin:0 auto; position:relative; z-index:2; }
   .backmap { position:fixed; top:12px; left:12px; z-index:30; display:inline-flex; align-items:center; gap:7px; height:42px; padding:0 14px; border-radius:10px; border:2px solid var(--purple); background:var(--panel); color:var(--purple); font-family:"Press Start 2P",monospace; font-size:0.56rem; letter-spacing:1px; text-decoration:none; box-shadow:0 0 10px #9d4dff44; transition:box-shadow .15s, transform .1s; }
   .backmap:hover { transform:translateY(-2px); box-shadow:0 0 16px #9d4dff99; }
+  /* mobile: MAPA button scrolls with the page and sits above the logo (no overlap) */
+  @media (max-width:720px){ body { padding-top:70px; } .backmap { position:absolute; } }
   .brand { text-align:center; margin-bottom:10px; }
   .brand .logo { height:120px; max-width:88%; object-fit:contain; background:#000; padding:10px 18px; border:2px solid var(--cyan); border-radius:16px; box-shadow:0 0 16px #00e5ff55, inset 0 0 12px #00e5ff22; filter:brightness(1.15) saturate(1.2); }
   header { text-align:center; margin-bottom:22px; }

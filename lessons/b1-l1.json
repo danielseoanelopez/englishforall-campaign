@@ -102,11 +102,11 @@
       "cast": [
         {
           "en": "Priya",
-          "sp": "la nueva <b style='color:var(--magenta)'>Project Director</b> <img class='flag' src='https://flagcdn.com/in.svg' alt='India'>"
+          "sp": "la nueva <b style='color:var(--magenta)'>Project Director</b>"
         },
         {
           "en": "Marcos",
-          "sp": "el developer <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
+          "sp": "el developer"
         }
       ]
     },
@@ -165,7 +165,7 @@
       "desc": "Priya revisa el trabajo de Marcos este trimestre. ¿Qué ha terminado y qué no?",
       "src": "b1-l1-1.mp3",
       "dur": "1:10",
-      "speakers": "🗣 Priya <img class='flag' src='https://flagcdn.com/in.svg' alt='India'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
+      "speakers": "🗣 Priya + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -318,7 +318,7 @@
       "desc": "Marcos le deja un mensaje de voz a Sofia con las novedades del proyecto.",
       "src": "b1-l1-2.mp3",
       "dur": "0:32",
-      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
+      "speakers": "🗣 Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -369,7 +369,7 @@
         "Contrasta con <b>past simple</b> + tiempo específico (<i>Last week I…</i>)"
       ],
       "placeholder": "This month I've…",
-      "example": "This month I've achieved a lot. I've finished two big projects and I've learned a new tool at work. I've worked on the same team since January, so for about six months now. I've already updated my CV, but I haven't applied for any new jobs yet. Last week I gave my first presentation in English — I was nervous, but it went well!",
+      "example": "This (month / year) I've achieved a lot. I've finished (something) and I've learned (something). I've (done something) since (month), so for (duration) now. I've already (action), but I haven't (action) yet. Last week I (past event) — I was nervous, but it went well!",
       "hw": "Escribe tu párrafo y grábate leyéndolo en voz alta. Envíame el texto y el audio por WhatsApp y lo corregimos juntos."
     }
   ]

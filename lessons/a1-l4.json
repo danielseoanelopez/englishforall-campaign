@@ -174,7 +174,7 @@
       "desc": "Ana le pregunta a Tom por su familia. Escucha have got.",
       "src": "a1-l4-1.mp3",
       "dur": "0:29",
-      "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
+      "speakers": "🗣 Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -305,7 +305,7 @@
       "desc": "Marcos describe su cuarto y sus cosas. Escucha have got / haven't got.",
       "src": "a1-l4-2.mp3",
       "dur": "0:20",
-      "speakers": "🗣 Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
+      "speakers": "🗣 Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -356,7 +356,7 @@
         "Describe a una persona (eyes, hair, job)"
       ],
       "placeholder": "I've got...",
-      "example": "I've got a big family. I've got two brothers and one sister. My sister has got brown hair and green eyes. Her name is Ana. My brother has got a dog. I haven't got a pet, but I want a cat!",
+      "example": "I've got a (big / small) family. I've got (number) brothers and (number) sisters. My (family member) has got (colour) hair and (colour) eyes. Her name is (name). My (family member) has got a (pet). I haven't got a (pet), but I want a (animal)!",
       "hw": "Escribe sobre tu familia y mándamelo por WhatsApp."
     }
   ],

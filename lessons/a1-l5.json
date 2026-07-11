@@ -177,7 +177,7 @@
       "desc": "Ana y Tom hablan de las cosas en una mochila. Escucha los objetos.",
       "src": "a1-l5-1.mp3",
       "dur": "0:27",
-      "speakers": "🗣 Ana <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'> + Tom <img class='flag' src='https://flagcdn.com/ca.svg' alt='Canadá'>",
+      "speakers": "🗣 Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -303,7 +303,7 @@
         "Di dónde están (<b>on the table</b>, <b>in the bag</b>)"
       ],
       "placeholder": "On my desk, there is...",
-      "example": "On my desk, there is a laptop and a lamp. There are two books and a pen. There is an apple next to the phone. My keys are in my bag. I like my desk!",
+      "example": "On my desk, there is a (object) and a (object). There are (number) (objects) and a (object). There is a (object) next to the (object). My (things) are in my (place). I like my desk!",
       "hw": "Escribe tu descripción y mándame una foto + el texto por WhatsApp."
     }
   ],

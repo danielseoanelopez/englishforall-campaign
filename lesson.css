@@ -110,6 +110,12 @@ p { margin-bottom: 8px; }
 .checklist { list-style: none; margin: 10px 0 0; }
 .checklist li { color: var(--muted); font-size: 0.9rem; padding: 3px 0; }
 .checklist li::before { content: "☐ "; color: var(--gold); }
+/* tappable checklist (writing task): tick off each step */
+.checklist li.ck { cursor: pointer; user-select: none; -webkit-user-select: none; border-radius: 8px; padding: 6px 9px; margin: 2px 0 2px -9px; transition: background 0.15s, color 0.15s, box-shadow 0.15s; }
+.checklist li.ck:hover { background: #ffc83d10; box-shadow: 0 0 8px #ffc83d22; }
+.checklist li.ck.done { color: var(--green); background: #3dffa00a; }
+.checklist li.ck.done::before { content: "☑ "; color: var(--green); }
+.checklist li.ck.done b { color: var(--green); }
 .btn { display: inline-block; font-family: "Press Start 2P", monospace; font-size: 0.78rem; background: linear-gradient(180deg, var(--magenta), #a31bd6); color: #fff; border: 2px solid #ff8df7; border-radius: 12px; padding: 14px 24px; cursor: pointer; letter-spacing: 1px; text-shadow: 0 0 6px #000; box-shadow: 0 0 14px #ff3df077; transition: transform 0.1s, box-shadow 0.15s; text-decoration: none; }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 0 22px #ff3df0aa; }
 .btn:disabled { opacity: 0.5; cursor: default; transform: none; box-shadow: none; }
@@ -182,13 +188,11 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 /* Mini speaker — for grammar cells, ladder chips, vocab terms, questions, flashcards, match games */
 .spk-btn.mini { width: 24px; height: 24px; font-size: 0.72rem; border-radius: 7px; margin-left: 6px; }
 .q > p .spk-btn.mini { vertical-align: middle; margin-left: 8px; }
-.fc-front .spk-btn.mini { position: absolute; top: 5px; right: 5px; margin: 0; }
+.fc-front .spk-btn.mini { position: static; margin: 0; flex: 0 0 auto; }
 .match-l { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .match-l .spk-btn.mini { margin-left: auto; }
 .match-r { display: flex; align-items: center; gap: 8px; }
 .match-r .spk-btn.mini { margin-left: auto; }
-.gram-cell .gh { display: flex; align-items: center; }
-.gram-cell .gh .spk-btn.mini { margin-left: auto; }
 .freq-bar .chip { display: inline-flex; align-items: center; }
 .term .en { display: flex; align-items: center; }
 .term .en .spk-btn.mini { margin-left: auto; }
@@ -209,11 +213,11 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .mem-status { margin-top: 12px; letter-spacing: 1px; color: var(--gold); font-size: 0.9rem; }
 /* Flashcards (flip to study) */
 .fc-deck { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; margin-top: 10px; }
-.flashcard { perspective: 700px; border: none; background: none; padding: 0; height: 92px; cursor: pointer; }
+.flashcard { perspective: 700px; border: none; background: none; padding: 0; height: 112px; cursor: pointer; }
 .fc-inner { position: relative; width: 100%; height: 100%; transition: transform 0.4s; transform-style: preserve-3d; display: block; }
 .flashcard.flipped .fc-inner { transform: rotateY(180deg); }
 .fc-front, .fc-back { position: absolute; inset: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; border-radius: 12px; padding: 8px; text-align: center; font-family: "Share Tech Mono", monospace; }
-.fc-front { background: #10122a; border: 2px solid var(--cyan); color: var(--text); box-shadow: 0 0 10px #00e5ff33; font-size: 1.02rem; }
+.fc-front { background: #10122a; border: 2px solid var(--cyan); color: var(--text); box-shadow: 0 0 10px #00e5ff33; font-size: 1.02rem; flex-direction: column; gap: 7px; }
 .fc-back { background: #1a0f2e; border: 2px solid var(--gold); color: var(--gold); transform: rotateY(180deg); font-size: 0.95rem; }
 
 /* country flags as images (Windows shows emoji flags as letters) — same approach as REVIEWS.html */
@@ -222,6 +226,12 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 /* emoji artwork as images (consistent cross-platform) — Twemoji SVGs via jsdelivr */
 .emo { height: 1.35em; width: auto; vertical-align: -0.28em; }
 .pic-em .emo { height: 1.9rem; vertical-align: middle; }
+
+/* ===== mobile: MAPA + sound buttons scroll with the page and sit above the logo (no overlap) ===== */
+@media (max-width: 720px) {
+  body { padding-top: 72px; }
+  .backmap, .mute-btn { position: absolute; }
+}
 
 /* ===== tablet / iPad responsiveness ===== */
 @media (min-width: 768px) {

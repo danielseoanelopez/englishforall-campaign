@@ -90,11 +90,11 @@
       "cast": [
         {
           "en": "Sofia",
-          "sp": "la <b style='color:var(--magenta)'>team lead</b> <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>"
+          "sp": "la <b style='color:var(--magenta)'>team lead</b>"
         },
         {
           "en": "Marcos",
-          "sp": "el developer <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>"
+          "sp": "el developer"
         }
       ]
     },
@@ -167,7 +167,7 @@
       "desc": "Sofia entrevista a Marcos sobre su trabajo anterior. Fíjate en los verbos en pasado.",
       "src": "past-simple-1.mp3",
       "dur": "0:58",
-      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'> + Marcos <img class='flag' src='https://flagcdn.com/mx.svg' alt='México'>",
+      "speakers": "🗣 Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -282,7 +282,7 @@
       "desc": "Sofia cuenta el primer gran lanzamiento del equipo. Escucha el orden: first, then, after that.",
       "src": "past-simple-2.mp3",
       "dur": "0:37",
-      "speakers": "🗣 Sofia <img class='flag' src='https://flagcdn.com/gb.svg' alt='Reino Unido'>",
+      "speakers": "🗣 Sofia",
       "questions": [
         {
           "type": "mcq",
@@ -332,7 +332,7 @@
         "Usa un marcador de tiempo (<b>last year</b>, <b>two years ago</b>, <b>in 2021</b>)"
       ],
       "placeholder": "Two years ago, I worked at...",
-      "example": "Two years ago, I worked at a small café. I started early and made coffee for the customers. I had a great team. One day, the machine broke and we didn't open for two hours, but we fixed it. I left the job last year to study English.",
+      "example": "(Time) ago, I worked at (place). I started (when) and (past action). I had (something / someone). One day, (a problem), but (how you fixed it). I left the job (when) to (reason).",
       "hw": "Escribe tu historia y graba un audio leyéndola en voz alta. Envíame ambos por WhatsApp y lo corregimos."
     }
   ],
