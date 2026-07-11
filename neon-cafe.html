@@ -12,7 +12,7 @@
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="The Neon Café — English for All · Rank Up">
-<meta property="og:description" content="Serve the customers, survive the rush, impress the cat. Practise real English in a neon arcade café. Play free.">
+<meta property="og:description" content="Serve the customers, survive the rush, impress the cat. Practice real English in a neon arcade café. Play free.">
 <meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/og-city.jpg">
 <meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/neon-cafe.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -340,21 +340,21 @@ const STAGES = {
     ]
   },
   s3: {
-    num: "1-3", name: "Lost & found", tag: "Have got · there is / there are · places",
+    num: "1-3", name: "Lost & found", tag: "Have / has · there is / there are · places",
     intro: "Busy day. Things are lost, mixed up, and the delivery just arrived. Fix it all with your words.",
     introKey: "s4-intro",
-    words: ["It's got…", "there is / there are", "next to", "Where are…?"],
+    words: ["It has…", "there is / there are", "next to", "Where are…?"],
     rounds: [
-      { type: "talk", who: "jack", line: "Wait — this isn't my order! MINE has got no sugar, and it's a LARGE tea.",
+      { type: "talk", who: "jack", line: "Wait — this isn't my order! MINE has no sugar, and it's a LARGE tea.",
         keys: { line: "s4-r1-line", retry: "s4-r1-retry", thanks: "s4-r1-thanks" },
         retryLine: "No sugar! Large! Tea!",
         thanks: "That's the one. Lifesaver.",
         options: ["The large tea with no sugar — here.", "The small coffee with sugar — here.", "A cookie — here you go."], correct: 0, par: 16 },
-      { type: "talk", who: "mia", line: "Excuse me — has this café got wifi?",
+      { type: "talk", who: "mia", line: "Excuse me — does this café have wifi?",
         keys: { line: "s4-r2-line", retry: "s4-r2-retry", thanks: "s4-r2-thanks" },
         retryLine: "Wifi? Internet? Yes or no?",
-        thanks: "Perfect, thanks! I've got big files to send.",
-        options: ["Yes, it has. The password is on the board.", "No, I'm from Argentina.", "It's half past two."], correct: 0, par: 15 },
+        thanks: "Perfect, thanks! I have big files to send.",
+        options: ["Yes, it does. The password is on the board.", "No, I'm from Argentina.", "It's half past two."], correct: 0, par: 15 },
       { type: "order", who: "dan", trayLabel: "DISPLAY CASE", line: "Put TWO bagels and THREE muffins in the display case.",
         keys: { line: "s5-r1-line", retry: "s5-r1-retry", thanks: "s5-r1-thanks" },
         retryLine: "Two bagels! Three muffins! The case, rookie!",
@@ -364,7 +364,7 @@ const STAGES = {
         keys: { line: "s5-r2-line", retry: "s5-r2-retry", thanks: "s5-r2-thanks" },
         retryLine: "Juice! Is there juice?",
         thanks: "Yes! One, please. Fresh!",
-        options: ["Yes, there is. One juice?", "No, I'm the barista.", "It's got stars on it."], correct: 0, par: 15 },
+        options: ["Yes, there is. One juice?", "No, I'm the barista.", "It has stars on it."], correct: 0, par: 15 },
       { type: "talk", who: "jack", line: "Where are the napkins, mate?",
         keys: { line: "s5-r3-line", retry: "s5-r3-retry", thanks: "s5-r3-thanks" },
         retryLine: "Napkins! WHERE?",
@@ -427,7 +427,7 @@ const STAGES = {
         keys: { line: "sb-r4-line", retry: "sb-r4-retry", thanks: "sb-r4-thanks" },
         retryLine: "It is MORNING. The customer is THERE. Speak.",
         thanks: "...Inspection passed. The café stays open. Well done, barista.",
-        options: ["Good morning! What can I get you?", "Goodbye! See you!", "It's got stars on it."], correct: 0, par: 16 }
+        options: ["Good morning! What can I get you?", "Goodbye! See you!", "It has stars on it."], correct: 0, par: 16 }
     ]
   }
 };

@@ -4,8 +4,8 @@
   "totalLessons": 6,
   "world": "FIRST CONTACT",
   "key": "rankup_A1_L4",
-  "title": "TO BE<br>&amp; HAVE GOT",
-  "titlePlain": "To Be & Have Got (A1)",
+  "title": "TO BE<br>&amp; HAVE",
+  "titlePlain": "To Be & Have (A1)",
   "subtitle": "Grammar · family &amp; things · A1 · ~40 min",
   "rankup": "LESSON CLEAR!",
   "next": {
@@ -15,17 +15,17 @@
   "blocks": [
     {
       "type": "grammar",
-      "tag": "to be / have got",
-      "title": "📘 HAVE GOT · tener · my/your/his/her",
-      "intro": "Usamos <b style='color:var(--gold)'>have got</b> para posesiones y familia. Estudia con las tarjetas y practica.",
+      "tag": "to be / have",
+      "title": "📘 HAVE · tener · my/your/his/her",
+      "intro": "Usamos <b style='color:var(--gold)'>have</b> para posesiones y familia. Estudia con las tarjetas y practica.",
       "cells": [
         {
-          "h": "✓ have / has got",
-          "body": "I / you / we / they <code>have got</code><br>he / she / it <code>has got</code><br>I've got a dog."
+          "h": "✓ have / has",
+          "body": "I / you / we / they <code>have</code><br>he / she / it <code>has</code><br>I have a dog."
         },
         {
-          "h": "✗ Negative",
-          "body": "I <code>haven't got</code> a car.<br>She <code>hasn't got</code> a pet."
+          "h": "✗ Negative · ? Question",
+          "body": "I <code>don't have</code> a car.<br>She <code>doesn't have</code> a pet.<br><code>Do you have</code> a pet?"
         },
         {
           "h": "👪 Possessives",
@@ -33,7 +33,7 @@
         },
         {
           "h": "⚠ Watch out",
-          "body": "<span class='x'>She have got</span> → <span class='ok'>She has got</span><br><span class='x'>his sister name</span> → <span class='ok'>his sister's name</span>"
+          "body": "<span class='x'>She have</span> → <span class='ok'>She has</span><br><span class='x'>his sister name</span> → <span class='ok'>his sister's name</span>"
         }
       ],
       "ladderLabel": "<b style='color:var(--purple)'>La familia</b>:",
@@ -72,7 +72,7 @@
           "sp": "alto / bajo"
         },
         {
-          "en": "Have you got…?",
+          "en": "Do you have…?",
           "sp": "¿tienes…?"
         },
         {
@@ -117,11 +117,11 @@
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "have got / has got / to be",
+      "title": "have / has / to be",
       "intro": "Elige la opción correcta.",
       "items": [
         {
-          "q": "I ___ got a sister.",
+          "q": "I ___ a sister.",
           "options": [
             "have",
             "has",
@@ -130,7 +130,7 @@
           "answer": 0
         },
         {
-          "q": "She ___ got brown hair.",
+          "q": "She ___ brown hair.",
           "options": [
             "has",
             "have",
@@ -139,7 +139,7 @@
           "answer": 0
         },
         {
-          "q": "They ___ got a dog.",
+          "q": "They ___ a dog.",
           "options": [
             "have",
             "has",
@@ -157,11 +157,20 @@
           "answer": 0
         },
         {
-          "q": "We ___ got a big house.",
+          "q": "We ___ a big house.",
           "options": [
             "have",
             "has",
             "are"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "She ___ have a pet.",
+          "options": [
+            "doesn't",
+            "don't",
+            "isn't"
           ],
           "answer": 0
         }
@@ -171,14 +180,14 @@
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · MY FAMILY",
-      "desc": "Ana le pregunta a Tom por su familia. Escucha have got.",
+      "desc": "Ana le pregunta a Tom por su familia. Escucha have y has.",
       "src": "a1-l4-1.mp3",
-      "dur": "0:29",
+      "dur": "0:30",
       "speakers": "🗣 Ana + Tom",
       "questions": [
         {
           "type": "mcq",
-          "q": "How many brothers and sisters has Tom got?",
+          "q": "How many brothers and sisters does Tom have?",
           "options": [
             "One brother and one sister",
             "Two sisters",
@@ -188,7 +197,7 @@
         },
         {
           "type": "mcq",
-          "q": "What has his brother got?",
+          "q": "What does his brother have?",
           "options": [
             "A cat",
             "A dog",
@@ -198,23 +207,23 @@
         },
         {
           "type": "trueFalse",
-          "q": "Lucy has got blue eyes.",
+          "q": "Lucy has blue eyes.",
           "answer": true
         }
       ],
       "speaking": {
-        "prompt": "Describe your family. Use <i>I've got…</i> and <i>He's/She's got…</i>",
-        "starter": "I've got… My brother has got… His/Her name is…"
+        "prompt": "Describe your family. Use <i>I have…</i> and <i>He/She has…</i>",
+        "starter": "I have (family member). My brother has (thing). His/Her name is (name)."
       },
       "transcript": [
         {
           "spk": "Ana",
-          "html": "Tom, <span class='tg'>have you got</span> any brothers or sisters?"
+          "html": "Tom, <span class='tg'>do you have</span> any brothers or sisters?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "Yes, <span class='tg'>I've got</span> one brother and one sister. My brother <span class='tg'>has got</span> a dog."
+          "html": "Yes, <span class='tg'>I have</span> one brother and one sister. My brother <span class='tg'>has</span> a dog."
         },
         {
           "spk": "Ana",
@@ -223,16 +232,16 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>Her</span> name is Lucy. She <span class='tg'>has got</span> blue eyes and brown hair."
+          "html": "<span class='tg'>Her</span> name is Lucy. She <span class='tg'>has</span> blue eyes and brown hair."
         },
         {
           "spk": "Ana",
-          "html": "Has your brother got a job?"
+          "html": "Does your brother have a job?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "Yes, he is an engineer."
+          "html": "Yes, he does. He is an engineer."
         }
       ]
     },
@@ -246,31 +255,29 @@
           "words": [
             "I",
             "have",
-            "got",
             "a",
             "brother"
           ],
-          "answer": "I have got a brother"
+          "answer": "I have a brother"
         },
         {
           "words": [
             "She",
             "has",
-            "got",
             "blue",
             "eyes"
           ],
-          "answer": "She has got blue eyes"
+          "answer": "She has blue eyes"
         },
         {
           "words": [
-            "They",
+            "We",
+            "don't",
             "have",
-            "got",
             "a",
-            "dog"
+            "car"
           ],
-          "answer": "They have got a dog"
+          "answer": "We don't have a car"
         }
       ]
     },
@@ -302,14 +309,14 @@
       "type": "listening",
       "id": "ex-l2",
       "title": "AUDIO 2 · MY ROOM",
-      "desc": "Marcos describe su cuarto y sus cosas. Escucha have got / haven't got.",
+      "desc": "Marcos describe su cuarto y sus cosas. Escucha have / don't have.",
       "src": "a1-l4-2.mp3",
       "dur": "0:20",
       "speakers": "🗣 Marcos",
       "questions": [
         {
           "type": "mcq",
-          "q": "What has Marcos got on the desk?",
+          "q": "What does Marcos have on the desk?",
           "options": [
             "A laptop",
             "A TV",
@@ -319,12 +326,12 @@
         },
         {
           "type": "trueFalse",
-          "q": "Marcos has got a TV.",
+          "q": "Marcos has a TV.",
           "answer": false
         },
         {
           "type": "mcq",
-          "q": "Who has got a bigger room?",
+          "q": "Who has a bigger room?",
           "options": [
             "Marcos",
             "His sister",
@@ -334,14 +341,14 @@
         }
       ],
       "speaking": {
-        "prompt": "Describe your room. Use <i>I've got…</i> and <i>I haven't got…</i>",
-        "starter": "In my room, I've got… but I haven't got…"
+        "prompt": "Describe your room. Use <i>I have…</i> and <i>I don't have…</i>",
+        "starter": "In my room, I have (thing), but I don't have (thing)."
       },
       "transcript": [
         {
           "spk": "Marcos",
           "b": true,
-          "html": "This is my room. <span class='tg'>I've got</span> a big desk and a small bed. I've got many books. My laptop is on the desk. <span class='tg'>I haven't got</span> a TV, but I've got a guitar. My sister <span class='tg'>has got</span> a bigger room, but I like mine!"
+          "html": "This is my room. <span class='tg'>I have</span> a big desk and a small bed. I have many books. My laptop is on the desk. <span class='tg'>I don't have</span> a TV, but I have a guitar. My sister <span class='tg'>has</span> a bigger room, but I like mine!"
         }
       ]
     },
@@ -350,13 +357,13 @@
       "title": "✍️ MY FAMILY",
       "intro": "Escribe sobre tu familia en 4–5 frases:",
       "checklist": [
-        "Usa <b>I've got</b> / <b>I haven't got</b>",
-        "Usa <b>has got</b> para he/she",
+        "Usa <b>I have</b> / <b>I don't have</b>",
+        "Usa <b>has</b> para he/she",
         "Usa posesivos (<b>my</b>, <b>his</b>, <b>her</b>)",
         "Describe a una persona (eyes, hair, job)"
       ],
-      "placeholder": "I've got...",
-      "example": "I've got a (big / small) family. I've got (number) brothers and (number) sisters. My (family member) has got (colour) hair and (colour) eyes. Her name is (name). My (family member) has got a (pet). I haven't got a (pet), but I want a (animal)!",
+      "placeholder": "I have...",
+      "example": "I have a (big / small) family. I have (number) brothers and (number) sisters. My (family member) has (color) hair and (color) eyes. Her name is (name). My (family member) has a (pet). I don't have a (pet), but I want a (animal)!",
       "hw": "Escribe sobre tu familia y mándamelo por WhatsApp."
     }
   ],
@@ -372,11 +379,11 @@
       "lines": [
         [
           "ana",
-          "Tom, have you got any brothers or sisters?"
+          "Tom, do you have any brothers or sisters?"
         ],
         [
           "tom",
-          "Yes, I've got one brother and one sister. My brother has got a dog."
+          "Yes, I have one brother and one sister. My brother has a dog."
         ],
         [
           "ana",
@@ -384,15 +391,15 @@
         ],
         [
           "tom",
-          "Her name is Lucy. She has got blue eyes and brown hair."
+          "Her name is Lucy. She has blue eyes and brown hair."
         ],
         [
           "ana",
-          "Has your brother got a job?"
+          "Does your brother have a job?"
         ],
         [
           "tom",
-          "Yes, he is an engineer."
+          "Yes, he does. He is an engineer."
         ]
       ]
     },
@@ -401,7 +408,7 @@
       "lines": [
         [
           "marcos",
-          "This is my room. I've got a big desk and a small bed. I've got many books. My laptop is on the desk. I haven't got a TV, but I've got a guitar. My sister has got a bigger room, but I like mine!"
+          "This is my room. I have a big desk and a small bed. I have many books. My laptop is on the desk. I don't have a TV, but I have a guitar. My sister has a bigger room, but I like mine!"
         ]
       ]
     }

@@ -159,7 +159,7 @@
           "gap": true,
           "q": "Discrepas, pero con tacto:",
           "options": [
-            "I see your point, but maybe we could delay it instead of cancelling?",
+            "I see your point, but maybe we could delay it instead of canceling?",
             "No, that's a bad idea.",
             "Whatever you say."
           ],
@@ -168,7 +168,7 @@
         {
           "spk": "Sofia",
           "b": true,
-          "html": "Marcos, can you summarise where we are with GreenMarket?"
+          "html": "Marcos, can you summarize where we are with GreenMarket?"
         },
         {
           "gap": true,
@@ -182,7 +182,7 @@
         },
         {
           "spk": "Colleague",
-          "html": "…and back in 2019 we also tried a different layout, and then we changed the colours, and…"
+          "html": "…and back in 2019 we also tried a different layout, and then we changed the colors, and…"
         },
         {
           "gap": true,

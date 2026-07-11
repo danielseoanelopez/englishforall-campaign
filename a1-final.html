@@ -139,7 +139,7 @@
       <p>Tu profe te va a hacer estas preguntas en la clase (no se escribe acá):</p>
       <ul class="checklist">
         <li>Tell me about yourself: name, country, job, age. <span class="es">(to be)</span></li>
-        <li>Tell me about your family. <span class="es">(have got)</span></li>
+        <li>Tell me about your family. <span class="es">(have / has)</span></li>
         <li>What's your daily routine? What time...? <span class="es">(present simple + horas)</span></li>
       </ul>
     </div>
@@ -183,14 +183,14 @@ const FORM_ENDPOINT = "https://formspree.io/f/mbdewbrp";
 function copyDiscord(el){var r=el.innerHTML;var done=function(){el.innerHTML='<i class="fa-solid fa-check"></i>'+(el.classList.contains("btn")?" ¡COPIADO!":"");setTimeout(function(){el.innerHTML=r;},1500);};try{navigator.clipboard.writeText(SOCIAL.discord).then(done,done);}catch(e){done();}return false;}
 
 const SECTIONS = { A:"PARTE A · GRAMÁTICA Y USO", B:"PARTE B · VOCABULARIO", C:"PARTE C · LISTENING (escucha y responde)", D:"PARTE D · READING" };
-const READING = "Hi! My name is Lucy. I'm from London. I'm twenty-two years old. I'm a nurse. I've got one brother and one sister. I like music and football. My English class is on Monday at six o'clock.";
+const READING = "Hi! My name is Lucy. I'm from London. I'm twenty-two years old. I'm a nurse. I have one brother and one sister. I like music and football. My English class is on Monday at six o'clock.";
 
 const QUESTIONS = [
   { sec:"A", q:"She ___ a teacher.", o:["is","am","are"], a:0, fb:"3ra persona singular: she is." },
   { sec:"A", q:"I ___ from Mexico.", o:["am","is","are"], a:0, fb:"I + am." },
   { sec:"A", q:"They ___ from Canada.", o:["are","is","am"], a:0, fb:"they + are." },
-  { sec:"A", q:"I ___ got a sister.", o:["have","has","am"], a:0, fb:"I/you/we/they + have got." },
-  { sec:"A", q:"He ___ got a dog.", o:["has","have","is"], a:0, fb:"he/she/it + has got." },
+  { sec:"A", q:"I ___ a sister.", o:["have","has","am"], a:0, fb:"I/you/we/they + have." },
+  { sec:"A", q:"He ___ a dog.", o:["has","have","is"], a:0, fb:"he/she/it + has." },
   { sec:"A", q:"It's ___ apple.", o:["an","a","the"], a:0, fb:"an + sonido vocal (a-e-i-o-u)." },
   { sec:"A", q:"___ two books on the table.", o:["There are","There is","It is"], a:0, fb:"plural (2+) -> there are." },
   { sec:"A", q:"___ you like coffee?", o:["Do","Does","Are"], a:0, fb:"pregunta con 'you' -> Do you...?" },
@@ -201,7 +201,7 @@ const QUESTIONS = [
   { sec:"B", q:"You see a friend in the morning. You say:", o:["Good morning!","Good night!","Goodbye!"], a:0, fb:"saludo de la mañana." },
   { sec:"C", q:"What is Sara's job?", o:["A doctor","A teacher","A nurse"], a:0, fb:"'I'm a doctor.'", audio:"a1f1.mp3" },
   { sec:"C", q:"What time does the shop open?", o:["At nine","At six","At ten"], a:0, fb:"'opens at nine o'clock'.", audio:"a1f2.mp3" },
-  { sec:"C", q:"How many brothers has the person got?", o:["Two","One","Three"], a:0, fb:"'I've got two brothers'.", audio:"a1f3.mp3" },
+  { sec:"C", q:"How many brothers does the person have?", o:["Two","One","Three"], a:0, fb:"'I have two brothers'.", audio:"a1f3.mp3" },
   { sec:"C", q:"Where does the person work?", o:["In a hospital","In a school","In a shop"], a:0, fb:"'I work in a hospital'.", audio:"a1f4.mp3" },
   { sec:"D", q:"Where is Lucy from?", o:["London","Madrid","Toronto"], a:0, fb:"'I'm from London'." },
   { sec:"D", q:"What is Lucy's job?", o:["A nurse","A teacher","A doctor"], a:0, fb:"'I'm a nurse'." },
