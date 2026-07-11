@@ -283,7 +283,7 @@ function build(L){
 (function load(){
   const id = new URLSearchParams(location.search).get("id");
   if(!id){ document.getElementById("lessonRoot").innerHTML = '<div class="card">Falta <code>?id=</code>. Ej: <code>lesson.html?id=a2-l3</code></div>'; return; }
-  fetch("lessons/"+id+".json").then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(build)
+  fetch("lessons/"+id+".json", {cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(build)
     .catch(()=>{ document.getElementById("lessonRoot").innerHTML = '<div class="card">No pude cargar la lección <code>'+id+'</code>.</div>'; });
 })();
 
