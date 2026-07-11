@@ -83,6 +83,70 @@
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar frases</b> 📝, <b>escucha</b> 🎧 y <b>ordenar palabras</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
     },
     {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · verbos irregulares",
+      "intro": "Toca cada tarjeta para ver la traducción.",
+      "deckLabel": "verbos 1",
+      "cards": [
+        {
+          "front": "go → went",
+          "back": "ir → fue"
+        },
+        {
+          "front": "have → had",
+          "back": "tener → tuvo"
+        },
+        {
+          "front": "make → made",
+          "back": "hacer → hizo"
+        },
+        {
+          "front": "get → got",
+          "back": "conseguir → consiguió"
+        },
+        {
+          "front": "find → found",
+          "back": "encontrar → encontró"
+        },
+        {
+          "front": "meet → met",
+          "back": "conocer → conoció"
+        }
+      ],
+      "altDecks": [
+        {
+          "label": "verbos 2",
+          "cards": [
+            {
+              "front": "build → built",
+              "back": "construir → construyó"
+            },
+            {
+              "front": "leave → left",
+              "back": "irse → se fue"
+            },
+            {
+              "front": "come → came",
+              "back": "venir → vino"
+            },
+            {
+              "front": "see → saw",
+              "back": "ver → vio"
+            },
+            {
+              "front": "take → took",
+              "back": "tomar → tomó"
+            },
+            {
+              "front": "do → did",
+              "back": "hacer → hizo"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "story",
       "tag": "mirando al pasado",
       "title": "★ STORIES FROM THE TEAM",
@@ -197,7 +261,7 @@
       ],
       "speaking": {
         "prompt": "Describe Marcos's last job. Use <i>worked</i>, <i>built</i> and <i>studied</i>.",
-        "starter": "He worked at a small startup for two years, where he built…"
+        "starter": "He worked at a small startup for two years, where he built (what he built)."
       },
       "transcript": [
         {
@@ -312,7 +376,7 @@
       ],
       "speaking": {
         "prompt": "Tell the launch story in order. Use <i>first</i>, <i>then</i> and <i>after that</i>.",
-        "starter": "First, the team planned the app for three months. Then they…"
+        "starter": "First, the team planned the app for three months. Then they (next step). After that, they (final step)."
       },
       "transcript": [
         {

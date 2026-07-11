@@ -84,6 +84,70 @@
       "note": "<b>Cómo funciona:</b> escucha los planes 🎧, completa 📝 y ordena 🧩. ¡Última lección del mundo A2 — después viene el examen!"
     },
     {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · planes",
+      "intro": "Toca cada tarjeta para ver la traducción.",
+      "deckLabel": "planes",
+      "cards": [
+        {
+          "front": "a plan",
+          "back": "un plan"
+        },
+        {
+          "front": "a goal",
+          "back": "una meta"
+        },
+        {
+          "front": "a trip",
+          "back": "un viaje"
+        },
+        {
+          "front": "to fly",
+          "back": "volar"
+        },
+        {
+          "front": "to book a table",
+          "back": "reservar una mesa"
+        },
+        {
+          "front": "to launch",
+          "back": "lanzar"
+        }
+      ],
+      "altDecks": [
+        {
+          "label": "el calendario",
+          "cards": [
+            {
+              "front": "tonight",
+              "back": "esta noche"
+            },
+            {
+              "front": "tomorrow morning",
+              "back": "mañana por la mañana"
+            },
+            {
+              "front": "next week",
+              "back": "la próxima semana"
+            },
+            {
+              "front": "the day after tomorrow",
+              "back": "pasado mañana"
+            },
+            {
+              "front": "to arrange",
+              "back": "organizar / acordar"
+            },
+            {
+              "front": "to improve",
+              "back": "mejorar"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "story",
       "tag": "planeando lo que viene",
       "title": "★ WHAT'S NEXT?",
@@ -136,7 +200,7 @@
       ],
       "speaking": {
         "prompt": "Describe a plan for a project or trip. Use <i>I'm going to…</i> three times.",
-        "starter": "We're going to create a new app. I'm going to write the code, and…"
+        "starter": "We're going to create a new app. I'm going to write the code, and I'm going to (next task)."
       },
       "transcript": [
         {
@@ -262,7 +326,7 @@
       ],
       "speaking": {
         "prompt": "Describe your schedule for next week. Use the present continuous with times (<i>I'm meeting… at…</i>).",
-        "starter": "On Monday, I'm flying to Madrid at nine. On Tuesday, I'm meeting…"
+        "starter": "On Monday, I'm flying to Madrid at nine. On Tuesday, I'm meeting (person) at (time)."
       },
       "transcript": [
         {

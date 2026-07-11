@@ -82,6 +82,70 @@
       "note": "<b>Cómo funciona:</b> primero <b>une</b> 🔗 el vocabulario, después <b>escucha</b> 🎧 y <b>completa</b> 📝 los emails. ✓ CHECK en cada uno."
     },
     {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · trabajo remoto",
+      "intro": "Toca cada tarjeta para ver la traducción.",
+      "deckLabel": "en la oficina",
+      "cards": [
+        {
+          "front": "price estimate",
+          "back": "cotización"
+        },
+        {
+          "front": "request",
+          "back": "solicitud"
+        },
+        {
+          "front": "issue",
+          "back": "asunto / problema"
+        },
+        {
+          "front": "pending",
+          "back": "pendiente"
+        },
+        {
+          "front": "update",
+          "back": "actualización"
+        },
+        {
+          "front": "attached",
+          "back": "adjunto"
+        }
+      ],
+      "altDecks": [
+        {
+          "label": "en el email",
+          "cards": [
+            {
+              "front": "available",
+              "back": "disponible"
+            },
+            {
+              "front": "task",
+              "back": "tarea"
+            },
+            {
+              "front": "details",
+              "back": "detalles"
+            },
+            {
+              "front": "team lead",
+              "back": "líder del equipo"
+            },
+            {
+              "front": "as soon as possible",
+              "back": "lo antes posible"
+            },
+            {
+              "front": "Best regards",
+              "back": "Saludos cordiales"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "story",
       "tag": "el proyecto GreenMarket",
       "title": "★ THE STORY · GREENMARKET",
@@ -170,7 +234,7 @@
       ],
       "speaking": {
         "prompt": "Explain the problem with the price estimate. Use <i>pending</i> and <i>waiting for an update</i>.",
-        "starter": "The estimate isn't ready because there's a task pending — Marcos is…"
+        "starter": "The estimate isn't ready because there's a task pending — Marcos is (what he's doing)."
       },
       "transcript": [
         {
@@ -301,7 +365,7 @@
       ],
       "speaking": {
         "prompt": "Why is the price estimate higher now? Explain in 1–2 sentences.",
-        "starter": "Because the client also wants an online payment system, so…"
+        "starter": "Because the client also wants an online payment system, so (result)."
       },
       "transcript": [
         {

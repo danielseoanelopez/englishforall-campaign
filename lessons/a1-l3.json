@@ -21,8 +21,8 @@
       "cells": [
         {
           "h": "🔢 Numbers",
-          "body": "1 one · 2 two · 3 three<br>10 ten · 20 twenty<br>13 thir<code>teen</code> · 30 thir<code>ty</code>",
-          "say": "one, two, three; ten; twenty; thirteen; thirty"
+          "body": "11 eleven · 12 twelve <i>(¡irregulares!)</i><br>13 thir<code>teen</code> ≠ 30 thir<code>ty</code><br>14 four<code>teen</code> ≠ 40 for<code>ty</code><br>15 fif<code>teen</code> ≠ 50 fif<code>ty</code><br><i>El acento manda: thirTEEN ↗ / THIRty ↘</i>",
+          "say": "eleven; twelve; thirteen; thirty; fourteen; forty; fifteen; fifty"
         },
         {
           "h": "🕐 Time",
@@ -30,7 +30,7 @@
         },
         {
           "h": "📅 at / on / in",
-          "body": "<code>at</code> + hora: at six<br><code>on</code> + día: on Monday<br><code>in</code> + mes: in June",
+          "body": "<i>Las preposiciones de tiempo son palabras pequeñas que van antes de la hora, el día o el mes:</i><br><code>at</code> + hora: at six <i>(a las seis)</i><br><code>on</code> + día: on Monday <i>(el lunes)</i><br><code>in</code> + mes: in June <i>(en junio)</i>",
           "say": "at six; on Monday; in June"
         },
         {
@@ -40,13 +40,13 @@
       ],
       "ladderLabel": "<b style='color:var(--purple)'>Los días</b> de la semana:",
       "ladder": [
-        "Mon",
-        "Tue",
-        "Wed",
-        "Thu",
-        "Fri",
-        "Sat",
-        "Sun"
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
       ],
       "vocabBtn": "📒 Ver números y tiempo",
       "vocab": [
@@ -115,6 +115,67 @@
           "front": "weekend",
           "back": "fin de semana"
         }
+      ],
+      "deckLabel": "los días",
+      "altDecks": [
+        {
+          "label": "la hora",
+          "cards": [
+            {
+              "front": "o'clock",
+              "back": "en punto"
+            },
+            {
+              "front": "half past",
+              "back": "y media"
+            },
+            {
+              "front": "quarter past",
+              "back": "y cuarto"
+            },
+            {
+              "front": "quarter to",
+              "back": "menos cuarto"
+            },
+            {
+              "front": "What time is it?",
+              "back": "¿Qué hora es?"
+            },
+            {
+              "front": "at six on Monday",
+              "back": "a las seis el lunes"
+            }
+          ]
+        },
+        {
+          "label": "números trampa",
+          "cards": [
+            {
+              "front": "thirteen",
+              "back": "13 · trece"
+            },
+            {
+              "front": "thirty",
+              "back": "30 · treinta"
+            },
+            {
+              "front": "fourteen",
+              "back": "14 · catorce"
+            },
+            {
+              "front": "forty",
+              "back": "40 · cuarenta"
+            },
+            {
+              "front": "fifteen",
+              "back": "15 · quince"
+            },
+            {
+              "front": "fifty",
+              "back": "50 · cincuenta"
+            }
+          ]
+        }
       ]
     },
     {
@@ -179,7 +240,7 @@
       ],
       "speaking": {
         "prompt": "Say a phone number and a class time. Use <i>at</i> and <i>on</i>.",
-        "starter": "My number is… and my class is at … on …"
+        "starter": "My number is (phone number), and my class is at (time) on (day)."
       },
       "transcript": [
         {
@@ -262,24 +323,33 @@
     {
       "type": "memory",
       "id": "mem-num",
-      "title": "MEMORY · número y palabra",
-      "intro": "Encuentra cada número con su palabra. Toca dos cartas.",
+      "title": "MEMORY · ¿-teen o -ty?",
+      "intro": "Encuentra cada número con su palabra. ¡Cuidado: thirteen no es thirty!",
+      "back": "XII",
       "pairs": [
         {
-          "a": "1",
-          "b": "one"
+          "a": "13",
+          "b": "thirteen"
         },
         {
-          "a": "5",
-          "b": "five"
+          "a": "30",
+          "b": "thirty"
         },
         {
-          "a": "10",
-          "b": "ten"
+          "a": "14",
+          "b": "fourteen"
         },
         {
-          "a": "20",
-          "b": "twenty"
+          "a": "40",
+          "b": "forty"
+        },
+        {
+          "a": "15",
+          "b": "fifteen"
+        },
+        {
+          "a": "50",
+          "b": "fifty"
         }
       ]
     },
@@ -320,7 +390,7 @@
       ],
       "speaking": {
         "prompt": "Say three times in your day. Use <i>at</i> + the time.",
-        "starter": "I get up at… I have lunch at… I finish at…"
+        "starter": "I get up at (time). I have lunch at (time). I finish at (time)."
       },
       "transcript": [
         {

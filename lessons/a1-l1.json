@@ -150,6 +150,67 @@
           "front": "See you soon! 👀",
           "back": "¡Nos vemos pronto!"
         }
+      ],
+      "deckLabel": "saludos",
+      "altDecks": [
+        {
+          "label": "cortesía",
+          "cards": [
+            {
+              "front": "Please",
+              "back": "Por favor"
+            },
+            {
+              "front": "Thank you",
+              "back": "Gracias"
+            },
+            {
+              "front": "You're welcome",
+              "back": "De nada"
+            },
+            {
+              "front": "Sorry",
+              "back": "Perdón"
+            },
+            {
+              "front": "Excuse me",
+              "back": "Disculpa"
+            },
+            {
+              "front": "Good night",
+              "back": "Buenas noches"
+            }
+          ]
+        },
+        {
+          "label": "conocerse",
+          "cards": [
+            {
+              "front": "What's your name?",
+              "back": "¿Cómo te llamas?"
+            },
+            {
+              "front": "My name is…",
+              "back": "Me llamo…"
+            },
+            {
+              "front": "Where are you from?",
+              "back": "¿De dónde eres?"
+            },
+            {
+              "front": "I'm from…",
+              "back": "Soy de…"
+            },
+            {
+              "front": "This is my friend",
+              "back": "Te presento a mi amigo/a"
+            },
+            {
+              "front": "See you tomorrow!",
+              "back": "¡Hasta mañana!"
+            }
+          ]
+        }
       ]
     },
     {

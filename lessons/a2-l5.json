@@ -84,6 +84,70 @@
       "note": "<b>Cómo funciona:</b> une adjetivos 🔗, completa comparativos 📝 y escucha al equipo comparar 🎧. ✓ CHECK en cada uno."
     },
     {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · adjetivos",
+      "intro": "Toca cada tarjeta para ver la traducción.",
+      "deckLabel": "opuestos",
+      "cards": [
+        {
+          "front": "cheap",
+          "back": "barato"
+        },
+        {
+          "front": "expensive",
+          "back": "caro"
+        },
+        {
+          "front": "light",
+          "back": "liviano"
+        },
+        {
+          "front": "heavy",
+          "back": "pesado"
+        },
+        {
+          "front": "fast",
+          "back": "rápido"
+        },
+        {
+          "front": "slow",
+          "back": "lento"
+        }
+      ],
+      "altDecks": [
+        {
+          "label": "más adjetivos",
+          "cards": [
+            {
+              "front": "big",
+              "back": "grande"
+            },
+            {
+              "front": "small",
+              "back": "chico"
+            },
+            {
+              "front": "reliable",
+              "back": "confiable"
+            },
+            {
+              "front": "comfortable",
+              "back": "cómodo"
+            },
+            {
+              "front": "better",
+              "back": "mejor"
+            },
+            {
+              "front": "worse",
+              "back": "peor"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "story",
       "tag": "comparar para decidir",
       "title": "★ MAKING DECISIONS",
@@ -230,7 +294,7 @@
       ],
       "speaking": {
         "prompt": "Compare two phones or laptops you know. Use <i>cheaper</i>, <i>faster</i> and <i>better</i> with <i>than</i>.",
-        "starter": "The black laptop is faster than the silver one, but it's more…"
+        "starter": "The black laptop is faster than the silver one, but it's more (adjective)."
       },
       "transcript": [
         {
@@ -308,7 +372,7 @@
       ],
       "speaking": {
         "prompt": "Compare two people you know (two colleagues, two friends). Use <i>more…</i> and <i>better</i>.",
-        "starter": "Ana has more experience than Ben, but Ben is more…"
+        "starter": "Ana has more experience than Ben, but Ben is more (adjective)."
       },
       "transcript": [
         {

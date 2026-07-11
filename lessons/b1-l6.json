@@ -94,6 +94,70 @@
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>memory</b> 🧠, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>unir</b> 🔗. Haz el ✓ CHECK en cada ejercicio. Al terminar… te espera el <b>BOSS</b> 👑."
     },
     {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · roadmap",
+      "intro": "Toca cada tarjeta para ver la traducción.",
+      "deckLabel": "el plan",
+      "cards": [
+        {
+          "front": "roadmap",
+          "back": "hoja de ruta"
+        },
+        {
+          "front": "quarter",
+          "back": "trimestre"
+        },
+        {
+          "front": "goal",
+          "back": "objetivo / meta"
+        },
+        {
+          "front": "forecast",
+          "back": "pronóstico"
+        },
+        {
+          "front": "milestone",
+          "back": "hito"
+        },
+        {
+          "front": "growth",
+          "back": "crecimiento"
+        }
+      ],
+      "altDecks": [
+        {
+          "label": "para cuándo",
+          "cards": [
+            {
+              "front": "to expand",
+              "back": "expandirse"
+            },
+            {
+              "front": "pitch",
+              "back": "presentación (para convencer)"
+            },
+            {
+              "front": "to present",
+              "back": "presentar"
+            },
+            {
+              "front": "by the end of the month",
+              "back": "para fin de mes"
+            },
+            {
+              "front": "by Friday",
+              "back": "para el viernes"
+            },
+            {
+              "front": "in two weeks",
+              "back": "en dos semanas"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "story",
       "tag": "el próximo trimestre",
       "title": "★ THE ROADMAP",
@@ -192,7 +256,7 @@
       ],
       "speaking": {
         "prompt": "Describe the team's roadmap in 3 sentences. Use <i>going to</i>, present continuous, and <i>by + time</i>.",
-        "starter": "They're launching the app in October. Marcos is going to… and by the end of the month…"
+        "starter": "They're launching the app in October. Marcos is going to (his task), and by the end of the month, (what will be ready)."
       },
       "transcript": [
         {
@@ -366,7 +430,7 @@
       ],
       "speaking": {
         "prompt": "You are Marcos. Answer Priya's message: accept the challenge and say TWO things you're going to prepare.",
-        "starter": "Hi Priya, thanks for trusting me! I'll do it. First, I'm going to prepare… and by Thursday I'll…"
+        "starter": "Hi Priya, thanks for trusting me! I'll do it. First, I'm going to prepare (first thing), and by Thursday I'll (second thing)."
       },
       "transcript": [
         {

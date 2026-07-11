@@ -94,6 +94,70 @@
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>unir</b> 🔗, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
     },
     {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · reuniones",
+      "intro": "Toca cada tarjeta para ver la traducción.",
+      "deckLabel": "en la reunión",
+      "cards": [
+        {
+          "front": "agenda",
+          "back": "orden del día"
+        },
+        {
+          "front": "minutes",
+          "back": "acta / notas"
+        },
+        {
+          "front": "action item",
+          "back": "tarea pendiente"
+        },
+        {
+          "front": "next steps",
+          "back": "próximos pasos"
+        },
+        {
+          "front": "to follow up",
+          "back": "dar seguimiento"
+        },
+        {
+          "front": "to wrap up",
+          "back": "cerrar / terminar"
+        }
+      ],
+      "altDecks": [
+        {
+          "label": "frases",
+          "cards": [
+            {
+              "front": "Let's get started",
+              "back": "Empecemos"
+            },
+            {
+              "front": "Moving on…",
+              "back": "Pasemos a lo siguiente"
+            },
+            {
+              "front": "Any questions?",
+              "back": "¿Alguna pregunta?"
+            },
+            {
+              "front": "We're on the same page",
+              "back": "Estamos alineados"
+            },
+            {
+              "front": "to chair a meeting",
+              "back": "dirigir una reunión"
+            },
+            {
+              "front": "deadline",
+              "back": "fecha límite"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "story",
       "tag": "el primer standup",
       "title": "★ MARCOS LEADS THE STANDUP",
@@ -247,7 +311,7 @@
       ],
       "speaking": {
         "prompt": "How did Marcos disagree with Priya politely? Give the phrase he used and what he suggested.",
-        "starter": "He said, 'I see your point, but…', and he suggested they…"
+        "starter": "He said, 'I see your point, but (his objection)', and he suggested they (his suggestion)."
       },
       "transcript": [
         {
@@ -377,7 +441,7 @@
       ],
       "speaking": {
         "prompt": "How did Marcos manage David's expectations? Use <i>I understand…</i> and <i>I'd suggest…</i>.",
-        "starter": "He said he understood it was important, but he'd suggest they launch the main site first and…"
+        "starter": "He said he understood it was important, but he'd suggest they launch the main site first and (next step)."
       },
       "transcript": [
         {

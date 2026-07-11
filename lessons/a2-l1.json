@@ -83,6 +83,70 @@
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
     },
     {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · rutinas",
+      "intro": "Toca cada tarjeta para ver la traducción.",
+      "deckLabel": "rutinas",
+      "cards": [
+        {
+          "front": "wake up",
+          "back": "despertarse"
+        },
+        {
+          "front": "get up",
+          "back": "levantarse"
+        },
+        {
+          "front": "have breakfast",
+          "back": "desayunar"
+        },
+        {
+          "front": "check emails",
+          "back": "revisar correos"
+        },
+        {
+          "front": "take a break",
+          "back": "tomar un descanso"
+        },
+        {
+          "front": "finish work",
+          "back": "terminar el trabajo"
+        }
+      ],
+      "altDecks": [
+        {
+          "label": "frecuencia",
+          "cards": [
+            {
+              "front": "always",
+              "back": "siempre"
+            },
+            {
+              "front": "usually",
+              "back": "normalmente"
+            },
+            {
+              "front": "often",
+              "back": "a menudo"
+            },
+            {
+              "front": "sometimes",
+              "back": "a veces"
+            },
+            {
+              "front": "hardly ever",
+              "back": "casi nunca"
+            },
+            {
+              "front": "never",
+              "back": "nunca"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "story",
       "tag": "conoce al equipo",
       "title": "★ MARCOS'S FIRST WEEK",
@@ -197,7 +261,7 @@
       ],
       "speaking": {
         "prompt": "Describe Sofia's morning routine. Use <i>always</i> and <i>usually</i>.",
-        "starter": "She usually starts at nine o'clock, and she always checks…"
+        "starter": "She usually starts at nine o'clock, and she always checks (what she checks)."
       },
       "transcript": [
         {
@@ -311,7 +375,7 @@
       ],
       "speaking": {
         "prompt": "What is Marcos's morning routine? Tell it in 2–3 sentences.",
-        "starter": "He usually wakes up at seven, has breakfast and a coffee, and then…"
+        "starter": "He usually wakes up at seven, has breakfast and a coffee, and then (next action)."
       },
       "transcript": [
         {

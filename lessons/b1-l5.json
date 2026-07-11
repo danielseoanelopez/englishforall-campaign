@@ -148,6 +148,38 @@
           "front": "Let's look at the evidence",
           "back": "Miremos la evidencia"
         }
+      ],
+      "deckLabel": "frases suavizantes",
+      "altDecks": [
+        {
+          "label": "vocabulario del debate",
+          "cards": [
+            {
+              "front": "evidence",
+              "back": "evidencia"
+            },
+            {
+              "front": "data",
+              "back": "datos"
+            },
+            {
+              "front": "trade-off",
+              "back": "costo-beneficio"
+            },
+            {
+              "front": "conversion",
+              "back": "conversión (ventas)"
+            },
+            {
+              "front": "to push back",
+              "back": "objetar con respeto"
+            },
+            {
+              "front": "worth testing",
+              "back": "vale la pena probarlo"
+            }
+          ]
+        }
       ]
     },
     {
@@ -197,7 +229,7 @@
       ],
       "speaking": {
         "prompt": "How did Marcos push back politely? Quote one softening phrase and one deduction (must/might/can't).",
-        "starter": "He said 'I see it differently' and 'it can't be the design, because…'. Then he suggested…"
+        "starter": "He said 'I see it differently' and 'it can't be the design, because (his reason)'. Then he suggested (his suggestion)."
       },
       "transcript": [
         {
@@ -386,7 +418,7 @@
       ],
       "speaking": {
         "prompt": "You are Marcos. Reply to Priya's message in 2–3 sentences — be professional, don't say 'I told you so'!",
-        "starter": "Hi Priya, thanks for the update. I'm glad the test helped — I'd suggest we also…"
+        "starter": "Hi Priya, thanks for the update. I'm glad the test helped — I'd suggest we also (next step)."
       },
       "transcript": [
         {

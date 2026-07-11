@@ -156,6 +156,75 @@
           "front": "give",
           "back": "given"
         }
+      ],
+      "deckLabel": "participios 1",
+      "altDecks": [
+        {
+          "label": "participios 2",
+          "cards": [
+            {
+              "front": "know",
+              "back": "known"
+            },
+            {
+              "front": "think",
+              "back": "thought"
+            },
+            {
+              "front": "buy",
+              "back": "bought"
+            },
+            {
+              "front": "find",
+              "back": "found"
+            },
+            {
+              "front": "leave",
+              "back": "left"
+            },
+            {
+              "front": "build",
+              "back": "built"
+            },
+            {
+              "front": "have",
+              "back": "had"
+            },
+            {
+              "front": "get",
+              "back": "got"
+            }
+          ]
+        },
+        {
+          "label": "vocabulario",
+          "cards": [
+            {
+              "front": "achievement",
+              "back": "logro"
+            },
+            {
+              "front": "deadline",
+              "back": "fecha límite"
+            },
+            {
+              "front": "milestone",
+              "back": "hito"
+            },
+            {
+              "front": "feedback",
+              "back": "retroalimentación"
+            },
+            {
+              "front": "on track",
+              "back": "en buen camino"
+            },
+            {
+              "front": "behind schedule",
+              "back": "atrasado"
+            }
+          ]
+        }
       ]
     },
     {
@@ -195,7 +264,7 @@
       ],
       "speaking": {
         "prompt": "Summarize Marcos's progress. Use present perfect with <i>already</i> and <i>yet</i>.",
-        "starter": "He's already finished the design, but he hasn't tested the payments yet…"
+        "starter": "He's already finished the design, but he hasn't tested the payments yet. He also hasn't (pending task) yet."
       },
       "transcript": [
         {
@@ -348,7 +417,7 @@
       ],
       "speaking": {
         "prompt": "Leave a similar voicemail: say what you've finished and what you haven't done <i>yet</i>.",
-        "starter": "Hi, it's (name). I've just finished…, but I haven't … yet."
+        "starter": "Hi, it's (name). I've just finished (task), but I haven't (pending task) yet."
       },
       "transcript": [
         {

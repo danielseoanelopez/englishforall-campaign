@@ -112,6 +112,67 @@
           "front": "umbrella ☂️",
           "back": "paraguas"
         }
+      ],
+      "deckLabel": "objetos",
+      "altDecks": [
+        {
+          "label": "más objetos",
+          "cards": [
+            {
+              "front": "chair",
+              "back": "silla"
+            },
+            {
+              "front": "table",
+              "back": "mesa"
+            },
+            {
+              "front": "window",
+              "back": "ventana"
+            },
+            {
+              "front": "door",
+              "back": "puerta"
+            },
+            {
+              "front": "computer",
+              "back": "computadora"
+            },
+            {
+              "front": "wallet",
+              "back": "billetera"
+            }
+          ]
+        },
+        {
+          "label": "lugares",
+          "cards": [
+            {
+              "front": "home",
+              "back": "casa"
+            },
+            {
+              "front": "office",
+              "back": "oficina"
+            },
+            {
+              "front": "school",
+              "back": "escuela"
+            },
+            {
+              "front": "shop",
+              "back": "tienda"
+            },
+            {
+              "front": "street",
+              "back": "calle"
+            },
+            {
+              "front": "park",
+              "back": "parque"
+            }
+          ]
+        }
       ]
     },
     {
@@ -207,7 +268,7 @@
       ],
       "speaking": {
         "prompt": "Say three things in your bag. Use <i>There is</i> / <i>There are</i> + a/an.",
-        "starter": "In my bag, there is a phone, and there are two…"
+        "starter": "In my bag, there is a phone, and there are two (things)."
       },
       "transcript": [
         {

@@ -95,6 +95,70 @@
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>ordenar</b> 🧩, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>memory</b> 🧠. Haz el ✓ CHECK en cada ejercicio."
     },
     {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · la caída del servidor",
+      "intro": "Toca cada tarjeta para ver la traducción.",
+      "deckLabel": "el incidente",
+      "cards": [
+        {
+          "front": "server",
+          "back": "servidor"
+        },
+        {
+          "front": "to crash",
+          "back": "fallar / caerse"
+        },
+        {
+          "front": "to be down",
+          "back": "estar caído"
+        },
+        {
+          "front": "outage",
+          "back": "interrupción / caída"
+        },
+        {
+          "front": "alert",
+          "back": "alerta"
+        },
+        {
+          "front": "logs",
+          "back": "registros del sistema"
+        }
+      ],
+      "altDecks": [
+        {
+          "label": "la reacción",
+          "cards": [
+            {
+              "front": "to fix",
+              "back": "arreglar"
+            },
+            {
+              "front": "to restart",
+              "back": "reiniciar"
+            },
+            {
+              "front": "on call",
+              "back": "de guardia"
+            },
+            {
+              "front": "launch night",
+              "back": "noche de lanzamiento"
+            },
+            {
+              "front": "while",
+              "back": "mientras"
+            },
+            {
+              "front": "suddenly",
+              "back": "de repente"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "story",
       "tag": "la noche del lanzamiento",
       "title": "★ THE NIGHT EVERYTHING CRASHED",
@@ -198,7 +262,7 @@
       ],
       "speaking": {
         "prompt": "Retell Marcos's story in 3–4 sentences. Use <i>was/were + -ing</i> for the background and past simple for the actions.",
-        "starter": "He was watching a film when his phone rang. While he was checking the logs, he…"
+        "starter": "He was watching a film when his phone rang. While he was checking the logs, he (next action)."
       },
       "transcript": [
         {
@@ -365,7 +429,7 @@
       ],
       "speaking": {
         "prompt": "What are TWO differences between Sofia's version and Marcos's version?",
-        "starter": "Marcos said the site was down for one hour, but Sofia says… And according to Sofia, she…"
+        "starter": "Marcos said the site was down for one hour, but Sofia says (her version). And according to Sofia, she (second difference)."
       },
       "transcript": [
         {

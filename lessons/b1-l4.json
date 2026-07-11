@@ -94,6 +94,70 @@
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>unir</b> 🔗. Haz el ✓ CHECK en cada ejercicio."
     },
     {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · negociación",
+      "intro": "Toca cada tarjeta para ver la traducción.",
+      "deckLabel": "el trato",
+      "cards": [
+        {
+          "front": "scope",
+          "back": "alcance del proyecto"
+        },
+        {
+          "front": "budget",
+          "back": "presupuesto"
+        },
+        {
+          "front": "discount",
+          "back": "descuento"
+        },
+        {
+          "front": "to negotiate",
+          "back": "negociar"
+        },
+        {
+          "front": "deal",
+          "back": "trato / acuerdo"
+        },
+        {
+          "front": "extra cost",
+          "back": "costo adicional"
+        }
+      ],
+      "altDecks": [
+        {
+          "label": "condiciones",
+          "cards": [
+            {
+              "front": "to confirm",
+              "back": "confirmar"
+            },
+            {
+              "front": "phase",
+              "back": "fase / etapa"
+            },
+            {
+              "front": "to deliver",
+              "back": "entregar"
+            },
+            {
+              "front": "agreement",
+              "back": "acuerdo"
+            },
+            {
+              "front": "unless",
+              "back": "a menos que"
+            },
+            {
+              "front": "as long as",
+              "back": "siempre y cuando"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "story",
       "tag": "la negociación",
       "title": "★ THE SCOPE NEGOTIATION",
@@ -288,7 +352,7 @@
       ],
       "speaking": {
         "prompt": "Summarize the deal. Use <i>if</i>, <i>unless</i> and <i>as long as</i>.",
-        "starter": "If David confirms this week, the team will… The app will be phase two, and as long as…"
+        "starter": "If David confirms this week, the team will (action). The app will be phase two, and as long as (condition)."
       },
       "transcript": [
         {
@@ -405,7 +469,7 @@
       ],
       "speaking": {
         "prompt": "What would YOU do if a client asked for more features without more budget? Use 1–2 conditionals.",
-        "starter": "If a client asked for more features, I would… Unless they increased the budget, I…"
+        "starter": "If a client asked for more features, I would (your action). Unless they increased the budget, I (your action)."
       },
       "transcript": [
         {

@@ -80,6 +80,70 @@
       "note": "<b>Cómo funciona:</b> elige respuestas 💬, une funciones 🔗 y escucha llamadas 🎧. ✓ CHECK en cada uno."
     },
     {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · al teléfono",
+      "intro": "Toca cada tarjeta para ver la traducción.",
+      "deckLabel": "acciones",
+      "cards": [
+        {
+          "front": "take a message",
+          "back": "tomar un mensaje"
+        },
+        {
+          "front": "call back",
+          "back": "devolver la llamada"
+        },
+        {
+          "front": "forward an email",
+          "back": "reenviar un correo"
+        },
+        {
+          "front": "attach a file",
+          "back": "adjuntar un archivo"
+        },
+        {
+          "front": "share my screen",
+          "back": "compartir pantalla"
+        },
+        {
+          "front": "book a room",
+          "back": "reservar una sala"
+        }
+      ],
+      "altDecks": [
+        {
+          "label": "cortesía",
+          "cards": [
+            {
+              "front": "Can you help me?",
+              "back": "¿Puedes ayudarme?"
+            },
+            {
+              "front": "Could you send it?",
+              "back": "¿Podrías enviarlo?"
+            },
+            {
+              "front": "Would you mind waiting?",
+              "back": "¿Te molestaría esperar?"
+            },
+            {
+              "front": "Shall I check?",
+              "back": "¿Quieres que revise?"
+            },
+            {
+              "front": "I'll do it now",
+              "back": "Lo hago ahora"
+            },
+            {
+              "front": "a favor",
+              "back": "un favor"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "story",
       "tag": "un día de llamadas y chats",
       "title": "★ A BUSY DAY AT THE OFFICE",
@@ -187,7 +251,7 @@
       ],
       "speaking": {
         "prompt": "You answer the phone; the caller wants your busy boss. What do you say? Use <i>Can I…?</i> and <i>I'll…</i>.",
-        "starter": "I'm sorry, she's in a meeting. Can I take a message? I'll ask her to…"
+        "starter": "I'm sorry, she's in a meeting. Can I take a message? I'll ask her to (action)."
       },
       "transcript": [
         {
@@ -294,7 +358,7 @@
       ],
       "speaking": {
         "prompt": "A colleague is busy. Offer to help with two things. Use <i>I'll…</i> and <i>Shall I…?</i>",
-        "starter": "Don't worry, I'll check the numbers now. Shall I also…?"
+        "starter": "Don't worry, I'll check the numbers now. Shall I also (second offer)?"
       },
       "transcript": [
         {

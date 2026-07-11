@@ -112,6 +112,67 @@
           "front": "daughter",
           "back": "hija"
         }
+      ],
+      "deckLabel": "familia",
+      "altDecks": [
+        {
+          "label": "más familia",
+          "cards": [
+            {
+              "front": "grandmother",
+              "back": "abuela"
+            },
+            {
+              "front": "grandfather",
+              "back": "abuelo"
+            },
+            {
+              "front": "uncle",
+              "back": "tío"
+            },
+            {
+              "front": "aunt",
+              "back": "tía"
+            },
+            {
+              "front": "cousin",
+              "back": "primo / prima"
+            },
+            {
+              "front": "pet",
+              "back": "mascota"
+            }
+          ]
+        },
+        {
+          "label": "descripciones",
+          "cards": [
+            {
+              "front": "tall",
+              "back": "alto/a"
+            },
+            {
+              "front": "short",
+              "back": "bajo/a"
+            },
+            {
+              "front": "young",
+              "back": "joven"
+            },
+            {
+              "front": "old",
+              "back": "mayor"
+            },
+            {
+              "front": "eyes",
+              "back": "ojos"
+            },
+            {
+              "front": "hair",
+              "back": "pelo"
+            }
+          ]
+        }
       ]
     },
     {

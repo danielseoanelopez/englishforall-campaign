@@ -1,99 +1,404 @@
 {
-  "level": "A1", "num": 6, "totalLessons": 6, "world": "FIRST CONTACT",
+  "level": "A1",
+  "num": 6,
+  "totalLessons": 6,
+  "world": "FIRST CONTACT",
   "key": "rankup_A1_L6",
   "title": "SIMPLE QUESTIONS<br>&amp; ANSWERS",
   "titlePlain": "Simple Questions & Answers (A1)",
   "subtitle": "Speaking · do / can / Wh- · A1 · ~40 min",
   "rankup": "WORLD COMPLETE!",
   "resultTitle": "LESSON 6 SCORE",
-  "next": { "href": "a1-final.html", "label": "⚔ A1 BOSS TEST" },
+  "next": {
+    "href": "a1-final.html",
+    "label": "⚔ A1 BOSS TEST"
+  },
   "blocks": [
     {
-      "type": "grammar", "tag": "preguntas y respuestas",
+      "type": "grammar",
+      "tag": "preguntas y respuestas",
       "title": "📘 QUESTIONS · do / does / can / Wh-",
       "intro": "Aprende a hacer y responder preguntas simples. Es la última lección antes del examen del mundo A1.",
       "cells": [
-        { "h": "❓ do / does", "body": "<code>Do</code> you like tea?<br><code>Does</code> she work here?<br>Yes, I <code>do</code>. / No, I <code>don't</code>." },
-        { "h": "💪 can", "body": "<code>Can</code> you swim?<br>Yes, I <code>can</code>.<br>No, I <code>can't</code>." },
-        { "h": "🔤 Question words", "body": "<code>What</code> · <code>Where</code> · <code>When</code><br><code>Who</code> · <code>How</code> · <code>Why</code>" },
-        { "h": "⚠ Watch out", "body": "<span class='x'>You like coffee?</span><br><span class='ok'>Do you like coffee?</span><br><span class='x'>She do</span> → <span class='ok'>She does</span>" }
+        {
+          "h": "❓ do / does",
+          "body": "<code>Do</code> you like tea?<br><code>Does</code> she work here?<br>Yes, I <code>do</code>. / No, I <code>don't</code>."
+        },
+        {
+          "h": "💪 can",
+          "body": "<code>Can</code> you swim?<br>Yes, I <code>can</code>.<br>No, I <code>can't</code>."
+        },
+        {
+          "h": "🔤 Question words",
+          "body": "<code>What</code> · <code>Where</code> · <code>When</code><br><code>Who</code> · <code>How</code> · <code>Why</code>"
+        },
+        {
+          "h": "⚠ Watch out",
+          "body": "<span class='x'>You like coffee?</span><br><span class='ok'>Do you like coffee?</span><br><span class='x'>She do</span> → <span class='ok'>She does</span>"
+        }
       ],
       "ladderLabel": "<b style='color:var(--purple)'>Question words</b> — qué preguntan:",
-      "ladder": ["What?", "Where?", "When?", "Who?", "How?", "Why?"],
+      "ladder": [
+        "What?",
+        "Where?",
+        "When?",
+        "Who?",
+        "How?",
+        "Why?"
+      ],
       "vocabBtn": "📒 Ver palabras de pregunta",
       "vocab": [
-        { "en": "What…?", "sp": "¿qué…?" }, { "en": "Where…?", "sp": "¿dónde…?" },
-        { "en": "When…?", "sp": "¿cuándo…?" }, { "en": "Who…?", "sp": "¿quién…?" },
-        { "en": "How…?", "sp": "¿cómo…?" }, { "en": "Why…?", "sp": "¿por qué…?" },
-        { "en": "Can you…?", "sp": "¿sabes / puedes…?" }, { "en": "Do you like…?", "sp": "¿te gusta…?" }
+        {
+          "en": "What…?",
+          "sp": "¿qué…?"
+        },
+        {
+          "en": "Where…?",
+          "sp": "¿dónde…?"
+        },
+        {
+          "en": "When…?",
+          "sp": "¿cuándo…?"
+        },
+        {
+          "en": "Who…?",
+          "sp": "¿quién…?"
+        },
+        {
+          "en": "How…?",
+          "sp": "¿cómo…?"
+        },
+        {
+          "en": "Why…?",
+          "sp": "¿por qué…?"
+        },
+        {
+          "en": "Can you…?",
+          "sp": "¿sabes / puedes…?"
+        },
+        {
+          "en": "Do you like…?",
+          "sp": "¿te gusta…?"
+        }
       ],
       "note": "<b>Cómo funciona:</b> <b>tarjetas</b> 🃏, <b>elegir respuestas</b> 💬, <b>unir</b> 🔗, <b>escucha</b> 🎧 y <b>completar</b> 📝. ✓ CHECK donde lo veas."
     },
     {
-      "type": "flashcards", "id": "fc-wh", "title": "FLASHCARDS · question words",
+      "type": "flashcards",
+      "id": "fc-wh",
+      "title": "FLASHCARDS · question words",
       "intro": "Toca cada tarjeta para ver el significado.",
       "cards": [
-        { "front": "What?", "back": "¿Qué?" }, { "front": "Where?", "back": "¿Dónde?" },
-        { "front": "When?", "back": "¿Cuándo?" }, { "front": "Who?", "back": "¿Quién?" },
-        { "front": "How?", "back": "¿Cómo?" }, { "front": "Why?", "back": "¿Por qué?" }
+        {
+          "front": "What?",
+          "back": "¿Qué?"
+        },
+        {
+          "front": "Where?",
+          "back": "¿Dónde?"
+        },
+        {
+          "front": "When?",
+          "back": "¿Cuándo?"
+        },
+        {
+          "front": "Who?",
+          "back": "¿Quién?"
+        },
+        {
+          "front": "How?",
+          "back": "¿Cómo?"
+        },
+        {
+          "front": "Why?",
+          "back": "¿Por qué?"
+        }
+      ],
+      "deckLabel": "question words",
+      "altDecks": [
+        {
+          "label": "más preguntas",
+          "cards": [
+            {
+              "front": "How much…?",
+              "back": "¿Cuánto cuesta…?"
+            },
+            {
+              "front": "How many…?",
+              "back": "¿Cuántos…?"
+            },
+            {
+              "front": "Which…?",
+              "back": "¿Cuál…?"
+            },
+            {
+              "front": "Whose…?",
+              "back": "¿De quién…?"
+            },
+            {
+              "front": "Can you…?",
+              "back": "¿Puedes…?"
+            },
+            {
+              "front": "Do you like…?",
+              "back": "¿Te gusta…?"
+            }
+          ]
+        },
+        {
+          "label": "respuestas cortas",
+          "cards": [
+            {
+              "front": "Yes, I do",
+              "back": "Sí (con do)"
+            },
+            {
+              "front": "No, I don't",
+              "back": "No (con don't)"
+            },
+            {
+              "front": "Yes, I can",
+              "back": "Sí, puedo"
+            },
+            {
+              "front": "No, I can't",
+              "back": "No puedo"
+            },
+            {
+              "front": "I don't know",
+              "back": "No sé"
+            },
+            {
+              "front": "Me too",
+              "back": "Yo también"
+            }
+          ]
+        }
       ]
     },
     {
-      "type": "dialogue", "id": "ex-dlg", "title": "ELIGE LA RESPUESTA",
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "ELIGE LA RESPUESTA",
       "intro": "Alguien te hace una pregunta. Elige la mejor respuesta.",
       "lines": [
-        { "spk": "Ana", "html": "What's your name?" },
-        { "gap": true, "q": "Tu respuesta:", "options": ["My name is Pablo.", "I'm from Spain.", "I'm fine."], "answer": 0 },
-        { "spk": "Ana", "b": true, "html": "Where are you from?" },
-        { "gap": true, "q": "Tu respuesta:", "options": ["I'm from Mexico.", "I'm a teacher.", "Yes, I do."], "answer": 0 },
-        { "spk": "Ana", "html": "Can you cook?" },
-        { "gap": true, "q": "Tu respuesta:", "options": ["Yes, I can.", "I'm from Brazil.", "It's Monday."], "answer": 0 },
-        { "spk": "Ana", "b": true, "html": "Do you like music?" },
-        { "gap": true, "q": "Tu respuesta:", "options": ["Yes, I do.", "I'm twenty.", "On Monday."], "answer": 0 }
+        {
+          "spk": "Ana",
+          "html": "What's your name?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "My name is Pablo.",
+            "I'm from Spain.",
+            "I'm fine."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Ana",
+          "b": true,
+          "html": "Where are you from?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I'm from Mexico.",
+            "I'm a teacher.",
+            "Yes, I do."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Ana",
+          "html": "Can you cook?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Yes, I can.",
+            "I'm from Brazil.",
+            "It's Monday."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Ana",
+          "b": true,
+          "html": "Do you like music?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Yes, I do.",
+            "I'm twenty.",
+            "On Monday."
+          ],
+          "answer": 0
+        }
       ]
     },
     {
-      "type": "match", "id": "ex-match", "title": "UNE PREGUNTA Y QUÉ PIDE",
+      "type": "match",
+      "id": "ex-match",
+      "title": "UNE PREGUNTA Y QUÉ PIDE",
       "intro": "¿Qué información pide cada palabra? Toca la palabra y luego su uso.",
       "pairs": [
-        { "l": "What…?", "r": "una cosa" },
-        { "l": "Where…?", "r": "un lugar" },
-        { "l": "When…?", "r": "un momento / una hora" },
-        { "l": "Who…?", "r": "una persona" },
-        { "l": "How…?", "r": "de qué manera" }
+        {
+          "l": "What…?",
+          "r": "una cosa"
+        },
+        {
+          "l": "Where…?",
+          "r": "un lugar"
+        },
+        {
+          "l": "When…?",
+          "r": "un momento / una hora"
+        },
+        {
+          "l": "Who…?",
+          "r": "una persona"
+        },
+        {
+          "l": "How…?",
+          "r": "de qué manera"
+        }
       ]
     },
     {
-      "type": "listening", "id": "ex-l1",
+      "type": "listening",
+      "id": "ex-l1",
       "title": "AUDIO 1 · GETTING TO KNOW YOU",
       "desc": "Ana le hace preguntas a Tom. Escucha las respuestas.",
-      "src": "a1-l6-1.mp3", "dur": "0:27", "speakers": "🗣 Ana + Tom",
+      "src": "a1-l6-1.mp3",
+      "dur": "0:27",
+      "speakers": "🗣 Ana + Tom",
       "questions": [
-        { "type": "mcq", "q": "Where does Tom live?", "options": ["Toronto", "Madrid", "Mexico City"], "answer": 0 },
-        { "type": "mcq", "q": "Can Tom swim?", "options": ["Yes, he can", "No, he can't", "He doesn't say"], "answer": 1 },
-        { "type": "trueFalse", "q": "Tom plays football.", "answer": true }
+        {
+          "type": "mcq",
+          "q": "Where does Tom live?",
+          "options": [
+            "Toronto",
+            "Madrid",
+            "Mexico City"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Can Tom swim?",
+          "options": [
+            "Yes, he can",
+            "No, he can't",
+            "He doesn't say"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "trueFalse",
+          "q": "Tom plays football.",
+          "answer": true
+        }
       ],
-      "speaking": { "prompt": "Answer these: Where do you live? Do you like sports? Can you cook?", "starter": "I live in… Yes, I do / No, I don't… I can / I can't…" },
+      "speaking": {
+        "prompt": "Answer these: Where do you live? Do you like sports? Can you cook?",
+        "starter": "I live in (city). Yes, I do / No, I don't. I can / I can't (activity)."
+      },
       "transcript": [
-        { "spk": "Ana", "html": "<span class='tg'>Where</span> do you live, Tom?" },
-        { "spk": "Tom", "b": true, "html": "I live in Toronto." },
-        { "spk": "Ana", "html": "<span class='tg'>Do</span> you like sports?" },
-        { "spk": "Tom", "b": true, "html": "Yes, I <span class='tg'>do</span>. I play football." },
-        { "spk": "Ana", "html": "<span class='tg'>Can</span> you swim?" },
-        { "spk": "Tom", "b": true, "html": "No, I <span class='tg'>can't</span>, but I want to learn." },
-        { "spk": "Ana", "html": "<span class='tg'>What</span> do you do on weekends?" },
-        { "spk": "Tom", "b": true, "html": "I usually see my friends." }
+        {
+          "spk": "Ana",
+          "html": "<span class='tg'>Where</span> do you live, Tom?"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "I live in Toronto."
+        },
+        {
+          "spk": "Ana",
+          "html": "<span class='tg'>Do</span> you like sports?"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "Yes, I <span class='tg'>do</span>. I play football."
+        },
+        {
+          "spk": "Ana",
+          "html": "<span class='tg'>Can</span> you swim?"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "No, I <span class='tg'>can't</span>, but I want to learn."
+        },
+        {
+          "spk": "Ana",
+          "html": "<span class='tg'>What</span> do you do on weekends?"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "I usually see my friends."
+        }
       ]
     },
     {
-      "type": "gapFill", "id": "ex-gap", "title": "do / does / can",
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "do / does / can",
       "intro": "Elige la palabra correcta para cada pregunta.",
       "items": [
-        { "q": "___ you like coffee?", "options": ["Do", "Does", "Are"], "answer": 0 },
-        { "q": "Where ___ she live?", "options": ["does", "do", "is"], "answer": 0 },
-        { "q": "___ you swim? — No, I can't.", "options": ["Can", "Do", "Are"], "answer": 0 },
-        { "q": "What ___ they do?", "options": ["do", "does", "are"], "answer": 0 },
-        { "q": "___ he like football?", "options": ["Does", "Do", "Is"], "answer": 0 }
+        {
+          "q": "___ you like coffee?",
+          "options": [
+            "Do",
+            "Does",
+            "Are"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where ___ she live?",
+          "options": [
+            "does",
+            "do",
+            "is"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "___ you swim? — No, I can't.",
+          "options": [
+            "Can",
+            "Do",
+            "Are"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What ___ they do?",
+          "options": [
+            "do",
+            "does",
+            "are"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "___ he like football?",
+          "options": [
+            "Does",
+            "Do",
+            "Is"
+          ],
+          "answer": 0
+        }
       ]
     },
     {
@@ -111,18 +416,48 @@
       "hw": "Responde las preguntas y graba un audio. Mándame ambos por WhatsApp. ¡Después, a por el examen del mundo A1!"
     }
   ],
-  "voices": { "ana": "en-US-AriaNeural", "tom": "en-US-GuyNeural" },
+  "voices": {
+    "ana": "en-US-AriaNeural",
+    "tom": "en-US-GuyNeural"
+  },
   "audioRate": "-12%",
   "audioScripts": [
-    { "file": "a1-l6-1.mp3", "lines": [
-      ["ana", "Where do you live, Tom?"],
-      ["tom", "I live in Toronto."],
-      ["ana", "Do you like sports?"],
-      ["tom", "Yes, I do. I play football."],
-      ["ana", "Can you swim?"],
-      ["tom", "No, I can't, but I want to learn."],
-      ["ana", "What do you do on weekends?"],
-      ["tom", "I usually see my friends."]
-    ]}
+    {
+      "file": "a1-l6-1.mp3",
+      "lines": [
+        [
+          "ana",
+          "Where do you live, Tom?"
+        ],
+        [
+          "tom",
+          "I live in Toronto."
+        ],
+        [
+          "ana",
+          "Do you like sports?"
+        ],
+        [
+          "tom",
+          "Yes, I do. I play football."
+        ],
+        [
+          "ana",
+          "Can you swim?"
+        ],
+        [
+          "tom",
+          "No, I can't, but I want to learn."
+        ],
+        [
+          "ana",
+          "What do you do on weekends?"
+        ],
+        [
+          "tom",
+          "I usually see my friends."
+        ]
+      ]
+    }
   ]
 }
