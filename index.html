@@ -170,6 +170,9 @@
 
   <div id="worlds"></div>
 
+  <div class="boss-sep" style="margin:24px 2px 10px">✦ SIDEQUESTS · EXTRA ✦</div>
+  <div id="sidequests"></div>
+
   <div class="social" id="socialBar">
     <a class="so-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
     <a class="so-dc" href="#" target="_blank" rel="noopener" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
@@ -263,7 +266,7 @@ const CAMPAIGN = [
       { t: "Greetings & introductions", sp: "Saludos y presentarse", url: "lesson.html?id=a1-l1" },
       { t: "Personal info: name, country, job", sp: "Datos personales", url: "lesson.html?id=a1-l2" },
       { t: "Numbers, days & telling time", sp: "Números, días y la hora", url: "lesson.html?id=a1-l3" },
-      { t: "To be / have", sp: "Verbos ser/estar y tener", url: "lesson.html?id=a1-l4" },
+      { t: "To be / have got", sp: "Verbos ser/estar y tener", url: "lesson.html?id=a1-l4" },
       { t: "Everyday objects & places", sp: "Objetos y lugares", url: "lesson.html?id=a1-l5" },
       { t: "Simple questions & answers", sp: "Preguntas y respuestas", url: "lesson.html?id=a1-l6" }
     ], boss: { t: "A1 BOSS TEST", url: "a1-final.html" } },
@@ -420,6 +423,36 @@ function toggleWorld(head) {
 }
 
 render();
+
+// ===== Business Class sidequest (bonus track · always available) =====
+(function renderSidequest() {
+  var host = document.getElementById("sidequests");
+  if (!host) return;
+  var LESSONS = [
+    { t: "Introductions & Small Talk", sp: "Presentarte + small talk", url: "biz-l1.html", key: "rankup_BIZ_l1" },
+    { t: "Meetings & Discussions", sp: "Opinar, acordar, sugerir", url: "biz-l2.html", key: "rankup_BIZ_l2" },
+    { t: "Email & Formal Communication", sp: "Emails y cortesía", url: "biz-l3.html", key: "rankup_BIZ_l3" },
+    { t: "Negotiations & Persuasion", sp: "Negociar y persuadir", url: "biz-l4.html", key: "rankup_BIZ_l4" }
+  ];
+  var rows = "", earned = 0, max = LESSONS.length * 5;
+  LESSONS.forEach(function (l, i) {
+    var st = getStars(l.key); earned += st;
+    var status = st > 0 ? starStr(st) : '<span class="play">JUGAR ▸</span>';
+    rows += '<a class="lrow" href="' + l.url + '">'
+      + '<div class="lnum">' + (i + 1) + '</div>'
+      + '<div class="linfo"><div class="ltitle">' + l.t + '</div><div class="lsub">' + l.sp + '</div></div>'
+      + '<div class="lstatus">' + status + '</div></a>';
+  });
+  var sep = '<div class="boss-sep">💼 BUSINESS CLASS · B1 · 4 LECCIONES</div>';
+  host.insertAdjacentHTML("beforeend",
+    '<div class="world expanded" style="--accent:var(--gold);--glow:#ffc83d55" data-aos="fade-up">'
+    + '<div class="w-head" onclick="toggleWorld(this)">'
+    + '<div class="w-badge">💼</div>'
+    + '<div class="w-meta"><div class="w-name">Business Class</div><div class="w-theme">Inglés profesional · sidequest</div></div>'
+    + '<div class="w-right"><span class="w-pill open" style="color:var(--gold)">★ PLUS</span><div class="w-stars">⭐ ' + earned + '/' + max + '</div></div>'
+    + '<div class="w-chev">▶</div></div>'
+    + '<div class="w-body">' + sep + rows + '</div></div>');
+})();
 </script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
