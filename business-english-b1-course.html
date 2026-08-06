@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English for All · Business English (B1 core · B2 stretch)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon-rankup.png">
+<link rel="apple-touch-icon" href="icon-rankup.png">
+<meta name="description" content="Curso de Business English (4 lecciones, estilo PPP): presentaciones, reuniones, emails y negociación. Nivel B1 con extensión B2. English for All · Rank Up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/business-english-b1-course.html">
+<meta property="og:title" content="Business English · 4-Lesson Course (B1 · B2 stretch)">
+<meta property="og:description" content="Inglés profesional real: presentarte, reuniones, emails y negociación. 4 lecciones PPP con claves de respuestas. English for All — Rank Up.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<meta property="og:site_name" content="English for All">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cyan:#0a8ea6; --magenta:#c31f8f; --purple:#6d3ff0; --gold:#b5791a; --green:#158a52; --red:#c0392b;
+    --ink:#1c2230; --soft:#54607a; --line:#dbe2ef; --bg:#f4f6fb; --card:#ffffff;
+    --stretch-bg:#f6f1ff; --key-bg:#eefaf2; --warm-bg:#fff8ec;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.62; font-size:16.5px; padding:0 0 80px;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px;}
+  a{color:var(--cyan);}
+
+  /* ---- Top toolbar ---- */
+  .toolbar{position:sticky; top:0; z-index:40; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:center;
+    background:rgba(244,246,251,0.92); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+    padding:10px 14px; border-bottom:1px solid var(--line);}
+  .toolbar .tt{font-family:"Share Tech Mono",monospace; font-size:0.82rem; color:var(--soft); letter-spacing:1px;}
+  .tbtn{font-family:"Share Tech Mono",monospace; font-size:0.82rem; border:1.5px solid var(--purple); color:var(--purple);
+    background:#fff; border-radius:9px; padding:8px 14px; cursor:pointer; letter-spacing:1px; transition:.15s; white-space:nowrap;}
+  .tbtn:hover{background:#f0eaff;}
+  .tbtn.on{background:var(--purple); color:#fff;}
+  .tbtn.print{border-color:var(--cyan); color:var(--cyan);}
+  .tbtn.print:hover{background:#e6f6f9;}
+  .viewnote{font-family:"Share Tech Mono",monospace; font-size:0.72rem; color:var(--soft);}
+
+  /* ---- Cover ---- */
+  .cover{background:var(--card); border:1px solid var(--line); border-top:6px solid var(--purple);
+    border-radius:16px; padding:30px 30px 26px; margin:26px 0 22px; box-shadow:0 6px 24px #1c223010;}
+  .kicker{font-family:"Press Start 2P",monospace; font-size:0.56rem; letter-spacing:2px; color:var(--magenta);}
+  .cover h1{font-family:"Press Start 2P",monospace; font-size:clamp(1.05rem,3.6vw,1.7rem); line-height:1.5; color:var(--purple); margin:14px 0 10px;}
+  .cover .lead{font-size:1.02rem; color:var(--soft); max-width:60ch;}
+  .badges{display:flex; flex-wrap:wrap; gap:9px; margin:18px 0 6px;}
+  .badge{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; padding:6px 12px; border-radius:20px; border:1.5px solid var(--line); color:var(--ink); background:#fbfcff;}
+  .badge b{color:var(--cyan);}
+  .badge.b1{border-color:var(--cyan); background:#e9f7fa;}
+  .badge.b2{border-color:var(--purple); background:var(--stretch-bg);}
+
+  h2.sec{font-family:"Press Start 2P",monospace; font-size:0.72rem; letter-spacing:1px; color:var(--ink); margin:26px 2px 12px; line-height:1.6;}
+
+  /* ---- Legend / map grids ---- */
+  .legend{display:grid; grid-template-columns:1fr; gap:8px; margin-top:8px;}
+  @media(min-width:640px){ .legend{grid-template-columns:1fr 1fr;} }
+  .leg{display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:10px; padding:9px 12px; background:#fbfcff;}
+  .leg .em{font-size:1.05rem; line-height:1.4;}
+  .leg .lx b{display:block; font-size:0.92rem;}
+  .leg .lx span{font-size:0.84rem; color:var(--soft);}
+
+  .maptable{width:100%; border-collapse:collapse; margin-top:8px; font-size:0.93rem; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .maptable th{background:#f0eefb; text-align:left; padding:10px 12px; font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--soft); border-bottom:1px solid var(--line);}
+  .maptable td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .maptable tr:last-child td{border-bottom:none;}
+  .maptable .ln{font-family:"Press Start 2P",monospace; font-size:0.6rem; color:var(--magenta);}
+
+  /* ---- Lesson blocks ---- */
+  .lesson{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:6px 26px 26px; margin:20px 0; box-shadow:0 4px 18px #1c22300d;}
+  .lesson-head{display:flex; align-items:center; gap:14px; margin:22px 0 6px; padding-bottom:14px; border-bottom:2px solid var(--line);}
+  .lnum{flex-shrink:0; width:52px; height:52px; border-radius:12px; background:var(--purple); color:#fff; font-family:"Press Start 2P",monospace; font-size:0.86rem; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px #6d3ff044;}
+  .lesson.l2 .lnum{background:var(--magenta);} .lesson.l3 .lnum{background:var(--cyan);} .lesson.l4 .lnum{background:var(--green);}
+  .lesson-head .ttl{font-family:"Press Start 2P",monospace; font-size:0.86rem; line-height:1.5; color:var(--ink);}
+  .lesson-head .es{display:block; font-family:"Share Tech Mono",monospace; font-size:0.8rem; color:var(--soft); margin-top:7px; letter-spacing:.5px;}
+
+  .block{margin-top:20px;}
+  .btag{display:inline-flex; align-items:center; gap:8px; font-family:"Share Tech Mono",monospace; font-size:0.82rem; letter-spacing:1px; text-transform:uppercase; color:var(--soft); border-bottom:1px dashed var(--line); padding-bottom:5px; margin-bottom:10px; width:100%;}
+  .btag .min{margin-left:auto; color:var(--cyan); text-transform:none; font-size:0.78rem;}
+
+  .objective{background:#eefaf6; border:1px solid #bfe6d5; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; font-size:0.98rem;}
+  .objective b{color:var(--green);}
+  .warmup{background:var(--warm-bg); border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px;}
+
+  p{margin:8px 0;}
+  ul, ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
+  .lead-sm{color:var(--soft); font-size:0.95rem;}
+  code, .chip{font-family:"Share Tech Mono",monospace;}
+  .chip{display:inline-block; background:#eaf6f9; color:var(--cyan); border:1px solid #bfe6ee; border-radius:6px; padding:1px 7px; font-size:0.9em;}
+  .ok{color:var(--green); font-weight:600;} .x{color:var(--red); text-decoration:line-through;}
+  .h3{font-weight:700; color:var(--ink); margin:14px 0 4px; font-size:1rem;}
+  .h3 .sm{font-weight:400; color:var(--soft); font-size:0.85rem;}
+
+  /* phrase lists */
+  .phr{list-style:none; margin:6px 0 6px; padding:0;}
+  .phr li{padding:6px 0; border-bottom:1px dashed var(--line);}
+  .phr li:last-child{border-bottom:none;}
+  .phr .en{color:var(--ink);} .phr .sp{color:var(--soft); font-size:0.86rem; display:block;}
+
+  /* glossary / table grids */
+  .grid2{display:grid; grid-template-columns:1fr; gap:10px; margin:8px 0;}
+  @media(min-width:640px){ .grid2{grid-template-columns:1fr 1fr;} }
+  .cell{border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:#fbfcff;}
+  .cell .gh{display:block; font-family:"Share Tech Mono",monospace; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:6px;}
+  .cell code{color:var(--cyan);}
+
+  table.tb{width:100%; border-collapse:collapse; margin:8px 0; font-size:0.93rem;}
+  table.tb th, table.tb td{border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top;}
+  table.tb th{background:#f3f1fb; font-family:"Share Tech Mono",monospace; font-size:0.76rem; letter-spacing:1px; color:var(--soft);}
+  table.tb td .sp{color:var(--soft); font-size:0.85rem;}
+
+  /* B2 stretch */
+  .stretch{background:var(--stretch-bg); border:1px solid #d9c9ff; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .stretch .st-h{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:6px;}
+  .stretch .st-h::before{content:"⭐";}
+
+  /* listening dialogue */
+  .dialogue{border:1px solid var(--line); border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px; background:#fbfdff;}
+  .dialogue .line{margin:5px 0;}
+  .dialogue .spk{font-weight:700; color:var(--cyan);}
+  .dialogue .spk.b{color:var(--magenta);}
+  .dialogue .tg{background:#fff3d6; border-radius:4px; padding:0 4px;}
+  .qs{margin:10px 0 0 0;}
+  .qs .qn{font-weight:700; color:var(--purple); margin-right:6px;}
+
+  /* answer key */
+  .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
+  .key .kh::before{content:"✅";}
+  .key ol{margin:4px 0 0 20px;} .key li{margin:3px 0;}
+  .key .alt{color:var(--soft); font-size:0.86rem;}
+
+  /* teacher-only note */
+  .tnote{background:#fff5f8; border:1px dashed var(--magenta); border-radius:10px; padding:10px 14px; margin:12px 0; font-size:0.92rem; color:#7a2d55;}
+  .tnote b{color:var(--magenta);}
+
+  /* scaffold (gapped model) */
+  .scaffold{background:#fbfaff; border:1px solid #e0d8f5; border-radius:10px; padding:12px 16px; font-family:"Share Tech Mono",monospace; font-size:0.95rem; line-height:1.9;}
+  .gap{display:inline-block; min-width:64px; border-bottom:1.5px solid var(--gold); color:var(--gold); text-align:center;}
+  .hw{background:#fff8ec; border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px; margin-top:8px;}
+  .hw b{color:var(--gold);}
+
+  /* view toggling */
+  body.student .key, body.student .tnote{display:none !important;}
+  .student-hidden{display:none;}
+
+  footer{max-width:900px; margin:34px auto 0; padding:16px 20px; text-align:center; color:var(--soft); font-size:0.85rem; border-top:1px solid var(--line);}
+  footer b{font-family:"Press Start 2P",monospace; font-size:0.62rem; color:var(--purple); letter-spacing:1px;}
+
+  @media print{
+    body{background:#fff; font-size:11.5pt; padding:0;}
+    .toolbar{display:none;}
+    .lesson, .cover{box-shadow:none; border-color:#ccc; break-inside:avoid;}
+    .lesson{break-before:page;}
+    .cover{break-before:avoid;}
+    a{color:var(--ink); text-decoration:none;}
+  }
+</style>
+</head>
+<body class="teacher">
+
+<div class="toolbar">
+  <span class="tt">VIEW:</span>
+  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')">📖 Teacher (with keys)</button>
+  <button class="tbtn" id="btnStudent" onclick="setView('student')">🎒 Student (no keys)</button>
+  <button class="tbtn print" onclick="window.print()">🖨️ Print / Save PDF</button>
+  <span class="viewnote" id="viewNote">Answer keys &amp; teacher notes are visible.</span>
+</div>
+
+<div class="wrap">
+
+  <!-- ============== COVER ============== -->
+  <div class="cover">
+    <div class="kicker">ENGLISH FOR ALL · RANK UP · SIDEQUEST</div>
+    <h1>BUSINESS ENGLISH<br>4-LESSON COURSE</h1>
+    <p class="lead">Professional English for the situations that actually come up at work: introducing yourself, running a meeting, writing a clean email, and negotiating a deal. Built <b>PPP</b> style — Present → Practice → Produce.</p>
+    <div class="badges">
+      <span class="badge b1"><b>B1 core</b></span>
+      <span class="badge b2">⭐ B2 stretch</span>
+      <span class="badge">4 lessons · ~50–55 min each</span>
+      <span class="badge">1:1 or small group</span>
+      <span class="badge">🇺🇸 American English</span>
+    </div>
+  </div>
+
+  <!-- ============== HOW TO USE ============== -->
+  <h2 class="sec">HOW TO USE THIS COURSE</h2>
+  <p class="lead-sm">Each lesson follows the same rhythm so students always know where they are. Use the <b>Teacher / Student</b> toggle at the top: <b>Student view</b> hides the answer keys and teacher notes so you can print or screen-share a clean handout.</p>
+  <div class="legend">
+    <div class="leg"><span class="em">🎯</span><div class="lx"><b>Objective</b><span>The can-do goal for the lesson.</span></div></div>
+    <div class="leg"><span class="em">🔥</span><div class="lx"><b>Warm-up (5 min)</b><span>Get talking, activate the topic.</span></div></div>
+    <div class="leg"><span class="em">📘</span><div class="lx"><b>Present (15 min)</b><span>Vocabulary + grammar, with glossary.</span></div></div>
+    <div class="leg"><span class="em">✏️</span><div class="lx"><b>Controlled Practice (15 min)</b><span>Guided exercises. Answers in the ✅ key.</span></div></div>
+    <div class="leg"><span class="em">🎧</span><div class="lx"><b>Model Dialogue</b><span>A short conversation + comprehension. Read it aloud, or record it for audio later.</span></div></div>
+    <div class="leg"><span class="em">🗣️</span><div class="lx"><b>Free Practice (15 min)</b><span>Role-play with scripted prompts — works 1:1.</span></div></div>
+    <div class="leg"><span class="em">⭐</span><div class="lx"><b>B2 Stretch box</b><span>Optional upgrade language for stronger students.</span></div></div>
+    <div class="leg"><span class="em">📌</span><div class="lx"><b>Homework</b><span>A short writing/speaking task to submit.</span></div></div>
+  </div>
+
+  <h2 class="sec">COURSE MAP</h2>
+  <table class="maptable">
+    <tr><th style="width:52px">#</th><th>Lesson</th><th>Grammar focus</th><th>Produce</th></tr>
+    <tr><td class="ln">01</td><td><b>Introductions &amp; Small Talk</b></td><td>Prepositions of time / place / movement</td><td>Introduce yourself at a networking event</td></tr>
+    <tr><td class="ln">02</td><td><b>Meetings &amp; Discussions</b></td><td>Modal verbs (should / could / must…)</td><td>Take part in a team meeting</td></tr>
+    <tr><td class="ln">03</td><td><b>Email &amp; Formal Communication</b></td><td>Polite / indirect language + passive voice</td><td>Write a formal business email</td></tr>
+    <tr><td class="ln">04</td><td><b>Negotiations &amp; Persuasion</b></td><td>First conditional + <span class="es">unless / as long as</span> (2nd/3rd = stretch)</td><td>Negotiate a deal or contract</td></tr>
+  </table>
+  <div class="tnote"><b>Teacher tip:</b> The 🎧 <b>Model Dialogues</b> are written to be recorded — they're the natural seed for the Rank-Up audio version of this track (2 short audios per lesson + transcript). Keep contractions natural when reading, but if you generate TTS later, avoid <i>He's / She's</i> at the start of a clause (they mispronounce).</div>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 1 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l1">
+    <div class="lesson-head">
+      <div class="lnum">01</div>
+      <div><span class="ttl">Professional Introductions &amp; Small Talk</span>
+      <span class="es">Presentarte en el trabajo y hacer small talk · Grammar: preposiciones de tiempo, lugar y movimiento</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>introduce themselves and their job</b>, and <b>make simple small talk</b> in a professional setting, using <b>prepositions of time, place and movement</b> correctly.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>What is your job? Who do you usually meet or talk to at work?</li>
+          <li>When you meet someone new at work, what do you say first?</li>
+          <li>What is "small talk"? When do people do it at work?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="h3">A · Greetings &amp; introductions <span class="sm">— for meeting people at work</span></div>
+      <ul class="phr">
+        <li><span class="en">Hi, I don't think we've met. I'm…</span><span class="sp">Hola, creo que no nos conocemos. Soy…</span></li>
+        <li><span class="en">Nice to meet you. / Good to meet you.</span><span class="sp">Encantado/a de conocerte.</span></li>
+        <li><span class="en">Good to see you again.</span><span class="sp">Qué bueno verte otra vez.</span></li>
+        <li><span class="en">How's it going? / How have you been?</span><span class="sp">¿Cómo va todo? / ¿Cómo has estado?</span></li>
+        <li><span class="en">What do you do? / What's your role?</span><span class="sp">¿A qué te dedicas? / ¿Cuál es tu puesto?</span></li>
+      </ul>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · more formal openers</div>
+        "It's a pleasure to finally meet you in person." · "I've heard so much about you." · "I hope you're doing well." · "It's great to see you again — I trust all is well?"
+      </div>
+
+      <div class="h3">B · Job titles &amp; responsibilities <span class="sm">— say your title, then what you do (present simple: I + verb)</span></div>
+      <table class="tb">
+        <tr><th style="width:38%">Title</th><th>"What do you do?" — responsibility</th></tr>
+        <tr><td>Manager <span class="sp">gerente</span></td><td>I <b>manage</b> a team and <b>plan</b> our projects.</td></tr>
+        <tr><td>Assistant <span class="sp">asistente</span></td><td>I <b>help</b> my manager and <b>organize</b> meetings.</td></tr>
+        <tr><td>Sales Rep <span class="sp">rep. de ventas</span></td><td>I <b>talk to</b> clients and <b>sell</b> our products.</td></tr>
+        <tr><td>Accountant <span class="sp">contador/a</span></td><td>I <b>take care of</b> the money and the budgets.</td></tr>
+        <tr><td>Developer <span class="sp">desarrollador/a</span></td><td>I <b>build</b> and <b>fix</b> our apps and websites.</td></tr>
+        <tr><td>Customer Support <span class="sp">soporte</span></td><td>I <b>answer</b> questions and <b>solve</b> problems for clients.</td></tr>
+      </table>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · senior titles &amp; responsibility verbs</div>
+        Director of Operations · Account Manager · Client Relations Specialist. Use: "I <b>oversee</b> strategic planning," "I <b>manage</b> cross-functional teams," "I'm <b>responsible for</b> driving our digital strategy," "My role involves <b>liaising</b> between departments."
+        <p class="lead-sm" style="margin-top:6px"><b>liaise</b> (verb) = act as a link between people or groups so they communicate. <i>"She liaises with teams across the country."</i></p>
+      </div>
+
+      <div class="h3">C · Grammar — Prepositions: <span class="sm">time · place · movement</span></div>
+      <p class="lead-sm">The trick: they go from <b>small/exact</b> → <b>big/general</b>.</p>
+      <table class="tb">
+        <tr><th></th><th>AT — a point 📍</th><th>ON — a day / surface 📅</th><th>IN — a period / space 📦</th></tr>
+        <tr><td><b>Time</b></td><td><code>at</code> 3 p.m. · <code>at</code> noon · <code>at</code> night</td><td><code>on</code> Monday · <code>on</code> May 5 · <code>on</code> the weekend</td><td><code>in</code> July · <code>in</code> 2026 · <code>in</code> the morning</td></tr>
+        <tr><td><b>Place</b></td><td><code>at</code> the office · <code>at</code> the door · <code>at</code> a meeting</td><td><code>on</code> the desk · <code>on</code> the wall · <code>on</code> the second floor</td><td><code>in</code> a meeting room · <code>in</code> New York · <code>in</code> the building</td></tr>
+      </table>
+      <table class="tb">
+        <tr><th>Movement — where to?</th><th>Example</th></tr>
+        <tr><td><code>to</code> — toward a destination</td><td>I'm going <b>to</b> the conference. She drove <b>to</b> the office.</td></tr>
+        <tr><td><code>into</code> — from outside to inside</td><td>He walked <b>into</b> the meeting room.</td></tr>
+        <tr><td><code>onto</code> — to a surface</td><td>She put the files <b>onto</b> the table.</td></tr>
+      </table>
+      <div class="grid2">
+        <div class="cell"><span class="gh">Position words (place)</span><span class="chip">under</span> <span class="chip">next to</span> <span class="chip">between</span> <span class="chip">behind</span> <span class="chip">in front of</span> <span class="chip">near</span> <span class="chip">opposite</span></div>
+        <div class="cell"><span class="gh">⚠ No preposition</span>Before <i>next week, last month, this morning, today, tomorrow, yesterday</i>, and with <i>go/come/stay <b>home</b></i>. <span class="ok">See you tomorrow.</span> <span class="x">See you on tomorrow.</span></div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">🇺🇸 American English note</div>
+        We say <b>on the weekend / on weekends</b> (not "at the weekend"). Also <b>in the morning / afternoon / evening</b>, but <b>at night</b>. And <b>at work / at home</b> (not "in work / in home").
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Fill in the preposition <span class="sm">— at / on / in / to / into · some need no preposition (—)</span></div>
+      <ol>
+        <li>We'll meet ___ the restaurant ___ 2:00 p.m.</li>
+        <li>I'm traveling ___ Paris ___ next week for a conference.</li>
+        <li>The presentation will take place ___ the second floor ___ 10 a.m.</li>
+        <li>The train arrives ___ the station ___ five minutes.</li>
+        <li>She walked ___ the meeting room and sat ___ the front.</li>
+        <li>The company was founded ___ 2010 ___ two entrepreneurs.</li>
+        <li>He drove ___ the event and parked ___ the entrance.</li>
+        <li>We have a team call ___ Tuesday, ___ the morning.</li>
+        <li>I put the documents ___ your desk, ___ to the phone.</li>
+        <li>We're flying ___ Amsterdam ___ tomorrow.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li><b>at</b> the restaurant <b>at</b> 2:00 p.m.</li>
+          <li><b>to</b> Paris <b>—</b> next week <span class="alt">("next week" takes no preposition)</span></li>
+          <li><b>on</b> the second floor <b>at</b> 10 a.m.</li>
+          <li><b>at</b> the station <b>in</b> five minutes <span class="alt">(in + future time)</span></li>
+          <li><b>into</b> the meeting room and sat <b>at</b> the front <span class="alt">(also: in the front)</span></li>
+          <li><b>in</b> 2010 <b>by</b> two entrepreneurs <span class="alt">(by = agent)</span></li>
+          <li><b>to</b> the event and parked <b>at</b> the entrance <span class="alt">(also: near)</span></li>
+          <li><b>on</b> Tuesday, <b>in</b> the morning</li>
+          <li><b>on</b> your desk, <b>next</b> to the phone</li>
+          <li><b>to</b> Amsterdam <b>—</b> tomorrow</li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Small talk — match the question to the best answer</div>
+      <table class="tb">
+        <tr><th style="width:50%">Question</th><th>Answer</th></tr>
+        <tr><td>1. How was your weekend?</td><td>a. About three years now.</td></tr>
+        <tr><td>2. What do you do?</td><td>b. Yes, it is — it's bigger than I expected!</td></tr>
+        <tr><td>3. How's the new project going?</td><td>c. It was great, thanks — I went hiking. How about you?</td></tr>
+        <tr><td>4. Is this your first time at this event?</td><td>d. I'm a project manager at a software company.</td></tr>
+        <tr><td>5. How long have you worked here?</td><td>e. Pretty well! We're a little behind, but we're catching up.</td></tr>
+      </table>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <p><b>1-c · 2-d · 3-e · 4-b · 5-a</b></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue · a networking event</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Ana:</span> Hi, I don't think we've met. I'm Ana — I work <span class="tg">at Lumen Design</span>.</p>
+        <p class="line"><span class="spk b">Toni:</span> Nice to meet you, Ana. I'm Toni, a marketing specialist <span class="tg">at BrightBox</span>.</p>
+        <p class="line"><span class="spk">Ana:</span> Marketing — what do you do there exactly?</p>
+        <p class="line"><span class="spk b">Toni:</span> I manage our social media and help with campaigns. And you?</p>
+        <p class="line"><span class="spk">Ana:</span> I'm a project coordinator. I work <span class="tg">with clients from Europe and the US</span>.</p>
+        <p class="line"><span class="spk b">Toni:</span> Nice. Is this your first time <span class="tg">at this conference</span>?</p>
+        <p class="line"><span class="spk">Ana:</span> Yes, it is. I arrived <span class="tg">on Monday</span>, and the talks start <span class="tg">tomorrow at nine</span>.</p>
+        <p class="line"><span class="spk b">Toni:</span> Same here. There's a coffee break <span class="tg">at eleven</span> — want to continue then?</p>
+        <p class="line"><span class="spk">Ana:</span> Sounds good. See you <span class="tg">at the break</span>, <span class="tg">by the main entrance</span>.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> What is Toni's job, and what does he do?</p>
+        <p><span class="qn">Q2.</span> When do the talks start?</p>
+        <p><span class="qn">Q3.</span> Where and when will they meet later?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>A marketing specialist at BrightBox — he manages social media and helps with campaigns.</li>
+          <li>Tomorrow, at nine.</li>
+          <li>At the coffee break (at eleven), by the main entrance.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Role-play — the networking event.</b> Student introduces themselves, asks the tutor two small-talk questions, and answers two back. Encourage prepositions in real sentences ("I work <i>at</i>…", "The event is <i>in</i>…", "I'm meeting a client <i>on</i>…").</p>
+      <p class="lead-sm">If the student needs support, start from this frame and fill the gaps:</p>
+      <div class="scaffold">
+        Hi, I'm <span class="gap">name</span>. I work <span class="gap">at + company</span>. I'm a <span class="gap">job</span>, and I <span class="gap">responsibility</span>. I usually work <span class="gap">in/at + place</span>, and today I'm here <span class="gap">for + event</span>. What about you?
+      </div>
+      <div class="tnote"><b>Teacher note:</b> If the student is alone, play the second speaker (Toni). Push for elaboration: "Tell me more about your role," "How long have you worked there?"</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> a short professional introduction (5–6 full sentences joined into a paragraph, not a list) about your job and your typical week. Use <b>at least five prepositions</b> of time, place and movement. Optional: record yourself reading it aloud and send both.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 2 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l2">
+    <div class="lesson-head">
+      <div class="lnum">02</div>
+      <div><span class="ttl">Business Meetings &amp; Discussions</span>
+      <span class="es">Opinar, acordar/discrepar con tacto y sugerir · Grammar: verbos modales</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>give an opinion, agree and disagree politely, and make suggestions</b> in a meeting, and use <b>modal verbs</b> (should / could / must…) to sound professional and diplomatic.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Have you ever been in a meeting in English? How did it go?</li>
+          <li>What is difficult about giving your opinion in a professional setting?</li>
+          <li>Why is polite, diplomatic language important in business discussions?</li>
+        </ul>
+        <p class="lead-sm"><b>Brainstorm:</b> ask the student to list ways to <i>agree</i>, <i>disagree</i>, and <i>suggest</i>. Compare with the phrases below.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Meeting language &amp; modals <span class="min">15 min</span></span>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">A · Giving opinions</span>
+          I think… · In my opinion… · I feel that… · It seems to me that…
+          <div class="stretch" style="margin-top:8px"><div class="st-h">B2 stretch</div>I tend to think that… · From where I stand… · As far as I'm concerned… · I would argue that…</div>
+        </div>
+        <div class="cell"><span class="gh">B · Agreeing</span>
+          I agree. · Good point. · That's true. · Exactly. · That makes sense.
+          <div class="stretch" style="margin-top:8px"><div class="st-h">B2 stretch</div>I'm inclined to agree. · You make a valid point. · That aligns with my thinking. · I couldn't agree more.</div>
+        </div>
+        <div class="cell"><span class="gh">C · Disagreeing politely</span>
+          I see your point, but… · I'm not sure I agree. · I understand, but I think… · Maybe, but have we considered…?
+          <div class="stretch" style="margin-top:8px"><div class="st-h">B2 stretch</div>I see where you're coming from, but I have a slightly different perspective. · I take your point; however, I'd suggest another approach.</div>
+        </div>
+        <div class="cell"><span class="gh">D · Making suggestions</span>
+          Why don't we…? · We could… · How about + <i>-ing</i>? · Maybe we should…
+          <div class="stretch" style="margin-top:8px"><div class="st-h">B2 stretch</div>Would it be worth considering…? · It might be beneficial to… · We might want to explore the possibility of…</div>
+        </div>
+      </div>
+
+      <div class="h3">E · Grammar — Modal verbs for professional communication</div>
+      <p class="lead-sm">Modals make requests and opinions sound <b>polite and precise</b>. Core (B1) in bold; ⭐ = B2 stretch.</p>
+      <table class="tb">
+        <tr><th style="width:34%">Use</th><th>Modals</th><th>Business example</th></tr>
+        <tr><td>Recommendation / advice</td><td><b>should</b> · ⭐ ought to · ⭐ had better</td><td>We <b>should</b> prioritize customer feedback.</td></tr>
+        <tr><td>Possibility / uncertainty</td><td><b>could</b> · ⭐ might · ⭐ may</td><td>We <b>could</b> explore new suppliers to cut costs.</td></tr>
+        <tr><td>Obligation / necessity</td><td><b>must</b> · <b>have to</b> · <b>need to</b></td><td>We <b>must</b> meet the deadline. Reports <b>have to</b> be in by Friday.</td></tr>
+        <tr><td>Prohibition</td><td><b>must not</b> · <b>can't</b> · ⭐ may not</td><td>Staff <b>must not</b> share confidential information.</td></tr>
+        <tr><td>Permission / ability</td><td><b>can</b> · ⭐ may · ⭐ might be able to</td><td>You <b>can</b> request more resources if needed.</td></tr>
+      </table>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · What is it? <span class="sm">— write O (opinion), A (agree), D (disagree) or S (suggestion) next to each</span></div>
+      <ol>
+        <li>"I tend to think that launching a new product line would increase our market share."</li>
+        <li>"I completely agree with that approach; expanding to new markets is a smart decision."</li>
+        <li>"We might want to explore the possibility of outsourcing some production to cut costs."</li>
+        <li>"That's a fair point, but I see it differently. I believe we should invest more in marketing."</li>
+        <li>"From where I stand, improving customer service should be our top priority."</li>
+        <li>"That aligns with my thoughts as well. Customer feedback is crucial for growth."</li>
+        <li>"Have you considered a different perspective? Maybe hiring more staff would solve the issue."</li>
+        <li>"While I respect your view, I'd like to offer an alternative: focus on training instead."</li>
+        <li>"As far as I'm concerned, reducing costs should not come at the expense of quality."</li>
+        <li>"I see your point, but we also need to consider the long-term impact of this decision."</li>
+        <li>"It might be beneficial to invest in digital marketing to reach a wider audience."</li>
+        <li>"I would argue that adjusting our pricing strategy would attract more customers."</li>
+        <li>"Absolutely! I couldn't agree more with your proposal to improve the supply chain."</li>
+        <li>"A potential solution could be a loyalty program to increase customer retention."</li>
+        <li>"I understand your perspective; however, a different approach might be more effective."</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <p><b>1-O · 2-A · 3-S · 4-D · 5-O · 6-A · 7-S · 8-D · 9-O · 10-D · 11-S · 12-O · 13-A · 14-S · 15-D</b></p>
+        <p class="alt">Then: pick three phrases and respond to — <i>"Your company is discussing ways to increase employee satisfaction. What would you say?"</i></p>
+      </div>
+
+      <div class="h3">Activity 2 · Make it professional <span class="sm">— rewrite each order using a modal verb</span></div>
+      <ol>
+        <li>"You have to fix this mistake right now."</li>
+        <li>"Send me the report by 5 p.m."</li>
+        <li>"We can't accept late submissions."</li>
+        <li>"Tell the team to work faster."</li>
+        <li>"You need to come to the meeting on time."</li>
+        <li>"Don't share this information with anyone."</li>
+        <li>"We have to make a decision soon."</li>
+        <li>"Take care of this problem immediately."</li>
+        <li>"Cancel the order now."</li>
+        <li>"We can't approve your request."</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2 <span class="alt">(sample answers — accept any polite modal version)</span></div>
+        <ol>
+          <li>Could you correct this mistake as soon as possible?</li>
+          <li>Could you send me the report by 5 p.m.?</li>
+          <li>Unfortunately, we cannot accept late submissions.</li>
+          <li>We should ask the team to speed up a little. / The team may need to work a bit faster.</li>
+          <li>Could you please arrive on time for the meeting? / You should arrive on time.</li>
+          <li>This information must not be shared with anyone.</li>
+          <li>We should make a decision soon. / We need to decide soon.</li>
+          <li>Could you deal with this problem right away? / This must be dealt with immediately.</li>
+          <li>Could you cancel the order, please? / We should cancel the order.</li>
+          <li>Unfortunately, we're unable to approve your request. / We cannot approve it at this time.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue · a short team meeting</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Facilitator:</span> Sales are down this quarter. What do you think we should do?</p>
+        <p class="line"><span class="spk b">Maria:</span> <span class="tg">In my opinion</span>, we <span class="tg">should</span> focus on our existing customers. We <span class="tg">could</span> start a loyalty program.</p>
+        <p class="line"><span class="spk">Diego:</span> <span class="tg">I see your point, but</span> I'm not sure that's enough. I think we <span class="tg">need</span> new customers too.</p>
+        <p class="line"><span class="spk b">Maria:</span> <span class="tg">That's a fair point.</span> Maybe we could do both?</p>
+        <p class="line"><span class="spk">Diego:</span> Good idea. <span class="tg">How about</span> a small discount for referrals?</p>
+        <p class="line"><span class="spk b">Facilitator:</span> I like that. <span class="tg">It might be beneficial to</span> test it for one month first.</p>
+        <p class="line"><span class="spk">Maria:</span> Agreed. We <span class="tg">must</span> set a clear budget, though.</p>
+        <p class="line"><span class="spk b">Diego:</span> Definitely. We <span class="tg">shouldn't</span> spend more than we can afford.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> What does Maria suggest first?</p>
+        <p><span class="qn">Q2.</span> Does Diego agree completely? What does he add?</p>
+        <p><span class="qn">Q3.</span> What do they decide to do first?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>A loyalty program — focusing on existing customers.</li>
+          <li>No — he politely disagrees; he thinks they also need to attract new customers.</li>
+          <li>Test the referral discount for one month, with a clear budget.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Simulated meeting <span class="min">15 min</span></span>
+      <p><b>Scenario:</b> Your company is planning to expand into a new international market. The team meets to discuss strategy, risks, and next steps. Each person <b>gives an opinion, responds to others, and suggests a way forward.</b></p>
+      <p class="lead-sm">Student picks a role: <b>Project Manager</b> (timelines/budget) · <b>Marketing Lead</b> (branding/research) · <b>Sales Director</b> (demand/pricing) · <b>Financial Analyst</b> (costs/risks).</p>
+      <p><b>Facilitator (tutor):</b> "Thanks for joining. Today we're discussing our expansion into a new market. What are the key opportunities and challenges?"</p>
+      <div class="scaffold">
+        <b>Opinion:</b> From where I stand, <span class="gap">…</span> could be <span class="gap">…</span>.<br>
+        <b>Agree:</b> That's a good point. I agree that <span class="gap">…</span>.<br>
+        <b>Disagree:</b> I see your point, but I'm not sure <span class="gap">…</span>. We might also need <span class="gap">…</span>.<br>
+        <b>Suggest:</b> We could <span class="gap">…</span>. / A potential solution could be <span class="gap">…</span>.
+      </div>
+      <div class="tnote"><b>Teacher note:</b> If the student is alone, feed scripted statements for them to react to ("I think we should enter with the cheapest price" → student agrees/disagrees + suggests). Aim for at least one of each: opinion, agreement, polite disagreement, suggestion.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> a short email (3–4 sentences) summarizing the key decisions from today's "meeting." Use <b>two opinion phrases</b> and <b>at least one modal verb</b>. Optional: listen to 2–3 minutes of a real business meeting (podcast/YouTube) and note three useful phrases.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 3 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l3">
+    <div class="lesson-head">
+      <div class="lnum">03</div>
+      <div><span class="ttl">Email Writing &amp; Formal Communication</span>
+      <span class="es">Estructurar un email profesional y ser cortés · Grammar: lenguaje indirecto + voz pasiva</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>structure a professional email</b>, use <b>polite, formal language</b>, and make requests softer with <b>indirect language</b> (and, at B2, the <b>passive voice</b>).</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <p>Compare these two email openings. Which one is better for work, and why?</p>
+        <ul>
+          <li><span class="x">"Hey, send me the report ASAP."</span></li>
+          <li><span class="ok">"Hi Sam, could you send me the report when you have a moment?"</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Email structure &amp; politeness <span class="min">15 min</span></span>
+
+      <div class="h3">A · The 6 parts of a professional email</div>
+      <table class="tb">
+        <tr><th style="width:32%">Part</th><th>Example</th></tr>
+        <tr><td>1. Subject line <span class="sp">claro y breve</span></td><td>Meeting Request: Q2 Sales Strategy</td></tr>
+        <tr><td>2. Greeting</td><td>Dear Mr. Smith, / Dear Hiring Manager,</td></tr>
+        <tr><td>3. Opening line <span class="sp">el motivo</span></td><td>I hope you are doing well. I am writing to…</td></tr>
+        <tr><td>4. Body <span class="sp">claro, por párrafos</span></td><td>The main content, organized logically.</td></tr>
+        <tr><td>5. Closing statement</td><td>I look forward to your reply.</td></tr>
+        <tr><td>6. Sign-off</td><td>Best regards, / Sincerely,</td></tr>
+      </table>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">Useful openings</span>I am writing to inquire about… · I hope you are doing well. · I wanted to follow up on…</div>
+        <div class="cell"><span class="gh">Useful closings</span>Please let me know if you need anything further. · I look forward to your reply. · Thank you for your time.</div>
+      </div>
+
+      <div class="h3">B · Politeness — indirect language <span class="sm">(direct → polite → more polite)</span></div>
+      <table class="tb">
+        <tr><th>Direct</th><th>Polite</th><th>More polite</th></tr>
+        <tr><td>Send me the report.</td><td>Could you send me the report?</td><td>Would you mind sending me the report?</td></tr>
+      </table>
+      <p class="lead-sm">More soft phrases: "I would appreciate it if you could…" · "Would it be possible to…?" · "Could you kindly…?"</p>
+
+      <div class="h3">C · Formal vs. informal</div>
+      <table class="tb">
+        <tr><th style="width:33%">Feature</th><th>Informal</th><th>Formal</th></tr>
+        <tr><td>Modals for politeness</td><td>Can you send it?</td><td>Could you send it? / Would you be able to send it?</td></tr>
+        <tr><td>Contractions</td><td>I'll get back to you.</td><td>I will get back to you.</td></tr>
+      </table>
+
+      <div class="stretch">
+        <div class="st-h">B2 stretch · Passive voice for a neutral, diplomatic tone</div>
+        <p>Structure: <b>be + past participle</b>. It shifts focus to the <i>action</i>, not the person — useful when the "doer" is unknown or when you don't want to point a finger.</p>
+        <ul>
+          <li>"You made a mistake in the report." → "<b>A mistake was made</b> in the report."</li>
+          <li>"The manager approved the request." → "<b>The request was approved</b> (by the manager)."</li>
+          <li>"You didn't send the document." → "<b>The document has not been sent</b> yet."</li>
+        </ul>
+      </div>
+
+      <div class="stretch">
+        <div class="st-h">🇺🇸 American English in emails</div>
+        Use American spelling: <b>color</b> (not colour), <b>behavior</b> (not behaviour), <b>organize</b> (not organise), <b>center</b> (not centre). Dates: <b>April 5</b> or <b>4/5</b>. And <b>on the weekend</b> (not "at the weekend").
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Make it polite <span class="sm">— rewrite using indirect language</span></div>
+      <ol>
+        <li>"Send me the details by tomorrow."</li>
+        <li>"I need you to review this document."</li>
+        <li>"Can you attend the meeting at 3 p.m.?"</li>
+        <li>"Give me an update on the project."</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1 <span class="alt">(sample answers)</span></div>
+        <ol>
+          <li>Could you send me the details by tomorrow, please? / I would appreciate it if you could send me the details by tomorrow.</li>
+          <li>Would you mind reviewing this document? / Could you please review this document?</li>
+          <li>Would you be able to attend the meeting at 3 p.m.?</li>
+          <li>Could you give me an update on the project? / I'd appreciate an update when you have a moment.</li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Fix the email <span class="sm">— identify the problems, then rewrite it professionally</span></div>
+      <p><b>Email 1 (with mistakes):</b></p>
+      <div class="dialogue" style="border-left-color:var(--red)"><i>"Hey, I need you to send me the report ASAP. Also, I don't get the numbers in the last section. Explain them. Thanks."</i></div>
+      <p style="margin-top:12px"><b>Email 2 (with mistakes):</b></p>
+      <div class="dialogue" style="border-left-color:var(--red)"><i>"Hi, We have a problem with the shipment. It was delayed and now we won't get it in time. Fix it soon. Bye."</i></div>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <p><b>Problems to spot:</b> no subject line · too-casual greeting ("Hey/Hi,") · too direct ("I need you to…", "Fix it") · contractions ("don't", "won't") · imperative with no softening ("Explain them.") · no proper sign-off ("Thanks/Bye").</p>
+        <p style="margin-top:8px"><b>Model rewrite — Email 1:</b></p>
+        <div class="scaffold" style="font-size:0.9rem; line-height:1.7">
+          Subject: Report and a Question on the Final Section<br>
+          Dear [Name],<br>
+          I hope you are doing well. Could you please send me the report when you have a moment? I would also appreciate a short explanation of the numbers in the last section, as I am not sure I understand them fully.<br>
+          Thank you for your help.<br>
+          Best regards,<br>
+          [Your name]
+        </div>
+        <p style="margin-top:10px"><b>Model rewrite — Email 2:</b></p>
+        <div class="scaffold" style="font-size:0.9rem; line-height:1.7">
+          Subject: Delayed Shipment — Request for an Update<br>
+          Dear [Name],<br>
+          I am writing regarding our recent shipment, which has unfortunately been delayed. As a result, we may not receive it within the expected time frame. Could you please look into this and let us know the possible solutions and a new delivery date?<br>
+          Thank you for your attention to this matter.<br>
+          Best regards,<br>
+          [Your name]
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Write a formal email</b> for one of these situations:</p>
+      <ol>
+        <li><b>Requesting a meeting</b> with a client or supervisor.</li>
+        <li><b>Following up</b> on a proposal you sent last week.</li>
+        <li><b>Requesting information</b> about a service or product for your company.</li>
+      </ol>
+      <p class="lead-sm">Support frame (fill the gaps):</p>
+      <div class="scaffold">
+        Subject: <span class="gap">…</span><br>
+        Dear <span class="gap">name</span>,<br>
+        I hope <span class="gap">…</span>. I am writing to <span class="gap">reason</span>.<br>
+        <span class="gap">main point</span>. Could you please <span class="gap">request</span>?<br>
+        I look forward to <span class="gap">…</span>.<br>
+        Best regards,<br>
+        <span class="gap">name</span>
+      </div>
+      <p><b>Checklist:</b> ☐ subject line ☐ formal greeting ☐ clear purpose ☐ one polite request ☐ closing + sign-off ☐ no casual contractions.</p>
+      <div class="tnote"><b>Teacher note:</b> Then role-play an <b>email exchange</b> — you reply as the client/manager, the student answers, adjusting tone. Great place to push the passive-voice stretch ("Your request has been received…").</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> a follow-up email for a <b>missed meeting</b> (polite, professional, with a clear next step). Optional: take one of your own past emails and rewrite it to improve the tone and structure.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 4 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l4">
+    <div class="lesson-head">
+      <div class="lnum">04</div>
+      <div><span class="ttl">Negotiations &amp; Persuasion</span>
+      <span class="es">Regatear, hacer contraofertas y persuadir · Grammar: primer condicional (+ unless / as long as)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>negotiate a simple deal</b> — make offers and counteroffers, express confidence, and use the <b>first conditional</b> ("If we…, we will…") and <b>unless</b> to set conditions.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Have you ever negotiated a price, a deadline, or a salary? What worked?</li>
+          <li>What is a fair, professional way to say "no" in business?</li>
+          <li>What makes someone sound confident but still polite?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Negotiation language &amp; conditionals <span class="min">15 min</span></span>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">A · Bargaining</span>Could we agree on…? · What if we…? · Would you consider…? · Is there any flexibility on…? · How about…?</div>
+        <div class="cell"><span class="gh">B · Counteroffers</span>We understand your position, but would you accept…? · If you can…, then we could… · Would you be willing to meet us halfway? · We can agree to that if you…</div>
+        <div class="cell"><span class="gh">C · Expressing confidence</span>I'm confident we can find a solution. · I believe this is a fair proposal. · I'm sure we can reach an agreement. · This offers good value for both sides.</div>
+        <div class="cell"><span class="gh">D · Key strategy</span>Use persuasive but professional language, and <b>emphasize mutual benefit</b> — "a win for both sides."</div>
+      </div>
+
+      <div class="h3">E · Grammar — Conditionals for negotiation</div>
+      <table class="tb">
+        <tr><th style="width:26%">Type</th><th>Form</th><th>Business example</th></tr>
+        <tr><td><b>First conditional</b><br><span class="sp">real, possible</span> · B1 core</td><td>If + present simple, <b>will</b> + base</td><td>If you place a larger order, we <b>will</b> give a 10% discount.<br>If we lower the price, <b>will</b> you sign today?</td></tr>
+        <tr><td><b>unless / as long as / provided that</b><br>B1+</td><td>condition to proceed</td><td><b>Unless</b> we agree on the terms, we can't proceed.<br>We can start <b>as long as</b> the deposit is paid.<br>We'll accept, <b>provided that</b> you increase the quantity.</td></tr>
+        <tr><td>⭐ Second conditional<br><span class="sp">hypothetical, less likely</span> · B2</td><td>If + past simple, <b>would</b> + base</td><td>If we <b>reduced</b> the price, <b>would</b> you commit to a long-term contract?</td></tr>
+        <tr><td>⭐ Third conditional<br><span class="sp">imaginary past</span> · B2</td><td>If + past perfect, <b>would have</b> + past participle</td><td>If you <b>had accepted</b> the terms, we <b>could have delivered</b> by last week.</td></tr>
+      </table>
+      <div class="tnote"><b>Teacher note — a fix from the source:</b> the "If you had accepted… we could have delivered…" example is a <b>third conditional</b> (imaginary past), not a second conditional. Keep the two apart: 2nd = unlikely present/future; 3rd = a past that didn't happen.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Match the two halves</div>
+      <table class="tb">
+        <tr><th style="width:50%">Beginning</th><th>Ending</th></tr>
+        <tr><td>1. If you increase your order,</td><td>a. the offer will expire.</td></tr>
+        <tr><td>2. Unless you confirm today,</td><td>b. will you process the payment immediately?</td></tr>
+        <tr><td>3. If we deliver by Friday,</td><td>c. as long as you sign a one-year contract.</td></tr>
+        <tr><td>4. If you paid a deposit now,</td><td>d. we will give you a 15% discount.</td></tr>
+        <tr><td>5. We can offer a discount</td><td>e. we would reserve the stock for you.</td></tr>
+      </table>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <p><b>1-d · 2-a · 3-b · 4-e · 5-c</b></p>
+        <p class="alt">Note: #4 is a <b>second conditional</b> ("paid" → "would reserve") — hypothetical; the rest are first conditional / real conditions.</p>
+      </div>
+
+      <div class="h3">Activity 2 · Make one conditional sentence <span class="sm">— join the two ideas</span></div>
+      <ol>
+        <li>Pay today. + We deliver immediately.</li>
+        <li>Order more units. + The price goes down.</li>
+        <li>Confirm the details. + We start on Monday.</li>
+        <li>You don't sign today. + The offer expires.</li>
+        <li>We reduce the price. + You increase the order. <span class="lead-sm">(make a question)</span></li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2 <span class="alt">(sample answers)</span></div>
+        <ol>
+          <li>If you pay today, we will deliver immediately.</li>
+          <li>If you order more units, the price will go down.</li>
+          <li>If you confirm the details, we can start on Monday.</li>
+          <li>Unless you sign today, the offer will expire. <span class="alt">(= If you don't sign today, the offer will expire.)</span></li>
+          <li>If we reduce the price, will you increase the order?</li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 3 · Correct or incorrect? <span class="sm">— fix the ones that are wrong</span></div>
+      <ol>
+        <li>"If you agreed to the new terms, we will deliver next week."</li>
+        <li>"If we reduce the price, they order more."</li>
+        <li>"If you make the payment today, we will deliver immediately."</li>
+        <li>"Unless the price is confirmed today, the offer will expire."</li>
+        <li>"If we had more time, we can explore other options."</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 3</div>
+        <ol>
+          <li><b>Incorrect</b> — mixed tenses. → <i>If you <b>agree</b> to the new terms, we will deliver next week.</i> (first conditional)</li>
+          <li><b>Incorrect</b> — the result needs <i>will</i>. → <i>If we reduce the price, they <b>will</b> order more.</i></li>
+          <li><b>Correct.</b> ✓ (first conditional)</li>
+          <li><b>Correct.</b> ✓ (<i>unless</i> + present, will)</li>
+          <li><b>Incorrect</b> — second conditional needs <i>could/would</i>. → <i>If we had more time, we <b>could</b> explore other options.</i></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue · negotiating with a supplier</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Buyer:</span> <span class="tg">If you lower the price by 10%</span>, we will place a larger order.</p>
+        <p class="line"><span class="spk b">Supplier:</span> I understand your request, but we can only offer 5% <span class="tg">unless you increase your order by 20%</span>.</p>
+        <p class="line"><span class="spk">Buyer:</span> <span class="tg">What if we</span> agree to a long-term contract? Would you consider the 10%?</p>
+        <p class="line"><span class="spk b">Supplier:</span> <span class="tg">If you commit to a one-year contract</span>, we could offer you the 10% discount.</p>
+        <p class="line"><span class="spk">Buyer:</span> That works for us. I'm confident this is a fair deal for both sides.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> What does the buyer offer in exchange for a lower price?</p>
+        <p><span class="qn">Q2.</span> Under what condition will the supplier give 10%?</p>
+        <p><span class="qn">Q3.</span> Do they reach an agreement?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>A larger order — and then a one-year (long-term) contract.</li>
+          <li>If the buyer commits to a one-year contract.</li>
+          <li>Yes — the buyer accepts; it's a fair deal for both sides.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Role-play negotiations <span class="min">15 min</span></span>
+      <p>Run one or more of these. The student uses the vocabulary, counteroffers, and conditionals. Sample flows below — the student doesn't have to copy them.</p>
+      <table class="tb">
+        <tr><th style="width:33%">Scenario</th><th>How it can go</th></tr>
+        <tr><td><b>1. Contract with a supplier</b></td><td>Buyer: "If you lower the price by 10%, we'll place a larger order." → Supplier: "Only 5%, unless you increase the order by 20%." → Buyer: "What if we sign a long-term contract?" → Supplier: "Then we could do 10%."</td></tr>
+        <tr><td><b>2. Price of a service</b></td><td>Client: "We could agree if you reduce the fee by 15%." → Provider: "Unless you accept our current rate, we can't proceed." → Client: "What if we extend the timeline?" → Provider: "If you give us two extra weeks, we can lower the fee by 10%."</td></tr>
+        <tr><td><b>3. Delivery timeline</b></td><td>Supplier: "If you confirm today, we'll deliver by Friday." → Client: "What if we need it by Wednesday?" → Supplier: "We could, if you pay an expedited fee." → Client: "If you guarantee Wednesday, we'll proceed."</td></tr>
+      </table>
+      <p class="lead-sm">Support frame for the student's lines:</p>
+      <div class="scaffold">
+        If you <span class="gap">…</span>, we will <span class="gap">…</span>. · What if we <span class="gap">…</span>? · We can agree to that <span class="gap">as long as / if</span> <span class="gap">…</span>. · I'm confident we can <span class="gap">…</span>.
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> a short email confirming a deal you negotiated, using <b>two first-conditional sentences</b> ("If you…, we will…"). <span class="lead-sm">Alternative: find a short talk or video on a topic you like and write a paragraph on why it matters in everyday life.</span></div>
+    </div>
+  </section>
+
+</div><!-- /wrap -->
+
+<footer>
+  <b>ENGLISH for ALL</b><br>
+  Business English · B1 core · ⭐ B2 stretch · 4-lesson PPP course · Rank Up sidequest
+</footer>
+
+<script>
+  function setView(mode){
+    document.body.classList.remove('teacher','student');
+    document.body.classList.add(mode);
+    var t = document.getElementById('btnTeacher'), s = document.getElementById('btnStudent');
+    t.classList.toggle('on', mode==='teacher');
+    s.classList.toggle('on', mode==='student');
+    document.getElementById('viewNote').textContent = (mode==='teacher')
+      ? 'Answer keys & teacher notes are visible.'
+      : 'Student handout — keys & teacher notes are hidden.';
+  }
+</script>
+</body>
+</html>
+</body>
+</html>
