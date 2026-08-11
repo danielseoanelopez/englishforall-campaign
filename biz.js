@@ -9,6 +9,7 @@
   "use strict";
   var CFG = window.BIZ_CONFIG || { key: "rankup_BIZ", name: "Business Lesson", exercises: [] };
   var EXERCISES = CFG.exercises;
+  var TRACK = CFG.track || "Business Class";
 
   // ===== Arcade juice =====
   var muted = false;
@@ -38,7 +39,7 @@
   (function initMute() { var b = document.getElementById("muteBtn"); if (b) b.textContent = muted ? "🔇" : "🔊"; })();
 
   (function initSideDeco() {
-    var items = ["★", "✦", "💼", "🎧", "💬", "🏆", "★", "✦", "📈", "📎"];
+    var items = ["★", "✦", "🎧", "💬", "🏆", "⭐", "📍", "🚀", "★", "✦"];
     var colors = ["#00e5ff", "#ff3df0", "#9d4dff", "#ffc83d"];
     ["decoLeft", "decoRight"].forEach(function (id) {
       var box = document.getElementById(id); if (!box) return;
@@ -144,7 +145,7 @@
   window.sendHomework = function (el) {
     var nf = document.getElementById("studentName");
     var name = (nf ? nf.value.trim() : "") || "Alumno/a";
-    var msg = "¡Hola Daniel! Soy " + name + ". Terminé la lección \"" + CFG.name + "\" (Business Class). Te envío mi tarea: mi texto y un audio leyéndolo en voz alta.";
+    var msg = "¡Hola Daniel! Soy " + name + ". Terminé la lección \"" + CFG.name + "\" (" + TRACK + "). Te envío mi tarea: mi texto y un audio leyéndolo en voz alta.";
     el.href = SOCIAL.whatsapp + "?text=" + encodeURIComponent(msg);
     return true;
   };
@@ -164,12 +165,12 @@
     document.getElementById("starRow").innerHTML = "⭐".repeat(stars) + '<span class="off">' + "⭐".repeat(5 - stars) + "</span>";
     document.getElementById("scoreText").textContent = "SCORE: " + correct + " / " + total;
     var studentName = (document.getElementById("studentName").value || "").trim() || "Alumno/a";
-    var waMsg = "¡Hola Daniel! Soy " + studentName + ". Terminé la lección " + CFG.name + " (Business Class). Mi score: " + correct + "/" + total + " (" + stars + "⭐). Aquí van mi texto y mi audio:";
+    var waMsg = "¡Hola Daniel! Soy " + studentName + ". Terminé la lección " + CFG.name + " (" + TRACK + "). Mi score: " + correct + "/" + total + " (" + stars + "⭐). Aquí van mi texto y mi audio:";
     document.getElementById("waCta").href = SOCIAL.whatsapp + "?text=" + encodeURIComponent(waMsg);
     try {
       fetch(FORM_ENDPOINT, {
         method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify({ _subject: "Business Class — " + studentName, leccion: CFG.name, nombre: studentName, score: correct + "/" + total, estrellas: stars + "/5", fecha: new Date().toLocaleString() })
+        body: JSON.stringify({ _subject: TRACK + " — " + studentName, leccion: CFG.name, nombre: studentName, score: correct + "/" + total, estrellas: stars + "/5", fecha: new Date().toLocaleString() })
       }).catch(function () {});
     } catch (e) {}
     document.getElementById("finalRow").style.display = "none";
