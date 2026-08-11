@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English for All · Travel &amp; Living (B1 core · B2 stretch)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon-rankup.png">
+<link rel="apple-touch-icon" href="icon-rankup.png">
+<meta name="description" content="Curso de inglés general B1–B2 (4 lecciones, estilo PPP): viajes y vida diaria — planes, alojamiento, comer fuera y contar viajes. English for All · Rank Up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/travel-living-b1b2-course.html">
+<meta property="og:title" content="Travel &amp; Living — English B1–B2 (4-lesson course)">
+<meta property="og:description" content="Inglés real para viajar y vivir: planes, alojamiento, comer fuera y contar viajes. 4 lecciones PPP con respuestas. English for All — Rank Up.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<meta property="og:site_name" content="English for All">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cyan:#0a8ea6; --magenta:#c31f8f; --purple:#6d3ff0; --gold:#b5791a; --green:#158a52; --red:#c0392b;
+    --ink:#1c2230; --soft:#54607a; --line:#dbe2ef; --bg:#f4f6fb; --card:#ffffff;
+    --stretch-bg:#f6f1ff; --key-bg:#eefaf2; --warm-bg:#fff8ec;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.62; font-size:16.5px; padding:0 0 80px;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px;}
+  a{color:var(--cyan);}
+
+  /* ---- Top toolbar ---- */
+  .toolbar{position:sticky; top:0; z-index:40; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:center;
+    background:rgba(244,246,251,0.92); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+    padding:10px 14px; border-bottom:1px solid var(--line);}
+  .toolbar .tt{font-family:"Share Tech Mono",monospace; font-size:0.82rem; color:var(--soft); letter-spacing:1px;}
+  .tbtn{font-family:"Share Tech Mono",monospace; font-size:0.82rem; border:1.5px solid var(--purple); color:var(--purple);
+    background:#fff; border-radius:9px; padding:8px 14px; cursor:pointer; letter-spacing:1px; transition:.15s; white-space:nowrap;}
+  .tbtn:hover{background:#f0eaff;}
+  .tbtn.on{background:var(--purple); color:#fff;}
+  .tbtn.print{border-color:var(--cyan); color:var(--cyan);}
+  .tbtn.print:hover{background:#e6f6f9;}
+  .viewnote{font-family:"Share Tech Mono",monospace; font-size:0.72rem; color:var(--soft);}
+
+  /* ---- Cover ---- */
+  .cover{background:var(--card); border:1px solid var(--line); border-top:6px solid var(--purple);
+    border-radius:16px; padding:30px 30px 26px; margin:26px 0 22px; box-shadow:0 6px 24px #1c223010;}
+  .kicker{font-family:"Press Start 2P",monospace; font-size:0.56rem; letter-spacing:2px; color:var(--magenta);}
+  .cover h1{font-family:"Press Start 2P",monospace; font-size:clamp(1.05rem,3.6vw,1.7rem); line-height:1.5; color:var(--purple); margin:14px 0 10px;}
+  .cover .lead{font-size:1.02rem; color:var(--soft); max-width:60ch;}
+  .badges{display:flex; flex-wrap:wrap; gap:9px; margin:18px 0 6px;}
+  .badge{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; padding:6px 12px; border-radius:20px; border:1.5px solid var(--line); color:var(--ink); background:#fbfcff;}
+  .badge b{color:var(--cyan);}
+  .badge.b1{border-color:var(--cyan); background:#e9f7fa;}
+  .badge.b2{border-color:var(--purple); background:var(--stretch-bg);}
+
+  h2.sec{font-family:"Press Start 2P",monospace; font-size:0.72rem; letter-spacing:1px; color:var(--ink); margin:26px 2px 12px; line-height:1.6;}
+
+  /* ---- Legend / map grids ---- */
+  .legend{display:grid; grid-template-columns:1fr; gap:8px; margin-top:8px;}
+  @media(min-width:640px){ .legend{grid-template-columns:1fr 1fr;} }
+  .leg{display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:10px; padding:9px 12px; background:#fbfcff;}
+  .leg .em{font-size:1.05rem; line-height:1.4;}
+  .leg .lx b{display:block; font-size:0.92rem;}
+  .leg .lx span{font-size:0.84rem; color:var(--soft);}
+
+  .maptable{width:100%; border-collapse:collapse; margin-top:8px; font-size:0.93rem; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .maptable th{background:#f0eefb; text-align:left; padding:10px 12px; font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--soft); border-bottom:1px solid var(--line);}
+  .maptable td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .maptable tr:last-child td{border-bottom:none;}
+  .maptable .ln{font-family:"Press Start 2P",monospace; font-size:0.6rem; color:var(--magenta);}
+
+  /* ---- Lesson blocks ---- */
+  .lesson{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:6px 26px 26px; margin:20px 0; box-shadow:0 4px 18px #1c22300d;}
+  .lesson-head{display:flex; align-items:center; gap:14px; margin:22px 0 6px; padding-bottom:14px; border-bottom:2px solid var(--line);}
+  .lnum{flex-shrink:0; width:52px; height:52px; border-radius:12px; background:var(--purple); color:#fff; font-family:"Press Start 2P",monospace; font-size:0.86rem; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px #6d3ff044;}
+  .lesson.l2 .lnum{background:var(--magenta);} .lesson.l3 .lnum{background:var(--cyan);} .lesson.l4 .lnum{background:var(--green);}
+  .lesson-head .ttl{font-family:"Press Start 2P",monospace; font-size:0.86rem; line-height:1.5; color:var(--ink);}
+  .lesson-head .es{display:block; font-family:"Share Tech Mono",monospace; font-size:0.8rem; color:var(--soft); margin-top:7px; letter-spacing:.5px;}
+
+  .block{margin-top:20px;}
+  .btag{display:inline-flex; align-items:center; gap:8px; font-family:"Share Tech Mono",monospace; font-size:0.82rem; letter-spacing:1px; text-transform:uppercase; color:var(--soft); border-bottom:1px dashed var(--line); padding-bottom:5px; margin-bottom:10px; width:100%;}
+  .btag .min{margin-left:auto; color:var(--cyan); text-transform:none; font-size:0.78rem;}
+
+  .objective{background:#eefaf6; border:1px solid #bfe6d5; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; font-size:0.98rem;}
+  .objective b{color:var(--green);}
+  .warmup{background:var(--warm-bg); border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px;}
+
+  p{margin:8px 0;}
+  ul, ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
+  .lead-sm{color:var(--soft); font-size:0.95rem;}
+  code, .chip{font-family:"Share Tech Mono",monospace;}
+  .chip{display:inline-block; background:#eaf6f9; color:var(--cyan); border:1px solid #bfe6ee; border-radius:6px; padding:1px 7px; font-size:0.9em;}
+  .ok{color:var(--green); font-weight:600;} .x{color:var(--red); text-decoration:line-through;}
+  .h3{font-weight:700; color:var(--ink); margin:14px 0 4px; font-size:1rem;}
+  .h3 .sm{font-weight:400; color:var(--soft); font-size:0.85rem;}
+
+  /* phrase lists */
+  .phr{list-style:none; margin:6px 0 6px; padding:0;}
+  .phr li{padding:6px 0; border-bottom:1px dashed var(--line);}
+  .phr li:last-child{border-bottom:none;}
+  .phr .en{color:var(--ink);} .phr .sp{color:var(--soft); font-size:0.86rem; display:block;}
+
+  /* glossary / table grids */
+  .grid2{display:grid; grid-template-columns:1fr; gap:10px; margin:8px 0;}
+  @media(min-width:640px){ .grid2{grid-template-columns:1fr 1fr;} }
+  .cell{border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:#fbfcff;}
+  .cell .gh{display:block; font-family:"Share Tech Mono",monospace; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:6px;}
+  .cell code{color:var(--cyan);}
+
+  table.tb{width:100%; border-collapse:collapse; margin:8px 0; font-size:0.93rem;}
+  table.tb th, table.tb td{border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top;}
+  table.tb th{background:#f3f1fb; font-family:"Share Tech Mono",monospace; font-size:0.76rem; letter-spacing:1px; color:var(--soft);}
+  table.tb td .sp{color:var(--soft); font-size:0.85rem;}
+
+  /* B2 stretch */
+  .stretch{background:var(--stretch-bg); border:1px solid #d9c9ff; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .stretch .st-h{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:6px;}
+  .stretch .st-h::before{content:"⭐";}
+
+  /* listening dialogue */
+  .dialogue{border:1px solid var(--line); border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px; background:#fbfdff;}
+  .dialogue .line{margin:5px 0;}
+  .dialogue .spk{font-weight:700; color:var(--cyan);}
+  .dialogue .spk.b{color:var(--magenta);}
+  .dialogue .tg{background:#fff3d6; border-radius:4px; padding:0 4px;}
+  .qs{margin:10px 0 0 0;}
+  .qs .qn{font-weight:700; color:var(--purple); margin-right:6px;}
+
+  /* answer key */
+  .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
+  .key .kh::before{content:"✅";}
+  .key ol{margin:4px 0 0 20px;} .key li{margin:3px 0;}
+  .key .alt{color:var(--soft); font-size:0.86rem;}
+
+  /* teacher-only note */
+  .tnote{background:#fff5f8; border:1px dashed var(--magenta); border-radius:10px; padding:10px 14px; margin:12px 0; font-size:0.92rem; color:#7a2d55;}
+  .tnote b{color:var(--magenta);}
+
+  /* scaffold (gapped model) */
+  .scaffold{background:#fbfaff; border:1px solid #e0d8f5; border-radius:10px; padding:12px 16px; font-family:"Share Tech Mono",monospace; font-size:0.95rem; line-height:1.9;}
+  .gap{display:inline-block; min-width:64px; border-bottom:1.5px solid var(--gold); color:var(--gold); text-align:center;}
+  .hw{background:#fff8ec; border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px; margin-top:8px;}
+  .hw b{color:var(--gold);}
+
+  /* view toggling */
+  body.student .key, body.student .tnote{display:none !important;}
+
+  footer{max-width:900px; margin:34px auto 0; padding:16px 20px; text-align:center; color:var(--soft); font-size:0.85rem; border-top:1px solid var(--line);}
+  footer b{font-family:"Press Start 2P",monospace; font-size:0.62rem; color:var(--purple); letter-spacing:1px;}
+
+  @media print{
+    body{background:#fff; font-size:11.5pt; padding:0;}
+    .toolbar{display:none;}
+    .lesson, .cover{box-shadow:none; border-color:#ccc; break-inside:avoid;}
+    .lesson{break-before:page;}
+    .cover{break-before:avoid;}
+    a{color:var(--ink); text-decoration:none;}
+  }
+</style>
+</head>
+<body class="teacher">
+
+<div class="toolbar">
+  <span class="tt">VIEW:</span>
+  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')">📖 Teacher (with keys)</button>
+  <button class="tbtn" id="btnStudent" onclick="setView('student')">🎒 Student (no keys)</button>
+  <button class="tbtn print" onclick="window.print()">🖨️ Print / Save PDF</button>
+  <span class="viewnote" id="viewNote">Answer keys &amp; teacher notes are visible.</span>
+</div>
+
+<div class="wrap">
+
+  <!-- ============== COVER ============== -->
+  <div class="cover">
+    <div class="kicker">ENGLISH FOR ALL · RANK UP · GENERAL</div>
+    <h1>TRAVEL &amp; LIVING<br>4-LESSON COURSE</h1>
+    <p class="lead">Real English for real life on the move: making travel plans, sorting out problems where you're staying, eating out and giving recommendations, and telling the story of a trip. Built <b>PPP</b> style — Present → Practice → Produce.</p>
+    <div class="badges">
+      <span class="badge b1"><b>B1 core</b></span>
+      <span class="badge b2">⭐ B2 stretch</span>
+      <span class="badge">4 lessons · ~50–55 min each</span>
+      <span class="badge">1:1 or small group</span>
+      <span class="badge">🇺🇸 American English</span>
+    </div>
+  </div>
+
+  <!-- ============== HOW TO USE ============== -->
+  <h2 class="sec">HOW TO USE THIS COURSE</h2>
+  <p class="lead-sm">Each lesson follows the same rhythm so students always know where they are. Use the <b>Teacher / Student</b> toggle at the top: <b>Student view</b> hides the answer keys and teacher notes so you can print or screen-share a clean handout.</p>
+  <div class="legend">
+    <div class="leg"><span class="em">🎯</span><div class="lx"><b>Objective</b><span>The can-do goal for the lesson.</span></div></div>
+    <div class="leg"><span class="em">🔥</span><div class="lx"><b>Warm-up (5 min)</b><span>Get talking, activate the topic.</span></div></div>
+    <div class="leg"><span class="em">📘</span><div class="lx"><b>Present (15 min)</b><span>Vocabulary + one grammar point, with glossary.</span></div></div>
+    <div class="leg"><span class="em">✏️</span><div class="lx"><b>Controlled Practice (15 min)</b><span>Guided exercises. Answers in the ✅ key.</span></div></div>
+    <div class="leg"><span class="em">🎧</span><div class="lx"><b>Model Dialogue</b><span>A short conversation + comprehension. Read it aloud, or record it for audio later.</span></div></div>
+    <div class="leg"><span class="em">🗣️</span><div class="lx"><b>Free Practice (15 min)</b><span>Role-play with scripted prompts — works 1:1.</span></div></div>
+    <div class="leg"><span class="em">⭐</span><div class="lx"><b>B2 Stretch box</b><span>Optional upgrade language for stronger students.</span></div></div>
+    <div class="leg"><span class="em">📌</span><div class="lx"><b>Homework</b><span>A short writing/speaking task to submit.</span></div></div>
+  </div>
+
+  <h2 class="sec">COURSE MAP</h2>
+  <table class="maptable">
+    <tr><th style="width:52px">#</th><th>Lesson</th><th>Grammar focus</th><th>Do this…</th></tr>
+    <tr><td class="ln">01</td><td><b>Travel Plans &amp; Getting Around</b></td><td>Future forms: <i>going to / will / present continuous</i></td><td>Make plans, book, ask &amp; give directions</td></tr>
+    <tr><td class="ln">02</td><td><b>Checking In &amp; Sorting Problems</b></td><td>Present perfect: <i>for/since · already/yet/just</i></td><td>Check in and complain politely</td></tr>
+    <tr><td class="ln">03</td><td><b>Eating Out &amp; Recommendations</b></td><td>Comparatives &amp; superlatives (+ quantifiers)</td><td>Order, compare, recommend</td></tr>
+    <tr><td class="ln">04</td><td><b>Trips &amp; Stories</b></td><td>Narrative: past simple vs. past continuous</td><td>Tell the story of a trip</td></tr>
+  </table>
+  <div class="tnote"><b>Teacher tip:</b> The 🎧 <b>Model Dialogues</b> are written to be recorded — they're the natural seed for a Rank-Up audio version of this track (2 short audios per lesson + transcript). Keep contractions natural when reading aloud.</div>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 1 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l1">
+    <div class="lesson-head">
+      <div class="lnum">01</div>
+      <div><span class="ttl">Travel Plans &amp; Getting Around</span>
+      <span class="es">Planear un viaje y moverte · Grammar: futuros (going to / will / present continuous)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>talk about travel plans and arrangements</b> and <b>ask for and give directions</b>, choosing correctly between <b>going to, will,</b> and the <b>present continuous</b>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Where are you going on your next trip? Any plans yet?</li>
+          <li>How do you usually get around a new city?</li>
+          <li>What's the best way to ask for directions from a stranger?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">Travel &amp; transport</span>a flight · to catch / miss a train · a platform · a gate · one-way / round trip · to book · to check in · to board · a connection · a delay</div>
+        <div class="cell"><span class="gh">Directions</span>How do I get to…? · Go straight · turn left / right · cross the street · a block · on the corner · It's next to / opposite / near…</div>
+      </div>
+
+      <div class="h3">Grammar — three ways to talk about the future</div>
+      <table class="tb">
+        <tr><th>Form</th><th>Use</th><th>Example</th></tr>
+        <tr><td><b>be going to</b></td><td>plan / intention · prediction from evidence</td><td>We're <b>going to</b> visit Rome. · Look at those clouds — it's <b>going to</b> rain.</td></tr>
+        <tr><td><b>present continuous</b></td><td>fixed arrangement (with a time/place)</td><td>We're <b>flying</b> on Friday at 6. · I'm <b>meeting</b> Ana at noon.</td></tr>
+        <tr><td><b>will ('ll)</b></td><td>decision now · offer · prediction/opinion</td><td>I <b>'ll</b> take the train. · I <b>'ll</b> help you. · It <b>'ll</b> be fun.</td></tr>
+      </table>
+      <p class="lead-sm">Questions: "What <b>are</b> you <b>doing</b> this weekend?" · "What time <b>are</b> you <b>leaving</b>?" · "<b>Are</b> you <b>going to</b> book a hotel?"</p>
+      <div class="stretch">
+        <div class="st-h">B2 stretch</div>
+        <b>Future continuous</b> for an action in progress later: "This time tomorrow, I'll <b>be flying</b> to Tokyo." · Softer plans: "We're <b>hoping to</b>…", "We're <b>planning on</b> …ing", "I <b>might</b> stay an extra day."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Future forms — choose the natural one</div>
+      <ol>
+        <li>Look at those clouds — it ___ (rain).</li>
+        <li>This bag is heavy. — Don't worry, I ___ (carry) it for you.</li>
+        <li>We ___ (fly) to Lima on Monday at 9 a.m.</li>
+        <li>I've decided: I ___ (learn) to drive this year.</li>
+        <li>A: Are you free tonight? B: No, sorry — I ___ (have) dinner with Ana.</li>
+        <li>Don't worry about the trip. I'm sure everything ___ (be) fine.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li>is <b>going to rain</b> <span class="alt">(prediction from evidence)</span></li>
+          <li><b>'ll carry</b> <span class="alt">(offer / decision now)</span></li>
+          <li><b>'re flying</b> <span class="alt">(fixed arrangement + time)</span></li>
+          <li><b>'m going to learn</b> <span class="alt">(intention/decision)</span></li>
+          <li><b>'m having</b> <span class="alt">(arrangement)</span></li>
+          <li><b>'ll be</b> <span class="alt">(prediction/reassurance)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Directions — complete the word <span class="sm">(Go / Turn / Cross / on / next)</span></div>
+      <ol>
+        <li>___ straight for two blocks.</li>
+        <li>___ left at the bank.</li>
+        <li>___ the street at the lights.</li>
+        <li>It's ___ the corner of Main and 5th.</li>
+        <li>The station is ___ to the museum.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <p><b>1. Go · 2. Turn · 3. Cross · 4. on · 5. next</b></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue · planning Saturday</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Nao:</span> So, what's the plan for Saturday?</p>
+        <p class="line"><span class="spk b">Ben:</span> We're <span class="tg">taking the early train</span> to the coast. It leaves at 8.</p>
+        <p class="line"><span class="spk">Nao:</span> Nice! How do we get to the station?</p>
+        <p class="line"><span class="spk b">Ben:</span> Go straight down this street, then <span class="tg">turn left at the bank</span>. It's <span class="tg">next to the museum</span>.</p>
+        <p class="line"><span class="spk">Nao:</span> Got it. I think I'll bring my camera.</p>
+        <p class="line"><span class="spk b">Ben:</span> Good idea. It's <span class="tg">going to be a beautiful day</span>.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> How are they traveling on Saturday, and what time?</p>
+        <p><span class="qn">Q2.</span> How do they get to the station?</p>
+        <p><span class="qn">Q3.</span> What does Nao decide to bring?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>By the early train — it leaves at 8.</li>
+          <li>Straight down the street, then left at the bank; it's next to the museum.</li>
+          <li>A camera ("I'll bring my camera").</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Plan a weekend trip together.</b> Decide transport, times, and what you'll do — then give directions from here to the station/airport. The tutor plays a travel partner and a stranger you ask for directions.</p>
+      <div class="scaffold">
+        We're <span class="gap">-ing</span> on <span class="gap">day/time</span>. First, we're going to <span class="gap">plan</span>. I think I'll <span class="gap">decision</span>. &nbsp;—&nbsp; Excuse me, how do I get to <span class="gap">place</span>? · Go <span class="gap">…</span>, turn <span class="gap">…</span>, it's <span class="gap">next to / opposite …</span>.
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Listen for the will/going-to/present-continuous choice, not just correct verbs. If the student is alone, you take the partner + stranger roles.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> 6–7 sentences about your next trip: your plans, one fixed arrangement, and one prediction. Use <b>going to</b>, the <b>present continuous</b>, and <b>will</b> at least once each.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 2 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l2">
+    <div class="lesson-head">
+      <div class="lnum">02</div>
+      <div><span class="ttl">Checking In &amp; Sorting Problems</span>
+      <span class="es">Alojamiento y quejas con tacto · Grammar: present perfect (for/since · already/yet/just)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>check into accommodation</b> and <b>describe and politely complain about problems</b>, using the <b>present perfect</b> with <i>for/since</i> and <i>already/yet/just</i>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Have you ever had a problem in a hotel or rental? What happened?</li>
+          <li>Do you prefer hotels or apartments when you travel? Why?</li>
+          <li>How do you complain about something without sounding rude?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">Accommodation</span>check in / out · a reservation / booking · a single / double room · reception · a key card · a deposit · a refund · a late checkout</div>
+        <div class="cell"><span class="gh">Problems &amp; complaints</span>the heating / AC isn't working · there's no hot water · the Wi-Fi is down · the room is dirty / noisy · a leak · "There's a problem with…" · "Could you send someone to fix it?"</div>
+      </div>
+
+      <div class="h3">Grammar — present perfect (<i>have/has</i> + past participle)</div>
+      <table class="tb">
+        <tr><th>Marker</th><th>Meaning</th><th>Example</th></tr>
+        <tr><td><b>for</b> + period</td><td>how long (until now)</td><td>I've been here <b>for</b> two days.</td></tr>
+        <tr><td><b>since</b> + point</td><td>from a start point (until now)</td><td>The AC hasn't worked <b>since</b> last night.</td></tr>
+        <tr><td><b>already</b> / <b>just</b></td><td>done before now / a moment ago</td><td>I've <b>already</b> checked in. · They've <b>just</b> cleaned it.</td></tr>
+        <tr><td><b>yet</b> (?/–)</td><td>up to now (expected)</td><td>Has the taxi arrived <b>yet</b>? · It hasn't come <b>yet</b>.</td></tr>
+      </table>
+      <p class="lead-sm"><b>Present perfect vs. past simple:</b> "It <b>hasn't worked</b> since I arrived" (still a problem now) vs. "It <b>broke</b> yesterday" (finished time — use past simple).</p>
+      <div class="stretch">
+        <div class="st-h">B2 stretch</div>
+        <b>Present perfect continuous</b> for duration of an activity: "I've <b>been waiting</b> at reception for 20 minutes." · Polite complaint frames: "I'm <b>afraid</b> there's an issue with…", "<b>Would it be possible to</b> change rooms?"
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · <i>for</i> or <i>since</i>?</div>
+      <ol>
+        <li>I've been here ___ Tuesday.</li>
+        <li>We've waited ___ an hour.</li>
+        <li>She's lived in this city ___ 2019.</li>
+        <li>They've known each other ___ ten years.</li>
+        <li>The Wi-Fi has been down ___ this morning.</li>
+        <li>I haven't slept well ___ two days.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <p><b>1. since · 2. for · 3. since · 4. for · 5. since · 6. for</b></p>
+      </div>
+
+      <div class="h3">Activity 2 · Past simple or present perfect?</div>
+      <ol>
+        <li>I ___ (arrive) yesterday afternoon.</li>
+        <li>I ___ (be) in this hotel since Monday.</li>
+        <li>The heater ___ (break) two hours ago.</li>
+        <li>___ you ___ (check in) yet?</li>
+        <li>She ___ (already / finish) the city tour.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <ol>
+          <li><b>arrived</b> <span class="alt">(finished time: yesterday)</span></li>
+          <li><b>'ve been</b> <span class="alt">(since + still true)</span></li>
+          <li><b>broke</b> <span class="alt">(two hours ago = finished)</span></li>
+          <li><b>Have</b> you <b>checked in</b> yet?</li>
+          <li>has <b>already finished</b></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue · at reception</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Guest:</span> Hi, I'm in room 204. There's a problem — the heating <span class="tg">hasn't worked since last night</span>.</p>
+        <p class="line"><span class="spk b">Reception:</span> I'm sorry to hear that. Have you tried the control on the wall?</p>
+        <p class="line"><span class="spk">Guest:</span> Yes, I've <span class="tg">already tried</span> it twice. And the room is really cold.</p>
+        <p class="line"><span class="spk b">Reception:</span> I understand. I'll send someone up right now.</p>
+        <p class="line"><span class="spk">Guest:</span> Thank you. Also, has my morning taxi <span class="tg">been booked yet</span>?</p>
+        <p class="line"><span class="spk b">Reception:</span> Yes, it's <span class="tg">just been confirmed</span> for 7 a.m.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> What's the problem, and since when?</p>
+        <p><span class="qn">Q2.</span> Has the guest tried the control?</p>
+        <p><span class="qn">Q3.</span> Is the morning taxi booked?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>The heating hasn't worked since last night; the room is cold.</li>
+          <li>Yes — already tried it twice.</li>
+          <li>Yes — it's just been confirmed for 7 a.m.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Role-play — checking in with a hitch.</b> Student checks in, then reports <b>two</b> problems politely. The tutor is the receptionist and pushes back a little ("Have you tried…?"). Swap roles if there's time.</p>
+      <div class="scaffold">
+        Hi, I have a reservation for <span class="gap">…</span>. &nbsp;·&nbsp; There's a problem — the <span class="gap">thing</span> hasn't <span class="gap">past participle</span> since <span class="gap">…</span>. · I've already <span class="gap">…</span>. · Could you <span class="gap">request</span>? · Has <span class="gap">…</span> been done yet?
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Reward polite framing ("I'm afraid…", "Could you…") over blunt demands. Common slip: past simple with "since" — nudge back to present perfect.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> a short, polite message to a host or hotel about a problem (5–6 sentences), using the present perfect with <b>for/since</b> and <b>already/yet</b>.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 3 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l3">
+    <div class="lesson-head">
+      <div class="lnum">03</div>
+      <div><span class="ttl">Eating Out &amp; Recommendations</span>
+      <span class="es">Comer fuera y recomendar · Grammar: comparativos y superlativos (+ cuantificadores)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>order in a restaurant</b>, talk about food, and <b>compare and recommend</b> places, using <b>comparatives, superlatives,</b> and food <b>quantifiers</b>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>What's the best restaurant in your city? Why?</li>
+          <li>Do you prefer eating out or cooking at home?</li>
+          <li>What's a food you love, and one you can't stand?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">Eating out</span>a menu · a starter / main / dessert · the check (bill) · a tip · to book a table · "I'm allergic to…" · vegetarian · "How would you like it?" — medium / well done</div>
+        <div class="cell"><span class="gh">Describing food</span>delicious · tasty · fresh · filling · spicy · greasy · bland (soso) · "It's to die for."</div>
+      </div>
+
+      <div class="h3">A · Grammar — comparatives &amp; superlatives</div>
+      <table class="tb">
+        <tr><th>Adjective</th><th>Comparative (+ <i>than</i>)</th><th>Superlative (<i>the …</i>)</th></tr>
+        <tr><td>short: cheap, big</td><td>cheap<b>er</b>, big<b>ger</b> than</td><td><b>the</b> cheap<b>est</b>, <b>the</b> big<b>gest</b></td></tr>
+        <tr><td>-y: tasty, easy</td><td>tast<b>ier</b>, eas<b>ier</b> than</td><td><b>the</b> tast<b>iest</b></td></tr>
+        <tr><td>long: expensive, popular</td><td><b>more</b> expensive than</td><td><b>the most</b> expensive</td></tr>
+        <tr><td>irregular: good / bad / far</td><td><b>better</b> / <b>worse</b> / <b>further</b> than</td><td><b>the best</b> / <b>the worst</b></td></tr>
+      </table>
+
+      <div class="h3">B · Grammar — food quantifiers</div>
+      <table class="tb">
+        <tr><th>Countable (a table, tables)</th><th>Uncountable (water, rice)</th></tr>
+        <tr><td><b>How many</b>? · <b>many</b> / <b>a few</b> / <b>some</b> / <b>any</b></td><td><b>How much</b>? · <b>much</b> / <b>a little</b> / <b>some</b> / <b>any</b></td></tr>
+      </table>
+      <p class="lead-sm"><b>some</b> in +, <b>any</b> in ?/– : "There are <b>some</b> tables." · "Is there <b>any</b> milk?" · "We don't have <b>any</b> menus."</p>
+      <div class="stretch">
+        <div class="st-h">B2 stretch</div>
+        "It's <b>not as</b> spicy <b>as</b> the curry." · "<b>far / much</b> better", "a bit cheaper" (soften/strengthen). · "It's <b>one of the best</b> places in town." · "<b>The more</b> you try, <b>the more</b> you like it."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Comparative or superlative?</div>
+      <ol>
+        <li>This restaurant is ___ (good) than the other one.</li>
+        <li>It's ___ (cheap) place in town.</li>
+        <li>The pizza here is ___ (tasty) than the pasta.</li>
+        <li>That was ___ (bad) meal of the whole trip.</li>
+        <li>This café is ___ (popular) than that one.</li>
+        <li>It's ___ (expensive) restaurant I know.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li><b>better</b></li>
+          <li><b>the cheapest</b></li>
+          <li><b>tastier</b></li>
+          <li><b>the worst</b></li>
+          <li><b>more popular</b></li>
+          <li><b>the most expensive</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Quantifiers <span class="sm">(some / any / much / many / a few)</span></div>
+      <ol>
+        <li>Is there ___ milk for the coffee?</li>
+        <li>There are ___ free tables at the back. <span class="lead-sm">(positive)</span></li>
+        <li>How ___ sugar do you want?</li>
+        <li>How ___ people are coming tonight?</li>
+        <li>Hurry — we only have ___ minutes before it closes.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <ol>
+          <li><b>any</b></li>
+          <li><b>some</b> <span class="alt">(also: a few)</span></li>
+          <li><b>much</b></li>
+          <li><b>many</b></li>
+          <li><b>a few</b></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue · at the restaurant</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Ivy:</span> This menu looks great. What's good here?</p>
+        <p class="line"><span class="spk b">Leo:</span> The pasta is <span class="tg">the best in the neighborhood</span>, and it's <span class="tg">cheaper than</span> the place next door.</p>
+        <p class="line"><span class="spk">Ivy:</span> Nice. Is it very spicy? I can't eat much spicy food.</p>
+        <p class="line"><span class="spk b">Leo:</span> No, it's <span class="tg">not as spicy as</span> the curry. Do you want to share a starter?</p>
+        <p class="line"><span class="spk">Ivy:</span> Sure. Let's get some bread and a salad.</p>
+        <p class="line"><span class="spk b">Waiter:</span> Are you ready to order?</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> What does Leo recommend, and why?</p>
+        <p><span class="qn">Q2.</span> Is it more or less expensive than the place next door?</p>
+        <p><span class="qn">Q3.</span> Is the pasta very spicy?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>The pasta — it's the best in the neighborhood.</li>
+          <li>Cheaper than the place next door.</li>
+          <li>No — not as spicy as the curry.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Two rounds.</b> (1) <b>Order a meal</b> — student orders a starter, main, and drink; the tutor is the waiter. (2) <b>Recommend &amp; compare</b> — student compares two real places they know and recommends one.</p>
+      <div class="scaffold">
+        Can I have <span class="gap">…</span>, please? · I'm allergic to <span class="gap">…</span>. &nbsp;—&nbsp; <span class="gap">Place A</span> is <span class="gap">comparative</span> than <span class="gap">Place B</span>, but <span class="gap">Place B</span> has <span class="gap">the best …</span>. I'd recommend <span class="gap">…</span>.
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Push for "than" after comparatives and "the" before superlatives. Strong students: pull in "not as … as" and "one of the best".</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> a short review (5–6 sentences) comparing two restaurants or cafés you know. Use at least <b>two comparatives</b> and <b>one superlative</b>.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 4 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l4">
+    <div class="lesson-head">
+      <div class="lnum">04</div>
+      <div><span class="ttl">Trips &amp; Stories</span>
+      <span class="es">Contar la historia de un viaje · Grammar: pasado simple vs. pasado continuo</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>tell the story of a past trip or experience</b> and <b>react to others' stories</b>, using the <b>past simple</b> and <b>past continuous</b> together.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Tell me about your last trip in one or two sentences.</li>
+          <li>Have you ever missed a flight or a train? What happened?</li>
+          <li>What's the most memorable thing that has happened to you while traveling?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">Travel experiences</span>to get lost · to miss a flight · to run out of money · to break down · a delay · sightseeing · an adventure · to end up (somewhere)</div>
+        <div class="cell"><span class="gh">Reacting &amp; linking</span>Oh no! · Really? · What happened next? · That's amazing / awful! · when · while · then · suddenly · after that · in the end</div>
+      </div>
+
+      <div class="h3">Grammar — past simple vs. past continuous</div>
+      <table class="tb">
+        <tr><th>Tense</th><th>Use</th><th>Example</th></tr>
+        <tr><td><b>Past simple</b></td><td>completed actions — the main events of the story</td><td>We <b>arrived</b>, <b>checked in</b>, and <b>had</b> dinner.</td></tr>
+        <tr><td><b>Past continuous</b><br>(was/were + -ing)</td><td>background scene · action in progress</td><td>The sun <b>was shining</b>. · We <b>were waiting</b> at the gate.</td></tr>
+        <tr><td><b>Both together</b></td><td>a longer action <b>interrupted</b> by a short one</td><td>I <b>was walking</b> to the gate <b>when</b> I <b>heard</b> my name.</td></tr>
+      </table>
+      <p class="lead-sm">Linkers: use <b>when</b> + past simple (the short action), <b>while</b> + past continuous (the long one). "It happened <b>while</b> we <b>were sleeping</b>."</p>
+      <div class="stretch">
+        <div class="st-h">B2 stretch</div>
+        <b>Past perfect</b> for the earlier past: "The train <b>had already left</b> when we <b>got</b> there." · <b>used to / would</b> for past habits: "We <b>used to</b> travel every summer." / "We <b>would</b> camp by the lake."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Past simple or past continuous?</div>
+      <ol>
+        <li>We ___ (wait) at the gate when they ___ (announce) the delay.</li>
+        <li>I ___ (lose) my passport on the first day.</li>
+        <li>While she ___ (drive), it ___ (start) to rain.</li>
+        <li>They ___ (arrive) late and ___ (miss) the tour.</li>
+        <li>The sun ___ (shine) when we ___ (leave) the hotel.</li>
+        <li>I ___ (not / sleep) on the flight because a baby ___ (cry).</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li>were <b>waiting</b> … <b>announced</b></li>
+          <li><b>lost</b></li>
+          <li>was <b>driving</b> … <b>started</b></li>
+          <li><b>arrived</b> … <b>missed</b></li>
+          <li>was <b>shining</b> … <b>left</b></li>
+          <li><b>didn't sleep</b> … was <b>crying</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Choose the linker <span class="sm">(when / while / then / suddenly / in the end)</span></div>
+      <ol>
+        <li>I was reading ___ the train stopped.</li>
+        <li>___ we were walking, it started to rain.</li>
+        <li>We got a bit lost, but ___ we found the hotel.</li>
+        <li>I heard a loud noise. ___, the lights went off.</li>
+        <li>We had dinner and ___ we went straight to bed.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <p><b>1. when · 2. While · 3. in the end · 4. Suddenly · 5. then</b></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue · a trip to Peru</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Ada:</span> How was your trip to Peru?</p>
+        <p class="line"><span class="spk b">Max:</span> Amazing, but the first day was crazy. We <span class="tg">were waiting</span> for our bags <span class="tg">when</span> they <span class="tg">announced</span> they were lost.</p>
+        <p class="line"><span class="spk">Ada:</span> Oh no! What did you do?</p>
+        <p class="line"><span class="spk b">Max:</span> We reported it, and <span class="tg">while</span> we <span class="tg">were filling out</span> the forms, someone <span class="tg">found</span> them.</p>
+        <p class="line"><span class="spk">Ada:</span> Really? Lucky!</p>
+        <p class="line"><span class="spk b">Max:</span> I know. After that, everything went perfectly. We hiked, we ate great food… it was the best trip ever.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> What happened while they were waiting for their bags?</p>
+        <p><span class="qn">Q2.</span> What were they doing when the bags were found?</p>
+        <p><span class="qn">Q3.</span> How was the rest of the trip?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>They announced the bags were lost.</li>
+          <li>Filling out the forms (reporting the bags).</li>
+          <li>Perfect — "the best trip ever".</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Tell a travel story.</b> Student tells a real (or invented) story: a trip where something went wrong and how it ended. Use past simple for the events, past continuous for the scene, and linkers. The tutor reacts ("Oh no! What happened next?").</p>
+      <div class="scaffold">
+        Last <span class="gap">year/summer</span>, I <span class="gap">past simple</span>. The weather <span class="gap">was … -ing</span>. I was <span class="gap">-ing</span> when suddenly <span class="gap">past simple</span>. Then we <span class="gap">…</span>, and in the end <span class="gap">…</span>.
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Model reactions so it's a real conversation, not a monologue. Strong students: fold in one past perfect ("the bus had already left") from the stretch box.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> a short story (6–8 sentences) about a trip or a memorable day, using the <b>past simple</b> and <b>past continuous</b> together, with at least two linkers (when / while / then / in the end).</div>
+    </div>
+  </section>
+
+</div><!-- /wrap -->
+
+<footer>
+  <b>ENGLISH for ALL</b><br>
+  Travel &amp; Living · B1 core · ⭐ B2 stretch · 4-lesson PPP course · Rank Up general track
+</footer>
+
+<script>
+  function setView(mode){
+    document.body.classList.remove('teacher','student');
+    document.body.classList.add(mode);
+    document.getElementById('btnTeacher').classList.toggle('on', mode==='teacher');
+    document.getElementById('btnStudent').classList.toggle('on', mode==='student');
+    document.getElementById('viewNote').textContent = (mode==='teacher')
+      ? 'Answer keys & teacher notes are visible.'
+      : 'Student handout — keys & teacher notes are hidden.';
+  }
+</script>
+</body>
+</html>

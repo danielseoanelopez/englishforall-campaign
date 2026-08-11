@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English for All · Curso de Conversación A1 (base · A2 extra)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon-rankup.png">
+<link rel="apple-touch-icon" href="icon-rankup.png">
+<meta name="description" content="Curso de conversación A1 (4 lecciones, estilo PPP) con instrucciones en español: describir, familia y trabajo, rutina diaria y pedir en un café. English for All · Rank Up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/a1-conversation-course.html">
+<meta property="og:title" content="Curso de Conversación A1 — 4 lecciones (instrucciones en español)">
+<meta property="og:description" content="Inglés para principiantes: describir, familia, rutina y café. 4 lecciones PPP con respuestas. English for All — Rank Up.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<meta property="og:site_name" content="English for All">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cyan:#0a8ea6; --magenta:#c31f8f; --purple:#6d3ff0; --gold:#b5791a; --green:#158a52; --red:#c0392b;
+    --ink:#1c2230; --soft:#54607a; --line:#dbe2ef; --bg:#f4f6fb; --card:#ffffff;
+    --stretch-bg:#f6f1ff; --key-bg:#eefaf2; --warm-bg:#fff8ec;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.62; font-size:16.5px; padding:0 0 80px;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px;}
+  a{color:var(--cyan);}
+
+  /* ---- Top toolbar ---- */
+  .toolbar{position:sticky; top:0; z-index:40; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:center;
+    background:rgba(244,246,251,0.92); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+    padding:10px 14px; border-bottom:1px solid var(--line);}
+  .toolbar .tt{font-family:"Share Tech Mono",monospace; font-size:0.82rem; color:var(--soft); letter-spacing:1px;}
+  .tbtn{font-family:"Share Tech Mono",monospace; font-size:0.82rem; border:1.5px solid var(--purple); color:var(--purple);
+    background:#fff; border-radius:9px; padding:8px 14px; cursor:pointer; letter-spacing:1px; transition:.15s; white-space:nowrap;}
+  .tbtn:hover{background:#f0eaff;}
+  .tbtn.on{background:var(--purple); color:#fff;}
+  .tbtn.print{border-color:var(--cyan); color:var(--cyan);}
+  .tbtn.print:hover{background:#e6f6f9;}
+  .viewnote{font-family:"Share Tech Mono",monospace; font-size:0.72rem; color:var(--soft);}
+
+  /* ---- Cover ---- */
+  .cover{background:var(--card); border:1px solid var(--line); border-top:6px solid var(--purple);
+    border-radius:16px; padding:30px 30px 26px; margin:26px 0 22px; box-shadow:0 6px 24px #1c223010;}
+  .kicker{font-family:"Press Start 2P",monospace; font-size:0.56rem; letter-spacing:2px; color:var(--magenta);}
+  .cover h1{font-family:"Press Start 2P",monospace; font-size:clamp(1.05rem,3.6vw,1.7rem); line-height:1.5; color:var(--purple); margin:14px 0 10px;}
+  .cover .lead{font-size:1.02rem; color:var(--soft); max-width:62ch;}
+  .badges{display:flex; flex-wrap:wrap; gap:9px; margin:18px 0 6px;}
+  .badge{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; padding:6px 12px; border-radius:20px; border:1.5px solid var(--line); color:var(--ink); background:#fbfcff;}
+  .badge b{color:var(--cyan);}
+  .badge.b1{border-color:var(--cyan); background:#e9f7fa;}
+  .badge.b2{border-color:var(--purple); background:var(--stretch-bg);}
+
+  h2.sec{font-family:"Press Start 2P",monospace; font-size:0.72rem; letter-spacing:1px; color:var(--ink); margin:26px 2px 12px; line-height:1.6;}
+
+  /* ---- Legend / map grids ---- */
+  .legend{display:grid; grid-template-columns:1fr; gap:8px; margin-top:8px;}
+  @media(min-width:640px){ .legend{grid-template-columns:1fr 1fr;} }
+  .leg{display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:10px; padding:9px 12px; background:#fbfcff;}
+  .leg .em{font-size:1.05rem; line-height:1.4;}
+  .leg .lx b{display:block; font-size:0.92rem;}
+  .leg .lx span{font-size:0.84rem; color:var(--soft);}
+
+  .maptable{width:100%; border-collapse:collapse; margin-top:8px; font-size:0.93rem; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .maptable th{background:#f0eefb; text-align:left; padding:10px 12px; font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--soft); border-bottom:1px solid var(--line);}
+  .maptable td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .maptable tr:last-child td{border-bottom:none;}
+  .maptable .ln{font-family:"Press Start 2P",monospace; font-size:0.6rem; color:var(--magenta);}
+
+  /* ---- Lesson blocks ---- */
+  .lesson{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:6px 26px 26px; margin:20px 0; box-shadow:0 4px 18px #1c22300d;}
+  .lesson-head{display:flex; align-items:center; gap:14px; margin:22px 0 6px; padding-bottom:14px; border-bottom:2px solid var(--line);}
+  .lnum{flex-shrink:0; width:52px; height:52px; border-radius:12px; background:var(--purple); color:#fff; font-family:"Press Start 2P",monospace; font-size:0.86rem; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px #6d3ff044;}
+  .lesson.l2 .lnum{background:var(--magenta);} .lesson.l3 .lnum{background:var(--cyan);} .lesson.l4 .lnum{background:var(--green);}
+  .lesson-head .ttl{font-family:"Press Start 2P",monospace; font-size:0.86rem; line-height:1.5; color:var(--ink);}
+  .lesson-head .es{display:block; font-family:"Share Tech Mono",monospace; font-size:0.8rem; color:var(--soft); margin-top:7px; letter-spacing:.5px;}
+
+  .block{margin-top:20px;}
+  .btag{display:inline-flex; align-items:center; gap:8px; font-family:"Share Tech Mono",monospace; font-size:0.82rem; letter-spacing:1px; text-transform:uppercase; color:var(--soft); border-bottom:1px dashed var(--line); padding-bottom:5px; margin-bottom:10px; width:100%;}
+  .btag .min{margin-left:auto; color:var(--cyan); text-transform:none; font-size:0.78rem;}
+
+  .objective{background:#eefaf6; border:1px solid #bfe6d5; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; font-size:0.98rem;}
+  .objective b{color:var(--green);}
+  .warmup{background:var(--warm-bg); border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px;}
+
+  p{margin:8px 0;}
+  ul, ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
+  .lead-sm{color:var(--soft); font-size:0.95rem;}
+  code, .chip{font-family:"Share Tech Mono",monospace;}
+  .chip{display:inline-block; background:#eaf6f9; color:var(--cyan); border:1px solid #bfe6ee; border-radius:6px; padding:1px 7px; font-size:0.9em;}
+  .ok{color:var(--green); font-weight:600;} .x{color:var(--red); text-decoration:line-through;}
+  .h3{font-weight:700; color:var(--ink); margin:14px 0 4px; font-size:1rem;}
+  .h3 .sm{font-weight:400; color:var(--soft); font-size:0.85rem;}
+
+  /* phrase lists */
+  .phr{list-style:none; margin:6px 0 6px; padding:0;}
+  .phr li{padding:6px 0; border-bottom:1px dashed var(--line);}
+  .phr li:last-child{border-bottom:none;}
+  .phr .en{color:var(--ink);} .phr .sp{color:var(--soft); font-size:0.86rem; display:block;}
+
+  /* glossary / table grids */
+  .grid2{display:grid; grid-template-columns:1fr; gap:10px; margin:8px 0;}
+  @media(min-width:640px){ .grid2{grid-template-columns:1fr 1fr;} }
+  .cell{border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:#fbfcff;}
+  .cell .gh{display:block; font-family:"Share Tech Mono",monospace; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:6px;}
+  .cell code{color:var(--cyan);}
+
+  table.tb{width:100%; border-collapse:collapse; margin:8px 0; font-size:0.93rem;}
+  table.tb th, table.tb td{border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top;}
+  table.tb th{background:#f3f1fb; font-family:"Share Tech Mono",monospace; font-size:0.76rem; letter-spacing:1px; color:var(--soft);}
+  table.tb td .sp{color:var(--soft); font-size:0.85rem;}
+
+  /* A2 stretch */
+  .stretch{background:var(--stretch-bg); border:1px solid #d9c9ff; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .stretch .st-h{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:6px;}
+  .stretch .st-h::before{content:"⭐";}
+
+  /* listening dialogue */
+  .dialogue{border:1px solid var(--line); border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px; background:#fbfdff;}
+  .dialogue .line{margin:5px 0;}
+  .dialogue .spk{font-weight:700; color:var(--cyan);}
+  .dialogue .spk.b{color:var(--magenta);}
+  .dialogue .tg{background:#fff3d6; border-radius:4px; padding:0 4px;}
+  .qs{margin:10px 0 0 0;}
+  .qs .qn{font-weight:700; color:var(--purple); margin-right:6px;}
+
+  /* answer key */
+  .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
+  .key .kh::before{content:"✅";}
+  .key ol{margin:4px 0 0 20px;} .key li{margin:3px 0;}
+  .key .alt{color:var(--soft); font-size:0.86rem;}
+
+  /* teacher-only note */
+  .tnote{background:#fff5f8; border:1px dashed var(--magenta); border-radius:10px; padding:10px 14px; margin:12px 0; font-size:0.92rem; color:#7a2d55;}
+  .tnote b{color:var(--magenta);}
+
+  /* scaffold (gapped model) */
+  .scaffold{background:#fbfaff; border:1px solid #e0d8f5; border-radius:10px; padding:12px 16px; font-family:"Share Tech Mono",monospace; font-size:0.95rem; line-height:1.9;}
+  .gap{display:inline-block; min-width:64px; border-bottom:1.5px solid var(--gold); color:var(--gold); text-align:center;}
+  .hw{background:#fff8ec; border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px; margin-top:8px;}
+  .hw b{color:var(--gold);}
+
+  /* view toggling */
+  body.student .key, body.student .tnote{display:none !important;}
+
+  footer{max-width:900px; margin:34px auto 0; padding:16px 20px; text-align:center; color:var(--soft); font-size:0.85rem; border-top:1px solid var(--line);}
+  footer b{font-family:"Press Start 2P",monospace; font-size:0.62rem; color:var(--purple); letter-spacing:1px;}
+
+  @media print{
+    body{background:#fff; font-size:11.5pt; padding:0;}
+    .toolbar{display:none;}
+    .lesson, .cover{box-shadow:none; border-color:#ccc; break-inside:avoid;}
+    .lesson{break-before:page;}
+    .cover{break-before:avoid;}
+    a{color:var(--ink); text-decoration:none;}
+  }
+</style>
+</head>
+<body class="teacher">
+
+<div class="toolbar">
+  <span class="tt">VISTA:</span>
+  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')">📖 Profe (con clave)</button>
+  <button class="tbtn" id="btnStudent" onclick="setView('student')">🎒 Alumno (sin clave)</button>
+  <button class="tbtn print" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+  <span class="viewnote" id="viewNote">Se ven las respuestas y las notas del profe.</span>
+</div>
+
+<div class="wrap">
+
+  <!-- ============== COVER ============== -->
+  <div class="cover">
+    <div class="kicker">ENGLISH FOR ALL · RANK UP · NIVEL A1</div>
+    <h1>CONVERSATION STARTER<br>CURSO DE 4 LECCIONES</h1>
+    <p class="lead">Un curso de conversación para principiantes: describir cosas y personas, hablar de tu familia y tu trabajo, contar tu rutina diaria y moverte por la ciudad. Estilo <b>PPP</b> — Presentar → Practicar → Producir. El inglés es lo que se aprende; el español es solo apoyo.</p>
+    <div class="badges">
+      <span class="badge b1"><b>A1 base</b></span>
+      <span class="badge b2">⭐ A2 extra</span>
+      <span class="badge">4 lecciones · ~45 min c/u</span>
+      <span class="badge">individual o grupo pequeño</span>
+      <span class="badge">🇺🇸 inglés americano</span>
+    </div>
+  </div>
+
+  <!-- ============== HOW TO USE ============== -->
+  <h2 class="sec">CÓMO USAR ESTE CURSO</h2>
+  <p class="lead-sm">Cada lección sigue el mismo ritmo, así el principiante siempre sabe dónde está. Usa el botón <b>Profe / Alumno</b> de arriba: la vista <b>Alumno</b> oculta las respuestas y las notas del profe para tener una hoja limpia. Habla despacio y con inglés simple; el español está para apoyar, no para traducir todo.</p>
+  <div class="legend">
+    <div class="leg"><span class="em">🎯</span><div class="lx"><b>Objetivo</b><span>La meta ("puedes…") de la lección.</span></div></div>
+    <div class="leg"><span class="em">🔥</span><div class="lx"><b>Calentamiento (5 min)</b><span>Romper el hielo y activar el tema.</span></div></div>
+    <div class="leg"><span class="em">📘</span><div class="lx"><b>Presentar (12–15 min)</b><span>Palabras clave + un punto de gramática, con glosario.</span></div></div>
+    <div class="leg"><span class="em">✏️</span><div class="lx"><b>Práctica guiada (12 min)</b><span>Ejercicios con apoyo. Respuestas en la clave ✅.</span></div></div>
+    <div class="leg"><span class="em">🎧</span><div class="lx"><b>Diálogo modelo</b><span>Una conversación corta y simple + comprensión. Léelo en voz alta y despacio.</span></div></div>
+    <div class="leg"><span class="em">🗣️</span><div class="lx"><b>Práctica libre (12 min)</b><span>Juego de roles con una plantilla para completar — funciona 1:1.</span></div></div>
+    <div class="leg"><span class="em">⭐</span><div class="lx"><b>Caja A2 (extra)</b><span>Inglés opcional del siguiente nivel para los más rápidos.</span></div></div>
+    <div class="leg"><span class="em">📌</span><div class="lx"><b>Tarea</b><span>Una tarea corta de escribir/hablar para entregar.</span></div></div>
+  </div>
+
+  <h2 class="sec">MAPA DEL CURSO</h2>
+  <table class="maptable">
+    <tr><th style="width:52px">#</th><th>Lección</th><th>Gramática</th><th>Hablar de…</th></tr>
+    <tr><td class="ln">01</td><td><b>Describing People &amp; Things</b></td><td><i>to be</i> + adjetivos · a/an · this/that</td><td>Colores, tamaño y cómo son las personas</td></tr>
+    <tr><td class="ln">02</td><td><b>My Family &amp; My Job</b></td><td><i>have/has</i> · posesivos (my/your/his/her)</td><td>Tu familia y tu trabajo</td></tr>
+    <tr><td class="ln">03</td><td><b>My Daily Routine</b></td><td>presente simple · <i>like</i> · la hora</td><td>Tu día típico</td></tr>
+    <tr><td class="ln">04</td><td><b>At the Café &amp; Around Town</b></td><td><i>there is/are</i> · <i>can I have…?</i> · preposiciones</td><td>Pedir comida y encontrar lugares</td></tr>
+  </table>
+  <div class="tnote"><b>Nota para el profe:</b> Este curso asume que el alumno ya vio la lección de saludos/presentaciones — arranca un paso más allá, usando <i>to be</i> para <b>describir</b>, no solo para presentarse. Los 🎧 <b>diálogos modelo</b> están escritos cortos y lentos a propósito, para que sirvan de base al audio de la versión Rank-Up más adelante.</div>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 1 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l1">
+    <div class="lesson-head">
+      <div class="lnum">01</div>
+      <div><span class="ttl">Describing People &amp; Things</span>
+      <span class="es">Describir cosas y personas · Gramática: verbo <i>to be</i> + adjetivos · a/an · this/that</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>describir cosas y personas</b> — color, tamaño y cualidades simples — usando el verbo <b>to be</b> y <b>adjetivos</b>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿De qué color es tu mochila / tu teléfono / tu camiseta?</li>
+          <li>Señala tres cosas y di: "It's a … " (a pen, a book, a cup).</li>
+          <li>Di una cosa sobre un amigo: "My friend is … " (nice, tall, funny).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">12–15 min</span></span>
+
+      <div class="h3">A · Colores <span class="sm">— colors</span></div>
+      <div class="grid2">
+        <div class="cell"><span class="gh">Colores</span>red <span class="sp">rojo</span> · blue <span class="sp">azul</span> · green <span class="sp">verde</span> · yellow <span class="sp">amarillo</span> · black <span class="sp">negro</span> · white <span class="sp">blanco</span></div>
+        <div class="cell"><span class="gh">Más colores</span>orange <span class="sp">naranja</span> · brown <span class="sp">marrón</span> · pink <span class="sp">rosa</span> · gray <span class="sp">gris</span> · purple <span class="sp">morado</span></div>
+      </div>
+
+      <div class="h3">B · Adjetivos <span class="sm">— opuestos</span></div>
+      <table class="tb">
+        <tr><th>Adjetivo</th><th>Opuesto</th><th>Adjetivo</th><th>Opuesto</th></tr>
+        <tr><td>big <span class="sp">grande</span></td><td>small <span class="sp">pequeño</span></td><td>old <span class="sp">viejo</span></td><td>new <span class="sp">nuevo</span></td></tr>
+        <tr><td>tall <span class="sp">alto</span></td><td>short <span class="sp">bajo</span></td><td>good <span class="sp">bueno</span></td><td>bad <span class="sp">malo</span></td></tr>
+        <tr><td>happy <span class="sp">feliz</span></td><td>sad <span class="sp">triste</span></td><td>hot <span class="sp">caliente</span></td><td>cold <span class="sp">frío</span></td></tr>
+        <tr><td>expensive <span class="sp">caro</span></td><td>cheap <span class="sp">barato</span></td><td>nice <span class="sp">agradable</span></td><td>—</td></tr>
+      </table>
+
+      <div class="h3">C · Gramática — <i>to be</i> + adjetivo</div>
+      <p class="lead-sm">El adjetivo va <b>antes del sustantivo</b> (a red car) o <b>después de <i>to be</i></b> (The car is red). El adjetivo <b>nunca</b> cambia: se dice <span class="ok">two big cars</span>, no "two bigs cars".</p>
+      <table class="tb">
+        <tr><th>Estructura</th><th>Ejemplo</th></tr>
+        <tr><td>a/an + <b>adjetivo</b> + sustantivo</td><td>a <b>red</b> car · an <b>old</b> book · a <b>nice</b> day</td></tr>
+        <tr><td>sujeto + <i>to be</i> + <b>adjetivo</b></td><td>The car <b>is</b> red. · The books <b>are</b> old. · She <b>is</b> tall.</td></tr>
+        <tr><td>Mal ❌</td><td><span class="x">a car red</span> · <span class="x">The car red is</span> · <span class="x">two bigs cars</span></td></tr>
+      </table>
+      <p class="lead-sm"><b>a</b> antes de sonido de consonante (a book), <b>an</b> antes de sonido de vocal (an apple, an old phone).</p>
+
+      <div class="h3">D · this / that / these / those</div>
+      <table class="tb">
+        <tr><th></th><th>Cerca 👉</th><th>Lejos 👉👉</th></tr>
+        <tr><td>Uno</td><td><b>this</b> — What's <b>this</b>? It's a pen.</td><td><b>that</b> — What's <b>that</b>? It's a car.</td></tr>
+        <tr><td>Varios</td><td><b>these</b> — What are <b>these</b>? They're keys.</td><td><b>those</b> — What are <b>those</b>? They're books.</td></tr>
+      </table>
+      <div class="stretch">
+        <div class="st-h">A2 · extra</div>
+        Pedir una descripción: "What's he/she like?" → "He's friendly and funny." · Usar intensificadores: "It's <b>really</b> nice." · "It's <b>very</b> big."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">12 min</span></span>
+
+      <div class="h3">Actividad 1 · Elige la oración correcta</div>
+      <ol>
+        <li>(a) a car red &nbsp; (b) a red car</li>
+        <li>(a) The book is old &nbsp; (b) The book old is</li>
+        <li>(a) She is a nice person &nbsp; (b) She is a person nice</li>
+        <li>(a) They are tall &nbsp; (b) They tall are</li>
+        <li>(a) an new phone &nbsp; (b) a new phone</li>
+        <li>(a) It is a big city &nbsp; (b) It is a city big</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <p><b>1-b · 2-a · 3-a · 4-a · 5-b · 6-a</b></p>
+      </div>
+
+      <div class="h3">Actividad 2 · Completa con <i>is</i> o <i>are</i></div>
+      <ol>
+        <li>The car ___ red.</li>
+        <li>The books ___ old.</li>
+        <li>My sister ___ tall.</li>
+        <li>These shoes ___ new.</li>
+        <li>It ___ a big city.</li>
+        <li>My friends ___ very nice.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <ol>
+          <li><b>is</b></li><li><b>are</b></li><li><b>is</b></li><li><b>are</b></li><li><b>is</b></li><li><b>are</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 3 · this / that / these / those</div>
+      <ol>
+        <li>What's ___ ? (uno, cerca) — It's a phone.</li>
+        <li>What are ___ ? (varios, cerca) — They're pens.</li>
+        <li>Look at ___ car over there! (uno, lejos)</li>
+        <li>___ shoes over there are new. (varios, lejos)</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <p><b>1. this · 2. these · 3. that · 4. Those</b></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · un teléfono nuevo</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Ana:</span> Look at this! What's this?</p>
+        <p class="line"><span class="spk b">Leo:</span> It's a <span class="tg">new phone</span>. It's really nice.</p>
+        <p class="line"><span class="spk">Ana:</span> What color is it?</p>
+        <p class="line"><span class="spk b">Leo:</span> It's <span class="tg">black</span>. And it's very <span class="tg">small</span>.</p>
+        <p class="line"><span class="spk">Ana:</span> Is it expensive?</p>
+        <p class="line"><span class="spk b">Leo:</span> Yes, it is. But I love it!</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Qué es? (¿nuevo o viejo?)</p>
+        <p><span class="qn">P2.</span> ¿De qué color es?</p>
+        <p><span class="qn">P3.</span> ¿Es caro?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol><li>A new phone.</li><li>Black.</li><li>Yes, it is.</li></ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">12 min</span></span>
+      <p><b>Describe tus cosas.</b> El alumno elige 3 objetos cercanos y 1 persona, y describe cada uno (color, tamaño, un adjetivo). El profe pregunta: "What's this? What color is it? Is it big or small?"</p>
+      <p class="lead-sm">Plantilla de apoyo — completa los huecos:</p>
+      <div class="scaffold">
+        This is a <span class="gap">…</span>. It's <span class="gap">color</span> and <span class="gap">adjetivo</span>. &nbsp;·&nbsp; My friend is <span class="gap">…</span> and <span class="gap">…</span>. &nbsp;·&nbsp; That <span class="gap">…</span> over there is <span class="gap">…</span>.
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Mantenlo en oraciones cortas. Insiste en el artículo: "a red pen", no "red pen". Si el alumno va bien, usa el extra A2: "What's your friend like?"</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Escribe</b> 5 oraciones describiendo tus cosas y una persona (usa un color o un adjetivo en cada una). Ejemplo: <i>"My bag is black and big. My friend Ana is tall and funny."</i></div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 2 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l2">
+    <div class="lesson-head">
+      <div class="lnum">02</div>
+      <div><span class="ttl">My Family &amp; My Job</span>
+      <span class="es">Hablar de tu familia y tu trabajo · Gramática: <i>have/has</i> + posesivos (my/your/his/her)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>hablar de tu familia y tu trabajo</b>, usando <b>have/has</b> y los <b>adjetivos posesivos</b> (my, your, his, her…).</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿Cuántas personas hay en tu familia?</li>
+          <li>¿Cuál es tu trabajo? Di: "I'm a … "</li>
+          <li>¿Tienes hermanos o hermanas?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">12–15 min</span></span>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">Familia</span>mother / mom <span class="sp">madre</span> · father / dad <span class="sp">padre</span> · parents <span class="sp">padres</span> · brother <span class="sp">hermano</span> · sister <span class="sp">hermana</span> · son <span class="sp">hijo</span> · daughter <span class="sp">hija</span> · husband / wife <span class="sp">esposo/a</span></div>
+        <div class="cell"><span class="gh">Trabajos</span>teacher <span class="sp">profesor/a</span> · doctor · nurse <span class="sp">enfermero/a</span> · engineer <span class="sp">ingeniero/a</span> · student <span class="sp">estudiante</span> · waiter <span class="sp">mesero/a</span> · driver <span class="sp">conductor/a</span> · cook <span class="sp">cocinero/a</span></div>
+      </div>
+
+      <div class="h3">A · Gramática — <i>have</i> / <i>has</i></div>
+      <table class="tb">
+        <tr><th>Sujeto</th><th>Forma</th><th>Ejemplo</th></tr>
+        <tr><td>I / you / we / they</td><td><b>have</b></td><td>I <b>have</b> two brothers. · They <b>have</b> a big family.</td></tr>
+        <tr><td>he / she / it</td><td><b>has</b></td><td>She <b>has</b> a dog. · He <b>has</b> a good job.</td></tr>
+        <tr><td>Negativo</td><td>don't / doesn't have</td><td>I <b>don't have</b> a car. · She <b>doesn't have</b> a sister.</td></tr>
+        <tr><td>Pregunta</td><td>Do / Does … have?</td><td><b>Do</b> you <b>have</b> children? · <b>Does</b> he <b>have</b> a job?</td></tr>
+      </table>
+
+      <div class="h3">B · Gramática — adjetivos posesivos</div>
+      <table class="tb">
+        <tr><th>I → <b>my</b></th><th>you → <b>your</b></th><th>he → <b>his</b></th><th>she → <b>her</b></th><th>we → <b>our</b></th><th>they → <b>their</b></th></tr>
+        <tr><td>my sister</td><td>your job</td><td>his name</td><td>her family</td><td>our house</td><td>their car</td></tr>
+      </table>
+      <p class="lead-sm">this / that también ayudan aquí: "<b>This is</b> my sister." "<b>That's</b> my dad."</p>
+      <div class="stretch">
+        <div class="st-h">A2 · extra</div>
+        Posesivo con <b>'s</b>: "Ana<b>'s</b> brother is a doctor." · Plurales: brother → brother<b>s</b>, child → child<b>ren</b>, person → people. · "What does he do?" → "He's a nurse."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">12 min</span></span>
+
+      <div class="h3">Actividad 1 · ¿<i>have</i> o <i>has</i>?</div>
+      <ol>
+        <li>I ___ a big family.</li>
+        <li>She ___ two children.</li>
+        <li>They ___ a nice house.</li>
+        <li>He ___ a good job.</li>
+        <li>We ___ a dog.</li>
+        <li>My brother ___ a car.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol><li><b>have</b></li><li><b>has</b></li><li><b>have</b></li><li><b>has</b></li><li><b>have</b></li><li><b>has</b></li></ol>
+      </div>
+
+      <div class="h3">Actividad 2 · Elige el posesivo <span class="sm">(my / your / his / her / our)</span></div>
+      <ol>
+        <li>This is ___ mother. (I)</li>
+        <li>Tom is happy. ___ job is great. (he)</li>
+        <li>Ana loves ___ family. (she)</li>
+        <li>What's ___ name? (you)</li>
+        <li>We love ___ city. (we)</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <p><b>1. my · 2. His · 3. her · 4. your · 5. our</b></p>
+      </div>
+
+      <div class="h3">Actividad 3 · Haz preguntas con <i>Do / Does … have?</i></div>
+      <ol>
+        <li>you / a car? → ___</li>
+        <li>she / children? → ___</li>
+        <li>they / a big house? → ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <ol>
+          <li>Do you have a car?</li>
+          <li>Does she have children?</li>
+          <li>Do they have a big house?</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · familia y trabajos</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Mia:</span> Do you have a big family?</p>
+        <p class="line"><span class="spk b">Sam:</span> Yes, I do. I <span class="tg">have two brothers and one sister</span>.</p>
+        <p class="line"><span class="spk">Mia:</span> What does your brother do?</p>
+        <p class="line"><span class="spk b">Sam:</span> He's a <span class="tg">doctor</span>. My sister is a student.</p>
+        <p class="line"><span class="spk">Mia:</span> Nice! And your parents?</p>
+        <p class="line"><span class="spk b">Sam:</span> My mother is a <span class="tg">teacher</span>, and my father is a cook.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Cuántos hermanos tiene Sam?</p>
+        <p><span class="qn">P2.</span> ¿Cuál es el trabajo del hermano de Sam?</p>
+        <p><span class="qn">P3.</span> ¿A qué se dedica la madre de Sam?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol><li>Two.</li><li>A doctor.</li><li>She's a teacher.</li></ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">12 min</span></span>
+      <p><b>Habla de tu familia.</b> El alumno describe 3–4 familiares: quiénes son + su trabajo. El profe pregunta: "Do you have brothers? What does your … do?"</p>
+      <div class="scaffold">
+        I have <span class="gap">número</span> <span class="gap">brothers/sisters</span>. My <span class="gap">mother/father/…</span> is a <span class="gap">trabajo</span>. <span class="gap">His/Her</span> name is <span class="gap">…</span>. My <span class="gap">…</span> has <span class="gap">…</span>.
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Cuida la concordancia he/she + his/her (error típico de A1). Si el alumno está solo, comparte tu propia familia (inventada) para modelar.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Escribe</b> 5 oraciones sobre tu familia — quiénes son y sus trabajos — usando <b>have/has</b> y <b>my / his / her</b>.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 3 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l3">
+    <div class="lesson-head">
+      <div class="lnum">03</div>
+      <div><span class="ttl">My Daily Routine</span>
+      <span class="es">Hablar de tu día a día · Gramática: presente simple · <i>like</i> · decir la hora</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>hablar de tus actividades diarias</b>, <b>decir la hora</b> y decir qué te <b>gusta</b>, usando el <b>presente simple</b>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿Qué hora es ahora?</li>
+          <li>¿A qué hora te levantas?</li>
+          <li>Di dos cosas que haces todos los días.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">12–15 min</span></span>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">Actividades diarias</span>get up <span class="sp">levantarse</span> · have breakfast/lunch/dinner <span class="sp">desayunar/almorzar/cenar</span> · go to work/school <span class="sp">ir al trabajo/escuela</span> · work · study · go home · watch TV · go to bed <span class="sp">acostarse</span></div>
+        <div class="cell"><span class="gh">La hora y los días</span>What time is it? — It's seven o'clock · half past seven (7:30) · a quarter past/to · in the morning/afternoon/evening · at night · Monday…Sunday</div>
+      </div>
+
+      <div class="h3">A · Gramática — presente simple</div>
+      <table class="tb">
+        <tr><th>Sujeto</th><th>Verbo</th><th>Ejemplo</th></tr>
+        <tr><td>I / you / we / they</td><td>verbo base</td><td>I <b>work</b>. · They <b>study</b> English.</td></tr>
+        <tr><td>he / she / it</td><td>verbo <b>+ s</b></td><td>She <b>works</b>. · He <b>goes</b> to work. · It <b>starts</b> at nine.</td></tr>
+        <tr><td>Negativo</td><td>don't / doesn't + base</td><td>I <b>don't work</b> on Sunday. · She <b>doesn't like</b> coffee.</td></tr>
+        <tr><td>Pregunta</td><td>Do / Does + base</td><td><b>Do</b> you <b>get up</b> early? · <b>Does</b> he <b>work</b> here?</td></tr>
+      </table>
+      <p class="lead-sm">Ortografía para he/she/it: go → <b>goes</b>, do → <b>does</b>, watch → <b>watches</b>, study → <b>studies</b>.</p>
+
+      <div class="h3">B · Gramática — <i>like</i> (+ sustantivo / + <i>-ing</i>)</div>
+      <p class="lead-sm">I <b>like</b> coffee. · I <b>like</b> reading. · She <b>doesn't like</b> Mondays. · <b>Do</b> you <b>like</b> your job?</p>
+      <div class="stretch">
+        <div class="st-h">A2 · extra</div>
+        Adverbios de frecuencia (antes del verbo): <b>always · usually · sometimes · never</b> — "I <b>usually</b> get up at seven." · "She <b>never</b> works on Sunday."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">12 min</span></span>
+
+      <div class="h3">Actividad 1 · Presente simple — forma correcta</div>
+      <ol>
+        <li>I ___ (get up) at seven.</li>
+        <li>She ___ (work) in an office.</li>
+        <li>They ___ (study) English.</li>
+        <li>He ___ (go) to work by bus.</li>
+        <li>My friend ___ (watch) TV at night.</li>
+        <li>It ___ (start) at nine.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol><li><b>get up</b></li><li><b>works</b></li><li><b>study</b></li><li><b>goes</b></li><li><b>watches</b></li><li><b>starts</b></li></ol>
+      </div>
+
+      <div class="h3">Actividad 2 · Pásalo a negativo o a pregunta</div>
+      <ol>
+        <li>Negativo: I like Mondays. → ___</li>
+        <li>Negativo: She works on Sunday. → ___</li>
+        <li>Pregunta: you / get up / early? → ___</li>
+        <li>Pregunta: he / like / coffee? → ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <ol>
+          <li>I <b>don't like</b> Mondays.</li>
+          <li>She <b>doesn't work</b> on Sunday.</li>
+          <li><b>Do</b> you get up early?</li>
+          <li><b>Does</b> he like coffee?</li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 3 · ¿Qué hora es? <span class="sm">— escríbelo en palabras</span></div>
+      <ol>
+        <li>7:00 → ___</li>
+        <li>7:30 → ___</li>
+        <li>9:15 → ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <ol>
+          <li>It's seven o'clock.</li>
+          <li>It's half past seven. <span class="alt">(también: seven thirty)</span></li>
+          <li>It's a quarter past nine. <span class="alt">(también: nine fifteen)</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · un día normal</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Nora:</span> What time do you get up?</p>
+        <p class="line"><span class="spk b">Dan:</span> I get up at <span class="tg">seven o'clock</span>. Then I have breakfast.</p>
+        <p class="line"><span class="spk">Nora:</span> Do you go to work by car?</p>
+        <p class="line"><span class="spk b">Dan:</span> No, I don't. I go <span class="tg">by bus</span>. What about you?</p>
+        <p class="line"><span class="spk">Nora:</span> I work from home. I like it!</p>
+        <p class="line"><span class="spk b">Dan:</span> Nice. Do you get up early?</p>
+        <p class="line"><span class="spk">Nora:</span> No, I don't. I get up at <span class="tg">nine</span>.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿A qué hora se levanta Dan?</p>
+        <p><span class="qn">P2.</span> ¿Cómo va Dan al trabajo?</p>
+        <p><span class="qn">P3.</span> ¿Nora se levanta temprano?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol><li>At seven o'clock.</li><li>By bus.</li><li>No — she gets up at nine.</li></ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">12 min</span></span>
+      <p><b>Tu día típico.</b> El alumno describe su día de la mañana a la noche (al menos 5 actividades + horas). El profe pregunta: "What time do you…? Do you like…?"</p>
+      <div class="scaffold">
+        I get up at <span class="gap">hora</span>. Then I <span class="gap">actividad</span>. I go to <span class="gap">work/school</span> <span class="gap">by …</span>. In the evening, I <span class="gap">actividad</span>. I like <span class="gap">…</span>, but I don't like <span class="gap">…</span>.
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Machaca la <b>-s</b> de he/she — el error clásico de A1 es "she work". Si va bien, agrega los adverbios de frecuencia del extra A2.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Escribe</b> 5–6 oraciones sobre tu rutina diaria (horas + actividades), usando el presente simple. Opcional: grábate leyéndolas en voz alta.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 4 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l4">
+    <div class="lesson-head">
+      <div class="lnum">04</div>
+      <div><span class="ttl">At the Café &amp; Around Town</span>
+      <span class="es">Pedir en un café y moverte por la ciudad · Gramática: <i>there is/are</i> · <i>can I have…?</i> · preposiciones</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>pedir comida y bebida</b>, <b>preguntar precios</b> y <b>preguntar dónde están los lugares</b>, usando <b>there is/are</b>, <b>can I have…?</b> y preposiciones de lugar.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿Qué pides en un café?</li>
+          <li>¿Cuál es tu comida o bebida favorita?</li>
+          <li>Nombra tres lugares de una ciudad (en inglés).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">12–15 min</span></span>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">Comida y bebida</span>coffee · tea · water · juice · a sandwich · a salad · a cake · a pizza · a soda</div>
+        <div class="cell"><span class="gh">Lugares de la ciudad</span>café · shop <span class="sp">tienda</span> · bank <span class="sp">banco</span> · station <span class="sp">estación</span> · hotel · restaurant · park · supermarket</div>
+      </div>
+
+      <div class="h3">A · Pedir — frases útiles</div>
+      <ul class="phr">
+        <li><span class="en">Can I have a coffee, please?</span><span class="sp">¿Me da un café, por favor?</span></li>
+        <li><span class="en">I'd like a sandwich.</span><span class="sp">Quisiera un sándwich.</span></li>
+        <li><span class="en">How much is it?</span><span class="sp">¿Cuánto es?</span></li>
+        <li><span class="en">Anything else? — No, thank you.</span><span class="sp">¿Algo más? — No, gracias.</span></li>
+        <li><span class="en">Here you are. / Here you go.</span><span class="sp">Aquí tienes.</span></li>
+      </ul>
+
+      <div class="h3">B · Gramática — <i>there is</i> / <i>there are</i></div>
+      <table class="tb">
+        <tr><th>Uso</th><th>Ejemplo</th></tr>
+        <tr><td><b>There is</b> + uno (singular)</td><td>There is a bank near here. · There's a café on Main Street.</td></tr>
+        <tr><td><b>There are</b> + varios (plural)</td><td>There are two hotels. · There are some shops.</td></tr>
+        <tr><td>Preguntas / negativos</td><td>Is there a…? · Are there…? · There isn't / There aren't.</td></tr>
+      </table>
+
+      <div class="h3">C · Gramática — <i>can</i> (pedidos y habilidad) + preposiciones de lugar</div>
+      <p class="lead-sm"><b>can:</b> "Can I have…?" (pedido) · "Can you help me?" · "I can speak Spanish." (habilidad)</p>
+      <div class="grid2">
+        <div class="cell"><span class="gh">Preposiciones de lugar</span><b>in</b> (in the city) · <b>on</b> (on Main Street / on the table) · <b>next to</b> (al lado de) · <b>behind</b> (detrás) · <b>in front of</b> (delante) · <b>near</b> (cerca)</div>
+        <div class="cell"><span class="gh">Ejemplo</span>The bank is <b>next to</b> the café. · The park is <b>behind</b> the station. · It's <b>on</b> Main Street.</div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">A2 · extra</div>
+        Precios y números más grandes (20–100): "It's three fifty." / "That's twelve dollars." · Direcciones simples: "Go straight." / "Turn left / right."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">12 min</span></span>
+
+      <div class="h3">Actividad 1 · ¿<i>There is</i> o <i>There are</i>? <span class="sm">(y Is/Are para preguntas)</span></div>
+      <ol>
+        <li>___ a café near here.</li>
+        <li>___ two banks on this street.</li>
+        <li>___ there a hotel near the station?</li>
+        <li>___ there any shops here?</li>
+        <li>___ a park behind the station.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol><li><b>There is</b></li><li><b>There are</b></li><li><b>Is</b></li><li><b>Are</b></li><li><b>There is</b></li></ol>
+      </div>
+
+      <div class="h3">Actividad 2 · Elige la preposición <span class="sm">(on / next to / behind / in)</span></div>
+      <ol>
+        <li>The café is ___ Main Street.</li>
+        <li>The bank is ___ the hotel.</li>
+        <li>There's a park ___ the shops.</li>
+        <li>The station is ___ the city center.</li>
+        <li>Your keys are ___ the table.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <ol><li><b>on</b></li><li><b>next to</b></li><li><b>behind</b></li><li><b>in</b></li><li><b>on</b></li></ol>
+      </div>
+
+      <div class="h3">Actividad 3 · Ordena la conversación del café <span class="sm">— une cada línea con su respuesta</span></div>
+      <table class="tb">
+        <tr><th>Línea</th><th>Respuesta</th></tr>
+        <tr><td>1. Can I help you?</td><td>a. It's two fifty.</td></tr>
+        <tr><td>2. Anything else?</td><td>b. Yes, can I have a tea, please?</td></tr>
+        <tr><td>3. How much is it?</td><td>c. No, thank you. How much is it?</td></tr>
+      </table>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <p><b>1-b · 2-c · 3-a</b></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · en el café</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Waiter:</span> Hello! Can I help you?</p>
+        <p class="line"><span class="spk b">Customer:</span> Yes, <span class="tg">can I have a coffee and a sandwich</span>, please?</p>
+        <p class="line"><span class="spk">Waiter:</span> Sure. Anything else?</p>
+        <p class="line"><span class="spk b">Customer:</span> No, thank you. <span class="tg">How much is it?</span></p>
+        <p class="line"><span class="spk">Waiter:</span> It's <span class="tg">six dollars</span>.</p>
+        <p class="line"><span class="spk b">Customer:</span> Here you are.</p>
+        <p class="line"><span class="spk">Waiter:</span> Thank you! Have a nice day.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Qué pide el cliente?</p>
+        <p><span class="qn">P2.</span> ¿Cuánto es?</p>
+        <p><span class="qn">P3.</span> ¿El cliente quiere algo más?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol><li>A coffee and a sandwich.</li><li>Six dollars.</li><li>No.</li></ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">12 min</span></span>
+      <p><b>Dos juegos de roles.</b> (1) <b>Pedir en un café</b> — el alumno es el cliente, el profe es el mesero. (2) <b>Preguntar por un lugar</b> — "Is there a bank near here?" → "Yes, it's next to the café."</p>
+      <div class="scaffold">
+        Can I have <span class="gap">a … </span>, please? · How much is it? &nbsp;—&nbsp; Is there a <span class="gap">lugar</span> near here? · Where is the <span class="gap">lugar</span>? · It's <span class="gap">next to / behind / on …</span>.
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Cambia los roles para que el alumno practique pedir y responder. Fomenta "please" y "thank you". Si va bien, usa el extra A2 de precios/direcciones.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Escribe</b> una conversación corta de café (pedido + precio), O describe tu barrio en 5 oraciones usando <b>there is/are</b> + preposiciones (por ejemplo: <i>"There is a park near my house. The bank is next to the supermarket."</i>).</div>
+    </div>
+  </section>
+
+</div><!-- /wrap -->
+
+<footer>
+  <b>ENGLISH for ALL</b><br>
+  Conversation Starter · A1 base · ⭐ A2 extra · Curso PPP de 4 lecciones · Rank Up nivel A1
+</footer>
+
+<script>
+  function setView(mode){
+    document.body.classList.remove('teacher','student');
+    document.body.classList.add(mode);
+    document.getElementById('btnTeacher').classList.toggle('on', mode==='teacher');
+    document.getElementById('btnStudent').classList.toggle('on', mode==='student');
+    document.getElementById('viewNote').textContent = (mode==='teacher')
+      ? 'Se ven las respuestas y las notas del profe.'
+      : 'Hoja del alumno — las respuestas y notas están ocultas.';
+  }
+</script>
+</body>
+</html>
