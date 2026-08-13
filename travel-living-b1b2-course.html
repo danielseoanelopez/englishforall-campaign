@@ -112,6 +112,12 @@
   .cell{border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:#fbfcff;}
   .cell .gh{display:block; font-family:"Share Tech Mono",monospace; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:6px;}
   .cell code{color:var(--cyan);}
+  .cell .sp{color:var(--soft); font-style:italic;}
+  .cell .sp::before{content:" — "; font-style:normal;}
+  .vgrid{list-style:none; margin:8px 0 0; padding:0;}
+  .vgrid li{padding:5px 2px; border-bottom:1px dotted var(--line); font-size:0.9rem; line-height:1.45;}
+  .vgrid li:last-child{border-bottom:none;}
+  .vgrid .en{color:var(--ink);}
 
   table.tb{width:100%; border-collapse:collapse; margin:8px 0; font-size:0.93rem;}
   table.tb th, table.tb td{border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top;}
@@ -244,10 +250,40 @@
     <div class="block">
       <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
 
-      <div class="grid2">
-        <div class="cell"><span class="gh">Travel &amp; transport</span>a flight <span class="sp">un vuelo</span> · to catch <span class="sp">tomar/alcanzar</span> / to miss <span class="sp">perder</span> a train · a platform <span class="sp">un andén</span> · a gate <span class="sp">puerta de embarque</span> · one-way / round trip <span class="sp">solo ida / ida y vuelta</span> · to book <span class="sp">reservar</span> · to check in <span class="sp">facturar / registrarse</span> · to board <span class="sp">abordar</span> · a connection <span class="sp">un enlace (vuelo/tren para continuar)</span> · a delay <span class="sp">un retraso</span> · luggage <span class="sp">equipaje</span> · a boarding pass <span class="sp">tarjeta de embarque</span> · a fare <span class="sp">tarifa (precio del boleto)</span> · to get around <span class="sp">moverse por un lugar</span></div>
-        <div class="cell"><span class="gh">Directions</span>How do I get to…? <span class="sp">¿Cómo llego a…?</span> · Go straight <span class="sp">sigue derecho</span> · turn left / right <span class="sp">gira a la izq. / der.</span> · cross the street <span class="sp">cruza la calle</span> · a block <span class="sp">una cuadra / manzana</span> · on the corner <span class="sp">en la esquina</span> · around the corner <span class="sp">a la vuelta</span> · next to <span class="sp">al lado de</span> · opposite <span class="sp">enfrente de</span> · near <span class="sp">cerca de</span> · between <span class="sp">entre</span> · It's on your left / right <span class="sp">está a tu izq. / der.</span> · a crosswalk <span class="sp">paso de peatones</span> · traffic lights <span class="sp">el semáforo</span></div>
-      </div>
+      <div class="h3">Travel &amp; transport</div>
+<table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+            <tr><td>a flight</td><td>un vuelo</td></tr>
+            <tr><td>to catch / miss a train</td><td>tomar / perder</td></tr>
+            <tr><td>a platform</td><td>un andén</td></tr>
+            <tr><td>a gate</td><td>puerta de embarque</td></tr>
+            <tr><td>one-way / round trip</td><td>solo ida / ida y vuelta</td></tr>
+            <tr><td>to book</td><td>reservar</td></tr>
+            <tr><td>to check in</td><td>facturar / registrarse</td></tr>
+            <tr><td>to board</td><td>abordar</td></tr>
+            <tr><td>a connection</td><td>un enlace (vuelo/tren para continuar)</td></tr>
+            <tr><td>a delay</td><td>un retraso</td></tr>
+            <tr><td>luggage</td><td>equipaje</td></tr>
+            <tr><td>a boarding pass</td><td>tarjeta de embarque</td></tr>
+            <tr><td>a fare</td><td>tarifa (precio del boleto)</td></tr>
+            <tr><td>to get around</td><td>moverse por un lugar</td></tr>
+          </table>
+<div class="h3">Directions</div>
+<table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+            <tr><td>How do I get to…?</td><td>¿Cómo llego a…?</td></tr>
+            <tr><td>Go straight</td><td>sigue derecho</td></tr>
+            <tr><td>turn left / right</td><td>gira a la izq. / der.</td></tr>
+            <tr><td>cross the street</td><td>cruza la calle</td></tr>
+            <tr><td>a block</td><td>una cuadra / manzana</td></tr>
+            <tr><td>on the corner</td><td>en la esquina</td></tr>
+            <tr><td>around the corner</td><td>a la vuelta</td></tr>
+            <tr><td>next to</td><td>al lado de</td></tr>
+            <tr><td>opposite</td><td>enfrente de</td></tr>
+            <tr><td>near</td><td>cerca de</td></tr>
+            <tr><td>between</td><td>entre</td></tr>
+            <tr><td>It's on your left / right</td><td>está a tu izq. / der.</td></tr>
+            <tr><td>a crosswalk</td><td>paso de peatones</td></tr>
+            <tr><td>traffic lights</td><td>el semáforo</td></tr>
+          </table>
 
       <div class="h3">Grammar — three ways to talk about the future</div>
       <table class="tb">
@@ -370,10 +406,34 @@
     <div class="block">
       <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
 
-      <div class="grid2">
-        <div class="cell"><span class="gh">Accommodation</span>to check in / out <span class="sp">registrarse / dejar el hotel</span> · a reservation / booking <span class="sp">una reserva</span> · a single / double room <span class="sp">habitación individual / doble</span> · reception <span class="sp">recepción</span> · a key card <span class="sp">tarjeta-llave</span> · a deposit <span class="sp">un depósito / seña</span> · a refund <span class="sp">un reembolso</span> · a late checkout <span class="sp">salida tardía</span> · a host <span class="sp">anfitrión (de un alquiler)</span> · an amenity <span class="sp">servicio/comodidad (Wi-Fi, desayuno…)</span> · downstairs / upstairs <span class="sp">abajo / arriba</span></div>
-        <div class="cell"><span class="gh">Problems &amp; complaints</span>the heating / AC isn't working <span class="sp">la calefacción / el aire no funciona</span> · there's no hot water <span class="sp">no hay agua caliente</span> · the Wi-Fi is down <span class="sp">el Wi-Fi no anda</span> · the room is dirty / noisy <span class="sp">la habitación está sucia / es ruidosa</span> · a leak <span class="sp">una gotera / fuga</span> · to be broken <span class="sp">estar roto/dañado</span> · to fix <span class="sp">arreglar</span> · to complain <span class="sp">quejarse</span> · a refund <span class="sp">un reembolso</span> · "There's a problem with…" <span class="sp">"Hay un problema con…"</span> · "Could you send someone to fix it?" <span class="sp">"¿Podría enviar a alguien a arreglarlo?"</span></div>
-      </div>
+      <div class="h3">Accommodation</div>
+<table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+            <tr><td>to check in / out</td><td>registrarse / dejar el hotel</td></tr>
+            <tr><td>a reservation / booking</td><td>una reserva</td></tr>
+            <tr><td>a single / double room</td><td>habitación individual / doble</td></tr>
+            <tr><td>reception</td><td>recepción</td></tr>
+            <tr><td>a key card</td><td>tarjeta-llave</td></tr>
+            <tr><td>a deposit</td><td>un depósito / seña</td></tr>
+            <tr><td>a refund</td><td>un reembolso</td></tr>
+            <tr><td>a late checkout</td><td>salida tardía</td></tr>
+            <tr><td>a host</td><td>anfitrión (de un alquiler)</td></tr>
+            <tr><td>an amenity</td><td>servicio/comodidad (Wi-Fi, desayuno…)</td></tr>
+            <tr><td>downstairs / upstairs</td><td>abajo / arriba</td></tr>
+          </table>
+<div class="h3">Problems &amp; complaints</div>
+<table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+            <tr><td>the heating / AC isn't working</td><td>la calefacción / el aire no funciona</td></tr>
+            <tr><td>there's no hot water</td><td>no hay agua caliente</td></tr>
+            <tr><td>the Wi-Fi is down</td><td>el Wi-Fi no anda</td></tr>
+            <tr><td>the room is dirty / noisy</td><td>la habitación está sucia / es ruidosa</td></tr>
+            <tr><td>a leak</td><td>una gotera / fuga</td></tr>
+            <tr><td>to be broken</td><td>estar roto/dañado</td></tr>
+            <tr><td>to fix</td><td>arreglar</td></tr>
+            <tr><td>to complain</td><td>quejarse</td></tr>
+            <tr><td>a refund</td><td>un reembolso</td></tr>
+            <tr><td>"There's a problem with…"</td><td>"Hay un problema con…"</td></tr>
+            <tr><td>"Could you send someone to fix it?"</td><td>"¿Podría enviar a alguien a arreglarlo?"</td></tr>
+          </table>
 
       <div class="h3">Grammar — present perfect (<i>have/has</i> + past participle)</div>
       <table class="tb">
@@ -496,10 +556,33 @@
     <div class="block">
       <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
 
-      <div class="grid2">
-        <div class="cell"><span class="gh">Eating out</span>a menu <span class="sp">un menú / la carta</span> · a starter / main / dessert <span class="sp">entrada / plato principal / postre</span> · the check (bill) <span class="sp">la cuenta</span> · a tip <span class="sp">una propina</span> · to book a table <span class="sp">reservar una mesa</span> · to order <span class="sp">pedir/ordenar</span> · "I'm allergic to…" <span class="sp">"Soy alérgico/a a…"</span> · vegetarian <span class="sp">vegetariano/a</span> · a side <span class="sp">un acompañamiento/guarnición</span> · "How would you like it?" — medium / well done <span class="sp">"¿Cómo lo quiere?" — término medio / bien cocido</span> · takeout <span class="sp">para llevar</span></div>
-        <div class="cell"><span class="gh">Describing food</span>delicious <span class="sp">delicioso</span> · tasty <span class="sp">sabroso/rico</span> · fresh <span class="sp">fresco</span> · filling <span class="sp">que llena/pesado</span> · spicy <span class="sp">picante</span> · greasy <span class="sp">grasoso/aceitoso</span> · bland <span class="sp">soso (sin sabor)</span> · sweet / sour <span class="sp">dulce / agrio</span> · salty <span class="sp">salado</span> · "It's to die for." <span class="sp">"Está para morirse." (buenísimo)</span></div>
-      </div>
+      <div class="h3">Eating out</div>
+<table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+            <tr><td>a menu</td><td>un menú / la carta</td></tr>
+            <tr><td>a starter / main / dessert</td><td>entrada / plato principal / postre</td></tr>
+            <tr><td>the check (bill)</td><td>la cuenta</td></tr>
+            <tr><td>a tip</td><td>una propina</td></tr>
+            <tr><td>to book a table</td><td>reservar una mesa</td></tr>
+            <tr><td>to order</td><td>pedir / ordenar</td></tr>
+            <tr><td>"I'm allergic to…"</td><td>"Soy alérgico/a a…"</td></tr>
+            <tr><td>vegetarian</td><td>vegetariano/a</td></tr>
+            <tr><td>a side</td><td>un acompañamiento / guarnición</td></tr>
+            <tr><td>"How would you like it?" — medium / well done</td><td>"¿Cómo lo quiere?" — término medio / bien cocido</td></tr>
+            <tr><td>takeout</td><td>para llevar</td></tr>
+          </table>
+<div class="h3">Describing food</div>
+<table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+            <tr><td>delicious</td><td>delicioso</td></tr>
+            <tr><td>tasty</td><td>sabroso / rico</td></tr>
+            <tr><td>fresh</td><td>fresco</td></tr>
+            <tr><td>filling</td><td>que llena / pesado</td></tr>
+            <tr><td>spicy</td><td>picante</td></tr>
+            <tr><td>greasy</td><td>grasoso / aceitoso</td></tr>
+            <tr><td>bland</td><td>soso (sin sabor)</td></tr>
+            <tr><td>sweet / sour</td><td>dulce / agrio</td></tr>
+            <tr><td>salty</td><td>salado</td></tr>
+            <tr><td>"It's to die for."</td><td>"Está para morirse." (buenísimo)</td></tr>
+          </table>
 
       <div class="h3">A · Grammar — comparatives &amp; superlatives</div>
       <table class="tb">
@@ -635,10 +718,34 @@
     <div class="block">
       <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
 
-      <div class="grid2">
-        <div class="cell"><span class="gh">Travel experiences</span>to get lost <span class="sp">perderse</span> · to miss a flight <span class="sp">perder un vuelo</span> · to run out of money <span class="sp">quedarse sin dinero</span> · to break down <span class="sp">averiarse (el coche)</span> · a delay <span class="sp">un retraso</span> · sightseeing <span class="sp">hacer turismo</span> · an adventure <span class="sp">una aventura</span> · to end up (somewhere) <span class="sp">terminar/acabar (en un lugar)</span> · on purpose / by accident <span class="sp">a propósito / por accidente</span> · a local <span class="sp">un lugareño</span> · worth it <span class="sp">que vale la pena</span></div>
-        <div class="cell"><span class="gh">Reacting &amp; linking</span>Oh no! <span class="sp">¡Ay, no!</span> · Really? <span class="sp">¿En serio?</span> · What happened next? <span class="sp">¿Y después qué pasó?</span> · That's amazing / awful! <span class="sp">¡Qué increíble / horrible!</span> · No way! <span class="sp">¡No puede ser!</span> · when <span class="sp">cuando</span> · while <span class="sp">mientras</span> · then <span class="sp">entonces/luego</span> · suddenly <span class="sp">de repente</span> · after that <span class="sp">después de eso</span> · in the end <span class="sp">al final</span></div>
-      </div>
+      <div class="h3">Travel experiences</div>
+<table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+            <tr><td>to get lost</td><td>perderse</td></tr>
+            <tr><td>to miss a flight</td><td>perder un vuelo</td></tr>
+            <tr><td>to run out of money</td><td>quedarse sin dinero</td></tr>
+            <tr><td>to break down</td><td>averiarse (el coche)</td></tr>
+            <tr><td>a delay</td><td>un retraso</td></tr>
+            <tr><td>sightseeing</td><td>hacer turismo</td></tr>
+            <tr><td>an adventure</td><td>una aventura</td></tr>
+            <tr><td>to end up (somewhere)</td><td>terminar / acabar (en un lugar)</td></tr>
+            <tr><td>on purpose / by accident</td><td>a propósito / por accidente</td></tr>
+            <tr><td>a local</td><td>un lugareño</td></tr>
+            <tr><td>worth it</td><td>que vale la pena</td></tr>
+          </table>
+<div class="h3">Reacting &amp; linking</div>
+<table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+            <tr><td>Oh no!</td><td>¡Ay, no!</td></tr>
+            <tr><td>Really?</td><td>¿En serio?</td></tr>
+            <tr><td>What happened next?</td><td>¿Y después qué pasó?</td></tr>
+            <tr><td>That's amazing / awful!</td><td>¡Qué increíble / horrible!</td></tr>
+            <tr><td>No way!</td><td>¡No puede ser!</td></tr>
+            <tr><td>when</td><td>cuando</td></tr>
+            <tr><td>while</td><td>mientras</td></tr>
+            <tr><td>then</td><td>entonces / luego</td></tr>
+            <tr><td>suddenly</td><td>de repente</td></tr>
+            <tr><td>after that</td><td>después de eso</td></tr>
+            <tr><td>in the end</td><td>al final</td></tr>
+          </table>
 
       <div class="h3">Grammar — past simple vs. past continuous</div>
       <table class="tb">
