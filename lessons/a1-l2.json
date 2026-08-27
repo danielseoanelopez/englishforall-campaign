@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,23 +44,23 @@
     {
       "type": "grammar",
       "tag": "to be + datos personales",
-      "title": "📘 TO BE · I am, you are, he is",
+      "title": "<ico-book></ico-book> TO BE · I am, you are, he is",
       "intro": "Para dar datos personales usamos el verbo <b style='color:var(--gold)'>to be</b>. Estudia con las tarjetas y practica con los juegos.",
       "cells": [
         {
-          "h": "✓ to be",
+          "h": "<ico-check></ico-check> to be",
           "body": "I <code>am</code> (I'm)<br>he / she / it <code>is</code><br>you / we / they <code>are</code>"
         },
         {
-          "h": "❓ Preguntas",
+          "h": "<ico-question></ico-question> Preguntas",
           "body": "<code>What's your name?</code><br><code>Where are you from?</code><br><code>What's your job?</code>"
         },
         {
-          "h": "🎂 Edad",
+          "h": "<ico-cake></ico-cake> Edad",
           "body": "<code>How old are you?</code><br>I'm <code>twenty</code>.<br><code>a</code> teacher · <code>an</code> engineer"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='x'>I have 20 years</span><br><span class='ok'>I'm 20 (years old)</span><br><span class='es'>edad con 'be', no 'have'</span>"
         }
       ],
@@ -73,7 +73,7 @@
         "we're",
         "they're"
       ],
-      "vocabBtn": "📒 Ver países y trabajos",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver países y trabajos",
       "vocab": [
         {
           "en": "Country",
@@ -140,7 +140,7 @@
           "sp": "programador/a"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección tiene <b>tarjetas</b> 🃏, <b>imágenes</b> 🖼️, un <b>juego de memoria</b> 🧠, <b>escucha</b> 🎧 y <b>completar</b> 📝. ✓ CHECK donde lo veas."
+      "note": "<b>Cómo funciona:</b> esta lección tiene <b>tarjetas</b> <ico-clone></ico-clone>, <b>imágenes</b> <ico-image></ico-image>, un <b>juego de memoria</b> <ico-brain></ico-brain>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>completar</b> <ico-filepen></ico-filepen>. <ico-check></ico-check> CHECK donde lo veas."
     },
     {
       "type": "flashcards",
@@ -230,7 +230,7 @@
       "desc": "Ana y Tom hablan de su país, trabajo y edad.",
       "src": "a1-l2-1.mp3",
       "dur": "0:44",
-      "speakers": "🗣 Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -400,7 +400,7 @@
       "desc": "María presenta a su amigo Leo. Escucha su país, trabajo y edad.",
       "src": "a1-l2-2.mp3",
       "dur": "0:14",
-      "speakers": "🗣 María",
+      "speakers": "<ico-commentdots></ico-commentdots> María",
       "questions": [
         {
           "type": "mcq",
@@ -446,7 +446,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ INTRODUCE SOMEONE ELSE",
+      "title": "<ico-pen></ico-pen> INTRODUCE SOMEONE ELSE",
       "intro": "Presenta a otra persona (un amigo, tu hermano/a, un compañero de trabajo) en 4–5 frases. Ojo: en tercera persona el verbo cambia.",
       "checklist": [
         "Preséntala/o: <b>This is my friend…</b>",

@@ -13,8 +13,8 @@
     {
       "type": "match",
       "id": "ex-review",
-      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· vocabulario de hoy</span>",
-      "title": "♻️ REPASO EXPRESS",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· vocabulario de hoy</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Primero, fija el vocabulario clave de hoy. Une cada palabra con su significado.",
       "pairs": [
         {
@@ -41,7 +41,7 @@
     },
     {
       "type": "grammar",
-      "title": "✈️ TRAVEL &amp; DIRECTIONS",
+      "title": "<ico-plane></ico-plane> TRAVEL &amp; DIRECTIONS",
       "intro": "Vocabulario para viajar y moverte. Practica en voz alta, ¡sin traductor!",
       "parts": [
         {
@@ -119,7 +119,7 @@
     },
     {
       "type": "grammar",
-      "title": "📘 FUTURE FORMS · will / going to / -ing",
+      "title": "<ico-book></ico-book> FUTURE FORMS · will / going to / -ing",
       "intro": "",
       "parts": [
         {
@@ -153,7 +153,7 @@
     },
     {
       "type": "story",
-      "title": "★ THE WEEKEND PLAN",
+      "title": "<ico-star></ico-star> THE WEEKEND PLAN",
       "intro": "Nao y Ben organizan una escapada. Primero <b>practicas</b> los futuros y las direcciones, y luego <b>escuchas</b> 2 audios: un <b>plan</b> y un <b>viaje</b>.",
       "cast": [
         {
@@ -170,7 +170,7 @@
     {
       "type": "gapFill",
       "id": "ex-1",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "FUTURE FORMS",
       "intro": "Elige el futuro más natural: arreglo (<i>-ing</i>), plan (going to) o decisión/oferta (will).",
       "items": [
@@ -233,7 +233,7 @@
     {
       "type": "gapFill",
       "id": "ex-2",
-      "icon": "✅",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
       "title": "DIRECTIONS",
       "intro": "Completa con Go / Turn / Cross / on / next.",
       "items": [
@@ -390,7 +390,7 @@
       "desc": "Nao y Ben planean el sábado. Fíjate en el <b>transporte</b>, la <b>hora</b> y el <b>lugar</b>.",
       "src": "trv-l1-1.mp3",
       "dur": "0:31",
-      "speakers": "🗣 Nao + Ben",
+      "speakers": "<ico-commentdots></ico-commentdots> Nao + Ben",
       "questions": [
         {
           "type": "mcq",
@@ -461,7 +461,7 @@
       "desc": "Alguien cuenta su próximo viaje. Fíjate en el <b>destino</b> y los <b>planes</b>.",
       "src": "trv-l1-2.mp3",
       "dur": "0:22",
-      "speakers": "🗣 monólogo",
+      "speakers": "<ico-commentdots></ico-commentdots> monólogo",
       "questions": [
         {
           "type": "mcq",
@@ -496,14 +496,14 @@
       ],
       "transcript": [
         {
-          "spk": "🗣",
+          "spk": "<ico-commentdots></ico-commentdots>",
           "html": "Next month, I'm <span class=\"tg\">going to travel to Japan</span>. I'm flying on the fifth, and I'm staying <span class=\"tg\">for two weeks</span>. First, I'm going to visit Tokyo, and then I'll take the train to Kyoto. I <span class=\"tg\">haven't booked the hotels yet</span>, but I'll do it this weekend. I'm really excited!"
         }
       ]
     },
     {
       "type": "writing",
-      "title": "✍️ MY NEXT TRIP",
+      "title": "<ico-pen></ico-pen> MY NEXT TRIP",
       "intro": "Escribe <b>6–7 oraciones</b> sobre tu próximo viaje: tus planes, un arreglo fijo y una predicción. Usa <b>going to</b>, el <b>present continuous</b> y <b>will</b>.",
       "checklist": [],
       "placeholder": "Next month, I'm going to travel to... I'm flying on...",

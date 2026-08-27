@@ -10,13 +10,13 @@
   "rankup": "LESSON CLEAR!",
   "next": {
     "href": "b1-final.html",
-    "label": "👑 BOSS ▸ THE BIG PITCH"
+    "label": "<ico-crown></ico-crown> BOSS ▸ THE BIG PITCH"
   },
   "blocks": [
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,19 +44,19 @@
     {
       "type": "grammar",
       "tag": "futuro",
-      "title": "📘 WILL vs GOING TO vs -ING",
+      "title": "<ico-book></ico-book> WILL vs GOING TO vs -ING",
       "intro": "El inglés tiene tres futuros y cada uno dice algo distinto: <b style='color:var(--gold)'>will</b> (decisión ahora / promesa / predicción), <b style='color:var(--gold)'>going to</b> (plan / evidencia) y <b style='color:var(--gold)'>present continuous</b> (cita ya fijada).",
       "cells": [
         {
-          "h": "⚡ will",
+          "h": "<ico-bolt></ico-bolt> will",
           "body": "Decisión del momento, promesa, predicción:<br><span class='ok'>I<b>'ll</b> get it!</span> <span class='es'>(ahora)</span><br><span class='ok'>I<b>'ll</b> send it tonight, promise.</span>"
         },
         {
-          "h": "🎯 going to",
+          "h": "<ico-target></ico-target> going to",
           "body": "Plan / intención, o evidencia visible:<br><span class='ok'>I'm <b>going to</b> improve the checkout.</span><br><span class='ok'>Look at those clouds — it's <b>going to</b> rain.</span>"
         },
         {
-          "h": "📅 present continuous",
+          "h": "<ico-calendar></ico-calendar> present continuous",
           "body": "Cita / arreglo ya fijado (con fecha):<br><span class='ok'>I'm <b>meeting</b> the designers on Monday.</span>"
         },
         {
@@ -64,7 +64,7 @@
           "body": "<code>by Friday</code> = antes del/para el viernes<br><code>by then</code> = para entonces<br><span class='ok'>I'll have it done <b>by</b> the fifteenth.</span>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='x'>I will meet the designers on Monday at 9.</span> <span class='es'>(cita fijada → continuous)</span><br><span class='ok'>I'm meeting the designers on Monday at 9.</span>"
         }
       ],
@@ -76,7 +76,7 @@
         "It's going to rain — look! (evidencia)",
         "I'm meeting Ana at 9 (agendado)"
       ],
-      "vocabBtn": "📒 Ver vocabulario de planificación",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de planificación",
       "vocab": [
         {
           "en": "to look ahead",
@@ -127,7 +127,7 @@
           "sp": "el próximo trimestre"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>memory</b> 🧠, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>unir</b> 🔗. Haz el ✓ CHECK en cada ejercicio. Al terminar… te espera el <b>BOSS</b> 👑."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>memory</b> <ico-brain></ico-brain>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>unir</b> <ico-link></ico-link>. Haz el <ico-check></ico-check> CHECK en cada ejercicio. Al terminar… te espera el <b>BOSS</b> <ico-crown></ico-crown>."
     },
     {
       "type": "flashcards",
@@ -181,8 +181,8 @@
     {
       "type": "story",
       "tag": "el próximo trimestre",
-      "title": "★ THE ROADMAP",
-      "intro": "Fin de trimestre. Priya reúne al equipo para planear el que viene: fase dos, metas, fechas. Y al final de la reunión, una noticia grande: David tiene planes de expansión… y alguien va a tener que presentar <b style='color:var(--gold)'>the big pitch</b>. 👑",
+      "title": "<ico-star></ico-star> THE ROADMAP",
+      "intro": "Fin de trimestre. Priya reúne al equipo para planear el que viene: fase dos, metas, fechas. Y al final de la reunión, una noticia grande: David tiene planes de expansión… y alguien va a tener que presentar <b style='color:var(--gold)'>the big pitch</b>. <ico-crown></ico-crown>",
       "cast": [
         {
           "en": "Priya",
@@ -289,7 +289,7 @@
       "desc": "Priya, Sofia y Marcos planean el próximo trimestre. Fechas, promesas y predicciones — los tres futuros en acción.",
       "src": "b1-l6-1.mp3",
       "dur": "1:10",
-      "speakers": "🗣 Priya + Sofia + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Priya + Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -483,11 +483,11 @@
     {
       "type": "listening",
       "id": "ex-l2",
-      "title": "AUDIO 2 · THE MESSAGE 👑",
+      "title": "AUDIO 2 · THE MESSAGE <ico-crown></ico-crown>",
       "desc": "El mensaje que Priya le dejó a Marcos después de la reunión. Una noticia grande… y un desafío más grande.",
       "src": "b1-l6-2.mp3",
       "dur": "0:52",
-      "speakers": "🗣 Priya",
+      "speakers": "<ico-commentdots></ico-commentdots> Priya",
       "questions": [
         {
           "type": "mcq",
@@ -533,7 +533,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ MY ROADMAP",
+      "title": "<ico-pen></ico-pen> MY ROADMAP",
       "intro": "Escribe TU roadmap personal para los próximos 3 meses (inglés, trabajo, vida — 6–8 frases):",
       "checklist": [
         "2 planes con <b>going to</b> (I'm going to…)",
@@ -544,7 +544,7 @@
       ],
       "placeholder": "Next quarter is going to be big for me. First, I'm going to…",
       "example": "Next quarter is going to be big for me… — sigue tú: dos planes con going to, una cita fija con present continuous, una promesa con will y dos fechas con by.",
-      "hw": "Escribe tu roadmap y después grábate presentándolo <b>sin leer</b>, como si fuera tu pitch. Envíame ambos por WhatsApp. ¡Y prepárate: el BOSS te espera! 👑",
+      "hw": "Escribe tu roadmap y después grábate presentándolo <b>sin leer</b>, como si fuera tu pitch. Envíame ambos por WhatsApp. ¡Y prepárate: el BOSS te espera! <ico-crown></ico-crown>",
       "rubric": [
         {
           "c": "Tarea completa",

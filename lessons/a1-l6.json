@@ -11,33 +11,33 @@
   "resultTitle": "LESSON 6 SCORE",
   "next": {
     "href": "a1-final.html",
-    "label": "⚔ A1 BOSS TEST"
+    "label": "<ico-skull></ico-skull> A1 BOSS TEST"
   },
   "blocks": [
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
-          "l": "Book 📖",
+          "l": "Book <ico-bookopen></ico-bookopen>",
           "r": "libro"
         },
         {
-          "l": "Bag 🎒",
+          "l": "Bag <ico-user></ico-user>",
           "r": "mochila / bolso"
         },
         {
-          "l": "Key 🔑",
+          "l": "Key <ico-key></ico-key>",
           "r": "llave"
         },
         {
-          "l": "Chair 🪑",
+          "l": "Chair <ico-chair></ico-chair>",
           "r": "silla"
         },
         {
-          "l": "Pen 🖊️",
+          "l": "Pen <ico-pen></ico-pen>",
           "r": "lapicera"
         }
       ]
@@ -45,23 +45,23 @@
     {
       "type": "grammar",
       "tag": "preguntas y respuestas",
-      "title": "📘 QUESTIONS · do / does / can / Wh-",
+      "title": "<ico-book></ico-book> QUESTIONS · do / does / can / Wh-",
       "intro": "Aprende a hacer y responder preguntas simples. Es la última lección antes del examen del mundo A1.",
       "cells": [
         {
-          "h": "❓ do / does",
+          "h": "<ico-question></ico-question> do / does",
           "body": "<code>Do</code> you like tea?<br><code>Does</code> she work here?<br>Yes, I <code>do</code>. / No, I <code>don't</code>."
         },
         {
-          "h": "💪 can",
+          "h": "<ico-dumbbell></ico-dumbbell> can",
           "body": "<code>Can</code> you swim?<br>Yes, I <code>can</code>.<br>No, I <code>can't</code>."
         },
         {
-          "h": "🔤 Question words",
+          "h": "<ico-spell></ico-spell> Question words",
           "body": "<code>What</code> · <code>Where</code> · <code>When</code><br><code>Who</code> · <code>How</code> · <code>Why</code>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='x'>You like coffee?</span><br><span class='ok'>Do you like coffee?</span><br><span class='x'>She do</span> → <span class='ok'>She does</span>"
         }
       ],
@@ -74,7 +74,7 @@
         "How?",
         "Why?"
       ],
-      "vocabBtn": "📒 Ver palabras de pregunta",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver palabras de pregunta",
       "vocab": [
         {
           "en": "What…?",
@@ -109,7 +109,7 @@
           "sp": "¿te gusta…?"
         }
       ],
-      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> 🃏, <b>elegir respuestas</b> 💬, <b>unir</b> 🔗, <b>escucha</b> 🎧 y <b>completar</b> 📝. ✓ CHECK donde lo veas."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>elegir respuestas</b> <ico-comments></ico-comments>, <b>unir</b> <ico-link></ico-link>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>completar</b> <ico-filepen></ico-filepen>. <ico-check></ico-check> CHECK donde lo veas."
     },
     {
       "type": "flashcards",
@@ -313,7 +313,7 @@
       "desc": "Ana le hace preguntas a Tom. Escucha las respuestas.",
       "src": "a1-l6-1.mp3",
       "dur": "0:27",
-      "speakers": "🗣 Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -444,7 +444,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ ANSWER ABOUT YOU",
+      "title": "<ico-pen></ico-pen> ANSWER ABOUT YOU",
       "intro": "Responde estas preguntas sobre ti (1 frase cada una):",
       "checklist": [
         "Where do you live? — <b>I live in…</b>",

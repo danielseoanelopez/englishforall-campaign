@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,15 +44,15 @@
     {
       "type": "grammar",
       "tag": "past simple",
-      "title": "📘 PAST SIMPLE · acciones terminadas",
+      "title": "<ico-book></ico-book> PAST SIMPLE · acciones terminadas",
       "intro": "Usamos el <b style='color:var(--gold)'>past simple</b> para acciones <b>terminadas</b> en el pasado (ayer, la semana pasada, en 2021). Repasa y luego practica con varios ejercicios.",
       "cells": [
         {
-          "h": "✓ Affirmative",
+          "h": "<ico-check></ico-check> Affirmative",
           "body": "Regular <code>+ed</code>: work → <code>worked</code><br>study → <code>studied</code><br>Irregular: go → <code>went</code>, have → <code>had</code>"
         },
         {
-          "h": "✗ Negative",
+          "h": "<ico-xmark></ico-xmark> Negative",
           "body": "<code>didn't</code> + verbo base<br>I <code>didn't work</code><br>she <code>didn't go</code> <span class='es'>(no \"didn't went\")</span>"
         },
         {
@@ -60,7 +60,7 @@
           "body": "<code>Did</code> you work?<br>What <code>did</code> you do?<br><span class='es'>Yes, I did. / No, I didn't.</span>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='ok'>She went home.</span><br><span class='x'>She goed home.</span><br><span class='ok'>They were late.</span> <span class='es'>(was/were = pasado de \"to be\")</span>"
         }
       ],
@@ -73,7 +73,7 @@
         "in 2021",
         "this morning"
       ],
-      "vocabBtn": "📒 Ver verbos irregulares",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver verbos irregulares",
       "vocab": [
         {
           "en": "Go → went",
@@ -108,7 +108,7 @@
           "sp": "irse → dejó"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar frases</b> 📝, <b>escucha</b> 🎧 y <b>ordenar palabras</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar frases</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>ordenar palabras</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
     },
     {
       "type": "flashcards",
@@ -162,7 +162,7 @@
     {
       "type": "story",
       "tag": "mirando al pasado",
-      "title": "★ STORIES FROM THE TEAM",
+      "title": "<ico-star></ico-star> STORIES FROM THE TEAM",
       "intro": "Marcos habla del <b>pasado</b>: su trabajo anterior y el primer gran proyecto del equipo. Primero practica las formas, después escucha las historias.",
       "cast": [
         {
@@ -262,7 +262,7 @@
       "desc": "Sofia entrevista a Marcos sobre su trabajo anterior. Fíjate en los verbos en pasado.",
       "src": "past-simple-1.mp3",
       "dur": "0:58",
-      "speakers": "🗣 Sofia + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -382,7 +382,7 @@
       "desc": "Sofia cuenta el primer gran lanzamiento del equipo. Escucha el orden: first, then, after that.",
       "src": "past-simple-2.mp3",
       "dur": "0:37",
-      "speakers": "🗣 Sofia",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia",
       "questions": [
         {
           "type": "mcq",
@@ -428,7 +428,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ MY LAST JOB / A PAST PROJECT",
+      "title": "<ico-pen></ico-pen> MY LAST JOB / A PAST PROJECT",
       "intro": "Cuenta (5–6 frases) sobre tu último trabajo o un proyecto, en past simple:",
       "checklist": [
         "Di dónde trabajaste y qué hacías (<b>I worked…, I made…</b>)",

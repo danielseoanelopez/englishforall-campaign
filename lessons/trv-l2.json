@@ -13,8 +13,8 @@
     {
       "type": "match",
       "id": "ex-review",
-      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
-      "title": "♻️ REPASO EXPRESS",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -41,7 +41,7 @@
     },
     {
       "type": "grammar",
-      "title": "🏨 ACCOMMODATION &amp; PROBLEMS",
+      "title": "<ico-hotel></ico-hotel> ACCOMMODATION &amp; PROBLEMS",
       "intro": "Para registrarte y resolver problemas con tacto. Practica en voz alta, ¡sin traductor!",
       "parts": [
         {
@@ -111,7 +111,7 @@
     },
     {
       "type": "grammar",
-      "title": "📘 PRESENT PERFECT · for/since · already/yet/just",
+      "title": "<ico-book></ico-book> PRESENT PERFECT · for/since · already/yet/just",
       "intro": "",
       "parts": [
         {
@@ -145,7 +145,7 @@
     },
     {
       "type": "story",
-      "title": "★ A COLD ROOM",
+      "title": "<ico-star></ico-star> A COLD ROOM",
       "intro": "Un huésped tiene un problema en el hotel. Primero <b>practicas</b> el present perfect, y luego <b>escuchas</b> 2 audios: una <b>queja en recepción</b> y un <b>mensaje</b>.",
       "cast": [
         {
@@ -162,7 +162,7 @@
     {
       "type": "gapFill",
       "id": "ex-1",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "FOR or SINCE?",
       "intro": "<b>for</b> + período (two days) · <b>since</b> + punto de inicio (Monday).",
       "items": [
@@ -220,7 +220,7 @@
     {
       "type": "gapFill",
       "id": "ex-2",
-      "icon": "✅",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
       "title": "PAST SIMPLE or PRESENT PERFECT?",
       "intro": "Tiempo terminado → pasado simple. Sigue ahora / reciente → present perfect.",
       "items": [
@@ -372,7 +372,7 @@
       "desc": "Un huésped reporta un problema. Fíjate en el <b>problema</b> y en <b>desde cuándo</b>.",
       "src": "trv-l2-1.mp3",
       "dur": "0:34",
-      "speakers": "🗣 Guest + Reception",
+      "speakers": "<ico-commentdots></ico-commentdots> Guest + Reception",
       "questions": [
         {
           "type": "mcq",
@@ -443,7 +443,7 @@
       "desc": "Un mensaje a recepción con dos problemas. Fíjate en <b>desde cuándo</b> y <b>por qué</b>.",
       "src": "trv-l2-2.mp3",
       "dur": "0:21",
-      "speakers": "🗣 monólogo",
+      "speakers": "<ico-commentdots></ico-commentdots> monólogo",
       "questions": [
         {
           "type": "mcq",
@@ -478,14 +478,14 @@
       ],
       "transcript": [
         {
-          "spk": "🗣",
+          "spk": "<ico-commentdots></ico-commentdots>",
           "html": "Hello, this is room 305. I've been here <span class=\"tg\">since Monday</span>, and I have two problems. First, the <span class=\"tg\">Wi-Fi hasn't worked since last night</span>. Second, the <span class=\"tg\">room next door is very noisy</span>, and I haven't slept well for two days. Could you help me, please?"
         }
       ]
     },
     {
       "type": "writing",
-      "title": "✍️ A POLITE COMPLAINT",
+      "title": "<ico-pen></ico-pen> A POLITE COMPLAINT",
       "intro": "Escribe un <b>mensaje corto y educado</b> a un hotel o anfitrión sobre un problema (5–6 oraciones), usando el present perfect con <b>for/since</b> y <b>already/yet</b>.",
       "checklist": [],
       "placeholder": "Hello, I've been in room ... since ... There's a problem with...",

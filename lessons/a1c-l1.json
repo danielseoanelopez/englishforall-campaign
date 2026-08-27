@@ -13,12 +13,12 @@
     {
       "type": "match",
       "id": "ex-review",
-      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· vocabulario de hoy</span>",
-      "title": "♻️ REPASO EXPRESS",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· vocabulario de hoy</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Primero, fija el vocabulario clave de hoy. Une cada palabra con su significado.",
       "pairs": [
         {
-          "l": "yellow 🟡 · black ⚫ · white ⚪",
+          "l": "yellow <span class=sw style=--c:#ffd93d></span> · black <span class=sw style=--c:#1a1a1a></span> · white <span class=sw style=--c:#f0f0f0></span>",
           "r": "amarillo · negro · blanco"
         },
         {
@@ -30,7 +30,7 @@
           "r": "feliz / triste"
         },
         {
-          "l": "orange 🟠 · pink · gray · brown",
+          "l": "orange <span class=sw style=--c:#ff9f43></span> · pink · gray · brown",
           "r": "naranja · rosa · gris · marrón"
         },
         {
@@ -41,22 +41,22 @@
     },
     {
       "type": "grammar",
-      "title": "🎨 COLORS &amp; ADJECTIVES",
+      "title": "<ico-palette></ico-palette> COLORS &amp; ADJECTIVES",
       "intro": "Para describir cosas y personas usamos <b>colores</b> y <b>adjetivos</b>. Practica en voz alta, ¡sin traductor!",
       "parts": [
         {
           "type": "gloss",
           "items": [
             {
-              "en": "red 🔴 · blue 🔵 · green 🟢",
+              "en": "red <span class=sw style=--c:#ff4d4d></span> · blue <span class=sw style=--c:#4d8dff></span> · green <span class=sw style=--c:#3dffa0></span>",
               "sp": "rojo · azul · verde"
             },
             {
-              "en": "yellow 🟡 · black ⚫ · white ⚪",
+              "en": "yellow <span class=sw style=--c:#ffd93d></span> · black <span class=sw style=--c:#1a1a1a></span> · white <span class=sw style=--c:#f0f0f0></span>",
               "sp": "amarillo · negro · blanco"
             },
             {
-              "en": "orange 🟠 · pink · gray · brown",
+              "en": "orange <span class=sw style=--c:#ff9f43></span> · pink · gray · brown",
               "sp": "naranja · rosa · gris · marrón"
             },
             {
@@ -103,7 +103,7 @@
     },
     {
       "type": "grammar",
-      "title": "📘 TO BE + ADJECTIVE · this / that",
+      "title": "<ico-book></ico-book> TO BE + ADJECTIVE · this / that",
       "intro": "El adjetivo va <b>antes del sustantivo</b> (a red car) o <b>después de to be</b> (The car is red). ¡El adjetivo <b>no cambia</b>!",
       "parts": [
         {
@@ -118,7 +118,7 @@
               "body": "The car <code>is</code> red · The books <code>are</code> old · She <code>is</code> tall"
             },
             {
-              "h": "⚠ Mal",
+              "h": "<ico-warn></ico-warn> Mal",
               "body": "<span class=\"x\">a car red</span> · <span class=\"x\">two bigs cars</span> · <span class=\"x\">The car red is</span>"
             },
             {
@@ -137,7 +137,7 @@
     },
     {
       "type": "story",
-      "title": "★ WHAT'S THIS?",
+      "title": "<ico-star></ico-star> WHAT'S THIS?",
       "intro": "Ana y Leo hablan de un teléfono nuevo. Primero <b>practicas</b>, y luego los <b>escuchas</b> en 2 audios: un <b>diálogo</b> y una <b>descripción</b>.",
       "cast": [
         {
@@ -154,7 +154,7 @@
     {
       "type": "gapFill",
       "id": "ex-1",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "CHOOSE THE CORRECT SENTENCE",
       "intro": "Solo <b>una</b> es correcta. Piensa en el orden (adjetivo + sustantivo) y en a/an.",
       "items": [
@@ -212,7 +212,7 @@
     {
       "type": "gapFill",
       "id": "ex-2",
-      "icon": "✅",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
       "title": "this / that / these / those",
       "intro": "Elige la palabra correcta según <b>cerca/lejos</b> y <b>uno/varios</b>.",
       "items": [
@@ -354,7 +354,7 @@
       "desc": "Ana y Leo hablan del teléfono. Fíjate en el <b>color</b> y los <b>adjetivos</b>.",
       "src": "a1c-l1-1.mp3",
       "dur": "0:25",
-      "speakers": "🗣 Ana + Leo",
+      "speakers": "<ico-commentdots></ico-commentdots> Ana + Leo",
       "questions": [
         {
           "type": "mcq",
@@ -425,7 +425,7 @@
       "desc": "Alguien describe su habitación. Fíjate en los <b>colores</b> y las <b>cosas</b>.",
       "src": "a1c-l1-2.mp3",
       "dur": "0:19",
-      "speakers": "🗣 monólogo",
+      "speakers": "<ico-commentdots></ico-commentdots> monólogo",
       "questions": [
         {
           "type": "mcq",
@@ -460,14 +460,14 @@
       ],
       "transcript": [
         {
-          "spk": "🗣",
+          "spk": "<ico-commentdots></ico-commentdots>",
           "html": "This is my room. It's <span class=\"tg\">small</span>, but it's nice. The walls are <span class=\"tg\">white</span>, and my desk is <span class=\"tg\">black</span>. I have a big blue chair and a small brown table. My favorite thing is a <span class=\"tg\">red guitar</span>. It's old, but I love it."
         }
       ]
     },
     {
       "type": "writing",
-      "title": "✍️ DESCRIBE YOUR THINGS",
+      "title": "<ico-pen></ico-pen> DESCRIBE YOUR THINGS",
       "intro": "Escribe <b>5 oraciones</b> describiendo tus cosas y una persona. Usa un <b>color</b> o un <b>adjetivo</b> en cada una.",
       "checklist": [],
       "placeholder": "My bag is black and big. My friend Ana is tall and funny...",

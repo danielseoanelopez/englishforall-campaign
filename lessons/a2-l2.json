@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,15 +44,15 @@
     {
       "type": "grammar",
       "tag": "frases de trabajo",
-      "title": "📒 FRASES CLAVE · teléfono y email",
+      "title": "<ico-bookmark></ico-bookmark> FRASES CLAVE · teléfono y email",
       "intro": "Frases útiles para el trabajo remoto. Apréndelas, luego practica con los ejercicios y los audios.",
       "cells": [
         {
-          "h": "📞 Empezar",
+          "h": "<ico-phone></ico-phone> Empezar",
           "body": "<code>Do you have a minute?</code><br><code>Are you available?</code><br>Let me <code>check</code> that for you."
         },
         {
-          "h": "✉ Pedir / confirmar",
+          "h": "<ico-envelope></ico-envelope> Pedir / confirmar",
           "body": "<code>Could you confirm</code> the details?<br>Can you <code>send</code> me…?<br>It's <code>attached</code> to the email."
         },
         {
@@ -60,11 +60,11 @@
           "body": "I'm <code>waiting for</code> an update.<br>There's a task <code>pending</code>.<br>I'll <code>get back to you</code> soon."
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='ok'>price estimate</span> = cotización<br><span class='ok'>request</span> = solicitud<br><span class='es'>'attach' = adjuntar (un archivo)</span>"
         }
       ],
-      "vocabBtn": "📒 Ver vocabulario nuevo",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario nuevo",
       "vocab": [
         {
           "en": "Team lead",
@@ -107,7 +107,7 @@
           "sp": "adjunto"
         }
       ],
-      "note": "<b>Cómo funciona:</b> primero <b>une</b> 🔗 el vocabulario, después <b>escucha</b> 🎧 y <b>completa</b> 📝 los emails. ✓ CHECK en cada uno."
+      "note": "<b>Cómo funciona:</b> primero <b>une</b> <ico-link></ico-link> el vocabulario, después <b>escucha</b> <ico-headphones></ico-headphones> y <b>completa</b> <ico-filepen></ico-filepen> los emails. <ico-check></ico-check> CHECK en cada uno."
     },
     {
       "type": "flashcards",
@@ -161,7 +161,7 @@
     {
       "type": "story",
       "tag": "el proyecto GreenMarket",
-      "title": "★ THE STORY · GREENMARKET",
+      "title": "<ico-star></ico-star> THE STORY · GREENMARKET",
       "intro": "Sigues una historia de trabajo remoto: un nuevo cliente (GreenMarket) pide una cotización para su web.",
       "cast": [
         {
@@ -217,7 +217,7 @@
       "desc": "Sofia llama a Marcos. ¿Cuál es el problema con el cliente?",
       "src": "audio1_video_call.mp3",
       "dur": "1:18",
-      "speakers": "🗣 Sofia + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -353,7 +353,7 @@
       "desc": "Marcos llama a David para confirmar los detalles del proyecto.",
       "src": "audio3_client_call.mp3",
       "dur": "1:15",
-      "speakers": "🗣 Marcos + David",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos + David",
       "questions": [
         {
           "type": "mcq",
@@ -435,7 +435,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ A SHORT WORK EMAIL",
+      "title": "<ico-pen></ico-pen> A SHORT WORK EMAIL",
       "intro": "Escribe un email corto (4–6 frases) a un cliente o compañero:",
       "checklist": [
         "Saluda y di por qué escribes",

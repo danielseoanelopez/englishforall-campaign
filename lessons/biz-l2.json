@@ -13,8 +13,8 @@
     {
       "type": "match",
       "id": "ex-review",
-      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
-      "title": "♻️ REPASO EXPRESS",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -41,8 +41,8 @@
     },
     {
       "type": "grammar",
-      "title": "💬 SAY IT WITH TACT",
-      "intro": "En una reunión, la clave es ser <b>claro pero educado</b>. Aquí tienes las 4 movidas básicas (B1) y sus versiones ⭐ B2.",
+      "title": "<ico-comments></ico-comments> SAY IT WITH TACT",
+      "intro": "En una reunión, la clave es ser <b>claro pero educado</b>. Aquí tienes las 4 movidas básicas (B1) y sus versiones <ico-star></ico-star> B2.",
       "parts": [
         {
           "type": "cells",
@@ -75,19 +75,19 @@
     },
     {
       "type": "grammar",
-      "title": "📘 MODAL VERBS · sonar profesional",
-      "intro": "Los modales hacen que pedidos y opiniones suenen <b>educados y precisos</b>. Core (B1) en <b>negrita</b>; ⭐ = B2.",
+      "title": "<ico-book></ico-book> MODAL VERBS · sonar profesional",
+      "intro": "Los modales hacen que pedidos y opiniones suenen <b>educados y precisos</b>. Core (B1) en <b>negrita</b>; <ico-star></ico-star> = B2.",
       "parts": [
         {
           "type": "cells",
           "cells": [
             {
               "h": "Recomendar",
-              "body": "<b>should</b> · ⭐ ought to · ⭐ had better<br><span class=\"es\">\"We <b>should</b> prioritize feedback.\"</span>"
+              "body": "<b>should</b> · <ico-star></ico-star> ought to · <ico-star></ico-star> had better<br><span class=\"es\">\"We <b>should</b> prioritize feedback.\"</span>"
             },
             {
               "h": "Posibilidad",
-              "body": "<b>could</b> · ⭐ might · ⭐ may<br><span class=\"es\">\"We <b>could</b> explore new suppliers.\"</span>"
+              "body": "<b>could</b> · <ico-star></ico-star> might · <ico-star></ico-star> may<br><span class=\"es\">\"We <b>could</b> explore new suppliers.\"</span>"
             },
             {
               "h": "Obligación",
@@ -95,7 +95,7 @@
             },
             {
               "h": "Prohibición",
-              "body": "<b>must not · can't</b> · ⭐ may not<br><span class=\"es\">\"Staff <b>must not</b> share this.\"</span>"
+              "body": "<b>must not · can't</b> · <ico-star></ico-star> may not<br><span class=\"es\">\"Staff <b>must not</b> share this.\"</span>"
             }
           ]
         },
@@ -106,7 +106,7 @@
         },
         {
           "type": "vocab",
-          "btn": "📒 Ver vocabulario clave",
+          "btn": "<ico-bookmark></ico-bookmark> Ver vocabulario clave",
           "items": [
             {
               "en": "to make a suggestion",
@@ -175,7 +175,7 @@
     },
     {
       "type": "story",
-      "title": "★ SALES ARE DOWN",
+      "title": "<ico-star></ico-star> SALES ARE DOWN",
       "intro": "El equipo se reúne porque las ventas bajaron. Practica opinar/acordar/discrepar/sugerir, y luego <b>escucha</b> la reunión y su <b>resumen</b>.",
       "cast": [
         {
@@ -192,7 +192,7 @@
     {
       "type": "gapFill",
       "id": "ex-1",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "WHAT IS IT?",
       "intro": "¿Es una <b>opinión</b>, un <b>acuerdo</b>, un <b>desacuerdo</b> o una <b>sugerencia</b>?",
       "items": [
@@ -261,7 +261,7 @@
     {
       "type": "gapFill",
       "id": "ex-2",
-      "icon": "✅",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
       "title": "CHOOSE THE MODAL",
       "intro": "Elige el modal correcto para que suene profesional.",
       "items": [
@@ -414,7 +414,7 @@
       "desc": "El equipo discute qué hacer con las ventas. Fíjate en las <b>opiniones</b> y <b>sugerencias</b>.",
       "src": "biz-l2-1.mp3",
       "dur": "0:49",
-      "speakers": "🗣 Facilitator + Maria + Diego",
+      "speakers": "<ico-commentdots></ico-commentdots> Facilitator + Maria + Diego",
       "questions": [
         {
           "type": "mcq",
@@ -497,7 +497,7 @@
       "desc": "Un resumen de las decisiones de la reunión. Fíjate en los <b>acuerdos</b> y los <b>próximos pasos</b>.",
       "src": "biz-l2-2.mp3",
       "dur": "0:31",
-      "speakers": "🗣 Jenny",
+      "speakers": "<ico-commentdots></ico-commentdots> Jenny",
       "questions": [
         {
           "type": "mcq",
@@ -539,7 +539,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ MEETING SUMMARY EMAIL",
+      "title": "<ico-pen></ico-pen> MEETING SUMMARY EMAIL",
       "intro": "Escribe <b>un email corto</b> (4–5 oraciones) resumiendo las decisiones de una reunión. Usa:",
       "checklist": [
         "Al menos <b>2 frases de opinión</b> (In my opinion… / I think…)",

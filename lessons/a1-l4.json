@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,23 +44,23 @@
     {
       "type": "grammar",
       "tag": "to be / have",
-      "title": "📘 HAVE · tener · my/your/his/her",
+      "title": "<ico-book></ico-book> HAVE · tener · my/your/his/her",
       "intro": "Usamos <b style='color:var(--gold)'>have</b> para posesiones y familia. Estudia con las tarjetas y practica.",
       "cells": [
         {
-          "h": "✓ have / has",
+          "h": "<ico-check></ico-check> have / has",
           "body": "I / you / we / they <code>have</code><br>he / she / it <code>has</code><br>I have a dog."
         },
         {
-          "h": "✗ Negative · ? Question",
+          "h": "<ico-xmark></ico-xmark> Negative · ? Question",
           "body": "I <code>don't have</code> a car.<br>She <code>doesn't have</code> a pet.<br><code>Do you have</code> a pet?"
         },
         {
-          "h": "👪 Possessives",
+          "h": "<ico-people></ico-people> Possessives",
           "body": "<code>my</code> · <code>your</code> · <code>his</code> · <code>her</code><br>This is <code>my</code> sister.<br><code>Her</code> name is Lucy."
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='x'>She have</span> → <span class='ok'>She has</span><br><span class='x'>his sister name</span> → <span class='ok'>his sister's name</span>"
         }
       ],
@@ -73,7 +73,7 @@
         "son",
         "daughter"
       ],
-      "vocabBtn": "📒 Ver familia y descripción",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver familia y descripción",
       "vocab": [
         {
           "en": "Mother / Father",
@@ -108,7 +108,7 @@
           "sp": "años"
         }
       ],
-      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> 🃏, <b>completar</b> 📝, <b>escucha</b> 🎧, <b>ordenar</b> 🧩 y <b>memoria</b> 🧠. ✓ CHECK donde lo veas."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>completar</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>ordenar</b> <ico-puzzle></ico-puzzle> y <b>memoria</b> <ico-brain></ico-brain>. <ico-check></ico-check> CHECK donde lo veas."
     },
     {
       "type": "flashcards",
@@ -246,7 +246,7 @@
       "desc": "Ana le pregunta a Tom por su familia. Escucha have y has.",
       "src": "a1-l4-1.mp3",
       "dur": "0:30",
-      "speakers": "🗣 Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -356,19 +356,19 @@
       "intro": "Encuentra cada imagen con su palabra. Toca dos cartas.",
       "pairs": [
         {
-          "a": "👩",
+          "a": "<ico-user></ico-user>",
           "b": "mother"
         },
         {
-          "a": "👨",
+          "a": "<ico-user></ico-user>",
           "b": "father"
         },
         {
-          "a": "👦",
+          "a": "<ico-child></ico-child>",
           "b": "brother"
         },
         {
-          "a": "👧",
+          "a": "<ico-child></ico-child>",
           "b": "sister"
         }
       ]
@@ -380,7 +380,7 @@
       "desc": "Marcos describe su cuarto y sus cosas. Escucha have / don't have.",
       "src": "a1-l4-2.mp3",
       "dur": "0:20",
-      "speakers": "🗣 Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -427,7 +427,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ MY FAMILY",
+      "title": "<ico-pen></ico-pen> MY FAMILY",
       "intro": "Escribe sobre tu familia en 4–5 frases:",
       "checklist": [
         "Usa <b>I have</b> / <b>I don't have</b>",

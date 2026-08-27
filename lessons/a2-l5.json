@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,7 +44,7 @@
     {
       "type": "grammar",
       "tag": "comparatives",
-      "title": "📘 COMPARATIVES · comparar A con B",
+      "title": "<ico-book></ico-book> COMPARATIVES · comparar A con B",
       "intro": "Para comparar dos cosas usamos el <b style='color:var(--gold)'>comparativo</b> + <code>than</code>. Repasa y practica.",
       "cells": [
         {
@@ -56,11 +56,11 @@
           "body": "<code>more expensive</code><br><code>more comfortable</code><br><code>more reliable</code>"
         },
         {
-          "h": "★ Irregulares",
+          "h": "<ico-star></ico-star> Irregulares",
           "body": "good → <code>better</code><br>bad → <code>worse</code><br>far → <code>further</code>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "siempre <code>than</code>: A is faster <b>than</b> B<br><span class='x'>more bigger</span> · <span class='x'>more better</span><br><span class='ok'>bigger</span> · <span class='ok'>better</span>"
         }
       ],
@@ -74,7 +74,7 @@
         "comfortable",
         "modern"
       ],
-      "vocabBtn": "📒 Ver vocabulario para describir",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario para describir",
       "vocab": [
         {
           "en": "Cheap / Expensive",
@@ -109,7 +109,7 @@
           "sp": "vale la pena"
         }
       ],
-      "note": "<b>Cómo funciona:</b> une adjetivos 🔗, completa comparativos 📝 y escucha al equipo comparar 🎧. ✓ CHECK en cada uno."
+      "note": "<b>Cómo funciona:</b> une adjetivos <ico-link></ico-link>, completa comparativos <ico-filepen></ico-filepen> y escucha al equipo comparar <ico-headphones></ico-headphones>. <ico-check></ico-check> CHECK en cada uno."
     },
     {
       "type": "flashcards",
@@ -163,7 +163,7 @@
     {
       "type": "story",
       "tag": "comparar para decidir",
-      "title": "★ MAKING DECISIONS",
+      "title": "<ico-star></ico-star> MAKING DECISIONS",
       "intro": "El equipo decide entre opciones: qué laptop comprar y a qué candidato contratar. Para decidir, comparan.",
       "cast": [
         {
@@ -286,7 +286,7 @@
       "desc": "Marcos necesita una laptop y Sofia lo ayuda a comparar dos modelos.",
       "src": "comparatives-1.mp3",
       "dur": "0:46",
-      "speakers": "🗣 Sofia + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -369,7 +369,7 @@
       "desc": "Sofia y Marcos comparan a dos candidatos para un puesto.",
       "src": "comparatives-3.mp3",
       "dur": "0:52",
-      "speakers": "🗣 Sofia + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -451,7 +451,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ COMPARE TWO THINGS",
+      "title": "<ico-pen></ico-pen> COMPARE TWO THINGS",
       "intro": "Compara dos cosas (dos teléfonos, dos ciudades, dos trabajos…) en 5–6 frases:",
       "checklist": [
         "Usa <b>2 comparativos cortos</b> (cheaper, faster, bigger…) + <b>than</b>",

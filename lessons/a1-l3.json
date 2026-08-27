@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,25 +44,25 @@
     {
       "type": "grammar",
       "tag": "números, días y la hora",
-      "title": "📘 NUMBERS · DAYS · TIME",
+      "title": "<ico-book></ico-book> NUMBERS · DAYS · TIME",
       "intro": "Aprende los números, los días y cómo decir la hora. Estudia con las tarjetas y practica.",
       "cells": [
         {
-          "h": "🔢 Numbers",
+          "h": "<ico-listol></ico-listol> Numbers",
           "body": "11 eleven · 12 twelve <i>(¡irregulares!)</i><br>13 thir<code>teen</code> ≠ 30 thir<code>ty</code><br>14 four<code>teen</code> ≠ 40 for<code>ty</code><br>15 fif<code>teen</code> ≠ 50 fif<code>ty</code><br><i>El acento manda: thirTEEN ↗ / THIRty ↘</i>",
           "say": "eleven; twelve; thirteen; thirty; fourteen; forty; fifteen; fifty"
         },
         {
-          "h": "🕐 Time",
+          "h": "<ico-clock></ico-clock> Time",
           "body": "3:00 = <code>three o'clock</code><br>3:30 = <code>half past three</code><br>3:15 = <code>quarter past three</code>"
         },
         {
-          "h": "📅 at / on / in",
+          "h": "<ico-calendar></ico-calendar> at / on / in",
           "body": "<i>Las preposiciones de tiempo son palabras pequeñas que van antes de la hora, el día o el mes:</i><br><code>at</code> + hora: at six <i>(a las seis)</i><br><code>on</code> + día: on Monday <i>(el lunes)</i><br><code>in</code> + mes: in June <i>(en junio)</i>",
           "say": "at six; on Monday; in June"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='x'>in Monday</span> → <span class='ok'>on Monday</span><br><span class='x'>on six o'clock</span> → <span class='ok'>at six</span>"
         }
       ],
@@ -76,7 +76,7 @@
         "Saturday",
         "Sunday"
       ],
-      "vocabBtn": "📒 Ver números y tiempo",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver números y tiempo",
       "vocab": [
         {
           "en": "O'clock",
@@ -111,7 +111,7 @@
           "sp": "número de teléfono"
         }
       ],
-      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> 🃏, <b>unir horas</b> 🔗, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>memoria</b> 🧠. ✓ CHECK donde lo veas."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>unir horas</b> <ico-link></ico-link>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>memoria</b> <ico-brain></ico-brain>. <ico-check></ico-check> CHECK donde lo veas."
     },
     {
       "type": "flashcards",
@@ -194,7 +194,7 @@
       "desc": "Ana y Tom hablan de un número y de horarios de clase.",
       "src": "a1-l3-1.mp3",
       "dur": "0:28",
-      "speakers": "🗣 Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -349,7 +349,7 @@
       "desc": "Marcos cuenta los horarios de su día. Escucha las horas.",
       "src": "a1-l3-2.mp3",
       "dur": "0:21",
-      "speakers": "🗣 Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -396,7 +396,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ MY SCHEDULE",
+      "title": "<ico-pen></ico-pen> MY SCHEDULE",
       "intro": "Escribe tu horario en 4–5 frases:",
       "checklist": [
         "Usa <b>at</b> + la hora (at seven, at half past eight)",

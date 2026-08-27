@@ -16,23 +16,23 @@
     {
       "type": "grammar",
       "tag": "saludos y presentaciones",
-      "title": "📘 SAY HELLO · saludar y presentarte",
+      "title": "<ico-book></ico-book> SAY HELLO · saludar y presentarte",
       "intro": "En esta primera lección aprendes a <b style='color:var(--gold)'>saludar</b>, <b style='color:var(--gold)'>presentarte</b> y preguntar el nombre. Repasa y luego practica con varios ejercicios.",
       "cells": [
         {
-          "h": "👋 Greetings",
+          "h": "<ico-hand></ico-hand> Greetings",
           "body": "<code>Hello</code> / <code>Hi</code><br>Good <code>morning</code> / <code>afternoon</code> / <code>evening</code><br><code>Goodbye</code> / <code>Bye</code>"
         },
         {
-          "h": "🙋 Introduce yourself",
+          "h": "<ico-hand></ico-hand> Introduce yourself",
           "body": "<code>I'm</code> Ana. = <code>My name is</code> Ana.<br><code>Nice to meet you.</code><br>This is my friend, Tom."
         },
         {
-          "h": "❓ Questions",
+          "h": "<ico-question></ico-question> Questions",
           "body": "<code>What's your name?</code><br><code>Where are you from?</code><br><code>How are you?</code> — I'm fine, thanks."
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<code>I'm</code> = I am<br><span class='ok'>Nice to meet you</span> <span class='es'>(la primera vez)</span><br>Nombres y <span class='ok'>I</span> siempre con mayúscula"
         }
       ],
@@ -43,7 +43,7 @@
         "Good evening",
         "Good night"
       ],
-      "vocabBtn": "📒 Ver vocabulario de saludos",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de saludos",
       "vocab": [
         {
           "en": "Hello / Hi",
@@ -94,12 +94,12 @@
           "sp": "¡nos vemos (pronto)!"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>escucha</b> 🎧, <b>unir pares</b> 🔗, <b>elegir respuestas</b> 💬 y <b>ordenar palabras</b> 🧩. Haz el ✓ CHECK en cada uno. ¡Sin traductor!"
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>escucha</b> <ico-headphones></ico-headphones>, <b>unir pares</b> <ico-link></ico-link>, <b>elegir respuestas</b> <ico-comments></ico-comments> y <b>ordenar palabras</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada uno. ¡Sin traductor!"
     },
     {
       "type": "story",
       "tag": "conociendo gente nueva",
-      "title": "★ MEETING NEW PEOPLE",
+      "title": "<ico-star></ico-star> MEETING NEW PEOPLE",
       "intro": "Hoy varias personas se conocen por primera vez: en la calle, en una escuela y entre amigos. ¡Vamos a practicar!",
       "cast": [
         {
@@ -176,7 +176,7 @@
       "desc": "Ana y Tom se conocen por primera vez. Escucha los nombres y de dónde son.",
       "src": "a1-l1-1.mp3",
       "dur": "0:38",
-      "speakers": "🗣 Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -337,7 +337,7 @@
       "desc": "Leo llega a una escuela de inglés. Escucha el saludo y dónde está su clase.",
       "src": "a1-l1-2.mp3",
       "dur": "0:34",
-      "speakers": "🗣 Emma + Leo",
+      "speakers": "<ico-commentdots></ico-commentdots> Emma + Leo",
       "questions": [
         {
           "type": "mcq",
@@ -450,7 +450,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ INTRODUCE YOURSELF",
+      "title": "<ico-pen></ico-pen> INTRODUCE YOURSELF",
       "intro": "Preséntate en 4–5 frases simples:",
       "checklist": [
         "Saluda: <b>Hello! / Hi!</b>",

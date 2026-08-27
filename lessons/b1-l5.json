@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,27 +44,27 @@
     {
       "type": "grammar",
       "tag": "deducción y tacto",
-      "title": "📘 MUST / MIGHT / CAN'T + SUAVIZAR",
+      "title": "<ico-book></ico-book> MUST / MIGHT / CAN'T + SUAVIZAR",
       "intro": "Dos herramientas de B1: los <b style='color:var(--gold)'>modales de deducción</b> (must / might / can't) para decir qué tan seguro estás, y las <b style='color:var(--gold)'>frases suavizantes</b> para dar opiniones sin sonar agresivo.",
       "cells": [
         {
-          "h": "💯 must be",
+          "h": "<ico-circlecheck></ico-circlecheck> must be",
           "body": "Casi seguro que SÍ:<br><span class='ok'>The server <b>must be</b> overloaded — look at these numbers.</span>"
         },
         {
-          "h": "🤔 might / could be",
+          "h": "<ico-circleq></ico-circleq> might / could be",
           "body": "Posible, no seguro:<br><span class='ok'>It <b>might be</b> a caching problem.</span>"
         },
         {
-          "h": "🚫 can't be",
+          "h": "<ico-ban></ico-ban> can't be",
           "body": "Casi seguro que NO:<br><span class='ok'>It <b>can't be</b> the design — we tested it twice.</span>"
         },
         {
-          "h": "🪶 Suavizar tu opinión",
+          "h": "<ico-feather></ico-feather> Suavizar tu opinión",
           "body": "<code>I'd suggest…</code><br><code>It might be worth + -ing</code><br><code>Have you considered…?</code>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='x'>You must change it.</span> <span class='es'>(orden)</span><br><span class='ok'>It might be worth changing it.</span> <span class='es'>(sugerencia)</span>"
         }
       ],
@@ -77,7 +77,7 @@
         "probably is",
         "must be 100%"
       ],
-      "vocabBtn": "📒 Ver vocabulario del debate",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario del debate",
       "vocab": [
         {
           "en": "I take your point, but…",
@@ -128,12 +128,12 @@
           "sp": "un costo-beneficio"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> 🃏, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>ordenar</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> <ico-clone></ico-clone>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
     },
     {
       "type": "story",
       "tag": "el desacuerdo",
-      "title": "★ THE DESIGN DEBATE",
+      "title": "<ico-star></ico-star> THE DESIGN DEBATE",
       "intro": "Las ventas de GreenMarket bajaron y Priya cree que el problema es el nuevo diseño de Marcos. Él no está de acuerdo — y tiene datos. ¿Puede defender su trabajo <b style='color:var(--gold)'>sin quemar la relación</b>?",
       "cast": [
         {
@@ -254,7 +254,7 @@
       "desc": "Priya culpa al diseño por la caída de ventas. Marcos discrepa — con datos y con tacto. ¿Quién tiene razón?",
       "src": "b1-l5-1.mp3",
       "dur": "1:27",
-      "speakers": "🗣 Priya + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Priya + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -458,7 +458,7 @@
       "desc": "Viernes siguiente: Priya le deja un mensaje a Marcos con el resultado del test. ¿Quién tenía razón?",
       "src": "b1-l5-2.mp3",
       "dur": "0:45",
-      "speakers": "🗣 Priya",
+      "speakers": "<ico-commentdots></ico-commentdots> Priya",
       "questions": [
         {
           "type": "mcq",
@@ -504,7 +504,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ DISAGREE, BUT NICELY",
+      "title": "<ico-pen></ico-pen> DISAGREE, BUT NICELY",
       "intro": "Tu jefe/a propone algo que te parece un error (elige la situación). Escribe tu respuesta (5–7 frases):",
       "checklist": [
         "Reconoce su punto primero (<b>I take your point…</b>)",

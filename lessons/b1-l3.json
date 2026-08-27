@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,27 +44,27 @@
     {
       "type": "grammar",
       "tag": "past narration",
-      "title": "📘 PAST CONTINUOUS vs PAST SIMPLE",
+      "title": "<ico-book></ico-book> PAST CONTINUOUS vs PAST SIMPLE",
       "intro": "Para contar historias usamos los dos: el <b style='color:var(--gold)'>past continuous</b> (was/were + -ing) pinta la escena de fondo, y el <b style='color:var(--gold)'>past simple</b> cuenta las acciones que pasaron. Repasa y luego practica.",
       "cells": [
         {
-          "h": "✓ Form",
+          "h": "<ico-check></ico-check> Form",
           "body": "I / he / she <code>was working</code><br>you / we / they <code>were working</code><br><span class='es'>was/were + verbo-ing</span>"
         },
         {
-          "h": "🎬 Escena vs acción",
+          "h": "<ico-clapper></ico-clapper> Escena vs acción",
           "body": "<span class='ok'>I <b>was watching</b> a film</span> <span class='es'>(fondo, en progreso)</span><br><span class='ok'>when my phone <b>rang</b>.</span> <span class='es'>(acción corta)</span>"
         },
         {
-          "h": "🔗 while / when",
+          "h": "<ico-link></ico-link> while / when",
           "body": "<code>While</code> + continuo: <i>While I was checking…</i><br><code>When</code> + simple: <i>When the server crashed…</i>"
         },
         {
-          "h": "⏱ as soon as",
+          "h": "<ico-stopwatch></ico-stopwatch> as soon as",
           "body": "<code>As soon as</code> = en cuanto:<br><i>As soon as we fixed it, the site came back.</i>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "Evento terminado = past simple:<br><span class='ok'>The server crashed at eleven.</span><br><span class='x'>The server was crashing at eleven.</span>"
         }
       ],
@@ -77,7 +77,7 @@
         "After that…",
         "In the end…"
       ],
-      "vocabBtn": "📒 Ver vocabulario de la crisis",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de la crisis",
       "vocab": [
         {
           "en": "the site went down",
@@ -128,7 +128,7 @@
           "sp": "una caída del servidor"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>ordenar</b> 🧩, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>memory</b> 🧠. Haz el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>ordenar</b> <ico-puzzle></ico-puzzle>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>memory</b> <ico-brain></ico-brain>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
     },
     {
       "type": "flashcards",
@@ -182,8 +182,8 @@
     {
       "type": "story",
       "tag": "la noche del lanzamiento",
-      "title": "★ THE NIGHT EVERYTHING CRASHED",
-      "intro": "El viernes lanzaron el sitio de GreenMarket… y a las once de la noche todo se cayó. El lunes, Priya quiere saber qué pasó. Marcos cuenta su versión de la historia — y después Sofia cuenta la suya. <b style='color:var(--gold)'>¿Dicen lo mismo?</b> 👀",
+      "title": "<ico-star></ico-star> THE NIGHT EVERYTHING CRASHED",
+      "intro": "El viernes lanzaron el sitio de GreenMarket… y a las once de la noche todo se cayó. El lunes, Priya quiere saber qué pasó. Marcos cuenta su versión de la historia — y después Sofia cuenta la suya. <b style='color:var(--gold)'>¿Dicen lo mismo?</b> <ico-eye></ico-eye>",
       "cast": [
         {
           "en": "Marcos",
@@ -305,7 +305,7 @@
       "desc": "Priya le pregunta a Marcos qué pasó la noche del lanzamiento. Escucha su versión.",
       "src": "b1-l3-1.mp3",
       "dur": "0:57",
-      "speakers": "🗣 Priya + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Priya + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -483,10 +483,10 @@
       "type": "listening",
       "id": "ex-l2",
       "title": "AUDIO 2 · SOFIA'S VERSION",
-      "desc": "Ahora Sofia cuenta SU versión de esa noche… y no coincide del todo con la de Marcos. 👀 ¿Qué cambia?",
+      "desc": "Ahora Sofia cuenta SU versión de esa noche… y no coincide del todo con la de Marcos. <ico-eye></ico-eye> ¿Qué cambia?",
       "src": "b1-l3-2.mp3",
       "dur": "0:41",
-      "speakers": "🗣 Sofia",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia",
       "questions": [
         {
           "type": "mcq",
@@ -532,7 +532,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ MY 'EVERYTHING WENT WRONG' STORY",
+      "title": "<ico-pen></ico-pen> MY 'EVERYTHING WENT WRONG' STORY",
       "intro": "Cuenta una historia real (o inventada) de un día en que algo salió mal — en el trabajo, un viaje, un examen… (6–8 frases):",
       "checklist": [
         "Empieza con la escena de fondo: <b>I was …ing</b> (I was working late / I was traveling…)",

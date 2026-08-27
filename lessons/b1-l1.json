@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,15 +44,15 @@
     {
       "type": "grammar",
       "tag": "present perfect",
-      "title": "📘 PRESENT PERFECT vs PAST SIMPLE",
+      "title": "<ico-book></ico-book> PRESENT PERFECT vs PAST SIMPLE",
       "intro": "Usamos el <b style='color:var(--gold)'>present perfect</b> (have/has + participio) para acciones con resultado <i>ahora</i> o sin tiempo específico. El <b style='color:var(--gold)'>past simple</b> es para tiempo terminado y concreto. Repasa y luego practica.",
       "cells": [
         {
-          "h": "✓ Form",
+          "h": "<ico-check></ico-check> Form",
           "body": "I / you / we / they <code>have worked</code><br>he / she / it <code>has worked</code><br><span class='es'>have/has + participio (worked, done, gone)</span>"
         },
         {
-          "h": "🔗 vs Past Simple",
+          "h": "<ico-link></ico-link> vs Past Simple",
           "body": "<span class='ok'>I've finished it.</span> <span class='es'>(resultado ahora)</span><br><span class='ok'>I finished it yesterday.</span> <span class='es'>(tiempo terminado)</span>"
         },
         {
@@ -60,11 +60,11 @@
           "body": "<code>for</code> + período: <i>for three months</i><br><code>since</code> + punto: <i>since March</i>"
         },
         {
-          "h": "✓ already / yet / just",
+          "h": "<ico-check></ico-check> already / yet / just",
           "body": "<code>already</code> = ya <span class='es'>(afirmativo)</span><br><code>yet</code> = todavía <span class='es'>(? y negativo)</span><br><code>just</code> = recién / acabo de"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='ok'>Have you finished yet?</span><br><span class='x'>Did you finish yet?</span><br><span class='ok'>I've worked here for a year.</span> <span class='es'>(no 'since a year')</span>"
         }
       ],
@@ -77,7 +77,7 @@
         "for + período",
         "since + punto"
       ],
-      "vocabBtn": "📒 Ver vocabulario del review",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario del review",
       "vocab": [
         {
           "en": "to be on track",
@@ -128,12 +128,12 @@
           "sp": "evaluación de desempeño"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> 🃏, <b>escucha</b> 🎧 y <b>completar</b> 📝. Haz el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> <ico-clone></ico-clone>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>completar</b> <ico-filepen></ico-filepen>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
     },
     {
       "type": "story",
       "tag": "la nueva jefa",
-      "title": "★ THE REVIEW",
+      "title": "<ico-star></ico-star> THE REVIEW",
       "intro": "Priya, la nueva <b style='color:var(--magenta)'>Project Director</b>, llega para el nuevo trimestre. Hoy tiene la primera evaluación de Marcos: quiere saber qué ha logrado y qué falta. Practica el present perfect y después escucha.",
       "cast": [
         {
@@ -254,7 +254,7 @@
       "desc": "Priya revisa el trabajo de Marcos este trimestre. ¿Qué ha terminado y qué no?",
       "src": "b1-l1-1.mp3",
       "dur": "1:10",
-      "speakers": "🗣 Priya + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Priya + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -430,7 +430,7 @@
       "desc": "Marcos le deja un mensaje de voz a Sofia con las novedades del proyecto.",
       "src": "b1-l1-2.mp3",
       "dur": "0:32",
-      "speakers": "🗣 Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -477,7 +477,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ WHAT I'VE ACHIEVED",
+      "title": "<ico-pen></ico-pen> WHAT I'VE ACHIEVED",
       "intro": "Escribe 5–6 frases sobre lo que has logrado este mes (en el trabajo, los estudios o en casa):",
       "checklist": [
         "Usa <b>present perfect</b> (I have + participio): <i>I've finished…, I've learned…</i>",

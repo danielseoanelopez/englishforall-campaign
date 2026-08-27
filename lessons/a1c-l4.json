@@ -13,8 +13,8 @@
     {
       "type": "match",
       "id": "ex-review",
-      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
-      "title": "♻️ REPASO EXPRESS",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -41,7 +41,7 @@
     },
     {
       "type": "grammar",
-      "title": "☕ FOOD, PLACES &amp; ORDERING",
+      "title": "<ico-mug></ico-mug> FOOD, PLACES &amp; ORDERING",
       "intro": "Para pedir comida y encontrar lugares. Practica en voz alta, ¡sin traductor!",
       "parts": [
         {
@@ -140,7 +140,7 @@
     },
     {
       "type": "grammar",
-      "title": "📘 there is/are · can · preposiciones",
+      "title": "<ico-book></ico-book> there is/are · can · preposiciones",
       "intro": "",
       "parts": [
         {
@@ -174,7 +174,7 @@
     },
     {
       "type": "story",
-      "title": "★ CAN I HELP YOU?",
+      "title": "<ico-star></ico-star> CAN I HELP YOU?",
       "intro": "Un cliente pide en un café. Primero <b>practicas</b>, y luego <b>escuchas</b> 2 audios: un <b>pedido</b> y unas <b>direcciones</b>.",
       "cast": [
         {
@@ -191,7 +191,7 @@
     {
       "type": "gapFill",
       "id": "ex-1",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "THERE IS / THERE ARE",
       "intro": "Uno → <b>There is</b>. Varios → <b>There are</b>. Preguntas → <b>Is / Are there…?</b>",
       "items": [
@@ -254,7 +254,7 @@
     {
       "type": "gapFill",
       "id": "ex-2",
-      "icon": "✅",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
       "title": "CHOOSE THE PREPOSITION",
       "intro": "Elige on / next to / behind / in.",
       "items": [
@@ -411,7 +411,7 @@
       "desc": "Un cliente pide en un café. Fíjate en el <b>pedido</b> y el <b>precio</b>.",
       "src": "a1c-l4-1.mp3",
       "dur": "0:28",
-      "speakers": "🗣 Waiter + Customer",
+      "speakers": "<ico-commentdots></ico-commentdots> Waiter + Customer",
       "questions": [
         {
           "type": "mcq",
@@ -486,7 +486,7 @@
       "desc": "Alguien pregunta por un banco. Fíjate en <b>dónde</b> está.",
       "src": "a1c-l4-2.mp3",
       "dur": "0:20",
-      "speakers": "🗣 monólogo",
+      "speakers": "<ico-commentdots></ico-commentdots> monólogo",
       "questions": [
         {
           "type": "mcq",
@@ -521,14 +521,14 @@
       ],
       "transcript": [
         {
-          "spk": "🗣",
+          "spk": "<ico-commentdots></ico-commentdots>",
           "html": "Excuse me, is there a bank near here? Yes, there is. Go straight and turn left. The bank is <span class=\"tg\">on Main Street, next to a big supermarket</span>. There is also a <span class=\"tg\">café behind the bank</span>. It's small, but very good."
         }
       ]
     },
     {
       "type": "writing",
-      "title": "✍️ AT THE CAFÉ / MY NEIGHBORHOOD",
+      "title": "<ico-pen></ico-pen> AT THE CAFÉ / MY NEIGHBORHOOD",
       "intro": "Escribe una <b>conversación de café</b> (pedido + precio), O describe tu barrio en <b>5 oraciones</b> con <b>there is/are</b> + preposiciones.",
       "checklist": [],
       "placeholder": "There is a park near my house. The bank is next to the supermarket...",

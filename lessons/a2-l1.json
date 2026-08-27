@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,15 +44,15 @@
     {
       "type": "grammar",
       "tag": "present simple",
-      "title": "📘 PRESENT SIMPLE & FREQUENCY",
+      "title": "<ico-book></ico-book> PRESENT SIMPLE & FREQUENCY",
       "intro": "Usamos el <b style='color:var(--gold)'>present simple</b> para rutinas y cosas que pasan siempre. Repasa y luego practica con varios ejercicios.",
       "cells": [
         {
-          "h": "✓ Affirmative",
+          "h": "<ico-check></ico-check> Affirmative",
           "body": "I / you / we / they <code>work</code><br>he / she / it <code>works</code> <span class='es'>(+s)</span>"
         },
         {
-          "h": "✗ Negative",
+          "h": "<ico-xmark></ico-xmark> Negative",
           "body": "I <code>don't</code> work<br>she <code>doesn't</code> work"
         },
         {
@@ -60,7 +60,7 @@
           "body": "<code>Do</code> you work?<br><code>Does</code> she work?<br>What time <code>do</code> you start?"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='ok'>She works here.</span><br><span class='x'>She work here.</span><br><span class='ok'>He doesn't work.</span> <span class='es'>(no \"doesn't works\")</span>"
         }
       ],
@@ -73,7 +73,7 @@
         "rarely",
         "never 0%"
       ],
-      "vocabBtn": "📒 Ver vocabulario de rutina",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de rutina",
       "vocab": [
         {
           "en": "Wake up",
@@ -108,7 +108,7 @@
           "sp": "terminar el trabajo"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
     },
     {
       "type": "flashcards",
@@ -162,7 +162,7 @@
     {
       "type": "story",
       "tag": "conoce al equipo",
-      "title": "★ MARCOS'S FIRST WEEK",
+      "title": "<ico-star></ico-star> MARCOS'S FIRST WEEK",
       "intro": "Marcos empieza en un equipo de trabajo remoto. Su jefa, Sofia, le explica la rutina. Practica las formas y después escucha.",
       "cast": [
         {
@@ -262,7 +262,7 @@
       "desc": "Sofia le da la bienvenida a Marcos y le explica la rutina del equipo.",
       "src": "daily-routines-1.mp3",
       "dur": "1:12",
-      "speakers": "🗣 Sofia + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -381,7 +381,7 @@
       "desc": "Marcos describe su propio día. Vive en otra zona horaria.",
       "src": "daily-routines-2.mp3",
       "dur": "0:49",
-      "speakers": "🗣 Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -428,7 +428,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ MY DAILY ROUTINE",
+      "title": "<ico-pen></ico-pen> MY DAILY ROUTINE",
       "intro": "Describe tu día normal (5–6 frases) en present simple:",
       "checklist": [
         "Usa <b>I + verbo</b> (I wake up, I start…)",

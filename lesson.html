@@ -12,13 +12,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css">
+<link rel="stylesheet" href="lesson.css?v=20260826c">
 </head>
 <body>
 <div class="side-deco left" id="decoLeft"></div>
 <div class="side-deco right" id="decoRight"></div>
 <a class="backmap" href="index.html">◄ MAPA</a>
-<button class="mute-btn" id="muteBtn" onclick="toggleMute()" aria-label="Sonido">🔊</button>
+<button class="mute-btn" id="muteBtn" onclick="toggleMute()" aria-label="Sonido"><ico-volume></ico-volume></button>
 <div class="container">
   <div class="brand" data-aos="fade-up"><img class="logo" src="logo.png" alt="English for All — Rank Up"></div>
   <header data-aos="fade-up" data-aos-delay="80">
@@ -35,20 +35,20 @@
 
   <div class="btn-row" id="finalRow" data-aos="fade-up" style="display:none">
     <div style="margin-bottom:14px"><input id="studentName" type="text" placeholder="Tu nombre" autocomplete="given-name" style="width:100%;max-width:320px;padding:10px 14px;background:#10122a;border:2px solid var(--cyan);border-radius:10px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:0.95rem;outline:none;box-shadow:inset 0 0 10px #00e5ff22"><br><span class="es" style="font-size:0.78rem;display:inline-block;margin-top:7px"><i class="fa-solid fa-lock"></i> Tu nombre + score se le envían a tu profe para tu seguimiento.</span></div>
-    <button class="btn" id="rankBtn" onclick="seeRank()">★ SEE MY RANK</button>
-    <p class="es" id="rankWarn" style="display:none; color:var(--red); margin-top:10px">⚠ Completa todos los ejercicios primero (botón ✓ CHECK en cada uno).</p>
+    <button class="btn" id="rankBtn" onclick="seeRank()"><ico-star></ico-star> SEE MY RANK</button>
+    <p class="es" id="rankWarn" style="display:none; color:var(--red); margin-top:10px"><ico-warn></ico-warn> Completa todos los ejercicios primero (botón <ico-check></ico-check> CHECK en cada uno).</p>
     <div style="margin-top:18px"><a class="btn wa-btn" id="hwWa" href="#" onclick="return sendHomework(this)"><i class="fa-brands fa-whatsapp"></i> ENVIAR MI TAREA</a></div>
   </div>
 
   <div id="results" class="card">
-    <div class="trophy">🏆</div>
+    <div class="trophy"><ico-trophy></ico-trophy></div>
     <h2 id="resultName">LESSON SCORE</h2>
     <div class="stars" id="starRow"></div>
     <p class="score" id="scoreText"></p>
     <p class="rankup" id="rankupLine">LESSON CLEAR!</p>
     <p class="rankup-sub">¡Practica un poco cada día y sube de nivel!</p>
     <div class="contact-box">
-      <div class="panel-title">★ ¿DUDAS? LO VEMOS EN CLASE</div>
+      <div class="panel-title"><ico-star></ico-star> ¿DUDAS? LO VEMOS EN CLASE</div>
       <p>Envíame tu <b>tarea escrita</b> + tu <b>grabación leyéndola</b> por WhatsApp y lo corregimos juntos. ¡Vas por buen camino!</p>
       <a class="btn wa-btn" id="waCta" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WHATSAPP</a>
       <a class="btn next-btn" id="nextCta" href="index.html">◄ MAPA</a>
@@ -64,7 +64,7 @@
     <a class="so-li" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
     <a class="so-tap" href="#" target="_blank" rel="noopener" aria-label="Taplink"><i class="fa-solid fa-link"></i></a>
   </div>
-  <footer id="footer"><span class="b">ENGLISH <em>for ALL</em></span><span class="sep">✦</span>Rank Up</footer>
+  <footer id="footer"><span class="b">ENGLISH <em>for ALL</em></span><span class="sep"><ico-star></ico-star></span>Rank Up</footer>
 </div>
 
 <script>
@@ -91,7 +91,7 @@ const sayText = s => stripTags(s).replace(/[\u{1F1E6}-\u{1F1FF}\u{1F300}-\u{1FAF
 // speaker button: tap to hear the text read aloud (Web Speech). Used across every block type.
 // Rendered as <span role="button"> — NOT <button> — because it must live inside flashcards,
 // match tiles and option labels, and HTML forbids nesting a button inside a button.
-function spkBtn(text, extra){ const say = escAttr(sayText(text)); if(!say) return ""; return `<span class="spk-btn${extra?" "+extra:""}" role="button" tabindex="0" title="Escuchar y repetir" aria-label="Escuchar y repetir" data-say="${say}" onclick="event.preventDefault();event.stopPropagation();speakText(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();speakText(this);}">🔊</span>`; }
+function spkBtn(text, extra){ const say = escAttr(sayText(text)); if(!say) return ""; return `<span class="spk-btn${extra?" "+extra:""}" role="button" tabindex="0" title="Escuchar y repetir" aria-label="Escuchar y repetir" data-say="${say}" onclick="event.preventDefault();event.stopPropagation();speakText(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();speakText(this);}"><ico-volume></ico-volume></span>`; }
 // noFlags: characters are introduced by role only — never with a country flag (students guess the accent themselves)
 function noFlags(s){ return String(s==null?"":s).replace(/<img[^>]*class=['"]flag['"][^>]*>/g,"").replace(/\s+/g," ").trim(); }
 function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
@@ -100,7 +100,7 @@ function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.
 function qHtml(q, name, num, sp){
   sp = sp || {};                       // sp.q: speak the question line · sp.opt: speak each option
   let opts, correct;
-  if(q.type === "trueFalse"){ opts = ["✔ True","✘ False"]; correct = (q.answer === true || q.answer === 0) ? 0 : 1; }
+  if(q.type === "trueFalse"){ opts = ["<ico-check></ico-check> True","<ico-xmark></ico-xmark> False"]; correct = (q.answer === true || q.answer === 0) ? 0 : 1; }
   else { opts = q.options; correct = q.answer; }
   const order = shuffle(opts.map((_,i)=>i));
   const numHtml = (num!=null) ? `<span class="qnum">${String(num).padStart(2,"0")}</span>` : "";
@@ -113,7 +113,7 @@ function qHtml(q, name, num, sp){
 // ---------- block renderers ----------
 function grammarHtml(g, gi){
   const vid = "vocabRef" + (gi == null ? "" : gi);
-  let h = (g.stage === false ? "" : `<div class="stage-tag">${g.stage ? esc(g.stage) : `📘 GRAMMAR <span class="es">· ${esc(g.tag)}</span>`}</div>`) + `
+  let h = (g.stage === false ? "" : `<div class="stage-tag">${g.stage ? esc(g.stage) : `<ico-book></ico-book> GRAMMAR <span class="es">· ${esc(g.tag)}</span>`}</div>`) + `
   <div class="card grammar" data-aos="fade-up"><div class="panel-title">${esc(g.title)}</div><p>${esc(g.intro)}</p>
   <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}</div>`).join("")}</div>`;
   if(g.ladderLabel) h += `<p style="margin-top:16px">${esc(g.ladderLabel)}</p>`;
@@ -125,57 +125,57 @@ function grammarHtml(g, gi){
       else if(p.type==="cells")  h += `<div class="gram-grid">${(p.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}</div>`).join("")}</div>`;
       else if(p.type==="phrases") h += `<ul class="phrase-list">${(p.items||[]).map(x=>`<li><span class="en">${esc(x.en)}${spkBtn(x.en,"mini")}</span><span class="sp">${esc(x.sp)}</span></li>`).join("")}</ul>`;
       else if(p.type==="chips")  h += `<div class="freq-bar">${(p.items||[]).map((c,ci)=>`<span class="chip">${esc(c)}</span>${ci<p.items.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
-      else if(p.type==="stretch") h += `<div class="stretch"><div class="sh">⭐ ${esc(p.h||"B2 STRETCH")}</div>${esc(p.body)}</div>`;
+      else if(p.type==="stretch") h += `<div class="stretch"><div class="sh"><ico-star></ico-star> ${esc(p.h||"B2 STRETCH")}</div>${esc(p.body)}</div>`;
       else if(p.type==="note")   h += `<div class="note${p.gold?" gold":""}">${esc(p.body)}</div>`;
       else if(p.type==="gloss")  h += `<div class="gloss">${(p.items||[]).map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div>`;
-      else if(p.type==="vocab")  h += `<button class="toggle-btn" data-show="${esc(p.btn||'📒 Ver vocabulario')}" data-hide="📒 Ocultar" onclick="toggleReveal('${vid2}', this)">${esc(p.btn||'📒 Ver vocabulario')}</button><div class="reveal" id="${vid2}"><div class="gloss" style="margin-top:12px">${(p.items||[]).map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
+      else if(p.type==="vocab")  h += `<button class="toggle-btn" data-show="${esc(p.btn||'<ico-bookmark></ico-bookmark> Ver vocabulario')}" data-hide="<ico-bookmark></ico-bookmark> Ocultar" onclick="toggleReveal('${vid2}', this)">${esc(p.btn||'<ico-bookmark></ico-bookmark> Ver vocabulario')}</button><div class="reveal" id="${vid2}"><div class="gloss" style="margin-top:12px">${(p.items||[]).map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
     });
   }
   if(g.phrases && g.phrases.length){
     h += `<ul class="phrase-list">${g.phrases.map(p=>`<li><span class="en">${esc(p.en)}${spkBtn(p.en,"mini")}</span><span class="sp">${esc(p.sp)}</span></li>`).join("")}</ul>`;
   }
   (g.stretch||[]).forEach(st=>{
-    h += `<div class="stretch"><div class="sh">⭐ ${esc(st.h||"B2 STRETCH")}</div>${esc(st.body)}</div>`;
+    h += `<div class="stretch"><div class="sh"><ico-star></ico-star> ${esc(st.h||"B2 STRETCH")}</div>${esc(st.body)}</div>`;
   });
   if(g.vocab && g.vocab.length){
-    h += `<button class="toggle-btn" data-show="${esc(g.vocabBtn||'📒 Ver vocabulario')}" data-hide="📒 Ocultar vocabulario" onclick="toggleReveal('${vid}', this)">${esc(g.vocabBtn||'📒 Ver vocabulario')}</button>
+    h += `<button class="toggle-btn" data-show="${esc(g.vocabBtn||'<ico-bookmark></ico-bookmark> Ver vocabulario')}" data-hide="<ico-bookmark></ico-bookmark> Ocultar vocabulario" onclick="toggleReveal('${vid}', this)">${esc(g.vocabBtn||'<ico-bookmark></ico-bookmark> Ver vocabulario')}</button>
     <div class="reveal" id="${vid}"><div class="gloss" style="margin-top:14px">${g.vocab.map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
   }
   if(g.note) h += `<div class="note">${esc(g.note)}</div>`;
   return h + `</div>`;
 }
 function storyHtml(s){
-  return (s.stage === false ? "" : `<div class="stage-tag">${s.stage ? esc(s.stage) : `★ THE STORY <span class="es">· ${esc(s.tag)}</span>`}</div>`) + `
+  return (s.stage === false ? "" : `<div class="stage-tag">${s.stage ? esc(s.stage) : `<ico-star></ico-star> THE STORY <span class="es">· ${esc(s.tag)}</span>`}</div>`) + `
   <div class="card alt" data-aos="fade-up"><div class="panel-title">${esc(s.title)}</div><p>${esc(s.intro)}</p>
   <div class="gloss">${(s.cast||[]).map(c=>`<div class="term"><span class="en">${esc(c.en)}</span> <span class="sp">${noFlags(c.sp)}</span></div>`).join("")}</div></div>`;
 }
 function listeningHtml(b, id, alt){
-  let h = (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card${alt?' alt':''}" id="${id}" data-aos="fade-up"><div class="panel-title">🎧 ${esc(b.title)}</div><p class="es">${esc(b.desc)}</p>
-  <div class="player"><audio controls preload="metadata" src="${esc(b.src)}"></audio><div class="meta"><span>⏱ <b>${esc(b.dur)}</b></span><span>${noFlags(b.speakers)}</span></div></div>`;
+  let h = (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card${alt?' alt':''}" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-headphones></ico-headphones> ${esc(b.title)}</div><p class="es">${esc(b.desc)}</p>
+  <div class="player"><audio controls preload="metadata" src="${esc(b.src)}"></audio><div class="meta"><span><ico-stopwatch></ico-stopwatch> <b>${esc(b.dur)}</b></span><span>${noFlags(b.speakers)}</span></div></div>`;
   h += (b.questions||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {q:true, opt:true})).join("");
-  h += `<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div>`;
-  if(b.speaking) h += `<div class="verbal"><p class="vq"><span class="mic">🎤</span><b>Speaking:</b> ${esc(b.speaking.prompt)}</p>
-    <button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('${id}-m', this)">💡 Pista para empezar</button>
+  h += `<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div>`;
+  if(b.speaking) h += `<div class="verbal"><p class="vq"><span class="mic"><ico-mic></ico-mic></span><b>Speaking:</b> ${esc(b.speaking.prompt)}</p>
+    <button class="toggle-btn" data-show="<ico-bulb></ico-bulb> Pista para empezar" data-hide="<ico-eyeslash></ico-eyeslash> Ocultar" onclick="toggleReveal('${id}-m', this)"><ico-bulb></ico-bulb> Pista para empezar</button>
     <div class="reveal model-box" id="${id}-m"><span class="lbl">EMPIEZA ASÍ</span>${esc(b.speaking.starter)}</div></div>`;
-  if(b.transcript && b.transcript.length) h += `<button class="toggle-btn" data-show="📄 Mostrar transcripción" data-hide="📄 Ocultar transcripción" onclick="toggleReveal('${id}-t', this)">📄 Mostrar transcripción</button>
+  if(b.transcript && b.transcript.length) h += `<button class="toggle-btn" data-show="<ico-file></ico-file> Mostrar transcripción" data-hide="<ico-file></ico-file> Ocultar transcripción" onclick="toggleReveal('${id}-t', this)"><ico-file></ico-file> Mostrar transcripción</button>
     <div class="reveal transcript" id="${id}-t">${b.transcript.map(l=>`<p class="line"><span class="spk ${l.b?'b':''}">${esc(l.spk)}:</span> ${esc(l.html)}</p>`).join("")}</div>`;
   return h + `</div>`;
 }
 function contrastHtml(b, id){
   const p = b.pair || {};
-  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🔀 ${esc(b.title||'¿QUÉ CAMBIA?')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-shuffle></ico-shuffle> ${esc(b.title||'¿QUÉ CAMBIA?')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="contrast-pair">
     <div class="cp"><span class="cp-l">A</span><span class="cp-t">${esc(p.a)}</span>${spkBtn(p.a,"mini")}</div>
     <div class="cp"><span class="cp-l">B</span><span class="cp-t">${esc(p.b)}</span>${spkBtn(p.b,"mini")}</div>
   </div>
   ${(b.items||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {})).join("")}
-  <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
+  <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function gapFillHtml(b, id){
-  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">${esc(b.icon || "📝")} ${esc(b.title||'COMPLETA LA FRASE')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">${esc(b.icon || "<ico-filepen></ico-filepen>")} ${esc(b.title||'COMPLETA LA FRASE')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   ${(b.items||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {opt:true})).join("")}
-  <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div>
-  ${b.speaking?`<div class="verbal"><p class="vq"><span class="mic">🎤</span><b>Speaking:</b> ${esc(b.speaking.prompt)}</p>${b.speaking.starter?`<button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('${id}-m', this)">💡 Pista para empezar</button><div class="reveal model-box" id="${id}-m"><span class="lbl">EMPIEZA ASÍ</span>${esc(b.speaking.starter)}</div>`:""}</div>`:""}</div>`;
+  <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div>
+  ${b.speaking?`<div class="verbal"><p class="vq"><span class="mic"><ico-mic></ico-mic></span><b>Speaking:</b> ${esc(b.speaking.prompt)}</p>${b.speaking.starter?`<button class="toggle-btn" data-show="<ico-bulb></ico-bulb> Pista para empezar" data-hide="<ico-eyeslash></ico-eyeslash> Ocultar" onclick="toggleReveal('${id}-m', this)"><ico-bulb></ico-bulb> Pista para empezar</button><div class="reveal model-box" id="${id}-m"><span class="lbl">EMPIEZA ASÍ</span>${esc(b.speaking.starter)}</div>`:""}</div>`:""}</div>`;
 }
 function dialogueHtml(b, id){
   let n=0;
@@ -183,20 +183,20 @@ function dialogueHtml(b, id){
     if(l.gap) return qHtml(l, id+"q"+(n++), null, {opt:true});
     return `<p class="dlg-line">${spkBtn(l.html)}<span class="spk ${l.b?'b':''}">${esc(l.spk)}:</span> ${esc(l.html)}</p>`;
   }).join("");
-  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title">💬 ${esc(b.title||'ELIGE LA RESPUESTA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  ${body}<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
+  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-comments></ico-comments> ${esc(b.title||'ELIGE LA RESPUESTA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  ${body}<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function matchHtml(b, id){
   matchState[id] = { sel:null, slots:{}, pairs:b.pairs };
   const rights = shuffle(b.pairs.map(p=>p.r));
   const side = b.speakSide || "l";   // which column is English: "l" (default), "r", or "none"
-  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🔗 ${esc(b.title||'UNE LOS PARES')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-link></ico-link> ${esc(b.title||'UNE LOS PARES')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="match-grid"><div class="match-col">${
     b.pairs.map((p,i)=>`<button type="button" class="match-l" id="${id}-l-${i}" onclick="mLeft('${id}',${i})"><span>${esc(p.l)}</span><span class="ml-slot" id="${id}-slot-${i}"></span>${side==="l"?spkBtn(p.l,"mini"):""}</button>`).join("")
   }</div><div class="match-col">${
     rights.map(r=>`<button type="button" class="match-r" data-r="${escAttr(r)}" onclick="mRight('${id}',this)"><span>${esc(r)}</span>${side==="r"?spkBtn(r,"mini"):""}</button>`).join("")
   }</div></div>
-  <div class="btn-row"><button class="btn check" onclick="checkMatch('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
+  <div class="btn-row"><button class="btn check" onclick="checkMatch('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function orderHtml(b, id){
   orderState[id] = { answers:(b.items||[]).map(it=>it.answer) };
@@ -205,28 +205,28 @@ function orderHtml(b, id){
     return `<div class="order-item" id="${id}-it-${k}"><div class="order-line" id="${id}-line-${k}"></div>
       <div class="order-bank" id="${id}-bank-${k}">${words.map(w=>`<button type="button" class="word" onclick="oMove('${id}',${k},this)">${esc(w)}</button>`).join("")}</div></div>`;
   }).join("");
-  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🧩 ${esc(b.title||'ORDENA LAS PALABRAS')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  ${body}<div class="btn-row"><button class="btn check" onclick="checkOrder('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-puzzle></ico-puzzle> ${esc(b.title||'ORDENA LAS PALABRAS')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  ${body}<div class="btn-row"><button class="btn check" onclick="checkOrder('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function picMatchHtml(b, id){
   const pairs = (b.pairs||[]).map(p=>({l:p.img, r:p.word}));
   matchState[id] = { sel:null, slots:{}, pairs };
   const rights = shuffle(pairs.map(p=>p.r));
-  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🖼️ ${esc(b.title||'UNE IMAGEN Y PALABRA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-image></ico-image> ${esc(b.title||'UNE IMAGEN Y PALABRA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="match-grid"><div class="match-col">${
     pairs.map((p,i)=>`<button type="button" class="match-l pic" id="${id}-l-${i}" onclick="mLeft('${id}',${i})"><span class="pic-em">${esc(p.l)}</span><span class="ml-slot" id="${id}-slot-${i}"></span></button>`).join("")
   }</div><div class="match-col">${
     rights.map(r=>`<button type="button" class="match-r" data-r="${escAttr(r)}" onclick="mRight('${id}',this)"><span>${esc(r)}</span>${spkBtn(r,"mini")}</button>`).join("")
   }</div></div>
-  <div class="btn-row"><button class="btn check" onclick="checkMatch('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
+  <div class="btn-row"><button class="btn check" onclick="checkMatch('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function memoryHtml(b, id){
   const cards=[];
   (b.pairs||[]).forEach((p,i)=>{ cards.push({pair:i, face:p.a}); cards.push({pair:i, face:p.b}); });
   const sh = shuffle(cards);
   memoryState[id] = { flipped:[], matched:0, total:(b.pairs||[]).length, lock:false };
-  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title">🧠 ${esc(b.title||'MEMORY · encuentra los pares')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><span class="mem-q${b.back?' mem-fancy':''}">${esc(b.back||"❓")}</span><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
+  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-brain></ico-brain> ${esc(b.title||'MEMORY · encuentra los pares')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><span class="mem-q${b.back?' mem-fancy':''}">${esc(b.back||"<ico-question></ico-question>")}</span><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
   <div class="mem-status" id="${id}-status">0 / ${(b.pairs||[]).length} pares</div></div>`;
 }
 function fcDeckHtml(cards){
@@ -235,31 +235,31 @@ function fcDeckHtml(cards){
 function flashcardsHtml(b, id){
   const decks = [{label: b.deckLabel||"", cards: b.cards||[]}].concat(b.altDecks||[]);
   fcState[id] = { decks: decks, cur: 0 };
-  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🃏 ${esc(b.title||'FLASHCARDS · toca para girar')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  ${decks.length>1?`<p class="fc-round" id="${id}-round">🔁 RONDA 1/${decks.length}${decks[0].label?` · ${esc(decks[0].label)}`:''}</p>`:''}
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-clone></ico-clone> ${esc(b.title||'FLASHCARDS · toca para girar')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  ${decks.length>1?`<p class="fc-round" id="${id}-round"><ico-rotate></ico-rotate> RONDA 1/${decks.length}${decks[0].label?` · ${esc(decks[0].label)}`:''}</p>`:''}
   <div class="fc-deck" id="${id}-deck">${fcDeckHtml(decks[0].cards)}</div>
-  <p class="es" style="margin-top:8px">👆 Toca cada tarjeta para ver la traducción.</p>
-  ${decks.length>1?`<button type="button" class="toggle-btn" id="${id}-next" onclick="fcNextDeck('${id}')">🔄 Otra ronda: ${esc(decks[1].label||'más cartas')}</button>`:''}</div>`;
+  <p class="es" style="margin-top:8px"><ico-pointer></ico-pointer> Toca cada tarjeta para ver la traducción.</p>
+  ${decks.length>1?`<button type="button" class="toggle-btn" id="${id}-next" onclick="fcNextDeck('${id}')"><ico-rotate></ico-rotate> Otra ronda: ${esc(decks[1].label||'más cartas')}</button>`:''}</div>`;
 }
 function fcNextDeck(id){
   const st=fcState[id]; st.cur=(st.cur+1)%st.decks.length;
   const d=st.decks[st.cur];
   document.getElementById(id+"-deck").innerHTML = fcDeckHtml(d.cards);
   const r=document.getElementById(id+"-round");
-  if(r) r.innerHTML = `🔁 RONDA ${st.cur+1}/${st.decks.length}${d.label?` · ${esc(d.label)}`:''}`;
+  if(r) r.innerHTML = `<ico-rotate></ico-rotate> RONDA ${st.cur+1}/${st.decks.length}${d.label?` · ${esc(d.label)}`:''}`;
   const nd=st.decks[(st.cur+1)%st.decks.length];
-  document.getElementById(id+"-next").textContent = `🔄 Otra ronda: ${nd.label||'más cartas'}`;
+  document.getElementById(id+"-next").textContent = `<ico-rotate></ico-rotate> Otra ronda: ${nd.label||'más cartas'}`;
   blip();
 }
 function writingHtml(w){
-  return (w.stage === false ? "" : `<div class="stage-tag">${w.stage ? esc(w.stage) : `✍️ WRITING <span class="es">· en clase o tarea (HW)</span>`}</div>`) + `
+  return (w.stage === false ? "" : `<div class="stage-tag">${w.stage ? esc(w.stage) : `<ico-pen></ico-pen> WRITING <span class="es">· en clase o tarea (HW)</span>`}</div>`) + `
   <div class="card purple" data-aos="fade-up"><div class="panel-title">${esc(w.title)}</div><p>${esc(w.intro)}</p>
   <ul class="checklist">${(w.checklist||[]).map(li=>`<li class="ck" role="checkbox" aria-checked="false" tabindex="0" onclick="ckToggle(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();ckToggle(this);}">${esc(li)}</li>`).join("")}</ul>
   <textarea class="writing-area" id="writingBox" placeholder="${escAttr(w.placeholder||'')}"></textarea>
-  <button class="toggle-btn" data-show="💡 Guía para empezar" data-hide="🙈 Ocultar guía" onclick="toggleReveal('mw', this)">💡 Guía para empezar</button>
+  <button class="toggle-btn" data-show="<ico-bulb></ico-bulb> Guía para empezar" data-hide="<ico-eyeslash></ico-eyeslash> Ocultar guía" onclick="toggleReveal('mw', this)"><ico-bulb></ico-bulb> Guía para empezar</button>
   <div class="reveal model-box" id="mw"><span class="lbl">EMPIEZA ASÍ</span>${esc(w.example)}</div>
-  ${(w.rubric&&w.rubric.length)?`<div class="rubric"><div class="rh">✅ ASÍ SE CORRIGE</div>${w.rubric.map(r=>`<div class="rrow"><b>${esc(r.c)}</b><span>${esc(r.d)}</span></div>`).join("")}</div>`:""}
-  <div class="note gold"><b>📌 Tarea (HW):</b> ${esc(w.hw)}</div></div>`;
+  ${(w.rubric&&w.rubric.length)?`<div class="rubric"><div class="rh"><ico-circlecheck></ico-circlecheck> ASÍ SE CORRIGE</div>${w.rubric.map(r=>`<div class="rrow"><b>${esc(r.c)}</b><span>${esc(r.d)}</span></div>`).join("")}</div>`:""}
+  <div class="note gold"><b><ico-pin></ico-pin> Tarea (HW):</b> ${esc(w.hw)}</div></div>`;
 }
 
 // ---------- assemble ----------
@@ -275,14 +275,14 @@ function build(L){
   LESSON = L; LESSON_KEY = L.key; LESSON_NAME = L.titlePlain;
   document.getElementById("pageTitle").textContent = "English for All · " + (L.titlePlain||"Lesson");
   document.getElementById("crumb").innerHTML = L.track
-    ? `<span class="plus">★ ${esc(L.track.toUpperCase())}</span> <span class="w">SIDEQUEST</span> ▸ LESSON ${esc(L.num)} / ${esc(L.totalLessons||4)}`
+    ? `<span class="plus"><ico-star></ico-star> ${esc(L.track.toUpperCase())}</span> <span class="w">SIDEQUEST</span> ▸ LESSON ${esc(L.num)} / ${esc(L.totalLessons||4)}`
     : `<span class="w">WORLD ${esc(L.level)} · ${esc(L.world)}</span> ▸ LESSON ${esc(L.num)} / ${esc(L.totalLessons||6)}`;
   document.getElementById("h1").innerHTML = esc(L.title);
   document.getElementById("sub").innerHTML = esc(L.subtitle||"");
   if(L.resultTitle) document.getElementById("resultName").textContent = L.resultTitle;
   if(L.rankup) document.getElementById("rankupLine").textContent = L.rankup;
   if(L.next){ const n=document.getElementById("nextCta"); n.href=L.next.href; n.textContent=L.next.label; }
-  document.getElementById("footer").innerHTML = `<span class="b">ENGLISH <em>for ALL</em></span><span class="sep">✦</span>Rank Up<span class="sep">✦</span>${esc(L.level)} · Lesson ${esc(L.num)}`;
+  document.getElementById("footer").innerHTML = `<span class="b">ENGLISH <em>for ALL</em></span><span class="sep"><ico-star></ico-star></span>Rank Up<span class="sep"><ico-star></ico-star></span>${esc(L.level)} · Lesson ${esc(L.num)}`;
 
   const blocks = (L.blocks && L.blocks.length) ? L.blocks : legacyBlocks(L);
   EXERCISES = [];
@@ -352,12 +352,12 @@ function speakText(btn){
   btn.classList.add("playing");
   speak(btn.dataset.say || btn.getAttribute("data-say") || "", function(){ btn.classList.remove("playing"); });
 }
-function toggleMute(){ muted=!muted; try{ localStorage.setItem("efa_muted", muted?"1":"0"); }catch(e){} document.getElementById("muteBtn").textContent = muted?"🔇":"🔊"; if(!muted) blip(); }
-(function(){ document.getElementById("muteBtn").textContent = muted?"🔇":"🔊"; })();
+function toggleMute(){ muted=!muted; try{ localStorage.setItem("efa_muted", muted?"1":"0"); }catch(e){} document.getElementById("muteBtn").textContent = muted?"<ico-mute></ico-mute>":"<ico-volume></ico-volume>"; if(!muted) blip(); }
+(function(){ document.getElementById("muteBtn").textContent = muted?"<ico-mute></ico-mute>":"<ico-volume></ico-volume>"; })();
 (function initSideDeco(){ const items=["★","✦","☕","🎧","💬","🏆","★","✦","⭐","📧"], colors=["#00e5ff","#ff3df0","#9d4dff","#ffc83d"]; ["decoLeft","decoRight"].forEach(id=>{ const box=document.getElementById(id); for(let i=0;i<8;i++){ const s=document.createElement("span"); s.textContent=items[Math.floor(Math.random()*items.length)]; s.style.left=(10+Math.random()*70)+"%"; s.style.color=colors[Math.floor(Math.random()*colors.length)]; s.style.animationDuration=(14+Math.random()*12)+"s"; s.style.animationDelay=(-Math.random()*22)+"s"; box.appendChild(s);} }); })();
 (function initSocial(){ document.querySelectorAll(".so-wa").forEach(a=>a.href=SOCIAL.whatsapp); document.querySelectorAll(".so-ig").forEach(a=>a.href=SOCIAL.instagram); document.querySelectorAll(".so-li").forEach(a=>a.href=SOCIAL.linkedin); document.querySelectorAll(".so-tap").forEach(a=>a.href=SOCIAL.taplink); document.querySelectorAll(".so-dc").forEach(a=>{ a.setAttribute("onclick","return copyDiscord(this)"); a.title="Discord: "+SOCIAL.discord+" (clic para copiar)"; }); })();
 function copyDiscord(el){ var r=el.innerHTML; var done=function(){ el.innerHTML='<i class="fa-solid fa-check"></i>'+(el.classList.contains("btn")?" ¡COPIADO!":""); setTimeout(function(){el.innerHTML=r;},1500); }; try{ navigator.clipboard.writeText(SOCIAL.discord).then(done,done); }catch(e){ done(); } return false; }
-function toggleReveal(id, btn){ const el=document.getElementById(id); const open=el.classList.toggle("open"); btn.textContent = open?btn.dataset.hide:btn.dataset.show; blip(); }
+function toggleReveal(id, btn){ const el=document.getElementById(id); const open=el.classList.toggle("open"); btn.innerHTML = open?btn.dataset.hide:btn.dataset.show; blip(); }
 // writing checklist: tap each step to tick it off (saved per lesson)
 function ckToggle(el){ const on=el.classList.toggle("done"); el.setAttribute("aria-checked", on?"true":"false"); if(on) okBeep(); else blip();
   try{ const state=Array.prototype.map.call(document.querySelectorAll(".checklist .ck"), li=>li.classList.contains("done")?1:0); localStorage.setItem(LESSON_KEY+"_ck", JSON.stringify(state)); }catch(e){} }
@@ -367,7 +367,7 @@ function shuffleOptions(){ document.querySelectorAll(".q[data-correct]").forEach
 function setScore(blockId, correct, total){
   scores[blockId] = {correct,total};
   const box=document.getElementById("score-"+blockId); const cls = correct===total?"good":(correct===0?"bad":"");
-  box.innerHTML=`<span class="${cls}">${correct} / ${total} correcto${total===1?"":"s"}</span>`+(correct===total?" 🎉 ¡Perfecto!":"");
+  box.innerHTML=`<span class="${cls}">${correct} / ${total} correcto${total===1?"":"s"}</span>`+(correct===total?" <ico-star></ico-star> ¡Perfecto!":"");
   const btn=document.querySelector("#"+blockId+" .btn.check"); if(btn) btn.disabled=true;
   if(correct===total) okBeep(); else noBeep();
   updateProgress();
@@ -377,8 +377,8 @@ function checkRadio(id){
   const ex=document.getElementById(id); let correct=0, total=0;
   ex.querySelectorAll(".q[data-correct]").forEach(q=>{ total++; const chosen=q.querySelector("input:checked"); if(chosen && chosen.value===q.dataset.correct) correct++;
     q.querySelectorAll(".option").forEach(opt=>{ const inp=opt.querySelector("input"); opt.classList.remove("opt-correct","opt-wrong"); const t=opt.querySelector(".tick"); if(t)t.remove();
-      if(inp.value===q.dataset.correct){ opt.classList.add("opt-correct"); opt.insertAdjacentHTML("beforeend",'<span class="tick" style="color:var(--green)">✓</span>'); }
-      else if(inp.checked){ opt.classList.add("opt-wrong"); opt.insertAdjacentHTML("beforeend",'<span class="tick" style="color:var(--red)">✗</span>'); }
+      if(inp.value===q.dataset.correct){ opt.classList.add("opt-correct"); opt.insertAdjacentHTML("beforeend",'<span class="tick" style="color:var(--green)"><ico-check></ico-check></span>'); }
+      else if(inp.checked){ opt.classList.add("opt-wrong"); opt.insertAdjacentHTML("beforeend",'<span class="tick" style="color:var(--red)"><ico-xmark></ico-xmark></span>'); }
       inp.disabled=true; }); });
   setScore(id, correct, total);
 }
@@ -387,16 +387,16 @@ function mLeft(id, i){ const st=matchState[id]; if(st.done) return;
   if(st.slots[i]!=null){ const r=st.slots[i]; delete st.slots[i]; document.getElementById(id+"-slot-"+i).textContent=""; const rb=document.querySelector('#'+id+' .match-r[data-r="'+r.replace(/"/g,'\\"')+'"]'); if(rb){ rb.classList.remove("used"); } }
   st.sel=i; document.querySelectorAll("#"+id+" .match-l").forEach(el=>el.classList.remove("sel")); document.getElementById(id+"-l-"+i).classList.add("sel"); blip();
 }
-// tiles lock via classes, never the disabled attribute — a disabled button would also kill the 🔊 speaker inside it
+// tiles lock via classes, never the disabled attribute — a disabled button would also kill the <ico-volume></ico-volume> speaker inside it
 function mRight(id, el){ const st=matchState[id]; if(st.done||st.sel==null||el.classList.contains("used")) return; const r=el.dataset.r; st.slots[st.sel]=r; el.classList.add("used"); document.getElementById(id+"-slot-"+st.sel).textContent=" → "+r; document.getElementById(id+"-l-"+st.sel).classList.remove("sel"); st.sel=null; blip(); }
-function checkMatch(id){ const st=matchState[id]; st.done=true; let correct=0; st.pairs.forEach((p,i)=>{ const got=st.slots[i]; const lEl=document.getElementById(id+"-l-"+i); lEl.classList.remove("sel"); if(got===p.r){ correct++; lEl.classList.add("ok"); } else { lEl.classList.add("no"); document.getElementById(id+"-slot-"+i).textContent=" → "+(got||"—")+"  ✓ "+p.r; } });
+function checkMatch(id){ const st=matchState[id]; st.done=true; let correct=0; st.pairs.forEach((p,i)=>{ const got=st.slots[i]; const lEl=document.getElementById(id+"-l-"+i); lEl.classList.remove("sel"); if(got===p.r){ correct++; lEl.classList.add("ok"); } else { lEl.classList.add("no"); document.getElementById(id+"-slot-"+i).textContent=" → "+(got||"—")+"  <ico-check></ico-check> "+p.r; } });
   document.querySelectorAll("#"+id+" .match-r").forEach(b=>b.classList.add("locked"));
   setScore(id, correct, st.pairs.length);
 }
 // order
 function oMove(id, k, btn){ if(orderState[id].done) return; const line=document.getElementById(id+"-line-"+k), bank=document.getElementById(id+"-bank-"+k); (btn.parentElement===bank?line:bank).appendChild(btn); blip(); }
 function norm(s){ return s.replace(/\s+/g," ").replace(/[.,!?]/g,"").trim().toLowerCase(); }
-function checkOrder(id){ const st=orderState[id]; st.done=true; let correct=0; st.answers.forEach((ans,k)=>{ const line=document.getElementById(id+"-line-"+k); const got=Array.prototype.map.call(line.querySelectorAll(".word"),w=>w.textContent).join(" "); const item=document.getElementById(id+"-it-"+k); if(norm(got)===norm(ans)){ correct++; item.classList.add("ok"); } else { item.classList.add("no"); if(!line.querySelector(".ans")) line.insertAdjacentHTML("beforeend",'<span class="ans">✓ '+ans+'</span>'); } line.querySelectorAll(".word").forEach(w=>w.disabled=true); });
+function checkOrder(id){ const st=orderState[id]; st.done=true; let correct=0; st.answers.forEach((ans,k)=>{ const line=document.getElementById(id+"-line-"+k); const got=Array.prototype.map.call(line.querySelectorAll(".word"),w=>w.textContent).join(" "); const item=document.getElementById(id+"-it-"+k); if(norm(got)===norm(ans)){ correct++; item.classList.add("ok"); } else { item.classList.add("no"); if(!line.querySelector(".ans")) line.insertAdjacentHTML("beforeend",'<span class="ans"><ico-check></ico-check> '+ans+'</span>'); } line.querySelectorAll(".word").forEach(w=>w.disabled=true); });
   document.querySelectorAll("#"+id+" .word").forEach(w=>w.disabled=true);
   setScore(id, correct, st.answers.length);
 }
@@ -414,7 +414,7 @@ function mFlip(id, cardId){
     if(a.dataset.pair===bb.dataset.pair){
       okBeep();
       setTimeout(()=>{ a.classList.add("matched"); bb.classList.add("matched"); st.flipped=[]; st.lock=false; st.matched++;
-        document.getElementById(id+"-status").textContent = st.matched+" / "+st.total+" pares"+(st.matched===st.total?"  🎉 ¡Completo!":""); }, 320);
+        document.getElementById(id+"-status").textContent = st.matched+" / "+st.total+" pares"+(st.matched===st.total?"  <ico-star></ico-star> ¡Completo!":""); }, 320);
     } else { noBeep(); setTimeout(()=>{ a.classList.remove("flip"); bb.classList.remove("flip"); st.flipped=[]; st.lock=false; }, 850); }
   } else { blip(); }
 }
@@ -427,10 +427,10 @@ function seeRank(){
   let correct=0,total=0; EXERCISES.forEach(id=>{ correct+=scores[id].correct; total+=scores[id].total; });
   const pct = total? correct/total : 0; let stars=1; if(pct>=0.9)stars=5; else if(pct>=0.75)stars=4; else if(pct>=0.6)stars=3; else if(pct>=0.4)stars=2;
   saveStars(stars);
-  document.getElementById("starRow").innerHTML="⭐".repeat(stars)+`<span class="off">${"⭐".repeat(5-stars)}</span>`;
+  document.getElementById("starRow").innerHTML="<ico-star></ico-star>".repeat(stars)+`<span class="off">${"<ico-star></ico-star>".repeat(5-stars)}</span>`;
   document.getElementById("scoreText").textContent=`SCORE: ${correct} / ${total}`;
   const studentName=(document.getElementById("studentName").value||"").trim()||"Alumno/a";
-  const waMsg=`¡Hola Daniel! Soy ${studentName}. Terminé la Lección ${LESSON.num} (${LESSON.titlePlain}). Mi score: ${correct}/${total} (${stars}⭐). Aquí van mi tarea escrita y mi audio:`;
+  const waMsg=`¡Hola Daniel! Soy ${studentName}. Terminé la Lección ${LESSON.num} (${LESSON.titlePlain}). Mi score: ${correct}/${total} (${stars}<ico-star></ico-star>). Aquí van mi tarea escrita y mi audio:`;
   document.getElementById("waCta").href=SOCIAL.whatsapp+"?text="+encodeURIComponent(waMsg);
   try { fetch(FORM_ENDPOINT,{ method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"}, body: JSON.stringify({ _subject:`Lección ${LESSON.level} L${LESSON.num} ${LESSON.titlePlain} — ${studentName}`, leccion:LESSON.titlePlain, nivel:LESSON.level, nombre:studentName, score:`${correct}/${total}`, estrellas:`${stars}/5`, fecha:new Date().toLocaleString() }) }).catch(function(){}); } catch(e){}
   document.getElementById("finalRow").style.display="none";

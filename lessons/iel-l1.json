@@ -13,8 +13,8 @@
     {
       "type": "match",
       "id": "ex-review",
-      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· vocabulario de hoy</span>",
-      "title": "♻️ REPASO EXPRESS",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· vocabulario de hoy</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Primero, fija el vocabulario clave de hoy. Une cada palabra con su significado.",
       "pairs": [
         {
@@ -41,7 +41,7 @@
     },
     {
       "type": "grammar",
-      "title": "🎯 EL IELTS EN 4 PARTES",
+      "title": "<ico-target></ico-target> EL IELTS EN 4 PARTES",
       "intro": "El IELTS se puntúa de <b>0 a 9</b> (bandas). Tu meta es <b>4.5–5</b>. La buena noticia: esa banda <b>no pide inglés avanzado</b> — pide inglés <b>claro, simple y correcto</b> que responda la pregunta.",
       "parts": [
         {
@@ -68,19 +68,19 @@
         {
           "type": "note",
           "gold": true,
-          "body": "<b>💡 IELTS tip:</b> no necesitas palabras \"difíciles\". Una frase larga <b>con errores</b> puntúa <b>menos</b> que una frase simple correcta. Precisión &gt; complejidad."
+          "body": "<b><ico-bulb></ico-bulb> IELTS tip:</b> no necesitas palabras \"difíciles\". Una frase larga <b>con errores</b> puntúa <b>menos</b> que una frase simple correcta. Precisión &gt; complejidad."
         },
         {
           "type": "stretch",
           "h": "CÓMO SUENA CADA BANDA",
-          "body": "<b>Banda 4:</b> frases muy simples, muchos errores, cuesta entenderte. · <b>Banda 4.5–5 🎯:</b> oraciones simples y correctas, respondes la pregunta, usas <i>and / but / because</i>. · <b>Para subir:</b> añade una <b>razón</b> y un <b>ejemplo</b>."
+          "body": "<b>Banda 4:</b> frases muy simples, muchos errores, cuesta entenderte. · <b>Banda 4.5–5 <ico-target></ico-target>:</b> oraciones simples y correctas, respondes la pregunta, usas <i>and / but / because</i>. · <b>Para subir:</b> añade una <b>razón</b> y un <b>ejemplo</b>."
         }
       ],
       "stage": "① EL EXAMEN <span class=\"es\">· qué es y qué pide la banda 4.5–5</span>"
     },
     {
       "type": "grammar",
-      "title": "🗣️ SPEAKING PART 1 · LA FÓRMULA",
+      "title": "<ico-commentdots></ico-commentdots> SPEAKING PART 1 · LA FÓRMULA",
       "intro": "En <b>Part 1</b> (~4–5 min) el examinador pregunta sobre <b>ti</b>: tu casa, tu trabajo, tu tiempo libre, tu rutina. Es la parte <b>más fácil</b> para ganar puntos. La clave: <b>nunca contestes con una palabra</b>.",
       "parts": [
         {
@@ -99,11 +99,11 @@
           "type": "gloss",
           "items": [
             {
-              "en": "❌ \"I work.\"",
+              "en": "<ico-xmark></ico-xmark> \"I work.\"",
               "sp": "se acabó — no da puntos"
             },
             {
-              "en": "✅ \"I work. I'm a nurse in a hospital, <b>because</b> I like helping people. I've worked there <b>for two years</b>.\"",
+              "en": "<ico-circlecheck></ico-circlecheck> \"I work. I'm a nurse in a hospital, <b>because</b> I like helping people. I've worked there <b>for two years</b>.\"",
               "sp": "respuesta + razón + detalle"
             }
           ]
@@ -144,7 +144,7 @@
         },
         {
           "type": "vocab",
-          "btn": "📒 Ver vocabulario clave",
+          "btn": "<ico-bookmark></ico-bookmark> Ver vocabulario clave",
           "items": [
             {
               "en": "hometown",
@@ -196,7 +196,7 @@
     },
     {
       "type": "story",
-      "title": "★ MARTA · CANDIDATA",
+      "title": "<ico-star></ico-star> MARTA · CANDIDATA",
       "intro": "Marta se presenta al IELTS General Training. Primero <b>practicas</b> la fórmula y el formato del examen, y luego <b>la escuchas</b> en 2 audios: su <b>Part 1</b> sobre el trabajo y sobre el tiempo libre. Fíjate en cómo <b>nunca</b> responde con una sola palabra.",
       "cast": [
         {
@@ -213,7 +213,7 @@
     {
       "type": "gapFill",
       "id": "ex-1",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "LARGA NO SIGNIFICA BUENA",
       "intro": "<b>Las tres opciones son largas.</b> Solo una puntúa — las otras dos fallan por una razón concreta. Léelas enteras.",
       "items": [
@@ -273,7 +273,7 @@
     {
       "type": "gapFill",
       "id": "ex-2",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "¿CONOCES EL EXAMEN?",
       "intro": "Saber el formato te quita medio nervio el día del examen.",
       "items": [
@@ -433,7 +433,7 @@
       "desc": "Marta responde sobre su ciudad y su trabajo. Fíjate en cómo <b>siempre</b> añade una razón y un detalle.",
       "src": "iel-l1-1.mp3",
       "dur": "0:56",
-      "speakers": "🗣 Examiner + Marta",
+      "speakers": "<ico-commentdots></ico-commentdots> Examiner + Marta",
       "questions": [
         {
           "type": "mcq",
@@ -516,7 +516,7 @@
       "desc": "Segunda tanda de preguntas. Escucha los conectores: <i>because</i>, <i>also</i>, <i>but</i>, <i>so</i>.",
       "src": "iel-l1-2.mp3",
       "dur": "0:52",
-      "speakers": "🗣 Examiner + Marta",
+      "speakers": "<ico-commentdots></ico-commentdots> Examiner + Marta",
       "questions": [
         {
           "type": "mcq",
@@ -581,7 +581,7 @@
     },
     {
       "type": "writing",
-      "title": "🎤 TU PROPIO SPEAKING PART 1",
+      "title": "<ico-mic></ico-mic> TU PROPIO SPEAKING PART 1",
       "intro": "Escribe tus respuestas a estas <b>5 preguntas</b> de Part 1 y luego <b>grábate</b> diciéndolas. Cada respuesta: <b>2–3 frases</b>, nunca una palabra.",
       "checklist": [
         "Where are you from, and do you like living there?",

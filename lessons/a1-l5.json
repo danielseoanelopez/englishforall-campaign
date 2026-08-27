@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,7 +44,7 @@
     {
       "type": "grammar",
       "tag": "objetos y lugares",
-      "title": "📘 a / an · this/that · there is/are",
+      "title": "<ico-book></ico-book> a / an · this/that · there is/are",
       "intro": "Aprende objetos de cada día y cómo decir dónde están. Estudia con las tarjetas y juega con las imágenes.",
       "cells": [
         {
@@ -60,7 +60,7 @@
           "body": "<code>There is</code> a chair. (1)<br><code>There are</code> two chairs. (2+)<br>plurales: book → book<code>s</code>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='x'>a apple</span> → <span class='ok'>an apple</span><br><span class='x'>there is two</span> → <span class='ok'>there are two</span>"
         }
       ],
@@ -73,30 +73,30 @@
         "behind",
         "in front of"
       ],
-      "vocabBtn": "📒 Ver objetos y lugares",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver objetos y lugares",
       "vocab": [
         {
-          "en": "Book 📖",
+          "en": "Book <ico-bookopen></ico-bookopen>",
           "sp": "libro"
         },
         {
-          "en": "Pen 🖊️",
+          "en": "Pen <ico-pen></ico-pen>",
           "sp": "lapicera"
         },
         {
-          "en": "Phone 📱",
+          "en": "Phone <ico-mobile></ico-mobile>",
           "sp": "teléfono"
         },
         {
-          "en": "Key 🔑",
+          "en": "Key <ico-key></ico-key>",
           "sp": "llave"
         },
         {
-          "en": "Bag 🎒",
+          "en": "Bag <ico-user></ico-user>",
           "sp": "mochila / bolso"
         },
         {
-          "en": "Chair 🪑",
+          "en": "Chair <ico-chair></ico-chair>",
           "sp": "silla"
         },
         {
@@ -104,11 +104,11 @@
           "sp": "mesa"
         },
         {
-          "en": "Window 🪟",
+          "en": "Window <ico-window></ico-window>",
           "sp": "ventana"
         }
       ],
-      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> 🃏, <b>imágenes</b> 🖼️, <b>memoria</b> 🧠, <b>escucha</b> 🎧 y <b>completar</b> 📝. ✓ CHECK donde lo veas."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>imágenes</b> <ico-image></ico-image>, <b>memoria</b> <ico-brain></ico-brain>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>completar</b> <ico-filepen></ico-filepen>. <ico-check></ico-check> CHECK donde lo veas."
     },
     {
       "type": "flashcards",
@@ -166,27 +166,27 @@
       "intro": "Toca la imagen y luego la palabra correcta.",
       "pairs": [
         {
-          "img": "📖",
+          "img": "<ico-bookopen></ico-bookopen>",
           "word": "book"
         },
         {
-          "img": "🔑",
+          "img": "<ico-key></ico-key>",
           "word": "key"
         },
         {
-          "img": "📱",
+          "img": "<ico-mobile></ico-mobile>",
           "word": "phone"
         },
         {
-          "img": "🪑",
+          "img": "<ico-chair></ico-chair>",
           "word": "chair"
         },
         {
-          "img": "☂️",
+          "img": "<ico-umbrella></ico-umbrella>",
           "word": "umbrella"
         },
         {
-          "img": "🎒",
+          "img": "<ico-user></ico-user>",
           "word": "bag"
         }
       ]
@@ -198,15 +198,15 @@
       "intro": "Encuentra cada imagen con su palabra. Toca dos cartas.",
       "pairs": [
         {
-          "a": "🖊️",
+          "a": "<ico-pen></ico-pen>",
           "b": "pen"
         },
         {
-          "a": "🪟",
+          "a": "<ico-window></ico-window>",
           "b": "window"
         },
         {
-          "a": "🍎",
+          "a": "<ico-apple></ico-apple>",
           "b": "apple"
         },
         {
@@ -274,7 +274,7 @@
       "desc": "Ana y Tom hablan de las cosas en una mochila. Escucha los objetos.",
       "src": "a1-l5-1.mp3",
       "dur": "0:27",
-      "speakers": "🗣 Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
           "type": "mcq",
@@ -396,7 +396,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ MY DESK / MY BAG",
+      "title": "<ico-pen></ico-pen> MY DESK / MY BAG",
       "intro": "Describe tu escritorio o tu mochila en 4–5 frases:",
       "checklist": [
         "Usa <b>There is</b> (1) y <b>There are</b> (2+)",

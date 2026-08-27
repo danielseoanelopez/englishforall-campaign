@@ -13,8 +13,8 @@
     {
       "type": "match",
       "id": "ex-review",
-      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
-      "title": "♻️ REPASO EXPRESS",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -41,7 +41,7 @@
     },
     {
       "type": "grammar",
-      "title": "🍽️ EATING OUT &amp; FOOD",
+      "title": "<ico-utensils></ico-utensils> EATING OUT &amp; FOOD",
       "intro": "Para pedir, describir y recomendar comida. Practica en voz alta, ¡sin traductor!",
       "parts": [
         {
@@ -111,7 +111,7 @@
     },
     {
       "type": "grammar",
-      "title": "📘 COMPARATIVES &amp; SUPERLATIVES · quantifiers",
+      "title": "<ico-book></ico-book> COMPARATIVES &amp; SUPERLATIVES · quantifiers",
       "intro": "",
       "parts": [
         {
@@ -145,7 +145,7 @@
     },
     {
       "type": "story",
-      "title": "★ WHAT'S GOOD HERE?",
+      "title": "<ico-star></ico-star> WHAT'S GOOD HERE?",
       "intro": "Ivy y Leo eligen qué pedir. Primero <b>practicas</b> comparar, y luego <b>escuchas</b> 2 audios: una <b>recomendación</b> en el restaurante y una <b>comparación</b>.",
       "cast": [
         {
@@ -162,7 +162,7 @@
     {
       "type": "gapFill",
       "id": "ex-1",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "COMPARATIVE or SUPERLATIVE?",
       "intro": "Comparar dos → comparativo (+ <i>than</i>). El máximo → superlativo (<i>the</i> …).",
       "items": [
@@ -225,7 +225,7 @@
     {
       "type": "gapFill",
       "id": "ex-2",
-      "icon": "✅",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
       "title": "QUANTIFIERS",
       "intro": "some (+) · any (?/–) · much / many · a few.",
       "items": [
@@ -385,7 +385,7 @@
       "desc": "Ivy y Leo eligen del menú. Fíjate en las <b>comparaciones</b>.",
       "src": "trv-l3-1.mp3",
       "dur": "0:32",
-      "speakers": "🗣 Ivy + Leo",
+      "speakers": "<ico-commentdots></ico-commentdots> Ivy + Leo",
       "questions": [
         {
           "type": "mcq",
@@ -456,7 +456,7 @@
       "desc": "Alguien compara dos restaurantes. Fíjate en <b>cuál</b> es más barato, mejor postre y más simpático.",
       "src": "trv-l3-2.mp3",
       "dur": "0:20",
-      "speakers": "🗣 monólogo",
+      "speakers": "<ico-commentdots></ico-commentdots> monólogo",
       "questions": [
         {
           "type": "mcq",
@@ -491,14 +491,14 @@
       ],
       "transcript": [
         {
-          "spk": "🗣",
+          "spk": "<ico-commentdots></ico-commentdots>",
           "html": "There are two good restaurants on my street. The <span class=\"tg\">first one is cheaper</span>, and the pizza is delicious. The second one is more expensive, but it has <span class=\"tg\">the best desserts</span> in the city. If you like meat, the second one is better. But the <span class=\"tg\">first one is friendlier</span> and never too busy."
         }
       ]
     },
     {
       "type": "writing",
-      "title": "✍️ A SHORT REVIEW",
+      "title": "<ico-pen></ico-pen> A SHORT REVIEW",
       "intro": "Escribe una <b>reseña corta</b> (5–6 oraciones) comparando dos restaurantes o cafés que conoces. Usa al menos <b>2 comparativos</b> y <b>1 superlativo</b>.",
       "checklist": [],
       "placeholder": "There are two great cafés near me. The first one is cheaper, but...",

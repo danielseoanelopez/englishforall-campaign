@@ -13,8 +13,8 @@
     {
       "type": "match",
       "id": "ex-review",
-      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
-      "title": "♻️ REPASO EXPRESS",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -41,7 +41,7 @@
     },
     {
       "type": "grammar",
-      "title": "📧 THE 6 PARTS OF AN EMAIL",
+      "title": "<ico-envelope></ico-envelope> THE 6 PARTS OF AN EMAIL",
       "intro": "",
       "parts": [
         {
@@ -78,7 +78,7 @@
     },
     {
       "type": "grammar",
-      "title": "📘 POLITE · INDIRECT LANGUAGE",
+      "title": "<ico-book></ico-book> POLITE · INDIRECT LANGUAGE",
       "intro": "Cuanto más indirecto, más educado. De directo → muy educado:",
       "parts": [
         {
@@ -101,7 +101,7 @@
               "body": "<b style=\"color:var(--purple)\">Modales:</b> Can you… → <span class=\"ok\">Could you… / Would you be able to…</span><br><b style=\"color:var(--purple)\">Contracciones:</b> I'll → <span class=\"ok\">I will</span>"
             },
             {
-              "h": "🇺🇸 American spelling",
+              "h": "<span class=lang-tag>US</span> American spelling",
               "body": "<span class=\"ok\">color</span> (no colour) · <span class=\"ok\">behavior</span> · <span class=\"ok\">organize</span> · <span class=\"ok\">center</span>. Fecha: <b>April 5</b>. Y <b>on the weekend</b>."
             }
           ]
@@ -113,7 +113,7 @@
         },
         {
           "type": "vocab",
-          "btn": "📒 Ver vocabulario clave",
+          "btn": "<ico-bookmark></ico-bookmark> Ver vocabulario clave",
           "items": [
             {
               "en": "to follow up on…",
@@ -183,16 +183,16 @@
     },
     {
       "type": "story",
-      "title": "★ RUDE vs. POLITE",
+      "title": "<ico-star></ico-star> RUDE vs. POLITE",
       "intro": "Vas a escuchar el mismo tipo de pedido de dos formas: <b>Mark</b> (directo, casi grosero) y <b>Elena</b> (profesional y educada). Tu misión: convertir lo directo en un email cortés.",
       "cast": [
         {
           "en": "Mark",
-          "sp": "deja un voicemail directo 😬"
+          "sp": "deja un voicemail directo "
         },
         {
           "en": "Elena",
-          "sp": "llama de forma educada ✅"
+          "sp": "llama de forma educada <ico-circlecheck></ico-circlecheck>"
         }
       ],
       "stage": "② THE STORY <span class=\"es\">· dos maneras de pedir lo mismo</span>"
@@ -200,7 +200,7 @@
     {
       "type": "gapFill",
       "id": "ex-1",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "MAKE IT POLITE",
       "intro": "Elige la versión <b>más educada / profesional</b>.",
       "items": [
@@ -263,7 +263,7 @@
     {
       "type": "gapFill",
       "id": "ex-2",
-      "icon": "✅",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
       "title": "FIX THE EMAIL",
       "intro": "Elige la mejor opción para un email profesional.",
       "items": [
@@ -417,7 +417,7 @@
       "desc": "Mark deja un mensaje muy directo. Escúchalo — luego lo convertirás en un email educado.",
       "src": "biz-l3-1.mp3",
       "dur": "0:24",
-      "speakers": "🗣 Mark",
+      "speakers": "<ico-commentdots></ico-commentdots> Mark",
       "questions": [
         {
           "type": "mcq",
@@ -465,7 +465,7 @@
       "desc": "Elena pide lo mismo, pero de forma profesional. Fíjate en las <b>frases educadas</b>.",
       "src": "biz-l3-2.mp3",
       "dur": "0:29",
-      "speakers": "🗣 Elena",
+      "speakers": "<ico-commentdots></ico-commentdots> Elena",
       "questions": [
         {
           "type": "mcq",
@@ -507,7 +507,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ TURN MARK INTO A POLITE EMAIL",
+      "title": "<ico-pen></ico-pen> TURN MARK INTO A POLITE EMAIL",
       "intro": "Convierte el mensaje directo de <b>Mark</b> en un <b>email profesional</b>. Incluye las 6 partes y lenguaje indirecto.",
       "checklist": [
         "Subject line + greeting (Dear…)",

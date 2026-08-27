@@ -13,8 +13,8 @@
     {
       "type": "match",
       "id": "ex-review",
-      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
-      "title": "♻️ REPASO EXPRESS",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -41,7 +41,7 @@
     },
     {
       "type": "grammar",
-      "title": "🧳 TRAVEL EXPERIENCES",
+      "title": "<ico-suitcase></ico-suitcase> TRAVEL EXPERIENCES",
       "intro": "Vocabulario para contar qué pasó en un viaje. Practica en voz alta, ¡sin traductor!",
       "parts": [
         {
@@ -111,7 +111,7 @@
     },
     {
       "type": "grammar",
-      "title": "📘 PAST SIMPLE vs. PAST CONTINUOUS",
+      "title": "<ico-book></ico-book> PAST SIMPLE vs. PAST CONTINUOUS",
       "intro": "",
       "parts": [
         {
@@ -145,7 +145,7 @@
     },
     {
       "type": "story",
-      "title": "★ THE TRIP TO PERU",
+      "title": "<ico-star></ico-star> THE TRIP TO PERU",
       "intro": "Max le cuenta a Ada su viaje a Perú. Primero <b>practicas</b> los tiempos del pasado, y luego <b>escuchas</b> 2 audios: una <b>historia</b> y una <b>anécdota</b>.",
       "cast": [
         {
@@ -162,7 +162,7 @@
     {
       "type": "gapFill",
       "id": "ex-1",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "PAST SIMPLE or CONTINUOUS?",
       "intro": "Acción en progreso / fondo → past continuous. Hecho terminado → past simple.",
       "items": [
@@ -220,7 +220,7 @@
     {
       "type": "gapFill",
       "id": "ex-2",
-      "icon": "✅",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
       "title": "CHOOSE THE LINKER",
       "intro": "when / while / then / suddenly / in the end.",
       "items": [
@@ -382,7 +382,7 @@
       "desc": "Max cuenta su primer día en Perú. Fíjate en <b>qué pasó</b> y <b>cuándo</b>.",
       "src": "trv-l4-1.mp3",
       "dur": "0:34",
-      "speakers": "🗣 Ada + Max",
+      "speakers": "<ico-commentdots></ico-commentdots> Ada + Max",
       "questions": [
         {
           "type": "mcq",
@@ -453,7 +453,7 @@
       "desc": "Alguien cuenta una anécdota. Fíjate en <b>qué pasó</b> y <b>quién ayudó</b>.",
       "src": "trv-l4-2.mp3",
       "dur": "0:22",
-      "speakers": "🗣 monólogo",
+      "speakers": "<ico-commentdots></ico-commentdots> monólogo",
       "questions": [
         {
           "type": "mcq",
@@ -488,14 +488,14 @@
       ],
       "transcript": [
         {
-          "spk": "🗣",
+          "spk": "<ico-commentdots></ico-commentdots>",
           "html": "Last summer, we drove to the mountains. <span class=\"tg\">While we were driving, the car broke down</span>. It was raining, and we didn't have a phone signal. We waited for an hour, and then a <span class=\"tg\">farmer</span> stopped to help us. In the end, we stayed at his house and had a <span class=\"tg\">great night</span>. It was the best part of the trip!"
         }
       ]
     },
     {
       "type": "writing",
-      "title": "✍️ TELL A STORY",
+      "title": "<ico-pen></ico-pen> TELL A STORY",
       "intro": "Escribe una <b>historia corta</b> (6–8 oraciones) sobre un viaje o un día memorable, usando el <b>pasado simple</b> y el <b>pasado continuo</b> juntos, con al menos dos conectores.",
       "checklist": [],
       "placeholder": "Last year, we traveled to... While we were...",

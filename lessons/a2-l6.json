@@ -11,13 +11,13 @@
   "resultTitle": "LESSON 6 SCORE",
   "next": {
     "href": "a2-final.html",
-    "label": "⚔ A2 BOSS TEST"
+    "label": "<ico-skull></ico-skull> A2 BOSS TEST"
   },
   "blocks": [
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -45,15 +45,15 @@
     {
       "type": "grammar",
       "tag": "going to / present continuous",
-      "title": "📘 PLANES A FUTURO · going to / present continuous",
+      "title": "<ico-book></ico-book> PLANES A FUTURO · going to / present continuous",
       "intro": "Dos formas de hablar del futuro: <b style='color:var(--gold)'>going to</b> (planes) y el <b style='color:var(--gold)'>present continuous</b> (citas con día/hora). Es la última lección antes del examen.",
       "cells": [
         {
-          "h": "🎯 be going to (planes)",
+          "h": "<ico-target></ico-target> be going to (planes)",
           "body": "am/is/are + <code>going to</code> + base<br>I'm <code>going to study</code>.<br>We're <code>going to launch</code> it."
         },
         {
-          "h": "📅 present continuous (citas)",
+          "h": "<ico-calendar></ico-calendar> present continuous (citas)",
           "body": "am/is/are + verbo<code>-ing</code> + hora<br>I'm <code>meeting</code> the client at 3.<br>We're <code>flying</code> on Monday."
         },
         {
@@ -61,7 +61,7 @@
           "body": "<code>Are you going to</code> start?<br>I'm <code>not going to</code> wait.<br><span class='es'>Yes, I am. / No, I'm not.</span>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "no olvides <code>be</code>: <span class='x'>I going to go</span><br><span class='ok'>I'm going to go.</span><br>going to = plan · present cont. = cita fija"
         }
       ],
@@ -74,7 +74,7 @@
         "next month",
         "in summer"
       ],
-      "vocabBtn": "📒 Ver vocabulario de planes",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de planes",
       "vocab": [
         {
           "en": "A plan / A goal",
@@ -109,7 +109,7 @@
           "sp": "entusiasmado con"
         }
       ],
-      "note": "<b>Cómo funciona:</b> escucha los planes 🎧, completa 📝 y ordena 🧩. ¡Última lección del mundo A2 — después viene el examen!"
+      "note": "<b>Cómo funciona:</b> escucha los planes <ico-headphones></ico-headphones>, completa <ico-filepen></ico-filepen> y ordena <ico-puzzle></ico-puzzle>. ¡Última lección del mundo A2 — después viene el examen!"
     },
     {
       "type": "flashcards",
@@ -163,7 +163,7 @@
     {
       "type": "story",
       "tag": "planeando lo que viene",
-      "title": "★ WHAT'S NEXT?",
+      "title": "<ico-star></ico-star> WHAT'S NEXT?",
       "intro": "El equipo mira hacia adelante: un proyecto nuevo y un viaje de trabajo. Después de esta lección viene el <b>examen del mundo A2</b>.",
       "cast": [
         {
@@ -235,7 +235,7 @@
       "desc": "Sofia y Marcos planean el próximo proyecto. Fíjate en \"going to\".",
       "src": "plans-1.mp3",
       "dur": "0:43",
-      "speakers": "🗣 Sofia + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -366,7 +366,7 @@
       "desc": "Marcos cuenta su agenda para un viaje. Fíjate en el present continuous con horas.",
       "src": "plans-2.mp3",
       "dur": "0:33",
-      "speakers": "🗣 Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -454,7 +454,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ MY PLANS",
+      "title": "<ico-pen></ico-pen> MY PLANS",
       "intro": "Escribe tus planes (5–6 frases): tus metas y tu agenda de la próxima semana.",
       "checklist": [
         "Usa <b>2 planes</b> con <b>going to</b>",

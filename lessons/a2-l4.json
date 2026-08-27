@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,7 +44,7 @@
     {
       "type": "grammar",
       "tag": "requests & offers",
-      "title": "📘 PEDIR & OFRECER · can / could / would",
+      "title": "<ico-book></ico-book> PEDIR & OFRECER · can / could / would",
       "intro": "En el trabajo pedimos y ofrecemos cosas todo el día. Usamos <b style='color:var(--gold)'>modales</b> + verbo base. Repasa y practica.",
       "cells": [
         {
@@ -52,15 +52,15 @@
           "body": "<code>Can you</code> help me?<br><code>Could you</code> send it? <span class='es'>(más cortés)</span><br><code>Can I</code> have your number?"
         },
         {
-          "h": "✋ Offers (ofrecer)",
+          "h": "<ico-hand></ico-hand> Offers (ofrecer)",
           "body": "<code>I'll</code> call the client.<br><code>Shall I</code> help you?<br><code>Would you like</code> a coffee?"
         },
         {
-          "h": "💬 Responding",
+          "h": "<ico-comments></ico-comments> Responding",
           "body": "<span class='ok'>Sure! / Of course.</span><br><span class='ok'>No problem.</span><br><span class='x'>Sorry, I can't right now.</span>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "verbo base: <span class='x'>Can you to send?</span><br><span class='ok'>Can you send?</span><br><code>could</code> &gt; <code>can</code> <span class='es'>(más formal)</span>"
         }
       ],
@@ -70,7 +70,7 @@
         "Could you…?",
         "Would you mind…?"
       ],
-      "vocabBtn": "📒 Ver vocabulario de teléfono/chat",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de teléfono/chat",
       "vocab": [
         {
           "en": "Take a message",
@@ -105,7 +105,7 @@
           "sp": "¿te molestaría…?"
         }
       ],
-      "note": "<b>Cómo funciona:</b> elige respuestas 💬, une funciones 🔗 y escucha llamadas 🎧. ✓ CHECK en cada uno."
+      "note": "<b>Cómo funciona:</b> elige respuestas <ico-comments></ico-comments>, une funciones <ico-link></ico-link> y escucha llamadas <ico-headphones></ico-headphones>. <ico-check></ico-check> CHECK en cada uno."
     },
     {
       "type": "flashcards",
@@ -159,7 +159,7 @@
     {
       "type": "story",
       "tag": "un día de llamadas y chats",
-      "title": "★ A BUSY DAY AT THE OFFICE",
+      "title": "<ico-star></ico-star> A BUSY DAY AT THE OFFICE",
       "intro": "Marcos atiende una llamada de una clienta y ayuda a Sofia por chat. Todo el día pide y ofrece ayuda.",
       "cast": [
         {
@@ -286,7 +286,7 @@
       "desc": "Marcos atiende una llamada. La clienta quiere hablar con Sofia.",
       "src": "requests-offers-1.mp3",
       "dur": "1:01",
-      "speakers": "🗣 Marcos + Emma",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos + Emma",
       "questions": [
         {
           "type": "mcq",
@@ -398,7 +398,7 @@
       "desc": "Sofia le pide ayuda a Marcos con un informe.",
       "src": "requests-offers-2.mp3",
       "dur": "0:47",
-      "speakers": "🗣 Sofia + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -476,7 +476,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ A WORK CHAT",
+      "title": "<ico-pen></ico-pen> A WORK CHAT",
       "intro": "Escribe un chat de trabajo corto (5–6 líneas). Pide 2 cosas y ofrece 1:",
       "checklist": [
         "Pide con <b>Can you…?</b> y <b>Could you…?</b>",

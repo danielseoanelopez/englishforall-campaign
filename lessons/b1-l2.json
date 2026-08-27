@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,31 +44,31 @@
     {
       "type": "grammar",
       "tag": "meetings",
-      "title": "📘 RUNNING A MEETING · frases clave",
+      "title": "<ico-book></ico-book> RUNNING A MEETING · frases clave",
       "intro": "En B1, no solo participas en reuniones: las <b style='color:var(--gold)'>diriges</b>. Aprende a estructurar, estar de acuerdo o discrepar, e interrumpir con educación. Repasa y luego practica.",
       "cells": [
         {
-          "h": "🎤 Estructurar",
+          "h": "<ico-mic></ico-mic> Estructurar",
           "body": "<code>Let's get started.</code><br><code>Let's move on to…</code><br><code>Let's wrap up.</code> <span class='es'>(cerrar)</span>"
         },
         {
-          "h": "👍 De acuerdo",
+          "h": "<ico-thumbup></ico-thumbup> De acuerdo",
           "body": "<code>I completely agree.</code><br><code>Good point.</code><br><code>You're right.</code>"
         },
         {
-          "h": "👎 Discrepar (con tacto)",
+          "h": "<ico-thumbdown></ico-thumbdown> Discrepar (con tacto)",
           "body": "<code>I see your point, but…</code><br><code>I'm not sure I agree.</code><br><code>I'd say…</code>"
         },
         {
-          "h": "✋ Interrumpir / aclarar",
+          "h": "<ico-hand></ico-hand> Interrumpir / aclarar",
           "body": "<code>Sorry to jump in, but…</code><br><code>Can I add something?</code><br><code>Could you clarify that?</code>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='x'>You're wrong.</span> <span class='es'>(brusco)</span><br><span class='ok'>I see your point, but I'm not sure that works.</span>"
         }
       ],
-      "ladderLabel": "<b style='color:var(--purple)'>Escala de diplomacia</b> — de brusco (✗) a profesional (✓). En el trabajo, movete a la derecha:",
+      "ladderLabel": "<b style='color:var(--purple)'>Escala de diplomacia</b> — de brusco (<ico-xmark></ico-xmark>) a profesional (<ico-check></ico-check>). En el trabajo, movete a la derecha:",
       "ladder": [
         "No.",
         "I don't think so.",
@@ -76,7 +76,7 @@
         "I see your point, but…",
         "That's a good idea, though maybe…"
       ],
-      "vocabBtn": "📒 Ver vocabulario de reuniones",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de reuniones",
       "vocab": [
         {
           "en": "to run / chair a meeting",
@@ -127,7 +127,7 @@
           "sp": "tarea pendiente"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>unir</b> 🔗, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>unir</b> <ico-link></ico-link>, <b>elegir respuestas</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
     },
     {
       "type": "flashcards",
@@ -181,7 +181,7 @@
     {
       "type": "story",
       "tag": "el primer standup",
-      "title": "★ MARCOS LEADS THE STANDUP",
+      "title": "<ico-star></ico-star> MARCOS LEADS THE STANDUP",
       "intro": "Sofia confía en Marcos para dirigir el standup diario por primera vez. Pero Priya está mirando, y la agenda se complica: el cliente pide un cambio de último minuto. Marcos tiene que mantener el control… con diplomacia.",
       "cast": [
         {
@@ -364,7 +364,7 @@
       "desc": "Marcos dirige el standup. El cliente quiere una función nueva. ¿Cómo lo maneja Marcos?",
       "src": "b1-l2-1.mp3",
       "dur": "1:19",
-      "speakers": "🗣 Marcos + Sofia + Priya",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos + Sofia + Priya",
       "questions": [
         {
           "type": "mcq",
@@ -499,7 +499,7 @@
       "desc": "Marcos llama a David. El cliente presiona por la función nueva. Marcos gestiona sus expectativas.",
       "src": "b1-l2-2.mp3",
       "dur": "1:08",
-      "speakers": "🗣 Marcos + David",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos + David",
       "questions": [
         {
           "type": "mcq",
@@ -586,7 +586,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ THE RECAP EMAIL",
+      "title": "<ico-pen></ico-pen> THE RECAP EMAIL",
       "intro": "Después de una reunión, escribe un email corto (5–7 frases) con el resumen y los próximos pasos:",
       "checklist": [
         "Saluda y di de qué reunión se trata (<i>Following our meeting today…</i>)",

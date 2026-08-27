@@ -13,8 +13,8 @@
     {
       "type": "match",
       "id": "ex-review",
-      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
-      "title": "♻️ REPASO EXPRESS",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -41,7 +41,7 @@
     },
     {
       "type": "grammar",
-      "title": "🤝 MAKE THE DEAL",
+      "title": "<ico-handshake></ico-handshake> MAKE THE DEAL",
       "intro": "",
       "parts": [
         {
@@ -70,7 +70,7 @@
     },
     {
       "type": "grammar",
-      "title": "📘 CONDITIONALS FOR NEGOTIATION",
+      "title": "<ico-book></ico-book> CONDITIONALS FOR NEGOTIATION",
       "intro": "",
       "parts": [
         {
@@ -94,11 +94,11 @@
         {
           "type": "note",
           "gold": true,
-          "body": "<b>⚠ Ojo:</b> \"If you had accepted… we could have delivered…\" es <b>3rd conditional</b> (pasado imaginario), NO 2nd. 2nd = presente/futuro poco probable; 3rd = un pasado que no ocurrió."
+          "body": "<b><ico-warn></ico-warn> Ojo:</b> \"If you had accepted… we could have delivered…\" es <b>3rd conditional</b> (pasado imaginario), NO 2nd. 2nd = presente/futuro poco probable; 3rd = un pasado que no ocurrió."
         },
         {
           "type": "vocab",
-          "btn": "📒 Ver vocabulario clave",
+          "btn": "<ico-bookmark></ico-bookmark> Ver vocabulario clave",
           "items": [
             {
               "en": "to negotiate a deal",
@@ -167,7 +167,7 @@
     },
     {
       "type": "story",
-      "title": "★ BUYER vs. SUPPLIER",
+      "title": "<ico-star></ico-star> BUYER vs. SUPPLIER",
       "intro": "Un comprador y un proveedor negocian precio y plazos. Practica los condicionales, y luego <b>escucha</b> dos negociaciones: <b>precio</b> y <b>entrega</b>.",
       "cast": [
         {
@@ -184,7 +184,7 @@
     {
       "type": "gapFill",
       "id": "ex-1",
-      "icon": "✏️",
+      "icon": "<ico-pencil></ico-pencil>",
       "title": "COMPLETE THE CONDITIONAL",
       "intro": "Elige la forma correcta para cada condicional de negociación.",
       "items": [
@@ -230,7 +230,7 @@
         },
         {
           "type": "mcq",
-          "q": "<span class=\"es\">(⭐ 2nd cond.)</span> If we reduced the price, you <b class=\"tg\">___</b> commit to a long contract?",
+          "q": "<span class=\"es\">(<ico-star></ico-star> 2nd cond.)</span> If we reduced the price, you <b class=\"tg\">___</b> commit to a long contract?",
           "options": [
             "will",
             "did",
@@ -248,7 +248,7 @@
     {
       "type": "gapFill",
       "id": "ex-2",
-      "icon": "✅",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
       "title": "RIGHT OR WRONG?",
       "intro": "Corrige tu ojo para los condicionales y elige la mejor frase de negociación.",
       "items": [
@@ -292,7 +292,7 @@
         },
         {
           "type": "mcq",
-          "q": "<span class=\"es\">(⭐ 2nd cond.)</span> \"If we had more time, we <b class=\"tg\">___</b> explore other options.\"",
+          "q": "<span class=\"es\">(<ico-star></ico-star> 2nd cond.)</span> \"If we had more time, we <b class=\"tg\">___</b> explore other options.\"",
           "options": [
             "can",
             "will",
@@ -407,7 +407,7 @@
       "desc": "Un comprador y un proveedor negocian el precio. Fíjate en los <b>condicionales</b> y las <b>condiciones</b>.",
       "src": "biz-l4-1.mp3",
       "dur": "0:33",
-      "speakers": "🗣 Buyer + Supplier",
+      "speakers": "<ico-commentdots></ico-commentdots> Buyer + Supplier",
       "questions": [
         {
           "type": "mcq",
@@ -476,7 +476,7 @@
       "desc": "Ahora negocian el <b>plazo de entrega</b>. Fíjate en la condición para adelantar la fecha.",
       "src": "biz-l4-2.mp3",
       "dur": "0:33",
-      "speakers": "🗣 Supplier + Client",
+      "speakers": "<ico-commentdots></ico-commentdots> Supplier + Client",
       "questions": [
         {
           "type": "mcq",
@@ -541,7 +541,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ CONFIRM THE DEAL",
+      "title": "<ico-pen></ico-pen> CONFIRM THE DEAL",
       "intro": "Escribe <b>un email corto</b> confirmando un trato que negociaste. Usa <b>2 frases con primer condicional</b> (\"If you…, we will…\").",
       "checklist": [
         "Saludo + motivo (I'm writing to confirm…)",

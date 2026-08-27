@@ -16,7 +16,7 @@
     {
       "type": "match",
       "id": "ex-review",
-      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
@@ -44,7 +44,7 @@
     {
       "type": "grammar",
       "tag": "conditionals",
-      "title": "📘 CONDICIONALES · 1st & 2nd",
+      "title": "<ico-book></ico-book> CONDICIONALES · 1st & 2nd",
       "intro": "Para negociar necesitas condicionales: el <b style='color:var(--gold)'>1st conditional</b> para cosas posibles y reales, y el <b style='color:var(--gold)'>2nd conditional</b> para situaciones hipotéticas. Repasa y luego practica.",
       "cells": [
         {
@@ -56,15 +56,15 @@
           "body": "<code>If + past, would + verbo</code><br><span class='ok'>If we <b>had</b> more time, we <b>would add</b> more features.</span> <span class='es'>(hipotético)</span>"
         },
         {
-          "h": "🚫 unless",
+          "h": "<ico-ban></ico-ban> unless",
           "body": "<code>unless</code> = if not:<br><i>We can't start <b>unless</b> you confirm.</i> <span class='es'>(a menos que)</span>"
         },
         {
-          "h": "🤝 as long as",
+          "h": "<ico-handshake></ico-handshake> as long as",
           "body": "<code>as long as</code> = siempre que:<br><i>We'll finish on time <b>as long as</b> nothing changes.</i>"
         },
         {
-          "h": "⚠ Watch out",
+          "h": "<ico-warn></ico-warn> Watch out",
           "body": "<span class='x'>If you will confirm…</span><br><span class='ok'>If you confirm…</span> <span class='es'>(no 'will' después de if)</span><br><span class='ok'>If I <b>were</b> you, I'd…</span>"
         }
       ],
@@ -76,7 +76,7 @@
         "As long as the scope stays, we're fine.",
         "If we had more budget, we'd do it all."
       ],
-      "vocabBtn": "📒 Ver vocabulario de negociación",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de negociación",
       "vocab": [
         {
           "en": "to meet you halfway",
@@ -127,7 +127,7 @@
           "sp": "cerrar el trato"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>unir</b> 🔗. Haz el ✓ CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> <ico-filepen></ico-filepen>, <b>elegir respuestas</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>unir</b> <ico-link></ico-link>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
     },
     {
       "type": "flashcards",
@@ -181,7 +181,7 @@
     {
       "type": "story",
       "tag": "la negociación",
-      "title": "★ THE SCOPE NEGOTIATION",
+      "title": "<ico-star></ico-star> THE SCOPE NEGOTIATION",
       "intro": "David quiere más funciones para GreenMarket… pero Priya controla el presupuesto y no cede fácil. Marcos queda en el medio: tiene que negociar el alcance con condicionales — ofertas, condiciones y consecuencias.",
       "cast": [
         {
@@ -412,7 +412,7 @@
       "desc": "David pide más funciones. Priya defiende el presupuesto. Marcos busca el acuerdo. ¿Quién consigue qué?",
       "src": "b1-l4-1.mp3",
       "dur": "1:16",
-      "speakers": "🗣 Marcos + David + Priya",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos + David + Priya",
       "questions": [
         {
           "type": "mcq",
@@ -544,7 +544,7 @@
       "desc": "Después de la llamada, Marcos y Sofia repasan el acuerdo y planean la fase dos.",
       "src": "b1-l4-2.mp3",
       "dur": "0:49",
-      "speakers": "🗣 Sofia + Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
@@ -617,7 +617,7 @@
     },
     {
       "type": "writing",
-      "title": "✍️ THE COUNTER-OFFER EMAIL",
+      "title": "<ico-pen></ico-pen> THE COUNTER-OFFER EMAIL",
       "intro": "Un cliente pide más funciones sin más presupuesto. Escribe tu contraoferta (5–7 frases):",
       "checklist": [
         "Agradece el interés y resume el pedido",
