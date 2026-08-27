@@ -111,26 +111,46 @@ function qHtml(q, name, num, sp){
 }
 
 // ---------- block renderers ----------
-function grammarHtml(g){
-  let h = `<div class="stage-tag">📘 GRAMMAR <span class="es">· ${esc(g.tag)}</span></div>
+function grammarHtml(g, gi){
+  const vid = "vocabRef" + (gi == null ? "" : gi);
+  let h = (g.stage === false ? "" : `<div class="stage-tag">${g.stage ? esc(g.stage) : `📘 GRAMMAR <span class="es">· ${esc(g.tag)}</span>`}</div>`) + `
   <div class="card grammar" data-aos="fade-up"><div class="panel-title">${esc(g.title)}</div><p>${esc(g.intro)}</p>
   <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}</div>`).join("")}</div>`;
   if(g.ladderLabel) h += `<p style="margin-top:16px">${esc(g.ladderLabel)}</p>`;
   if(g.ladder && g.ladder.length) h += `<div class="freq-bar">${g.ladder.map((c,i)=>`<span class="chip">${esc(c)}${spkBtn(c,"mini")}</span>${i<g.ladder.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
+  if(g.parts && g.parts.length){
+    g.parts.forEach((p,pi)=>{
+      const vid2 = "vocabRef" + (gi==null?"":gi) + "_" + pi;
+      if(p.type==="p")       h += `<p>${esc(p.html)}</p>`;
+      else if(p.type==="cells")  h += `<div class="gram-grid">${(p.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}</div>`).join("")}</div>`;
+      else if(p.type==="phrases") h += `<ul class="phrase-list">${(p.items||[]).map(x=>`<li><span class="en">${esc(x.en)}${spkBtn(x.en,"mini")}</span><span class="sp">${esc(x.sp)}</span></li>`).join("")}</ul>`;
+      else if(p.type==="chips")  h += `<div class="freq-bar">${(p.items||[]).map((c,ci)=>`<span class="chip">${esc(c)}</span>${ci<p.items.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
+      else if(p.type==="stretch") h += `<div class="stretch"><div class="sh">⭐ ${esc(p.h||"B2 STRETCH")}</div>${esc(p.body)}</div>`;
+      else if(p.type==="note")   h += `<div class="note${p.gold?" gold":""}">${esc(p.body)}</div>`;
+      else if(p.type==="gloss")  h += `<div class="gloss">${(p.items||[]).map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div>`;
+      else if(p.type==="vocab")  h += `<button class="toggle-btn" data-show="${esc(p.btn||'📒 Ver vocabulario')}" data-hide="📒 Ocultar" onclick="toggleReveal('${vid2}', this)">${esc(p.btn||'📒 Ver vocabulario')}</button><div class="reveal" id="${vid2}"><div class="gloss" style="margin-top:12px">${(p.items||[]).map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
+    });
+  }
+  if(g.phrases && g.phrases.length){
+    h += `<ul class="phrase-list">${g.phrases.map(p=>`<li><span class="en">${esc(p.en)}${spkBtn(p.en,"mini")}</span><span class="sp">${esc(p.sp)}</span></li>`).join("")}</ul>`;
+  }
+  (g.stretch||[]).forEach(st=>{
+    h += `<div class="stretch"><div class="sh">⭐ ${esc(st.h||"B2 STRETCH")}</div>${esc(st.body)}</div>`;
+  });
   if(g.vocab && g.vocab.length){
-    h += `<button class="toggle-btn" data-show="${esc(g.vocabBtn||'📒 Ver vocabulario')}" data-hide="📒 Ocultar vocabulario" onclick="toggleReveal('vocabRef', this)">${esc(g.vocabBtn||'📒 Ver vocabulario')}</button>
-    <div class="reveal" id="vocabRef"><div class="gloss" style="margin-top:14px">${g.vocab.map(v=>`<div class="term"><span class="en">${esc(v.en)}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
+    h += `<button class="toggle-btn" data-show="${esc(g.vocabBtn||'📒 Ver vocabulario')}" data-hide="📒 Ocultar vocabulario" onclick="toggleReveal('${vid}', this)">${esc(g.vocabBtn||'📒 Ver vocabulario')}</button>
+    <div class="reveal" id="${vid}"><div class="gloss" style="margin-top:14px">${g.vocab.map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
   }
   if(g.note) h += `<div class="note">${esc(g.note)}</div>`;
   return h + `</div>`;
 }
 function storyHtml(s){
-  return `<div class="stage-tag">★ THE STORY <span class="es">· ${esc(s.tag)}</span></div>
+  return (s.stage === false ? "" : `<div class="stage-tag">${s.stage ? esc(s.stage) : `★ THE STORY <span class="es">· ${esc(s.tag)}</span>`}</div>`) + `
   <div class="card alt" data-aos="fade-up"><div class="panel-title">${esc(s.title)}</div><p>${esc(s.intro)}</p>
   <div class="gloss">${(s.cast||[]).map(c=>`<div class="term"><span class="en">${esc(c.en)}</span> <span class="sp">${noFlags(c.sp)}</span></div>`).join("")}</div></div>`;
 }
 function listeningHtml(b, id, alt){
-  let h = `<div class="card${alt?' alt':''}" id="${id}" data-aos="fade-up"><div class="panel-title">🎧 ${esc(b.title)}</div><p class="es">${esc(b.desc)}</p>
+  let h = (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card${alt?' alt':''}" id="${id}" data-aos="fade-up"><div class="panel-title">🎧 ${esc(b.title)}</div><p class="es">${esc(b.desc)}</p>
   <div class="player"><audio controls preload="metadata" src="${esc(b.src)}"></audio><div class="meta"><span>⏱ <b>${esc(b.dur)}</b></span><span>${noFlags(b.speakers)}</span></div></div>`;
   h += (b.questions||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {q:true, opt:true})).join("");
   h += `<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div>`;
@@ -152,9 +172,10 @@ function contrastHtml(b, id){
   <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function gapFillHtml(b, id){
-  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">📝 ${esc(b.title||'COMPLETA LA FRASE')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">${esc(b.icon || "📝")} ${esc(b.title||'COMPLETA LA FRASE')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   ${(b.items||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {opt:true})).join("")}
-  <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
+  <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div>
+  ${b.speaking?`<div class="verbal"><p class="vq"><span class="mic">🎤</span><b>Speaking:</b> ${esc(b.speaking.prompt)}</p>${b.speaking.starter?`<button class="toggle-btn" data-show="💡 Pista para empezar" data-hide="🙈 Ocultar" onclick="toggleReveal('${id}-m', this)">💡 Pista para empezar</button><div class="reveal model-box" id="${id}-m"><span class="lbl">EMPIEZA ASÍ</span>${esc(b.speaking.starter)}</div>`:""}</div>`:""}</div>`;
 }
 function dialogueHtml(b, id){
   let n=0;
@@ -231,7 +252,7 @@ function fcNextDeck(id){
   blip();
 }
 function writingHtml(w){
-  return `<div class="stage-tag">✍️ WRITING <span class="es">· en clase o tarea (HW)</span></div>
+  return (w.stage === false ? "" : `<div class="stage-tag">${w.stage ? esc(w.stage) : `✍️ WRITING <span class="es">· en clase o tarea (HW)</span>`}</div>`) + `
   <div class="card purple" data-aos="fade-up"><div class="panel-title">${esc(w.title)}</div><p>${esc(w.intro)}</p>
   <ul class="checklist">${(w.checklist||[]).map(li=>`<li class="ck" role="checkbox" aria-checked="false" tabindex="0" onclick="ckToggle(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();ckToggle(this);}">${esc(li)}</li>`).join("")}</ul>
   <textarea class="writing-area" id="writingBox" placeholder="${escAttr(w.placeholder||'')}"></textarea>
@@ -253,7 +274,9 @@ function legacyBlocks(L){
 function build(L){
   LESSON = L; LESSON_KEY = L.key; LESSON_NAME = L.titlePlain;
   document.getElementById("pageTitle").textContent = "English for All · " + (L.titlePlain||"Lesson");
-  document.getElementById("crumb").innerHTML = `<span class="w">WORLD ${esc(L.level)} · ${esc(L.world)}</span> ▸ LESSON ${esc(L.num)} / ${esc(L.totalLessons||6)}`;
+  document.getElementById("crumb").innerHTML = L.track
+    ? `<span class="plus">★ ${esc(L.track.toUpperCase())}</span> <span class="w">SIDEQUEST</span> ▸ LESSON ${esc(L.num)} / ${esc(L.totalLessons||4)}`
+    : `<span class="w">WORLD ${esc(L.level)} · ${esc(L.world)}</span> ▸ LESSON ${esc(L.num)} / ${esc(L.totalLessons||6)}`;
   document.getElementById("h1").innerHTML = esc(L.title);
   document.getElementById("sub").innerHTML = esc(L.subtitle||"");
   if(L.resultTitle) document.getElementById("resultName").textContent = L.resultTitle;
@@ -277,7 +300,7 @@ function build(L){
       if(b.type==="picMatch") return picMatchHtml(b, id);
       if(b.type==="contrast") return contrastHtml(b, id);
     }
-    if(b.type==="grammar") return grammarHtml(b);
+    if(b.type==="grammar") return grammarHtml(b, i);
     if(b.type==="story")   return storyHtml(b);
     if(b.type==="writing") return writingHtml(b);
     if(b.type==="memory")     return memoryHtml(b, b.id || ("mem"+i));

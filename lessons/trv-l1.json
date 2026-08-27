@@ -1,0 +1,397 @@
+{
+  "level": "B1",
+  "num": 1,
+  "totalLessons": 4,
+  "world": "TRAVEL & LIVING",
+  "track": "Travel & Living",
+  "key": "rankup_TRV_l1",
+  "title": "TRAVEL PLANS<br>&amp; GETTING AROUND",
+  "titlePlain": "Travel Plans & Getting Around",
+  "subtitle": "Travel &amp; Living &middot; B1–B2 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "✈️ TRAVEL &amp; DIRECTIONS",
+      "intro": "Vocabulario para viajar y moverte. Practica en voz alta, ¡sin traductor!",
+      "parts": [
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "a flight",
+              "sp": "un vuelo"
+            },
+            {
+              "en": "to catch / miss a train",
+              "sp": "tomar / perder un tren"
+            },
+            {
+              "en": "a platform / a gate",
+              "sp": "un andén / puerta de embarque"
+            },
+            {
+              "en": "one-way / round trip",
+              "sp": "solo ida / ida y vuelta"
+            },
+            {
+              "en": "to book / to check in",
+              "sp": "reservar / facturar"
+            },
+            {
+              "en": "to board",
+              "sp": "abordar"
+            },
+            {
+              "en": "a connection",
+              "sp": "un enlace (vuelo/tren para continuar)"
+            },
+            {
+              "en": "a delay / luggage",
+              "sp": "un retraso / equipaje"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Direcciones:</b>"
+        },
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "How do I get to…?",
+              "sp": "¿Cómo llego a…?"
+            },
+            {
+              "en": "Go straight",
+              "sp": "sigue derecho"
+            },
+            {
+              "en": "turn left / right",
+              "sp": "gira a la izq. / der."
+            },
+            {
+              "en": "cross the street",
+              "sp": "cruza la calle"
+            },
+            {
+              "en": "a block / on the corner",
+              "sp": "una cuadra / en la esquina"
+            },
+            {
+              "en": "next to / opposite / near",
+              "sp": "al lado de / enfrente / cerca"
+            }
+          ]
+        }
+      ],
+      "stage": "① VOCAB &amp; GRAMMAR <span class=\"es\">· viaje + direcciones + futuros</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 FUTURE FORMS · will / going to / -ing",
+      "intro": "",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "be going to",
+              "body": "plan / intención · predicción con evidencia<br><span class=\"es\">We're <b>going to</b> visit Rome. · It's <b>going to</b> rain.</span>"
+            },
+            {
+              "h": "present continuous",
+              "body": "cita/arreglo fijo (con hora)<br><span class=\"es\">We're <b>flying</b> on Friday at 6. · I'm <b>meeting</b> Ana at noon.</span>"
+            },
+            {
+              "h": "will ('ll)",
+              "body": "decisión ahora · ofrecimiento · predicción<br><span class=\"es\">I <b>'ll</b> take the train. · I <b>'ll</b> help you.</span>"
+            },
+            {
+              "h": "preguntas",
+              "body": "What <b>are</b> you <b>doing</b> this weekend?<br>What time <b>are</b> you <b>leaving</b>?"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "B2 · EXTRA",
+          "body": "<b>Future continuous</b>: \"This time tomorrow, I'll <b>be flying</b> to Tokyo.\" · Planes suaves: \"We're <b>hoping to</b>…\", \"We're <b>planning on</b> …ing\", \"I <b>might</b> stay an extra day.\""
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ THE WEEKEND PLAN",
+      "intro": "Nao y Ben organizan una escapada. Primero <b>practicas</b> los futuros y las direcciones, y luego <b>escuchas</b> 2 audios: un <b>plan</b> y un <b>viaje</b>.",
+      "cast": [
+        {
+          "en": "Nao",
+          "sp": "quiere ir a la costa"
+        },
+        {
+          "en": "Ben",
+          "sp": "explica cómo llegar"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· Nao y Ben</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "FUTURE FORMS",
+      "intro": "Elige el futuro más natural: arreglo (<i>-ing</i>), plan (going to) o decisión/oferta (will).",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "We ___ to Lima on Monday at 9 a.m. <span class=\"es\">(arreglo fijo)</span>",
+          "options": [
+            "are flying",
+            "will fly",
+            "fly"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "This bag is heavy. — Don't worry, I ___ it for you. <span class=\"es\">(oferta)</span>",
+          "options": [
+            "'ll carry",
+            "'m carrying",
+            "carry"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "I've decided: I ___ to drive this year. <span class=\"es\">(intención)</span>",
+          "options": [
+            "am going to learn",
+            "learn",
+            "am learning"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "A: Are you free tonight? B: No, I ___ dinner with Ana. <span class=\"es\">(arreglo)</span>",
+          "options": [
+            "am having",
+            "will have",
+            "have"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Look at those clouds — it ___ ! <span class=\"es\">(predicción con evidencia)</span>",
+          "options": [
+            "is going to rain",
+            "rains",
+            "rained"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Cuenta tu próximo viaje: un plan (going to), un arreglo fijo (-ing) y una predicción (will)."
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "DIRECTIONS",
+      "intro": "Completa con Go / Turn / Cross / on / next.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> straight for two blocks.",
+          "options": [
+            "Go",
+            "Turn",
+            "Cross"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> left at the bank.",
+          "options": [
+            "Go",
+            "Turn",
+            "Cross"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> the street at the lights.",
+          "options": [
+            "Go",
+            "Turn",
+            "Cross"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "It's <b class=\"tg\">___</b> the corner of Main and 5th.",
+          "options": [
+            "on",
+            "in",
+            "next"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "The station is <b class=\"tg\">___</b> to the museum.",
+          "options": [
+            "next",
+            "on",
+            "behind"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · THE WEEKEND PLAN",
+      "desc": "Nao y Ben planean el sábado. Fíjate en el <b>transporte</b>, la <b>hora</b> y el <b>lugar</b>.",
+      "src": "trv-l1-1.mp3",
+      "dur": "0:31",
+      "speakers": "🗣 Nao + Ben",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How are they traveling on Saturday?",
+          "options": [
+            "By the early train",
+            "By car, along the coast",
+            "By bus from the station"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What time does the train leave?",
+          "options": [
+            "Seven",
+            "Eight",
+            "Nine"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Where is the station?",
+          "options": [
+            "Behind the bank, on the left",
+            "On the coast, past the museum",
+            "Next to the museum"
+          ],
+          "answer": 2
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Nao",
+          "html": "So, what's the plan for Saturday?"
+        },
+        {
+          "spk": "Ben",
+          "html": "We're <span class=\"tg\">taking the early train</span> to the coast. It leaves at <span class=\"tg\">eight</span>.",
+          "b": true
+        },
+        {
+          "spk": "Nao",
+          "html": "Nice! How do we get to the station?"
+        },
+        {
+          "spk": "Ben",
+          "html": "Go straight down this street, then <span class=\"tg\">turn left at the bank</span>. It's <span class=\"tg\">next to the museum</span>.",
+          "b": true
+        },
+        {
+          "spk": "Nao",
+          "html": "Got it. I think I'll bring my camera."
+        },
+        {
+          "spk": "Ben",
+          "html": "Good idea. It's <span class=\"tg\">going to be a beautiful day</span>.",
+          "b": true
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha los planes</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · MY NEXT TRIP",
+      "desc": "Alguien cuenta su próximo viaje. Fíjate en el <b>destino</b> y los <b>planes</b>.",
+      "src": "trv-l1-2.mp3",
+      "dur": "0:22",
+      "speakers": "🗣 monólogo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Where is the person going?",
+          "options": [
+            "Japan",
+            "China",
+            "Kyoto only"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How long are they staying?",
+          "options": [
+            "Two days",
+            "Two weeks",
+            "Two months"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What haven't they booked yet?",
+          "options": [
+            "The hotels",
+            "The flights",
+            "The train"
+          ],
+          "answer": 0
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "🗣",
+          "html": "Next month, I'm <span class=\"tg\">going to travel to Japan</span>. I'm flying on the fifth, and I'm staying <span class=\"tg\">for two weeks</span>. First, I'm going to visit Tokyo, and then I'll take the train to Kyoto. I <span class=\"tg\">haven't booked the hotels yet</span>, but I'll do it this weekend. I'm really excited!"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ MY NEXT TRIP",
+      "intro": "Escribe <b>6–7 oraciones</b> sobre tu próximo viaje: tus planes, un arreglo fijo y una predicción. Usa <b>going to</b>, el <b>present continuous</b> y <b>will</b>.",
+      "checklist": [],
+      "placeholder": "Next month, I'm going to travel to... I'm flying on...",
+      "example": "Next <span class=\"gap\">___</span>, I'm going to <span class=\"gap\">plan</span>. I'm <span class=\"gap\">-ing</span> on <span class=\"gap\">día/hora</span>. First, I'll <span class=\"gap\">___</span>, and then I'm going to <span class=\"gap\">___</span>. I think it <span class=\"gap\">'ll be</span> <span class=\"gap\">___</span>.",
+      "exampleLabel": "COMPLETA — going to / -ing / will",
+      "hw": "Escribe tu <b>viaje</b> y graba un audio leyéndolo. Envíamelo por WhatsApp. ¡Dudas, en clase!",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ],
+  "next": {
+    "href": "lesson.html?id=trv-l2",
+    "label": "SIGUIENTE ▸"
+  }
+}

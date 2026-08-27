@@ -1,0 +1,408 @@
+{
+  "level": "B1",
+  "num": 3,
+  "totalLessons": 4,
+  "world": "BUSINESS CLASS",
+  "track": "Business Class",
+  "key": "rankup_BIZ_l3",
+  "title": "EMAIL &amp; FORMAL<br>COMMUNICATION",
+  "titlePlain": "Email & Formal Communication (Business)",
+  "subtitle": "Business English &middot; B1 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "📧 THE 6 PARTS OF AN EMAIL",
+      "intro": "",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "1 · Subject line",
+              "body": "Meeting Request: Q2 Sales Strategy"
+            },
+            {
+              "h": "2 · Greeting",
+              "body": "Dear Mr. Smith, / Dear Hiring Manager,"
+            },
+            {
+              "h": "3 · Opening",
+              "body": "I hope you are doing well. I am writing to…"
+            },
+            {
+              "h": "4 · Body",
+              "body": "Your main point, in clear paragraphs."
+            },
+            {
+              "h": "5 · Closing",
+              "body": "I look forward to your reply."
+            },
+            {
+              "h": "6 · Sign-off",
+              "body": "Best regards, / Sincerely,"
+            }
+          ]
+        }
+      ],
+      "stage": "① EMAIL STRUCTURE <span class=\"es\">· partes + cortesía</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 POLITE · INDIRECT LANGUAGE",
+      "intro": "Cuanto más indirecto, más educado. De directo → muy educado:",
+      "parts": [
+        {
+          "type": "chips",
+          "items": [
+            "Send me the report. (directo)",
+            "Could you send me the report?",
+            "Would you mind sending me the report?"
+          ]
+        },
+        {
+          "type": "p",
+          "html": "Más frases: \"I would appreciate it if you could…\" · \"Would it be possible to…?\" · \"Could you kindly…?\""
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "Informal → Formal",
+              "body": "<b style=\"color:var(--purple)\">Modales:</b> Can you… → <span class=\"ok\">Could you… / Would you be able to…</span><br><b style=\"color:var(--purple)\">Contracciones:</b> I'll → <span class=\"ok\">I will</span>"
+            },
+            {
+              "h": "🇺🇸 American spelling",
+              "body": "<span class=\"ok\">color</span> (no colour) · <span class=\"ok\">behavior</span> · <span class=\"ok\">organize</span> · <span class=\"ok\">center</span>. Fecha: <b>April 5</b>. Y <b>on the weekend</b>."
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "B2 STRETCH · voz pasiva (be + past participle)",
+          "body": "Enfoca la <b>acción</b>, no la persona (más neutral y diplomático):<br> \"You made a mistake.\" → \"<b>A mistake was made</b>.\" · \"You didn't send it.\" → \"<b>It hasn't been sent</b> yet.\" · \"We approved your request.\" → \"<b>Your request has been approved</b>.\""
+        },
+        {
+          "type": "vocab",
+          "btn": "📒 Ver vocabulario clave",
+          "items": [
+            {
+              "en": "to follow up on…",
+              "sp": "dar seguimiento a…",
+              "chunk": true
+            },
+            {
+              "en": "to look into…",
+              "sp": "investigar / revisar…",
+              "chunk": true
+            },
+            {
+              "en": "a request",
+              "sp": "una solicitud",
+              "chunk": true
+            },
+            {
+              "en": "a shipment",
+              "sp": "un envío",
+              "chunk": true
+            },
+            {
+              "en": "delayed",
+              "sp": "retrasado/a",
+              "chunk": true
+            },
+            {
+              "en": "Best regards,",
+              "sp": "Saludos cordiales,",
+              "tag": "cierre",
+              "chunk": true
+            },
+            {
+              "en": "a subject line",
+              "sp": "el asunto",
+              "chunk": true
+            },
+            {
+              "en": "a greeting",
+              "sp": "un saludo",
+              "chunk": true
+            },
+            {
+              "en": "an attachment",
+              "sp": "un archivo adjunto",
+              "chunk": true
+            },
+            {
+              "en": "a reply",
+              "sp": "una respuesta",
+              "chunk": true
+            },
+            {
+              "en": "to reach out",
+              "sp": "contactar / escribir",
+              "chunk": true
+            },
+            {
+              "en": "in advance",
+              "sp": "de antemano",
+              "chunk": true
+            }
+          ]
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ RUDE vs. POLITE",
+      "intro": "Vas a escuchar el mismo tipo de pedido de dos formas: <b>Mark</b> (directo, casi grosero) y <b>Elena</b> (profesional y educada). Tu misión: convertir lo directo en un email cortés.",
+      "cast": [
+        {
+          "en": "Mark",
+          "sp": "deja un voicemail directo 😬"
+        },
+        {
+          "en": "Elena",
+          "sp": "llama de forma educada ✅"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· dos maneras de pedir lo mismo</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "MAKE IT POLITE",
+      "intro": "Elige la versión <b>más educada / profesional</b>.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "You need the report from a colleague.",
+          "options": [
+            "Send me the report.",
+            "Could you please send me the report?",
+            "I want the report."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "You want someone to review a document.",
+          "options": [
+            "Would you mind reviewing this document?",
+            "Review this.",
+            "You must review this."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "You want to know if someone can attend a 3 p.m. meeting.",
+          "options": [
+            "Come at 3.",
+            "Can you at 3?",
+            "Would you be able to attend at 3 p.m.?"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "You want an update on a project.",
+          "options": [
+            "Update me now.",
+            "I would appreciate an update on the project.",
+            "Give me an update."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which is more formal for an email?",
+          "options": [
+            "I'll get back to you.",
+            "I will get back to you.",
+            "I'll ping you."
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Say 3 polite requests you might make at work today. Start with \"Could you…\" or \"Would you mind…\"."
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "FIX THE EMAIL",
+      "intro": "Elige la mejor opción para un email profesional.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "A work email should start with…",
+          "options": [
+            "\"Hey,\"",
+            "a clear subject line + \"Dear [Name],\"",
+            "\"Yo,\""
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which is the best subject line?",
+          "options": [
+            "stuff",
+            "Meeting Request: Q2 Sales Strategy",
+            "(no subject)"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "To sound formal, you should avoid…",
+          "options": [
+            "contractions like \"don't / won't\"",
+            "a greeting",
+            "a sign-off"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why use the passive \"A mistake was made\"?",
+          "options": [
+            "To blame a person directly",
+            "Because it is very informal",
+            "To focus on the action, not the person (more diplomatic)"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Best way to end a request politely?",
+          "options": [
+            "Thank you for your help. Best regards,",
+            "Fix it soon. Bye.",
+            "Do it. Thanks."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · MARK'S VOICEMAIL",
+      "desc": "Mark deja un mensaje muy directo. Escúchalo — luego lo convertirás en un email educado.",
+      "src": "biz-l3-1.mp3",
+      "dur": "0:24",
+      "speakers": "🗣 Mark",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What three things does Mark want?",
+          "options": [
+            "The report today, an explanation of the numbers, and the shipment fixed",
+            "The report tomorrow, a call about the numbers, and a new date",
+            "The report today, a meeting about the numbers, and a refund"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How does Mark sound?",
+          "options": [
+            "Formal and polite, but a little cold",
+            "Direct and informal — not very polite",
+            "Confused and unsure about the numbers"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What is your task after listening?",
+          "options": [
+            "Forward his message to the accounts team without changes",
+            "Reply to him in the same direct tone, but shorter",
+            "Rewrite his requests as a polite, professional email"
+          ],
+          "answer": 2
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Mark",
+          "html": "Hey, it's Mark. Listen, <span class=\"tg\">I need that report today</span>, okay? Send it over. Also, the numbers in the last part don't make sense to me. <span class=\"tg\">Explain them</span>. And we have that shipment problem. It got delayed, so <span class=\"tg\">fix it soon</span>. Call me back. Bye."
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· directo vs. educado</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · ELENA'S POLITE CALL",
+      "desc": "Elena pide lo mismo, pero de forma profesional. Fíjate en las <b>frases educadas</b>.",
+      "src": "biz-l3-2.mp3",
+      "dur": "0:29",
+      "speakers": "🗣 Elena",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Why is Elena calling?",
+          "options": [
+            "To follow up on the report",
+            "To complain about a coworker",
+            "To cancel a meeting"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which polite phrase does she use?",
+          "options": [
+            "\"Please send it over before the end of today.\"",
+            "\"Whenever you have a moment, could you please send it over?\"",
+            "\"I would appreciate it if you could send it today.\""
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does she ask about the shipment?",
+          "options": [
+            "The reason for the delay and who is at fault",
+            "The price of the shipment and the refund policy",
+            "The new delivery date and possible solutions"
+          ],
+          "answer": 2
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Elena",
+          "html": "Hello, this is Elena from the accounts team. I hope you're doing well. I'm calling to <span class=\"tg\">follow up on the report</span>. Whenever you have a moment, <span class=\"tg\">could you please send it over</span>? I <span class=\"tg\">would also appreciate</span> a short explanation of the numbers in the final section. And regarding the shipment, <span class=\"tg\">could you let me know the new delivery date and any possible solutions</span>? Thank you so much for your help. Have a great day!"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ TURN MARK INTO A POLITE EMAIL",
+      "intro": "Convierte el mensaje directo de <b>Mark</b> en un <b>email profesional</b>. Incluye las 6 partes y lenguaje indirecto.",
+      "checklist": [
+        "Subject line + greeting (Dear…)",
+        "Pedidos educados: \"Could you please…\" / \"I would appreciate…\"",
+        "Sin contracciones · cierre + sign-off (Best regards,)"
+      ],
+      "placeholder": "Subject: ...\nDear ...,\nI hope you are doing well...",
+      "example": "Subject: <span class=\"gap\">___</span><br> Dear <span class=\"gap\">___</span>,<br> I hope you are doing well. I am writing to <span class=\"gap\">___</span>. Whenever you have a moment, could you please <span class=\"gap\">___</span>? I would also appreciate <span class=\"gap\">___</span>. Regarding the shipment, could you let me know <span class=\"gap\">___</span>?<br> Thank you for your help.<br> Best regards,<br> <span class=\"gap\">___</span>",
+      "exampleLabel": "COMPLETA EL EMAIL",
+      "hw": "Escribe el email completo y (opcional) un email de <b>seguimiento por una reunión perdida</b>. Envíamelos por WhatsApp y los corregimos.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ],
+  "next": {
+    "href": "lesson.html?id=biz-l4",
+    "label": "SIGUIENTE ▸"
+  }
+}

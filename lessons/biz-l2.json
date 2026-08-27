@@ -1,0 +1,441 @@
+{
+  "level": "B1",
+  "num": 2,
+  "totalLessons": 4,
+  "world": "BUSINESS CLASS",
+  "track": "Business Class",
+  "key": "rankup_BIZ_l2",
+  "title": "MEETINGS<br>&amp; DISCUSSIONS",
+  "titlePlain": "Meetings & Discussions (Business)",
+  "subtitle": "Business English &middot; B1 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "💬 SAY IT WITH TACT",
+      "intro": "En una reunión, la clave es ser <b>claro pero educado</b>. Aquí tienes las 4 movidas básicas (B1) y sus versiones ⭐ B2.",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "Opinar",
+              "body": "I think… · In my opinion… · I feel that… · It seems to me that…"
+            },
+            {
+              "h": "Acordar",
+              "body": "I agree. · Good point. · That's true. · Exactly. · That makes sense."
+            },
+            {
+              "h": "Discrepar (con tacto)",
+              "body": "I see your point, but… · I'm not sure I agree. · Maybe, but have we considered…?"
+            },
+            {
+              "h": "Sugerir",
+              "body": "Why don't we…? · We could… · How about + <i>-ing</i>? · Maybe we should…"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "B2 STRETCH",
+          "body": "<b>Opinar:</b> From where I stand… / As far as I'm concerned… &nbsp;·&nbsp; <b>Acordar:</b> I'm inclined to agree. / You make a valid point. &nbsp;·&nbsp; <b>Discrepar:</b> I see where you're coming from, but I have a slightly different perspective. &nbsp;·&nbsp; <b>Sugerir:</b> Would it be worth considering…? / It might be beneficial to…"
+        }
+      ],
+      "stage": "① MEETING LANGUAGE <span class=\"es\">· opinar · acordar · discrepar · sugerir</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 MODAL VERBS · sonar profesional",
+      "intro": "Los modales hacen que pedidos y opiniones suenen <b>educados y precisos</b>. Core (B1) en <b>negrita</b>; ⭐ = B2.",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "Recomendar",
+              "body": "<b>should</b> · ⭐ ought to · ⭐ had better<br><span class=\"es\">\"We <b>should</b> prioritize feedback.\"</span>"
+            },
+            {
+              "h": "Posibilidad",
+              "body": "<b>could</b> · ⭐ might · ⭐ may<br><span class=\"es\">\"We <b>could</b> explore new suppliers.\"</span>"
+            },
+            {
+              "h": "Obligación",
+              "body": "<b>must · have to · need to</b><br><span class=\"es\">\"We <b>must</b> meet the deadline.\"</span>"
+            },
+            {
+              "h": "Prohibición",
+              "body": "<b>must not · can't</b> · ⭐ may not<br><span class=\"es\">\"Staff <b>must not</b> share this.\"</span>"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Truco:</b> \"You <span style=\"color:var(--red)\">need to</span> finish this today.\" (directo) → \"You <b>should</b> complete this by the end of the day.\" (profesional)."
+        },
+        {
+          "type": "vocab",
+          "btn": "📒 Ver vocabulario clave",
+          "items": [
+            {
+              "en": "to make a suggestion",
+              "sp": "hacer una sugerencia",
+              "chunk": true
+            },
+            {
+              "en": "to agree / to disagree",
+              "sp": "estar de acuerdo / en desacuerdo",
+              "chunk": true
+            },
+            {
+              "en": "a deadline",
+              "sp": "una fecha límite",
+              "chunk": true
+            },
+            {
+              "en": "a budget",
+              "sp": "un presupuesto",
+              "chunk": true
+            },
+            {
+              "en": "a loyalty program",
+              "sp": "un programa de fidelidad",
+              "chunk": true
+            },
+            {
+              "en": "a fair point",
+              "sp": "un buen argumento",
+              "chunk": true
+            },
+            {
+              "en": "an agenda",
+              "sp": "el orden del día",
+              "chunk": true
+            },
+            {
+              "en": "a proposal",
+              "sp": "una propuesta",
+              "chunk": true
+            },
+            {
+              "en": "feedback",
+              "sp": "comentarios / opinión",
+              "chunk": true
+            },
+            {
+              "en": "to make a decision",
+              "sp": "tomar una decisión",
+              "chunk": true
+            },
+            {
+              "en": "a goal / target",
+              "sp": "una meta / objetivo",
+              "chunk": true
+            },
+            {
+              "en": "revenue / costs",
+              "sp": "ingresos / costos",
+              "chunk": true
+            }
+          ]
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ SALES ARE DOWN",
+      "intro": "El equipo se reúne porque las ventas bajaron. Practica opinar/acordar/discrepar/sugerir, y luego <b>escucha</b> la reunión y su <b>resumen</b>.",
+      "cast": [
+        {
+          "en": "Maria",
+          "sp": "del equipo — propone ideas"
+        },
+        {
+          "en": "Diego",
+          "sp": "discrepa con tacto"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· la reunión de ventas</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "WHAT IS IT?",
+      "intro": "¿Es una <b>opinión</b>, un <b>acuerdo</b>, un <b>desacuerdo</b> o una <b>sugerencia</b>?",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "\"In my opinion, we should focus on our customers.\"",
+          "options": [
+            "Opinion",
+            "Agreeing",
+            "Disagreeing",
+            "Suggestion"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "\"Absolutely — I couldn't agree more with that.\"",
+          "options": [
+            "Opinion",
+            "Agreeing",
+            "Disagreeing",
+            "Suggestion"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "\"I see your point, but I'm not entirely convinced.\"",
+          "options": [
+            "Opinion",
+            "Agreeing",
+            "Disagreeing",
+            "Suggestion"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "\"How about offering a discount for referrals?\"",
+          "options": [
+            "Opinion",
+            "Agreeing",
+            "Disagreeing",
+            "Suggestion"
+          ],
+          "answer": 3
+        },
+        {
+          "type": "mcq",
+          "q": "\"From where I stand, quality should come first.\"",
+          "options": [
+            "Opinion",
+            "Agreeing",
+            "Disagreeing",
+            "Suggestion"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "\"Your company wants to increase employee satisfaction.\" Give an <b>opinion</b>, a <b>suggestion</b>, and <b>agree</b> or <b>disagree</b>.",
+        "starter": "In my opinion, we should ask the team what they want. We could start with flexible hours…"
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "CHOOSE THE MODAL",
+      "intro": "Elige el modal correcto para que suene profesional.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "We <b class=\"tg\">___</b> meet the deadline to keep the client's trust. <span class=\"es\">(obligación)</span>",
+          "options": [
+            "must",
+            "could",
+            "might"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Employees <b class=\"tg\">___</b> share confidential information. <span class=\"es\">(prohibición)</span>",
+          "options": [
+            "must not",
+            "should",
+            "can"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "We <b class=\"tg\">___</b> explore new suppliers to cut costs. <span class=\"es\">(posibilidad)</span>",
+          "options": [
+            "must",
+            "could",
+            "can't"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "You <b class=\"tg\">___</b> request more resources if you need them. <span class=\"es\">(permiso)</span>",
+          "options": [
+            "can",
+            "must not",
+            "should not"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which sounds most professional?",
+          "options": [
+            "Fix this now.",
+            "You should complete this by the end of the day.",
+            "Do it fast."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · THE TEAM MEETING",
+      "desc": "El equipo discute qué hacer con las ventas. Fíjate en las <b>opiniones</b> y <b>sugerencias</b>.",
+      "src": "biz-l2-1.mp3",
+      "dur": "0:49",
+      "speakers": "🗣 Facilitator + Maria + Diego",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What does Maria suggest first?",
+          "options": [
+            "A loyalty program for existing customers",
+            "A referral discount for new customers",
+            "A price cut for the whole product line"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Does Diego fully agree with Maria?",
+          "options": [
+            "Yes — he agrees with the loyalty program completely",
+            "No — he politely disagrees; he wants new customers too",
+            "No — he rejects the idea and proposes another one"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What do they decide to do first?",
+          "options": [
+            "Launch the loyalty program and the referral discount now",
+            "Cancel the loyalty program and cut prices instead",
+            "Test the referral discount for one month, with a budget"
+          ],
+          "answer": 2
+        }
+      ],
+      "speaking": {
+        "prompt": "Do you agree with Maria or Diego? Say why, and add one suggestion."
+      },
+      "transcript": [
+        {
+          "spk": "Facilitator",
+          "html": "Sales are down this quarter. What do you think we should do?"
+        },
+        {
+          "spk": "Maria",
+          "html": "<span class=\"tg\">In my opinion</span>, we <span class=\"tg\">should</span> focus on our existing customers. We <span class=\"tg\">could</span> start a loyalty program.",
+          "b": true
+        },
+        {
+          "spk": "Diego",
+          "html": "<span class=\"tg\">I see your point, but</span> I'm not sure that's enough. I think we <span class=\"tg\">need</span> new customers too."
+        },
+        {
+          "spk": "Maria",
+          "html": "<span class=\"tg\">That's a fair point.</span> Maybe we could do both.",
+          "b": true
+        },
+        {
+          "spk": "Diego",
+          "html": "Good idea. <span class=\"tg\">How about</span> a small discount for referrals?"
+        },
+        {
+          "spk": "Facilitator",
+          "html": "I like that. <span class=\"tg\">It might be beneficial to</span> test it for one month first.",
+          "b": true
+        },
+        {
+          "spk": "Maria",
+          "html": "Agreed. We <span class=\"tg\">must</span> set a clear budget, though."
+        },
+        {
+          "spk": "Diego",
+          "html": "Definitely. We <span class=\"tg\">shouldn't</span> spend more than we can afford.",
+          "b": true
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha la reunión</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · THE RECAP",
+      "desc": "Un resumen de las decisiones de la reunión. Fíjate en los <b>acuerdos</b> y los <b>próximos pasos</b>.",
+      "src": "biz-l2-2.mp3",
+      "dur": "0:31",
+      "speakers": "🗣 Jenny",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How many things did they agree on?",
+          "options": [
+            "Two",
+            "One",
+            "Four"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What must they do before they start?",
+          "options": [
+            "Hire an outside consultant to run the program",
+            "Set a clear budget (send the numbers by Friday)",
+            "Raise the prices before launching the discount"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "When will they review the results?",
+          "options": [
+            "Tomorrow",
+            "Next year",
+            "In four weeks"
+          ],
+          "answer": 2
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Jenny",
+          "html": "Hi team, a quick recap of today's meeting. We agreed on <span class=\"tg\">two things</span>. First, we will launch a loyalty program for our current customers. Second, we will test a referral discount for one month. We <span class=\"tg\">must set a clear budget</span> before we start, so please send me your numbers by Friday. I think this is a strong plan, but we <span class=\"tg\">should review the results in four weeks</span>. Thanks for a great discussion. Talk soon!"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ MEETING SUMMARY EMAIL",
+      "intro": "Escribe <b>un email corto</b> (4–5 oraciones) resumiendo las decisiones de una reunión. Usa:",
+      "checklist": [
+        "Al menos <b>2 frases de opinión</b> (In my opinion… / I think…)",
+        "Al menos <b>1 verbo modal</b> (should / must / could / need to)",
+        "Un <b>próximo paso</b> claro"
+      ],
+      "placeholder": "Hi team, thanks for the meeting. In my opinion...",
+      "example": "Hi team, thanks for the meeting today. In my opinion, <span class=\"gap\">___</span> was our best idea. I think we <span class=\"gap\">should</span> <span class=\"gap\">___</span>, and we <span class=\"gap\">must</span> <span class=\"gap\">___</span> before we start. As a next step, <span class=\"gap\">___</span>. Please <span class=\"gap\">___</span> by <span class=\"gap\">___</span>. Thanks!",
+      "exampleLabel": "COMPLETA — opinión + modal + próximo paso",
+      "hw": "Escribe tu <b>email-resumen</b> y (opcional) escucha 2–3 min de una reunión real (podcast/YouTube) y anota 3 frases útiles. Envíamelo por WhatsApp.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ],
+  "next": {
+    "href": "lesson.html?id=biz-l3",
+    "label": "SIGUIENTE ▸"
+  }
+}

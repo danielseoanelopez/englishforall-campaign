@@ -1,0 +1,418 @@
+{
+  "level": "A1",
+  "num": 4,
+  "totalLessons": 4,
+  "world": "CONVERSACIÓN A1",
+  "track": "Conversación A1",
+  "key": "rankup_A1C_l4",
+  "title": "AT THE CAFÉ<br>&amp; AROUND TOWN",
+  "titlePlain": "At the Café & Around Town (A1)",
+  "subtitle": "Conversación &middot; A1 &middot; ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "☕ FOOD, PLACES &amp; ORDERING",
+      "intro": "Para pedir comida y encontrar lugares. Practica en voz alta, ¡sin traductor!",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Comida y bebida:</b>"
+        },
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "coffee / tea / water",
+              "sp": "café / té / agua"
+            },
+            {
+              "en": "juice / soda",
+              "sp": "jugo / refresco"
+            },
+            {
+              "en": "a sandwich / a salad",
+              "sp": "un sándwich / una ensalada"
+            },
+            {
+              "en": "a cake",
+              "sp": "un pastel"
+            },
+            {
+              "en": "bread / an egg",
+              "sp": "pan / un huevo"
+            },
+            {
+              "en": "fruit / chicken",
+              "sp": "fruta / pollo"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Lugares:</b>"
+        },
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "café / shop",
+              "sp": "cafetería / tienda"
+            },
+            {
+              "en": "bank / station",
+              "sp": "banco / estación"
+            },
+            {
+              "en": "hotel / restaurant",
+              "sp": "hotel / restaurante"
+            },
+            {
+              "en": "park / supermarket",
+              "sp": "parque / supermercado"
+            },
+            {
+              "en": "pharmacy",
+              "sp": "farmacia"
+            },
+            {
+              "en": "market",
+              "sp": "mercado"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Pedir:</b>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Can I have a coffee, please?",
+              "sp": "¿Me da un café, por favor?"
+            },
+            {
+              "en": "How much is it?",
+              "sp": "¿Cuánto es?"
+            },
+            {
+              "en": "Anything else? — No, thank you.",
+              "sp": "¿Algo más? — No, gracias."
+            },
+            {
+              "en": "Here you are.",
+              "sp": "Aquí tiene."
+            }
+          ]
+        }
+      ],
+      "stage": "① VOCAB &amp; GRAMMAR <span class=\"es\">· comida + lugares + there is/are</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 there is/are · can · preposiciones",
+      "intro": "",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "there is / there are",
+              "body": "<code>There is</code> a bank. (uno)<br><code>There are</code> two cafés. (varios)<br><span class=\"es\">Is there…? · Are there…?</span>"
+            },
+            {
+              "h": "can (pedido / habilidad)",
+              "body": "<code>Can I have…?</code> (pedido)<br><code>Can you help me?</code><br>I <code>can</code> speak Spanish. (habilidad)"
+            },
+            {
+              "h": "preposiciones de lugar",
+              "body": "in <span class=\"es\">(en)</span> · on <span class=\"es\">(sobre/en)</span> · next to <span class=\"es\">(al lado de)</span> · behind <span class=\"es\">(detrás)</span> · near <span class=\"es\">(cerca)</span>"
+            },
+            {
+              "h": "ejemplo",
+              "body": "<span class=\"ok\">The bank is next to the café.</span><br><span class=\"ok\">It's on Main Street.</span>"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "A2 · EXTRA",
+          "body": "Precios y números (20–100): \"It's three fifty.\" / \"That's twelve dollars.\" · Direcciones: \"Go straight.\" / \"Turn left / right.\""
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ CAN I HELP YOU?",
+      "intro": "Un cliente pide en un café. Primero <b>practicas</b>, y luego <b>escuchas</b> 2 audios: un <b>pedido</b> y unas <b>direcciones</b>.",
+      "cast": [
+        {
+          "en": "Waiter",
+          "sp": "el mesero"
+        },
+        {
+          "en": "Customer",
+          "sp": "el cliente"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· en el café</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "THERE IS / THERE ARE",
+      "intro": "Uno → <b>There is</b>. Varios → <b>There are</b>. Preguntas → <b>Is / Are there…?</b>",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> a café near here.",
+          "options": [
+            "There is",
+            "There are",
+            "Is there"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> two banks on this street.",
+          "options": [
+            "There is",
+            "There are",
+            "Is there"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> there a hotel near the station?",
+          "options": [
+            "Is",
+            "Are",
+            "There is"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> there any shops here?",
+          "options": [
+            "Is",
+            "Are",
+            "There are"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> a park behind the station.",
+          "options": [
+            "There is",
+            "There are",
+            "Are there"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Pide algo en un café: \"Can I have … , please? How much is it?\""
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "CHOOSE THE PREPOSITION",
+      "intro": "Elige on / next to / behind / in.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "The café is <b class=\"tg\">___</b> Main Street.",
+          "options": [
+            "on",
+            "in",
+            "next to"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "The bank is <b class=\"tg\">___</b> the hotel.",
+          "options": [
+            "next to",
+            "behind",
+            "on"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "There's a park <b class=\"tg\">___</b> the shops.",
+          "options": [
+            "on",
+            "behind",
+            "in"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "The station is <b class=\"tg\">___</b> the city center.",
+          "options": [
+            "on",
+            "in",
+            "next to"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Your keys are <b class=\"tg\">___</b> the table.",
+          "options": [
+            "on",
+            "in",
+            "behind"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · AT THE CAFÉ",
+      "desc": "Un cliente pide en un café. Fíjate en el <b>pedido</b> y el <b>precio</b>.",
+      "src": "a1c-l4-1.mp3",
+      "dur": "0:28",
+      "speakers": "🗣 Waiter + Customer",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What does the customer order?",
+          "options": [
+            "A coffee and a sandwich",
+            "A tea and a chocolate cake",
+            "A salad and an orange juice"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How much is it?",
+          "options": [
+            "Two dollars",
+            "Six dollars",
+            "Ten dollars"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Does the customer want anything else?",
+          "options": [
+            "No",
+            "Yes, a cake",
+            "Yes, a coffee"
+          ],
+          "answer": 0
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Waiter",
+          "html": "Hello! Can I help you?"
+        },
+        {
+          "spk": "Customer",
+          "html": "Yes, can I have a <span class=\"tg\">coffee and a sandwich</span>, please?",
+          "b": true
+        },
+        {
+          "spk": "Waiter",
+          "html": "Sure. Anything else?"
+        },
+        {
+          "spk": "Customer",
+          "html": "No, thank you. How much is it?",
+          "b": true
+        },
+        {
+          "spk": "Waiter",
+          "html": "It's <span class=\"tg\">six dollars</span>."
+        },
+        {
+          "spk": "Customer",
+          "html": "Here you are.",
+          "b": true
+        },
+        {
+          "spk": "Waiter",
+          "html": "Thank you! Have a nice day."
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha en la ciudad</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · DIRECTIONS",
+      "desc": "Alguien pregunta por un banco. Fíjate en <b>dónde</b> está.",
+      "src": "a1c-l4-2.mp3",
+      "dur": "0:20",
+      "speakers": "🗣 monólogo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Is there a bank near here?",
+          "options": [
+            "Yes, there is.",
+            "No, there isn't.",
+            "We don't know."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Where is the bank?",
+          "options": [
+            "On Main Street, next to a supermarket",
+            "On Second Street, behind the big park",
+            "Next to the station, on Main Street"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What's behind the bank?",
+          "options": [
+            "A park",
+            "A hotel",
+            "A café"
+          ],
+          "answer": 2
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "🗣",
+          "html": "Excuse me, is there a bank near here? Yes, there is. Go straight and turn left. The bank is <span class=\"tg\">on Main Street, next to a big supermarket</span>. There is also a <span class=\"tg\">café behind the bank</span>. It's small, but very good."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ AT THE CAFÉ / MY NEIGHBORHOOD",
+      "intro": "Escribe una <b>conversación de café</b> (pedido + precio), O describe tu barrio en <b>5 oraciones</b> con <b>there is/are</b> + preposiciones.",
+      "checklist": [],
+      "placeholder": "There is a park near my house. The bank is next to the supermarket...",
+      "example": "There is a <span class=\"gap\">lugar</span> near my house. The <span class=\"gap\">lugar</span> is <span class=\"gap\">next to / behind</span> the <span class=\"gap\">lugar</span>. There are <span class=\"gap\">___</span> shops on my street. My favorite place is <span class=\"gap\">___</span>.",
+      "exampleLabel": "COMPLETA",
+      "hw": "Escribe tu <b>texto</b> y graba un audio leyéndolo. Envíamelo por WhatsApp. ¡Dudas, en clase!",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ]
+}

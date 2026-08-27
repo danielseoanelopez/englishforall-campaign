@@ -1,0 +1,380 @@
+{
+  "level": "B1",
+  "num": 4,
+  "totalLessons": 4,
+  "world": "TRAVEL & LIVING",
+  "track": "Travel & Living",
+  "key": "rankup_TRV_l4",
+  "title": "TRIPS<br>&amp; STORIES",
+  "titlePlain": "Trips & Stories",
+  "subtitle": "Travel &amp; Living &middot; B1–B2 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "🧳 TRAVEL EXPERIENCES",
+      "intro": "Vocabulario para contar qué pasó en un viaje. Practica en voz alta, ¡sin traductor!",
+      "parts": [
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "to get lost",
+              "sp": "perderse"
+            },
+            {
+              "en": "to miss a flight",
+              "sp": "perder un vuelo"
+            },
+            {
+              "en": "to run out of money",
+              "sp": "quedarse sin dinero"
+            },
+            {
+              "en": "to break down",
+              "sp": "averiarse (el coche)"
+            },
+            {
+              "en": "a delay / sightseeing",
+              "sp": "un retraso / hacer turismo"
+            },
+            {
+              "en": "to end up (somewhere)",
+              "sp": "terminar / acabar (en un lugar)"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Reaccionar y conectar:</b>"
+        },
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "Oh no! / Really?",
+              "sp": "¡Ay, no! / ¿En serio?"
+            },
+            {
+              "en": "What happened next?",
+              "sp": "¿Y después qué pasó?"
+            },
+            {
+              "en": "That's amazing / awful!",
+              "sp": "¡Qué increíble / horrible!"
+            },
+            {
+              "en": "when / while",
+              "sp": "cuando / mientras"
+            },
+            {
+              "en": "then / suddenly",
+              "sp": "entonces / de repente"
+            },
+            {
+              "en": "in the end",
+              "sp": "al final"
+            }
+          ]
+        }
+      ],
+      "stage": "① VOCAB &amp; GRAMMAR <span class=\"es\">· experiencias + narrar</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 PAST SIMPLE vs. PAST CONTINUOUS",
+      "intro": "",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "past simple",
+              "body": "acciones terminadas — los hechos<br><span class=\"es\">We <b>arrived</b>, <b>checked in</b>, and <b>ate</b>.</span>"
+            },
+            {
+              "h": "past continuous (was/were + -ing)",
+              "body": "el fondo / acción en progreso<br><span class=\"es\">The sun <b>was shining</b>. We <b>were waiting</b>.</span>"
+            },
+            {
+              "h": "juntos (interrupción)",
+              "body": "acción larga <b>interrumpida</b> por una corta<br><span class=\"es\">I <b>was walking</b> <b>when</b> I <b>heard</b> my name.</span>"
+            },
+            {
+              "h": "conectores",
+              "body": "<b>when</b> + pasado simple (corta)<br><b>while</b> + past continuous (larga)"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "B2 · EXTRA",
+          "body": "<b>Past perfect</b> (pasado anterior): \"The train <b>had already left</b> when we got there.\" · <b>used to / would</b> (hábitos pasados): \"We <b>used to</b> travel every summer.\" / \"We <b>would</b> camp by the lake.\""
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ THE TRIP TO PERU",
+      "intro": "Max le cuenta a Ada su viaje a Perú. Primero <b>practicas</b> los tiempos del pasado, y luego <b>escuchas</b> 2 audios: una <b>historia</b> y una <b>anécdota</b>.",
+      "cast": [
+        {
+          "en": "Ada",
+          "sp": "reacciona a la historia"
+        },
+        {
+          "en": "Max",
+          "sp": "cuenta el viaje a Perú"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· Ada y Max</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "PAST SIMPLE or CONTINUOUS?",
+      "intro": "Acción en progreso / fondo → past continuous. Hecho terminado → past simple.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "We ___ at the gate when they announced the delay. <span class=\"es\">(wait)</span>",
+          "options": [
+            "waited",
+            "were waiting"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "I ___ my passport on the first day. <span class=\"es\">(lose)</span>",
+          "options": [
+            "lost",
+            "was losing"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "While she ___, it started to rain. <span class=\"es\">(drive)</span>",
+          "options": [
+            "drove",
+            "was driving"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "They arrived late and ___ the tour. <span class=\"es\">(miss)</span>",
+          "options": [
+            "missed",
+            "were missing"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "The sun ___ when we left the hotel. <span class=\"es\">(shine)</span>",
+          "options": [
+            "shone",
+            "was shining"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Cuenta una historia corta de un viaje: un problema y cómo terminó. Usa past simple + past continuous."
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "CHOOSE THE LINKER",
+      "intro": "when / while / then / suddenly / in the end.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "I was reading <b class=\"tg\">___</b> the train stopped.",
+          "options": [
+            "when",
+            "while",
+            "then"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> we were walking, it started to rain.",
+          "options": [
+            "When",
+            "While",
+            "Then"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "We got a bit lost, but <b class=\"tg\">___</b> we found the hotel.",
+          "options": [
+            "suddenly",
+            "in the end",
+            "while"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "I heard a loud noise. <b class=\"tg\">___</b>, the lights went off.",
+          "options": [
+            "Suddenly",
+            "While",
+            "When"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "We had dinner and <b class=\"tg\">___</b> we went straight to bed.",
+          "options": [
+            "then",
+            "while",
+            "suddenly"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · THE TRIP TO PERU",
+      "desc": "Max cuenta su primer día en Perú. Fíjate en <b>qué pasó</b> y <b>cuándo</b>.",
+      "src": "trv-l4-1.mp3",
+      "dur": "0:34",
+      "speakers": "🗣 Ada + Max",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What happened while they were waiting for their bags?",
+          "options": [
+            "They announced the bags were lost",
+            "They found the bags on the belt",
+            "They announced the flight was delayed"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What were they doing when the bags were found?",
+          "options": [
+            "Filling out the forms",
+            "Hiking in the mountains",
+            "Eating dinner at the hotel"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How was the rest of the trip?",
+          "options": [
+            "Terrible from start to finish",
+            "Perfect — the best trip ever",
+            "A little boring after the hike"
+          ],
+          "answer": 1
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Ada",
+          "html": "How was your trip to Peru?"
+        },
+        {
+          "spk": "Max",
+          "html": "Amazing, but the first day was crazy. We <span class=\"tg\">were waiting</span> for our bags <span class=\"tg\">when</span> they <span class=\"tg\">announced</span> they were lost.",
+          "b": true
+        },
+        {
+          "spk": "Ada",
+          "html": "Oh no! What did you do?"
+        },
+        {
+          "spk": "Max",
+          "html": "We reported it, and <span class=\"tg\">while</span> we <span class=\"tg\">were filling out</span> the forms, someone <span class=\"tg\">found</span> them.",
+          "b": true
+        },
+        {
+          "spk": "Ada",
+          "html": "Really? Lucky!"
+        },
+        {
+          "spk": "Max",
+          "html": "I know. After that, everything went perfectly. We hiked, we ate great food. It was <span class=\"tg\">the best trip ever</span>.",
+          "b": true
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha las historias</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · A DRIVE TO THE MOUNTAINS",
+      "desc": "Alguien cuenta una anécdota. Fíjate en <b>qué pasó</b> y <b>quién ayudó</b>.",
+      "src": "trv-l4-2.mp3",
+      "dur": "0:22",
+      "speakers": "🗣 monólogo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What happened while they were driving?",
+          "options": [
+            "The car broke down",
+            "It snowed on the mountain road",
+            "They got lost in the mountains"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Who helped them?",
+          "options": [
+            "A farmer",
+            "A police officer",
+            "A friend"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How was the night?",
+          "options": [
+            "Cold and bad, with no food",
+            "Great — the best part of the trip",
+            "Boring — they slept in the car"
+          ],
+          "answer": 1
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "🗣",
+          "html": "Last summer, we drove to the mountains. <span class=\"tg\">While we were driving, the car broke down</span>. It was raining, and we didn't have a phone signal. We waited for an hour, and then a <span class=\"tg\">farmer</span> stopped to help us. In the end, we stayed at his house and had a <span class=\"tg\">great night</span>. It was the best part of the trip!"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ TELL A STORY",
+      "intro": "Escribe una <b>historia corta</b> (6–8 oraciones) sobre un viaje o un día memorable, usando el <b>pasado simple</b> y el <b>pasado continuo</b> juntos, con al menos dos conectores.",
+      "checklist": [],
+      "placeholder": "Last year, we traveled to... While we were...",
+      "example": "Last <span class=\"gap\">año/verano</span>, I <span class=\"gap\">pasado simple</span>. The weather <span class=\"gap\">was … -ing</span>. I was <span class=\"gap\">-ing</span> <b>when</b> suddenly <span class=\"gap\">pasado simple</span>. Then we <span class=\"gap\">___</span>, and <b>in the end</b> <span class=\"gap\">___</span>.",
+      "exampleLabel": "COMPLETA — pasado simple + continuo + conectores",
+      "hw": "Escribe tu <b>historia</b> y graba un audio leyéndola. Envíamelo por WhatsApp. ¡Dudas, en clase!",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ]
+}

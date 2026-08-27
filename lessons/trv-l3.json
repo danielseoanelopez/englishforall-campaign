@@ -1,0 +1,389 @@
+{
+  "level": "B1",
+  "num": 3,
+  "totalLessons": 4,
+  "world": "TRAVEL & LIVING",
+  "track": "Travel & Living",
+  "key": "rankup_TRV_l3",
+  "title": "EATING OUT &amp;<br>RECOMMENDATIONS",
+  "titlePlain": "Eating Out & Recommendations",
+  "subtitle": "Travel &amp; Living &middot; B1–B2 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "🍽️ EATING OUT &amp; FOOD",
+      "intro": "Para pedir, describir y recomendar comida. Practica en voz alta, ¡sin traductor!",
+      "parts": [
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "a menu",
+              "sp": "un menú / la carta"
+            },
+            {
+              "en": "a starter / main / dessert",
+              "sp": "entrada / principal / postre"
+            },
+            {
+              "en": "the check (bill)",
+              "sp": "la cuenta"
+            },
+            {
+              "en": "a tip",
+              "sp": "una propina"
+            },
+            {
+              "en": "to book a table / to order",
+              "sp": "reservar mesa / pedir"
+            },
+            {
+              "en": "\"I'm allergic to…\"",
+              "sp": "\"Soy alérgico/a a…\""
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Describir comida:</b>"
+        },
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "delicious / tasty",
+              "sp": "delicioso / rico"
+            },
+            {
+              "en": "fresh / filling",
+              "sp": "fresco / que llena"
+            },
+            {
+              "en": "spicy / greasy",
+              "sp": "picante / grasoso"
+            },
+            {
+              "en": "bland",
+              "sp": "soso (sin sabor)"
+            },
+            {
+              "en": "sweet / sour",
+              "sp": "dulce / agrio"
+            },
+            {
+              "en": "salty",
+              "sp": "salado"
+            }
+          ]
+        }
+      ],
+      "stage": "① VOCAB &amp; GRAMMAR <span class=\"es\">· comer fuera + comparar</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 COMPARATIVES &amp; SUPERLATIVES · quantifiers",
+      "intro": "",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "cortos: +er / the +est",
+              "body": "cheap → <b>cheaper</b> / <b>the cheapest</b><br>tasty → <b>tastier</b> / <b>the tastiest</b>"
+            },
+            {
+              "h": "largos: more / the most",
+              "body": "expensive → <b>more expensive</b> / <b>the most expensive</b>"
+            },
+            {
+              "h": "irregulares",
+              "body": "good → <b>better</b> / <b>the best</b><br>bad → <b>worse</b> / <b>the worst</b>"
+            },
+            {
+              "h": "quantifiers",
+              "body": "<b>some</b> (+) / <b>any</b> (?/–) · <b>many</b>/<b>a few</b> (contables) · <b>much</b>/<b>a little</b> (incontables)"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "B2 · EXTRA",
+          "body": "\"It's <b>not as</b> spicy <b>as</b> the curry.\" · \"<b>far / much</b> better\", \"a bit cheaper\" · \"It's <b>one of the best</b> places in town.\" · \"<b>The more</b> you try, <b>the more</b> you like it.\""
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ WHAT'S GOOD HERE?",
+      "intro": "Ivy y Leo eligen qué pedir. Primero <b>practicas</b> comparar, y luego <b>escuchas</b> 2 audios: una <b>recomendación</b> en el restaurante y una <b>comparación</b>.",
+      "cast": [
+        {
+          "en": "Ivy",
+          "sp": "no come mucho picante"
+        },
+        {
+          "en": "Leo",
+          "sp": "recomienda la pasta"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· Ivy y Leo</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "COMPARATIVE or SUPERLATIVE?",
+      "intro": "Comparar dos → comparativo (+ <i>than</i>). El máximo → superlativo (<i>the</i> …).",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "This restaurant is ___ than the other one. <span class=\"es\">(good)</span>",
+          "options": [
+            "better",
+            "the best",
+            "gooder"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "It's ___ place in town. <span class=\"es\">(cheap)</span>",
+          "options": [
+            "cheaper",
+            "the cheapest",
+            "most cheap"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "The pizza here is ___ than the pasta. <span class=\"es\">(tasty)</span>",
+          "options": [
+            "tastier",
+            "the tastiest",
+            "more tasty"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "That was ___ meal of the trip. <span class=\"es\">(bad)</span>",
+          "options": [
+            "worse",
+            "the worst",
+            "the baddest"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "It's ___ restaurant I know. <span class=\"es\">(expensive)</span>",
+          "options": [
+            "more expensive",
+            "the most expensive",
+            "the expensivest"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Compara 2 restaurantes que conoces y recomienda uno. Usa un comparativo y un superlativo."
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "QUANTIFIERS",
+      "intro": "some (+) · any (?/–) · much / many · a few.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "Is there <b class=\"tg\">___</b> milk for the coffee?",
+          "options": [
+            "some",
+            "any",
+            "many"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "There are <b class=\"tg\">___</b> free tables at the back.",
+          "options": [
+            "some",
+            "any",
+            "much"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How <b class=\"tg\">___</b> sugar do you want?",
+          "options": [
+            "much",
+            "many",
+            "some"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How <b class=\"tg\">___</b> people are coming tonight?",
+          "options": [
+            "much",
+            "many",
+            "any"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Hurry — we only have <b class=\"tg\">___</b> minutes before it closes.",
+          "options": [
+            "a few",
+            "a little",
+            "much"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · AT THE RESTAURANT",
+      "desc": "Ivy y Leo eligen del menú. Fíjate en las <b>comparaciones</b>.",
+      "src": "trv-l3-1.mp3",
+      "dur": "0:32",
+      "speakers": "🗣 Ivy + Leo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What does Leo recommend, and why?",
+          "options": [
+            "The pasta — it's the best in the neighborhood",
+            "The curry — it's the spiciest on the menu",
+            "The pizza — it's cheaper than next door"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Is it more or less expensive than the place next door?",
+          "options": [
+            "Cheaper",
+            "More expensive",
+            "The same"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Is the pasta very spicy?",
+          "options": [
+            "Yes, it's the spiciest on the menu",
+            "No, not as spicy as the curry",
+            "No, it's sweeter than the curry"
+          ],
+          "answer": 1
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Ivy",
+          "html": "This menu looks great. What's good here?"
+        },
+        {
+          "spk": "Leo",
+          "html": "The pasta is <span class=\"tg\">the best in the neighborhood</span>, and it's <span class=\"tg\">cheaper than</span> the place next door.",
+          "b": true
+        },
+        {
+          "spk": "Ivy",
+          "html": "Nice. Is it very spicy? I can't eat much spicy food."
+        },
+        {
+          "spk": "Leo",
+          "html": "No, it's <span class=\"tg\">not as spicy as</span> the curry. Do you want to share a starter?",
+          "b": true
+        },
+        {
+          "spk": "Ivy",
+          "html": "Sure. Let's get some bread and a salad."
+        },
+        {
+          "spk": "Waiter",
+          "html": "Are you ready to order?",
+          "b": true
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha las recomendaciones</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · TWO RESTAURANTS",
+      "desc": "Alguien compara dos restaurantes. Fíjate en <b>cuál</b> es más barato, mejor postre y más simpático.",
+      "src": "trv-l3-2.mp3",
+      "dur": "0:20",
+      "speakers": "🗣 monólogo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Which restaurant is cheaper?",
+          "options": [
+            "The first one",
+            "The second one",
+            "Both the same"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which has the best desserts?",
+          "options": [
+            "The first one",
+            "The second one",
+            "Neither of them"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which one is friendlier?",
+          "options": [
+            "The first one",
+            "The second one",
+            "Both"
+          ],
+          "answer": 0
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "🗣",
+          "html": "There are two good restaurants on my street. The <span class=\"tg\">first one is cheaper</span>, and the pizza is delicious. The second one is more expensive, but it has <span class=\"tg\">the best desserts</span> in the city. If you like meat, the second one is better. But the <span class=\"tg\">first one is friendlier</span> and never too busy."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ A SHORT REVIEW",
+      "intro": "Escribe una <b>reseña corta</b> (5–6 oraciones) comparando dos restaurantes o cafés que conoces. Usa al menos <b>2 comparativos</b> y <b>1 superlativo</b>.",
+      "checklist": [],
+      "placeholder": "There are two great cafés near me. The first one is cheaper, but...",
+      "example": "There are two <span class=\"gap\">___</span> places near me. <span class=\"gap\">Place A</span> is <span class=\"gap\">comparativo</span> than <span class=\"gap\">Place B</span>, but <span class=\"gap\">Place B</span> has <span class=\"gap\">the best …</span>. The food is <span class=\"gap\">adjetivo</span>. I'd recommend <span class=\"gap\">___</span>.",
+      "exampleLabel": "COMPLETA — comparativos + superlativo",
+      "hw": "Escribe tu <b>reseña</b> y graba un audio leyéndola. Envíamelo por WhatsApp. ¡Dudas, en clase!",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ],
+  "next": {
+    "href": "lesson.html?id=trv-l4",
+    "label": "SIGUIENTE ▸"
+  }
+}

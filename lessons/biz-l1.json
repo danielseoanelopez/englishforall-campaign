@@ -1,0 +1,453 @@
+{
+  "level": "B1",
+  "num": 1,
+  "totalLessons": 4,
+  "world": "BUSINESS CLASS",
+  "track": "Business Class",
+  "key": "rankup_BIZ_l1",
+  "title": "INTRODUCTIONS<br>&amp; SMALL TALK",
+  "titlePlain": "Introductions & Small Talk (Business)",
+  "subtitle": "Business English &middot; B1 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "💼 SAY WHO YOU ARE",
+      "intro": "En una reunión o evento, primero <b>saludas</b>, luego dices tu <b>puesto</b> y <b>qué haces</b> (present simple: <i>I + verb</i>). Sin traductor — practica en voz alta.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Greetings</b> — para conocer gente en el trabajo:"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Hi, I don't think we've met. I'm…",
+              "sp": "Hola, creo que no nos conocemos. Soy…"
+            },
+            {
+              "en": "Nice to meet you. / Good to see you again.",
+              "sp": "Encantado/a. / Qué bueno verte otra vez."
+            },
+            {
+              "en": "How's it going? / How have you been?",
+              "sp": "¿Cómo va todo? / ¿Cómo has estado?"
+            },
+            {
+              "en": "What do you do? / What's your role?",
+              "sp": "¿A qué te dedicas? / ¿Cuál es tu puesto?"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "B2 STRETCH",
+          "body": "Openers más formales: \"It's a pleasure to finally meet you in person.\" · \"I've heard so much about you.\" · \"I hope you're doing well.\""
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Job titles &amp; responsibilities</b> — di tu puesto, luego qué haces:"
+        },
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "Manager — I manage a team and plan our projects.",
+              "sp": "gerente"
+            },
+            {
+              "en": "Assistant — I help my manager and organize meetings.",
+              "sp": "asistente"
+            },
+            {
+              "en": "Sales Rep — I talk to clients and sell our products.",
+              "sp": "rep. de ventas"
+            },
+            {
+              "en": "Accountant — I take care of the money and the budgets.",
+              "sp": "contador/a"
+            },
+            {
+              "en": "Developer — I build and fix our apps and websites.",
+              "sp": "desarrollador/a"
+            },
+            {
+              "en": "Customer Support — I answer questions and solve problems.",
+              "sp": "soporte"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "B2 STRETCH",
+          "body": "Puestos senior + verbos: \"I <b>oversee</b> strategic planning,\" \"I <b>manage</b> cross-functional teams,\" \"I'm <b>responsible for</b> driving our digital strategy,\" \"My role involves <b>liaising</b> between departments.\""
+        }
+      ],
+      "stage": "① VOCAB &amp; GRAMMAR <span class=\"es\">· quién eres + preposiciones</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 PREPOSITIONS · TIME / PLACE / MOVEMENT",
+      "intro": "Truco: van de lo <b>pequeño/exacto</b> a lo <b>grande/general</b>.",
+      "parts": [
+        {
+          "type": "chips",
+          "items": [
+            "AT = un punto 📍",
+            "ON = un día / superficie 📅",
+            "IN = un período / espacio 📦"
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "AT · un punto",
+              "body": "<b style=\"color:var(--purple)\">Time:</b> <code>at</code> 3 p.m. · <code>at</code> noon · <code>at</code> night<br> <b style=\"color:var(--purple)\">Place:</b> <code>at</code> the office · <code>at</code> the door"
+            },
+            {
+              "h": "ON · día / superficie",
+              "body": "<b style=\"color:var(--purple)\">Time:</b> <code>on</code> Monday · <code>on</code> May 5 · <code>on</code> the weekend<br> <b style=\"color:var(--purple)\">Place:</b> <code>on</code> the desk · <code>on</code> the second floor"
+            },
+            {
+              "h": "IN · período / espacio",
+              "body": "<b style=\"color:var(--purple)\">Time:</b> <code>in</code> July · <code>in</code> 2026 · <code>in</code> the morning<br> <b style=\"color:var(--purple)\">Place:</b> <code>in</code> a meeting room · <code>in</code> New York"
+            },
+            {
+              "h": "MOVEMENT · ¿a dónde?",
+              "body": "<code>to</code> the office <span class=\"es\">(hacia)</span><br> <code>into</code> the room <span class=\"es\">(hacia adentro)</span><br> <code>onto</code> the table <span class=\"es\">(sobre)</span>"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>🇺🇸 American English:</b> decimos <b>on the weekend</b> (no \"at the weekend\"), <b>in the morning / afternoon / evening</b> pero <b>at night</b>, y <b>at work / at home</b> (no \"in work\")."
+        },
+        {
+          "type": "vocab",
+          "btn": "📒 Ver vocabulario clave",
+          "items": [
+            {
+              "en": "responsibility",
+              "sp": "responsabilidad",
+              "tag": "noun",
+              "chunk": true
+            },
+            {
+              "en": "to be in charge of",
+              "sp": "estar a cargo de",
+              "tag": "chunk",
+              "chunk": true
+            },
+            {
+              "en": "a coworker / colleague",
+              "sp": "un compañero/a de trabajo",
+              "chunk": true
+            },
+            {
+              "en": "a client",
+              "sp": "un cliente",
+              "chunk": true
+            },
+            {
+              "en": "a networking event",
+              "sp": "un evento para hacer contactos",
+              "chunk": true
+            },
+            {
+              "en": "on the weekend",
+              "sp": "el fin de semana",
+              "tag": "frase fija",
+              "chunk": true
+            }
+          ]
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ AT THE CONFERENCE",
+      "intro": "Ana y Toni se conocen en una conferencia. Primero <b>practicas</b> las preposiciones y el small talk, y luego los <b>escuchas</b> en 2 audios: un <b>diálogo</b> y un <b>voicemail</b>.",
+      "cast": [
+        {
+          "en": "Ana",
+          "sp": "project coordinator en <b style=\"color:var(--magenta)\">Lumen Design</b>"
+        },
+        {
+          "en": "Toni",
+          "sp": "marketing specialist en BrightBox"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· Ana conoce a Toni</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "CHOOSE THE PREPOSITION",
+      "intro": "Piensa: ¿un punto (at), un día/superficie (on), un período/espacio (in), o movimiento (to/into)?",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "The presentation is <b class=\"tg\">___</b> the second floor.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "We have a team call <b class=\"tg\">___</b> Tuesday morning.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "The train arrives <b class=\"tg\">___</b> five minutes.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "I'm flying <b class=\"tg\">___</b> Amsterdam tomorrow.",
+          "options": [
+            "to",
+            "at",
+            "in"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "She walked <b class=\"tg\">___</b> the meeting room and sat down.",
+          "options": [
+            "at",
+            "on",
+            "into"
+          ],
+          "answer": 2
+        }
+      ],
+      "speaking": {
+        "prompt": "Preséntate: tu puesto y qué haces. Usa 3 preposiciones (at / on / in / to).",
+        "starter": "I'm a project manager at a software company. I work with clients in Europe, and I have meetings on Mondays…"
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "SMALL TALK · CHOOSE THE BEST REPLY",
+      "intro": "Elige la mejor respuesta para cada pregunta de small talk.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "\"How was your weekend?\"",
+          "options": [
+            "It was great, thanks — I went hiking. How about you?",
+            "I'm a manager.",
+            "At the office."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "\"What do you do?\"",
+          "options": [
+            "About three years now.",
+            "I'm a project manager at a software company.",
+            "Yes, it is."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "\"Is this your first time at this event?\"",
+          "options": [
+            "On Monday.",
+            "I manage a team.",
+            "Yes, it is — it's bigger than I expected!"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "\"How long have you worked here?\"",
+          "options": [
+            "In the morning.",
+            "About three years now.",
+            "Nice to meet you."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · MEETING AT THE CONFERENCE",
+      "desc": "Ana y Toni se conocen. Fíjate en los <b>puestos</b>, el <b>tiempo</b> y el <b>lugar</b>.",
+      "src": "biz-l1-1.mp3",
+      "dur": "0:58",
+      "speakers": "🗣 Ana + Toni",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What is Toni's job?",
+          "options": [
+            "A marketing specialist at BrightBox",
+            "A project coordinator at Lumen Design",
+            "An account manager at Northwind"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "When do the talks start?",
+          "options": [
+            "On Monday, at eleven",
+            "Tomorrow, at nine",
+            "On Thursday, in the afternoon"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Where will they meet later?",
+          "options": [
+            "On the fifth floor, by the meeting rooms",
+            "At the main entrance, after the talks",
+            "At the coffee break, by the main entrance"
+          ],
+          "answer": 2
+        }
+      ],
+      "speaking": {
+        "prompt": "Ask a coworker 2 small-talk questions and answer them yourself."
+      },
+      "transcript": [
+        {
+          "spk": "Ana",
+          "html": "Hi, I don't think we've met. I'm Ana. I work <span class=\"tg\">at Lumen Design</span>."
+        },
+        {
+          "spk": "Toni",
+          "html": "Nice to meet you, Ana. I'm Toni, a marketing specialist <span class=\"tg\">at BrightBox</span>.",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "Marketing! What do you do there exactly?"
+        },
+        {
+          "spk": "Toni",
+          "html": "I manage our social media, and I help with campaigns. And you?",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "I'm a project coordinator. I work <span class=\"tg\">with clients from Europe and the US</span>."
+        },
+        {
+          "spk": "Toni",
+          "html": "Nice. Is this your first time <span class=\"tg\">at this conference</span>?",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "Yes, it is. I arrived <span class=\"tg\">on Monday</span>, and the talks start <span class=\"tg\">tomorrow at nine</span>."
+        },
+        {
+          "spk": "Toni",
+          "html": "Same here. There's a coffee break <span class=\"tg\">at eleven</span>. Do you want to continue then?",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "Sounds good. See you <span class=\"tg\">at the break</span>, <span class=\"tg\">by the main entrance</span>."
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha a Ana y Toni</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · SARA'S VOICEMAIL",
+      "desc": "Sara deja un mensaje antes de una reunión. Fíjate en su <b>puesto</b> y en el <b>cuándo</b> y <b>dónde</b>.",
+      "src": "biz-l1-2.mp3",
+      "dur": "0:35",
+      "speakers": "🗣 Sara",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What is Sara's job?",
+          "options": [
+            "Account manager at Northwind",
+            "Marketing specialist at BrightBox",
+            "Project coordinator at Lumen Design"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "When is the meeting?",
+          "options": [
+            "On Monday, at nine in the morning",
+            "On Thursday, at ten in the morning",
+            "On Friday, at ten in the morning"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Where is the meeting?",
+          "options": [
+            "At the downtown office, on the first floor",
+            "At the main office, by the front entrance",
+            "At the downtown office, on the fifth floor"
+          ],
+          "answer": 2
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Sara",
+          "html": "Hi, this is Sara Miller. I'm the <span class=\"tg\">account manager</span> for your project at Northwind. I manage our client relationships, and I work closely with the design team. I'm calling about our meeting <span class=\"tg\">on Thursday at ten</span>, <span class=\"tg\">in the morning</span>. It will be <span class=\"tg\">at our downtown office</span>, <span class=\"tg\">on the fifth floor</span>. My colleague David, our project lead, will join us. If you have any questions before then, you can reach me at the office. Thanks, and see you <span class=\"tg\">on Thursday</span>!"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ YOUR PROFESSIONAL INTRO",
+      "intro": "Escribe <b>un párrafo</b> (5–6 <b>oraciones unidas</b>, no una lista) presentándote en el trabajo. Usa:",
+      "checklist": [
+        "Tu <b>puesto</b> y <b>qué haces</b> (I'm a…, I manage…, I work with…)",
+        "Al menos <b>5 preposiciones</b> de tiempo, lugar y movimiento",
+        "Une las ideas con <i>and, but, also, so</i> — <b>un párrafo</b>"
+      ],
+      "placeholder": "Hi, I'm... I work at... I'm a..., and I...",
+      "example": "Hi, I'm <span class=\"gap\">___</span>. I work <span class=\"gap\">___</span> <span class=\"gap\">___</span> [company], and I'm a <span class=\"gap\">___</span> [job]. I <span class=\"gap\">___</span> [responsibility], <b>and</b> I work <span class=\"gap\">___</span> clients <span class=\"gap\">___</span> [place]. We usually have meetings <span class=\"gap\">___</span> Mondays, <span class=\"gap\">___</span> the morning. Today I'm here <span class=\"gap\">___</span> a conference, <b>so</b> I'm meeting a lot of new people.",
+      "exampleLabel": "COMPLETA — at / on / in / to + tu info",
+      "hw": "Escribe tu <b>párrafo</b> y graba un audio leyéndolo en voz alta. Envíame ambos por WhatsApp y lo corregimos. ¡Dudas, en clase!",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ],
+  "next": {
+    "href": "lesson.html?id=biz-l2",
+    "label": "SIGUIENTE ▸"
+  }
+}

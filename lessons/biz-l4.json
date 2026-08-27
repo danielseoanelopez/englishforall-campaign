@@ -1,0 +1,431 @@
+{
+  "level": "B1",
+  "num": 4,
+  "totalLessons": 4,
+  "world": "BUSINESS CLASS",
+  "track": "Business Class",
+  "key": "rankup_BIZ_l4",
+  "title": "NEGOTIATIONS<br>&amp; PERSUASION",
+  "titlePlain": "Negotiations & Persuasion (Business)",
+  "subtitle": "Business English &middot; B1 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "🤝 MAKE THE DEAL",
+      "intro": "",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "Regatear",
+              "body": "Could we agree on…? · What if we…? · Would you consider…? · Is there any flexibility on…?"
+            },
+            {
+              "h": "Contraofertas",
+              "body": "Would you be willing to meet us halfway? · We can agree to that if you… · If you can…, then we could…"
+            },
+            {
+              "h": "Confianza",
+              "body": "I'm confident we can find a solution. · I believe this is a fair proposal. · This offers good value for both sides."
+            },
+            {
+              "h": "Estrategia",
+              "body": "Sé persuasivo pero profesional, y <b>enfatiza el beneficio mutuo</b> — \"a win for both sides.\""
+            }
+          ]
+        }
+      ],
+      "stage": "① NEGOTIATION LANGUAGE <span class=\"es\">· regatear · contraofertas · confianza</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 CONDITIONALS FOR NEGOTIATION",
+      "intro": "",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "1st conditional · B1 core",
+              "body": "<code>If</code> + present, <code>will</code> + base<br><span class=\"es\">\"If you place a larger order, we <b>will</b> give a discount.\"</span>"
+            },
+            {
+              "h": "unless / as long as · B1+",
+              "body": "condición para avanzar<br><span class=\"es\"><b>Unless</b> we agree, we can't proceed. · We can start <b>as long as</b> the deposit is paid.</span>"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "B2 STRETCH · 2nd &amp; 3rd conditional",
+          "body": "<b>2nd</b> (hipotético): <code>If</code> + past, <code>would</code> + base — \"If we <b>reduced</b> the price, <b>would</b> you sign a long contract?\"<br> <b>3rd</b> (pasado imaginario): <code>If</code> + past perfect, <code>would have</code> + participio — \"If you <b>had accepted</b> the terms, we <b>could have delivered</b> last week.\""
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>⚠ Ojo:</b> \"If you had accepted… we could have delivered…\" es <b>3rd conditional</b> (pasado imaginario), NO 2nd. 2nd = presente/futuro poco probable; 3rd = un pasado que no ocurrió."
+        },
+        {
+          "type": "vocab",
+          "btn": "📒 Ver vocabulario clave",
+          "items": [
+            {
+              "en": "to negotiate a deal",
+              "sp": "negociar un trato",
+              "chunk": true
+            },
+            {
+              "en": "a counteroffer",
+              "sp": "una contraoferta",
+              "chunk": true
+            },
+            {
+              "en": "a discount",
+              "sp": "un descuento",
+              "chunk": true
+            },
+            {
+              "en": "to meet halfway",
+              "sp": "encontrarse a medio camino",
+              "chunk": true
+            },
+            {
+              "en": "a deposit",
+              "sp": "un depósito / seña",
+              "chunk": true
+            },
+            {
+              "en": "a long-term contract",
+              "sp": "un contrato a largo plazo",
+              "chunk": true
+            },
+            {
+              "en": "a contract",
+              "sp": "un contrato",
+              "chunk": true
+            },
+            {
+              "en": "terms",
+              "sp": "las condiciones / términos",
+              "chunk": true
+            },
+            {
+              "en": "flexibility",
+              "sp": "flexibilidad",
+              "chunk": true
+            },
+            {
+              "en": "mutual benefit",
+              "sp": "beneficio mutuo",
+              "chunk": true
+            },
+            {
+              "en": "a quote",
+              "sp": "una cotización / presupuesto",
+              "chunk": true
+            },
+            {
+              "en": "upfront",
+              "sp": "por adelantado",
+              "chunk": true
+            }
+          ]
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ BUYER vs. SUPPLIER",
+      "intro": "Un comprador y un proveedor negocian precio y plazos. Practica los condicionales, y luego <b>escucha</b> dos negociaciones: <b>precio</b> y <b>entrega</b>.",
+      "cast": [
+        {
+          "en": "Buyer",
+          "sp": "quiere mejor precio"
+        },
+        {
+          "en": "Supplier",
+          "sp": "quiere un pedido mayor"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· cerrar un trato</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "COMPLETE THE CONDITIONAL",
+      "intro": "Elige la forma correcta para cada condicional de negociación.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "If you place a larger order, we <b class=\"tg\">___</b> a discount.",
+          "options": [
+            "will give",
+            "gave",
+            "giving"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> you confirm today, the offer will expire.",
+          "options": [
+            "Unless",
+            "If",
+            "Because"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "If we lower the price, <b class=\"tg\">___</b> you sign today?",
+          "options": [
+            "will",
+            "would",
+            "did"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "We can start <b class=\"tg\">___</b> the deposit is paid.",
+          "options": [
+            "unless",
+            "as long as",
+            "or"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "<span class=\"es\">(⭐ 2nd cond.)</span> If we reduced the price, you <b class=\"tg\">___</b> commit to a long contract?",
+          "options": [
+            "will",
+            "would",
+            "did"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Make 2 offers with the first conditional: \"If you…, we will…\". Then add a counteroffer.",
+        "starter": "If you order 100 units, we will offer free shipping. If you pay today, we could add a 5% discount…"
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "RIGHT OR WRONG?",
+      "intro": "Corrige tu ojo para los condicionales y elige la mejor frase de negociación.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "\"If we reduce the price, they order more.\"",
+          "options": [
+            "Correct",
+            "Incorrect (needs \"they will order more\")"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "\"If you make the payment today, we will deliver immediately.\"",
+          "options": [
+            "Correct",
+            "Incorrect"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which is a good counteroffer?",
+          "options": [
+            "Take it or leave it.",
+            "Would you be willing to meet us halfway?",
+            "No."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which sounds confident but polite?",
+          "options": [
+            "I'm confident we can find a solution.",
+            "You have no choice.",
+            "Whatever you want."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "<span class=\"es\">(⭐ 2nd cond.)</span> \"If we had more time, we <b class=\"tg\">___</b> explore other options.\"",
+          "options": [
+            "will",
+            "can",
+            "could"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · PRICE NEGOTIATION",
+      "desc": "Un comprador y un proveedor negocian el precio. Fíjate en los <b>condicionales</b> y las <b>condiciones</b>.",
+      "src": "biz-l4-1.mp3",
+      "dur": "0:33",
+      "speakers": "🗣 Buyer + Supplier",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What does the buyer offer for a lower price?",
+          "options": [
+            "A larger order, then a one-year contract",
+            "A larger order and an express shipping fee",
+            "An immediate payment and a bigger deposit"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Under what condition does the supplier give 10%?",
+          "options": [
+            "If the buyer increases the order by twenty percent",
+            "If the buyer commits to a one-year contract",
+            "If the buyer pays the full amount today"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Do they reach an agreement?",
+          "options": [
+            "No, they give up",
+            "Not yet — they need another meeting",
+            "Yes — a fair deal for both sides"
+          ],
+          "answer": 2
+        }
+      ],
+      "speaking": {
+        "prompt": "You are the buyer. Ask for a better price and offer something in return."
+      },
+      "transcript": [
+        {
+          "spk": "Buyer",
+          "html": "<span class=\"tg\">If you lower the price by ten percent, we will place a larger order.</span>"
+        },
+        {
+          "spk": "Supplier",
+          "html": "I understand your request, but we can only offer five percent, <span class=\"tg\">unless you increase your order by twenty percent</span>.",
+          "b": true
+        },
+        {
+          "spk": "Buyer",
+          "html": "<span class=\"tg\">What if we</span> agree to a long-term contract? Would you consider the ten percent?"
+        },
+        {
+          "spk": "Supplier",
+          "html": "<span class=\"tg\">If you commit to a one-year contract, we could offer you the ten percent discount.</span>",
+          "b": true
+        },
+        {
+          "spk": "Buyer",
+          "html": "That works for us. I'm confident this is a fair deal for both sides."
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha las negociaciones</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · DELIVERY DEAL",
+      "desc": "Ahora negocian el <b>plazo de entrega</b>. Fíjate en la condición para adelantar la fecha.",
+      "src": "biz-l4-2.mp3",
+      "dur": "0:33",
+      "speakers": "🗣 Supplier + Client",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "When can they deliver if the order is confirmed today?",
+          "options": [
+            "By Friday",
+            "By Monday",
+            "In two weeks"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does the client want instead?",
+          "options": [
+            "A bigger discount on the whole order",
+            "Delivery by Wednesday",
+            "Free express shipping"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What condition does the supplier set for Wednesday?",
+          "options": [
+            "A longer contract of one year",
+            "A twenty percent bigger order",
+            "An express shipping fee"
+          ],
+          "answer": 2
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Supplier",
+          "html": "<span class=\"tg\">If you confirm the order today, we will deliver by Friday.</span>"
+        },
+        {
+          "spk": "Client",
+          "html": "I'm a little concerned about the timeline. What if we need it by Wednesday?",
+          "b": true
+        },
+        {
+          "spk": "Supplier",
+          "html": "We could deliver by Wednesday, <span class=\"tg\">but only if you agree to an express shipping fee</span>."
+        },
+        {
+          "spk": "Client",
+          "html": "How much is the fee?",
+          "b": true
+        },
+        {
+          "spk": "Supplier",
+          "html": "It's a small extra charge. If you accept it, we can guarantee Wednesday."
+        },
+        {
+          "spk": "Client",
+          "html": "All right. <span class=\"tg\">If you guarantee Wednesday, we will proceed with the order.</span>",
+          "b": true
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ CONFIRM THE DEAL",
+      "intro": "Escribe <b>un email corto</b> confirmando un trato que negociaste. Usa <b>2 frases con primer condicional</b> (\"If you…, we will…\").",
+      "checklist": [
+        "Saludo + motivo (I'm writing to confirm…)",
+        "<b>2 first conditionals</b> con las condiciones del trato",
+        "Cierre con confianza (I'm confident…) + sign-off"
+      ],
+      "placeholder": "Dear ...,\nI'm writing to confirm our agreement...",
+      "example": "Dear <span class=\"gap\">___</span>,<br> I'm writing to confirm our agreement. If you <span class=\"gap\">___</span>, we will <span class=\"gap\">___</span>. Also, if you <span class=\"gap\">___</span>, we will <span class=\"gap\">___</span>. I'm confident this is a fair deal for both sides.<br> Best regards,<br> <span class=\"gap\">___</span>",
+      "exampleLabel": "COMPLETA EL EMAIL — 2 first conditionals",
+      "hw": "Escribe el email del trato y (opcional) mira un video/charla que te interese y escribe un párrafo sobre por qué importa. Envíamelo por WhatsApp.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ]
+}

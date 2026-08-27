@@ -1,0 +1,401 @@
+{
+  "level": "A1",
+  "num": 3,
+  "totalLessons": 4,
+  "world": "CONVERSACIÓN A1",
+  "track": "Conversación A1",
+  "key": "rankup_A1C_l3",
+  "title": "MY DAILY<br>ROUTINE",
+  "titlePlain": "My Daily Routine (A1)",
+  "subtitle": "Conversación &middot; A1 &middot; ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "🕐 DAILY ACTIVITIES &amp; TIME",
+      "intro": "Para hablar de tu día a día. Practica en voz alta, ¡sin traductor!",
+      "parts": [
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "get up",
+              "sp": "levantarse"
+            },
+            {
+              "en": "take a shower",
+              "sp": "ducharse"
+            },
+            {
+              "en": "have breakfast / lunch / dinner",
+              "sp": "desayunar / almorzar / cenar"
+            },
+            {
+              "en": "go to work / school",
+              "sp": "ir al trabajo / escuela"
+            },
+            {
+              "en": "study / work / cook",
+              "sp": "estudiar / trabajar / cocinar"
+            },
+            {
+              "en": "watch TV",
+              "sp": "ver la tele"
+            },
+            {
+              "en": "go home",
+              "sp": "ir a casa"
+            },
+            {
+              "en": "go to bed",
+              "sp": "acostarse"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">La hora:</b>"
+        },
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "What time is it?",
+              "sp": "¿Qué hora es?"
+            },
+            {
+              "en": "seven o'clock",
+              "sp": "las siete en punto"
+            },
+            {
+              "en": "half past seven (7:30)",
+              "sp": "las siete y media"
+            },
+            {
+              "en": "a quarter past / to",
+              "sp": "y cuarto / menos cuarto"
+            },
+            {
+              "en": "in the morning / at night",
+              "sp": "por la mañana / de noche"
+            },
+            {
+              "en": "early / late",
+              "sp": "temprano / tarde"
+            }
+          ]
+        }
+      ],
+      "stage": "① VOCAB &amp; GRAMMAR <span class=\"es\">· rutina + la hora + presente simple</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 PRESENT SIMPLE · like",
+      "intro": "",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "yo/tú/ellos → verbo base",
+              "body": "I <code>work</code> · They <code>study</code> English"
+            },
+            {
+              "h": "he/she/it → verbo + s",
+              "body": "She <code>works</code> · He <code>goes</code> · It <code>starts</code><br><span class=\"es\">go→goes · watch→watches · study→studies</span>"
+            },
+            {
+              "h": "negativo / pregunta",
+              "body": "I <code>don't work</code> · She <code>doesn't work</code><br><code>Do</code> you…? · <code>Does</code> he…?"
+            },
+            {
+              "h": "like (+ noun / -ing)",
+              "body": "I <b>like</b> coffee · I <b>like</b> reading · She <b>doesn't like</b> Mondays"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "A2 · EXTRA",
+          "body": "Adverbios de frecuencia (antes del verbo): <b>always · usually · sometimes · never</b> — \"I <b>usually</b> get up at seven.\""
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ A NORMAL DAY",
+      "intro": "Nora y Dan hablan de su día. Primero <b>practicas</b>, y luego los <b>escuchas</b> en 2 audios: un <b>diálogo</b> y una <b>descripción</b> de la semana.",
+      "cast": [
+        {
+          "en": "Nora",
+          "sp": "trabaja desde casa"
+        },
+        {
+          "en": "Dan",
+          "sp": "va al trabajo en autobús"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· Nora y Dan</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "PRESENT SIMPLE",
+      "intro": "Recuerda: he/she/it → verbo <b>+ s</b> (¡ojo con go→goes, watch→watches!).",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "She ___ (work) in an office.",
+          "options": [
+            "work",
+            "works",
+            "working"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "They ___ (study) English.",
+          "options": [
+            "study",
+            "studies",
+            "studys"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "He ___ (go) to work by bus.",
+          "options": [
+            "go",
+            "gos",
+            "goes"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "My friend ___ (watch) TV at night.",
+          "options": [
+            "watch",
+            "watchs",
+            "watches"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "It ___ (start) at nine.",
+          "options": [
+            "start",
+            "starts",
+            "starting"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Di 3 cosas de tu día: \"I get up at … . I … . I like … .\""
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "NEGATIVE or QUESTION",
+      "intro": "Elige la forma correcta (don't/doesn't, Do/Does).",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "Negativo: \"I ___ Mondays.\"",
+          "options": [
+            "don't like",
+            "doesn't like",
+            "not like"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Negativo: \"She ___ on Sunday.\"",
+          "options": [
+            "don't work",
+            "doesn't work",
+            "not works"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Pregunta: \"___ you get up early?\"",
+          "options": [
+            "Do",
+            "Does",
+            "Are"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Pregunta: \"___ he like coffee?\"",
+          "options": [
+            "Do",
+            "Does",
+            "Is"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "\"What time ___ you get up?\"",
+          "options": [
+            "do",
+            "does",
+            "are"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · A NORMAL DAY",
+      "desc": "Nora y Dan hablan de su rutina. Fíjate en las <b>horas</b> y el <b>transporte</b>.",
+      "src": "a1c-l3-1.mp3",
+      "dur": "0:33",
+      "speakers": "🗣 Nora + Dan",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What time does Dan get up?",
+          "options": [
+            "At seven",
+            "At nine",
+            "At six thirty"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How does Dan go to work?",
+          "options": [
+            "By bicycle",
+            "By bus",
+            "By train"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Does Nora get up early?",
+          "options": [
+            "Yes, at six.",
+            "No, at nine.",
+            "We don't know."
+          ],
+          "answer": 1
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Nora",
+          "html": "What time do you get up?"
+        },
+        {
+          "spk": "Dan",
+          "html": "I get up at <span class=\"tg\">seven o'clock</span>. Then I have breakfast.",
+          "b": true
+        },
+        {
+          "spk": "Nora",
+          "html": "Do you go to work by car?"
+        },
+        {
+          "spk": "Dan",
+          "html": "No, I don't. I go <span class=\"tg\">by bus</span>. What about you?",
+          "b": true
+        },
+        {
+          "spk": "Nora",
+          "html": "I work from home. I like it!"
+        },
+        {
+          "spk": "Dan",
+          "html": "Nice. Do you get up early?",
+          "b": true
+        },
+        {
+          "spk": "Nora",
+          "html": "No, I don't. I get up at <span class=\"tg\">nine</span>."
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha a Nora y Dan</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · MY WEEK",
+      "desc": "Alguien describe su semana. Fíjate en las <b>horas</b> y el <b>fin de semana</b>.",
+      "src": "a1c-l3-2.mp3",
+      "dur": "0:23",
+      "speakers": "🗣 monólogo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What time does the person get up on weekdays?",
+          "options": [
+            "At six thirty",
+            "At seven thirty",
+            "At eight o'clock"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How does the person go to work?",
+          "options": [
+            "By train",
+            "By bus",
+            "By car"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does the person do on weekends?",
+          "options": [
+            "Work in the morning and study",
+            "Go to work by train",
+            "Sleep late and see friends"
+          ],
+          "answer": 2
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "🗣",
+          "html": "On weekdays, I get up at <span class=\"tg\">six thirty</span>. I have breakfast and go to work <span class=\"tg\">by train</span>. I start work at eight and finish at five. In the evening, I cook dinner and watch TV. I go to bed at eleven. On weekends, I don't work. I <span class=\"tg\">sleep late and see my friends</span>."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ YOUR TYPICAL DAY",
+      "intro": "Escribe <b>5–6 oraciones</b> sobre tu rutina diaria (horas + actividades), usando el presente simple.",
+      "checklist": [],
+      "placeholder": "I get up at seven. Then I have breakfast and go to work...",
+      "example": "I get up at <span class=\"gap\">hora</span>. Then I <span class=\"gap\">actividad</span>. I go to <span class=\"gap\">work/school</span> by <span class=\"gap\">___</span>. In the evening, I <span class=\"gap\">actividad</span>. I like <span class=\"gap\">___</span>, but I don't like <span class=\"gap\">___</span>.",
+      "exampleLabel": "COMPLETA",
+      "hw": "Escribe tu <b>rutina</b> y graba un audio leyéndola. Envíamelo por WhatsApp. ¡Dudas, en clase!",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ],
+  "next": {
+    "href": "lesson.html?id=a1c-l4",
+    "label": "SIGUIENTE ▸"
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "level": "A2",
+  "num": 1,
+  "totalLessons": 8,
+  "world": "IELTS GENERAL TRAINING",
+  "track": "IELTS General Training",
+  "key": "rankup_IEL_l1",
+  "title": "MEET IELTS<br>&amp; SPEAKING PART 1",
+  "titlePlain": "Meet IELTS & Speaking Part 1",
+  "subtitle": "IELTS General Training &middot; A2→B1 &middot; banda 4.5–5 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "🎯 EL IELTS EN 4 PARTES",
+      "intro": "El IELTS se puntúa de <b>0 a 9</b> (bandas). Tu meta es <b>4.5–5</b>. La buena noticia: esa banda <b>no pide inglés avanzado</b> — pide inglés <b>claro, simple y correcto</b> que responda la pregunta.",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "LISTENING · ~30 min",
+              "body": "4 secciones, 40 preguntas.<br> Lo escuchas <b style=\"color:var(--red)\">una sola vez</b>."
+            },
+            {
+              "h": "READING · 60 min",
+              "body": "3 secciones, 40 preguntas.<br> Textos cotidianos y de trabajo."
+            },
+            {
+              "h": "WRITING · 60 min",
+              "body": "<b style=\"color:var(--purple)\">Task 1:</b> una carta (150 palabras)<br> <b style=\"color:var(--purple)\">Task 2:</b> un ensayo (250 palabras)"
+            },
+            {
+              "h": "SPEAKING · 11–14 min",
+              "body": "Entrevista cara a cara.<br> 3 partes, con un examinador real."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>💡 IELTS tip:</b> no necesitas palabras \"difíciles\". Una frase larga <b>con errores</b> puntúa <b>menos</b> que una frase simple correcta. Precisión &gt; complejidad."
+        },
+        {
+          "type": "stretch",
+          "h": "CÓMO SUENA CADA BANDA",
+          "body": "<b>Banda 4:</b> frases muy simples, muchos errores, cuesta entenderte. · <b>Banda 4.5–5 🎯:</b> oraciones simples y correctas, respondes la pregunta, usas <i>and / but / because</i>. · <b>Para subir:</b> añade una <b>razón</b> y un <b>ejemplo</b>."
+        }
+      ],
+      "stage": "① EL EXAMEN <span class=\"es\">· qué es y qué pide la banda 4.5–5</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "🗣️ SPEAKING PART 1 · LA FÓRMULA",
+      "intro": "En <b>Part 1</b> (~4–5 min) el examinador pregunta sobre <b>ti</b>: tu casa, tu trabajo, tu tiempo libre, tu rutina. Es la parte <b>más fácil</b> para ganar puntos. La clave: <b>nunca contestes con una palabra</b>.",
+      "parts": [
+        {
+          "type": "chips",
+          "items": [
+            "RESPUESTA",
+            "RAZÓN (because…)",
+            "DETALLE / EJEMPLO"
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Míralo en acción</b> — \"Do you work or study?\""
+        },
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "❌ \"I work.\"",
+              "sp": "se acabó — no da puntos"
+            },
+            {
+              "en": "✅ \"I work. I'm a nurse in a hospital, <b>because</b> I like helping people. I've worked there <b>for two years</b>.\"",
+              "sp": "respuesta + razón + detalle"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Frases útiles</b> — memorízalas, sirven para cualquier tema:"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Well, I'd say…",
+              "sp": "Bueno, yo diría…"
+            },
+            {
+              "en": "… because … / For example, …",
+              "sp": "… porque … / Por ejemplo, …"
+            },
+            {
+              "en": "These days, … / At the moment, …",
+              "sp": "Hoy en día, … / En este momento, …"
+            },
+            {
+              "en": "It depends. / Actually, …",
+              "sp": "Depende. / En realidad, …"
+            },
+            {
+              "en": "To be honest, …",
+              "sp": "La verdad es que…"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "SUBE A BANDA 5",
+          "body": "Añade un <b>contraste</b> con <i>but</i> y una opinión: \"I like my job, <b>but</b> the hours are long.\" · Usa <b>una</b> frase de tiempo: \"at the moment\", \"these days\", \"when I was younger\". Con eso el examinador ya ve rango."
+        },
+        {
+          "type": "vocab",
+          "btn": "📒 Ver vocabulario clave",
+          "items": [
+            {
+              "en": "hometown",
+              "sp": "ciudad natal",
+              "tag": "noun",
+              "chunk": true
+            },
+            {
+              "en": "free time / hobbies",
+              "sp": "tiempo libre / pasatiempos",
+              "chunk": true
+            },
+            {
+              "en": "a coworker / a colleague",
+              "sp": "un compañero/a de trabajo",
+              "chunk": true
+            },
+            {
+              "en": "to commute / to get to work",
+              "sp": "desplazarse / llegar al trabajo",
+              "chunk": true
+            },
+            {
+              "en": "weekdays / weekends",
+              "sp": "días de semana / fin de semana",
+              "chunk": true
+            },
+            {
+              "en": "neighborhood",
+              "sp": "barrio",
+              "tag": "noun",
+              "chunk": true
+            },
+            {
+              "en": "to relax / to get together",
+              "sp": "relajarse / juntarse",
+              "chunk": true
+            },
+            {
+              "en": "stressful",
+              "sp": "estresante",
+              "tag": "adj",
+              "chunk": true
+            }
+          ]
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ MARTA · CANDIDATA",
+      "intro": "Marta se presenta al IELTS General Training. Primero <b>practicas</b> la fórmula y el formato del examen, y luego <b>la escuchas</b> en 2 audios: su <b>Part 1</b> sobre el trabajo y sobre el tiempo libre. Fíjate en cómo <b>nunca</b> responde con una sola palabra.",
+      "cast": [
+        {
+          "en": "Marta Ruiz",
+          "sp": "enfermera de <b style=\"color:var(--magenta)\">Valencia</b> · apunta a banda 5"
+        },
+        {
+          "en": "The examiner",
+          "sp": "el examinador — hace las preguntas y cronometra"
+        }
+      ],
+      "stage": "② LA ENTREVISTA <span class=\"es\">· Marta hace su Speaking</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "LARGA NO SIGNIFICA BUENA",
+      "intro": "<b>Las tres opciones son largas.</b> Solo una puntúa — las otras dos fallan por una razón concreta. Léelas enteras.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "\"How often do you use English?\"",
+          "options": [
+            "I started learning English at school when I was ten, and my teacher was really good.",
+            "Not very often. I use it at work maybe twice a week, mostly for writing emails.",
+            "English is very important nowadays, and I believe everybody in the world should learn to speak it."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "\"What do you do in your free time?\"",
+          "options": [
+            "I like football, tennis, swimming, running, cycling, reading, cooking and also watching TV at home sometimes.",
+            "Nothing special really, just the normal things that everybody does after work, you know how it is.",
+            "I mainly play football. I train twice a week with a local team after work."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "\"Do you like your hometown?\"",
+          "options": [
+            "Yes. It's quite small, so everyone knows each other, but there isn't much to do.",
+            "My hometown is a marvelous and picturesque location which offers a plethora of magnificent opportunities.",
+            "Yes, I like my hometown, because my hometown is the town where I was born."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "\"Do you enjoy cooking?\"",
+          "options": [
+            "Yes, I love cooking. Well, actually I don't cook much. I mean, sometimes, but not really.",
+            "Yes, a lot. I cook on weekends, because I get home late during the week.",
+            "Cooking is an activity that many people enjoys in their free time for relaxing themselves."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "\"What's your neighborhood like?\"",
+          "options": [
+            "It's pretty quiet. There's a park at the end of my street and some small shops.",
+            "My neighborhood is like a normal neighborhood. It's the neighborhood where I live, quite a neighborhood.",
+            "I moved there about three years ago, because I found a cheaper apartment near my job."
+          ],
+          "answer": 0
+        }
+      ],
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✏️",
+      "title": "¿CONOCES EL EXAMEN?",
+      "intro": "Saber el formato te quita medio nervio el día del examen.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuántas veces escuchas cada audio del Listening?",
+          "options": [
+            "Tres veces",
+            "Dos veces",
+            "Una sola vez"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "En el General Training, la Writing Task 1 es…",
+          "options": [
+            "Describir un gráfico",
+            "Escribir una carta de 150 palabras",
+            "Un ensayo de 250 palabras"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuánto dura el Speaking?",
+          "options": [
+            "11–14 minutos, en 3 partes",
+            "30 minutos, en 4 secciones",
+            "60 minutos, por escrito"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Para banda 4.5–5, lo más importante es…",
+          "options": [
+            "Usar vocabulario muy avanzado",
+            "Hacer frases muy largas",
+            "Frases simples correctas que respondan la pregunta"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "En Speaking Part 1, el examinador te pregunta sobre…",
+          "options": [
+            "La sociedad y el futuro del planeta",
+            "Ti: tu casa, tu trabajo, tu tiempo libre",
+            "Un tema de una tarjeta, durante 2 minutos"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · PART 1 — WORK &amp; HOMETOWN",
+      "desc": "Marta responde sobre su ciudad y su trabajo. Fíjate en cómo <b>siempre</b> añade una razón y un detalle.",
+      "src": "iel-l1-1.mp3",
+      "dur": "0:56",
+      "speakers": "🗣 Examiner + Marta",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Where is Marta from?",
+          "options": [
+            "Madrid, in the center of the country",
+            "Valencia, on the east coast of Spain",
+            "Barcelona, on the north-east coast"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "How long has she worked at the hospital?",
+          "options": [
+            "About two years",
+            "Almost ten years",
+            "About four years"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does she say is difficult about her job?",
+          "options": [
+            "It's stressful in winter, when the hospital is busy",
+            "She doesn't get on with her colleagues at work",
+            "The hospital is too far from where she lives"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "responde tú las mismas 4 preguntas en voz alta, con la fórmula: respuesta + <i>because</i> + detalle."
+      },
+      "transcript": [
+        {
+          "spk": "Examiner",
+          "html": "Good morning. Can you tell me your full name, please?"
+        },
+        {
+          "spk": "Marta",
+          "html": "Good morning. My name is Marta Ruiz.",
+          "b": true
+        },
+        {
+          "spk": "Examiner",
+          "html": "Thank you. Now, where are you from?"
+        },
+        {
+          "spk": "Marta",
+          "html": "I'm from <span class=\"tg\">Valencia, a city on the east coast of Spain</span>. I've lived there all my life, and I really like it, <span class=\"tg\">because it's warm and it has a beautiful beach</span>.",
+          "b": true
+        },
+        {
+          "spk": "Examiner",
+          "html": "Do you work or study?"
+        },
+        {
+          "spk": "Marta",
+          "html": "I work. I'm a nurse at a private hospital, and I've worked there <span class=\"tg\">for about four years</span>. I chose nursing <span class=\"tg\">because I like helping people</span>, although the hours can be quite long.",
+          "b": true
+        },
+        {
+          "spk": "Examiner",
+          "html": "Do you enjoy your job?"
+        },
+        {
+          "spk": "Marta",
+          "html": "Yes, most of the time. I like my colleagues and I feel useful, <span class=\"tg\">but sometimes it's stressful, especially in winter, when the hospital is very busy</span>.",
+          "b": true
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha el Speaking de Marta</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · PART 1 — FREE TIME &amp; ENGLISH",
+      "desc": "Segunda tanda de preguntas. Escucha los conectores: <i>because</i>, <i>also</i>, <i>but</i>, <i>so</i>.",
+      "src": "iel-l1-2.mp3",
+      "dur": "0:52",
+      "speakers": "🗣 Examiner + Marta",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Why does Marta go to the gym?",
+          "options": [
+            "Because she sits all day at work",
+            "Because her partner goes with her",
+            "Because it's near her house"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How does she mostly use English?",
+          "options": [
+            "She speaks it every day with clients",
+            "She teaches it at a school",
+            "At work, mostly in emails"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does she do on Saturday evenings?",
+          "options": [
+            "She sleeps late and stays home",
+            "She goes for a walk by the sea",
+            "She cooks dinner with her partner"
+          ],
+          "answer": 1
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Examiner",
+          "html": "Let's talk about your free time. What do you usually do after work?"
+        },
+        {
+          "spk": "Marta",
+          "html": "Well, these days I usually go to the gym, <span class=\"tg\">because I sit all day at work</span>. I <span class=\"tg\">also</span> like cooking dinner with my partner. It's a nice way to relax.",
+          "b": true
+        },
+        {
+          "spk": "Examiner",
+          "html": "Do you use English much in your daily life?"
+        },
+        {
+          "spk": "Marta",
+          "html": "Not very often, to be honest. I use it <span class=\"tg\">at work sometimes, mostly in emails</span>, and I watch series in English with subtitles. <span class=\"tg\">But</span> I don't speak it every day, <span class=\"tg\">so</span> that's why I'm studying now.",
+          "b": true
+        },
+        {
+          "spk": "Examiner",
+          "html": "What's your favorite day of the week?"
+        },
+        {
+          "spk": "Marta",
+          "html": "Definitely Saturday. I don't work, so I can sleep late and see my friends. We usually have lunch together, and in the evening <span class=\"tg\">we go for a walk by the sea</span>.",
+          "b": true
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "🎤 TU PROPIO SPEAKING PART 1",
+      "intro": "Escribe tus respuestas a estas <b>5 preguntas</b> de Part 1 y luego <b>grábate</b> diciéndolas. Cada respuesta: <b>2–3 frases</b>, nunca una palabra.",
+      "checklist": [
+        "Where are you from, and do you like living there?",
+        "Do you work or study?",
+        "What do you do in your free time?",
+        "Do you use English much in your daily life?",
+        "What's your favorite day of the week? Why?"
+      ],
+      "placeholder": "I'm from... I like it because... These days I...",
+      "example": "Well, I'm from <span class=\"gap\">___</span>. I like it <b>because</b> <span class=\"gap\">___</span>, <b>but</b> <span class=\"gap\">___</span>. I work as a <span class=\"gap\">___</span>, and I've worked there <b>for</b> <span class=\"gap\">___</span>. In my free time I usually <span class=\"gap\">___</span>, <b>because</b> <span class=\"gap\">___</span>. <b>These days</b> I <span class=\"gap\">___</span>. My favorite day is <span class=\"gap\">___</span>, <b>because</b> <span class=\"gap\">___</span>.",
+      "exampleLabel": "COMPLETA — respuesta + razón + detalle",
+      "hw": "graba tus 5 respuestas (30–40 seg cada una) usando la fórmula. Envíame el texto y el audio por WhatsApp y lo corregimos con criterios IELTS.",
+      "stage": "⑤ TU TURNO <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ]
+}

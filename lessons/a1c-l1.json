@@ -1,0 +1,366 @@
+{
+  "level": "A1",
+  "num": 1,
+  "totalLessons": 4,
+  "world": "CONVERSACIÓN A1",
+  "track": "Conversación A1",
+  "key": "rankup_A1C_l1",
+  "title": "DESCRIBING<br>PEOPLE &amp; THINGS",
+  "titlePlain": "Describing People & Things (A1)",
+  "subtitle": "Conversación &middot; A1 &middot; ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "🎨 COLORS &amp; ADJECTIVES",
+      "intro": "Para describir cosas y personas usamos <b>colores</b> y <b>adjetivos</b>. Practica en voz alta, ¡sin traductor!",
+      "parts": [
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "red 🔴 · blue 🔵 · green 🟢",
+              "sp": "rojo · azul · verde"
+            },
+            {
+              "en": "yellow 🟡 · black ⚫ · white ⚪",
+              "sp": "amarillo · negro · blanco"
+            },
+            {
+              "en": "orange 🟠 · pink · gray · brown",
+              "sp": "naranja · rosa · gris · marrón"
+            },
+            {
+              "en": "light blue · dark · light",
+              "sp": "celeste · oscuro · claro"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Adjetivos (opuestos):</b>"
+        },
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "big ↔ small",
+              "sp": "grande / pequeño"
+            },
+            {
+              "en": "old ↔ new",
+              "sp": "viejo / nuevo"
+            },
+            {
+              "en": "tall ↔ short",
+              "sp": "alto / bajo"
+            },
+            {
+              "en": "expensive ↔ cheap",
+              "sp": "caro / barato"
+            },
+            {
+              "en": "good ↔ bad",
+              "sp": "bueno / malo"
+            },
+            {
+              "en": "happy ↔ sad",
+              "sp": "feliz / triste"
+            }
+          ]
+        }
+      ],
+      "stage": "① VOCAB &amp; GRAMMAR <span class=\"es\">· colores + adjetivos + to be</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 TO BE + ADJECTIVE · this / that",
+      "intro": "El adjetivo va <b>antes del sustantivo</b> (a red car) o <b>después de to be</b> (The car is red). ¡El adjetivo <b>no cambia</b>!",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "a/an + adjetivo + sustantivo",
+              "body": "<span class=\"ok\">a red car</span> · <span class=\"ok\">an old book</span> · <span class=\"ok\">a nice day</span>"
+            },
+            {
+              "h": "sujeto + to be + adjetivo",
+              "body": "The car <code>is</code> red · The books <code>are</code> old · She <code>is</code> tall"
+            },
+            {
+              "h": "⚠ Mal",
+              "body": "<span class=\"x\">a car red</span> · <span class=\"x\">two bigs cars</span> · <span class=\"x\">The car red is</span>"
+            },
+            {
+              "h": "this / that / these / those",
+              "body": "<b style=\"color:var(--purple)\">cerca:</b> this (uno) · these (varios)<br> <b style=\"color:var(--purple)\">lejos:</b> that (uno) · those (varios)"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "A2 · EXTRA",
+          "body": "Pide una descripción: \"What's he/she like?\" → \"He's friendly and funny.\" · Intensificadores: \"It's <b>really</b> nice.\", \"It's <b>very</b> big.\""
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ WHAT'S THIS?",
+      "intro": "Ana y Leo hablan de un teléfono nuevo. Primero <b>practicas</b>, y luego los <b>escuchas</b> en 2 audios: un <b>diálogo</b> y una <b>descripción</b>.",
+      "cast": [
+        {
+          "en": "Ana",
+          "sp": "pregunta qué es"
+        },
+        {
+          "en": "Leo",
+          "sp": "describe su teléfono"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· Ana y Leo</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "CHOOSE THE CORRECT SENTENCE",
+      "intro": "Solo <b>una</b> es correcta. Piensa en el orden (adjetivo + sustantivo) y en a/an.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál es correcta?",
+          "options": [
+            "a car red",
+            "a red car"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es correcta?",
+          "options": [
+            "The book is old.",
+            "The book old is."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es correcta?",
+          "options": [
+            "She is a nice person.",
+            "She is a person nice."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es correcta?",
+          "options": [
+            "an new phone",
+            "a new phone"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es correcta?",
+          "options": [
+            "It is a big city.",
+            "It is a city big."
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Describe 2 cosas cerca de ti. Di el color y un adjetivo. \"This is a … . It's … and … .\""
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "this / that / these / those",
+      "intro": "Elige la palabra correcta según <b>cerca/lejos</b> y <b>uno/varios</b>.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "What's <b class=\"tg\">___</b>? (uno, cerca) — It's a phone.",
+          "options": [
+            "this",
+            "that",
+            "those"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What are <b class=\"tg\">___</b>? (varios, cerca) — They're pens.",
+          "options": [
+            "this",
+            "that",
+            "these"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Look at <b class=\"tg\">___</b> car over there! (uno, lejos)",
+          "options": [
+            "this",
+            "that",
+            "these"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "<b class=\"tg\">___</b> shoes over there are new. (varios, lejos)",
+          "options": [
+            "This",
+            "These",
+            "Those"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · WHAT'S THIS?",
+      "desc": "Ana y Leo hablan del teléfono. Fíjate en el <b>color</b> y los <b>adjetivos</b>.",
+      "src": "a1c-l1-1.mp3",
+      "dur": "0:25",
+      "speakers": "🗣 Ana + Leo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What is it?",
+          "options": [
+            "A new phone",
+            "An old book",
+            "A car"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What color is it?",
+          "options": [
+            "White",
+            "Black",
+            "Red"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Is it expensive?",
+          "options": [
+            "Yes, it is.",
+            "No, it isn't.",
+            "It doesn't say."
+          ],
+          "answer": 0
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Ana",
+          "html": "Look at this! What's this?"
+        },
+        {
+          "spk": "Leo",
+          "html": "It's a <span class=\"tg\">new phone</span>. It's really nice.",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "What color is it?"
+        },
+        {
+          "spk": "Leo",
+          "html": "It's <span class=\"tg\">black</span>. And it's very <span class=\"tg\">small</span>.",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "Is it expensive?"
+        },
+        {
+          "spk": "Leo",
+          "html": "Yes, it is. But I love it!",
+          "b": true
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha a Ana y Leo</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · MY ROOM",
+      "desc": "Alguien describe su habitación. Fíjate en los <b>colores</b> y las <b>cosas</b>.",
+      "src": "a1c-l1-2.mp3",
+      "dur": "0:19",
+      "speakers": "🗣 monólogo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What color is the desk?",
+          "options": [
+            "Black",
+            "White",
+            "Blue"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is the favorite thing?",
+          "options": [
+            "The blue chair",
+            "The brown table",
+            "A red guitar"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Is the room big?",
+          "options": [
+            "Yes, it's very big.",
+            "No, it's small.",
+            "We don't know."
+          ],
+          "answer": 1
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "🗣",
+          "html": "This is my room. It's <span class=\"tg\">small</span>, but it's nice. The walls are <span class=\"tg\">white</span>, and my desk is <span class=\"tg\">black</span>. I have a big blue chair and a small brown table. My favorite thing is a <span class=\"tg\">red guitar</span>. It's old, but I love it."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ DESCRIBE YOUR THINGS",
+      "intro": "Escribe <b>5 oraciones</b> describiendo tus cosas y una persona. Usa un <b>color</b> o un <b>adjetivo</b> en cada una.",
+      "checklist": [],
+      "placeholder": "My bag is black and big. My friend Ana is tall and funny...",
+      "example": "This is my <span class=\"gap\">___</span>. It's <span class=\"gap\">color</span> and <span class=\"gap\">adjetivo</span>. My <span class=\"gap\">___</span> is <span class=\"gap\">___</span>. My friend <span class=\"gap\">___</span> is <span class=\"gap\">___</span> and <span class=\"gap\">___</span>.",
+      "exampleLabel": "COMPLETA",
+      "hw": "Escribe tus <b>5 oraciones</b> y graba un audio leyéndolas. Envíamelo por WhatsApp. ¡Dudas, en clase!",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ],
+  "next": {
+    "href": "lesson.html?id=a1c-l2",
+    "label": "SIGUIENTE ▸"
+  }
+}

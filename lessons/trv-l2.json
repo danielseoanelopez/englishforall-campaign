@@ -1,0 +1,379 @@
+{
+  "level": "B1",
+  "num": 2,
+  "totalLessons": 4,
+  "world": "TRAVEL & LIVING",
+  "track": "Travel & Living",
+  "key": "rankup_TRV_l2",
+  "title": "CHECKING IN &amp;<br>SORTING PROBLEMS",
+  "titlePlain": "Checking In & Sorting Problems",
+  "subtitle": "Travel &amp; Living &middot; B1–B2 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "title": "🏨 ACCOMMODATION &amp; PROBLEMS",
+      "intro": "Para registrarte y resolver problemas con tacto. Practica en voz alta, ¡sin traductor!",
+      "parts": [
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "to check in / out",
+              "sp": "registrarse / dejar el hotel"
+            },
+            {
+              "en": "a reservation / booking",
+              "sp": "una reserva"
+            },
+            {
+              "en": "a single / double room",
+              "sp": "habitación individual / doble"
+            },
+            {
+              "en": "reception / a key card",
+              "sp": "recepción / tarjeta-llave"
+            },
+            {
+              "en": "a deposit / a refund",
+              "sp": "un depósito / un reembolso"
+            },
+            {
+              "en": "a host",
+              "sp": "anfitrión (de un alquiler)"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style=\"color:var(--gold)\">Problemas y quejas:</b>"
+        },
+        {
+          "type": "gloss",
+          "items": [
+            {
+              "en": "the heating / AC isn't working",
+              "sp": "la calefacción / el aire no funciona"
+            },
+            {
+              "en": "there's no hot water",
+              "sp": "no hay agua caliente"
+            },
+            {
+              "en": "the Wi-Fi is down",
+              "sp": "el Wi-Fi no anda"
+            },
+            {
+              "en": "dirty / noisy",
+              "sp": "sucio / ruidoso"
+            },
+            {
+              "en": "a leak / to fix",
+              "sp": "una gotera / arreglar"
+            },
+            {
+              "en": "to complain",
+              "sp": "quejarse"
+            }
+          ]
+        }
+      ],
+      "stage": "① VOCAB &amp; GRAMMAR <span class=\"es\">· alojamiento + problemas + present perfect</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "📘 PRESENT PERFECT · for/since · already/yet/just",
+      "intro": "",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "for + período / since + punto",
+              "body": "I've been here <code>for</code> two days.<br>It hasn't worked <code>since</code> last night."
+            },
+            {
+              "h": "already / just",
+              "body": "I've <code>already</code> checked in.<br>They've <code>just</code> cleaned it."
+            },
+            {
+              "h": "yet (?/–)",
+              "body": "Has the taxi arrived <code>yet</code>?<br>It hasn't come <code>yet</code>."
+            },
+            {
+              "h": "present perfect vs. pasado",
+              "body": "<span class=\"es\">hasn't worked <b>since</b> I arrived (sigue ahora) vs. It <b>broke</b> yesterday (tiempo terminado)</span>"
+            }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "B2 · EXTRA",
+          "body": "<b>Present perfect continuous</b>: \"I've <b>been waiting</b> at reception for 20 minutes.\" · Quejas educadas: \"I'm <b>afraid</b> there's an issue with…\", \"<b>Would it be possible to</b> change rooms?\""
+        }
+      ],
+      "stage": false
+    },
+    {
+      "type": "story",
+      "title": "★ A COLD ROOM",
+      "intro": "Un huésped tiene un problema en el hotel. Primero <b>practicas</b> el present perfect, y luego <b>escuchas</b> 2 audios: una <b>queja en recepción</b> y un <b>mensaje</b>.",
+      "cast": [
+        {
+          "en": "Guest",
+          "sp": "el huésped, tiene frío"
+        },
+        {
+          "en": "Reception",
+          "sp": "ofrece ayuda"
+        }
+      ],
+      "stage": "② THE STORY <span class=\"es\">· en recepción</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "✏️",
+      "title": "FOR or SINCE?",
+      "intro": "<b>for</b> + período (two days) · <b>since</b> + punto de inicio (Monday).",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "I've been here <b class=\"tg\">___</b> Tuesday.",
+          "options": [
+            "for",
+            "since"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "We've waited <b class=\"tg\">___</b> an hour.",
+          "options": [
+            "for",
+            "since"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "She's lived in this city <b class=\"tg\">___</b> 2019.",
+          "options": [
+            "for",
+            "since"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "They've known each other <b class=\"tg\">___</b> ten years.",
+          "options": [
+            "for",
+            "since"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "The Wi-Fi has been down <b class=\"tg\">___</b> this morning.",
+          "options": [
+            "for",
+            "since"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Reporta 2 problemas de un hotel de forma educada, usando <i>hasn't worked since…</i> y <i>I've already…</i>"
+      },
+      "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "✅",
+      "title": "PAST SIMPLE or PRESENT PERFECT?",
+      "intro": "Tiempo terminado → pasado simple. Sigue ahora / reciente → present perfect.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "I ___ yesterday afternoon. <span class=\"es\">(arrive)</span>",
+          "options": [
+            "arrived",
+            "have arrived"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "I ___ in this hotel since Monday. <span class=\"es\">(be)</span>",
+          "options": [
+            "was",
+            "have been"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "The heater ___ two hours ago. <span class=\"es\">(break)</span>",
+          "options": [
+            "broke",
+            "has broken"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "___ yet? <span class=\"es\">(you / check in)</span>",
+          "options": [
+            "Did you check in",
+            "Have you checked in"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "She ___ the tour. <span class=\"es\">(already / finish)</span>",
+          "options": [
+            "already finished",
+            "has already finished"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · AT RECEPTION",
+      "desc": "Un huésped reporta un problema. Fíjate en el <b>problema</b> y en <b>desde cuándo</b>.",
+      "src": "trv-l2-1.mp3",
+      "dur": "0:34",
+      "speakers": "🗣 Guest + Reception",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What's the problem, and since when?",
+          "options": [
+            "The heating hasn't worked since last night",
+            "There's no hot water since Monday evening",
+            "The Wi-Fi hasn't worked since this morning"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Has the guest tried the control?",
+          "options": [
+            "Yes, already twice",
+            "No, not yet — she will try it",
+            "She says it isn't there"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Is the morning taxi booked?",
+          "options": [
+            "No, reception will book it later",
+            "Yes, confirmed for eight o'clock",
+            "Yes, just confirmed for 7 a.m."
+          ],
+          "answer": 2
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "Guest",
+          "html": "Hi, I'm in room 204. There's a problem — the heating <span class=\"tg\">hasn't worked since last night</span>."
+        },
+        {
+          "spk": "Reception",
+          "html": "I'm sorry to hear that. Have you tried the control on the wall?",
+          "b": true
+        },
+        {
+          "spk": "Guest",
+          "html": "Yes, I've <span class=\"tg\">already tried</span> it twice. And the room is really cold."
+        },
+        {
+          "spk": "Reception",
+          "html": "I understand. I'll send someone up right now.",
+          "b": true
+        },
+        {
+          "spk": "Guest",
+          "html": "Thank you. Also, has my morning taxi <span class=\"tg\">been booked yet</span>?"
+        },
+        {
+          "spk": "Reception",
+          "html": "Yes, it's <span class=\"tg\">just been confirmed</span> for seven a.m.",
+          "b": true
+        }
+      ],
+      "stage": "④ LISTENING <span class=\"es\">· escucha la queja</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · ROOM 305",
+      "desc": "Un mensaje a recepción con dos problemas. Fíjate en <b>desde cuándo</b> y <b>por qué</b>.",
+      "src": "trv-l2-2.mp3",
+      "dur": "0:21",
+      "speakers": "🗣 monólogo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Since when has the person been at the hotel?",
+          "options": [
+            "Since Monday",
+            "Since Tuesday",
+            "For a week"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is one problem?",
+          "options": [
+            "The Wi-Fi hasn't worked since last night",
+            "There's no hot water in the bathroom",
+            "The room next door is being cleaned"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why can't the person sleep?",
+          "options": [
+            "The heating is too cold at night",
+            "The room next door is noisy",
+            "The bed is too small and hard"
+          ],
+          "answer": 1
+        }
+      ],
+      "transcript": [
+        {
+          "spk": "🗣",
+          "html": "Hello, this is room 305. I've been here <span class=\"tg\">since Monday</span>, and I have two problems. First, the <span class=\"tg\">Wi-Fi hasn't worked since last night</span>. Second, the <span class=\"tg\">room next door is very noisy</span>, and I haven't slept well for two days. Could you help me, please?"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "✍️ A POLITE COMPLAINT",
+      "intro": "Escribe un <b>mensaje corto y educado</b> a un hotel o anfitrión sobre un problema (5–6 oraciones), usando el present perfect con <b>for/since</b> y <b>already/yet</b>.",
+      "checklist": [],
+      "placeholder": "Hello, I've been in room ... since ... There's a problem with...",
+      "example": "Hello, I've been in room <span class=\"gap\">___</span> since <span class=\"gap\">___</span>. There's a problem — the <span class=\"gap\">cosa</span> hasn't <span class=\"gap\">participio</span> since <span class=\"gap\">___</span>. I've already <span class=\"gap\">___</span>. Could you <span class=\"gap\">petición</span>? Has <span class=\"gap\">___</span> been done yet?",
+      "exampleLabel": "COMPLETA — present perfect",
+      "hw": "Escribe tu <b>mensaje</b> y graba un audio leyéndolo. Envíamelo por WhatsApp. ¡Dudas, en clase!",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+    }
+  ],
+  "next": {
+    "href": "lesson.html?id=trv-l3",
+    "label": "SIGUIENTE ▸"
+  }
+}
