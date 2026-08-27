@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "in the morning / at night",
+          "r": "por la mañana / de noche"
+        },
+        {
+          "l": "early / late",
+          "r": "temprano / tarde"
+        },
+        {
+          "l": "watch TV",
+          "r": "ver la tele"
+        },
+        {
+          "l": "half past seven (7:30)",
+          "r": "las siete y media"
+        },
+        {
+          "l": "go home",
+          "r": "ir a casa"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "☕ FOOD, PLACES &amp; ORDERING",
       "intro": "Para pedir comida y encontrar lugares. Practica en voz alta, ¡sin traductor!",
@@ -170,51 +199,51 @@
           "type": "mcq",
           "q": "<b class=\"tg\">___</b> a café near here.",
           "options": [
-            "There is",
             "There are",
+            "There is",
             "Is there"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "<b class=\"tg\">___</b> two banks on this street.",
           "options": [
             "There is",
-            "There are",
-            "Is there"
+            "Is there",
+            "There are"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "<b class=\"tg\">___</b> there a hotel near the station?",
           "options": [
-            "Is",
+            "There is",
             "Are",
-            "There is"
+            "Is"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "<b class=\"tg\">___</b> there any shops here?",
           "options": [
+            "There are",
             "Is",
-            "Are",
-            "There are"
+            "Are"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "<b class=\"tg\">___</b> a park behind the station.",
           "options": [
+            "Are there",
             "There is",
-            "There are",
-            "Are there"
+            "There are"
           ],
-          "answer": 0
+          "answer": 1
         }
       ],
       "speaking": {
@@ -233,11 +262,11 @@
           "type": "mcq",
           "q": "The café is <b class=\"tg\">___</b> Main Street.",
           "options": [
-            "on",
             "in",
-            "next to"
+            "next to",
+            "on"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
@@ -264,18 +293,112 @@
           "q": "The station is <b class=\"tg\">___</b> the city center.",
           "options": [
             "on",
-            "in",
-            "next to"
+            "next to",
+            "in"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Your keys are <b class=\"tg\">___</b> the table.",
           "options": [
             "on",
-            "in",
-            "behind"
+            "behind",
+            "in"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "Can",
+            "I",
+            "have",
+            "a",
+            "coffee",
+            "please"
+          ],
+          "answer": "Can I have a coffee please"
+        },
+        {
+          "words": [
+            "There",
+            "is",
+            "a",
+            "bank",
+            "near",
+            "here"
+          ],
+          "answer": "There is a bank near here"
+        },
+        {
+          "words": [
+            "The",
+            "park",
+            "is",
+            "next",
+            "to",
+            "the",
+            "hotel"
+          ],
+          "answer": "The park is next to the hotel"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "CAN I HAVE…? vs I WANT…",
+      "intro": "Las dos piden lo mismo en el café. Una suena normal; la otra suena a niño pequeño.",
+      "pair": {
+        "a": "Can I have a coffee, please?",
+        "b": "I want a coffee."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál usarías con el mesero?",
+          "options": [
+            "Las dos igual",
+            "A — Can I have…, please?",
+            "B — I want…"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Por qué A suena mejor?",
+          "options": [
+            "Es una pregunta educada, no una orden",
+            "Es más larga",
+            "Usa palabras más difíciles"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Pides la cuenta. ¿Qué dices?",
+          "options": [
+            "Give me the check.",
+            "Can I have the check, please?",
+            "I want the check."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Quieres un té y un pastel. ¿Qué dices?",
+          "options": [
+            "Could I have a tea and a cake, please?",
+            "Tea and cake now.",
+            "I want a tea and a cake."
           ],
           "answer": 0
         }
@@ -294,29 +417,29 @@
           "type": "mcq",
           "q": "What does the customer order?",
           "options": [
-            "A coffee and a sandwich",
             "A tea and a chocolate cake",
+            "A coffee and a sandwich",
             "A salad and an orange juice"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "How much is it?",
           "options": [
+            "Ten dollars",
             "Two dollars",
-            "Six dollars",
-            "Ten dollars"
+            "Six dollars"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Does the customer want anything else?",
           "options": [
             "No",
-            "Yes, a cake",
-            "Yes, a coffee"
+            "Yes, a coffee",
+            "Yes, a cake"
           ],
           "answer": 0
         }
@@ -369,31 +492,31 @@
           "type": "mcq",
           "q": "Is there a bank near here?",
           "options": [
-            "Yes, there is.",
             "No, there isn't.",
-            "We don't know."
+            "We don't know.",
+            "Yes, there is."
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Where is the bank?",
           "options": [
+            "Next to the station, on Main Street",
             "On Main Street, next to a supermarket",
-            "On Second Street, behind the big park",
-            "Next to the station, on Main Street"
+            "On Second Street, behind the big park"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What's behind the bank?",
           "options": [
-            "A park",
             "A hotel",
-            "A café"
+            "A café",
+            "A park"
           ],
-          "answer": 2
+          "answer": 1
         }
       ],
       "transcript": [
@@ -411,8 +534,22 @@
       "placeholder": "There is a park near my house. The bank is next to the supermarket...",
       "example": "There is a <span class=\"gap\">lugar</span> near my house. The <span class=\"gap\">lugar</span> is <span class=\"gap\">next to / behind</span> the <span class=\"gap\">lugar</span>. There are <span class=\"gap\">___</span> shops on my street. My favorite place is <span class=\"gap\">___</span>.",
       "exampleLabel": "COMPLETA",
-      "hw": "Escribe tu <b>texto</b> y graba un audio leyéndolo. Envíamelo por WhatsApp. ¡Dudas, en clase!",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe tu texto y después grábate haciendo <b>el pedido en voz alta, sin leer</b>, como si estuvieras en el café.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>there is / are</b>, <b>can</b> y las preposiciones de lugar al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "salty",
+          "r": "salado"
+        },
+        {
+          "l": "a starter / main / dessert",
+          "r": "entrada / principal / postre"
+        },
+        {
+          "l": "\"I'm allergic to…\"",
+          "r": "\"Soy alérgico/a a…\""
+        },
+        {
+          "l": "fresh / filling",
+          "r": "fresco / que llena"
+        },
+        {
+          "l": "a tip",
+          "r": "una propina"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "🧳 TRAVEL EXPERIENCES",
       "intro": "Vocabulario para contar qué pasó en un viaje. Practica en voz alta, ¡sin traductor!",
@@ -141,46 +170,46 @@
           "type": "mcq",
           "q": "We ___ at the gate when they announced the delay. <span class=\"es\">(wait)</span>",
           "options": [
-            "waited",
-            "were waiting"
+            "were waiting",
+            "waited"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "I ___ my passport on the first day. <span class=\"es\">(lose)</span>",
           "options": [
-            "lost",
-            "was losing"
+            "was losing",
+            "lost"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "While she ___, it started to rain. <span class=\"es\">(drive)</span>",
           "options": [
-            "drove",
-            "was driving"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "mcq",
-          "q": "They arrived late and ___ the tour. <span class=\"es\">(miss)</span>",
-          "options": [
-            "missed",
-            "were missing"
+            "was driving",
+            "drove"
           ],
           "answer": 0
         },
         {
           "type": "mcq",
-          "q": "The sun ___ when we left the hotel. <span class=\"es\">(shine)</span>",
+          "q": "They arrived late and ___ the tour. <span class=\"es\">(miss)</span>",
           "options": [
-            "shone",
-            "was shining"
+            "were missing",
+            "missed"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "The sun ___ when we left the hotel. <span class=\"es\">(shine)</span>",
+          "options": [
+            "was shining",
+            "shone"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -199,51 +228,150 @@
           "type": "mcq",
           "q": "I was reading <b class=\"tg\">___</b> the train stopped.",
           "options": [
-            "when",
+            "then",
             "while",
-            "then"
+            "when"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "<b class=\"tg\">___</b> we were walking, it started to rain.",
           "options": [
-            "When",
             "While",
-            "Then"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "mcq",
-          "q": "We got a bit lost, but <b class=\"tg\">___</b> we found the hotel.",
-          "options": [
-            "suddenly",
-            "in the end",
-            "while"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "mcq",
-          "q": "I heard a loud noise. <b class=\"tg\">___</b>, the lights went off.",
-          "options": [
-            "Suddenly",
-            "While",
+            "Then",
             "When"
           ],
           "answer": 0
         },
         {
           "type": "mcq",
-          "q": "We had dinner and <b class=\"tg\">___</b> we went straight to bed.",
+          "q": "We got a bit lost, but <b class=\"tg\">___</b> we found the hotel.",
           "options": [
-            "then",
+            "in the end",
             "while",
             "suddenly"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "I heard a loud noise. <b class=\"tg\">___</b>, the lights went off.",
+          "options": [
+            "When",
+            "While",
+            "Suddenly"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "We had dinner and <b class=\"tg\">___</b> we went straight to bed.",
+          "options": [
+            "then",
+            "suddenly",
+            "while"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "I",
+            "was",
+            "watching",
+            "a",
+            "film",
+            "when",
+            "the",
+            "phone",
+            "rang"
+          ],
+          "answer": "I was watching a film when the phone rang"
+        },
+        {
+          "words": [
+            "While",
+            "we",
+            "were",
+            "driving",
+            "the",
+            "car",
+            "broke",
+            "down"
+          ],
+          "answer": "While we were driving the car broke down"
+        },
+        {
+          "words": [
+            "In",
+            "the",
+            "end",
+            "we",
+            "found",
+            "the",
+            "bags"
+          ],
+          "answer": "In the end we found the bags"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "PAST SIMPLE vs PAST CONTINUOUS",
+      "intro": "Cambia una palabra y cambia <b>el orden de los hechos</b>. Léelas con cuidado.",
+      "pair": {
+        "a": "When the taxi arrived, we had breakfast.",
+        "b": "When the taxi arrived, we were having breakfast."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "En A, ¿cuándo desayunaron?",
+          "options": [
+            "Antes de que llegó el taxi",
+            "Durante el viaje",
+            "Después de que llegó el taxi"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "En B, ¿cuándo desayunaron?",
+          "options": [
+            "Empezaron después",
+            "Ya estaban desayunando",
+            "No desayunaron"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Estabas conduciendo y el coche se averió. ¿Qué dices?",
+          "options": [
+            "I drove when the car broke down.",
+            "I drive when the car broke down.",
+            "I was driving when the car broke down."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "El vuelo salió a las nueve en punto — acción puntual. ¿Qué dices?",
+          "options": [
+            "The flight was leaving at nine.",
+            "The flight leaves at nine.",
+            "The flight left at nine."
+          ],
+          "answer": 2
         }
       ]
     },
@@ -271,8 +399,8 @@
           "q": "What were they doing when the bags were found?",
           "options": [
             "Filling out the forms",
-            "Hiking in the mountains",
-            "Eating dinner at the hotel"
+            "Eating dinner at the hotel",
+            "Hiking in the mountains"
           ],
           "answer": 0
         },
@@ -280,11 +408,11 @@
           "type": "mcq",
           "q": "How was the rest of the trip?",
           "options": [
-            "Terrible from start to finish",
             "Perfect — the best trip ever",
+            "Terrible from start to finish",
             "A little boring after the hike"
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "transcript": [
@@ -331,31 +459,31 @@
           "type": "mcq",
           "q": "What happened while they were driving?",
           "options": [
+            "They got lost in the mountains",
             "The car broke down",
-            "It snowed on the mountain road",
-            "They got lost in the mountains"
+            "It snowed on the mountain road"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Who helped them?",
           "options": [
+            "A friend",
             "A farmer",
-            "A police officer",
-            "A friend"
+            "A police officer"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "How was the night?",
           "options": [
-            "Cold and bad, with no food",
             "Great — the best part of the trip",
-            "Boring — they slept in the car"
+            "Boring — they slept in the car",
+            "Cold and bad, with no food"
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "transcript": [
@@ -373,8 +501,22 @@
       "placeholder": "Last year, we traveled to... While we were...",
       "example": "Last <span class=\"gap\">año/verano</span>, I <span class=\"gap\">pasado simple</span>. The weather <span class=\"gap\">was … -ing</span>. I was <span class=\"gap\">-ing</span> <b>when</b> suddenly <span class=\"gap\">pasado simple</span>. Then we <span class=\"gap\">___</span>, and <b>in the end</b> <span class=\"gap\">___</span>.",
       "exampleLabel": "COMPLETA — pasado simple + continuo + conectores",
-      "hw": "Escribe tu <b>historia</b> y graba un audio leyéndola. Envíamelo por WhatsApp. ¡Dudas, en clase!",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe tu historia y después grábate contándola <b>sin leer</b> — es una anécdota, no una lectura.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>past simple vs. past continuous</b> al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

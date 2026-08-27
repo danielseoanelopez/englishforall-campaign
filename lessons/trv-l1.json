@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· vocabulario de hoy</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Primero, fija el vocabulario clave de hoy. Une cada palabra con su significado.",
+      "pairs": [
+        {
+          "l": "a connection",
+          "r": "un enlace (vuelo/tren para continuar)"
+        },
+        {
+          "l": "a delay / luggage",
+          "r": "un retraso / equipaje"
+        },
+        {
+          "l": "Go straight",
+          "r": "sigue derecho"
+        },
+        {
+          "l": "a block / on the corner",
+          "r": "una cuadra / en la esquina"
+        },
+        {
+          "l": "cross the street",
+          "r": "cruza la calle"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "✈️ TRAVEL &amp; DIRECTIONS",
       "intro": "Vocabulario para viajar y moverte. Practica en voz alta, ¡sin traductor!",
@@ -150,8 +179,8 @@
           "q": "We ___ to Lima on Monday at 9 a.m. <span class=\"es\">(arreglo fijo)</span>",
           "options": [
             "are flying",
-            "will fly",
-            "fly"
+            "fly",
+            "will fly"
           ],
           "answer": 0
         },
@@ -160,8 +189,8 @@
           "q": "This bag is heavy. — Don't worry, I ___ it for you. <span class=\"es\">(oferta)</span>",
           "options": [
             "'ll carry",
-            "'m carrying",
-            "carry"
+            "carry",
+            "'m carrying"
           ],
           "answer": 0
         },
@@ -169,11 +198,11 @@
           "type": "mcq",
           "q": "I've decided: I ___ to drive this year. <span class=\"es\">(intención)</span>",
           "options": [
-            "am going to learn",
+            "am learning",
             "learn",
-            "am learning"
+            "am going to learn"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
@@ -189,11 +218,11 @@
           "type": "mcq",
           "q": "Look at those clouds — it ___ ! <span class=\"es\">(predicción con evidencia)</span>",
           "options": [
-            "is going to rain",
+            "rained",
             "rains",
-            "rained"
+            "is going to rain"
           ],
-          "answer": 0
+          "answer": 2
         }
       ],
       "speaking": {
@@ -233,28 +262,122 @@
           "q": "<b class=\"tg\">___</b> the street at the lights.",
           "options": [
             "Go",
-            "Turn",
-            "Cross"
+            "Cross",
+            "Turn"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "It's <b class=\"tg\">___</b> the corner of Main and 5th.",
           "options": [
-            "on",
+            "next",
             "in",
-            "next"
+            "on"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "The station is <b class=\"tg\">___</b> to the museum.",
           "options": [
-            "next",
             "on",
-            "behind"
+            "behind",
+            "next"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "I",
+            "am",
+            "flying",
+            "to",
+            "Madrid",
+            "on",
+            "Monday"
+          ],
+          "answer": "I am flying to Madrid on Monday"
+        },
+        {
+          "words": [
+            "We",
+            "are",
+            "going",
+            "to",
+            "book",
+            "a",
+            "hotel"
+          ],
+          "answer": "We are going to book a hotel"
+        },
+        {
+          "words": [
+            "Go",
+            "straight",
+            "and",
+            "turn",
+            "left"
+          ],
+          "answer": "Go straight and turn left"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "GOING TO vs PRESENT CONTINUOUS",
+      "intro": "Las dos hablan del futuro. Una es una <b>intención</b>; la otra es un <b>plan ya cerrado</b>, con fecha o reserva.",
+      "pair": {
+        "a": "I'm going to visit Rome.",
+        "b": "I'm flying to Rome on Tuesday."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál suena a plan ya cerrado, con boletos comprados?",
+          "options": [
+            "B — present continuous",
+            "Las dos igual",
+            "A — going to"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es una intención, sin fecha fija todavía?",
+          "options": [
+            "A — going to",
+            "B — present continuous",
+            "Ninguna de las dos"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Ya reservaste el hotel para el sábado. ¿Qué dices?",
+          "options": [
+            "I will stay at a hotel on Saturday.",
+            "I'm staying at the Blue Hotel on Saturday.",
+            "I'm going to stay at a hotel some day."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Miras nubes negras: hay evidencia. ¿Qué dices?",
+          "options": [
+            "It's going to rain.",
+            "It will rain.",
+            "It rains."
           ],
           "answer": 0
         }
@@ -273,21 +396,21 @@
           "type": "mcq",
           "q": "How are they traveling on Saturday?",
           "options": [
-            "By the early train",
             "By car, along the coast",
-            "By bus from the station"
+            "By bus from the station",
+            "By the early train"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What time does the train leave?",
           "options": [
-            "Seven",
             "Eight",
+            "Seven",
             "Nine"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
@@ -344,29 +467,29 @@
           "type": "mcq",
           "q": "Where is the person going?",
           "options": [
-            "Japan",
             "China",
+            "Japan",
             "Kyoto only"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "How long are they staying?",
           "options": [
-            "Two days",
             "Two weeks",
-            "Two months"
+            "Two months",
+            "Two days"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "What haven't they booked yet?",
           "options": [
             "The hotels",
-            "The flights",
-            "The train"
+            "The train",
+            "The flights"
           ],
           "answer": 0
         }
@@ -386,8 +509,22 @@
       "placeholder": "Next month, I'm going to travel to... I'm flying on...",
       "example": "Next <span class=\"gap\">___</span>, I'm going to <span class=\"gap\">plan</span>. I'm <span class=\"gap\">-ing</span> on <span class=\"gap\">día/hora</span>. First, I'll <span class=\"gap\">___</span>, and then I'm going to <span class=\"gap\">___</span>. I think it <span class=\"gap\">'ll be</span> <span class=\"gap\">___</span>.",
       "exampleLabel": "COMPLETA — going to / -ing / will",
-      "hw": "Escribe tu <b>viaje</b> y graba un audio leyéndolo. Envíamelo por WhatsApp. ¡Dudas, en clase!",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe tu viaje y después grábate contándolo <b>sin leer</b>. Envíame el texto y el audio por WhatsApp.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>will / going to / present continuous</b> al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "next": {

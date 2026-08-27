@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "yellow 🟡 · black ⚫ · white ⚪",
+          "r": "amarillo · negro · blanco"
+        },
+        {
+          "l": "tall ↔ short",
+          "r": "alto / bajo"
+        },
+        {
+          "l": "red 🔴 · blue 🔵 · green 🟢",
+          "r": "rojo · azul · verde"
+        },
+        {
+          "l": "light blue · dark · light",
+          "r": "celeste · oscuro · claro"
+        },
+        {
+          "l": "big ↔ small",
+          "r": "grande / pequeño"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "👨‍👩‍👧 FAMILY &amp; JOBS",
       "intro": "Para hablar de tu <b>familia</b> y tu <b>trabajo</b>. Practica en voz alta, ¡sin traductor!",
@@ -161,19 +190,19 @@
           "type": "mcq",
           "q": "I <b class=\"tg\">___</b> a big family.",
           "options": [
-            "have",
-            "has"
+            "has",
+            "have"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "She <b class=\"tg\">___</b> two children.",
           "options": [
-            "have",
-            "has"
+            "has",
+            "have"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
@@ -188,19 +217,19 @@
           "type": "mcq",
           "q": "He <b class=\"tg\">___</b> a good job.",
           "options": [
-            "have",
-            "has"
+            "has",
+            "have"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "My brother <b class=\"tg\">___</b> a car.",
           "options": [
-            "have",
-            "has"
+            "has",
+            "have"
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "speaking": {
@@ -219,49 +248,138 @@
           "type": "mcq",
           "q": "This is <b class=\"tg\">___</b> mother. <span class=\"es\">(I)</span>",
           "options": [
-            "my",
+            "her",
             "his",
-            "her"
+            "my"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Tom is happy. <b class=\"tg\">___</b> job is great. <span class=\"es\">(he)</span>",
           "options": [
-            "Her",
             "His",
-            "My"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "mcq",
-          "q": "Ana loves <b class=\"tg\">___</b> family. <span class=\"es\">(she)</span>",
-          "options": [
-            "her",
-            "his",
-            "your"
+            "My",
+            "Her"
           ],
           "answer": 0
         },
         {
           "type": "mcq",
-          "q": "What's <b class=\"tg\">___</b> name? <span class=\"es\">(you)</span>",
+          "q": "Ana loves <b class=\"tg\">___</b> family. <span class=\"es\">(she)</span>",
           "options": [
-            "my",
-            "your",
-            "our"
+            "his",
+            "her",
+            "your"
           ],
           "answer": 1
         },
         {
           "type": "mcq",
+          "q": "What's <b class=\"tg\">___</b> name? <span class=\"es\">(you)</span>",
+          "options": [
+            "your",
+            "my",
+            "our"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
           "q": "We love <b class=\"tg\">___</b> city. <span class=\"es\">(we)</span>",
           "options": [
-            "our",
             "their",
+            "our",
             "his"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "I",
+            "have",
+            "two",
+            "sisters"
+          ],
+          "answer": "I have two sisters"
+        },
+        {
+          "words": [
+            "She",
+            "has",
+            "a",
+            "good",
+            "job"
+          ],
+          "answer": "She has a good job"
+        },
+        {
+          "words": [
+            "My",
+            "father",
+            "is",
+            "a",
+            "doctor"
+          ],
+          "answer": "My father is a doctor"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "HAVE vs BE PARA DESCRIBIR",
+      "intro": "En español usas <i>tener</i> para muchas cosas. En inglés unas van con <b>have</b> y otras con <b>be</b>. Mira las dos frases.",
+      "pair": {
+        "a": "She has long hair.",
+        "b": "She is tall."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál describe algo que la persona <b>posee o lleva</b>?",
+          "options": [
+            "B — be",
+            "Las dos igual",
+            "A — have"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál describe <b>cómo es</b> la persona?",
+          "options": [
+            "Ninguna de las dos",
+            "A — have",
+            "B — be"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Quieres decir que tu hermano tiene 30 años. ¿Qué dices?",
+          "options": [
+            "He has thirty years old.",
+            "He is thirty years old.",
+            "He has thirty years."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Quieres decir que tu madre tiene ojos verdes. ¿Qué dices?",
+          "options": [
+            "She has green eyes.",
+            "She is green eyes.",
+            "She has green eyed."
           ],
           "answer": 0
         }
@@ -280,31 +398,31 @@
           "type": "mcq",
           "q": "How many brothers does Sam have?",
           "options": [
+            "Three",
             "Two",
-            "One",
-            "Three"
+            "One"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What is Sam's brother's job?",
           "options": [
-            "A doctor",
             "A teacher",
-            "A cook"
+            "A cook",
+            "A doctor"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What does Sam's mother do?",
           "options": [
-            "A doctor",
             "A teacher",
-            "A student"
+            "A student",
+            "A doctor"
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "transcript": [
@@ -351,21 +469,21 @@
           "type": "mcq",
           "q": "How many sisters?",
           "options": [
-            "Two",
             "One",
-            "Three"
+            "Three",
+            "Two"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What is the brother's job?",
           "options": [
-            "A doctor",
             "A teacher",
-            "A cook"
+            "A cook",
+            "A doctor"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
@@ -393,8 +511,22 @@
       "placeholder": "I have a big family. My mother is a teacher. My brother has a car...",
       "example": "I have <span class=\"gap\">número</span> <span class=\"gap\">brothers/sisters</span>. My <span class=\"gap\">mother/father</span> is a <span class=\"gap\">trabajo</span>. <span class=\"gap\">His/Her</span> name is <span class=\"gap\">___</span>. My <span class=\"gap\">___</span> has <span class=\"gap\">___</span>.",
       "exampleLabel": "COMPLETA",
-      "hw": "Escribe tus <b>5 oraciones</b> y graba un audio leyéndolas. Envíamelo por WhatsApp. ¡Dudas, en clase!",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe tus 5 oraciones y después grábate hablando de tu familia <b>sin leer</b> (mira solo los nombres que anotaste).",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>have / has</b> y los posesivos al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "next": {

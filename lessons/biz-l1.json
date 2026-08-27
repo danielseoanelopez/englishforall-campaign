@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· vocabulario de hoy</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Primero, fija el vocabulario clave de hoy. Une cada palabra con su significado.",
+      "pairs": [
+        {
+          "l": "on the weekend",
+          "r": "el fin de semana"
+        },
+        {
+          "l": "a coworker / colleague",
+          "r": "un compañero/a de trabajo"
+        },
+        {
+          "l": "a networking event",
+          "r": "un evento para hacer contactos"
+        },
+        {
+          "l": "Hi, I don't think we've met. I'm…",
+          "r": "Hola, creo que no nos conocemos. Soy…"
+        },
+        {
+          "l": "a client",
+          "r": "un cliente"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "💼 SAY WHO YOU ARE",
       "intro": "En una reunión o evento, primero <b>saludas</b>, luego dices tu <b>puesto</b> y <b>qué haces</b> (present simple: <i>I + verb</i>). Sin traductor — practica en voz alta.",
@@ -204,41 +233,41 @@
           "type": "mcq",
           "q": "We have a team call <b class=\"tg\">___</b> Tuesday morning.",
           "options": [
-            "at",
             "on",
-            "in"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "mcq",
-          "q": "The train arrives <b class=\"tg\">___</b> five minutes.",
-          "options": [
-            "at",
-            "on",
-            "in"
-          ],
-          "answer": 2
-        },
-        {
-          "type": "mcq",
-          "q": "I'm flying <b class=\"tg\">___</b> Amsterdam tomorrow.",
-          "options": [
-            "to",
-            "at",
-            "in"
+            "in",
+            "at"
           ],
           "answer": 0
         },
         {
           "type": "mcq",
+          "q": "The train arrives <b class=\"tg\">___</b> five minutes.",
+          "options": [
+            "on",
+            "in",
+            "at"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "I'm flying <b class=\"tg\">___</b> Amsterdam tomorrow.",
+          "options": [
+            "in",
+            "to",
+            "at"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
           "q": "She walked <b class=\"tg\">___</b> the meeting room and sat down.",
           "options": [
-            "at",
             "on",
-            "into"
+            "into",
+            "at"
           ],
-          "answer": 2
+          "answer": 1
         }
       ],
       "speaking": {
@@ -258,41 +287,79 @@
           "type": "mcq",
           "q": "\"How was your weekend?\"",
           "options": [
-            "It was great, thanks — I went hiking. How about you?",
             "I'm a manager.",
+            "It was great, thanks — I went hiking. How about you?",
             "At the office."
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "\"What do you do?\"",
           "options": [
-            "About three years now.",
             "I'm a project manager at a software company.",
-            "Yes, it is."
+            "Yes, it is.",
+            "About three years now."
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "\"Is this your first time at this event?\"",
           "options": [
-            "On Monday.",
             "I manage a team.",
-            "Yes, it is — it's bigger than I expected!"
+            "Yes, it is — it's bigger than I expected!",
+            "On Monday."
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "\"How long have you worked here?\"",
           "options": [
-            "In the morning.",
+            "Nice to meet you.",
             "About three years now.",
-            "Nice to meet you."
+            "In the morning."
           ],
           "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "I",
+            "am",
+            "a",
+            "project",
+            "manager"
+          ],
+          "answer": "I am a project manager"
+        },
+        {
+          "words": [
+            "The",
+            "meeting",
+            "is",
+            "on",
+            "Monday"
+          ],
+          "answer": "The meeting is on Monday"
+        },
+        {
+          "words": [
+            "She",
+            "walked",
+            "into",
+            "the",
+            "room"
+          ],
+          "answer": "She walked into the room"
         }
       ]
     },
@@ -309,19 +376,19 @@
           "type": "mcq",
           "q": "What is Toni's job?",
           "options": [
+            "An account manager at Northwind",
             "A marketing specialist at BrightBox",
-            "A project coordinator at Lumen Design",
-            "An account manager at Northwind"
+            "A project coordinator at Lumen Design"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "When do the talks start?",
           "options": [
-            "On Monday, at eleven",
+            "On Thursday, in the afternoon",
             "Tomorrow, at nine",
-            "On Thursday, in the afternoon"
+            "On Monday, at eleven"
           ],
           "answer": 1
         },
@@ -329,11 +396,11 @@
           "type": "mcq",
           "q": "Where will they meet later?",
           "options": [
+            "At the coffee break, by the main entrance",
             "On the fifth floor, by the meeting rooms",
-            "At the main entrance, after the talks",
-            "At the coffee break, by the main entrance"
+            "At the main entrance, after the talks"
           ],
-          "answer": 2
+          "answer": 0
         }
       ],
       "speaking": {
@@ -406,18 +473,18 @@
           "type": "mcq",
           "q": "When is the meeting?",
           "options": [
-            "On Monday, at nine in the morning",
             "On Thursday, at ten in the morning",
+            "On Monday, at nine in the morning",
             "On Friday, at ten in the morning"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "Where is the meeting?",
           "options": [
-            "At the downtown office, on the first floor",
             "At the main office, by the front entrance",
+            "At the downtown office, on the first floor",
             "At the downtown office, on the fifth floor"
           ],
           "answer": 2
@@ -442,8 +509,22 @@
       "placeholder": "Hi, I'm... I work at... I'm a..., and I...",
       "example": "Hi, I'm <span class=\"gap\">___</span>. I work <span class=\"gap\">___</span> <span class=\"gap\">___</span> [company], and I'm a <span class=\"gap\">___</span> [job]. I <span class=\"gap\">___</span> [responsibility], <b>and</b> I work <span class=\"gap\">___</span> clients <span class=\"gap\">___</span> [place]. We usually have meetings <span class=\"gap\">___</span> Mondays, <span class=\"gap\">___</span> the morning. Today I'm here <span class=\"gap\">___</span> a conference, <b>so</b> I'm meeting a lot of new people.",
       "exampleLabel": "COMPLETA — at / on / in / to + tu info",
-      "hw": "Escribe tu <b>párrafo</b> y graba un audio leyéndolo en voz alta. Envíame ambos por WhatsApp y lo corregimos. ¡Dudas, en clase!",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe tu párrafo y después grábate presentándote <b>sin leer</b>, como en un evento real. Envíame ambos por WhatsApp.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste las preposiciones <b>at / on / in / to</b> y el lenguaje para presentarte al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "next": {

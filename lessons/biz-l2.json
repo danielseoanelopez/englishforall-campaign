@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "a coworker / colleague",
+          "r": "un compañero/a de trabajo"
+        },
+        {
+          "l": "a client",
+          "r": "un cliente"
+        },
+        {
+          "l": "Hi, I don't think we've met. I'm…",
+          "r": "Hola, creo que no nos conocemos. Soy…"
+        },
+        {
+          "l": "on the weekend",
+          "r": "el fin de semana"
+        },
+        {
+          "l": "responsibility",
+          "r": "responsabilidad"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "💬 SAY IT WITH TACT",
       "intro": "En una reunión, la clave es ser <b>claro pero educado</b>. Aquí tienes las 4 movidas básicas (B1) y sus versiones ⭐ B2.",
@@ -171,56 +200,56 @@
           "type": "mcq",
           "q": "\"In my opinion, we should focus on our customers.\"",
           "options": [
-            "Opinion",
             "Agreeing",
+            "Suggestion",
             "Disagreeing",
-            "Suggestion"
+            "Opinion"
           ],
-          "answer": 0
+          "answer": 3
         },
         {
           "type": "mcq",
           "q": "\"Absolutely — I couldn't agree more with that.\"",
           "options": [
             "Opinion",
+            "Suggestion",
             "Agreeing",
-            "Disagreeing",
-            "Suggestion"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "mcq",
-          "q": "\"I see your point, but I'm not entirely convinced.\"",
-          "options": [
-            "Opinion",
-            "Agreeing",
-            "Disagreeing",
-            "Suggestion"
+            "Disagreeing"
           ],
           "answer": 2
         },
         {
           "type": "mcq",
-          "q": "\"How about offering a discount for referrals?\"",
+          "q": "\"I see your point, but I'm not entirely convinced.\"",
           "options": [
+            "Disagreeing",
             "Opinion",
             "Agreeing",
-            "Disagreeing",
             "Suggestion"
           ],
-          "answer": 3
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "\"How about offering a discount for referrals?\"",
+          "options": [
+            "Suggestion",
+            "Agreeing",
+            "Opinion",
+            "Disagreeing"
+          ],
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "\"From where I stand, quality should come first.\"",
           "options": [
+            "Suggestion",
             "Opinion",
-            "Agreeing",
             "Disagreeing",
-            "Suggestion"
+            "Agreeing"
           ],
-          "answer": 0
+          "answer": 1
         }
       ],
       "speaking": {
@@ -241,8 +270,8 @@
           "q": "We <b class=\"tg\">___</b> meet the deadline to keep the client's trust. <span class=\"es\">(obligación)</span>",
           "options": [
             "must",
-            "could",
-            "might"
+            "might",
+            "could"
           ],
           "answer": 0
         },
@@ -251,8 +280,8 @@
           "q": "Employees <b class=\"tg\">___</b> share confidential information. <span class=\"es\">(prohibición)</span>",
           "options": [
             "must not",
-            "should",
-            "can"
+            "can",
+            "should"
           ],
           "answer": 0
         },
@@ -260,11 +289,11 @@
           "type": "mcq",
           "q": "We <b class=\"tg\">___</b> explore new suppliers to cut costs. <span class=\"es\">(posibilidad)</span>",
           "options": [
+            "can't",
             "must",
-            "could",
-            "can't"
+            "could"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
@@ -280,9 +309,99 @@
           "type": "mcq",
           "q": "Which sounds most professional?",
           "options": [
-            "Fix this now.",
             "You should complete this by the end of the day.",
+            "Fix this now.",
             "Do it fast."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "I",
+            "see",
+            "your",
+            "point"
+          ],
+          "answer": "I see your point"
+        },
+        {
+          "words": [
+            "We",
+            "should",
+            "test",
+            "it",
+            "first"
+          ],
+          "answer": "We should test it first"
+        },
+        {
+          "words": [
+            "Could",
+            "we",
+            "focus",
+            "on",
+            "the",
+            "budget"
+          ],
+          "answer": "Could we focus on the budget"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "I DISAGREE vs I SEE YOUR POINT, BUT…",
+      "intro": "Las dos marcan desacuerdo. Una cierra la conversación; la otra la mantiene abierta — y en una reunión eso te cuesta o te gana aliados.",
+      "pair": {
+        "a": "I disagree.",
+        "b": "I see your point, but I see it differently."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál deja la puerta abierta a seguir hablando?",
+          "options": [
+            "A — va directo al desacuerdo",
+            "B — reconoce antes de discrepar",
+            "Las dos igual"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál puede sonar brusco con un cliente?",
+          "options": [
+            "A — I disagree.",
+            "Ninguna de las dos",
+            "B — I see your point, but…"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Tu jefa propone algo que crees que fallará. ¿Qué dices?",
+          "options": [
+            "No. Let's do it my way.",
+            "I disagree. That won't work.",
+            "I take your point, but I'd suggest we test it first."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Quieres discrepar y aun así sonar de equipo. Empiezas con…",
+          "options": [
+            "You're wrong about that.",
+            "That's a fair point, although…",
+            "I don't agree at all."
           ],
           "answer": 1
         }
@@ -302,8 +421,8 @@
           "q": "What does Maria suggest first?",
           "options": [
             "A loyalty program for existing customers",
-            "A referral discount for new customers",
-            "A price cut for the whole product line"
+            "A price cut for the whole product line",
+            "A referral discount for new customers"
           ],
           "answer": 0
         },
@@ -311,21 +430,21 @@
           "type": "mcq",
           "q": "Does Diego fully agree with Maria?",
           "options": [
+            "No — he rejects the idea and proposes another one",
             "Yes — he agrees with the loyalty program completely",
-            "No — he politely disagrees; he wants new customers too",
-            "No — he rejects the idea and proposes another one"
+            "No — he politely disagrees; he wants new customers too"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What do they decide to do first?",
           "options": [
-            "Launch the loyalty program and the referral discount now",
             "Cancel the loyalty program and cut prices instead",
-            "Test the referral discount for one month, with a budget"
+            "Test the referral discount for one month, with a budget",
+            "Launch the loyalty program and the referral discount now"
           ],
-          "answer": 2
+          "answer": 1
         }
       ],
       "speaking": {
@@ -384,11 +503,11 @@
           "type": "mcq",
           "q": "How many things did they agree on?",
           "options": [
-            "Two",
             "One",
+            "Two",
             "Four"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
@@ -404,11 +523,11 @@
           "type": "mcq",
           "q": "When will they review the results?",
           "options": [
+            "In four weeks",
             "Tomorrow",
-            "Next year",
-            "In four weeks"
+            "Next year"
           ],
-          "answer": 2
+          "answer": 0
         }
       ],
       "transcript": [
@@ -430,8 +549,22 @@
       "placeholder": "Hi team, thanks for the meeting. In my opinion...",
       "example": "Hi team, thanks for the meeting today. In my opinion, <span class=\"gap\">___</span> was our best idea. I think we <span class=\"gap\">should</span> <span class=\"gap\">___</span>, and we <span class=\"gap\">must</span> <span class=\"gap\">___</span> before we start. As a next step, <span class=\"gap\">___</span>. Please <span class=\"gap\">___</span> by <span class=\"gap\">___</span>. Thanks!",
       "exampleLabel": "COMPLETA — opinión + modal + próximo paso",
-      "hw": "Escribe tu <b>email-resumen</b> y (opcional) escucha 2–3 min de una reunión real (podcast/YouTube) y anota 3 frases útiles. Envíamelo por WhatsApp.",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe tu email-resumen y después grábate <b>cerrando la reunión en voz alta, sin leer</b>: los acuerdos y los next steps.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste los modales (<b>should / could / might</b>) y las frases de tacto al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "next": {

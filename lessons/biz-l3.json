@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "a goal / target",
+          "r": "una meta / objetivo"
+        },
+        {
+          "l": "to make a decision",
+          "r": "tomar una decisión"
+        },
+        {
+          "l": "a loyalty program",
+          "r": "un programa de fidelidad"
+        },
+        {
+          "l": "to make a suggestion",
+          "r": "hacer una sugerencia"
+        },
+        {
+          "l": "an agenda",
+          "r": "el orden del día"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "📧 THE 6 PARTS OF AN EMAIL",
       "intro": "",
@@ -189,41 +218,41 @@
           "type": "mcq",
           "q": "You want someone to review a document.",
           "options": [
-            "Would you mind reviewing this document?",
             "Review this.",
+            "Would you mind reviewing this document?",
             "You must review this."
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "You want to know if someone can attend a 3 p.m. meeting.",
           "options": [
+            "Would you be able to attend at 3 p.m.?",
             "Come at 3.",
-            "Can you at 3?",
-            "Would you be able to attend at 3 p.m.?"
+            "Can you at 3?"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "You want an update on a project.",
           "options": [
-            "Update me now.",
             "I would appreciate an update on the project.",
+            "Update me now.",
             "Give me an update."
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "Which is more formal for an email?",
           "options": [
-            "I'll get back to you.",
             "I will get back to you.",
-            "I'll ping you."
+            "I'll ping you.",
+            "I'll get back to you."
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "speaking": {
@@ -242,21 +271,21 @@
           "type": "mcq",
           "q": "A work email should start with…",
           "options": [
+            "\"Yo,\"",
             "\"Hey,\"",
-            "a clear subject line + \"Dear [Name],\"",
-            "\"Yo,\""
+            "a clear subject line + \"Dear [Name],\""
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Which is the best subject line?",
           "options": [
+            "(no subject)",
             "stuff",
-            "Meeting Request: Q2 Sales Strategy",
-            "(no subject)"
+            "Meeting Request: Q2 Sales Strategy"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
@@ -282,11 +311,102 @@
           "type": "mcq",
           "q": "Best way to end a request politely?",
           "options": [
-            "Thank you for your help. Best regards,",
+            "Do it. Thanks.",
             "Fix it soon. Bye.",
-            "Do it. Thanks."
+            "Thank you for your help. Best regards,"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "Could",
+            "you",
+            "please",
+            "send",
+            "the",
+            "report"
+          ],
+          "answer": "Could you please send the report"
+        },
+        {
+          "words": [
+            "I",
+            "would",
+            "appreciate",
+            "an",
+            "update"
+          ],
+          "answer": "I would appreciate an update"
+        },
+        {
+          "words": [
+            "Thank",
+            "you",
+            "for",
+            "your",
+            "help"
+          ],
+          "answer": "Thank you for your help"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "DIRECTO vs EDUCADO",
+      "intro": "Las dos piden lo mismo. En un email de trabajo, la diferencia decide si te responden rápido o si te ganas fama de brusco.",
+      "pair": {
+        "a": "Send me the report.",
+        "b": "Could you please send me the report?"
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál usarías con un cliente al que no conoces?",
+          "options": [
+            "A — Send me the report.",
+            "B — Could you please…?",
+            "Las dos sirven igual"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Por qué B suena mejor?",
+          "options": [
+            "Usa palabras más difíciles",
+            "Convierte la orden en una pregunta",
+            "Es más corta"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Necesitas algo con urgencia, pero sin sonar grosero. ¿Qué escribes?",
+          "options": [
+            "Would you be able to send it today?",
+            "Send it today.",
+            "I need it now."
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Pides un favor grande a un compañero. ¿Qué escribes?",
+          "options": [
+            "You must review this.",
+            "Review this document.",
+            "Would you mind reviewing this document?"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -303,21 +423,21 @@
           "type": "mcq",
           "q": "What three things does Mark want?",
           "options": [
-            "The report today, an explanation of the numbers, and the shipment fixed",
+            "The report today, a meeting about the numbers, and a refund",
             "The report tomorrow, a call about the numbers, and a new date",
-            "The report today, a meeting about the numbers, and a refund"
+            "The report today, an explanation of the numbers, and the shipment fixed"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "How does Mark sound?",
           "options": [
             "Formal and polite, but a little cold",
-            "Direct and informal — not very polite",
-            "Confused and unsure about the numbers"
+            "Confused and unsure about the numbers",
+            "Direct and informal — not very polite"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
@@ -351,31 +471,31 @@
           "type": "mcq",
           "q": "Why is Elena calling?",
           "options": [
-            "To follow up on the report",
             "To complain about a coworker",
-            "To cancel a meeting"
+            "To cancel a meeting",
+            "To follow up on the report"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Which polite phrase does she use?",
           "options": [
-            "\"Please send it over before the end of today.\"",
             "\"Whenever you have a moment, could you please send it over?\"",
+            "\"Please send it over before the end of today.\"",
             "\"I would appreciate it if you could send it today.\""
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "What does she ask about the shipment?",
           "options": [
+            "The new delivery date and possible solutions",
             "The reason for the delay and who is at fault",
-            "The price of the shipment and the refund policy",
-            "The new delivery date and possible solutions"
+            "The price of the shipment and the refund policy"
           ],
-          "answer": 2
+          "answer": 0
         }
       ],
       "transcript": [
@@ -397,8 +517,22 @@
       "placeholder": "Subject: ...\nDear ...,\nI hope you are doing well...",
       "example": "Subject: <span class=\"gap\">___</span><br> Dear <span class=\"gap\">___</span>,<br> I hope you are doing well. I am writing to <span class=\"gap\">___</span>. Whenever you have a moment, could you please <span class=\"gap\">___</span>? I would also appreciate <span class=\"gap\">___</span>. Regarding the shipment, could you let me know <span class=\"gap\">___</span>?<br> Thank you for your help.<br> Best regards,<br> <span class=\"gap\">___</span>",
       "exampleLabel": "COMPLETA EL EMAIL",
-      "hw": "Escribe el email completo y (opcional) un email de <b>seguimiento por una reunión perdida</b>. Envíamelos por WhatsApp y los corregimos.",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe el email completo y después grábate <b>explicando sin leer</b> qué cambiaste del mensaje de Mark y por qué.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste el lenguaje indirecto y educado, y las 6 partes del email al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "next": {

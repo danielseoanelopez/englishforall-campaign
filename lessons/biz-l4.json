@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "a shipment",
+          "r": "un envío"
+        },
+        {
+          "l": "an attachment",
+          "r": "un archivo adjunto"
+        },
+        {
+          "l": "to look into…",
+          "r": "investigar / revisar…"
+        },
+        {
+          "l": "to reach out",
+          "r": "contactar / escribir"
+        },
+        {
+          "l": "a request",
+          "r": "una solicitud"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "🤝 MAKE THE DEAL",
       "intro": "",
@@ -183,31 +212,31 @@
           "type": "mcq",
           "q": "If we lower the price, <b class=\"tg\">___</b> you sign today?",
           "options": [
-            "will",
+            "did",
             "would",
-            "did"
+            "will"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "We can start <b class=\"tg\">___</b> the deposit is paid.",
           "options": [
+            "or",
             "unless",
-            "as long as",
-            "or"
+            "as long as"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "<span class=\"es\">(⭐ 2nd cond.)</span> If we reduced the price, you <b class=\"tg\">___</b> commit to a long contract?",
           "options": [
             "will",
-            "would",
-            "did"
+            "did",
+            "would"
           ],
-          "answer": 1
+          "answer": 2
         }
       ],
       "speaking": {
@@ -227,10 +256,10 @@
           "type": "mcq",
           "q": "\"If we reduce the price, they order more.\"",
           "options": [
-            "Correct",
-            "Incorrect (needs \"they will order more\")"
+            "Incorrect (needs \"they will order more\")",
+            "Correct"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
@@ -245,29 +274,127 @@
           "type": "mcq",
           "q": "Which is a good counteroffer?",
           "options": [
-            "Take it or leave it.",
             "Would you be willing to meet us halfway?",
-            "No."
-          ],
-          "answer": 1
-        },
-        {
-          "type": "mcq",
-          "q": "Which sounds confident but polite?",
-          "options": [
-            "I'm confident we can find a solution.",
-            "You have no choice.",
-            "Whatever you want."
+            "No.",
+            "Take it or leave it."
           ],
           "answer": 0
         },
         {
           "type": "mcq",
+          "q": "Which sounds confident but polite?",
+          "options": [
+            "You have no choice.",
+            "Whatever you want.",
+            "I'm confident we can find a solution."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
           "q": "<span class=\"es\">(⭐ 2nd cond.)</span> \"If we had more time, we <b class=\"tg\">___</b> explore other options.\"",
           "options": [
-            "will",
             "can",
+            "will",
             "could"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "If",
+            "you",
+            "confirm",
+            "today",
+            "we",
+            "will",
+            "start"
+          ],
+          "answer": "If you confirm today we will start"
+        },
+        {
+          "words": [
+            "Would",
+            "you",
+            "be",
+            "willing",
+            "to",
+            "meet",
+            "halfway"
+          ],
+          "answer": "Would you be willing to meet halfway"
+        },
+        {
+          "words": [
+            "If",
+            "we",
+            "had",
+            "more",
+            "time",
+            "we",
+            "would",
+            "add",
+            "it"
+          ],
+          "answer": "If we had more time we would add it"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "1st vs 2nd CONDITIONAL EN LA NEGOCIACIÓN",
+      "intro": "La misma oferta en dos mundos: una está <b>sobre la mesa ahora</b>, la otra es <b>hipotética</b>. Confundirlas en una negociación te cuesta dinero.",
+      "pair": {
+        "a": "If you place a larger order, we will give you a discount.",
+        "b": "If you placed a larger order, we would give you a discount."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál es una oferta real que puedes cerrar hoy?",
+          "options": [
+            "A — 1st conditional",
+            "Las dos igual",
+            "B — 2nd conditional"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál suena más suave, casi como “imaginemos”?",
+          "options": [
+            "Ninguna de las dos",
+            "A — 1st conditional",
+            "B — 2nd conditional"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "El cliente PUEDE ampliar el pedido y quieres cerrar. ¿Qué dices?",
+          "options": [
+            "If you will place a larger order, we give you a discount.",
+            "If you placed a larger order, we'd give you a discount.",
+            "If you place a larger order, we'll give you a discount."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Quieres tantear sin comprometerte a nada. ¿Qué dices?",
+          "options": [
+            "If we lowered the price, will you commit to a year?",
+            "If we lower the price, will you commit to a year?",
+            "If we lowered the price, would you commit to a year?"
           ],
           "answer": 2
         }
@@ -286,28 +413,28 @@
           "type": "mcq",
           "q": "What does the buyer offer for a lower price?",
           "options": [
+            "An immediate payment and a bigger deposit",
             "A larger order, then a one-year contract",
-            "A larger order and an express shipping fee",
-            "An immediate payment and a bigger deposit"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "mcq",
-          "q": "Under what condition does the supplier give 10%?",
-          "options": [
-            "If the buyer increases the order by twenty percent",
-            "If the buyer commits to a one-year contract",
-            "If the buyer pays the full amount today"
+            "A larger order and an express shipping fee"
           ],
           "answer": 1
         },
         {
           "type": "mcq",
+          "q": "Under what condition does the supplier give 10%?",
+          "options": [
+            "If the buyer commits to a one-year contract",
+            "If the buyer increases the order by twenty percent",
+            "If the buyer pays the full amount today"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
           "q": "Do they reach an agreement?",
           "options": [
-            "No, they give up",
             "Not yet — they need another meeting",
+            "No, they give up",
             "Yes — a fair deal for both sides"
           ],
           "answer": 2
@@ -355,31 +482,31 @@
           "type": "mcq",
           "q": "When can they deliver if the order is confirmed today?",
           "options": [
-            "By Friday",
             "By Monday",
-            "In two weeks"
+            "In two weeks",
+            "By Friday"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What does the client want instead?",
           "options": [
+            "Free express shipping",
             "A bigger discount on the whole order",
-            "Delivery by Wednesday",
-            "Free express shipping"
+            "Delivery by Wednesday"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What condition does the supplier set for Wednesday?",
           "options": [
-            "A longer contract of one year",
             "A twenty percent bigger order",
-            "An express shipping fee"
+            "An express shipping fee",
+            "A longer contract of one year"
           ],
-          "answer": 2
+          "answer": 1
         }
       ],
       "transcript": [
@@ -424,8 +551,22 @@
       "placeholder": "Dear ...,\nI'm writing to confirm our agreement...",
       "example": "Dear <span class=\"gap\">___</span>,<br> I'm writing to confirm our agreement. If you <span class=\"gap\">___</span>, we will <span class=\"gap\">___</span>. Also, if you <span class=\"gap\">___</span>, we will <span class=\"gap\">___</span>. I'm confident this is a fair deal for both sides.<br> Best regards,<br> <span class=\"gap\">___</span>",
       "exampleLabel": "COMPLETA EL EMAIL — 2 first conditionals",
-      "hw": "Escribe el email del trato y (opcional) mira un video/charla que te interese y escribe un párrafo sobre por qué importa. Envíamelo por WhatsApp.",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe el email del trato y después grábate <b>diciéndoselo al cliente sin leer</b>, con tono tranquilo y firme.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste el <b>1st y 2nd conditional</b> y las frases de negociación al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

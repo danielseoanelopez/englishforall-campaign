@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· vocabulario de hoy</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Primero, fija el vocabulario clave de hoy. Une cada palabra con su significado.",
+      "pairs": [
+        {
+          "l": "neighborhood",
+          "r": "barrio"
+        },
+        {
+          "l": "a coworker / a colleague",
+          "r": "un compañero/a de trabajo"
+        },
+        {
+          "l": "Well, I'd say…",
+          "r": "Bueno, yo diría…"
+        },
+        {
+          "l": "free time / hobbies",
+          "r": "tiempo libre / pasatiempos"
+        },
+        {
+          "l": "… because … / For example, …",
+          "r": "… porque … / Por ejemplo, …"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "🎯 EL IELTS EN 4 PARTES",
       "intro": "El IELTS se puntúa de <b>0 a 9</b> (bandas). Tu meta es <b>4.5–5</b>. La buena noticia: esa banda <b>no pide inglés avanzado</b> — pide inglés <b>claro, simple y correcto</b> que responda la pregunta.",
@@ -202,8 +231,8 @@
           "type": "mcq",
           "q": "\"What do you do in your free time?\"",
           "options": [
-            "I like football, tennis, swimming, running, cycling, reading, cooking and also watching TV at home sometimes.",
             "Nothing special really, just the normal things that everybody does after work, you know how it is.",
+            "I like football, tennis, swimming, running, cycling, reading, cooking and also watching TV at home sometimes.",
             "I mainly play football. I train twice a week with a local team after work."
           ],
           "answer": 2
@@ -212,11 +241,11 @@
           "type": "mcq",
           "q": "\"Do you like your hometown?\"",
           "options": [
-            "Yes. It's quite small, so everyone knows each other, but there isn't much to do.",
             "My hometown is a marvelous and picturesque location which offers a plethora of magnificent opportunities.",
-            "Yes, I like my hometown, because my hometown is the town where I was born."
+            "Yes, I like my hometown, because my hometown is the town where I was born.",
+            "Yes. It's quite small, so everyone knows each other, but there isn't much to do."
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
@@ -232,11 +261,11 @@
           "type": "mcq",
           "q": "\"What's your neighborhood like?\"",
           "options": [
-            "It's pretty quiet. There's a park at the end of my street and some small shops.",
+            "I moved there about three years ago, because I found a cheaper apartment near my job.",
             "My neighborhood is like a normal neighborhood. It's the neighborhood where I live, quite a neighborhood.",
-            "I moved there about three years ago, because I found a cheaper apartment near my job."
+            "It's pretty quiet. There's a park at the end of my street and some small shops."
           ],
-          "answer": 0
+          "answer": 2
         }
       ],
       "stage": "③ PRACTICE <span class=\"es\">· elige la respuesta</span>"
@@ -252,51 +281,148 @@
           "type": "mcq",
           "q": "¿Cuántas veces escuchas cada audio del Listening?",
           "options": [
-            "Tres veces",
             "Dos veces",
-            "Una sola vez"
+            "Una sola vez",
+            "Tres veces"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "En el General Training, la Writing Task 1 es…",
           "options": [
             "Describir un gráfico",
-            "Escribir una carta de 150 palabras",
-            "Un ensayo de 250 palabras"
+            "Un ensayo de 250 palabras",
+            "Escribir una carta de 150 palabras"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "¿Cuánto dura el Speaking?",
           "options": [
-            "11–14 minutos, en 3 partes",
             "30 minutos, en 4 secciones",
-            "60 minutos, por escrito"
+            "60 minutos, por escrito",
+            "11–14 minutos, en 3 partes"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Para banda 4.5–5, lo más importante es…",
           "options": [
             "Usar vocabulario muy avanzado",
-            "Hacer frases muy largas",
-            "Frases simples correctas que respondan la pregunta"
+            "Frases simples correctas que respondan la pregunta",
+            "Hacer frases muy largas"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "En Speaking Part 1, el examinador te pregunta sobre…",
           "options": [
+            "Un tema de una tarjeta, durante 2 minutos",
             "La sociedad y el futuro del planeta",
-            "Ti: tu casa, tu trabajo, tu tiempo libre",
-            "Un tema de una tarjeta, durante 2 minutos"
+            "Ti: tu casa, tu trabajo, tu tiempo libre"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "I",
+            "work",
+            "as",
+            "a",
+            "nurse",
+            "in",
+            "a",
+            "hospital"
+          ],
+          "answer": "I work as a nurse in a hospital"
+        },
+        {
+          "words": [
+            "I",
+            "have",
+            "lived",
+            "there",
+            "all",
+            "my",
+            "life"
+          ],
+          "answer": "I have lived there all my life"
+        },
+        {
+          "words": [
+            "To",
+            "be",
+            "honest",
+            "it",
+            "can",
+            "be",
+            "stressful"
+          ],
+          "answer": "To be honest it can be stressful"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "RESPUESTA CORTA vs RESPUESTA EXTENDIDA",
+      "intro": "Las dos contestan la pregunta. Una te deja en banda 4; la otra te da algo que puntuar. Esta diferencia <b>es</b> el examen.",
+      "pair": {
+        "a": "Do you work? — Yes, I do.",
+        "b": "Do you work? — Yes, I do. I'm a nurse at a private hospital, and I've worked there for four years."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál le da al examinador algo que puntuar?",
+          "options": [
+            "Las dos igual",
+            "A — respuesta corta",
+            "B — respuesta + razón + detalle"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "¿Qué le falta a la respuesta A?",
+          "options": [
+            "Gramática correcta",
+            "Una razón y un detalle",
+            "Vocabulario difícil"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Te preguntan por tu ciudad. ¿Qué respondes?",
+          "options": [
+            "I'm from Valencia.",
+            "I'm from Valencia, on the east coast, and I've lived there all my life.",
+            "Valencia."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuánto deberías hablar en cada pregunta de Part 1?",
+          "options": [
+            "Unos 20–30 segundos",
+            "Una sola palabra",
+            "Dos o tres minutos"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -313,11 +439,11 @@
           "type": "mcq",
           "q": "Where is Marta from?",
           "options": [
-            "Madrid, in the center of the country",
             "Valencia, on the east coast of Spain",
+            "Madrid, in the center of the country",
             "Barcelona, on the north-east coast"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
@@ -333,11 +459,11 @@
           "type": "mcq",
           "q": "What does she say is difficult about her job?",
           "options": [
-            "It's stressful in winter, when the hospital is busy",
             "She doesn't get on with her colleagues at work",
-            "The hospital is too far from where she lives"
+            "The hospital is too far from where she lives",
+            "It's stressful in winter, when the hospital is busy"
           ],
-          "answer": 0
+          "answer": 2
         }
       ],
       "speaking": {
@@ -396,31 +522,31 @@
           "type": "mcq",
           "q": "Why does Marta go to the gym?",
           "options": [
-            "Because she sits all day at work",
             "Because her partner goes with her",
-            "Because it's near her house"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "mcq",
-          "q": "How does she mostly use English?",
-          "options": [
-            "She speaks it every day with clients",
-            "She teaches it at a school",
-            "At work, mostly in emails"
+            "Because it's near her house",
+            "Because she sits all day at work"
           ],
           "answer": 2
         },
         {
           "type": "mcq",
+          "q": "How does she mostly use English?",
+          "options": [
+            "At work, mostly in emails",
+            "She speaks it every day with clients",
+            "She teaches it at a school"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
           "q": "What does she do on Saturday evenings?",
           "options": [
-            "She sleeps late and stays home",
             "She goes for a walk by the sea",
+            "She sleeps late and stays home",
             "She cooks dinner with her partner"
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "transcript": [
@@ -467,8 +593,22 @@
       "placeholder": "I'm from... I like it because... These days I...",
       "example": "Well, I'm from <span class=\"gap\">___</span>. I like it <b>because</b> <span class=\"gap\">___</span>, <b>but</b> <span class=\"gap\">___</span>. I work as a <span class=\"gap\">___</span>, and I've worked there <b>for</b> <span class=\"gap\">___</span>. In my free time I usually <span class=\"gap\">___</span>, <b>because</b> <span class=\"gap\">___</span>. <b>These days</b> I <span class=\"gap\">___</span>. My favorite day is <span class=\"gap\">___</span>, <b>because</b> <span class=\"gap\">___</span>.",
       "exampleLabel": "COMPLETA — respuesta + razón + detalle",
-      "hw": "graba tus 5 respuestas (30–40 seg cada una) usando la fórmula. Envíame el texto y el audio por WhatsApp y lo corregimos con criterios IELTS.",
-      "stage": "⑤ TU TURNO <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Graba tus 5 respuestas (30–40 seg cada una) usando la fórmula, <b>sin leer</b> — en el examen no hay papel. Envíame texto y audio.",
+      "stage": "⑤ TU TURNO <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste la fórmula <b>respuesta + razón + detalle</b> al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

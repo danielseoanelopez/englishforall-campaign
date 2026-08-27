@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "to catch / miss a train",
+          "r": "tomar / perder un tren"
+        },
+        {
+          "l": "a connection",
+          "r": "un enlace (vuelo/tren para continuar)"
+        },
+        {
+          "l": "to board",
+          "r": "abordar"
+        },
+        {
+          "l": "a delay / luggage",
+          "r": "un retraso / equipaje"
+        },
+        {
+          "l": "Go straight",
+          "r": "sigue derecho"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "🏨 ACCOMMODATION &amp; PROBLEMS",
       "intro": "Para registrarte y resolver problemas con tacto. Practica en voz alta, ¡sin traductor!",
@@ -141,10 +170,10 @@
           "type": "mcq",
           "q": "I've been here <b class=\"tg\">___</b> Tuesday.",
           "options": [
-            "for",
-            "since"
+            "since",
+            "for"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
@@ -199,10 +228,10 @@
           "type": "mcq",
           "q": "I ___ yesterday afternoon. <span class=\"es\">(arrive)</span>",
           "options": [
-            "arrived",
-            "have arrived"
+            "have arrived",
+            "arrived"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
@@ -226,10 +255,10 @@
           "type": "mcq",
           "q": "___ yet? <span class=\"es\">(you / check in)</span>",
           "options": [
-            "Did you check in",
-            "Have you checked in"
+            "Have you checked in",
+            "Did you check in"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
@@ -237,6 +266,100 @@
           "options": [
             "already finished",
             "has already finished"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "The",
+            "heating",
+            "hasn't",
+            "worked",
+            "since",
+            "last",
+            "night"
+          ],
+          "answer": "The heating hasn't worked since last night"
+        },
+        {
+          "words": [
+            "I",
+            "have",
+            "already",
+            "tried",
+            "it",
+            "twice"
+          ],
+          "answer": "I have already tried it twice"
+        },
+        {
+          "words": [
+            "Has",
+            "my",
+            "taxi",
+            "been",
+            "booked",
+            "yet"
+          ],
+          "answer": "Has my taxi been booked yet"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "PRESENT PERFECT vs PAST SIMPLE",
+      "intro": "Las dos son correctas — pero una dice que el problema <b>sigue ahora</b> y la otra que ya terminó. En una queja, eso lo cambia todo.",
+      "pair": {
+        "a": "The heating hasn't worked since last night.",
+        "b": "The heating didn't work last night."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál dice que <b>ahora mismo</b> sigues sin calefacción?",
+          "options": [
+            "B — past simple",
+            "Las dos igual",
+            "A — present perfect"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál suena a que ya se arregló?",
+          "options": [
+            "Ninguna de las dos",
+            "A — present perfect",
+            "B — past simple"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Llevas dos días sin Wi-Fi y sigue sin andar. ¿Qué dices?",
+          "options": [
+            "The Wi-Fi hasn't worked for two days.",
+            "The Wi-Fi doesn't work two days ago.",
+            "The Wi-Fi didn't work for two days."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Quieres decir que ya probaste el control dos veces. ¿Qué dices?",
+          "options": [
+            "I already tried it twice yesterday.",
+            "I've already tried it twice.",
+            "I try it twice already."
           ],
           "answer": 1
         }
@@ -255,31 +378,31 @@
           "type": "mcq",
           "q": "What's the problem, and since when?",
           "options": [
-            "The heating hasn't worked since last night",
             "There's no hot water since Monday evening",
+            "The heating hasn't worked since last night",
             "The Wi-Fi hasn't worked since this morning"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Has the guest tried the control?",
           "options": [
-            "Yes, already twice",
             "No, not yet — she will try it",
-            "She says it isn't there"
+            "She says it isn't there",
+            "Yes, already twice"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Is the morning taxi booked?",
           "options": [
-            "No, reception will book it later",
             "Yes, confirmed for eight o'clock",
-            "Yes, just confirmed for 7 a.m."
+            "Yes, just confirmed for 7 a.m.",
+            "No, reception will book it later"
           ],
-          "answer": 2
+          "answer": 1
         }
       ],
       "transcript": [
@@ -326,31 +449,31 @@
           "type": "mcq",
           "q": "Since when has the person been at the hotel?",
           "options": [
+            "For a week",
             "Since Monday",
-            "Since Tuesday",
-            "For a week"
+            "Since Tuesday"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What is one problem?",
           "options": [
+            "The room next door is being cleaned",
             "The Wi-Fi hasn't worked since last night",
-            "There's no hot water in the bathroom",
-            "The room next door is being cleaned"
+            "There's no hot water in the bathroom"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Why can't the person sleep?",
           "options": [
+            "The bed is too small and hard",
             "The heating is too cold at night",
-            "The room next door is noisy",
-            "The bed is too small and hard"
+            "The room next door is noisy"
           ],
-          "answer": 1
+          "answer": 2
         }
       ],
       "transcript": [
@@ -368,8 +491,22 @@
       "placeholder": "Hello, I've been in room ... since ... There's a problem with...",
       "example": "Hello, I've been in room <span class=\"gap\">___</span> since <span class=\"gap\">___</span>. There's a problem — the <span class=\"gap\">cosa</span> hasn't <span class=\"gap\">participio</span> since <span class=\"gap\">___</span>. I've already <span class=\"gap\">___</span>. Could you <span class=\"gap\">petición</span>? Has <span class=\"gap\">___</span> been done yet?",
       "exampleLabel": "COMPLETA — present perfect",
-      "hw": "Escribe tu <b>mensaje</b> y graba un audio leyéndolo. Envíamelo por WhatsApp. ¡Dudas, en clase!",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe tu mensaje y después grábate <b>haciendo la queja en voz alta, sin leer</b> — educado pero claro.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste el <b>present perfect</b> con for/since/already/yet/just al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "next": {

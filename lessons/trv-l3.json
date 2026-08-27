@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "to check in / out",
+          "r": "registrarse / dejar el hotel"
+        },
+        {
+          "l": "a deposit / a refund",
+          "r": "un depósito / un reembolso"
+        },
+        {
+          "l": "a host",
+          "r": "anfitrión (de un alquiler)"
+        },
+        {
+          "l": "there's no hot water",
+          "r": "no hay agua caliente"
+        },
+        {
+          "l": "a leak / to fix",
+          "r": "una gotera / arreglar"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "🍽️ EATING OUT &amp; FOOD",
       "intro": "Para pedir, describir y recomendar comida. Practica en voz alta, ¡sin traductor!",
@@ -142,8 +171,8 @@
           "q": "This restaurant is ___ than the other one. <span class=\"es\">(good)</span>",
           "options": [
             "better",
-            "the best",
-            "gooder"
+            "gooder",
+            "the best"
           ],
           "answer": 0
         },
@@ -151,41 +180,41 @@
           "type": "mcq",
           "q": "It's ___ place in town. <span class=\"es\">(cheap)</span>",
           "options": [
+            "most cheap",
             "cheaper",
-            "the cheapest",
-            "most cheap"
+            "the cheapest"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "The pizza here is ___ than the pasta. <span class=\"es\">(tasty)</span>",
           "options": [
-            "tastier",
+            "more tasty",
             "the tastiest",
-            "more tasty"
+            "tastier"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "That was ___ meal of the trip. <span class=\"es\">(bad)</span>",
           "options": [
-            "worse",
             "the worst",
+            "worse",
             "the baddest"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "It's ___ restaurant I know. <span class=\"es\">(expensive)</span>",
           "options": [
-            "more expensive",
             "the most expensive",
-            "the expensivest"
+            "the expensivest",
+            "more expensive"
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "speaking": {
@@ -214,29 +243,29 @@
           "type": "mcq",
           "q": "There are <b class=\"tg\">___</b> free tables at the back.",
           "options": [
+            "much",
             "some",
-            "any",
-            "much"
+            "any"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "How <b class=\"tg\">___</b> sugar do you want?",
           "options": [
+            "some",
             "much",
-            "many",
-            "some"
+            "many"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "How <b class=\"tg\">___</b> people are coming tonight?",
           "options": [
-            "much",
+            "any",
             "many",
-            "any"
+            "much"
           ],
           "answer": 1
         },
@@ -244,9 +273,106 @@
           "type": "mcq",
           "q": "Hurry — we only have <b class=\"tg\">___</b> minutes before it closes.",
           "options": [
-            "a few",
+            "much",
             "a little",
-            "much"
+            "a few"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "The",
+            "pasta",
+            "is",
+            "better",
+            "than",
+            "the",
+            "pizza"
+          ],
+          "answer": "The pasta is better than the pizza"
+        },
+        {
+          "words": [
+            "This",
+            "is",
+            "the",
+            "best",
+            "cafe",
+            "in",
+            "town"
+          ],
+          "answer": "This is the best cafe in town"
+        },
+        {
+          "words": [
+            "It",
+            "is",
+            "not",
+            "as",
+            "spicy",
+            "as",
+            "the",
+            "curry"
+          ],
+          "answer": "It is not as spicy as the curry"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "COMPARATIVO vs SUPERLATIVO",
+      "intro": "Uno compara <b>dos</b> cosas; el otro señala <b>la número uno</b> de todo el grupo.",
+      "pair": {
+        "a": "This café is cheaper than the one next door.",
+        "b": "This café is the cheapest in town."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál compara solo dos lugares?",
+          "options": [
+            "Las dos igual",
+            "A — comparativo (cheaper than)",
+            "B — superlativo (the cheapest)"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál dice que no hay ninguno más barato?",
+          "options": [
+            "A — comparativo",
+            "Ninguna de las dos",
+            "B — superlativo"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "La pasta es mejor que la pizza de aquí. ¿Qué dices?",
+          "options": [
+            "The pasta is the better.",
+            "The pasta is better than the pizza.",
+            "The pasta is the best than the pizza."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Es el mejor restaurante del barrio. ¿Qué dices?",
+          "options": [
+            "It's the best restaurant in the neighborhood.",
+            "It's better restaurant in the neighborhood.",
+            "It's the better than the neighborhood."
           ],
           "answer": 0
         }
@@ -265,31 +391,31 @@
           "type": "mcq",
           "q": "What does Leo recommend, and why?",
           "options": [
+            "The pizza — it's cheaper than next door",
             "The pasta — it's the best in the neighborhood",
-            "The curry — it's the spiciest on the menu",
-            "The pizza — it's cheaper than next door"
+            "The curry — it's the spiciest on the menu"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Is it more or less expensive than the place next door?",
           "options": [
-            "Cheaper",
             "More expensive",
+            "Cheaper",
             "The same"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Is the pasta very spicy?",
           "options": [
-            "Yes, it's the spiciest on the menu",
             "No, not as spicy as the curry",
+            "Yes, it's the spiciest on the menu",
             "No, it's sweeter than the curry"
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "transcript": [
@@ -336,31 +462,31 @@
           "type": "mcq",
           "q": "Which restaurant is cheaper?",
           "options": [
-            "The first one",
+            "Both the same",
             "The second one",
-            "Both the same"
+            "The first one"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Which has the best desserts?",
           "options": [
-            "The first one",
             "The second one",
-            "Neither of them"
+            "Neither of them",
+            "The first one"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "Which one is friendlier?",
           "options": [
+            "Both",
             "The first one",
-            "The second one",
-            "Both"
+            "The second one"
           ],
-          "answer": 0
+          "answer": 1
         }
       ],
       "transcript": [
@@ -378,8 +504,22 @@
       "placeholder": "There are two great cafés near me. The first one is cheaper, but...",
       "example": "There are two <span class=\"gap\">___</span> places near me. <span class=\"gap\">Place A</span> is <span class=\"gap\">comparativo</span> than <span class=\"gap\">Place B</span>, but <span class=\"gap\">Place B</span> has <span class=\"gap\">the best …</span>. The food is <span class=\"gap\">adjetivo</span>. I'd recommend <span class=\"gap\">___</span>.",
       "exampleLabel": "COMPLETA — comparativos + superlativo",
-      "hw": "Escribe tu <b>reseña</b> y graba un audio leyéndola. Envíamelo por WhatsApp. ¡Dudas, en clase!",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe tu reseña y después grábate <b>recomendando uno de los dos sin leer</b>: ¿cuál eliges y por qué?",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste los <b>comparativos y superlativos</b> al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "next": {

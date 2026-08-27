@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "engineer",
+          "r": "ingeniero/a"
+        },
+        {
+          "l": "mother / father",
+          "r": "madre / padre"
+        },
+        {
+          "l": "parents",
+          "r": "padres"
+        },
+        {
+          "l": "teacher",
+          "r": "profesor/a"
+        },
+        {
+          "l": "police officer",
+          "r": "policía"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "🕐 DAILY ACTIVITIES &amp; TIME",
       "intro": "Para hablar de tu día a día. Practica en voz alta, ¡sin traductor!",
@@ -149,9 +178,9 @@
           "type": "mcq",
           "q": "She ___ (work) in an office.",
           "options": [
-            "work",
+            "working",
             "works",
-            "working"
+            "work"
           ],
           "answer": 1
         },
@@ -159,39 +188,39 @@
           "type": "mcq",
           "q": "They ___ (study) English.",
           "options": [
-            "study",
+            "studys",
             "studies",
-            "studys"
+            "study"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "He ___ (go) to work by bus.",
           "options": [
-            "go",
+            "goes",
             "gos",
-            "goes"
+            "go"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "My friend ___ (watch) TV at night.",
           "options": [
             "watch",
-            "watchs",
-            "watches"
+            "watches",
+            "watchs"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "It ___ (start) at nine.",
           "options": [
-            "start",
+            "starting",
             "starts",
-            "starting"
+            "start"
           ],
           "answer": 1
         }
@@ -213,8 +242,8 @@
           "q": "Negativo: \"I ___ Mondays.\"",
           "options": [
             "don't like",
-            "doesn't like",
-            "not like"
+            "not like",
+            "doesn't like"
           ],
           "answer": 0
         },
@@ -222,11 +251,11 @@
           "type": "mcq",
           "q": "Negativo: \"She ___ on Sunday.\"",
           "options": [
-            "don't work",
             "doesn't work",
-            "not works"
+            "not works",
+            "don't work"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
@@ -242,9 +271,9 @@
           "type": "mcq",
           "q": "Pregunta: \"___ he like coffee?\"",
           "options": [
-            "Do",
+            "Is",
             "Does",
-            "Is"
+            "Do"
           ],
           "answer": 1
         },
@@ -252,11 +281,49 @@
           "type": "mcq",
           "q": "\"What time ___ you get up?\"",
           "options": [
-            "do",
             "does",
+            "do",
             "are"
           ],
-          "answer": 0
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "I",
+            "get",
+            "up",
+            "at",
+            "seven"
+          ],
+          "answer": "I get up at seven"
+        },
+        {
+          "words": [
+            "She",
+            "works",
+            "in",
+            "a",
+            "hospital"
+          ],
+          "answer": "She works in a hospital"
+        },
+        {
+          "words": [
+            "We",
+            "have",
+            "lunch",
+            "at",
+            "one"
+          ],
+          "answer": "We have lunch at one"
         }
       ]
     },
@@ -273,11 +340,11 @@
           "type": "mcq",
           "q": "What time does Dan get up?",
           "options": [
-            "At seven",
+            "At six thirty",
             "At nine",
-            "At six thirty"
+            "At seven"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
@@ -348,21 +415,21 @@
           "type": "mcq",
           "q": "What time does the person get up on weekdays?",
           "options": [
-            "At six thirty",
             "At seven thirty",
-            "At eight o'clock"
+            "At eight o'clock",
+            "At six thirty"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "How does the person go to work?",
           "options": [
-            "By train",
+            "By car",
             "By bus",
-            "By car"
+            "By train"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
@@ -390,8 +457,22 @@
       "placeholder": "I get up at seven. Then I have breakfast and go to work...",
       "example": "I get up at <span class=\"gap\">hora</span>. Then I <span class=\"gap\">actividad</span>. I go to <span class=\"gap\">work/school</span> by <span class=\"gap\">___</span>. In the evening, I <span class=\"gap\">actividad</span>. I like <span class=\"gap\">___</span>, but I don't like <span class=\"gap\">___</span>.",
       "exampleLabel": "COMPLETA",
-      "hw": "Escribe tu <b>rutina</b> y graba un audio leyéndola. Envíamelo por WhatsApp. ¡Dudas, en clase!",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe tu rutina y después grábate contándola <b>sin leer</b> — apóyate solo en las horas que anotaste.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste el <b>present simple</b> y las horas al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "next": {

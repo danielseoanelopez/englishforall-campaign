@@ -11,6 +11,35 @@
   "rankup": "LESSON CLEAR!",
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "♻️ REPASO EXPRESS <span class=\"es\">· vocabulario de hoy</span>",
+      "title": "♻️ REPASO EXPRESS",
+      "intro": "Primero, fija el vocabulario clave de hoy. Une cada palabra con su significado.",
+      "pairs": [
+        {
+          "l": "yellow 🟡 · black ⚫ · white ⚪",
+          "r": "amarillo · negro · blanco"
+        },
+        {
+          "l": "expensive ↔ cheap",
+          "r": "caro / barato"
+        },
+        {
+          "l": "happy ↔ sad",
+          "r": "feliz / triste"
+        },
+        {
+          "l": "orange 🟠 · pink · gray · brown",
+          "r": "naranja · rosa · gris · marrón"
+        },
+        {
+          "l": "old ↔ new",
+          "r": "viejo / nuevo"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "title": "🎨 COLORS &amp; ADJECTIVES",
       "intro": "Para describir cosas y personas usamos <b>colores</b> y <b>adjetivos</b>. Practica en voz alta, ¡sin traductor!",
@@ -142,10 +171,10 @@
           "type": "mcq",
           "q": "¿Cuál es correcta?",
           "options": [
-            "The book is old.",
-            "The book old is."
+            "The book old is.",
+            "The book is old."
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
@@ -160,10 +189,10 @@
           "type": "mcq",
           "q": "¿Cuál es correcta?",
           "options": [
-            "an new phone",
-            "a new phone"
+            "a new phone",
+            "an new phone"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
@@ -191,29 +220,29 @@
           "type": "mcq",
           "q": "What's <b class=\"tg\">___</b>? (uno, cerca) — It's a phone.",
           "options": [
+            "those",
             "this",
-            "that",
-            "those"
+            "that"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What are <b class=\"tg\">___</b>? (varios, cerca) — They're pens.",
           "options": [
-            "this",
             "that",
-            "these"
+            "these",
+            "this"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Look at <b class=\"tg\">___</b> car over there! (uno, lejos)",
           "options": [
-            "this",
+            "these",
             "that",
-            "these"
+            "this"
           ],
           "answer": 1
         },
@@ -221,11 +250,100 @@
           "type": "mcq",
           "q": "<b class=\"tg\">___</b> shoes over there are new. (varios, lejos)",
           "options": [
-            "This",
             "These",
-            "Those"
+            "Those",
+            "This"
           ],
-          "answer": 2
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": [
+            "This",
+            "is",
+            "a",
+            "red",
+            "car"
+          ],
+          "answer": "This is a red car"
+        },
+        {
+          "words": [
+            "My",
+            "bag",
+            "is",
+            "very",
+            "big"
+          ],
+          "answer": "My bag is very big"
+        },
+        {
+          "words": [
+            "That",
+            "house",
+            "is",
+            "old"
+          ],
+          "answer": "That house is old"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "THIS vs THAT",
+      "intro": "Las dos son correctas. Lo que cambia es <b>qué tan lejos está la cosa</b> de ti.",
+      "pair": {
+        "a": "What's this?",
+        "b": "What's that?"
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál usas para algo que tienes en la mano?",
+          "options": [
+            "A — this",
+            "Las dos igual",
+            "B — that"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál usas para algo lejos, del otro lado del cuarto?",
+          "options": [
+            "A — this",
+            "B — that",
+            "Ninguna de las dos"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Tu amigo señala un edificio a lo lejos. ¿Qué pregunta?",
+          "options": [
+            "What's that?",
+            "What's these?",
+            "What's this?"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Tienes un libro en la mano. ¿Qué dices?",
+          "options": [
+            "That is a book.",
+            "This is a book.",
+            "These is a book."
+          ],
+          "answer": 1
         }
       ]
     },
@@ -242,31 +360,31 @@
           "type": "mcq",
           "q": "What is it?",
           "options": [
-            "A new phone",
             "An old book",
-            "A car"
+            "A car",
+            "A new phone"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What color is it?",
           "options": [
             "White",
-            "Black",
-            "Red"
+            "Red",
+            "Black"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Is it expensive?",
           "options": [
-            "Yes, it is.",
             "No, it isn't.",
-            "It doesn't say."
+            "It doesn't say.",
+            "Yes, it is."
           ],
-          "answer": 0
+          "answer": 2
         }
       ],
       "transcript": [
@@ -313,31 +431,31 @@
           "type": "mcq",
           "q": "What color is the desk?",
           "options": [
-            "Black",
             "White",
-            "Blue"
+            "Blue",
+            "Black"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What is the favorite thing?",
           "options": [
             "The blue chair",
-            "The brown table",
-            "A red guitar"
+            "A red guitar",
+            "The brown table"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Is the room big?",
           "options": [
-            "Yes, it's very big.",
             "No, it's small.",
+            "Yes, it's very big.",
             "We don't know."
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "transcript": [
@@ -355,8 +473,22 @@
       "placeholder": "My bag is black and big. My friend Ana is tall and funny...",
       "example": "This is my <span class=\"gap\">___</span>. It's <span class=\"gap\">color</span> and <span class=\"gap\">adjetivo</span>. My <span class=\"gap\">___</span> is <span class=\"gap\">___</span>. My friend <span class=\"gap\">___</span> is <span class=\"gap\">___</span> and <span class=\"gap\">___</span>.",
       "exampleLabel": "COMPLETA",
-      "hw": "Escribe tus <b>5 oraciones</b> y graba un audio leyéndolas. Envíamelo por WhatsApp. ¡Dudas, en clase!",
-      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>"
+      "hw": "Escribe tus 5 oraciones y después grábate diciéndolas <b>mirando tus cosas, no el papel</b>. Envíame ambos por WhatsApp.",
+      "stage": "⑤ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste lo que pide la consigna, completo y en el formato pedido."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>to be + adjetivo</b> y <b>this / that</b> al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "next": {
