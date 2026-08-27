@@ -226,26 +226,31 @@
           "type": "mcq",
           "q": "What is the man's name?",
           "options": [
+            "Ben",
             "Tom",
-            "Leo",
-            "Ben"
+            "Leo"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Where is Ana from?",
           "options": [
-            "Canada",
+            "Spain",
             "Mexico",
-            "Spain"
+            "Canada"
           ],
           "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "Tom is from Canada.",
-          "answer": true
+          "type": "mcq",
+          "q": "How does Tom feel today?",
+          "options": [
+            "A little nervous",
+            "Tired today",
+            "Great, thanks"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -333,11 +338,11 @@
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
-            "My name is Ana.",
             "I'm from Mexico.",
-            "Goodbye!"
+            "Goodbye!",
+            "My name is Ana."
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "spk": "Tom",
@@ -347,11 +352,11 @@
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
+            "Nice to meet you.",
             "I'm fine, thanks.",
-            "I'm from Mexico.",
-            "Nice to meet you."
+            "I'm from Mexico."
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "spk": "Tom",
@@ -361,11 +366,11 @@
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
-            "I'm fine, thank you!",
             "My name is Ana.",
-            "See you!"
+            "See you!",
+            "I'm fine, thank you!"
           ],
-          "answer": 0
+          "answer": 2
         }
       ]
     },
@@ -382,26 +387,31 @@
           "type": "mcq",
           "q": "What time of day is it?",
           "options": [
-            "Morning",
             "Afternoon",
+            "Morning",
             "Night"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "Leo is a new student.",
-          "answer": true
+          "type": "mcq",
+          "q": "Who is Leo?",
+          "options": [
+            "A new teacher",
+            "A new manager",
+            "A new student"
+          ],
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Where is Leo's class?",
           "options": [
-            "On the first floor",
             "On the second floor",
-            "Outside"
+            "On the third floor",
+            "On the first floor"
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "speaking": {
@@ -495,7 +505,21 @@
       ],
       "placeholder": "Hello! My name is...",
       "example": "Hello! My name is (name). I'm from (country). I'm a (job) and I work in (place). I'm (age) years old. Nice to meet you!",
-      "hw": "Escribe tu presentación y graba un audio diciéndola en voz alta. Envíame ambos por WhatsApp y lo corregimos. ¡Cualquier duda la vemos en clase!"
+      "hw": "Escribe tu presentación y graba un audio diciéndola en voz alta. Envíame ambos por WhatsApp y lo corregimos. ¡Cualquier duda la vemos en clase!",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste los saludos y <b>My name is… / I’m from…</b> al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "voices": {

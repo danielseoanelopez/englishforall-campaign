@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Where are you from?",
+          "r": "¿de dónde eres?"
+        },
+        {
+          "l": "How are you?",
+          "r": "¿cómo estás?"
+        },
+        {
+          "l": "This is…",
+          "r": "te presento a…"
+        },
+        {
+          "l": "Hello / Hi",
+          "r": "hola"
+        },
+        {
+          "l": "Goodbye / Bye",
+          "r": "adiós / chau"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "to be + datos personales",
       "title": "📘 TO BE · I am, you are, he is",
@@ -220,26 +248,31 @@
           "type": "mcq",
           "q": "What is Tom's job?",
           "options": [
-            "An engineer",
-            "A teacher",
-            "A doctor"
+            "A doctor",
+            "A university student",
+            "An engineer"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "Where is Ana from?",
           "options": [
+            "Brazil",
             "Canada",
-            "Mexico",
-            "Brazil"
+            "Mexico"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "Ana is twenty years old.",
-          "answer": true
+          "type": "mcq",
+          "q": "How old is Ana?",
+          "options": [
+            "Twenty-two",
+            "Twenty-five",
+            "Twenty"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -294,11 +327,11 @@
         {
           "q": "I ___ from Mexico.",
           "options": [
+            "are",
             "am",
-            "is",
-            "are"
+            "is"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "She ___ a teacher.",
@@ -312,20 +345,20 @@
         {
           "q": "They ___ from Canada.",
           "options": [
-            "are",
             "is",
+            "are",
             "am"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "He ___ twenty-five years old.",
           "options": [
-            "is",
             "are",
+            "is",
             "am"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "___ you a student?",
@@ -335,6 +368,15 @@
             "Am"
           ],
           "answer": 0
+        },
+        {
+          "q": "How old ___ you?",
+          "options": [
+            "have",
+            "are",
+            "is"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -386,16 +428,21 @@
           "type": "mcq",
           "q": "Where is Leo from?",
           "options": [
-            "Spain",
             "Mexico",
-            "Brazil"
+            "Brazil",
+            "Spain"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "Leo is thirty years old.",
-          "answer": true
+          "type": "mcq",
+          "q": "Where does Leo work?",
+          "options": [
+            "In a big hospital",
+            "In a small clinic",
+            "In a big school"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -411,17 +458,32 @@
     },
     {
       "type": "writing",
-      "title": "✍️ ABOUT ME",
-      "intro": "Escribe sobre ti en 4–5 frases:",
+      "title": "✍️ INTRODUCE SOMEONE ELSE",
+      "intro": "Presenta a otra persona (un amigo, tu hermano/a, un compañero de trabajo) en 4–5 frases. Ojo: en tercera persona el verbo cambia.",
       "checklist": [
-        "Tu nombre: <b>My name is… / I'm…</b>",
-        "Tu país: <b>I'm from…</b>",
-        "Tu trabajo: <b>I'm a / an…</b>",
-        "Tu edad: <b>I'm … years old.</b>"
+        "Preséntala/o: <b>This is my friend…</b>",
+        "De dónde es: <b>He is / She is from…</b>",
+        "Su trabajo: <b>He is a… / She is a…</b>",
+        "Su edad: <b>He is / She is … years old</b> (no <i>has</i>)",
+        "Cierra con un adjetivo: <b>He is / She is very…</b>"
       ],
-      "placeholder": "My name is...",
-      "example": "My name is (name). I'm from (country). I'm a (job) and I work in (place). I'm (age) years old. I speak (language) and a little (language). Nice to meet you!",
-      "hw": "Escribe tu presentación y graba un audio diciéndola. Envíame ambos por WhatsApp."
+      "placeholder": "This is my friend...",
+      "example": "This is my friend (name). He is / She is from (country). He is / She is a (job) and works in (place). He is / She is (age) years old. He is / She is very (adjective)!",
+      "hw": "Escribe tu presentación de esa persona y graba un audio diciéndola en voz alta. Envíame ambos por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste la <b>tercera persona</b> (he/she + is / has / works) al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "voices": {

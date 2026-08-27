@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Half past",
+          "r": "y media"
+        },
+        {
+          "l": "Quarter to",
+          "r": "menos cuarto"
+        },
+        {
+          "l": "O'clock",
+          "r": "en punto"
+        },
+        {
+          "l": "Phone number",
+          "r": "número de teléfono"
+        },
+        {
+          "l": "Week / Weekend",
+          "r": "semana / fin de semana"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "to be / have",
       "title": "📘 HAVE · tener · my/your/his/her",
@@ -185,53 +213,71 @@
           "q": "I ___ a sister.",
           "options": [
             "have",
-            "has",
-            "am"
+            "am",
+            "has"
           ],
           "answer": 0
         },
         {
           "q": "She ___ brown hair.",
           "options": [
-            "has",
+            "is",
             "have",
-            "is"
+            "has"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "They ___ a dog.",
           "options": [
-            "have",
             "has",
+            "have",
             "is"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "He ___ an engineer.",
           "options": [
             "is",
-            "has",
-            "have"
+            "have",
+            "has"
           ],
           "answer": 0
         },
         {
           "q": "We ___ a big house.",
           "options": [
+            "are",
             "have",
-            "has",
-            "are"
+            "has"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "She ___ have a pet.",
           "options": [
-            "doesn't",
             "don't",
-            "isn't"
+            "isn't",
+            "doesn't"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "I ___ thirty years old.",
+          "options": [
+            "have",
+            "am",
+            "has"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "My sister ___ hungry.",
+          "options": [
+            "is",
+            "has",
+            "have"
           ],
           "answer": 0
         }
@@ -250,11 +296,11 @@
           "type": "mcq",
           "q": "How many brothers and sisters does Tom have?",
           "options": [
+            "One brother and two sisters",
             "One brother and one sister",
-            "Two sisters",
-            "No brothers or sisters"
+            "Two brothers and one sister"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
@@ -267,9 +313,14 @@
           "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "Lucy has blue eyes.",
-          "answer": true
+          "type": "mcq",
+          "q": "What color is Lucy's hair?",
+          "options": [
+            "Black",
+            "Blue",
+            "Brown"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -386,19 +437,24 @@
           "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "Marcos has a TV.",
-          "answer": false
+          "type": "mcq",
+          "q": "What is Marcos's bed like?",
+          "options": [
+            "Big",
+            "Small",
+            "New"
+          ],
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Who has a bigger room?",
           "options": [
+            "His brother",
             "Marcos",
-            "His sister",
-            "His brother"
+            "His sister"
           ],
-          "answer": 1
+          "answer": 2
         }
       ],
       "speaking": {
@@ -425,7 +481,21 @@
       ],
       "placeholder": "I have...",
       "example": "I have a (big / small) family. I have (number) brothers and (number) sisters. My (family member) has (color) hair and (color) eyes. Her name is (name). My (family member) has a (pet). I don't have a (pet), but I want a (animal)!",
-      "hw": "Escribe sobre tu familia y mándamelo por WhatsApp."
+      "hw": "Escribe sobre tu familia y mándamelo por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>have / has</b> y <b>to be</b> (edad y descripción) al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "voices": {

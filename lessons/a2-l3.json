@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Task",
+          "r": "tarea"
+        },
+        {
+          "l": "Team lead",
+          "r": "líder / supervisor"
+        },
+        {
+          "l": "Issue",
+          "r": "asunto / problema"
+        },
+        {
+          "l": "Pending",
+          "r": "pendiente"
+        },
+        {
+          "l": "Details",
+          "r": "detalles"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "past simple",
       "title": "📘 PAST SIMPLE · acciones terminadas",
@@ -172,55 +200,73 @@
           "q": "Yesterday I ___ to the office early.",
           "options": [
             "went",
-            "goed",
-            "go"
+            "go",
+            "goed"
           ],
           "answer": 0
         },
         {
           "q": "She ___ the report last week.",
           "options": [
-            "finished",
             "finish",
+            "finished",
             "finishs"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "They ___ at home last night.",
           "options": [
-            "were",
             "was",
-            "are"
+            "are",
+            "were"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "___ you like the new project?",
           "options": [
             "Did",
-            "Do",
-            "Was"
+            "Was",
+            "Do"
           ],
           "answer": 0
         },
         {
           "q": "He ___ go to work yesterday — it was a holiday.",
           "options": [
-            "didn't",
             "don't",
-            "wasn't"
+            "wasn't",
+            "didn't"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "We ___ a problem, but we fixed it.",
           "options": [
-            "had",
             "haved",
-            "has"
+            "has",
+            "had"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "She ___ me an email yesterday.",
+          "options": [
+            "sent",
+            "send",
+            "sended"
           ],
           "answer": 0
+        },
+        {
+          "q": "They ___ the app two years ago.",
+          "options": [
+            "builded",
+            "built",
+            "build"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -237,26 +283,31 @@
           "type": "mcq",
           "q": "Where did Marcos work before?",
           "options": [
-            "At a small startup in Mexico City",
-            "At a big bank in London",
-            "At a university"
+            "At a university in Mexico City",
+            "At a big software company in Mexico City",
+            "At a small startup in Mexico City"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What did he do at his last job?",
           "options": [
-            "He wrote reports",
-            "He built websites and fixed bugs",
-            "He taught computer science"
+            "He taught computer science at university",
+            "He wrote reports and fixed bugs",
+            "He built websites and fixed bugs"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "Marcos studied at university for four years.",
-          "answer": true
+          "type": "mcq",
+          "q": "When did Marcos graduate?",
+          "options": [
+            "In 2021",
+            "In 2019",
+            "In 2022"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -352,9 +403,9 @@
           "type": "mcq",
           "q": "How long did the team plan the app?",
           "options": [
-            "Three weeks",
+            "Three years",
             "Three months",
-            "Three years"
+            "Three weeks"
           ],
           "answer": 1
         },
@@ -362,16 +413,21 @@
           "type": "mcq",
           "q": "What did they do the night before the launch?",
           "options": [
-            "They worked late and ordered pizza",
-            "They went home early",
-            "They canceled it"
+            "They went home early to sleep",
+            "They tested the app and wrote the code",
+            "They worked late and ordered pizza"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "Thousands of people downloaded the app on the first day.",
-          "answer": true
+          "type": "mcq",
+          "q": "How many people downloaded the app on the first day?",
+          "options": [
+            "A few dozen",
+            "Hundreds",
+            "Thousands"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -397,7 +453,21 @@
       ],
       "placeholder": "Two years ago, I worked at...",
       "example": "(Time) ago, I worked at (place). I started (when) and (past action). I had (something / someone). One day, (a problem), but (how you fixed it). I left the job (when) to (reason).",
-      "hw": "Escribe tu historia y graba un audio leyéndola en voz alta. Envíame ambos por WhatsApp y lo corregimos."
+      "hw": "Escribe tu historia y después grábate contándola <b>sin leer</b> (mira solo tus notas). Envíame el texto y el audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste el <b>past simple</b>, regulares e irregulares al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "voices": {

@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Find → found",
+          "r": "encontrar → encontró"
+        },
+        {
+          "l": "Meet → met",
+          "r": "conocer → conoció"
+        },
+        {
+          "l": "Go → went",
+          "r": "ir → fue/fui"
+        },
+        {
+          "l": "Leave → left",
+          "r": "irse → dejó"
+        },
+        {
+          "l": "Make → made",
+          "r": "hacer → hizo/hice"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "requests & offers",
       "title": "📘 PEDIR & OFRECER · can / could / would",
@@ -177,11 +205,11 @@
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
-            "Of course, I'll send it this afternoon.",
             "No problem, I'm from Mexico.",
-            "Yes, I went there yesterday."
+            "Yes, I went there yesterday.",
+            "Of course, I'll send it this afternoon."
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "spk": "Colleague",
@@ -192,11 +220,11 @@
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
-            "Yes, please, that would be great.",
             "I'm fine, thank you.",
+            "Yes, please, that would be great.",
             "She is a teacher."
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "spk": "Boss",
@@ -206,11 +234,63 @@
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
-            "Sure, no problem.",
             "I'm from Canada.",
+            "Sure, no problem.",
             "It was last week."
           ],
-          "answer": 0
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "COULD YOU…? vs SHALL I…?",
+      "intro": "Las dos frases son educadas y correctas — pero una <b>pide</b> y la otra <b>ofrece</b>. ¿Quién hace el trabajo?",
+      "pair": {
+        "a": "Could you check the numbers?",
+        "b": "Shall I check the numbers?"
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "En A, ¿quién revisa los números?",
+          "options": [
+            "Yo — es un ofrecimiento",
+            "La otra persona — es un pedido",
+            "Nadie: es una pregunta general"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "En B, ¿quién revisa los números?",
+          "options": [
+            "La otra persona — es un pedido",
+            "Los dos al mismo tiempo",
+            "Yo — es un ofrecimiento"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Tu compañera está desbordada y quieres ayudar. ¿Qué dices?",
+          "options": [
+            "Do you send it for me?",
+            "Could you send it for me?",
+            "Shall I send it for you?"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Necesitas que tu compañero te mande el informe. ¿Qué dices?",
+          "options": [
+            "Shall I send you the report?",
+            "Could you send me the report?",
+            "Would you like me to send it?"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -237,16 +317,21 @@
           "type": "mcq",
           "q": "Why can't she speak to her now?",
           "options": [
-            "She is on holiday",
             "She left the company",
-            "She is in a meeting"
+            "She is in a meeting",
+            "She is on holiday"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "Marcos offers to take a message.",
-          "answer": true
+          "type": "mcq",
+          "q": "What does Emma ask Marcos to do?",
+          "options": [
+            "Ask Sofia to send an email",
+            "Give Sofia the new number",
+            "Ask Sofia to call her back"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -334,26 +419,31 @@
           "type": "mcq",
           "q": "What does Sofia ask Marcos to check?",
           "options": [
-            "The emails",
-            "The numbers on page two",
-            "The meeting room"
+            "The formatting on page one",
+            "The logo on the first page",
+            "The numbers on page two"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What does Marcos offer to do as well?",
           "options": [
-            "Call the client",
-            "Write the report again",
+            "Send the report to the client at five",
+            "Check the numbers on the second page",
             "Fix the formatting and add the logo"
           ],
           "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "Sofia wants it sent to the client before five.",
-          "answer": true
+          "type": "mcq",
+          "q": "When does Sofia want the report sent?",
+          "options": [
+            "Before five, to the manager",
+            "Tomorrow morning, to the client",
+            "Before five, to the client"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -411,7 +501,21 @@
       ],
       "placeholder": "Hi! Could you...",
       "example": "Hi (name)! Could you (request) before (time)? And can you (request) too? — Sure, no problem! I'll (action) now. Shall I also (offer)? — Yes, please, that would be great. Thank you!",
-      "hw": "Escribe tu chat y graba un audio leyéndolo (las dos voces). Envíame ambos por WhatsApp."
+      "hw": "Escribe tu chat y después grábate haciendo <b>las dos voces sin leer</b>. Envíame ambos por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>Could you…? / Shall I…? / I’ll…</b> al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

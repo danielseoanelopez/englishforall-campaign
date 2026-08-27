@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <link rel="stylesheet" href="biz.css">
 </head>
 <body>
@@ -189,19 +189,19 @@
     <div class="q" data-correct="a">
       <p><span class="qnum">01</span>What's the problem, and since when?</p>
       <label class="option"><input type="radio" name="l1q1" value="a"><span>The heating hasn't worked since last night</span></label>
-      <label class="option"><input type="radio" name="l1q1" value="b"><span>There's no hot water since Monday</span></label>
-      <label class="option"><input type="radio" name="l1q1" value="c"><span>The Wi-Fi is down since this morning</span></label>
+      <label class="option"><input type="radio" name="l1q1" value="b"><span>There's no hot water since Monday evening</span></label>
+      <label class="option"><input type="radio" name="l1q1" value="c"><span>The Wi-Fi hasn't worked since this morning</span></label>
     </div>
     <div class="q" data-correct="a">
       <p><span class="qnum">02</span>Has the guest tried the control?</p>
       <label class="option"><input type="radio" name="l1q2" value="a"><span>Yes, already twice</span></label>
-      <label class="option"><input type="radio" name="l1q2" value="b"><span>No, not yet</span></label>
-      <label class="option"><input type="radio" name="l1q2" value="c"><span>We don't know</span></label>
+      <label class="option"><input type="radio" name="l1q2" value="b"><span>No, not yet — she will try it</span></label>
+      <label class="option"><input type="radio" name="l1q2" value="c"><span>She says it isn't there</span></label>
     </div>
     <div class="q" data-correct="c">
       <p><span class="qnum">03</span>Is the morning taxi booked?</p>
-      <label class="option"><input type="radio" name="l1q3" value="a"><span>No, not yet</span></label>
-      <label class="option"><input type="radio" name="l1q3" value="b"><span>At eight o'clock</span></label>
+      <label class="option"><input type="radio" name="l1q3" value="a"><span>No, reception will book it later</span></label>
+      <label class="option"><input type="radio" name="l1q3" value="b"><span>Yes, confirmed for eight o'clock</span></label>
       <label class="option"><input type="radio" name="l1q3" value="c"><span>Yes, just confirmed for 7 a.m.</span></label>
     </div>
     <div class="btn-row"><button class="btn check" onclick="checkExercise('ex-3')">✓ CHECK</button></div>
@@ -233,14 +233,14 @@
     <div class="q" data-correct="a">
       <p><span class="qnum">02</span>What is one problem?</p>
       <label class="option"><input type="radio" name="l2q2" value="a"><span>The Wi-Fi hasn't worked since last night</span></label>
-      <label class="option"><input type="radio" name="l2q2" value="b"><span>There's no hot water</span></label>
-      <label class="option"><input type="radio" name="l2q2" value="c"><span>The room is dirty</span></label>
+      <label class="option"><input type="radio" name="l2q2" value="b"><span>There's no hot water in the bathroom</span></label>
+      <label class="option"><input type="radio" name="l2q2" value="c"><span>The room next door is being cleaned</span></label>
     </div>
     <div class="q" data-correct="b">
       <p><span class="qnum">03</span>Why can't the person sleep?</p>
-      <label class="option"><input type="radio" name="l2q3" value="a"><span>It's too cold</span></label>
+      <label class="option"><input type="radio" name="l2q3" value="a"><span>The heating is too cold at night</span></label>
       <label class="option"><input type="radio" name="l2q3" value="b"><span>The room next door is noisy</span></label>
-      <label class="option"><input type="radio" name="l2q3" value="c"><span>The bed is bad</span></label>
+      <label class="option"><input type="radio" name="l2q3" value="c"><span>The bed is too small and hard</span></label>
     </div>
     <div class="btn-row"><button class="btn check" onclick="checkExercise('ex-4')">✓ CHECK</button></div>
     <div class="ex-score" id="score-ex-4"></div>
@@ -302,7 +302,6 @@
 <script>
   window.BIZ_CONFIG = { track: "Travel & Living", key: "rankup_TRV_l2", name: "Checking In & Sorting Problems", exercises: ["ex-1", "ex-2", "ex-3", "ex-4"] };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script src="biz.js"></script>
 <script data-goatcounter="https://englishforall.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

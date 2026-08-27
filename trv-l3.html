@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <link rel="stylesheet" href="biz.css">
 </head>
 <body>
@@ -199,8 +199,8 @@
     <div class="q" data-correct="a">
       <p><span class="qnum">01</span>What does Leo recommend, and why?</p>
       <label class="option"><input type="radio" name="l1q1" value="a"><span>The pasta — it's the best in the neighborhood</span></label>
-      <label class="option"><input type="radio" name="l1q1" value="b"><span>The curry — it's the spiciest</span></label>
-      <label class="option"><input type="radio" name="l1q1" value="c"><span>The pizza next door</span></label>
+      <label class="option"><input type="radio" name="l1q1" value="b"><span>The curry — it's the spiciest on the menu</span></label>
+      <label class="option"><input type="radio" name="l1q1" value="c"><span>The pizza — it's cheaper than next door</span></label>
     </div>
     <div class="q" data-correct="a">
       <p><span class="qnum">02</span>Is it more or less expensive than the place next door?</p>
@@ -210,9 +210,9 @@
     </div>
     <div class="q" data-correct="b">
       <p><span class="qnum">03</span>Is the pasta very spicy?</p>
-      <label class="option"><input type="radio" name="l1q3" value="a"><span>Yes, very spicy</span></label>
+      <label class="option"><input type="radio" name="l1q3" value="a"><span>Yes, it's the spiciest on the menu</span></label>
       <label class="option"><input type="radio" name="l1q3" value="b"><span>No, not as spicy as the curry</span></label>
-      <label class="option"><input type="radio" name="l1q3" value="c"><span>A little sweet</span></label>
+      <label class="option"><input type="radio" name="l1q3" value="c"><span>No, it's sweeter than the curry</span></label>
     </div>
     <div class="btn-row"><button class="btn check" onclick="checkExercise('ex-3')">✓ CHECK</button></div>
     <div class="ex-score" id="score-ex-3"></div>
@@ -244,7 +244,7 @@
       <p><span class="qnum">02</span>Which has the best desserts?</p>
       <label class="option"><input type="radio" name="l2q2" value="a"><span>The first one</span></label>
       <label class="option"><input type="radio" name="l2q2" value="b"><span>The second one</span></label>
-      <label class="option"><input type="radio" name="l2q2" value="c"><span>Neither</span></label>
+      <label class="option"><input type="radio" name="l2q2" value="c"><span>Neither of them</span></label>
     </div>
     <div class="q" data-correct="a">
       <p><span class="qnum">03</span>Which one is friendlier?</p>
@@ -312,7 +312,6 @@
 <script>
   window.BIZ_CONFIG = { track: "Travel & Living", key: "rankup_TRV_l3", name: "Eating Out & Recommendations", exercises: ["ex-1", "ex-2", "ex-3", "ex-4"] };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script src="biz.js"></script>
 <script data-goatcounter="https://englishforall.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

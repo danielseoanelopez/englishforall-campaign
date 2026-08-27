@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "with respect,…",
+          "r": "con todo respeto,…"
+        },
+        {
+          "l": "I take your point, but…",
+          "r": "entiendo tu punto, pero…"
+        },
+        {
+          "l": "it can't be…",
+          "r": "no puede ser…"
+        },
+        {
+          "l": "the data suggests…",
+          "r": "los datos sugieren…"
+        },
+        {
+          "l": "to push back on something",
+          "r": "objetar algo / plantear una objeción"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "futuro",
       "title": "📘 WILL vs GOING TO vs -ING",
@@ -51,44 +79,52 @@
       "vocabBtn": "📒 Ver vocabulario de planificación",
       "vocab": [
         {
-          "en": "Roadmap",
-          "sp": "hoja de ruta"
+          "en": "to look ahead",
+          "sp": "mirar hacia adelante"
         },
         {
-          "en": "Quarter",
-          "sp": "trimestre"
+          "en": "by the end of the month",
+          "sp": "para fin de mes"
         },
         {
-          "en": "Goal",
-          "sp": "objetivo / meta"
+          "en": "our main goal is to…",
+          "sp": "nuestro objetivo principal es…"
         },
         {
-          "en": "Forecast",
-          "sp": "pronóstico"
+          "en": "I'll have it done by…",
+          "sp": "lo tendré listo para…"
         },
         {
-          "en": "To expand",
-          "sp": "expandirse"
+          "en": "it's all arranged",
+          "sp": "está todo arreglado"
         },
         {
-          "en": "Growth",
-          "sp": "crecimiento"
+          "en": "to be on the roadmap",
+          "sp": "estar en la hoja de ruta"
         },
         {
-          "en": "Pitch",
-          "sp": "presentación (para convencer)"
+          "en": "we're on course to…",
+          "sp": "vamos camino a…"
         },
         {
-          "en": "To present",
-          "sp": "presentar"
+          "en": "to hold someone to something",
+          "sp": "tomarle la palabra a alguien"
         },
         {
-          "en": "Milestone",
-          "sp": "hito"
+          "en": "here's my forecast",
+          "sp": "mi pronóstico es…"
         },
         {
-          "en": "By the end of…",
-          "sp": "para el final de…"
+          "en": "to expand into new markets",
+          "sp": "expandirse a nuevos mercados"
+        },
+        {
+          "en": "the big pitch",
+          "sp": "la presentación clave"
+        },
+        {
+          "en": "next quarter",
+          "sp": "el próximo trimestre"
         }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>memory</b> 🧠, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>unir</b> 🔗. Haz el ✓ CHECK en cada ejercicio. Al terminar… te espera el <b>BOSS</b> 👑."
@@ -210,6 +246,58 @@
       ]
     },
     {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "WILL vs GOING TO vs PRESENT CONTINUOUS",
+      "intro": "Tres futuros, tres mensajes distintos: una <b>decisión del momento</b>, una <b>intención con evidencia</b>, y una <b>cita ya agendada</b>.",
+      "pair": {
+        "a": "I'll send you the report.",
+        "b": "I'm sending the report at five."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál es una decisión que tomas justo en ese momento (te ofreces)?",
+          "options": [
+            "A — will",
+            "B — present continuous",
+            "Las dos igual"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es una cita ya agendada, con hora?",
+          "options": [
+            "B — present continuous",
+            "Ninguna de las dos",
+            "A — will"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Miras las nubes negras: hay evidencia de que va a llover. ¿Qué dices?",
+          "options": [
+            "It will rain.",
+            "It's going to rain.",
+            "It rains."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Suena el teléfono y te ofreces a contestarlo. ¿Qué dices?",
+          "options": [
+            "I'm going to get it.",
+            "I'll get it.",
+            "I'm getting it."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · THE PLANNING CALL",
@@ -222,36 +310,41 @@
           "type": "mcq",
           "q": "When are they launching the mobile app?",
           "options": [
+            "Next year",
             "In October",
-            "This week",
-            "Next year"
+            "This week"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What is Marcos going to improve first?",
           "options": [
-            "The checkout speed",
-            "The logo",
-            "The office wifi"
+            "The mobile app design",
+            "The payment system",
+            "The checkout speed"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What is Sofia doing on Monday?",
           "options": [
             "Meeting the designers",
-            "Flying to India",
-            "Writing the report"
+            "Launching the mobile app",
+            "Presenting to the client"
           ],
           "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "Priya thinks GreenMarket's sales will double next year.",
-          "answer": true
+          "type": "mcq",
+          "q": "What is Priya's forecast?",
+          "options": [
+            "Sales will stay the same",
+            "Sales will grow ten percent",
+            "Sales will double next year"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -308,29 +401,29 @@
         {
           "q": "Look at those clouds — it ___ rain.",
           "options": [
-            "is going to",
+            "rains",
             "will",
-            "rains"
+            "is going to"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "I promise I ___ send the report tonight.",
           "options": [
-            "will",
             "would",
+            "will",
             "did"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "We ___ launching phase two in October.",
           "options": [
-            "are",
             "will",
-            "going"
+            "going",
+            "are"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "She ___ to study English in Canada next year.",
@@ -344,18 +437,27 @@
         {
           "q": "I'll have the report ready ___ Friday.",
           "options": [
-            "by",
+            "at",
             "until",
-            "at"
+            "by"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "The phone's ringing! — Don't worry, I ___ get it.",
           "options": [
-            "'ll",
             "'m going to",
-            "was going to"
+            "was going to",
+            "'ll"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "I ___ the designers at ten — it's in my calendar.",
+          "options": [
+            "'m meeting",
+            "meet",
+            "'ll meet"
           ],
           "answer": 0
         }
@@ -406,26 +508,31 @@
           "type": "mcq",
           "q": "What is David going to do?",
           "options": [
-            "Expand to three new countries",
-            "Cancel the project",
-            "Sell his company"
+            "Open a new office in Mexico",
+            "Launch the mobile app early",
+            "Expand to three new countries"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What is Marcos doing next Friday?",
           "options": [
-            "Presenting the expansion plan to David",
-            "Going on holiday",
-            "Meeting the designers"
+            "Presenting the expansion plan",
+            "Meeting Priya about the roadmap",
+            "Visiting the client's office"
           ],
           "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "Priya believes Marcos will do a great job.",
-          "answer": true
+          "type": "mcq",
+          "q": "Why does Priya want Marcos to present?",
+          "options": [
+            "David asked for him by name",
+            "He has grown a lot this quarter",
+            "She is going to be on holiday"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -451,8 +558,22 @@
         "1 predicción (I think… will…)"
       ],
       "placeholder": "Next quarter is going to be big for me. First, I'm going to…",
-      "example": "Next (quarter / year) is going to be big for me. First, I'm going to (plan) — by (month), I'll (prediction). I'm also going to (plan) in (month). I'm (arrangement) on (day) to (purpose). I'll (promise) every single day, I promise! By the end of the year, I think (prediction).",
-      "hw": "Escribe tu roadmap y grábate leyéndolo. Envíame texto y audio por WhatsApp. ¡Y prepárate: el BOSS te espera! 👑"
+      "example": "Next quarter is going to be big for me… — sigue tú: dos planes con going to, una cita fija con present continuous, una promesa con will y dos fechas con by.",
+      "hw": "Escribe tu roadmap y después grábate presentándolo <b>sin leer</b>, como si fuera tu pitch. Envíame ambos por WhatsApp. ¡Y prepárate: el BOSS te espera! 👑",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>will / going to / present continuous</b> + by + fecha al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

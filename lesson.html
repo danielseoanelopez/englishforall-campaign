@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <link rel="stylesheet" href="lesson.css">
 </head>
 <body>
@@ -77,7 +77,7 @@
 // is auto-assembled into the classic layout.
 const SOCIAL = { whatsapp:"https://wa.me/5491123709477", instagram:"https://www.instagram.com/englishforall_dan/", linkedin:"https://www.linkedin.com/in/danielseoanelopez/", taplink:"https://englishforall.taplink.site", discord:"daniel.s.20" };
 const FORM_ENDPOINT = "https://formspree.io/f/mbdewbrp";
-const SCORED = ["listening","gapFill","dialogue","match","order","picMatch"];
+const SCORED = ["listening","gapFill","dialogue","match","order","picMatch","contrast"];
 
 let LESSON = null, LESSON_KEY = "", LESSON_NAME = "", EXERCISES = [];
 const scores = {};                 // blockId -> {correct,total}
@@ -140,6 +140,16 @@ function listeningHtml(b, id, alt){
   if(b.transcript && b.transcript.length) h += `<button class="toggle-btn" data-show="📄 Mostrar transcripción" data-hide="📄 Ocultar transcripción" onclick="toggleReveal('${id}-t', this)">📄 Mostrar transcripción</button>
     <div class="reveal transcript" id="${id}-t">${b.transcript.map(l=>`<p class="line"><span class="spk ${l.b?'b':''}">${esc(l.spk)}:</span> ${esc(l.html)}</p>`).join("")}</div>`;
   return h + `</div>`;
+}
+function contrastHtml(b, id){
+  const p = b.pair || {};
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">🔀 ${esc(b.title||'¿QUÉ CAMBIA?')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  <div class="contrast-pair">
+    <div class="cp"><span class="cp-l">A</span><span class="cp-t">${esc(p.a)}</span>${spkBtn(p.a,"mini")}</div>
+    <div class="cp"><span class="cp-l">B</span><span class="cp-t">${esc(p.b)}</span>${spkBtn(p.b,"mini")}</div>
+  </div>
+  ${(b.items||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {})).join("")}
+  <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')">✓ CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function gapFillHtml(b, id){
   return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">📝 ${esc(b.title||'COMPLETA LA FRASE')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
@@ -227,6 +237,7 @@ function writingHtml(w){
   <textarea class="writing-area" id="writingBox" placeholder="${escAttr(w.placeholder||'')}"></textarea>
   <button class="toggle-btn" data-show="💡 Guía para empezar" data-hide="🙈 Ocultar guía" onclick="toggleReveal('mw', this)">💡 Guía para empezar</button>
   <div class="reveal model-box" id="mw"><span class="lbl">EMPIEZA ASÍ</span>${esc(w.example)}</div>
+  ${(w.rubric&&w.rubric.length)?`<div class="rubric"><div class="rh">✅ ASÍ SE CORRIGE</div>${w.rubric.map(r=>`<div class="rrow"><b>${esc(r.c)}</b><span>${esc(r.d)}</span></div>`).join("")}</div>`:""}
   <div class="note gold"><b>📌 Tarea (HW):</b> ${esc(w.hw)}</div></div>`;
 }
 
@@ -264,6 +275,7 @@ function build(L){
       if(b.type==="match")    return matchHtml(b, id);
       if(b.type==="order")    return orderHtml(b, id);
       if(b.type==="picMatch") return picMatchHtml(b, id);
+      if(b.type==="contrast") return contrastHtml(b, id);
     }
     if(b.type==="grammar") return grammarHtml(b);
     if(b.type==="story")   return storyHtml(b);
@@ -404,11 +416,10 @@ function seeRank(){
   if(window.launchConfetti) launchConfetti(); victory();
 }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script>
   function launchConfetti(){ if(typeof confetti!=="function")return; var c=["#00e5ff","#ff3df0","#9d4dff","#ffc83d"]; confetti({particleCount:140,spread:90,startVelocity:45,origin:{y:0.3},colors:c,zIndex:60}); setTimeout(function(){confetti({particleCount:90,angle:60,spread:75,origin:{x:0,y:0.65},colors:c,zIndex:60});},150); setTimeout(function(){confetti({particleCount:90,angle:120,spread:75,origin:{x:1,y:0.65},colors:c,zIndex:60});},300); }
-  try { AOS.init({duration:700,once:true,offset:40}); setTimeout(function(){document.querySelectorAll("[data-aos]:not(.aos-animate)").forEach(function(el){el.classList.add("aos-animate");});},4000); } catch(e){ document.querySelectorAll("[data-aos]").forEach(function(el){el.removeAttribute("data-aos");}); }
+  document.querySelectorAll("[data-aos]").forEach(function(el){el.removeAttribute("data-aos");el.removeAttribute("data-aos-delay");}); // AOS removed); }
 </script>
 <script data-goatcounter="https://englishforall.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>

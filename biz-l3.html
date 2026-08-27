@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <link rel="stylesheet" href="biz.css">
 </head>
 <body>
@@ -200,19 +200,19 @@
     <div class="q" data-correct="a">
       <p><span class="qnum">01</span>What three things does Mark want?</p>
       <label class="option"><input type="radio" name="l1q1" value="a"><span>The report today, an explanation of the numbers, and the shipment fixed</span></label>
-      <label class="option"><input type="radio" name="l1q1" value="b"><span>A meeting, a coffee, and a raise</span></label>
-      <label class="option"><input type="radio" name="l1q1" value="c"><span>A new laptop and a day off</span></label>
+      <label class="option"><input type="radio" name="l1q1" value="b"><span>The report tomorrow, a call about the numbers, and a new date</span></label>
+      <label class="option"><input type="radio" name="l1q1" value="c"><span>The report today, a meeting about the numbers, and a refund</span></label>
     </div>
     <div class="q" data-correct="b">
       <p><span class="qnum">02</span>How does Mark sound?</p>
-      <label class="option"><input type="radio" name="l1q2" value="a"><span>Very formal and polite</span></label>
+      <label class="option"><input type="radio" name="l1q2" value="a"><span>Formal and polite, but a little cold</span></label>
       <label class="option"><input type="radio" name="l1q2" value="b"><span>Direct and informal — not very polite</span></label>
-      <label class="option"><input type="radio" name="l1q2" value="c"><span>Confused and unsure</span></label>
+      <label class="option"><input type="radio" name="l1q2" value="c"><span>Confused and unsure about the numbers</span></label>
     </div>
     <div class="q" data-correct="c">
       <p><span class="qnum">03</span>What is your task after listening?</p>
-      <label class="option"><input type="radio" name="l1q3" value="a"><span>Ignore the message</span></label>
-      <label class="option"><input type="radio" name="l1q3" value="b"><span>Reply in the same rude tone</span></label>
+      <label class="option"><input type="radio" name="l1q3" value="a"><span>Forward his message to the accounts team without changes</span></label>
+      <label class="option"><input type="radio" name="l1q3" value="b"><span>Reply to him in the same direct tone, but shorter</span></label>
       <label class="option"><input type="radio" name="l1q3" value="c"><span>Rewrite his requests as a polite, professional email</span></label>
     </div>
     <div class="btn-row"><button class="btn check" onclick="checkExercise('ex-3')">✓ CHECK</button></div>
@@ -238,14 +238,14 @@
     </div>
     <div class="q" data-correct="b">
       <p><span class="qnum">02</span>Which polite phrase does she use?</p>
-      <label class="option"><input type="radio" name="l2q2" value="a"><span>"Send it now."</span></label>
+      <label class="option"><input type="radio" name="l2q2" value="a"><span>"Please send it over before the end of today."</span></label>
       <label class="option"><input type="radio" name="l2q2" value="b"><span>"Whenever you have a moment, could you please send it over?"</span></label>
-      <label class="option"><input type="radio" name="l2q2" value="c"><span>"You must send it."</span></label>
+      <label class="option"><input type="radio" name="l2q2" value="c"><span>"I would appreciate it if you could send it today."</span></label>
     </div>
     <div class="q" data-correct="c">
       <p><span class="qnum">03</span>What does she ask about the shipment?</p>
-      <label class="option"><input type="radio" name="l2q3" value="a"><span>The price</span></label>
-      <label class="option"><input type="radio" name="l2q3" value="b"><span>Nothing</span></label>
+      <label class="option"><input type="radio" name="l2q3" value="a"><span>The reason for the delay and who is at fault</span></label>
+      <label class="option"><input type="radio" name="l2q3" value="b"><span>The price of the shipment and the refund policy</span></label>
       <label class="option"><input type="radio" name="l2q3" value="c"><span>The new delivery date and possible solutions</span></label>
     </div>
     <div class="btn-row"><button class="btn check" onclick="checkExercise('ex-4')">✓ CHECK</button></div>
@@ -318,7 +318,6 @@
 <script>
   window.BIZ_CONFIG = { key: "rankup_BIZ_l3", name: "Email & Formal Communication (Business)", exercises: ["ex-1", "ex-2", "ex-3", "ex-4"] };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script src="biz.js"></script>
 <!-- GoatCounter analytics — privacy-friendly, no cookies. -->

@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "action item",
+          "r": "tarea pendiente"
+        },
+        {
+          "l": "to be on the same page",
+          "r": "estar alineados"
+        },
+        {
+          "l": "are we all agreed?",
+          "r": "¿estamos todos de acuerdo?"
+        },
+        {
+          "l": "let's get started",
+          "r": "empecemos"
+        },
+        {
+          "l": "let's move on to…",
+          "r": "pasemos a…"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "past narration",
       "title": "📘 PAST CONTINUOUS vs PAST SIMPLE",
@@ -52,44 +80,52 @@
       "vocabBtn": "📒 Ver vocabulario de la crisis",
       "vocab": [
         {
-          "en": "Server",
-          "sp": "servidor"
+          "en": "the site went down",
+          "sp": "el sitio se cayó"
         },
         {
-          "en": "To crash",
-          "sp": "caerse / fallar"
+          "en": "to be on call",
+          "sp": "estar de guardia"
         },
         {
-          "en": "To be down",
-          "sp": "estar caído (un sitio)"
+          "en": "an alert came in",
+          "sp": "entró una alerta"
         },
         {
-          "en": "Outage",
-          "sp": "caída / interrupción"
+          "en": "to look into the logs",
+          "sp": "revisar los registros"
         },
         {
-          "en": "Alert",
-          "sp": "alerta / aviso"
+          "en": "to get it back up",
+          "sp": "volver a levantarlo"
         },
         {
-          "en": "Logs",
-          "sp": "registros del sistema"
+          "en": "out of nowhere",
+          "sp": "de la nada"
         },
         {
-          "en": "To fix",
-          "sp": "arreglar"
+          "en": "to keep an eye on…",
+          "sp": "estar pendiente de…"
         },
         {
-          "en": "To restart",
-          "sp": "reiniciar"
+          "en": "as soon as…",
+          "sp": "apenas / en cuanto…"
         },
         {
-          "en": "On call",
-          "sp": "de guardia"
+          "en": "it turned out that…",
+          "sp": "resultó que…"
         },
         {
-          "en": "Launch night",
-          "sp": "noche de lanzamiento"
+          "en": "the whole time",
+          "sp": "todo el tiempo"
+        },
+        {
+          "en": "in the end",
+          "sp": "al final"
+        },
+        {
+          "en": "a server outage",
+          "sp": "una caída del servidor"
         }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>ordenar</b> 🧩, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>memory</b> 🧠. Haz el ✓ CHECK en cada ejercicio."
@@ -226,6 +262,58 @@
       ]
     },
     {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "PAST SIMPLE vs PAST CONTINUOUS",
+      "intro": "Cambia una sola palabra y cambia el <b>orden de los hechos</b>. Lee las dos con cuidado.",
+      "pair": {
+        "a": "When the client called, I wrote the report.",
+        "b": "When the client called, I was writing the report."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "En A, ¿cuándo escribiste el informe?",
+          "options": [
+            "Después de la llamada",
+            "Durante la llamada",
+            "Antes de la llamada"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "En B, ¿cuándo escribiste el informe?",
+          "options": [
+            "No lo escribiste",
+            "Empezaste después",
+            "Ya estabas escribiéndolo"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Estabas cenando y sonó la alerta. ¿Qué dices?",
+          "options": [
+            "I was having dinner when the alert came in.",
+            "I have dinner when the alert came in.",
+            "I had dinner when the alert came in."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "El servidor se cayó a las once en punto — acción puntual. ¿Qué dices?",
+          "options": [
+            "The server was crashing at eleven.",
+            "The server crashed at eleven.",
+            "The server has crashed at eleven."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · MARCOS'S VERSION",
@@ -239,8 +327,8 @@
           "q": "What was Marcos doing when his phone rang?",
           "options": [
             "Watching a film",
-            "Sleeping",
-            "Checking the logs"
+            "Checking the logs",
+            "Sleeping"
           ],
           "answer": 0
         },
@@ -248,16 +336,21 @@
           "type": "mcq",
           "q": "What did he find while he was checking the logs?",
           "options": [
-            "The payment system was sending too many requests",
-            "The server was too old",
-            "Someone deleted the website"
+            "Too many requests from the payment system",
+            "Not enough memory on the main server",
+            "A wrong setting in the new payment system"
           ],
           "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "According to Marcos, the site was down for about one hour.",
-          "answer": true
+          "type": "mcq",
+          "q": "According to Marcos, how long was the site down?",
+          "options": [
+            "Almost two hours",
+            "About one hour",
+            "About ten minutes"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -308,55 +401,64 @@
           "q": "I ___ a film when my phone rang.",
           "options": [
             "was watching",
-            "watched",
-            "am watching"
+            "am watching",
+            "watched"
           ],
           "answer": 0
         },
         {
           "q": "While I was checking the logs, I ___ the problem.",
           "options": [
-            "found",
             "was finding",
+            "found",
             "find"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "The server ___ at eleven o'clock.",
           "options": [
+            "crashes",
             "crashed",
-            "was crashing",
-            "crashes"
+            "was crashing"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "We ___ still testing when the sun came up.",
           "options": [
-            "were",
             "was",
+            "were",
             "are"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "___ soon as we fixed it, the site came back.",
           "options": [
-            "As",
+            "When",
             "While",
-            "When"
+            "As"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "Sofia ___ working late when the alert arrived.",
           "options": [
             "was",
-            "were",
-            "is"
+            "is",
+            "were"
           ],
           "answer": 0
+        },
+        {
+          "q": "They ___ dinner when the alert came in.",
+          "options": [
+            "had",
+            "were having",
+            "have"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -405,26 +507,31 @@
           "type": "mcq",
           "q": "According to Sofia, who saw the problem first?",
           "options": [
-            "Sofia",
             "Marcos",
+            "Sofia",
             "David"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "How long does Sofia say the site was down?",
           "options": [
-            "Almost two hours",
             "About one hour",
-            "Ten minutes"
+            "Ten minutes",
+            "Almost two hours"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "Sofia's story is exactly the same as Marcos's story.",
-          "answer": false
+          "type": "mcq",
+          "q": "What was Sofia doing when the alert appeared?",
+          "options": [
+            "Watching a film at home",
+            "Restarting the payment service",
+            "Writing the launch report"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -450,8 +557,22 @@
         "Cierra con cómo terminó todo (<b>In the end,…</b>)"
       ],
       "placeholder": "It was a normal Friday. I was…",
-      "example": "It was a normal (day). I was (activity + -ing), and everything was (adjective). Suddenly, (something happened) — (detail)! While I was (activity + -ing), I (action). As soon as (event), I (action). In the end, (result), but (final feeling)!",
-      "hw": "Escribe tu historia y grábate contándola en voz alta (¡sin leer, si puedes!). Envíame el texto y el audio por WhatsApp y lo corregimos."
+      "example": "It was a normal Tuesday and I was… — sigue tú: interrumpe con when + past simple, mete un while, dos secuenciadores, y cierra con In the end…",
+      "hw": "Escribe tu historia y después grábate contándola <b>sin leer</b> — es una anécdota, no una lectura. Envíame el texto y el audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>past simple + past continuous</b> y los secuenciadores al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

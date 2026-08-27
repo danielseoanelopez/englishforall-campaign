@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <style>
   :root { --cyan:#00e5ff; --magenta:#ff3df0; --purple:#9d4dff; --gold:#ffc83d; --green:#3dffa0; --red:#ff5d7a; --bg:#05050e; --panel:rgba(20,22,48,0.93); --text:#eaf7ff; --muted:#7fd9e8; }
   * { box-sizing:border-box; margin:0; padding:0; touch-action:manipulation; }
@@ -188,26 +188,30 @@ const SECTIONS = { A:"PARTE A · GRAMÁTICA Y USO", B:"PARTE B · VOCABULARIO", 
 const READING = "Hi Sam,\nThanks for your message! Last week we finished the new project. It was hard work, but I am happy with the result. The new app is faster and easier than the old one.\nNext week we are going to launch it. On Monday, I am meeting the client at ten to show her the app. We usually start at nine, but that day we are starting earlier.\nOne more thing: could you help me with the slides? I am not very good at design!\nSee you soon,\nMarcos";
 
 const QUESTIONS = [
-  { sec:"A", q:"My sister ____ in a hospital.", o:["work","works","working"], a:1, fb:"Present simple, 3ra persona: she works (+s)." },
-  { sec:"A", q:"She ____ late for work.", o:["is never","never is","be never"], a:0, fb:"El adverbio de frecuencia va despues de 'to be': 'is never'." },
-  { sec:"A", q:"Yesterday I ____ a great film.", o:["see","saw","seen"], a:1, fb:"Pasado simple de 'see' = saw." },
-  { sec:"A", q:"They ____ at home last night.", o:["was","were","is"], a:1, fb:"'They' -> were (pasado de 'to be')." },
-  { sec:"A", q:"We ____ to work yesterday - it was a holiday.", o:["didn't go","don't go","didn't went"], a:0, fb:"Negativo en pasado: didn't + verbo base = didn't go." },
+  { sec:"A", q:"My sister ____ in a hospital.", o:["working","works","work"], a:1, fb:"Present simple, 3ra persona: she works (+s)." },
+  { sec:"A", q:"She ____ late for work.", o:["never is","be never","is never"], a:2, fb:"El adverbio de frecuencia va despues de 'to be': 'is never'." },
+  { sec:"A", q:"Yesterday I ____ a great film.", o:["see","seen","saw"], a:2, fb:"Pasado simple de 'see' = saw." },
+  { sec:"A", q:"They ____ at home last night.", o:["was","is","were"], a:2, fb:"'They' -> were (pasado de 'to be')." },
+  { sec:"A", q:"We ____ to work yesterday - it was a holiday.", o:["didn't went","didn't go","don't go"], a:1, fb:"Negativo en pasado: didn't + verbo base = didn't go." },
   { sec:"A", q:"____ you help me with this, please?", o:["Could","Do","Are"], a:0, fb:"Pedido cortes: 'Could you...?' + verbo base." },
-  { sec:"A", q:"You look tired. ____ I make you a coffee?", o:["Shall","Do","Am"], a:0, fb:"Ofrecimiento: 'Shall I...?'." },
-  { sec:"A", q:"This book is ____ than the other one.", o:["interesting","more interesting","most interesting"], a:1, fb:"Adjetivo largo: 'more interesting than'." },
-  { sec:"A", q:"Her English is ____ than mine.", o:["gooder","better","more good"], a:1, fb:"Comparativo irregular: good -> better." },
-  { sec:"A", q:"I can't meet on Friday. I ____ a client at three.", o:["meet","am meeting","met"], a:1, fb:"Cita fija futura -> present continuous: 'I'm meeting...'." },
-  { sec:"B", q:"Every morning I ____ a shower.", o:["make","take","do"], a:1, fb:"'take a shower' (no make/do)." },
-  { sec:"B", q:"We work from home, so we ____ at nine and check our messages.", o:["log on","wake up","hang up"], a:0, fb:"Trabajo remoto: 'log on' = conectarse." },
-  { sec:"B", q:"Could you ____ the file to your email?", o:["attach","cost","book"], a:0, fb:"'attach a file' = adjuntar un archivo." },
-  { sec:"C", q:"What did the person do in the afternoon?", o:["Fixed two problems on the website","Had three meetings","Wrote a new report"], a:0, fb:"'In the afternoon, I fixed two problems on the website.'", audio:"a2f1.mp3" },
+  { sec:"A", q:"You look tired. ____ I make you a coffee?", o:["Do","Shall","Am"], a:1, fb:"Ofrecimiento: 'Shall I...?'." },
+  { sec:"A", q:"This book is ____ than the other one.", o:["more interesting","interesting","most interesting"], a:0, fb:"Adjetivo largo: 'more interesting than'." },
+  { sec:"A", q:"Her English is ____ than mine.", o:["gooder","more good","better"], a:2, fb:"Comparativo irregular: good -> better." },
+  { sec:"A", q:"I can't meet on Friday. I ____ a client at three.", o:["met","am meeting","meet"], a:1, fb:"Cita fija futura -> present continuous: 'I'm meeting...'." },
+  { sec:"B", q:"Every morning I ____ a shower.", o:["take","make","do"], a:0, fb:"'take a shower' (no make/do)." },
+  { sec:"B", q:"We work from home, so we ____ at nine and check our messages.", o:["log on","hang up","wake up"], a:0, fb:"Trabajo remoto: 'log on' = conectarse." },
+  { sec:"B", q:"Could you ____ the file to your email?", o:["book","attach","cost"], a:1, fb:"'attach a file' = adjuntar un archivo." },
+  { sec:"B", q:"You send a document with an email. It is ___.", o:["deleted","printed","attached"], a:2, fb:"attached = adjunto." },
+  { sec:"B", q:"The day a project must be finished is the ___.", o:["break","deadline","agenda"], a:1, fb:"deadline = fecha limite." },
+  { sec:"B", q:"A person you work with is a ___.", o:["colleague","client","student"], a:0, fb:"colleague = companero de trabajo." },
+  { sec:"C", q:"What did the person do in the afternoon?", o:["Wrote a new report","Fixed two problems on the website","Had three meetings"], a:1, fb:"'In the afternoon, I fixed two problems on the website.'", audio:"a2f1.mp3" },
   { sec:"C", q:"What does Emma ask Marcos to do?", o:["Send the report today","Call her tomorrow","Book a meeting room"], a:0, fb:"'Could you send me the report today?'", audio:"a2f2.mp3" },
-  { sec:"C", q:"Why is the black laptop the better choice for work?", o:["It is faster and more reliable","It is cheaper","It is lighter"], a:0, fb:"'The black one is faster and more reliable.'", audio:"a2f3.mp3" },
+  { sec:"C", q:"Why is the black laptop the better choice for work?", o:["It is lighter","It is cheaper","It is faster and more reliable"], a:2, fb:"'The black one is faster and more reliable.'", audio:"a2f3.mp3" },
   { sec:"C", q:"What is the person going to do on Friday?", o:["Relax at home","Fly to Madrid","Meet a client"], a:0, fb:"'On Friday I'm not working, so I'm going to relax at home.'", audio:"a2f4.mp3" },
-  { sec:"D", q:"When did Marcos finish the new project?", o:["Last week","Next week","On Monday"], a:0, fb:"'Last week we finished the new project.'" },
-  { sec:"D", q:"How is the new app compared to the old one?", o:["Faster and easier","Slower but cheaper","Bigger and heavier"], a:0, fb:"'The new app is faster and easier than the old one.'" },
-  { sec:"D", q:"What does Marcos ask Sam to do?", o:["Help with the slides","Call the client","Book a restaurant"], a:0, fb:"'Could you help me with the slides?'" }
+  { sec:"D", q:"When did Marcos finish the new project?", o:["Next week","Last week","On Monday"], a:1, fb:"'Last week we finished the new project.'" },
+  { sec:"D", q:"How is the new app compared to the old one?", o:["Bigger and heavier","Faster and easier","Slower but cheaper"], a:1, fb:"'The new app is faster and easier than the old one.'" },
+  { sec:"D", q:"What does Marcos ask Sam to do?", o:["Call the client","Help with the slides","Book a restaurant"], a:1, fb:"'Could you help me with the slides?'" },
+  { sec:"D", q:"What does Marcos ask Sam to help with?", o:["The code","The client call","The slides"], a:2, fb:"'could you help me with the slides?'" }
 ];
 
 function shuffled(n){ const a=[...Array(n).keys()]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
@@ -300,11 +304,10 @@ function submitExam(){
   if (pass && window.launchConfetti) launchConfetti();
 }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script>
   function launchConfetti(){ if(typeof confetti!=="function")return; var c=["#00e5ff","#ff3df0","#9d4dff","#ffc83d"]; confetti({particleCount:140,spread:90,startVelocity:45,origin:{y:0.3},colors:c,zIndex:60}); }
-  try { AOS.init({duration:600,once:true,offset:40}); setTimeout(function(){document.querySelectorAll("[data-aos]:not(.aos-animate)").forEach(function(el){el.classList.add("aos-animate");});},4000); } catch(e){ document.querySelectorAll("[data-aos]").forEach(function(el){el.removeAttribute("data-aos");}); }
+  document.querySelectorAll("[data-aos]").forEach(function(el){el.removeAttribute("data-aos");el.removeAttribute("data-aos-delay");}); // AOS removed); }
 </script>
 </body>
 </html>

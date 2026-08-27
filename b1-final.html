@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <style>
   :root { --cyan:#00e5ff; --magenta:#ff3df0; --purple:#9d4dff; --gold:#ffc83d; --green:#3dffa0; --red:#ff5d7a; --bg:#05050e; --panel:rgba(20,22,48,0.93); --text:#eaf7ff; --muted:#7fd9e8; }
   * { box-sizing:border-box; margin:0; padding:0; touch-action:manipulation; }
@@ -189,26 +189,30 @@ const SECTIONS = { A:"PARTE A · GRAMÁTICA Y USO", B:"PARTE B · VOCABULARIO", 
 const READING = "Hi team,\nWhat a day! I've just finished the pitch with David, and I have great news — he loved it. While I was presenting the sales numbers, he was smiling the whole time.\nHe asked one hard question: if we expand to three countries, can we handle the extra work? I promised him that if he confirms this week, we'll hire two more developers.\nPriya says he's going to sign on Monday. By December, we'll be a team of ten!\nThanks for everything — we've built something special this quarter.\nMarcos";
 
 const QUESTIONS = [
-  { sec:"A", q:"I've worked here ____ last March.", o:["since","for","yet"], a:0, fb:"'since' + punto en el tiempo (since March); 'for' + período (for a year). — L1" },
-  { sec:"A", q:"Have you finished the report ____?", o:["yet","already","since"], a:0, fb:"'yet' va al final en preguntas y negativos: Have you finished yet? — L1" },
+  { sec:"A", q:"I've worked here ____ last March.", o:["yet","since","for"], a:1, fb:"'since' + punto en el tiempo (since March); 'for' + período (for a year). — L1" },
+  { sec:"A", q:"Have you finished the report ____?", o:["since","yet","already"], a:1, fb:"'yet' va al final en preguntas y negativos: Have you finished yet? — L1" },
   { sec:"A", q:"She ____ the client yesterday.", o:["called","has called","calls"], a:0, fb:"Tiempo terminado y específico (yesterday) → past simple. — L1" },
   { sec:"A", q:"I ____ a film when my phone rang.", o:["was watching","watched","am watching"], a:0, fb:"Escena de fondo → past continuous: I was watching… when… — L3" },
-  { sec:"A", q:"While we ____ the logs, we found the problem.", o:["were checking","checked","check"], a:0, fb:"'While' + acción en progreso → past continuous. — L3" },
-  { sec:"A", q:"If you confirm today, we ____ on Monday.", o:["will start","would start","started"], a:0, fb:"1st conditional (posible/real): if + presente, will + verbo. — L4" },
-  { sec:"A", q:"If I ____ you, I'd accept the deal.", o:["were","am","will be"], a:0, fb:"2nd conditional (hipotético): If I were you, I would… — L4" },
+  { sec:"A", q:"While we ____ the logs, we found the problem.", o:["check","checked","were checking"], a:2, fb:"'While' + acción en progreso → past continuous. — L3" },
+  { sec:"A", q:"If you confirm today, we ____ on Monday.", o:["would start","will start","started"], a:1, fb:"1st conditional (posible/real): if + presente, will + verbo. — L4" },
+  { sec:"A", q:"If I ____ you, I'd accept the deal.", o:["will be","were","am"], a:1, fb:"2nd conditional (hipotético): If I were you, I would… — L4" },
   { sec:"A", q:"We can't start ____ you sign the agreement.", o:["unless","if","as long as"], a:0, fb:"'unless' = if not (a menos que). — L4" },
-  { sec:"A", q:"He answered in perfect French. He ____ be a beginner.", o:["can't","must","might"], a:0, fb:"Deducción negativa (seguro que NO) → can't be. — L5" },
-  { sec:"A", q:"I can't meet on Friday — I ____ the designers at ten.", o:["am meeting","will meet","meet"], a:0, fb:"Cita ya fijada con hora → present continuous. — L6" },
-  { sec:"B", q:"Sorry to ____ in, but can we focus on the next steps?", o:["jump","run","move"], a:0, fb:"'Sorry to jump in' = perdón por interrumpir. — L2" },
+  { sec:"A", q:"He answered in perfect French. He ____ be a beginner.", o:["might","must","can't"], a:2, fb:"Deducción negativa (seguro que NO) → can't be. — L5" },
+  { sec:"A", q:"I can't meet on Friday — I ____ the designers at ten.", o:["meet","will meet","am meeting"], a:2, fb:"Cita ya fijada con hora → present continuous. — L6" },
+  { sec:"B", q:"Sorry to ____ in, but can we focus on the next steps?", o:["jump","move","run"], a:0, fb:"'Sorry to jump in' = perdón por interrumpir. — L2" },
   { sec:"B", q:"I ____ your point, but I see it differently.", o:["take","make","do"], a:0, fb:"'I take your point' = entiendo tu punto (y ahora discrepo con tacto). — L2/L5" },
-  { sec:"B", q:"It might be ____ testing the page on a phone first.", o:["worth","value","good"], a:0, fb:"'It might be worth + -ing' = valdría la pena… (sugerencia suave). — L5" },
-  { sec:"C", q:"According to Marcos's pitch, how much have sales grown since June?", o:["Twenty percent","Two percent","Fifty percent"], a:0, fb:"'Sales have grown by twenty percent since June.'", audio:"b1f1.mp3" },
+  { sec:"B", q:"It might be ____ testing the page on a phone first.", o:["value","good","worth"], a:2, fb:"'It might be worth + -ing' = valdría la pena… (sugerencia suave). — L5" },
+  { sec:"B", q:"The project is going as planned. It is ___.", o:["behind schedule","on track","over budget"], a:1, fb:"on track = segun lo previsto." },
+  { sec:"B", q:"To agree on a middle point in a negotiation is to meet someone ___.", o:["upwards","halfway","sideways"], a:1, fb:"meet you halfway = llegar a un punto medio." },
+  { sec:"B", q:"A short daily team meeting is a ___.", o:["handover","takeaway","standup"], a:2, fb:"standup = reunion breve diaria." },
+  { sec:"C", q:"According to Marcos's pitch, how much have sales grown since June?", o:["Two percent","Twenty percent","Fifty percent"], a:1, fb:"'Sales have grown by twenty percent since June.'", audio:"b1f1.mp3" },
   { sec:"C", q:"What will the team do if David confirms the expansion this week?", o:["Hire two more developers","Cancel phase two","Move to a new office"], a:0, fb:"'If you confirm this week, we'll hire two more developers.'", audio:"b1f2.mp3" },
   { sec:"C", q:"What was Marcos doing when Sofia called him on launch night?", o:["Watching a film","Sleeping","Driving home"], a:0, fb:"'Marcos was watching a film at home when I called him.'", audio:"b1f3.mp3" },
-  { sec:"C", q:"When is David going to sign the contract?", o:["On Monday","In December","Next year"], a:0, fb:"'He's signing the contract on Monday!'", audio:"b1f4.mp3" },
-  { sec:"D", q:"What has Marcos just finished?", o:["The pitch with David","The new website","The contract"], a:0, fb:"'I've just finished the pitch with David.'" },
-  { sec:"D", q:"What will happen if David confirms this week?", o:["The team will hire two more developers","The project will stop","Prices will go up"], a:0, fb:"'If he confirms this week, we'll hire two more developers.'" },
-  { sec:"D", q:"How big will the team be by December?", o:["Ten people","Three people","Fifty people"], a:0, fb:"'By December, we'll be a team of ten!'" }
+  { sec:"C", q:"When is David going to sign the contract?", o:["Next year","In December","On Monday"], a:2, fb:"'He's signing the contract on Monday!'", audio:"b1f4.mp3" },
+  { sec:"D", q:"What has Marcos just finished?", o:["The contract","The pitch with David","The new website"], a:1, fb:"'I've just finished the pitch with David.'" },
+  { sec:"D", q:"What will happen if David confirms this week?", o:["The team will hire two more developers","Prices will go up","The project will stop"], a:0, fb:"'If he confirms this week, we'll hire two more developers.'" },
+  { sec:"D", q:"How big will the team be by December?", o:["Fifty people","Three people","Ten people"], a:2, fb:"'By December, we'll be a team of ten!'" },
+  { sec:"D", q:"What will happen if David confirms this week?", o:["They will expand to five countries","They will delay the pitch","They will hire two more developers"], a:2, fb:"'if he confirms this week, we\'ll hire two more developers'." }
 ];
 
 function shuffled(n){ const a=[...Array(n).keys()]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
@@ -301,11 +305,10 @@ function submitExam(){
   if (pass && window.launchConfetti) launchConfetti();
 }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script>
   function launchConfetti(){ if(typeof confetti!=="function")return; var c=["#00e5ff","#ff3df0","#9d4dff","#ffc83d"]; confetti({particleCount:140,spread:90,startVelocity:45,origin:{y:0.3},colors:c,zIndex:60}); }
-  try { AOS.init({duration:600,once:true,offset:40}); setTimeout(function(){document.querySelectorAll("[data-aos]:not(.aos-animate)").forEach(function(el){el.classList.add("aos-animate");});},4000); } catch(e){ document.querySelectorAll("[data-aos]").forEach(function(el){el.removeAttribute("data-aos");}); }
+  document.querySelectorAll("[data-aos]").forEach(function(el){el.removeAttribute("data-aos");el.removeAttribute("data-aos-delay");}); // AOS removed); }
 </script>
 </body>
 </html>

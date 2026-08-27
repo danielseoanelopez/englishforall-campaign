@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Finish work",
+          "r": "terminar el trabajo"
+        },
+        {
+          "l": "Standup meeting",
+          "r": "reunión breve diaria"
+        },
+        {
+          "l": "Wake up",
+          "r": "despertarse"
+        },
+        {
+          "l": "Check emails",
+          "r": "revisar correos"
+        },
+        {
+          "l": "Have breakfast",
+          "r": "desayunar"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "frases de trabajo",
       "title": "📒 FRASES CLAVE · teléfono y email",
@@ -210,26 +238,31 @@
           "type": "mcq",
           "q": "What does GreenMarket want?",
           "options": [
-            "A price estimate for a website",
-            "A new team lead",
-            "A list of new tasks"
+            "A meeting with the new team lead",
+            "An update on the product list",
+            "A price estimate for the website"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
-          "q": "Why isn't the price estimate ready yet?",
+          "q": "Why is the price estimate not ready yet?",
           "options": [
-            "Marcos is not available today",
-            "Marcos is waiting for an update from the client",
-            "Sofia lost the email"
+            "He did not receive the product list from David yet",
+            "He is not available for a call today",
+            "He is waiting for an update from the client"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "Sofia offers to call the client to check.",
-          "answer": true
+          "type": "mcq",
+          "q": "What does Sofia offer to do?",
+          "options": [
+            "Call the client herself",
+            "Send the estimate today",
+            "Write the product list"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -284,47 +317,47 @@
         {
           "q": "Let me ___ that for you.",
           "options": [
-            "check",
+            "checks",
             "checking",
-            "checks"
+            "check"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "Could you please ___ the details?",
           "options": [
-            "confirm",
+            "confirming",
             "confirms",
-            "confirming"
+            "confirm"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "I'll ___ you the price estimate today.",
           "options": [
+            "sending",
             "send",
-            "sends",
-            "sending"
+            "sends"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "I'm ___ for an update from the client.",
           "options": [
-            "waiting",
             "wait",
-            "waits"
+            "waits",
+            "waiting"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "The product list is ___ to my email.",
           "options": [
-            "attached",
+            "attaching",
             "attach",
-            "attaching"
+            "attached"
           ],
-          "answer": 0
+          "answer": 2
         }
       ]
     },
@@ -341,26 +374,31 @@
           "type": "mcq",
           "q": "What does David want to add to the project?",
           "options": [
-            "More products",
-            "An online payment system",
-            "A second website"
+            "A longer list of products",
+            "A second website for the shop",
+            "An online payment system"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What happens to the price estimate with the payment system?",
           "options": [
             "It is a little higher",
-            "It is a little lower",
-            "It stays the same"
+            "It stays the same",
+            "It is a little lower"
           ],
           "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "The team can start next Monday if David confirms today.",
-          "answer": true
+          "type": "mcq",
+          "q": "When can the team start?",
+          "options": [
+            "This afternoon, when the email arrives",
+            "Next Monday, if David confirms today",
+            "Next month, after the payment system"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -422,7 +460,21 @@
       ],
       "placeholder": "Hi David,",
       "example": "Hi (name), Thank you for your (email / request). The (document) is almost ready — I'm just waiting for (something). I attached the (document) to this email. Could you (request)? I'll get back to you (when). Best, (your name)",
-      "hw": "Escribe tu email y envíamelo por WhatsApp para corregirlo juntos."
+      "hw": "Escribe tu email y envíamelo por WhatsApp. Después grábate <b>explicando en voz alta</b> de qué trata, sin leerlo.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste las fórmulas de email (<b>Could you… / I’ll… / attached</b>) al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

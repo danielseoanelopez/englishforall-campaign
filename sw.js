@@ -1,7 +1,8 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v4";
+const CACHE = "rankup-v5";
 const CORE = [
+  "index.html", "lesson.html", "lesson.css", "biz.css", "biz.js",
   "city.html", "neon-cafe.html", "neon-office.html", "cards.html", "manifest.json",
   "logo.png", "bg-cafe.jpg", "nebula.jpg", "map-city.jpg",
   "icon-192.png", "icon-rankup.png",
@@ -32,13 +33,15 @@ self.addEventListener("fetch", e => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   const isHTML = req.mode === "navigate" || url.pathname.endsWith(".html");
+  const isLessonData = /\/lessons\/[^/]+\.json$/.test(url.pathname);
 
-  if (isHTML) {
+  if (isHTML || isLessonData) {
     // network-first so new deploys always win when online
     e.respondWith(
       fetch(req)
         .then(res => { const copy = res.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return res; })
-        .catch(() => caches.match(req).then(r => r || caches.match("city.html")))
+        .catch(() => caches.match(req).then(r => r || caches.match(
+          url.pathname.indexOf("city") > -1 || url.pathname.indexOf("neon") > -1 ? "city.html" : "index.html")))
     );
     return;
   }

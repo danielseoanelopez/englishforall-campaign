@@ -15,6 +15,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Book 📖",
+          "r": "libro"
+        },
+        {
+          "l": "Bag 🎒",
+          "r": "mochila / bolso"
+        },
+        {
+          "l": "Key 🔑",
+          "r": "llave"
+        },
+        {
+          "l": "Chair 🪑",
+          "r": "silla"
+        },
+        {
+          "l": "Pen 🖊️",
+          "r": "lapicera"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "preguntas y respuestas",
       "title": "📘 QUESTIONS · do / does / can / Wh-",
@@ -190,11 +218,11 @@
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
+            "I'm fine.",
             "My name is Pablo.",
-            "I'm from Spain.",
-            "I'm fine."
+            "I'm from Spain."
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "spk": "Ana",
@@ -219,11 +247,11 @@
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
-            "Yes, I can.",
+            "It's Monday.",
             "I'm from Brazil.",
-            "It's Monday."
+            "Yes, I can."
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "spk": "Ana",
@@ -234,11 +262,11 @@
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
-            "Yes, I do.",
+            "On Monday.",
             "I'm twenty.",
-            "On Monday."
+            "Yes, I do."
           ],
-          "answer": 0
+          "answer": 2
         }
       ]
     },
@@ -271,6 +299,58 @@
       ]
     },
     {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "DO YOU…? vs CAN YOU…?",
+      "intro": "Las dos preguntas son correctas, pero NO preguntan lo mismo. Lee las dos y elige.",
+      "pair": {
+        "a": "Do you play the guitar?",
+        "b": "Can you play the guitar?"
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "La pregunta A pregunta…",
+          "options": [
+            "Si lo haces normalmente (hábito)",
+            "Si quieres hacerlo ahora",
+            "Si sabes hacerlo (habilidad)"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "La pregunta B pregunta…",
+          "options": [
+            "Si sabes hacerlo (habilidad)",
+            "Si lo haces normalmente (hábito)",
+            "Si te gusta hacerlo"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Tu amigo estudió guitarra cinco años, pero ya no toca nunca. ¿Qué es verdad?",
+          "options": [
+            "He plays, but he can't play.",
+            "He doesn't play and he can't play.",
+            "He can play, but he doesn't play."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Quieres saber si tu compañero sabe nadar. ¿Qué preguntas?",
+          "options": [
+            "Do you swim?",
+            "Can you swim?",
+            "Are you swim?"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · GETTING TO KNOW YOU",
@@ -283,26 +363,31 @@
           "type": "mcq",
           "q": "Where does Tom live?",
           "options": [
+            "Mexico City",
             "Toronto",
-            "Madrid",
-            "Mexico City"
+            "Madrid"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Can Tom swim?",
           "options": [
-            "Yes, he can",
             "No, he can't",
-            "He doesn't say"
+            "He doesn't say",
+            "Yes, he can"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "Tom plays football.",
-          "answer": true
+          "type": "mcq",
+          "q": "What does Tom do on weekends?",
+          "options": [
+            "He usually plays football",
+            "He sees his friends",
+            "He goes swimming"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -375,27 +460,27 @@
         {
           "q": "___ you swim? — No, I can't.",
           "options": [
-            "Can",
+            "Are",
             "Do",
-            "Are"
+            "Can"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "What ___ they do?",
           "options": [
+            "are",
             "do",
-            "does",
-            "are"
+            "does"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "___ he like football?",
           "options": [
             "Does",
-            "Do",
-            "Is"
+            "Is",
+            "Do"
           ],
           "answer": 0
         }
@@ -413,7 +498,21 @@
       ],
       "placeholder": "I live in...",
       "example": "I live in (city). I'm a (job) and I work in (place). I like (thing) and I play (instrument / sport). I can (verb), but I can't (verb). On weekends, I (activity).",
-      "hw": "Responde las preguntas y graba un audio. Mándame ambos por WhatsApp. ¡Después, a por el examen del mundo A1!"
+      "hw": "Responde las preguntas y graba un audio. Mándame ambos por WhatsApp. ¡Después, a por el examen del mundo A1!",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>do / does / can</b> en preguntas y respuestas al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "voices": {

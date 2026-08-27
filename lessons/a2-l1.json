@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Where…?",
+          "r": "¿dónde…?"
+        },
+        {
+          "l": "Can you…?",
+          "r": "¿sabes / puedes…?"
+        },
+        {
+          "l": "Why…?",
+          "r": "¿por qué…?"
+        },
+        {
+          "l": "How…?",
+          "r": "¿cómo…?"
+        },
+        {
+          "l": "Who…?",
+          "r": "¿quién…?"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "present simple",
       "title": "📘 PRESENT SIMPLE & FREQUENCY",
@@ -171,56 +199,74 @@
         {
           "q": "She ___ her emails every morning.",
           "options": [
-            "checks",
+            "checking",
             "check",
-            "checking"
+            "checks"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "We ___ at nine o'clock.",
           "options": [
-            "start",
             "starts",
-            "starting"
+            "starting",
+            "start"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "He ___ work on weekends.",
           "options": [
-            "doesn't",
             "don't",
-            "isn't"
+            "isn't",
+            "doesn't"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "___ you work remotely?",
           "options": [
-            "Do",
             "Does",
+            "Do",
             "Are"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "Marcos always ___ a coffee in the morning.",
           "options": [
             "needs",
-            "need",
-            "needing"
+            "needing",
+            "need"
           ],
           "answer": 0
         },
         {
           "q": "She is ___ late for the meeting. (0%)",
           "options": [
-            "never",
+            "often",
             "always",
-            "often"
+            "never"
           ],
-          "answer": 0
+          "answer": 2
+        },
+        {
+          "q": "My manager ___ the report every Friday.",
+          "options": [
+            "reviewing",
+            "review",
+            "reviews"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "He ___ English every day before work.",
+          "options": [
+            "studys",
+            "study",
+            "studies"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -237,26 +283,31 @@
           "type": "mcq",
           "q": "What time does the team usually start?",
           "options": [
+            "At eleven",
             "At nine o'clock",
-            "At eight thirty",
-            "At eleven"
+            "At eight thirty"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What does Sofia always do first?",
           "options": [
-            "She writes reports",
+            "She has a short meeting",
             "She checks her emails",
-            "She has lunch"
+            "She writes her reports"
           ],
           "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "Sofia works on weekends.",
-          "answer": false
+          "type": "mcq",
+          "q": "When does Sofia write reports?",
+          "options": [
+            "In the morning",
+            "In the afternoon",
+            "Before lunch"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -351,26 +402,31 @@
           "type": "mcq",
           "q": "What does Marcos always need in the morning?",
           "options": [
-            "A meeting",
-            "Coffee",
-            "A walk"
+            "Breakfast",
+            "A quiet room",
+            "Coffee"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "When does Marcos often work on the website?",
           "options": [
-            "In the morning, because it's quiet",
-            "Late at night",
-            "During lunch"
+            "Late at night, when nobody writes",
+            "In the morning, because it is quiet",
+            "In the afternoon, after he has lunch"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "Marcos works late every day.",
-          "answer": false
+          "type": "mcq",
+          "q": "How often does Marcos work late?",
+          "options": [
+            "Every day, until six",
+            "Never, he always logs off",
+            "Rarely, only on busy days"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -397,7 +453,21 @@
       ],
       "placeholder": "I usually wake up at...",
       "example": "I usually wake up at (time). I always (routine) before work. I start at (time) and I often (activity) first. My colleague (name) usually (activity) in the afternoon. I never (activity) on Sundays.",
-      "hw": "Escribe tu rutina y graba un audio leyéndola. Envíame ambos por WhatsApp y lo corregimos."
+      "hw": "Escribe tu rutina. Después grábate contándola <b>sin leer</b> — anota solo 4–5 palabras clave y habla desde ahí. Envíame el texto y el audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste el <b>present simple</b> + adverbios de frecuencia al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

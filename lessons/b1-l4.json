@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "out of nowhere",
+          "r": "de la nada"
+        },
+        {
+          "l": "to keep an eye on…",
+          "r": "estar pendiente de…"
+        },
+        {
+          "l": "to look into the logs",
+          "r": "revisar los registros"
+        },
+        {
+          "l": "as soon as…",
+          "r": "apenas / en cuanto…"
+        },
+        {
+          "l": "the site went down",
+          "r": "el sitio se cayó"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "conditionals",
       "title": "📘 CONDICIONALES · 1st & 2nd",
@@ -51,44 +79,52 @@
       "vocabBtn": "📒 Ver vocabulario de negociación",
       "vocab": [
         {
-          "en": "Scope",
-          "sp": "alcance (del proyecto)"
+          "en": "to meet you halfway",
+          "sp": "llegar a un punto medio"
         },
         {
-          "en": "Budget",
-          "sp": "presupuesto"
+          "en": "that works for us",
+          "sp": "eso nos sirve"
         },
         {
-          "en": "Discount",
-          "sp": "descuento"
+          "en": "the best I can do is…",
+          "sp": "lo máximo que puedo hacer es…"
         },
         {
-          "en": "To negotiate",
-          "sp": "negociar"
+          "en": "as long as…",
+          "sp": "siempre y cuando…"
         },
         {
-          "en": "Deal",
-          "sp": "trato / acuerdo"
+          "en": "unless…",
+          "sp": "a menos que…"
         },
         {
-          "en": "Extra cost",
-          "sp": "costo adicional"
+          "en": "to push it to phase two",
+          "sp": "pasarlo a la fase dos"
         },
         {
-          "en": "To confirm",
-          "sp": "confirmar"
+          "en": "at no extra cost",
+          "sp": "sin costo adicional"
         },
         {
-          "en": "Phase",
-          "sp": "fase / etapa"
+          "en": "to come in under budget",
+          "sp": "quedar por debajo del presupuesto"
         },
         {
-          "en": "To deliver",
-          "sp": "entregar"
+          "en": "if you confirm by…",
+          "sp": "si confirmas antes de…"
         },
         {
-          "en": "Agreement",
-          "sp": "acuerdo"
+          "en": "a change of scope",
+          "sp": "un cambio de alcance"
+        },
+        {
+          "en": "that sounds fair",
+          "sp": "me parece justo"
+        },
+        {
+          "en": "to close the deal",
+          "sp": "cerrar el trato"
         }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> 📝, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>unir</b> 🔗. Haz el ✓ CHECK en cada ejercicio."
@@ -186,45 +222,45 @@
         {
           "q": "If you confirm today, we ___ on Monday.",
           "options": [
+            "started",
             "will start",
-            "would start",
-            "started"
+            "would start"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "If we ___ more time, we would add a mobile app.",
           "options": [
+            "will have",
             "had",
-            "have",
-            "will have"
+            "have"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "We can't begin ___ you sign the agreement.",
           "options": [
+            "as long as",
             "unless",
-            "if",
-            "as long as"
+            "if"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "If the budget ___ bigger, we'd hire another developer.",
           "options": [
-            "were",
+            "will be",
             "is",
-            "will be"
+            "were"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "We'll deliver on time ___ the scope doesn't change.",
           "options": [
             "as long as",
-            "unless",
-            "would"
+            "would",
+            "unless"
           ],
           "answer": 0
         },
@@ -232,10 +268,37 @@
           "q": "If you ___ the extra feature, there will be an extra cost.",
           "options": [
             "want",
-            "will want",
-            "wanted"
+            "wanted",
+            "will want"
           ],
           "answer": 0
+        },
+        {
+          "q": "If I ___ you, I'd ask for two more weeks.",
+          "options": [
+            "were",
+            "was",
+            "am"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "If they gave us more time, we ___ add the app now.",
+          "options": [
+            "would have",
+            "would",
+            "will"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "We wouldn't need a discount if the budget ___ bigger.",
+          "options": [
+            "will be",
+            "is",
+            "were"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -253,11 +316,11 @@
           "gap": true,
           "q": "Ofreces una alternativa realista:",
           "options": [
-            "If you increase the budget a little, we'll build both.",
             "If you will pay more, we build both.",
+            "If you increase the budget a little, we'll build both.",
             "No. Goodbye."
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "spk": "Client",
@@ -268,11 +331,11 @@
           "gap": true,
           "q": "Respondes a la hipótesis (2nd conditional):",
           "options": [
-            "If we had a bigger budget, we would add a mobile app too.",
             "If we have a bigger budget, we will added apps.",
-            "I am from the web team."
+            "I am from the web team.",
+            "If we had a bigger budget, we would add a mobile app too."
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "spk": "Client",
@@ -297,11 +360,63 @@
           "gap": true,
           "q": "Explicas la consecuencia con tacto:",
           "options": [
+            "She is a teacher.",
             "Unless you confirm this week, we can't start until next month.",
-            "If you don't confirm, is your problem.",
-            "She is a teacher."
+            "If you don't confirm, is your problem."
           ],
-          "answer": 0
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "1st vs 2nd CONDITIONAL",
+      "intro": "Misma oferta, dos mundos distintos: una está <b>sobre la mesa ahora</b>, la otra es <b>hipotética</b>. En una negociación, confundirlas te cuesta dinero.",
+      "pair": {
+        "a": "If you confirm today, we'll start on Monday.",
+        "b": "If you confirmed today, we'd start on Monday."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál es una oferta real, disponible ahora mismo?",
+          "options": [
+            "Las dos igual",
+            "A — 1st conditional",
+            "B — 2nd conditional"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál suena hipotética y más suave, casi como “imaginemos”?",
+          "options": [
+            "Ninguna de las dos",
+            "A — 1st conditional",
+            "B — 2nd conditional"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "El cliente PUEDE confirmar hoy y tú quieres cerrar. ¿Qué dices?",
+          "options": [
+            "If you will confirm today, we start Monday.",
+            "If you confirmed today, we'd start Monday.",
+            "If you confirm today, we'll start Monday."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "El presupuesto no da, y quieres explicarlo sin cerrar la puerta. ¿Qué dices?",
+          "options": [
+            "If we had more budget, we will build it.",
+            "If we had more budget, we would build it.",
+            "If we have more budget, we will build it."
+          ],
+          "answer": 1
         }
       ]
     },
@@ -318,36 +433,41 @@
           "type": "mcq",
           "q": "What does David want to add to the project?",
           "options": [
-            "A mobile app",
             "A new logo",
-            "More payment options"
+            "More payment options",
+            "A mobile app"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What is Priya's condition for building the app?",
           "options": [
+            "A smaller scope",
             "A bigger budget",
-            "More time",
-            "A new team"
+            "More time to plan it"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What do they agree in the end?",
           "options": [
-            "The app will be phase two, with a discount",
-            "The app is canceled forever",
-            "David gets everything for free"
+            "The app becomes phase two, with a discount",
+            "The app is built now, at thirty percent more",
+            "The app is dropped and the site launches early"
           ],
           "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "Marcos promises to deliver the website on time as long as the scope doesn't change.",
-          "answer": true
+          "type": "mcq",
+          "q": "What is Marcos's condition for delivering on the fifteenth?",
+          "options": [
+            "Priya approves a bigger budget",
+            "The scope does not change again",
+            "David confirms phase two on Friday"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -445,26 +565,31 @@
           "type": "mcq",
           "q": "What discount did Marcos offer David?",
           "options": [
-            "Ten percent",
             "Thirty percent",
+            "Ten percent",
             "Fifty percent"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What will Sofia do if David confirms on Friday?",
           "options": [
-            "Start planning phase two",
-            "Cancel the website",
-            "Take a holiday"
+            "Deliver the website on the fifteenth",
+            "Start planning phase two next week",
+            "Ask Priya for a bigger budget"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "Sofia thinks the deal was a bad idea.",
-          "answer": false
+          "type": "mcq",
+          "q": "What does Sofia think of the deal?",
+          "options": [
+            "She thinks it was too cheap",
+            "She thinks it was risky",
+            "She thinks it was smart"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -517,8 +642,22 @@
         "Cierra pidiendo confirmación (<i>Could you confirm by…?</i>)"
       ],
       "placeholder": "Hi David, Thanks for your message about…",
-      "example": "Hi (name), Thanks for your message about (topic) — it's a great idea. If you (condition), we'll (result). If we had (imaginary thing), we would (action), but (reality). As long as (condition), we'll (promise). Could you confirm by (day)? Best, (your name)",
-      "hw": "Escribe tu email de contraoferta y envíamelo por WhatsApp para corregirlo juntos."
+      "example": "Thanks for your message about the extra features — it's a great idea… — sigue tú: una condición real (1st), una hipótesis (2nd), un unless o as long as, y cierra pidiendo confirmación.",
+      "hw": "Escribe tu contraoferta y envíamela por WhatsApp. Después grábate <b>diciéndosela al cliente en voz alta, sin leer</b> — tono tranquilo y firme.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste el <b>1st y 2nd conditional</b> + unless / as long as al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

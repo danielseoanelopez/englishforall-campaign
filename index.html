@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <style>
   :root {
     --cyan: #00e5ff; --magenta: #ff3df0; --purple: #9d4dff; --gold: #ffc83d;
@@ -137,6 +137,18 @@
 
   @media (min-width: 860px) { body { font-size: 18px; } .brand .logo { height: 140px; } }
   @media (max-width: 520px) { .w-theme { display: none; } .w-head { gap: 11px; padding: 15px 14px; } .w-badge { width: 50px; height: 50px; font-size: 0.8rem; } }
+  .home-cta .btn.cont { background: linear-gradient(180deg,#3dffa0,#12b46a); border-color:#8affd0; color:#04240f; }
+  .docs-row { margin-top: 14px; font-size: 0.82rem; line-height: 1.9; }
+  .docs-row .docs-lbl { color: var(--muted); margin-right: 6px; }
+  .docs-row a { color: var(--cyan); text-decoration: none; border-bottom: 1px dotted var(--cyan); margin-right: 12px; }
+  .save-row { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .mini-btn { background: #10122a; color: var(--muted); border: 1px solid #2a3160; border-radius: 8px;
+              padding: 6px 10px; font-family: 'Share Tech Mono', monospace; font-size: 0.78rem; cursor: pointer; }
+  .mini-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+  .save-hint { font-size: 0.72rem; color: #6f7796; flex: 1 1 220px; }
+  .lvl-banner { background: rgba(61,255,160,0.10); border: 1px solid var(--green); border-radius: 12px;
+                padding: 10px 14px; margin: 0 0 14px; font-size: 0.86rem; color: var(--green); }
+  .world.target { box-shadow: 0 0 0 2px var(--green), 0 0 22px #3dffa055; }
 </style>
 </head>
 <body>
@@ -165,6 +177,19 @@
     <div class="ov-label" id="ovLabel">⭐ 0 / 0 estrellas</div>
     <div class="home-cta">
       <a class="btn test" href="https://danielseoanelopez.github.io/englishforall/" target="_blank" rel="noopener"><i class="fa-solid fa-gamepad"></i> TEST DE NIVEL</a>
+      <a class="btn cont" id="continueCta" href="#" style="display:none"></a>
+    </div>
+    <div class="docs-row">
+      <span class="docs-lbl">📄 Guías del curso (para leer o imprimir):</span>
+      <a href="a1-conversation-course.html">Conversación A1</a>
+      <a href="business-english-b1-course.html">Business B1–B2</a>
+      <a href="travel-living-b1b2-course.html">Travel &amp; Living</a>
+      <a href="ielts-general-a2-course.html">IELTS General</a>
+    </div>
+    <div class="save-row">
+      <button type="button" class="mini-btn" onclick="exportProgress()">💾 Guardar mi progreso</button>
+      <button type="button" class="mini-btn" onclick="importProgress()">📥 Restaurar progreso</button>
+      <span class="save-hint">Tu progreso vive solo en este navegador. Guarda el código para pasarlo a otro dispositivo.</span>
     </div>
   </div>
 
@@ -261,16 +286,16 @@ const COLORS = {
   gold:   ["var(--gold)",   "#ffc83d44"]
 };
 const CAMPAIGN = [
-  { id: "A1", name: "First Contact", theme: "Saludos, datos personales, primeros pasos", color: "cyan",
+  { id: "A1", name: "First Contact", theme: "Saludos, datos personales, primeros pasos", min: 40, color: "cyan",
     lessons: [
       { t: "Greetings & introductions", sp: "Saludos y presentarse", url: "lesson.html?id=a1-l1" },
       { t: "Personal info: name, country, job", sp: "Datos personales", url: "lesson.html?id=a1-l2" },
       { t: "Numbers, days & telling time", sp: "Números, días y la hora", url: "lesson.html?id=a1-l3" },
-      { t: "To be / have got", sp: "Verbos ser/estar y tener", url: "lesson.html?id=a1-l4" },
+      { t: "To be & have", sp: "Verbos ser/estar y tener", url: "lesson.html?id=a1-l4" },
       { t: "Everyday objects & places", sp: "Objetos y lugares", url: "lesson.html?id=a1-l5" },
       { t: "Simple questions & answers", sp: "Preguntas y respuestas", url: "lesson.html?id=a1-l6" }
     ], boss: { t: "A1 BOSS TEST", url: "a1-final.html" } },
-  { id: "A2", name: "On the Job", theme: "Inglés laboral y de trabajo remoto", color: "magenta",
+  { id: "A2", name: "On the Job", theme: "Inglés laboral y de trabajo remoto", min: 45, color: "magenta",
     lessons: [
       { t: "Daily Routines & Present Simple", sp: "Rutinas y presente simple", url: "lesson.html?id=a2-l1" },
       { t: "Remote Work Vocab & Emails", sp: "Trabajo remoto y emails", url: "lesson.html?id=a2-l2" },
@@ -279,7 +304,7 @@ const CAMPAIGN = [
       { t: "Comparatives & Describing", sp: "Comparativos y describir", url: "lesson.html?id=a2-l5" },
       { t: "Plans: going to / present continuous", sp: "Planes a futuro", url: "lesson.html?id=a2-l6" }
     ], boss: { t: "A2 BOSS TEST", url: "a2-final.html" } },
-  { id: "B1", name: "Holding Your Own", theme: "Reuniones, opiniones, contar historias", color: "purple",
+  { id: "B1", name: "Holding Your Own", theme: "Reuniones, opiniones, contar historias", min: 45, color: "purple",
     lessons: [
       { t: "Present Perfect — What I've Done", sp: "Presente perfecto", url: "lesson.html?id=b1-l1" },
       { t: "Running a Meeting", sp: "Dirigir reuniones con diplomacia", url: "lesson.html?id=b1-l2" },
@@ -288,7 +313,7 @@ const CAMPAIGN = [
       { t: "Opinions & Pushing Back", sp: "Opinar y discrepar con tacto", url: "lesson.html?id=b1-l5" },
       { t: "Looking Ahead", sp: "Futuros: will / going to / -ing", url: "lesson.html?id=b1-l6" }
     ], boss: { t: "B1 BOSS · THE BIG PITCH", url: "b1-final.html" } },
-  { id: "B2", name: "The Professional", theme: "Entrevistas, presentaciones, negociar", color: "green",
+  { id: "B2", name: "The Professional", theme: "Entrevistas, presentaciones, negociar", min: 45, color: "green",
     lessons: [
       { t: "Job interviews", sp: "Entrevistas de trabajo", url: null },
       { t: "Presentations", sp: "Presentaciones", url: null },
@@ -297,7 +322,7 @@ const CAMPAIGN = [
       { t: "Negotiation", sp: "Negociación", url: null },
       { t: "Formal writing", sp: "Escritura formal", url: null }
     ], boss: null },
-  { id: "C1", name: "Advanced Operator", theme: "Idioms, debate, escucha rápida", color: "gold",
+  { id: "C1", name: "Advanced Operator", theme: "Idioms, debate, escucha rápida", min: 50, color: "gold",
     lessons: [
       { t: "Idioms & collocations", sp: "Modismos", url: null },
       { t: "Cohesion & linking", sp: "Cohesión del discurso", url: null },
@@ -306,7 +331,7 @@ const CAMPAIGN = [
       { t: "Fast-speech listening", sp: "Escucha de habla rápida", url: null },
       { t: "Cross-cultural communication", sp: "Comunicación intercultural", url: null }
     ], boss: null },
-  { id: "C2", name: "Mastery", theme: "Matiz, registro, fluidez espontánea", color: "cyan",
+  { id: "C2", name: "Mastery", theme: "Matiz, registro, fluidez espontánea", min: 50, color: "cyan",
     lessons: [
       { t: "Nuance & precision", sp: "Matiz y precisión", url: null },
       { t: "Register & humor", sp: "Registro y humor", url: null },
@@ -401,9 +426,9 @@ function render() {
 
     host.insertAdjacentHTML("beforeend", `
       <div class="world ${unlocked ? "" : "locked"} ${expanded}" style="--accent:${accent};--glow:${glow}" data-aos="fade-up">
-        <div class="w-head" onclick="toggleWorld(this)">
+        <div class="w-head" role="button" tabindex="0" aria-expanded="false" onclick="toggleWorld(this)" onkeydown="wKey(event,this)">
           <div class="w-badge">${w.id}</div>
-          <div class="w-meta"><div class="w-name">${w.name}</div><div class="w-theme">${w.theme}</div></div>
+          <div class="w-meta"><div class="w-name">${w.name}</div><div class="w-theme">${w.theme}${w.min ? ` · ~${w.min} min/lección` : ""}</div></div>
           <div class="w-right">${pill}${starsLine}</div>
           <div class="w-chev">▶</div>
         </div>
@@ -419,10 +444,85 @@ function render() {
 function toggleWorld(head) {
   const w = head.closest(".world");
   w.classList.toggle("expanded");
+  head.setAttribute("aria-expanded", w.classList.contains("expanded") ? "true" : "false");
   blip();
+}
+function wKey(e, head) {
+  if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") { e.preventDefault(); toggleWorld(head); }
 }
 
 render();
+
+// ===== A4: continue where you left off =====
+(function continueCta(){
+  var next = null;
+  for (var i = 0; i < CAMPAIGN.length && !next; i++) {
+    var w = CAMPAIGN[i];
+    if (!(TEACHER || worldBuilt(w))) continue;
+    for (var j = 0; j < w.lessons.length; j++) {
+      var l = w.lessons[j];
+      if (l.url && getStars("rankup_" + w.id + "_L" + (j + 1)) === 0) {
+        next = { href: l.url, label: w.id + " · L" + (j + 1) + " — " + l.t }; break;
+      }
+    }
+    if (!next && w.boss && w.boss.url && getStars("rankup_" + w.id + "_boss") === 0) {
+      next = { href: w.boss.url, label: w.id + " · " + w.boss.t };
+    }
+  }
+  var a = document.getElementById("continueCta");
+  if (!a || !next) return;
+  var started = Object.keys(localStorage).some(function(k){ return k.indexOf("rankup_") === 0; });
+  a.href = next.href;
+  a.innerHTML = '<i class="fa-solid fa-play"></i> ' + (started ? "CONTINUAR" : "EMPEZAR") + ": " + next.label;
+  a.style.display = "";
+})();
+
+// ===== A6: arrive from the level test with ?level=A2 =====
+(function levelParam(){
+  var p = new URLSearchParams(location.search);
+  var lv = (p.get("level") || p.get("nivel") || "").toUpperCase().trim();
+  if (!lv) return;
+  var idx = CAMPAIGN.findIndex(function(w){ return w.id === lv; });
+  if (idx < 0) return;
+  // levels above the built slice (B2/C1/C2) land on the highest world that actually has lessons
+  var notBuiltYet = !worldBuilt(CAMPAIGN[idx]);
+  if (notBuiltYet) {
+    for (var k = CAMPAIGN.length - 1; k >= 0; k--) { if (worldBuilt(CAMPAIGN[k])) { idx = k; break; } }
+  }
+  var cards = document.querySelectorAll("#worlds .world");
+  var card = cards[idx];
+  if (!card) return;
+  var home = document.querySelector(".home");
+  if (home) home.insertAdjacentHTML("afterend", '<div class="lvl-banner">🎯 Tu test de nivel dice <b>' + lv + '</b> — '
+    + (notBuiltYet
+       ? 'ese mundo está en construcción, así que empieza por <b>' + CAMPAIGN[idx].id + '</b> y lo estiramos en clase.'
+       : 'empieza por este mundo.') + '</div>');
+  card.classList.add("expanded", "target");
+  var head = card.querySelector(".w-head");
+  if (head) head.setAttribute("aria-expanded", "true");
+  setTimeout(function(){ card.scrollIntoView({ behavior: "smooth", block: "center" }); }, 250);
+})();
+
+// ===== A7: move progress between devices =====
+function progressKeys(){ return Object.keys(localStorage).filter(function(k){ return k.indexOf("rankup_") === 0; }); }
+function exportProgress(){
+  var o = {}; progressKeys().forEach(function(k){ o[k] = localStorage.getItem(k); });
+  if (!Object.keys(o).length) { alert("Todavía no tienes progreso guardado. Completa una lección primero."); return; }
+  var code = btoa(JSON.stringify(o));
+  try { navigator.clipboard.writeText(code); } catch (e) {}
+  window.prompt("Tu código de progreso (ya copiado). Guárdalo y pégalo en el otro dispositivo:", code);
+}
+function importProgress(){
+  var code = window.prompt("Pega aquí tu código de progreso:");
+  if (!code) return;
+  try {
+    var o = JSON.parse(atob(code.trim()));
+    var n = 0;
+    Object.keys(o).forEach(function(k){ if (k.indexOf("rankup_") === 0) { localStorage.setItem(k, o[k]); n++; } });
+    alert("Progreso restaurado (" + n + " registros). Recargando…");
+    location.href = location.pathname;
+  } catch (e) { alert("Ese código no es válido. Copia el código completo, sin espacios."); }
+}
 
 // ===== Thematic sidequest tracks (bonus · always available) =====
 (function renderSidequests() {
@@ -449,39 +549,54 @@ render();
         { t: "Checking In & Sorting Problems", sp: "Alojamiento · present perfect", url: "trv-l2.html", key: "rankup_TRV_l2" },
         { t: "Eating Out & Recommendations", sp: "Comer fuera · comparativos", url: "trv-l3.html", key: "rankup_TRV_l3" },
         { t: "Trips & Stories", sp: "Historias de viaje · pasados", url: "trv-l4.html", key: "rankup_TRV_l4" }
+      ] },
+    { name: "IELTS General Training", theme: "Examen · A2 → banda 4.5–5", badge: "🎓", accent: "var(--magenta)", glow: "#ff3df055", pill: "EXAMEN", min: 50,
+      lessons: [
+        { t: "Meet IELTS + Speaking Part 1", sp: "El examen + respuestas extendidas", url: "iel-l1.html", key: "rankup_IEL_l1" },
+        { t: "Listening 1 — Everyday info & forms", sp: "Deletreo, números y formularios", url: null, key: "rankup_IEL_l2" },
+        { t: "Reading 1 — Notices, ads & scanning", sp: "Skim, scan y True/False/Not Given", url: null, key: "rankup_IEL_l3" },
+        { t: "Writing Task 1 — Letters", sp: "Cartas formales e informales", url: null, key: "rankup_IEL_l4" },
+        { t: "Speaking Part 2 — The long turn", sp: "Hablar 2 minutos seguidos", url: null, key: "rankup_IEL_l5" },
+        { t: "Listening 2 — Monologues & maps", sp: "Monólogos y mapas", url: null, key: "rankup_IEL_l6" },
+        { t: "Reading 2 — Longer texts", sp: "Textos largos y encabezados", url: null, key: "rankup_IEL_l7" },
+        { t: "Writing Task 2 — Opinion essay", sp: "Ensayo de opinión", url: null, key: "rankup_IEL_l8" }
       ] }
   ];
   TRACKS.forEach(function (tr, ti) {
-    var rows = "", earned = 0, max = tr.lessons.length * 5;
+    var rows = "", earned = 0, max = 0;
     tr.lessons.forEach(function (l, i) {
-      var st = getStars(l.key); earned += st;
-      var status = st > 0 ? starStr(st) : '<span class="play">JUGAR ▸</span>';
-      rows += '<a class="lrow" href="' + l.url + '">'
+      var built = !!l.url;
+      var st = built ? getStars(l.key) : 0;
+      if (built) { earned += st; max += 5; }
+      var status = !built ? '<span class="soon">PRÓXIMA</span>'
+                 : (st > 0 ? starStr(st) : '<span class="play">JUGAR ▸</span>');
+      var tag = built ? "a" : "div";
+      rows += '<' + tag + ' class="lrow' + (built ? '' : ' locked') + '"' + (built ? ' href="' + l.url + '"' : '') + '>'
         + '<div class="lnum">' + (i + 1) + '</div>'
         + '<div class="linfo"><div class="ltitle">' + l.t + '</div><div class="lsub">' + l.sp + '</div></div>'
-        + '<div class="lstatus">' + status + '</div></a>';
+        + '<div class="lstatus">' + status + '</div></' + tag + '>';
     });
-    var sep = '<div class="boss-sep">' + tr.badge + ' ' + tr.name.toUpperCase() + ' · 4 LECCIONES</div>';
+    var nBuilt = tr.lessons.filter(function (l) { return !!l.url; }).length;
+    var sep = '<div class="boss-sep">' + tr.badge + ' ' + tr.name.toUpperCase() + ' · '
+            + (nBuilt === tr.lessons.length ? tr.lessons.length + ' LECCIONES'
+               : nBuilt + ' DE ' + tr.lessons.length + ' LISTAS') + '</div>';
     var expanded = ti === 0 ? "expanded" : "";
     host.insertAdjacentHTML("beforeend",
       '<div class="world ' + expanded + '" style="--accent:' + tr.accent + ';--glow:' + tr.glow + '" data-aos="fade-up">'
-      + '<div class="w-head" onclick="toggleWorld(this)">'
+      + '<div class="w-head" role="button" tabindex="0" aria-expanded="false" onclick="toggleWorld(this)" onkeydown="wKey(event,this)">'
       + '<div class="w-badge">' + tr.badge + '</div>'
-      + '<div class="w-meta"><div class="w-name">' + tr.name + '</div><div class="w-theme">' + tr.theme + '</div></div>'
+      + '<div class="w-meta"><div class="w-name">' + tr.name + '</div><div class="w-theme">' + tr.theme + (tr.min ? ' · ~' + tr.min + ' min/lección' : '') + '</div></div>'
       + '<div class="w-right"><span class="w-pill open" style="color:' + tr.accent + '">' + tr.pill + '</span><div class="w-stars">⭐ ' + earned + '/' + max + '</div></div>'
       + '<div class="w-chev">▶</div></div>'
       + '<div class="w-body">' + sep + rows + '</div></div>');
   });
 })();
 </script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-  try {
-    AOS.init({ duration: 700, once: true, offset: 30 });
-    setTimeout(function () { document.querySelectorAll("[data-aos]:not(.aos-animate)").forEach(function (el) { el.classList.add("aos-animate"); }); }, 4000);
-  } catch (e) {
-    document.querySelectorAll("[data-aos]").forEach(function (el) { el.removeAttribute("data-aos"); });
-  }
+  // AOS removed: the map now paints without waiting on a third-party CDN.
+  document.querySelectorAll("[data-aos]").forEach(function (el) {
+    el.removeAttribute("data-aos"); el.removeAttribute("data-aos-delay");
+  });
 </script>
 <!-- GoatCounter analytics — privacy-friendly, no cookies. -->
 <script data-goatcounter="https://englishforall.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

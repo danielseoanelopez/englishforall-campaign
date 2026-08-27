@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <link rel="stylesheet" href="biz.css">
 </head>
 <body>
@@ -233,8 +233,8 @@
     </div>
     <div class="q" data-correct="c">
       <p><span class="qnum">03</span>Where will they meet later?</p>
-      <label class="option"><input type="radio" name="l1q3" value="a"><span>At the bank, next to the station</span></label>
-      <label class="option"><input type="radio" name="l1q3" value="b"><span>On the fifth floor, in the office</span></label>
+      <label class="option"><input type="radio" name="l1q3" value="a"><span>On the fifth floor, by the meeting rooms</span></label>
+      <label class="option"><input type="radio" name="l1q3" value="b"><span>At the main entrance, after the talks</span></label>
       <label class="option"><input type="radio" name="l1q3" value="c"><span>At the coffee break, by the main entrance</span></label>
     </div>
     <div class="btn-row"><button class="btn check" onclick="checkExercise('ex-3')">✓ CHECK</button></div>
@@ -266,19 +266,19 @@
     <div class="q" data-correct="a">
       <p><span class="qnum">01</span>What is Sara's job?</p>
       <label class="option"><input type="radio" name="l2q1" value="a"><span>Account manager at Northwind</span></label>
-      <label class="option"><input type="radio" name="l2q1" value="b"><span>Marketing specialist</span></label>
-      <label class="option"><input type="radio" name="l2q1" value="c"><span>Project lead</span></label>
+      <label class="option"><input type="radio" name="l2q1" value="b"><span>Marketing specialist at BrightBox</span></label>
+      <label class="option"><input type="radio" name="l2q1" value="c"><span>Project coordinator at Lumen Design</span></label>
     </div>
     <div class="q" data-correct="b">
       <p><span class="qnum">02</span>When is the meeting?</p>
-      <label class="option"><input type="radio" name="l2q2" value="a"><span>On Monday, at nine</span></label>
+      <label class="option"><input type="radio" name="l2q2" value="a"><span>On Monday, at nine in the morning</span></label>
       <label class="option"><input type="radio" name="l2q2" value="b"><span>On Thursday, at ten in the morning</span></label>
-      <label class="option"><input type="radio" name="l2q2" value="c"><span>On Friday, at noon</span></label>
+      <label class="option"><input type="radio" name="l2q2" value="c"><span>On Friday, at ten in the morning</span></label>
     </div>
     <div class="q" data-correct="c">
       <p><span class="qnum">03</span>Where is the meeting?</p>
-      <label class="option"><input type="radio" name="l2q3" value="a"><span>Online, at your desk</span></label>
-      <label class="option"><input type="radio" name="l2q3" value="b"><span>At a cafe on Green Street</span></label>
+      <label class="option"><input type="radio" name="l2q3" value="a"><span>At the downtown office, on the first floor</span></label>
+      <label class="option"><input type="radio" name="l2q3" value="b"><span>At the main office, by the front entrance</span></label>
       <label class="option"><input type="radio" name="l2q3" value="c"><span>At the downtown office, on the fifth floor</span></label>
     </div>
     <div class="btn-row"><button class="btn check" onclick="checkExercise('ex-4')">✓ CHECK</button></div>
@@ -346,7 +346,6 @@
 <script>
   window.BIZ_CONFIG = { key: "rankup_BIZ_l1", name: "Introductions & Small Talk (Business)", exercises: ["ex-1", "ex-2", "ex-3", "ex-4"] };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script src="biz.js"></script>
 <!-- GoatCounter analytics — privacy-friendly, no cookies. -->

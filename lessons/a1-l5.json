@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Mother / Father",
+          "r": "madre / padre"
+        },
+        {
+          "l": "Brother / Sister",
+          "r": "hermano / hermana"
+        },
+        {
+          "l": "Years old",
+          "r": "años"
+        },
+        {
+          "l": "Tall / Short",
+          "r": "alto / bajo"
+        },
+        {
+          "l": "Do you have…?",
+          "r": "¿tienes…?"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "objetos y lugares",
       "title": "📘 a / an · this/that · there is/are",
@@ -232,6 +260,58 @@
       ]
     },
     {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "THIS vs THAT",
+      "intro": "La lección te enseña this y that, pero nunca los practicas. Las dos frases son correctas: lo que cambia es <b>qué tan lejos está la cosa</b>.",
+      "pair": {
+        "a": "What's this?",
+        "b": "What's that?"
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál usas para algo que tienes en la mano?",
+          "options": [
+            "Las dos igual",
+            "A — this",
+            "B — that"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál usas para algo lejos, del otro lado del cuarto?",
+          "options": [
+            "Ninguna de las dos",
+            "A — this",
+            "B — that"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Tu amigo señala un edificio a lo lejos. ¿Qué pregunta?",
+          "options": [
+            "What's this?",
+            "What's these?",
+            "What's that?"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Tienes un libro en la mano y quieres decir qué es. ¿Qué dices?",
+          "options": [
+            "That is a book.",
+            "These is a book.",
+            "This is a book."
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · WHAT'S IN THE BAG?",
@@ -244,26 +324,31 @@
           "type": "mcq",
           "q": "What is in the bag?",
           "options": [
+            "A book, a key and an apple",
             "A book, a pen and a phone",
-            "A key and an apple",
-            "A laptop and a watch"
+            "A pen, a phone and an umbrella"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "How many books are there?",
           "options": [
-            "One",
             "Two",
-            "Three"
+            "Three",
+            "One"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "Tom's keys are in the bag.",
-          "answer": true
+          "type": "mcq",
+          "q": "What does Tom have for lunch?",
+          "options": [
+            "Nothing",
+            "An apple",
+            "A sandwich"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -309,11 +394,11 @@
         {
           "q": "It's ___ apple.",
           "options": [
+            "the",
             "an",
-            "a",
-            "the"
+            "a"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "It's ___ book.",
@@ -336,20 +421,20 @@
         {
           "q": "___ two windows here.",
           "options": [
-            "There are",
+            "It is",
             "There is",
-            "It is"
+            "There are"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "I have ___ umbrella.",
           "options": [
-            "an",
             "a",
+            "an",
             "the"
           ],
-          "answer": 0
+          "answer": 1
         }
       ]
     },
@@ -365,7 +450,21 @@
       ],
       "placeholder": "On my desk, there is...",
       "example": "On my desk, there is a (object) and a (object). There are (number) (objects) and a (object). There is a (object) next to the (object). My (things) are in my (place). I like my desk!",
-      "hw": "Escribe tu descripción y mándame una foto + el texto por WhatsApp."
+      "hw": "Escribe tu descripción y mándame una foto + el texto por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>there is / there are</b> y <b>a / an</b> al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "voices": {

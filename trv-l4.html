@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <link rel="stylesheet" href="biz.css">
 </head>
 <body>
@@ -194,20 +194,20 @@
     <div class="q" data-correct="a">
       <p><span class="qnum">01</span>What happened while they were waiting for their bags?</p>
       <label class="option"><input type="radio" name="l1q1" value="a"><span>They announced the bags were lost</span></label>
-      <label class="option"><input type="radio" name="l1q1" value="b"><span>They found the bags</span></label>
-      <label class="option"><input type="radio" name="l1q1" value="c"><span>The flight was delayed</span></label>
+      <label class="option"><input type="radio" name="l1q1" value="b"><span>They found the bags on the belt</span></label>
+      <label class="option"><input type="radio" name="l1q1" value="c"><span>They announced the flight was delayed</span></label>
     </div>
     <div class="q" data-correct="a">
       <p><span class="qnum">02</span>What were they doing when the bags were found?</p>
       <label class="option"><input type="radio" name="l1q2" value="a"><span>Filling out the forms</span></label>
-      <label class="option"><input type="radio" name="l1q2" value="b"><span>Hiking</span></label>
-      <label class="option"><input type="radio" name="l1q2" value="c"><span>Eating dinner</span></label>
+      <label class="option"><input type="radio" name="l1q2" value="b"><span>Hiking in the mountains</span></label>
+      <label class="option"><input type="radio" name="l1q2" value="c"><span>Eating dinner at the hotel</span></label>
     </div>
     <div class="q" data-correct="b">
       <p><span class="qnum">03</span>How was the rest of the trip?</p>
-      <label class="option"><input type="radio" name="l1q3" value="a"><span>Terrible</span></label>
+      <label class="option"><input type="radio" name="l1q3" value="a"><span>Terrible from start to finish</span></label>
       <label class="option"><input type="radio" name="l1q3" value="b"><span>Perfect — the best trip ever</span></label>
-      <label class="option"><input type="radio" name="l1q3" value="c"><span>A little boring</span></label>
+      <label class="option"><input type="radio" name="l1q3" value="c"><span>A little boring after the hike</span></label>
     </div>
     <div class="btn-row"><button class="btn check" onclick="checkExercise('ex-3')">✓ CHECK</button></div>
     <div class="ex-score" id="score-ex-3"></div>
@@ -232,8 +232,8 @@
     <div class="q" data-correct="a">
       <p><span class="qnum">01</span>What happened while they were driving?</p>
       <label class="option"><input type="radio" name="l2q1" value="a"><span>The car broke down</span></label>
-      <label class="option"><input type="radio" name="l2q1" value="b"><span>It snowed</span></label>
-      <label class="option"><input type="radio" name="l2q1" value="c"><span>They got lost</span></label>
+      <label class="option"><input type="radio" name="l2q1" value="b"><span>It snowed on the mountain road</span></label>
+      <label class="option"><input type="radio" name="l2q1" value="c"><span>They got lost in the mountains</span></label>
     </div>
     <div class="q" data-correct="a">
       <p><span class="qnum">02</span>Who helped them?</p>
@@ -243,9 +243,9 @@
     </div>
     <div class="q" data-correct="b">
       <p><span class="qnum">03</span>How was the night?</p>
-      <label class="option"><input type="radio" name="l2q3" value="a"><span>Cold and bad</span></label>
+      <label class="option"><input type="radio" name="l2q3" value="a"><span>Cold and bad, with no food</span></label>
       <label class="option"><input type="radio" name="l2q3" value="b"><span>Great — the best part of the trip</span></label>
-      <label class="option"><input type="radio" name="l2q3" value="c"><span>Boring</span></label>
+      <label class="option"><input type="radio" name="l2q3" value="c"><span>Boring — they slept in the car</span></label>
     </div>
     <div class="btn-row"><button class="btn check" onclick="checkExercise('ex-4')">✓ CHECK</button></div>
     <div class="ex-score" id="score-ex-4"></div>
@@ -306,7 +306,6 @@
 <script>
   window.BIZ_CONFIG = { track: "Travel & Living", key: "rankup_TRV_l4", name: "Trips & Stories", exercises: ["ex-1", "ex-2", "ex-3", "ex-4"] };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script src="biz.js"></script>
 <script data-goatcounter="https://englishforall.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

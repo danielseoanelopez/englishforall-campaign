@@ -22,7 +22,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <style>
   :root {
     --cyan: #00e5ff; --magenta: #ff3df0; --purple: #9d4dff; --gold: #ffc83d;
@@ -683,7 +682,6 @@ function seeRank() {
   victory();
 }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script>
   function launchConfetti() {
@@ -693,11 +691,7 @@ function seeRank() {
     setTimeout(function () { confetti({ particleCount: 90, angle: 60, spread: 75, origin: { x: 0, y: 0.65 }, colors: c, zIndex: 60 }); }, 150);
     setTimeout(function () { confetti({ particleCount: 90, angle: 120, spread: 75, origin: { x: 1, y: 0.65 }, colors: c, zIndex: 60 }); }, 300);
   }
-  try {
-    AOS.init({ duration: 700, once: true, offset: 40 });
-    setTimeout(function () { document.querySelectorAll("[data-aos]:not(.aos-animate)").forEach(function (el) { el.classList.add("aos-animate"); }); }, 4000);
-  } catch (e) {
-    document.querySelectorAll("[data-aos]").forEach(function (el) { el.removeAttribute("data-aos"); });
+  document.querySelectorAll("[data-aos]").forEach(function(el){el.removeAttribute("data-aos");el.removeAttribute("data-aos-delay");}); // AOS removed);
   }
 </script>
 <!-- GoatCounter analytics — privacy-friendly, no cookies. -->

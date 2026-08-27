@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "at no extra cost",
+          "r": "sin costo adicional"
+        },
+        {
+          "l": "if you confirm by…",
+          "r": "si confirmas antes de…"
+        },
+        {
+          "l": "to come in under budget",
+          "r": "quedar por debajo del presupuesto"
+        },
+        {
+          "l": "unless…",
+          "r": "a menos que…"
+        },
+        {
+          "l": "to meet you halfway",
+          "r": "llegar a un punto medio"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "deducción y tacto",
       "title": "📘 MUST / MIGHT / CAN'T + SUAVIZAR",
@@ -52,44 +80,52 @@
       "vocabBtn": "📒 Ver vocabulario del debate",
       "vocab": [
         {
-          "en": "To push back",
-          "sp": "objetar / resistir"
+          "en": "I take your point, but…",
+          "sp": "entiendo tu punto, pero…"
         },
         {
-          "en": "Evidence",
-          "sp": "evidencia / pruebas"
+          "en": "I see it differently",
+          "sp": "yo lo veo distinto"
         },
         {
-          "en": "Data",
-          "sp": "datos"
+          "en": "with respect,…",
+          "sp": "con todo respeto,…"
         },
         {
-          "en": "Layout",
-          "sp": "diseño / disposición"
+          "en": "the data suggests…",
+          "sp": "los datos sugieren…"
         },
         {
-          "en": "Checkout page",
-          "sp": "página de pago"
+          "en": "to back it up with evidence",
+          "sp": "respaldarlo con pruebas"
         },
         {
-          "en": "Conversion",
-          "sp": "conversión (ventas)"
+          "en": "it might be worth + -ing",
+          "sp": "podría valer la pena…"
         },
         {
-          "en": "To load",
-          "sp": "cargar (una página)"
+          "en": "have you considered…?",
+          "sp": "¿han considerado…?"
         },
         {
-          "en": "Trade-off",
-          "sp": "compromiso / costo-beneficio"
+          "en": "to push back on something",
+          "sp": "objetar algo / plantear una objeción"
         },
         {
-          "en": "To test",
-          "sp": "probar"
+          "en": "it can't be…",
+          "sp": "no puede ser…"
         },
         {
-          "en": "Worth + -ing",
-          "sp": "vale la pena + verbo"
+          "en": "it must be…",
+          "sp": "tiene que ser…"
+        },
+        {
+          "en": "let's test it and see",
+          "sp": "probémoslo y veamos"
+        },
+        {
+          "en": "a trade-off",
+          "sp": "un costo-beneficio"
         }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> 🃏, <b>escucha</b> 🎧, <b>completar</b> 📝 y <b>ordenar</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
@@ -183,6 +219,58 @@
       ]
     },
     {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "MUST BE vs MIGHT BE",
+      "intro": "Las dos son deducciones — pero una te compromete casi al 100% y la otra te deja salida. En una discusión con datos, esa diferencia es tu credibilidad.",
+      "pair": {
+        "a": "It must be the payment system.",
+        "b": "It might be the payment system."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál dice que estás casi seguro?",
+          "options": [
+            "B — might be",
+            "Las dos igual",
+            "A — must be"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál deja la puerta abierta a otras causas?",
+          "options": [
+            "Ninguna de las dos",
+            "B — might be",
+            "A — must be"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Contestó en francés perfecto. ¿Qué dices?",
+          "options": [
+            "He mustn't be a beginner.",
+            "He can't be a beginner.",
+            "He might not be a beginner."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Las luces están encendidas y se oyen voces. ¿Qué dices?",
+          "options": [
+            "Someone must be working late.",
+            "Someone can't be working late.",
+            "Someone might work late."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · THE DEBATE",
@@ -195,36 +283,41 @@
           "type": "mcq",
           "q": "What does Priya think is the problem?",
           "options": [
+            "The payment system",
             "The new design",
-            "The prices",
-            "The server"
+            "The checkout speed"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "According to Marcos, what might the real problem be?",
           "options": [
-            "The checkout page loading slowly",
-            "The colors of the logo",
-            "The client's emails"
+            "The home page loading slowly",
+            "The new design of the home page",
+            "The checkout page loading slowly"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "How does Marcos know it can't be the design?",
           "options": [
-            "The data shows people leave at checkout, not the home page",
-            "Priya told him",
-            "He just feels it"
+            "Sales went up right after the redesign",
+            "The old design had the same problem",
+            "People stay longer on the new home page"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "They agree to test the checkout page speed for one week.",
-          "answer": true
+          "type": "mcq",
+          "q": "What do they agree to do?",
+          "options": [
+            "Go back to the old design on Friday",
+            "Run a one-week test on checkout speed",
+            "Change the payment system today"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -283,56 +376,56 @@
         {
           "q": "Sales dropped the day we changed servers. It ___ be a coincidence!",
           "options": [
-            "can't",
+            "might",
             "must",
-            "might"
+            "can't"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "The office lights are on and I hear voices. Someone ___ be working late.",
           "options": [
-            "must",
             "can't",
-            "couldn't"
+            "couldn't",
+            "must"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "I'm not sure why it's slow — it ___ be the wifi.",
+          "options": [
+            "must",
+            "can't",
+            "might"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "He answered in perfect French. He ___ be a beginner.",
           "options": [
             "might",
             "must",
             "can't"
           ],
-          "answer": 0
-        },
-        {
-          "q": "He answered in perfect French. He ___ be a beginner.",
-          "options": [
-            "can't",
-            "must",
-            "might"
-          ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "It ___ be worth testing the page on a phone.",
           "options": [
             "might",
-            "can't",
-            "must not"
+            "must not",
+            "can't"
           ],
           "answer": 0
         },
         {
           "q": "She's not answering. She ___ be in a meeting.",
           "options": [
-            "might",
             "can't",
-            "mustn't"
+            "mustn't",
+            "might"
           ],
-          "answer": 0
+          "answer": 2
         }
       ]
     },
@@ -394,26 +487,31 @@
           "type": "mcq",
           "q": "What did the test show?",
           "options": [
-            "The checkout was loading nine seconds on phones",
-            "The design was the problem",
-            "Nothing useful"
+            "The home page took nine seconds to load",
+            "The checkout took nine seconds on phones",
+            "The design was driving people away"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What happened to sales after the fix?",
           "options": [
-            "They recovered",
             "They dropped more",
-            "They stayed the same"
+            "They stayed the same",
+            "They recovered"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "Priya admits Marcos was right.",
-          "answer": true
+          "type": "mcq",
+          "q": "What does Priya thank Marcos for?",
+          "options": [
+            "Working over the weekend",
+            "Fixing the design quickly",
+            "Pushing back with data"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -439,8 +537,22 @@
         "Propón un paso siguiente (<b>I'd suggest… / It might be worth…</b>)"
       ],
       "placeholder": "Hi …, I take your point about…",
-      "example": "Hi (name), I take your point about (topic) — it's important. But I see it differently. If we (action), (possible problem), and that could (consequence). The data suggests (evidence). I'd suggest we (alternative) instead — it might be worth (waiting / testing). What do you think? Best, (your name)",
-      "hw": "Escribe tu respuesta y grábate leyéndola con tono calmado y profesional. Envíame texto y audio por WhatsApp."
+      "example": "I take your point about the redesign — it's an important call… — sigue tú: marca tu desacuerdo con tacto, mete un modal de deducción, apóyate en datos y propón un siguiente paso.",
+      "hw": "Escribe tu respuesta y después grábate <b>diciéndola sin leer</b>, con tono calmado y profesional. Envíame texto y audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste el desacuerdo con tacto + <b>must / might / can’t</b> al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

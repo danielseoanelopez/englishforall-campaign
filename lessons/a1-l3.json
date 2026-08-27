@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Engineer",
+          "r": "ingeniero/a"
+        },
+        {
+          "l": "Job",
+          "r": "trabajo"
+        },
+        {
+          "l": "Years old",
+          "r": "años (de edad)"
+        },
+        {
+          "l": "How old are you?",
+          "r": "¿cuántos años tienes?"
+        },
+        {
+          "l": "Student",
+          "r": "estudiante"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "números, días y la hora",
       "title": "📘 NUMBERS · DAYS · TIME",
@@ -227,15 +255,20 @@
           "q": "What time is the Monday class?",
           "options": [
             "At four o'clock",
-            "At five o'clock",
-            "At nine o'clock"
+            "At nine o'clock",
+            "At five o'clock"
           ],
           "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "There is also a class on Wednesday.",
-          "answer": true
+          "type": "mcq",
+          "q": "What time is the Wednesday class?",
+          "options": [
+            "At five o'clock",
+            "At half past four",
+            "At half past five"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -276,27 +309,27 @@
         {
           "q": "The class is ___ four o'clock.",
           "options": [
-            "at",
+            "in",
             "on",
-            "in"
+            "at"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "I don't work ___ Sunday.",
           "options": [
-            "on",
             "at",
-            "in"
+            "in",
+            "on"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "My birthday is ___ June.",
           "options": [
             "in",
-            "on",
-            "at"
+            "at",
+            "on"
           ],
           "answer": 0
         },
@@ -304,19 +337,19 @@
           "q": "We have lunch ___ one o'clock.",
           "options": [
             "at",
-            "on",
-            "in"
+            "in",
+            "on"
           ],
           "answer": 0
         },
         {
           "q": "The meeting is ___ Monday.",
           "options": [
+            "in",
             "on",
-            "at",
-            "in"
+            "at"
           ],
-          "answer": 0
+          "answer": 1
         }
       ]
     },
@@ -366,26 +399,31 @@
           "type": "mcq",
           "q": "What time does Marcos have breakfast?",
           "options": [
-            "At seven",
             "At half past seven",
-            "At nine"
+            "At half past eight",
+            "At seven o'clock"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "What time is his English class?",
           "options": [
-            "At nine o'clock",
             "At one o'clock",
+            "At nine o'clock",
             "At five o'clock"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "Marcos works on Saturday.",
-          "answer": false
+          "type": "mcq",
+          "q": "What does Marcos do on Saturday and Sunday?",
+          "options": [
+            "He works",
+            "He relaxes",
+            "He studies"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -412,7 +450,21 @@
       ],
       "placeholder": "I get up at...",
       "example": "I get up at (time). My English class is at (time) on (day) and (day). I have lunch at (time). I finish work at (time). On the weekend, I (activity)!",
-      "hw": "Escribe tu horario y mándamelo por WhatsApp."
+      "hw": "Escribe tu horario y mándamelo por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste las <b>horas y los días</b> con <b>at</b> y <b>on</b> al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ],
   "voices": {

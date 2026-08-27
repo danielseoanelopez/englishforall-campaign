@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "A trip",
+          "r": "un viaje"
+        },
+        {
+          "l": "To fly",
+          "r": "volar / viajar en avión"
+        },
+        {
+          "l": "To arrange",
+          "r": "organizar / acordar"
+        },
+        {
+          "l": "To launch",
+          "r": "lanzar"
+        },
+        {
+          "l": "To improve",
+          "r": "mejorar"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "present perfect",
       "title": "📘 PRESENT PERFECT vs PAST SIMPLE",
@@ -52,44 +80,52 @@
       "vocabBtn": "📒 Ver vocabulario del review",
       "vocab": [
         {
-          "en": "Performance review",
+          "en": "to be on track",
+          "sp": "ir según lo previsto"
+        },
+        {
+          "en": "to fall behind schedule",
+          "sp": "atrasarse"
+        },
+        {
+          "en": "to hit a milestone",
+          "sp": "alcanzar un hito"
+        },
+        {
+          "en": "to ship a feature",
+          "sp": "lanzar una función"
+        },
+        {
+          "en": "to deploy to production",
+          "sp": "publicar en producción"
+        },
+        {
+          "en": "to meet a deadline",
+          "sp": "cumplir una fecha límite"
+        },
+        {
+          "en": "to give / get feedback",
+          "sp": "dar / recibir devolución"
+        },
+        {
+          "en": "so far this quarter",
+          "sp": "en lo que va del trimestre"
+        },
+        {
+          "en": "to have a lot on my plate",
+          "sp": "tener mucho encima"
+        },
+        {
+          "en": "a quick update on…",
+          "sp": "una actualización rápida sobre…"
+        },
+        {
+          "en": "to be up to speed",
+          "sp": "estar al día"
+        },
+        {
+          "en": "performance review",
           "sp": "evaluación de desempeño"
-        },
-        {
-          "en": "Achievement",
-          "sp": "logro"
-        },
-        {
-          "en": "Deadline",
-          "sp": "fecha límite"
-        },
-        {
-          "en": "To launch / Ship",
-          "sp": "lanzar (un producto)"
-        },
-        {
-          "en": "To deploy",
-          "sp": "desplegar / publicar código"
-        },
-        {
-          "en": "Milestone",
-          "sp": "hito"
-        },
-        {
-          "en": "Feedback",
-          "sp": "retroalimentación"
-        },
-        {
-          "en": "On track",
-          "sp": "en buen camino"
-        },
-        {
-          "en": "Behind schedule",
-          "sp": "atrasado"
-        },
-        {
-          "en": "Bug",
-          "sp": "error de software"
         }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> 🃏, <b>escucha</b> 🎧 y <b>completar</b> 📝. Haz el ✓ CHECK en cada ejercicio."
@@ -228,6 +264,58 @@
       ]
     },
     {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "PRESENT PERFECT vs PAST SIMPLE",
+      "intro": "Las dos frases son correctas — pero una dice que <b>sigues ahí</b> y la otra que <b>ya terminó</b>.",
+      "pair": {
+        "a": "I've worked on this project for three months.",
+        "b": "I worked on that project for three months."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál dice que TODAVÍA estás en ese proyecto?",
+          "options": [
+            "A — present perfect",
+            "B — past simple",
+            "Las dos dicen lo mismo"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál dice que ya terminó y no sigues ahí?",
+          "options": [
+            "B — past simple",
+            "Ninguna de las dos",
+            "A — present perfect"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Sigues en la misma empresa desde 2019. ¿Qué dices?",
+          "options": [
+            "I've been here since 2019.",
+            "I am here since 2019.",
+            "I was here since 2019."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Te fuiste de tu trabajo anterior en marzo. ¿Qué dices?",
+          "options": [
+            "I've been working there for two years.",
+            "I worked there for two years.",
+            "I've worked there for two years."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · THE PERFORMANCE REVIEW",
@@ -241,8 +329,8 @@
           "q": "How long has Marcos worked on the GreenMarket site?",
           "options": [
             "For three months",
-            "Since last week",
-            "For three years"
+            "Since last March",
+            "For about a year"
           ],
           "answer": 0
         },
@@ -250,16 +338,21 @@
           "type": "mcq",
           "q": "What hasn't Marcos done yet?",
           "options": [
+            "Finished the main design",
             "Tested the payment system",
-            "Sent the client an update",
-            "Finished the design"
+            "Sent the client an update"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "Marcos has already deployed the site to production.",
-          "answer": false
+          "type": "mcq",
+          "q": "Where has Marcos deployed the site?",
+          "options": [
+            "To the test server only",
+            "Nowhere yet",
+            "To production already"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -327,54 +420,72 @@
         {
           "q": "I ___ the report yesterday.",
           "options": [
-            "finished",
             "have finished",
+            "finished",
             "finish"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "She ___ on this team since March.",
           "options": [
+            "works",
             "has worked",
-            "worked",
-            "works"
+            "worked"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "We ___ to the client last week.",
           "options": [
             "spoke",
-            "have spoken",
-            "speak"
+            "speak",
+            "have spoken"
           ],
           "answer": 0
         },
         {
           "q": "He hasn't tested the payments ___.",
           "options": [
-            "yet",
             "already",
-            "ever"
+            "ever",
+            "yet"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "I've ___ sent David the update.",
           "options": [
+            "since",
             "already",
-            "yet",
-            "since"
+            "yet"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "They ___ for this company for ten years.",
           "options": [
-            "have worked",
             "worked",
-            "work"
+            "work",
+            "have worked"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "I've known Sofia ___ 2019.",
+          "options": [
+            "since",
+            "from",
+            "for"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We ___ the app last October.",
+          "options": [
+            "launched",
+            "have launched",
+            "have launch"
           ],
           "answer": 0
         }
@@ -403,16 +514,21 @@
           "type": "mcq",
           "q": "What hasn't he done yet?",
           "options": [
-            "Deployed to production",
-            "Fixed the bugs",
-            "Tested the payments"
+            "Deployed it to production",
+            "Finished the payment tests",
+            "Fixed the two bugs"
           ],
           "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "Marcos has already told Priya the news.",
-          "answer": false
+          "type": "mcq",
+          "q": "Who does Marcos want to check the site first?",
+          "options": [
+            "David",
+            "Sofia",
+            "Priya"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -438,8 +554,22 @@
         "Contrasta con <b>past simple</b> + tiempo específico (<i>Last week I…</i>)"
       ],
       "placeholder": "This month I've…",
-      "example": "This (month / year) I've achieved a lot. I've finished (something) and I've learned (something). I've (done something) since (month), so for (duration) now. I've already (action), but I haven't (action) yet. Last week I (past event) — I was nervous, but it went well!",
-      "hw": "Escribe tu párrafo y grábate leyéndolo en voz alta. Envíame el texto y el audio por WhatsApp y lo corregimos juntos."
+      "example": "This quarter I've achieved a lot… — sigue tú: dos logros con already / yet, uno con for o since, y cierra contrastando con past simple (Last week I…).",
+      "hw": "Escribe tu párrafo y después grábate contándolo <b>sin leer</b> — apóyate solo en tus 4–5 logros anotados. Envíame el texto y el audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste el <b>present perfect</b> con already / yet / for / since al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

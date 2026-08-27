@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "to give / get feedback",
+          "r": "dar / recibir devolución"
+        },
+        {
+          "l": "to meet a deadline",
+          "r": "cumplir una fecha límite"
+        },
+        {
+          "l": "so far this quarter",
+          "r": "en lo que va del trimestre"
+        },
+        {
+          "l": "a quick update on…",
+          "r": "una actualización rápida sobre…"
+        },
+        {
+          "l": "to fall behind schedule",
+          "r": "atrasarse"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "meetings",
       "title": "📘 RUNNING A MEETING · frases clave",
@@ -51,44 +79,52 @@
       "vocabBtn": "📒 Ver vocabulario de reuniones",
       "vocab": [
         {
-          "en": "Agenda",
-          "sp": "orden del día"
-        },
-        {
-          "en": "Minutes",
-          "sp": "acta / notas"
-        },
-        {
-          "en": "Standup",
-          "sp": "reunión breve diaria"
-        },
-        {
-          "en": "To chair a meeting",
+          "en": "to run / chair a meeting",
           "sp": "dirigir una reunión"
         },
         {
-          "en": "Action item",
+          "en": "let's get started",
+          "sp": "empecemos"
+        },
+        {
+          "en": "let's move on to…",
+          "sp": "pasemos a…"
+        },
+        {
+          "en": "sorry to jump in, but…",
+          "sp": "perdón que interrumpa, pero…"
+        },
+        {
+          "en": "I see your point, but…",
+          "sp": "entiendo tu punto, pero…"
+        },
+        {
+          "en": "what if we…?",
+          "sp": "¿y si…?"
+        },
+        {
+          "en": "to be on the same page",
+          "sp": "estar alineados"
+        },
+        {
+          "en": "to follow up on…",
+          "sp": "dar seguimiento a…"
+        },
+        {
+          "en": "to confirm the next steps",
+          "sp": "confirmar los próximos pasos"
+        },
+        {
+          "en": "are we all agreed?",
+          "sp": "¿estamos todos de acuerdo?"
+        },
+        {
+          "en": "let's wrap up",
+          "sp": "vamos cerrando"
+        },
+        {
+          "en": "action item",
           "sp": "tarea pendiente"
-        },
-        {
-          "en": "Next steps",
-          "sp": "próximos pasos"
-        },
-        {
-          "en": "To follow up",
-          "sp": "dar seguimiento"
-        },
-        {
-          "en": "To wrap up",
-          "sp": "terminar / cerrar"
-        },
-        {
-          "en": "On the same page",
-          "sp": "de acuerdo / alineados"
-        },
-        {
-          "en": "Deadline",
-          "sp": "fecha límite"
         }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>unir</b> 🔗, <b>elegir respuestas</b> 💬, <b>escucha</b> 🎧 y <b>ordenar</b> 🧩. Haz el ✓ CHECK en cada ejercicio."
@@ -224,8 +260,8 @@
           "q": "Discrepas, pero con tacto:",
           "options": [
             "I see your point, but maybe we could delay it instead of canceling?",
-            "No, that's a bad idea.",
-            "Whatever you say."
+            "Whatever you say.",
+            "No, that's a bad idea."
           ],
           "answer": 0
         },
@@ -238,11 +274,11 @@
           "gap": true,
           "q": "Tomas la palabra y resumes:",
           "options": [
-            "Sure. So far, we've finished the design and we're testing the payments.",
+            "It was last week.",
             "I don't know, ask David.",
-            "It was last week."
+            "Sure. So far, we've finished the design and we're testing the payments."
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "spk": "Colleague",
@@ -275,6 +311,68 @@
       ]
     },
     {
+      "type": "gapFill",
+      "id": "ex-soften",
+      "title": "SUAVIZA LA FRASE",
+      "intro": "En una reunión, el tono es la mitad del mensaje. Elige la palabra que suena profesional, no brusca.",
+      "items": [
+        {
+          "q": "___ we focus on the next steps?",
+          "options": [
+            "Could",
+            "Must",
+            "Do"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I see your point, ___ I think we should wait.",
+          "options": [
+            "so",
+            "because",
+            "but"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "___ if we show them a demo first?",
+          "options": [
+            "How",
+            "Why",
+            "What"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Sorry to ___ in — can I add something?",
+          "options": [
+            "jump",
+            "go",
+            "enter"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I'd ___ we launch on Friday as planned.",
+          "options": [
+            "suggest",
+            "want",
+            "order"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Let's ___ up — thanks, everyone.",
+          "options": [
+            "cut",
+            "wrap",
+            "close"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · THE STANDUP",
@@ -297,16 +395,21 @@
           "type": "mcq",
           "q": "What does Marcos suggest about the new feature?",
           "options": [
-            "Plan it for the next phase",
-            "Cancel the whole project",
-            "Add it immediately today"
+            "Add it before Friday's launch",
+            "Ask the client to drop it",
+            "Plan it for the next phase"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "They agree to launch the site on Friday.",
-          "answer": true
+          "type": "mcq",
+          "q": "What does Sofia suggest as a compromise?",
+          "options": [
+            "Launch the chat on Friday",
+            "Show the client a demo first",
+            "Ask the client to wait a month"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -419,7 +522,7 @@
           "options": [
             "Next Monday",
             "This Friday",
-            "Never"
+            "The following month"
           ],
           "answer": 0
         },
@@ -427,16 +530,21 @@
           "type": "mcq",
           "q": "Why doesn't Marcos want to add the chat by Friday?",
           "options": [
-            "It might cause bugs",
-            "He is on holiday",
-            "The client didn't pay"
+            "The designers are not available",
+            "They might rush it and cause bugs",
+            "The client has not confirmed it"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
-          "type": "trueFalse",
-          "q": "David agrees with Marcos's suggestion in the end.",
-          "answer": true
+          "type": "mcq",
+          "q": "What does Marcos promise David?",
+          "options": [
+            "The chat will be ready by Friday",
+            "The site will launch next week",
+            "The chat will be ready by Monday"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -503,8 +611,22 @@
         "Cierra (<i>Let me know if you have any questions.</i>)"
       ],
       "placeholder": "Hi team, Following our meeting today,",
-      "example": "Hi team, Following our meeting (when), here's a quick recap. We agreed to (decision) on (day). We also agreed to (decision) — I'd suggest we (suggestion). Next steps: (name) will (task) by (day), and (name) will (task). Let me know if you have any questions. Best, (your name)",
-      "hw": "Escribe tu email de resumen de una reunión (real o inventada) y envíamelo por WhatsApp para corregirlo juntos."
+      "example": "Hi team, following our meeting today, here's a quick recap… — sigue tú: dos acuerdos, una propuesta con I'd suggest, y los next steps con responsable y fecha.",
+      "hw": "Escribe tu email de resumen y envíamelo por WhatsApp. Después grábate <b>presentando los next steps en voz alta, sin leer</b>, como si cerraras la reunión.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste el lenguaje de reunión (<b>I’d suggest… / next steps</b>) al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

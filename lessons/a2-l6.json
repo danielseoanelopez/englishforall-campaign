@@ -15,6 +15,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Worth it",
+          "r": "vale la pena"
+        },
+        {
+          "l": "Big / Small",
+          "r": "grande / chico"
+        },
+        {
+          "l": "Fast / Slow",
+          "r": "rápido / lento"
+        },
+        {
+          "l": "Light / Heavy",
+          "r": "liviano / pesado"
+        },
+        {
+          "l": "Comfortable",
+          "r": "cómodo"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "going to / present continuous",
       "title": "📘 PLANES A FUTURO · going to / present continuous",
@@ -164,6 +192,58 @@
       ]
     },
     {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "GOING TO vs PRESENT CONTINUOUS",
+      "intro": "Las dos hablan del futuro y las dos son correctas — pero una es una <b>intención</b> y la otra es un <b>plan ya cerrado</b> (con fecha, hora o reserva).",
+      "pair": {
+        "a": "I'm going to visit my sister.",
+        "b": "I'm visiting my sister on Saturday."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál suena a plan ya cerrado, con fecha acordada?",
+          "options": [
+            "A — going to",
+            "B — present continuous",
+            "Las dos suenan igual"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es una intención, algo que decidiste pero sin fecha fija?",
+          "options": [
+            "Ninguna de las dos",
+            "B — present continuous",
+            "A — going to"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Ya compraste los boletos para el martes. ¿Qué dices?",
+          "options": [
+            "I'm flying to Madrid on Tuesday.",
+            "I'm going to fly to Madrid some day.",
+            "I will fly to Madrid on Tuesday."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Quieres mejorar tu inglés este año, pero todavía no organizaste nada. ¿Qué dices?",
+          "options": [
+            "I'm going to study more English.",
+            "I'm studying more English tonight.",
+            "I study more English this year."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · PLANS FOR THE NEW PROJECT",
@@ -176,26 +256,31 @@
           "type": "mcq",
           "q": "What are they going to build?",
           "options": [
-            "An app for a travel company",
-            "A website for a bank",
-            "A game"
+            "A website for a travel agency",
+            "An app for a bank in Madrid",
+            "An app for a travel company"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What is Marcos going to do on the project?",
           "options": [
-            "Lead the design",
             "Hire developers",
+            "Lead the design",
             "Write the code"
           ],
           "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "They are going to have the first meeting on Monday.",
-          "answer": true
+          "type": "mcq",
+          "q": "When is the first meeting?",
+          "options": [
+            "On Monday",
+            "Next month",
+            "Tomorrow"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -246,46 +331,46 @@
           "q": "Next month we ___ start a new project.",
           "options": [
             "are going to",
-            "going to",
-            "go to"
+            "go to",
+            "going to"
           ],
           "answer": 0
         },
         {
           "q": "I can't meet on Friday — I ___ the client at three.",
           "options": [
-            "am meeting",
             "meet",
+            "am meeting",
             "met"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "She ___ run a marathon this year.",
           "options": [
             "is going to",
-            "going",
-            "goes to"
+            "goes to",
+            "going"
           ],
           "answer": 0
         },
         {
           "q": "On Monday, I ___ to Madrid at nine.",
           "options": [
-            "am flying",
+            "flew",
             "fly",
-            "flew"
+            "am flying"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "I'm ___ going to use the translator so much.",
           "options": [
+            "isn't",
             "not",
-            "don't",
-            "isn't"
+            "don't"
           ],
-          "answer": 0
+          "answer": 1
         }
       ]
     },
@@ -302,9 +387,9 @@
           "type": "mcq",
           "q": "Where is Marcos traveling next week?",
           "options": [
-            "Mexico City",
+            "London, on holiday",
             "Madrid, for work",
-            "London, on holiday"
+            "Mexico City"
           ],
           "answer": 1
         },
@@ -312,16 +397,21 @@
           "type": "mcq",
           "q": "What is he doing on Tuesday?",
           "options": [
-            "Meeting the client and having lunch",
-            "Flying to Madrid",
-            "Coming back home"
+            "Flying to Madrid in the morning",
+            "Giving a presentation to the whole team",
+            "Meeting the client and having lunch"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "Marcos is working on Friday.",
-          "answer": false
+          "type": "mcq",
+          "q": "What is Marcos doing on Friday?",
+          "options": [
+            "He is relaxing, not working",
+            "He is giving his presentation",
+            "He is flying back home to Mexico"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -389,7 +479,21 @@
       ],
       "placeholder": "Next month, I'm going to...",
       "example": "Next (month / week), I'm going to (plan). I'm going to (activity) every (day / evening). On (day), I'm (arrangement) at (time), and on (day), I'm (arrangement). In (season), I'm going to (plan). I'm really excited!",
-      "hw": "Escribe tus planes y graba un audio. Envíame ambos por WhatsApp. Después, ¡a por el examen del mundo A2!"
+      "hw": "Escribe tus planes y después grábate contándolos <b>sin leer</b>. Envíame ambos por WhatsApp. Después, ¡a por el examen del mundo A2!",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>going to</b> y <b>present continuous</b> para el futuro al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }

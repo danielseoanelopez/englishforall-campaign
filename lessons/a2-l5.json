@@ -14,6 +14,34 @@
   },
   "blocks": [
     {
+      "type": "match",
+      "id": "ex-review",
+      "title": "♻️ REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "Call back",
+          "r": "devolver la llamada"
+        },
+        {
+          "l": "Attach a file",
+          "r": "adjuntar un archivo"
+        },
+        {
+          "l": "Would you mind…?",
+          "r": "¿te molestaría…?"
+        },
+        {
+          "l": "A favor",
+          "r": "un favor"
+        },
+        {
+          "l": "Book a room",
+          "r": "reservar una sala"
+        }
+      ]
+    },
+    {
       "type": "grammar",
       "tag": "comparatives",
       "title": "📘 COMPARATIVES · comparar A con B",
@@ -222,38 +250,47 @@
         {
           "q": "Her English is ___ than mine.",
           "options": [
-            "better",
             "gooder",
-            "more good"
+            "more good",
+            "better"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "This phone is ___ than that one.",
           "options": [
-            "cheaper",
             "cheapest",
+            "cheaper",
             "more cheap"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "The new office is ___ than the old one.",
           "options": [
-            "bigger",
+            "more big",
             "biggest",
-            "more big"
+            "bigger"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "My old laptop was ___ than this one.",
           "options": [
-            "worse",
+            "more bad",
             "badder",
-            "more bad"
+            "worse"
           ],
-          "answer": 0
+          "answer": 2
+        },
+        {
+          "q": "This month was ___ than last month.",
+          "options": [
+            "more busy",
+            "busyer",
+            "busier"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -271,8 +308,8 @@
           "q": "Which laptop is cheaper?",
           "options": [
             "The silver one",
-            "The black one",
-            "They cost the same"
+            "They cost the same",
+            "The black one"
           ],
           "answer": 0
         },
@@ -280,16 +317,21 @@
           "type": "mcq",
           "q": "Why is the silver one better for travel?",
           "options": [
-            "It is faster",
             "It has a bigger screen",
+            "It is faster",
             "It is lighter"
           ],
           "answer": 2
         },
         {
-          "type": "trueFalse",
-          "q": "The black one has a better battery.",
-          "answer": true
+          "type": "mcq",
+          "q": "What is worse about the silver one?",
+          "options": [
+            "The screen is smaller",
+            "The price is higher",
+            "The battery is better"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -348,26 +390,31 @@
           "type": "mcq",
           "q": "Who has more experience?",
           "options": [
-            "Ana",
             "Ben",
-            "They have the same"
+            "They have the same",
+            "Ana"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "What is Ben better at?",
           "options": [
-            "He is more organized",
-            "His English is better",
-            "He is faster, more creative and more confident"
+            "He is faster and more creative",
+            "He is more organized and reliable",
+            "His English is better than Ana's"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
-          "type": "trueFalse",
-          "q": "They choose Ana because experience is more important.",
-          "answer": true
+          "type": "mcq",
+          "q": "Why do they choose Ana?",
+          "options": [
+            "She is the more relaxed one",
+            "She is faster in meetings now",
+            "Experience is more important"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -429,7 +476,21 @@
       ],
       "placeholder": "My phone is better than...",
       "example": "My new (thing) is better than my old one. It is (comparative) and (comparative), and the (part) is (comparative). The old one was (comparative), but the (part) was worse. The new one is more (adjective), but it is more (adjective) for (use).",
-      "hw": "Escribe tu comparación y graba un audio leyéndola. Envíame ambos por WhatsApp."
+      "hw": "Escribe tu comparación y después grábate defendiéndola <b>sin leer</b>: ¿cuál eliges y por qué? Envíame ambos por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y cubriste todos los puntos."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste los <b>comparativos</b> (-er / more / better / worse) al menos <b>3 veces</b>, y bien."
+        },
+        {
+          "c": "Se entiende de una",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
     }
   ]
 }
