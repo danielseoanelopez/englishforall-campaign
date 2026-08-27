@@ -134,7 +134,7 @@
       "id": "fc-vocab",
       "title": "FLASHCARDS · reuniones",
       "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "en la reunión",
+      "deckLabel": "dirigir una reunión",
       "cards": [
         {
           "front": "agenda",
@@ -159,37 +159,22 @@
         {
           "front": "to wrap up",
           "back": "cerrar / terminar"
-        }
-      ],
-      "altDecks": [
+        },
         {
-          "label": "frases",
-          "cards": [
-            {
-              "front": "Let's get started",
-              "back": "Empecemos"
-            },
-            {
-              "front": "Moving on…",
-              "back": "Pasemos a lo siguiente"
-            },
-            {
-              "front": "Any questions?",
-              "back": "¿Alguna pregunta?"
-            },
-            {
-              "front": "We're on the same page",
-              "back": "Estamos alineados"
-            },
-            {
-              "front": "to chair a meeting",
-              "back": "dirigir una reunión"
-            },
-            {
-              "front": "deadline",
-              "back": "fecha límite"
-            }
-          ]
+          "front": "Let's get started",
+          "back": "Empecemos"
+        },
+        {
+          "front": "Moving on…",
+          "back": "Pasemos a lo siguiente"
+        },
+        {
+          "front": "We're on the same page",
+          "back": "Estamos alineados"
+        },
+        {
+          "front": "to chair a meeting",
+          "back": "dirigir una reunión"
         }
       ]
     },

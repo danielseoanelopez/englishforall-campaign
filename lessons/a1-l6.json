@@ -140,69 +140,25 @@
         {
           "front": "Why?",
           "back": "¿Por qué?"
-        }
-      ],
-      "deckLabel": "question words",
-      "altDecks": [
-        {
-          "label": "más preguntas",
-          "cards": [
-            {
-              "front": "How much…?",
-              "back": "¿Cuánto cuesta…?"
-            },
-            {
-              "front": "How many…?",
-              "back": "¿Cuántos…?"
-            },
-            {
-              "front": "Which…?",
-              "back": "¿Cuál…?"
-            },
-            {
-              "front": "Whose…?",
-              "back": "¿De quién…?"
-            },
-            {
-              "front": "Can you…?",
-              "back": "¿Puedes…?"
-            },
-            {
-              "front": "Do you like…?",
-              "back": "¿Te gusta…?"
-            }
-          ]
         },
         {
-          "label": "respuestas cortas",
-          "cards": [
-            {
-              "front": "Yes, I do",
-              "back": "Sí (con do)"
-            },
-            {
-              "front": "No, I don't",
-              "back": "No (con don't)"
-            },
-            {
-              "front": "Yes, I can",
-              "back": "Sí, puedo"
-            },
-            {
-              "front": "No, I can't",
-              "back": "No puedo"
-            },
-            {
-              "front": "I don't know",
-              "back": "No sé"
-            },
-            {
-              "front": "Me too",
-              "back": "Yo también"
-            }
-          ]
+          "front": "How much…?",
+          "back": "¿Cuánto cuesta…?"
+        },
+        {
+          "front": "How many…?",
+          "back": "¿Cuántos…?"
+        },
+        {
+          "front": "Yes, I do / No, I don't",
+          "back": "Sí / No (con do)"
+        },
+        {
+          "front": "Yes, I can / No, I can't",
+          "back": "Sí, puedo / No puedo"
         }
-      ]
+      ],
+      "deckLabel": "preguntas y respuestas"
     },
     {
       "type": "dialogue",

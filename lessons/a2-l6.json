@@ -116,7 +116,7 @@
       "id": "fc-vocab",
       "title": "FLASHCARDS · planes",
       "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "planes",
+      "deckLabel": "planes y calendario",
       "cards": [
         {
           "front": "a plan",
@@ -141,37 +141,22 @@
         {
           "front": "to launch",
           "back": "lanzar"
-        }
-      ],
-      "altDecks": [
+        },
         {
-          "label": "el calendario",
-          "cards": [
-            {
-              "front": "tonight",
-              "back": "esta noche"
-            },
-            {
-              "front": "tomorrow morning",
-              "back": "mañana por la mañana"
-            },
-            {
-              "front": "next week",
-              "back": "la próxima semana"
-            },
-            {
-              "front": "the day after tomorrow",
-              "back": "pasado mañana"
-            },
-            {
-              "front": "to arrange",
-              "back": "organizar / acordar"
-            },
-            {
-              "front": "to improve",
-              "back": "mejorar"
-            }
-          ]
+          "front": "tonight",
+          "back": "esta noche"
+        },
+        {
+          "front": "tomorrow morning",
+          "back": "mañana por la mañana"
+        },
+        {
+          "front": "next week",
+          "back": "la próxima semana"
+        },
+        {
+          "front": "the day after tomorrow",
+          "back": "pasado mañana"
         }
       ]
     },

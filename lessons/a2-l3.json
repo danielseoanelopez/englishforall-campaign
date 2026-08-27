@@ -115,7 +115,7 @@
       "id": "fc-vocab",
       "title": "FLASHCARDS · verbos irregulares",
       "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "verbos 1",
+      "deckLabel": "verbos irregulares",
       "cards": [
         {
           "front": "go → went",
@@ -140,37 +140,22 @@
         {
           "front": "meet → met",
           "back": "conocer → conoció"
-        }
-      ],
-      "altDecks": [
+        },
         {
-          "label": "verbos 2",
-          "cards": [
-            {
-              "front": "build → built",
-              "back": "construir → construyó"
-            },
-            {
-              "front": "leave → left",
-              "back": "irse → se fue"
-            },
-            {
-              "front": "come → came",
-              "back": "venir → vino"
-            },
-            {
-              "front": "see → saw",
-              "back": "ver → vio"
-            },
-            {
-              "front": "take → took",
-              "back": "tomar → tomó"
-            },
-            {
-              "front": "do → did",
-              "back": "hacer → hizo"
-            }
-          ]
+          "front": "build → built",
+          "back": "construir → construyó"
+        },
+        {
+          "front": "leave → left",
+          "back": "irse → se fue"
+        },
+        {
+          "front": "see → saw",
+          "back": "ver → vio"
+        },
+        {
+          "front": "take → took",
+          "back": "tomar → tomó"
         }
       ]
     },

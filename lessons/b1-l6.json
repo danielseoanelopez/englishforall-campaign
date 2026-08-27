@@ -134,7 +134,7 @@
       "id": "fc-vocab",
       "title": "FLASHCARDS · roadmap",
       "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "el plan",
+      "deckLabel": "el plan y los plazos",
       "cards": [
         {
           "front": "roadmap",
@@ -159,37 +159,22 @@
         {
           "front": "growth",
           "back": "crecimiento"
-        }
-      ],
-      "altDecks": [
+        },
         {
-          "label": "para cuándo",
-          "cards": [
-            {
-              "front": "to expand",
-              "back": "expandirse"
-            },
-            {
-              "front": "pitch",
-              "back": "presentación (para convencer)"
-            },
-            {
-              "front": "to present",
-              "back": "presentar"
-            },
-            {
-              "front": "by the end of the month",
-              "back": "para fin de mes"
-            },
-            {
-              "front": "by Friday",
-              "back": "para el viernes"
-            },
-            {
-              "front": "in two weeks",
-              "back": "en dos semanas"
-            }
-          ]
+          "front": "to expand",
+          "back": "expandirse"
+        },
+        {
+          "front": "pitch",
+          "back": "presentación (para convencer)"
+        },
+        {
+          "front": "by the end of the month",
+          "back": "para fin de mes"
+        },
+        {
+          "front": "by Friday",
+          "back": "para el viernes"
         }
       ]
     },

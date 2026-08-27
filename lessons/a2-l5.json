@@ -116,62 +116,47 @@
       "id": "fc-vocab",
       "title": "FLASHCARDS · adjetivos",
       "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "opuestos",
+      "deckLabel": "comparar y describir",
       "cards": [
         {
-          "front": "cheap",
-          "back": "barato"
+          "front": "cheap / expensive",
+          "back": "barato / caro"
         },
         {
-          "front": "expensive",
-          "back": "caro"
+          "front": "light / heavy",
+          "back": "liviano / pesado"
         },
         {
-          "front": "light",
-          "back": "liviano"
+          "front": "fast / slow",
+          "back": "rápido / lento"
         },
         {
-          "front": "heavy",
-          "back": "pesado"
+          "front": "big / small",
+          "back": "grande / chico"
         },
         {
-          "front": "fast",
-          "back": "rápido"
+          "front": "reliable",
+          "back": "confiable"
         },
         {
-          "front": "slow",
-          "back": "lento"
-        }
-      ],
-      "altDecks": [
+          "front": "comfortable",
+          "back": "cómodo"
+        },
         {
-          "label": "más adjetivos",
-          "cards": [
-            {
-              "front": "big",
-              "back": "grande"
-            },
-            {
-              "front": "small",
-              "back": "chico"
-            },
-            {
-              "front": "reliable",
-              "back": "confiable"
-            },
-            {
-              "front": "comfortable",
-              "back": "cómodo"
-            },
-            {
-              "front": "better",
-              "back": "mejor"
-            },
-            {
-              "front": "worse",
-              "back": "peor"
-            }
-          ]
+          "front": "better",
+          "back": "mejor"
+        },
+        {
+          "front": "worse",
+          "back": "peor"
+        },
+        {
+          "front": "…er than",
+          "back": "más … que"
+        },
+        {
+          "front": "the …est",
+          "back": "el/la más …"
         }
       ]
     },

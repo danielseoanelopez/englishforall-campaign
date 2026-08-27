@@ -112,7 +112,7 @@
       "id": "fc-vocab",
       "title": "FLASHCARDS · al teléfono",
       "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "acciones",
+      "deckLabel": "pedidos y ofrecimientos",
       "cards": [
         {
           "front": "take a message",
@@ -131,43 +131,28 @@
           "back": "adjuntar un archivo"
         },
         {
-          "front": "share my screen",
-          "back": "compartir pantalla"
-        },
-        {
           "front": "book a room",
           "back": "reservar una sala"
-        }
-      ],
-      "altDecks": [
+        },
         {
-          "label": "cortesía",
-          "cards": [
-            {
-              "front": "Can you help me?",
-              "back": "¿Puedes ayudarme?"
-            },
-            {
-              "front": "Could you send it?",
-              "back": "¿Podrías enviarlo?"
-            },
-            {
-              "front": "Would you mind waiting?",
-              "back": "¿Te molestaría esperar?"
-            },
-            {
-              "front": "Shall I check?",
-              "back": "¿Quieres que revise?"
-            },
-            {
-              "front": "I'll do it now",
-              "back": "Lo hago ahora"
-            },
-            {
-              "front": "a favor",
-              "back": "un favor"
-            }
-          ]
+          "front": "Can you help me?",
+          "back": "¿Puedes ayudarme?"
+        },
+        {
+          "front": "Could you send it?",
+          "back": "¿Podrías enviarlo?"
+        },
+        {
+          "front": "Would you mind waiting?",
+          "back": "¿Te molestaría esperar?"
+        },
+        {
+          "front": "Shall I check?",
+          "back": "¿Quieres que revise?"
+        },
+        {
+          "front": "I'll do it now",
+          "back": "Lo hago ahora"
         }
       ]
     },

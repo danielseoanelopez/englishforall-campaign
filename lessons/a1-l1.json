@@ -127,91 +127,47 @@
       "intro": "Toca cada tarjeta para ver el significado. Estúdialas antes de los ejercicios.",
       "cards": [
         {
-          "front": "Hello / Hi 👋",
+          "front": "Hello / Hi",
           "back": "Hola"
         },
         {
-          "front": "Good morning ☀️",
+          "front": "Good morning",
           "back": "Buenos días"
         },
         {
-          "front": "Goodbye 👋",
+          "front": "Good night",
+          "back": "Buenas noches"
+        },
+        {
+          "front": "Goodbye / Bye",
           "back": "Adiós"
         },
         {
-          "front": "Nice to meet you 🤝",
+          "front": "See you soon!",
+          "back": "¡Nos vemos pronto!"
+        },
+        {
+          "front": "Nice to meet you",
           "back": "Mucho gusto"
         },
         {
-          "front": "How are you? 🙂",
+          "front": "How are you?",
           "back": "¿Cómo estás?"
         },
         {
-          "front": "See you soon! 👀",
-          "back": "¡Nos vemos pronto!"
-        }
-      ],
-      "deckLabel": "saludos",
-      "altDecks": [
-        {
-          "label": "cortesía",
-          "cards": [
-            {
-              "front": "Please",
-              "back": "Por favor"
-            },
-            {
-              "front": "Thank you",
-              "back": "Gracias"
-            },
-            {
-              "front": "You're welcome",
-              "back": "De nada"
-            },
-            {
-              "front": "Sorry",
-              "back": "Perdón"
-            },
-            {
-              "front": "Excuse me",
-              "back": "Disculpa"
-            },
-            {
-              "front": "Good night",
-              "back": "Buenas noches"
-            }
-          ]
+          "front": "What's your name?",
+          "back": "¿Cómo te llamas?"
         },
         {
-          "label": "conocerse",
-          "cards": [
-            {
-              "front": "What's your name?",
-              "back": "¿Cómo te llamas?"
-            },
-            {
-              "front": "My name is…",
-              "back": "Me llamo…"
-            },
-            {
-              "front": "Where are you from?",
-              "back": "¿De dónde eres?"
-            },
-            {
-              "front": "I'm from…",
-              "back": "Soy de…"
-            },
-            {
-              "front": "This is my friend",
-              "back": "Te presento a mi amigo/a"
-            },
-            {
-              "front": "See you tomorrow!",
-              "back": "¡Hasta mañana!"
-            }
-          ]
+          "front": "My name is…",
+          "back": "Me llamo…"
+        },
+        {
+          "front": "Where are you from?",
+          "back": "¿De dónde eres?"
         }
-      ]
+      ],
+      "deckLabel": "saludos y presentarse"
     },
     {
       "type": "listening",

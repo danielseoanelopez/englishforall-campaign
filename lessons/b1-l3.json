@@ -135,7 +135,7 @@
       "id": "fc-vocab",
       "title": "FLASHCARDS · la caída del servidor",
       "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "el incidente",
+      "deckLabel": "el incidente y la reacción",
       "cards": [
         {
           "front": "server",
@@ -160,37 +160,22 @@
         {
           "front": "logs",
           "back": "registros del sistema"
-        }
-      ],
-      "altDecks": [
+        },
         {
-          "label": "la reacción",
-          "cards": [
-            {
-              "front": "to fix",
-              "back": "arreglar"
-            },
-            {
-              "front": "to restart",
-              "back": "reiniciar"
-            },
-            {
-              "front": "on call",
-              "back": "de guardia"
-            },
-            {
-              "front": "launch night",
-              "back": "noche de lanzamiento"
-            },
-            {
-              "front": "while",
-              "back": "mientras"
-            },
-            {
-              "front": "suddenly",
-              "back": "de repente"
-            }
-          ]
+          "front": "to fix",
+          "back": "arreglar"
+        },
+        {
+          "front": "to restart",
+          "back": "reiniciar"
+        },
+        {
+          "front": "on call",
+          "back": "de guardia"
+        },
+        {
+          "front": "suddenly",
+          "back": "de repente"
         }
       ]
     },

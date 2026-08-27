@@ -153,115 +153,47 @@
       "intro": "Repasa los participios irregulares — los necesitas para el present perfect (have/has + participio).",
       "cards": [
         {
-          "front": "do",
-          "back": "done"
+          "front": "do → done",
+          "back": "hacer"
         },
         {
-          "front": "go",
-          "back": "gone / been"
+          "front": "go → gone / been",
+          "back": "ir"
         },
         {
-          "front": "write",
-          "back": "written"
+          "front": "write → written",
+          "back": "escribir"
         },
         {
-          "front": "send",
-          "back": "sent"
+          "front": "send → sent",
+          "back": "enviar"
         },
         {
-          "front": "make",
-          "back": "made"
+          "front": "make → made",
+          "back": "hacer / fabricar"
         },
         {
-          "front": "take",
-          "back": "taken"
+          "front": "take → taken",
+          "back": "tomar"
         },
         {
-          "front": "begin",
-          "back": "begun"
+          "front": "speak → spoken",
+          "back": "hablar"
         },
         {
-          "front": "speak",
-          "back": "spoken"
+          "front": "see → seen",
+          "back": "ver"
         },
         {
-          "front": "see",
-          "back": "seen"
+          "front": "give → given",
+          "back": "dar"
         },
         {
-          "front": "give",
-          "back": "given"
+          "front": "think → thought",
+          "back": "pensar"
         }
       ],
-      "deckLabel": "participios 1",
-      "altDecks": [
-        {
-          "label": "participios 2",
-          "cards": [
-            {
-              "front": "know",
-              "back": "known"
-            },
-            {
-              "front": "think",
-              "back": "thought"
-            },
-            {
-              "front": "buy",
-              "back": "bought"
-            },
-            {
-              "front": "find",
-              "back": "found"
-            },
-            {
-              "front": "leave",
-              "back": "left"
-            },
-            {
-              "front": "build",
-              "back": "built"
-            },
-            {
-              "front": "have",
-              "back": "had"
-            },
-            {
-              "front": "get",
-              "back": "got"
-            }
-          ]
-        },
-        {
-          "label": "vocabulario",
-          "cards": [
-            {
-              "front": "achievement",
-              "back": "logro"
-            },
-            {
-              "front": "deadline",
-              "back": "fecha límite"
-            },
-            {
-              "front": "milestone",
-              "back": "hito"
-            },
-            {
-              "front": "feedback",
-              "back": "retroalimentación"
-            },
-            {
-              "front": "on track",
-              "back": "en buen camino"
-            },
-            {
-              "front": "behind schedule",
-              "back": "atrasado"
-            }
-          ]
-        }
-      ]
+      "deckLabel": "participios irregulares"
     },
     {
       "type": "contrast",

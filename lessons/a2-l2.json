@@ -114,7 +114,7 @@
       "id": "fc-vocab",
       "title": "FLASHCARDS · trabajo remoto",
       "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "en la oficina",
+      "deckLabel": "trabajo remoto y email",
       "cards": [
         {
           "front": "price estimate",
@@ -139,37 +139,22 @@
         {
           "front": "attached",
           "back": "adjunto"
-        }
-      ],
-      "altDecks": [
+        },
         {
-          "label": "en el email",
-          "cards": [
-            {
-              "front": "available",
-              "back": "disponible"
-            },
-            {
-              "front": "task",
-              "back": "tarea"
-            },
-            {
-              "front": "details",
-              "back": "detalles"
-            },
-            {
-              "front": "team lead",
-              "back": "líder del equipo"
-            },
-            {
-              "front": "as soon as possible",
-              "back": "lo antes posible"
-            },
-            {
-              "front": "Best regards",
-              "back": "Saludos cordiales"
-            }
-          ]
+          "front": "available",
+          "back": "disponible"
+        },
+        {
+          "front": "task",
+          "back": "tarea"
+        },
+        {
+          "front": "as soon as possible",
+          "back": "lo antes posible"
+        },
+        {
+          "front": "Best regards",
+          "back": "Saludos cordiales"
         }
       ]
     },

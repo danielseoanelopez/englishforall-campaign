@@ -117,91 +117,47 @@
       "intro": "Toca cada tarjeta para ver el significado.",
       "cards": [
         {
-          "front": "mother 👩",
+          "front": "mother",
           "back": "madre"
         },
         {
-          "front": "father 👨",
+          "front": "father",
           "back": "padre"
         },
         {
-          "front": "brother 👦",
+          "front": "brother",
           "back": "hermano"
         },
         {
-          "front": "sister 👧",
+          "front": "sister",
           "back": "hermana"
         },
         {
-          "front": "son",
-          "back": "hijo"
+          "front": "grandmother",
+          "back": "abuela"
         },
         {
-          "front": "daughter",
-          "back": "hija"
+          "front": "grandfather",
+          "back": "abuelo"
+        },
+        {
+          "front": "aunt / uncle",
+          "back": "tía / tío"
+        },
+        {
+          "front": "cousin",
+          "back": "primo / prima"
+        },
+        {
+          "front": "tall / short",
+          "back": "alto/a / bajo/a"
+        },
+        {
+          "front": "eyes / hair",
+          "back": "ojos / pelo"
         }
       ],
-      "deckLabel": "familia",
-      "altDecks": [
-        {
-          "label": "más familia",
-          "cards": [
-            {
-              "front": "grandmother",
-              "back": "abuela"
-            },
-            {
-              "front": "grandfather",
-              "back": "abuelo"
-            },
-            {
-              "front": "uncle",
-              "back": "tío"
-            },
-            {
-              "front": "aunt",
-              "back": "tía"
-            },
-            {
-              "front": "cousin",
-              "back": "primo / prima"
-            },
-            {
-              "front": "pet",
-              "back": "mascota"
-            }
-          ]
-        },
-        {
-          "label": "descripciones",
-          "cards": [
-            {
-              "front": "tall",
-              "back": "alto/a"
-            },
-            {
-              "front": "short",
-              "back": "bajo/a"
-            },
-            {
-              "front": "young",
-              "back": "joven"
-            },
-            {
-              "front": "old",
-              "back": "mayor"
-            },
-            {
-              "front": "eyes",
-              "back": "ojos"
-            },
-            {
-              "front": "hair",
-              "back": "pelo"
-            }
-          ]
-        }
-      ]
+      "deckLabel": "familia y descripción"
     },
     {
       "type": "gapFill",

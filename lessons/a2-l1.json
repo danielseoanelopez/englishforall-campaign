@@ -115,7 +115,7 @@
       "id": "fc-vocab",
       "title": "FLASHCARDS · rutinas",
       "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "rutinas",
+      "deckLabel": "rutina y frecuencia",
       "cards": [
         {
           "front": "wake up",
@@ -140,37 +140,22 @@
         {
           "front": "finish work",
           "back": "terminar el trabajo"
-        }
-      ],
-      "altDecks": [
+        },
         {
-          "label": "frecuencia",
-          "cards": [
-            {
-              "front": "always",
-              "back": "siempre"
-            },
-            {
-              "front": "usually",
-              "back": "normalmente"
-            },
-            {
-              "front": "often",
-              "back": "a menudo"
-            },
-            {
-              "front": "sometimes",
-              "back": "a veces"
-            },
-            {
-              "front": "hardly ever",
-              "back": "casi nunca"
-            },
-            {
-              "front": "never",
-              "back": "nunca"
-            }
-          ]
+          "front": "always",
+          "back": "siempre"
+        },
+        {
+          "front": "usually",
+          "back": "normalmente"
+        },
+        {
+          "front": "hardly ever",
+          "back": "casi nunca"
+        },
+        {
+          "front": "never",
+          "back": "nunca"
         }
       ]
     },

@@ -149,79 +149,47 @@
       "intro": "Toca cada tarjeta para ver la traducción. Estúdialas antes de los ejercicios.",
       "cards": [
         {
-          "front": "<img class='job' src='job-teacher.png' alt='teacher'> teacher",
+          "front": "teacher",
           "back": "profesor/a"
         },
         {
-          "front": "<img class='job' src='job-doctor.png' alt='doctor'> doctor",
+          "front": "doctor",
           "back": "médico/a"
         },
         {
-          "front": "<img class='job' src='job-nurse.png' alt='nurse'> nurse",
+          "front": "nurse",
           "back": "enfermero/a"
         },
         {
-          "front": "<img class='job' src='job-engineer.png' alt='engineer'> engineer",
+          "front": "engineer",
           "back": "ingeniero/a"
         },
         {
-          "front": "<img class='job' src='job-student.png' alt='student'> student",
+          "front": "student",
           "back": "estudiante"
-        }
-      ],
-      "deckLabel": "trabajos",
-      "altDecks": [
-        {
-          "label": "más trabajos",
-          "cards": [
-            {
-              "front": "<img class='job' src='job-cook.png' alt='cook'> cook",
-              "back": "cocinero/a"
-            },
-            {
-              "front": "<img class='job' src='job-police-officer.png' alt='police officer'> police officer",
-              "back": "policía"
-            },
-            {
-              "front": "<img class='job' src='job-dentist.png' alt='dentist'> dentist",
-              "back": "dentista"
-            },
-            {
-              "front": "<img class='job' src='job-software-developer.png' alt='software developer'> software developer",
-              "back": "programador/a"
-            }
-          ]
         },
         {
-          "label": "preguntas personales",
-          "cards": [
-            {
-              "front": "What's your name?",
-              "back": "¿Cómo te llamas?"
-            },
-            {
-              "front": "How old are you?",
-              "back": "¿Cuántos años tienes?"
-            },
-            {
-              "front": "Where are you from?",
-              "back": "¿De dónde eres?"
-            },
-            {
-              "front": "What do you do?",
-              "back": "¿A qué te dedicas?"
-            },
-            {
-              "front": "Where do you live?",
-              "back": "¿Dónde vives?"
-            },
-            {
-              "front": "What's your phone number?",
-              "back": "¿Cuál es tu número de teléfono?"
-            }
-          ]
+          "front": "cook",
+          "back": "cocinero/a"
+        },
+        {
+          "front": "police officer",
+          "back": "policía"
+        },
+        {
+          "front": "dentist",
+          "back": "dentista"
+        },
+        {
+          "front": "software developer",
+          "back": "programador/a"
+        },
+        {
+          "front": "waiter",
+          "back": "mesero/a"
         }
-      ]
+      ],
+      "deckLabel": "trabajos"
     },
     {
       "type": "picMatch",

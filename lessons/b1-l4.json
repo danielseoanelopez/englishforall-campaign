@@ -134,7 +134,7 @@
       "id": "fc-vocab",
       "title": "FLASHCARDS · negociación",
       "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "el trato",
+      "deckLabel": "negociar el trato",
       "cards": [
         {
           "front": "scope",
@@ -159,37 +159,22 @@
         {
           "front": "extra cost",
           "back": "costo adicional"
-        }
-      ],
-      "altDecks": [
+        },
         {
-          "label": "condiciones",
-          "cards": [
-            {
-              "front": "to confirm",
-              "back": "confirmar"
-            },
-            {
-              "front": "phase",
-              "back": "fase / etapa"
-            },
-            {
-              "front": "to deliver",
-              "back": "entregar"
-            },
-            {
-              "front": "agreement",
-              "back": "acuerdo"
-            },
-            {
-              "front": "unless",
-              "back": "a menos que"
-            },
-            {
-              "front": "as long as",
-              "back": "siempre y cuando"
-            }
-          ]
+          "front": "to confirm",
+          "back": "confirmar"
+        },
+        {
+          "front": "to deliver",
+          "back": "entregar"
+        },
+        {
+          "front": "unless",
+          "back": "a menos que"
+        },
+        {
+          "front": "as long as",
+          "back": "siempre y cuando"
         }
       ]
     },

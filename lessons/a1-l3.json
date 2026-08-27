@@ -124,16 +124,8 @@
           "back": "lunes"
         },
         {
-          "front": "Tuesday",
-          "back": "martes"
-        },
-        {
           "front": "Wednesday",
           "back": "miércoles"
-        },
-        {
-          "front": "Thursday",
-          "back": "jueves"
         },
         {
           "front": "Friday",
@@ -142,69 +134,33 @@
         {
           "front": "weekend",
           "back": "fin de semana"
-        }
-      ],
-      "deckLabel": "los días",
-      "altDecks": [
-        {
-          "label": "la hora",
-          "cards": [
-            {
-              "front": "o'clock",
-              "back": "en punto"
-            },
-            {
-              "front": "half past",
-              "back": "y media"
-            },
-            {
-              "front": "quarter past",
-              "back": "y cuarto"
-            },
-            {
-              "front": "quarter to",
-              "back": "menos cuarto"
-            },
-            {
-              "front": "What time is it?",
-              "back": "¿Qué hora es?"
-            },
-            {
-              "front": "at six on Monday",
-              "back": "a las seis el lunes"
-            }
-          ]
         },
         {
-          "label": "números trampa",
-          "cards": [
-            {
-              "front": "thirteen",
-              "back": "13 · trece"
-            },
-            {
-              "front": "thirty",
-              "back": "30 · treinta"
-            },
-            {
-              "front": "fourteen",
-              "back": "14 · catorce"
-            },
-            {
-              "front": "forty",
-              "back": "40 · cuarenta"
-            },
-            {
-              "front": "fifteen",
-              "back": "15 · quince"
-            },
-            {
-              "front": "fifty",
-              "back": "50 · cincuenta"
-            }
-          ]
+          "front": "What time is it?",
+          "back": "¿Qué hora es?"
+        },
+        {
+          "front": "o'clock",
+          "back": "en punto"
+        },
+        {
+          "front": "half past",
+          "back": "y media"
+        },
+        {
+          "front": "quarter past / quarter to",
+          "back": "y cuarto / menos cuarto"
+        },
+        {
+          "front": "thirteen ≠ thirty",
+          "back": "trece ≠ treinta"
+        },
+        {
+          "front": "fifteen ≠ fifty",
+          "back": "quince ≠ cincuenta"
         }
-      ]
+      ],
+      "deckLabel": "días, horas y números"
     },
     {
       "type": "match",
