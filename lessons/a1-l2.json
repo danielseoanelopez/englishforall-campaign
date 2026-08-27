@@ -388,8 +388,8 @@
           "b": "<img class='flag' src='flag-br.png' alt='Brasil'>"
         },
         {
-          "a": "Spain",
-          "b": "<img class='flag' src='flag-es.png' alt='España'>"
+          "a": "Argentina",
+          "b": "<img class='flag' src='flag-ar.png' alt='Argentina' onerror=\"this.outerHTML='<span class=flag-ar-css></span>'\">"
         }
       ]
     },

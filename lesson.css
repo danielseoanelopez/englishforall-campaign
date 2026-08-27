@@ -391,3 +391,11 @@ ico-window{font-weight:400}ico-window::before{content:"\f2d0"}
 ico-xmark{font-weight:900}ico-xmark::before{content:"\f00d"}
 .sw{display:inline-block;width:.85em;height:.85em;border-radius:50%;background:var(--c);border:1px solid #ffffff55;vertical-align:-.1em;margin-right:.28em;box-shadow:0 0 6px var(--c)}
 .lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:.52rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
+
+/* ---------- Argentina flag: CSS stand-in until flag-ar.png is generated ---------- */
+.flag-ar-css { display: inline-block; width: 82%; aspect-ratio: 3 / 2; border-radius: 10px;
+  background: linear-gradient(#75aadb 0 33.3%, #ffffff 33.3% 66.6%, #75aadb 66.6% 100%);
+  position: relative; }
+.flag-ar-css::after { content: ""; position: absolute; left: 50%; top: 50%;
+  width: 22%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%;
+  background: #f6b40e; box-shadow: 0 0 8px #f6b40e88; }
