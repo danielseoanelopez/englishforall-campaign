@@ -10,9 +10,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20260826d">
+<link rel="stylesheet" href="lesson.css?v=20260827b">
 </head>
 <body>
 <div class="side-deco left" id="decoLeft"></div>
@@ -34,7 +35,7 @@
   <div id="lessonRoot"></div>
 
   <div class="btn-row" id="finalRow" data-aos="fade-up" style="display:none">
-    <div style="margin-bottom:14px"><input id="studentName" type="text" placeholder="Tu nombre" autocomplete="given-name" style="width:100%;max-width:320px;padding:10px 14px;background:#10122a;border:2px solid var(--cyan);border-radius:10px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:0.95rem;outline:none;box-shadow:inset 0 0 10px #00e5ff22"><br><span class="es" style="font-size:0.78rem;display:inline-block;margin-top:7px"><i class="fa-solid fa-lock"></i> Tu nombre + score se le envían a tu profe para tu seguimiento.</span></div>
+    <div style="margin-bottom:14px"><input id="studentName" type="text" placeholder="Tu nombre" autocomplete="given-name" style="width:100%;max-width:320px;padding:10px 14px;background:#10122a;border:2px solid var(--cyan);border-radius:10px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:0.95rem;outline:none;box-shadow:inset 0 0 10px #00e5ff22"><br><span class="es" style="font-size:0.78rem;display:inline-block;margin-top:7px"><ico-lock></ico-lock> Tu nombre + score se le envían a tu profe para tu seguimiento.</span></div>
     <button class="btn" id="rankBtn" onclick="seeRank()"><ico-star></ico-star> SEE MY RANK</button>
     <p class="es" id="rankWarn" style="display:none; color:var(--red); margin-top:10px"><ico-warn></ico-warn> Completa todos los ejercicios primero (botón <ico-check></ico-check> CHECK en cada uno).</p>
     <div style="margin-top:18px"><a class="btn wa-btn" id="hwWa" href="#" onclick="return sendHomework(this)"><i class="fa-brands fa-whatsapp"></i> ENVIAR MI TAREA</a></div>
@@ -62,7 +63,7 @@
     <a class="so-dc" href="#" target="_blank" rel="noopener" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
     <a class="so-ig" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
     <a class="so-li" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a class="so-tap" href="#" target="_blank" rel="noopener" aria-label="Taplink"><i class="fa-solid fa-link"></i></a>
+    <a class="so-tap" href="#" target="_blank" rel="noopener" aria-label="Taplink"><ico-link></ico-link></a>
   </div>
   <footer id="footer"><span class="b">ENGLISH <em>for ALL</em></span><span class="sep"><ico-star></ico-star></span>Rank Up</footer>
 </div>
@@ -356,7 +357,7 @@ function toggleMute(){ muted=!muted; try{ localStorage.setItem("efa_muted", mute
 (function(){ document.getElementById("muteBtn").textContent = muted?"<ico-mute></ico-mute>":"<ico-volume></ico-volume>"; })();
 (function initSideDeco(){ const items=["★","✦","☕","🎧","💬","🏆","★","✦","⭐","📧"], colors=["#00e5ff","#ff3df0","#9d4dff","#ffc83d"]; ["decoLeft","decoRight"].forEach(id=>{ const box=document.getElementById(id); for(let i=0;i<8;i++){ const s=document.createElement("span"); s.textContent=items[Math.floor(Math.random()*items.length)]; s.style.left=(10+Math.random()*70)+"%"; s.style.color=colors[Math.floor(Math.random()*colors.length)]; s.style.animationDuration=(14+Math.random()*12)+"s"; s.style.animationDelay=(-Math.random()*22)+"s"; box.appendChild(s);} }); })();
 (function initSocial(){ document.querySelectorAll(".so-wa").forEach(a=>a.href=SOCIAL.whatsapp); document.querySelectorAll(".so-ig").forEach(a=>a.href=SOCIAL.instagram); document.querySelectorAll(".so-li").forEach(a=>a.href=SOCIAL.linkedin); document.querySelectorAll(".so-tap").forEach(a=>a.href=SOCIAL.taplink); document.querySelectorAll(".so-dc").forEach(a=>{ a.setAttribute("onclick","return copyDiscord(this)"); a.title="Discord: "+SOCIAL.discord+" (clic para copiar)"; }); })();
-function copyDiscord(el){ var r=el.innerHTML; var done=function(){ el.innerHTML='<i class="fa-solid fa-check"></i>'+(el.classList.contains("btn")?" ¡COPIADO!":""); setTimeout(function(){el.innerHTML=r;},1500); }; try{ navigator.clipboard.writeText(SOCIAL.discord).then(done,done); }catch(e){ done(); } return false; }
+function copyDiscord(el){ var r=el.innerHTML; var done=function(){ el.innerHTML='<ico-check></ico-check>'+(el.classList.contains("btn")?" ¡COPIADO!":""); setTimeout(function(){el.innerHTML=r;},1500); }; try{ navigator.clipboard.writeText(SOCIAL.discord).then(done,done); }catch(e){ done(); } return false; }
 function toggleReveal(id, btn){ const el=document.getElementById(id); const open=el.classList.toggle("open"); btn.innerHTML = open?btn.dataset.hide:btn.dataset.show; blip(); }
 // writing checklist: tap each step to tick it off (saved per lesson)
 function ckToggle(el){ const on=el.classList.toggle("done"); el.setAttribute("aria-checked", on?"true":"false"); if(on) okBeep(); else blip();
