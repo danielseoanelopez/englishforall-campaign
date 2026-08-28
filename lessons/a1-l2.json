@@ -149,43 +149,43 @@
       "intro": "Toca cada tarjeta para ver la traducción. Estúdialas antes de los ejercicios.",
       "cards": [
         {
-          "front": "teacher",
+          "front": "<img class='job' src='job-teacher.png' alt='teacher'> teacher",
           "back": "profesor/a"
         },
         {
-          "front": "doctor",
+          "front": "<img class='job' src='job-doctor.png' alt='doctor'> doctor",
           "back": "médico/a"
         },
         {
-          "front": "nurse",
+          "front": "<img class='job' src='job-nurse.png' alt='nurse'> nurse",
           "back": "enfermero/a"
         },
         {
-          "front": "engineer",
+          "front": "<img class='job' src='job-engineer.png' alt='engineer'> engineer",
           "back": "ingeniero/a"
         },
         {
-          "front": "student",
+          "front": "<img class='job' src='job-student.png' alt='student'> student",
           "back": "estudiante"
         },
         {
-          "front": "cook",
+          "front": "<img class='job' src='job-cook.png' alt='cook'> cook",
           "back": "cocinero/a"
         },
         {
-          "front": "police officer",
+          "front": "<img class='job' src='job-police-officer.png' alt='police officer'> police officer",
           "back": "policía"
         },
         {
-          "front": "dentist",
+          "front": "<img class='job' src='job-dentist.png' alt='dentist'> dentist",
           "back": "dentista"
         },
         {
-          "front": "software developer",
+          "front": "<img class='job' src='job-software-developer.png' alt='software developer'> software developer",
           "back": "programador/a"
         },
         {
-          "front": "waiter",
+          "front": "<img class='job' src='job-waiter.png' alt='waiter'> waiter",
           "back": "mesero/a"
         }
       ],
