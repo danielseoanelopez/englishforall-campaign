@@ -110,9 +110,12 @@
   .lrow { display: flex; align-items: center; gap: 13px; padding: 12px 14px; border: 1px solid #2a3a5a; border-radius: 11px; margin-top: 9px; background: #10122a66; text-decoration: none; color: var(--text); transition: border-color 0.15s, box-shadow 0.15s, background 0.15s; }
   a.lrow:hover { border-color: var(--accent); background: #00e5ff0c; box-shadow: 0 0 12px var(--glow); transform: translateY(-1px); }
   .lrow.locked { opacity: 0.55; cursor: default; }
-  .lnum { flex-shrink: 0; width: 34px; height: 34px; border-radius: 9px; background: var(--accent); color: #060614; font-family: "Press Start 2P", monospace; font-size: 0.62rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 8px var(--glow); }
+  .lnum { flex-shrink: 0; width: 34px; height: 34px; border-radius: 7px; background: var(--accent); color: #02181f; font-family: "Press Start 2P", monospace; font-size: 0.72rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 5px var(--glow); }
   .lrow.locked .lnum { background: #2a3a5a; color: var(--muted); box-shadow: none; }
-  .lrow.boss .lnum { background: var(--gold); color: #1a1000; box-shadow: 0 0 10px var(--gold); }
+  .lrow.boss .lnum { background: var(--gold); color: #1c1200; box-shadow: 0 0 5px #ffc83d99; }
+  /* The shared icon rule adds margin-right so icons can sit beside text. A lone
+     icon centred in a box must drop it, or it lands half a margin left of centre. */
+  .w-badge > *, .w-chev > *, .lnum > * { margin-right: 0; }
   .linfo { flex: 1; min-width: 0; }
   .ltitle { font-size: 0.98rem; color: var(--text); }
   .lrow.boss .ltitle { font-family: "Press Start 2P", monospace; font-size: 0.66rem; color: var(--gold); text-shadow: 0 0 6px #ffc83d66; letter-spacing: 1px; }
