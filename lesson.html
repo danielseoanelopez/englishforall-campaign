@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20260827e">
+<link rel="stylesheet" href="lesson.css?v=20260827f">
 </head>
 <body>
 <div class="side-deco left" id="decoLeft"></div>
@@ -249,7 +249,7 @@ function fcNextDeck(id){
   const r=document.getElementById(id+"-round");
   if(r) r.innerHTML = `<ico-rotate></ico-rotate> RONDA ${st.cur+1}/${st.decks.length}${d.label?` · ${esc(d.label)}`:''}`;
   const nd=st.decks[(st.cur+1)%st.decks.length];
-  document.getElementById(id+"-next").textContent = `<ico-rotate></ico-rotate> Otra ronda: ${nd.label||'más cartas'}`;
+  document.getElementById(id+"-next").innerHTML = `<ico-rotate></ico-rotate> Otra ronda: ${nd.label||'más cartas'}`;
   blip();
 }
 function writingHtml(w){
@@ -353,8 +353,8 @@ function speakText(btn){
   btn.classList.add("playing");
   speak(btn.dataset.say || btn.getAttribute("data-say") || "", function(){ btn.classList.remove("playing"); });
 }
-function toggleMute(){ muted=!muted; try{ localStorage.setItem("efa_muted", muted?"1":"0"); }catch(e){} document.getElementById("muteBtn").textContent = muted?"<ico-mute></ico-mute>":"<ico-volume></ico-volume>"; if(!muted) blip(); }
-(function(){ document.getElementById("muteBtn").textContent = muted?"<ico-mute></ico-mute>":"<ico-volume></ico-volume>"; })();
+function toggleMute(){ muted=!muted; try{ localStorage.setItem("efa_muted", muted?"1":"0"); }catch(e){} document.getElementById("muteBtn").innerHTML = muted?"<ico-mute></ico-mute>":"<ico-volume></ico-volume>"; if(!muted) blip(); }
+(function(){ document.getElementById("muteBtn").innerHTML = muted?"<ico-mute></ico-mute>":"<ico-volume></ico-volume>"; })();
 (function initSideDeco(){ const items=["★","✦","☕","🎧","💬","🏆","★","✦","⭐","📧"], colors=["#00e5ff","#ff3df0","#9d4dff","#ffc83d"]; ["decoLeft","decoRight"].forEach(id=>{ const box=document.getElementById(id); for(let i=0;i<8;i++){ const s=document.createElement("span"); s.textContent=items[Math.floor(Math.random()*items.length)]; s.style.left=(10+Math.random()*70)+"%"; s.style.color=colors[Math.floor(Math.random()*colors.length)]; s.style.animationDuration=(14+Math.random()*12)+"s"; s.style.animationDelay=(-Math.random()*22)+"s"; box.appendChild(s);} }); })();
 (function initSocial(){ document.querySelectorAll(".so-wa").forEach(a=>a.href=SOCIAL.whatsapp); document.querySelectorAll(".so-ig").forEach(a=>a.href=SOCIAL.instagram); document.querySelectorAll(".so-li").forEach(a=>a.href=SOCIAL.linkedin); document.querySelectorAll(".so-tap").forEach(a=>a.href=SOCIAL.taplink); document.querySelectorAll(".so-dc").forEach(a=>{ a.setAttribute("onclick","return copyDiscord(this)"); a.title="Discord: "+SOCIAL.discord+" (clic para copiar)"; }); })();
 function copyDiscord(el){ var r=el.innerHTML; var done=function(){ el.innerHTML='<ico-check></ico-check>'+(el.classList.contains("btn")?" ¡COPIADO!":""); setTimeout(function(){el.innerHTML=r;},1500); }; try{ navigator.clipboard.writeText(SOCIAL.discord).then(done,done); }catch(e){ done(); } return false; }
@@ -390,7 +390,7 @@ function mLeft(id, i){ const st=matchState[id]; if(st.done) return;
 }
 // tiles lock via classes, never the disabled attribute — a disabled button would also kill the <ico-volume></ico-volume> speaker inside it
 function mRight(id, el){ const st=matchState[id]; if(st.done||st.sel==null||el.classList.contains("used")) return; const r=el.dataset.r; st.slots[st.sel]=r; el.classList.add("used"); document.getElementById(id+"-slot-"+st.sel).textContent=" → "+r; document.getElementById(id+"-l-"+st.sel).classList.remove("sel"); st.sel=null; blip(); }
-function checkMatch(id){ const st=matchState[id]; st.done=true; let correct=0; st.pairs.forEach((p,i)=>{ const got=st.slots[i]; const lEl=document.getElementById(id+"-l-"+i); lEl.classList.remove("sel"); if(got===p.r){ correct++; lEl.classList.add("ok"); } else { lEl.classList.add("no"); document.getElementById(id+"-slot-"+i).textContent=" → "+(got||"—")+"  <ico-check></ico-check> "+p.r; } });
+function checkMatch(id){ const st=matchState[id]; st.done=true; let correct=0; st.pairs.forEach((p,i)=>{ const got=st.slots[i]; const lEl=document.getElementById(id+"-l-"+i); lEl.classList.remove("sel"); if(got===p.r){ correct++; lEl.classList.add("ok"); } else { lEl.classList.add("no"); document.getElementById(id+"-slot-"+i).innerHTML=" → "+(got||"—")+"  <ico-check></ico-check> "+p.r; } });
   document.querySelectorAll("#"+id+" .match-r").forEach(b=>b.classList.add("locked"));
   setScore(id, correct, st.pairs.length);
 }
@@ -415,7 +415,7 @@ function mFlip(id, cardId){
     if(a.dataset.pair===bb.dataset.pair){
       okBeep();
       setTimeout(()=>{ a.classList.add("matched"); bb.classList.add("matched"); st.flipped=[]; st.lock=false; st.matched++;
-        document.getElementById(id+"-status").textContent = st.matched+" / "+st.total+" pares"+(st.matched===st.total?"  <ico-star></ico-star> ¡Completo!":""); }, 320);
+        document.getElementById(id+"-status").innerHTML = st.matched+" / "+st.total+" pares"+(st.matched===st.total?"  <ico-star></ico-star> ¡Completo!":""); }, 320);
     } else { noBeep(); setTimeout(()=>{ a.classList.remove("flip"); bb.classList.remove("flip"); st.flipped=[]; st.lock=false; }, 850); }
   } else { blip(); }
 }

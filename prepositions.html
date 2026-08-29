@@ -647,10 +647,10 @@ function victory() { [523, 659, 784, 1047].forEach((f, i) => setTimeout(() => be
 function toggleMute() {
   muted = !muted;
   try { localStorage.setItem("efa_muted", muted ? "1" : "0"); } catch (e) {}
-  document.getElementById("muteBtn").textContent = muted ? "<ico-mute></ico-mute>" : "<ico-volume></ico-volume>";
+  document.getElementById("muteBtn").innerHTML = muted ? "<ico-mute></ico-mute>" : "<ico-volume></ico-volume>";
   if (!muted) blip();
 }
-(function initMute() { document.getElementById("muteBtn").textContent = muted ? "<ico-mute></ico-mute>" : "<ico-volume></ico-volume>"; })();
+(function initMute() { document.getElementById("muteBtn").innerHTML = muted ? "<ico-mute></ico-mute>" : "<ico-volume></ico-volume>"; })();
 
 (function initSideDeco() {
   const items = ["★", "✦", "🕐", "🎧", "💬", "🏆", "★", "✦", "⭐", "📍"];

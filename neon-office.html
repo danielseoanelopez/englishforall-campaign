@@ -644,7 +644,7 @@ muteBtn.addEventListener("click", function () {
 /* ============ HELPERS ============ */
 const stage = document.getElementById("stage");
 function hud() {
-  document.getElementById("hudHearts").textContent = "<ico-heart></ico-heart>".repeat(S.hearts) + "<ico-heartopen></ico-heartopen>".repeat(3 - S.hearts);
+  document.getElementById("hudHearts").innerHTML = "<ico-heart></ico-heart>".repeat(S.hearts) + "<ico-heartopen></ico-heartopen>".repeat(3 - S.hearts);
   document.getElementById("hudXP").textContent = "XP " + String(S.xp).padStart(4, "0");
   document.getElementById("hudCoins").textContent = "TIPS $" + S.coins;
 }
@@ -1092,7 +1092,7 @@ function showSummary() {
     const txt = "I scored " + S.pawsTotal + "/" + max + " <ico-paw></ico-paw> on stage " + st.num + " of THE OFFICE TOWER — English for All · Rank Up! <ico-gamepad></ico-gamepad> Can you beat me? " + location.href.split("?")[0];
     try {
       if (navigator.share) await navigator.share({ text: txt });
-      else { await navigator.clipboard.writeText(txt); alert("Copied! / ¡Copiado! <ico-clipboard></ico-clipboard>"); }
+      else { await navigator.clipboard.writeText(txt); alert("Copied! / ¡Copiado!"); }
     } catch (e) {}
   });
 }
@@ -1132,7 +1132,7 @@ else showTitle();
   if(last>0){ m.addEventListener("loadedmetadata",function(){ try{ m.currentTime=last%(m.duration||1);}catch(e){} },{once:true}); }
   var btn=document.createElement("button");
   btn.className="music-btn"; btn.title="Music on/off"; btn.setAttribute("aria-label","Music on/off");
-  function draw(){ btn.textContent=on?"<ico-music></ico-music>":"<ico-mute></ico-mute>"; btn.style.opacity=on?"1":"0.5"; }
+  function draw(){ btn.innerHTML=on?"<ico-music></ico-music>":"<ico-mute></ico-mute>"; btn.style.opacity=on?"1":"0.5"; }
   draw(); document.body.appendChild(btn);
   var started=false;
   function start(){ if(started||!on) return; started=true; m.play().catch(function(){ started=false; }); }

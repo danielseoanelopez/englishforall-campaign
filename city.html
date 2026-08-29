@@ -423,7 +423,7 @@ document.getElementById("loadClose").addEventListener("click", () => loadModal.c
 document.getElementById("copyBtn").addEventListener("click", async () => {
   const t = document.getElementById("saveText");
   try { await navigator.clipboard.writeText(t.value); } catch (e) { t.select(); document.execCommand("copy"); }
-  document.getElementById("copyBtn").textContent = "<ico-check></ico-check> COPIED!";
+  document.getElementById("copyBtn").innerHTML = "<ico-check></ico-check> COPIED!";
 });
 document.getElementById("loadBtn").addEventListener("click", () => { blip(); loadModal.classList.add("on"); });
 document.getElementById("applyBtn").addEventListener("click", () => {
@@ -434,9 +434,9 @@ document.getElementById("applyBtn").addEventListener("click", () => {
     if (!data || typeof data.p !== "object") throw new Error("bad");
     localStorage.setItem("nc_prog", JSON.stringify(data.p));
     if (data.s) localStorage.setItem("nc_streak", JSON.stringify(data.s));
-    alert("Progress restored! / ¡Progreso restaurado! <ico-check></ico-check>");
+    alert("Progress restored! / ¡Progreso restaurado!");
     location.reload();
-  } catch (e) { alert("That code doesn't look right. / Ese código no es válido. <ico-xmark></ico-xmark>"); }
+  } catch (e) { alert("That code doesn't look right. / Ese código no es válido."); }
 });
 [saveModal, loadModal].forEach(m => m.addEventListener("click", e => { if (e.target === m) m.classList.remove("on"); }));
 
@@ -451,7 +451,7 @@ document.getElementById("applyBtn").addEventListener("click", () => {
   if(last>0){ m.addEventListener("loadedmetadata",function(){ try{ m.currentTime=last%(m.duration||1);}catch(e){} },{once:true}); }
   var btn=document.createElement("button");
   btn.className="music-btn"; btn.title="Music on/off"; btn.setAttribute("aria-label","Music on/off");
-  function draw(){ btn.textContent=on?"<ico-music></ico-music>":"<ico-mute></ico-mute>"; btn.style.opacity=on?"1":"0.5"; }
+  function draw(){ btn.innerHTML=on?"<ico-music></ico-music>":"<ico-mute></ico-mute>"; btn.style.opacity=on?"1":"0.5"; }
   draw(); document.body.appendChild(btn);
   var started=false;
   function start(){ if(started||!on) return; started=true; m.play().catch(function(){ started=false; }); }
