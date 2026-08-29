@@ -62,9 +62,9 @@ h1 { font-family: "Press Start 2P", monospace; font-size: clamp(0.95rem, 4.4vw, 
 .newtag { position: absolute; top: -8px; right: -6px; font-family: "Press Start 2P", monospace; font-size: 0.42rem; color: #04180d; background: var(--green); border-radius: 6px; padding: 3px 6px; box-shadow: 0 0 8px var(--green); }
 
 .actions { display: flex; gap: 9px; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
-.btn { display: inline-flex; align-items: center; gap: 7px; font-family: "Press Start 2P", monospace; font-size: 0.58rem; background: linear-gradient(180deg, #ff6cf5, #e14ce4); color: #2b0026; border: 2px solid #ffb0fa; border-radius: 11px; padding: 12px 16px; cursor: pointer; letter-spacing: 1px; text-shadow:0 2px 0 rgba(0,0,0,.55); box-shadow: 0 0 14px #ff3df077; text-decoration: none; }
-.btn:hover { transform: translateY(-2px); box-shadow: 0 0 20px #ff3df0aa; }
-.btn.cyan { background: linear-gradient(180deg, var(--cyan), #12b9d6); border-color: #9ff1ff; box-shadow: 0 0 14px #00e5ff77; color: #04121f; text-shadow:0 1px 0 rgba(255,255,255,.3); }
+.btn { display: inline-flex; align-items: center; gap: 7px; font-family: "Press Start 2P", monospace; font-size: 0.58rem; background: linear-gradient(180deg, #2b0a2f, #170618); color: #ffb3f8; border: 2px solid #ff6cf5; border-radius: 11px; padding: 12px 16px; cursor: pointer; letter-spacing: 1px; text-shadow: none; box-shadow: 0 0 16px #ff3df055, inset 0 0 14px #ff3df022; text-decoration: none; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 0 26px #ff3df0aa, inset 0 0 18px #ff3df044; }
+.btn.cyan { background: linear-gradient(180deg, #0b2a34, #061620); border-color: #4ae0f5; box-shadow: 0 0 16px #00e5ff55, inset 0 0 14px #00e5ff22; color: #8df3ff; text-shadow: none; }
 @keyframes popIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 .music-btn { position: fixed; top: 10px; right: 10px; z-index: 40; width: 42px; height: 42px; border-radius: 10px; border: 2px solid var(--magenta); background: var(--panel); color: var(--magenta); font-size: 1.05rem; cursor: pointer; box-shadow: 0 0 10px #ff3df044; }
 .music-btn:hover { box-shadow: 0 0 16px #ff3df088; }

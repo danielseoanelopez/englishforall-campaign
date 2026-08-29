@@ -82,12 +82,12 @@
   .ov-label { font-size: 0.86rem; color: var(--gold); letter-spacing: 1px; }
   .home-cta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 16px; }
 
-  .btn { display: inline-flex; align-items: center; gap: 8px; font-family: "Press Start 2P", monospace; font-size: 0.66rem; background: linear-gradient(180deg, #ff6cf5, #e14ce4); color: #2b0026; border: 2px solid #ffb0fa; border-radius: 12px; padding: 13px 18px; cursor: pointer; letter-spacing: 1px; text-shadow:0 2px 0 rgba(0,0,0,.55); box-shadow: 0 0 14px #ff3df077; transition: transform 0.1s, box-shadow 0.15s; text-decoration: none; }
-  .btn:hover { transform: translateY(-2px); box-shadow: 0 0 22px #ff3df0aa; }
-  .btn.test { background: linear-gradient(180deg, var(--cyan), #12b9d6); border-color: #9ff1ff; box-shadow: 0 0 14px #00e5ff77; color:#04121f; text-shadow:0 1px 0 rgba(255,255,255,.3); }
-  .btn.test:hover { box-shadow: 0 0 22px #00e5ffaa; }
-  .btn.gold { background: linear-gradient(180deg, #ffd45e, #f0b02c); border-color: #ffe08a; box-shadow: 0 0 14px #ffc83d77; color:#2a1a00; text-shadow:0 1px 0 rgba(255,255,255,.3); }
-  .btn.gold:hover { box-shadow: 0 0 22px #ffc83daa; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-family: "Press Start 2P", monospace; font-size: 0.66rem; background: linear-gradient(180deg, #2b0a2f, #170618); color: #ffb3f8; border: 2px solid #ff6cf5; border-radius: 12px; padding: 13px 18px; cursor: pointer; letter-spacing: 1px; text-shadow: none; box-shadow: 0 0 16px #ff3df055, inset 0 0 14px #ff3df022; transition: transform 0.1s, box-shadow 0.15s; text-decoration: none; }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 0 26px #ff3df0aa, inset 0 0 18px #ff3df044; }
+  .btn.test { background: linear-gradient(180deg, #0b2a34, #061620); border-color: #4ae0f5; box-shadow: 0 0 16px #00e5ff55, inset 0 0 14px #00e5ff22; color: #8df3ff; text-shadow: none; }
+  .btn.test:hover { box-shadow: 0 0 26px #00e5ffaa, inset 0 0 18px #00e5ff44; }
+  .btn.gold { background: linear-gradient(180deg, #2f2408, #1a1405); border-color: #ffd45e; box-shadow: 0 0 16px #ffc83d55, inset 0 0 14px #ffc83d22; color: #ffdc8a; text-shadow: none; }
+  .btn.gold:hover { box-shadow: 0 0 26px #ffc83daa, inset 0 0 18px #ffc83d44; }
 
   /* World cards */
   .world { background: var(--panel); border: 2px solid var(--accent, var(--cyan)); border-radius: 16px; margin-bottom: 16px; box-shadow: 0 0 12px var(--glow, #00e5ff44), inset 0 0 18px #00e5ff09; overflow: hidden; transition: box-shadow 0.2s; }
@@ -138,7 +138,7 @@
 
   @media (min-width: 860px) { body { font-size: 18px; } .brand .logo { height: 140px; } }
   @media (max-width: 520px) { .w-theme { display: none; } .w-head { gap: 11px; padding: 15px 14px; } .w-badge { width: 50px; height: 50px; font-size: 0.8rem; } }
-  .home-cta .btn.cont { background: linear-gradient(180deg,#3dffa0,#1ecf87); border-color:#8affd0; color:#04240f; text-shadow:0 1px 0 rgba(255,255,255,.3); }
+  .home-cta .btn.cont { background: linear-gradient(180deg, #0a3325, #061c14); border-color: #5cffb8; color: #9dffcf; text-shadow: none; box-shadow: 0 0 16px #3dffa055, inset 0 0 14px #3dffa022; }
   .docs-row { margin-top: 14px; font-size: 0.82rem; line-height: 1.9; }
   .docs-row .docs-lbl { color: var(--muted); margin-right: 6px; }
   .docs-row a { color: var(--cyan); text-decoration: none; border-bottom: 1px dotted var(--cyan); margin-right: 12px; }
@@ -556,6 +556,16 @@ render();
 
 // ===== A4: continue where you left off =====
 (function continueCta(){
+  // Lesson titles are written for the lesson page, not for a button. Keep the
+  // headline: drop a ": detail" tail, a " - subtitle", and any "(aside)", then
+  // cap the length. The full title stays in the tooltip.
+  function shortT(t) {
+    var s = String(t).split(/\s+[—–]\s+/)[0].split(":")[0]
+                     .replace(/\s*\([^)]*\)\s*$/, "").trim();
+    if (s.length <= 26) return s;
+    var cut = s.slice(0, 26), sp = cut.lastIndexOf(" ");
+    return (sp >= 12 ? cut.slice(0, sp) : cut).replace(/[\s,&·-]+$/, "") + "…";
+  }
   var next = null;
   for (var i = 0; i < CAMPAIGN.length && !next; i++) {
     var w = CAMPAIGN[i];
@@ -563,17 +573,20 @@ render();
     for (var j = 0; j < w.lessons.length; j++) {
       var l = w.lessons[j];
       if (l.url && getStars("rankup_" + w.id + "_L" + (j + 1)) === 0) {
-        next = { href: l.url, label: w.id + " · L" + (j + 1) + " — " + l.t }; break;
+        next = { href: l.url, label: w.id + " · L" + (j + 1) + " — " + shortT(l.t),
+                 full: w.id + " · L" + (j + 1) + " — " + l.t }; break;
       }
     }
     if (!next && w.boss && w.boss.url && getStars("rankup_" + w.id + "_boss") === 0) {
-      next = { href: w.boss.url, label: w.id + " · " + w.boss.t };
+      next = { href: w.boss.url, label: w.id + " · " + shortT(w.boss.t),
+               full: w.id + " · " + w.boss.t };
     }
   }
   var a = document.getElementById("continueCta");
   if (!a || !next) return;
   var started = Object.keys(localStorage).some(function(k){ return k.indexOf("rankup_") === 0; });
   a.href = next.href;
+  a.title = (started ? "CONTINUAR" : "EMPEZAR") + ": " + next.full;
   a.innerHTML = '<ico-play></ico-play> ' + (started ? "CONTINUAR" : "EMPEZAR") + ": " + next.label;
   a.style.display = "";
 })();
@@ -630,19 +643,19 @@ function importProgress(){
   var host = document.getElementById("sidequests");
   if (!host) return;
   var TRACKS = [
-    { name: "Business Class", theme: "Inglés profesional · B1–B2", badge: "<ico-briefcase></ico-briefcase>", accent: "var(--gold)", glow: "#ffc83d55", pill: "<ico-star></ico-star> PLUS",
-      lessons: [
-        { t: "Introductions & Small Talk", sp: "Presentarte + small talk", url: "lesson.html?id=biz-l1", key: "rankup_BIZ_l1" },
-        { t: "Meetings & Discussions", sp: "Opinar, acordar, sugerir", url: "lesson.html?id=biz-l2", key: "rankup_BIZ_l2" },
-        { t: "Email & Formal Communication", sp: "Emails y cortesía", url: "lesson.html?id=biz-l3", key: "rankup_BIZ_l3" },
-        { t: "Negotiations & Persuasion", sp: "Negociar y persuadir", url: "lesson.html?id=biz-l4", key: "rankup_BIZ_l4" }
-      ] },
     { name: "Conversación A1", theme: "Inglés para principiantes · A1", badge: "<ico-comments></ico-comments>", accent: "var(--cyan)", glow: "#00e5ff55", pill: "A1",
       lessons: [
         { t: "Describing People & Things", sp: "Describir · to be + adjetivos", url: "lesson.html?id=a1c-l1", key: "rankup_A1C_l1" },
         { t: "My Family & My Job", sp: "Familia y trabajo · have/has", url: "lesson.html?id=a1c-l2", key: "rankup_A1C_l2" },
         { t: "My Daily Routine", sp: "Rutina · presente simple", url: "lesson.html?id=a1c-l3", key: "rankup_A1C_l3" },
         { t: "At the Café & Around Town", sp: "Café y ciudad · there is/are", url: "lesson.html?id=a1c-l4", key: "rankup_A1C_l4" }
+      ] },
+    { name: "Business Class", theme: "Inglés profesional · B1–B2", badge: "<ico-briefcase></ico-briefcase>", accent: "var(--gold)", glow: "#ffc83d55", pill: "B1–B2",
+      lessons: [
+        { t: "Introductions & Small Talk", sp: "Presentarte + small talk", url: "lesson.html?id=biz-l1", key: "rankup_BIZ_l1" },
+        { t: "Meetings & Discussions", sp: "Opinar, acordar, sugerir", url: "lesson.html?id=biz-l2", key: "rankup_BIZ_l2" },
+        { t: "Email & Formal Communication", sp: "Emails y cortesía", url: "lesson.html?id=biz-l3", key: "rankup_BIZ_l3" },
+        { t: "Negotiations & Persuasion", sp: "Negociar y persuadir", url: "lesson.html?id=biz-l4", key: "rankup_BIZ_l4" }
       ] },
     { name: "Travel & Living", theme: "Inglés para viajar y vivir · B1–B2", badge: "<ico-plane></ico-plane>", accent: "var(--green)", glow: "#3dffa055", pill: "B1–B2",
       lessons: [

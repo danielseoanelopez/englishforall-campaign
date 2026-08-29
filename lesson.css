@@ -116,11 +116,11 @@ p { margin-bottom: 8px; }
 .checklist li.ck.done { color: var(--green); background: #3dffa00a; }
 .checklist li.ck.done::before { content:"";display:inline-block;width:1em;height:1em;vertical-align:-.15em;margin-right:.4em;background-color:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 3h18v18H3zm2 2v14h14V5zm3.6 6.9 1.4-1.4 2 2 4.4-4.4 1.4 1.4-5.8 5.8z'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 3h18v18H3zm2 2v14h14V5zm3.6 6.9 1.4-1.4 2 2 4.4-4.4 1.4 1.4-5.8 5.8z'/%3E%3C/svg%3E") no-repeat center/contain; color: var(--green); }
 .checklist li.ck.done b { color: var(--green); }
-.btn { display: inline-block; font-family: "Press Start 2P", monospace; font-size: 0.78rem; background: linear-gradient(180deg, #ff6cf5, #e14ce4); color: #2b0026; border: 2px solid #ffb0fa; border-radius: 12px; padding: 14px 24px; cursor: pointer; letter-spacing: 1px; text-shadow:0 2px 0 rgba(0,0,0,.55); box-shadow: 0 0 14px #ff3df077; transition: transform 0.1s, box-shadow 0.15s; text-decoration: none; }
-.btn:hover { transform: translateY(-2px); box-shadow: 0 0 22px #ff3df0aa; }
+.btn { display: inline-block; font-family: "Press Start 2P", monospace; font-size: 0.78rem; background: linear-gradient(180deg, #2b0a2f, #170618); color: #ffb3f8; border: 2px solid #ff6cf5; border-radius: 12px; padding: 14px 24px; cursor: pointer; letter-spacing: 1px; text-shadow: none; box-shadow: 0 0 16px #ff3df055, inset 0 0 14px #ff3df022; transition: transform 0.1s, box-shadow 0.15s; text-decoration: none; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 0 26px #ff3df0aa, inset 0 0 18px #ff3df044; }
 .btn:disabled { opacity: 0.5; cursor: default; transform: none; box-shadow: none; }
-.btn.check { font-size: 0.72rem; background: linear-gradient(180deg, #4ae0f5, #16b6d6); border-color: #b8f4ff; box-shadow: 0 0 12px #19b8d677; }
-.btn.check:hover { box-shadow: 0 0 20px #19b8d6aa; }
+.btn.check { font-size: 0.72rem; background: linear-gradient(180deg, #0b2a34, #061620); border-color: #4ae0f5; box-shadow: 0 0 16px #00e5ff55, inset 0 0 14px #00e5ff22; color: #8df3ff; text-shadow: none; }
+.btn.check:hover { box-shadow: 0 0 26px #00e5ffaa, inset 0 0 18px #00e5ff44; }
 .btn-row { text-align: center; margin-top: 14px; }
 .ex-score { margin-top: 12px; font-size: 0.95rem; color: var(--gold); letter-spacing: 1px; min-height: 1.2em; }
 .ex-score .good { color: var(--green); } .ex-score .bad { color: var(--red); }
@@ -138,10 +138,10 @@ p { margin-bottom: 8px; }
 .rankup-sub { color: var(--muted); font-size: 0.9rem; letter-spacing: 1px; }
 .contact-box { background: #00e5ff0d; border: 1px solid var(--cyan); border-radius: 12px; padding: 18px 20px; margin: 20px 0 4px; box-shadow: 0 0 10px #00e5ff22; font-size: 0.95rem; }
 .contact-box b { color: var(--gold); }
-.wa-btn { background: linear-gradient(180deg, #5ceb92, #23bd74); border-color: #a9f7c8; box-shadow: 0 0 14px #2fd36b77; margin-top: 14px; color:#04240f; text-shadow:0 2px 0 rgba(0,0,0,.55); }
-.wa-btn:hover { box-shadow: 0 0 22px #2fd36baa; }
-.next-btn { background: linear-gradient(180deg, var(--cyan), #12b9d6); border-color: #9ff1ff; box-shadow: 0 0 14px #00e5ff77; margin-top: 14px; color:#04121f; text-shadow:0 1px 0 rgba(255,255,255,.3); }
-.next-btn:hover { box-shadow: 0 0 22px #00e5ffaa; }
+.wa-btn { background: linear-gradient(180deg, #0a2e1e, #061810); border-color: #5ceb92; box-shadow: 0 0 16px #2fd36b55, inset 0 0 14px #2fd36b22; margin-top: 14px; color: #93f2ba; text-shadow: none; }
+.wa-btn:hover { box-shadow: 0 0 26px #2fd36baa, inset 0 0 18px #2fd36b44; }
+.next-btn { background: linear-gradient(180deg, #0b2a34, #061620); border-color: #4ae0f5; box-shadow: 0 0 16px #00e5ff55, inset 0 0 14px #00e5ff22; margin-top: 14px; color: #8df3ff; text-shadow: none; }
+.next-btn:hover { box-shadow: 0 0 26px #00e5ffaa, inset 0 0 18px #00e5ff44; }
 .social { display: flex; gap: 14px; justify-content: center; margin-top: 26px; }
 .social a { display: inline-flex; width: 48px; height: 48px; align-items: center; justify-content: center; border: 2px solid var(--cyan); border-radius: 12px; background: var(--panel); color: var(--cyan); font-size: 1.35rem; text-decoration: none; box-shadow: 0 0 10px #00e5ff44; transition: transform 0.12s, box-shadow 0.15s, color 0.15s, border-color 0.15s; }
 .social a:hover { transform: translateY(-3px); color: var(--magenta); border-color: var(--magenta); box-shadow: 0 0 18px #ff3df077; }
