@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>English for All &middot; Icon check</title>
+<link rel="stylesheet" href="lesson.css?v=20260827e">
+<style>
+  body { background:#05050e; color:#eaf7ff; font-family:'Share Tech Mono',monospace; margin:0; padding:18px; }
+  h1 { font-family:'Press Start 2P',monospace; font-size:.9rem; color:var(--cyan); margin:0 0 6px; }
+  #verdict { border:2px solid var(--cyan); border-radius:12px; padding:12px 14px; margin:12px 0 18px;
+             font-size:1rem; line-height:1.5; }
+  #verdict.ok { border-color:var(--green); color:var(--green); }
+  #verdict.bad { border-color:var(--red); color:var(--red); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(96px,1fr)); gap:10px; }
+  .cell { background:rgba(20,22,48,.93); border:1px solid #2a3160; border-radius:10px;
+          padding:10px 4px; text-align:center; }
+  .cell > *:first-child { font-size:1.6rem; color:var(--cyan); display:block; margin:0 auto 6px; }
+  .cell span { font-size:.62rem; color:var(--muted); word-break:break-all; }
+  .cell.fail { border-color:var(--red); background:#3a0d18; }
+  .cell.fail span { color:var(--red); }
+</style>
+</head>
+<body>
+<h1>ICON CHECK</h1>
+<p style="font-size:.8rem;color:var(--muted);margin:0 0 4px">
+  Every icon that replaced an emoji. Each should show a shape above its name.</p>
+<div id="verdict">checking&hellip;</div>
+<div class="grid">
+  <div class=cell><ico-apple></ico-apple><span>apple</span></div>
+  <div class=cell><ico-ban></ico-ban><span>ban</span></div>
+  <div class=cell><ico-bolt></ico-bolt><span>bolt</span></div>
+  <div class=cell><ico-book></ico-book><span>book</span></div>
+  <div class=cell><ico-bookmark></ico-bookmark><span>bookmark</span></div>
+  <div class=cell><ico-bookopen></ico-bookopen><span>bookopen</span></div>
+  <div class=cell><ico-box></ico-box><span>box</span></div>
+  <div class=cell><ico-brain></ico-brain><span>brain</span></div>
+  <div class=cell><ico-briefcase></ico-briefcase><span>briefcase</span></div>
+  <div class=cell><ico-bulb></ico-bulb><span>bulb</span></div>
+  <div class=cell><ico-cake></ico-cake><span>cake</span></div>
+  <div class=cell><ico-calendar></ico-calendar><span>calendar</span></div>
+  <div class=cell><ico-cap></ico-cap><span>cap</span></div>
+  <div class=cell><ico-chair></ico-chair><span>chair</span></div>
+  <div class=cell><ico-check></ico-check><span>check</span></div>
+  <div class=cell><ico-child></ico-child><span>child</span></div>
+  <div class=cell><ico-circlecheck></ico-circlecheck><span>circlecheck</span></div>
+  <div class=cell><ico-circleq></ico-circleq><span>circleq</span></div>
+  <div class=cell><ico-city></ico-city><span>city</span></div>
+  <div class=cell><ico-clapper></ico-clapper><span>clapper</span></div>
+  <div class=cell><ico-clipboard></ico-clipboard><span>clipboard</span></div>
+  <div class=cell><ico-clock></ico-clock><span>clock</span></div>
+  <div class=cell><ico-clone></ico-clone><span>clone</span></div>
+  <div class=cell><ico-commentdots></ico-commentdots><span>commentdots</span></div>
+  <div class=cell><ico-comments></ico-comments><span>comments</span></div>
+  <div class=cell><ico-crown></ico-crown><span>crown</span></div>
+  <div class=cell><ico-download></ico-download><span>download</span></div>
+  <div class=cell><ico-dumbbell></ico-dumbbell><span>dumbbell</span></div>
+  <div class=cell><ico-envelope></ico-envelope><span>envelope</span></div>
+  <div class=cell><ico-eye></ico-eye><span>eye</span></div>
+  <div class=cell><ico-eyeslash></ico-eyeslash><span>eyeslash</span></div>
+  <div class=cell><ico-feather></ico-feather><span>feather</span></div>
+  <div class=cell><ico-file></ico-file><span>file</span></div>
+  <div class=cell><ico-filepen></ico-filepen><span>filepen</span></div>
+  <div class=cell><ico-fire></ico-fire><span>fire</span></div>
+  <div class=cell><ico-flag></ico-flag><span>flag</span></div>
+  <div class=cell><ico-gamepad></ico-gamepad><span>gamepad</span></div>
+  <div class=cell><ico-ghost></ico-ghost><span>ghost</span></div>
+  <div class=cell><ico-hand></ico-hand><span>hand</span></div>
+  <div class=cell><ico-handshake></ico-handshake><span>handshake</span></div>
+  <div class=cell><ico-headphones></ico-headphones><span>headphones</span></div>
+  <div class=cell><ico-heart></ico-heart><span>heart</span></div>
+  <div class=cell><ico-heartopen></ico-heartopen><span>heartopen</span></div>
+  <div class=cell><ico-hotel></ico-hotel><span>hotel</span></div>
+  <div class=cell><ico-house></ico-house><span>house</span></div>
+  <div class=cell><ico-image></ico-image><span>image</span></div>
+  <div class=cell><ico-key></ico-key><span>key</span></div>
+  <div class=cell><ico-link></ico-link><span>link</span></div>
+  <div class=cell><ico-listol></ico-listol><span>listol</span></div>
+  <div class=cell><ico-locationdot></ico-locationdot><span>locationdot</span></div>
+  <div class=cell><ico-lock></ico-lock><span>lock</span></div>
+  <div class=cell><ico-mic></ico-mic><span>mic</span></div>
+  <div class=cell><ico-mobile></ico-mobile><span>mobile</span></div>
+  <div class=cell><ico-mug></ico-mug><span>mug</span></div>
+  <div class=cell><ico-music></ico-music><span>music</span></div>
+  <div class=cell><ico-mute></ico-mute><span>mute</span></div>
+  <div class=cell><ico-palette></ico-palette><span>palette</span></div>
+  <div class=cell><ico-paw></ico-paw><span>paw</span></div>
+  <div class=cell><ico-pen></ico-pen><span>pen</span></div>
+  <div class=cell><ico-pencil></ico-pencil><span>pencil</span></div>
+  <div class=cell><ico-people></ico-people><span>people</span></div>
+  <div class=cell><ico-phone></ico-phone><span>phone</span></div>
+  <div class=cell><ico-pin></ico-pin><span>pin</span></div>
+  <div class=cell><ico-plane></ico-plane><span>plane</span></div>
+  <div class=cell><ico-play></ico-play><span>play</span></div>
+  <div class=cell><ico-pointer></ico-pointer><span>pointer</span></div>
+  <div class=cell><ico-print></ico-print><span>print</span></div>
+  <div class=cell><ico-puzzle></ico-puzzle><span>puzzle</span></div>
+  <div class=cell><ico-question></ico-question><span>question</span></div>
+  <div class=cell><ico-recycle></ico-recycle><span>recycle</span></div>
+  <div class=cell><ico-rocket></ico-rocket><span>rocket</span></div>
+  <div class=cell><ico-rotate></ico-rotate><span>rotate</span></div>
+  <div class=cell><ico-save></ico-save><span>save</span></div>
+  <div class=cell><ico-search></ico-search><span>search</span></div>
+  <div class=cell><ico-shuffle></ico-shuffle><span>shuffle</span></div>
+  <div class=cell><ico-skull></ico-skull><span>skull</span></div>
+  <div class=cell><ico-spell></ico-spell><span>spell</span></div>
+  <div class=cell><ico-sqcheck></ico-sqcheck><span>sqcheck</span></div>
+  <div class=cell><ico-square></ico-square><span>square</span></div>
+  <div class=cell><ico-star></ico-star><span>star</span></div>
+  <div class=cell><ico-stopwatch></ico-stopwatch><span>stopwatch</span></div>
+  <div class=cell><ico-suitcase></ico-suitcase><span>suitcase</span></div>
+  <div class=cell><ico-target></ico-target><span>target</span></div>
+  <div class=cell><ico-thumbdown></ico-thumbdown><span>thumbdown</span></div>
+  <div class=cell><ico-thumbup></ico-thumbup><span>thumbup</span></div>
+  <div class=cell><ico-trophy></ico-trophy><span>trophy</span></div>
+  <div class=cell><ico-umbrella></ico-umbrella><span>umbrella</span></div>
+  <div class=cell><ico-user></ico-user><span>user</span></div>
+  <div class=cell><ico-utensils></ico-utensils><span>utensils</span></div>
+  <div class=cell><ico-volume></ico-volume><span>volume</span></div>
+  <div class=cell><ico-warn></ico-warn><span>warn</span></div>
+  <div class=cell><ico-window></ico-window><span>window</span></div>
+  <div class=cell><ico-xmark></ico-xmark><span>xmark</span></div>
+</div>
+<script>
+addEventListener('load', function () {
+  setTimeout(function () {
+    var cells = document.querySelectorAll('.cell');
+    var bad = [];
+    cells.forEach(function (c) {
+      var el = c.firstElementChild;
+      var r = el.getBoundingClientRect();
+      var cs = getComputedStyle(el);
+      var m = cs.webkitMaskImage || cs.maskImage;
+      var painted = cs.backgroundColor !== 'rgba(0, 0, 0, 0)';
+      if (r.width < 4 || r.height < 4 || !m || m === 'none' || !painted) {
+        c.classList.add('fail');
+        bad.push(el.tagName.toLowerCase());
+      }
+    });
+    var v = document.getElementById('verdict');
+    if (bad.length === 0) {
+      v.className = 'ok';
+      v.textContent = 'ALL ' + cells.length + ' ICONS RENDERING on this device.';
+    } else {
+      v.className = 'bad';
+      v.textContent = bad.length + ' of ' + cells.length + ' NOT rendering: ' + bad.join(', ');
+    }
+  }, 400);
+});
+</script>
+</body>
+</html>
