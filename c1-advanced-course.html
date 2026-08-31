@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English for All · Advanced English (C1 core · C2 stretch)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon-rankup.png">
+<link rel="apple-touch-icon" href="icon-rankup.png">
+<meta name="description" content="Curso de inglés avanzado C1 (4 lecciones, estilo PPP): debate y diplomacia, phrasal verbs, narrar historias y condicionales mixtos. Un punto de gramática por unidad + vocabulario del día. English for All · Rank Up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/c1-advanced-course.html">
+<meta property="og:title" content="Advanced English C1 — 4-lesson course">
+<meta property="og:description" content="Inglés avanzado: cleft sentences, phrasal verbs, tiempos narrativos y condicionales mixtos. Un punto de gramática por unidad, con claves y vocabulario del día. English for All — Rank Up.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<meta property="og:site_name" content="English for All">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cyan:#0a8ea6; --magenta:#c31f8f; --purple:#6d3ff0; --gold:#b5791a; --green:#158a52; --red:#c0392b;
+    --ink:#1c2230; --soft:#54607a; --line:#dbe2ef; --bg:#f4f6fb; --card:#ffffff;
+    --stretch-bg:#f6f1ff; --key-bg:#eefaf2; --warm-bg:#fff8ec;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.62; font-size:16.5px; padding:0 0 80px;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px;}
+  a{color:var(--cyan);}
+
+  .toolbar{position:sticky; top:0; z-index:40; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:center;
+    background:rgba(244,246,251,0.92); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+    padding:10px 14px; border-bottom:1px solid var(--line);}
+  .toolbar .tt{font-family:"Share Tech Mono",monospace; font-size:0.82rem; color:var(--soft); letter-spacing:1px;}
+  .tbtn{font-family:"Share Tech Mono",monospace; font-size:0.82rem; border:1.5px solid var(--purple); color:var(--purple);
+    background:#fff; border-radius:9px; padding:8px 14px; cursor:pointer; letter-spacing:1px; transition:.15s; white-space:nowrap;}
+  .tbtn:hover{background:#f0eaff;}
+  .tbtn.on{background:var(--purple); color:#fff;}
+  .tbtn.print{border-color:var(--cyan); color:var(--cyan);}
+  .tbtn.print:hover{background:#e6f6f9;}
+  .viewnote{font-family:"Share Tech Mono",monospace; font-size:0.72rem; color:var(--soft);}
+
+  .cover{background:var(--card); border:1px solid var(--line); border-top:6px solid var(--purple);
+    border-radius:16px; padding:30px 30px 26px; margin:26px 0 22px; box-shadow:0 6px 24px #1c223010;}
+  .kicker{font-family:"Press Start 2P",monospace; font-size:0.56rem; letter-spacing:2px; color:var(--magenta);}
+  .cover h1{font-family:"Press Start 2P",monospace; font-size:clamp(1.05rem,3.6vw,1.7rem); line-height:1.5; color:var(--purple); margin:14px 0 10px;}
+  .cover .lead{font-size:1.02rem; color:var(--soft); max-width:62ch;}
+  .badges{display:flex; flex-wrap:wrap; gap:9px; margin:18px 0 6px;}
+  .badge{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; padding:6px 12px; border-radius:20px; border:1.5px solid var(--line); color:var(--ink); background:#fbfcff;}
+  .badge b{color:var(--cyan);}
+  .badge.b1{border-color:var(--cyan); background:#e9f7fa;}
+  .badge.b2{border-color:var(--purple); background:var(--stretch-bg);}
+
+  h2.sec{font-family:"Press Start 2P",monospace; font-size:0.72rem; letter-spacing:1px; color:var(--ink); margin:26px 2px 12px; line-height:1.6;}
+
+  .legend{display:grid; grid-template-columns:1fr; gap:8px; margin-top:8px;}
+  @media(min-width:640px){ .legend{grid-template-columns:1fr 1fr;} }
+  .leg{display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:10px; padding:9px 12px; background:#fbfcff;}
+  .leg .em{font-size:1.05rem; line-height:1.4;}
+  .leg .lx b{display:block; font-size:0.92rem;}
+  .leg .lx span{font-size:0.84rem; color:var(--soft);}
+
+  .maptable{width:100%; border-collapse:collapse; margin-top:8px; font-size:0.93rem; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .maptable th{background:#f0eefb; text-align:left; padding:10px 12px; font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--soft); border-bottom:1px solid var(--line);}
+  .maptable td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .maptable tr:last-child td{border-bottom:none;}
+  .maptable .ln{font-family:"Press Start 2P",monospace; font-size:0.6rem; color:var(--magenta);}
+
+  .lesson{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:6px 26px 26px; margin:20px 0; box-shadow:0 4px 18px #1c22300d;}
+  .lesson-head{display:flex; align-items:center; gap:14px; margin:22px 0 6px; padding-bottom:14px; border-bottom:2px solid var(--line);}
+  .lnum{flex-shrink:0; width:52px; height:52px; border-radius:12px; background:var(--purple); color:#fff; font-family:"Press Start 2P",monospace; font-size:0.86rem; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px #6d3ff044;}
+  .lesson.l2 .lnum{background:var(--magenta);} .lesson.l3 .lnum{background:var(--cyan);} .lesson.l4 .lnum{background:var(--green);}
+  .lesson-head .ttl{font-family:"Press Start 2P",monospace; font-size:0.86rem; line-height:1.5; color:var(--ink);}
+  .lesson-head .es{display:block; font-family:"Share Tech Mono",monospace; font-size:0.8rem; color:var(--soft); margin-top:7px; letter-spacing:.5px;}
+
+  .block{margin-top:20px;}
+  .btag{display:inline-flex; align-items:center; gap:8px; font-family:"Share Tech Mono",monospace; font-size:0.82rem; letter-spacing:1px; text-transform:uppercase; color:var(--soft); border-bottom:1px dashed var(--line); padding-bottom:5px; margin-bottom:10px; width:100%;}
+  .btag .min{margin-left:auto; color:var(--cyan); text-transform:none; font-size:0.78rem;}
+
+  .objective{background:#eefaf6; border:1px solid #bfe6d5; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; font-size:0.98rem;}
+  .objective b{color:var(--green);}
+  .warmup{background:var(--warm-bg); border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px;}
+
+  /* Vocabulary of the Day */
+  .daily{background:#fffdfe; border:1px solid #f2d9e9; border-left:4px solid var(--magenta); border-radius:10px; padding:12px 16px;}
+  .daily table.tb{margin:0;}
+  .daily .use{margin-top:9px; font-size:0.9rem; color:var(--soft);}
+  .daily .use b{color:var(--magenta);}
+
+  p{margin:8px 0;}
+  ul, ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
+  .lead-sm{color:var(--soft); font-size:0.95rem;}
+  code, .chip{font-family:"Share Tech Mono",monospace;}
+  .chip{display:inline-block; background:#eaf6f9; color:var(--cyan); border:1px solid #bfe6ee; border-radius:6px; padding:1px 7px; font-size:0.9em;}
+  .ok{color:var(--green); font-weight:600;} .x{color:var(--red); text-decoration:line-through;}
+  .h3{font-weight:700; color:var(--ink); margin:14px 0 4px; font-size:1rem;}
+  .h3 .sm{font-weight:400; color:var(--soft); font-size:0.85rem;}
+  .gfocus{display:inline-block; font-family:"Share Tech Mono",monospace; font-size:0.7rem; letter-spacing:1px; text-transform:uppercase; color:#fff; background:var(--purple); border-radius:6px; padding:2px 8px; margin-right:8px;}
+
+  table.tb{width:100%; border-collapse:collapse; margin:8px 0; font-size:0.93rem;}
+  table.tb th, table.tb td{border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top;}
+  table.tb th{background:#f3f1fb; font-family:"Share Tech Mono",monospace; font-size:0.76rem; letter-spacing:1px; color:var(--soft);}
+
+  .cell{border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:#fbfcff;}
+  .cell .gh{display:block; font-family:"Share Tech Mono",monospace; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:6px;}
+
+  .stretch{background:var(--stretch-bg); border:1px solid #d9c9ff; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .stretch .st-h{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:6px;}
+  .stretch .st-h::before{content:"⭐";}
+
+  .dialogue{border:1px solid var(--line); border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px; background:#fbfdff;}
+  .dialogue .line{margin:5px 0;}
+  .dialogue .spk{font-weight:700; color:var(--cyan);}
+  .dialogue .spk.b{color:var(--magenta);}
+  .dialogue .tg{background:#fff3d6; border-radius:4px; padding:0 4px;}
+
+  .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
+  .key .kh::before{content:"✅";}
+  .key ol{margin:4px 0 0 20px;} .key li{margin:3px 0;}
+  .key .alt{color:var(--soft); font-size:0.86rem;}
+
+  .tnote{background:#fff5f8; border:1px dashed var(--magenta); border-radius:10px; padding:10px 14px; margin:12px 0; font-size:0.92rem; color:#7a2d55;}
+  .tnote b{color:var(--magenta);}
+
+  .scaffold{background:#fbfaff; border:1px solid #e0d8f5; border-radius:10px; padding:12px 16px; font-family:"Share Tech Mono",monospace; font-size:0.95rem; line-height:1.9;}
+  .gap{display:inline-block; min-width:64px; border-bottom:1.5px solid var(--gold); color:var(--gold); text-align:center;}
+  .hw{background:#fff8ec; border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px; margin-top:8px;}
+  .hw b{color:var(--gold);}
+
+  body.student .key, body.student .tnote{display:none !important;}
+
+  footer{max-width:900px; margin:34px auto 0; padding:16px 20px; text-align:center; color:var(--soft); font-size:0.85rem; border-top:1px solid var(--line);}
+  footer b{font-family:"Press Start 2P",monospace; font-size:0.62rem; color:var(--purple); letter-spacing:1px;}
+
+  @media print{
+    body{background:#fff; font-size:11.5pt; padding:0;}
+    .toolbar{display:none;}
+    .lesson, .cover{box-shadow:none; border-color:#ccc; break-inside:avoid;}
+    .lesson{break-before:page;}
+    .cover{break-before:avoid;}
+    a{color:var(--ink); text-decoration:none;}
+  }
+</style>
+</head>
+<body class="teacher">
+
+<div class="toolbar">
+  <span class="tt">VIEW:</span>
+  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')">📖 Teacher (with keys)</button>
+  <button class="tbtn" id="btnStudent" onclick="setView('student')">🎒 Student (no keys)</button>
+  <button class="tbtn print" onclick="window.print()">🖨️ Print / Save PDF</button>
+  <span class="viewnote" id="viewNote">Answer keys &amp; teacher notes are visible.</span>
+</div>
+
+<div class="wrap">
+
+  <!-- ============== COVER ============== -->
+  <div class="cover">
+    <div class="kicker">ENGLISH FOR ALL · ADVANCED</div>
+    <h1>ADVANCED ENGLISH<br>C1 · 4-LESSON COURSE</h1>
+    <p class="lead">Advanced English for what separates a strong speaker from a fluent one: arguing a point with nuance, sounding <b>natural</b> with phrasal verbs, telling a story with impact, and talking about what might have been. <b>One grammar point per unit</b>, taught in depth, plus a <b>Vocabulary of the Day</b> in every lesson.</p>
+    <div class="badges">
+      <span class="badge b1"><b>C1 core</b></span>
+      <span class="badge b2">⭐ C2 stretch</span>
+      <span class="badge">4 lessons · ~60 min each</span>
+      <span class="badge">1 grammar point / unit</span>
+      <span class="badge">📅 Word · Idiom · Phrasal verb</span>
+      <span class="badge">🇺🇸 American English</span>
+    </div>
+  </div>
+
+  <!-- ============== HOW TO USE ============== -->
+  <h2 class="sec">HOW TO USE THIS COURSE</h2>
+  <p class="lead-sm">Each lesson follows the same rhythm. Use the <b>Teacher / Student</b> toggle at the top: <b>Student view</b> hides the answer keys and teacher notes for a clean handout. At C1 the goal isn't more grammar — it's <b>precision, range and register</b>: saying exactly what you mean, with the right structure and the right level of formality.</p>
+  <div class="legend">
+    <div class="leg"><span class="em">🎯</span><div class="lx"><b>Objective</b><span>The C1 can-do goal for the lesson.</span></div></div>
+    <div class="leg"><span class="em">📅</span><div class="lx"><b>Vocabulary of the Day</b><span>One word, one idiom, one phrasal verb — to use during the lesson.</span></div></div>
+    <div class="leg"><span class="em">🔥</span><div class="lx"><b>Warm-up (5 min)</b><span>A discussion prompt to activate the topic.</span></div></div>
+    <div class="leg"><span class="em">📘</span><div class="lx"><b>Present (18 min)</b><span>Functional language + <b>one</b> grammar focus, in tables.</span></div></div>
+    <div class="leg"><span class="em">🗝️</span><div class="lx"><b>Vocabulary</b><span>Collocations, idioms &amp; register — meaning + example.</span></div></div>
+    <div class="leg"><span class="em">✏️</span><div class="lx"><b>Controlled Practice</b><span>Focused exercises. Answers in the ✅ key.</span></div></div>
+    <div class="leg"><span class="em">⭐</span><div class="lx"><b>C2 Stretch box</b><span>Extends the <b>same</b> grammar point — never a new one.</span></div></div>
+    <div class="leg"><span class="em">🗣️✍️</span><div class="lx"><b>Free Practice + Homework</b><span>Extended production, then a task to submit.</span></div></div>
+  </div>
+
+  <h2 class="sec">COURSE MAP</h2>
+  <table class="maptable">
+    <tr><th style="width:44px">#</th><th>Lesson</th><th>Grammar focus (one per unit)</th><th>Do this…</th></tr>
+    <tr><td class="ln">01</td><td><b>Opinions, Debate &amp; Diplomacy</b></td><td><b>Cleft sentences</b> (emphasis)</td><td>Argue and disagree with nuance</td></tr>
+    <tr><td class="ln">02</td><td><b>Phrasal Verbs &amp; Natural Register</b></td><td><b>Phrasal verbs</b> (multi-word verbs)</td><td>Sound natural, not textbook</td></tr>
+    <tr><td class="ln">03</td><td><b>Telling the Story</b></td><td><b>Narrative tenses</b></td><td>Tell an anecdote with impact</td></tr>
+    <tr><td class="ln">04</td><td><b>Regrets &amp; Alternative Realities</b></td><td><b>Mixed conditionals</b></td><td>Express regret, imagine other outcomes</td></tr>
+  </table>
+  <p class="lead-sm" style="margin-top:10px"><b>One grammar point per unit.</b> Each lesson teaches a single structure in depth, and the ⭐ C2 stretch box <b>extends that same structure</b> rather than introducing a new one. Everything else in the lesson is vocabulary, functional language or discourse — not extra grammar.</p>
+  <div class="tnote"><b>Teacher tip:</b> at C1, correction shifts from "is it correct?" to "is it natural, precise, and the right register?" Because each unit has only one grammar focus, you can afford to drill it until it's automatic rather than merely recognised. Run the <b>Vocabulary of the Day</b> as a ritual: present it in the first two minutes, and require all three items to be used before the lesson ends (there's a bank of extra sets at the end for days beyond these four).</div>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 1 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l1">
+    <div class="lesson-head">
+      <div class="lnum">01</div>
+      <div><span class="ttl">Opinions, Debate &amp; Diplomacy</span>
+      <span class="es">Argumentar y discrepar con matiz · Grammar focus: cleft sentences (emphasis)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>put forward a nuanced argument</b> and <b>disagree diplomatically</b>, using <b>cleft sentences</b> to emphasise the part of the message that matters most.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📅 Vocabulary of the Day</span>
+      <div class="daily">
+        <table class="tb">
+          <tr><th style="width:22%">Type</th><th style="width:26%">Item</th><th>Meaning &amp; example</th></tr>
+          <tr><td>📖 Word</td><td><b>nuance</b> <span class="lead-sm">(noun)</span></td><td>a subtle difference in meaning or tone · <i>"He completely missed the nuance in her reply."</i></td></tr>
+          <tr><td>💬 Idiom</td><td><b>to see eye to eye</b></td><td>to agree with someone — most often used in the negative · <i>"We don't see eye to eye on this, but I respect her view."</i></td></tr>
+          <tr><td>🔗 Phrasal verb</td><td><b>to back down</b></td><td>to withdraw from a position in an argument · <i>"Neither side was willing to back down."</i></td></tr>
+        </table>
+        <p class="use"><b>Use it today:</b> the student must use all three at least once during the lesson — ideally in the debate.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>"Working from home is better than working in an office." Agree or disagree — and why?</li>
+          <li>How do you disagree with someone <b>without</b> sounding rude or dismissive?</li>
+          <li>Is there someone you rarely see eye to eye with? What do you disagree about?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Debate language &amp; emphasis <span class="min">18 min</span></span>
+
+      <div class="h3">🗝️ Vocabulary — argument &amp; discussion</div>
+      <table class="tb">
+        <tr><th style="width:34%">Expression</th><th>Meaning &amp; example</th></tr>
+        <tr><td>a compelling argument</td><td>very convincing · <i>"She made a compelling argument for change."</i></td></tr>
+        <tr><td>to raise a valid point</td><td>to make a fair, relevant point · <i>"You raise a valid point."</i></td></tr>
+        <tr><td>a sweeping generalization</td><td>too broad, ignoring exceptions · <i>"That's a sweeping generalization."</i></td></tr>
+        <tr><td>to play devil's advocate</td><td>to argue the opposite side to test an idea (hacer de abogado del diablo)</td></tr>
+        <tr><td>to find common ground</td><td>to reach a point of agreement (encontrar puntos en común)</td></tr>
+        <tr><td>to talk at cross purposes</td><td>to misunderstand each other while discussing (hablar de cosas distintas)</td></tr>
+        <tr><td>arguably</td><td>hedge — "you could argue that" · <i>"It's arguably the best option we have."</i></td></tr>
+        <tr><td>admittedly</td><td>used to accept a point <i>before</i> disagreeing · <i>"Admittedly, the costs are high, but…"</i></td></tr>
+        <tr><td>to take someone's point</td><td>to accept what they say · <i>"I take your point, though I'd add that…"</i></td></tr>
+        <tr><td>to concede (a point)</td><td>to admit the other person is partly right · <i>"I'll concede that much."</i></td></tr>
+        <tr><td>I'm not entirely convinced</td><td>polite disagreement · <i>"I'm not entirely convinced by that argument."</i></td></tr>
+        <tr><td>with (all due) respect, …</td><td>formal warning that disagreement follows · <i>"With respect, that's not quite what happened."</i></td></tr>
+      </table>
+
+      <div class="h3"><span class="gfocus">Grammar focus</span>Cleft sentences</div>
+      <p class="lead-sm">A cleft ("split") sentence divides one idea into two clauses so you can <b>put the spotlight on one part</b> of it. It's how fluent speakers emphasise a point without raising their voice.</p>
+      <table class="tb">
+        <tr><th style="width:30%">Structure</th><th>Neutral → Emphatic</th></tr>
+        <tr><td><b>It</b>-cleft: It + be + X + that/who…</td><td>"The feedback frustrates people." → <b>It's the feedback that</b> frustrates people, not the workload.</td></tr>
+        <tr><td><b>What</b>-cleft: What… + be + X</td><td>"Trust matters here." → <b>What</b> really matters here <b>is</b> trust.</td></tr>
+        <tr><td><b>The reason / the thing</b> + be…</td><td>"I disagree because it's rushed." → <b>The reason</b> I disagree <b>is</b> that it's rushed.</td></tr>
+        <tr><td><b>All</b> + clause + be…</td><td>"I just want to wait." → <b>All</b> I'm saying <b>is</b> we should wait.</td></tr>
+      </table>
+      <p class="lead-sm">⚠️ Two common slips: <span class="x">What I want is to you listen.</span> → <span class="ok">What I want is for you to listen.</span> · <span class="x">It's the price what matters.</span> → <span class="ok">It's the price that matters.</span></p>
+      <div class="stretch"><div class="st-h">C2 stretch · same structure, harder forms</div>
+        <b>Reversed wh-cleft:</b> "Trust <b>is what</b> matters here." · <b>Negative it-cleft:</b> "<b>It wasn't until</b> the meeting <b>that</b> I understood." · <b>Cleft with a clause:</b> "<b>What</b> surprised me <b>was that</b> nobody objected."</div>
+
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Rewrite with a cleft sentence for emphasis</div>
+      <ol>
+        <li>I really admire her honesty. → What ___</li>
+        <li>We need more time, not more money. → What ___</li>
+        <li>His attitude annoys me, not his work. → It ___</li>
+        <li>I only realized the mistake much later. → It ___</li>
+        <li>I just want a clear answer. → All ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1 <span class="alt">(sample answers)</span></div>
+        <ol>
+          <li>What I really admire (about her) is her honesty.</li>
+          <li>What we need is more time, not more money.</li>
+          <li>It's his attitude that annoys me, not his work.</li>
+          <li>It was only much later that I realized the mistake.</li>
+          <li>All I want is a clear answer.</li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Put them straight <span class="sm">— someone has misunderstood you. Correct them with a cleft sentence (X, not Y).</span></div>
+      <p class="lead-sm">This is what cleft sentences are <i>for</i>: contradicting a wrong assumption without sounding aggressive.</p>
+      <ol>
+        <li>They say: <i>"So the team missed the deadline because they're disorganised."</i><br>
+            <span class="lead-sm">The truth: the brief changed three times.</span> → ___</li>
+        <li>They say: <i>"You didn't like the design, then."</i><br>
+            <span class="lead-sm">The truth: you liked the design — it was the colours.</span> → ___</li>
+        <li>They say: <i>"So you're asking for more money."</i><br>
+            <span class="lead-sm">The truth: you need more time.</span> → ___</li>
+        <li>They say: <i>"You want to cancel the whole campaign?"</i><br>
+            <span class="lead-sm">The truth: you only want to delay the launch.</span> → ___</li>
+        <li>They say: <i>"You're blaming me for the mix-up."</i><br>
+            <span class="lead-sm">The truth: you blame the system, not any person.</span> → ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2 <span class="alt">(sample answers — accept any correct cleft that contrasts X with Y)</span></div>
+        <ol>
+          <li>"<b>It's the brief that</b> caused the delay, not the team — it changed three times." / "<b>What caused</b> the delay <b>was</b> the brief changing three times."</li>
+          <li>"No — <b>it's the colours I</b> wasn't sure about, not the design." / "<b>What I didn't like was</b> the colours."</li>
+          <li>"Actually, <b>what we need is</b> more time, not more money." / "<b>It's time that</b> we're short of."</li>
+          <li>"<b>All I'm suggesting is</b> that we delay the launch." / "<b>What I'm proposing is</b> a delay, not a cancellation."</li>
+          <li>"Not at all — <b>it's the system that</b> failed here, not you." / "<b>What went wrong was</b> the process, not anything you did."</li>
+        </ol>
+      </div>
+      <div class="tnote"><b>Teacher note:</b> the "X, not Y" frame is the fastest route to a natural cleft — the contrast supplies the reason to emphasise. If a student answers without the contrast ("We need more time"), point out that the sentence is <i>correct</i> but doesn't correct the misunderstanding.</div>
+
+      <div class="h3">Activity 3 · Say it diplomatically <span class="sm">— match each blunt line (1–4) to its diplomatic version (a–d). Write the letter.</span></div>
+      <ol>
+        <li>"Your plan won't work." &nbsp;→&nbsp; ___</li>
+        <li>"That's a stupid idea." &nbsp;→&nbsp; ___</li>
+        <li>"You didn't do the research properly." &nbsp;→&nbsp; ___</li>
+        <li>"No. We're doing it my way." &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="cell" style="margin-top:6px"><span class="gh">Diplomatic versions — one fits each line</span>
+        <ul style="list-style:none; margin:6px 0 0; padding:0; line-height:1.9">
+          <li><b>a.</b> "With respect, the research may need another look. What's missing is the data on the second group."</li>
+          <li><b>b.</b> "Admittedly there's a lot to like here, but I'm not entirely convinced it'll work. What worries me is the timeline."</li>
+          <li><b>c.</b> "I see it rather differently, and arguably both could work. All I'm suggesting is that we try my approach first."</li>
+          <li><b>d.</b> "I take your point, though I'd question whether that's the best route. It's the cost that concerns me most."</li>
+        </ul>
+      </div>
+      <p class="lead-sm" style="margin-top:10px"><b>Then:</b> in each diplomatic version, <b>underline the cleft sentence</b> and say what it emphasises.</p>
+
+      <div class="h3">Now your turn <span class="sm">— write a fifth pair of your own</span></div>
+      <p class="lead-sm">Think of something blunt you've heard (or said) at work. Write it down, then rewrite it diplomatically using <b>(a)</b> a hedge or concession from the vocabulary and <b>(b)</b> a cleft sentence.</p>
+      <div class="scaffold">
+        Blunt: "<span class="gap">…</span>"<br>
+        Diplomatic: "<span class="gap">hedge / concession</span>, but <span class="gap">…</span>. <span class="gap">What … is / It's … that / All I'm …</span>."
+      </div>
+
+      <div class="key">
+        <div class="kh">Answer key · Activity 3</div>
+        <p><b>1-b · 2-d · 3-a · 4-c</b></p>
+        <p style="margin-top:8px"><b>The clefts:</b> b) <i>What worries me is the timeline</i> — emphasises the <b>specific</b> concern, so the criticism isn't total. · d) <i>It's the cost that concerns me most</i> — narrows the objection to <b>one</b> factor. · a) <i>What's missing is the data on the second group</i> — names the <b>gap</b> instead of blaming the person. · c) <i>All I'm suggesting is that we try my approach first</i> — makes the demand sound <b>minimal</b>.</p>
+        <p style="margin-top:10px"><b>Model answer · "Now your turn"</b><br>
+          <b>Blunt:</b> <i>"You're always late with the reports."</i><br>
+          <b>Diplomatic:</b> <i>"Admittedly we've all been stretched this month, and I'm not blaming anyone. <b>It's the reporting deadline that</b> keeps slipping, and <b>what I'd like to agree on is</b> a date we can both realistically stick to."</i><br>
+          <span class="alt">Both ingredients are there: a concession first (<i>admittedly… I'm not blaming anyone</i>), then a cleft that shifts the complaint from the <b>person</b> to the <b>deadline</b> — which is what makes it land as a problem to solve rather than an accusation.</span></p>
+      </div>
+      <div class="tnote"><b>Teacher note:</b> the matching itself is quick — the value is in the two follow-ups. Every cleft here does the same diplomatic job: it <b>narrows</b> a broad attack into one specific, fixable point. Draw that out before they write their own pair, and if their rewrite still sounds blunt, ask "what exactly is the problem?" — the answer is usually the cleft.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">⭐ Model · a diplomatic disagreement</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Dana:</span> I'll be blunt — the training budget is the first thing I'm cutting. Forty thousand a year, and I can't point to one concrete result.</p>
+        <p class="line"><span class="spk b">Rob:</span> I take your point on the numbers. <span class="tg">Admittedly</span>, we've never measured it properly. But I'd push back on the conclusion.</p>
+        <p class="line"><span class="spk">Dana:</span> Go on.</p>
+        <p class="line"><span class="spk b">Rob:</span> <span class="tg">What we've been measuring is attendance, not behaviour.</span> People do the course, go back to their desks, and nothing changes. <span class="tg">It's the follow-up that's missing, not the training.</span></p>
+        <p class="line"><span class="spk">Dana:</span> That may well be true, but I can't take "trust me, it works" to the board in March.</p>
+        <p class="line"><span class="spk b">Rob:</span> No — and I wouldn't ask you to. <span class="tg">All I'm asking for is one more quarter</span>, with proper metrics this time. If it still shows nothing, I'll <span class="tg">back down</span>.</p>
+        <p class="line"><span class="spk">Dana:</span> I don't think we're going to <span class="tg">see eye to eye</span> on the value of it. But one quarter, and I want the metrics agreed in writing.</p>
+        <p class="line"><span class="spk b">Rob:</span> That's fair.</p>
+      </div>
+      <div class="tnote"><b>Teacher note:</b> notice that Dana <b>doesn't</b> fold — she stays blunt, sets a condition, and they end up negotiating rather than agreeing. That's what makes the diplomatic language do real work. Ask the student: (1) where does Rob <b>concede</b> before disagreeing? (<i>"I take your point on the numbers… Admittedly…"</i> and <i>"No — and I wouldn't ask you to."</i>) (2) Find the three clefts and say <b>what each one contrasts</b>: attendance ↔ behaviour, follow-up ↔ training, one quarter ↔ everything else he could have demanded. Clefts sound natural here precisely because each corrects a misunderstanding.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Debate a motion</b> — e.g. <i>"Social media does more harm than good."</i> Argue for or against; the tutor pushes back. Concede at least one point, hedge at least once, and emphasise your key claim with <b>at least two cleft sentences</b>.</p>
+      <div class="scaffold">I'd argue that <span class="gap">claim</span>. Admittedly, <span class="gap">concession</span>, but <span class="gap">…</span>. What really matters is <span class="gap">…</span>. It's <span class="gap">X</span> that <span class="gap">…</span>, not <span class="gap">Y</span>.</div>
+      <div class="key">
+        <div class="kh">Model answer · a debate turn <span class="alt">(motion: "Social media does more harm than good")</span></div>
+        <p><i>"Admittedly, the evidence on teenage mental health is troubling, and I wouldn't dismiss it for a second. That said, I'm not entirely convinced the platforms themselves are the root cause. <b>What the research actually points to is</b> unlimited, unsupervised use — not social media as such. <b>It's the design of the feed that</b> does the damage, not the fact of being connected. For people who are isolated, it's arguably a lifeline. So I'd argue we should regulate the mechanics rather than write the whole thing off."</i></p>
+        <p style="margin-top:8px" class="alt"><b>The four ingredients:</b> <b>concede</b> (<i>Admittedly… I wouldn't dismiss it</i>) → <b>hedge</b> (<i>I'm not entirely convinced · arguably</i>) → <b>two clefts</b> that narrow the claim (<i>What the research points to is… · It's the design of the feed that…</i>) → <b>a position</b> (<i>regulate the mechanics rather than write it off</i>). Note that both clefts contrast <b>X, not Y</b> — that's what stops a concession from sounding like surrender.</p>
+      </div>
+      <div class="tnote"><b>Teacher note:</b> reward register over volume — a measured "I'm not sure that holds up" beats a forceful "no". Read the model aloud <b>after</b> their first attempt, not before, then have them redo the same turn. If the student is strong, have them switch sides mid-debate (play devil's advocate).</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> an opinion paragraph (120–150 words) on a topic you feel strongly about. Use <b>at least three cleft sentences</b> and two hedging expressions, concede one opposing point, and include today's <b>word, idiom and phrasal verb</b>.</div>
+    </div>
+  </section>
+
+<section class="lesson l2">
+    <div class="lesson-head">
+      <div class="lnum">02</div>
+      <div><span class="ttl">Phrasal Verbs &amp; Natural Register</span>
+      <span class="es">Sonar natural, no de libro de texto · Grammar focus: phrasal verbs (multi-word verbs)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>use phrasal verbs accurately and naturally</b> — putting the object and pronoun in the right place — and can <b>choose between a phrasal verb and its formal equivalent</b> depending on register.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📅 Vocabulary of the Day</span>
+      <div class="daily">
+        <table class="tb">
+          <tr><th style="width:22%">Type</th><th style="width:26%">Item</th><th>Meaning &amp; example</th></tr>
+          <tr><td>📖 Word</td><td><b>knack</b> <span class="lead-sm">(noun)</span></td><td>a natural skill or trick for doing something · <i>"She has a knack for explaining things."</i></td></tr>
+          <tr><td>💬 Idiom</td><td><b>to get the hang of (something)</b></td><td>to learn how to do something with practice · <i>"Phrasal verbs are hard at first, but you get the hang of them."</i></td></tr>
+          <tr><td>🔗 Phrasal verb</td><td><b>to pick up</b></td><td>to learn informally, without studying · <i>"I picked up most of my English from films."</i></td></tr>
+        </table>
+        <p class="use"><b>Use it today:</b> a fitting set — the lesson itself is about getting the hang of phrasal verbs.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Why do phrasal verbs feel so difficult, even at an advanced level?</li>
+          <li>Which sounds more natural to you: <i>"Could you postpone the meeting?"</i> or <i>"Could you put the meeting off?"</i> When would you use each?</li>
+          <li>Have you ever <b>picked up</b> a word from a film or a song? Which one?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Multi-word verbs <span class="min">18 min</span></span>
+
+      <div class="h3">1 · Functional language — register: phrasal vs. formal <span class="sm">(vocabulary, not grammar)</span></div>
+      <p class="lead-sm">Phrasal verbs are usually the <b>natural, spoken</b> choice; single-word (often Latin-origin) verbs are the <b>formal, written</b> choice. C1 means being able to switch.</p>
+      <table class="tb">
+        <tr><th style="width:34%">Natural / spoken</th><th>Formal / written</th></tr>
+        <tr><td>put off</td><td>postpone</td></tr>
+        <tr><td>find out</td><td>discover · ascertain</td></tr>
+        <tr><td>look into</td><td>investigate</td></tr>
+        <tr><td>put up with</td><td>tolerate</td></tr>
+        <tr><td>cut back on</td><td>reduce</td></tr>
+        <tr><td>bring up</td><td>raise (a topic)</td></tr>
+        <tr><td>go over</td><td>review</td></tr>
+      </table>
+
+      <div class="h3"><span class="gfocus">Grammar focus</span>Phrasal verbs (multi-word verbs)</div>
+      <p class="lead-sm">The meaning is vocabulary, but the <b>word order</b> is grammar — and it's where advanced students slip. There are four patterns:</p>
+      <table class="tb">
+        <tr><th style="width:26%">Type</th><th>Rule</th><th>Example</th></tr>
+        <tr><td><b>1. Intransitive</b><br><span class="lead-sm">no object</span></td><td>nothing can come between the parts</td><td>The car <b>broke down</b>. · She <b>turned up</b> late.</td></tr>
+        <tr><td><b>2. Transitive separable</b></td><td>object can go <b>after</b> or <b>in the middle</b></td><td><b>put off</b> the meeting / <b>put</b> the meeting <b>off</b></td></tr>
+        <tr><td><b>3. Transitive inseparable</b></td><td>object <b>always after</b> the whole verb</td><td><b>look after</b> the kids <span class="x">look the kids after</span></td></tr>
+        <tr><td><b>4. Three-word</b><br><span class="lead-sm">always inseparable</span></td><td>verb + adverb + preposition</td><td><b>put up with</b> the noise · <b>look forward to</b> seeing you</td></tr>
+      </table>
+      <p class="lead-sm">⚠️ <b>The pronoun rule</b> — the single most important one: with a <b>separable</b> verb, a pronoun object <b>must</b> go in the middle.<br>
+      <span class="ok">Put it off.</span> <span class="x">Put off it.</span> · <span class="ok">Turn them down.</span> <span class="x">Turn down them.</span></p>
+      <div class="stretch"><div class="st-h">C2 stretch · same structure, harder uses</div>
+        <b>Nouns from phrasal verbs:</b> a break<b>down</b>, a set<b>back</b>, the turn<b>out</b>, a hand<b>out</b>, an out<b>break</b>. · <b>One verb, several meanings:</b> <i>take off</i> = a plane leaves / remove clothing / become successful. · <b>Formal-sounding phrasal verbs</b> do exist: <i>carry out</i> research, <i>point out</i> a problem, <i>bring about</i> change — perfectly acceptable in writing.</div>
+
+      <div class="h3">🗝️ Vocabulary — high-frequency phrasal verbs (work &amp; life)</div>
+      <table class="tb">
+        <tr><th style="width:26%">Phrasal verb</th><th style="width:16%">Type</th><th>Meaning &amp; example</th></tr>
+        <tr><td>to put off</td><td>separable</td><td>to postpone · <i>"They put the launch off until June."</i></td></tr>
+        <tr><td>to look into</td><td>inseparable</td><td>to investigate · <i>"I'll look into the problem today."</i></td></tr>
+        <tr><td>to put up with</td><td>three-word</td><td>to tolerate · <i>"I can't put up with the noise any longer."</i></td></tr>
+        <tr><td>to turn down</td><td>separable</td><td>to reject / refuse · <i>"She turned the offer down."</i></td></tr>
+        <tr><td>to come up with</td><td>three-word</td><td>to think of (an idea) · <i>"He came up with a brilliant solution."</i></td></tr>
+        <tr><td>to fall through</td><td>intransitive</td><td>to fail to happen · <i>"The deal fell through at the last minute."</i></td></tr>
+        <tr><td>to get by</td><td>intransitive</td><td>to manage / survive · <i>"I get by with basic French."</i></td></tr>
+        <tr><td>to carry out</td><td>separable</td><td>to perform / conduct · <i>"They carried out a survey."</i></td></tr>
+      </table>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Correct or incorrect? <span class="sm">— fix the word order where needed</span></div>
+      <ol>
+        <li>"Can you put off it until Monday?"</li>
+        <li>"I'll look into the complaint tomorrow."</li>
+        <li>"She looked the children after all weekend."</li>
+        <li>"They turned down the offer." / "They turned it down."</li>
+        <li>"I can't put up with it any more."</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li><b>Incorrect</b> — pronoun must go in the middle → <i>"Can you <b>put it off</b> until Monday?"</i></li>
+          <li><b>Correct.</b> ✓ <span class="alt">(look into = inseparable)</span></li>
+          <li><b>Incorrect</b> — <i>look after</i> is inseparable → <i>"She <b>looked after the children</b> all weekend."</i></li>
+          <li><b>Both correct.</b> ✓ <span class="alt">(separable: noun either side, pronoun in the middle)</span></li>
+          <li><b>Correct.</b> ✓ <span class="alt">(three-word verbs are never separated)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Make it sound natural <span class="sm">— replace the formal verb with a phrasal verb</span></div>
+      <ol>
+        <li>We had to <b>postpone</b> the meeting. → ___</li>
+        <li>I'll <b>investigate</b> it and get back to you. → ___</li>
+        <li>I can't <b>tolerate</b> this noise. → ___</li>
+        <li>She <b>rejected</b> the job offer. → ___</li>
+        <li>We need to <b>reduce</b> our spending. → ___</li>
+        <li>He <b>invented</b> a great idea for the campaign. → ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <ol>
+          <li>We had to <b>put the meeting off</b> / <b>put off the meeting</b>.</li>
+          <li>I'll <b>look into</b> it and get back to you.</li>
+          <li>I can't <b>put up with</b> this noise.</li>
+          <li>She <b>turned down</b> the job offer. / <b>turned the job offer down</b>.</li>
+          <li>We need to <b>cut back on</b> our spending.</li>
+          <li>He <b>came up with</b> a great idea for the campaign.</li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 3 · Match each phrasal verb (1–6) to its meaning (a–f) — write the letter</div>
+      <ol>
+        <li>to fall through &nbsp;→&nbsp; ___</li>
+        <li>to get by &nbsp;→&nbsp; ___</li>
+        <li>to carry out &nbsp;→&nbsp; ___</li>
+        <li>to bring up &nbsp;→&nbsp; ___</li>
+        <li>to pick up &nbsp;→&nbsp; ___</li>
+        <li>to go over &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="cell" style="margin-top:6px"><span class="gh">Meanings — one fits each</span>
+        <ul style="list-style:none; margin:6px 0 0; padding:0; line-height:1.9">
+          <li>a. to manage with difficulty / survive</li>
+          <li>b. to review or check something</li>
+          <li>c. to fail to happen (a plan, a deal)</li>
+          <li>d. to learn informally, without studying</li>
+          <li>e. to mention or raise a topic</li>
+          <li>f. to perform or conduct (a task, research)</li>
+        </ul>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · Activity 3</div>
+        <p><b>1-c · 2-a · 3-f · 4-e · 5-d · 6-b</b></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">⭐ Model · the same message, two registers</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Spoken (natural):</span> <span class="tg">"So the deal fell through. We'd been putting it off for weeks, and in the end the client turned us down. I'm looking into what went wrong, and we'll go over it in Monday's meeting — I just can't put up with another surprise like that."</span></p>
+        <p class="line"><span class="spk b">Written (formal):</span> <span class="tg">"The agreement was not finalised. Following repeated postponements, the client declined our proposal. I am currently investigating the cause and will review the matter at Monday's meeting; a further oversight of this kind would be unacceptable."</span></p>
+      </div>
+      <div class="tnote"><b>Teacher note:</b> same content, opposite registers. Ask which sounds like a colleague and which like a report — then have the student convert a third message both ways. This "two-column" drill is the fastest way to make register conscious.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Two rounds.</b> (1) <b>Tell it naturally:</b> describe a project, plan or trip that didn't go well, using <b>at least six phrasal verbs</b> (and getting the pronouns right). (2) <b>Say it formally:</b> retell the same story as if reporting it to a manager, swapping the phrasal verbs for formal equivalents.</p>
+      <div class="scaffold">We'd been <span class="gap">-ing</span>, but it <span class="gap">fell through</span>. I <span class="gap">looked into</span> it and <span class="gap">came up with</span> <span class="gap">…</span>. In the end we had to <span class="gap">put … off</span> and just <span class="gap">get by</span>.</div>
+            <div class="key">
+        <div class="kh">Model answer · the same story, two registers</div>
+        <p><b>Natural (to a colleague):</b> <i>"So we'd been planning this trip for months, and about a week before, the whole thing <b>fell through</b>. The airline <b>put</b> the flight <b>back</b> twice and then cancelled it altogether. I <b>looked into</b> getting a refund, but they kept <b>putting me off</b>. In the end we had to <b>call</b> the whole thing <b>off</b> and just <b>get by</b> with a weekend at my sister's. Honestly, I'm still trying to <b>get over</b> it."</i></p>
+        <p style="margin-top:8px"><b>Formal (to a manager):</b> <i>"Our trip was cancelled a week before departure. The airline postponed the flight twice before cancelling it entirely. I attempted to obtain a refund, but the airline repeatedly delayed its response. We ultimately abandoned the plan and spent the weekend locally."</i></p>
+        <p style="margin-top:8px" class="alt">Seven phrasal verbs in the first version, none in the second — and note <i>put me off</i> and <i>call it off</i>, where the pronoun/object sits <b>in the middle</b>. The formal version is shorter and colder; that's the trade-off worth discussing.</p>
+      </div>
+<div class="tnote"><b>Teacher note:</b> listen specifically for the pronoun rule (<i>put it off</i>, not <span class="x">put off it</span>) and for wrongly separated inseparable verbs. Those two errors are what mark a student as "advanced but not natural".</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> two short versions of the same message (100 words each): one <b>informal</b> (to a colleague, using at least six phrasal verbs) and one <b>formal</b> (to a manager, using the single-word equivalents). Include today's word, idiom and phrasal verb in the informal one.</div>
+    </div>
+  </section>
+
+<section class="lesson l3">
+    <div class="lesson-head">
+      <div class="lnum">03</div>
+      <div><span class="ttl">Telling the Story</span>
+      <span class="es">Narrar con impacto · Grammar focus: narrative tenses</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>tell an engaging anecdote</b> — setting the scene, sequencing events and flashing back — by controlling the <b>four narrative tenses</b> accurately.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📅 Vocabulary of the Day</span>
+      <div class="daily">
+        <table class="tb">
+          <tr><th style="width:22%">Type</th><th style="width:26%">Item</th><th>Meaning &amp; example</th></tr>
+          <tr><td>📖 Word</td><td><b>vivid</b> <span class="lead-sm">(adjective)</span></td><td>producing powerful, clear images in the mind · <i>"She gave a vivid account of the accident."</i></td></tr>
+          <tr><td>💬 Idiom</td><td><b>out of the blue</b></td><td>suddenly and unexpectedly · <i>"Out of the blue, he called me after ten years."</i></td></tr>
+          <tr><td>🔗 Phrasal verb</td><td><b>to turn out</b></td><td>to happen / end in a particular way · <i>"It turned out to be the best night of the trip."</i></td></tr>
+        </table>
+        <p class="use"><b>Use it today:</b> all three must appear in the student's final anecdote.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Tell me about a time something went unexpectedly wrong (a trip, a job, a date…).</li>
+          <li>What makes a story <b>gripping</b> rather than just a list of events?</li>
+          <li>What's a story people in your family always retell?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Narrating <span class="min">18 min</span></span>
+
+      <div class="h3">1 · Functional language — shaping a story <span class="sm">(vocabulary, not grammar)</span></div>
+      <table class="tb">
+        <tr><th style="width:24%">Stage</th><th>Useful language</th></tr>
+        <tr><td>Setting it up</td><td>You'll never guess what happened… · This was back when… · Picture the scene:</td></tr>
+        <tr><td>Sequencing</td><td>at first · meanwhile · the next thing I knew · shortly afterwards · eventually</td></tr>
+        <tr><td>Building tension</td><td>and then, suddenly… · we had no idea that… · that's when…</td></tr>
+        <tr><td>Wrapping up</td><td>to make a long story short · in the end · looking back on it now</td></tr>
+      </table>
+
+      <div class="h3"><span class="gfocus">Grammar focus</span>Narrative tenses</div>
+      <p class="lead-sm">A good anecdote uses four past forms, each with a distinct job. Getting the <b>layers of time</b> right is what makes a story easy to follow.</p>
+      <table class="tb">
+        <tr><th style="width:28%">Tense</th><th>Its job in the story · example</th></tr>
+        <tr><td><b>Past simple</b></td><td>the main events, in order · <i>We <b>landed</b>, <b>took</b> a taxi and <b>checked</b> in.</i></td></tr>
+        <tr><td><b>Past continuous</b></td><td>the scene / an action in progress · <i>The sun <b>was setting</b> and people <b>were heading</b> home.</i></td></tr>
+        <tr><td><b>Past perfect</b></td><td>an earlier completed event (a flashback) · <i>By the time we arrived, the shop <b>had closed</b>.</i></td></tr>
+        <tr><td><b>Past perfect continuous</b></td><td>a longer earlier action, often explaining a result · <i>We <b>'d been driving</b> for hours when the car broke down.</i></td></tr>
+      </table>
+      <p class="lead-sm">⚠️ The classic C1 slip is flattening everything into past simple: <span class="x">When we arrived, the film already started.</span> → <span class="ok">…the film <b>had</b> already <b>started</b>.</span></p>
+      <div class="stretch"><div class="st-h">C2 stretch · same tense system, finer control</div>
+        <b>used to / would</b> for past habits: "We <b>used to</b> spend summers there." · "Every evening we <b>would</b> sit by the fire." (<i>would</i> only for repeated actions, never states: <span class="x">I would have a car</span>.) · <b>Past perfect for unfulfilled intentions:</b> "I <b>had hoped</b> to finish, but…" · <b>Present tenses for dramatic effect</b> in an oral story: "So I'm standing there, and this guy <b>walks</b> up to me…"</div>
+
+      <div class="h3">🗝️ Vocabulary — storytelling idioms</div>
+      <table class="tb">
+        <tr><th style="width:34%">Expression</th><th>Meaning &amp; example</th></tr>
+        <tr><td>out of the blue</td><td>suddenly, unexpectedly (de la nada) · <i>"Out of the blue, she called."</i></td></tr>
+        <tr><td>in the nick of time</td><td>just in time, at the last moment (en el último momento)</td></tr>
+        <tr><td>a stroke of luck</td><td>a piece of good fortune (un golpe de suerte)</td></tr>
+        <tr><td>to be on the verge of</td><td>about to (do something) · <i>"We were on the verge of giving up."</i></td></tr>
+        <tr><td>it dawned on me (that)</td><td>I slowly realized · <i>"It dawned on me that we were lost."</i></td></tr>
+        <tr><td>to go from bad to worse</td><td>to deteriorate further (ir de mal en peor)</td></tr>
+      </table>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Put the verb in the correct past form</div>
+      <ol>
+        <li>The sun ___ (shine) and the birds ___ (sing) when we set off.</li>
+        <li>By the time the ambulance arrived, the man ___ (already / recover).</li>
+        <li>We ___ (drive) for six hours when the engine finally ___ (give) out.</li>
+        <li>I didn't recognize her — she ___ (change) a lot since school.</li>
+        <li>While I ___ (walk) home, I ___ (see) the accident.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li>was <b>shining</b> … were <b>singing</b> <span class="alt">(scene = past continuous)</span></li>
+          <li>had <b>already recovered</b> <span class="alt">(earlier event = past perfect)</span></li>
+          <li>had <b>been driving</b> … <b>gave</b> <span class="alt">(long prior action + event)</span></li>
+          <li>had <b>changed</b></li>
+          <li>was <b>walking</b> … <b>saw</b> <span class="alt">(background interrupted by event)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Find and correct the tense mistake <span class="sm">(one sentence is already correct)</span></div>
+      <ol>
+        <li>When we got to the station, the train already left.</li>
+        <li>I was cooking dinner when the lights suddenly went out.</li>
+        <li>She was exhausted because she ran all morning.</li>
+        <li>While I studied at university, I met my best friend.</li>
+        <li>We used to going there every summer.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <ol>
+          <li>…the train <b>had</b> already <b>left</b>. <span class="alt">(earlier event)</span></li>
+          <li><b>Correct.</b> ✓</li>
+          <li>…because she <b>had been running</b> all morning. <span class="alt">(long earlier action explaining the result)</span></li>
+          <li><b>While I was studying</b> at university, I met… <span class="alt">(background = past continuous)</span></li>
+          <li>We <b>used to go</b> there every summer. <span class="alt">(used to + base form)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 3 · Match each idiom (1–5) to its meaning (a–e) — write the letter</div>
+      <ol>
+        <li>out of the blue &nbsp;→&nbsp; ___</li>
+        <li>in the nick of time &nbsp;→&nbsp; ___</li>
+        <li>a stroke of luck &nbsp;→&nbsp; ___</li>
+        <li>on the verge of &nbsp;→&nbsp; ___</li>
+        <li>it dawned on me &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="cell" style="margin-top:6px"><span class="gh">Meanings — one fits each idiom</span>
+        <ul style="list-style:none; margin:6px 0 0; padding:0; line-height:1.9">
+          <li>a. just in time, at the last moment</li>
+          <li>b. suddenly and unexpectedly</li>
+          <li>c. I slowly came to realize</li>
+          <li>d. about to (do something)</li>
+          <li>e. a piece of good fortune</li>
+        </ul>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · Activity 3</div>
+        <p><b>1-b · 2-a · 3-e · 4-d · 5-c</b></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">⭐ Model · an anecdote</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">🗣</span> We <span class="tg">'d been hiking</span> for hours and the light <span class="tg">was fading</span>. What we didn't know was that the trail <span class="tg">had split</span> a mile back. We <span class="tg">stopped</span> to check the map, and that's when it <span class="tg">started</span> to rain — and things <span class="tg">went from bad to worse</span>. We were <span class="tg">on the verge of</span> panicking when, <span class="tg">out of the blue</span>, a farmer <span class="tg">appeared</span> with a torch — <span class="tg">in the nick of time</span>. To make a long story short, he walked us down, and it <span class="tg">turned out</span> to be the best night of the trip.</p>
+      </div>
+      <div class="tnote"><b>Teacher note:</b> one paragraph, but four tense layers: past perfect continuous (<i>'d been hiking</i>), past continuous (<i>was fading</i>), past perfect (<i>had split</i>) and past simple for the events. Point out how the <b>layers</b>, not fancy words, make it easy to follow.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Tell a story with a twist</b> (two minutes): a trip, a coincidence, a near-disaster. Set the scene (past continuous), give background (past perfect / past perfect continuous), and use <b>two idioms</b> plus today's word and phrasal verb. The tutor reacts ("What happened next?").</p>
+      <div class="scaffold">It was <span class="gap">…</span> and I was <span class="gap">-ing</span>. I'd been <span class="gap">-ing</span> for <span class="gap">…</span> when suddenly <span class="gap">…</span>. That's when <span class="gap">…</span>. In the end, it turned out <span class="gap">…</span>.</div>
+            <div class="key">
+        <div class="kh">Model answer · a two-minute anecdote</div>
+        <p><i>"I<b>'d been working</b> at the same café for about two years, and I <b>was getting</b> pretty bored. It <b>was</b> a slow Tuesday — it <b>was raining</b>, and I <b>was wiping down</b> tables — when, <b>out of the blue</b>, a woman <b>came</b> in and <b>asked</b> if we did catering. I<b>'d never done</b> anything like that before, and I nearly <b>said</b> no. But something <b>made</b> me say yes. To make a long story short, that one conversation <b>turned out</b> to be a turning point: she <b>was organising</b> a wedding, and I <b>ended up</b> catering it. I still have a <b>vivid</b> memory of standing in that kitchen at four in the morning, convinced I'd taken on too much — but it was <b>a stroke of luck</b> that changed my career."</i></p>
+        <p style="margin-top:8px" class="alt">All four tenses are doing distinct work: <b>past perfect continuous</b> for the long background (<i>I'd been working</i>), <b>past continuous</b> for the scene (<i>was raining, was wiping down</i>), <b>past perfect</b> for the flashback (<i>I'd never done</i>), and <b>past simple</b> for the events. Three idioms plus the day's word and phrasal verb.</p>
+      </div>
+<div class="tnote"><b>Teacher note:</b> if they flatten everything into past simple, stop and ask "which happened first?" — that question forces the past perfect naturally. Then have them retell it in 45 seconds.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> an anecdote (150–180 words) about a memorable or unexpected experience. Use <b>all four narrative tenses</b> (underline them), two idioms, and today's word, idiom and phrasal verb.</div>
+    </div>
+  </section>
+
+<section class="lesson l4">
+    <div class="lesson-head">
+      <div class="lnum">04</div>
+      <div><span class="ttl">Regrets &amp; Alternative Realities</span>
+      <span class="es">Lamentar e imaginar otros desenlaces · Grammar focus: mixed conditionals</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>talk about regrets and turning points</b> — linking a past cause to a present result — by using <b>mixed conditionals</b> accurately.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📅 Vocabulary of the Day</span>
+      <div class="daily">
+        <table class="tb">
+          <tr><th style="width:22%">Type</th><th style="width:26%">Item</th><th>Meaning &amp; example</th></tr>
+          <tr><td>📖 Word</td><td><b>hindsight</b> <span class="lead-sm">(noun)</span></td><td>understanding a situation only after it has happened · <i>"With hindsight, I should have said no."</i></td></tr>
+          <tr><td>💬 Idiom</td><td><b>to kick yourself</b></td><td>to be annoyed with yourself about a mistake · <i>"I could kick myself for not applying."</i></td></tr>
+          <tr><td>🔗 Phrasal verb</td><td><b>to look back on</b></td><td>to think about something in the past · <i>"I look back on that year fondly."</i></td></tr>
+        </table>
+        <p class="use"><b>Use it today:</b> all three must appear when the student talks about their own turning point.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>If you could change one decision in your life, what would it be — and how would things be different <b>now</b>?</li>
+          <li>Is regret useful, or just a waste of energy?</li>
+          <li>Which do people regret more: what they did, or what they didn't do?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Regret &amp; hypothesis <span class="min">18 min</span></span>
+
+      <div class="h3">1 · Functional language — expressing regret <span class="sm">(vocabulary, not grammar)</span></div>
+      <table class="tb">
+        <tr><th style="width:24%">Function</th><th>Useful language</th></tr>
+        <tr><td>Mild regret</td><td>I probably should have… · It might have been better to… · Part of me wishes…</td></tr>
+        <tr><td>Strong regret</td><td>I really regret… · I'll never forgive myself for… · I could kick myself for…</td></tr>
+        <tr><td>Reflecting</td><td>with hindsight · looking back on it · in retrospect · at the time, I thought…</td></tr>
+        <tr><td>Accepting / moving on</td><td>it's water under the bridge · there's no point dwelling on it · everything happens for a reason</td></tr>
+      </table>
+
+      <div class="h3"><span class="gfocus">Grammar focus</span>Mixed conditionals</div>
+      <p class="lead-sm">A <b>mixed</b> conditional joins two different times: usually an unreal <b>past</b> condition with a <b>present</b> result. It's the natural way to talk about how one past decision still shapes your life today.</p>
+      <table class="tb">
+        <tr><th style="width:26%">Type</th><th>Form</th><th>Example</th></tr>
+        <tr><td>Reference: 3rd conditional<br><span class="lead-sm">past → past</span></td><td>If + past perfect, <b>would have</b> + p.p.</td><td>If I <b>had studied</b> medicine, I <b>would have become</b> a doctor.</td></tr>
+        <tr><td><b>Mixed A</b><br><span class="lead-sm">past condition → present result</span></td><td>If + <b>past perfect</b>, <b>would</b> + base</td><td>If I <b>had studied</b> medicine, I <b>'d be</b> a doctor <b>now</b>.</td></tr>
+        <tr><td><b>Mixed B</b><br><span class="lead-sm">present condition → past result</span></td><td>If + <b>past simple</b>, <b>would have</b> + p.p.</td><td>If I <b>weren't</b> so shy, I <b>would have said</b> something at the meeting.</td></tr>
+      </table>
+      <p class="lead-sm">⚠️ The tense mismatch <i>is</i> the point — don't "correct" it: <span class="ok">If I had taken that job, I'd be living in Berlin now.</span> Watch for the classic error <span class="x">If I would have known…</span> → <span class="ok">If I <b>had</b> known…</span></p>
+      <div class="stretch"><div class="st-h">C2 stretch · same structure, advanced forms</div>
+        <b>Inverted conditionals</b> (drop <i>if</i>): "<b>Had I known</b>, I'd have called." · "<b>Had it not been for</b> her help, I'd still be stuck." · "<b>Were I</b> in your position, I'd wait." · <b>Unreal past with wish/if only:</b> "If only I <b>had listened</b> — I <b>wouldn't be</b> in this mess now." · <b>But for:</b> "<b>But for</b> that scholarship, I wouldn't be here today."</div>
+
+      <div class="h3">🗝️ Vocabulary — regret, hindsight &amp; turning points</div>
+      <table class="tb">
+        <tr><th style="width:34%">Expression</th><th>Meaning &amp; example</th></tr>
+        <tr><td>with the benefit of hindsight</td><td>knowing what we know now (con la perspectiva del tiempo)</td></tr>
+        <tr><td>a turning point</td><td>a moment when things change direction · <i>"That job was a turning point."</i></td></tr>
+        <tr><td>a missed opportunity</td><td>a chance you failed to take (una oportunidad perdida)</td></tr>
+        <tr><td>to second-guess (yourself)</td><td>to doubt a decision after making it (cuestionarse a posteriori)</td></tr>
+        <tr><td>water under the bridge</td><td>in the past and no longer important (agua pasada)</td></tr>
+        <tr><td>to have no regrets</td><td>to be at peace with your choices · <i>"Honestly, I have no regrets."</i></td></tr>
+      </table>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Complete the mixed conditional</div>
+      <ol>
+        <li>If I ___ (take) that job, I ___ (live) in Berlin now.</li>
+        <li>If she ___ (not / be) so disorganized, she ___ (not / miss) the deadline last week.</li>
+        <li>If they ___ (save) more in their twenties, they ___ (be) able to buy a house today.</li>
+        <li>If I ___ (speak) better German, I ___ (apply) for that role last month.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li>had <b>taken</b> … <b>'d be living / would live</b> <span class="alt">(Mixed A: past → present)</span></li>
+          <li><b>weren't</b> … <b>wouldn't have missed</b> <span class="alt">(Mixed B: present → past)</span></li>
+          <li>had <b>saved</b> … <b>would be</b> <span class="alt">(Mixed A)</span></li>
+          <li><b>spoke</b> … <b>would have applied</b> <span class="alt">(Mixed B)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · 3rd conditional or mixed? <span class="sm">— choose the natural ending</span></div>
+      <ol>
+        <li>If I had gone to bed earlier, … &nbsp;a) I wouldn't have been late. &nbsp;b) I wouldn't be so tired now. <span class="lead-sm">(the result is <b>now</b>)</span> → ___</li>
+        <li>If we had booked earlier, … &nbsp;a) we would have paid half the price. &nbsp;b) we would be at the hotel now. <span class="lead-sm">(the result is <b>past</b>)</span> → ___</li>
+        <li>If he weren't afraid of flying, … &nbsp;a) he would have come with us last year. &nbsp;b) he would have been a pilot. <span class="lead-sm">(present cause → past result)</span> → ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <p><b>1-b</b> (mixed: past cause → present result) · <b>2-a</b> (3rd: past → past) · <b>3-a</b> (mixed: present cause → past result)</p>
+      </div>
+
+      <div class="h3">Activity 3 · Match each expression (1–5) to its meaning (a–e) — write the letter</div>
+      <ol>
+        <li>with the benefit of hindsight &nbsp;→&nbsp; ___</li>
+        <li>a turning point &nbsp;→&nbsp; ___</li>
+        <li>to second-guess yourself &nbsp;→&nbsp; ___</li>
+        <li>water under the bridge &nbsp;→&nbsp; ___</li>
+        <li>to kick yourself &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="cell" style="margin-top:6px"><span class="gh">Meanings — one fits each</span>
+        <ul style="list-style:none; margin:6px 0 0; padding:0; line-height:1.9">
+          <li>a. a moment when things change direction</li>
+          <li>b. to be annoyed with yourself about a mistake</li>
+          <li>c. knowing now what you didn't know then</li>
+          <li>d. in the past and no longer worth worrying about</li>
+          <li>e. to keep doubting a decision you already made</li>
+        </ul>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · Activity 3</div>
+        <p><b>1-c · 2-a · 3-e · 4-d · 5-b</b></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">⭐ Model · talking about a turning point</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Iris:</span> Do you ever regret turning down that job in Madrid?</p>
+        <p class="line"><span class="spk b">Tom:</span> <span class="tg">Sometimes. If I'd taken it, I'd probably be fluent in Spanish by now — and I'd be living somewhere sunnier.</span> I could kick myself occasionally.</p>
+        <p class="line"><span class="spk">Iris:</span> But you met Sara here.</p>
+        <p class="line"><span class="spk b">Tom:</span> <span class="tg">Exactly, and that's the thing — if I weren't such a home bird, I'd have moved years ago and never met her.</span> So, with hindsight, it was a turning point. It's water under the bridge now, honestly. I look back on it with no regrets.</p>
+      </div>
+      <div class="tnote"><b>Teacher note:</b> both mixed types appear — <i>If I'd taken it, I'd be fluent now</i> (past → present) and <i>If I weren't such a home bird, I'd have moved</i> (present → past). Have the student find and label each one before they speak.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Your turning point.</b> Talk for two minutes about a decision that changed your life (a move, a job, a course, a relationship). Say how things <b>would be different now</b> if you'd chosen otherwise — using <b>at least three mixed conditionals</b> — then say whether you have any regrets.</p>
+      <div class="scaffold">One of the biggest turning points was when <span class="gap">…</span>. If I <span class="gap">had(n't) …</span>, I <span class="gap">would (not) be … now</span>. And if I <span class="gap">weren't …</span>, I <span class="gap">would(n't) have …</span>. With hindsight, <span class="gap">…</span>.</div>
+            <div class="key">
+        <div class="kh">Model answer · a turning point</div>
+        <p><i>"The biggest turning point was probably when I turned down a place at university in the capital and stayed in my hometown instead. <b>If I'd taken it, I'd almost certainly be working in finance now</b> — and I'd probably be earning a good deal more. There are days when I could <b>kick myself</b>. But <b>if I weren't the kind of person who needs family nearby, I'd have moved years ago</b> and I'd never have met my partner. And <b>if I hadn't stayed, I wouldn't be running my own business today</b> either. So with <b>hindsight</b>, it's hard to call it a mistake. I <b>look back on</b> it now with almost no regrets — it's water under the bridge."</i></p>
+        <p style="margin-top:8px" class="alt">Three mixed conditionals, and note the two directions: <i>If I'd taken it… I'd be working</i> (past cause → <b>present</b> result) and <i>If I weren't… I'd have moved</i> (present cause → <b>past</b> result). The day's word, idiom and phrasal verb all appear naturally.</p>
+      </div>
+<div class="tnote"><b>Teacher note:</b> the target error to hunt is <i>"If I would have…"</i>. Also push them to keep the two time frames straight — ask "and is that true <b>now</b>, or back then?"</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Write</b> two paragraphs (150–180 words) about a turning point in your life: what happened, and how your life would be different today if you'd decided otherwise. Use <b>at least three mixed conditionals</b> and today's word, idiom and phrasal verb.</div>
+    </div>
+  </section>
+
+  <!-- ============== DAILY VOCAB BANK ============== -->
+  <h2 class="sec">📅 VOCABULARY OF THE DAY · EXTRA BANK</h2>
+  <p class="lead-sm">Ten more sets, so the daily ritual can continue between and beyond these four lessons. Same routine: present it in two minutes, then require all three items to be used before the end of the session.</p>
+  <table class="maptable">
+    <tr><th style="width:44px">Day</th><th>📖 Word</th><th>💬 Idiom</th><th>🔗 Phrasal verb</th></tr>
+    <tr><td class="ln">05</td><td><b>meticulous</b> — very careful about detail</td><td><b>to cut corners</b> — to do something badly to save time/money</td><td><b>to go through</b> — to examine or experience</td></tr>
+    <tr><td class="ln">06</td><td><b>daunting</b> — intimidating, off-putting</td><td><b>to bite off more than you can chew</b> — to take on too much</td><td><b>to take on</b> — to accept (work, responsibility)</td></tr>
+    <tr><td class="ln">07</td><td><b>resilient</b> — able to recover quickly</td><td><b>to bounce back</b> — to recover after a setback</td><td><b>to get over</b> — to recover from</td></tr>
+    <tr><td class="ln">08</td><td><b>tedious</b> — boring and repetitive</td><td><b>to drag on</b> — to continue for too long</td><td><b>to put through</b> — to connect (a call) / to make someone endure</td></tr>
+    <tr><td class="ln">09</td><td><b>candid</b> — honest and direct</td><td><b>to call a spade a spade</b> — to speak plainly</td><td><b>to open up</b> — to talk honestly about feelings</td></tr>
+    <tr><td class="ln">10</td><td><b>compelling</b> — convincing, gripping</td><td><b>to make a case for</b> — to argue in favour of</td><td><b>to back up</b> — to support (an argument, a claim)</td></tr>
+    <tr><td class="ln">11</td><td><b>reluctant</b> — unwilling, hesitant</td><td><b>to drag your feet</b> — to delay deliberately</td><td><b>to hold off</b> — to delay doing something</td></tr>
+    <tr><td class="ln">12</td><td><b>versatile</b> — able to adapt to many uses</td><td><b>to wear many hats</b> — to have many different roles</td><td><b>to fill in for</b> — to substitute for someone</td></tr>
+    <tr><td class="ln">13</td><td><b>overwhelming</b> — too much to handle</td><td><b>to be snowed under</b> — to have far too much work</td><td><b>to catch up on</b> — to do work you're behind with</td></tr>
+    <tr><td class="ln">14</td><td><b>inevitable</b> — certain to happen</td><td><b>to see the writing on the wall</b> — to sense a bad outcome coming</td><td><b>to come about</b> — to happen / to result</td></tr>
+  </table>
+  <div class="tnote"><b>Teacher note:</b> keep a running list on a shared doc and recycle: start each lesson by asking the student to use <b>yesterday's</b> three items before you present today's. Recycling is what moves an item from "recognised" to "owned".</div>
+
+</div><!-- /wrap -->
+
+<footer>
+  <b>ENGLISH for ALL</b><br>
+  Advanced English · C1 core · ⭐ C2 stretch · 4-lesson PPP course · one grammar point per unit
+</footer>
+
+<script>
+  function setView(mode){
+    document.body.classList.remove('teacher','student');
+    document.body.classList.add(mode);
+    document.getElementById('btnTeacher').classList.toggle('on', mode==='teacher');
+    document.getElementById('btnStudent').classList.toggle('on', mode==='student');
+    document.getElementById('viewNote').textContent = (mode==='teacher')
+      ? 'Answer keys & teacher notes are visible.'
+      : 'Student handout — keys & teacher notes are hidden.';
+  }
+</script>
+</body>
+</html>

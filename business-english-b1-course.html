@@ -42,8 +42,8 @@
   .tbtn{font-family:"Share Tech Mono",monospace; font-size:0.82rem; border:1.5px solid var(--purple); color:var(--purple);
     background:#fff; border-radius:9px; padding:8px 14px; cursor:pointer; letter-spacing:1px; transition:.15s; white-space:nowrap;}
   .tbtn:hover{background:#f0eaff;}
-  .tbtn.on{background:#6d2fd0; color:#fff;}
-  .tbtn.print{border-color:var(--cyan); color:#06657a;}
+  .tbtn.on{background:var(--purple); color:#fff;}
+  .tbtn.print{border-color:var(--cyan); color:var(--cyan);}
   .tbtn.print:hover{background:#e6f6f9;}
   .viewnote{font-family:"Share Tech Mono",monospace; font-size:0.72rem; color:var(--soft);}
 
@@ -123,7 +123,7 @@
   /* B2 stretch */
   .stretch{background:var(--stretch-bg); border:1px solid #d9c9ff; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
   .stretch .st-h{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:6px;}
-  .stretch .st-h::before{content:"";display:inline-block;width:.7em;height:.7em;vertical-align:.05em;background-color:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z'/%3E%3C/svg%3E") no-repeat center/contain;}
+  .stretch .st-h::before{content:"⭐";}
 
   /* listening dialogue */
   .dialogue{border:1px solid var(--line); border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px; background:#fbfdff;}
@@ -137,7 +137,7 @@
   /* answer key */
   .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
   .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
-  .key .kh::before{content:"";display:inline-block;width:1em;height:1em;vertical-align:-.15em;background-color:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16m-1.3 11.9L6.9 12l1.5-1.5 2.3 2.3 4.9-4.9L17.1 9.4z'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16m-1.3 11.9L6.9 12l1.5-1.5 2.3 2.3 4.9-4.9L17.1 9.4z'/%3E%3C/svg%3E") no-repeat center/contain;}
+  .key .kh::before{content:"✅";}
   .key ol{margin:4px 0 0 20px;} .key li{margin:3px 0;}
   .key .alt{color:var(--soft); font-size:0.86rem;}
 
@@ -166,115 +166,15 @@
     .cover{break-before:avoid;}
     a{color:var(--ink); text-decoration:none;}
   }
-
-/* == EFA ICONS (generated) == */
-/* ===== EFA icon set — self-hosted SVG masks, tinted with currentColor ===== */
-ico-apple,ico-ban,ico-bolt,ico-book,ico-bookmark,ico-bookopen,ico-box,ico-brain,ico-briefcase,ico-bulb,ico-cake,ico-calendar,ico-cap,ico-chair,ico-check,ico-child,ico-circlecheck,ico-circleq,ico-city,ico-clapper,ico-clipboard,ico-clock,ico-clone,ico-commentdots,ico-comments,ico-crown,ico-download,ico-dumbbell,ico-envelope,ico-eye,ico-eyeslash,ico-feather,ico-file,ico-filepen,ico-fire,ico-flag,ico-gamepad,ico-ghost,ico-hand,ico-handshake,ico-headphones,ico-heart,ico-heartopen,ico-hotel,ico-house,ico-image,ico-key,ico-link,ico-listol,ico-locationdot,ico-lock,ico-mic,ico-mobile,ico-mug,ico-music,ico-mute,ico-palette,ico-paw,ico-pen,ico-pencil,ico-people,ico-phone,ico-pin,ico-plane,ico-play,ico-pointer,ico-print,ico-puzzle,ico-question,ico-recycle,ico-rocket,ico-rotate,ico-save,ico-search,ico-shuffle,ico-skull,ico-spell,ico-sqcheck,ico-square,ico-star,ico-stopwatch,ico-suitcase,ico-target,ico-thumbdown,ico-thumbup,ico-trophy,ico-umbrella,ico-user,ico-utensils,ico-volume,ico-warn,ico-window,ico-xmark{display:inline-block;flex:none;width:1em;height:1em;vertical-align:-.125em;margin-right:.35em;background-color:currentColor;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:100% 100%;mask-size:100% 100%}
-ico-apple{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%206c1.5-2%203.5-2.4%205-2%20.4%201.6%200%203.6-2%205%202.5.3%204%202.4%204%205%200%203.4-2.6%208-5%208-.8%200-1.4-.4-2-.4s-1.2.4-2%20.4c-2.4%200-5-4.6-5-8%200-2.8%201.7-5%204.5-5%20.9%200%201.8.4%202.5%201M12%202c.6%201%20.6%202%200%203.5C11.4%204%2011.4%203%2012%202'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%206c1.5-2%203.5-2.4%205-2%20.4%201.6%200%203.6-2%205%202.5.3%204%202.4%204%205%200%203.4-2.6%208-5%208-.8%200-1.4-.4-2-.4s-1.2.4-2%20.4c-2.4%200-5-4.6-5-8%200-2.8%201.7-5%204.5-5%20.9%200%201.8.4%202.5%201M12%202c.6%201%20.6%202%200%203.5C11.4%204%2011.4%203%2012%202'/%3E%3C/svg%3E")}
-ico-ban{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%200%201%204.9%201.7L5.7%2016.9A8%208%200%200%201%2012%204m6.3%203.1A8%208%200%200%201%2012%2020a8%208%200%200%201-4.9-1.7z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%200%201%204.9%201.7L5.7%2016.9A8%208%200%200%201%2012%204m6.3%203.1A8%208%200%200%201%2012%2020a8%208%200%200%201-4.9-1.7z'/%3E%3C/svg%3E")}
-ico-bolt{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M13.5%201.5%205%2013.5h5L9.5%2022.5%2019%2010h-6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M13.5%201.5%205%2013.5h5L9.5%2022.5%2019%2010h-6z'/%3E%3C/svg%3E")}
-ico-book{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12a1%201%200%200%201%201%201v18a1%201%200%200%201-1%201H7a2%202%200%200%201-2-2V4a2%202%200%200%201%201-2m1%202v13h10V4zm0%2015v1h10v-1z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12a1%201%200%200%201%201%201v18a1%201%200%200%201-1%201H7a2%202%200%200%201-2-2V4a2%202%200%200%201%201-2m1%202v13h10V4zm0%2015v1h10v-1z'/%3E%3C/svg%3E")}
-ico-bookmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12v20l-6-4.2L6%2022z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12v20l-6-4.2L6%2022z'/%3E%3C/svg%3E")}
-ico-bookopen{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205.5C10.4%204.2%208.3%203.5%206%203.5c-1%200-2%20.1-3%20.4v15c1-.3%202-.4%203-.4%202.3%200%204.4.7%206%202%201.6-1.3%203.7-2%206-2%201%200%202%20.1%203%20.4v-15c-1-.3-2-.4-3-.4-2.3%200-4.4.7-6%202m0%202.4c1.3-.8%202.9-1.3%204.5-1.4v10.6c-1.6.1-3.2.6-4.5%201.4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205.5C10.4%204.2%208.3%203.5%206%203.5c-1%200-2%20.1-3%20.4v15c1-.3%202-.4%203-.4%202.3%200%204.4.7%206%202%201.6-1.3%203.7-2%206-2%201%200%202%20.1%203%20.4v-15c-1-.3-2-.4-3-.4-2.3%200-4.4.7-6%202m0%202.4c1.3-.8%202.9-1.3%204.5-1.4v10.6c-1.6.1-3.2.6-4.5%201.4z'/%3E%3C/svg%3E")}
-ico-box{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%206.5%2012%202l9%204.5V18l-9%204.5L3%2018zm2.6.6L12%2010.3l6.4-3.2L12%204zM5%209v7.8l6%203V12zm14%200-6%203v7.8l6-3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%206.5%2012%202l9%204.5V18l-9%204.5L3%2018zm2.6.6L12%2010.3l6.4-3.2L12%204zM5%209v7.8l6%203V12zm14%200-6%203v7.8l6-3z'/%3E%3C/svg%3E")}
-ico-brain{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202a3%203%200%200%200-3%203%203%203%200%200%200-2%205.2A3%203%200%200%200%205.5%2016%203%203%200%200%200%2011%2018V4a2%202%200%200%200-2-2m6%200a2%202%200%200%200-2%202v14a3%203%200%200%200%205.5-2A3%203%200%200%200%2020%2010.2%203%203%200%200%200%2018%205a3%203%200%200%200-3-3'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202a3%203%200%200%200-3%203%203%203%200%200%200-2%205.2A3%203%200%200%200%205.5%2016%203%203%200%200%200%2011%2018V4a2%202%200%200%200-2-2m6%200a2%202%200%200%200-2%202v14a3%203%200%200%200%205.5-2A3%203%200%200%200%2020%2010.2%203%203%200%200%200%2018%205a3%203%200%200%200-3-3'/%3E%3C/svg%3E")}
-ico-briefcase{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a2%202%200%200%201%202%202v2h3a2%202%200%200%201%202%202v11a2%202%200%200%201-2%202H4a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h3V4a2%202%200%200%201%202-2m0%204h6V4H9zM4%208v11h16V8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a2%202%200%200%201%202%202v2h3a2%202%200%200%201%202%202v11a2%202%200%200%201-2%202H4a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h3V4a2%202%200%200%201%202-2m0%204h6V4H9zM4%208v11h16V8z'/%3E%3C/svg%3E")}
-ico-bulb{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a7%207%200%200%201%204.2%2012.6c-.7.5-1.2%201.3-1.2%202.2V18H9v-1.2c0-.9-.5-1.7-1.2-2.2A7%207%200%200%201%2012%202M9%2019h6v1.5a1.5%201.5%200%200%201-1.5%201.5h-3A1.5%201.5%200%200%201%209%2020.5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a7%207%200%200%201%204.2%2012.6c-.7.5-1.2%201.3-1.2%202.2V18H9v-1.2c0-.9-.5-1.7-1.2-2.2A7%207%200%200%201%2012%202M9%2019h6v1.5a1.5%201.5%200%200%201-1.5%201.5h-3A1.5%201.5%200%200%201%209%2020.5z'/%3E%3C/svg%3E")}
-ico-cake{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11%201h2v3h-2zM7%205h10a3%203%200%200%201%203%203v3H4V8a3%203%200%200%201%203-3M4%2013h16v8H4zm2%202v4h12v-4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11%201h2v3h-2zM7%205h10a3%203%200%200%201%203%203v3H4V8a3%203%200%200%201%203-3M4%2013h16v8H4zm2%202v4h12v-4z'/%3E%3C/svg%3E")}
-ico-calendar{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h2v2h6V2h2v2h3a1%201%200%200%201%201%201v16a1%201%200%200%201-1%201H4a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1h3zM5%209v11h14V9zm2%202h3v3H7z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h2v2h6V2h2v2h3a1%201%200%200%201%201%201v16a1%201%200%200%201-1%201H4a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1h3zM5%209v11h14V9zm2%202h3v3H7z'/%3E%3C/svg%3E")}
-ico-cap{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%203%2023%208.5%2012%2014%201%208.5zm0%202.2L5.5%208.5%2012%2011.8l6.5-3.3zM5%2011.6l7%203.5%207-3.5V16c0%202-3.1%203.5-7%203.5S5%2018%205%2016z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%203%2023%208.5%2012%2014%201%208.5zm0%202.2L5.5%208.5%2012%2011.8l6.5-3.3zM5%2011.6l7%203.5%207-3.5V16c0%202-3.1%203.5-7%203.5S5%2018%205%2016z'/%3E%3C/svg%3E")}
-ico-chair{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12v9H6zm-2%2011h16v2h-2v7h-2v-7H8v7H6v-7H4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12v9H6zm-2%2011h16v2h-2v7h-2v-7H8v7H6v-7H4z'/%3E%3C/svg%3E")}
-ico-check{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9.3%2017.7%203.6%2012l1.8-1.8%203.9%203.9L18.6%204.8%2020.4%206.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9.3%2017.7%203.6%2012l1.8-1.8%203.9%203.9L18.6%204.8%2020.4%206.6z'/%3E%3C/svg%3E")}
-ico-child{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a3%203%200%201%201-3%203%203%203%200%200%201%203-3m-4%208h8l1.5%206-2%20.6L14%2013v9h-2v-5h-.5v5H9v-9l-1.5%203.6-2-.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a3%203%200%201%201-3%203%203%203%200%200%201%203-3m-4%208h8l1.5%206-2%20.6L14%2013v9h-2v-5h-.5v5H9v-9l-1.5%203.6-2-.6z'/%3E%3C/svg%3E")}
-ico-circlecheck{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-1.3%2011.9L6.9%2012l1.5-1.5%202.3%202.3%204.9-4.9L17.1%209.4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-1.3%2011.9L6.9%2012l1.5-1.5%202.3%202.3%204.9-4.9L17.1%209.4z'/%3E%3C/svg%3E")}
-ico-circleq{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-.2%202.7a3.2%203.2%200%200%200-3.2%203.1h2a1.2%201.2%200%201%201%201.9%201l-.9.8a2.4%202.4%200%200%200-.8%201.8v.7h2v-.6l.9-.8a3.2%203.2%200%200%200-1.9-6M11%2016.4h2v2h-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-.2%202.7a3.2%203.2%200%200%200-3.2%203.1h2a1.2%201.2%200%201%201%201.9%201l-.9.8a2.4%202.4%200%200%200-.8%201.8v.7h2v-.6l.9-.8a3.2%203.2%200%200%200-1.9-6M11%2016.4h2v2h-2z'/%3E%3C/svg%3E")}
-ico-city{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%2021V8h6V3h8v5h6v13zM4%2019h4v-9H4zm6%200h4V5h-4zm6%200h4v-9h-4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%2021V8h6V3h8v5h6v13zM4%2019h4v-9H4zm6%200h4V5h-4zm6%200h4v-9h-4z'/%3E%3C/svg%3E")}
-ico-clapper{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%206.5%2021%203l1%204L3%2010.5zM2%2012h20v9H2zm3-8.2%201%202.6%203-.6-1-2.6zm5-1%201%202.6%203-.6-1-2.6zm5-1%201%202.6%203-.6-1-2.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%206.5%2021%203l1%204L3%2010.5zM2%2012h20v9H2zm3-8.2%201%202.6%203-.6-1-2.6zm5-1%201%202.6%203-.6-1-2.6zm5-1%201%202.6%203-.6-1-2.6z'/%3E%3C/svg%3E")}
-ico-clipboard{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a1%201%200%200%201%201%201v1h2a2%202%200%200%201%202%202v14a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2V6a2%202%200%200%201%202-2h2V3a1%201%200%200%201%201-1m1%202v1h4V4zM8%2010h8v2H8zm0%204h8v2H8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a1%201%200%200%201%201%201v1h2a2%202%200%200%201%202%202v14a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2V6a2%202%200%200%201%202-2h2V3a1%201%200%200%201%201-1m1%202v1h4V4zM8%2010h8v2H8zm0%204h8v2H8z'/%3E%3C/svg%3E")}
-ico-clock{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-1%202v6.6l4.6%202.7%201-1.7-3.6-2.1V6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-1%202v6.6l4.6%202.7%201-1.7-3.6-2.1V6z'/%3E%3C/svg%3E")}
-ico-clone{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M8%202h12a2%202%200%200%201%202%202v12h-2V4H8zM4%206h12a2%202%200%200%201%202%202v12a2%202%200%200%201-2%202H4a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2m0%202v12h12V8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M8%202h12a2%202%200%200%201%202%202v12h-2V4H8zM4%206h12a2%202%200%200%201%202%202v12a2%202%200%200%201-2%202H4a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2m0%202v12h12V8z'/%3E%3C/svg%3E")}
-ico-commentdots{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%203h16a2%202%200%200%201%202%202v10a2%202%200%200%201-2%202H9l-5%204v-4a2%202%200%200%201-2-2V5a2%202%200%200%201%202-2m4%206.5A1.5%201.5%200%201%200%209.5%2011%201.5%201.5%200%200%200%208%209.5m4%200A1.5%201.5%200%201%200%2013.5%2011%201.5%201.5%200%200%200%2012%209.5m4%200A1.5%201.5%200%201%200%2017.5%2011%201.5%201.5%200%200%200%2016%209.5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%203h16a2%202%200%200%201%202%202v10a2%202%200%200%201-2%202H9l-5%204v-4a2%202%200%200%201-2-2V5a2%202%200%200%201%202-2m4%206.5A1.5%201.5%200%201%200%209.5%2011%201.5%201.5%200%200%200%208%209.5m4%200A1.5%201.5%200%201%200%2013.5%2011%201.5%201.5%200%200%200%2012%209.5m4%200A1.5%201.5%200%201%200%2017.5%2011%201.5%201.5%200%200%200%2016%209.5'/%3E%3C/svg%3E")}
-ico-comments{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h13a2%202%200%200%201%202%202v7a2%202%200%200%201-2%202H8l-5%204V5a2%202%200%200%201%202-2zm17%204a2%202%200%200%201%202%202v11l-4-3h-7a2%202%200%200%201-2-2h9a2%202%200%200%200%202-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h13a2%202%200%200%201%202%202v7a2%202%200%200%201-2%202H8l-5%204V5a2%202%200%200%201%202-2zm17%204a2%202%200%200%201%202%202v11l-4-3h-7a2%202%200%200%201-2-2h9a2%202%200%200%200%202-2z'/%3E%3C/svg%3E")}
-ico-crown{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%207l4.5%203.5L12%203l5.5%207.5L22%207l-2%2012H4zm3.6%2010h12.8l.9-5.4-3.4%202.6L12%207.2l-3.9%207-3.4-2.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%207l4.5%203.5L12%203l5.5%207.5L22%207l-2%2012H4zm3.6%2010h12.8l.9-5.4-3.4%202.6L12%207.2l-3.9%207-3.4-2.6z'/%3E%3C/svg%3E")}
-ico-download{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11%202h2v9h4l-5%206-5-6h4zM4%2019h16v3H4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11%202h2v9h4l-5%206-5-6h4zM4%2019h16v3H4z'/%3E%3C/svg%3E")}
-ico-dumbbell{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%209h2v6H2zm3-2h3v10H5zm4%204h6v2H9zm7-4h3v10h-3zm4%202h2v6h-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%209h2v6H2zm3-2h3v10H5zm4%204h6v2H9zm7-4h3v10h-3zm4%202h2v6h-2z'/%3E%3C/svg%3E")}
-ico-envelope{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%205h20a1%201%200%200%201%201%201v12a1%201%200%200%201-1%201H2a1%201%200%200%201-1-1V6a1%201%200%200%201%201-1m1.8%202L12%2012.6%2020.2%207zM3%208.6V17h18V8.6l-9%206.2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%205h20a1%201%200%200%201%201%201v12a1%201%200%200%201-1%201H2a1%201%200%200%201-1-1V6a1%201%200%200%201%201-1m1.8%202L12%2012.6%2020.2%207zM3%208.6V17h18V8.6l-9%206.2z'/%3E%3C/svg%3E")}
-ico-eye{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205c5%200%209.3%203.1%2011%207-1.7%203.9-6%207-11%207S2.7%2015.9%201%2012c1.7-3.9%206-7%2011-7m0%202c-3.6%200-6.9%202-8.5%205%201.6%203%204.9%205%208.5%205s6.9-2%208.5-5c-1.6-3-4.9-5-8.5-5m0%201.8A3.2%203.2%200%201%201%208.8%2012%203.2%203.2%200%200%201%2012%208.8'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205c5%200%209.3%203.1%2011%207-1.7%203.9-6%207-11%207S2.7%2015.9%201%2012c1.7-3.9%206-7%2011-7m0%202c-3.6%200-6.9%202-8.5%205%201.6%203%204.9%205%208.5%205s6.9-2%208.5-5c-1.6-3-4.9-5-8.5-5m0%201.8A3.2%203.2%200%201%201%208.8%2012%203.2%203.2%200%200%201%2012%208.8'/%3E%3C/svg%3E")}
-ico-eyeslash{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3.3%202%2022%2020.7%2020.6%2022l-3.1-3.1A12%2012%200%200%201%2012%2020c-5%200-9.3-3.1-11-8a12%2012%200%200%201%204.2-5.4L1.9%203.4zm3.3%206.1A10%2010%200%200%200%203.5%2012c1.6%203%204.9%205%208.5%205a10%2010%200%200%200%203.5-.6l-1.8-1.8a3.2%203.2%200%200%201-4.3-4.3zM12%205c5%200%209.3%203.1%2011%207a12%2012%200%200%201-2.9%204l-1.5-1.4A10%2010%200%200%200%2020.5%2012c-1.6-3-4.9-5-8.5-5a10%2010%200%200%200-1.7.1L8.8%205.3A12%2012%200%200%201%2012%205'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3.3%202%2022%2020.7%2020.6%2022l-3.1-3.1A12%2012%200%200%201%2012%2020c-5%200-9.3-3.1-11-8a12%2012%200%200%201%204.2-5.4L1.9%203.4zm3.3%206.1A10%2010%200%200%200%203.5%2012c1.6%203%204.9%205%208.5%205a10%2010%200%200%200%203.5-.6l-1.8-1.8a3.2%203.2%200%200%201-4.3-4.3zM12%205c5%200%209.3%203.1%2011%207a12%2012%200%200%201-2.9%204l-1.5-1.4A10%2010%200%200%200%2020.5%2012c-1.6-3-4.9-5-8.5-5a10%2010%200%200%200-1.7.1L8.8%205.3A12%2012%200%200%201%2012%205'/%3E%3C/svg%3E")}
-ico-feather{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M20%203c-6%200-11%204-11%2010v3.6L5.4%2020.2%206.8%2021.6%2010.4%2018H14v-2h-1.6l2-2H18v-2h-1.6l2-2H21V3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M20%203c-6%200-11%204-11%2010v3.6L5.4%2020.2%206.8%2021.6%2010.4%2018H14v-2h-1.6l2-2H18v-2h-1.6l2-2H21V3z'/%3E%3C/svg%3E")}
-ico-file{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202H7a2%202%200%200%200-2%202v16a2%202%200%200%200%202%202h10a2%202%200%200%200%202-2V7zm0%202.5L16.5%207H14zM8%2011h8v2H8zm0%204h8v2H8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202H7a2%202%200%200%200-2%202v16a2%202%200%200%200%202%202h10a2%202%200%200%200%202-2V7zm0%202.5L16.5%207H14zM8%2011h8v2H8zm0%204h8v2H8z'/%3E%3C/svg%3E")}
-ico-filepen{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202H7a2%202%200%200%200-2%202v16a2%202%200%200%200%202%202h6v-3.4l5-5V7zm0%202.5L16.5%207H14zM8%2011h5v2H8zm12.9%202.6%201.5%201.5-6.6%206.6H14v-1.9z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202H7a2%202%200%200%200-2%202v16a2%202%200%200%200%202%202h6v-3.4l5-5V7zm0%202.5L16.5%207H14zM8%2011h5v2H8zm12.9%202.6%201.5%201.5-6.6%206.6H14v-1.9z'/%3E%3C/svg%3E")}
-ico-fire{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%201.5c3%204%204.5%206.6%204.5%209a4.5%204.5%200%200%201-1%202.9c.4-1.7-.4-3.4-2-4.9.3%203-1.2%204-2.4%205.6a4.4%204.4%200%200%200-.6%204.6A4.5%204.5%200%200%201%208%2014.6a5%205%200%200%200-1%203A5.5%205.5%200%200%201%205.5%2014c0-3.6%203.4-5.2%204.6-8.2A7%207%200%200%200%2012%201.5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%201.5c3%204%204.5%206.6%204.5%209a4.5%204.5%200%200%201-1%202.9c.4-1.7-.4-3.4-2-4.9.3%203-1.2%204-2.4%205.6a4.4%204.4%200%200%200-.6%204.6A4.5%204.5%200%200%201%208%2014.6a5%205%200%200%200-1%203A5.5%205.5%200%200%201%205.5%2014c0-3.6%203.4-5.2%204.6-8.2A7%207%200%200%200%2012%201.5'/%3E%3C/svg%3E")}
-ico-flag{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M5%202h2v20H5zm3%201h11l-2.5%204.5L19%2012H8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M5%202h2v20H5zm3%201h11l-2.5%204.5L19%2012H8z'/%3E%3C/svg%3E")}
-ico-gamepad{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%206h10a5%205%200%200%201%205%205v3a4%204%200%200%201-7.2%202.4L14%2015h-4l-.8%201.4A4%204%200%200%201%202%2014v-3a5%205%200%200%201%205-5m-1%203v2H4v2h2v2h2v-2h2v-2H8V9zm10%201a1.3%201.3%200%201%200%201.3%201.3A1.3%201.3%200%200%200%2016%2010m-2%203a1.3%201.3%200%201%200%201.3%201.3A1.3%201.3%200%200%200%2014%2013'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%206h10a5%205%200%200%201%205%205v3a4%204%200%200%201-7.2%202.4L14%2015h-4l-.8%201.4A4%204%200%200%201%202%2014v-3a5%205%200%200%201%205-5m-1%203v2H4v2h2v2h2v-2h2v-2H8V9zm10%201a1.3%201.3%200%201%200%201.3%201.3A1.3%201.3%200%200%200%2016%2010m-2%203a1.3%201.3%200%201%200%201.3%201.3A1.3%201.3%200%200%200%2014%2013'/%3E%3C/svg%3E")}
-ico-ghost{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a8%208%200%200%200-8%208v12l3-2%202.5%202%202.5-2%202.5%202%202.5-2%203%202V10a8%208%200%200%200-8-8M9.5%208A1.5%201.5%200%201%201%208%209.5%201.5%201.5%200%200%201%209.5%208m5%200A1.5%201.5%200%201%201%2013%209.5%201.5%201.5%200%200%201%2014.5%208'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a8%208%200%200%200-8%208v12l3-2%202.5%202%202.5-2%202.5%202%202.5-2%203%202V10a8%208%200%200%200-8-8M9.5%208A1.5%201.5%200%201%201%208%209.5%201.5%201.5%200%200%201%209.5%208m5%200A1.5%201.5%200%201%201%2013%209.5%201.5%201.5%200%200%201%2014.5%208'/%3E%3C/svg%3E")}
-ico-hand{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202a1.3%201.3%200%200%201%201.3%201.3V11h.9V2.3a1.3%201.3%200%201%201%202.6%200V11h.9V4.3a1.3%201.3%200%201%201%202.6%200V13a8%208%200%200%201-8%208%208%208%200%200%201-6-2.7l-1.6-2a1.4%201.4%200%200%201%202-2l1.9%201.6V3.3A1.3%201.3%200%200%201%209%202'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202a1.3%201.3%200%200%201%201.3%201.3V11h.9V2.3a1.3%201.3%200%201%201%202.6%200V11h.9V4.3a1.3%201.3%200%201%201%202.6%200V13a8%208%200%200%201-8%208%208%208%200%200%201-6-2.7l-1.6-2a1.4%201.4%200%200%201%202-2l1.9%201.6V3.3A1.3%201.3%200%200%201%209%202'/%3E%3C/svg%3E")}
-ico-handshake{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205.5%209.5%208a1.8%201.8%200%200%200%202.5%202.5l1-1%204%204a1.8%201.8%200%200%201-2.5%202.5l-.5-.5-1.4%201.4.5.5A1.8%201.8%200%200%201%2010.6%2020l-.5-.5-1.4%201.4A3.8%203.8%200%200%200%2015%2019a3.8%203.8%200%200%200%204.4-4.4L22%2012l-5-6H8.5L2%2012l3%203%204-4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205.5%209.5%208a1.8%201.8%200%200%200%202.5%202.5l1-1%204%204a1.8%201.8%200%200%201-2.5%202.5l-.5-.5-1.4%201.4.5.5A1.8%201.8%200%200%201%2010.6%2020l-.5-.5-1.4%201.4A3.8%203.8%200%200%200%2015%2019a3.8%203.8%200%200%200%204.4-4.4L22%2012l-5-6H8.5L2%2012l3%203%204-4z'/%3E%3C/svg%3E")}
-ico-headphones{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a9%209%200%200%200-9%209v7a3%203%200%200%200%203%203h2v-8H5v-2a7%207%200%200%201%2014%200v2h-3v8h2a3%203%200%200%200%203-3v-7a9%209%200%200%200-9-9'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a9%209%200%200%200-9%209v7a3%203%200%200%200%203%203h2v-8H5v-2a7%207%200%200%201%2014%200v2h-3v8h2a3%203%200%200%200%203-3v-7a9%209%200%200%200-9-9'/%3E%3C/svg%3E")}
-ico-heart{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%2021%203.6%2012.9a5.2%205.2%200%200%201%207.4-7.3l1%201%201-1a5.2%205.2%200%200%201%207.4%207.3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%2021%203.6%2012.9a5.2%205.2%200%200%201%207.4-7.3l1%201%201-1a5.2%205.2%200%200%201%207.4%207.3z'/%3E%3C/svg%3E")}
-ico-heartopen{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%2021%203.6%2012.9a5.2%205.2%200%200%201%207.4-7.3l1%201%201-1a5.2%205.2%200%200%201%207.4%207.3zm0-2.8%206.9-6.7a3.2%203.2%200%200%200-4.5-4.5L12%209.4%209.6%207a3.2%203.2%200%200%200-4.5%204.5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%2021%203.6%2012.9a5.2%205.2%200%200%201%207.4-7.3l1%201%201-1a5.2%205.2%200%200%201%207.4%207.3zm0-2.8%206.9-6.7a3.2%203.2%200%200%200-4.5-4.5L12%209.4%209.6%207a3.2%203.2%200%200%200-4.5%204.5z'/%3E%3C/svg%3E")}
-ico-hotel{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%202h18v20h-8v-4h-2v4H3zm4%203v2h2V5zm4%200v2h2V5zm4%200v2h2V5zM7%209v2h2V9zm4%200v2h2V9zm4%200v2h2V9zM7%2013v2h2v-2zm8%200v2h2v-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%202h18v20h-8v-4h-2v4H3zm4%203v2h2V5zm4%200v2h2V5zm4%200v2h2V5zM7%209v2h2V9zm4%200v2h2V9zm4%200v2h2V9zM7%2013v2h2v-2zm8%200v2h2v-2z'/%3E%3C/svg%3E")}
-ico-house{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202.5%2023%2012h-3v9h-6v-6h-4v6H4v-9H1zM12%205.3%206%2010.7V19h2v-6h8v6h2v-8.3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202.5%2023%2012h-3v9h-6v-6h-4v6H4v-9H1zM12%205.3%206%2010.7V19h2v-6h8v6h2v-8.3z'/%3E%3C/svg%3E")}
-ico-image{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h18a1%201%200%200%201%201%201v14a1%201%200%200%201-1%201H3a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1m1%202v9l5-4%204%203%203-2%204%203V6zM8%208.5A1.5%201.5%200%201%201%206.5%2010%201.5%201.5%200%200%201%208%208.5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h18a1%201%200%200%201%201%201v14a1%201%200%200%201-1%201H3a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1m1%202v9l5-4%204%203%203-2%204%203V6zM8%208.5A1.5%201.5%200%201%201%206.5%2010%201.5%201.5%200%200%201%208%208.5'/%3E%3C/svg%3E")}
-ico-key{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14.5%202a6.5%206.5%200%200%200-6.2%208.5L2%2016.8V22h5.2v-2.5h2.5V17h2.5l1.8-1.8A6.5%206.5%200%201%200%2014.5%202m2%203a2%202%200%201%201-2%202%202%202%200%200%201%202-2'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14.5%202a6.5%206.5%200%200%200-6.2%208.5L2%2016.8V22h5.2v-2.5h2.5V17h2.5l1.8-1.8A6.5%206.5%200%201%200%2014.5%202m2%203a2%202%200%201%201-2%202%202%202%200%200%201%202-2'/%3E%3C/svg%3E")}
-ico-link{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10.6%2013.4a4%204%200%200%201%200-5.7l3.5-3.5a4%204%200%200%201%205.7%205.7l-1.7%201.7-1.4-1.4%201.7-1.7a2%202%200%200%200-2.8-2.8l-3.5%203.5a2%202%200%200%200%200%202.8zM13.4%2010.6a4%204%200%200%201%200%205.7l-3.5%203.5a4%204%200%200%201-5.7-5.7l1.7-1.7%201.4%201.4-1.7%201.7a2%202%200%200%200%202.8%202.8l3.5-3.5a2%202%200%200%200%200-2.8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10.6%2013.4a4%204%200%200%201%200-5.7l3.5-3.5a4%204%200%200%201%205.7%205.7l-1.7%201.7-1.4-1.4%201.7-1.7a2%202%200%200%200-2.8-2.8l-3.5%203.5a2%202%200%200%200%200%202.8zM13.4%2010.6a4%204%200%200%201%200%205.7l-3.5%203.5a4%204%200%200%201-5.7-5.7l1.7-1.7%201.4%201.4-1.7%201.7a2%202%200%200%200%202.8%202.8l3.5-3.5a2%202%200%200%200%200-2.8z'/%3E%3C/svg%3E")}
-ico-listol{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%204h2v3H4zm4%20.5h13v2H8zM4%2010h2v3H4zm4%20.5h13v2H8zM4%2016h2v3H4zm4%20.5h13v2H8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%204h2v3H4zm4%20.5h13v2H8zM4%2010h2v3H4zm4%20.5h13v2H8zM4%2016h2v3H4zm4%20.5h13v2H8z'/%3E%3C/svg%3E")}
-ico-locationdot{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a7%207%200%200%201%207%207c0%205-7%2013-7%2013S5%2014%205%209a7%207%200%200%201%207-7m0%204.5A2.5%202.5%200%201%200%2014.5%209%202.5%202.5%200%200%200%2012%206.5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a7%207%200%200%201%207%207c0%205-7%2013-7%2013S5%2014%205%209a7%207%200%200%201%207-7m0%204.5A2.5%202.5%200%201%200%2014.5%209%202.5%202.5%200%200%200%2012%206.5'/%3E%3C/svg%3E")}
-ico-lock{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a5%205%200%200%201%205%205v3h1a2%202%200%200%201%202%202v8a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2v-8a2%202%200%200%201%202-2h1V7a5%205%200%200%201%205-5m0%202a3%203%200%200%200-3%203v3h6V7a3%203%200%200%200-3-3M6%2012v8h12v-8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a5%205%200%200%201%205%205v3h1a2%202%200%200%201%202%202v8a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2v-8a2%202%200%200%201%202-2h1V7a5%205%200%200%201%205-5m0%202a3%203%200%200%200-3%203v3h6V7a3%203%200%200%200-3-3M6%2012v8h12v-8z'/%3E%3C/svg%3E")}
-ico-mic{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a3%203%200%200%201%203%203v6a3%203%200%200%201-6%200V5a3%203%200%200%201%203-3M6%2011h2a4%204%200%200%200%208%200h2a6%206%200%200%201-5%205.9V20h3v2H8v-2h3v-3.1A6%206%200%200%201%206%2011'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a3%203%200%200%201%203%203v6a3%203%200%200%201-6%200V5a3%203%200%200%201%203-3M6%2011h2a4%204%200%200%200%208%200h2a6%206%200%200%201-5%205.9V20h3v2H8v-2h3v-3.1A6%206%200%200%201%206%2011'/%3E%3C/svg%3E")}
-ico-mobile{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%201h10a2%202%200%200%201%202%202v18a2%202%200%200%201-2%202H7a2%202%200%200%201-2-2V3a2%202%200%200%201%202-2m0%204v14h10V5zm4%2015h2v1h-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%201h10a2%202%200%200%201%202%202v18a2%202%200%200%201-2%202H7a2%202%200%200%201-2-2V3a2%202%200%200%201%202-2m0%204v14h10V5zm4%2015h2v1h-2z'/%3E%3C/svg%3E")}
-ico-mug{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h14v5h2.5a3.5%203.5%200%200%201%200%207H17v1a4%204%200%200%201-4%204H7a4%204%200%200%201-4-4zm14%207v3h2.5a1.5%201.5%200%200%200%200-3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h14v5h2.5a3.5%203.5%200%200%201%200%207H17v1a4%204%200%200%201-4%204H7a4%204%200%200%201-4-4zm14%207v3h2.5a1.5%201.5%200%200%200%200-3z'/%3E%3C/svg%3E")}
-ico-music{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M20%203v12.2a3.4%203.4%200%201%201-2-3.1V7.4l-7%201.8v8a3.4%203.4%200%201%201-2-3.1V6.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M20%203v12.2a3.4%203.4%200%201%201-2-3.1V7.4l-7%201.8v8a3.4%203.4%200%201%201-2-3.1V6.6z'/%3E%3C/svg%3E")}
-ico-mute{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%209h3.5L12%204.5v15L7.5%2015H4zm11.6.6L17%208.2l2.2%202.2%202.2-2.2%201.4%201.4-2.2%202.2%202.2%202.2-1.4%201.4-2.2-2.2-2.2%202.2-1.4-1.4%202.2-2.2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%209h3.5L12%204.5v15L7.5%2015H4zm11.6.6L17%208.2l2.2%202.2%202.2-2.2%201.4%201.4-2.2%202.2%202.2%202.2-1.4%201.4-2.2-2.2-2.2%202.2-1.4-1.4%202.2-2.2z'/%3E%3C/svg%3E")}
-ico-palette{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%200%200%200%2020%202%202%200%200%200%201.6-3.2%202%202%200%200%201%201.6-3.2H18a4%204%200%200%200%204-4c0-5.3-4.5-9.6-10-9.6M6.5%2011A1.5%201.5%200%201%201%208%209.5%201.5%201.5%200%200%201%206.5%2011m3-4A1.5%201.5%200%201%201%2011%205.5%201.5%201.5%200%200%201%209.5%207m5%200A1.5%201.5%200%201%201%2016%205.5%201.5%201.5%200%200%201%2014.5%207m3.5%204a1.5%201.5%200%201%201%201.5-1.5A1.5%201.5%200%200%201%2018%2011'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%200%200%200%2020%202%202%200%200%200%201.6-3.2%202%202%200%200%201%201.6-3.2H18a4%204%200%200%200%204-4c0-5.3-4.5-9.6-10-9.6M6.5%2011A1.5%201.5%200%201%201%208%209.5%201.5%201.5%200%200%201%206.5%2011m3-4A1.5%201.5%200%201%201%2011%205.5%201.5%201.5%200%200%201%209.5%207m5%200A1.5%201.5%200%201%201%2016%205.5%201.5%201.5%200%200%201%2014.5%207m3.5%204a1.5%201.5%200%201%201%201.5-1.5A1.5%201.5%200%200%201%2018%2011'/%3E%3C/svg%3E")}
-ico-paw{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%2012.5a3%203%200%200%201%202.4%201.2l1.2%201.6a2.4%202.4%200%200%201%200%203%202.4%202.4%200%200%201-3.8%200l-1.2-1.6a3%203%200%200%201%201.4-4.2M5.2%206.5a2%202%200%201%201-2%202%202%202%200%200%201%202-2m4.4-3a2%202%200%201%201-2%202%202%202%200%200%201%202-2m5%200a2%202%200%201%201-2%202%202%202%200%200%201%202-2m4.4%203a2%202%200%201%201-2%202%202%202%200%200%201%202-2M17%2012.5a3%203%200%200%201%201.4%204.2l-1.2%201.6a2.4%202.4%200%200%201-3.8%200%202.4%202.4%200%200%201%200-3l1.2-1.6A3%203%200%200%201%2017%2012.5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%2012.5a3%203%200%200%201%202.4%201.2l1.2%201.6a2.4%202.4%200%200%201%200%203%202.4%202.4%200%200%201-3.8%200l-1.2-1.6a3%203%200%200%201%201.4-4.2M5.2%206.5a2%202%200%201%201-2%202%202%202%200%200%201%202-2m4.4-3a2%202%200%201%201-2%202%202%202%200%200%201%202-2m5%200a2%202%200%201%201-2%202%202%202%200%200%201%202-2m4.4%203a2%202%200%201%201-2%202%202%202%200%200%201%202-2M17%2012.5a3%203%200%200%201%201.4%204.2l-1.2%201.6a2.4%202.4%200%200%201-3.8%200%202.4%202.4%200%200%201%200-3l1.2-1.6A3%203%200%200%201%2017%2012.5'/%3E%3C/svg%3E")}
-ico-pen{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M18.6%201.7%2022.3%205.4%2020%207.7%2016.3%204zM14.9%205.4%2018.6%209.1%207.4%2020.3%202.5%2022%204.2%2017z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M18.6%201.7%2022.3%205.4%2020%207.7%2016.3%204zM14.9%205.4%2018.6%209.1%207.4%2020.3%202.5%2022%204.2%2017z'/%3E%3C/svg%3E")}
-ico-pencil{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17.3%202.7%2021.3%206.7%208%2020H4v-4zM6%2017.2V18h.8l9.6-9.6-1.4-1.4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17.3%202.7%2021.3%206.7%208%2020H4v-4zM6%2017.2V18h.8l9.6-9.6-1.4-1.4z'/%3E%3C/svg%3E")}
-ico-people{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M8%203a3%203%200%201%201-3%203%203%203%200%200%201%203-3m8%200a3%203%200%201%201-3%203%203%203%200%200%201%203-3M8%2011c2.7%200%205%201.3%205%203v7H3v-7c0-1.7%202.3-3%205-3m8%200c2.7%200%205%201.3%205%203v7h-6v-7a4%204%200%200%200-1.3-2.9A7%207%200%200%201%2016%2011'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M8%203a3%203%200%201%201-3%203%203%203%200%200%201%203-3m8%200a3%203%200%201%201-3%203%203%203%200%200%201%203-3M8%2011c2.7%200%205%201.3%205%203v7H3v-7c0-1.7%202.3-3%205-3m8%200c2.7%200%205%201.3%205%203v7h-6v-7a4%204%200%200%200-1.3-2.9A7%207%200%200%201%2016%2011'/%3E%3C/svg%3E")}
-ico-phone{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6.5%202%2010%205.5%207.6%208.9a12%2012%200%200%200%207.5%207.5L18.5%2014%2022%2017.5%2019%2021C11.8%2021%203%2012.2%203%205z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6.5%202%2010%205.5%207.6%208.9a12%2012%200%200%200%207.5%207.5L18.5%2014%2022%2017.5%2019%2021C11.8%2021%203%2012.2%203%205z'/%3E%3C/svg%3E")}
-ico-pin{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%201.5%2022.5%2010l-1.8%201.8-1-.4-3.4%203.4.5%203.6L14.5%2020%2010%2015.5%203.5%2022l-1-1L9%2014.5%204.5%2010l1.6-2.3%203.6.5L13%204.8l-.4-1z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%201.5%2022.5%2010l-1.8%201.8-1-.4-3.4%203.4.5%203.6L14.5%2020%2010%2015.5%203.5%2022l-1-1L9%2014.5%204.5%2010l1.6-2.3%203.6.5L13%204.8l-.4-1z'/%3E%3C/svg%3E")}
-ico-plane{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M21.5%2012%2022%2013.5l-7.5-1.2-2.5%206.7-1.4.5-.6-6.1-6.5-1L2%2010.5%204%209.5l1.7%201.6%204.6.4L7.5%203.6%209%203l4.5%208.5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M21.5%2012%2022%2013.5l-7.5-1.2-2.5%206.7-1.4.5-.6-6.1-6.5-1L2%2010.5%204%209.5l1.7%201.6%204.6.4L7.5%203.6%209%203l4.5%208.5z'/%3E%3C/svg%3E")}
-ico-play{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%203.5%2020%2012%206%2020.5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%203.5%2020%2012%206%2020.5z'/%3E%3C/svg%3E")}
-ico-pointer{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202.5%2018.5%2013H13l3%206.6-2.6%201.2-3-6.6-3.4%203z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202.5%2018.5%2013H13l3%206.6-2.6%201.2-3-6.6-3.4%203z'/%3E%3C/svg%3E")}
-ico-print{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h10v4H7zm-3%206h16a2%202%200%200%201%202%202v6h-4v4H7v-4H3v-6a2%202%200%200%201%201-2m5%208v4h6v-4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h10v4H7zm-3%206h16a2%202%200%200%201%202%202v6h-4v4H7v-4H3v-6a2%202%200%200%201%201-2m5%208v4h6v-4z'/%3E%3C/svg%3E")}
-ico-puzzle{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10%202a2.5%202.5%200%200%201%202.5%202.5V5H16a1%201%200%200%201%201%201v3.5h.5a2.5%202.5%200%201%201%200%205H17V18a1%201%200%200%201-1%201h-3.5v-.5a2.5%202.5%200%201%200-5%200V19H4a1%201%200%200%201-1-1v-3.5h.5a2.5%202.5%200%201%200%200-5H3V6a1%201%200%200%201%201-1h3.5v-.5A2.5%202.5%200%200%201%2010%202'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10%202a2.5%202.5%200%200%201%202.5%202.5V5H16a1%201%200%200%201%201%201v3.5h.5a2.5%202.5%200%201%201%200%205H17V18a1%201%200%200%201-1%201h-3.5v-.5a2.5%202.5%200%201%200-5%200V19H4a1%201%200%200%201-1-1v-3.5h.5a2.5%202.5%200%201%200%200-5H3V6a1%201%200%200%201%201-1h3.5v-.5A2.5%202.5%200%200%201%2010%202'/%3E%3C/svg%3E")}
-ico-question{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11.7%202.5a5.2%205.2%200%200%200-5.2%205h2.6a2.6%202.6%200%201%201%204.2%202.1l-1%20.8a3.6%203.6%200%200%200-1.4%202.8v1.3h2.6v-1.1l1-.8a5.2%205.2%200%200%200-2.8-9.1M10.4%2018h2.8v3h-2.8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11.7%202.5a5.2%205.2%200%200%200-5.2%205h2.6a2.6%202.6%200%201%201%204.2%202.1l-1%20.8a3.6%203.6%200%200%200-1.4%202.8v1.3h2.6v-1.1l1-.8a5.2%205.2%200%200%200-2.8-9.1M10.4%2018h2.8v3h-2.8z'/%3E%3C/svg%3E")}
-ico-recycle{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9.2%203.6a2%202%200%200%201%203.4%200l2%203.3-1.7%201L11.5%206%209.3%209.6l-1.7-1zM3.5%2015.4l2.3-4%201.7%201L6%2015h4v2H4.2a2%202%200%200%201-1.7-3zM20.5%2015.4a2%202%200%200%201-1.7%203H14v2.5L10%2018l4-3v2.5h4.4zM7%2020l-2-3.4%201.7-1L8.4%2019zM17%204l2.4%204.2-1.7%201L15.3%205z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9.2%203.6a2%202%200%200%201%203.4%200l2%203.3-1.7%201L11.5%206%209.3%209.6l-1.7-1zM3.5%2015.4l2.3-4%201.7%201L6%2015h4v2H4.2a2%202%200%200%201-1.7-3zM20.5%2015.4a2%202%200%200%201-1.7%203H14v2.5L10%2018l4-3v2.5h4.4zM7%2020l-2-3.4%201.7-1L8.4%2019zM17%204l2.4%204.2-1.7%201L15.3%205z'/%3E%3C/svg%3E")}
-ico-rocket{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202c4%201%207%204%208%208l-5%202-3-3zM3.5%2013.5%2010%207l7%207-6.5%206.5zM2%2022l1.5-4.5L6.5%2020.5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202c4%201%207%204%208%208l-5%202-3-3zM3.5%2013.5%2010%207l7%207-6.5%206.5zM2%2022l1.5-4.5L6.5%2020.5z'/%3E%3C/svg%3E")}
-ico-rotate{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%204V1L7.5%205.5%2012%2010V7a5%205%200%201%201-5%205H5a7%207%200%201%200%207-8'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%204V1L7.5%205.5%2012%2010V7a5%205%200%201%201-5%205H5a7%207%200%201%200%207-8'/%3E%3C/svg%3E")}
-ico-save{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%202h13l3%203v17H4zm3%202v6h8V4zm-1%209h12v7H6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%202h13l3%203v17H4zm3%202v6h8V4zm-1%209h12v7H6z'/%3E%3C/svg%3E")}
-ico-search{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10.5%202a8.5%208.5%200%201%200%205.2%2015.2l4.6%204.6%201.7-1.7-4.6-4.6A8.5%208.5%200%200%200%2010.5%202m0%202a6.5%206.5%200%201%201%200%2013%206.5%206.5%200%200%201%200-13'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10.5%202a8.5%208.5%200%201%200%205.2%2015.2l4.6%204.6%201.7-1.7-4.6-4.6A8.5%208.5%200%200%200%2010.5%202m0%202a6.5%206.5%200%201%201%200%2013%206.5%206.5%200%200%201%200-13'/%3E%3C/svg%3E")}
-ico-shuffle{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17%203.5%2022%207l-5%203.5V8h-2.2l-2%202.6-1.6-2%202.4-3.1H17zM2%207h4.2l2.4%203.1-1.6%202L5%209.5H2zM17%2013.5%2022%2017l-5%203.5V18h-3.2l-2.4-3.1%201.6-2L16%2015.5H17zM2%2015h3l2.2-2.9%201.6%202L6.2%2017H2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17%203.5%2022%207l-5%203.5V8h-2.2l-2%202.6-1.6-2%202.4-3.1H17zM2%207h4.2l2.4%203.1-1.6%202L5%209.5H2zM17%2013.5%2022%2017l-5%203.5V18h-3.2l-2.4-3.1%201.6-2L16%2015.5H17zM2%2015h3l2.2-2.9%201.6%202L6.2%2017H2z'/%3E%3C/svg%3E")}
-ico-skull{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a9%209%200%200%200-9%209c0%203%201.6%205.2%203.5%206.4V21h11v-3.6C19.4%2016.2%2021%2014%2021%2011a9%209%200%200%200-9-9m-3.2%208a2.2%202.2%200%201%201%200%204.4%202.2%202.2%200%200%201%200-4.4m6.4%200a2.2%202.2%200%201%201%200%204.4%202.2%202.2%200%200%201%200-4.4'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a9%209%200%200%200-9%209c0%203%201.6%205.2%203.5%206.4V21h11v-3.6C19.4%2016.2%2021%2014%2021%2011a9%209%200%200%200-9-9m-3.2%208a2.2%202.2%200%201%201%200%204.4%202.2%202.2%200%200%201%200-4.4m6.4%200a2.2%202.2%200%201%201%200%204.4%202.2%202.2%200%200%201%200-4.4'/%3E%3C/svg%3E")}
-ico-spell{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%204h2.6l4%2012h-2.2l-.9-2.8H5.5L4.6%2016H2.4zm.1%207.4h2.8L7.5%207zM14%208h2v1a3%203%200%200%201%202-1%203.4%203.4%200%200%201%203.4%204%203.4%203.4%200%200%201-3.4%204%203%203%200%200%201-2-.9V16h-2zm3.6%202a1.9%201.9%200%201%200%200%203.9%201.9%201.9%200%200%200%200-3.9M2%2019h20v2H2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%204h2.6l4%2012h-2.2l-.9-2.8H5.5L4.6%2016H2.4zm.1%207.4h2.8L7.5%207zM14%208h2v1a3%203%200%200%201%202-1%203.4%203.4%200%200%201%203.4%204%203.4%203.4%200%200%201-3.4%204%203%203%200%200%201-2-.9V16h-2zm3.6%202a1.9%201.9%200%201%200%200%203.9%201.9%201.9%200%200%200%200-3.9M2%2019h20v2H2z'/%3E%3C/svg%3E")}
-ico-sqcheck{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h18v18H3zm2%202v14h14V5zm3.6%206.9%201.4-1.4%202%202%204.4-4.4%201.4%201.4-5.8%205.8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h18v18H3zm2%202v14h14V5zm3.6%206.9%201.4-1.4%202%202%204.4-4.4%201.4%201.4-5.8%205.8z'/%3E%3C/svg%3E")}
-ico-square{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h18v18H3zm2%202v14h14V5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h18v18H3zm2%202v14h14V5z'/%3E%3C/svg%3E")}
-ico-star{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202l3%206.5%207%20.8-5.2%204.8%201.4%207L12%2017.6%205.8%2021.1l1.4-7L2%209.3l7-.8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202l3%206.5%207%20.8-5.2%204.8%201.4%207L12%2017.6%205.8%2021.1l1.4-7L2%209.3l7-.8z'/%3E%3C/svg%3E")}
-ico-stopwatch{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%201h6v2H9zm2%203.1V6h2V4.1A9%209%200%201%201%2011%204.1M12%208a7%207%200%201%200%207%207%207%207%200%200%200-7-7m-1%202h2v5.4l3.3%201.9-1%201.7L11%2016.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%201h6v2H9zm2%203.1V6h2V4.1A9%209%200%201%201%2011%204.1M12%208a7%207%200%201%200%207%207%207%207%200%200%200-7-7m-1%202h2v5.4l3.3%201.9-1%201.7L11%2016.6z'/%3E%3C/svg%3E")}
-ico-suitcase{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a2%202%200%200%201%202%202v2h2a2%202%200%200%201%202%202v12a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h2V4a2%202%200%200%201%202-2m0%204h6V4H9zM5%208v12h2V8zm12%200v12h2V8zM9%208v12h6V8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a2%202%200%200%201%202%202v2h2a2%202%200%200%201%202%202v12a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h2V4a2%202%200%200%201%202-2m0%204h6V4H9zM5%208v12h2V8zm12%200v12h2V8zM9%208v12h6V8z'/%3E%3C/svg%3E")}
-ico-target{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m0%203a5%205%200%201%200%200%2010%205%205%200%200%200%200-10m0%202.5a2.5%202.5%200%201%201%200%205%202.5%202.5%200%200%201%200-5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m0%203a5%205%200%201%200%200%2010%205%205%200%200%200%200-10m0%202.5a2.5%202.5%200%201%201%200%205%202.5%202.5%200%200%201%200-5'/%3E%3C/svg%3E")}
-ico-thumbdown{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17%2014h-3.2l-1.5%206.2A2%202%200%200%201%208.5%2020v-5H4a2%202%200%200%201-2-2.4l1.4-7A2%202%200%200%201%205.4%204H17zM22%204h-3v10h3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17%2014h-3.2l-1.5%206.2A2%202%200%200%201%208.5%2020v-5H4a2%202%200%200%201-2-2.4l1.4-7A2%202%200%200%201%205.4%204H17zM22%204h-3v10h3z'/%3E%3C/svg%3E")}
-ico-thumbup{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%2010h3.2l1.5-6.2A2%202%200%200%201%2015.5%204v5H20a2%202%200%200%201%202%202.4l-1.4%207A2%202%200%200%201%2018.6%2020H7zM2%2010h3v10H2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%2010h3.2l1.5-6.2A2%202%200%200%201%2015.5%204v5H20a2%202%200%200%201%202%202.4l-1.4%207A2%202%200%200%201%2018.6%2020H7zM2%2010h3v10H2z'/%3E%3C/svg%3E")}
-ico-trophy{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h10v2h4v3a4%204%200%200%201-4%204h-.4A5%205%200%200%201%2013%2013.9V17h3v2H8v-2h3v-3.1A5%205%200%200%201%207.4%2011H7a4%204%200%200%201-4-4V4h4zM5%206v1a2%202%200%200%200%202%202V6zm12%200v3a2%202%200%200%200%202-2V6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h10v2h4v3a4%204%200%200%201-4%204h-.4A5%205%200%200%201%2013%2013.9V17h3v2H8v-2h3v-3.1A5%205%200%200%201%207.4%2011H7a4%204%200%200%201-4-4V4h4zM5%206v1a2%202%200%200%200%202%202V6zm12%200v3a2%202%200%200%200%202-2V6z'/%3E%3C/svg%3E")}
-ico-umbrella{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M13%202v1.1a9%209%200%200%201%208%208.9H13v6.5a1.5%201.5%200%200%200%203%200V18h2v.5a3.5%203.5%200%200%201-7%200V12H3a9%209%200%200%201%208-8.9V2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M13%202v1.1a9%209%200%200%201%208%208.9H13v6.5a1.5%201.5%200%200%200%203%200V18h2v.5a3.5%203.5%200%200%201-7%200V12H3a9%209%200%200%201%208-8.9V2z'/%3E%3C/svg%3E")}
-ico-user{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%203a4%204%200%201%201-4%204%204%204%200%200%201%204-4m0%2010c4.4%200%208%202%208%204.5V21H4v-3.5C4%2015%207.6%2013%2012%2013'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%203a4%204%200%201%201-4%204%204%204%200%200%201%204-4m0%2010c4.4%200%208%202%208%204.5V21H4v-3.5C4%2015%207.6%2013%2012%2013'/%3E%3C/svg%3E")}
-ico-utensils{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M5%202h1.6v6h1V2h1.6v6h1V2H12v7a3%203%200%200%201-2.2%202.9V22H7.2V11.9A3%203%200%200%201%205%209zM17%202c2%200%203.5%202.6%203.5%206%200%202.6-.9%204.7-2.2%205.6V22h-2.6V2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M5%202h1.6v6h1V2h1.6v6h1V2H12v7a3%203%200%200%201-2.2%202.9V22H7.2V11.9A3%203%200%200%201%205%209zM17%202c2%200%203.5%202.6%203.5%206%200%202.6-.9%204.7-2.2%205.6V22h-2.6V2z'/%3E%3C/svg%3E")}
-ico-volume{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%209h3.5L12%204.5v15L7.5%2015H4zm12.5-1.1a6%206%200%200%201%200%208.2l-1.4-1.4a4%204%200%200%200%200-5.4zm2.6-2.6a9.6%209.6%200%200%201%200%2013.4l-1.4-1.4a7.6%207.6%200%200%200%200-10.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%209h3.5L12%204.5v15L7.5%2015H4zm12.5-1.1a6%206%200%200%201%200%208.2l-1.4-1.4a4%204%200%200%200%200-5.4zm2.6-2.6a9.6%209.6%200%200%201%200%2013.4l-1.4-1.4a7.6%207.6%200%200%200%200-10.6z'/%3E%3C/svg%3E")}
-ico-warn{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202.2%2023%2021H1zm0%204.6L4.5%2019h15zM11%2010h2v5h-2zm0%206.2h2v2h-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202.2%2023%2021H1zm0%204.6L4.5%2019h15zM11%2010h2v5h-2zm0%206.2h2v2h-2z'/%3E%3C/svg%3E")}
-ico-window{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h18a1%201%200%200%201%201%201v14a1%201%200%200%201-1%201H3a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1m1%202v2h16V6zm0%204v9h16v-9z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h18a1%201%200%200%201%201%201v14a1%201%200%200%201-1%201H3a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1m1%202v2h16V6zm0%204v9h16v-9z'/%3E%3C/svg%3E")}
-ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M19%206.4%2017.6%205%2012%2010.6%206.4%205%205%206.4%2010.6%2012%205%2017.6%206.4%2019%2012%2013.4%2017.6%2019%2019%2017.6%2013.4%2012z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M19%206.4%2017.6%205%2012%2010.6%206.4%205%205%206.4%2010.6%2012%205%2017.6%206.4%2019%2012%2013.4%2017.6%2019%2019%2017.6%2013.4%2012z'/%3E%3C/svg%3E")}
-.spk-btn>*,.mute-btn>*{margin-right:0;width:62%;height:62%}.btn>ico-play{margin-right:.3em}
-.sw{display:inline-block;width:.85em;height:.85em;border-radius:50%;background:var(--c);border:1px solid #ffffff55;vertical-align:-.1em;margin-right:.28em;box-shadow:0 0 6px var(--c)}
-.lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:.52rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
 </style>
 </head>
 <body class="teacher">
 
 <div class="toolbar">
   <span class="tt">VIEW:</span>
-  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')"><ico-bookopen></ico-bookopen> Teacher (with keys)</button>
-  <button class="tbtn" id="btnStudent" onclick="setView('student')"><ico-user></ico-user> Student (no keys)</button>
-  <button class="tbtn print" onclick="window.print()"><ico-print></ico-print> Print / Save PDF</button>
+  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')">📖 Teacher (with keys)</button>
+  <button class="tbtn" id="btnStudent" onclick="setView('student')">🎒 Student (no keys)</button>
+  <button class="tbtn print" onclick="window.print()">🖨️ Print / Save PDF</button>
   <span class="viewnote" id="viewNote">Answer keys &amp; teacher notes are visible.</span>
 </div>
 
@@ -287,10 +187,10 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     <p class="lead">Professional English for the situations that actually come up at work: introducing yourself, running a meeting, writing a clean email, and negotiating a deal. Built <b>PPP</b> style — Present → Practice → Produce.</p>
     <div class="badges">
       <span class="badge b1"><b>B1 core</b></span>
-      <span class="badge b2"><ico-star></ico-star> B2 stretch</span>
+      <span class="badge b2">⭐ B2 stretch</span>
       <span class="badge">4 lessons · ~50–55 min each</span>
       <span class="badge">1:1 or small group</span>
-      <span class="badge"><span class=lang-tag>US</span> American English</span>
+      <span class="badge">🇺🇸 American English</span>
     </div>
   </div>
 
@@ -298,14 +198,14 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
   <h2 class="sec">HOW TO USE THIS COURSE</h2>
   <p class="lead-sm">Each lesson follows the same rhythm so students always know where they are. Use the <b>Teacher / Student</b> toggle at the top: <b>Student view</b> hides the answer keys and teacher notes so you can print or screen-share a clean handout.</p>
   <div class="legend">
-    <div class="leg"><span class="em"><ico-target></ico-target></span><div class="lx"><b>Objective</b><span>The can-do goal for the lesson.</span></div></div>
-    <div class="leg"><span class="em"><ico-fire></ico-fire></span><div class="lx"><b>Warm-up (5 min)</b><span>Get talking, activate the topic.</span></div></div>
-    <div class="leg"><span class="em"><ico-book></ico-book></span><div class="lx"><b>Present (15 min)</b><span>Vocabulary + grammar, with glossary.</span></div></div>
-    <div class="leg"><span class="em"><ico-pencil></ico-pencil></span><div class="lx"><b>Controlled Practice (15 min)</b><span>Guided exercises. Answers in the <ico-circlecheck></ico-circlecheck> key.</span></div></div>
-    <div class="leg"><span class="em"><ico-headphones></ico-headphones></span><div class="lx"><b>Model Dialogue</b><span>A short conversation + comprehension. Read it aloud, or record it for audio later.</span></div></div>
-    <div class="leg"><span class="em"><ico-commentdots></ico-commentdots></span><div class="lx"><b>Free Practice (15 min)</b><span>Role-play with scripted prompts — works 1:1.</span></div></div>
-    <div class="leg"><span class="em"><ico-star></ico-star></span><div class="lx"><b>B2 Stretch box</b><span>Optional upgrade language for stronger students.</span></div></div>
-    <div class="leg"><span class="em"><ico-pin></ico-pin></span><div class="lx"><b>Homework</b><span>A short writing/speaking task to submit.</span></div></div>
+    <div class="leg"><span class="em">🎯</span><div class="lx"><b>Objective</b><span>The can-do goal for the lesson.</span></div></div>
+    <div class="leg"><span class="em">🔥</span><div class="lx"><b>Warm-up (5 min)</b><span>Get talking, activate the topic.</span></div></div>
+    <div class="leg"><span class="em">📘</span><div class="lx"><b>Present (15 min)</b><span>Vocabulary + grammar, with glossary.</span></div></div>
+    <div class="leg"><span class="em">✏️</span><div class="lx"><b>Controlled Practice (15 min)</b><span>Guided exercises. Answers in the ✅ key.</span></div></div>
+    <div class="leg"><span class="em">🎧</span><div class="lx"><b>Model Dialogue</b><span>A short conversation + comprehension. Read it aloud, or record it for audio later.</span></div></div>
+    <div class="leg"><span class="em">🗣️</span><div class="lx"><b>Free Practice (15 min)</b><span>Role-play with scripted prompts — works 1:1.</span></div></div>
+    <div class="leg"><span class="em">⭐</span><div class="lx"><b>B2 Stretch box</b><span>Optional upgrade language for stronger students.</span></div></div>
+    <div class="leg"><span class="em">📌</span><div class="lx"><b>Homework</b><span>A short writing/speaking task to submit.</span></div></div>
   </div>
 
   <h2 class="sec">COURSE MAP</h2>
@@ -316,7 +216,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     <tr><td class="ln">03</td><td><b>Email &amp; Formal Communication</b></td><td>Polite / indirect language + passive voice</td><td>Write a formal business email</td></tr>
     <tr><td class="ln">04</td><td><b>Negotiations &amp; Persuasion</b></td><td>First conditional + <span class="es">unless / as long as</span> (2nd/3rd = stretch)</td><td>Negotiate a deal or contract</td></tr>
   </table>
-  <div class="tnote"><b>Teacher tip:</b> The <ico-headphones></ico-headphones> <b>Model Dialogues</b> are written to be recorded — they're the natural seed for the Rank-Up audio version of this track (2 short audios per lesson + transcript). Keep contractions natural when reading, but if you generate TTS later, avoid <i>He's / She's</i> at the start of a clause (they mispronounce).</div>
+  <div class="tnote"><b>Teacher tip:</b> The 🎧 <b>Model Dialogues</b> are written to be recorded — they're the natural seed for the Rank-Up audio version of this track (2 short audios per lesson + transcript). Keep contractions natural when reading, but if you generate TTS later, avoid <i>He's / She's</i> at the start of a clause (they mispronounce).</div>
 
   <!-- ==================================================================== -->
   <!-- ============================ LESSON 1 ============================== -->
@@ -329,12 +229,12 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-target></ico-target> Objective</span>
+      <span class="btag">🎯 Objective</span>
       <div class="objective">By the end of the lesson, the student can <b>introduce themselves and their job</b>, and <b>make simple small talk</b> in a professional setting, using <b>prepositions of time, place and movement</b> correctly.</div>
     </div>
 
     <div class="block">
-      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
       <div class="warmup">
         <ul>
           <li>What is your job? Who do you usually meet or talk to at work?</li>
@@ -345,7 +245,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-book></ico-book> Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+      <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
 
       <div class="h3">A · Greetings &amp; introductions <span class="sm">— for meeting people at work</span></div>
       <ul class="phr">
@@ -394,7 +294,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
       <div class="h3">D · Grammar — Prepositions: <span class="sm">time · place · movement</span></div>
       <p class="lead-sm">The trick: they go from <b>small/exact</b> → <b>big/general</b>.</p>
       <table class="tb">
-        <tr><th></th><th>AT — a point <ico-locationdot></ico-locationdot></th><th>ON — a day / surface <ico-calendar></ico-calendar></th><th>IN — a period / space <ico-box></ico-box></th></tr>
+        <tr><th></th><th>AT — a point 📍</th><th>ON — a day / surface 📅</th><th>IN — a period / space 📦</th></tr>
         <tr><td><b>Time</b></td><td><code>at</code> 3 p.m. · <code>at</code> noon · <code>at</code> night</td><td><code>on</code> Monday · <code>on</code> May 5 · <code>on</code> the weekend</td><td><code>in</code> July · <code>in</code> 2026 · <code>in</code> the morning</td></tr>
         <tr><td><b>Place</b></td><td><code>at</code> the office · <code>at</code> the door · <code>at</code> a meeting</td><td><code>on</code> the desk · <code>on</code> the wall · <code>on</code> the second floor</td><td><code>in</code> a meeting room · <code>in</code> New York · <code>in</code> the building</td></tr>
       </table>
@@ -406,16 +306,16 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
       </table>
       <div class="grid2">
         <div class="cell"><span class="gh">Position words (place)</span><span class="chip">under</span> <span class="chip">next to</span> <span class="chip">between</span> <span class="chip">behind</span> <span class="chip">in front of</span> <span class="chip">near</span> <span class="chip">opposite</span></div>
-        <div class="cell"><span class="gh"><ico-warn></ico-warn> No preposition</span>Before <i>next week, last month, this morning, today, tomorrow, yesterday</i>, and with <i>go/come/stay <b>home</b></i>. <span class="ok">See you tomorrow.</span> <span class="x">See you on tomorrow.</span></div>
+        <div class="cell"><span class="gh">⚠ No preposition</span>Before <i>next week, last month, this morning, today, tomorrow, yesterday</i>, and with <i>go/come/stay <b>home</b></i>. <span class="ok">See you tomorrow.</span> <span class="x">See you on tomorrow.</span></div>
       </div>
       <div class="stretch">
-        <div class="st-h"><span class=lang-tag>US</span> American English note</div>
+        <div class="st-h">🇺🇸 American English note</div>
         We say <b>on the weekend / on weekends</b> (not "at the weekend"). Also <b>in the morning / afternoon / evening</b>, but <b>at night</b>. And <b>at work / at home</b> (not "in work / in home").
       </div>
     </div>
 
     <div class="block">
-      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
 
       <div class="h3">Activity 1 · Fill in the preposition <span class="sm">— at / on / in / to / into · some need no preposition (—)</span></div>
       <ol>
@@ -446,15 +346,23 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
         </ol>
       </div>
 
-      <div class="h3">Activity 2 · Small talk — match the question to the best answer</div>
-      <table class="tb">
-        <tr><th style="width:50%">Question</th><th>Answer</th></tr>
-        <tr><td>1. How was your weekend?</td><td>a. About three years now.</td></tr>
-        <tr><td>2. What do you do?</td><td>b. Yes, it is — it's bigger than I expected!</td></tr>
-        <tr><td>3. How's the new project going?</td><td>c. It was great, thanks — I went hiking. How about you?</td></tr>
-        <tr><td>4. Is this your first time at this event?</td><td>d. I'm a project manager at a software company.</td></tr>
-        <tr><td>5. How long have you worked here?</td><td>e. Pretty well! We're a little behind, but we're catching up.</td></tr>
-      </table>
+      <div class="h3">Activity 2 · Small talk — write the letter (a–e) of the best answer next to each question</div>
+      <ol>
+        <li>How was your weekend? &nbsp;→&nbsp; ___</li>
+        <li>What do you do? &nbsp;→&nbsp; ___</li>
+        <li>How's the new project going? &nbsp;→&nbsp; ___</li>
+        <li>Is this your first time at this event? &nbsp;→&nbsp; ___</li>
+        <li>How long have you worked here? &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="cell" style="margin-top:6px"><span class="gh">Answers — one fits each question</span>
+        <ul style="list-style:none; margin:6px 0 0; padding:0; line-height:1.9">
+          <li>a. About three years now.</li>
+          <li>b. Yes, it is — it's bigger than I expected!</li>
+          <li>c. It was great, thanks — I went hiking. How about you?</li>
+          <li>d. I'm a project manager at a software company.</li>
+          <li>e. Pretty well! We're a little behind, but we're catching up.</li>
+        </ul>
+      </div>
       <div class="key">
         <div class="kh">Answer key · Activity 2</div>
         <p><b>1-c · 2-d · 3-e · 4-b · 5-a</b></p>
@@ -462,7 +370,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-headphones></ico-headphones> Model Dialogue · a networking event</span>
+      <span class="btag">🎧 Model Dialogue · a networking event</span>
       <div class="dialogue">
         <p class="line"><span class="spk">Ana:</span> Hi, I don't think we've met. I'm Ana — I work <span class="tg">at Lumen Design</span>.</p>
         <p class="line"><span class="spk b">Toni:</span> Nice to meet you, Ana. I'm Toni, a marketing specialist <span class="tg">at BrightBox</span>.</p>
@@ -490,7 +398,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Produce <span class="min">15 min</span></span>
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
       <p><b>Role-play — the networking event.</b> Student introduces themselves, asks the tutor two small-talk questions, and answers two back. Encourage prepositions in real sentences ("I work <i>at</i>…", "The event is <i>in</i>…", "I'm meeting a client <i>on</i>…").</p>
       <p class="lead-sm">If the student needs support, start from this frame and fill the gaps:</p>
       <div class="scaffold">
@@ -500,7 +408,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-pin></ico-pin> Homework</span>
+      <span class="btag">📌 Homework</span>
       <div class="hw"><b>Write</b> a short professional introduction (5–6 full sentences joined into a paragraph, not a list) about your job and your typical week. Use <b>at least five prepositions</b> of time, place and movement. Optional: record yourself reading it aloud and send both.</div>
     </div>
   </section>
@@ -516,12 +424,12 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-target></ico-target> Objective</span>
+      <span class="btag">🎯 Objective</span>
       <div class="objective">By the end of the lesson, the student can <b>give an opinion, agree and disagree politely, and make suggestions</b> in a meeting, and use <b>modal verbs</b> (should / could / must…) to sound professional and diplomatic.</div>
     </div>
 
     <div class="block">
-      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
       <div class="warmup">
         <ul>
           <li>Have you ever been in a meeting in English? How did it go?</li>
@@ -533,11 +441,11 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-book></ico-book> Present · Meeting language &amp; modals <span class="min">15 min</span></span>
+      <span class="btag">📘 Present · Meeting language &amp; modals <span class="min">15 min</span></span>
 
       <div class="h3">1 · Meeting language <span class="sm">— what to say</span></div>
       <table class="tb">
-        <tr><th style="width:20%">Function</th><th>Core phrases (B1)</th><th><ico-star></ico-star> B2 stretch</th></tr>
+        <tr><th style="width:20%">Function</th><th>Core phrases (B1)</th><th>⭐ B2 stretch</th></tr>
         <tr><td>Giving opinions</td><td>I think… · In my opinion… · I feel that… · It seems to me that…</td><td>I tend to think that… · From where I stand… · As far as I'm concerned… · I would argue that…</td></tr>
         <tr><td>Agreeing</td><td>I agree. · Good point. · That's true. · Exactly. · That makes sense.</td><td>I'm inclined to agree. · You make a valid point. · That aligns with my thinking. · I couldn't agree more.</td></tr>
         <tr><td>Disagreeing politely</td><td>I see your point, but… · I'm not sure I agree. · I understand, but I think… · Maybe, but have we considered…?</td><td>I see where you're coming from, but I have a slightly different perspective. · I take your point; however, I'd suggest another approach.</td></tr>
@@ -561,19 +469,19 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
       </table>
 
       <div class="h3">3 · Grammar — Modal verbs for professional communication</div>
-      <p class="lead-sm">Modals make requests and opinions sound <b>polite and precise</b>. Core (B1) in bold; <ico-star></ico-star> = B2 stretch.</p>
+      <p class="lead-sm">Modals make requests and opinions sound <b>polite and precise</b>. Core (B1) in bold; ⭐ = B2 stretch.</p>
       <table class="tb">
         <tr><th style="width:34%">Use</th><th>Modals</th><th>Business example</th></tr>
-        <tr><td>Recommendation / advice</td><td><b>should</b> · <ico-star></ico-star> ought to · <ico-star></ico-star> had better</td><td>We <b>should</b> prioritize customer feedback.</td></tr>
-        <tr><td>Possibility / uncertainty</td><td><b>could</b> · <ico-star></ico-star> might · <ico-star></ico-star> may</td><td>We <b>could</b> explore new suppliers to cut costs.</td></tr>
+        <tr><td>Recommendation / advice</td><td><b>should</b> · ⭐ ought to · ⭐ had better</td><td>We <b>should</b> prioritize customer feedback.</td></tr>
+        <tr><td>Possibility / uncertainty</td><td><b>could</b> · ⭐ might · ⭐ may</td><td>We <b>could</b> explore new suppliers to cut costs.</td></tr>
         <tr><td>Obligation / necessity</td><td><b>must</b> · <b>have to</b> · <b>need to</b></td><td>We <b>must</b> meet the deadline. Reports <b>have to</b> be in by Friday.</td></tr>
-        <tr><td>Prohibition</td><td><b>must not</b> · <b>can't</b> · <ico-star></ico-star> may not</td><td>Staff <b>must not</b> share confidential information.</td></tr>
-        <tr><td>Permission / ability</td><td><b>can</b> · <ico-star></ico-star> may · <ico-star></ico-star> might be able to</td><td>You <b>can</b> request more resources if needed.</td></tr>
+        <tr><td>Prohibition</td><td><b>must not</b> · <b>can't</b> · ⭐ may not</td><td>Staff <b>must not</b> share confidential information.</td></tr>
+        <tr><td>Permission / ability</td><td><b>can</b> · ⭐ may · ⭐ might be able to</td><td>You <b>can</b> request more resources if needed.</td></tr>
       </table>
     </div>
 
     <div class="block">
-      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
 
       <div class="h3">Activity 1 · What is it? <span class="sm">— write O (opinion), A (agree), D (disagree) or S (suggestion) next to each</span></div>
       <ol>
@@ -630,7 +538,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-headphones></ico-headphones> Model Dialogue · a short team meeting</span>
+      <span class="btag">🎧 Model Dialogue · a short team meeting</span>
       <div class="dialogue">
         <p class="line"><span class="spk">Facilitator:</span> Sales are down this quarter. What do you think we should do?</p>
         <p class="line"><span class="spk b">Maria:</span> <span class="tg">In my opinion</span>, we <span class="tg">should</span> focus on our existing customers. We <span class="tg">could</span> start a loyalty program.</p>
@@ -657,7 +565,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Simulated meeting <span class="min">15 min</span></span>
+      <span class="btag">🗣️ Free Practice · Simulated meeting <span class="min">15 min</span></span>
       <p><b>Scenario:</b> Your company is planning to expand into a new international market. The team meets to discuss strategy, risks, and next steps. Each person <b>gives an opinion, responds to others, and suggests a way forward.</b></p>
       <p class="lead-sm">Student picks a role: <b>Project Manager</b> (timelines/budget) · <b>Marketing Lead</b> (branding/research) · <b>Sales Director</b> (demand/pricing) · <b>Financial Analyst</b> (costs/risks).</p>
       <p><b>Facilitator (tutor):</b> "Thanks for joining. Today we're discussing our expansion into a new market. What are the key opportunities and challenges?"</p>
@@ -671,7 +579,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-pin></ico-pin> Homework</span>
+      <span class="btag">📌 Homework</span>
       <div class="hw"><b>Write</b> a short email (3–4 sentences) summarizing the key decisions from today's "meeting." Use <b>two opinion phrases</b> and <b>at least one modal verb</b>. Optional: listen to 2–3 minutes of a real business meeting (podcast/YouTube) and note three useful phrases.</div>
     </div>
   </section>
@@ -687,12 +595,12 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-target></ico-target> Objective</span>
+      <span class="btag">🎯 Objective</span>
       <div class="objective">By the end of the lesson, the student can <b>structure a professional email</b>, use <b>polite, formal language</b>, and make requests softer with <b>indirect language</b> (and, at B2, the <b>passive voice</b>).</div>
     </div>
 
     <div class="block">
-      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
       <div class="warmup">
         <p>Compare these two email openings. Which one is better for work, and why?</p>
         <ul>
@@ -703,7 +611,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-book></ico-book> Present · Email structure &amp; politeness <span class="min">15 min</span></span>
+      <span class="btag">📘 Present · Email structure &amp; politeness <span class="min">15 min</span></span>
 
       <div class="h3">A · The 6 parts of a professional email</div>
       <table class="tb">
@@ -763,13 +671,13 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
       </div>
 
       <div class="stretch">
-        <div class="st-h"><span class=lang-tag>US</span> American English in emails</div>
+        <div class="st-h">🇺🇸 American English in emails</div>
         Use American spelling: <b>color</b> (not colour), <b>behavior</b> (not behaviour), <b>organize</b> (not organise), <b>center</b> (not centre). Dates: <b>April 5</b> or <b>4/5</b>. And <b>on the weekend</b> (not "at the weekend").
       </div>
     </div>
 
     <div class="block">
-      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
 
       <div class="h3">Activity 1 · Make it polite <span class="sm">— rewrite using indirect language</span></div>
       <ol>
@@ -818,7 +726,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Produce <span class="min">15 min</span></span>
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
       <p><b>Write a formal email</b> for one of these situations:</p>
       <ol>
         <li><b>Requesting a meeting</b> with a client or supervisor.</li>
@@ -835,12 +743,12 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
         Best regards,<br>
         <span class="gap">name</span>
       </div>
-      <p><b>Checklist:</b> <ico-square></ico-square> subject line <ico-square></ico-square> formal greeting <ico-square></ico-square> clear purpose <ico-square></ico-square> one polite request <ico-square></ico-square> closing + sign-off <ico-square></ico-square> no casual contractions.</p>
+      <p><b>Checklist:</b> ☐ subject line ☐ formal greeting ☐ clear purpose ☐ one polite request ☐ closing + sign-off ☐ no casual contractions.</p>
       <div class="tnote"><b>Teacher note:</b> Then role-play an <b>email exchange</b> — you reply as the client/manager, the student answers, adjusting tone. Great place to push the passive-voice stretch ("Your request has been received…").</div>
     </div>
 
     <div class="block">
-      <span class="btag"><ico-pin></ico-pin> Homework</span>
+      <span class="btag">📌 Homework</span>
       <div class="hw"><b>Write</b> a follow-up email for a <b>missed meeting</b> (polite, professional, with a clear next step). Optional: take one of your own past emails and rewrite it to improve the tone and structure.</div>
     </div>
   </section>
@@ -856,12 +764,12 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-target></ico-target> Objective</span>
+      <span class="btag">🎯 Objective</span>
       <div class="objective">By the end of the lesson, the student can <b>negotiate a simple deal</b> — make offers and counteroffers, express confidence, and use the <b>first conditional</b> ("If we…, we will…") and <b>unless</b> to set conditions.</div>
     </div>
 
     <div class="block">
-      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
       <div class="warmup">
         <ul>
           <li>Have you ever negotiated a price, a deadline, or a salary? What worked?</li>
@@ -872,7 +780,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-book></ico-book> Present · Negotiation language &amp; conditionals <span class="min">15 min</span></span>
+      <span class="btag">📘 Present · Negotiation language &amp; conditionals <span class="min">15 min</span></span>
 
       <div class="h3">1 · Negotiation language <span class="sm">— what to say</span></div>
       <table class="tb">
@@ -905,24 +813,32 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
         <tr><th style="width:26%">Type</th><th>Form</th><th>Business example</th></tr>
         <tr><td><b>First conditional</b><br><span class="sp">real, possible</span> · B1 core</td><td>If + present simple, <b>will</b> + base</td><td>If you place a larger order, we <b>will</b> give a 10% discount.<br>If we lower the price, <b>will</b> you sign today?</td></tr>
         <tr><td><b>unless / as long as / provided that</b><br>B1+</td><td>condition to proceed</td><td><b>Unless</b> we agree on the terms, we can't proceed.<br>We can start <b>as long as</b> the deposit is paid.<br>We'll accept, <b>provided that</b> you increase the quantity.</td></tr>
-        <tr><td><ico-star></ico-star> Second conditional<br><span class="sp">hypothetical, less likely</span> · B2</td><td>If + past simple, <b>would</b> + base</td><td>If we <b>reduced</b> the price, <b>would</b> you commit to a long-term contract?</td></tr>
-        <tr><td><ico-star></ico-star> Third conditional<br><span class="sp">imaginary past</span> · B2</td><td>If + past perfect, <b>would have</b> + past participle</td><td>If you <b>had accepted</b> the terms, we <b>could have delivered</b> by last week.</td></tr>
+        <tr><td>⭐ Second conditional<br><span class="sp">hypothetical, less likely</span> · B2</td><td>If + past simple, <b>would</b> + base</td><td>If we <b>reduced</b> the price, <b>would</b> you commit to a long-term contract?</td></tr>
+        <tr><td>⭐ Third conditional<br><span class="sp">imaginary past</span> · B2</td><td>If + past perfect, <b>would have</b> + past participle</td><td>If you <b>had accepted</b> the terms, we <b>could have delivered</b> by last week.</td></tr>
       </table>
       <div class="tnote"><b>Teacher note — a fix from the source:</b> the "If you had accepted… we could have delivered…" example is a <b>third conditional</b> (imaginary past), not a second conditional. Keep the two apart: 2nd = unlikely present/future; 3rd = a past that didn't happen.</div>
     </div>
 
     <div class="block">
-      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
 
-      <div class="h3">Activity 1 · Match the two halves</div>
-      <table class="tb">
-        <tr><th style="width:50%">Beginning</th><th>Ending</th></tr>
-        <tr><td>1. If you increase your order,</td><td>a. the offer will expire.</td></tr>
-        <tr><td>2. Unless you confirm today,</td><td>b. will you process the payment immediately?</td></tr>
-        <tr><td>3. If we deliver by Friday,</td><td>c. as long as you sign a one-year contract.</td></tr>
-        <tr><td>4. If you paid a deposit now,</td><td>d. we will give you a 15% discount.</td></tr>
-        <tr><td>5. We can offer a discount</td><td>e. we would reserve the stock for you.</td></tr>
-      </table>
+      <div class="h3">Activity 1 · Match each beginning (1–5) with its ending (a–e) — write the letter</div>
+      <ol>
+        <li>If you increase your order, &nbsp;→&nbsp; ___</li>
+        <li>Unless you confirm today, &nbsp;→&nbsp; ___</li>
+        <li>If we deliver by Friday, &nbsp;→&nbsp; ___</li>
+        <li>If you paid a deposit now, &nbsp;→&nbsp; ___</li>
+        <li>We can offer a discount &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="cell" style="margin-top:6px"><span class="gh">Endings — one fits each beginning</span>
+        <ul style="list-style:none; margin:6px 0 0; padding:0; line-height:1.9">
+          <li>a. the offer will expire.</li>
+          <li>b. will you process the payment immediately?</li>
+          <li>c. as long as you sign a one-year contract.</li>
+          <li>d. we will give you a 15% discount.</li>
+          <li>e. we would reserve the stock for you.</li>
+        </ul>
+      </div>
       <div class="key">
         <div class="kh">Answer key · Activity 1</div>
         <p><b>1-d · 2-a · 3-b · 4-e · 5-c</b></p>
@@ -961,15 +877,15 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
         <ol>
           <li><b>Incorrect</b> — mixed tenses. → <i>If you <b>agree</b> to the new terms, we will deliver next week.</i> (first conditional)</li>
           <li><b>Incorrect</b> — the result needs <i>will</i>. → <i>If we reduce the price, they <b>will</b> order more.</i></li>
-          <li><b>Correct.</b> <ico-check></ico-check> (first conditional)</li>
-          <li><b>Correct.</b> <ico-check></ico-check> (<i>unless</i> + present, will)</li>
+          <li><b>Correct.</b> ✓ (first conditional)</li>
+          <li><b>Correct.</b> ✓ (<i>unless</i> + present, will)</li>
           <li><b>Incorrect</b> — second conditional needs <i>could/would</i>. → <i>If we had more time, we <b>could</b> explore other options.</i></li>
         </ol>
       </div>
     </div>
 
     <div class="block">
-      <span class="btag"><ico-headphones></ico-headphones> Model Dialogue · negotiating with a supplier</span>
+      <span class="btag">🎧 Model Dialogue · negotiating with a supplier</span>
       <div class="dialogue">
         <p class="line"><span class="spk">Buyer:</span> <span class="tg">If you lower the price by 10%</span>, we will place a larger order.</p>
         <p class="line"><span class="spk b">Supplier:</span> I understand your request, but we can only offer 5% <span class="tg">unless you increase your order by 20%</span>.</p>
@@ -993,7 +909,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Role-play negotiations <span class="min">15 min</span></span>
+      <span class="btag">🗣️ Free Practice · Role-play negotiations <span class="min">15 min</span></span>
       <p>Run one or more of these. The student uses the vocabulary, counteroffers, and conditionals. Sample flows below — the student doesn't have to copy them.</p>
       <table class="tb">
         <tr><th style="width:33%">Scenario</th><th>How it can go</th></tr>
@@ -1008,7 +924,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
     </div>
 
     <div class="block">
-      <span class="btag"><ico-pin></ico-pin> Homework</span>
+      <span class="btag">📌 Homework</span>
       <div class="hw"><b>Write</b> a short email confirming a deal you negotiated, using <b>two first-conditional sentences</b> ("If you…, we will…"). <span class="lead-sm">Alternative: find a short talk or video on a topic you like and write a paragraph on why it matters in everyday life.</span></div>
     </div>
   </section>
@@ -1017,7 +933,7 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
 
 <footer>
   <b>ENGLISH for ALL</b><br>
-  Business English · B1 core · <ico-star></ico-star> B2 stretch · 4-lesson PPP course · Rank Up sidequest
+  Business English · B1 core · ⭐ B2 stretch · 4-lesson PPP course · Rank Up sidequest
 </footer>
 
 <script>
