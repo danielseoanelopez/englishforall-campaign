@@ -312,7 +312,7 @@
       "title": "AUDIO 1 · GETTING TO KNOW YOU",
       "desc": "Ana le hace preguntas a Tom. Escucha las respuestas.",
       "src": "a1-l6-1.mp3",
-      "dur": "0:18",
+      "dur": "0:14",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -466,7 +466,7 @@
     "ana": "en-US-AriaNeural",
     "tom": "en-US-GuyNeural"
   },
-  "audioRate": "-12%",
+  "audioRate": "-5%",
   "audioScripts": [
     {
       "file": "a1-l6-1.mp3",

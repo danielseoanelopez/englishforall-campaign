@@ -216,7 +216,7 @@
       "title": "AUDIO 1 · PHONE & CLASS TIMES",
       "desc": "Ana y Tom hablan de un número y de horarios de clase.",
       "src": "a1-l3-1.mp3",
-      "dur": "0:24",
+      "dur": "0:18",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -375,7 +375,7 @@
       "title": "AUDIO 2 · MY DAY",
       "desc": "Marcos cuenta los horarios de su día. Escucha las horas.",
       "src": "a1-l3-2.mp3",
-      "dur": "0:21",
+      "dur": "0:17",
       "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
@@ -455,7 +455,7 @@
     "tom": "en-US-GuyNeural",
     "marcos": "en-US-GuyNeural"
   },
-  "audioRate": "-12%",
+  "audioRate": "-5%",
   "audioScripts": [
     {
       "file": "a1-l3-1.mp3",

@@ -273,7 +273,7 @@
       "title": "AUDIO 1 · WHAT'S IN THE BAG?",
       "desc": "Ana y Tom hablan de las cosas en una mochila. Escucha los objetos.",
       "src": "a1-l5-1.mp3",
-      "dur": "0:21",
+      "dur": "0:15",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -427,7 +427,7 @@
     "ana": "en-US-AriaNeural",
     "tom": "en-US-GuyNeural"
   },
-  "audioRate": "-12%",
+  "audioRate": "-5%",
   "audioScripts": [
     {
       "file": "a1-l5-1.mp3",

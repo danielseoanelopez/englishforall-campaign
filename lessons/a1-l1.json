@@ -175,38 +175,38 @@
       "title": "AUDIO 1 · MEETING SOMEONE NEW",
       "desc": "Ana y Tom se conocen por primera vez. Escucha los nombres y de dónde son.",
       "src": "a1-l1-1.mp3",
-      "dur": "0:24",
+      "dur": "0:16",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
           "type": "mcq",
           "q": "What is the man's name?",
           "options": [
-            "Ben",
             "Tom",
+            "Ben",
             "Leo"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "Where is Ana from?",
           "options": [
-            "Spain",
             "Mexico",
+            "Spain",
             "Canada"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
-          "q": "How does Tom feel today?",
+          "q": "How is Tom today?",
           "options": [
-            "A little nervous",
-            "Tired today",
-            "Great, thanks"
+            "Great",
+            "Tired",
+            "Nervous"
           ],
-          "answer": 2
+          "answer": 0
         }
       ],
       "speaking": {
@@ -327,7 +327,7 @@
       "title": "AUDIO 2 · GOOD MORNING!",
       "desc": "Leo llega a una escuela de inglés. Escucha el saludo y dónde está su clase.",
       "src": "a1-l1-2.mp3",
-      "dur": "0:19",
+      "dur": "0:14",
       "speakers": "<ico-commentdots></ico-commentdots> Emma + Leo",
       "questions": [
         {
@@ -458,7 +458,7 @@
     "leo": "en-GB-RyanNeural",
     "maria": "en-AU-NatashaNeural"
   },
-  "audioRate": "-12%",
+  "audioRate": "-5%",
   "audioScripts": [
     {
       "file": "a1-l1-1.mp3",

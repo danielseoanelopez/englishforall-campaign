@@ -229,7 +229,7 @@
       "title": "AUDIO 1 · NICE TO MEET YOU",
       "desc": "Ana y Tom hablan de su país, trabajo y edad.",
       "src": "a1-l2-1.mp3",
-      "dur": "0:21",
+      "dur": "0:15",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -389,7 +389,7 @@
       "title": "AUDIO 2 · THIS IS MY FRIEND",
       "desc": "María presenta a su amigo Leo. Escucha su país, trabajo y edad.",
       "src": "a1-l2-2.mp3",
-      "dur": "0:14",
+      "dur": "0:12",
       "speakers": "<ico-commentdots></ico-commentdots> María",
       "questions": [
         {
@@ -469,7 +469,7 @@
     "tom": "en-US-GuyNeural",
     "maria": "en-GB-SoniaNeural"
   },
-  "audioRate": "-12%",
+  "audioRate": "-5%",
   "audioScripts": [
     {
       "file": "a1-l2-1.mp3",

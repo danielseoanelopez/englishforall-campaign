@@ -245,38 +245,38 @@
       "title": "AUDIO 1 · MY FAMILY",
       "desc": "Ana le pregunta a Tom por su familia. Escucha have y has.",
       "src": "a1-l4-1.mp3",
-      "dur": "0:21",
+      "dur": "0:17",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
           "type": "mcq",
           "q": "How many brothers and sisters does Tom have?",
           "options": [
-            "One brother and two sisters",
             "One brother and one sister",
+            "One brother and two sisters",
             "Two brothers and one sister"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
-          "q": "What does his brother have?",
+          "q": "What is his brother's name?",
           "options": [
-            "A cat",
-            "A dog",
-            "A car"
+            "Max",
+            "Ben",
+            "Leo"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "What color is Lucy's hair?",
           "options": [
+            "Brown",
             "Black",
-            "Blue",
-            "Brown"
+            "Blonde"
           ],
-          "answer": 2
+          "answer": 0
         }
       ],
       "speaking": {
@@ -291,7 +291,7 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "Yes, <span class='tg'>one brother and one sister</span>."
+          "html": "Yes, <span class='tg'>I have</span> one brother and one sister."
         },
         {
           "spk": "Ana",
@@ -300,7 +300,7 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "Lucy. <span class='tg'>She has brown hair</span>."
+          "html": "<span class='tg'>Her name is</span> Lucy. <span class='tg'>She has</span> brown hair."
         },
         {
           "spk": "Ana",
@@ -309,7 +309,7 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>He has a dog.</span>"
+          "html": "<span class='tg'>His name is</span> Max. <span class='tg'>He has</span> a big dog."
         }
       ]
     },
@@ -353,23 +353,31 @@
       "type": "memory",
       "id": "mem-fam",
       "title": "MEMORY · familia",
-      "intro": "Encuentra cada imagen con su palabra. Toca dos cartas.",
+      "intro": "Encuentra cada palabra con su significado. Toca dos cartas.",
       "pairs": [
         {
-          "a": "<ico-user></ico-user>",
-          "b": "mother"
+          "a": "mother",
+          "b": "madre"
         },
         {
-          "a": "<ico-user></ico-user>",
-          "b": "father"
+          "a": "father",
+          "b": "padre"
         },
         {
-          "a": "<ico-child></ico-child>",
-          "b": "brother"
+          "a": "brother",
+          "b": "hermano"
         },
         {
-          "a": "<ico-child></ico-child>",
-          "b": "sister"
+          "a": "sister",
+          "b": "hermana"
+        },
+        {
+          "a": "grandmother",
+          "b": "abuela"
+        },
+        {
+          "a": "grandfather",
+          "b": "abuelo"
         }
       ]
     },
@@ -379,38 +387,38 @@
       "title": "AUDIO 2 · MY ROOM",
       "desc": "Marcos describe su cuarto y sus cosas. Escucha have / don't have.",
       "src": "a1-l4-2.mp3",
-      "dur": "0:20",
+      "dur": "0:15",
       "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
           "type": "mcq",
-          "q": "What does Marcos have on the desk?",
+          "q": "What is on the desk?",
           "options": [
-            "A laptop",
-            "A TV",
-            "A guitar"
+            "His laptop",
+            "His guitar",
+            "His books"
           ],
           "answer": 0
         },
         {
           "type": "mcq",
-          "q": "What is Marcos's bed like?",
+          "q": "Does Marcos have a TV?",
           "options": [
-            "Big",
-            "Small",
-            "New"
+            "No, he doesn't",
+            "Yes, he does",
+            "He doesn't say"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
           "q": "Who has a bigger room?",
           "options": [
+            "His sister",
             "His brother",
-            "Marcos",
-            "His sister"
+            "Marcos"
           ],
-          "answer": 2
+          "answer": 0
         }
       ],
       "speaking": {
@@ -459,7 +467,7 @@
     "tom": "en-US-GuyNeural",
     "marcos": "en-US-GuyNeural"
   },
-  "audioRate": "-12%",
+  "audioRate": "-5%",
   "audioScripts": [
     {
       "file": "a1-l4-1.mp3",
