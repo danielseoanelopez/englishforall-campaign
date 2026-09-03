@@ -9,3 +9,4 @@ node_modules/
 # OS / editor cruft
 .DS_Store
 Thumbs.db
+_tmp_a1_short/
