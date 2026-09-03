@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20260828a">
+<link rel="stylesheet" href="lesson.css?v=20260902c">
 </head>
 <body>
 <div class="side-deco left" id="decoLeft"></div>
@@ -95,6 +95,28 @@ const sayText = s => stripTags(s).replace(/[\u{1F1E6}-\u{1F1FF}\u{1F300}-\u{1FAF
 function spkBtn(text, extra){ const say = escAttr(sayText(text)); if(!say) return ""; return `<span class="spk-btn${extra?" "+extra:""}" role="button" tabindex="0" title="Escuchar y repetir" aria-label="Escuchar y repetir" data-say="${say}" onclick="event.preventDefault();event.stopPropagation();speakText(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();speakText(this);}"><ico-volume></ico-volume></span>`; }
 // noFlags: characters are introduced by role only — never with a country flag (students guess the accent themselves)
 function noFlags(s){ return String(s==null?"":s).replace(/<img[^>]*class=['"]flag['"][^>]*>/g,"").replace(/\s+/g," ").trim(); }
+// analog clock faces for the time exercises — pure SVG so they stay crisp and on-palette
+function clockSvg(t, size){
+  const m = String(t).match(/(\d{1,2})\s*[:.]\s*(\d{2})/);
+  if(!m) return "";
+  const hh = (+m[1]) % 12, mm = (+m[2]) % 60;
+  const s = size || 68, c = s/2, r = c - 3;
+  const pt = (ang, len) => { const a = (ang - 90) * Math.PI / 180; return [(c + len*Math.cos(a)).toFixed(2), (c + len*Math.sin(a)).toFixed(2)]; };
+  const hand = (ang, len, w, col) => { const [x,y] = pt(ang, len); return `<line x1="${c}" y1="${c}" x2="${x}" y2="${y}" stroke="${col}" stroke-width="${w}" stroke-linecap="round"/>`; };
+  let ticks = "";
+  for(let i=0;i<12;i++){
+    const big = i%3===0, [x1,y1] = pt(i*30, r-(big?9:5)), [x2,y2] = pt(i*30, r-2);
+    ticks += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${big?'#9d4dff':'#9d4dff66'}" stroke-width="${big?2.2:1.2}" stroke-linecap="round"/>`;
+  }
+  return `<svg class="clock" viewBox="0 0 ${s} ${s}" width="${s}" height="${s}" aria-hidden="true" focusable="false">`
+    + `<circle cx="${c}" cy="${c}" r="${r}" fill="#0b0b1e" stroke="#9d4dff" stroke-width="2.4"/>${ticks}`
+    + hand(hh*30 + mm*0.5, r*0.50, 3.4, "#00e5ff")
+    + hand(mm*6, r*0.78, 2.4, "#ffc83d")
+    + `<circle cx="${c}" cy="${c}" r="2.6" fill="#ffc83d"/></svg>`;
+}
+function clockRow(items){
+  return `<div class="clock-row">${(items||[]).map(it=>`<span class="clock-chip">${clockSvg(it.t, 62)}<b>${esc(it.t)}</b><span class="ce">${esc(it.en||"")}${spkBtn(it.en||"","mini")}</span></span>`).join("")}</div>`;
+}
 function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
 // ---------- question helper (mcq / trueFalse) — used by listening, gapFill, dialogue ----------
@@ -116,14 +138,14 @@ function grammarHtml(g, gi){
   const vid = "vocabRef" + (gi == null ? "" : gi);
   let h = (g.stage === false ? "" : `<div class="stage-tag">${g.stage ? esc(g.stage) : `<ico-book></ico-book> GRAMMAR <span class="es">· ${esc(g.tag)}</span>`}</div>`) + `
   <div class="card grammar" data-aos="fade-up"><div class="panel-title">${esc(g.title)}</div><p>${esc(g.intro)}</p>
-  <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}</div>`).join("")}</div>`;
+  <div class="gram-grid">${(g.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}${c.clocks?clockRow(c.clocks):""}</div>`).join("")}</div>`;
   if(g.ladderLabel) h += `<p style="margin-top:16px">${esc(g.ladderLabel)}</p>`;
   if(g.ladder && g.ladder.length) h += `<div class="freq-bar">${g.ladder.map((c,i)=>`<span class="chip">${esc(c)}${spkBtn(c,"mini")}</span>${i<g.ladder.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
   if(g.parts && g.parts.length){
     g.parts.forEach((p,pi)=>{
       const vid2 = "vocabRef" + (gi==null?"":gi) + "_" + pi;
       if(p.type==="p")       h += `<p>${esc(p.html)}</p>`;
-      else if(p.type==="cells")  h += `<div class="gram-grid">${(p.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}</div>`).join("")}</div>`;
+      else if(p.type==="cells")  h += `<div class="gram-grid">${(p.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}${c.clocks?clockRow(c.clocks):""}</div>`).join("")}</div>`;
       else if(p.type==="phrases") h += `<ul class="phrase-list">${(p.items||[]).map(x=>`<li><span class="en">${esc(x.en)}${spkBtn(x.en,"mini")}</span><span class="sp">${esc(x.sp)}</span></li>`).join("")}</ul>`;
       else if(p.type==="chips")  h += `<div class="freq-bar">${(p.items||[]).map((c,ci)=>`<span class="chip">${esc(c)}</span>${ci<p.items.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
       else if(p.type==="stretch") h += `<div class="stretch"><div class="sh"><ico-star></ico-star> ${esc(p.h||"B2 STRETCH")}</div>${esc(p.body)}</div>`;
@@ -193,7 +215,7 @@ function matchHtml(b, id){
   const side = b.speakSide || "l";   // which column is English: "l" (default), "r", or "none"
   return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-link></ico-link> ${esc(b.title||'UNE LOS PARES')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="match-grid"><div class="match-col">${
-    b.pairs.map((p,i)=>`<button type="button" class="match-l" id="${id}-l-${i}" onclick="mLeft('${id}',${i})"><span>${esc(p.l)}</span><span class="ml-slot" id="${id}-slot-${i}"></span>${side==="l"?spkBtn(p.l,"mini"):""}</button>`).join("")
+    b.pairs.map((p,i)=>`<button type="button" class="match-l${b.clock?" clockface":""}" id="${id}-l-${i}" onclick="mLeft('${id}',${i})">${b.clock?`${clockSvg(p.l)}<span class="clock-digital">${esc(p.l)}</span>`:`<span>${esc(p.l)}</span>`}<span class="ml-slot" id="${id}-slot-${i}"></span>${side==="l"?spkBtn(p.l,"mini"):""}</button>`).join("")
   }</div><div class="match-col">${
     rights.map(r=>`<button type="button" class="match-r" data-r="${escAttr(r)}" onclick="mRight('${id}',this)"><span>${esc(r)}</span>${side==="r"?spkBtn(r,"mini"):""}</button>`).join("")
   }</div></div>
@@ -227,7 +249,7 @@ function memoryHtml(b, id){
   const sh = shuffle(cards);
   memoryState[id] = { flipped:[], matched:0, total:(b.pairs||[]).length, lock:false };
   return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-brain></ico-brain> ${esc(b.title||'MEMORY · encuentra los pares')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><span class="mem-q${b.back?' mem-fancy':''}">${esc(b.back||"<ico-question></ico-question>")}</span><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
+  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><img class="mem-back" src="mem-back.png" alt="" aria-hidden="true" draggable="false"><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
   <div class="mem-status" id="${id}-status">0 / ${(b.pairs||[]).length} pares</div></div>`;
 }
 function fcDeckHtml(cards){

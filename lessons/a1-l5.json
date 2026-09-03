@@ -273,7 +273,7 @@
       "title": "AUDIO 1 · WHAT'S IN THE BAG?",
       "desc": "Ana y Tom hablan de las cosas en una mochila. Escucha los objetos.",
       "src": "a1-l5-1.mp3",
-      "dur": "0:27",
+      "dur": "0:21",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -314,30 +314,30 @@
       "transcript": [
         {
           "spk": "Ana",
-          "html": "Tom, what's in your <span class='tg'>bag</span>?"
+          "html": "Tom, <span class='tg'>what's in your bag?</span>"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "Let me see. <span class='tg'>There is</span> a <span class='tg'>book</span>, a <span class='tg'>pen</span>, and my <span class='tg'>phone</span>."
+          "html": "<span class='tg'>There is</span> a pen and my phone."
         },
         {
           "spk": "Ana",
-          "html": "Only one book?"
+          "html": "Any books?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "No, <span class='tg'>there are</span> two books. And my <span class='tg'>keys</span> are here too."
+          "html": "Yes, <span class='tg'>there are two books</span>."
         },
         {
           "spk": "Ana",
-          "html": "Is there an <span class='tg'>umbrella</span>?"
+          "html": "<span class='tg'>Is there</span> an umbrella?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "No, there isn't. But there is an <span class='tg'>apple</span> for lunch!"
+          "html": "No, <span class='tg'>there isn't</span>. But there is an apple for lunch!"
         }
       ]
     },

@@ -245,7 +245,7 @@
       "title": "AUDIO 1 · MY FAMILY",
       "desc": "Ana le pregunta a Tom por su familia. Escucha have y has.",
       "src": "a1-l4-1.mp3",
-      "dur": "0:30",
+      "dur": "0:21",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -286,30 +286,30 @@
       "transcript": [
         {
           "spk": "Ana",
-          "html": "Tom, <span class='tg'>do you have</span> any brothers or sisters?"
+          "html": "Tom, <span class='tg'>do you have</span> brothers or sisters?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "Yes, <span class='tg'>I have</span> one brother and one sister. My brother <span class='tg'>has</span> a dog."
+          "html": "Yes, <span class='tg'>one brother and one sister</span>."
         },
         {
           "spk": "Ana",
-          "html": "Nice! What's your sister's name?"
+          "html": "What is <span class='tg'>your sister's</span> name?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>Her</span> name is Lucy. She <span class='tg'>has</span> blue eyes and brown hair."
+          "html": "Lucy. <span class='tg'>She has brown hair</span>."
         },
         {
           "spk": "Ana",
-          "html": "Does your brother have a job?"
+          "html": "And your brother?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "Yes, he does. He is an engineer."
+          "html": "<span class='tg'>He has a dog.</span>"
         }
       ]
     },

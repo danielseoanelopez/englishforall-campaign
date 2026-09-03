@@ -312,7 +312,7 @@
       "title": "AUDIO 1 · GETTING TO KNOW YOU",
       "desc": "Ana le hace preguntas a Tom. Escucha las respuestas.",
       "src": "a1-l6-1.mp3",
-      "dur": "0:27",
+      "dur": "0:18",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -353,39 +353,30 @@
       "transcript": [
         {
           "spk": "Ana",
-          "html": "<span class='tg'>Where</span> do you live, Tom?"
+          "html": "<span class='tg'>Where do you live</span>, Tom?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "I live in Toronto."
+          "html": "I <span class='tg'>live in Toronto</span>."
         },
         {
           "spk": "Ana",
-          "html": "<span class='tg'>Do</span> you like sports?"
+          "html": "<span class='tg'>Can you swim?</span>"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "Yes, I <span class='tg'>do</span>. I play football."
+          "html": "<span class='tg'>No, I can't</span>, but I want to learn."
         },
         {
           "spk": "Ana",
-          "html": "<span class='tg'>Can</span> you swim?"
+          "html": "<span class='tg'>What do you do</span> on weekends?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "No, I <span class='tg'>can't</span>, but I want to learn."
-        },
-        {
-          "spk": "Ana",
-          "html": "<span class='tg'>What</span> do you do on weekends?"
-        },
-        {
-          "spk": "Tom",
-          "b": true,
-          "html": "I usually see my friends."
+          "html": "I <span class='tg'>see my friends</span>."
         }
       ]
     },

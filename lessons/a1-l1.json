@@ -175,7 +175,7 @@
       "title": "AUDIO 1 · MEETING SOMEONE NEW",
       "desc": "Ana y Tom se conocen por primera vez. Escucha los nombres y de dónde son.",
       "src": "a1-l1-1.mp3",
-      "dur": "0:38",
+      "dur": "0:24",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -211,21 +211,21 @@
       ],
       "speaking": {
         "prompt": "Introduce yourself: say your name, where you're from, and how you are.",
-        "starter": "Hello, I'm (name). I'm from (country) and I'm fine, thank you."
+        "starter": "Hello, I'm (name). I'm from (country). I'm great, thanks!"
       },
       "transcript": [
         {
           "spk": "Ana",
-          "html": "<span class='tg'>Hello!</span> I'm Ana. <span class='tg'>What's your name?</span>"
+          "html": "<span class='tg'>Hi!</span> I'm Ana. <span class='tg'>What's your name?</span>"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>Hi</span> Ana. <span class='tg'>My name is</span> Tom. <span class='tg'>Nice to meet you.</span>"
+          "html": "<span class='tg'>My name is</span> Tom."
         },
         {
           "spk": "Ana",
-          "html": "Nice to meet you too. <span class='tg'>Where are you from</span>, Tom?"
+          "html": "<span class='tg'>Where are you from</span>, Tom?"
         },
         {
           "spk": "Tom",
@@ -234,21 +234,12 @@
         },
         {
           "spk": "Ana",
-          "html": "I'm <span class='tg'>from Mexico</span>."
+          "html": "I'm <span class='tg'>from Mexico</span>. <span class='tg'>How are you?</span>"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "Cool! <span class='tg'>How are you</span> today?"
-        },
-        {
-          "spk": "Ana",
-          "html": "I'm <span class='tg'>fine, thank you</span>. And you?"
-        },
-        {
-          "spk": "Tom",
-          "b": true,
-          "html": "I'm <span class='tg'>great, thanks!</span>"
+          "html": "<span class='tg'>Great, thanks!</span>"
         }
       ]
     },
@@ -336,7 +327,7 @@
       "title": "AUDIO 2 · GOOD MORNING!",
       "desc": "Leo llega a una escuela de inglés. Escucha el saludo y dónde está su clase.",
       "src": "a1-l1-2.mp3",
-      "dur": "0:34",
+      "dur": "0:19",
       "speakers": "<ico-commentdots></ico-commentdots> Emma + Leo",
       "questions": [
         {
@@ -382,29 +373,11 @@
         {
           "spk": "Leo",
           "b": true,
-          "html": "Good morning. I'm Leo. I'm a <span class='tg'>new student</span>."
+          "html": "Good morning. I'm Leo, a <span class='tg'>new student</span>."
         },
         {
           "spk": "Emma",
-          "html": "<span class='tg'>Nice to meet you</span>, Leo. I'm Emma."
-        },
-        {
-          "spk": "Leo",
-          "b": true,
-          "html": "Nice to meet you, Emma."
-        },
-        {
-          "spk": "Emma",
-          "html": "<span class='tg'>How are you?</span>"
-        },
-        {
-          "spk": "Leo",
-          "b": true,
-          "html": "I'm a little nervous, but I'm okay!"
-        },
-        {
-          "spk": "Emma",
-          "html": "Don't worry. Your class is <span class='tg'>on the second floor</span>. Have a nice day!"
+          "html": "<span class='tg'>Nice to meet you</span>, Leo. Your class is <span class='tg'>on the second floor</span>."
         },
         {
           "spk": "Leo",

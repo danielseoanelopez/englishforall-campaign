@@ -54,7 +54,25 @@
         },
         {
           "h": "<ico-clock></ico-clock> Time",
-          "body": "3:00 = <code>three o'clock</code><br>3:30 = <code>half past three</code><br>3:15 = <code>quarter past three</code>"
+          "body": "<i>La aguja larga manda:</i><br>arriba = <code>o'clock</code> · abajo = <code>half past</code><br>derecha = <code>quarter past</code> · izquierda = <code>quarter to</code><br><i>Ojo:</i> <code>quarter to four</code> = 3:45 (¡dice la hora que <b>viene</b>!)",
+          "clocks": [
+            {
+              "t": "3:00",
+              "en": "three o'clock"
+            },
+            {
+              "t": "3:15",
+              "en": "quarter past three"
+            },
+            {
+              "t": "3:30",
+              "en": "half past three"
+            },
+            {
+              "t": "3:45",
+              "en": "quarter to four"
+            }
+          ]
         },
         {
           "h": "<ico-calendar></ico-calendar> at / on / in",
@@ -166,26 +184,31 @@
       "type": "match",
       "id": "ex-time",
       "title": "UNE LA HORA",
-      "intro": "Toca el reloj y luego cómo se dice.",
+      "intro": "Mira el reloj, tócalo, y luego elige cómo se dice en inglés.",
       "pairs": [
         {
-          "l": "3:00",
-          "r": "three o'clock"
+          "l": "2:00",
+          "r": "two o'clock"
         },
         {
-          "l": "3:30",
-          "r": "half past three"
+          "l": "8:15",
+          "r": "quarter past eight"
         },
         {
-          "l": "3:15",
-          "r": "quarter past three"
+          "l": "5:30",
+          "r": "half past five"
         },
         {
-          "l": "3:45",
-          "r": "quarter to four"
+          "l": "6:45",
+          "r": "quarter to seven"
+        },
+        {
+          "l": "11:00",
+          "r": "eleven o'clock"
         }
       ],
-      "speakSide": "r"
+      "speakSide": "r",
+      "clock": true
     },
     {
       "type": "listening",
@@ -193,7 +216,7 @@
       "title": "AUDIO 1 · PHONE & CLASS TIMES",
       "desc": "Ana y Tom hablan de un número y de horarios de clase.",
       "src": "a1-l3-1.mp3",
-      "dur": "0:28",
+      "dur": "0:24",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -239,20 +262,25 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "It's five, five, five, one, two, three, four."
+          "html": "<span class='tg'>Five, five, five, one, two, three, four</span>."
         },
         {
           "spk": "Ana",
-          "html": "Thanks. And <span class='tg'>what time</span> is our English class?"
+          "html": "Thanks! <span class='tg'>What time is</span> our English class?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "It's <span class='tg'>at four o'clock</span> <span class='tg'>on Monday</span>. And there's another <span class='tg'>at half past five</span> <span class='tg'>on Wednesday</span>."
+          "html": "<span class='tg'>At four o'clock on Monday</span>."
         },
         {
           "spk": "Ana",
-          "html": "OK. See you on Monday at four!"
+          "html": "And <span class='tg'>on Wednesday</span>?"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "<span class='tg'>At half past five</span>."
         }
       ]
     },
@@ -314,7 +342,6 @@
       "id": "mem-num",
       "title": "MEMORY · ¿-teen o -ty?",
       "intro": "Encuentra cada número con su palabra. ¡Cuidado: thirteen no es thirty!",
-      "back": "XII",
       "pairs": [
         {
           "a": "13",

@@ -204,13 +204,11 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 @media (max-width: 520px) { .mem-grid { grid-template-columns: repeat(3, 1fr); } }
 .mem-card { position: relative; aspect-ratio: 2 / 3; border: 2px solid var(--purple); border-radius: 10px; background: #9d4dff14; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text); font-family: "Share Tech Mono", monospace; transition: border-color 0.15s, box-shadow 0.15s, background 0.15s; overflow: hidden; }
 .mem-card:hover { box-shadow: 0 0 10px #9d4dff55; }
-.mem-card .mem-q { font-size: 1.5rem; }
-.mem-card .mem-q.mem-fancy { font-family: Georgia, "Times New Roman", serif; font-size: 1.7rem; letter-spacing: 2px; color: var(--gold); text-shadow: 0 0 10px #ffc83d99, 0 0 24px #ffc83d44; }
 .mem-card .mem-face { display: none; font-size: 1.4rem; text-align: center; padding: 4px; word-break: break-word; }
 .mem-card.flip { background: #00e5ff12; border-color: var(--cyan); }
-.mem-card.flip .mem-q { display: none; } .mem-card.flip .mem-face { display: block; }
+.mem-card.flip .mem-back { display: none; } .mem-card.flip .mem-face { display: block; }
 .mem-card.matched { background: #3dffa016; border-color: var(--green); box-shadow: 0 0 10px #3dffa044; cursor: default; }
-.mem-card.matched .mem-q { display: none; } .mem-card.matched .mem-face { display: block; }
+.mem-card.matched .mem-back { display: none; } .mem-card.matched .mem-face { display: block; }
 .mem-status { margin-top: 12px; letter-spacing: 1px; color: var(--gold); font-size: 0.9rem; }
 /* Flashcards (flip to study) */
 .fc-round { color: var(--gold); font-size: 0.8rem; letter-spacing: 1px; margin-top: 10px; }
@@ -400,3 +398,16 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
 .flag-ar-css::after { content: ""; position: absolute; left: 50%; top: 50%;
   width: 22%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%;
   background: #f6b40e; box-shadow: 0 0 8px #f6b40e88; }
+
+/* --- clock faces (A1 "what time is it?") --- */
+.clock { flex: none; width: 58px; height: 58px; filter: drop-shadow(0 0 6px #9d4dff55); }
+/* the match column is only ~140px wide, so stack the face over its label rather
+   than letting the clock and the answer fight for one line */
+.match-l.clockface { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+.match-l.clockface .clock-digital { font-size: 1.05rem; color: var(--gold); letter-spacing: 1px; }
+
+.clock-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; }
+.clock-chip { display: flex; flex-direction: column; align-items: center; gap: 2px; text-align: center; width: 118px; }
+.clock-chip .clock { width: 62px; height: 62px; }
+.clock-chip b { color: var(--gold); font-weight: normal; letter-spacing: 1px; font-size: 0.9rem; }
+.clock-chip .ce { color: var(--muted); font-size: 0.78rem; line-height: 1.25; }

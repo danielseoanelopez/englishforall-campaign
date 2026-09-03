@@ -229,7 +229,7 @@
       "title": "AUDIO 1 · NICE TO MEET YOU",
       "desc": "Ana y Tom hablan de su país, trabajo y edad.",
       "src": "a1-l2-1.mp3",
-      "dur": "0:44",
+      "dur": "0:21",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -271,38 +271,29 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "Hi Ana! Good to see you again."
+          "html": "Hi Ana! <span class='tg'>What is your job?</span>"
         },
         {
           "spk": "Ana",
-          "html": "Hi Tom! So, tell me, <span class='tg'>what is your job?</span>"
+          "html": "<span class='tg'>I am a student.</span> And you?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "I am <span class='tg'>an engineer</span>. I work in a big company. What about you?"
+          "html": "<span class='tg'>I am an engineer.</span>"
         },
         {
           "spk": "Ana",
-          "html": "I am <span class='tg'>a student</span>. I study English at university."
+          "html": "Nice! <span class='tg'>I am from Mexico</span>."
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "Nice! You are from Mexico, right?"
+          "html": "<span class='tg'>How old are you?</span>"
         },
         {
           "spk": "Ana",
-          "html": "Yes, I am <span class='tg'>from Mexico</span>, from Guadalajara. <span class='tg'>How old are you</span>, Tom?"
-        },
-        {
-          "spk": "Tom",
-          "b": true,
-          "html": "I am <span class='tg'>twenty-five</span>. And you?"
-        },
-        {
-          "spk": "Ana",
-          "html": "I am <span class='tg'>twenty</span>."
+          "html": "<span class='tg'>I am twenty.</span>"
         }
       ]
     },
@@ -373,7 +364,6 @@
       "id": "mem-countries",
       "title": "MEMORY · países y banderas",
       "intro": "Encuentra cada país con su bandera. Toca dos cartas.",
-      "back": "<img class='mem-back' src='mem-back.png' alt=''>",
       "pairs": [
         {
           "a": "Mexico",
