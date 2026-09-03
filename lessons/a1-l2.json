@@ -271,7 +271,7 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "Hi Ana! <span class='tg'>What is your job?</span>"
+          "html": "Hi Ana! So, <span class='tg'>what is your job?</span>"
         },
         {
           "spk": "Ana",
@@ -280,16 +280,16 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>I am an engineer.</span>"
+          "html": "<span class='tg'>I am an engineer.</span> Where are you from?"
         },
         {
           "spk": "Ana",
-          "html": "Nice! <span class='tg'>I am from Mexico</span>."
+          "html": "<span class='tg'>I am from Mexico</span>."
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>How old are you?</span>"
+          "html": "And <span class='tg'>how old are you?</span>"
         },
         {
           "spk": "Ana",

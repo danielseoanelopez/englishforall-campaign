@@ -175,7 +175,7 @@
       "title": "AUDIO 1 · MEETING SOMEONE NEW",
       "desc": "Ana y Tom se conocen por primera vez. Escucha los nombres y de dónde son.",
       "src": "a1-l1-1.mp3",
-      "dur": "0:16",
+      "dur": "0:17",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -221,11 +221,11 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>My name is</span> Tom."
+          "html": "Hi Ana! <span class='tg'>My name is</span> Tom."
         },
         {
           "spk": "Ana",
-          "html": "<span class='tg'>Where are you from</span>, Tom?"
+          "html": "<span class='tg'>Nice to meet you.</span> <span class='tg'>Where are you from?</span>"
         },
         {
           "spk": "Tom",
@@ -234,12 +234,12 @@
         },
         {
           "spk": "Ana",
-          "html": "I'm <span class='tg'>from Mexico</span>. <span class='tg'>How are you?</span>"
+          "html": "I'm <span class='tg'>from Mexico</span>. <span class='tg'>How are you</span> today?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>Great, thanks!</span>"
+          "html": "I'm <span class='tg'>great, thanks!</span>"
         }
       ]
     },
@@ -327,7 +327,7 @@
       "title": "AUDIO 2 · GOOD MORNING!",
       "desc": "Leo llega a una escuela de inglés. Escucha el saludo y dónde está su clase.",
       "src": "a1-l1-2.mp3",
-      "dur": "0:14",
+      "dur": "0:15",
       "speakers": "<ico-commentdots></ico-commentdots> Emma + Leo",
       "questions": [
         {
@@ -382,7 +382,7 @@
         {
           "spk": "Leo",
           "b": true,
-          "html": "Thank you. <span class='tg'>Goodbye!</span>"
+          "html": "Great, thank you. <span class='tg'>Goodbye!</span>"
         }
       ]
     },

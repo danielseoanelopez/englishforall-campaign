@@ -286,7 +286,7 @@
       "transcript": [
         {
           "spk": "Ana",
-          "html": "Tom, <span class='tg'>do you have</span> brothers or sisters?"
+          "html": "Tom, <span class='tg'>do you have any</span> brothers or sisters?"
         },
         {
           "spk": "Tom",
@@ -309,7 +309,7 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>His name is</span> Max. <span class='tg'>He has</span> a big dog."
+          "html": "<span class='tg'>His name is</span> Max. <span class='tg'>He is</span> very tall."
         }
       ]
     },

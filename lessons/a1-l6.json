@@ -312,7 +312,7 @@
       "title": "AUDIO 1 · GETTING TO KNOW YOU",
       "desc": "Ana le hace preguntas a Tom. Escucha las respuestas.",
       "src": "a1-l6-1.mp3",
-      "dur": "0:14",
+      "dur": "0:15",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
       "questions": [
         {
@@ -353,7 +353,7 @@
       "transcript": [
         {
           "spk": "Ana",
-          "html": "<span class='tg'>Where do you live</span>, Tom?"
+          "html": "Tom, <span class='tg'>where do you live?</span>"
         },
         {
           "spk": "Tom",
@@ -362,7 +362,7 @@
         },
         {
           "spk": "Ana",
-          "html": "<span class='tg'>Can you swim?</span>"
+          "html": "Nice! <span class='tg'>Can you swim?</span>"
         },
         {
           "spk": "Tom",
@@ -371,12 +371,12 @@
         },
         {
           "spk": "Ana",
-          "html": "<span class='tg'>What do you do</span> on weekends?"
+          "html": "And <span class='tg'>what do you do</span> on weekends?"
         },
         {
           "spk": "Tom",
           "b": true,
-          "html": "I <span class='tg'>see my friends</span>."
+          "html": "I usually <span class='tg'>see my friends</span>."
         }
       ]
     },

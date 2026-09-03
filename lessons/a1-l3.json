@@ -262,7 +262,7 @@
         {
           "spk": "Tom",
           "b": true,
-          "html": "<span class='tg'>Five, five, five, one, two, three, four</span>."
+          "html": "It's <span class='tg'>five, five, five, one, two, three, four</span>."
         },
         {
           "spk": "Ana",
