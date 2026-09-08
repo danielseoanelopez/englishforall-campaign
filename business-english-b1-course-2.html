@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English for All · Business English Part 2 (B1 core · B2 stretch)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon-rankup.png">
+<link rel="apple-touch-icon" href="icon-rankup.png">
+<meta name="description" content="Business English Parte 2 (4 lecciones, estilo PPP): presentaciones, llamadas y videollamadas, números y tendencias, y quejas y disculpas. Nivel B1 con extensión B2. English for All · Rank Up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/business-english-b1-course-2.html">
+<meta property="og:title" content="Business English · Part 2 (B1 · B2 stretch)">
+<meta property="og:description" content="Presentar, llamar, reportar números y resolver quejas. 4 lecciones PPP con claves de respuestas. English for All — Rank Up.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<meta property="og:site_name" content="English for All">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cyan:#0a8ea6; --magenta:#c31f8f; --purple:#6d3ff0; --gold:#b5791a; --green:#158a52; --red:#c0392b;
+    --ink:#1c2230; --soft:#54607a; --line:#dbe2ef; --bg:#f4f6fb; --card:#ffffff;
+    --stretch-bg:#f6f1ff; --key-bg:#eefaf2; --warm-bg:#fff8ec;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.62; font-size:16.5px; padding:0 0 80px;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px;}
+  a{color:var(--cyan);}
+
+  /* ---- Top toolbar ---- */
+  .toolbar{position:sticky; top:0; z-index:40; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:center;
+    background:rgba(244,246,251,0.92); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+    padding:10px 14px; border-bottom:1px solid var(--line);}
+  .toolbar .tt{font-family:"Share Tech Mono",monospace; font-size:0.82rem; color:var(--soft); letter-spacing:1px;}
+  .tbtn{font-family:"Share Tech Mono",monospace; font-size:0.82rem; border:1.5px solid var(--purple); color:var(--purple);
+    background:#fff; border-radius:9px; padding:8px 14px; cursor:pointer; letter-spacing:1px; transition:.15s; white-space:nowrap;}
+  .tbtn:hover{background:#f0eaff;}
+  .tbtn.on{background:var(--purple); color:#fff;}
+  .tbtn.print{border-color:var(--cyan); color:var(--cyan);}
+  .tbtn.print:hover{background:#e6f6f9;}
+  .viewnote{font-family:"Share Tech Mono",monospace; font-size:0.72rem; color:var(--soft);}
+
+  /* ---- Cover ---- */
+  .cover{background:var(--card); border:1px solid var(--line); border-top:6px solid var(--purple);
+    border-radius:16px; padding:30px 30px 26px; margin:26px 0 22px; box-shadow:0 6px 24px #1c223010;}
+  .kicker{font-family:"Press Start 2P",monospace; font-size:0.56rem; letter-spacing:2px; color:var(--magenta);}
+  .cover h1{font-family:"Press Start 2P",monospace; font-size:clamp(1.05rem,3.6vw,1.7rem); line-height:1.5; color:var(--purple); margin:14px 0 10px;}
+  .cover .lead{font-size:1.02rem; color:var(--soft); max-width:60ch;}
+  .badges{display:flex; flex-wrap:wrap; gap:9px; margin:18px 0 6px;}
+  .badge{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; padding:6px 12px; border-radius:20px; border:1.5px solid var(--line); color:var(--ink); background:#fbfcff;}
+  .badge b{color:var(--cyan);}
+  .badge.b1{border-color:var(--cyan); background:#e9f7fa;}
+  .badge.b2{border-color:var(--purple); background:var(--stretch-bg);}
+
+  h2.sec{font-family:"Press Start 2P",monospace; font-size:0.72rem; letter-spacing:1px; color:var(--ink); margin:26px 2px 12px; line-height:1.6;}
+
+  /* ---- Legend / map grids ---- */
+  .legend{display:grid; grid-template-columns:1fr; gap:8px; margin-top:8px;}
+  @media(min-width:640px){ .legend{grid-template-columns:1fr 1fr;} }
+  .leg{display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:10px; padding:9px 12px; background:#fbfcff;}
+  .leg .em{font-size:1.05rem; line-height:1.4;}
+  .leg .lx b{display:block; font-size:0.92rem;}
+  .leg .lx span{font-size:0.84rem; color:var(--soft);}
+
+  .maptable{width:100%; border-collapse:collapse; margin-top:8px; font-size:0.93rem; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .maptable th{background:#f0eefb; text-align:left; padding:10px 12px; font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--soft); border-bottom:1px solid var(--line);}
+  .maptable td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .maptable tr:last-child td{border-bottom:none;}
+  .maptable .ln{font-family:"Press Start 2P",monospace; font-size:0.6rem; color:var(--magenta);}
+
+  /* ---- Lesson blocks ---- */
+  .lesson{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:6px 26px 26px; margin:20px 0; box-shadow:0 4px 18px #1c22300d;}
+  .lesson-head{display:flex; align-items:center; gap:14px; margin:22px 0 6px; padding-bottom:14px; border-bottom:2px solid var(--line);}
+  .lnum{flex-shrink:0; width:52px; height:52px; border-radius:12px; background:var(--purple); color:#fff; font-family:"Press Start 2P",monospace; font-size:0.86rem; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px #6d3ff044;}
+  .lesson.l2 .lnum{background:var(--magenta);} .lesson.l3 .lnum{background:var(--cyan);} .lesson.l4 .lnum{background:var(--green);}
+  .lesson-head .ttl{font-family:"Press Start 2P",monospace; font-size:0.86rem; line-height:1.5; color:var(--ink);}
+  .lesson-head .es{display:block; font-family:"Share Tech Mono",monospace; font-size:0.8rem; color:var(--soft); margin-top:7px; letter-spacing:.5px;}
+
+  .block{margin-top:20px;}
+  .btag{display:inline-flex; align-items:center; gap:8px; font-family:"Share Tech Mono",monospace; font-size:0.82rem; letter-spacing:1px; text-transform:uppercase; color:var(--soft); border-bottom:1px dashed var(--line); padding-bottom:5px; margin-bottom:10px; width:100%;}
+  .btag .min{margin-left:auto; color:var(--cyan); text-transform:none; font-size:0.78rem;}
+
+  .objective{background:#eefaf6; border:1px solid #bfe6d5; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; font-size:0.98rem;}
+  .objective b{color:var(--green);}
+  .warmup{background:var(--warm-bg); border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px;}
+
+  p{margin:8px 0;}
+  ul, ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
+  .lead-sm{color:var(--soft); font-size:0.95rem;}
+  code, .chip{font-family:"Share Tech Mono",monospace;}
+  .chip{display:inline-block; background:#eaf6f9; color:var(--cyan); border:1px solid #bfe6ee; border-radius:6px; padding:1px 7px; font-size:0.9em;}
+  .ok{color:var(--green); font-weight:600;} .x{color:var(--red); text-decoration:line-through;}
+  .h3{font-weight:700; color:var(--ink); margin:14px 0 4px; font-size:1rem;}
+  .h3 .sm{font-weight:400; color:var(--soft); font-size:0.85rem;}
+
+  /* phrase lists */
+  .phr{list-style:none; margin:6px 0 6px; padding:0;}
+  .phr li{padding:6px 0; border-bottom:1px dashed var(--line);}
+  .phr li:last-child{border-bottom:none;}
+  .phr .en{color:var(--ink);} .phr .sp{color:var(--soft); font-size:0.86rem; display:block;}
+
+  /* glossary / table grids */
+  .grid2{display:grid; grid-template-columns:1fr; gap:10px; margin:8px 0;}
+  @media(min-width:640px){ .grid2{grid-template-columns:1fr 1fr;} }
+  .cell{border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:#fbfcff;}
+  .cell .gh{display:block; font-family:"Share Tech Mono",monospace; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:6px;}
+  .cell code{color:var(--cyan);}
+  .cell .sp{color:var(--soft); font-style:italic;}
+  .cell .sp::before{content:" — "; font-style:normal;}
+
+  table.tb{width:100%; border-collapse:collapse; margin:8px 0; font-size:0.93rem;}
+  table.tb th, table.tb td{border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top;}
+  table.tb th{background:#f3f1fb; font-family:"Share Tech Mono",monospace; font-size:0.76rem; letter-spacing:1px; color:var(--soft);}
+  table.tb td .sp{color:var(--soft); font-size:0.85rem;}
+
+  /* B2 stretch */
+  .stretch{background:var(--stretch-bg); border:1px solid #d9c9ff; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .stretch .st-h{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:6px;}
+  .stretch .st-h::before{content:"⭐";}
+
+  /* listening dialogue */
+  .dialogue{border:1px solid var(--line); border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px; background:#fbfdff;}
+  .dialogue .line{margin:5px 0;}
+  .dialogue .spk{font-weight:700; color:var(--cyan);}
+  .dialogue .spk.b{color:var(--magenta);}
+  .dialogue .tg{background:#fff3d6; border-radius:4px; padding:0 4px;}
+  .qs{margin:10px 0 0 0;}
+  .qs .qn{font-weight:700; color:var(--purple); margin-right:6px;}
+
+  /* answer key */
+  .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
+  .key .kh::before{content:"✅";}
+  .key ol{margin:4px 0 0 20px;} .key li{margin:3px 0;}
+  .key .alt{color:var(--soft); font-size:0.86rem;}
+
+  /* teacher-only note */
+  .tnote{background:#fff5f8; border:1px dashed var(--magenta); border-radius:10px; padding:10px 14px; margin:12px 0; font-size:0.92rem; color:#7a2d55;}
+  .tnote b{color:var(--magenta);}
+
+  /* scaffold (gapped model) */
+  .scaffold{background:#fbfaff; border:1px solid #e0d8f5; border-radius:10px; padding:12px 16px; font-family:"Share Tech Mono",monospace; font-size:0.95rem; line-height:1.9;}
+  .gap{display:inline-block; min-width:64px; border-bottom:1.5px solid var(--gold); color:var(--gold); text-align:center;}
+  .hw{background:#fff8ec; border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px; margin-top:8px;}
+  .hw b{color:var(--gold);}
+
+  /* view toggling */
+  body.student .key, body.student .tnote{display:none !important;}
+  .student-hidden{display:none;}
+
+  footer{max-width:900px; margin:34px auto 0; padding:16px 20px; text-align:center; color:var(--soft); font-size:0.85rem; border-top:1px solid var(--line);}
+  footer b{font-family:"Press Start 2P",monospace; font-size:0.62rem; color:var(--purple); letter-spacing:1px;}
+
+  @media print{
+    body{background:#fff; font-size:11.5pt; padding:0;}
+    .toolbar{display:none;}
+    .lesson, .cover{box-shadow:none; border-color:#ccc; break-inside:avoid;}
+    .lesson{break-before:page;}
+    .cover{break-before:avoid;}
+    a{color:var(--ink); text-decoration:none;}
+  }
+</style>
+<style>
+  /* ---- Part 2 additions ---- */
+  .lesson.l5 .lnum{background:var(--purple);}
+  .lesson.l6 .lnum{background:var(--magenta);}
+  .lesson.l7 .lnum{background:var(--cyan);}
+  .lesson.l8 .lnum{background:var(--green);}
+  .chartbox{border:1px solid var(--line); border-radius:12px; background:#fbfcff; padding:14px 16px 10px; margin:10px 0;}
+  .chartbox .cap{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:8px;}
+  .chartbox svg{width:100%; height:auto; display:block;}
+  .chartbox .barlabel{font-family:"Share Tech Mono",monospace; font-size:13px; fill:var(--soft);}
+  .chartbox .barvalue{font-family:"Share Tech Mono",monospace; font-size:13px; fill:var(--ink); font-weight:700;}
+  .recap{background:#f3f1fb; border:1px solid #d9d2f5; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .recap .rh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; margin-bottom:6px;}
+</style>
+</head>
+<body class="teacher">
+
+<div class="toolbar">
+  <span class="tt">VIEW:</span>
+  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')">📖 Teacher (with keys)</button>
+  <button class="tbtn" id="btnStudent" onclick="setView('student')">🎒 Student (no keys)</button>
+  <button class="tbtn print" onclick="window.print()">🖨️ Print / Save PDF</button>
+  <span class="viewnote" id="viewNote">Answer keys &amp; teacher notes are visible.</span>
+</div>
+
+<div class="wrap">
+
+  <!-- ============== COVER ============== -->
+  <div class="cover">
+    <div class="kicker">ENGLISH FOR ALL · RANK UP · SIDEQUEST · PART 2</div>
+    <h1>BUSINESS ENGLISH<br>PART 2</h1>
+    <p class="lead">Part 1 got you <i>into</i> the job — meeting people, sitting in a meeting, writing the email, closing the deal. Part 2 is about <b>holding the room</b>: presenting, handling calls, reporting numbers, and fixing what went wrong. Same <b>PPP</b> rhythm — Present → Practice → Produce.</p>
+    <div class="badges">
+      <span class="badge b1"><b>B1 core</b></span>
+      <span class="badge b2">⭐ B2 stretch</span>
+      <span class="badge">Lessons 05–08 · ~50–55 min each</span>
+      <span class="badge">1:1 or small group</span>
+      <span class="badge">🇺🇸 American English</span>
+    </div>
+    <p class="lead-sm" style="margin-top:14px">Prerequisite: <a href="business-english-b1-course.html">Business English Part 1 (lessons 01–04)</a> — or any solid B1. No grammar from Part 1 is repeated here.</p>
+  </div>
+
+  <!-- ============== HOW TO USE ============== -->
+  <h2 class="sec">HOW TO USE THIS COURSE</h2>
+  <p class="lead-sm">Each lesson follows the same rhythm so students always know where they are. Use the <b>Teacher / Student</b> toggle at the top: <b>Student view</b> hides the answer keys and teacher notes so you can print or screen-share a clean handout.</p>
+  <div class="legend">
+    <div class="leg"><span class="em">🎯</span><div class="lx"><b>Objective</b><span>The can-do goal for the lesson.</span></div></div>
+    <div class="leg"><span class="em">🔥</span><div class="lx"><b>Warm-up (5 min)</b><span>Get talking, activate the topic.</span></div></div>
+    <div class="leg"><span class="em">📘</span><div class="lx"><b>Present (15 min)</b><span>Vocabulary + grammar, with glossary.</span></div></div>
+    <div class="leg"><span class="em">✏️</span><div class="lx"><b>Controlled Practice (15 min)</b><span>Guided exercises. Answers in the ✅ key.</span></div></div>
+    <div class="leg"><span class="em">🎧</span><div class="lx"><b>Model Dialogue</b><span>A short conversation + comprehension. Read it aloud, or record it for audio later.</span></div></div>
+    <div class="leg"><span class="em">🗣️</span><div class="lx"><b>Free Practice (15 min)</b><span>Role-play with scripted prompts — works 1:1.</span></div></div>
+    <div class="leg"><span class="em">⭐</span><div class="lx"><b>B2 Stretch box</b><span>Optional upgrade language for stronger students.</span></div></div>
+    <div class="leg"><span class="em">📌</span><div class="lx"><b>Homework</b><span>A short writing/speaking task to submit.</span></div></div>
+  </div>
+
+  <h2 class="sec">COURSE MAP · PART 2</h2>
+  <table class="maptable">
+    <tr><th style="width:52px">#</th><th>Lesson</th><th>Grammar focus</th><th>Produce</th></tr>
+    <tr><td class="ln">05</td><td><b>Presentations &amp; Public Speaking</b></td><td>Present perfect vs. past simple</td><td>Give a 2-minute update on a project</td></tr>
+    <tr><td class="ln">06</td><td><b>Phone &amp; Video Calls</b></td><td>Reported speech + taking messages</td><td>Handle a call and pass on a message</td></tr>
+    <tr><td class="ln">07</td><td><b>Numbers, Data &amp; Trends</b></td><td>Comparatives / superlatives + degree adverbs</td><td>Present a chart: what went up, what went down</td></tr>
+    <tr><td class="ln">08</td><td><b>Problems, Complaints &amp; Apologies</b></td><td>Second conditional + diplomatic <span class="es">would / could</span> (3rd = stretch)</td><td>Resolve a complaint without losing the client</td></tr>
+  </table>
+  <div class="tnote"><b>Teacher tip:</b> Part 1 covered prepositions, modals, polite/indirect + passive, and the first conditional. Part 2 deliberately takes four <i>new</i> structures — and promotes the second conditional from "stretch" in Part 1 to core here in Lesson 08. The 🎧 <b>Model Dialogues</b> are again written to be recorded (2 short audios per lesson). If you generate TTS, avoid <i>He's / She's</i> at the start of a clause.</div>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 5 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l5">
+    <div class="lesson-head">
+      <div class="lnum">05</div>
+      <div><span class="ttl">Presentations &amp; Public Speaking</span>
+      <span class="es">Presentar delante de un grupo · Grammar: present perfect vs. past simple</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>open, structure and close a short work presentation</b>, and say what the team <b>has done</b> (present perfect) versus what it <b>did</b> (past simple, finished time).</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Have you ever presented something at work? How did it go?</li>
+          <li>What makes a presentation boring? What makes one good?</li>
+          <li>What do you say in the first ten seconds, before you start?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="h3">A · Signposting <span class="sm">— the phrases that tell people where they are</span></div>
+      <table class="tb">
+        <tr><th style="width:26%">Moment</th><th>What you say</th></tr>
+        <tr><td><b>Open</b> <span class="sp">abrir</span></td><td>Good morning, everyone. Thanks for coming. · Today I'd like to talk about…</td></tr>
+        <tr><td><b>Agenda</b> <span class="sp">el guion</span></td><td>First, I'll cover… Then… And finally… · There are three parts to this.</td></tr>
+        <tr><td><b>Move on</b> <span class="sp">avanzar</span></td><td>Let's move on to… · That brings me to… · Now, about the budget…</td></tr>
+        <tr><td><b>Point at data</b> <span class="sp">señalar</span></td><td>As you can see here… · This slide shows… · Look at the numbers on the right.</td></tr>
+        <tr><td><b>Close</b> <span class="sp">cerrar</span></td><td>To sum up… · So, three things to remember… · Any questions?</td></tr>
+        <tr><td><b>Handle a question</b> <span class="sp">responder</span></td><td>That's a good question. · Let me get back to you on that. · Does that answer it?</td></tr>
+      </table>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · more polished signposting</div>
+        "I'd like to draw your attention to the second column." · "That brings me neatly to my next point." · "Let me expand on that briefly." · "I'll come back to that at the end, if I may." · "Before I wrap up, one final thought."
+      </div>
+
+      <div class="h3">B · Key vocabulary <span class="sm">— presentations &amp; projects</span></div>
+      <table class="tb">
+        <tr><th style="width:36%">English</th><th>Español</th></tr>
+        <tr><td>a slide / the deck</td><td>una diapositiva / la presentación</td></tr>
+        <tr><td>an agenda</td><td>un orden del día</td></tr>
+        <tr><td>a handout</td><td>un material impreso</td></tr>
+        <tr><td>the audience</td><td>el público</td></tr>
+        <tr><td>a key takeaway</td><td>una idea clave (para llevarse)</td></tr>
+        <tr><td>a deadline</td><td>una fecha límite</td></tr>
+        <tr><td>a milestone</td><td>un hito</td></tr>
+        <tr><td>a launch / a rollout</td><td>un lanzamiento / una implementación</td></tr>
+        <tr><td>to walk someone through something</td><td>explicar algo paso a paso</td></tr>
+        <tr><td>to touch on something</td><td>mencionar algo brevemente</td></tr>
+        <tr><td>to be on track / behind schedule</td><td>ir en tiempo / ir atrasado</td></tr>
+      </table>
+
+      <div class="h3">C · Grammar — Present perfect vs. past simple</div>
+      <p class="lead-sm">One question decides it: <b>is there a finished time word?</b> If yes → past simple. If no → present perfect.</p>
+      <table class="tb">
+        <tr><th style="width:22%"></th><th>PRESENT PERFECT ✅</th><th>PAST SIMPLE 📅</th></tr>
+        <tr><td><b>Form</b></td><td><code>have / has</code> + past participle<br>We <b>have finished</b>. She <b>has sent</b> it.</td><td>verb + <code>-ed</code> (or irregular)<br>We <b>finished</b>. She <b>sent</b> it.</td></tr>
+        <tr><td><b>Use</b></td><td>The <b>when</b> doesn't matter — the <b>result now</b> does.</td><td>A <b>finished moment</b> in the past.</td></tr>
+        <tr><td><b>Time words</b></td><td>already · just · yet · so far · ever / never · this week · since 2020 · for two years</td><td>yesterday · last month · in March · two weeks ago · when I started</td></tr>
+        <tr><td><b>Example</b></td><td>We <b>have launched</b> two products <b>this year</b>. <span class="sp">the year isn't over</span></td><td>We <b>launched</b> two products <b>last year</b>. <span class="sp">the year is closed</span></td></tr>
+      </table>
+      <div class="grid2">
+        <div class="cell"><span class="gh">The presentation pattern</span>Start with the <b>perfect</b> for status: <i>"So far we've finished the design."</i> Then switch to the <b>simple</b> for details with a date: <i>"We ran the first tests in April."</i></div>
+        <div class="cell"><span class="gh">⚠ Watch out</span><span class="x">We have finished it yesterday.</span> <span class="ok">We finished it yesterday.</span><br><span class="x">I work here since 2021.</span> <span class="ok">I have worked here since 2021.</span></div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">🇺🇸 American English note</div>
+        Americans often use the <b>past simple</b> where British English requires the perfect: <i>"Did you finish yet?"</i> · <i>"I already sent it."</i> Both are fine in the US. Teach the <b>perfect</b> for production (it is never wrong, and exams want it); teach the simple for <b>recognition</b>.
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · present perfect continuous</div>
+        For the <i>activity</i> rather than the <i>result</i>: "We've <b>been testing</b> the app for three weeks." · "The team has <b>been working</b> overtime since May." Compare: <i>We've tested it</i> (done, result) vs. <i>We've been testing it</i> (ongoing, effort).
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Present perfect or past simple? <span class="sm">— put the verb in the right form</span></div>
+      <ol>
+        <li>We ___ (finish) the report yesterday.</li>
+        <li>I ___ (already / send) you the slides.</li>
+        <li>Last quarter, sales ___ (grow) by eight percent.</li>
+        <li>We ___ (not decide) on a launch date yet.</li>
+        <li>She ___ (join) the company in 2023.</li>
+        <li>So far this year, we ___ (launch) two products.</li>
+        <li>___ you ___ (read) the agenda?</li>
+        <li>The client ___ (call) twice this morning.</li>
+        <li>We ___ (present) the plan at the conference last May.</li>
+        <li>I ___ (just / talk) to the developer — she's on it.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li><b>finished</b> <span class="alt">(yesterday = finished time)</span></li>
+          <li><b>have already sent</b> <span class="alt">(US also accepts: already sent)</span></li>
+          <li><b>grew</b> <span class="alt">(last quarter = closed)</span></li>
+          <li><b>haven't decided</b> <span class="alt">(yet → perfect)</span></li>
+          <li><b>joined</b> <span class="alt">(in 2023 = closed)</span></li>
+          <li><b>have launched</b> <span class="alt">(so far this year = still open)</span></li>
+          <li><b>Have</b> you <b>read</b> <span class="alt">(US also: Did you read…?)</span></li>
+          <li><b>has called</b> <span class="alt">(if the morning is over: called)</span></li>
+          <li><b>presented</b> <span class="alt">(last May = closed)</span></li>
+          <li><b>have just talked</b> <span class="alt">(also: have just spoken)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Put the presentation in order <span class="sm">— write 1–8 next to each line</span></div>
+      <ol style="list-style:lower-alpha">
+        <li>"Any questions?" &nbsp;→&nbsp; ___</li>
+        <li>"Today I'd like to talk about our new booking app." &nbsp;→&nbsp; ___</li>
+        <li>"First, I'll cover the timeline; then the budget; and finally the launch plan." &nbsp;→&nbsp; ___</li>
+        <li>"Good morning, everyone. Thanks for coming." &nbsp;→&nbsp; ___</li>
+        <li>"So, to sum up: we're on track, and we need two more developers." &nbsp;→&nbsp; ___</li>
+        <li>"Let's move on to the budget. As you can see here, we've spent about sixty percent." &nbsp;→&nbsp; ___</li>
+        <li>"We started in March, and so far we've finished the design." &nbsp;→&nbsp; ___</li>
+        <li>"That brings me to the launch. We're going live in October." &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <p><b>d (1) · b (2) · c (3) · g (4) · f (5) · h (6) · e (7) · a (8)</b></p>
+        <p class="alt">Order: greet → topic → agenda → timeline → budget → launch → summary → questions.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue · the project update</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Ana:</span> Good morning, everyone. Thanks for coming. Today I'd like to talk about the new booking app.</p>
+        <p class="line"><span class="spk b">Toni:</span> Great. How far along are we?</p>
+        <p class="line"><span class="spk">Ana:</span> We <span class="tg">started in March</span>, and <span class="tg">so far we've finished</span> the design and the first tests.</p>
+        <p class="line"><span class="spk b">Toni:</span> <span class="tg">Have you finalized</span> the budget?</p>
+        <p class="line"><span class="spk">Ana:</span> Not yet — we <span class="tg">haven't finalized</span> it. So far we've spent about sixty percent.</p>
+        <p class="line"><span class="spk b">Toni:</span> And the delay we talked about last month?</p>
+        <p class="line"><span class="spk">Ana:</span> We <span class="tg">fixed it two weeks ago</span>. The team <span class="tg">has worked</span> late every day since then.</p>
+        <p class="line"><span class="spk b">Toni:</span> Good. So, are we on track?</p>
+        <p class="line"><span class="spk">Ana:</span> To sum up: the design is done, the budget isn't final, and we're on track for October. Any questions?</p>
+        <p class="line"><span class="spk b">Toni:</span> Just one — when do we see the demo?</p>
+        <p class="line"><span class="spk">Ana:</span> I'll send a link this afternoon.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> What has the team finished so far?</p>
+        <p><span class="qn">Q2.</span> What have they <i>not</i> finished?</p>
+        <p><span class="qn">Q3.</span> When did they fix the delay — and why does Ana use a different tense there?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>The design and the first tests.</li>
+          <li>The budget — it isn't finalized (and about 40% of it is unspent).</li>
+          <li>Two weeks ago. That is a <b>finished time</b>, so it takes the past simple — while the unfinished status ("so far we've finished") takes the present perfect.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Role-play — the two-minute update.</b> The student presents a real project from their job. If they don't have one, give them this: <i>you manage the opening of a new café — the location is signed, the menu is written, the staff is not hired, opening is planned for November.</i> Tutor is the audience and asks <b>one</b> question at the end.</p>
+      <p class="lead-sm">If the student needs support, start from this frame and fill the gaps:</p>
+      <div class="scaffold">
+        Good morning. Today I'd like to talk about <span class="gap">project</span>. First, I'll cover <span class="gap">part 1</span>, then <span class="gap">part 2</span>. We started <span class="gap">when</span>, and so far we've <span class="gap">done what</span>. Last month we <span class="gap">past simple</span>. We haven't <span class="gap">done what</span> yet. To sum up, <span class="gap">status</span>. Any questions?
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Don't correct mid-presentation — write the tense slips down and go through them after. The single most common error here is <i>"We have finished it yesterday."</i> Ask "Is there a time word?" instead of giving the answer. If the student is confident, run it twice and time them: second attempt must be shorter and cleaner.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Record</b> a 90-second voice note presenting your week: <b>three</b> things you <i>have done</i>, <b>two</b> things you <i>did</i> last week (with the time word), and <b>one</b> thing you <i>haven't finished yet</i>. Open with a signpost and close with "To sum up…".</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 6 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l6">
+    <div class="lesson-head">
+      <div class="lnum">06</div>
+      <div><span class="ttl">Phone &amp; Video Calls</span>
+      <span class="es">Llamadas, videollamadas y recados · Grammar: estilo indirecto (reported speech)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>open, manage and end a work call</b> — including bad audio and interruptions — <b>leave a clear voicemail</b>, and <b>pass on a message</b> using reported speech.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Do you prefer calls or messages at work? Why?</li>
+          <li>What is the worst thing that has ever happened to you on a video call?</li>
+          <li>Do you answer the phone in English at work? What is the hardest part?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="h3">A · Call phrases <span class="sm">— from "hello" to "talk soon"</span></div>
+      <ul class="phr">
+        <li><span class="en">Hi, this is Ana from Lumen Design.</span><span class="sp">Hola, habla Ana de Lumen Design. <b>(no: "I am Ana" al teléfono)</b></span></li>
+        <li><span class="en">Is this a good time? / Do you have five minutes?</span><span class="sp">¿Es buen momento? / ¿Tienes cinco minutos?</span></li>
+        <li><span class="en">Can you hear me OK? / You're breaking up.</span><span class="sp">¿Me escuchas bien? / Se te corta.</span></li>
+        <li><span class="en">Could you speak up a little? / Sorry, could you repeat that?</span><span class="sp">¿Puedes hablar más fuerte? / ¿Puedes repetirlo?</span></li>
+        <li><span class="en">Sorry — you go ahead. / Go ahead, I'm listening.</span><span class="sp">Perdón, sigue tú. / Adelante, te escucho.</span></li>
+        <li><span class="en">Let me share my screen. / Can you see my screen?</span><span class="sp">Voy a compartir pantalla. / ¿Ves mi pantalla?</span></li>
+        <li><span class="en">Can I put you on hold for a second?</span><span class="sp">¿Te puedo poner en espera un segundo?</span></li>
+        <li><span class="en">Can I call you back in ten? / I'll get back to you today.</span><span class="sp">¿Te llamo en diez? / Te contesto hoy.</span></li>
+        <li><span class="en">Let me take a message. / I'll pass that on.</span><span class="sp">Le tomo el mensaje. / Se lo paso.</span></li>
+        <li><span class="en">Great — thanks for your time. Talk soon.</span><span class="sp">Genial, gracias por tu tiempo. Hablamos.</span></li>
+      </ul>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · smoother call management</div>
+        "I'm afraid the line is quite poor — would you mind if I called you right back?" · "Just to make sure we're on the same page…" · "Sorry to interrupt, but could I jump in here?" · "Before we wrap up, could we quickly confirm the next steps?"
+      </div>
+
+      <div class="h3">B · The voicemail formula <span class="sm">— four beats, twenty seconds</span></div>
+      <div class="grid2">
+        <div class="cell"><span class="gh">1 · Who</span>"Hi, this is Ana Ríos from Lumen Design."</div>
+        <div class="cell"><span class="gh">2 · Why</span>"I'm calling about the invoice for March."</div>
+        <div class="cell"><span class="gh">3 · What you need</span>"Could you send me the updated version by Thursday?"</div>
+        <div class="cell"><span class="gh">4 · How to reach you</span>"You can reach me at 555-0142, any time before six. Thanks!"</div>
+      </div>
+      <p class="lead-sm">⚠ Say your <b>number slowly, twice</b>. Everything else can be repeated in an email; the number cannot.</p>
+
+      <div class="h3">C · Grammar — Reported speech <span class="sm">— saying what someone else said</span></div>
+      <p class="lead-sm">The rule of thumb: the verb takes <b>one step back</b> in time.</p>
+      <table class="tb">
+        <tr><th style="width:44%">Direct — what they said</th><th>Reported — what you tell your colleague</th></tr>
+        <tr><td>"I <b>am</b> busy."</td><td>He said (that) he <b>was</b> busy.</td></tr>
+        <tr><td>"I <b>'ll call</b> you back."</td><td>She said she <b>would call</b> me back.</td></tr>
+        <tr><td>"We <b>finished</b> the report."</td><td>They said they <b>had finished</b> the report.</td></tr>
+        <tr><td>"I <b>can't</b> hear you."</td><td>He said he <b>couldn't</b> hear me.</td></tr>
+        <tr><td>"<b>Are</b> you free at three?"</td><td>She asked <b>if</b> I <b>was</b> free at three.</td></tr>
+        <tr><td>"<b>What time is</b> the call?"</td><td>He asked <b>what time the call was</b>. <span class="sp">no "did", normal word order</span></td></tr>
+        <tr><td>"<b>Call</b> me tomorrow."</td><td>She <b>told me to call</b> her the next day.</td></tr>
+      </table>
+      <div class="grid2">
+        <div class="cell"><span class="gh">Words that shift</span>today → <b>that day</b> · tomorrow → <b>the next day</b> · yesterday → <b>the day before</b> · now → <b>then</b> · here → <b>there</b> · this → <b>that</b></div>
+        <div class="cell"><span class="gh">say vs. tell</span><span class="ok">He said (that) he was late.</span> <span class="ok">He told <b>me</b> he was late.</span><br><span class="x">He said me…</span> <span class="x">He told that…</span><br><i>tell</i> needs a person; <i>say</i> doesn't.</div>
+      </div>
+      <div class="cell" style="margin-top:10px"><span class="gh">⚠ No backshift needed</span>If it is <b>still true</b>, you can leave the present: <i>"He said he <b>lives</b> in Madrid."</i> Both forms are correct — <i>lived</i> is safer, <i>lives</i> is more natural.</div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · reporting verbs beyond <i>said</i></div>
+        Each verb carries the meaning, so you say more with less:<br>
+        <b>offer</b> + to do → "He <b>offered to send</b> the file." · <b>suggest</b> + -ing → "She <b>suggested moving</b> the call." · <b>promise</b> + to do → "They <b>promised to fix</b> it." · <b>complain</b> (that) → "He <b>complained that</b> nobody had answered." · <b>warn</b> someone + to → "She <b>warned us not to</b> reply." · <b>confirm</b> (that) → "They <b>confirmed that</b> the invoice had been paid."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Report it <span class="sm">— rewrite each line as reported speech</span></div>
+      <ol>
+        <li>"I'm in a meeting right now." (he) → ___</li>
+        <li>"We'll send the invoice on Friday." (they) → ___</li>
+        <li>"I can't join the call." (she) → ___</li>
+        <li>"Did you get my email?" (he asked) → ___</li>
+        <li>"The client called this morning." (she) → ___</li>
+        <li>"Where is the report?" (he asked) → ___</li>
+        <li>"Please call me back." (she asked me) → ___</li>
+        <li>"I've sent the file already." (he) → ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li>He said (that) he <b>was</b> in a meeting <b>then</b>.</li>
+          <li>They said (that) they <b>would send</b> the invoice on Friday.</li>
+          <li>She said (that) she <b>couldn't</b> join the call.</li>
+          <li>He asked <b>if / whether I had gotten</b> his email. <span class="alt">US: gotten · UK: got</span></li>
+          <li>She said (that) the client <b>had called</b> that morning.</li>
+          <li>He asked <b>where the report was</b>. <span class="alt">not "where was the report"</span></li>
+          <li>She <b>asked me to call</b> her back.</li>
+          <li>He said (that) he <b>had already sent</b> the file.</li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · "While You Were Out" <span class="sm">— read the voicemail, then fill in the message note</span></div>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Voicemail — Mr. Vega:</span> Hi, this is Martín Vega from Delta Foods. I'm calling about the order we placed on Monday. It hasn't arrived, and our restaurant opens on Saturday. Can someone call me back today? I'm at 555-0198. Thanks.</p>
+      </div>
+      <ol>
+        <li>Mr. Vega called ___ (when).</li>
+        <li>He said he ___ (call) about the order they ___ (place) on Monday.</li>
+        <li>He said it ___ (not arrive) yet.</li>
+        <li>He explained that their restaurant ___ (open) on Saturday.</li>
+        <li>He asked if someone ___ (can) call him back ___ (today).</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <ol>
+          <li>this morning / today <span class="alt">(any sensible time)</span></li>
+          <li>he <b>was calling</b> about the order they <b>had placed</b> on Monday</li>
+          <li>it <b>hadn't arrived</b> yet</li>
+          <li>their restaurant <b>opened / was opening / would open</b> on Saturday <span class="alt">all three are used; "was opening" is the most natural for a fixed plan</span></li>
+          <li>if someone <b>could</b> call him back <b>that day</b></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue 1 · a video call that isn't cooperating</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Ana:</span> Hi Toni, can you hear me OK?</p>
+        <p class="line"><span class="spk b">Toni:</span> Hi Ana — you're breaking up a little. Could you speak up?</p>
+        <p class="line"><span class="spk">Ana:</span> Is that better? Let me turn my camera off — the connection is poor today.</p>
+        <p class="line"><span class="spk b">Toni:</span> Much better. Is this still a good time for you?</p>
+        <p class="line"><span class="spk">Ana:</span> It is. Let me share my screen — can you see the invoice?</p>
+        <p class="line"><span class="spk b">Toni:</span> Sorry — you go ahead. Yes, I can see it now.</p>
+        <p class="line"><span class="spk">Ana:</span> Great. The client asked for a discount, so I need your approval before Friday.</p>
+        <p class="line"><span class="spk b">Toni:</span> Can I call you back in ten? I want to check the numbers first.</p>
+        <p class="line"><span class="spk">Ana:</span> Perfect. Thanks for your time — talk soon.</p>
+      </div>
+
+      <span class="btag" style="margin-top:16px">🎧 Model Dialogue 2 · the voicemail, and passing it on</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Voicemail — Toni:</span> Hi Ana, this is Toni. I'm calling about the Delta Foods order — it still hasn't arrived. Could you check with the supplier and call me back before six? I'm at 555-0142. Thanks.</p>
+        <p class="line"><span class="spk">Ana (to a colleague):</span> Toni <span class="tg">called</span> about Delta Foods. He <span class="tg">said the order still hadn't arrived</span>, and he <span class="tg">asked me to check</span> with the supplier. He also <span class="tg">asked if I could call him back</span> before six.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> Why does Ana turn her camera off?</p>
+        <p><span class="qn">Q2.</span> What does Ana need from Toni, and by when?</p>
+        <p><span class="qn">Q3.</span> In Dialogue 2, what exactly did Toni ask Ana to do?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>The connection is poor / she is breaking up — turning off video saves bandwidth.</li>
+          <li>His approval for the client's discount, before Friday.</li>
+          <li>Check with the supplier about the Delta Foods order, and call him back before six.</li>
+        </ol>
+      </div>
+      <div class="recap">
+        <div class="rh">Notice</div>
+        Dialogue 2 is the whole grammar point in three lines: the same information, once as <b>direct speech</b> (the voicemail) and once as <b>reported speech</b> (Ana telling a colleague). Play them back to back and have the student spot every change.
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Role-play — back to back.</b> Sit facing away from the student (or turn both cameras off). No lip-reading, no gestures — this is the point.</p>
+      <ul>
+        <li><b>Round 1 — the student calls.</b> They call the tutor to reschedule Thursday's meeting. They must open properly ("Hi, this is…"), say why, propose two new times, and close.</li>
+        <li><b>Round 2 — the tutor leaves a voicemail</b> (read it fast, once). The student writes the message down, then <b>reports it out loud</b>: "He said he… and he asked if…"</li>
+        <li><b>Round 3 (optional) — sabotage.</b> The tutor mumbles or talks over the student, who has to use the repair phrases: "Sorry, could you repeat that?" / "You're breaking up."</li>
+      </ul>
+      <div class="scaffold">
+        Hi, this is <span class="gap">name</span> from <span class="gap">company</span>. I'm calling about <span class="gap">topic</span>. Is this a good time? … Could we <span class="gap">request</span>? … You can reach me at <span class="gap">number</span>. Thanks — talk soon.
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Round 2 is the assessment. Listen for three things: <i>said</i> vs. <i>told me</i>, the backshift, and <i>asked if</i> (not "asked that"). Read the voicemail only once — asking "could you repeat that?" is a pass, not a failure.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Leave</b> a real 30-second voicemail (WhatsApp is fine) using the four beats: who → why → what you need → your number. Then <b>write</b> what you said as reported speech: "I said that I…, and I asked if…" Send both.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 7 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l7">
+    <div class="lesson-head">
+      <div class="lnum">07</div>
+      <div><span class="ttl">Numbers, Data &amp; Trends</span>
+      <span class="es">Cifras, gráficos y tendencias · Grammar: comparativos, superlativos y adverbios de grado</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>say numbers out loud correctly</b> and <b>describe what a chart shows</b> — what went up, what went down, by how much, and which one was the best.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>What numbers do you deal with at work — money, hours, clients, deadlines?</li>
+          <li>Read these out loud: <b>2026 · $1.5M · 40% · 3/4 · 0.75 · +12.3% · 555-0198</b></li>
+          <li>Is your industry going up or down this year? Why?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="h3">A · Saying numbers out loud <span class="sm">— the part nobody teaches</span></div>
+      <table class="tb">
+        <tr><th style="width:30%">Written</th><th>Said</th></tr>
+        <tr><td>0.75</td><td>"zero point seven five" <span class="sp">nunca "cero coma"</span></td></tr>
+        <tr><td>3/4 · 1/2 · 2/3</td><td>"three quarters" · "a half" · "two thirds"</td></tr>
+        <tr><td>40% · +12.3%</td><td>"forty percent" · "up twelve point three percent"</td></tr>
+        <tr><td>$250K · $1.5M · €1.4bn</td><td>"two hundred fifty thousand dollars" · "one point five million" · "one point four billion euros"</td></tr>
+        <tr><td>2026 · 1998</td><td>"twenty twenty-six" · "nineteen ninety-eight"</td></tr>
+        <tr><td>3/5/2026 🇺🇸</td><td>"March fifth, twenty twenty-six" <span class="sp">EE.UU. = mes/día/año</span></td></tr>
+        <tr><td>555-0198</td><td>"five five five, oh one nine eight" <span class="sp">0 = "oh" en teléfonos</span></td></tr>
+        <tr><td>Q1 · Q4 · FY26</td><td>"Q one" / "the first quarter" · "Q four" · "fiscal year twenty-six"</td></tr>
+      </table>
+      <div class="grid2">
+        <div class="cell"><span class="gh">Not exact? Say so.</span><span class="chip">roughly</span> <span class="chip">around</span> <span class="chip">about</span> <span class="chip">just over</span> <span class="chip">just under</span> <span class="chip">nearly</span> <span class="chip">approximately</span><br><i>"Roughly a third of our clients."</i></div>
+        <div class="cell"><span class="gh">⚠ Common slips</span><span class="x">the 40 percents</span> <span class="ok">forty percent</span><br><span class="x">two millions of dollars</span> <span class="ok">two million dollars</span><br><span class="x">in the 2026</span> <span class="ok">in 2026</span></div>
+      </div>
+
+      <div class="h3">B · Trend verbs <span class="sm">— what the line does</span></div>
+      <table class="tb">
+        <tr><th style="width:34%">Up ⬆</th><th>Down ⬇</th><th>Flat / other ➡</th></tr>
+        <tr><td>rise · increase · grow · go up · climb · double</td><td>fall · decrease · drop · go down · decline · halve</td><td>level off · remain stable · stay flat · fluctuate · peak</td></tr>
+        <tr><td colspan="3"><b>Noun forms:</b> a <b>rise</b> in sales · an <b>increase</b> of 10% · a sharp <b>drop</b> · a slight <b>decline</b> · a <b>peak</b> in December</td></tr>
+      </table>
+      <div class="cell" style="margin-top:8px"><span class="gh">The three prepositions — this is the exam trap</span>
+        rise <b>to</b> 240 <span class="sp">the destination</span> · rise <b>by</b> 30 <span class="sp">the difference</span> · a rise <b>in</b> sales <span class="sp">the topic</span> · <b>from</b> 120 <b>to</b> 240 <span class="sp">start and end</span>
+      </div>
+
+      <div class="h3">C · Grammar — Comparatives, superlatives &amp; degree</div>
+      <table class="tb">
+        <tr><th style="width:26%"></th><th>Comparative <span class="sp">two things</span></th><th>Superlative <span class="sp">the whole group</span></th></tr>
+        <tr><td><b>Short words</b></td><td>high<b>er than</b> · cheap<b>er than</b> · big<b>ger than</b></td><td><b>the</b> high<b>est</b> · <b>the</b> cheap<b>est</b> · <b>the</b> big<b>gest</b></td></tr>
+        <tr><td><b>Long words</b></td><td><b>more</b> expensive <b>than</b> · <b>more</b> efficient <b>than</b></td><td><b>the most</b> expensive · <b>the most</b> efficient</td></tr>
+        <tr><td><b>Irregular</b></td><td>good → <b>better than</b> · bad → <b>worse than</b></td><td><b>the best</b> · <b>the worst</b></td></tr>
+        <tr><td><b>Equal / not equal</b></td><td><b>as</b> high <b>as</b> · <b>not as</b> high <b>as</b> · <b>twice as</b> high <b>as</b></td><td>—</td></tr>
+      </table>
+      <p class="lead-sm">Then add the <b>size of the difference</b> — this is what makes you sound like a professional and not a table read aloud:</p>
+      <div class="grid2">
+        <div class="cell"><span class="gh">Degree + comparative</span><span class="chip">slightly</span> <span class="chip">a little</span> <span class="chip">much</span> <span class="chip">far</span> <span class="chip">significantly</span> + <i>higher / lower</i><br><i>"Q3 was slightly lower than Q2."</i> · <i>"Q4 was far higher than Q1."</i></div>
+        <div class="cell"><span class="gh">Verb + adverb</span>rose <b>sharply</b> · fell <b>slightly</b> · grew <b>steadily</b> · dropped <b>dramatically</b> · increased <b>gradually</b><br><i>"Sales rose sharply in Q2, then leveled off."</i></div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · analyst language</div>
+        "Revenue was <b>twice as high as</b> in Q1." · "That's <b>a 15% increase compared with</b> the same period last year." · "Sales, <b>which had fallen</b> in Q1, <b>recovered</b> by June." · "The drop was <b>largely due to</b> the supply delay." · "If the trend <b>continues</b>, we'll break even by Q2." · "<b>Having peaked</b> in December, demand fell back sharply."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Read them out loud <span class="sm">— speaking only, don't write</span></div>
+      <ol>
+        <li>$1.5M</li>
+        <li>0.25</li>
+        <li>Q3 2025</li>
+        <li>+8.7%</li>
+        <li>2/3 of our clients</li>
+        <li>March 9, 2026</li>
+        <li>555-0104</li>
+        <li>€340,000</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1 — the spoken form</div>
+        <ol>
+          <li>"one point five million dollars"</li>
+          <li>"zero point two five" <span class="alt">(also: a quarter)</span></li>
+          <li>"the third quarter of twenty twenty-five" <span class="alt">(or "Q three")</span></li>
+          <li>"up eight point seven percent"</li>
+          <li>"two thirds of our clients"</li>
+          <li>"March ninth, twenty twenty-six"</li>
+          <li>"five five five, oh one oh four"</li>
+          <li>"three hundred forty thousand euros"</li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · The chart <span class="sm">— Lumen Design, revenue by quarter (thousands of dollars)</span></div>
+      <div class="chartbox">
+        <div class="cap">Revenue by quarter · 2025 · $K</div>
+        <svg viewBox="0 0 560 250" role="img" aria-label="Bar chart: Q1 120, Q2 210, Q3 195, Q4 240 thousand dollars">
+          <line x1="30" y1="210" x2="530" y2="210" stroke="#dbe2ef" stroke-width="2"/>
+          <rect x="60"  y="125" width="70" height="85"  rx="4" fill="#0a8ea6"/>
+          <rect x="180" y="61"  width="70" height="149" rx="4" fill="#6d3ff0"/>
+          <rect x="300" y="72"  width="70" height="138" rx="4" fill="#c31f8f"/>
+          <rect x="420" y="40"  width="70" height="170" rx="4" fill="#158a52"/>
+          <text class="barvalue" x="95"  y="116" text-anchor="middle">120</text>
+          <text class="barvalue" x="215" y="52"  text-anchor="middle">210</text>
+          <text class="barvalue" x="335" y="63"  text-anchor="middle">195</text>
+          <text class="barvalue" x="455" y="31"  text-anchor="middle">240</text>
+          <text class="barlabel" x="95"  y="232" text-anchor="middle">Q1</text>
+          <text class="barlabel" x="215" y="232" text-anchor="middle">Q2</text>
+          <text class="barlabel" x="335" y="232" text-anchor="middle">Q3</text>
+          <text class="barlabel" x="455" y="232" text-anchor="middle">Q4</text>
+        </svg>
+      </div>
+      <p class="lead-sm">Complete the sentences about the chart:</p>
+      <ol>
+        <li>Revenue rose ___ (sharply / slightly) ___ Q1 ___ Q2.</li>
+        <li>In Q2 it went up ___ 90, ___ 210.</li>
+        <li>In Q3 it fell ___ (sharply / slightly) — a drop ___ 15.</li>
+        <li>Q4 was the ___ (high) quarter of the year.</li>
+        <li>Q4 was exactly ___ as high ___ Q1.</li>
+        <li>Q3 was ___ (a little / much) lower than Q2.</li>
+        <li>Q1 was the ___ (bad) quarter, but it was still ___ (good) than the same quarter in 2024.</li>
+        <li>Overall, revenue ___ (grow) steadily across the year.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <ol>
+          <li>rose <b>sharply</b> <b>from</b> Q1 <b>to</b> Q2</li>
+          <li>went up <b>by</b> 90, <b>to</b> 210</li>
+          <li>fell <b>slightly</b> — a drop <b>of</b> 15</li>
+          <li>the <b>highest</b> quarter</li>
+          <li>exactly <b>twice</b> as high <b>as</b> Q1 <span class="alt">(240 = 2 × 120)</span></li>
+          <li><b>a little</b> lower than Q2 <span class="alt">(15 out of 210 — "much" would be wrong)</span></li>
+          <li>the <b>worst</b> quarter, but still <b>better</b> than…</li>
+          <li>revenue <b>grew</b> steadily <span class="alt">(also: has grown — the year is closed, so past simple is better)</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue · the quarterly numbers</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Ana:</span> OK, this slide shows revenue by quarter. As you can see, we started the year at <span class="tg">a hundred and twenty thousand</span>.</p>
+        <p class="line"><span class="spk b">Toni:</span> That was our weakest quarter, right?</p>
+        <p class="line"><span class="spk">Ana:</span> It was the <span class="tg">worst</span> of the year. Then revenue <span class="tg">rose sharply</span> in Q2 — up <span class="tg">by ninety</span>, <span class="tg">to two hundred and ten</span>.</p>
+        <p class="line"><span class="spk b">Toni:</span> And then it dropped?</p>
+        <p class="line"><span class="spk">Ana:</span> Only <span class="tg">slightly</span> — a drop <span class="tg">of fifteen</span>. Q3 was <span class="tg">a little lower than</span> Q2, nothing dramatic.</p>
+        <p class="line"><span class="spk b">Toni:</span> Sorry — by how much, exactly?</p>
+        <p class="line"><span class="spk">Ana:</span> Fifteen thousand, so around seven percent. And Q4 was our <span class="tg">strongest</span> quarter — <span class="tg">twice as high as</span> Q1.</p>
+        <p class="line"><span class="spk b">Toni:</span> So the year ended well.</p>
+        <p class="line"><span class="spk">Ana:</span> It did. Revenue <span class="tg">grew steadily</span> overall, and the key takeaway is simple: Q2 and Q4 carried the year.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> Which was the best quarter, and which was the worst?</p>
+        <p><span class="qn">Q2.</span> How big was the drop in Q3 — in numbers and in percent?</p>
+        <p><span class="qn">Q3.</span> What is the difference between "up <b>by</b> ninety" and "up <b>to</b> two hundred and ten"?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>Best: Q4 (240). Worst: Q1 (120).</li>
+          <li>A drop of 15 (thousand), about 7%.</li>
+          <li><b>by</b> = the size of the change (+90). <b>to</b> = the number it reached (210).</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Role-play — present the chart.</b> Two rounds:</p>
+      <ul>
+        <li><b>Round 1:</b> the student presents the chart above, from memory, without reading the sentences. Required: one comparative, one superlative, two degree words, and one <i>by / to</i> pair.</li>
+        <li><b>Round 2:</b> the tutor draws a new four-bar chart on paper (e.g. 300 · 280 · 150 · 340 — a crash and a recovery) and the student describes it cold.</li>
+      </ul>
+      <p class="lead-sm">Frame to lean on:</p>
+      <div class="scaffold">
+        This slide shows <span class="gap">what</span> by <span class="gap">period</span>. We started at <span class="gap">number</span>. In <span class="gap">period</span> it <span class="gap">verb + adverb</span>, up by <span class="gap">number</span> to <span class="gap">number</span>. <span class="gap">Period</span> was the <span class="gap">superlative</span> — <span class="gap">degree</span> higher than <span class="gap">period</span>. The key takeaway is <span class="gap">idea</span>.
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Interrupt at least once with <i>"Sorry — by how much?"</i> That single question forces the <b>by / to</b> distinction under pressure, which is the whole grammar point. Second most common error: "the more high quarter" — drill <i>higher / the highest</i> in isolation if it appears.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework</span>
+      <div class="hw"><b>Find</b> one real number about your job, your company or your city (revenue, prices, population, rent — anything you can check). <b>Write</b> five sentences comparing it to last year, using at least one superlative, one degree adverb, and one <i>rose/fell by … to …</i>.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 8 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l8">
+    <div class="lesson-head">
+      <div class="lnum">08</div>
+      <div><span class="ttl">Problems, Complaints &amp; Apologies</span>
+      <span class="es">Quejas, disculpas y soluciones · Grammar: segundo condicional + distancia diplomática</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>receive a complaint</b>, <b>apologize professionally</b> without over-apologizing, <b>propose options</b> using the second conditional, and <b>agree on a fix</b> — in speech and in writing.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Tell me about a company that handled a problem <b>well</b> — what did they actually say?</li>
+          <li>And one that handled it badly. What was missing?</li>
+          <li>Is it easier to complain, or to receive a complaint? Why?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="h3">A · The four-step repair <span class="sm">— always in this order</span></div>
+      <table class="tb">
+        <tr><th style="width:22%">Step</th><th>What you say</th></tr>
+        <tr><td><b>1 · Acknowledge</b> <span class="sp">reconocer</span></td><td>I'm sorry to hear that. · I completely understand. · That's frustrating — let me look into it.</td></tr>
+        <tr><td><b>2 · Apologize</b> <span class="sp">disculparse</span></td><td>I apologize for the delay. · That shouldn't have happened. · That's on us.</td></tr>
+        <tr><td><b>3 · Explain</b> <span class="sp">explicar, sin excusas</span></td><td>The shipment was held at customs. · There was a mistake on our end. <span class="sp">un dato, no una excusa larga</span></td></tr>
+        <tr><td><b>4 · Offer</b> <span class="sp">ofrecer solución</span></td><td>What I can do is… · Would it help if we…? · If we sent a replacement today, would that work?</td></tr>
+      </table>
+      <div class="cell" style="margin-top:8px"><span class="gh">⚠ Register trap</span>
+        <i>Sorry, sorry, so sorry</i> is not professional — it sounds nervous and it doesn't fix anything. <b>One clear apology + a plan</b> beats five apologies. Say sorry once, then move to step 4.
+      </div>
+
+      <div class="h3">B · Key vocabulary <span class="sm">— when things go wrong</span></div>
+      <table class="tb">
+        <tr><th style="width:36%">English</th><th>Español</th></tr>
+        <tr><td>a delay</td><td>un retraso</td></tr>
+        <tr><td>a defect / a faulty item</td><td>un defecto / un artículo defectuoso</td></tr>
+        <tr><td>a refund</td><td>un reembolso</td></tr>
+        <tr><td>a replacement</td><td>un reemplazo</td></tr>
+        <tr><td>a discount / a credit</td><td>un descuento / un crédito a favor</td></tr>
+        <tr><td>the inconvenience</td><td>las molestias</td></tr>
+        <tr><td>a misunderstanding</td><td>un malentendido</td></tr>
+        <tr><td>to escalate (to a manager)</td><td>escalar / derivar a un superior</td></tr>
+        <tr><td>to follow up</td><td>dar seguimiento</td></tr>
+        <tr><td>to make it right</td><td>compensarlo / arreglarlo</td></tr>
+        <tr><td>a workaround</td><td>una solución provisional</td></tr>
+        <tr><td>on our end / on your end</td><td>de nuestro lado / de tu lado</td></tr>
+      </table>
+
+      <div class="h3">C · Grammar — Second conditional <span class="sm">— the polite way to offer and to say no</span></div>
+      <table class="tb">
+        <tr><th style="width:30%">Structure</th><th>Example</th></tr>
+        <tr><td><code>If</code> + past simple, <code>would</code> + verb</td><td><b>If we offered</b> a discount, <b>would</b> that <b>work</b> for you?</td></tr>
+        <tr><td>Question order flipped</td><td><b>Would</b> it <b>help if</b> we sent a replacement today?</td></tr>
+        <tr><td><code>If I were you…</code> <span class="sp">siempre "were"</span></td><td><b>If I were you</b>, <b>I'd</b> wait for the new batch.</td></tr>
+        <tr><td>Soft refusal</td><td><b>That would be difficult</b>, but what I <b>can</b> do is…</td></tr>
+      </table>
+      <p class="lead-sm">Why the past tense? Because in English, <b>distance in time = distance in pressure</b>. The second conditional turns an offer into a possibility the client can refuse without a fight — that is exactly what you want in a complaint.</p>
+      <div class="grid2">
+        <div class="cell"><span class="gh">Direct 😬 → Diplomatic 🙂</span><span class="x">You have to wait.</span> <span class="ok">Would it be possible to wait until Friday?</span><br><span class="x">No, we can't.</span> <span class="ok">That would be difficult, but…</span><br><span class="x">That's not our problem.</span> <span class="ok">That's outside what my team handles — here's who can help.</span></div>
+        <div class="cell"><span class="gh">1st vs. 2nd conditional</span><b>1st</b> (real, likely): <i>If you send it today, we'll refund you.</i><br><b>2nd</b> (hypothetical, softer): <i>If you sent it today, we'd refund you.</i><br>Same offer — the second one gives the client room.</div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · third conditional &amp; regret</div>
+        For what already went wrong and can't be changed: "<b>If we had known</b> about the customs issue, <b>we would have shipped</b> it earlier." · "We <b>should have flagged</b> this sooner." · "I <b>wish</b> we <b>had caught</b> it in testing." · "<b>Had we been</b> informed, we would have acted." <span class="sp">— muy formal, para emails de escalamiento</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Make it diplomatic <span class="sm">— rewrite each line for a client</span></div>
+      <ol>
+        <li>"That's not our problem."</li>
+        <li>"You didn't read the contract."</li>
+        <li>"No, we can't give you a refund."</li>
+        <li>"Calm down."</li>
+        <li>"I don't know."</li>
+        <li>"You have to wait until next week."</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1 — sample answers (accept any that keep the meaning and soften it)</div>
+        <ol>
+          <li>"That's outside what my team handles, but let me put you in touch with the right person."</li>
+          <li>"I can see where the confusion came from — the contract covers this in section 4. Let me walk you through it."</li>
+          <li>"A full refund would be difficult at this stage, but what I can do is offer a replacement or a credit."</li>
+          <li>"I completely understand — this is frustrating. Let me see what I can do right now."</li>
+          <li>"That's a good question — let me check and get back to you today."</li>
+          <li>"The earliest we could have it ready is next week. Would that work, or would a partial delivery help?"</li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Second conditional <span class="sm">— complete the sentence</span></div>
+      <ol>
+        <li>If we ___ (send) a replacement today, ___ that ___ (work) for you?</li>
+        <li>If I ___ (be) you, I ___ (wait) for the new version.</li>
+        <li>___ it ___ (help) if we ___ (extend) the deadline by a week?</li>
+        <li>If you ___ (order) before Friday, we ___ (cover) the shipping.</li>
+        <li>We ___ (offer) a full refund if the item ___ (be) faulty — but it isn't.</li>
+        <li>If the delay ___ (continue), what ___ you ___ (need) from us?</li>
+        <li>If we ___ (not have) the supply problem, the order ___ (arrive) on Monday.</li>
+        <li>I ___ (escalate) this to my manager if you ___ (prefer).</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <ol>
+          <li>If we <b>sent</b> a replacement today, <b>would</b> that <b>work</b> for you?</li>
+          <li>If I <b>were</b> you, I <b>would wait</b> <span class="alt">("was" is heard, but teach "were")</span></li>
+          <li><b>Would</b> it <b>help</b> if we <b>extended</b> the deadline by a week?</li>
+          <li>If you <b>ordered</b> before Friday, we <b>would cover</b> the shipping.</li>
+          <li>We <b>would offer</b> a full refund if the item <b>were / was</b> faulty</li>
+          <li>If the delay <b>continued</b>, what <b>would</b> you <b>need</b> from us?</li>
+          <li>If we <b>didn't have</b> the supply problem, the order <b>would arrive</b> on Monday</li>
+          <li>I <b>would escalate</b> this to my manager if you <b>preferred</b> <span class="alt">(also 1st conditional: "I'll escalate… if you prefer" — more direct, also fine)</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Model Dialogue · the late shipment</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Toni (client):</span> I placed that order two weeks ago and it still hasn't arrived. We open on Saturday. This is a serious problem for us.</p>
+        <p class="line"><span class="spk">Ana (support):</span> <span class="tg">I'm sorry to hear that</span>, and I completely understand — with Saturday coming, that's stressful.</p>
+        <p class="line"><span class="spk b">Toni:</span> So what happened?</p>
+        <p class="line"><span class="spk">Ana:</span> <span class="tg">I apologize for the delay</span>. The shipment was held at customs on Tuesday. <span class="tg">That shouldn't have happened</span>, and it's on us — we should have flagged it sooner.</p>
+        <p class="line"><span class="spk b">Toni:</span> Fine, but I need the order.</p>
+        <p class="line"><span class="spk">Ana:</span> Of course. <span class="tg">If we sent a replacement from our local warehouse today</span>, it <span class="tg">would reach you</span> Thursday. <span class="tg">Would that work</span> for you?</p>
+        <p class="line"><span class="spk b">Toni:</span> Thursday is tight. What else can you do?</p>
+        <p class="line"><span class="spk">Ana:</span> <span class="tg">Would it help if</span> we split it — the essentials tomorrow morning, the rest on Thursday? And I'd take twenty percent off this order.</p>
+        <p class="line"><span class="spk b">Toni:</span> That works. Send the essentials first.</p>
+        <p class="line"><span class="spk">Ana:</span> Done. I'll email the confirmation within the hour, and I'll follow up on Thursday myself. Again, I'm sorry for the trouble.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> What went wrong, and whose fault is it?</p>
+        <p><span class="qn">Q2.</span> Ana offers two options. What are they, and which does Toni accept?</p>
+        <p><span class="qn">Q3.</span> Find the four steps in Ana's lines. How many times does she apologize?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>The shipment was held at customs on Tuesday; Ana takes responsibility ("it's on us") because nobody warned the client.</li>
+          <li>(a) A replacement from the local warehouse arriving Thursday; (b) a split delivery — essentials tomorrow, the rest Thursday, plus 20% off. Toni takes (b).</li>
+          <li>Acknowledge → apologize → explain (customs) → offer. She apologizes <b>twice</b>: once at the start, once at the close — and never in between, because between them she is solving the problem.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Role-play — the card swap.</b> Run it twice, switching sides. The situation: a client ordered 200 branded mugs for an event on Saturday; 80 arrived, and the logo is the wrong color.</p>
+      <ul>
+        <li><b>Round 1 — the student is support.</b> They must hit all four steps and offer at least two options as second conditionals.</li>
+        <li><b>Round 2 — the student is the angry client.</b> They must complain clearly and firmly <i>without</i> insults: "I'm calling about…", "This is the second time…", "What I need is…"</li>
+      </ul>
+      <div class="scaffold">
+        I'm sorry to hear that — <span class="gap">acknowledge</span>. I apologize for <span class="gap">problem</span>; that shouldn't have happened. What happened is <span class="gap">short explanation</span>. If we <span class="gap">past simple option</span>, would that <span class="gap">work / help</span>? Or, if you preferred, we could <span class="gap">option 2</span>.
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Score two things only, and tell the student in advance: (1) did they <b>acknowledge before explaining</b>? (2) did they <b>offer an option</b> rather than just apologize? Most learners jump straight to the explanation, which reads as an excuse. In Round 2, if the student is too polite to complain, push: "You're the customer — you're allowed to be annoyed."</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Homework · course finale</span>
+      <div class="hw"><b>Write</b> the email version of today's call (8–10 sentences): a client's order arrived late and incomplete. Use all four steps and at least one second conditional. Start from this scaffold and replace every gap:
+        <div class="scaffold" style="margin-top:10px">
+          Dear <span class="gap">name</span>,<br>
+          Thank you for letting me know about <span class="gap">problem</span>. <span class="gap">acknowledge</span>, and I apologize for <span class="gap">the delay / the error</span>.<br>
+          <span class="gap">one-line explanation</span>. <span class="gap">what you are doing about it now</span>.<br>
+          If we <span class="gap">option 1</span>, would that work for you? Alternatively, we could <span class="gap">option 2</span>.<br>
+          I'll follow up <span class="gap">when</span> to confirm. Again, I'm sorry for the inconvenience.<br>
+          Best regards,<br>
+          <span class="gap">your name</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="recap">
+    <div class="rh">Part 2 · complete</div>
+    Across eight lessons the student has gone from <i>introducing themselves</i> to <i>presenting, calling, reporting numbers and repairing a relationship</i> — with eight grammar systems attached to real tasks rather than to a syllabus. Natural next steps: <b>Interviews &amp; Career Moves</b> (STAR answers, salary conversations) or a written <b>Reports &amp; Proposals</b> unit.
+  </div>
+
+</div>
+
+<footer>
+  <b>ENGLISH for ALL</b><br>
+  Business English · Part 2 · B1 core · ⭐ B2 stretch · lessons 05–08 · Rank Up sidequest
+</footer>
+
+<script>
+  function setView(mode){
+    document.body.classList.remove('teacher','student');
+    document.body.classList.add(mode);
+    var t = document.getElementById('btnTeacher'), s = document.getElementById('btnStudent');
+    t.classList.toggle('on', mode==='teacher');
+    s.classList.toggle('on', mode==='student');
+    document.getElementById('viewNote').textContent = (mode==='teacher')
+      ? 'Answer keys & teacher notes are visible.'
+      : 'Student handout — keys & teacher notes are hidden.';
+  }
+</script>
+</body>
+</html>
