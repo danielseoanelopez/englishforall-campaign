@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English for All · Travel &amp; Living Part 2 (B1 core · B2 stretch)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon-rankup.png">
+<link rel="apple-touch-icon" href="icon-rankup.png">
+<meta name="description" content="Travel &amp; Living Parte 2 (4 lecciones, estilo PPP): alquilar un departamento, banco y trámites, salud y emergencias, y adaptarte a vivir en otro país. Nivel B1 con extensión B2. English for All · Rank Up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/travel-living-b1b2-course-2.html">
+<meta property="og:title" content="Travel &amp; Living — Part 2 (B1 · B2 stretch)">
+<meta property="og:description" content="Inglés real para quedarte a vivir: alquilar, abrir una cuenta, ir a la farmacia y adaptarte. 4 lecciones PPP con respuestas. English for All — Rank Up.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<meta property="og:site_name" content="English for All">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cyan:#0a8ea6; --magenta:#c31f8f; --purple:#6d3ff0; --gold:#b5791a; --green:#158a52; --red:#c0392b;
+    --ink:#1c2230; --soft:#54607a; --line:#dbe2ef; --bg:#f4f6fb; --card:#ffffff;
+    --stretch-bg:#f6f1ff; --key-bg:#eefaf2; --warm-bg:#fff8ec;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.62; font-size:16.5px; padding:0 0 80px;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px;}
+  a{color:var(--cyan);}
+
+  /* ---- Top toolbar ---- */
+  .toolbar{position:sticky; top:0; z-index:40; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:center;
+    background:rgba(244,246,251,0.92); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+    padding:10px 14px; border-bottom:1px solid var(--line);}
+  .toolbar .tt{font-family:"Share Tech Mono",monospace; font-size:0.82rem; color:var(--soft); letter-spacing:1px;}
+  .tbtn{font-family:"Share Tech Mono",monospace; font-size:0.82rem; border:1.5px solid var(--purple); color:var(--purple);
+    background:#fff; border-radius:9px; padding:8px 14px; cursor:pointer; letter-spacing:1px; transition:.15s; white-space:nowrap;}
+  .tbtn:hover{background:#f0eaff;}
+  .tbtn.on{background:#6d2fd0; color:#fff;}
+  .tbtn.print{border-color:var(--cyan); color:#06657a;}
+  .tbtn.print:hover{background:#e6f6f9;}
+  .viewnote{font-family:"Share Tech Mono",monospace; font-size:0.72rem; color:var(--soft);}
+
+  /* ---- Cover ---- */
+  .cover{background:var(--card); border:1px solid var(--line); border-top:6px solid var(--purple);
+    border-radius:16px; padding:30px 30px 26px; margin:26px 0 22px; box-shadow:0 6px 24px #1c223010;}
+  .kicker{font-family:"Press Start 2P",monospace; font-size:0.56rem; letter-spacing:2px; color:var(--magenta);}
+  .cover h1{font-family:"Press Start 2P",monospace; font-size:clamp(1.05rem,3.6vw,1.7rem); line-height:1.5; color:var(--purple); margin:14px 0 10px;}
+  .cover .lead{font-size:1.02rem; color:var(--soft); max-width:60ch;}
+  .badges{display:flex; flex-wrap:wrap; gap:9px; margin:18px 0 6px;}
+  .badge{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; padding:6px 12px; border-radius:20px; border:1.5px solid var(--line); color:var(--ink); background:#fbfcff;}
+  .badge b{color:var(--cyan);}
+  .badge.b1{border-color:var(--cyan); background:#e9f7fa;}
+  .badge.b2{border-color:var(--purple); background:var(--stretch-bg);}
+
+  h2.sec{font-family:"Press Start 2P",monospace; font-size:0.72rem; letter-spacing:1px; color:var(--ink); margin:26px 2px 12px; line-height:1.6;}
+
+  /* ---- Legend / map grids ---- */
+  .legend{display:grid; grid-template-columns:1fr; gap:8px; margin-top:8px;}
+  @media(min-width:640px){ .legend{grid-template-columns:1fr 1fr;} }
+  .leg{display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:10px; padding:9px 12px; background:#fbfcff;}
+  .leg .em{font-size:1.05rem; line-height:1.4;}
+  .leg .lx b{display:block; font-size:0.92rem;}
+  .leg .lx span{font-size:0.84rem; color:var(--soft);}
+
+  .maptable{width:100%; border-collapse:collapse; margin-top:8px; font-size:0.93rem; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .maptable th{background:#f0eefb; text-align:left; padding:10px 12px; font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--soft); border-bottom:1px solid var(--line);}
+  .maptable td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .maptable tr:last-child td{border-bottom:none;}
+  .maptable .ln{font-family:"Press Start 2P",monospace; font-size:0.6rem; color:var(--magenta);}
+
+  /* ---- Lesson blocks ---- */
+  .lesson{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:6px 26px 26px; margin:20px 0; box-shadow:0 4px 18px #1c22300d;}
+  .lesson-head{display:flex; align-items:center; gap:14px; margin:22px 0 6px; padding-bottom:14px; border-bottom:2px solid var(--line);}
+  .lnum{flex-shrink:0; width:52px; height:52px; border-radius:12px; background:var(--purple); color:#fff; font-family:"Press Start 2P",monospace; font-size:0.86rem; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px #6d3ff044;}
+  .lesson.l2 .lnum{background:var(--magenta);} .lesson.l3 .lnum{background:var(--cyan);} .lesson.l4 .lnum{background:var(--green);}
+  .lesson-head .ttl{font-family:"Press Start 2P",monospace; font-size:0.86rem; line-height:1.5; color:var(--ink);}
+  .lesson-head .es{display:block; font-family:"Share Tech Mono",monospace; font-size:0.8rem; color:var(--soft); margin-top:7px; letter-spacing:.5px;}
+
+  .block{margin-top:20px;}
+  .btag{display:inline-flex; align-items:center; gap:8px; font-family:"Share Tech Mono",monospace; font-size:0.82rem; letter-spacing:1px; text-transform:uppercase; color:var(--soft); border-bottom:1px dashed var(--line); padding-bottom:5px; margin-bottom:10px; width:100%;}
+  .btag .min{margin-left:auto; color:var(--cyan); text-transform:none; font-size:0.78rem;}
+
+  .objective{background:#eefaf6; border:1px solid #bfe6d5; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; font-size:0.98rem;}
+  .objective b{color:var(--green);}
+  .warmup{background:var(--warm-bg); border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px;}
+
+  p{margin:8px 0;}
+  ul, ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
+  .lead-sm{color:var(--soft); font-size:0.95rem;}
+  code, .chip{font-family:"Share Tech Mono",monospace;}
+  .chip{display:inline-block; background:#eaf6f9; color:var(--cyan); border:1px solid #bfe6ee; border-radius:6px; padding:1px 7px; font-size:0.9em;}
+  .ok{color:var(--green); font-weight:600;} .x{color:var(--red); text-decoration:line-through;}
+  .h3{font-weight:700; color:var(--ink); margin:14px 0 4px; font-size:1rem;}
+  .h3 .sm{font-weight:400; color:var(--soft); font-size:0.85rem;}
+
+  /* phrase lists */
+  .phr{list-style:none; margin:6px 0 6px; padding:0;}
+  .phr li{padding:6px 0; border-bottom:1px dashed var(--line);}
+  .phr li:last-child{border-bottom:none;}
+  .phr .en{color:var(--ink);} .phr .sp{color:var(--soft); font-size:0.86rem; display:block;}
+
+  /* glossary / table grids */
+  .grid2{display:grid; grid-template-columns:1fr; gap:10px; margin:8px 0;}
+  @media(min-width:640px){ .grid2{grid-template-columns:1fr 1fr;} }
+  .cell{border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:#fbfcff;}
+  .cell .gh{display:block; font-family:"Share Tech Mono",monospace; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:6px;}
+  .cell code{color:var(--cyan);}
+  .cell .sp{color:var(--soft); font-style:italic;}
+  .cell .sp::before{content:" — "; font-style:normal;}
+  .vgrid{list-style:none; margin:8px 0 0; padding:0;}
+  .vgrid li{padding:5px 2px; border-bottom:1px dotted var(--line); font-size:0.9rem; line-height:1.45;}
+  .vgrid li:last-child{border-bottom:none;}
+  .vgrid .en{color:var(--ink);}
+
+  table.tb{width:100%; border-collapse:collapse; margin:8px 0; font-size:0.93rem;}
+  table.tb th, table.tb td{border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top;}
+  table.tb th{background:#f3f1fb; font-family:"Share Tech Mono",monospace; font-size:0.76rem; letter-spacing:1px; color:var(--soft);}
+  table.tb td .sp{color:var(--soft); font-size:0.85rem;}
+
+  /* B2 stretch */
+  .stretch{background:var(--stretch-bg); border:1px solid #d9c9ff; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .stretch .st-h{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:6px;}
+  .stretch .st-h::before{content:"";display:inline-block;width:.7em;height:.7em;vertical-align:.05em;background-color:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z'/%3E%3C/svg%3E") no-repeat center/contain;}
+
+  /* listening dialogue */
+  .dialogue{border:1px solid var(--line); border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px; background:#fbfdff;}
+  .dialogue .line{margin:5px 0;}
+  .dialogue .spk{font-weight:700; color:var(--cyan);}
+  .dialogue .spk.b{color:var(--magenta);}
+  .dialogue .tg{background:#fff3d6; border-radius:4px; padding:0 4px;}
+  .qs{margin:10px 0 0 0;}
+  .qs .qn{font-weight:700; color:var(--purple); margin-right:6px;}
+
+  /* answer key */
+  .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
+  .key .kh::before{content:"";display:inline-block;width:1em;height:1em;vertical-align:-.15em;background-color:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16m-1.3 11.9L6.9 12l1.5-1.5 2.3 2.3 4.9-4.9L17.1 9.4z'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16m-1.3 11.9L6.9 12l1.5-1.5 2.3 2.3 4.9-4.9L17.1 9.4z'/%3E%3C/svg%3E") no-repeat center/contain;}
+  .key ol{margin:4px 0 0 20px;} .key li{margin:3px 0;}
+  .key .alt{color:var(--soft); font-size:0.86rem;}
+
+  /* teacher-only note */
+  .tnote{background:#fff5f8; border:1px dashed var(--magenta); border-radius:10px; padding:10px 14px; margin:12px 0; font-size:0.92rem; color:#7a2d55;}
+  .tnote b{color:var(--magenta);}
+
+  /* scaffold (gapped model) */
+  .scaffold{background:#fbfaff; border:1px solid #e0d8f5; border-radius:10px; padding:12px 16px; font-family:"Share Tech Mono",monospace; font-size:0.95rem; line-height:1.9;}
+  .gap{display:inline-block; min-width:64px; border-bottom:1.5px solid var(--gold); color:var(--gold); text-align:center;}
+  .hw{background:#fff8ec; border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px; margin-top:8px;}
+  .hw b{color:var(--gold);}
+
+  /* view toggling */
+  body.student .key, body.student .tnote{display:none !important;}
+
+  footer{max-width:900px; margin:34px auto 0; padding:16px 20px; text-align:center; color:var(--soft); font-size:0.85rem; border-top:1px solid var(--line);}
+  footer b{font-family:"Press Start 2P",monospace; font-size:0.62rem; color:var(--purple); letter-spacing:1px;}
+
+  @media print{
+    body{background:#fff; font-size:11.5pt; padding:0;}
+    .toolbar{display:none;}
+    .lesson, .cover{box-shadow:none; border-color:#ccc; break-inside:avoid;}
+    .lesson{break-before:page;}
+    .cover{break-before:avoid;}
+    a{color:var(--ink); text-decoration:none;}
+  }
+
+/* == EFA ICONS (generated) == */
+/* ===== EFA icon set — self-hosted SVG masks, tinted with currentColor ===== */
+ico-apple,ico-ban,ico-bolt,ico-book,ico-bookmark,ico-bookopen,ico-box,ico-brain,ico-briefcase,ico-bulb,ico-cake,ico-calendar,ico-cap,ico-chair,ico-check,ico-child,ico-circlecheck,ico-circleq,ico-city,ico-clapper,ico-clipboard,ico-clock,ico-clone,ico-commentdots,ico-comments,ico-crown,ico-download,ico-dumbbell,ico-envelope,ico-eye,ico-eyeslash,ico-feather,ico-file,ico-filepen,ico-fire,ico-flag,ico-gamepad,ico-ghost,ico-hand,ico-handshake,ico-headphones,ico-heart,ico-heartopen,ico-hotel,ico-house,ico-image,ico-key,ico-link,ico-listol,ico-locationdot,ico-lock,ico-mic,ico-mobile,ico-mug,ico-music,ico-mute,ico-palette,ico-paw,ico-pen,ico-pencil,ico-people,ico-phone,ico-pin,ico-plane,ico-play,ico-pointer,ico-print,ico-puzzle,ico-question,ico-recycle,ico-rocket,ico-rotate,ico-save,ico-search,ico-shuffle,ico-skull,ico-spell,ico-sqcheck,ico-square,ico-star,ico-stopwatch,ico-suitcase,ico-target,ico-thumbdown,ico-thumbup,ico-trophy,ico-umbrella,ico-user,ico-utensils,ico-volume,ico-warn,ico-window,ico-xmark{display:inline-block;flex:none;width:1em;height:1em;vertical-align:-.125em;margin-right:.35em;background-color:currentColor;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:100% 100%;mask-size:100% 100%}
+ico-apple{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%206c1.5-2%203.5-2.4%205-2%20.4%201.6%200%203.6-2%205%202.5.3%204%202.4%204%205%200%203.4-2.6%208-5%208-.8%200-1.4-.4-2-.4s-1.2.4-2%20.4c-2.4%200-5-4.6-5-8%200-2.8%201.7-5%204.5-5%20.9%200%201.8.4%202.5%201M12%202c.6%201%20.6%202%200%203.5C11.4%204%2011.4%203%2012%202'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%206c1.5-2%203.5-2.4%205-2%20.4%201.6%200%203.6-2%205%202.5.3%204%202.4%204%205%200%203.4-2.6%208-5%208-.8%200-1.4-.4-2-.4s-1.2.4-2%20.4c-2.4%200-5-4.6-5-8%200-2.8%201.7-5%204.5-5%20.9%200%201.8.4%202.5%201M12%202c.6%201%20.6%202%200%203.5C11.4%204%2011.4%203%2012%202'/%3E%3C/svg%3E")}
+ico-ban{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%200%201%204.9%201.7L5.7%2016.9A8%208%200%200%201%2012%204m6.3%203.1A8%208%200%200%201%2012%2020a8%208%200%200%201-4.9-1.7z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%200%201%204.9%201.7L5.7%2016.9A8%208%200%200%201%2012%204m6.3%203.1A8%208%200%200%201%2012%2020a8%208%200%200%201-4.9-1.7z'/%3E%3C/svg%3E")}
+ico-bolt{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M13.5%201.5%205%2013.5h5L9.5%2022.5%2019%2010h-6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M13.5%201.5%205%2013.5h5L9.5%2022.5%2019%2010h-6z'/%3E%3C/svg%3E")}
+ico-book{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12a1%201%200%200%201%201%201v18a1%201%200%200%201-1%201H7a2%202%200%200%201-2-2V4a2%202%200%200%201%201-2m1%202v13h10V4zm0%2015v1h10v-1z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12a1%201%200%200%201%201%201v18a1%201%200%200%201-1%201H7a2%202%200%200%201-2-2V4a2%202%200%200%201%201-2m1%202v13h10V4zm0%2015v1h10v-1z'/%3E%3C/svg%3E")}
+ico-bookmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12v20l-6-4.2L6%2022z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12v20l-6-4.2L6%2022z'/%3E%3C/svg%3E")}
+ico-bookopen{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205.5C10.4%204.2%208.3%203.5%206%203.5c-1%200-2%20.1-3%20.4v15c1-.3%202-.4%203-.4%202.3%200%204.4.7%206%202%201.6-1.3%203.7-2%206-2%201%200%202%20.1%203%20.4v-15c-1-.3-2-.4-3-.4-2.3%200-4.4.7-6%202m0%202.4c1.3-.8%202.9-1.3%204.5-1.4v10.6c-1.6.1-3.2.6-4.5%201.4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205.5C10.4%204.2%208.3%203.5%206%203.5c-1%200-2%20.1-3%20.4v15c1-.3%202-.4%203-.4%202.3%200%204.4.7%206%202%201.6-1.3%203.7-2%206-2%201%200%202%20.1%203%20.4v-15c-1-.3-2-.4-3-.4-2.3%200-4.4.7-6%202m0%202.4c1.3-.8%202.9-1.3%204.5-1.4v10.6c-1.6.1-3.2.6-4.5%201.4z'/%3E%3C/svg%3E")}
+ico-box{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%206.5%2012%202l9%204.5V18l-9%204.5L3%2018zm2.6.6L12%2010.3l6.4-3.2L12%204zM5%209v7.8l6%203V12zm14%200-6%203v7.8l6-3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%206.5%2012%202l9%204.5V18l-9%204.5L3%2018zm2.6.6L12%2010.3l6.4-3.2L12%204zM5%209v7.8l6%203V12zm14%200-6%203v7.8l6-3z'/%3E%3C/svg%3E")}
+ico-brain{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202a3%203%200%200%200-3%203%203%203%200%200%200-2%205.2A3%203%200%200%200%205.5%2016%203%203%200%200%200%2011%2018V4a2%202%200%200%200-2-2m6%200a2%202%200%200%200-2%202v14a3%203%200%200%200%205.5-2A3%203%200%200%200%2020%2010.2%203%203%200%200%200%2018%205a3%203%200%200%200-3-3'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202a3%203%200%200%200-3%203%203%203%200%200%200-2%205.2A3%203%200%200%200%205.5%2016%203%203%200%200%200%2011%2018V4a2%202%200%200%200-2-2m6%200a2%202%200%200%200-2%202v14a3%203%200%200%200%205.5-2A3%203%200%200%200%2020%2010.2%203%203%200%200%200%2018%205a3%203%200%200%200-3-3'/%3E%3C/svg%3E")}
+ico-briefcase{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a2%202%200%200%201%202%202v2h3a2%202%200%200%201%202%202v11a2%202%200%200%201-2%202H4a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h3V4a2%202%200%200%201%202-2m0%204h6V4H9zM4%208v11h16V8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a2%202%200%200%201%202%202v2h3a2%202%200%200%201%202%202v11a2%202%200%200%201-2%202H4a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h3V4a2%202%200%200%201%202-2m0%204h6V4H9zM4%208v11h16V8z'/%3E%3C/svg%3E")}
+ico-bulb{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a7%207%200%200%201%204.2%2012.6c-.7.5-1.2%201.3-1.2%202.2V18H9v-1.2c0-.9-.5-1.7-1.2-2.2A7%207%200%200%201%2012%202M9%2019h6v1.5a1.5%201.5%200%200%201-1.5%201.5h-3A1.5%201.5%200%200%201%209%2020.5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a7%207%200%200%201%204.2%2012.6c-.7.5-1.2%201.3-1.2%202.2V18H9v-1.2c0-.9-.5-1.7-1.2-2.2A7%207%200%200%201%2012%202M9%2019h6v1.5a1.5%201.5%200%200%201-1.5%201.5h-3A1.5%201.5%200%200%201%209%2020.5z'/%3E%3C/svg%3E")}
+ico-cake{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11%201h2v3h-2zM7%205h10a3%203%200%200%201%203%203v3H4V8a3%203%200%200%201%203-3M4%2013h16v8H4zm2%202v4h12v-4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11%201h2v3h-2zM7%205h10a3%203%200%200%201%203%203v3H4V8a3%203%200%200%201%203-3M4%2013h16v8H4zm2%202v4h12v-4z'/%3E%3C/svg%3E")}
+ico-calendar{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h2v2h6V2h2v2h3a1%201%200%200%201%201%201v16a1%201%200%200%201-1%201H4a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1h3zM5%209v11h14V9zm2%202h3v3H7z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h2v2h6V2h2v2h3a1%201%200%200%201%201%201v16a1%201%200%200%201-1%201H4a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1h3zM5%209v11h14V9zm2%202h3v3H7z'/%3E%3C/svg%3E")}
+ico-cap{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%203%2023%208.5%2012%2014%201%208.5zm0%202.2L5.5%208.5%2012%2011.8l6.5-3.3zM5%2011.6l7%203.5%207-3.5V16c0%202-3.1%203.5-7%203.5S5%2018%205%2016z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%203%2023%208.5%2012%2014%201%208.5zm0%202.2L5.5%208.5%2012%2011.8l6.5-3.3zM5%2011.6l7%203.5%207-3.5V16c0%202-3.1%203.5-7%203.5S5%2018%205%2016z'/%3E%3C/svg%3E")}
+ico-chair{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12v9H6zm-2%2011h16v2h-2v7h-2v-7H8v7H6v-7H4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%202h12v9H6zm-2%2011h16v2h-2v7h-2v-7H8v7H6v-7H4z'/%3E%3C/svg%3E")}
+ico-check{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9.3%2017.7%203.6%2012l1.8-1.8%203.9%203.9L18.6%204.8%2020.4%206.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9.3%2017.7%203.6%2012l1.8-1.8%203.9%203.9L18.6%204.8%2020.4%206.6z'/%3E%3C/svg%3E")}
+ico-child{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a3%203%200%201%201-3%203%203%203%200%200%201%203-3m-4%208h8l1.5%206-2%20.6L14%2013v9h-2v-5h-.5v5H9v-9l-1.5%203.6-2-.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a3%203%200%201%201-3%203%203%203%200%200%201%203-3m-4%208h8l1.5%206-2%20.6L14%2013v9h-2v-5h-.5v5H9v-9l-1.5%203.6-2-.6z'/%3E%3C/svg%3E")}
+ico-circlecheck{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-1.3%2011.9L6.9%2012l1.5-1.5%202.3%202.3%204.9-4.9L17.1%209.4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-1.3%2011.9L6.9%2012l1.5-1.5%202.3%202.3%204.9-4.9L17.1%209.4z'/%3E%3C/svg%3E")}
+ico-circleq{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-.2%202.7a3.2%203.2%200%200%200-3.2%203.1h2a1.2%201.2%200%201%201%201.9%201l-.9.8a2.4%202.4%200%200%200-.8%201.8v.7h2v-.6l.9-.8a3.2%203.2%200%200%200-1.9-6M11%2016.4h2v2h-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-.2%202.7a3.2%203.2%200%200%200-3.2%203.1h2a1.2%201.2%200%201%201%201.9%201l-.9.8a2.4%202.4%200%200%200-.8%201.8v.7h2v-.6l.9-.8a3.2%203.2%200%200%200-1.9-6M11%2016.4h2v2h-2z'/%3E%3C/svg%3E")}
+ico-city{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%2021V8h6V3h8v5h6v13zM4%2019h4v-9H4zm6%200h4V5h-4zm6%200h4v-9h-4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%2021V8h6V3h8v5h6v13zM4%2019h4v-9H4zm6%200h4V5h-4zm6%200h4v-9h-4z'/%3E%3C/svg%3E")}
+ico-clapper{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%206.5%2021%203l1%204L3%2010.5zM2%2012h20v9H2zm3-8.2%201%202.6%203-.6-1-2.6zm5-1%201%202.6%203-.6-1-2.6zm5-1%201%202.6%203-.6-1-2.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%206.5%2021%203l1%204L3%2010.5zM2%2012h20v9H2zm3-8.2%201%202.6%203-.6-1-2.6zm5-1%201%202.6%203-.6-1-2.6zm5-1%201%202.6%203-.6-1-2.6z'/%3E%3C/svg%3E")}
+ico-clipboard{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a1%201%200%200%201%201%201v1h2a2%202%200%200%201%202%202v14a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2V6a2%202%200%200%201%202-2h2V3a1%201%200%200%201%201-1m1%202v1h4V4zM8%2010h8v2H8zm0%204h8v2H8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a1%201%200%200%201%201%201v1h2a2%202%200%200%201%202%202v14a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2V6a2%202%200%200%201%202-2h2V3a1%201%200%200%201%201-1m1%202v1h4V4zM8%2010h8v2H8zm0%204h8v2H8z'/%3E%3C/svg%3E")}
+ico-clock{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-1%202v6.6l4.6%202.7%201-1.7-3.6-2.1V6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m-1%202v6.6l4.6%202.7%201-1.7-3.6-2.1V6z'/%3E%3C/svg%3E")}
+ico-clone{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M8%202h12a2%202%200%200%201%202%202v12h-2V4H8zM4%206h12a2%202%200%200%201%202%202v12a2%202%200%200%201-2%202H4a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2m0%202v12h12V8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M8%202h12a2%202%200%200%201%202%202v12h-2V4H8zM4%206h12a2%202%200%200%201%202%202v12a2%202%200%200%201-2%202H4a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2m0%202v12h12V8z'/%3E%3C/svg%3E")}
+ico-commentdots{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%203h16a2%202%200%200%201%202%202v10a2%202%200%200%201-2%202H9l-5%204v-4a2%202%200%200%201-2-2V5a2%202%200%200%201%202-2m4%206.5A1.5%201.5%200%201%200%209.5%2011%201.5%201.5%200%200%200%208%209.5m4%200A1.5%201.5%200%201%200%2013.5%2011%201.5%201.5%200%200%200%2012%209.5m4%200A1.5%201.5%200%201%200%2017.5%2011%201.5%201.5%200%200%200%2016%209.5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%203h16a2%202%200%200%201%202%202v10a2%202%200%200%201-2%202H9l-5%204v-4a2%202%200%200%201-2-2V5a2%202%200%200%201%202-2m4%206.5A1.5%201.5%200%201%200%209.5%2011%201.5%201.5%200%200%200%208%209.5m4%200A1.5%201.5%200%201%200%2013.5%2011%201.5%201.5%200%200%200%2012%209.5m4%200A1.5%201.5%200%201%200%2017.5%2011%201.5%201.5%200%200%200%2016%209.5'/%3E%3C/svg%3E")}
+ico-comments{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h13a2%202%200%200%201%202%202v7a2%202%200%200%201-2%202H8l-5%204V5a2%202%200%200%201%202-2zm17%204a2%202%200%200%201%202%202v11l-4-3h-7a2%202%200%200%201-2-2h9a2%202%200%200%200%202-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h13a2%202%200%200%201%202%202v7a2%202%200%200%201-2%202H8l-5%204V5a2%202%200%200%201%202-2zm17%204a2%202%200%200%201%202%202v11l-4-3h-7a2%202%200%200%201-2-2h9a2%202%200%200%200%202-2z'/%3E%3C/svg%3E")}
+ico-crown{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%207l4.5%203.5L12%203l5.5%207.5L22%207l-2%2012H4zm3.6%2010h12.8l.9-5.4-3.4%202.6L12%207.2l-3.9%207-3.4-2.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%207l4.5%203.5L12%203l5.5%207.5L22%207l-2%2012H4zm3.6%2010h12.8l.9-5.4-3.4%202.6L12%207.2l-3.9%207-3.4-2.6z'/%3E%3C/svg%3E")}
+ico-download{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11%202h2v9h4l-5%206-5-6h4zM4%2019h16v3H4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11%202h2v9h4l-5%206-5-6h4zM4%2019h16v3H4z'/%3E%3C/svg%3E")}
+ico-dumbbell{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%209h2v6H2zm3-2h3v10H5zm4%204h6v2H9zm7-4h3v10h-3zm4%202h2v6h-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%209h2v6H2zm3-2h3v10H5zm4%204h6v2H9zm7-4h3v10h-3zm4%202h2v6h-2z'/%3E%3C/svg%3E")}
+ico-envelope{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%205h20a1%201%200%200%201%201%201v12a1%201%200%200%201-1%201H2a1%201%200%200%201-1-1V6a1%201%200%200%201%201-1m1.8%202L12%2012.6%2020.2%207zM3%208.6V17h18V8.6l-9%206.2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M2%205h20a1%201%200%200%201%201%201v12a1%201%200%200%201-1%201H2a1%201%200%200%201-1-1V6a1%201%200%200%201%201-1m1.8%202L12%2012.6%2020.2%207zM3%208.6V17h18V8.6l-9%206.2z'/%3E%3C/svg%3E")}
+ico-eye{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205c5%200%209.3%203.1%2011%207-1.7%203.9-6%207-11%207S2.7%2015.9%201%2012c1.7-3.9%206-7%2011-7m0%202c-3.6%200-6.9%202-8.5%205%201.6%203%204.9%205%208.5%205s6.9-2%208.5-5c-1.6-3-4.9-5-8.5-5m0%201.8A3.2%203.2%200%201%201%208.8%2012%203.2%203.2%200%200%201%2012%208.8'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205c5%200%209.3%203.1%2011%207-1.7%203.9-6%207-11%207S2.7%2015.9%201%2012c1.7-3.9%206-7%2011-7m0%202c-3.6%200-6.9%202-8.5%205%201.6%203%204.9%205%208.5%205s6.9-2%208.5-5c-1.6-3-4.9-5-8.5-5m0%201.8A3.2%203.2%200%201%201%208.8%2012%203.2%203.2%200%200%201%2012%208.8'/%3E%3C/svg%3E")}
+ico-eyeslash{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3.3%202%2022%2020.7%2020.6%2022l-3.1-3.1A12%2012%200%200%201%2012%2020c-5%200-9.3-3.1-11-8a12%2012%200%200%201%204.2-5.4L1.9%203.4zm3.3%206.1A10%2010%200%200%200%203.5%2012c1.6%203%204.9%205%208.5%205a10%2010%200%200%200%203.5-.6l-1.8-1.8a3.2%203.2%200%200%201-4.3-4.3zM12%205c5%200%209.3%203.1%2011%207a12%2012%200%200%201-2.9%204l-1.5-1.4A10%2010%200%200%200%2020.5%2012c-1.6-3-4.9-5-8.5-5a10%2010%200%200%200-1.7.1L8.8%205.3A12%2012%200%200%201%2012%205'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3.3%202%2022%2020.7%2020.6%2022l-3.1-3.1A12%2012%200%200%201%2012%2020c-5%200-9.3-3.1-11-8a12%2012%200%200%201%204.2-5.4L1.9%203.4zm3.3%206.1A10%2010%200%200%200%203.5%2012c1.6%203%204.9%205%208.5%205a10%2010%200%200%200%203.5-.6l-1.8-1.8a3.2%203.2%200%200%201-4.3-4.3zM12%205c5%200%209.3%203.1%2011%207a12%2012%200%200%201-2.9%204l-1.5-1.4A10%2010%200%200%200%2020.5%2012c-1.6-3-4.9-5-8.5-5a10%2010%200%200%200-1.7.1L8.8%205.3A12%2012%200%200%201%2012%205'/%3E%3C/svg%3E")}
+ico-feather{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M20%203c-6%200-11%204-11%2010v3.6L5.4%2020.2%206.8%2021.6%2010.4%2018H14v-2h-1.6l2-2H18v-2h-1.6l2-2H21V3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M20%203c-6%200-11%204-11%2010v3.6L5.4%2020.2%206.8%2021.6%2010.4%2018H14v-2h-1.6l2-2H18v-2h-1.6l2-2H21V3z'/%3E%3C/svg%3E")}
+ico-file{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202H7a2%202%200%200%200-2%202v16a2%202%200%200%200%202%202h10a2%202%200%200%200%202-2V7zm0%202.5L16.5%207H14zM8%2011h8v2H8zm0%204h8v2H8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202H7a2%202%200%200%200-2%202v16a2%202%200%200%200%202%202h10a2%202%200%200%200%202-2V7zm0%202.5L16.5%207H14zM8%2011h8v2H8zm0%204h8v2H8z'/%3E%3C/svg%3E")}
+ico-filepen{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202H7a2%202%200%200%200-2%202v16a2%202%200%200%200%202%202h6v-3.4l5-5V7zm0%202.5L16.5%207H14zM8%2011h5v2H8zm12.9%202.6%201.5%201.5-6.6%206.6H14v-1.9z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202H7a2%202%200%200%200-2%202v16a2%202%200%200%200%202%202h6v-3.4l5-5V7zm0%202.5L16.5%207H14zM8%2011h5v2H8zm12.9%202.6%201.5%201.5-6.6%206.6H14v-1.9z'/%3E%3C/svg%3E")}
+ico-fire{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%201.5c3%204%204.5%206.6%204.5%209a4.5%204.5%200%200%201-1%202.9c.4-1.7-.4-3.4-2-4.9.3%203-1.2%204-2.4%205.6a4.4%204.4%200%200%200-.6%204.6A4.5%204.5%200%200%201%208%2014.6a5%205%200%200%200-1%203A5.5%205.5%200%200%201%205.5%2014c0-3.6%203.4-5.2%204.6-8.2A7%207%200%200%200%2012%201.5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%201.5c3%204%204.5%206.6%204.5%209a4.5%204.5%200%200%201-1%202.9c.4-1.7-.4-3.4-2-4.9.3%203-1.2%204-2.4%205.6a4.4%204.4%200%200%200-.6%204.6A4.5%204.5%200%200%201%208%2014.6a5%205%200%200%200-1%203A5.5%205.5%200%200%201%205.5%2014c0-3.6%203.4-5.2%204.6-8.2A7%207%200%200%200%2012%201.5'/%3E%3C/svg%3E")}
+ico-flag{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M5%202h2v20H5zm3%201h11l-2.5%204.5L19%2012H8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M5%202h2v20H5zm3%201h11l-2.5%204.5L19%2012H8z'/%3E%3C/svg%3E")}
+ico-gamepad{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%206h10a5%205%200%200%201%205%205v3a4%204%200%200%201-7.2%202.4L14%2015h-4l-.8%201.4A4%204%200%200%201%202%2014v-3a5%205%200%200%201%205-5m-1%203v2H4v2h2v2h2v-2h2v-2H8V9zm10%201a1.3%201.3%200%201%200%201.3%201.3A1.3%201.3%200%200%200%2016%2010m-2%203a1.3%201.3%200%201%200%201.3%201.3A1.3%201.3%200%200%200%2014%2013'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%206h10a5%205%200%200%201%205%205v3a4%204%200%200%201-7.2%202.4L14%2015h-4l-.8%201.4A4%204%200%200%201%202%2014v-3a5%205%200%200%201%205-5m-1%203v2H4v2h2v2h2v-2h2v-2H8V9zm10%201a1.3%201.3%200%201%200%201.3%201.3A1.3%201.3%200%200%200%2016%2010m-2%203a1.3%201.3%200%201%200%201.3%201.3A1.3%201.3%200%200%200%2014%2013'/%3E%3C/svg%3E")}
+ico-ghost{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a8%208%200%200%200-8%208v12l3-2%202.5%202%202.5-2%202.5%202%202.5-2%203%202V10a8%208%200%200%200-8-8M9.5%208A1.5%201.5%200%201%201%208%209.5%201.5%201.5%200%200%201%209.5%208m5%200A1.5%201.5%200%201%201%2013%209.5%201.5%201.5%200%200%201%2014.5%208'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a8%208%200%200%200-8%208v12l3-2%202.5%202%202.5-2%202.5%202%202.5-2%203%202V10a8%208%200%200%200-8-8M9.5%208A1.5%201.5%200%201%201%208%209.5%201.5%201.5%200%200%201%209.5%208m5%200A1.5%201.5%200%201%201%2013%209.5%201.5%201.5%200%200%201%2014.5%208'/%3E%3C/svg%3E")}
+ico-hand{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202a1.3%201.3%200%200%201%201.3%201.3V11h.9V2.3a1.3%201.3%200%201%201%202.6%200V11h.9V4.3a1.3%201.3%200%201%201%202.6%200V13a8%208%200%200%201-8%208%208%208%200%200%201-6-2.7l-1.6-2a1.4%201.4%200%200%201%202-2l1.9%201.6V3.3A1.3%201.3%200%200%201%209%202'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202a1.3%201.3%200%200%201%201.3%201.3V11h.9V2.3a1.3%201.3%200%201%201%202.6%200V11h.9V4.3a1.3%201.3%200%201%201%202.6%200V13a8%208%200%200%201-8%208%208%208%200%200%201-6-2.7l-1.6-2a1.4%201.4%200%200%201%202-2l1.9%201.6V3.3A1.3%201.3%200%200%201%209%202'/%3E%3C/svg%3E")}
+ico-handshake{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205.5%209.5%208a1.8%201.8%200%200%200%202.5%202.5l1-1%204%204a1.8%201.8%200%200%201-2.5%202.5l-.5-.5-1.4%201.4.5.5A1.8%201.8%200%200%201%2010.6%2020l-.5-.5-1.4%201.4A3.8%203.8%200%200%200%2015%2019a3.8%203.8%200%200%200%204.4-4.4L22%2012l-5-6H8.5L2%2012l3%203%204-4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%205.5%209.5%208a1.8%201.8%200%200%200%202.5%202.5l1-1%204%204a1.8%201.8%200%200%201-2.5%202.5l-.5-.5-1.4%201.4.5.5A1.8%201.8%200%200%201%2010.6%2020l-.5-.5-1.4%201.4A3.8%203.8%200%200%200%2015%2019a3.8%203.8%200%200%200%204.4-4.4L22%2012l-5-6H8.5L2%2012l3%203%204-4z'/%3E%3C/svg%3E")}
+ico-headphones{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a9%209%200%200%200-9%209v7a3%203%200%200%200%203%203h2v-8H5v-2a7%207%200%200%201%2014%200v2h-3v8h2a3%203%200%200%200%203-3v-7a9%209%200%200%200-9-9'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a9%209%200%200%200-9%209v7a3%203%200%200%200%203%203h2v-8H5v-2a7%207%200%200%201%2014%200v2h-3v8h2a3%203%200%200%200%203-3v-7a9%209%200%200%200-9-9'/%3E%3C/svg%3E")}
+ico-heart{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%2021%203.6%2012.9a5.2%205.2%200%200%201%207.4-7.3l1%201%201-1a5.2%205.2%200%200%201%207.4%207.3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%2021%203.6%2012.9a5.2%205.2%200%200%201%207.4-7.3l1%201%201-1a5.2%205.2%200%200%201%207.4%207.3z'/%3E%3C/svg%3E")}
+ico-heartopen{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%2021%203.6%2012.9a5.2%205.2%200%200%201%207.4-7.3l1%201%201-1a5.2%205.2%200%200%201%207.4%207.3zm0-2.8%206.9-6.7a3.2%203.2%200%200%200-4.5-4.5L12%209.4%209.6%207a3.2%203.2%200%200%200-4.5%204.5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%2021%203.6%2012.9a5.2%205.2%200%200%201%207.4-7.3l1%201%201-1a5.2%205.2%200%200%201%207.4%207.3zm0-2.8%206.9-6.7a3.2%203.2%200%200%200-4.5-4.5L12%209.4%209.6%207a3.2%203.2%200%200%200-4.5%204.5z'/%3E%3C/svg%3E")}
+ico-hotel{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%202h18v20h-8v-4h-2v4H3zm4%203v2h2V5zm4%200v2h2V5zm4%200v2h2V5zM7%209v2h2V9zm4%200v2h2V9zm4%200v2h2V9zM7%2013v2h2v-2zm8%200v2h2v-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%202h18v20h-8v-4h-2v4H3zm4%203v2h2V5zm4%200v2h2V5zm4%200v2h2V5zM7%209v2h2V9zm4%200v2h2V9zm4%200v2h2V9zM7%2013v2h2v-2zm8%200v2h2v-2z'/%3E%3C/svg%3E")}
+ico-house{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202.5%2023%2012h-3v9h-6v-6h-4v6H4v-9H1zM12%205.3%206%2010.7V19h2v-6h8v6h2v-8.3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202.5%2023%2012h-3v9h-6v-6h-4v6H4v-9H1zM12%205.3%206%2010.7V19h2v-6h8v6h2v-8.3z'/%3E%3C/svg%3E")}
+ico-image{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h18a1%201%200%200%201%201%201v14a1%201%200%200%201-1%201H3a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1m1%202v9l5-4%204%203%203-2%204%203V6zM8%208.5A1.5%201.5%200%201%201%206.5%2010%201.5%201.5%200%200%201%208%208.5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h18a1%201%200%200%201%201%201v14a1%201%200%200%201-1%201H3a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1m1%202v9l5-4%204%203%203-2%204%203V6zM8%208.5A1.5%201.5%200%201%201%206.5%2010%201.5%201.5%200%200%201%208%208.5'/%3E%3C/svg%3E")}
+ico-key{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14.5%202a6.5%206.5%200%200%200-6.2%208.5L2%2016.8V22h5.2v-2.5h2.5V17h2.5l1.8-1.8A6.5%206.5%200%201%200%2014.5%202m2%203a2%202%200%201%201-2%202%202%202%200%200%201%202-2'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14.5%202a6.5%206.5%200%200%200-6.2%208.5L2%2016.8V22h5.2v-2.5h2.5V17h2.5l1.8-1.8A6.5%206.5%200%201%200%2014.5%202m2%203a2%202%200%201%201-2%202%202%202%200%200%201%202-2'/%3E%3C/svg%3E")}
+ico-link{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10.6%2013.4a4%204%200%200%201%200-5.7l3.5-3.5a4%204%200%200%201%205.7%205.7l-1.7%201.7-1.4-1.4%201.7-1.7a2%202%200%200%200-2.8-2.8l-3.5%203.5a2%202%200%200%200%200%202.8zM13.4%2010.6a4%204%200%200%201%200%205.7l-3.5%203.5a4%204%200%200%201-5.7-5.7l1.7-1.7%201.4%201.4-1.7%201.7a2%202%200%200%200%202.8%202.8l3.5-3.5a2%202%200%200%200%200-2.8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10.6%2013.4a4%204%200%200%201%200-5.7l3.5-3.5a4%204%200%200%201%205.7%205.7l-1.7%201.7-1.4-1.4%201.7-1.7a2%202%200%200%200-2.8-2.8l-3.5%203.5a2%202%200%200%200%200%202.8zM13.4%2010.6a4%204%200%200%201%200%205.7l-3.5%203.5a4%204%200%200%201-5.7-5.7l1.7-1.7%201.4%201.4-1.7%201.7a2%202%200%200%200%202.8%202.8l3.5-3.5a2%202%200%200%200%200-2.8z'/%3E%3C/svg%3E")}
+ico-listol{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%204h2v3H4zm4%20.5h13v2H8zM4%2010h2v3H4zm4%20.5h13v2H8zM4%2016h2v3H4zm4%20.5h13v2H8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%204h2v3H4zm4%20.5h13v2H8zM4%2010h2v3H4zm4%20.5h13v2H8zM4%2016h2v3H4zm4%20.5h13v2H8z'/%3E%3C/svg%3E")}
+ico-locationdot{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a7%207%200%200%201%207%207c0%205-7%2013-7%2013S5%2014%205%209a7%207%200%200%201%207-7m0%204.5A2.5%202.5%200%201%200%2014.5%209%202.5%202.5%200%200%200%2012%206.5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a7%207%200%200%201%207%207c0%205-7%2013-7%2013S5%2014%205%209a7%207%200%200%201%207-7m0%204.5A2.5%202.5%200%201%200%2014.5%209%202.5%202.5%200%200%200%2012%206.5'/%3E%3C/svg%3E")}
+ico-lock{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a5%205%200%200%201%205%205v3h1a2%202%200%200%201%202%202v8a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2v-8a2%202%200%200%201%202-2h1V7a5%205%200%200%201%205-5m0%202a3%203%200%200%200-3%203v3h6V7a3%203%200%200%200-3-3M6%2012v8h12v-8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a5%205%200%200%201%205%205v3h1a2%202%200%200%201%202%202v8a2%202%200%200%201-2%202H6a2%202%200%200%201-2-2v-8a2%202%200%200%201%202-2h1V7a5%205%200%200%201%205-5m0%202a3%203%200%200%200-3%203v3h6V7a3%203%200%200%200-3-3M6%2012v8h12v-8z'/%3E%3C/svg%3E")}
+ico-mic{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a3%203%200%200%201%203%203v6a3%203%200%200%201-6%200V5a3%203%200%200%201%203-3M6%2011h2a4%204%200%200%200%208%200h2a6%206%200%200%201-5%205.9V20h3v2H8v-2h3v-3.1A6%206%200%200%201%206%2011'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a3%203%200%200%201%203%203v6a3%203%200%200%201-6%200V5a3%203%200%200%201%203-3M6%2011h2a4%204%200%200%200%208%200h2a6%206%200%200%201-5%205.9V20h3v2H8v-2h3v-3.1A6%206%200%200%201%206%2011'/%3E%3C/svg%3E")}
+ico-mobile{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%201h10a2%202%200%200%201%202%202v18a2%202%200%200%201-2%202H7a2%202%200%200%201-2-2V3a2%202%200%200%201%202-2m0%204v14h10V5zm4%2015h2v1h-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%201h10a2%202%200%200%201%202%202v18a2%202%200%200%201-2%202H7a2%202%200%200%201-2-2V3a2%202%200%200%201%202-2m0%204v14h10V5zm4%2015h2v1h-2z'/%3E%3C/svg%3E")}
+ico-mug{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h14v5h2.5a3.5%203.5%200%200%201%200%207H17v1a4%204%200%200%201-4%204H7a4%204%200%200%201-4-4zm14%207v3h2.5a1.5%201.5%200%200%200%200-3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h14v5h2.5a3.5%203.5%200%200%201%200%207H17v1a4%204%200%200%201-4%204H7a4%204%200%200%201-4-4zm14%207v3h2.5a1.5%201.5%200%200%200%200-3z'/%3E%3C/svg%3E")}
+ico-music{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M20%203v12.2a3.4%203.4%200%201%201-2-3.1V7.4l-7%201.8v8a3.4%203.4%200%201%201-2-3.1V6.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M20%203v12.2a3.4%203.4%200%201%201-2-3.1V7.4l-7%201.8v8a3.4%203.4%200%201%201-2-3.1V6.6z'/%3E%3C/svg%3E")}
+ico-mute{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%209h3.5L12%204.5v15L7.5%2015H4zm11.6.6L17%208.2l2.2%202.2%202.2-2.2%201.4%201.4-2.2%202.2%202.2%202.2-1.4%201.4-2.2-2.2-2.2%202.2-1.4-1.4%202.2-2.2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%209h3.5L12%204.5v15L7.5%2015H4zm11.6.6L17%208.2l2.2%202.2%202.2-2.2%201.4%201.4-2.2%202.2%202.2%202.2-1.4%201.4-2.2-2.2-2.2%202.2-1.4-1.4%202.2-2.2z'/%3E%3C/svg%3E")}
+ico-palette{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%200%200%200%2020%202%202%200%200%200%201.6-3.2%202%202%200%200%201%201.6-3.2H18a4%204%200%200%200%204-4c0-5.3-4.5-9.6-10-9.6M6.5%2011A1.5%201.5%200%201%201%208%209.5%201.5%201.5%200%200%201%206.5%2011m3-4A1.5%201.5%200%201%201%2011%205.5%201.5%201.5%200%200%201%209.5%207m5%200A1.5%201.5%200%201%201%2016%205.5%201.5%201.5%200%200%201%2014.5%207m3.5%204a1.5%201.5%200%201%201%201.5-1.5A1.5%201.5%200%200%201%2018%2011'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%200%200%200%2020%202%202%200%200%200%201.6-3.2%202%202%200%200%201%201.6-3.2H18a4%204%200%200%200%204-4c0-5.3-4.5-9.6-10-9.6M6.5%2011A1.5%201.5%200%201%201%208%209.5%201.5%201.5%200%200%201%206.5%2011m3-4A1.5%201.5%200%201%201%2011%205.5%201.5%201.5%200%200%201%209.5%207m5%200A1.5%201.5%200%201%201%2016%205.5%201.5%201.5%200%200%201%2014.5%207m3.5%204a1.5%201.5%200%201%201%201.5-1.5A1.5%201.5%200%200%201%2018%2011'/%3E%3C/svg%3E")}
+ico-paw{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%2012.5a3%203%200%200%201%202.4%201.2l1.2%201.6a2.4%202.4%200%200%201%200%203%202.4%202.4%200%200%201-3.8%200l-1.2-1.6a3%203%200%200%201%201.4-4.2M5.2%206.5a2%202%200%201%201-2%202%202%202%200%200%201%202-2m4.4-3a2%202%200%201%201-2%202%202%202%200%200%201%202-2m5%200a2%202%200%201%201-2%202%202%202%200%200%201%202-2m4.4%203a2%202%200%201%201-2%202%202%202%200%200%201%202-2M17%2012.5a3%203%200%200%201%201.4%204.2l-1.2%201.6a2.4%202.4%200%200%201-3.8%200%202.4%202.4%200%200%201%200-3l1.2-1.6A3%203%200%200%201%2017%2012.5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%2012.5a3%203%200%200%201%202.4%201.2l1.2%201.6a2.4%202.4%200%200%201%200%203%202.4%202.4%200%200%201-3.8%200l-1.2-1.6a3%203%200%200%201%201.4-4.2M5.2%206.5a2%202%200%201%201-2%202%202%202%200%200%201%202-2m4.4-3a2%202%200%201%201-2%202%202%202%200%200%201%202-2m5%200a2%202%200%201%201-2%202%202%202%200%200%201%202-2m4.4%203a2%202%200%201%201-2%202%202%202%200%200%201%202-2M17%2012.5a3%203%200%200%201%201.4%204.2l-1.2%201.6a2.4%202.4%200%200%201-3.8%200%202.4%202.4%200%200%201%200-3l1.2-1.6A3%203%200%200%201%2017%2012.5'/%3E%3C/svg%3E")}
+ico-pen{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M18.6%201.7%2022.3%205.4%2020%207.7%2016.3%204zM14.9%205.4%2018.6%209.1%207.4%2020.3%202.5%2022%204.2%2017z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M18.6%201.7%2022.3%205.4%2020%207.7%2016.3%204zM14.9%205.4%2018.6%209.1%207.4%2020.3%202.5%2022%204.2%2017z'/%3E%3C/svg%3E")}
+ico-pencil{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17.3%202.7%2021.3%206.7%208%2020H4v-4zM6%2017.2V18h.8l9.6-9.6-1.4-1.4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17.3%202.7%2021.3%206.7%208%2020H4v-4zM6%2017.2V18h.8l9.6-9.6-1.4-1.4z'/%3E%3C/svg%3E")}
+ico-people{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M8%203a3%203%200%201%201-3%203%203%203%200%200%201%203-3m8%200a3%203%200%201%201-3%203%203%203%200%200%201%203-3M8%2011c2.7%200%205%201.3%205%203v7H3v-7c0-1.7%202.3-3%205-3m8%200c2.7%200%205%201.3%205%203v7h-6v-7a4%204%200%200%200-1.3-2.9A7%207%200%200%201%2016%2011'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M8%203a3%203%200%201%201-3%203%203%203%200%200%201%203-3m8%200a3%203%200%201%201-3%203%203%203%200%200%201%203-3M8%2011c2.7%200%205%201.3%205%203v7H3v-7c0-1.7%202.3-3%205-3m8%200c2.7%200%205%201.3%205%203v7h-6v-7a4%204%200%200%200-1.3-2.9A7%207%200%200%201%2016%2011'/%3E%3C/svg%3E")}
+ico-phone{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6.5%202%2010%205.5%207.6%208.9a12%2012%200%200%200%207.5%207.5L18.5%2014%2022%2017.5%2019%2021C11.8%2021%203%2012.2%203%205z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6.5%202%2010%205.5%207.6%208.9a12%2012%200%200%200%207.5%207.5L18.5%2014%2022%2017.5%2019%2021C11.8%2021%203%2012.2%203%205z'/%3E%3C/svg%3E")}
+ico-pin{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%201.5%2022.5%2010l-1.8%201.8-1-.4-3.4%203.4.5%203.6L14.5%2020%2010%2015.5%203.5%2022l-1-1L9%2014.5%204.5%2010l1.6-2.3%203.6.5L13%204.8l-.4-1z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%201.5%2022.5%2010l-1.8%201.8-1-.4-3.4%203.4.5%203.6L14.5%2020%2010%2015.5%203.5%2022l-1-1L9%2014.5%204.5%2010l1.6-2.3%203.6.5L13%204.8l-.4-1z'/%3E%3C/svg%3E")}
+ico-plane{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M21.5%2012%2022%2013.5l-7.5-1.2-2.5%206.7-1.4.5-.6-6.1-6.5-1L2%2010.5%204%209.5l1.7%201.6%204.6.4L7.5%203.6%209%203l4.5%208.5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M21.5%2012%2022%2013.5l-7.5-1.2-2.5%206.7-1.4.5-.6-6.1-6.5-1L2%2010.5%204%209.5l1.7%201.6%204.6.4L7.5%203.6%209%203l4.5%208.5z'/%3E%3C/svg%3E")}
+ico-play{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%203.5%2020%2012%206%2020.5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%203.5%2020%2012%206%2020.5z'/%3E%3C/svg%3E")}
+ico-pointer{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202.5%2018.5%2013H13l3%206.6-2.6%201.2-3-6.6-3.4%203z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202.5%2018.5%2013H13l3%206.6-2.6%201.2-3-6.6-3.4%203z'/%3E%3C/svg%3E")}
+ico-print{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h10v4H7zm-3%206h16a2%202%200%200%201%202%202v6h-4v4H7v-4H3v-6a2%202%200%200%201%201-2m5%208v4h6v-4z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h10v4H7zm-3%206h16a2%202%200%200%201%202%202v6h-4v4H7v-4H3v-6a2%202%200%200%201%201-2m5%208v4h6v-4z'/%3E%3C/svg%3E")}
+ico-puzzle{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10%202a2.5%202.5%200%200%201%202.5%202.5V5H16a1%201%200%200%201%201%201v3.5h.5a2.5%202.5%200%201%201%200%205H17V18a1%201%200%200%201-1%201h-3.5v-.5a2.5%202.5%200%201%200-5%200V19H4a1%201%200%200%201-1-1v-3.5h.5a2.5%202.5%200%201%200%200-5H3V6a1%201%200%200%201%201-1h3.5v-.5A2.5%202.5%200%200%201%2010%202'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10%202a2.5%202.5%200%200%201%202.5%202.5V5H16a1%201%200%200%201%201%201v3.5h.5a2.5%202.5%200%201%201%200%205H17V18a1%201%200%200%201-1%201h-3.5v-.5a2.5%202.5%200%201%200-5%200V19H4a1%201%200%200%201-1-1v-3.5h.5a2.5%202.5%200%201%200%200-5H3V6a1%201%200%200%201%201-1h3.5v-.5A2.5%202.5%200%200%201%2010%202'/%3E%3C/svg%3E")}
+ico-question{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11.7%202.5a5.2%205.2%200%200%200-5.2%205h2.6a2.6%202.6%200%201%201%204.2%202.1l-1%20.8a3.6%203.6%200%200%200-1.4%202.8v1.3h2.6v-1.1l1-.8a5.2%205.2%200%200%200-2.8-9.1M10.4%2018h2.8v3h-2.8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M11.7%202.5a5.2%205.2%200%200%200-5.2%205h2.6a2.6%202.6%200%201%201%204.2%202.1l-1%20.8a3.6%203.6%200%200%200-1.4%202.8v1.3h2.6v-1.1l1-.8a5.2%205.2%200%200%200-2.8-9.1M10.4%2018h2.8v3h-2.8z'/%3E%3C/svg%3E")}
+ico-recycle{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9.2%203.6a2%202%200%200%201%203.4%200l2%203.3-1.7%201L11.5%206%209.3%209.6l-1.7-1zM3.5%2015.4l2.3-4%201.7%201L6%2015h4v2H4.2a2%202%200%200%201-1.7-3zM20.5%2015.4a2%202%200%200%201-1.7%203H14v2.5L10%2018l4-3v2.5h4.4zM7%2020l-2-3.4%201.7-1L8.4%2019zM17%204l2.4%204.2-1.7%201L15.3%205z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9.2%203.6a2%202%200%200%201%203.4%200l2%203.3-1.7%201L11.5%206%209.3%209.6l-1.7-1zM3.5%2015.4l2.3-4%201.7%201L6%2015h4v2H4.2a2%202%200%200%201-1.7-3zM20.5%2015.4a2%202%200%200%201-1.7%203H14v2.5L10%2018l4-3v2.5h4.4zM7%2020l-2-3.4%201.7-1L8.4%2019zM17%204l2.4%204.2-1.7%201L15.3%205z'/%3E%3C/svg%3E")}
+ico-rocket{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202c4%201%207%204%208%208l-5%202-3-3zM3.5%2013.5%2010%207l7%207-6.5%206.5zM2%2022l1.5-4.5L6.5%2020.5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M14%202c4%201%207%204%208%208l-5%202-3-3zM3.5%2013.5%2010%207l7%207-6.5%206.5zM2%2022l1.5-4.5L6.5%2020.5z'/%3E%3C/svg%3E")}
+ico-rotate{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%204V1L7.5%205.5%2012%2010V7a5%205%200%201%201-5%205H5a7%207%200%201%200%207-8'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%204V1L7.5%205.5%2012%2010V7a5%205%200%201%201-5%205H5a7%207%200%201%200%207-8'/%3E%3C/svg%3E")}
+ico-save{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%202h13l3%203v17H4zm3%202v6h8V4zm-1%209h12v7H6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%202h13l3%203v17H4zm3%202v6h8V4zm-1%209h12v7H6z'/%3E%3C/svg%3E")}
+ico-search{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10.5%202a8.5%208.5%200%201%200%205.2%2015.2l4.6%204.6%201.7-1.7-4.6-4.6A8.5%208.5%200%200%200%2010.5%202m0%202a6.5%206.5%200%201%201%200%2013%206.5%206.5%200%200%201%200-13'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M10.5%202a8.5%208.5%200%201%200%205.2%2015.2l4.6%204.6%201.7-1.7-4.6-4.6A8.5%208.5%200%200%200%2010.5%202m0%202a6.5%206.5%200%201%201%200%2013%206.5%206.5%200%200%201%200-13'/%3E%3C/svg%3E")}
+ico-shuffle{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17%203.5%2022%207l-5%203.5V8h-2.2l-2%202.6-1.6-2%202.4-3.1H17zM2%207h4.2l2.4%203.1-1.6%202L5%209.5H2zM17%2013.5%2022%2017l-5%203.5V18h-3.2l-2.4-3.1%201.6-2L16%2015.5H17zM2%2015h3l2.2-2.9%201.6%202L6.2%2017H2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17%203.5%2022%207l-5%203.5V8h-2.2l-2%202.6-1.6-2%202.4-3.1H17zM2%207h4.2l2.4%203.1-1.6%202L5%209.5H2zM17%2013.5%2022%2017l-5%203.5V18h-3.2l-2.4-3.1%201.6-2L16%2015.5H17zM2%2015h3l2.2-2.9%201.6%202L6.2%2017H2z'/%3E%3C/svg%3E")}
+ico-skull{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a9%209%200%200%200-9%209c0%203%201.6%205.2%203.5%206.4V21h11v-3.6C19.4%2016.2%2021%2014%2021%2011a9%209%200%200%200-9-9m-3.2%208a2.2%202.2%200%201%201%200%204.4%202.2%202.2%200%200%201%200-4.4m6.4%200a2.2%202.2%200%201%201%200%204.4%202.2%202.2%200%200%201%200-4.4'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a9%209%200%200%200-9%209c0%203%201.6%205.2%203.5%206.4V21h11v-3.6C19.4%2016.2%2021%2014%2021%2011a9%209%200%200%200-9-9m-3.2%208a2.2%202.2%200%201%201%200%204.4%202.2%202.2%200%200%201%200-4.4m6.4%200a2.2%202.2%200%201%201%200%204.4%202.2%202.2%200%200%201%200-4.4'/%3E%3C/svg%3E")}
+ico-spell{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%204h2.6l4%2012h-2.2l-.9-2.8H5.5L4.6%2016H2.4zm.1%207.4h2.8L7.5%207zM14%208h2v1a3%203%200%200%201%202-1%203.4%203.4%200%200%201%203.4%204%203.4%203.4%200%200%201-3.4%204%203%203%200%200%201-2-.9V16h-2zm3.6%202a1.9%201.9%200%201%200%200%203.9%201.9%201.9%200%200%200%200-3.9M2%2019h20v2H2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M6%204h2.6l4%2012h-2.2l-.9-2.8H5.5L4.6%2016H2.4zm.1%207.4h2.8L7.5%207zM14%208h2v1a3%203%200%200%201%202-1%203.4%203.4%200%200%201%203.4%204%203.4%203.4%200%200%201-3.4%204%203%203%200%200%201-2-.9V16h-2zm3.6%202a1.9%201.9%200%201%200%200%203.9%201.9%201.9%200%200%200%200-3.9M2%2019h20v2H2z'/%3E%3C/svg%3E")}
+ico-sqcheck{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h18v18H3zm2%202v14h14V5zm3.6%206.9%201.4-1.4%202%202%204.4-4.4%201.4%201.4-5.8%205.8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h18v18H3zm2%202v14h14V5zm3.6%206.9%201.4-1.4%202%202%204.4-4.4%201.4%201.4-5.8%205.8z'/%3E%3C/svg%3E")}
+ico-square{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h18v18H3zm2%202v14h14V5z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h18v18H3zm2%202v14h14V5z'/%3E%3C/svg%3E")}
+ico-star{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202l3%206.5%207%20.8-5.2%204.8%201.4%207L12%2017.6%205.8%2021.1l1.4-7L2%209.3l7-.8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202l3%206.5%207%20.8-5.2%204.8%201.4%207L12%2017.6%205.8%2021.1l1.4-7L2%209.3l7-.8z'/%3E%3C/svg%3E")}
+ico-stopwatch{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%201h6v2H9zm2%203.1V6h2V4.1A9%209%200%201%201%2011%204.1M12%208a7%207%200%201%200%207%207%207%207%200%200%200-7-7m-1%202h2v5.4l3.3%201.9-1%201.7L11%2016.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%201h6v2H9zm2%203.1V6h2V4.1A9%209%200%201%201%2011%204.1M12%208a7%207%200%201%200%207%207%207%207%200%200%200-7-7m-1%202h2v5.4l3.3%201.9-1%201.7L11%2016.6z'/%3E%3C/svg%3E")}
+ico-suitcase{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a2%202%200%200%201%202%202v2h2a2%202%200%200%201%202%202v12a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h2V4a2%202%200%200%201%202-2m0%204h6V4H9zM5%208v12h2V8zm12%200v12h2V8zM9%208v12h6V8z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M9%202h6a2%202%200%200%201%202%202v2h2a2%202%200%200%201%202%202v12a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h2V4a2%202%200%200%201%202-2m0%204h6V4H9zM5%208v12h2V8zm12%200v12h2V8zM9%208v12h6V8z'/%3E%3C/svg%3E")}
+ico-target{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m0%203a5%205%200%201%200%200%2010%205%205%200%200%200%200-10m0%202.5a2.5%202.5%200%201%201%200%205%202.5%202.5%200%200%201%200-5'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20m0%202a8%208%200%201%201%200%2016%208%208%200%200%201%200-16m0%203a5%205%200%201%200%200%2010%205%205%200%200%200%200-10m0%202.5a2.5%202.5%200%201%201%200%205%202.5%202.5%200%200%201%200-5'/%3E%3C/svg%3E")}
+ico-thumbdown{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17%2014h-3.2l-1.5%206.2A2%202%200%200%201%208.5%2020v-5H4a2%202%200%200%201-2-2.4l1.4-7A2%202%200%200%201%205.4%204H17zM22%204h-3v10h3z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M17%2014h-3.2l-1.5%206.2A2%202%200%200%201%208.5%2020v-5H4a2%202%200%200%201-2-2.4l1.4-7A2%202%200%200%201%205.4%204H17zM22%204h-3v10h3z'/%3E%3C/svg%3E")}
+ico-thumbup{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%2010h3.2l1.5-6.2A2%202%200%200%201%2015.5%204v5H20a2%202%200%200%201%202%202.4l-1.4%207A2%202%200%200%201%2018.6%2020H7zM2%2010h3v10H2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%2010h3.2l1.5-6.2A2%202%200%200%201%2015.5%204v5H20a2%202%200%200%201%202%202.4l-1.4%207A2%202%200%200%201%2018.6%2020H7zM2%2010h3v10H2z'/%3E%3C/svg%3E")}
+ico-trophy{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h10v2h4v3a4%204%200%200%201-4%204h-.4A5%205%200%200%201%2013%2013.9V17h3v2H8v-2h3v-3.1A5%205%200%200%201%207.4%2011H7a4%204%200%200%201-4-4V4h4zM5%206v1a2%202%200%200%200%202%202V6zm12%200v3a2%202%200%200%200%202-2V6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M7%202h10v2h4v3a4%204%200%200%201-4%204h-.4A5%205%200%200%201%2013%2013.9V17h3v2H8v-2h3v-3.1A5%205%200%200%201%207.4%2011H7a4%204%200%200%201-4-4V4h4zM5%206v1a2%202%200%200%200%202%202V6zm12%200v3a2%202%200%200%200%202-2V6z'/%3E%3C/svg%3E")}
+ico-umbrella{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M13%202v1.1a9%209%200%200%201%208%208.9H13v6.5a1.5%201.5%200%200%200%203%200V18h2v.5a3.5%203.5%200%200%201-7%200V12H3a9%209%200%200%201%208-8.9V2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M13%202v1.1a9%209%200%200%201%208%208.9H13v6.5a1.5%201.5%200%200%200%203%200V18h2v.5a3.5%203.5%200%200%201-7%200V12H3a9%209%200%200%201%208-8.9V2z'/%3E%3C/svg%3E")}
+ico-user{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%203a4%204%200%201%201-4%204%204%204%200%200%201%204-4m0%2010c4.4%200%208%202%208%204.5V21H4v-3.5C4%2015%207.6%2013%2012%2013'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%203a4%204%200%201%201-4%204%204%204%200%200%201%204-4m0%2010c4.4%200%208%202%208%204.5V21H4v-3.5C4%2015%207.6%2013%2012%2013'/%3E%3C/svg%3E")}
+ico-utensils{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M5%202h1.6v6h1V2h1.6v6h1V2H12v7a3%203%200%200%201-2.2%202.9V22H7.2V11.9A3%203%200%200%201%205%209zM17%202c2%200%203.5%202.6%203.5%206%200%202.6-.9%204.7-2.2%205.6V22h-2.6V2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M5%202h1.6v6h1V2h1.6v6h1V2H12v7a3%203%200%200%201-2.2%202.9V22H7.2V11.9A3%203%200%200%201%205%209zM17%202c2%200%203.5%202.6%203.5%206%200%202.6-.9%204.7-2.2%205.6V22h-2.6V2z'/%3E%3C/svg%3E")}
+ico-volume{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%209h3.5L12%204.5v15L7.5%2015H4zm12.5-1.1a6%206%200%200%201%200%208.2l-1.4-1.4a4%204%200%200%200%200-5.4zm2.6-2.6a9.6%209.6%200%200%201%200%2013.4l-1.4-1.4a7.6%207.6%200%200%200%200-10.6z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4%209h3.5L12%204.5v15L7.5%2015H4zm12.5-1.1a6%206%200%200%201%200%208.2l-1.4-1.4a4%204%200%200%200%200-5.4zm2.6-2.6a9.6%209.6%200%200%201%200%2013.4l-1.4-1.4a7.6%207.6%200%200%200%200-10.6z'/%3E%3C/svg%3E")}
+ico-warn{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202.2%2023%2021H1zm0%204.6L4.5%2019h15zM11%2010h2v5h-2zm0%206.2h2v2h-2z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202.2%2023%2021H1zm0%204.6L4.5%2019h15zM11%2010h2v5h-2zm0%206.2h2v2h-2z'/%3E%3C/svg%3E")}
+ico-window{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h18a1%201%200%200%201%201%201v14a1%201%200%200%201-1%201H3a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1m1%202v2h16V6zm0%204v9h16v-9z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%204h18a1%201%200%200%201%201%201v14a1%201%200%200%201-1%201H3a1%201%200%200%201-1-1V5a1%201%200%200%201%201-1m1%202v2h16V6zm0%204v9h16v-9z'/%3E%3C/svg%3E")}
+ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M19%206.4%2017.6%205%2012%2010.6%206.4%205%205%206.4%2010.6%2012%205%2017.6%206.4%2019%2012%2013.4%2017.6%2019%2019%2017.6%2013.4%2012z'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M19%206.4%2017.6%205%2012%2010.6%206.4%205%205%206.4%2010.6%2012%205%2017.6%206.4%2019%2012%2013.4%2017.6%2019%2019%2017.6%2013.4%2012z'/%3E%3C/svg%3E")}
+.spk-btn>*,.mute-btn>*{margin-right:0;width:62%;height:62%}.btn>ico-play{margin-right:.3em}
+.sw{display:inline-block;width:.85em;height:.85em;border-radius:50%;background:var(--c);border:1px solid #ffffff55;vertical-align:-.1em;margin-right:.28em;box-shadow:0 0 6px var(--c)}
+.lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:.52rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
+</style>
+<style>
+  /* ---- Part 2 additions ---- */
+  .lesson.l5 .lnum{background:var(--purple);}
+  .lesson.l6 .lnum{background:var(--magenta);}
+  .lesson.l7 .lnum{background:var(--cyan);}
+  .lesson.l8 .lnum{background:var(--green);}
+  .recap{background:#f3f1fb; border:1px solid #d9d2f5; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .bridge{background:#eaf6f9; border:1px solid #bfe6ee; border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px 8px; margin:12px 0;}
+  .bridge .bh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--cyan); text-transform:uppercase; margin-bottom:6px;}
+  .bridge ul{margin:4px 0 4px 18px;} .bridge li{margin:5px 0; font-size:0.95rem;}
+  .recap .rh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; margin-bottom:6px;}
+  .formbox{border:1.5px solid var(--line); border-radius:10px; background:#fff; padding:6px 0; margin:10px 0; font-family:"Share Tech Mono",monospace; font-size:0.92rem;}
+  .formbox .fh{padding:6px 14px 8px; border-bottom:1.5px solid var(--line); color:var(--purple); letter-spacing:1px; font-size:0.8rem;}
+  .formbox .fr{display:flex; gap:12px; padding:8px 14px; border-bottom:1px dashed var(--line);}
+  .formbox .fr:last-child{border-bottom:none;}
+  .formbox .fl{flex:0 0 42%; color:var(--soft);}
+  .formbox .fv{flex:1; border-bottom:1.5px solid var(--gold); min-height:1.3em;}
+</style>
+</head>
+<body class="teacher">
+
+<div class="toolbar">
+  <span class="tt">VIEW:</span>
+  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')"><ico-bookopen></ico-bookopen> Teacher (with keys)</button>
+  <button class="tbtn" id="btnStudent" onclick="setView('student')"><ico-user></ico-user> Student (no keys)</button>
+  <button class="tbtn print" onclick="window.print()"><ico-print></ico-print> Print / Save PDF</button>
+  <span class="viewnote" id="viewNote">Answer keys &amp; teacher notes are visible.</span>
+</div>
+
+<div class="wrap">
+
+  <!-- ============== COVER ============== -->
+  <div class="cover">
+    <div class="kicker">ENGLISH FOR ALL · RANK UP · GENERAL · PART 2</div>
+    <h1>TRAVEL &amp; LIVING<br>PART 2</h1>
+    <p class="lead">Part 1 was the trip — plans, hotels, restaurants and stories. Part 2 is <b>staying</b>: finding an apartment, opening a bank account and a phone plan, dealing with health problems and emergencies, and settling into a new life. Same <b>PPP</b> rhythm — Present → Practice → Produce.</p>
+    <div class="badges">
+      <span class="badge b1"><b>B1 core</b></span>
+      <span class="badge b2"><ico-star></ico-star> B2 stretch</span>
+      <span class="badge">Lessons 05–08 · ~50–55 min each</span>
+      <span class="badge">1:1 or small group</span>
+      <span class="badge"><span class=lang-tag>US</span> American English</span>
+    </div>
+    <p class="lead-sm" style="margin-top:14px">Prerequisite: <a href="travel-living-b1b2-course.html">Travel &amp; Living Part 1 (lessons 01–04)</a> — or any solid B1. No grammar from Part 1 is repeated here.</p>
+  </div>
+
+  <!-- ============== HOW TO USE ============== -->
+  <h2 class="sec">HOW TO USE THIS COURSE</h2>
+  <p class="lead-sm">Each lesson follows the same rhythm so students always know where they are. Use the <b>Teacher / Student</b> toggle at the top: <b>Student view</b> hides the answer keys and teacher notes so you can print or screen-share a clean handout.</p>
+  <div class="legend">
+    <div class="leg"><span class="em"><ico-target></ico-target></span><div class="lx"><b>Objective</b><span>The can-do goal for the lesson.</span></div></div>
+    <div class="leg"><span class="em"><ico-fire></ico-fire></span><div class="lx"><b>Warm-up (5 min)</b><span>Get talking, activate the topic.</span></div></div>
+    <div class="leg"><span class="em"><ico-book></ico-book></span><div class="lx"><b>Present (15 min)</b><span>Vocabulary + one grammar point, with glossary.</span></div></div>
+    <div class="leg"><span class="em"><ico-pencil></ico-pencil></span><div class="lx"><b>Controlled Practice (15 min)</b><span>Guided exercises. Answers in the <ico-circlecheck></ico-circlecheck> key.</span></div></div>
+    <div class="leg"><span class="em"><ico-headphones></ico-headphones></span><div class="lx"><b>Model Dialogue</b><span>A short conversation + comprehension. Read it aloud, or record it for audio later.</span></div></div>
+    <div class="leg"><span class="em"><ico-commentdots></ico-commentdots></span><div class="lx"><b>Free Practice (15 min)</b><span>Role-play with scripted prompts — works 1:1.</span></div></div>
+    <div class="leg"><span class="em"><ico-star></ico-star></span><div class="lx"><b>B2 Stretch box</b><span>Optional upgrade language for stronger students.</span></div></div>
+    <div class="leg"><span class="em"><ico-pin></ico-pin></span><div class="lx"><b>Homework</b><span>A short writing/speaking task to submit.</span></div></div>
+  </div>
+
+  <h2 class="sec">COURSE MAP · PART 2</h2>
+  <table class="maptable">
+    <tr><th style="width:52px">#</th><th>Lesson</th><th>Grammar focus</th><th>Do this…</th></tr>
+    <tr><td class="ln">05</td><td><b>Finding a Place to Live</b></td><td>Relative clauses: <i>who / which / that / where / whose</i></td><td>Describe what you need and ask about an apartment</td></tr>
+    <tr><td class="ln">06</td><td><b>Getting Set Up: Bank, Phone &amp; Paperwork</b></td><td>Indirect questions: <i>Could you tell me where… / Do you know if…</i></td><td>Open an account, get a phone plan, fill out a form</td></tr>
+    <tr><td class="ln">07</td><td><b>Health &amp; Emergencies</b></td><td>Advice &amp; obligation: <i>should / had better / have to / mustn't / don't have to</i></td><td>Explain symptoms, follow advice, handle an emergency</td></tr>
+    <tr><td class="ln">08</td><td><b>Settling In &amp; Making Friends</b></td><td><i>used to / be used to / get used to</i></td><td>Talk about how your life has changed</td></tr>
+  </table>
+  <div class="tnote"><b>Teacher tip:</b> Part 1 covered future forms, the present perfect, comparatives and narrative tenses. Part 2 takes four <i>new</i> structures, each tied to a real task a newcomer faces in their first months. Lessons 07 and 08 deliberately recycle Part 1 and Lesson 06 language in the role-plays — flag it when the student uses it. The <ico-headphones></ico-headphones> <b>Model Dialogues</b> are written to be recorded (2 short audios per lesson).</div>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 5 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l5">
+    <div class="lesson-head">
+      <div class="lnum">05</div>
+      <div><span class="ttl">Finding a Place to Live</span>
+      <span class="es">Alquilar un departamento · Grammar: oraciones de relativo (who / which / that / where / whose)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-target></ico-target> Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>describe the home they want</b> and <b>ask the right questions about an apartment</b> before signing anything, using <b>relative clauses</b> (<i>who / which / that / where / whose</i>) to be precise.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Have you ever rented an apartment or a room? How did you find it?</li>
+          <li>What matters most to you in a home: price, location, space, light, quiet?</li>
+          <li>What should you always ask before you sign a contract?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-book></ico-book> Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="h3">A · Renting <span class="sm">— the words you'll see in every listing</span></div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>rent</td><td>el alquiler (el pago mensual)</td></tr>
+        <tr><td>to rent an apartment</td><td>alquilar un departamento</td></tr>
+        <tr><td>a landlord / a property manager</td><td>el dueño / el administrador</td></tr>
+        <tr><td>a tenant</td><td>un inquilino</td></tr>
+        <tr><td>a roommate</td><td>un compañero de departamento</td></tr>
+        <tr><td>a lease · to sign a lease</td><td>un contrato de alquiler · firmar el contrato</td></tr>
+        <tr><td>a security deposit</td><td>un depósito de garantía</td></tr>
+        <tr><td>utilities (included / not included)</td><td>los servicios: luz, agua, gas (incluidos / no incluidos)</td></tr>
+        <tr><td>furnished / unfurnished</td><td>amueblado / sin muebles</td></tr>
+        <tr><td>a studio · a one-bedroom</td><td>un estudio · un departamento de una habitación</td></tr>
+        <tr><td>laundry in the building</td><td>lavandería en el edificio</td></tr>
+        <tr><td>to move in / to move out</td><td>mudarse (entrar / salir)</td></tr>
+        <tr><td>a neighborhood</td><td>un barrio / una colonia</td></tr>
+      </table>
+
+      <div class="h3">B · Questions to ask <span class="sm">— before you say yes</span></div>
+      <ul class="phr">
+        <li><span class="en">How much is the rent, and what does it include?</span><span class="sp">¿Cuánto es el alquiler y qué incluye?</span></li>
+        <li><span class="en">Are utilities included?</span><span class="sp">¿Los servicios están incluidos?</span></li>
+        <li><span class="en">How much is the security deposit?</span><span class="sp">¿De cuánto es el depósito?</span></li>
+        <li><span class="en">How long is the lease?</span><span class="sp">¿Por cuánto tiempo es el contrato?</span></li>
+        <li><span class="en">Are pets allowed?</span><span class="sp">¿Se permiten mascotas?</span></li>
+        <li><span class="en">When can I move in?</span><span class="sp">¿Cuándo me puedo mudar?</span></li>
+        <li><span class="en">Can I come see it this week?</span><span class="sp">¿Puedo ir a verlo esta semana?</span></li>
+      </ul>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · the questions experienced renters ask</div>
+        "Is the rent <b>negotiable</b>?" · "What's the neighborhood like <b>at night</b>?" · "Who <b>takes care of</b> repairs?" · "Is there a <b>penalty</b> if I <b>break the lease</b> early?" · "Has the rent <b>gone up</b> much in the last few years?"
+      </div>
+
+      <div class="h3">C · Grammar — Relative clauses <span class="sm">— one sentence instead of two</span></div>
+      <p class="lead-sm">They let you say <b>exactly which</b> person, thing or place: <i>I want an apartment. It has a balcony.</i> → <i>I want an apartment <b>that has a balcony</b>.</i></p>
+      <table class="tb">
+        <tr><th style="width:11%">Word</th><th style="width:17%">For…</th><th style="width:36%">Example</th><th>En español</th></tr>
+        <tr><td><b>who</b></td><td>people</td><td>I need a roommate <b>who</b> doesn't smoke.</td><td><b>que / quien</b><br><span class="sp">Necesito un compañero <b>que</b> no fume.</span></td></tr>
+        <tr><td><b>which</b></td><td>things</td><td>I want an apartment <b>which</b> has a balcony.</td><td><b>que / el cual</b><br><span class="sp">Quiero un departamento <b>que</b> tenga balcón.</span></td></tr>
+        <tr><td><b>that</b></td><td>people <i>or</i> things <span class="sp">el más común en EE.UU.</span></td><td>It's the apartment <b>that</b> we saw on Monday.</td><td><b>que</b><br><span class="sp">Es el departamento <b>que</b> vimos el lunes.</span></td></tr>
+        <tr><td><b>where</b></td><td>places</td><td>I want a neighborhood <b>where</b> I can walk everywhere.</td><td><b>donde</b><br><span class="sp">Quiero un barrio <b>donde</b> pueda caminar a todos lados.</span></td></tr>
+        <tr><td><b>whose</b></td><td>possession</td><td>That's the neighbor <b>whose</b> dog barks all night.</td><td><b>cuyo / cuya</b><br><span class="sp">Es el vecino <b>cuyo</b> perro ladra toda la noche.</span></td></tr>
+      </table>
+      <div class="bridge">
+        <div class="bh">Puente al español · de «que» a cinco palabras</div>
+        <ul>
+          <li>En español, <b>que</b> hace casi todo el trabajo. En inglés se reparte: personas → <b>who</b>, cosas → <b>which</b>, y <b>that</b> sirve para las dos. Si dudas, usa <b>that</b>.</li>
+          <li>En español el «que» <b>nunca desaparece</b>; en inglés, muchas veces sí: <i>el departamento que vimos</i> = <i>the apartment (that) we saw</i>. Al escuchar, a menudo no vas a oír ningún <i>that</i>.</li>
+          <li>«<b>en la que</b>», «<b>con quien</b>»: en inglés la preposición va <b>al final</b>. <i>La ciudad en la que vivo</i> = <i>the city I live <b>in</b></i> = <i>the city <b>where</b> I live</i> — pero nunca las dos juntas. <i>La persona con quien vivo</i> = <i>the person I live <b>with</b></i>.</li>
+          <li>«<b>lo que</b>» no es <i>that</i>, es <b>what</b>: <i>Lo que necesito es un balcón</i> = <span class="ok">What I need is a balcony.</span> <span class="x">That I need is a balcony.</span></li>
+          <li><i>cuyo, cuya, cuyos, cuyas</i> → siempre <b>whose</b>. No cambia nunca.</li>
+        </ul>
+      </div>
+      <div class="grid2">
+        <div class="cell"><span class="gh">You can drop it… sometimes</span>If a new subject follows, <i>that / which / who</i> can disappear:<br><span class="ok">The apartment (that) <b>we</b> saw was perfect.</span><br>If it <i>is</i> the subject, it stays:<br><span class="ok">The apartment <b>that has</b> a balcony…</span></div>
+        <div class="cell"><span class="gh"><ico-warn></ico-warn> Watch out</span><span class="x">The apartment that I saw it was nice.</span> <span class="ok">The apartment that I saw was nice.</span> <span class="sp">no repitas "it"</span><br><span class="x">the landlord which…</span> <span class="ok">the landlord who…</span><br><span class="x">the city where I live in</span> <span class="ok">the city where I live</span></div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · extra information, with commas</div>
+        <b>Non-defining</b> clauses add information the listener doesn't need to identify the thing — they go between commas and <b>never use <i>that</i></b>: "The apartment, <b>which</b> is near the park, costs $1,400 a month." · "My landlord, <b>who</b> lives upstairs, fixes everything fast." <span class="x">My landlord, that lives upstairs…</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · who, which, that, where or whose?</div>
+      <ol>
+        <li>I'm looking for an apartment ___ has two bedrooms.</li>
+        <li>She's the landlord ___ owns the whole building.</li>
+        <li>This is the neighborhood ___ I grew up.</li>
+        <li>I need a roommate ___ works during the day.</li>
+        <li>The café ___ is on the corner has great Wi-Fi.</li>
+        <li>It's a city ___ you can live without a car.</li>
+        <li>I met a woman ___ apartment is for rent.</li>
+        <li>The lease ___ I signed is for twelve months.</li>
+        <li>Is there a supermarket near here ___ is open late?</li>
+        <li>He's the tenant ___ car is always in my parking spot.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li><b>that / which</b></li>
+          <li><b>who / that</b></li>
+          <li><b>where</b></li>
+          <li><b>who / that</b></li>
+          <li><b>that / which</b></li>
+          <li><b>where</b></li>
+          <li><b>whose</b></li>
+          <li><b>that / which / —</b> <span class="alt">(can be dropped: "I" is a new subject)</span></li>
+          <li><b>that / which</b></li>
+          <li><b>whose</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Two sentences → one <span class="sm">— join them with a relative clause</span></div>
+      <ol>
+        <li>I saw an apartment. It has a big kitchen.</li>
+        <li>I have a landlord. He answers every message in five minutes.</li>
+        <li>This is the park. I run there every morning.</li>
+        <li>The apartment was too expensive. We saw it on Monday.</li>
+        <li>I need a roommate. The roommate has to like cats.</li>
+        <li>That's the neighbor. Her dog is always in the hallway.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <ol>
+          <li>I saw an apartment <b>that / which has</b> a big kitchen.</li>
+          <li>I have a landlord <b>who / that answers</b> every message in five minutes.</li>
+          <li>This is the park <b>where</b> I run every morning.</li>
+          <li>The apartment <b>(that / which) we saw on Monday</b> was too expensive.</li>
+          <li>I need a roommate <b>who / that likes</b> cats.</li>
+          <li>That's the neighbor <b>whose dog</b> is always in the hallway.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-headphones></ico-headphones> Model Dialogue · calling about an apartment</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Ivy:</span> Hi, I'm calling about the one-bedroom on Maple Street. Is it still available?</p>
+        <p class="line"><span class="spk b">Landlord:</span> It is. It's a bright apartment <span class="tg">that gets sun all afternoon</span>.</p>
+        <p class="line"><span class="spk">Ivy:</span> Great. How much is the rent, and are utilities included?</p>
+        <p class="line"><span class="spk b">Landlord:</span> Thirteen hundred a month. Water is included, but electricity isn't.</p>
+        <p class="line"><span class="spk">Ivy:</span> OK. And how much is the security deposit?</p>
+        <p class="line"><span class="spk b">Landlord:</span> One month's rent. The lease is for twelve months.</p>
+        <p class="line"><span class="spk">Ivy:</span> I work from home, so I need a place <span class="tg">where it's quiet during the day</span>. What's the building like?</p>
+        <p class="line"><span class="spk b">Landlord:</span> Very quiet. Most of the tenants are people <span class="tg">who work downtown all day</span>.</p>
+        <p class="line"><span class="spk">Ivy:</span> Perfect. Is there laundry in the building?</p>
+        <p class="line"><span class="spk b">Landlord:</span> Yes, in the basement. And there's a park across the street <span class="tg">where people walk their dogs</span>.</p>
+        <p class="line"><span class="spk">Ivy:</span> So… are pets allowed?</p>
+        <p class="line"><span class="spk b">Landlord:</span> Small ones, yes. Would you like to come see it on Saturday?</p>
+        <p class="line"><span class="spk">Ivy:</span> Saturday at ten works. Thank you!</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> How much is the rent, and which utility is included?</p>
+        <p><span class="qn">Q2.</span> Why does Ivy need a quiet building?</p>
+        <p><span class="qn">Q3.</span> Find three relative clauses in the dialogue. Which word does each one use?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>$1,300 a month; water is included (electricity is not).</li>
+          <li>She works from home.</li>
+          <li>"…an apartment <b>that</b> gets sun…" · "…a place <b>where</b> it's quiet…" · "…people <b>who</b> work downtown…" · "…a park <b>where</b> people walk their dogs."</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Role-play — the apartment call.</b> The student writes a quick wish list (budget, rooms, neighborhood, must-haves). The tutor is the landlord and has a secret info card. The student must ask <b>at least five questions</b> and describe what they need with <b>three relative clauses</b>, then decide: <i>take it or keep looking?</i></p>
+      <p class="lead-sm">If the student needs support, start from this frame:</p>
+      <div class="scaffold">
+        Hi, I'm calling about the <span class="gap">apartment</span> on <span class="gap">street</span>. I'm looking for a place that <span class="gap">has / is…</span>, in a neighborhood where <span class="gap">I can…</span>. How much <span class="gap">…</span>? Are <span class="gap">…</span> included? Can I come see it <span class="gap">when</span>?
+      </div>
+      <div class="tnote"><b>Teacher note — landlord's card:</b> $1,450/month · utilities <u>not</u> included · deposit = <b>two</b> months · twelve-month lease · no pets · laundromat two blocks away · available October 1. Don't volunteer the deposit or the pet rule — the student only finds the catch if they ask. Debrief: "Would you take it? Why not?"</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pin></ico-pin> Homework</span>
+      <div class="hw"><b>Write</b> an online post (6–8 sentences): either <i>"Apartment wanted"</i> or <i>"Roommate wanted"</i>. Describe the place or the person you're looking for and the neighborhood you want. Use at least <b>four relative clauses</b> — and try all of <i>who, that, where</i> and <i>whose</i>.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 6 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l6">
+    <div class="lesson-head">
+      <div class="lnum">06</div>
+      <div><span class="ttl">Getting Set Up: Bank, Phone &amp; Paperwork</span>
+      <span class="es">Banco, celular y trámites · Grammar: preguntas indirectas (Could you tell me… / Do you know if…)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-target></ico-target> Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>ask for information politely</b> at a bank, a phone store or an office using <b>indirect questions</b>, and <b>fill out a basic form</b> correctly — including the American date format.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>You arrive in a new country. What are the first three things you need to set up?</li>
+          <li>Have you ever filled out a form in English? What was confusing?</li>
+          <li>"Where is the bank?" vs. "Could you tell me where the bank is?" — which sounds better with a stranger? Why?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-book></ico-book> Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="h3">A · The bank</div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>a checking account</td><td>una cuenta corriente (para el día a día)</td></tr>
+        <tr><td>a savings account</td><td>una cuenta de ahorros</td></tr>
+        <tr><td>a debit card</td><td>una tarjeta de débito</td></tr>
+        <tr><td>an ATM</td><td>un cajero automático</td></tr>
+        <tr><td>a fee · a monthly fee</td><td>una comisión · un cargo mensual</td></tr>
+        <tr><td>to deposit / to withdraw money</td><td>depositar / retirar dinero</td></tr>
+        <tr><td>a transfer</td><td>una transferencia</td></tr>
+        <tr><td>a PIN</td><td>el PIN / la clave</td></tr>
+      </table>
+      <div class="h3">B · Phone &amp; paperwork</div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>a phone plan · a prepaid plan</td><td>un plan · un plan prepago</td></tr>
+        <tr><td>a SIM card · an eSIM</td><td>un chip · una eSIM</td></tr>
+        <tr><td>unlimited data</td><td>datos ilimitados</td></tr>
+        <tr><td>a carrier</td><td>una compañía telefónica</td></tr>
+        <tr><td>a photo ID</td><td>una identificación con foto</td></tr>
+        <tr><td>proof of address</td><td>un comprobante de domicilio</td></tr>
+        <tr><td>to fill out a form</td><td>llenar un formulario</td></tr>
+        <tr><td>to sign · a signature</td><td>firmar · una firma</td></tr>
+        <tr><td>an appointment</td><td>una cita</td></tr>
+      </table>
+      <div class="stretch">
+        <div class="st-h"><span class=lang-tag>US</span> The date trap</div>
+        On American forms the <b>month comes first</b>: <code>07/04/2026</code> = <b>July 4</b>, not April 7. Write <b>MM/DD/YYYY</b> unless the form says otherwise — a wrong date of birth can get a form rejected. And in the US you <b>fill out</b> a form.
+      </div>
+
+      <div class="h3">C · Grammar — Indirect questions <span class="sm">— the polite way to ask a stranger</span></div>
+      <table class="tb">
+        <tr><th style="width:44%">Direct <span class="sp">correcta, pero seca</span></th><th>Indirect <span class="sp">amable</span></th></tr>
+        <tr><td>Where <b>is</b> the nearest ATM?</td><td>Could you tell me where the nearest ATM <b>is</b>?</td></tr>
+        <tr><td>How much <b>does</b> the plan <b>cost</b>?</td><td>Can you tell me how much the plan <b>costs</b>?</td></tr>
+        <tr><td>What documents <b>do</b> I <b>need</b>?</td><td>Do you know what documents I <b>need</b>?</td></tr>
+        <tr><td>When <b>will</b> my card <b>arrive</b>?</td><td>Do you know when my card <b>will arrive</b>?</td></tr>
+        <tr><td><b>Is</b> there a monthly fee?</td><td>Do you know <b>if</b> there <b>is</b> a monthly fee?</td></tr>
+        <tr><td><b>Can</b> I open an account online?</td><td>I'd like to know <b>whether</b> I <b>can</b> open an account online.</td></tr>
+      </table>
+      <div class="grid2">
+        <div class="cell"><span class="gh">The three rules</span>1 · Start with a frame: <i>Could you tell me… / Do you know… / Can you tell me… / I'd like to know…</i><br>2 · After the frame, <b>normal statement order</b>: subject + verb.<br>3 · <b>do / does / did disappear</b>; yes/no questions take <b>if</b> or <b>whether</b>.</div>
+        <div class="cell"><span class="gh"><ico-warn></ico-warn> Watch out</span><span class="x">Could you tell me where is the bank?</span> <span class="ok">Could you tell me where the bank is?</span><br><span class="x">Do you know how much does it cost?</span> <span class="ok">Do you know how much it costs?</span><br><i>I'd like to know…</i> is a statement: it ends with a period, not a question mark.</div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · extra-polite frames</div>
+        "<b>I was wondering if</b> you could help me with this form." · "<b>Would you happen to know whether</b> the office is open on Saturday?" · "<b>Would you mind telling me</b> how long it usually takes?" · "<b>I'd appreciate it if</b> you could email me a copy."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Make it polite <span class="sm">— rewrite with the frame in brackets</span></div>
+      <ol>
+        <li>Where is the post office? <i>(Could you tell me…)</i></li>
+        <li>How much does the prepaid plan cost? <i>(Can you tell me…)</i></li>
+        <li>Is there a fee for transfers? <i>(Do you know…)</i></li>
+        <li>What time does the bank close? <i>(Do you know…)</i></li>
+        <li>Do I need an appointment? <i>(Could you tell me…)</i></li>
+        <li>When will my card arrive? <i>(Do you know…)</i></li>
+        <li>Where do I sign? <i>(Could you show me…)</i></li>
+        <li>Can I pay with a foreign card? <i>(I'd like to know…)</i></li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li>Could you tell me <b>where the post office is</b>?</li>
+          <li>Can you tell me <b>how much the prepaid plan costs</b>?</li>
+          <li>Do you know <b>if / whether there is</b> a fee for transfers?</li>
+          <li>Do you know <b>what time the bank closes</b>?</li>
+          <li>Could you tell me <b>if / whether I need</b> an appointment?</li>
+          <li>Do you know <b>when my card will arrive</b>?</li>
+          <li>Could you show me <b>where I sign</b>? <span class="alt">(also: where to sign)</span></li>
+          <li>I'd like to know <b>if / whether I can pay</b> with a foreign card<b>.</b> <span class="alt">(period, not question mark)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Fill out the form <span class="sm">— read about Nao, then complete her bank form</span></div>
+      <p class="lead-sm"><i>Nao Sato was born on July 14, 1996. She lives at 48 Pine Street, Apartment 3B, Denver, CO 80203. Her cell number is 720-555-0167. She has a passport but no US driver's license. She wants an account for everyday spending, with a debit card — not for saving.</i></p>
+      <div class="formbox">
+        <div class="fh">NEW ACCOUNT APPLICATION</div>
+        <div class="fr"><span class="fl">1 · Last name, First name</span><span class="fv"></span></div>
+        <div class="fr"><span class="fl">2 · Date of birth (MM/DD/YYYY)</span><span class="fv"></span></div>
+        <div class="fr"><span class="fl">3 · Street address · Apt #</span><span class="fv"></span></div>
+        <div class="fr"><span class="fl">4 · City · State · ZIP code</span><span class="fv"></span></div>
+        <div class="fr"><span class="fl">5 · Phone number</span><span class="fv"></span></div>
+        <div class="fr"><span class="fl">6 · Photo ID type</span><span class="fv"></span></div>
+        <div class="fr"><span class="fl">7 · Account type (checking / savings)</span><span class="fv"></span></div>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <ol>
+          <li><b>Sato, Nao</b> <span class="alt">(last name first — a common trap)</span></li>
+          <li><b>07/14/1996</b> <span class="alt">(month first — not 14/07/1996)</span></li>
+          <li><b>48 Pine Street, Apt 3B</b></li>
+          <li><b>Denver, CO 80203</b></li>
+          <li><b>720-555-0167</b></li>
+          <li><b>Passport</b></li>
+          <li><b>Checking</b> <span class="alt">(everyday spending + debit card; savings is for saving)</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-headphones></ico-headphones> Model Dialogue · opening a bank account</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Clerk:</span> Good morning. How can I help you?</p>
+        <p class="line"><span class="spk">Nao:</span> Hi. I just moved here, and I'd like to open a checking account. <span class="tg">Could you tell me what documents I need</span>?</p>
+        <p class="line"><span class="spk b">Clerk:</span> Sure. We need a photo ID and proof of address.</p>
+        <p class="line"><span class="spk">Nao:</span> I have my passport. <span class="tg">Do you know if a lease works</span> as proof of address?</p>
+        <p class="line"><span class="spk b">Clerk:</span> Yes, a signed lease is fine.</p>
+        <p class="line"><span class="spk">Nao:</span> Great. <span class="tg">Can you tell me if there's a monthly fee</span>?</p>
+        <p class="line"><span class="spk b">Clerk:</span> It's ten dollars a month — but there's no fee if you deposit more than five hundred a month.</p>
+        <p class="line"><span class="spk">Nao:</span> OK. And <span class="tg">do you know when my debit card will arrive</span>?</p>
+        <p class="line"><span class="spk b">Clerk:</span> In seven to ten days, by mail. Could you fill out this form, please? Sign at the bottom.</p>
+        <p class="line"><span class="spk">Nao:</span> Sure. Sorry — <span class="tg">could you show me where the date goes</span>?</p>
+        <p class="line"><span class="spk b">Clerk:</span> Right here. Month first, then the day, then the year.</p>
+        <p class="line"><span class="spk">Nao:</span> Month first. Good to know — thanks!</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> Which two documents does Nao need, and what does she use for each?</p>
+        <p><span class="qn">Q2.</span> How can she avoid the monthly fee?</p>
+        <p><span class="qn">Q3.</span> What almost goes wrong on the form?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>A photo ID (her passport) and proof of address (her signed lease).</li>
+          <li>By depositing more than $500 a month.</li>
+          <li>The date — in the US the month goes first.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Produce <span class="min">15 min</span></span>
+      <ul>
+        <li><b>Round 1 — the phone store.</b> The student wants a prepaid plan and must find out four things with <b>indirect questions</b>: the price, how much data, whether there's a contract, and whether the phone takes an eSIM.</li>
+        <li><b>Round 2 — "make me polite".</b> The tutor fires direct questions ("Where's the bathroom?", "When does the office open?", "Do you take cards?"); the student turns each one into an indirect question on the spot, as fast as possible.</li>
+      </ul>
+      <div class="scaffold">
+        Hi. I'd like to <span class="gap">get a plan / open…</span>. Could you tell me <span class="gap">how much…</span>? Do you know if <span class="gap">…</span>? I'd also like to know whether <span class="gap">…</span>. Thanks for your help!
+      </div>
+      <div class="tnote"><b>Teacher note — phone store card:</b> $30/month prepaid · 15 GB data, then slower · no contract, cancel any time · eSIM available · photo ID required. The error to hunt is <i>"Could you tell me where <b>is</b>…?"</i> — don't correct mid-flow; tally them and review at the end. Round 2 should feel like a game; aim for 10 questions in 2 minutes.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pin></ico-pin> Homework</span>
+      <div class="hw"><b>Choose</b> a service you really need — a gym, a language school, a phone plan, a library card, a doctor. <b>Write</b> a polite email (5–6 sentences) asking for information, with at least <b>four indirect questions</b>. Bonus: use one B2 frame (<i>I was wondering if…</i>).</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 7 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l7">
+    <div class="lesson-head">
+      <div class="lnum">07</div>
+      <div><span class="ttl">Health &amp; Emergencies</span>
+      <span class="es">Farmacia, médico y emergencias · Grammar: consejo y obligación (should / had better / have to / mustn't / don't have to)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-target></ico-target> Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>describe symptoms</b> at a pharmacy or a clinic, <b>understand and give advice</b>, and <b>handle an emergency</b> such as a lost passport — using <b>modals of advice and obligation</b>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>You feel sick in another country. Where do you go first — a pharmacy, a doctor, a hospital?</li>
+          <li>Do you know the emergency number in the US? And in your country?</li>
+          <li>What's your best advice for someone with a bad cold?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-book></ico-book> Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="h3">A · Symptoms <span class="sm">— say what's wrong</span></div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>I have a headache / a stomachache</td><td>me duele la cabeza / el estómago</td></tr>
+        <tr><td>I have a sore throat</td><td>me duele la garganta</td></tr>
+        <tr><td>I have a fever / a cough</td><td>tengo fiebre / tos</td></tr>
+        <tr><td>I have a rash</td><td>tengo un sarpullido</td></tr>
+        <tr><td>I feel dizzy / nauseous</td><td>estoy mareado/a / tengo náuseas</td></tr>
+        <tr><td>I sprained my ankle</td><td>me torcí el tobillo</td></tr>
+        <tr><td>I hurt my back</td><td>me lastimé la espalda</td></tr>
+        <tr><td>I'm allergic to…</td><td>soy alérgico/a a…</td></tr>
+        <tr><td>It hurts here.</td><td>Me duele aquí.</td></tr>
+      </table>
+
+      <div class="h3">B · Where to go <span class="sm">— in the US</span></div>
+      <div class="grid2">
+        <div class="cell"><span class="gh">Pharmacy / drugstore</span>Small problems. <b>Over-the-counter</b> medicine (no <b>prescription</b> needed). "Can you recommend something for…?"</div>
+        <div class="cell"><span class="gh">Urgent care</span>Not life-threatening, but you need a doctor <b>today</b>. Usually <b>walk-in</b> — no appointment.</div>
+        <div class="cell"><span class="gh">The ER (emergency room)</span>Serious: chest pain, a bad injury, trouble breathing. Expensive — have your <b>insurance</b> card.</div>
+        <div class="cell"><span class="gh">911</span>Ambulance, police, fire. "I need an ambulance at…" · <b>Lost passport:</b> police report → your <b>embassy or consulate</b>.</div>
+      </div>
+      <div class="stretch">
+        <div class="st-h"><span class=lang-tag>US</span> Fahrenheit</div>
+        American thermometers use °F. <b>98.6°F</b> = 37°C (normal) · <b>100.4°F</b> = 38°C (fever starts) · <b>102°F</b> ≈ 39°C · <b>104°F</b> = 40°C (see a doctor). Exact: °C = (°F − 32) × 5 ÷ 9.
+      </div>
+
+      <div class="h3">C · Grammar — Advice &amp; obligation</div>
+      <table class="tb">
+        <tr><th style="width:26%">Modal</th><th style="width:26%">Meaning</th><th>Example</th></tr>
+        <tr><td><b>should / shouldn't</b></td><td>advice</td><td>You <b>should</b> drink more water. · You <b>shouldn't</b> take it on an empty stomach.</td></tr>
+        <tr><td><b>had better ('d better)</b></td><td>strong advice + a warning</td><td>You'd <b>better see</b> a doctor — that looks infected. <span class="sp">sin "to"</span></td></tr>
+        <tr><td><b>have to / need to</b></td><td>obligation — a rule or a necessity</td><td>You <b>have to</b> show ID to pick up a prescription.</td></tr>
+        <tr><td><b>must / must not</b></td><td>very strong — labels, signs, official rules</td><td><b>Do not</b> exceed 8 tablets in 24 hours. = You <b>must not</b> take more than 8.</td></tr>
+        <tr><td><b>don't have to</b></td><td>not necessary (you can if you want)</td><td>You <b>don't have to</b> make an appointment at urgent care.</td></tr>
+      </table>
+      <div class="grid2">
+        <div class="cell"><span class="gh"><ico-warn></ico-warn> The big trap</span><b>mustn't ≠ don't have to.</b><br><i>You mustn't drive after taking this.</i> = <b>prohibido</b>.<br><i>You don't have to pay now.</i> = <b>no es necesario</b> (pero puedes).<br>Ojo: "no tienes que" en español a veces significa <i>prohibido</i> — en inglés, <i>don't have to</i> nunca.</div>
+        <div class="cell"><span class="gh"><span class=lang-tag>US</span> In real life</span>Spoken American English almost never uses <i>must</i> for rules — it sounds very formal. People say <b>have to / need to</b>, and for prohibitions just <b>"Don't…"</b> or <b>"You can't…"</b>. You'll <i>read</i> <i>must</i> on labels and signs.</div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · softer and past advice</div>
+        "You <b>might want to</b> get that checked." · "<b>If I were you, I'd</b> go to urgent care." · "You <b>ought to</b> rest for a couple of days." · "<b>It's essential that</b> you take it with food." · Regret: "I <b>should have brought</b> my insurance card." · "You <b>didn't have to</b> come with me — but thank you!"
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Choose the modal <span class="sm">— should · shouldn't · 'd better · have to · mustn't · don't have to</span></div>
+      <ol>
+        <li>You ___ take this medicine with food, or your stomach will hurt.</li>
+        <li>It's a prescription drug, so you ___ show your ID to pick it up.</li>
+        <li>The label says you ___ drink alcohol with these tablets.</li>
+        <li>Urgent care is walk-in. You ___ make an appointment.</li>
+        <li>That cut looks really bad. You ___ go to urgent care right now.</li>
+        <li>You ___ call 911 for a cold. Go to a pharmacy.</li>
+        <li>The pharmacy is open 24 hours, so you ___ hurry.</li>
+        <li>You ___ file a police report before the consulate can replace your passport.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li><b>should</b> <span class="alt">('d better also works — there's a warning)</span></li>
+          <li><b>have to</b></li>
+          <li><b>mustn't</b> <span class="alt">(written rule on a label)</span></li>
+          <li><b>don't have to</b></li>
+          <li><b>'d better</b> <span class="alt">(strong advice + implied danger)</span></li>
+          <li><b>shouldn't</b></li>
+          <li><b>don't have to</b></li>
+          <li><b>have to</b> <span class="alt">(also: need to)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · What should I do? <span class="sm">— write the letter (a–f) of the best advice</span></div>
+      <ol>
+        <li>"I think I lost my passport." &nbsp;→&nbsp; ___</li>
+        <li>"I have a sore throat." &nbsp;→&nbsp; ___</li>
+        <li>"My friend fainted and she isn't answering me!" &nbsp;→&nbsp; ___</li>
+        <li>"I sprained my ankle yesterday." &nbsp;→&nbsp; ___</li>
+        <li>"I'm almost out of my allergy medicine." &nbsp;→&nbsp; ___</li>
+        <li>"I have a fever of 103." &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="cell" style="margin-top:6px"><span class="gh">Advice — one fits each problem</span>
+        <ul style="list-style:none; margin:6px 0 0; padding:0; line-height:1.9">
+          <li>a. Call 911 right now.</li>
+          <li>b. You'll have to get a new prescription from a doctor.</li>
+          <li>c. You'd better report it to the police and call your consulate.</li>
+          <li>d. You'd better see a doctor today — that's high.</li>
+          <li>e. You should drink hot tea with honey. A pharmacist can recommend something.</li>
+          <li>f. You should put ice on it and rest. If it gets worse, go to urgent care.</li>
+        </ul>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <p><b>1-c · 2-e · 3-a · 4-f · 5-b · 6-d</b></p>
+        <p class="alt">103°F ≈ 39.4°C — a high fever in an adult.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-headphones></ico-headphones> Model Dialogue · at the pharmacy</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Pharmacist:</span> Hi there. What can I do for you?</p>
+        <p class="line"><span class="spk">Ada:</span> Hi. I've had a sore throat and a fever since yesterday. Can you recommend something?</p>
+        <p class="line"><span class="spk b">Pharmacist:</span> How high is the fever?</p>
+        <p class="line"><span class="spk">Ada:</span> About a hundred and one.</p>
+        <p class="line"><span class="spk b">Pharmacist:</span> OK. Take these for the fever — two tablets every six hours. Look, the label says you <span class="tg">must not take more than eight</span> in a day.</p>
+        <p class="line"><span class="spk">Ada:</span> <span class="tg">Do I have to take them</span> with food?</p>
+        <p class="line"><span class="spk b">Pharmacist:</span> You <span class="tg">don't have to</span>, but it's easier on your stomach. And you <span class="tg">should drink</span> lots of water.</p>
+        <p class="line"><span class="spk">Ada:</span> <span class="tg">Should I see</span> a doctor?</p>
+        <p class="line"><span class="spk b">Pharmacist:</span> If the fever is still high in two days, <span class="tg">you'd better go</span> to urgent care. You <span class="tg">don't need</span> an appointment there.</p>
+        <p class="line"><span class="spk">Ada:</span> Great. Oh — one more thing. I think I left my passport in a taxi. What should I do?</p>
+        <p class="line"><span class="spk b">Pharmacist:</span> <span class="tg">You'd better call</span> the taxi company first. If it's gone, you <span class="tg">have to file</span> a police report, and then contact your consulate.</p>
+        <p class="line"><span class="spk">Ada:</span> Thank you — you've been really helpful.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> What are Ada's symptoms, and since when?</p>
+        <p><span class="qn">Q2.</span> What are the two rules for the tablets? Which one is obligatory and which one isn't?</p>
+        <p><span class="qn">Q3.</span> What are the steps for the lost passport, in order?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>A sore throat and a fever (about 101°F ≈ 38.3°C), since yesterday.</li>
+          <li>Max. eight tablets a day — obligatory (<i>must not</i>). Taking them with food — not necessary (<i>don't have to</i>), just recommended.</li>
+          <li>Call the taxi company → if it's gone, file a police report → contact the consulate.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Role-play — three situations, one card each.</b> The student is the patient; then swap, and the student gives the advice using at least three different modals.</p>
+      <ul>
+        <li><b>A · The pharmacy.</b> Stomachache and nausea since last night after eating street food.</li>
+        <li><b>B · The phone call.</b> Call an urgent care clinic: ask if they take walk-ins, how long the wait is, and whether they accept your insurance. <i>(Recycle Lesson 06: indirect questions.)</i></li>
+        <li><b>C · The police station.</b> Your wallet and passport were stolen on the subway. Explain what happened and ask what you have to do next. <i>(Recycle Part 1: past simple vs. continuous — "I was standing by the door when…")</i></li>
+      </ul>
+      <div class="scaffold">
+        Hi. I've had <span class="gap">symptom</span> since <span class="gap">when</span>. It hurts <span class="gap">where</span>. Can you recommend something? How often should I <span class="gap">…</span>? Do I have to <span class="gap">…</span>? Should I see a doctor?
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Two things to listen for: <i>had better</i> + base verb (<span class="x">you'd better to go</span>), and <i>mustn't</i> vs. <i>don't have to</i>. If the student mixes them, stop and ask: "Is it forbidden, or just not necessary?" In card C, reward any use of past continuous — that's the Part 1 spiral.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pin></ico-pin> Homework</span>
+      <div class="hw"><b>Write</b> a short "survival guide" (6–8 sentences) for a friend who is moving to your city: where to go when they're sick, the emergency number, what they have to carry, what they don't have to worry about, and one thing they mustn't do. Use at least <b>five different modals</b>.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 8 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l8">
+    <div class="lesson-head">
+      <div class="lnum">08</div>
+      <div><span class="ttl">Settling In &amp; Making Friends</span>
+      <span class="es">Adaptarte y hacer amigos · Grammar: used to / be used to / get used to</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-target></ico-target> Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>talk about how their life has changed</b> — what they <b>used to</b> do, what they <b>are used to</b> now, and what they are still <b>getting used to</b> — and <b>make plans with new people</b>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>What's the hardest part of living somewhere new — the language, the food, the weather, the people?</li>
+          <li>What did you do as a child that you don't do now?</li>
+          <li>How do adults make new friends in a new city?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-book></ico-book> Present · Vocabulary &amp; Grammar <span class="min">15 min</span></span>
+
+      <div class="h3">A · Making friends <span class="sm">— from small talk to a real plan</span></div>
+      <ul class="phr">
+        <li><span class="en">Are you from around here?</span><span class="sp">¿Eres de aquí?</span></li>
+        <li><span class="en">How long have you lived here?</span><span class="sp">¿Cuánto tiempo llevas viviendo aquí?</span></li>
+        <li><span class="en">Do you want to grab coffee sometime?</span><span class="sp">¿Quieres tomar un café un día de estos?</span></li>
+        <li><span class="en">A few of us are going to a concert on Friday. Want to come?</span><span class="sp">Algunos vamos a un concierto el viernes. ¿Vienes?</span></li>
+        <li><span class="en">I'd love to, but I can't this week. How about Saturday?</span><span class="sp">Me encantaría, pero esta semana no puedo. ¿Qué tal el sábado?</span></li>
+        <li><span class="en">Let me give you my number.</span><span class="sp">Te doy mi número.</span></li>
+        <li><span class="en">It was great to meet you. Let's keep in touch!</span><span class="sp">Qué bueno conocerte. ¡Seguimos en contacto!</span></li>
+      </ul>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>to settle in</td><td>instalarse, adaptarse</td></tr>
+        <tr><td>to fit in</td><td>encajar</td></tr>
+        <tr><td>homesick</td><td>que extraña su casa / su país</td></tr>
+        <tr><td>culture shock</td><td>choque cultural</td></tr>
+        <tr><td>a local · a newcomer</td><td>alguien de aquí · un recién llegado</td></tr>
+        <tr><td>to hang out (with)</td><td>pasar el rato (con)</td></tr>
+        <tr><td>to make friends</td><td>hacer amigos <span class="sp">nunca "do friends"</span></td></tr>
+      </table>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · how it really feels</div>
+        "I'm still <b>finding my feet</b> here." · "We really <b>clicked</b> the first time we met." · "I've been a bit <b>homesick lately</b>." · "We should <b>hang out</b> more often." · "It took me a while to <b>find my people</b>."
+      </div>
+
+      <div class="h3">B · Grammar — used to · be used to · get used to</div>
+      <table class="tb">
+        <tr><th style="width:26%">Form</th><th style="width:30%">Meaning</th><th>Example</th></tr>
+        <tr><td><b>used to</b> + base verb</td><td>a past habit or state — <b>not true now</b> <span class="sp">solía / antes…</span></td><td>I <b>used to take</b> the bus. Now I bike. · <b>Did</b> you <b>use to</b> live in Lima?</td></tr>
+        <tr><td><b>be used to</b> + -ing / noun</td><td>it's <b>normal</b> for me now <span class="sp">estar acostumbrado/a a</span></td><td>I'<b>m used to eating</b> dinner at six now. · I'<b>m used to</b> the cold.</td></tr>
+        <tr><td><b>get used to</b> + -ing / noun</td><td>the <b>process</b> of it becoming normal <span class="sp">acostumbrarse a</span></td><td>I'<b>m getting used to tipping</b> 20%. · It took months to <b>get used to</b> the weather.</td></tr>
+      </table>
+      <div class="grid2">
+        <div class="cell"><span class="gh"><ico-warn></ico-warn> Watch out</span><span class="x">I'm used to wake up early.</span> <span class="ok">I'm used to waking up early.</span><br><span class="x">I use to live in Lima.</span> <span class="ok">I used to live in Lima.</span><br><span class="x">I didn't used to…</span> <span class="ok">I didn't use to…</span> <span class="sp">después de "did", sin -d</span></div>
+        <div class="cell"><span class="gh"><span class=lang-tag>US</span> Things newcomers get used to</span>Tipping 18–20% in restaurants · prices that don't include tax · dinner at 6 p.m. · small talk with strangers in line · air conditioning everywhere · driving to everything.</div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch · <i>would</i> for past routines</div>
+        For repeated past <b>actions</b> (not states), <i>would</i> sounds natural in stories: "Every Sunday we <b>would</b> eat at my grandmother's." But <span class="x">I would live in Lima</span> → <span class="ok">I used to live in Lima</span> (a state). Also: "I've <b>gotten used to</b> it" (US) · "I'll <b>never get used to</b> the winters here."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · used to, be used to or get used to? <span class="sm">— use the verb in brackets</span></div>
+      <ol>
+        <li>I ___ (live) with my parents, but now I have my own apartment.</li>
+        <li>After two years here, I ___ (drive) on these big highways.</li>
+        <li>It's hard, but I'm slowly ___ (speak) English all day.</li>
+        <li>___ you ___ (have) a big family lunch every Sunday back home?</li>
+        <li>She can't ___ (eat) dinner at six — it feels so early!</li>
+        <li>I ___ (not / like) coffee, but now I drink three cups a day.</li>
+        <li>Don't worry. You'll ___ (be) far from home — it gets easier.</li>
+        <li>I ___ (be) shy, but moving here changed me.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li><b>used to live</b></li>
+          <li><b>am used to driving</b> <span class="alt">(also: have gotten used to driving)</span></li>
+          <li><b>getting used to speaking</b></li>
+          <li><b>Did</b> you <b>use to have</b></li>
+          <li><b>get used to eating</b></li>
+          <li><b>didn't use to like</b></li>
+          <li><b>get used to being</b></li>
+          <li><b>used to be</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Then and now <span class="sm">— Max moved to Chicago a year ago. Write two sentences for each row.</span></div>
+      <table class="tb">
+        <tr><th style="width:34%">Back home</th><th style="width:34%">Now in Chicago</th><th>How it feels</th></tr>
+        <tr><td>dinner at 9:30 p.m.</td><td>dinner at 6:30 p.m.</td><td>still strange</td></tr>
+        <tr><td>took the metro everywhere</td><td>bikes to work</td><td>totally normal now</td></tr>
+        <tr><td>warm winters</td><td>freezing winters</td><td>slowly adapting</td></tr>
+        <tr><td>all his friends nearby</td><td>new friends from a climbing gym</td><td>feels good</td></tr>
+      </table>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2 — model answers</div>
+        <ol>
+          <li>Max <b>used to eat</b> dinner at 9:30. He <b>isn't used to eating</b> at 6:30 yet.</li>
+          <li>He <b>used to take</b> the metro everywhere. Now he bikes to work, and he <b>is</b> completely <b>used to it</b>.</li>
+          <li>He <b>used to have</b> warm winters. He <b>is</b> slowly <b>getting used to</b> the cold.</li>
+          <li>All his friends <b>used to live</b> nearby. He <b>has gotten used to</b> making new friends — the climbing gym helped.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-headphones></ico-headphones> Model Dialogue · one year later</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Leo:</span> So how long have you been here now? A year?</p>
+        <p class="line"><span class="spk">Max:</span> A year next week. It went so fast.</p>
+        <p class="line"><span class="spk b">Leo:</span> <span class="tg">Are you used to the winters</span> yet?</p>
+        <p class="line"><span class="spk">Max:</span> Not really! Back home I <span class="tg">used to go</span> to the beach in December. Here I wear three jackets.</p>
+        <p class="line"><span class="spk b">Leo:</span> Ha! What about the food?</p>
+        <p class="line"><span class="spk">Max:</span> I'm <span class="tg">getting used to eating</span> dinner at six. I <span class="tg">used to eat</span> at ten!</p>
+        <p class="line"><span class="spk b">Leo:</span> And work? You <span class="tg">used to hate</span> your commute.</p>
+        <p class="line"><span class="spk">Max:</span> I did. Now I bike to work, and <span class="tg">I'm totally used to it</span>. I actually love it.</p>
+        <p class="line"><span class="spk b">Leo:</span> Do you still get homesick?</p>
+        <p class="line"><span class="spk">Max:</span> Sometimes. But I've made some friends at the climbing gym, and that helped a lot.</p>
+        <p class="line"><span class="spk b">Leo:</span> That's great. A few of us are going to a concert on Friday. Want to come?</p>
+        <p class="line"><span class="spk">Max:</span> I'd love to! Send me the details.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">Q1.</span> What did Max use to do in December?</p>
+        <p><span class="qn">Q2.</span> What is he still getting used to, and what is he already used to?</p>
+        <p><span class="qn">Q3.</span> What helped him with feeling homesick?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · comprehension</div>
+        <ol>
+          <li>He used to go to the beach.</li>
+          <li>Still getting used to: eating dinner at six (and the winters). Already used to: biking to work.</li>
+          <li>Making friends at the climbing gym.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Part 1 — "then and now" interview.</b> The tutor interviews the student about a real change in their life: a move, a new job, a new school, becoming a parent. Question cards:</p>
+      <ul>
+        <li>What did you use to do that you don't do now?</li>
+        <li>What was hard at first that you're used to now?</li>
+        <li>What are you still getting used to?</li>
+        <li>What do you think you'll never get used to?</li>
+      </ul>
+      <p><b>Part 2 — the new neighbor.</b> The tutor plays a neighbor the student meets in the elevator. Small talk → find something in common → make a real plan with a day and time. <i>(Recycle Part 1: future forms — "I'm meeting some friends on Saturday…")</i></p>
+      <div class="scaffold">
+        I moved to <span class="gap">place</span> in <span class="gap">year</span>. Back home, I used to <span class="gap">verb</span>. At first it was hard to <span class="gap">verb</span>, but now I'm used to <span class="gap">verb + -ing</span>. I'm still getting used to <span class="gap">noun / -ing</span>. The best thing here is <span class="gap">…</span>.
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Under pressure, almost everyone says <i>"I'm used to <b>wake</b> up…"</i>. When you hear it, just repeat the sentence back with the -ing and keep going — don't break the conversation. This is the course finale: in Part 2 of the role-play, expect and praise language from all eight lessons.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pin></ico-pin> Homework · course finale</span>
+      <div class="hw"><b>Write</b> a letter to yourself on your first day in a new place (8–10 sentences) — real or imagined. Tell your past self what you <b>used to</b> worry about, what you're <b>used to</b> now, what you're still <b>getting used to</b>, and give one piece of advice with <i>should</i> or <i>had better</i>. Bonus: one relative clause (<i>a friend who…, a place where…</i>).
+        <div class="scaffold" style="margin-top:10px">
+          Dear me,<br>
+          Right now you're <span class="gap">feeling…</span> because <span class="gap">…</span>. Don't worry. You used to <span class="gap">…</span>, but in a few months you'll get used to <span class="gap">…</span>. Now I'm used to <span class="gap">…</span>, and I've found a place where <span class="gap">…</span>. I'm still getting used to <span class="gap">…</span>. My advice: you'd better <span class="gap">…</span>, and you should <span class="gap">…</span>.<br>
+          See you soon,<br>
+          <span class="gap">me</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="recap">
+    <div class="rh">Part 2 · complete</div>
+    Across eight lessons the student has gone from <i>planning a trip</i> to <i>living somewhere new</i>: booking and complaining, eating out and telling stories, then renting, setting up, staying healthy and settling in — with eight grammar points attached to real tasks. Natural next steps: the <a href="business-english-b1-course.html">Business English</a> track for work, or the IELTS General track for a visa or residency application.
+  </div>
+
+</div><!-- /wrap -->
+
+<footer>
+  <b>ENGLISH for ALL</b><br>
+  Travel &amp; Living · Part 2 · B1 core · <ico-star></ico-star> B2 stretch · lessons 05–08 · Rank Up general track
+</footer>
+
+<script>
+  function setView(mode){
+    document.body.classList.remove('teacher','student');
+    document.body.classList.add(mode);
+    document.getElementById('btnTeacher').classList.toggle('on', mode==='teacher');
+    document.getElementById('btnStudent').classList.toggle('on', mode==='student');
+    document.getElementById('viewNote').textContent = (mode==='teacher')
+      ? 'Answer keys & teacher notes are visible.'
+      : 'Student handout — keys & teacher notes are hidden.';
+  }
+</script>
+</body>
+</html>
