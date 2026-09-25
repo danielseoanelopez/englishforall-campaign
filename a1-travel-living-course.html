@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English for All · Travel &amp; Living A1 (base · A2 extra)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon-rankup.png">
+<link rel="apple-touch-icon" href="icon-rankup.png">
+<meta name="description" content="Curso de inglés A1 para viajar (4 lecciones, estilo PPP) con instrucciones en español: aeropuerto, hotel, direcciones y compras. English for All · Rank Up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/a1-travel-living-course.html">
+<meta property="og:title" content="Travel &amp; Living A1 — 4 lecciones (instrucciones en español)">
+<meta property="og:description" content="Inglés de supervivencia para viajar: aeropuerto, hotel, moverte por la ciudad y comprar. 4 lecciones PPP con respuestas. English for All — Rank Up.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<meta property="og:site_name" content="English for All">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cyan:#0a8ea6; --magenta:#c31f8f; --purple:#6d3ff0; --gold:#b5791a; --green:#158a52; --red:#c0392b;
+    --ink:#1c2230; --soft:#54607a; --line:#dbe2ef; --bg:#f4f6fb; --card:#ffffff;
+    --stretch-bg:#f6f1ff; --key-bg:#eefaf2; --warm-bg:#fff8ec;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.62; font-size:16.5px; padding:0 0 80px;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px;}
+  a{color:var(--cyan);}
+
+  /* ---- Top toolbar ---- */
+  .toolbar{position:sticky; top:0; z-index:40; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:center;
+    background:rgba(244,246,251,0.92); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+    padding:10px 14px; border-bottom:1px solid var(--line);}
+  .toolbar .tt{font-family:"Share Tech Mono",monospace; font-size:0.82rem; color:var(--soft); letter-spacing:1px;}
+  .tbtn{font-family:"Share Tech Mono",monospace; font-size:0.82rem; border:1.5px solid var(--purple); color:var(--purple);
+    background:#fff; border-radius:9px; padding:8px 14px; cursor:pointer; letter-spacing:1px; transition:.15s; white-space:nowrap;}
+  .tbtn:hover{background:#f0eaff;}
+  .tbtn.on{background:var(--purple); color:#fff;}
+  .tbtn.print{border-color:var(--cyan); color:var(--cyan);}
+  .tbtn.print:hover{background:#e6f6f9;}
+  .viewnote{font-family:"Share Tech Mono",monospace; font-size:0.72rem; color:var(--soft);}
+
+  /* ---- Cover ---- */
+  .cover{background:var(--card); border:1px solid var(--line); border-top:6px solid var(--purple);
+    border-radius:16px; padding:30px 30px 26px; margin:26px 0 22px; box-shadow:0 6px 24px #1c223010;}
+  .kicker{font-family:"Press Start 2P",monospace; font-size:0.56rem; letter-spacing:2px; color:var(--magenta);}
+  .cover h1{font-family:"Press Start 2P",monospace; font-size:clamp(1.05rem,3.6vw,1.7rem); line-height:1.5; color:var(--purple); margin:14px 0 10px;}
+  .cover .lead{font-size:1.02rem; color:var(--soft); max-width:62ch;}
+  .badges{display:flex; flex-wrap:wrap; gap:9px; margin:18px 0 6px;}
+  .badge{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; padding:6px 12px; border-radius:20px; border:1.5px solid var(--line); color:var(--ink); background:#fbfcff;}
+  .badge b{color:var(--cyan);}
+  .badge.b1{border-color:var(--cyan); background:#e9f7fa;}
+  .badge.b2{border-color:var(--purple); background:var(--stretch-bg);}
+
+  h2.sec{font-family:"Press Start 2P",monospace; font-size:0.72rem; letter-spacing:1px; color:var(--ink); margin:26px 2px 12px; line-height:1.6;}
+
+  /* ---- Legend / map grids ---- */
+  .legend{display:grid; grid-template-columns:1fr; gap:8px; margin-top:8px;}
+  @media(min-width:640px){ .legend{grid-template-columns:1fr 1fr;} }
+  .leg{display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:10px; padding:9px 12px; background:#fbfcff;}
+  .leg .em{font-size:1.05rem; line-height:1.4;}
+  .leg .lx b{display:block; font-size:0.92rem;}
+  .leg .lx span{font-size:0.84rem; color:var(--soft);}
+
+  .maptable{width:100%; border-collapse:collapse; margin-top:8px; font-size:0.93rem; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .maptable th{background:#f0eefb; text-align:left; padding:10px 12px; font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--soft); border-bottom:1px solid var(--line);}
+  .maptable td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .maptable tr:last-child td{border-bottom:none;}
+  .maptable .ln{font-family:"Press Start 2P",monospace; font-size:0.6rem; color:var(--magenta);}
+
+  /* ---- Lesson blocks ---- */
+  .lesson{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:6px 26px 26px; margin:20px 0; box-shadow:0 4px 18px #1c22300d;}
+  .lesson-head{display:flex; align-items:center; gap:14px; margin:22px 0 6px; padding-bottom:14px; border-bottom:2px solid var(--line);}
+  .lnum{flex-shrink:0; width:52px; height:52px; border-radius:12px; background:var(--purple); color:#fff; font-family:"Press Start 2P",monospace; font-size:0.86rem; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px #6d3ff044;}
+  .lesson.l2 .lnum{background:var(--magenta);} .lesson.l3 .lnum{background:var(--cyan);} .lesson.l4 .lnum{background:var(--green);}
+  .lesson-head .ttl{font-family:"Press Start 2P",monospace; font-size:0.86rem; line-height:1.5; color:var(--ink);}
+  .lesson-head .es{display:block; font-family:"Share Tech Mono",monospace; font-size:0.8rem; color:var(--soft); margin-top:7px; letter-spacing:.5px;}
+
+  .block{margin-top:20px;}
+  .btag{display:inline-flex; align-items:center; gap:8px; font-family:"Share Tech Mono",monospace; font-size:0.82rem; letter-spacing:1px; text-transform:uppercase; color:var(--soft); border-bottom:1px dashed var(--line); padding-bottom:5px; margin-bottom:10px; width:100%;}
+  .btag .min{margin-left:auto; color:var(--cyan); text-transform:none; font-size:0.78rem;}
+
+  .objective{background:#eefaf6; border:1px solid #bfe6d5; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; font-size:0.98rem;}
+  .objective b{color:var(--green);}
+  .warmup{background:var(--warm-bg); border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px;}
+
+  p{margin:8px 0;}
+  ul, ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
+  .lead-sm{color:var(--soft); font-size:0.95rem;}
+  code, .chip{font-family:"Share Tech Mono",monospace;}
+  .chip{display:inline-block; background:#eaf6f9; color:var(--cyan); border:1px solid #bfe6ee; border-radius:6px; padding:1px 7px; font-size:0.9em;}
+  .ok{color:var(--green); font-weight:600;} .x{color:var(--red); text-decoration:line-through;}
+  .h3{font-weight:700; color:var(--ink); margin:14px 0 4px; font-size:1rem;}
+  .h3 .sm{font-weight:400; color:var(--soft); font-size:0.85rem;}
+
+  /* phrase lists */
+  .phr{list-style:none; margin:6px 0 6px; padding:0;}
+  .phr li{padding:6px 0; border-bottom:1px dashed var(--line);}
+  .phr li:last-child{border-bottom:none;}
+  .phr .en{color:var(--ink);} .phr .sp{color:var(--soft); font-size:0.86rem; display:block;}
+
+  /* glossary / table grids */
+  .grid2{display:grid; grid-template-columns:1fr; gap:10px; margin:8px 0;}
+  @media(min-width:640px){ .grid2{grid-template-columns:1fr 1fr;} }
+  .cell{border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:#fbfcff;}
+  .cell .gh{display:block; font-family:"Share Tech Mono",monospace; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:6px;}
+  .cell code{color:var(--cyan);}
+  .cell .sp{color:var(--soft); font-style:italic;}
+  .cell .sp::before{content:" — "; font-style:normal;}
+
+  table.tb{width:100%; border-collapse:collapse; margin:8px 0; font-size:0.93rem;}
+  table.tb th, table.tb td{border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top;}
+  table.tb th{background:#f3f1fb; font-family:"Share Tech Mono",monospace; font-size:0.76rem; letter-spacing:1px; color:var(--soft);}
+  table.tb td .sp{color:var(--soft); font-size:0.85rem;}
+
+  /* A2 stretch */
+  .stretch{background:var(--stretch-bg); border:1px solid #d9c9ff; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .stretch .st-h{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:6px;}
+  .stretch .st-h::before{content:"⭐";}
+
+  /* listening dialogue */
+  .dialogue{border:1px solid var(--line); border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px; background:#fbfdff;}
+  .dialogue .line{margin:5px 0;}
+  .dialogue .spk{font-weight:700; color:var(--cyan);}
+  .dialogue .spk.b{color:var(--magenta);}
+  .dialogue .tg{background:#fff3d6; border-radius:4px; padding:0 4px;}
+  .qs{margin:10px 0 0 0;}
+  .qs .qn{font-weight:700; color:var(--purple); margin-right:6px;}
+
+  /* answer key */
+  .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
+  .key .kh::before{content:"✅";}
+  .key ol{margin:4px 0 0 20px;} .key li{margin:3px 0;}
+  .key .alt{color:var(--soft); font-size:0.86rem;}
+
+  /* teacher-only note */
+  .tnote{background:#fff5f8; border:1px dashed var(--magenta); border-radius:10px; padding:10px 14px; margin:12px 0; font-size:0.92rem; color:#7a2d55;}
+  .tnote b{color:var(--magenta);}
+
+  /* scaffold (gapped model) */
+  .scaffold{background:#fbfaff; border:1px solid #e0d8f5; border-radius:10px; padding:12px 16px; font-family:"Share Tech Mono",monospace; font-size:0.95rem; line-height:1.9;}
+  .gap{display:inline-block; min-width:64px; border-bottom:1.5px solid var(--gold); color:var(--gold); text-align:center;}
+  .hw{background:#fff8ec; border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px; margin-top:8px;}
+  .hw b{color:var(--gold);}
+
+  /* view toggling */
+  body.student .key, body.student .tnote{display:none !important;}
+
+  footer{max-width:900px; margin:34px auto 0; padding:16px 20px; text-align:center; color:var(--soft); font-size:0.85rem; border-top:1px solid var(--line);}
+  footer b{font-family:"Press Start 2P",monospace; font-size:0.62rem; color:var(--purple); letter-spacing:1px;}
+
+  @media print{
+    body{background:#fff; font-size:11.5pt; padding:0;}
+    .toolbar{display:none;}
+    .lesson, .cover{box-shadow:none; border-color:#ccc; break-inside:avoid;}
+    .lesson{break-before:page;}
+    .cover{break-before:avoid;}
+    a{color:var(--ink); text-decoration:none;}
+  }
+</style>
+<style>
+  /* ---- A1 Travel additions ---- */
+  .recap{background:#f3f1fb; border:1px solid #d9d2f5; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .recap .rh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; margin-bottom:6px;}
+  .bridge{background:#eaf6f9; border:1px solid #bfe6ee; border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px 8px; margin:12px 0;}
+  .bridge .bh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--cyan); text-transform:uppercase; margin-bottom:6px;}
+  .bridge ul{margin:4px 0 4px 18px;} .bridge li{margin:5px 0; font-size:0.95rem;}
+</style>
+</head>
+<body class="teacher">
+
+<div class="toolbar">
+  <span class="tt">VISTA:</span>
+  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')">📖 Profe (con clave)</button>
+  <button class="tbtn" id="btnStudent" onclick="setView('student')">🎒 Alumno (sin clave)</button>
+  <button class="tbtn print" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+  <span class="viewnote" id="viewNote">Se ven las respuestas y las notas del profe.</span>
+</div>
+
+<div class="wrap">
+
+  <!-- ============== COVER ============== -->
+  <div class="cover">
+    <div class="kicker">ENGLISH FOR ALL · RANK UP · NIVEL A1</div>
+    <h1>TRAVEL &amp; LIVING<br>CURSO DE 4 LECCIONES</h1>
+    <p class="lead">Inglés de supervivencia para viajar y llegar a un lugar nuevo: pasar el aeropuerto, registrarte en el hotel, moverte por la ciudad y comprar lo que necesitas. Estilo <b>PPP</b> — Presentar → Practicar → Producir. El inglés es lo que se aprende; el español es solo apoyo.</p>
+    <div class="badges">
+      <span class="badge b1"><b>A1 base</b></span>
+      <span class="badge b2">⭐ A2 extra</span>
+      <span class="badge">4 lecciones · ~45 min c/u</span>
+      <span class="badge">individual o grupo pequeño</span>
+      <span class="badge">🇺🇸 inglés americano</span>
+    </div>
+  </div>
+
+  <!-- ============== HOW TO USE ============== -->
+  <h2 class="sec">CÓMO USAR ESTE CURSO</h2>
+  <p class="lead-sm">Cada lección sigue el mismo ritmo, así el principiante siempre sabe dónde está. Usa el botón <b>Profe / Alumno</b> de arriba: la vista <b>Alumno</b> oculta las respuestas y las notas del profe para tener una hoja limpia. Habla despacio y con inglés simple; el español está para apoyar, no para traducir todo.</p>
+  <div class="legend">
+    <div class="leg"><span class="em">🎯</span><div class="lx"><b>Objetivo</b><span>La meta ("puedes…") de la lección.</span></div></div>
+    <div class="leg"><span class="em">🔥</span><div class="lx"><b>Calentamiento (5 min)</b><span>Romper el hielo y activar el tema.</span></div></div>
+    <div class="leg"><span class="em">📘</span><div class="lx"><b>Presentar (12–15 min)</b><span>Palabras clave + un punto de gramática, con glosario.</span></div></div>
+    <div class="leg"><span class="em">✏️</span><div class="lx"><b>Práctica guiada (12 min)</b><span>Ejercicios con apoyo. Respuestas en la clave ✅.</span></div></div>
+    <div class="leg"><span class="em">🎧</span><div class="lx"><b>Diálogo modelo</b><span>Una conversación corta y simple + comprensión. Léelo en voz alta y despacio.</span></div></div>
+    <div class="leg"><span class="em">🗣️</span><div class="lx"><b>Práctica libre (12 min)</b><span>Juego de roles con una plantilla para completar — funciona 1:1.</span></div></div>
+    <div class="leg"><span class="em">⭐</span><div class="lx"><b>Caja A2 (extra)</b><span>Inglés opcional del siguiente nivel para los más rápidos.</span></div></div>
+    <div class="leg"><span class="em">📌</span><div class="lx"><b>Tarea</b><span>Una tarea corta de escribir/hablar para entregar.</span></div></div>
+  </div>
+
+  <h2 class="sec">MAPA DEL CURSO</h2>
+  <table class="maptable">
+    <tr><th style="width:52px">#</th><th>Lección</th><th>Gramática</th><th>Puedes…</th></tr>
+    <tr><td class="ln">01</td><td><b>At the Airport &amp; Arrival</b></td><td>palabras de pregunta (<i>where · what time · how much</i>) + frases de rescate</td><td>Pasar el aeropuerto y pedir ayuda</td></tr>
+    <tr><td class="ln">02</td><td><b>At the Hotel</b></td><td><i>Can I have…? / I need…</i> · números, horas y fechas</td><td>Registrarte y pedir cosas</td></tr>
+    <tr><td class="ln">03</td><td><b>Getting Around Town</b></td><td>imperativos (<i>go · turn · take</i>) · preposiciones de lugar</td><td>Pedir y entender direcciones</td></tr>
+    <tr><td class="ln">04</td><td><b>At the Store &amp; Money</b></td><td><i>I'd like… · How much…?</i> · some/any · this/that</td><td>Comprar, preguntar precios y pagar</td></tr>
+  </table>
+  <div class="tnote"><b>Nota para el profe:</b> Este curso es hermano del <a href="a1-conversation-course.html">Curso de Conversación A1</a> y se puede dar antes o después: aquel trabaja la vida diaria (describir, familia, rutina), este trabaja la <b>supervivencia en viaje</b>. Se recicla a propósito <i>can I have…?</i>, <i>there is/are</i> y las preposiciones — verlos otra vez en un contexto nuevo es lo que los fija. Los 🎧 <b>diálogos modelo</b> están escritos cortos y lentos, listos para el audio de la versión Rank-Up más adelante.</div>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 1 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l1">
+    <div class="lesson-head">
+      <div class="lnum">01</div>
+      <div><span class="ttl">At the Airport &amp; Arrival</span>
+      <span class="es">En el aeropuerto · Gramática: palabras de pregunta + frases de rescate</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>entender las preguntas del aeropuerto</b>, <b>hacer preguntas simples</b> (dónde, a qué hora, cuánto) y <b>pedir ayuda</b> cuando no entiendes.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿Viajaste en avión alguna vez? ¿A dónde?</li>
+          <li>¿Qué palabras del aeropuerto ya conoces en inglés? (<i>passport, ticket, gate…</i>)</li>
+          <li>¿Qué haces cuando alguien te habla en inglés y no entiendes nada?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">12–15 min</span></span>
+
+      <div class="h3">A · En el aeropuerto <span class="sm">— airport words</span></div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>a passport</td><td>un pasaporte</td></tr>
+        <tr><td>a ticket</td><td>un boleto / pasaje</td></tr>
+        <tr><td>a boarding pass</td><td>una tarjeta de embarque</td></tr>
+        <tr><td>a flight</td><td>un vuelo</td></tr>
+        <tr><td>a gate</td><td>una puerta (de embarque)</td></tr>
+        <tr><td>luggage / a suitcase</td><td>equipaje / una maleta</td></tr>
+        <tr><td>a carry-on</td><td>equipaje de mano</td></tr>
+        <tr><td>security</td><td>el control de seguridad</td></tr>
+        <tr><td>customs</td><td>la aduana</td></tr>
+        <tr><td>arrivals / departures</td><td>llegadas / salidas</td></tr>
+        <tr><td>a delay</td><td>un retraso</td></tr>
+        <tr><td>baggage claim</td><td>la banda de equipaje</td></tr>
+      </table>
+
+      <div class="h3">B · Lo que TE van a preguntar <span class="sm">— y qué contestar</span></div>
+      <table class="tb">
+        <tr><th style="width:50%">El oficial dice…</th><th>Tú contestas…</th></tr>
+        <tr><td>"Passport, please." <span class="sp">Pasaporte, por favor.</span></td><td>"Here you are." <span class="sp">Aquí tiene.</span></td></tr>
+        <tr><td>"What's the purpose of your trip?" <span class="sp">¿Motivo del viaje?</span></td><td>"Tourism." / "I'm here on vacation." / "I'm visiting family."</td></tr>
+        <tr><td>"How long are you staying?" <span class="sp">¿Cuánto tiempo?</span></td><td>"Two weeks." / "Ten days."</td></tr>
+        <tr><td>"Where are you staying?" <span class="sp">¿Dónde te quedas?</span></td><td>"At a hotel in Miami." / "With my sister."</td></tr>
+        <tr><td>"Do you have anything to declare?" <span class="sp">¿Algo que declarar?</span></td><td>"No, nothing."</td></tr>
+      </table>
+
+      <div class="h3">C · Gramática — palabras de pregunta</div>
+      <table class="tb">
+        <tr><th style="width:28%">Pregunta</th><th style="width:22%">Español</th><th>Ejemplo</th></tr>
+        <tr><td><b>Where…?</b></td><td>dónde</td><td><b>Where</b> is the gate?</td></tr>
+        <tr><td><b>What…?</b></td><td>qué / cuál</td><td><b>What</b> is your flight number?</td></tr>
+        <tr><td><b>What time…?</b></td><td>a qué hora</td><td><b>What time</b> is my flight?</td></tr>
+        <tr><td><b>How much…?</b></td><td>cuánto (dinero)</td><td><b>How much</b> is a taxi to the hotel?</td></tr>
+        <tr><td><b>How long…?</b></td><td>cuánto tiempo</td><td><b>How long</b> is the flight?</td></tr>
+        <tr><td><b>Which…?</b></td><td>cuál (de varios)</td><td><b>Which</b> gate is it?</td></tr>
+      </table>
+      <p class="lead-sm">La fórmula fácil: <b>palabra de pregunta + is / are + cosa</b>. <span class="ok">Where <b>is</b> the bathroom?</span> · <span class="ok">Where <b>are</b> the taxis?</span></p>
+      <div class="bridge">
+        <div class="bh">Puente al español · el orden cambia</div>
+        <ul>
+          <li>En español preguntas con la <b>entonación</b>: «¿El baño está allí?». En inglés casi siempre hay que <b>mover el verbo</b>: <span class="ok">Is the bathroom over there?</span></li>
+          <li>Después de la palabra de pregunta va el <b>verbo</b>, no el sujeto: <span class="ok">Where <b>is</b> the gate?</span> <span class="x">Where the gate is?</span></li>
+          <li><b>How much</b> = cuánto <i>dinero</i>. <b>How long</b> = cuánto <i>tiempo</i>. En español las dos son «cuánto», y ahí se confunden.</li>
+        </ul>
+      </div>
+
+      <div class="h3">D · Frases de rescate <span class="sm">— úsalas sin vergüenza</span></div>
+      <ul class="phr">
+        <li><span class="en">Excuse me…</span><span class="sp">Disculpe… (para empezar)</span></li>
+        <li><span class="en">Sorry, I don't understand.</span><span class="sp">Perdón, no entiendo.</span></li>
+        <li><span class="en">Can you repeat that, please?</span><span class="sp">¿Puede repetir, por favor?</span></li>
+        <li><span class="en">Can you speak slowly, please?</span><span class="sp">¿Puede hablar despacio?</span></li>
+        <li><span class="en">How do you say ___ in English?</span><span class="sp">¿Cómo se dice ___ en inglés?</span></li>
+        <li><span class="en">I don't speak much English.</span><span class="sp">No hablo mucho inglés.</span></li>
+        <li><span class="en">Thank you. / You're welcome.</span><span class="sp">Gracias. / De nada.</span></li>
+      </ul>
+      <div class="stretch">
+        <div class="st-h">A2 · extra</div>
+        "Could you write it down, please?" <span class="sp">¿Me lo escribe?</span> · "I'm looking for gate 22." <span class="sp">Busco la puerta 22.</span> · "Is this the line for security?" <span class="sp">¿Esta es la fila?</span> · "My flight is delayed." <span class="sp">Mi vuelo está retrasado.</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">12 min</span></span>
+
+      <div class="h3">Actividad 1 · Completa la pregunta <span class="sm">— Where · What · What time · How much · How long · Which</span></div>
+      <ol>
+        <li>___ is my gate?</li>
+        <li>___ is my flight? — At 8:30.</li>
+        <li>___ is a taxi to the city? — Thirty dollars.</li>
+        <li>___ are you staying? — At a hotel.</li>
+        <li>___ are you staying? — Two weeks.</li>
+        <li>___ is your flight number? — AA 240.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol>
+          <li><b>Where</b> <span class="alt">(también: Which gate is mine?)</span></li>
+          <li><b>What time</b></li>
+          <li><b>How much</b></li>
+          <li><b>Where</b></li>
+          <li><b>How long</b></li>
+          <li><b>What</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 2 · Une la pregunta con la respuesta <span class="sm">— escribe la letra</span></div>
+      <ol>
+        <li>Where are you from? &nbsp;→&nbsp; ___</li>
+        <li>How long are you staying? &nbsp;→&nbsp; ___</li>
+        <li>Do you have anything to declare? &nbsp;→&nbsp; ___</li>
+        <li>What's the purpose of your trip? &nbsp;→&nbsp; ___</li>
+        <li>Where are you staying? &nbsp;→&nbsp; ___</li>
+        <li>Passport, please. &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="cell" style="margin-top:6px"><span class="gh">Respuestas — una para cada pregunta</span>
+        <ul style="list-style:none; margin:6px 0 0; padding:0; line-height:1.9">
+          <li>a. Two weeks.</li>
+          <li>b. Tourism.</li>
+          <li>c. From Colombia.</li>
+          <li>d. Here you are.</li>
+          <li>e. No, nothing.</li>
+          <li>f. At a hotel downtown.</li>
+        </ul>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <p><b>1-c · 2-a · 3-e · 4-b · 5-f · 6-d</b></p>
+      </div>
+
+      <div class="h3">Actividad 3 · ¿Qué dices? <span class="sm">— elige la frase de rescate</span></div>
+      <ol>
+        <li>El oficial habla muy rápido. → ___</li>
+        <li>No entendiste nada. → ___</li>
+        <li>Quieres saber cómo se dice «maleta». → ___</li>
+        <li>Necesitas llamar la atención de alguien. → ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <ol>
+          <li>"Can you speak slowly, please?"</li>
+          <li>"Sorry, I don't understand." <span class="alt">(o: Can you repeat that, please?)</span></li>
+          <li>"How do you say <i>maleta</i> in English?" <span class="alt">→ suitcase</span></li>
+          <li>"Excuse me."</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · en migraciones</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Officer:</span> Good morning. Passport, please.</p>
+        <p class="line"><span class="spk">Ana:</span> Here you are.</p>
+        <p class="line"><span class="spk b">Officer:</span> <span class="tg">What's the purpose of your trip?</span></p>
+        <p class="line"><span class="spk">Ana:</span> Tourism. I'm here on vacation.</p>
+        <p class="line"><span class="spk b">Officer:</span> <span class="tg">How long are you staying?</span></p>
+        <p class="line"><span class="spk">Ana:</span> Two weeks.</p>
+        <p class="line"><span class="spk b">Officer:</span> <span class="tg">Where are you staying?</span></p>
+        <p class="line"><span class="spk">Ana:</span> Sorry, <span class="tg">can you repeat that, please?</span></p>
+        <p class="line"><span class="spk b">Officer:</span> Where are you staying?</p>
+        <p class="line"><span class="spk">Ana:</span> At a hotel in Miami.</p>
+        <p class="line"><span class="spk b">Officer:</span> OK. Enjoy your trip!</p>
+        <p class="line"><span class="spk">Ana:</span> Thank you!</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Por qué viaja Ana?</p>
+        <p><span class="qn">P2.</span> ¿Cuánto tiempo se queda?</p>
+        <p><span class="qn">P3.</span> ¿Qué dice cuando no entiende?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol>
+          <li>Tourism / vacation.</li>
+          <li>Two weeks.</li>
+          <li>"Sorry, can you repeat that, please?"</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">12 min</span></span>
+      <p><b>Juego de roles — migraciones.</b> El profe es el oficial y hace las cinco preguntas del cuadro B; el alumno contesta. Después cambian: el alumno es el oficial.</p>
+      <p><b>Segunda parte — perdido en el aeropuerto.</b> El alumno hace 4 preguntas para encontrar su puerta, la hora del vuelo, el baño y el precio del taxi.</p>
+      <p class="lead-sm">Plantilla de apoyo — completa los huecos:</p>
+      <div class="scaffold">
+        Excuse me. Where is <span class="gap">…</span>? &nbsp;·&nbsp; What time is <span class="gap">…</span>? &nbsp;·&nbsp; How much is <span class="gap">…</span>? &nbsp;·&nbsp; Sorry, I don't understand. Can you <span class="gap">repeat / speak slowly</span>, please?
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Di las preguntas <b>una vez a velocidad real</b> y espera. El objetivo no es entender todo, es que el alumno diga "Can you repeat that, please?" sin congelarse. Recién después repite despacio. Celebra el uso de la frase de rescate igual que una respuesta correcta.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Escribe</b> 6 preguntas que puedes necesitar en un aeropuerto (usa <i>where, what time, how much, how long</i>). Después <b>grábate</b> diciéndolas en voz alta, despacio y claro.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 2 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l2">
+    <div class="lesson-head">
+      <div class="lnum">02</div>
+      <div><span class="ttl">At the Hotel</span>
+      <span class="es">En el hotel · Gramática: <i>Can I have…? / I need…</i> · números, horas y fechas</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>registrarte en un hotel</b>, <b>pedir cosas con cortesía</b> y <b>entender precios, horas y fechas</b>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿Hotel, hostel o departamento? ¿Qué prefieres y por qué?</li>
+          <li>¿Qué es lo primero que pides cuando llegas? (¿el wifi?)</li>
+          <li>Di tu número de teléfono en inglés, número por número.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">12–15 min</span></span>
+
+      <div class="h3">A · En el hotel <span class="sm">— hotel words</span></div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>a reservation</td><td>una reserva</td></tr>
+        <tr><td>a single / double room</td><td>una habitación individual / doble</td></tr>
+        <tr><td>the front desk</td><td>la recepción</td></tr>
+        <tr><td>a key card</td><td>la tarjeta-llave</td></tr>
+        <tr><td>an elevator</td><td>el ascensor</td></tr>
+        <tr><td>a towel</td><td>una toalla</td></tr>
+        <tr><td>a pillow / a blanket</td><td>una almohada / una manta</td></tr>
+        <tr><td>breakfast</td><td>el desayuno</td></tr>
+        <tr><td>the Wi-Fi password</td><td>la clave del wifi</td></tr>
+        <tr><td>check-in / check-out</td><td>entrada / salida</td></tr>
+      </table>
+      <div class="stretch">
+        <div class="st-h">🇺🇸 ojo con los pisos</div>
+        En EE.UU. el <b>first floor</b> es la <b>planta baja</b>; tu habitación en el "second floor" está <b>un piso arriba</b>. Y el ascensor es <b>elevator</b> (no "lift").
+      </div>
+
+      <div class="h3">B · Pedir cosas <span class="sm">— Can I have…? / I need…</span></div>
+      <table class="tb">
+        <tr><th style="width:46%">Estructura</th><th>Ejemplo</th></tr>
+        <tr><td><b>Can I have</b> + cosa + <b>, please?</b> <span class="sp">pedir algo</span></td><td><b>Can I have</b> the Wi-Fi password, <b>please</b>?</td></tr>
+        <tr><td><b>Could I have</b> + cosa <span class="sp">un poco más formal</span></td><td><b>Could I have</b> another towel?</td></tr>
+        <tr><td><b>Can I</b> + verbo? <span class="sp">pedir permiso</span></td><td><b>Can I</b> pay by card? · <b>Can I</b> leave my bag here?</td></tr>
+        <tr><td><b>I need</b> + cosa <span class="sp">directo, para emergencias</span></td><td><b>I need</b> a taxi at seven.</td></tr>
+        <tr><td>Preguntas útiles</td><td>Is breakfast included? · What time is check-out? · Is there Wi-Fi in the room?</td></tr>
+      </table>
+      <div class="bridge">
+        <div class="bh">Puente al español · «por favor» y el infinitivo</div>
+        <ul>
+          <li>En español el «por favor» puede ir al principio; en inglés casi siempre va <b>al final</b>: <span class="ok">Can I have a towel, <b>please</b>?</span></li>
+          <li>Después de <i>can</i> va el verbo <b>sin to</b>: <span class="ok">Can I pay…?</span> <span class="x">Can I to pay…?</span></li>
+          <li><i>I want a towel</i> no es grosero en español, pero en inglés suena seco. Usa <b>Can I have…?</b> o <b>I'd like…</b>.</li>
+        </ul>
+      </div>
+
+      <div class="h3">C · Números, horas y fechas</div>
+      <table class="tb">
+        <tr><th style="width:34%">Se escribe</th><th>Se dice</th></tr>
+        <tr><td>7:00</td><td>seven o'clock</td></tr>
+        <tr><td>7:15 · 7:30 · 7:45</td><td>seven fifteen · seven thirty · seven forty-five</td></tr>
+        <tr><td>8:00 a.m. / 8:00 p.m.</td><td>eight a.m. (mañana) / eight p.m. (noche)</td></tr>
+        <tr><td>March 5</td><td>March fifth <span class="sp">el mes primero</span></td></tr>
+        <tr><td>3/5/2026 🇺🇸</td><td>March fifth, 2026 <span class="sp">mes / día / año</span></td></tr>
+        <tr><td>$45.50</td><td>forty-five fifty</td></tr>
+      </table>
+      <div class="grid2">
+        <div class="cell"><span class="gh">⚠ 13 o 30</span><b>thir<u>TEEN</u></b> (la fuerza al final) · <b><u>THIR</u>ty</b> (la fuerza al principio).<br>Igual: fourteen/forty · fifteen/fifty · sixteen/sixty.<br>Si dudas: "One three, or three zero?"</div>
+        <div class="cell"><span class="gh">Deletrear tu nombre</span>"How do you spell that?" → <b>V-A-R-G-A-S</b>.<br>Practica: A, E, I, G, J, H, W, Y — son las letras que más se confunden.</div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">A2 · extra</div>
+        "Would it be possible to have a late check-out?" · "I'd like to change rooms, please." · "Is there a deposit?" · "Could you call me a taxi for seven, please?"
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">12 min</span></span>
+
+      <div class="h3">Actividad 1 · Completa con <i>Can I have</i>, <i>Can I</i> o <i>I need</i></div>
+      <ol>
+        <li>___ the Wi-Fi password, please?</li>
+        <li>___ pay by card?</li>
+        <li>___ a taxi at six in the morning.</li>
+        <li>___ another pillow, please?</li>
+        <li>___ leave my suitcase here for one hour?</li>
+        <li>___ a doctor. It's an emergency.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol>
+          <li><b>Can I have</b></li>
+          <li><b>Can I</b></li>
+          <li><b>I need</b></li>
+          <li><b>Can I have</b> <span class="alt">(o: Could I have)</span></li>
+          <li><b>Can I</b></li>
+          <li><b>I need</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 2 · Escribe la hora en inglés</div>
+      <ol>
+        <li>7:00</li>
+        <li>8:30</li>
+        <li>10:15</li>
+        <li>12:45</li>
+        <li>6:20 a.m.</li>
+        <li>9:00 p.m.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <ol>
+          <li>seven o'clock</li>
+          <li>eight thirty</li>
+          <li>ten fifteen</li>
+          <li>twelve forty-five</li>
+          <li>six twenty a.m.</li>
+          <li>nine p.m. <span class="alt">(nine o'clock at night)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 3 · ¿13 o 30? <span class="sm">— léelas en voz alta; el profe marca la que escucha</span></div>
+      <ol>
+        <li>13 / 30</li>
+        <li>14 / 40</li>
+        <li>15 / 50</li>
+        <li>16 / 60</li>
+        <li>Room 19 / Room 90</li>
+        <li>$17 / $70</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Nota · Actividad 3</div>
+        <p>No hay respuesta "correcta": el ejercicio es de <b>pronunciación</b>. Marca lo que realmente escuchas y devuélveselo al alumno. Truco para él: los <b>-teen</b> llevan la fuerza <b>al final</b> y terminan en <i>n</i>; los <b>-ty</b> llevan la fuerza <b>al principio</b>.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · check-in</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Front desk:</span> Good evening. Do you have a reservation?</p>
+        <p class="line"><span class="spk">Leo:</span> Yes. A double room for two nights. My name is Leo Vargas.</p>
+        <p class="line"><span class="spk b">Front desk:</span> <span class="tg">How do you spell that?</span></p>
+        <p class="line"><span class="spk">Leo:</span> V-A-R-G-A-S.</p>
+        <p class="line"><span class="spk b">Front desk:</span> Thank you. Here's your key card. Room 305, on the third floor.</p>
+        <p class="line"><span class="spk">Leo:</span> <span class="tg">Is breakfast included?</span></p>
+        <p class="line"><span class="spk b">Front desk:</span> Yes, from seven to ten.</p>
+        <p class="line"><span class="spk">Leo:</span> And <span class="tg">what time is check-out?</span></p>
+        <p class="line"><span class="spk b">Front desk:</span> Eleven o'clock.</p>
+        <p class="line"><span class="spk">Leo:</span> <span class="tg">Can I have the Wi-Fi password, please?</span></p>
+        <p class="line"><span class="spk b">Front desk:</span> Of course. It's hotel 2026, one word.</p>
+        <p class="line"><span class="spk">Leo:</span> Thank you!</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Cuántas noches se queda Leo?</p>
+        <p><span class="qn">P2.</span> ¿A qué hora es el desayuno y el check-out?</p>
+        <p><span class="qn">P3.</span> ¿Qué pide al final?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol>
+          <li>Two nights.</li>
+          <li>Breakfast: 7 to 10. Check-out: 11 o'clock.</li>
+          <li>The Wi-Fi password.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">12 min</span></span>
+      <p><b>Juego de roles — el check-in.</b> El alumno llega al hotel: da su nombre, lo deletrea, dice cuántas noches y pregunta dos cosas (desayuno, wifi, check-out).</p>
+      <p><b>Segunda parte — llamar a recepción.</b> El alumno pide tres cosas por teléfono: una toalla, un taxi para las 7 y un despertador (<i>a wake-up call</i>) a las 6:30.</p>
+      <div class="scaffold">
+        Hi, this is room <span class="gap">número</span>. Can I have <span class="gap">cosa</span>, please? &nbsp;·&nbsp; I need <span class="gap">cosa</span> at <span class="gap">hora</span>. &nbsp;·&nbsp; What time is <span class="gap">…</span>? &nbsp;·&nbsp; Thank you!
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Dale el número de habitación y la hora <b>en voz alta</b> sin escribirlos (305, 6:30, $45.50) — que los repita para confirmar. Corrige solo dos cosas: el <i>please</i> al final y la diferencia 13/30. Si el alumno dice "I want…", devuélvelo con "Can I have…?" y sigue.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Escribe</b> tu propio check-in (8 líneas: tú y la recepción). Usa <b>dos</b> frases con <i>Can I have…?</i>, una hora y una fecha. Después <b>grábate</b> leyendo tu parte.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 3 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l3">
+    <div class="lesson-head">
+      <div class="lnum">03</div>
+      <div><span class="ttl">Getting Around Town</span>
+      <span class="es">Moverte por la ciudad · Gramática: imperativos (go · turn · take) + preposiciones de lugar</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>pedir direcciones</b>, <b>entender una ruta simple</b> y <b>usar el transporte público</b> sin perderte.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿Cómo vas al trabajo o a estudiar: caminando, en bus, en metro, en auto?</li>
+          <li>¿Usas el mapa del celular o preguntas a la gente?</li>
+          <li>Explica en español cómo se llega del centro a tu casa. (Después lo haremos en inglés.)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">12–15 min</span></span>
+
+      <div class="h3">A · Lugares y la calle <span class="sm">— places</span></div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>a bus stop</td><td>una parada de bus</td></tr>
+        <tr><td>a subway station</td><td>una estación de metro</td></tr>
+        <tr><td>a bank / a pharmacy</td><td>un banco / una farmacia</td></tr>
+        <tr><td>a supermarket</td><td>un supermercado</td></tr>
+        <tr><td>a block</td><td>una cuadra</td></tr>
+        <tr><td>a corner</td><td>una esquina</td></tr>
+        <tr><td>a traffic light</td><td>un semáforo</td></tr>
+        <tr><td>a crosswalk</td><td>un paso de peatones</td></tr>
+        <tr><td>a street / an avenue</td><td>una calle / una avenida</td></tr>
+      </table>
+
+      <div class="h3">B · Gramática 1 — dar direcciones <span class="sm">— imperativos: el verbo solo, sin sujeto</span></div>
+      <table class="tb">
+        <tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td><b>Go</b> straight.</td><td>Sigue derecho.</td></tr>
+        <tr><td><b>Go</b> two blocks.</td><td>Camina dos cuadras.</td></tr>
+        <tr><td><b>Turn</b> left. / <b>Turn</b> right.</td><td>Dobla a la izquierda / derecha.</td></tr>
+        <tr><td><b>Cross</b> the street.</td><td>Cruza la calle.</td></tr>
+        <tr><td><b>Take</b> the second street on the right.</td><td>Toma la segunda calle a la derecha.</td></tr>
+        <tr><td>It's <b>on your left</b>.</td><td>Está a tu izquierda.</td></tr>
+        <tr><td><b>Stop</b> at the traffic light.</td><td>Para en el semáforo.</td></tr>
+      </table>
+      <p class="lead-sm">El imperativo es <b>el verbo solo</b>: <span class="ok">Go straight.</span> <span class="x">You go straight.</span> <span class="x">To go straight.</span></p>
+
+      <div class="h3">C · Gramática 2 — preposiciones de lugar</div>
+      <table class="tb">
+        <tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td><b>next to</b></td><td>al lado de</td></tr>
+        <tr><td><b>between</b> A <b>and</b> B</td><td>entre A y B</td></tr>
+        <tr><td><b>across from</b></td><td>enfrente de (del otro lado)</td></tr>
+        <tr><td><b>in front of</b></td><td>delante de (justo adelante)</td></tr>
+        <tr><td><b>behind</b></td><td>detrás de</td></tr>
+        <tr><td><b>on the corner of</b> … <b>and</b> …</td><td>en la esquina de … y …</td></tr>
+        <tr><td><b>near</b> / <b>far from</b></td><td>cerca de / lejos de</td></tr>
+      </table>
+      <div class="bridge">
+        <div class="bh">Puente al español · dos trampas</div>
+        <ul>
+          <li>«<b>Enfrente de</b>» casi siempre es <b>across from</b> (del otro lado de la calle). <b>In front of</b> es <i>delante de</i>, tocándolo: <i>the taxi is in front of the hotel</i> = el taxi está parado en la puerta.</li>
+          <li>«A la derecha» = <b>on the right</b>; «dobla a la derecha» = <b>turn right</b> (sin <i>to</i>). <span class="x">Turn to the right</span> se entiende, pero suena raro.</li>
+          <li>Recuerda <i>there is / there are</i> de tu otro curso: <b>Is there</b> a bank near here? — <b>Yes, there's one</b> on the corner.</li>
+        </ul>
+      </div>
+
+      <div class="h3">D · En el bus y el metro</div>
+      <ul class="phr">
+        <li><span class="en">Does this bus go to the museum?</span><span class="sp">¿Este bus va al museo?</span></li>
+        <li><span class="en">How much is a ticket?</span><span class="sp">¿Cuánto cuesta el boleto?</span></li>
+        <li><span class="en">Where do I get off?</span><span class="sp">¿Dónde me bajo?</span></li>
+        <li><span class="en">Can I pay with cash?</span><span class="sp">¿Puedo pagar en efectivo?</span></li>
+        <li><span class="en">It's four stops from here.</span><span class="sp">Son cuatro paradas desde aquí.</span></li>
+      </ul>
+      <div class="stretch">
+        <div class="st-h">A2 · extra</div>
+        "It's about a ten-minute walk." · "You'll see it on your right." · "Take the blue line and transfer at Central." · "Is it walking distance?" · "I think you're going the wrong way."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">12 min</span></span>
+
+      <div class="h3">El mapa <span class="sm">— úsalo para las dos actividades</span></div>
+      <div class="cell" style="padding:14px 12px">
+        <svg viewBox="0 0 560 330" role="img" aria-label="Mapa: parque, banco, hotel, farmacia, supermercado y estación de tren" style="width:100%;height:auto;display:block">
+          <rect x="0" y="0" width="560" height="330" fill="#fbfcff"/>
+          <rect x="0" y="148" width="560" height="42" fill="#e6eaf4"/>
+          <rect x="250" y="0" width="42" height="330" fill="#e6eaf4"/>
+          <rect x="40" y="40" width="190" height="95" rx="5" fill="#d8efe0" stroke="#158a52"/>
+          <rect x="312" y="40" width="70" height="95" rx="5" fill="#fff" stroke="#6d3ff0"/>
+          <rect x="392" y="40" width="70" height="95" rx="5" fill="#fff" stroke="#6d3ff0"/>
+          <rect x="472" y="40" width="70" height="95" rx="5" fill="#fff" stroke="#6d3ff0"/>
+          <rect x="40" y="205" width="190" height="85" rx="5" fill="#fff" stroke="#c31f8f"/>
+          <rect x="312" y="205" width="230" height="85" rx="5" fill="#fff" stroke="#c31f8f"/>
+          <circle cx="240" cy="200" r="7" fill="#c0392b"/>
+          <text x="135" y="93" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="15" fill="#158a52">PARK</text>
+          <text x="347" y="86" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="13" fill="#1c2230">BANK</text>
+          <text x="427" y="86" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="13" fill="#1c2230">HOTEL</text>
+          <text x="507" y="86" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#1c2230">PHARMACY</text>
+          <text x="135" y="253" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="13" fill="#1c2230">SUPERMARKET</text>
+          <text x="427" y="253" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="13" fill="#1c2230">TRAIN STATION</text>
+          <text x="60" y="175" font-family="'Share Tech Mono',monospace" font-size="12" fill="#54607a">MAIN STREET</text>
+          <text x="271" y="318" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="12" fill="#54607a">FIRST AVE</text>
+        </svg>
+        <p class="lead-sm" style="margin:8px 2px 0"><span style="color:#c0392b;font-weight:700">●</span> <b>YOU ARE HERE</b> — en la esquina de <i>Main Street</i> y <i>First Avenue</i>.</p>
+      </div>
+
+      <div class="h3">Actividad 1 · Mira el mapa y completa <span class="sm">— next to · between · across from · on · far from</span></div>
+      <ol>
+        <li>The hotel is ___ the bank ___ the pharmacy.</li>
+        <li>The bank is ___ the hotel.</li>
+        <li>The supermarket is ___ the park.</li>
+        <li>You are ___ the corner of Main Street and First Avenue.</li>
+        <li>The train station is ___ the park.</li>
+        <li>The pharmacy is ___ the hotel.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol>
+          <li><b>between</b> the bank <b>and</b> the pharmacy</li>
+          <li><b>next to</b></li>
+          <li><b>across from</b> <span class="alt">(están en lados opuestos de Main Street)</span></li>
+          <li><b>on</b></li>
+          <li><b>far from</b></li>
+          <li><b>next to</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 2 · Ordena la ruta <span class="sm">— escribe 1, 2, 3, 4</span></div>
+      <ol style="list-style:lower-alpha">
+        <li>It's on your right, next to the bank. &nbsp;→&nbsp; ___</li>
+        <li>Go straight two blocks. &nbsp;→&nbsp; ___</li>
+        <li>Cross the street at the crosswalk. &nbsp;→&nbsp; ___</li>
+        <li>Turn left at the traffic light. &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <p><b>b (1) · d (2) · c (3) · a (4)</b></p>
+        <p class="alt">Go straight → turn left → cross the street → it's on your right.</p>
+      </div>
+
+      <div class="h3">Actividad 3 · Completa el diálogo del bus</div>
+      <ol>
+        <li>A: Excuse me, does this bus ___ to the train station?</li>
+        <li>B: Yes, it does. It's four ___ from here.</li>
+        <li>A: How much is a ___ ?</li>
+        <li>B: Two fifty. You can pay with ___ or a card.</li>
+        <li>A: And where do I ___ ?</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <ol>
+          <li><b>go</b></li>
+          <li><b>stops</b></li>
+          <li><b>ticket</b></li>
+          <li><b>cash</b></li>
+          <li><b>get off</b></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · perdida en la calle</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Ana:</span> Excuse me. <span class="tg">How do I get to the train station?</span></p>
+        <p class="line"><span class="spk b">Man:</span> <span class="tg">Go straight two blocks, then turn left.</span></p>
+        <p class="line"><span class="spk">Ana:</span> Two blocks, then left. Is it far?</p>
+        <p class="line"><span class="spk b">Man:</span> No, it's a ten-minute walk. It's <span class="tg">across from</span> a big park.</p>
+        <p class="line"><span class="spk">Ana:</span> Thank you. <span class="tg">Is there a pharmacy near here?</span></p>
+        <p class="line"><span class="spk b">Man:</span> Yes, there's one <span class="tg">on the corner</span>, <span class="tg">next to</span> the hotel.</p>
+        <p class="line"><span class="spk">Ana:</span> Perfect. Thank you very much!</p>
+        <p class="line"><span class="spk b">Man:</span> You're welcome. Have a nice day!</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Cuántas cuadras y para qué lado?</p>
+        <p><span class="qn">P2.</span> ¿La estación está cerca o lejos?</p>
+        <p><span class="qn">P3.</span> ¿Dónde está la farmacia?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol>
+          <li>Two blocks, then left.</li>
+          <li>Near — a ten-minute walk.</li>
+          <li>On the corner, next to the hotel.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">12 min</span></span>
+      <p><b>Juego de roles — con el mapa de arriba.</b> El profe elige un lugar en secreto y el alumno pregunta cómo llegar; después al revés: el profe pregunta y el alumno da la ruta con imperativos. Tres rutas cada uno.</p>
+      <p><b>Segunda parte — en el bus.</b> El alumno sube al bus: pregunta si va a su destino, cuánto cuesta y dónde bajarse.</p>
+      <div class="scaffold">
+        Excuse me, how do I get to <span class="gap">lugar</span>? &nbsp;·&nbsp; Go <span class="gap">straight / two blocks</span> and turn <span class="gap">left / right</span>. &nbsp;·&nbsp; It's <span class="gap">preposición</span> the <span class="gap">lugar</span>. &nbsp;·&nbsp; Is it far? &nbsp;·&nbsp; Where do I get off?
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Pide siempre que <b>repita la ruta</b> ("Two blocks, then left") — eso es lo que hace un viajero real y además te muestra si entendió. Corrige solo <i>across from</i> vs <i>in front of</i> y el imperativo sin sujeto. Si tiene el celular a mano, que use el mapa real de su ciudad para la segunda vuelta.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Escribe</b> cómo llegar desde tu casa hasta el supermercado, en 5 pasos con imperativos (<i>Go… Turn… Cross… It's…</i>). Después <b>grábate</b> diciéndolo, como si se lo explicaras a un turista.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 4 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l4">
+    <div class="lesson-head">
+      <div class="lnum">04</div>
+      <div><span class="ttl">At the Store &amp; Money</span>
+      <span class="es">Compras y dinero · Gramática: <i>I'd like… · How much…?</i> · some/any · this/that</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>comprar lo que necesitas</b>, <b>preguntar precios y tallas</b>, <b>entender lo que te cobran</b> y <b>pagar</b>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Llegas a un lugar nuevo. ¿Qué tres cosas compras primero?</li>
+          <li>¿Pagas con efectivo o con tarjeta? ¿Por qué?</li>
+          <li>¿Qué haces si algo te queda mal o no funciona?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">12–15 min</span></span>
+
+      <div class="h3">A · En la tienda <span class="sm">— store words</span></div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>a store / a supermarket</td><td>una tienda / un supermercado</td></tr>
+        <tr><td>a drugstore</td><td>una farmacia (y de todo un poco)</td></tr>
+        <tr><td>a size: small / medium / large</td><td>una talla: chica / mediana / grande</td></tr>
+        <tr><td>cash / a card</td><td>efectivo / tarjeta</td></tr>
+        <tr><td>change</td><td>el cambio / el vuelto</td></tr>
+        <tr><td>a receipt</td><td>el recibo / el ticket</td></tr>
+        <tr><td>a bag</td><td>una bolsa</td></tr>
+        <tr><td>a sale / a discount</td><td>una oferta / un descuento</td></tr>
+        <tr><td>expensive / cheap</td><td>caro / barato</td></tr>
+        <tr><td>a fitting room</td><td>el probador</td></tr>
+      </table>
+
+      <div class="h3">B · Gramática 1 — <i>I'd like…</i> y <i>How much…?</i></div>
+      <table class="tb">
+        <tr><th style="width:44%">Estructura</th><th>Ejemplo</th></tr>
+        <tr><td><b>I'd like</b> + cosa <span class="sp">= I would like — educado</span></td><td><b>I'd like</b> a coffee, please. · <b>I'd like</b> this one.</td></tr>
+        <tr><td><b>How much is</b> + singular?</td><td><b>How much is</b> this T-shirt?</td></tr>
+        <tr><td><b>How much are</b> + plural?</td><td><b>How much are</b> these shoes?</td></tr>
+        <tr><td><b>Do you have</b> + cosa?</td><td><b>Do you have</b> this in medium?</td></tr>
+        <tr><td><b>Can I</b> + verbo?</td><td><b>Can I</b> try this on? · <b>Can I</b> pay by card?</td></tr>
+      </table>
+      <div class="bridge">
+        <div class="bh">Puente al español · «quiero» no se traduce literal</div>
+        <ul>
+          <li>«Quiero un café» → <span class="x">I want a coffee</span> suena brusco en una tienda. Di <b>I'd like a coffee, please</b>. Guarda <i>I want</i> para cuando hables con amigos.</li>
+          <li>«¿Cuánto cuesta?» → <b>How much is it?</b> (no hace falta el verbo <i>cost</i>).</li>
+          <li>Los precios se dicen en dos partes: <b>$15.99</b> = "fifteen ninety-nine" · <b>$3.50</b> = "three fifty".</li>
+        </ul>
+      </div>
+
+      <div class="h3">C · Gramática 2 — some / any</div>
+      <table class="tb">
+        <tr><th style="width:30%">Cuándo</th><th>Ejemplo</th></tr>
+        <tr><td><b>some</b> — frases afirmativas</td><td>I need <b>some</b> water. · I'd like <b>some</b> bread.</td></tr>
+        <tr><td><b>any</b> — preguntas y negativas</td><td>Do you have <b>any</b> bags? · We don't have <b>any</b> milk.</td></tr>
+        <tr><td>Truco de cortesía</td><td>En ofrecimientos se usa <i>some</i>: "Would you like <b>some</b> coffee?"</td></tr>
+      </table>
+      <p class="lead-sm">Y para señalar: <b>this</b> / <b>that</b> (uno) · <b>these</b> / <b>those</b> (varios). <i>How much is <b>this</b>? · How much are <b>those</b>?</i></p>
+      <div class="stretch">
+        <div class="st-h">A2 · extra</div>
+        "Is this on sale?" · "Do you have anything cheaper?" · "It doesn't fit." <span class="sp">no me queda</span> · "Could I get a refund?" · "I'm just looking, thanks." <span class="sp">solo estoy viendo</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">12 min</span></span>
+
+      <div class="h3">Actividad 1 · <i>some</i> o <i>any</i>?</div>
+      <ol>
+        <li>I need ___ water, please.</li>
+        <li>Do you have ___ bags?</li>
+        <li>We don't have ___ change.</li>
+        <li>I'd like ___ bread and ___ coffee.</li>
+        <li>Is there ___ milk in the supermarket?</li>
+        <li>Would you like ___ help?</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol>
+          <li><b>some</b></li>
+          <li><b>any</b></li>
+          <li><b>any</b></li>
+          <li><b>some</b> … <b>some</b></li>
+          <li><b>any</b></li>
+          <li><b>some</b> <span class="alt">(ofrecimiento)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 2 · Di el precio en voz alta</div>
+      <ol>
+        <li>$2.99</li>
+        <li>$15.00</li>
+        <li>$7.25</li>
+        <li>$40.50</li>
+        <li>$1.10</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <ol>
+          <li>two ninety-nine</li>
+          <li>fifteen dollars</li>
+          <li>seven twenty-five</li>
+          <li>forty fifty <span class="alt">(o: forty dollars and fifty cents)</span></li>
+          <li>one ten <span class="alt">(o: a dollar ten)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 3 · Ordena el diálogo de la tienda <span class="sm">— escribe 1–6</span></div>
+      <ol style="list-style:lower-alpha">
+        <li>Yes, we do. Here's your receipt. &nbsp;→&nbsp; ___</li>
+        <li>Excuse me, how much is this T-shirt? &nbsp;→&nbsp; ___</li>
+        <li>Yes, here you are. Do you want to try it on? &nbsp;→&nbsp; ___</li>
+        <li>It's fifteen ninety-nine. &nbsp;→&nbsp; ___</li>
+        <li>No, thank you. I'd like this one. Do you take cards? &nbsp;→&nbsp; ___</li>
+        <li>Do you have it in medium? &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <p><b>b (1) · d (2) · f (3) · c (4) · e (5) · a (6)</b></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · en la tienda</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Leo:</span> Excuse me. <span class="tg">How much is this T-shirt?</span></p>
+        <p class="line"><span class="spk b">Clerk:</span> It's fifteen ninety-nine.</p>
+        <p class="line"><span class="spk">Leo:</span> <span class="tg">Do you have it in medium?</span></p>
+        <p class="line"><span class="spk b">Clerk:</span> Yes, here you are. Do you want to try it on?</p>
+        <p class="line"><span class="spk">Leo:</span> Yes, please. … It's good. <span class="tg">I'd like this one.</span></p>
+        <p class="line"><span class="spk b">Clerk:</span> Anything else?</p>
+        <p class="line"><span class="spk">Leo:</span> No, thank you. <span class="tg">Do you take cards?</span></p>
+        <p class="line"><span class="spk b">Clerk:</span> Yes, we do. … Here's your receipt.</p>
+        <p class="line"><span class="spk">Leo:</span> <span class="tg">Can I have a bag, please?</span></p>
+        <p class="line"><span class="spk b">Clerk:</span> Of course. Have a good day!</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Cuánto cuesta la camiseta?</p>
+        <p><span class="qn">P2.</span> ¿Qué talla pide Leo?</p>
+        <p><span class="qn">P3.</span> ¿Cómo paga y qué pide al final?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol>
+          <li>$15.99 — "fifteen ninety-nine".</li>
+          <li>Medium.</li>
+          <li>By card; and he asks for a bag.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">12 min</span></span>
+      <p><b>Juego de roles — la tienda de ropa.</b> El profe es el vendedor con esta lista secreta de precios: T-shirt $15.99 · jeans $42.50 · sneakers $70 · cap $12. El alumno pregunta tres precios, pide una talla y paga. Después cambian de rol.</p>
+      <p><b>Segunda parte — el supermercado.</b> El alumno llega con una lista de 5 cosas y pregunta: "Do you have any…?", "Where is the…?", "How much are these?"</p>
+      <div class="scaffold">
+        Excuse me, how much <span class="gap">is / are</span> <span class="gap">this / these</span>? &nbsp;·&nbsp; Do you have <span class="gap">any / it in medium</span>? &nbsp;·&nbsp; I'd like <span class="gap">cosa</span>, please. &nbsp;·&nbsp; Do you take <span class="gap">cards</span>? &nbsp;·&nbsp; Can I have a bag, please?
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Di los precios rápido y a la americana ("fifteen ninety-nine") y no los repitas hasta que el alumno pregunte. Dos correcciones y nada más: <i>I want</i> → <i>I'd like</i>, y <i>How much is</i> vs <i>are</i>. Si va bien, dale vuelto mal a propósito y mira si reacciona: "Sorry, I think this is wrong."</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea · final del curso</span>
+      <div class="hw"><b>Escribe</b> tu lista de compras (8 cosas en inglés) y un diálogo corto en la tienda (6 líneas) usando <i>How much…?</i>, <i>I'd like…</i> y <i>Do you take cards?</i>. Después <b>grábate</b> leyendo tu parte del diálogo.</div>
+    </div>
+  </section>
+
+  <div class="recap">
+    <div class="rh">Curso terminado</div>
+    Con estas cuatro lecciones el alumno ya puede <b>viajar solo</b>: pasar migraciones, registrarse en un hotel, preguntar cómo llegar y comprar lo que necesita. Siguiente paso natural: el <a href="a1-conversation-course.html">Curso de Conversación A1</a> para la vida diaria (describir, familia, rutina), y más adelante <a href="travel-living-b1b2-course.html">Travel &amp; Living B1–B2</a>, que retoma los mismos temas con mucho más inglés.
+  </div>
+
+</div><!-- /wrap -->
+
+<footer>
+  <b>ENGLISH for ALL</b><br>
+  Travel &amp; Living · Nivel A1 base · ⭐ A2 extra · curso PPP de 4 lecciones · Rank Up
+</footer>
+
+<script>
+  function setView(mode){
+    document.body.classList.remove('teacher','student');
+    document.body.classList.add(mode);
+    document.getElementById('btnTeacher').classList.toggle('on', mode==='teacher');
+    document.getElementById('btnStudent').classList.toggle('on', mode==='student');
+    document.getElementById('viewNote').textContent = (mode==='teacher')
+      ? 'Se ven las respuestas y las notas del profe.'
+      : 'Hoja del alumno — respuestas y notas ocultas.';
+  }
+</script>
+</body>
+</html>
