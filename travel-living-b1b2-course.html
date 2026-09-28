@@ -139,6 +139,9 @@
   .qs .qn{font-weight:700; color:var(--purple); margin-right:6px;}
 
   /* answer key */
+  .bridge{background:#eaf6f9; border:1px solid #bfe6ee; border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px 8px; margin:12px 0;}
+  .bridge .bh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--cyan); text-transform:uppercase; margin-bottom:6px;}
+  .bridge ul{margin:4px 0 4px 18px;} .bridge li{margin:5px 0; font-size:0.95rem;}
   .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
   .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
   .key .kh::before{content:"";display:inline-block;width:1em;height:1em;vertical-align:-.15em;background-color:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16m-1.3 11.9L6.9 12l1.5-1.5 2.3 2.3 4.9-4.9L17.1 9.4z'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16m-1.3 11.9L6.9 12l1.5-1.5 2.3 2.3 4.9-4.9L17.1 9.4z'/%3E%3C/svg%3E") no-repeat center/contain;}
@@ -385,14 +388,56 @@ ico-xmark{-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.
             <tr><td>traffic lights</td><td>el semáforo</td></tr>
           </table>
 
-      <div class="h3">Grammar — three ways to talk about the future</div>
+      <div class="h3">Grammar — three ways to talk about the future <span class="sm">— la pregunta clave: ¿qué tan decidido está?</span></div>
+      <p class="lead-sm">Las tres formas son correctas. Lo que cambia es <b>cuándo se decidió</b>. Ordénalas en esta escala y elige:</p>
       <table class="tb">
-        <tr><th>Form</th><th>Use</th><th>Example</th></tr>
-        <tr><td><b>be going to</b></td><td>plan / intention · prediction from evidence</td><td>We're <b>going to</b> visit Rome. · Look at those clouds — it's <b>going to</b> rain.</td></tr>
-        <tr><td><b>present continuous</b></td><td>fixed arrangement (with a time/place)</td><td>We're <b>flying</b> on Friday at 6. · I'm <b>meeting</b> Ana at noon.</td></tr>
-        <tr><td><b>will ('ll)</b></td><td>decision now · offer · prediction/opinion</td><td>I <b>'ll</b> take the train. · I <b>'ll</b> help you. · It <b>'ll</b> be fun.</td></tr>
+        <tr><th style="width:19%">¿Cuándo lo decidiste?</th><th style="width:20%">Forma</th><th style="width:22%">Se usa para</th><th>Ejemplo</th></tr>
+        <tr>
+          <td><b>Ya está agendado</b><br><span class="sp">hay hora, lugar o boleto</span></td>
+          <td><b>present continuous</b><br><span class="sp">am/is/are + -ing</span></td>
+          <td>una cita fija</td>
+          <td>We<b>'re flying</b> on Friday at six. · I<b>'m meeting</b> Ana at noon.</td>
+        </tr>
+        <tr>
+          <td><b>Lo decidí antes</b><br><span class="sp">pero no está agendado</span></td>
+          <td><b>be going to</b><br><span class="sp">am/is/are going to + verbo</span></td>
+          <td>un plan o una intención</td>
+          <td>We<b>'re going to</b> visit Rome. · I<b>'m going to</b> look for a hotel tonight.</td>
+        </tr>
+        <tr>
+          <td><b>Lo decido ahora</b><br><span class="sp">mientras hablas</span></td>
+          <td><b>will ('ll)</b><br><span class="sp">will + verbo</span></td>
+          <td>decisión del momento u ofrecimiento</td>
+          <td>— This bag is heavy. — I<b>'ll carry</b> it! · OK, I<b>'ll take</b> the train.</td>
+        </tr>
       </table>
-      <p class="lead-sm">Questions: "What <b>are</b> you <b>doing</b> this weekend?" · "What time <b>are</b> you <b>leaving</b>?" · "<b>Are</b> you <b>going to</b> book a hotel?"</p>
+
+      <div class="cell" style="margin:10px 0">
+        <span class="gh">El mismo viaje, tres momentos</span>
+        <b>I'm flying to Rome on Friday at six.</b> <span class="sp">ya tengo el boleto</span><br>
+        <b>I'm going to visit the Colosseum.</b> <span class="sp">es mi plan, todavía no compré la entrada</span><br>
+        <b>It's raining… OK, I'll take a taxi.</b> <span class="sp">lo decido en este segundo</span>
+      </div>
+
+      <div class="grid2">
+        <div class="cell"><span class="gh">Predicciones · ¿lo estás viendo?</span>Si hay <b>evidencia delante</b> → <b>going to</b>.<br>Look at those clouds — it<b>'s going to</b> rain.<br>The taxi isn't here. We<b>'re going to</b> miss the train.</div>
+        <div class="cell"><span class="gh">Predicciones · ¿es tu opinión?</span>Si es lo que <b>crees</b> → <b>will</b>. Va con <i>I think, I'm sure, probably</i>.<br>I think you<b>'ll love</b> Rome. · It<b>'ll be</b> fun.</div>
+      </div>
+      <div class="cell" style="margin-top:10px"><span class="gh"><ico-warn></ico-warn> La excepción: horarios oficiales</span>
+        Trenes, vuelos, museos y cines usan <b>presente simple</b>, como en español: <span class="ok">The train <b>leaves</b> at 7:15.</span> · <span class="ok">The museum <b>opens</b> at nine.</span> Pero tu plan personal, no: <span class="x">I leave on Friday.</span> → <span class="ok">I'm leaving on Friday.</span>
+      </div>
+
+      <div class="bridge">
+        <div class="bh">Puente al español · en español casi todo es presente</div>
+        <ul>
+          <li>«Salgo el viernes a las seis» (ya agendado) → <span class="ok">I<b>'m leaving</b> on Friday at six.</span> El presente simple en inglés queda solo para horarios oficiales.</li>
+          <li>«<b>Voy a</b> buscar hotel» → <span class="ok">I<b>'m going to</b> look for a hotel.</span> Es la que más se parece al español: <i>ir a</i> = <i>going to</i>.</li>
+          <li>«Te ayudo» / «Yo lo hago» (decides al hablar) → <span class="ok">I<b>'ll help</b> you. / I<b>'ll do</b> it.</span> <span class="x">I help you.</span></li>
+          <li>Ojo: el futuro español («viajaré», «llamaré») <b>no</b> siempre es <i>will</i>. «Mañana viajo a Lima» = <i>I'm traveling to Lima tomorrow</i>.</li>
+        </ul>
+      </div>
+
+      <p class="lead-sm">Preguntas: "What <b>are</b> you <b>doing</b> this weekend?" <span class="sp">agendado</span> · "What time <b>are</b> you <b>leaving</b>?" <span class="sp">agendado</span> · "<b>Are</b> you <b>going to</b> book a hotel?" <span class="sp">intención</span></p>
       <div class="stretch">
         <div class="st-h">B2 stretch</div>
         <b>Future continuous</b> for an action in progress later: "This time tomorrow, I'll <b>be flying</b> to Tokyo." · Softer plans: "We're <b>hoping to</b>…", "We're <b>planning on</b> …ing", "I <b>might</b> stay an extra day."
