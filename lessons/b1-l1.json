@@ -61,7 +61,7 @@
         },
         {
           "h": "<ico-check></ico-check> already / yet / just",
-          "body": "<code>already</code> = ya <span class='es'>(afirmativo)</span><br><code>yet</code> = todavía <span class='es'>(? y negativo)</span><br><code>just</code> = recién / acabo de"
+          "body": "<code>already</code> = ya <span class='es'>(afirmativo)</span><br><code>yet</code> = todavía <span class='es'>(? y negativo)</span><br><code>just</code> = recién / justo"
         },
         {
           "h": "<ico-warn></ico-warn> Watch out",
