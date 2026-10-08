@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English for All · Travel &amp; Living A2 (base · B1 extra)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon-rankup.png">
+<link rel="apple-touch-icon" href="icon-rankup.png">
+<meta name="description" content="Curso de inglés A2 para viajar (4 lecciones, estilo PPP) con instrucciones en español: reservar, transporte público, restaurante y contar el viaje. English for All · Rank Up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/a2-travel-living-course.html">
+<meta property="og:title" content="Travel &amp; Living A2 — 4 lecciones (instrucciones en español)">
+<meta property="og:description" content="Planear el viaje, moverte en bus y metro, comer afuera y contar cómo te fue. 4 lecciones PPP con respuestas. English for All — Rank Up.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<meta property="og:site_name" content="English for All">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cyan:#0a8ea6; --magenta:#c31f8f; --purple:#6d3ff0; --gold:#b5791a; --green:#158a52; --red:#c0392b;
+    --ink:#1c2230; --soft:#54607a; --line:#dbe2ef; --bg:#f4f6fb; --card:#ffffff;
+    --stretch-bg:#f6f1ff; --key-bg:#eefaf2; --warm-bg:#fff8ec;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.62; font-size:16.5px; padding:0 0 80px;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px;}
+  a{color:var(--cyan);}
+
+  /* ---- Top toolbar ---- */
+  .toolbar{position:sticky; top:0; z-index:40; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:center;
+    background:rgba(244,246,251,0.92); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+    padding:10px 14px; border-bottom:1px solid var(--line);}
+  .toolbar .tt{font-family:"Share Tech Mono",monospace; font-size:0.82rem; color:var(--soft); letter-spacing:1px;}
+  .tbtn{font-family:"Share Tech Mono",monospace; font-size:0.82rem; border:1.5px solid var(--purple); color:var(--purple);
+    background:#fff; border-radius:9px; padding:8px 14px; cursor:pointer; letter-spacing:1px; transition:.15s; white-space:nowrap;}
+  .tbtn:hover{background:#f0eaff;}
+  .tbtn.on{background:var(--purple); color:#fff;}
+  .tbtn.print{border-color:var(--cyan); color:var(--cyan);}
+  .tbtn.print:hover{background:#e6f6f9;}
+  .viewnote{font-family:"Share Tech Mono",monospace; font-size:0.72rem; color:var(--soft);}
+
+  /* ---- Cover ---- */
+  .cover{background:var(--card); border:1px solid var(--line); border-top:6px solid var(--purple);
+    border-radius:16px; padding:30px 30px 26px; margin:26px 0 22px; box-shadow:0 6px 24px #1c223010;}
+  .kicker{font-family:"Press Start 2P",monospace; font-size:0.56rem; letter-spacing:2px; color:var(--magenta);}
+  .cover h1{font-family:"Press Start 2P",monospace; font-size:clamp(1.05rem,3.6vw,1.7rem); line-height:1.5; color:var(--purple); margin:14px 0 10px;}
+  .cover .lead{font-size:1.02rem; color:var(--soft); max-width:62ch;}
+  .badges{display:flex; flex-wrap:wrap; gap:9px; margin:18px 0 6px;}
+  .badge{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; padding:6px 12px; border-radius:20px; border:1.5px solid var(--line); color:var(--ink); background:#fbfcff;}
+  .badge b{color:var(--cyan);}
+  .badge.b1{border-color:var(--cyan); background:#e9f7fa;}
+  .badge.b2{border-color:var(--purple); background:var(--stretch-bg);}
+
+  h2.sec{font-family:"Press Start 2P",monospace; font-size:0.72rem; letter-spacing:1px; color:var(--ink); margin:26px 2px 12px; line-height:1.6;}
+
+  /* ---- Legend / map grids ---- */
+  .legend{display:grid; grid-template-columns:1fr; gap:8px; margin-top:8px;}
+  @media(min-width:640px){ .legend{grid-template-columns:1fr 1fr;} }
+  .leg{display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:10px; padding:9px 12px; background:#fbfcff;}
+  .leg .em{font-size:1.05rem; line-height:1.4;}
+  .leg .lx b{display:block; font-size:0.92rem;}
+  .leg .lx span{font-size:0.84rem; color:var(--soft);}
+
+  .maptable{width:100%; border-collapse:collapse; margin-top:8px; font-size:0.93rem; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .maptable th{background:#f0eefb; text-align:left; padding:10px 12px; font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--soft); border-bottom:1px solid var(--line);}
+  .maptable td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .maptable tr:last-child td{border-bottom:none;}
+  .maptable .ln{font-family:"Press Start 2P",monospace; font-size:0.6rem; color:var(--magenta);}
+
+  /* ---- Lesson blocks ---- */
+  .lesson{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:6px 26px 26px; margin:20px 0; box-shadow:0 4px 18px #1c22300d;}
+  .lesson-head{display:flex; align-items:center; gap:14px; margin:22px 0 6px; padding-bottom:14px; border-bottom:2px solid var(--line);}
+  .lnum{flex-shrink:0; width:52px; height:52px; border-radius:12px; background:var(--purple); color:#fff; font-family:"Press Start 2P",monospace; font-size:0.86rem; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px #6d3ff044;}
+  .lesson.l2 .lnum{background:var(--magenta);} .lesson.l3 .lnum{background:var(--cyan);} .lesson.l4 .lnum{background:var(--green);}
+  .lesson-head .ttl{font-family:"Press Start 2P",monospace; font-size:0.86rem; line-height:1.5; color:var(--ink);}
+  .lesson-head .es{display:block; font-family:"Share Tech Mono",monospace; font-size:0.8rem; color:var(--soft); margin-top:7px; letter-spacing:.5px;}
+
+  .block{margin-top:20px;}
+  .btag{display:inline-flex; align-items:center; gap:8px; font-family:"Share Tech Mono",monospace; font-size:0.82rem; letter-spacing:1px; text-transform:uppercase; color:var(--soft); border-bottom:1px dashed var(--line); padding-bottom:5px; margin-bottom:10px; width:100%;}
+  .btag .min{margin-left:auto; color:var(--cyan); text-transform:none; font-size:0.78rem;}
+
+  .objective{background:#eefaf6; border:1px solid #bfe6d5; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; font-size:0.98rem;}
+  .objective b{color:var(--green);}
+  .warmup{background:var(--warm-bg); border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px;}
+
+  p{margin:8px 0;}
+  ul, ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
+  .lead-sm{color:var(--soft); font-size:0.95rem;}
+  code, .chip{font-family:"Share Tech Mono",monospace;}
+  .chip{display:inline-block; background:#eaf6f9; color:var(--cyan); border:1px solid #bfe6ee; border-radius:6px; padding:1px 7px; font-size:0.9em;}
+  .ok{color:var(--green); font-weight:600;} .x{color:var(--red); text-decoration:line-through;}
+  .h3{font-weight:700; color:var(--ink); margin:14px 0 4px; font-size:1rem;}
+  .h3 .sm{font-weight:400; color:var(--soft); font-size:0.85rem;}
+
+  /* phrase lists */
+  .phr{list-style:none; margin:6px 0 6px; padding:0;}
+  .phr li{padding:6px 0; border-bottom:1px dashed var(--line);}
+  .phr li:last-child{border-bottom:none;}
+  .phr .en{color:var(--ink);} .phr .sp{color:var(--soft); font-size:0.86rem; display:block;}
+
+  /* glossary / table grids */
+  .grid2{display:grid; grid-template-columns:1fr; gap:10px; margin:8px 0;}
+  @media(min-width:640px){ .grid2{grid-template-columns:1fr 1fr;} }
+  .cell{border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:#fbfcff;}
+  .cell .gh{display:block; font-family:"Share Tech Mono",monospace; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:6px;}
+  .cell code{color:var(--cyan);}
+  .cell .sp{color:var(--soft); font-style:italic;}
+  .cell .sp::before{content:" — "; font-style:normal;}
+
+  table.tb{width:100%; border-collapse:collapse; margin:8px 0; font-size:0.93rem;}
+  table.tb th, table.tb td{border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top;}
+  table.tb th{background:#f3f1fb; font-family:"Share Tech Mono",monospace; font-size:0.76rem; letter-spacing:1px; color:var(--soft);}
+  table.tb td .sp{color:var(--soft); font-size:0.85rem;}
+
+  /* B1 stretch */
+  .stretch{background:var(--stretch-bg); border:1px solid #d9c9ff; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .stretch .st-h{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:6px;}
+  .stretch .st-h::before{content:"⭐";}
+
+  /* listening dialogue */
+  .dialogue{border:1px solid var(--line); border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px; background:#fbfdff;}
+  .dialogue .line{margin:5px 0;}
+  .dialogue .spk{font-weight:700; color:var(--cyan);}
+  .dialogue .spk.b{color:var(--magenta);}
+  .dialogue .tg{background:#fff3d6; border-radius:4px; padding:0 4px;}
+  .qs{margin:10px 0 0 0;}
+  .qs .qn{font-weight:700; color:var(--purple); margin-right:6px;}
+
+  /* answer key */
+  .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
+  .key .kh::before{content:"✅";}
+  .key ol{margin:4px 0 0 20px;} .key li{margin:3px 0;}
+  .key .alt{color:var(--soft); font-size:0.86rem;}
+
+  /* teacher-only note */
+  .tnote{background:#fff5f8; border:1px dashed var(--magenta); border-radius:10px; padding:10px 14px; margin:12px 0; font-size:0.92rem; color:#7a2d55;}
+  .tnote b{color:var(--magenta);}
+
+  /* scaffold (gapped model) */
+  .scaffold{background:#fbfaff; border:1px solid #e0d8f5; border-radius:10px; padding:12px 16px; font-family:"Share Tech Mono",monospace; font-size:0.95rem; line-height:1.9;}
+  .gap{display:inline-block; min-width:64px; border-bottom:1.5px solid var(--gold); color:var(--gold); text-align:center;}
+  .hw{background:#fff8ec; border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px; margin-top:8px;}
+  .hw b{color:var(--gold);}
+
+  /* view toggling */
+  body.student .key, body.student .tnote{display:none !important;}
+
+  footer{max-width:900px; margin:34px auto 0; padding:16px 20px; text-align:center; color:var(--soft); font-size:0.85rem; border-top:1px solid var(--line);}
+  footer b{font-family:"Press Start 2P",monospace; font-size:0.62rem; color:var(--purple); letter-spacing:1px;}
+
+  @media print{
+    body{background:#fff; font-size:11.5pt; padding:0;}
+    .toolbar{display:none;}
+    .lesson, .cover{box-shadow:none; border-color:#ccc; break-inside:avoid;}
+    .lesson{break-before:page;}
+    .cover{break-before:avoid;}
+    a{color:var(--ink); text-decoration:none;}
+  }
+</style>
+<style>
+  /* ---- Travel additions ---- */
+  .recap{background:#f3f1fb; border:1px solid #d9d2f5; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .recap .rh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; margin-bottom:6px;}
+  .bridge{background:#eaf6f9; border:1px solid #bfe6ee; border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px 8px; margin:12px 0;}
+  .bridge .bh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--cyan); text-transform:uppercase; margin-bottom:6px;}
+  .bridge ul{margin:4px 0 4px 18px;} .bridge li{margin:5px 0; font-size:0.95rem;}
+</style>
+</head>
+<body class="teacher">
+
+<div class="toolbar">
+  <span class="tt">VISTA:</span>
+  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')">📖 Profe (con clave)</button>
+  <button class="tbtn" id="btnStudent" onclick="setView('student')">🎒 Alumno (sin clave)</button>
+  <button class="tbtn print" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+  <span class="viewnote" id="viewNote">Se ven las respuestas y las notas del profe.</span>
+</div>
+
+<div class="wrap">
+
+  <!-- ============== COVER ============== -->
+  <div class="cover">
+    <div class="kicker">ENGLISH FOR ALL · RANK UP · NIVEL A2</div>
+    <h1>TRAVEL &amp; LIVING<br>CURSO DE 4 LECCIONES</h1>
+    <p class="lead">El paso siguiente después de sobrevivir: <b>comer afuera</b> sin miedo al menú, <b>planear</b> el viaje, <b>moverte</b> en transporte público y <b>contar</b> cómo te fue. Estilo <b>PPP</b> — Presentar → Practicar → Producir. Las instrucciones están en español; el inglés es lo que se aprende.</p>
+    <div class="badges">
+      <span class="badge b1"><b>A2 base</b></span>
+      <span class="badge b2">⭐ B1 extra</span>
+      <span class="badge">4 lecciones · ~50 min c/u</span>
+      <span class="badge">individual o grupo pequeño</span>
+      <span class="badge">🇺🇸 inglés americano</span>
+    </div>
+  </div>
+
+  <!-- ============== HOW TO USE ============== -->
+  <h2 class="sec">CÓMO USAR ESTE CURSO</h2>
+  <p class="lead-sm">Cada lección sigue el mismo ritmo. Usa el botón <b>Profe / Alumno</b> de arriba: la vista <b>Alumno</b> oculta las respuestas y las notas del profe para imprimir o compartir pantalla. En A2 el alumno ya puede más: pídele frases completas y que hable de <b>sus</b> viajes reales o soñados.</p>
+  <div class="legend">
+    <div class="leg"><span class="em">🎯</span><div class="lx"><b>Objetivo</b><span>La meta ("puedes…") de la lección.</span></div></div>
+    <div class="leg"><span class="em">🔥</span><div class="lx"><b>Calentamiento (5 min)</b><span>Romper el hielo y activar el tema.</span></div></div>
+    <div class="leg"><span class="em">📘</span><div class="lx"><b>Presentar (15 min)</b><span>Vocabulario + un punto de gramática, con glosario y puente al español.</span></div></div>
+    <div class="leg"><span class="em">✏️</span><div class="lx"><b>Práctica guiada (15 min)</b><span>Tres actividades con apoyo. Respuestas en la clave ✅.</span></div></div>
+    <div class="leg"><span class="em">🎧</span><div class="lx"><b>Diálogo modelo</b><span>Una conversación real del viaje + comprensión.</span></div></div>
+    <div class="leg"><span class="em">🗣️</span><div class="lx"><b>Práctica libre (15 min)</b><span>Juego de roles con plantilla de apoyo — funciona 1:1.</span></div></div>
+    <div class="leg"><span class="em">⭐</span><div class="lx"><b>Caja B1 (extra)</b><span>Inglés del siguiente nivel para los más rápidos.</span></div></div>
+    <div class="leg"><span class="em">📌</span><div class="lx"><b>Tarea</b><span>Una tarea corta de escribir/hablar para entregar.</span></div></div>
+  </div>
+
+  <h2 class="sec">MAPA DEL CURSO</h2>
+  <table class="maptable">
+    <tr><th style="width:52px">#</th><th>Lección</th><th>Gramática</th><th>Puedes…</th></tr>
+    <tr><td class="ln">01</td><td><b>At the Restaurant</b></td><td><i>I'll have / Could I have…?</i> · <i>much / many / a lot of</i></td><td>Pedir una mesa, ordenar, preguntar y pagar</td></tr>
+    <tr><td class="ln">02</td><td><b>Booking a Trip</b></td><td><i>going to</i> (planes) + <i>would like</i></td><td>Planear un viaje y reservar pasajes y alojamiento</td></tr>
+    <tr><td class="ln">03</td><td><b>Buses, Trains &amp; the Subway</b></td><td>presente simple para horarios · <i>How long does it take?</i> · <i>by / on</i></td><td>Moverte en transporte público y entender horarios</td></tr>
+    <tr><td class="ln">04</td><td><b>How Was Your Trip?</b></td><td>pasado simple (regulares + irregulares, <i>did</i>)</td><td>Contar un viaje y preguntar por el de otros</td></tr>
+  </table>
+  <div class="tnote"><b>Nota para el profe:</b> Este curso es el puente entre el <a href="a1-travel-living-course.html">Travel &amp; Living A1</a> (aeropuerto, hotel, direcciones, tienda) y el <a href="travel-living-b1b2-course.html">Travel &amp; Living B1–B2</a> (futuros, present perfect, comparativos, pasado continuo). Aquí se ponen las bases que el B1 da por sabidas: <i>going to</i>, el presente simple con <i>does</i>, y sobre todo el <b>pasado simple</b>. Cada lección tiene su caja cyan <b>Puente al español</b> con los errores que vienen de traducir palabra por palabra.</div>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 1 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l1">
+    <div class="lesson-head">
+      <div class="lnum">01</div>
+      <div><span class="ttl">At the Restaurant</span>
+      <span class="es">En el restaurante · Gramática: <i>I'll have / Could I have…?</i> · <i>much / many / a lot of</i></span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>pedir una mesa</b>, <b>entender el menú</b>, <b>ordenar con cortesía</b>, <b>preguntar por ingredientes</b> y <b>pedir la cuenta</b>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿Cuál es tu comida favorita? ¿Y la comida típica de tu país?</li>
+          <li>¿Comes mucho afuera? ¿Restaurante, comida rápida o para llevar?</li>
+          <li>¿Sabes cuánta propina se deja en Estados Unidos?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">15 min</span></span>
+
+      <div class="h3">A · En el restaurante <span class="sm">— eating out</span></div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>a table for two</td><td>una mesa para dos</td></tr>
+        <tr><td>a menu · a server</td><td>un menú / una carta · un mesero</td></tr>
+        <tr><td>an appetizer · a main course · a dessert</td><td>una entrada · un plato principal · un postre</td></tr>
+        <tr><td>a side (of fries / salad)</td><td>una guarnición (papas fritas / ensalada)</td></tr>
+        <tr><td>the check</td><td>la cuenta</td></tr>
+        <tr><td>a tip</td><td>una propina</td></tr>
+        <tr><td>to go · for here</td><td>para llevar · para comer aquí</td></tr>
+        <tr><td>spicy · sweet · salty</td><td>picante · dulce · salado</td></tr>
+        <tr><td>vegetarian · gluten-free</td><td>vegetariano · sin gluten</td></tr>
+        <tr><td>I'm allergic to…</td><td>Soy alérgico/a a…</td></tr>
+        <tr><td>I'm full.</td><td>Estoy lleno/a. / Ya comí suficiente.</td></tr>
+      </table>
+
+      <div class="h3">B · Pedir con cortesía <span class="sm">— ordering</span></div>
+      <table class="tb">
+        <tr><th style="width:46%">Frase</th><th>Cuándo</th></tr>
+        <tr><td><b>Can we have a table for two?</b></td><td>al entrar</td></tr>
+        <tr><td><b>Could I see the menu, please?</b></td><td>pedir la carta</td></tr>
+        <tr><td><b>I'll have</b> the chicken, please.</td><td>ordenar (decides ahora)</td></tr>
+        <tr><td><b>Could I have</b> a glass of water?</td><td>pedir algo extra</td></tr>
+        <tr><td><b>What do you recommend?</b></td><td>pedir consejo</td></tr>
+        <tr><td><b>Does it have</b> nuts in it?</td><td>preguntar ingredientes</td></tr>
+        <tr><td><b>Could we have the check, please?</b></td><td>pedir la cuenta</td></tr>
+      </table>
+
+      <div class="h3">C · Del otro lado — lo que dice el mesero <span class="sm">— para entenderlo, o para decirlo si trabajas en un restaurante</span></div>
+      <table class="tb">
+        <tr><th style="width:46%">El mesero dice…</th><th>Español</th></tr>
+        <tr><td><b>Hi, welcome! How many?</b> / <b>Just the two of you?</b></td><td>¡Bienvenidos! ¿Cuántos son? / ¿Solo ustedes dos?</td></tr>
+        <tr><td><b>Right this way.</b> / <b>Here's your table.</b></td><td>Por aquí. / Aquí está su mesa.</td></tr>
+        <tr><td><b>Can I get you something to drink?</b></td><td>¿Les traigo algo de tomar?</td></tr>
+        <tr><td><b>Are you ready to order?</b> / <b>Do you need a few more minutes?</b></td><td>¿Ya saben qué van a pedir? / ¿Necesitan unos minutos más?</td></tr>
+        <tr><td><b>Today's special is…</b></td><td>El especial de hoy es…</td></tr>
+        <tr><td><b>How would you like your steak?</b> — Rare / medium / well-done.</td><td>¿Qué término quiere la carne? — Jugosa / a punto / bien cocida.</td></tr>
+        <tr><td><b>Would you like anything else?</b></td><td>¿Desean algo más?</td></tr>
+        <tr><td><b>How is everything?</b></td><td>¿Qué tal todo? (pasa a preguntar a mitad de la comida)</td></tr>
+        <tr><td><b>Can I get you any dessert?</b></td><td>¿Les traigo algún postre?</td></tr>
+        <tr><td><b>Here's your check. I'll take that whenever you're ready.</b></td><td>Aquí está la cuenta. La cobro cuando estén listos.</td></tr>
+      </table>
+
+      <div class="h3">D · Gramática — <i>much / many / a lot of</i></div>
+      <table class="tb">
+        <tr><th style="width:24%">Palabra</th><th style="width:30%">Con…</th><th>Ejemplo</th></tr>
+        <tr><td><b>many</b></td><td>contables (plural)<br><span class="sp">fries, eggs, people, tables</span></td><td>How <b>many</b> people? · There aren't <b>many</b> tables.</td></tr>
+        <tr><td><b>much</b></td><td>incontables<br><span class="sp">rice, water, sugar, money, time</span></td><td>How <b>much</b> is the soup? · I don't have <b>much</b> time.</td></tr>
+        <tr><td><b>a lot of</b></td><td>los dos (sobre todo en <b>+</b>)</td><td>This dish has <b>a lot of</b> cheese. · They have <b>a lot of</b> options.</td></tr>
+      </table>
+      <p class="lead-sm">Regla rápida: <b>much</b> y <b>many</b> se usan sobre todo en <b>preguntas</b> y <b>negativas</b>; en frases positivas suena más natural <b>a lot of</b>.</p>
+
+      <div class="bridge">
+        <div class="bh">Puente al español · "quiero", "la cuenta" y lo incontable</div>
+        <ul>
+          <li>"Yo quiero el pollo" → en inglés suena exigente. Usa <span class="ok">I'll have the chicken</span> o <span class="ok">Could I have the chicken?</span></li>
+          <li>"La cuenta" en EE. UU. es <span class="ok">the check</span>. <i>Account</i> es una cuenta de banco.</li>
+          <li>Hay palabras que en español se cuentan pero en inglés no: <b>bread</b> (pan), <b>advice</b> (consejo), <b>information</b>. <span class="x">two breads</span> → <span class="ok">two pieces of bread</span>.</li>
+          <li>"Mesero, ¿me trae…?" — no se dice <span class="x">Waiter!</span> en voz alta. Haz contacto visual y di <span class="ok">Excuse me…</span></li>
+          <li>Propina en EE. UU.: <b>15–20%</b>. No es opcional como en muchos países de Latinoamérica.</li>
+        </ul>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B1 · extra</div>
+        "Could I have the dressing <b>on the side</b>?" <span class="sp">el aderezo aparte</span> · "Could we <b>split</b> the check?" <span class="sp">pagar por separado</span> · "Excuse me, I think there's a <b>mistake</b> on the check." · "Could I get a <b>box</b> for this?" <span class="sp">para llevar lo que sobró</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">15 min</span></span>
+
+      <div class="h3">Actividad 1 · <i>much</i>, <i>many</i> o <i>a lot of</i>?</div>
+      <ol>
+        <li>How ___ people are in your group?</li>
+        <li>How ___ is the pasta?</li>
+        <li>I don't eat ___ sugar.</li>
+        <li>This soup has ___ garlic. It's very strong!</li>
+        <li>There aren't ___ vegetarian dishes on the menu.</li>
+        <li>We don't have ___ time — our bus leaves at 8.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol>
+          <li><b>many</b> <span class="alt">(people = contable)</span></li>
+          <li><b>much</b> <span class="alt">(precio)</span></li>
+          <li><b>much</b> <span class="alt">(negativa + incontable)</span></li>
+          <li><b>a lot of</b> <span class="alt">(positiva)</span></li>
+          <li><b>many</b></li>
+          <li><b>much</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 2 · ¿Qué dices? <span class="sm">— elige una frase del cuadro B</span></div>
+      <ol>
+        <li>Entras al restaurante con un amigo. → ___</li>
+        <li>No sabes qué pedir. → ___</li>
+        <li>Eres alérgico al maní / cacahuate (<i>peanuts</i>). → ___</li>
+        <li>Decides pedir la hamburguesa. → ___</li>
+        <li>Terminaste y quieres pagar. → ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <ol>
+          <li>"Can we have a table for two?"</li>
+          <li>"What do you recommend?"</li>
+          <li>"Does it have peanuts in it? I'm allergic to peanuts."</li>
+          <li>"I'll have the burger, please."</li>
+          <li>"Could we have the check, please?"</li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 3 · Ordena el diálogo <span class="sm">— numera del 1 al 6</span></div>
+      <ul style="list-style:none; margin-left:0">
+        <li>___ a. <i>Server:</i> Sure. Anything to drink?</li>
+        <li>___ b. <i>Server:</i> Hi! Are you ready to order?</li>
+        <li>___ c. <i>Customer:</i> Just water, please. And could we have some bread?</li>
+        <li>___ d. <i>Customer:</i> Yes. I'll have the fish tacos, please.</li>
+        <li>___ e. <i>Server:</i> Of course. I'll bring it right away.</li>
+        <li>___ f. <i>Customer:</i> Thank you!</li>
+      </ul>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <p><b>1-b · 2-d · 3-a · 4-c · 5-e · 6-f</b></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · en un diner</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Server:</span> Hi there! Are you ready to order?</p>
+        <p class="line"><span class="spk">Mateo:</span> Almost. <span class="tg">What do you recommend?</span></p>
+        <p class="line"><span class="spk b">Server:</span> The chicken burrito is really popular. But it's a little spicy.</p>
+        <p class="line"><span class="spk">Mateo:</span> That's OK, I like spicy food. <span class="tg">I'll have</span> the burrito, please.</p>
+        <p class="line"><span class="spk b">Server:</span> Great. Would you like a side of rice or salad?</p>
+        <p class="line"><span class="spk">Mateo:</span> Salad, please. <span class="tg">Does it have</span> cheese in it? I don't eat <span class="tg">much</span> cheese.</p>
+        <p class="line"><span class="spk b">Server:</span> It has a little, but I can take it off.</p>
+        <p class="line"><span class="spk">Mateo:</span> Perfect, thanks. And <span class="tg">could I have</span> a lemonade?</p>
+        <p class="line"><span class="spk b">Server:</span> Sure thing.</p>
+        <p class="line"><span class="spk">Mateo:</span> <i>(later)</i> Excuse me, <span class="tg">could we have the check</span>, please?</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Qué le recomienda el mesero? ¿Qué problema tiene el plato?</p>
+        <p><span class="qn">P2.</span> ¿Qué guarnición elige Mateo?</p>
+        <p><span class="qn">P3.</span> ¿Qué pide sacar de la ensalada y por qué?</p>
+        <p><span class="qn">P4.</span> ¿Qué toma?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol>
+          <li>The chicken burrito — it's a little spicy.</li>
+          <li>Salad.</li>
+          <li>The cheese — he doesn't eat much cheese.</li>
+          <li>A lemonade.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">15 min</span></span>
+      <p><b>Juego de roles — el restaurante.</b> El profe es el mesero y comparte un menú real (de internet, en inglés). El alumno pide mesa, pregunta por un plato, ordena entrada + principal + bebida, pide algo extra y al final la cuenta. Después cambian.</p>
+      <p><b>Giro:</b> el mesero se equivoca y trae otro plato. El alumno lo resuelve con cortesía: <i>"Excuse me, I think this isn't my order. I had the…"</i></p>
+      <p class="lead-sm">Plantilla de apoyo — completa los huecos:</p>
+      <div class="scaffold">
+        Can we have a table for <span class="gap">…</span>? &nbsp;·&nbsp; What do you <span class="gap">…</span>? &nbsp;·&nbsp; Does it have <span class="gap">…</span> in it? &nbsp;·&nbsp; I'll have the <span class="gap">…</span>, please. &nbsp;·&nbsp; Could I have <span class="gap">…</span>? &nbsp;·&nbsp; Could we have the <span class="gap">…</span>, please?
+      </div>
+      <p><b>Si el alumno trabaja de mesero/a:</b> empiecen al revés — el alumno es el mesero y usa el cuadro C de principio a fin (recibir, sentar, bebidas, pedido, término de la carne, "How is everything?", postre, cuenta). El profe es un cliente un poco difícil: no entiende el menú, tiene una alergia, pide cambiar algo y al final quiere pagar por separado.</p>
+      <div class="tnote"><b>Nota profe:</b> Usa un menú real de un diner o restaurante de EE. UU. — los nombres de platos (<i>sides, sunny side up, medium-rare</i>) son parte del aprendizaje. Corrige <i>"I want…"</i> con una sonrisa: "Polite version?" → <i>"I'll have…"</i>. Si sobra tiempo, calculen juntos el 18% de propina.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Busca</b> el menú en inglés de un restaurante real de EE. UU. Elige lo que pedirías (entrada, principal, postre, bebida) y <b>escribe tu pedido</b> como lo dirías al mesero, con una pregunta sobre un ingrediente. Calcula la cuenta con 18% de propina.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 2 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l2">
+    <div class="lesson-head">
+      <div class="lnum">02</div>
+      <div><span class="ttl">Booking a Trip</span>
+      <span class="es">Planear y reservar · Gramática: <i>going to</i> + <i>would like</i></span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>contar tus planes de viaje</b> con <i>going to</i> y <b>reservar un pasaje o una habitación</b> por teléfono o en un mostrador con <i>I'd like…</i></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿Cuál es el próximo viaje que quieres hacer? ¿Con quién?</li>
+          <li>¿Prefieres reservar todo antes o improvisar?</li>
+          <li>¿Avión, bus o auto? ¿Por qué?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">15 min</span></span>
+
+      <div class="h3">A · Reservar un viaje <span class="sm">— booking words</span></div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>to book / a booking</td><td>reservar / una reserva</td></tr>
+        <tr><td>a one-way ticket · a round-trip ticket</td><td>pasaje de ida · pasaje de ida y vuelta</td></tr>
+        <tr><td>a window seat · an aisle seat</td><td>asiento de ventana · de pasillo</td></tr>
+        <tr><td>a direct flight · a layover</td><td>vuelo directo · escala</td></tr>
+        <tr><td>to depart / to arrive</td><td>salir / llegar</td></tr>
+        <tr><td>a hostel · a vacation rental</td><td>un hostal · un alquiler vacacional</td></tr>
+        <tr><td>a night · per night</td><td>una noche · por noche</td></tr>
+        <tr><td>available · fully booked</td><td>disponible · completo</td></tr>
+        <tr><td>breakfast included</td><td>desayuno incluido</td></tr>
+        <tr><td>to cancel · a cancellation</td><td>cancelar · una cancelación</td></tr>
+        <tr><td>a vacation · a trip</td><td>unas vacaciones · un viaje</td></tr>
+      </table>
+
+      <div class="h3">B · Gramática — <i>going to</i> para planes</div>
+      <table class="tb">
+        <tr><th style="width:12%">Forma</th><th>Estructura</th><th>Ejemplo</th></tr>
+        <tr><td><b>+</b></td><td>sujeto + <b>am / is / are going to</b> + verbo base</td><td>We<b>'re going to</b> visit Chicago in July.</td></tr>
+        <tr><td><b>–</b></td><td>sujeto + <b>'m not / isn't / aren't going to</b> + verbo base</td><td>I<b>'m not going to</b> rent a car.</td></tr>
+        <tr><td><b>?</b></td><td><b>Am / Is / Are</b> + sujeto + <b>going to</b> + verbo base?</td><td><b>Are</b> you <b>going to</b> stay in a hotel?</td></tr>
+      </table>
+      <p class="lead-sm">Marcadores típicos: <i>next week · next summer · in July · this weekend · tomorrow</i>.</p>
+
+      <div class="h3">C · Para reservar — <i>would like</i></div>
+      <table class="tb">
+        <tr><th style="width:46%">Tú dices…</th><th>Español</th></tr>
+        <tr><td>I<b>'d like to</b> book a room for three nights.</td><td>Me gustaría reservar una habitación por tres noches.</td></tr>
+        <tr><td>I<b>'d like</b> a round-trip ticket to Boston.</td><td>Quisiera un pasaje de ida y vuelta a Boston.</td></tr>
+        <tr><td><b>Would you like</b> a window or an aisle seat?</td><td>¿Quiere ventana o pasillo?</td></tr>
+        <tr><td>Is breakfast included?</td><td>¿Está incluido el desayuno?</td></tr>
+        <tr><td>How much is it per night?</td><td>¿Cuánto es por noche?</td></tr>
+      </table>
+      <p class="lead-sm"><b>I'd like + cosa</b> (I'd like a ticket) · <b>I'd like to + verbo</b> (I'd like <b>to</b> book a room).</p>
+
+      <div class="bridge">
+        <div class="bh">Puente al español · "voy a…" y "quiero"</div>
+        <ul>
+          <li>"Voy a viajar" → <span class="ok">I'm going <b>to</b> travel</span>. No olvides el <b>to</b> ni el verbo <b>be</b>: <span class="x">I going travel</span> <span class="x">I go to travel</span>.</li>
+          <li>"Quiero un pasaje" suena brusco en inglés con <i>I want</i>. En un mostrador usa <span class="ok">I'd like a ticket</span>.</li>
+          <li>"Me gustaría <b>que</b> me reserves…" → no se traduce el "que": <span class="ok">I'd like <b>you to</b> book it</span>, no <span class="x">I'd like that you book it</span>.</li>
+          <li>"Reservar" es <b>book</b> (o <i>make a reservation</i>). <i>Reserve</i> existe, pero se usa menos al hablar.</li>
+        </ul>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B1 · extra</div>
+        <b>going to</b> (plan ya decidido) vs. <b>will</b> (decisión en el momento): "We<b>'re going to</b> fly to Denver." — "Oh, the flight is full? Then we<b>'ll</b> take the train." · "Is there a <b>cancellation fee</b>?" <span class="sp">¿Se cobra por cancelar?</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">15 min</span></span>
+
+      <div class="h3">Actividad 1 · Completa con <i>going to</i> <span class="sm">— usa el verbo entre paréntesis</span></div>
+      <ol>
+        <li>We ___ (visit) my cousins in Texas.</li>
+        <li>She ___ (not / take) a direct flight.</li>
+        <li>___ you ___ (book) a hostel?</li>
+        <li>I ___ (stay) for five nights.</li>
+        <li>They ___ (not / rent) a car — they ___ (use) the subway.</li>
+        <li>What ___ he ___ (do) in New York?</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol>
+          <li><b>'re going to visit</b></li>
+          <li><b>isn't going to take</b></li>
+          <li><b>Are</b> you <b>going to book</b></li>
+          <li><b>'m going to stay</b></li>
+          <li><b>aren't going to rent</b> · <b>'re going to use</b></li>
+          <li>What <b>is</b> he <b>going to do</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 2 · ¿<i>I'd like</i> o <i>I'd like to</i>?</div>
+      <ol>
+        <li>___ a window seat, please.</li>
+        <li>___ book a double room.</li>
+        <li>___ cancel my reservation.</li>
+        <li>___ a one-way ticket to Miami.</li>
+        <li>___ check the price first.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <ol>
+          <li><b>I'd like</b> <span class="alt">(+ cosa)</span></li>
+          <li><b>I'd like to</b> <span class="alt">(+ verbo)</span></li>
+          <li><b>I'd like to</b></li>
+          <li><b>I'd like</b></li>
+          <li><b>I'd like to</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 3 · Ordena la pregunta <span class="sm">— el empleado te pregunta</span></div>
+      <ol>
+        <li>you / are / how many / nights / going to / stay?</li>
+        <li>like / would / you / breakfast?</li>
+        <li>is / when / your / flight / going to / leave?</li>
+        <li>an aisle seat / would / like / you?</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <ol>
+          <li>How many nights <b>are you going to</b> stay?</li>
+          <li><b>Would you like</b> breakfast?</li>
+          <li>When <b>is</b> your flight <b>going to</b> leave? <span class="alt">(más común: When does your flight leave? → lección 3)</span></li>
+          <li><b>Would you like</b> an aisle seat?</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · reservando por teléfono</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Clerk:</span> Good afternoon, Bayview Hotel. How can I help you?</p>
+        <p class="line"><span class="spk">Lucas:</span> Hi. <span class="tg">I'd like to book a room</span>, please.</p>
+        <p class="line"><span class="spk b">Clerk:</span> Sure. When are you arriving?</p>
+        <p class="line"><span class="spk">Lucas:</span> On June 12th. <span class="tg">We're going to stay</span> for four nights.</p>
+        <p class="line"><span class="spk b">Clerk:</span> A single or a double room?</p>
+        <p class="line"><span class="spk">Lucas:</span> A double, please. How much is it per night?</p>
+        <p class="line"><span class="spk b">Clerk:</span> It's 140 dollars per night. <span class="tg">Would you like</span> breakfast?</p>
+        <p class="line"><span class="spk">Lucas:</span> Is it included?</p>
+        <p class="line"><span class="spk b">Clerk:</span> No, it's 15 dollars extra per person.</p>
+        <p class="line"><span class="spk">Lucas:</span> Hmm, no, thanks. <span class="tg">We're going to eat</span> at a café nearby.</p>
+        <p class="line"><span class="spk b">Clerk:</span> No problem. Can I have your name, please?</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Cuántas noches se va a quedar Lucas?</p>
+        <p><span class="qn">P2.</span> ¿Cuánto cuesta la habitación por noche?</p>
+        <p><span class="qn">P3.</span> ¿Reserva el desayuno? ¿Por qué?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol>
+          <li>Four nights (from June 12th).</li>
+          <li>140 dollars.</li>
+          <li>No — it's 15 dollars extra; they're going to eat at a café nearby.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">15 min</span></span>
+      <p><b>Parte 1 — tu viaje soñado.</b> El alumno cuenta un viaje que <b>va a</b> hacer (real o soñado): a dónde, con quién, cuántas noches, cómo va a viajar, dónde se va a quedar. El profe hace preguntas con <i>Are you going to…?</i></p>
+      <p><b>Parte 2 — el mostrador.</b> El profe es el empleado de una aerolínea o de un hotel; el alumno reserva. El profe pone un problema: "Sorry, that day is fully booked."</p>
+      <p class="lead-sm">Plantilla de apoyo — completa los huecos:</p>
+      <div class="scaffold">
+        Next <span class="gap">…</span>, I'm going to <span class="gap">…</span>. I'm going to travel by <span class="gap">…</span> and stay at <span class="gap">…</span> for <span class="gap">…</span> nights. &nbsp;·&nbsp; Hi, I'd like to book <span class="gap">…</span>. &nbsp;·&nbsp; How much is it <span class="gap">…</span>? &nbsp;·&nbsp; Is <span class="gap">…</span> included?
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Escucha el error más común: <i>"I going to…"</i> sin <b>am/is/are</b>. No corrijas en medio de la historia; anota y al final pide que repita la frase bien. En la parte 2, premia <i>I'd like</i> sobre <i>I want</i>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Escribe</b> un mensaje corto (5–6 frases) a un amigo contando tu próximo viaje con <b>going to</b>: a dónde, cuándo, con quién, cómo viajas y dónde te quedas. Después <b>grábate</b> leyéndolo.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 3 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l3">
+    <div class="lesson-head">
+      <div class="lnum">03</div>
+      <div><span class="ttl">Buses, Trains &amp; the Subway</span>
+      <span class="es">Transporte público · Gramática: presente simple para horarios · <i>How long does it take?</i> · <i>by / on</i></span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>comprar un boleto</b>, <b>preguntar a qué hora sale</b> un bus o tren, <b>cuánto tarda</b> y <b>dónde bajar</b>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿Cómo vas al trabajo o a clase? ¿Cuánto tardas?</li>
+          <li>¿Usaste el metro en otra ciudad? ¿Fue fácil o difícil?</li>
+          <li>¿Qué es lo más difícil de tomar un bus en un país nuevo?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">15 min</span></span>
+
+      <div class="h3">A · En el transporte <span class="sm">— getting around</span></div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>the subway · a subway station</td><td>el metro · una estación de metro</td></tr>
+        <tr><td>a bus stop · a train station</td><td>una parada de bus · una estación de tren</td></tr>
+        <tr><td>a platform · a line</td><td>un andén · una línea</td></tr>
+        <tr><td>a fare · a transit card</td><td>la tarifa · una tarjeta de transporte</td></tr>
+        <tr><td>a schedule</td><td>un horario</td></tr>
+        <tr><td>to get on / to get off</td><td>subir / bajar (del bus, tren)</td></tr>
+        <tr><td>to transfer · a transfer</td><td>hacer transbordo · un transbordo</td></tr>
+        <tr><td>the next stop · the last stop</td><td>la próxima parada · la última parada</td></tr>
+        <tr><td>rush hour</td><td>hora pico</td></tr>
+        <tr><td>a ride-share · a taxi</td><td>un auto de aplicación (Uber) · un taxi</td></tr>
+        <tr><td>on time · late</td><td>a tiempo · tarde</td></tr>
+      </table>
+
+      <div class="h3">B · Gramática — presente simple para horarios</div>
+      <p class="lead-sm">Los horarios fijos (buses, trenes, vuelos, museos) usan el <b>presente simple</b>, aunque hablemos del futuro.</p>
+      <table class="tb">
+        <tr><th style="width:12%">Forma</th><th>Estructura</th><th>Ejemplo</th></tr>
+        <tr><td><b>+</b></td><td>The bus / train + <b>verbo + s</b></td><td>The train <b>leaves</b> at 9:15. · The bus <b>stops</b> at Main Street.</td></tr>
+        <tr><td><b>–</b></td><td><b>doesn't / don't</b> + verbo base</td><td>The subway <b>doesn't run</b> after 1 a.m.</td></tr>
+        <tr><td><b>?</b></td><td><b>Does / Do</b> + sujeto + verbo base?</td><td>What time <b>does</b> the bus <b>leave</b>? · <b>Does</b> this train <b>stop</b> at the airport?</td></tr>
+      </table>
+
+      <div class="h3">C · Preguntas clave</div>
+      <table class="tb">
+        <tr><th style="width:46%">Pregunta</th><th>Respuesta</th></tr>
+        <tr><td><b>How long does it take</b> to get downtown?<br><span class="sp">¿Cuánto se tarda en llegar al centro?</span></td><td><b>It takes</b> about 20 minutes.</td></tr>
+        <tr><td><b>How often</b> do the buses run?<br><span class="sp">¿Cada cuánto pasan?</span></td><td><b>Every</b> 10 minutes.</td></tr>
+        <tr><td><b>Which line</b> goes to the museum?<br><span class="sp">¿Qué línea va al museo?</span></td><td>The red line.</td></tr>
+        <tr><td><b>Where do I get off</b> for the park?<br><span class="sp">¿Dónde me bajo para el parque?</span></td><td>At Central Station. It's three stops from here.</td></tr>
+        <tr><td><b>How much is</b> the fare?</td><td>It's $2.90.</td></tr>
+      </table>
+
+      <div class="h3">D · <i>by</i> y <i>on</i></div>
+      <table class="tb">
+        <tr><th style="width:30%">Usa…</th><th>Para…</th><th>Ejemplo</th></tr>
+        <tr><td><b>by</b> + transporte</td><td>cómo viajas (sin artículo)</td><td>I go to work <b>by</b> bus / <b>by</b> train / <b>by</b> subway.</td></tr>
+        <tr><td><b>on</b> foot</td><td>a pie</td><td>It's close — let's go <b>on foot</b>.</td></tr>
+        <tr><td><b>on</b> the bus / train</td><td>estar adentro</td><td>I'm <b>on the bus</b> now. I'll be there in five minutes.</td></tr>
+        <tr><td><b>in</b> a car / taxi</td><td>vehículos chicos</td><td>We went <b>in a taxi</b>.</td></tr>
+      </table>
+
+      <div class="bridge">
+        <div class="bh">Puente al español · tardar, en, y el "does"</div>
+        <ul>
+          <li>"Tarda 20 minutos" → <span class="ok"><b>It takes</b> 20 minutes</span>. En inglés el sujeto es <b>it</b>, y el verbo es <b>take</b>, no <span class="x">It delays 20 minutes</span>.</li>
+          <li>"Voy <b>en</b> bus" → <span class="ok">I go <b>by</b> bus</span>, no <span class="x">I go in bus</span>. Pero "estoy <b>en</b> el bus" → <span class="ok">I'm <b>on</b> the bus</span>.</li>
+          <li>"¿A qué hora sale el tren?" → hay que agregar <b>does</b>: <span class="ok">What time <b>does</b> the train leave?</span> <span class="x">What time the train leaves?</span></li>
+          <li>"Subir / bajar" → <b>get on / get off</b> (bus, tren, metro) — pero <b>get in / get out of</b> un auto o taxi.</li>
+        </ul>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B1 · extra</div>
+        "<b>Could you tell me</b> which platform the train leaves from?" <span class="sp">pregunta indirecta, más amable</span> · "You need to <b>transfer</b> at 14th Street." · "The train is <b>running</b> 10 minutes <b>late</b>." · "I <b>missed</b> my stop!" <span class="sp">me pasé de parada</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">15 min</span></span>
+
+      <div class="h3">Actividad 1 · Lee el horario y contesta</div>
+      <table class="tb">
+        <tr><th>Bus 42 · Downtown → Airport</th><th>Leaves</th><th>Arrives</th></tr>
+        <tr><td>Weekdays</td><td>every 20 min, 6:00 a.m. – 11:00 p.m.</td><td>45 min later</td></tr>
+        <tr><td>Weekends</td><td>every 30 min, 7:00 a.m. – 10:00 p.m.</td><td>40 min later</td></tr>
+        <tr><td>Fare</td><td colspan="2">$2.75 · free with a transit card transfer</td></tr>
+      </table>
+      <ol>
+        <li>How often does the bus run on weekdays?</li>
+        <li>How long does it take on weekends?</li>
+        <li>What time does the first bus leave on Saturday?</li>
+        <li>Does the bus run at midnight?</li>
+        <li>How much is the fare?</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol>
+          <li>Every 20 minutes.</li>
+          <li><b>It takes</b> 40 minutes.</li>
+          <li>It <b>leaves</b> at 7:00 a.m.</li>
+          <li>No, it <b>doesn't</b>. <span class="alt">(the last bus leaves at 11:00 p.m. / 10:00 p.m.)</span></li>
+          <li>It's $2.75.</li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 2 · Completa la pregunta <span class="sm">— does / do · How long · How often · Where</span></div>
+      <ol>
+        <li>What time ___ the museum open?</li>
+        <li>___ does it take to get to the beach?</li>
+        <li>___ do I get off for the stadium?</li>
+        <li>___ the trains stop at Union Station?</li>
+        <li>___ do the subway trains run at night?</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <ol>
+          <li><b>does</b></li>
+          <li><b>How long</b></li>
+          <li><b>Where</b></li>
+          <li><b>Do</b> <span class="alt">(trains = plural)</span></li>
+          <li><b>How often</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 3 · <i>by</i>, <i>on</i> o <i>in</i>?</div>
+      <ol>
+        <li>I usually go to school ___ subway.</li>
+        <li>Sorry, I'm late! I'm ___ the train now.</li>
+        <li>The hotel is near, so we can go ___ foot.</li>
+        <li>We went to the airport ___ a taxi.</li>
+        <li>Do you travel ___ plane or ___ bus?</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <ol>
+          <li><b>by</b></li>
+          <li><b>on</b> <span class="alt">(estás adentro)</span></li>
+          <li><b>on</b></li>
+          <li><b>in</b></li>
+          <li><b>by</b> · <b>by</b></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · en la estación</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk">Sofía:</span> Excuse me, <span class="tg">which line goes to</span> the Art Museum?</p>
+        <p class="line"><span class="spk b">Agent:</span> Take the blue line, going north.</p>
+        <p class="line"><span class="spk">Sofía:</span> <span class="tg">How long does it take?</span></p>
+        <p class="line"><span class="spk b">Agent:</span> <span class="tg">It takes</span> about 15 minutes.</p>
+        <p class="line"><span class="spk">Sofía:</span> And <span class="tg">where do I get off?</span></p>
+        <p class="line"><span class="spk b">Agent:</span> At Park Street. It's five stops from here.</p>
+        <p class="line"><span class="spk">Sofía:</span> Great. <span class="tg">How often do the trains run?</span></p>
+        <p class="line"><span class="spk b">Agent:</span> Every six minutes. But at rush hour they're very full.</p>
+        <p class="line"><span class="spk">Sofía:</span> OK. Can I buy a ticket here?</p>
+        <p class="line"><span class="spk b">Agent:</span> Use the machine over there. A transit card is cheaper.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Qué línea toma Sofía?</p>
+        <p><span class="qn">P2.</span> ¿Cuánto tarda y dónde se baja?</p>
+        <p><span class="qn">P3.</span> ¿Cada cuánto pasan los trenes?</p>
+        <p><span class="qn">P4.</span> ¿Qué le recomienda el empleado para pagar?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol>
+          <li>The blue line, going north.</li>
+          <li>About 15 minutes; she gets off at Park Street (five stops).</li>
+          <li>Every six minutes.</li>
+          <li>A transit card — it's cheaper (from the machine).</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">15 min</span></span>
+      <p><b>Juego de roles — en la estación.</b> El profe es el empleado; el alumno tiene que llegar a <b>tres lugares</b> (el museo, el estadio, el aeropuerto). Para cada uno pregunta: qué línea, cuánto tarda, dónde bajar y cuánto cuesta. Después cambian.</p>
+      <p><b>Segunda parte — tu ciudad.</b> El alumno explica cómo se llega desde su casa al centro de su ciudad: qué transporte, cuánto tarda, cada cuánto pasa.</p>
+      <p class="lead-sm">Plantilla de apoyo — completa los huecos:</p>
+      <div class="scaffold">
+        Excuse me, which line goes to <span class="gap">…</span>? &nbsp;·&nbsp; How long does it take? &nbsp;·&nbsp; Where do I get <span class="gap">…</span>? &nbsp;·&nbsp; In my city, I go downtown by <span class="gap">…</span>. It takes <span class="gap">…</span> minutes. The buses run every <span class="gap">…</span>.
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Dos errores para escuchar: "What time the bus leaves?" (falta <b>does</b>) y "It delays 20 minutes" (→ <b>It takes</b>). Si el alumno vive en una ciudad sin metro, que hable del bus o del auto — lo importante es <i>How long does it take</i> y <i>by + transporte</i>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Escribe</b> instrucciones para un turista que llega a tu ciudad: cómo ir del aeropuerto o la terminal al centro (5–6 frases). Usa <b>by</b>, <b>It takes…</b>, <b>get on / get off</b> y un horario en presente simple.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 4 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l4">
+    <div class="lesson-head">
+      <div class="lnum">04</div>
+      <div><span class="ttl">How Was Your Trip?</span>
+      <span class="es">Contar un viaje · Gramática: pasado simple (regulares + irregulares, <i>did</i>)</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎯 Objetivo</span>
+      <div class="objective">Al terminar la lección, puedes <b>contar un viaje que hiciste</b> (a dónde fuiste, qué hiciste, qué comiste, qué te gustó) y <b>hacer preguntas</b> sobre el viaje de otra persona con <i>did</i>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🔥 Calentamiento <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>¿Cuál fue tu último viaje? ¿Fue bueno o malo?</li>
+          <li>Muestra una foto de un viaje en tu teléfono. ¿Dónde estás?</li>
+          <li>¿Qué es lo primero que cuentas cuando vuelves de un viaje?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📘 Presentar · Palabras y Gramática <span class="min">15 min</span></span>
+
+      <div class="h3">A · Hablar del viaje <span class="sm">— trip words</span></div>
+      <table class="tb"><tr><th style="width:44%">English</th><th>Español</th></tr>
+        <tr><td>to go sightseeing</td><td>hacer turismo / pasear</td></tr>
+        <tr><td>to take pictures</td><td>sacar fotos</td></tr>
+        <tr><td>to go shopping · souvenirs</td><td>ir de compras · recuerdos</td></tr>
+        <tr><td>a tour · a guide</td><td>una excursión · un guía</td></tr>
+        <tr><td>the view · the beach · the mountains</td><td>la vista · la playa · las montañas</td></tr>
+        <tr><td>crowded · quiet</td><td>lleno de gente · tranquilo</td></tr>
+        <tr><td>amazing · boring · expensive · cheap</td><td>increíble · aburrido · caro · barato</td></tr>
+        <tr><td>the weather was sunny / rainy / hot</td><td>el clima estuvo soleado / lluvioso / caluroso</td></tr>
+        <tr><td>the best part was…</td><td>lo mejor fue…</td></tr>
+        <tr><td>I had a great time.</td><td>La pasé muy bien.</td></tr>
+      </table>
+
+      <div class="h3">B · Gramática — pasado simple</div>
+      <table class="tb">
+        <tr><th style="width:12%">Forma</th><th>Estructura</th><th>Ejemplo</th></tr>
+        <tr><td><b>+</b></td><td>verbo<b>-ed</b> (regulares) / forma irregular</td><td>We <b>visited</b> a museum. · I <b>went</b> to the beach.</td></tr>
+        <tr><td><b>–</b></td><td><b>didn't</b> + verbo base</td><td>We <b>didn't visit</b> the castle. · I <b>didn't go</b> shopping.</td></tr>
+        <tr><td><b>?</b></td><td><b>Did</b> + sujeto + verbo base?</td><td><b>Did</b> you <b>go</b> to the beach? — Yes, I <b>did</b>. / No, I <b>didn't</b>.</td></tr>
+        <tr><td><i>be</i></td><td><b>was / were</b> (sin <i>did</i>)</td><td>It <b>was</b> amazing. · <b>Was</b> it expensive? · The hotels <b>weren't</b> cheap.</td></tr>
+      </table>
+      <p class="lead-sm">Marcadores: <i>yesterday · last week · last summer · in 2024 · two years <b>ago</b></i>.</p>
+
+      <div class="h3">C · Verbos irregulares para viajes</div>
+      <table class="tb">
+        <tr><th>Base</th><th>Past</th><th>Español</th><th>Ejemplo</th></tr>
+        <tr><td>go</td><td><b>went</b></td><td>ir</td><td>We <b>went</b> to Mexico City.</td></tr>
+        <tr><td>fly</td><td><b>flew</b></td><td>volar</td><td>I <b>flew</b> to Orlando.</td></tr>
+        <tr><td>take</td><td><b>took</b></td><td>tomar / sacar</td><td>We <b>took</b> a lot of pictures.</td></tr>
+        <tr><td>see</td><td><b>saw</b></td><td>ver</td><td>I <b>saw</b> the Statue of Liberty.</td></tr>
+        <tr><td>eat</td><td><b>ate</b></td><td>comer</td><td>We <b>ate</b> pizza every night.</td></tr>
+        <tr><td>buy</td><td><b>bought</b></td><td>comprar</td><td>She <b>bought</b> souvenirs.</td></tr>
+        <tr><td>have</td><td><b>had</b></td><td>tener / pasar</td><td>We <b>had</b> a great time.</td></tr>
+        <tr><td>meet</td><td><b>met</b></td><td>conocer (a alguien)</td><td>I <b>met</b> some nice people.</td></tr>
+        <tr><td>get</td><td><b>got</b></td><td>llegar / conseguir</td><td>We <b>got</b> to the hotel at midnight.</td></tr>
+        <tr><td>leave</td><td><b>left</b></td><td>irse / salir</td><td>We <b>left</b> early in the morning.</td></tr>
+        <tr><td>spend</td><td><b>spent</b></td><td>pasar (tiempo) / gastar</td><td>I <b>spent</b> a week there.</td></tr>
+        <tr><td>come back</td><td><b>came back</b></td><td>volver</td><td>We <b>came back</b> on Sunday.</td></tr>
+      </table>
+
+      <div class="bridge">
+        <div class="bh">Puente al español · "hace", "did" y "conocer"</div>
+        <ul>
+          <li>"<b>Hace</b> dos años" → <span class="ok">two years <b>ago</b></span>. El <b>ago</b> va <b>después</b>: <span class="x">ago two years</span>.</li>
+          <li>Con <b>did</b>, el verbo vuelve a la forma base: <span class="ok">Did you <b>go</b>?</span> · <span class="ok">I didn't <b>go</b></span>, no <span class="x">Did you went?</span> <span class="x">I didn't went</span>.</li>
+          <li>"<b>Conocí</b> Nueva York" (un lugar) → <span class="ok">I <b>visited</b> New York</span> / <span class="ok">I <b>went to</b> New York</span>. <b>Meet</b> es solo para <b>personas</b>: <span class="ok">I met my wife in Cancún</span>.</li>
+          <li>"<b>La pasé</b> bien" → <span class="ok">I <b>had</b> a good time</span>, no <span class="x">I passed a good time</span>.</li>
+          <li>"<b>Estuvo</b> lindo" → <span class="ok">It <b>was</b> nice</span>. Con <b>was/were</b> no se usa <i>did</i>: <span class="x">Did it be nice?</span> → <span class="ok">Was it nice?</span></li>
+        </ul>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B1 · extra</div>
+        Pronunciación de <b>-ed</b>: /t/ <i>walked, stopped</i> · /d/ <i>stayed, played</i> · /ɪd/ solo después de t/d: <i>visited, rented</i>. · Conectores para contar: <b>First… Then… After that… In the end…</b> · Y el siguiente paso, en el B1: "We <b>were walking</b> on the beach <b>when</b> it started to rain."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">✏️ Práctica guiada <span class="min">15 min</span></span>
+
+      <div class="h3">Actividad 1 · Completa en pasado <span class="sm">— cuidado con los irregulares</span></div>
+      <ol>
+        <li>Last summer we ___ (go) to San Francisco.</li>
+        <li>We ___ (fly) from Bogotá and ___ (arrive) at night.</li>
+        <li>On the first day, we ___ (visit) the Golden Gate Bridge.</li>
+        <li>I ___ (take) about a hundred pictures!</li>
+        <li>We ___ (eat) clam chowder in a restaurant by the water.</li>
+        <li>The weather ___ (be) cold — I ___ (buy) a sweater.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 1</div>
+        <ol>
+          <li><b>went</b></li>
+          <li><b>flew</b> · <b>arrived</b> <span class="alt">(regular)</span></li>
+          <li><b>visited</b> <span class="alt">(regular, /ɪd/)</span></li>
+          <li><b>took</b></li>
+          <li><b>ate</b></li>
+          <li><b>was</b> · <b>bought</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 2 · Negativa y pregunta <span class="sm">— usa <i>didn't</i> y <i>Did…?</i></span></div>
+      <ol>
+        <li>We went to the museum. → (–) We ___ to the zoo.</li>
+        <li>She saw the ocean. → (?) ___ she ___ the mountains?</li>
+        <li>They stayed in a hostel. → (–) They ___ in a hotel.</li>
+        <li>I ate tacos. → (?) What ___ you ___?</li>
+        <li>He met a lot of people. → (?) Who ___ he ___?</li>
+        <li>The tour was expensive. → (?) ___ the tour expensive?</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 2</div>
+        <ol>
+          <li>We <b>didn't go</b> to the zoo.</li>
+          <li><b>Did</b> she <b>see</b> the mountains?</li>
+          <li>They <b>didn't stay</b> in a hotel.</li>
+          <li>What <b>did</b> you <b>eat</b>?</li>
+          <li>Who <b>did</b> he <b>meet</b>?</li>
+          <li><b>Was</b> the tour expensive? <span class="alt">(be → sin did)</span></li>
+        </ol>
+      </div>
+
+      <div class="h3">Actividad 3 · Encuentra el error <span class="sm">— cada frase tiene uno</span></div>
+      <ol>
+        <li>Did you went to the beach?</li>
+        <li>I knew New York last year.</li>
+        <li>We arrived ago three days.</li>
+        <li>I passed a great time in Peru.</li>
+        <li>She didn't bought anything.</li>
+        <li>Did the hotel be nice?</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Respuestas · Actividad 3</div>
+        <ol>
+          <li>Did you <b>go</b> to the beach?</li>
+          <li>I <b>visited</b> New York last year. <span class="alt">(o: I went to New York)</span></li>
+          <li>We arrived <b>three days ago</b>.</li>
+          <li>I <b>had</b> a great time in Peru.</li>
+          <li>She didn't <b>buy</b> anything.</li>
+          <li><b>Was</b> the hotel nice?</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🎧 Diálogo modelo · de vuelta en casa</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Emma:</span> Hey, you're back! <span class="tg">How was your trip?</span></p>
+        <p class="line"><span class="spk">Diego:</span> It <span class="tg">was</span> amazing! We <span class="tg">spent</span> a week in Chicago.</p>
+        <p class="line"><span class="spk b">Emma:</span> Cool! <span class="tg">What did you do?</span></p>
+        <p class="line"><span class="spk">Diego:</span> We <span class="tg">went</span> sightseeing every day. We <span class="tg">took</span> a boat tour on the river — the views were incredible.</p>
+        <p class="line"><span class="spk b">Emma:</span> <span class="tg">Did you try</span> the deep-dish pizza?</p>
+        <p class="line"><span class="spk">Diego:</span> Of course! We <span class="tg">ate</span> it twice. It was really heavy, but delicious.</p>
+        <p class="line"><span class="spk b">Emma:</span> And the weather? Was it cold?</p>
+        <p class="line"><span class="spk">Diego:</span> Very windy! I <span class="tg">didn't bring</span> a jacket, so I <span class="tg">bought</span> one there.</p>
+        <p class="line"><span class="spk b">Emma:</span> Ha! What was the best part?</p>
+        <p class="line"><span class="spk">Diego:</span> The jazz club. We <span class="tg">met</span> some really nice people there.</p>
+      </div>
+      <div class="qs">
+        <p><span class="qn">P1.</span> ¿Cuánto tiempo estuvo Diego en Chicago?</p>
+        <p><span class="qn">P2.</span> ¿Qué excursión hizo?</p>
+        <p><span class="qn">P3.</span> ¿Por qué compró una chaqueta?</p>
+        <p><span class="qn">P4.</span> ¿Qué fue lo mejor del viaje?</p>
+      </div>
+      <div class="key">
+        <div class="kh">Respuestas · comprensión</div>
+        <ol>
+          <li>A week.</li>
+          <li>A boat tour on the river.</li>
+          <li>It was very windy and he didn't bring a jacket.</li>
+          <li>The jazz club — they met some really nice people.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag">🗣️ Práctica libre · Producir <span class="min">15 min</span></span>
+      <p><b>Parte 1 — cuéntame tu viaje.</b> El alumno elige un viaje real y lo cuenta con 3–4 fotos de su teléfono. El profe interrumpe con preguntas: <i>Did you…? What did you…? Was it…?</i></p>
+      <p><b>Parte 2 — entrevista.</b> Cambian: el alumno hace <b>6 preguntas</b> sobre el último viaje del profe (al menos 4 con <i>did</i> y 1 con <i>was</i>).</p>
+      <p class="lead-sm">Plantilla de apoyo — completa los huecos:</p>
+      <div class="scaffold">
+        Last <span class="gap">…</span>, I went to <span class="gap">…</span> with <span class="gap">…</span>. We stayed at <span class="gap">…</span> for <span class="gap">…</span>. First, we <span class="gap">…</span>. Then we <span class="gap">…</span>. The weather was <span class="gap">…</span>. The best part was <span class="gap">…</span>. I had a <span class="gap">…</span> time!
+      </div>
+      <div class="tnote"><b>Nota profe:</b> Los tres errores más comunes: <i>"Did you went"</i>, <i>"I knew Paris"</i> (por "conocí") y <i>"ago two years"</i>. Anótalos mientras habla y repásalos al final. Si el alumno nunca viajó lejos, sirve una salida de fin de semana o un viaje inventado a partir de fotos de internet.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag">📌 Tarea</span>
+      <div class="hw"><b>Escribe</b> un post de Instagram o un mensaje (6–8 frases) sobre un viaje que hiciste, con al menos <b>5 verbos irregulares</b>, una negativa con <b>didn't</b> y la frase <b>The best part was…</b>. Agrega una foto si quieres.</div>
+    </div>
+  </section>
+
+  <div class="recap">
+    <div class="rh">Curso terminado</div>
+    Con estas cuatro lecciones el alumno ya puede <b>comer, planear, moverse y contar</b>: ordenar con <i>I'll have</i>, reservar con <i>I'd like</i>, entender horarios con <i>does</i> y narrar el viaje en pasado simple. Siguiente paso natural: <a href="travel-living-b1b2-course.html">Travel &amp; Living B1–B2</a>, que retoma los mismos temas con futuros, present perfect, comparativos y pasado continuo. ¿Vuelta atrás? <a href="a1-travel-living-course.html">Travel &amp; Living A1</a>.
+  </div>
+
+</div><!-- /wrap -->
+
+<footer>
+  <b>ENGLISH for ALL</b><br>
+  Travel &amp; Living · Nivel A2 base · ⭐ B1 extra · curso PPP de 4 lecciones · Rank Up
+</footer>
+
+<script>
+  function setView(mode){
+    document.body.classList.remove('teacher','student');
+    document.body.classList.add(mode);
+    document.getElementById('btnTeacher').classList.toggle('on', mode==='teacher');
+    document.getElementById('btnStudent').classList.toggle('on', mode==='student');
+    document.getElementById('viewNote').textContent = (mode==='teacher')
+      ? 'Se ven las respuestas y las notas del profe.'
+      : 'Hoja del alumno — respuestas y notas ocultas.';
+  }
+</script>
+</body>
+</html>
