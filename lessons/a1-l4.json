@@ -6,7 +6,7 @@
   "key": "rankup_A1_L4",
   "title": "TO BE<br>&amp; HAVE",
   "titlePlain": "To Be & Have (A1)",
-  "subtitle": "Grammar · family &amp; things · A1 · ~40 min",
+  "subtitle": "Grammar · have, family &amp; describing people · A1 · ~40 min",
   "rankup": "LESSON CLEAR!",
   "next": {
     "href": "lesson.html?id=a1-l5",
@@ -44,71 +44,225 @@
     {
       "type": "grammar",
       "tag": "to be / have",
-      "title": "<ico-book></ico-book> HAVE · tener · my/your/his/her",
-      "intro": "Usamos <b style='color:var(--gold)'>have</b> para posesiones y familia. Estudia con las tarjetas y practica.",
-      "cells": [
-        {
-          "h": "<ico-check></ico-check> have / has",
-          "body": "I / you / we / they <code>have</code><br>he / she / it <code>has</code><br>I have a dog."
-        },
-        {
-          "h": "<ico-xmark></ico-xmark> Negative · ? Question",
-          "body": "I <code>don't have</code> a car.<br>She <code>doesn't have</code> a pet.<br><code>Do you have</code> a pet?"
-        },
-        {
-          "h": "<ico-people></ico-people> Possessives",
-          "body": "<code>my</code> · <code>your</code> · <code>his</code> · <code>her</code><br>This is <code>my</code> sister.<br><code>Her</code> name is Lucy."
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='x'>She have</span> → <span class='ok'>She has</span><br><span class='x'>his sister name</span> → <span class='ok'>his sister's name</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>La familia</b>:",
-      "ladder": [
-        "mother",
-        "father",
-        "brother",
-        "sister",
-        "son",
-        "daughter"
-      ],
+      "title": "<ico-book></ico-book> HAVE · FAMILY · MY / HIS / HER",
+      "intro": "Cinco pasos: <b style='color:var(--gold)'>have / has</b>, el negativo y la pregunta, <b style='color:var(--gold)'>la familia</b>, <b style='color:var(--gold)'>my / his / her</b> y cómo <b style='color:var(--gold)'>describir a una persona</b>. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
       "vocabBtn": "<ico-bookmark></ico-bookmark> Ver familia y descripción",
       "vocab": [
         {
-          "en": "Mother / Father",
-          "sp": "madre / padre"
+          "en": "Parents",
+          "sp": "padres (madre y padre)"
         },
         {
-          "en": "Brother / Sister",
-          "sp": "hermano / hermana"
+          "en": "Husband / Wife",
+          "sp": "esposo / esposa"
         },
         {
           "en": "Son / Daughter",
           "sp": "hijo / hija"
         },
         {
-          "en": "A pet / A dog",
-          "sp": "una mascota / un perro"
+          "en": "A pet / A dog / A cat",
+          "sp": "una mascota / un perro / un gato"
         },
         {
-          "en": "Eyes / Hair",
-          "sp": "ojos / pelo"
+          "en": "A car / A house",
+          "sp": "un auto / una casa"
+        },
+        {
+          "en": "Brown / Black / Blonde hair",
+          "sp": "pelo castaño / negro / rubio"
+        },
+        {
+          "en": "Blue / Green / Brown eyes",
+          "sp": "ojos azules / verdes / marrones"
         },
         {
           "en": "Tall / Short",
           "sp": "alto / bajo"
-        },
-        {
-          "en": "Do you have…?",
-          "sp": "¿tienes…?"
-        },
-        {
-          "en": "Years old",
-          "sp": "años"
         }
       ],
-      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>completar</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>ordenar</b> <ico-puzzle></ico-puzzle> y <b>memoria</b> <ico-brain></ico-brain>. <ico-check></ico-check> CHECK donde lo veas."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>completar</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>diálogo</b> <ico-commentdots></ico-commentdots>, <b>ordenar</b> <ico-puzzle></ico-puzzle> y <b>memoria</b> <ico-brain></ico-brain>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · HAVE / HAS</b> <span class='es'>— tener</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I have a brother.",
+              "sp": "Tengo un hermano. Igual con <b>you / we / they</b>: <i>We have a dog.</i>"
+            },
+            {
+              "en": "She has a sister.",
+              "sp": "Ella tiene una hermana. Con <b>he / she / it</b> → <b>has</b>."
+            },
+            {
+              "en": "Tom has a car.",
+              "sp": "Tom tiene un auto. Un nombre = he/she → <b>has</b>."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> have o has",
+              "body": "I / you / we / they → <code>have</code> &nbsp;·&nbsp; he / she / it → <code>has</code><br><s class='x'>She have a dog.</s> → <span class='ok'>She has a dog.</span>"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · NO Y PREGUNTAS</b> <span class='es'>— con don't / doesn't y do / does</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I don't have a car.",
+              "sp": "No tengo auto."
+            },
+            {
+              "en": "She doesn't have a pet.",
+              "sp": "Ella no tiene mascota. Con he/she → <b>doesn't</b>."
+            },
+            {
+              "en": "Do you have a pet?",
+              "sp": "¿Tienes mascota?"
+            },
+            {
+              "en": "Yes, I do. / No, I don't.",
+              "sp": "Sí. / No. — la respuesta corta usa <b>do</b>, no have."
+            },
+            {
+              "en": "Does he have a job?",
+              "sp": "¿Él tiene trabajo?"
+            },
+            {
+              "en": "Yes, he does. / No, he doesn't.",
+              "sp": "Sí. / No."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Después de doesn't o does, vuelve have</b> (nunca has): <s class='x'>She doesn't has</s> → <span class='ok'>She doesn't have</span> &nbsp;·&nbsp; <s class='x'>Does he has…?</s> → <span class='ok'>Does he have…?</span><br>Y la respuesta corta no repite have: <s class='x'>Yes, I have.</s> → <span class='ok'>Yes, I do.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · LA FAMILIA</b>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "mother, father",
+              "sp": "madre · padre — juntos son <b>parents</b> (padres)."
+            },
+            {
+              "en": "brother, sister",
+              "sp": "hermano · hermana"
+            },
+            {
+              "en": "son, daughter",
+              "sp": "hijo · hija"
+            },
+            {
+              "en": "husband, wife",
+              "sp": "esposo · esposa"
+            },
+            {
+              "en": "grandmother, grandfather",
+              "sp": "abuela · abuelo"
+            },
+            {
+              "en": "aunt, uncle, cousin",
+              "sp": "tía · tío · primo/prima (<b>cousin</b> sirve para los dos)."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Parents</b> = madre y padre, nada más. Para «mis parientes» se dice <b>my family</b>. Y «hermanos» (mezclados) es <b>brothers and sisters</b>: <s class='x'>I have two brothers</s> si son un hermano y una hermana → <span class='ok'>I have a brother and a sister.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · MY / YOUR / HIS / HER</b> <span class='es'>— de quién es</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "This is my sister.",
+              "sp": "Esta es mi hermana."
+            },
+            {
+              "en": "What's your name?",
+              "sp": "¿Cuál es tu nombre?"
+            },
+            {
+              "en": "His name is Max.",
+              "sp": "Su nombre es Max — <b>his</b> = de él."
+            },
+            {
+              "en": "Her name is Lucy.",
+              "sp": "Su nombre es Lucy — <b>her</b> = de ella."
+            },
+            {
+              "en": "Our house is big. Their dog is small.",
+              "sp": "<b>our</b> = nuestro/a · <b>their</b> = de ellos/ellas."
+            },
+            {
+              "en": "Tom's sister",
+              "sp": "la hermana de Tom — nombre + <b>'s</b> + cosa."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>«Su» tiene tres traducciones</b> y depende de <b>quién tiene</b>, no de la cosa: la hermana de Tom = <b>his</b> sister (Tom es él), aunque la hermana sea mujer. <s class='x'>Tom and her sister</s> → <span class='ok'>Tom and his sister</span><br>Y nada de «de»: <s class='x'>the sister of Tom</s> → <span class='ok'>Tom's sister</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · DESCRIBIR A UNA PERSONA</b> <span class='es'>— be o have</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "She is tall. He is short.",
+              "sp": "Es alta. Es bajo. — be + adjetivo."
+            },
+            {
+              "en": "I am thirty years old.",
+              "sp": "Tengo treinta años. — la edad va con <b>be</b>."
+            },
+            {
+              "en": "She has brown hair.",
+              "sp": "Tiene el pelo castaño. Pelo: <b>brown, black, blonde</b>."
+            },
+            {
+              "en": "He has blue eyes.",
+              "sp": "Tiene ojos azules. Ojos: <b>blue, green, brown</b>."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> Tres trampas del español",
+              "body": "Edad: <s class='x'>I have thirty years.</s> → <span class='ok'>I am thirty (years old).</span><br>El color va antes y sin plural: <s class='x'>eyes blues</s> → <span class='ok'>blue eyes</span><br>Sin «el»: <s class='x'>She has the hair brown.</s> → <span class='ok'>She has brown hair.</span>"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "flashcards",
@@ -125,6 +279,10 @@
           "back": "padre"
         },
         {
+          "front": "parents",
+          "back": "padres (madre y padre)"
+        },
+        {
           "front": "brother",
           "back": "hermano"
         },
@@ -133,12 +291,16 @@
           "back": "hermana"
         },
         {
-          "front": "grandmother",
-          "back": "abuela"
+          "front": "son / daughter",
+          "back": "hijo / hija"
         },
         {
-          "front": "grandfather",
-          "back": "abuelo"
+          "front": "husband / wife",
+          "back": "esposo / esposa"
+        },
+        {
+          "front": "grandmother / grandfather",
+          "back": "abuela / abuelo"
         },
         {
           "front": "aunt / uncle",
@@ -147,22 +309,14 @@
         {
           "front": "cousin",
           "back": "primo / prima"
-        },
-        {
-          "front": "tall / short",
-          "back": "alto/a / bajo/a"
-        },
-        {
-          "front": "eyes / hair",
-          "back": "ojos / pelo"
         }
       ],
-      "deckLabel": "familia y descripción"
+      "deckLabel": "familia"
     },
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "have / has / to be",
+      "title": "have, has o be",
       "intro": "Elige la opción correcta.",
       "items": [
         {
@@ -188,7 +342,7 @@
           "options": [
             "has",
             "have",
-            "is"
+            "are"
           ],
           "answer": 1
         },
@@ -202,13 +356,22 @@
           "answer": 0
         },
         {
-          "q": "We ___ a big house.",
+          "q": "I ___ thirty years old.",
           "options": [
-            "are",
             "have",
+            "am",
             "has"
           ],
           "answer": 1
+        },
+        {
+          "q": "My sister ___ very tall.",
+          "options": [
+            "is",
+            "has",
+            "have"
+          ],
+          "answer": 0
         },
         {
           "q": "She ___ have a pet.",
@@ -220,22 +383,31 @@
           "answer": 2
         },
         {
-          "q": "I ___ thirty years old.",
+          "q": "Does your brother ___ a car?",
           "options": [
+            "has",
             "have",
-            "am",
-            "has"
+            "is"
           ],
           "answer": 1
         },
         {
-          "q": "My sister ___ hungry.",
+          "q": "Tom has a sister. ___ name is Lucy.",
           "options": [
-            "is",
-            "has",
-            "have"
+            "His",
+            "Her",
+            "She"
           ],
-          "answer": 0
+          "answer": 1
+        },
+        {
+          "q": "Lucy has a brother. ___ name is Max.",
+          "options": [
+            "Her",
+            "He",
+            "His"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -281,7 +453,7 @@
       ],
       "speaking": {
         "prompt": "Describe your family. Use <i>I have…</i> and <i>He/She has…</i>",
-        "starter": "I have (family member). My brother has (thing). His/Her name is (name)."
+        "starter": "I have (number) brothers and (number) sisters. My (family member)'s name is (name). He/She has (color) hair."
       },
       "transcript": [
         {
@@ -310,6 +482,74 @@
           "spk": "Tom",
           "b": true,
           "html": "<span class='tg'>His name is</span> Max. <span class='tg'>He is</span> very tall."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "ELIGE LA RESPUESTA",
+      "intro": "Tom te pregunta por tu familia. Elige la respuesta correcta.",
+      "lines": [
+        {
+          "spk": "Tom",
+          "html": "Do you have any brothers or sisters?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Yes, I am two sisters.",
+            "Yes, I have two sisters.",
+            "Yes, I has two sisters."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Tom",
+          "html": "Nice! What's your sister's name?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "His name is Sofía.",
+            "She name is Sofía.",
+            "Her name is Sofía."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Tom",
+          "html": "How old is she?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "She has twenty years.",
+            "She is twenty years old.",
+            "She have twenty."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Tom",
+          "html": "Do you have a pet?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "No, I don't.",
+            "No, I'm not.",
+            "No, I doesn't."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Tom",
+          "html": "OK! I don't have a pet, but my brother Max has a dog!"
         }
       ]
     },
@@ -346,38 +586,58 @@
             "car"
           ],
           "answer": "We don't have a car"
+        },
+        {
+          "words": [
+            "Her",
+            "name",
+            "is",
+            "Lucy"
+          ],
+          "answer": "Her name is Lucy"
+        },
+        {
+          "words": [
+            "My",
+            "father",
+            "is",
+            "fifty",
+            "years",
+            "old"
+          ],
+          "answer": "My father is fifty years old"
         }
       ]
     },
     {
       "type": "memory",
-      "id": "mem-fam",
-      "title": "MEMORY · familia",
-      "intro": "Encuentra cada palabra con su significado. Toca dos cartas.",
+      "id": "mem-poss",
+      "title": "MEMORY · ¿de quién es?",
+      "intro": "Une cada persona con su posesivo. Toca dos cartas.",
       "pairs": [
         {
-          "a": "mother",
-          "b": "madre"
+          "a": "I",
+          "b": "my"
         },
         {
-          "a": "father",
-          "b": "padre"
+          "a": "you",
+          "b": "your"
         },
         {
-          "a": "brother",
-          "b": "hermano"
+          "a": "he",
+          "b": "his"
         },
         {
-          "a": "sister",
-          "b": "hermana"
+          "a": "she",
+          "b": "her"
         },
         {
-          "a": "grandmother",
-          "b": "abuela"
+          "a": "we",
+          "b": "our"
         },
         {
-          "a": "grandfather",
-          "b": "abuelo"
+          "a": "they",
+          "b": "their"
         }
       ]
     },
@@ -387,7 +647,7 @@
       "title": "AUDIO 2 · MY ROOM",
       "desc": "Marcos describe su cuarto y sus cosas. Escucha have / don't have.",
       "src": "a1-l4-2.mp3",
-      "dur": "0:15",
+      "dur": "0:18",
       "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
@@ -412,7 +672,7 @@
         },
         {
           "type": "mcq",
-          "q": "Who has a bigger room?",
+          "q": "Who has a big room?",
           "options": [
             "His sister",
             "His brother",
@@ -429,7 +689,7 @@
         {
           "spk": "Marcos",
           "b": true,
-          "html": "This is my room. <span class='tg'>I have</span> a big desk and a small bed. I have many books. My laptop is on the desk. <span class='tg'>I don't have</span> a TV, but I have a guitar. My sister <span class='tg'>has</span> a bigger room, but I like mine!"
+          "html": "This is my room. <span class='tg'>I have</span> a big desk and a small bed. I have many books. My laptop is on the desk. <span class='tg'>I don't have</span> a TV, but I have a guitar. <span class='tg'>My sister's</span> room is big. My room is small, but I like it!"
         }
       ]
     },
@@ -441,10 +701,10 @@
         "Usa <b>I have</b> / <b>I don't have</b>",
         "Usa <b>has</b> para he/she",
         "Usa posesivos (<b>my</b>, <b>his</b>, <b>her</b>)",
-        "Describe a una persona (eyes, hair, job)"
+        "Describe a una persona: edad con <b>is</b>, pelo y ojos con <b>has</b>"
       ],
       "placeholder": "I have...",
-      "example": "I have a (big / small) family. I have (number) brothers and (number) sisters. My (family member) has (color) hair and (color) eyes. Her name is (name). My (family member) has a (pet). I don't have a (pet), but I want a (animal)!",
+      "example": "I have a <span class=\"gap\">big / small</span> family. I have <span class=\"gap\">número</span> brothers and <span class=\"gap\">número</span> sisters. My <span class=\"gap\">familiar</span> is <span class=\"gap\">edad</span> years old. <span class=\"gap\">He / She</span> has <span class=\"gap\">color</span> hair and <span class=\"gap\">color</span> eyes. <span class=\"gap\">His / Her</span> name is <span class=\"gap\">nombre</span>. I <span class=\"gap\">have / don't have</span> a pet.",
       "hw": "Escribe sobre tu familia y mándamelo por WhatsApp.",
       "rubric": [
         {
@@ -462,50 +722,112 @@
       ]
     }
   ],
-  "voices": {
-    "ana": "en-US-AriaNeural",
-    "tom": "en-US-GuyNeural",
-    "marcos": "en-US-GuyNeural"
-  },
   "audioRate": "-5%",
-  "audioScripts": [
-    {
-      "file": "a1-l4-1.mp3",
-      "lines": [
-        [
-          "ana",
-          "Tom, do you have any brothers or sisters?"
-        ],
-        [
-          "tom",
-          "Yes, I have one brother and one sister. My brother has a dog."
-        ],
-        [
-          "ana",
-          "Nice! What's your sister's name?"
-        ],
-        [
-          "tom",
-          "Her name is Lucy. She has blue eyes and brown hair."
-        ],
-        [
-          "ana",
-          "Does your brother have a job?"
-        ],
-        [
-          "tom",
-          "Yes, he does. He is an engineer."
-        ]
-      ]
-    },
-    {
-      "file": "a1-l4-2.mp3",
-      "lines": [
-        [
-          "marcos",
-          "This is my room. I have a big desk and a small bed. I have many books. My laptop is on the desk. I don't have a TV, but I have a guitar. My sister has a bigger room, but I like mine!"
-        ]
-      ]
-    }
-  ]
+  "say": {
+    "dir": "say/a1-l4",
+    "keys": [
+      "a-car-a-house",
+      "a-pet-a-dog-a-cat",
+      "am",
+      "are",
+      "aunt-uncle",
+      "aunt-uncle-cousin",
+      "ben",
+      "black",
+      "blonde",
+      "blue-green-brown-eyes",
+      "brother",
+      "brother-sister",
+      "brown",
+      "brown-black-blonde-hair",
+      "cousin",
+      "do-you-have-a-pet",
+      "do-you-have-any-brothers-or-sisters",
+      "does-he-have-a-job",
+      "does-marcos-have-a-tv",
+      "doesn-t",
+      "don-t",
+      "father",
+      "grandmother-grandfather",
+      "half-past",
+      "has",
+      "have",
+      "he",
+      "he-doesn-t-say",
+      "he-has-blue-eyes",
+      "her",
+      "her-name-is-lucy",
+      "her-name-is-sof-a",
+      "his",
+      "his-books",
+      "his-brother",
+      "his-guitar",
+      "his-laptop",
+      "his-name-is-max",
+      "his-name-is-sof-a",
+      "his-sister",
+      "how-many-brothers-and-sisters-does-tom-have",
+      "how-old-is-she",
+      "husband-wife",
+      "i",
+      "i-am-thirty-years-old",
+      "i-don-t-have-a-car",
+      "i-have-a-brother",
+      "is",
+      "isn-t",
+      "leo",
+      "marcos",
+      "max",
+      "mother",
+      "mother-father",
+      "my",
+      "nice-what-s-your-sister-s-name",
+      "no-he-doesn-t",
+      "no-i-doesn-t",
+      "no-i-don-t",
+      "no-i-m-not",
+      "o-clock",
+      "ok-i-don-t-have-a-pet-but-my-brother-max-has-a-dog",
+      "one-brother-and-one-sister",
+      "one-brother-and-two-sisters",
+      "our",
+      "our-house-is-big-their-dog-is-small",
+      "parents",
+      "phone-number",
+      "quarter-to",
+      "she",
+      "she-doesn-t-have-a-pet",
+      "she-has-a-sister",
+      "she-has-brown-hair",
+      "she-has-twenty-years",
+      "she-have-twenty",
+      "she-is-tall-he-is-short",
+      "she-is-twenty-years-old",
+      "she-name-is-sof-a",
+      "sister",
+      "son-daughter",
+      "tall-short",
+      "their",
+      "they",
+      "this-is-my-sister",
+      "tom-has-a-car",
+      "tom-s-sister",
+      "two-brothers-and-one-sister",
+      "we",
+      "week-weekend",
+      "what-color-is-lucy-s-hair",
+      "what-is-his-brother-s-name",
+      "what-is-on-the-desk",
+      "what-s-your-name",
+      "who-has-a-big-room",
+      "yes-he-does",
+      "yes-he-does-no-he-doesn-t",
+      "yes-i-am-two-sisters",
+      "yes-i-do-no-i-don-t",
+      "yes-i-has-two-sisters",
+      "yes-i-have-two-sisters",
+      "you",
+      "your"
+    ]
+  }
 }
