@@ -17,32 +17,8 @@
       "type": "grammar",
       "tag": "saludos y presentaciones",
       "title": "<ico-book></ico-book> SAY HELLO · saludar y presentarte",
-      "intro": "En esta primera lección aprendes a <b style='color:var(--gold)'>saludar</b>, <b style='color:var(--gold)'>presentarte</b> y preguntar el nombre. Repasa y luego practica con varios ejercicios.",
-      "cells": [
-        {
-          "h": "<ico-hand></ico-hand> Greetings",
-          "body": "<code>Hello</code> / <code>Hi</code><br>Good <code>morning</code> / <code>afternoon</code> / <code>evening</code><br><code>Goodbye</code> / <code>Bye</code>"
-        },
-        {
-          "h": "<ico-hand></ico-hand> Introduce yourself",
-          "body": "<code>I'm</code> Ana. = <code>My name is</code> Ana.<br><code>Nice to meet you.</code><br>This is my friend, Tom."
-        },
-        {
-          "h": "<ico-question></ico-question> Questions",
-          "body": "<code>What's your name?</code><br><code>Where are you from?</code><br><code>How are you?</code> — I'm fine, thanks."
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<code>I'm</code> = I am<br><span class='ok'>Nice to meet you</span> <span class='es'>(la primera vez)</span><br>Nombres y <span class='ok'>I</span> siempre con mayúscula"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Saludos por el día</b> — según la hora:",
-      "ladder": [
-        "Good morning",
-        "Good afternoon",
-        "Good evening",
-        "Good night"
-      ],
+      "intro": "En esta primera lección aprendes tres cosas: <b style='color:var(--gold)'>saludar</b>, <b style='color:var(--gold)'>presentarte</b> y <b style='color:var(--gold)'>hacer tres preguntas básicas</b>. Lee cada frase, toca el altavoz para escucharla y repítela en voz alta.",
+      "cells": [],
       "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de saludos",
       "vocab": [
         {
@@ -51,7 +27,7 @@
         },
         {
           "en": "Goodbye / Bye",
-          "sp": "adiós / chau"
+          "sp": "adiós / hasta luego"
         },
         {
           "en": "Please",
@@ -87,14 +63,146 @@
         },
         {
           "en": "A friend / A teacher",
-          "sp": "un amigo / un profe"
+          "sp": "un amigo / un profesor"
         },
         {
           "en": "See you (soon)!",
           "sp": "¡nos vemos (pronto)!"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>escucha</b> <ico-headphones></ico-headphones>, <b>unir pares</b> <ico-link></ico-link>, <b>elegir respuestas</b> <ico-comments></ico-comments> y <b>ordenar palabras</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada uno. ¡Sin traductor!"
+      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>escucha</b> <ico-headphones></ico-headphones>, <b>situaciones</b> <ico-link></ico-link>, <b>elegir respuestas</b> <ico-comments></ico-comments> y <b>ordenar palabras</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada uno. ¡Sin traductor!",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · SALUDAR</b> <span class='es'>— depende de la hora y de si llegas o te vas</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Hello! / Hi!",
+              "sp": "¡Hola! — <b>Hi</b> es más informal, para amigos."
+            },
+            {
+              "en": "Good morning.",
+              "sp": "Buenos días — hasta el mediodía."
+            },
+            {
+              "en": "Good afternoon.",
+              "sp": "Buenas tardes — del mediodía a las 6 p. m."
+            },
+            {
+              "en": "Good evening.",
+              "sp": "Buenas noches, cuando <b>llegas</b> — desde las 6 p. m."
+            },
+            {
+              "en": "Good night.",
+              "sp": "Buenas noches, cuando <b>te vas</b> o te vas a dormir."
+            },
+            {
+              "en": "Goodbye! / Bye!",
+              "sp": "¡Adiós! — <b>Bye</b> es más informal."
+            },
+            {
+              "en": "See you soon!",
+              "sp": "¡Nos vemos pronto!"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Ojo con «buenas noches».</b> En español sirve para llegar y para irte. En inglés son dos frases distintas: <b>Good evening</b> = llegas · <b>Good night</b> = te vas."
+        },
+        {
+          "type": "chips",
+          "items": [
+            "Good morning",
+            "Good afternoon",
+            "Good evening"
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · PRESENTARTE</b>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'm Ana.",
+              "sp": "Soy Ana. — la forma más común."
+            },
+            {
+              "en": "My name is Ana.",
+              "sp": "Me llamo Ana. — un poco más formal."
+            },
+            {
+              "en": "I'm from Mexico.",
+              "sp": "Soy de México."
+            },
+            {
+              "en": "I'm a student.",
+              "sp": "Soy estudiante. — en inglés la profesión lleva <b>a</b> / <b>an</b>."
+            },
+            {
+              "en": "Nice to meet you.",
+              "sp": "Mucho gusto. — solo la <b>primera vez</b> que ves a alguien."
+            },
+            {
+              "en": "Nice to meet you too.",
+              "sp": "Igualmente."
+            },
+            {
+              "en": "This is my friend, Tom.",
+              "sp": "Te presento a mi amigo Tom."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-bulb></ico-bulb> I'm = I am",
+              "body": "<code>I'm</code> es la forma corta de <code>I am</code> <span class='es'>(yo soy / yo estoy)</span>. Al hablar casi siempre se usa la corta.<br>En español puedes decir «Soy Ana» sin el «yo». En inglés el <code>I</code> es <b>obligatorio</b> y siempre va con <b>mayúscula</b>:<br><span class='ok'>I'm Ana.</span> &nbsp;·&nbsp; <s class='x'>Am Ana.</s> &nbsp;·&nbsp; <s class='x'>i'm Ana.</s>"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · PREGUNTAR Y RESPONDER</b>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "What's your name?",
+              "sp": "¿Cómo te llamas? → <b>My name is…</b> / <b>I'm…</b>"
+            },
+            {
+              "en": "Where are you from?",
+              "sp": "¿De dónde eres? → <b>I'm from…</b>"
+            },
+            {
+              "en": "How are you?",
+              "sp": "¿Cómo estás? → <b>I'm fine, thanks.</b> / <b>I'm great!</b>"
+            },
+            {
+              "en": "And you?",
+              "sp": "¿Y tú? — para devolver la pregunta."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> Errores típicos",
+              "body": "<s class='x'>I'm of Mexico.</s> → <span class='ok'>I'm from Mexico.</span> <span class='es'>(«de» un país = <b>from</b>)</span><br><s class='x'>I'm student.</s> → <span class='ok'>I'm a student.</span><br><code>What's</code> = What is. &nbsp;<code>How are you?</code> pregunta cómo <b>estás</b> hoy, no cómo eres."
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "story",
@@ -104,11 +212,11 @@
       "cast": [
         {
           "en": "Ana",
-          "sp": "una estudiante"
+          "sp": "una estudiante de México"
         },
         {
           "en": "Tom",
-          "sp": "un estudiante"
+          "sp": "un ingeniero de Canadá"
         },
         {
           "en": "Emma",
@@ -135,8 +243,12 @@
           "back": "Buenos días"
         },
         {
+          "front": "Good evening",
+          "back": "Buenas noches (al llegar)"
+        },
+        {
           "front": "Good night",
-          "back": "Buenas noches"
+          "back": "Buenas noches (al irte)"
         },
         {
           "front": "Goodbye / Bye",
@@ -246,28 +358,32 @@
     {
       "type": "match",
       "id": "ex-match",
-      "title": "UNE INGLÉS Y ESPAÑOL",
-      "intro": "Toca una frase en inglés y luego su traducción.",
+      "title": "¿QUÉ DICES?",
+      "intro": "Toca la frase en inglés y luego la situación en la que la usas.",
       "pairs": [
         {
-          "l": "Hello",
-          "r": "Hola"
+          "l": "Good morning.",
+          "r": "Llegas a clase a las 9 a. m."
         },
         {
-          "l": "Goodbye",
-          "r": "Adiós"
+          "l": "Good evening.",
+          "r": "Llegas a una cena a las 8 p. m."
         },
         {
-          "l": "Nice to meet you",
-          "r": "Mucho gusto"
+          "l": "Good night.",
+          "r": "Te vas a dormir."
+        },
+        {
+          "l": "Nice to meet you.",
+          "r": "Conoces a alguien por primera vez."
         },
         {
           "l": "Where are you from?",
-          "r": "¿De dónde eres?"
+          "r": "Quieres saber su país."
         },
         {
-          "l": "How are you?",
-          "r": "¿Cómo estás?"
+          "l": "See you soon!",
+          "r": "Te despides de un amigo."
         }
       ]
     },
@@ -318,6 +434,20 @@
             "I'm fine, thank you!"
           ],
           "answer": 2
+        },
+        {
+          "spk": "Tom",
+          "html": "I'm from Canada. Nice to meet you!"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Nice to meet you too.",
+            "Good night.",
+            "I'm a student."
+          ],
+          "answer": 0
         }
       ]
     },
@@ -325,7 +455,7 @@
       "type": "listening",
       "id": "ex-l2",
       "title": "AUDIO 2 · GOOD MORNING!",
-      "desc": "Leo llega a una escuela de inglés. Escucha el saludo y dónde está su clase.",
+      "desc": "Leo llega a una escuela de inglés. Escucha el saludo y dónde está su clase. <span class='es'>Pista: <b>floor</b> = piso · <b>first, second, third</b> = primero, segundo, tercero.</span>",
       "src": "a1-l1-2.mp3",
       "dur": "0:15",
       "speakers": "<ico-commentdots></ico-commentdots> Emma + Leo",
@@ -418,13 +548,31 @@
             "you"
           ],
           "answer": "Nice to meet you"
+        },
+        {
+          "words": [
+            "Where",
+            "are",
+            "you",
+            "from"
+          ],
+          "answer": "Where are you from"
+        },
+        {
+          "words": [
+            "What",
+            "is",
+            "your",
+            "name"
+          ],
+          "answer": "What is your name"
         }
       ]
     },
     {
       "type": "writing",
       "title": "<ico-pen></ico-pen> INTRODUCE YOURSELF",
-      "intro": "Preséntate en 4–5 frases simples:",
+      "intro": "Preséntate en 4–5 frases cortas. Usa solo lo que viste en esta lección:",
       "checklist": [
         "Saluda: <b>Hello! / Hi!</b>",
         "Di tu nombre: <b>My name is… / I'm…</b>",
@@ -433,7 +581,7 @@
         "Termina: <b>Nice to meet you!</b>"
       ],
       "placeholder": "Hello! My name is...",
-      "example": "Hello! My name is (name). I'm from (country). I'm a (job) and I work in (place). I'm (age) years old. Nice to meet you!",
+      "example": "Hello! My name is <span class=\"gap\">nombre</span>. I'm from <span class=\"gap\">país</span>. I'm a <span class=\"gap\">student / teacher…</span>. I'm <span class=\"gap\">fine / great</span> today. Nice to meet you!",
       "hw": "Escribe tu presentación y graba un audio diciéndola en voz alta. Envíame ambos por WhatsApp y lo corregimos. ¡Cualquier duda la vemos en clase!",
       "rubric": [
         {
@@ -446,93 +594,69 @@
         },
         {
           "c": "Se entiende a la primera",
-          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+          "d": "Un lector lo entiende sin releer: frases cortas y completas, siempre con <b>I</b> en mayúscula y sin traducir literal del español."
         }
       ]
     }
   ],
-  "voices": {
-    "ana": "en-US-AriaNeural",
-    "tom": "en-US-GuyNeural",
-    "emma": "en-GB-SoniaNeural",
-    "leo": "en-GB-RyanNeural",
-    "maria": "en-AU-NatashaNeural"
-  },
   "audioRate": "-5%",
-  "audioScripts": [
-    {
-      "file": "a1-l1-1.mp3",
-      "lines": [
-        [
-          "ana",
-          "Hello! I'm Ana. What's your name?"
-        ],
-        [
-          "tom",
-          "Hi Ana. My name is Tom. Nice to meet you."
-        ],
-        [
-          "ana",
-          "Nice to meet you too. Where are you from, Tom?"
-        ],
-        [
-          "tom",
-          "I'm from Canada. And you?"
-        ],
-        [
-          "ana",
-          "I'm from Mexico."
-        ],
-        [
-          "tom",
-          "Cool! How are you today?"
-        ],
-        [
-          "ana",
-          "I'm fine, thank you. And you?"
-        ],
-        [
-          "tom",
-          "I'm great, thanks!"
-        ]
-      ]
-    },
-    {
-      "file": "a1-l1-2.mp3",
-      "lines": [
-        [
-          "emma",
-          "Good morning! Welcome to Star English School."
-        ],
-        [
-          "leo",
-          "Good morning. I'm Leo. I'm a new student."
-        ],
-        [
-          "emma",
-          "Nice to meet you, Leo. I'm Emma."
-        ],
-        [
-          "leo",
-          "Nice to meet you, Emma."
-        ],
-        [
-          "emma",
-          "How are you?"
-        ],
-        [
-          "leo",
-          "I'm a little nervous, but I'm okay!"
-        ],
-        [
-          "emma",
-          "Don't worry. Your class is on the second floor. Have a nice day!"
-        ],
-        [
-          "leo",
-          "Thank you. Goodbye!"
-        ]
-      ]
-    }
-  ]
+  "say": {
+    "dir": "say/a1-l1",
+    "keys": [
+      "a-friend-a-teacher",
+      "a-new-manager",
+      "a-new-student",
+      "a-new-teacher",
+      "afternoon",
+      "and-you",
+      "ben",
+      "canada",
+      "good-afternoon",
+      "good-evening",
+      "good-morning",
+      "good-night",
+      "goodbye",
+      "goodbye-bye",
+      "great",
+      "hello-hi",
+      "hello-what-s-your-name",
+      "how-are-you",
+      "how-are-you-today",
+      "how-is-tom-today",
+      "i-m-a-student",
+      "i-m-ana",
+      "i-m-fine-thank-you",
+      "i-m-fine-thanks",
+      "i-m-from-canada-nice-to-meet-you",
+      "i-m-from-mexico",
+      "leo",
+      "mexico",
+      "morning",
+      "my-name-is",
+      "my-name-is-ana",
+      "nervous",
+      "nice-to-meet-you",
+      "nice-to-meet-you-too",
+      "night",
+      "on-the-first-floor",
+      "on-the-second-floor",
+      "on-the-third-floor",
+      "please",
+      "see-you",
+      "see-you-soon",
+      "spain",
+      "thank-you-thanks",
+      "this-is",
+      "this-is-my-friend-tom",
+      "tired",
+      "tom",
+      "what-is-the-man-s-name",
+      "what-s-your-name",
+      "what-time-of-day-is-it",
+      "where-are-you-from",
+      "where-is-ana-from",
+      "where-is-leo-s-class",
+      "who-is-leo"
+    ]
+  }
 }

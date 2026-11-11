@@ -298,6 +298,7 @@ function legacyBlocks(L){
 }
 function build(L){
   LESSON = L; LESSON_KEY = L.key; LESSON_NAME = L.titlePlain;
+  SAY = (L.say && L.say.dir && Array.isArray(L.say.keys)) ? { dir: L.say.dir, keys: new Set(L.say.keys) } : null;
   document.getElementById("pageTitle").textContent = "English for All · " + (L.titlePlain||"Lesson");
   document.getElementById("crumb").innerHTML = L.track
     ? `<span class="plus"><ico-star></ico-star> ${esc(L.track.toUpperCase())}</span> <span class="w">SIDEQUEST</span> ▸ LESSON ${esc(L.num)} / ${esc(L.totalLessons||4)}`
@@ -360,8 +361,26 @@ let VOICES = [];
 function loadVoices(){ try{ VOICES = speechSynthesis.getVoices() || []; }catch(e){} }
 if("speechSynthesis" in window){ loadVoices(); try{ speechSynthesis.onvoiceschanged = loadVoices; }catch(e){} }
 function pickEnVoice(){ return VOICES.find(v=>/en[-_]us/i.test(v.lang)) || VOICES.find(v=>/^en/i.test(v.lang)) || null; }
+// Recorded tap-to-hear: when the lesson ships a "say" manifest, play the neural-voice mp3;
+// anything not recorded (or a failed load) falls back to the browser voice below.
+let SAY = null;
+const sayKey = t => String(t).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 80);
+const sayPlayer = new Audio();
 function speak(text, onend){
   text = String(text==null?"":text).trim();
+  const k = sayKey(text);
+  if(SAY && k && SAY.keys.has(k)){
+    try{ if("speechSynthesis" in window) speechSynthesis.cancel(); }catch(e){}
+    let done = false; const fin = () => { if(done) return; done = true; if(onend){ try{ onend(); }catch(e){} } };
+    const fallback = () => { if(done) return; sayPlayer.onended = sayPlayer.onerror = null; speakTTS(text, onend); done = true; };
+    sayPlayer.onended = fin; sayPlayer.onerror = fallback;
+    sayPlayer.src = SAY.dir + "/" + k + ".mp3";
+    const p = sayPlayer.play(); if(p && p.catch) p.catch(fallback);
+    return;
+  }
+  speakTTS(text, onend);
+}
+function speakTTS(text, onend){
   if(!text || !("speechSynthesis" in window)){ if(onend) onend(); return; }
   try{
     speechSynthesis.cancel();
