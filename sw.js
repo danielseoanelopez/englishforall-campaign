@@ -1,6 +1,6 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v11";  // v11: A1 L1 review (louder dialogues, recorded tap-to-hear)
+const CACHE = "rankup-v12";  // v12: A1 L2 review (re-recorded monologue, WebP job/flag art)
 const CORE = [
   "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
   "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=1",

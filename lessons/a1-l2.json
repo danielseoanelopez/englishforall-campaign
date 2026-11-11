@@ -17,27 +17,27 @@
       "type": "match",
       "id": "ex-review",
       "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
-      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "intro": "Antes de empezar, recupera lo de la lección 1. Une cada frase con su significado — sin mirar atrás.",
       "pairs": [
         {
-          "l": "Where are you from?",
-          "r": "¿de dónde eres?"
+          "l": "Good evening.",
+          "r": "buenas noches (al llegar)"
+        },
+        {
+          "l": "Good night.",
+          "r": "buenas noches (al irte)"
+        },
+        {
+          "l": "Nice to meet you.",
+          "r": "mucho gusto"
+        },
+        {
+          "l": "I'm from…",
+          "r": "soy de…"
         },
         {
           "l": "How are you?",
           "r": "¿cómo estás?"
-        },
-        {
-          "l": "This is…",
-          "r": "te presento a…"
-        },
-        {
-          "l": "Hello / Hi",
-          "r": "hola"
-        },
-        {
-          "l": "Goodbye / Bye",
-          "r": "adiós / chau"
         }
       ]
     },
@@ -45,34 +45,8 @@
       "type": "grammar",
       "tag": "to be + datos personales",
       "title": "<ico-book></ico-book> TO BE · I am, you are, he is",
-      "intro": "Para dar datos personales usamos el verbo <b style='color:var(--gold)'>to be</b>. Estudia con las tarjetas y practica con los juegos.",
-      "cells": [
-        {
-          "h": "<ico-check></ico-check> to be",
-          "body": "I <code>am</code> (I'm)<br>he / she / it <code>is</code><br>you / we / they <code>are</code>"
-        },
-        {
-          "h": "<ico-question></ico-question> Preguntas",
-          "body": "<code>What's your name?</code><br><code>Where are you from?</code><br><code>What's your job?</code>"
-        },
-        {
-          "h": "<ico-cake></ico-cake> Edad",
-          "body": "<code>How old are you?</code><br>I'm <code>twenty</code>.<br><code>a</code> teacher · <code>an</code> engineer"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='x'>I have 20 years</span><br><span class='ok'>I'm 20 (years old)</span><br><span class='es'>edad con 'be', no 'have'</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Formas cortas</b> — así se habla normalmente:",
-      "ladder": [
-        "I'm",
-        "you're",
-        "he's",
-        "she's",
-        "we're",
-        "they're"
-      ],
+      "intro": "Para dar datos personales (país, trabajo, edad) usas un solo verbo: <b style='color:var(--gold)'>to be</b>. En español son dos, <b>ser</b> y <b>estar</b>; en inglés es el mismo para los dos.",
+      "cells": [],
       "vocabBtn": "<ico-bookmark></ico-bookmark> Ver países y trabajos",
       "vocab": [
         {
@@ -121,7 +95,7 @@
         },
         {
           "en": "Waiter",
-          "sp": "mesero/a"
+          "sp": "mesero/a · camarero/a"
         },
         {
           "en": "Driver",
@@ -138,9 +112,161 @@
         {
           "en": "Programmer",
           "sp": "programador/a"
+        },
+        {
+          "en": "Dentist",
+          "sp": "dentista"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección tiene <b>tarjetas</b> <ico-clone></ico-clone>, <b>imágenes</b> <ico-image></ico-image>, un <b>juego de memoria</b> <ico-brain></ico-brain>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>completar</b> <ico-filepen></ico-filepen>. <ico-check></ico-check> CHECK donde lo veas."
+      "note": "<b>Cómo funciona:</b> esta lección tiene <b>tarjetas</b> <ico-clone></ico-clone>, <b>imágenes</b> <ico-image></ico-image>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y un <b>juego de memoria</b> <ico-brain></ico-brain>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · EL VERBO TO BE</b> <span class='es'>— solo tiene tres formas: am, is, are</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I am",
+              "sp": "yo soy / estoy"
+            },
+            {
+              "en": "You are",
+              "sp": "tú eres / estás — también sirve para <b>usted</b> y <b>ustedes</b>"
+            },
+            {
+              "en": "He is",
+              "sp": "él es / está"
+            },
+            {
+              "en": "She is",
+              "sp": "ella es / está"
+            },
+            {
+              "en": "It is",
+              "sp": "es / está — para cosas y animales"
+            },
+            {
+              "en": "We are",
+              "sp": "nosotros somos / estamos"
+            },
+            {
+              "en": "They are",
+              "sp": "ellos / ellas son / están"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Truco:</b> <b>am</b> solo con I · <b>is</b> con uno (he, she, it) · <b>are</b> con you y con varios (we, they)."
+        },
+        {
+          "type": "p",
+          "html": "<span class='es'>Al hablar se usan las formas cortas:</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "I'm",
+            "you're",
+            "he's",
+            "she's",
+            "it's",
+            "we're",
+            "they're"
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · TUS DATOS PERSONALES</b>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I am from Mexico.",
+              "sp": "Soy de México."
+            },
+            {
+              "en": "I am a student.",
+              "sp": "Soy estudiante."
+            },
+            {
+              "en": "I am an engineer.",
+              "sp": "Soy ingeniero/a."
+            },
+            {
+              "en": "I am twenty years old.",
+              "sp": "Tengo veinte años."
+            },
+            {
+              "en": "He is a doctor.",
+              "sp": "Él es médico."
+            },
+            {
+              "en": "She is from Brazil.",
+              "sp": "Ella es de Brasil."
+            },
+            {
+              "en": "I am not a teacher.",
+              "sp": "No soy profesor/a. — para negar, añade <b>not</b> después del verbo."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-cake></ico-cake> La edad va con BE, no con HAVE",
+              "body": "En español «<b>tengo</b> 20 años». En inglés «<b>soy</b> 20»:<br><s class='x'>I have 20 years.</s> → <span class='ok'>I am 20.</span> / <span class='ok'>I am 20 years old.</span><br><span class='es'>Números de hoy:</span> <code>20</code> twenty · <code>25</code> twenty-five · <code>30</code> thirty · <code>40</code> forty <span class='es'>(el resto, en la lección 3)</span>"
+            },
+            {
+              "h": "<ico-briefcase></ico-briefcase> A / AN con los trabajos",
+              "body": "En español no lleva artículo: «Soy profesor». En inglés <b>siempre</b>:<br><code>a</code> + sonido de consonante: <span class='ok'>a teacher</span>, <span class='ok'>a doctor</span><br><code>an</code> + sonido de vocal: <span class='ok'>an engineer</span>, <span class='ok'>an English teacher</span><br><s class='x'>I am teacher.</s> → <span class='ok'>I am a teacher.</span>"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · PREGUNTAR</b> <span class='es'>— el verbo pasa al principio</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Are you a student?",
+              "sp": "¿Eres estudiante? → <b>Yes, I am.</b> / <b>No, I am not.</b>"
+            },
+            {
+              "en": "Is he a doctor?",
+              "sp": "¿Él es médico? → <b>Yes, he is.</b> / <b>No, he is not.</b>"
+            },
+            {
+              "en": "What is your job?",
+              "sp": "¿A qué te dedicas?"
+            },
+            {
+              "en": "Where are you from?",
+              "sp": "¿De dónde eres?"
+            },
+            {
+              "en": "How old are you?",
+              "sp": "¿Cuántos años tienes?"
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> Errores típicos",
+              "body": "En español la pregunta solo cambia el tono. En inglés cambia el <b>orden</b>:<br>You are a student. → <span class='ok'>Are you a student?</span> &nbsp;<s class='x'>You are a student?</s><br>Respuesta corta afirmativa, sin contraer: <span class='ok'>Yes, I am.</span> &nbsp;<s class='x'>Yes, I'm.</s><br><s class='x'>How old have you?</s> → <span class='ok'>How old are you?</span>"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "flashcards",
@@ -149,43 +275,43 @@
       "intro": "Toca cada tarjeta para ver la traducción. Estúdialas antes de los ejercicios.",
       "cards": [
         {
-          "front": "<img class='job' src='job-teacher.png' alt='teacher'> teacher",
+          "front": "<img class='job' src='job-teacher.webp' alt='teacher'> teacher",
           "back": "profesor/a"
         },
         {
-          "front": "<img class='job' src='job-doctor.png' alt='doctor'> doctor",
+          "front": "<img class='job' src='job-doctor.webp' alt='doctor'> doctor",
           "back": "médico/a"
         },
         {
-          "front": "<img class='job' src='job-nurse.png' alt='nurse'> nurse",
+          "front": "<img class='job' src='job-nurse.webp' alt='nurse'> nurse",
           "back": "enfermero/a"
         },
         {
-          "front": "<img class='job' src='job-engineer.png' alt='engineer'> engineer",
+          "front": "<img class='job' src='job-engineer.webp' alt='engineer'> engineer",
           "back": "ingeniero/a"
         },
         {
-          "front": "<img class='job' src='job-student.png' alt='student'> student",
+          "front": "<img class='job' src='job-student.webp' alt='student'> student",
           "back": "estudiante"
         },
         {
-          "front": "<img class='job' src='job-cook.png' alt='cook'> cook",
+          "front": "<img class='job' src='job-cook.webp' alt='cook'> cook",
           "back": "cocinero/a"
         },
         {
-          "front": "<img class='job' src='job-police-officer.png' alt='police officer'> police officer",
+          "front": "<img class='job' src='job-police-officer.webp' alt='police officer'> police officer",
           "back": "policía"
         },
         {
-          "front": "<img class='job' src='job-dentist.png' alt='dentist'> dentist",
+          "front": "<img class='job' src='job-dentist.webp' alt='dentist'> dentist",
           "back": "dentista"
         },
         {
-          "front": "<img class='job' src='job-software-developer.png' alt='software developer'> software developer",
+          "front": "<img class='job' src='job-software-developer.webp' alt='software developer'> software developer",
           "back": "programador/a"
         },
         {
-          "front": "<img class='job' src='job-waiter.png' alt='waiter'> waiter",
+          "front": "<img class='job' src='job-waiter.webp' alt='waiter'> waiter",
           "back": "mesero/a"
         }
       ],
@@ -198,27 +324,27 @@
       "intro": "Toca la imagen y luego el trabajo correcto.",
       "pairs": [
         {
-          "img": "<img class='job' src='job-teacher.png' alt='teacher'>",
+          "img": "<img class='job' src='job-teacher.webp' alt='teacher'>",
           "word": "teacher"
         },
         {
-          "img": "<img class='job' src='job-doctor.png' alt='doctor'>",
+          "img": "<img class='job' src='job-doctor.webp' alt='doctor'>",
           "word": "doctor"
         },
         {
-          "img": "<img class='job' src='job-police-officer.png' alt='police officer'>",
+          "img": "<img class='job' src='job-police-officer.webp' alt='police officer'>",
           "word": "police officer"
         },
         {
-          "img": "<img class='job' src='job-cook.png' alt='cook'>",
+          "img": "<img class='job' src='job-cook.webp' alt='cook'>",
           "word": "cook"
         },
         {
-          "img": "<img class='job' src='job-dentist.png' alt='dentist'>",
+          "img": "<img class='job' src='job-dentist.webp' alt='dentist'>",
           "word": "dentist"
         },
         {
-          "img": "<img class='job' src='job-software-developer.png' alt='software developer'>",
+          "img": "<img class='job' src='job-software-developer.webp' alt='software developer'>",
           "word": "software developer"
         }
       ]
@@ -227,7 +353,7 @@
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · NICE TO MEET YOU",
-      "desc": "Ana y Tom hablan de su país, trabajo y edad.",
+      "desc": "Ana y Tom hablan de su trabajo, su país y su edad. Fíjate en quién dice qué.",
       "src": "a1-l2-1.mp3",
       "dur": "0:15",
       "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
@@ -237,26 +363,26 @@
           "q": "What is Tom's job?",
           "options": [
             "A doctor",
-            "A university student",
+            "A student",
             "An engineer"
           ],
           "answer": 2
         },
         {
           "type": "mcq",
-          "q": "Where is Ana from?",
+          "q": "Who is a student?",
           "options": [
-            "Brazil",
-            "Canada",
-            "Mexico"
+            "Tom",
+            "Ana",
+            "Tom and Ana"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "How old is Ana?",
           "options": [
-            "Twenty-two",
+            "Thirty",
             "Twenty-five",
             "Twenty"
           ],
@@ -265,7 +391,7 @@
       ],
       "speaking": {
         "prompt": "Give your personal info: name, country, job and age.",
-        "starter": "Hi, I'm (name). I'm from (country). I'm a (job) and I'm (age) years old."
+        "starter": "Hi, I am (name). I am from (country). I am a (job) and I am (age) years old."
       },
       "transcript": [
         {
@@ -356,30 +482,92 @@
             "is"
           ],
           "answer": 1
+        },
+        {
+          "q": "We ___ students.",
+          "options": [
+            "is",
+            "am",
+            "are"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Leo ___ not a teacher. He is a doctor.",
+          "options": [
+            "are",
+            "is",
+            "am"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-aan",
+      "title": "¿A O AN?",
+      "intro": "Elige el artículo correcto. Recuerda: an va antes de sonido de vocal.",
+      "items": [
+        {
+          "q": "She is ___ engineer.",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "He is ___ doctor.",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I am ___ student.",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "She is ___ English teacher.",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
         }
       ]
     },
     {
       "type": "memory",
       "id": "mem-countries",
-      "title": "MEMORY · países y banderas",
+      "title": "MEMORY · países",
       "intro": "Encuentra cada país con su bandera. Toca dos cartas.",
       "pairs": [
         {
           "a": "Mexico",
-          "b": "<img class='flag' src='flag-mx.png' alt='México'>"
+          "b": "<img class='flag' src='flag-mx.webp' alt='México'>"
         },
         {
           "a": "United States",
-          "b": "<img class='flag' src='flag-us.png' alt='Estados Unidos'>"
+          "b": "<img class='flag' src='flag-us.webp' alt='Estados Unidos'>"
         },
         {
           "a": "Brazil",
-          "b": "<img class='flag' src='flag-br.png' alt='Brasil'>"
+          "b": "<img class='flag' src='flag-br.webp' alt='Brasil'>"
         },
         {
           "a": "Argentina",
-          "b": "<img class='flag' src='flag-ar.png' alt='Argentina' onerror=\"this.outerHTML='<span class=flag-ar-css></span>'\">"
+          "b": "<img class='flag' src='flag-ar.webp' alt='Argentina' onerror=\"this.outerHTML='<span class=flag-ar-css></span>'\">"
+        },
+        {
+          "a": "Spain",
+          "b": "<img class='flag' src='flag-es.webp' alt='España'>"
         }
       ]
     },
@@ -387,9 +575,9 @@
       "type": "listening",
       "id": "ex-l2",
       "title": "AUDIO 2 · THIS IS MY FRIEND",
-      "desc": "María presenta a su amigo Leo. Escucha su país, trabajo y edad.",
+      "desc": "María presenta a su amigo Leo. Escucha su país, trabajo y edad. <span class='es'>Pista: <b>he works in</b> = él trabaja en · <b>friendly</b> = amable.</span>",
       "src": "a1-l2-2.mp3",
-      "dur": "0:12",
+      "dur": "0:13",
       "speakers": "<ico-commentdots></ico-commentdots> María",
       "questions": [
         {
@@ -414,18 +602,18 @@
         },
         {
           "type": "mcq",
-          "q": "Where does Leo work?",
+          "q": "How old is Leo?",
           "options": [
-            "In a big hospital",
-            "In a small clinic",
-            "In a big school"
+            "Thirty",
+            "Twenty",
+            "Forty"
           ],
           "answer": 0
         }
       ],
       "speaking": {
-        "prompt": "Introduce a friend: name, country, job, age. Use <i>He's / She's…</i>",
-        "starter": "This is my friend (name). He's from (country). He's a (job) and he's (age) years old."
+        "prompt": "Introduce a friend: name, country, job, age. Use <i>He is / She is…</i>",
+        "starter": "This is my friend (name). He is from (country). He is a (job) and he is (age) years old."
       },
       "transcript": [
         {
@@ -437,16 +625,16 @@
     {
       "type": "writing",
       "title": "<ico-pen></ico-pen> INTRODUCE SOMEONE ELSE",
-      "intro": "Presenta a otra persona (un amigo, tu hermano/a, un compañero de trabajo) en 4–5 frases. Ojo: en tercera persona el verbo cambia.",
+      "intro": "Presenta a otra persona (un amigo, tu hermano/a, un compañero de trabajo) en 4–5 frases. Usa <b>He is</b> o <b>She is</b> en cada una.",
       "checklist": [
         "Preséntala/o: <b>This is my friend…</b>",
         "De dónde es: <b>He is / She is from…</b>",
-        "Su trabajo: <b>He is a… / She is a…</b>",
-        "Su edad: <b>He is / She is … years old</b> (no <i>has</i>)",
-        "Cierra con un adjetivo: <b>He is / She is very…</b>"
+        "Su trabajo: <b>He is a… / She is an…</b> (no olvides a / an)",
+        "Su edad: <b>He is / She is … years old</b> (con <i>is</i>, no con <i>has</i>)",
+        "Cierra con un adjetivo: <b>He is / She is very friendly / funny / smart.</b>"
       ],
       "placeholder": "This is my friend...",
-      "example": "This is my friend (name). He is / She is from (country). He is / She is a (job) and works in (place). He is / She is (age) years old. He is / She is very (adjective)!",
+      "example": "This is my friend <span class=\"gap\">nombre</span>. <span class=\"gap\">He / She</span> is from <span class=\"gap\">país</span>. <span class=\"gap\">He / She</span> is <span class=\"gap\">a / an</span> <span class=\"gap\">trabajo</span>. <span class=\"gap\">He / She</span> is <span class=\"gap\">edad</span> years old. <span class=\"gap\">He / She</span> is very <span class=\"gap\">adjetivo</span>!",
       "hw": "Escribe tu presentación de esa persona y graba un audio diciéndola en voz alta. Envíame ambos por WhatsApp.",
       "rubric": [
         {
@@ -455,67 +643,87 @@
         },
         {
           "c": "Objetivo de la lección",
-          "d": "Usaste la <b>tercera persona</b> (he/she + is / has / works) al menos <b>3 veces</b>, y bien."
+          "d": "Usaste la <b>tercera persona</b> (He is / She is) al menos <b>3 veces</b>, y bien, con <b>a / an</b> delante del trabajo."
         },
         {
           "c": "Se entiende a la primera",
-          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+          "d": "Un lector lo entiende sin releer: frases cortas y completas, con sujeto y mayúsculas, sin traducir literal del español."
         }
       ]
     }
   ],
-  "voices": {
-    "ana": "en-US-AriaNeural",
-    "tom": "en-US-GuyNeural",
-    "maria": "en-GB-SoniaNeural"
-  },
   "audioRate": "-5%",
-  "audioScripts": [
-    {
-      "file": "a1-l2-1.mp3",
-      "lines": [
-        [
-          "tom",
-          "Hi Ana! Good to see you again."
-        ],
-        [
-          "ana",
-          "Hi Tom! So, tell me, what is your job?"
-        ],
-        [
-          "tom",
-          "I am an engineer. I work in a big company. What about you?"
-        ],
-        [
-          "ana",
-          "I am a student. I study English at university."
-        ],
-        [
-          "tom",
-          "Nice! You are from Mexico, right?"
-        ],
-        [
-          "ana",
-          "Yes, I am from Mexico, from Guadalajara. How old are you, Tom?"
-        ],
-        [
-          "tom",
-          "I am twenty-five. And you?"
-        ],
-        [
-          "ana",
-          "I am twenty."
-        ]
-      ]
-    },
-    {
-      "file": "a1-l2-2.mp3",
-      "lines": [
-        [
-          "maria",
-          "Hello! This is my friend Leo. He is from Brazil. He is a doctor, and he works in a big hospital in Sao Paulo. He is thirty years old, and he is very friendly!"
-        ]
-      ]
-    }
-  ]
+  "say": {
+    "dir": "say/a1-l2",
+    "keys": [
+      "a",
+      "a-cook",
+      "a-doctor",
+      "a-student",
+      "a-teacher",
+      "am",
+      "an",
+      "an-engineer",
+      "ana",
+      "are",
+      "are-you-a-student",
+      "brazil",
+      "cook",
+      "country",
+      "dentist",
+      "doctor",
+      "driver",
+      "engineer",
+      "forty",
+      "good-evening",
+      "good-night",
+      "have",
+      "he-is",
+      "he-is-a-doctor",
+      "how-are-you",
+      "how-old-are-you",
+      "how-old-is-ana",
+      "how-old-is-leo",
+      "i-am",
+      "i-am-a-student",
+      "i-am-an-engineer",
+      "i-am-from-mexico",
+      "i-am-not-a-teacher",
+      "i-am-twenty-years-old",
+      "i-m-from",
+      "is",
+      "is-he-a-doctor",
+      "it-is",
+      "job",
+      "lawyer",
+      "mexico",
+      "nice-to-meet-you",
+      "nurse",
+      "police-officer",
+      "programmer",
+      "she-is",
+      "she-is-from-brazil",
+      "shop-assistant",
+      "software-developer",
+      "spain",
+      "student",
+      "teacher",
+      "they-are",
+      "thirty",
+      "tom",
+      "tom-and-ana",
+      "twenty",
+      "twenty-five",
+      "waiter",
+      "we-are",
+      "what-is-leo-s-job",
+      "what-is-tom-s-job",
+      "what-is-your-job",
+      "where-are-you-from",
+      "where-is-leo-from",
+      "who-is-a-student",
+      "years-old",
+      "you-are"
+    ]
+  }
 }

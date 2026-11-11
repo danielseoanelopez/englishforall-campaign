@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/brands.css?v=1">
 <script src="assets/progress.js?v=1"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20261111b">
+<link rel="stylesheet" href="lesson.css?v=20261112">
 <link rel="stylesheet" href="assets/icons.css?v=1">
 </head>
 <body>
@@ -251,7 +251,7 @@ function memoryHtml(b, id){
   const sh = shuffle(cards);
   memoryState[id] = { flipped:[], matched:0, total:(b.pairs||[]).length, lock:false };
   return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-brain></ico-brain> ${esc(b.title||'MEMORY · encuentra los pares')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><img class="mem-back" src="mem-back.png" alt="" aria-hidden="true" draggable="false"><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
+  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><img class="mem-back" src="mem-back.webp" alt="" aria-hidden="true" draggable="false"><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
   <div class="mem-status" id="${id}-status">0 / ${(b.pairs||[]).length} pares</div></div>`;
 }
 function fcDeckHtml(cards){
