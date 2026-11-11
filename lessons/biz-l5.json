@@ -1,0 +1,345 @@
+{
+  "level": "B1",
+  "num": 5,
+  "totalLessons": 8,
+  "world": "BUSINESS CLASS",
+  "track": "Business Class",
+  "key": "rankup_BIZ_l5",
+  "title": "PRESENTATIONS<br>&amp; PUBLIC SPEAKING",
+  "titlePlain": "Presentations & Public Speaking (Business)",
+  "subtitle": "Business English &middot; B1 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=biz-l6",
+    "label": "SIGUIENTE ▸"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
+      "intro": "Antes de empezar, recupera la lección de negociación. Une cada frase con su significado — sin mirar atrás.",
+      "pairs": [
+        { "l": "a counteroffer", "r": "una contraoferta" },
+        { "l": "to meet halfway", "r": "encontrarse a mitad de camino" },
+        { "l": "as long as…", "r": "siempre y cuando…" },
+        { "l": "a fair deal", "r": "un trato justo" },
+        { "l": "to place an order", "r": "hacer un pedido" }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "<ico-clipboard></ico-clipboard> SIGNPOSTING",
+      "intro": "Las frases que le dicen al público <b>dónde estás</b>. Sin ellas, una presentación buena suena perdida.",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            { "h": "Abrir", "body": "Good morning, everyone. Thanks for coming. · Today I'd like to talk about…" },
+            { "h": "El guion", "body": "First, I'll cover… Then… And finally… · There are three parts to this." },
+            { "h": "Avanzar", "body": "Let's move on to… · That brings me to… · Now, about the budget…" },
+            { "h": "Cerrar", "body": "To sum up… · So, three things to remember… · <b>Any questions?</b>" }
+          ]
+        },
+        {
+          "type": "stretch",
+          "h": "B2 STRETCH · más pulido",
+          "body": "\"I'd like to <b>draw your attention to</b> the second column.\" · \"That <b>brings me neatly to</b> my next point.\" · \"Let me <b>expand on that</b> briefly.\" · \"<b>Before I wrap up</b>, one final thought.\""
+        }
+      ],
+      "stage": "① PRESENTATION LANGUAGE <span class=\"es\">· abrir · avanzar · cerrar</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "<ico-book></ico-book> PRESENT PERFECT vs. PAST SIMPLE",
+      "intro": "Una sola pregunta lo decide: <b>¿hay una palabra de tiempo terminado?</b> Si la hay → past simple. Si no la hay → present perfect.",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            { "h": "PRESENT PERFECT · el resultado ahora", "body": "<code>have / has</code> + participio<br>\"We <b>have finished</b> the design.\"<br><span class=\"es\">Importa el resultado, no el cuándo.</span>" },
+            { "h": "PAST SIMPLE · un momento cerrado", "body": "verbo + <code>-ed</code> (o irregular)<br>\"We <b>finished</b> it on Friday.\"<br><span class=\"es\">Hay una fecha, y esa fecha ya pasó.</span>" },
+            { "h": "Palabras señal · perfect", "body": "already · just · yet · so far · ever / never · this week · since 2020 · for two years" },
+            { "h": "Palabras señal · simple", "body": "yesterday · last month · in March · two weeks ago · when I started" }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b><ico-warn></ico-warn> Ojo:</b> <span class=\"x\">\"We have finished it yesterday.\"</span> → <b>\"We finished it yesterday.\"</b> Si dices <i>yesterday</i>, el perfecto se cae. Y al revés: <span class=\"x\">\"I work here since 2021\"</span> → <b>\"I have worked here since 2021.\"</b>"
+        },
+        {
+          "type": "stretch",
+          "h": "B2 STRETCH · present perfect continuous",
+          "body": "Para la <b>actividad</b> en vez del resultado: \"We've <b>been testing</b> the app for three weeks.\" · \"The team has <b>been working</b> late since May.\"<br><i>We've tested it</i> = hecho, resultado. <i>We've been testing it</i> = en curso, esfuerzo."
+        },
+        {
+          "type": "vocab",
+          "btn": "<ico-bookmark></ico-bookmark> Ver vocabulario clave",
+          "items": [
+            { "en": "a slide / the deck", "sp": "una diapositiva / la presentación", "chunk": true },
+            { "en": "an agenda", "sp": "un orden del día", "chunk": true },
+            { "en": "the audience", "sp": "el público", "chunk": true },
+            { "en": "a key takeaway", "sp": "una idea clave", "chunk": true },
+            { "en": "a deadline", "sp": "una fecha límite", "chunk": true },
+            { "en": "a milestone", "sp": "un hito", "chunk": true },
+            { "en": "a launch", "sp": "un lanzamiento", "chunk": true },
+            { "en": "to walk someone through…", "sp": "explicar algo paso a paso", "chunk": true },
+            { "en": "to be on track", "sp": "ir en tiempo", "chunk": true },
+            { "en": "to be behind schedule", "sp": "ir atrasado", "chunk": true }
+          ]
+        }
+      ],
+      "stage": "② GRAMMAR <span class=\"es\">· lo hecho vs. lo cerrado</span>"
+    },
+    {
+      "type": "story",
+      "title": "<ico-star></ico-star> THE PROJECT UPDATE",
+      "intro": "Ana presenta el estado de una app al equipo. Fíjate en cómo <b>cambia de tiempo verbal</b>: perfecto para el estado, pasado para las fechas. Luego <b>escucha</b> dos versiones: la reunión y una presentación corta de Toni.",
+      "cast": [
+        { "en": "Ana", "sp": "presenta el proyecto" },
+        { "en": "Toni", "sp": "escucha y pregunta" }
+      ],
+      "stage": "③ THE STORY <span class=\"es\">· dar un update</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "<ico-pencil></ico-pencil>",
+      "title": "PERFECT OR SIMPLE?",
+      "intro": "Elige la forma correcta. Busca primero la palabra de tiempo.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "We <b class=\"tg\">___</b> the report yesterday.",
+          "options": ["have finished", "finished", "finish"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "I <b class=\"tg\">___</b> you the slides already.",
+          "options": ["have sent", "sending", "send"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "So far this year, we <b class=\"tg\">___</b> two products.",
+          "options": ["launched", "launch", "have launched"],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "She <b class=\"tg\">___</b> the company in 2023.",
+          "options": ["has joined", "joined", "join"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "We <b class=\"tg\">___</b> on a launch date yet.",
+          "options": ["haven't decided", "didn't decide", "don't decided"],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Di 3 cosas que tu equipo <b>has done</b> este mes, y 2 cosas que <b>did</b> la semana pasada. Usa la palabra de tiempo en voz alta.",
+        "starter": "So far this month we have finished the design and we have hired two people. Last week we tested the app…"
+      },
+      "stage": "④ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
+      "title": "RIGHT OR WRONG?",
+      "intro": "Afina el oído para el error más común de todo B1.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "\"We have launched the app last October.\"",
+          "options": ["Incorrect — \"We launched the app last October.\"", "Correct"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "\"I have worked here since 2021.\"",
+          "options": ["Correct", "Incorrect"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál abre bien una presentación?",
+          "options": ["So… yeah. This is my project.", "Good morning, everyone. Today I'd like to talk about the new app.", "Hello. Questions?"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál cierra bien una presentación?",
+          "options": ["That's all, bye.", "I finish now.", "To sum up: we're on track for October. Any questions?"],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "\"The team <b class=\"tg\">___</b> late every day since Monday.\"",
+          "options": ["worked", "has worked", "work"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": ["So", "far", "we", "have", "finished", "the", "design"],
+          "answer": "So far we have finished the design"
+        },
+        {
+          "words": ["We", "started", "the", "project", "in", "March"],
+          "answer": "We started the project in March"
+        },
+        {
+          "words": ["We", "have", "not", "finalized", "the", "budget", "yet"],
+          "answer": "We have not finalized the budget yet"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "EL MISMO TRABAJO, DOS TIEMPOS",
+      "intro": "La misma información en dos frases. Una habla del <b>resultado de hoy</b>; la otra, de un <b>momento cerrado</b>. En un update, elegir mal te hace sonar confuso.",
+      "pair": {
+        "a": "We have finished the design.",
+        "b": "We finished the design in April."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál responde a \"¿cómo vamos?\"",
+          "options": ["A — present perfect", "B — past simple", "Las dos igual"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál necesita una fecha para funcionar?",
+          "options": ["A — present perfect", "Ninguna", "B — past simple"],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Tu jefe pregunta qué hicieron el mes pasado. ¿Qué dices?",
+          "options": ["We have fixed the bug last month.", "We fixed the bug last month.", "We have fix the bug last month."],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Abres el update y quieres dar el estado general. ¿Qué dices?",
+          "options": ["So far we have completed the first two phases.", "So far we completed the first two phases yesterday.", "So far we are completing two phases ago."],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · THE PROJECT UPDATE",
+      "desc": "Ana presenta el estado de la app y Toni pregunta. Fíjate en cuándo usa <b>perfecto</b> y cuándo <b>pasado simple</b>.",
+      "src": "biz-l5-1.mp3",
+      "dur": "0:44",
+      "speakers": "<ico-commentdots></ico-commentdots> Ana + Toni",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What has the team finished so far?",
+          "options": ["The budget and the launch plan", "The design and the first tests", "Nothing — they just started"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What have they NOT finished?",
+          "options": ["The budget", "The design", "The tests"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "When did they fix the delay?",
+          "options": ["Last March", "Two weeks ago", "This morning"],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Eres Ana. Da el update en 30 segundos: qué está hecho, qué falta, y cuándo es el lanzamiento."
+      },
+      "transcript": [
+        { "spk": "Ana", "html": "Good morning, everyone. Thanks for coming. <span class=\"tg\">Today I'd like to talk about</span> the new booking app." },
+        { "spk": "Toni", "html": "Great. How far along are we?", "b": true },
+        { "spk": "Ana", "html": "We <span class=\"tg\">started in March</span>, and <span class=\"tg\">so far we've finished</span> the design and the first tests." },
+        { "spk": "Toni", "html": "<span class=\"tg\">Have you finalized</span> the budget?", "b": true },
+        { "spk": "Ana", "html": "Not yet — we <span class=\"tg\">haven't finalized</span> it. So far we've spent about sixty percent." },
+        { "spk": "Toni", "html": "And the delay we talked about last month?", "b": true },
+        { "spk": "Ana", "html": "We <span class=\"tg\">fixed it two weeks ago</span>. The team <span class=\"tg\">has worked</span> late every day since then." },
+        { "spk": "Ana", "html": "<span class=\"tg\">To sum up</span>: the design is done, the budget isn't final, and we're on track for October. Any questions?" }
+      ],
+      "stage": "⑤ LISTENING <span class=\"es\">· escucha el update</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · THE TWO-MINUTE UPDATE",
+      "desc": "Ahora Toni da su update <b>solo</b>, en veinte segundos. Es exactamente el modelo que vas a producir tú.",
+      "src": "biz-l5-2.mp3",
+      "dur": "0:28",
+      "speakers": "<ico-commentdots></ico-commentdots> Toni",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How many parts does Toni announce at the start?",
+          "options": ["Two", "Three", "He doesn't say"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What has the team already done?",
+          "options": ["Hired the staff", "Signed the location and written the menu", "Opened the café"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What is still missing?",
+          "options": ["The staff", "The menu", "The money"],
+          "answer": 0
+        }
+      ],
+      "transcript": [
+        { "spk": "Toni", "html": "Good morning. <span class=\"tg\">Today I'd like to talk about</span> the new café. <span class=\"tg\">First, I'll cover</span> the location, then the menu, and finally the opening." },
+        { "spk": "Toni", "html": "We <span class=\"tg\">signed the location in June</span>, and <span class=\"tg\">so far we've written</span> the full menu." },
+        { "spk": "Toni", "html": "We <span class=\"tg\">haven't hired</span> the staff <span class=\"tg\">yet</span> — that's this month's priority." },
+        { "spk": "Toni", "html": "<span class=\"tg\">To sum up</span>: the location is signed, the menu is ready, and we open in November. Any questions?" }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> YOUR TWO-MINUTE UPDATE",
+      "intro": "Escribe el <b>guion</b> de tu update: un proyecto real de tu trabajo (o el café de Toni). Usa <b>3 present perfect</b> y <b>2 past simple</b> con su palabra de tiempo.",
+      "checklist": [
+        "Apertura + guion (Today I'd like to talk about… First, I'll cover…)",
+        "<b>3 present perfect</b> (so far we've…) y <b>2 past simple</b> con fecha",
+        "Una cosa que <b>haven't … yet</b>",
+        "Cierre con <b>To sum up…</b> + Any questions?"
+      ],
+      "placeholder": "Good morning. Today I'd like to talk about...",
+      "example": "Good morning. Today I'd like to talk about <span class=\"gap\">___</span>. First, I'll cover <span class=\"gap\">___</span>, then <span class=\"gap\">___</span>. We started <span class=\"gap\">___</span>, and so far we've <span class=\"gap\">___</span>. Last month we <span class=\"gap\">___</span>. We haven't <span class=\"gap\">___</span> yet. To sum up, <span class=\"gap\">___</span>. Any questions?",
+      "exampleLabel": "COMPLETA EL GUION — 3 perfect + 2 simple",
+      "hw": "Escribe el guion y después <b>grábate presentándolo sin leer</b>, 90 segundos. Empieza con un signpost y cierra con \"To sum up…\".",
+      "stage": "⑥ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        { "c": "Tarea completa", "d": "Escribiste el guion completo, con apertura, cuerpo y cierre." },
+        { "c": "Objetivo de la lección", "d": "Usaste <b>present perfect y past simple</b> correctamente al menos <b>5 veces</b>, con sus palabras de tiempo." },
+        { "c": "Se entiende a la primera", "d": "Se entiende sin releer: signposting claro, sin traducir literal del español." }
+      ]
+    }
+  ]
+}

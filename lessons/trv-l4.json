@@ -337,7 +337,7 @@
           "type": "mcq",
           "q": "En A, ¿cuándo desayunaron?",
           "options": [
-            "Antes de que llegó el taxi",
+            "Antes de que llegara el taxi",
             "Durante el viaje",
             "Después de que llegó el taxi"
           ],
@@ -513,7 +513,7 @@
           "d": "Usaste <b>past simple vs. past continuous</b> al menos <b>3 veces</b>, y bien."
         },
         {
-          "c": "Se entiende de una",
+          "c": "Se entiende a la primera",
           "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
         }
       ]

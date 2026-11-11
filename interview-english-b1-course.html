@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English for All · Job Interviews in English (B1 core · B2 stretch)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon-rankup.png">
+<link rel="apple-touch-icon" href="icon-rankup.png">
+<meta name="description" content="Curso de entrevistas de trabajo en inglés (4 lecciones, estilo PPP): preparación y tu historia, las preguntas clave con STAR, las preguntas difíciles y el sueldo, y el cierre y seguimiento. B1 con extensión B2. English for All · Rank Up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danielseoanelopez.github.io/englishforall-campaign/interview-english-b1-course.html">
+<meta property="og:title" content="Job Interviews in English — 4-lesson course (B1 · B2 stretch)">
+<meta property="og:description" content="Preparación, respuestas STAR, preguntas difíciles, sueldo y cierre. Con simulacro completo y rúbrica de evaluación. English for All — Rank Up.">
+<meta property="og:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<meta property="og:site_name" content="English for All">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cyan:#0a8ea6; --magenta:#c31f8f; --purple:#6d3ff0; --gold:#b5791a; --green:#158a52; --red:#c0392b;
+    --ink:#1c2230; --soft:#54607a; --line:#dbe2ef; --bg:#f4f6fb; --card:#ffffff;
+    --stretch-bg:#f6f1ff; --key-bg:#eefaf2; --warm-bg:#fff8ec;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.62; font-size:16.5px; padding:0 0 80px;
+  }
+  .wrap{max-width:900px; margin:0 auto; padding:0 18px;}
+  a{color:var(--cyan);}
+
+  /* ---- Top toolbar ---- */
+  .toolbar{position:sticky; top:0; z-index:40; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:center;
+    background:rgba(244,246,251,0.92); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+    padding:10px 14px; border-bottom:1px solid var(--line);}
+  .toolbar .tt{font-family:"Share Tech Mono",monospace; font-size:0.82rem; color:var(--soft); letter-spacing:1px;}
+  .tbtn{font-family:"Share Tech Mono",monospace; font-size:0.82rem; border:1.5px solid var(--purple); color:var(--purple);
+    background:#fff; border-radius:9px; padding:8px 14px; cursor:pointer; letter-spacing:1px; transition:.15s; white-space:nowrap;}
+  .tbtn:hover{background:#f0eaff;}
+  .tbtn.on{background:#6d2fd0; color:#fff;}
+  .tbtn.print{border-color:var(--cyan); color:#06657a;}
+  .tbtn.print:hover{background:#e6f6f9;}
+  .viewnote{font-family:"Share Tech Mono",monospace; font-size:0.72rem; color:var(--soft);}
+
+  /* ---- Cover ---- */
+  .cover{background:var(--card); border:1px solid var(--line); border-top:6px solid var(--purple);
+    border-radius:16px; padding:30px 30px 26px; margin:26px 0 22px; box-shadow:0 6px 24px #1c223010;}
+  .kicker{font-family:"Press Start 2P",monospace; font-size:0.56rem; letter-spacing:2px; color:var(--magenta);}
+  .cover h1{font-family:"Press Start 2P",monospace; font-size:clamp(1.05rem,3.6vw,1.7rem); line-height:1.5; color:var(--purple); margin:14px 0 10px;}
+  .cover .lead{font-size:1.02rem; color:var(--soft); max-width:60ch;}
+  .badges{display:flex; flex-wrap:wrap; gap:9px; margin:18px 0 6px;}
+  .badge{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; padding:6px 12px; border-radius:20px; border:1.5px solid var(--line); color:var(--ink); background:#fbfcff;}
+  .badge b{color:var(--cyan);}
+  .badge.b1{border-color:var(--cyan); background:#e9f7fa;}
+  .badge.b2{border-color:var(--purple); background:var(--stretch-bg);}
+
+  h2.sec{font-family:"Press Start 2P",monospace; font-size:0.72rem; letter-spacing:1px; color:var(--ink); margin:26px 2px 12px; line-height:1.6;}
+
+  /* ---- Legend / map grids ---- */
+  .legend{display:grid; grid-template-columns:1fr; gap:8px; margin-top:8px;}
+  @media(min-width:640px){ .legend{grid-template-columns:1fr 1fr;} }
+  .leg{display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:10px; padding:9px 12px; background:#fbfcff;}
+  .leg .em{font-size:1.05rem; line-height:1.4;}
+  .leg .lx b{display:block; font-size:0.92rem;}
+  .leg .lx span{font-size:0.84rem; color:var(--soft);}
+
+  .maptable{width:100%; border-collapse:collapse; margin-top:8px; font-size:0.93rem; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .maptable th{background:#f0eefb; text-align:left; padding:10px 12px; font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--soft); border-bottom:1px solid var(--line);}
+  .maptable td{padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  .maptable tr:last-child td{border-bottom:none;}
+  .maptable .ln{font-family:"Press Start 2P",monospace; font-size:0.6rem; color:var(--magenta);}
+
+  /* ---- Lesson blocks ---- */
+  .lesson{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:6px 26px 26px; margin:20px 0; box-shadow:0 4px 18px #1c22300d;}
+  .lesson-head{display:flex; align-items:center; gap:14px; margin:22px 0 6px; padding-bottom:14px; border-bottom:2px solid var(--line);}
+  .lnum{flex-shrink:0; width:52px; height:52px; border-radius:12px; background:var(--purple); color:#fff; font-family:"Press Start 2P",monospace; font-size:0.86rem; display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px #6d3ff044;}
+  .lesson.l2 .lnum{background:var(--magenta);} .lesson.l3 .lnum{background:var(--cyan);} .lesson.l4 .lnum{background:var(--green);}
+  .lesson-head .ttl{font-family:"Press Start 2P",monospace; font-size:0.86rem; line-height:1.5; color:var(--ink);}
+  .lesson-head .es{display:block; font-family:"Share Tech Mono",monospace; font-size:0.8rem; color:var(--soft); margin-top:7px; letter-spacing:.5px;}
+
+  .block{margin-top:20px;}
+  .btag{display:inline-flex; align-items:center; gap:8px; font-family:"Share Tech Mono",monospace; font-size:0.82rem; letter-spacing:1px; text-transform:uppercase; color:var(--soft); border-bottom:1px dashed var(--line); padding-bottom:5px; margin-bottom:10px; width:100%;}
+  .btag .min{margin-left:auto; color:var(--cyan); text-transform:none; font-size:0.78rem;}
+
+  .objective{background:#eefaf6; border:1px solid #bfe6d5; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; font-size:0.98rem;}
+  .objective b{color:var(--green);}
+  .warmup{background:var(--warm-bg); border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px;}
+
+  p{margin:8px 0;}
+  ul, ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
+  .lead-sm{color:var(--soft); font-size:0.95rem;}
+  code, .chip{font-family:"Share Tech Mono",monospace;}
+  .chip{display:inline-block; background:#eaf6f9; color:var(--cyan); border:1px solid #bfe6ee; border-radius:6px; padding:1px 7px; font-size:0.9em;}
+  .ok{color:var(--green); font-weight:600;} .x{color:var(--red); text-decoration:line-through;}
+  .h3{font-weight:700; color:var(--ink); margin:14px 0 4px; font-size:1rem;}
+  .h3 .sm{font-weight:400; color:var(--soft); font-size:0.85rem;}
+
+  /* phrase lists */
+  .phr{list-style:none; margin:6px 0 6px; padding:0;}
+  .phr li{padding:6px 0; border-bottom:1px dashed var(--line);}
+  .phr li:last-child{border-bottom:none;}
+  .phr .en{color:var(--ink);} .phr .sp{color:var(--soft); font-size:0.86rem; display:block;}
+
+  /* glossary / table grids */
+  .grid2{display:grid; grid-template-columns:1fr; gap:10px; margin:8px 0;}
+  @media(min-width:640px){ .grid2{grid-template-columns:1fr 1fr;} }
+  .cell{border:1px solid var(--line); border-radius:10px; padding:11px 14px; background:#fbfcff;}
+  .cell .gh{display:block; font-family:"Share Tech Mono",monospace; font-size:0.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--purple); margin-bottom:6px;}
+  .cell code{color:var(--cyan);}
+  .cell .sp{color:var(--soft); font-style:italic;}
+  .cell .sp::before{content:" — "; font-style:normal;}
+  .vgrid{list-style:none; margin:8px 0 0; padding:0;}
+  .vgrid li{padding:5px 2px; border-bottom:1px dotted var(--line); font-size:0.9rem; line-height:1.45;}
+  .vgrid li:last-child{border-bottom:none;}
+  .vgrid .en{color:var(--ink);}
+
+  table.tb{width:100%; border-collapse:collapse; margin:8px 0; font-size:0.93rem;}
+  table.tb th, table.tb td{border:1px solid var(--line); padding:8px 11px; text-align:left; vertical-align:top;}
+  table.tb th{background:#f3f1fb; font-family:"Share Tech Mono",monospace; font-size:0.76rem; letter-spacing:1px; color:var(--soft);}
+  table.tb td .sp{color:var(--soft); font-size:0.85rem;}
+
+  /* B2 stretch */
+  .stretch{background:var(--stretch-bg); border:1px solid #d9c9ff; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .stretch .st-h{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:6px;}
+  .stretch .st-h::before{content:"";display:inline-block;width:.7em;height:.7em;vertical-align:.05em;background-color:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z'/%3E%3C/svg%3E") no-repeat center/contain;}
+
+  /* listening dialogue */
+  .dialogue{border:1px solid var(--line); border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px; background:#fbfdff;}
+  .dialogue .line{margin:5px 0;}
+  .dialogue .spk{font-weight:700; color:var(--cyan);}
+  .dialogue .spk.b{color:var(--magenta);}
+  .dialogue .tg{background:#fff3d6; border-radius:4px; padding:0 4px;}
+  .qs{margin:10px 0 0 0;}
+  .qs .qn{font-weight:700; color:var(--purple); margin-right:6px;}
+
+  /* answer key */
+  .bridge{background:#eaf6f9; border:1px solid #bfe6ee; border-left:4px solid var(--cyan); border-radius:10px; padding:12px 16px 8px; margin:12px 0;}
+  .bridge .bh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--cyan); text-transform:uppercase; margin-bottom:6px;}
+  .bridge ul{margin:4px 0 4px 18px;} .bridge li{margin:5px 0; font-size:0.95rem;}
+  .key{background:var(--key-bg); border:1px solid #bfe6cf; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .key .kh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--green); text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;}
+  .key .kh::before{content:"";display:inline-block;width:1em;height:1em;vertical-align:-.15em;background-color:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16m-1.3 11.9L6.9 12l1.5-1.5 2.3 2.3 4.9-4.9L17.1 9.4z'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16m-1.3 11.9L6.9 12l1.5-1.5 2.3 2.3 4.9-4.9L17.1 9.4z'/%3E%3C/svg%3E") no-repeat center/contain;}
+  .key ol{margin:4px 0 0 20px;} .key li{margin:3px 0;}
+  .key .alt{color:var(--soft); font-size:0.86rem;}
+
+  /* teacher-only note */
+  .tnote{background:#fff5f8; border:1px dashed var(--magenta); border-radius:10px; padding:10px 14px; margin:12px 0; font-size:0.92rem; color:#7a2d55;}
+  .tnote b{color:var(--magenta);}
+
+  /* scaffold (gapped model) */
+  .scaffold{background:#fbfaff; border:1px solid #e0d8f5; border-radius:10px; padding:12px 16px; font-family:"Share Tech Mono",monospace; font-size:0.95rem; line-height:1.9;}
+  .gap{display:inline-block; min-width:64px; border-bottom:1.5px solid var(--gold); color:var(--gold); text-align:center;}
+  .hw{background:#fff8ec; border:1px solid #f0dfb8; border-left:4px solid var(--gold); border-radius:10px; padding:12px 16px; margin-top:8px;}
+  .hw b{color:var(--gold);}
+
+  /* view toggling */
+  body.student .key, body.student .tnote{display:none !important;}
+
+  footer{max-width:900px; margin:34px auto 0; padding:16px 20px; text-align:center; color:var(--soft); font-size:0.85rem; border-top:1px solid var(--line);}
+  footer b{font-family:"Press Start 2P",monospace; font-size:0.62rem; color:var(--purple); letter-spacing:1px;}
+
+  @media print{
+    body{background:#fff; font-size:11.5pt; padding:0;}
+    .toolbar{display:none;}
+    .lesson, .cover{box-shadow:none; border-color:#ccc; break-inside:avoid;}
+    .lesson{break-before:page;}
+    .cover{break-before:avoid;}
+    a{color:var(--ink); text-decoration:none;}
+  }
+
+.spk-btn>*,.mute-btn>*{margin-right:0;width:62%;height:62%}.btn>ico-play{margin-right:.3em}
+.sw{display:inline-block;width:.85em;height:.85em;border-radius:50%;background:var(--c);border:1px solid #ffffff55;vertical-align:-.1em;margin-right:.28em;box-shadow:0 0 6px var(--c)}
+.lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:.52rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
+</style>
+<link rel="stylesheet" href="assets/icons.css?v=1">
+<style>
+  /* ---- Interview course additions ---- */
+  .lesson.l1 .lnum{background:var(--purple);}
+  .recap{background:#f3f1fb; border:1px solid #d9d2f5; border-left:4px solid var(--purple); border-radius:10px; padding:12px 16px; margin:12px 0;}
+  .recap .rh{font-family:"Share Tech Mono",monospace; font-size:0.78rem; letter-spacing:1px; color:var(--purple); text-transform:uppercase; margin-bottom:6px;}
+  .mailbox{border:1.5px solid var(--line); border-radius:10px; background:#fff; padding:12px 16px; margin:10px 0; font-family:"Share Tech Mono",monospace; font-size:0.93rem; line-height:1.85;}
+  .mailbox .mh{color:var(--purple); letter-spacing:1px; font-size:0.78rem; border-bottom:1px dashed var(--line); padding-bottom:6px; margin-bottom:8px;}
+  .steps{counter-reset:stp; list-style:none; margin:10px 0 0; padding:0;}
+  .steps li{counter-increment:stp; position:relative; padding:8px 0 8px 42px; border-bottom:1px dashed var(--line);}
+  .steps li:last-child{border-bottom:none;}
+  .steps li::before{content:counter(stp); position:absolute; left:0; top:7px; width:26px; height:26px; border-radius:7px; background:var(--purple); color:#fff; font-family:"Press Start 2P",monospace; font-size:0.56rem; display:flex; align-items:center; justify-content:center;}
+  .steps b{display:block; color:var(--ink);}
+  .steps .sp{color:var(--soft); font-size:0.9rem;}
+  .rubric th{background:#f3f1fb;}
+  .rubric td:first-child{font-weight:700;}
+</style>
+<style>@media screen and (max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}}</style>
+</head>
+<body class="teacher">
+
+<div class="toolbar">
+  <span class="tt">VIEW:</span>
+  <button class="tbtn on" id="btnTeacher" onclick="setView('teacher')"><ico-bookopen></ico-bookopen> Teacher (with keys)</button>
+  <button class="tbtn" id="btnStudent" onclick="setView('student')"><ico-user></ico-user> Student (no keys)</button>
+  <button class="tbtn print" onclick="window.print()"><ico-print></ico-print> Print / Save PDF</button>
+  <span class="viewnote" id="viewNote">Answer keys &amp; teacher notes are visible.</span>
+</div>
+
+<div class="wrap">
+
+  <!-- ============== COVER ============== -->
+  <div class="cover">
+    <div class="kicker">ENGLISH FOR ALL · RANK UP · CAREER</div>
+    <h1>JOB INTERVIEWS<br>IN ENGLISH</h1>
+    <p class="lead">Un curso entero para la parte que decide todo: la entrevista. Preparar tu historia, responder las preguntas clave con ejemplos reales, sobrevivir a las incómodas (fracaso, conflicto, sueldo) y cerrar bien. Estilo <b>PPP</b> — Present → Practice → Produce. Las consignas están en inglés; las trampas del español van explicadas en su caja.</p>
+    <div class="badges">
+      <span class="badge b1"><b>B1 core</b></span>
+      <span class="badge b2"><ico-star></ico-star> B2 stretch</span>
+      <span class="badge">4 lecciones · ~55 min c/u</span>
+      <span class="badge">1:1 (ideal) o grupo pequeño</span>
+      <span class="badge"><span class=lang-tag>US</span> American English</span>
+    </div>
+    <p class="lead-sm" style="margin-top:14px">Termina con un <b>simulacro completo grabado</b> y una <b>rúbrica de evaluación</b> de 5 puntos, para que el alumno vea exactamente dónde gana y dónde pierde la entrevista.</p>
+  </div>
+
+  <!-- ============== HOW TO USE ============== -->
+  <h2 class="sec">HOW TO USE THIS COURSE</h2>
+  <p class="lead-sm">Each lesson follows the same rhythm. Use the <b>Teacher / Student</b> toggle at the top: <b>Student view</b> hides the answer keys and teacher notes so you can print or screen-share a clean handout. This course only works with <b>real material</b>: ask the student for a real job ad and their real CV in lesson 1, and interview them for that job all the way through.</p>
+  <div class="legend">
+    <div class="leg"><span class="em"><ico-target></ico-target></span><div class="lx"><b>Objective</b><span>The can-do goal for the lesson.</span></div></div>
+    <div class="leg"><span class="em"><ico-fire></ico-fire></span><div class="lx"><b>Warm-up (5 min)</b><span>Get talking, activate the topic.</span></div></div>
+    <div class="leg"><span class="em"><ico-book></ico-book></span><div class="lx"><b>Present (15 min)</b><span>Language + one structure that works under pressure.</span></div></div>
+    <div class="leg"><span class="em"><ico-pencil></ico-pencil></span><div class="lx"><b>Controlled Practice (15 min)</b><span>Guided exercises. Answers in the <ico-circlecheck></ico-circlecheck> key.</span></div></div>
+    <div class="leg"><span class="em"><ico-headphones></ico-headphones></span><div class="lx"><b>Model Interview</b><span>A real exchange + true/false comprehension.</span></div></div>
+    <div class="leg"><span class="em"><ico-commentdots></ico-commentdots></span><div class="lx"><b>Free Practice (15 min)</b><span>Mock interview with the student's own job ad.</span></div></div>
+    <div class="leg"><span class="em"><ico-star></ico-star></span><div class="lx"><b>B2 Stretch box</b><span>Upgrade phrases for stronger candidates.</span></div></div>
+    <div class="leg"><span class="em"><ico-pin></ico-pin></span><div class="lx"><b>Homework</b><span>A recorded answer or a written piece.</span></div></div>
+  </div>
+
+  <h2 class="sec">COURSE MAP</h2>
+  <table class="maptable">
+    <tr><th style="width:52px">#</th><th>Lesson</th><th>Language focus</th><th>Produce</th></tr>
+    <tr><td class="ln">01</td><td><b>Preparation &amp; Your Story</b></td><td>present perfect · past simple · present for current role</td><td>Your 90-second "Tell me about yourself"</td></tr>
+    <tr><td class="ln">02</td><td><b>The Core Questions &amp; STAR</b></td><td>narrative tenses + linkers (<i>First… Then… As a result…</i>)</td><td>Three 60-second STAR stories</td></tr>
+    <tr><td class="ln">03</td><td><b>Tough Questions &amp; Salary</b></td><td>hypothetical <i>would/could</i> + diplomatic softening</td><td>Weakness, why you left, and your salary range</td></tr>
+    <tr><td class="ln">04</td><td><b>Your Questions, Close &amp; Follow-up</b></td><td>indirect questions + availability (<i>I could start…</i>)</td><td>A full mock interview + thank-you email</td></tr>
+  </table>
+  <div class="tnote"><b>Teacher tip:</b> This is the deep-dive version of lesson 04 of the <a href="job-search-a2b1-course.html">job-hunt course</a> — nothing here repeats it. Assume the student already has a CV and a pitch; the whole course is <b>talking under pressure</b>. Two rules: (1) never stop a mock interview to correct — note it and debrief after; (2) record every mock, because hearing yourself is what changes behavior. The <ico-headphones></ico-headphones> <b>Model Interviews</b> are written to be recorded as audio later.</div>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 1 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l1">
+    <div class="lesson-head">
+      <div class="lnum">01</div>
+      <div><span class="ttl">Preparation &amp; Your Story</span>
+      <span class="es">Preparación y tu historia · Grammar: present perfect vs. past simple vs. presente para el trabajo actual</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-target></ico-target> Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>research a company and a job ad</b>, <b>match their experience to what the ad asks for</b>, and deliver a <b>90-second answer to "Tell me about yourself"</b> built for that specific job.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>When was your last interview? What was the very first question?</li>
+          <li>How much do you research a company before an interview — five minutes, an hour, nothing?</li>
+          <li>Say "Tell me about yourself" out loud right now. We'll record it and compare at the end of the course.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-book></ico-book> Present · Language &amp; Structure <span class="min">15 min</span></span>
+
+      <div class="h3">A · The formats <span class="sm">— know which one you're in</span></div>
+      <table class="tb">
+        <tr><th style="width:34%">English</th><th>What it is <span class="sp">· español</span></th></tr>
+        <tr><td>a screening call / phone screen</td><td>15–20 min con RR.HH. — filtro: experiencia, sueldo, disponibilidad</td></tr>
+        <tr><td>a video interview</td><td>la más común hoy; cámara encendida, 30–45 min</td></tr>
+        <tr><td>a panel interview</td><td>varios entrevistadores a la vez <span class="sp">mira a quien pregunta</span></td></tr>
+        <tr><td>a technical interview / an assessment</td><td>prueba práctica o ejercicio</td></tr>
+        <tr><td>the hiring manager round</td><td>tu futuro jefe: aquí se decide</td></tr>
+        <tr><td>the final round</td><td>última ronda; a veces con el equipo</td></tr>
+      </table>
+
+      <div class="h3">B · Before you even connect <span class="sm">— the five-minute research that shows</span></div>
+      <div class="grid2">
+        <div class="cell"><span class="gh">Know this about them</span>What the company sells, and <b>to whom</b> · one recent piece of news · the <b>top three requirements</b> in the ad · who is interviewing you (LinkedIn) · the salary range in that market</div>
+        <div class="cell"><span class="gh">Have this on your desk</span>The job ad, printed · your CV · <b>three questions</b> to ask them · a glass of water · your phone as backup if the call drops</div>
+      </div>
+
+      <div class="h3">C · Grammar — three tenses, three jobs</div>
+      <table class="tb">
+        <tr><th style="width:26%">Talking about…</th><th style="width:26%">Tense</th><th>Example</th></tr>
+        <tr><td>Your <b>current</b> job</td><td>present simple / continuous</td><td>I <b>work</b> at Delta Support. · I <b>'m currently leading</b> a team of six.</td></tr>
+        <tr><td>Your <b>career so far</b> <span class="sp">sin fecha</span></td><td>present perfect</td><td>I<b>'ve worked</b> in customer service for five years. · I<b>'ve managed</b> teams of up to ten.</td></tr>
+        <tr><td>A <b>finished</b> job or project</td><td>past simple</td><td>At Delta, I <b>managed</b> the night shift. · In 2024 we <b>launched</b> the app.</td></tr>
+      </table>
+      <p class="lead-sm">The pattern that sounds professional: <b>perfect for the headline, past simple for the proof.</b> <i>"I've handled enterprise clients for three years. Last quarter I recovered two accounts worth $40,000."</i></p>
+      <div class="bridge">
+        <div class="bh">Puente al español · lo que te delata en el primer minuto</div>
+        <ul>
+          <li>«Tengo cinco años de experiencia» → <span class="ok">I have five years <b>of</b> experience.</span> <span class="x">I have 5 years working.</span></li>
+          <li>«Actualmente» → <b>currently</b>. <i>Actually</i> significa «en realidad» — si lo usas mal, suena a que corriges al entrevistador.</li>
+          <li>«Tengo 28 años» → <span class="ok">I'm 28.</span> <span class="x">I have 28 years.</span> <span class="sp">(en EE.UU. igual no lo preguntan: es ilegal en la mayoría de los casos)</span></li>
+          <li>«Me dedico a…» → <b>I work in…</b> (área) / <b>I work as a…</b> (puesto).</li>
+          <li>«Asistí a un curso» → <b>I attended</b> a course. <i>Assist</i> = ayudar, no asistir.</li>
+        </ul>
+      </div>
+
+      <div class="h3">D · The 90-second answer <span class="sm">— Now → Then → Strength → Why here</span></div>
+      <ol class="steps">
+        <li><b>NOW · where you are today (20s)</b><span class="sp">"I'm a customer success agent at Delta Support, where I handle about 40 enterprise accounts."</span></li>
+        <li><b>THEN · how you got here (25s, one or two jumps)</b><span class="sp">"I started in retail sales, moved into support three years ago, and took over the enterprise accounts last year."</span></li>
+        <li><b>STRENGTH · what you're known for, with a number (20s)</b><span class="sp">"What I'm known for is keeping difficult accounts — I kept 9 out of 10 at-risk clients last year."</span></li>
+        <li><b>WHY HERE · connect to THIS job (25s)</b><span class="sp">"Your ad says the role is 70% retention for LatAm clients, and that's exactly the work I do best — in both languages."</span></li>
+      </ol>
+      <div class="grid2" style="margin-top:10px">
+        <div class="cell"><span class="gh">If you're changing careers</span>Lead with the <b>transferable</b> skill, not the apology: "I spent six years in hospitality, which is where I learned to handle upset customers — that's the same skill this role needs."</div>
+        <div class="cell"><span class="gh">If it's your first job / there's a gap</span>Be short and factual: "I finished my degree in June and I've been doing freelance projects since then." No apologies, no long story.</div>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch</div>
+        "My background is <b>in</b> logistics." · "I've <b>spent the last three years</b> building…" · "What <b>drew me to</b> this role was…" · "I'm currently <b>leading</b> a small team." · "That's <b>where I do my best work</b>."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Which tense? <span class="sm">— present · present perfect · past simple</span></div>
+      <ol>
+        <li>I ___ (work) at Delta Support since March.</li>
+        <li>I ___ (work) at Delta Support — I started in March.</li>
+        <li>At my previous company, I ___ (manage) a team of four.</li>
+        <li>I ___ (handle) about forty accounts at the moment.</li>
+        <li>I ___ (never / work) in a fully remote team, but I learn fast.</li>
+        <li>Last quarter we ___ (reduce) response time by 30%.</li>
+        <li>I ___ (train) more than twenty new agents in my career.</li>
+        <li>I ___ (study) English every week for two years.</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li><b>have worked / 've been working</b> <span class="alt">(since → perfect)</span></li>
+          <li><b>work</b> <span class="alt">(el trabajo actual, en presente)</span></li>
+          <li><b>managed</b> <span class="alt">(empresa anterior = cerrado)</span></li>
+          <li><b>am handling / handle</b></li>
+          <li><b>have never worked</b></li>
+          <li><b>reduced</b> <span class="alt">(last quarter = cerrado)</span></li>
+          <li><b>have trained</b> <span class="alt">("in my career" = sin fecha)</span></li>
+          <li><b>have studied / 've been studying</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Match the ad to your evidence <span class="sm">— write the letter</span></div>
+      <p class="lead-sm">The ad asks for these five things. Which sentence proves each one?</p>
+      <ol>
+        <li>"Experience with enterprise clients" &nbsp;→&nbsp; ___</li>
+        <li>"Fluent written and spoken English" &nbsp;→&nbsp; ___</li>
+        <li>"Able to work independently" &nbsp;→&nbsp; ___</li>
+        <li>"Strong problem-solving skills" &nbsp;→&nbsp; ___</li>
+        <li>"CRM experience (Salesforce)" &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="cell" style="margin-top:6px"><span class="gh">Your evidence — one fits each</span>
+        <ul style="list-style:none; margin:6px 0 0; padding:0; line-height:1.9">
+          <li>a. I've used Salesforce daily for three years, including building our reports.</li>
+          <li>b. I handle 40 enterprise accounts, the largest worth $80,000 a year.</li>
+          <li>c. I work the night shift alone, so every decision between 10 p.m. and 6 a.m. is mine.</li>
+          <li>d. All my client emails are in English, and I run calls with US clients every week.</li>
+          <li>e. When our billing system failed, I found the error and fixed 30 invoices in one day.</li>
+        </ul>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <p><b>1-b · 2-d · 3-c · 4-e · 5-a</b></p>
+        <p class="alt">The lesson behind it: for <b>every</b> requirement in the ad, have one sentence with a number ready. That's the whole preparation.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-headphones></ico-headphones> Model Interview · the screening call</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Karen (HR):</span> Thanks for making the time, Ana. <span class="tg">Tell me a bit about yourself.</span></p>
+        <p class="line"><span class="spk">Ana:</span> Of course. <span class="tg">I'm a customer success agent at Delta Support</span>, where I handle about forty enterprise accounts.</p>
+        <p class="line"><span class="spk">Ana:</span> <span class="tg">I started in retail sales</span>, moved into support three years ago, and took over the enterprise accounts last year.</p>
+        <p class="line"><span class="spk">Ana:</span> What I'm known for is keeping difficult accounts — <span class="tg">I kept nine out of ten at-risk clients last year.</span></p>
+        <p class="line"><span class="spk">Ana:</span> Your ad says the role is mostly retention for LatAm clients, and <span class="tg">that's exactly the work I do best</span>, in both languages.</p>
+        <p class="line"><span class="spk b">Karen:</span> That's a clear answer, thank you. <span class="tg">What do you know about us?</span></p>
+        <p class="line"><span class="spk">Ana:</span> You sell scheduling software to clinics, mostly in Mexico and Colombia, and <span class="tg">I saw you opened a Bogotá office in March.</span></p>
+        <p class="line"><span class="spk b">Karen:</span> We did. And what's your English like day to day?</p>
+        <p class="line"><span class="spk">Ana:</span> <span class="tg">I can hold a full conversation</span> — like this one. My writing is stronger than my speaking, and I study every week.</p>
+        <p class="line"><span class="spk b">Karen:</span> Good. The next step would be a call with the hiring manager on Thursday.</p>
+      </div>
+      <div class="qs">
+        <p class="lead-sm"><b>True or false?</b> Write T or F — and <b>correct the false ones</b> out loud.</p>
+        <p><span class="qn">1.</span> Ana currently works in retail sales. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">2.</span> She gives a number to prove her strength. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">3.</span> She connects her answer to the job ad. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">4.</span> She hasn't researched the company. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">5.</span> She says her English is perfect. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">6.</span> The next step is a call with the hiring manager. &nbsp;→&nbsp; ___</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · true or false</div>
+        <ol>
+          <li><b>False</b> — she works in <b>customer success</b> now; she <b>started</b> in retail sales.</li>
+          <li><b>True.</b> "I kept nine out of ten at-risk clients last year."</li>
+          <li><b>True.</b> "Your ad says the role is mostly retention for LatAm clients…"</li>
+          <li><b>False</b> — she knows what they sell, where, and about the Bogotá office.</li>
+          <li><b>False</b> — she says she can hold a conversation, that writing is stronger, and that she studies weekly. <span class="alt">Honest + specific beats "my English is perfect".</span></li>
+          <li><b>True.</b> On Thursday.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Build it, then lose the paper.</b> The student writes their four beats against <b>their real job ad</b>, then says it three times:</p>
+      <ul>
+        <li><b>Round 1:</b> reading it. Fix the language here, not later.</li>
+        <li><b>Round 2:</b> four key words only (now / then / strength / why here).</li>
+        <li><b>Round 3:</b> nothing on the desk, timed. Target: <b>75–95 seconds</b>. The tutor asks one follow-up at the end ("Tell me more about that retention number").</li>
+      </ul>
+      <div class="scaffold">
+        I'm a <span class="gap">role</span> at <span class="gap">company</span>, where I <span class="gap">what you do + number</span>. I started in <span class="gap">field</span>, moved into <span class="gap">field</span> <span class="gap">when</span>, and <span class="gap">last step</span>. What I'm known for is <span class="gap">strength</span> — <span class="gap">proof with a number</span>. Your ad says <span class="gap">requirement</span>, and that's <span class="gap">why you fit</span>.
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Time it out loud and say the number afterwards — candidates always think they spoke for 30 seconds when it was two and a half minutes. Over 2 minutes is the most common failure in this answer. Cut the childhood, the degree list, and the family. If the student freezes in round 3, don't rescue them: silence is part of the practice, and "Let me start again" is a perfectly professional thing to say.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pin></ico-pin> Homework</span>
+      <div class="hw"><b>Send two things:</b> the real job ad you want, and a <b>90-second recording</b> of your "Tell me about yourself" built for that ad. Rule: at least one number, and the last sentence must mention something from the ad itself.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 2 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l2">
+    <div class="lesson-head">
+      <div class="lnum">02</div>
+      <div><span class="ttl">The Core Questions &amp; STAR Stories</span>
+      <span class="es">Las preguntas clave y tus historias · Grammar: tiempos del pasado + conectores</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-target></ico-target> Objective</span>
+      <div class="objective">By the end of the lesson, the student can answer the <b>six questions that come up in every interview</b>, and tell a <b>60-second STAR story</b> — a real example with a result, told in <i>I</i>, not <i>we</i>.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>Which question do you dread most? Why that one?</li>
+          <li>Tell me in 20 seconds about a problem you solved at work last month.</li>
+          <li>Did you say "we" or "I" just now? Listen to yourself.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-book></ico-book> Present · Language &amp; Structure <span class="min">15 min</span></span>
+
+      <div class="h3">A · The six questions <span class="sm">— and what they're actually asking</span></div>
+      <table class="tb">
+        <tr><th style="width:44%">The question</th><th>What they really want to know</th></tr>
+        <tr><td><b>Why do you want this job?</b></td><td>Did you read the ad? Will you stay?</td></tr>
+        <tr><td><b>Why should we hire you?</b></td><td>What problem of ours do you solve?</td></tr>
+        <tr><td><b>What are your strengths?</b></td><td>Two strengths <b>with evidence</b>, not adjectives.</td></tr>
+        <tr><td><b>Tell me about a time you…</b></td><td>How you actually behave. This is where STAR lives.</td></tr>
+        <tr><td><b>What are you looking for in your next role?</b></td><td>Does this job match what you want?</td></tr>
+        <tr><td><b>Where do you see yourself in three years?</b></td><td>Ambition that fits <b>their</b> ladder.</td></tr>
+      </table>
+      <p class="lead-sm">Rule of thumb: every answer = <b>one sentence of claim + one example + one number</b>. Adjectives alone ("I'm responsible, proactive and hard-working") prove nothing.</p>
+
+      <div class="h3">B · STAR <span class="sm">— the 60-second story everyone asks for</span></div>
+      <ol class="steps">
+        <li><b>S · Situation — set the scene (10s)</b><span class="sp">"Last year we were launching a new booking system for 200 clinics."</span></li>
+        <li><b>T · Task — your job in it (5s)</b><span class="sp">"I was responsible for moving the fifty biggest accounts."</span></li>
+        <li><b>A · Action — what <u>you</u> did, step by step (30s)</b><span class="sp">"First I called every account and booked a 20-minute walkthrough. Then I built a one-page guide in Spanish. After that, I ran two live sessions a day for a week."</span></li>
+        <li><b>R · Result — how it ended, with a number (15s)</b><span class="sp">"As a result, 48 of the 50 migrated on time, and support tickets dropped by 30% that month."</span></li>
+      </ol>
+
+      <div class="h3">C · Grammar — the tenses a story needs</div>
+      <table class="tb">
+        <tr><th style="width:30%">Tense</th><th style="width:28%">Job in the story</th><th>Example</th></tr>
+        <tr><td><b>past continuous</b><br><span class="sp">was/were + -ing</span></td><td>the background</td><td>We <b>were launching</b> a new system when the problem appeared.</td></tr>
+        <tr><td><b>past simple</b></td><td>the steps you took</td><td>I <b>called</b> every account. · I <b>built</b> a guide. · I <b>ran</b> two sessions a day.</td></tr>
+        <tr><td><b>past perfect</b><br><span class="sp">had + participio</span></td><td>what happened <i>before</i> that</td><td>The client <b>had complained</b> twice before I took over.</td></tr>
+        <tr><td><b>Linkers</b></td><td>the skeleton the listener follows</td><td><b>First</b>… <b>Then</b>… <b>After that</b>… <b>As a result</b>… <b>In the end</b>…</td></tr>
+      </table>
+      <div class="bridge">
+        <div class="bh">Puente al español · la historia se cuenta en «yo»</div>
+        <ul>
+          <li>En español contamos en <b>nosotros</b> por cortesía: «hicimos», «logramos». En una entrevista en inglés eso <b>borra tu aporte</b>. Di <b>I called, I built, I ran</b> — y deja <i>we</i> solo para el contexto.</li>
+          <li>«Estábamos lanzando» → <b>We were launching</b> (past continuous, el fondo). «Llamé» → <b>I called</b> (past simple, la acción).</li>
+          <li>«Logré» → <b>I managed to</b> + verbo, o directamente <b>I</b> + verbo con el resultado. <span class="x">I achieved to call</span></li>
+          <li>«Me encargué de» → <b>I was responsible for</b> + <i>-ing</i>, o mejor: <b>I handled / I led / I ran</b>.</li>
+        </ul>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch</div>
+        "<b>What I took away from that</b> was…" · "<b>In hindsight</b>, I'd have started the calls a week earlier." · "That experience <b>taught me to</b> check the data first." · "I'd <b>handled</b> similar migrations <b>before</b>, so I knew where it usually breaks."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Put the STAR story in order <span class="sm">— write 1–6</span></div>
+      <ol style="list-style:lower-alpha">
+        <li>Then I built a one-page guide in Spanish for the whole team. &nbsp;→&nbsp; ___</li>
+        <li>As a result, 48 of the 50 accounts migrated on time. &nbsp;→&nbsp; ___</li>
+        <li>Last year we were launching a new booking system for 200 clinics. &nbsp;→&nbsp; ___</li>
+        <li>First, I called every account and booked a short walkthrough. &nbsp;→&nbsp; ___</li>
+        <li>I was responsible for moving the fifty biggest accounts. &nbsp;→&nbsp; ___</li>
+        <li>Support tickets also dropped by 30% that month. &nbsp;→&nbsp; ___</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <p><b>c (1 · S) · e (2 · T) · d (3 · A) · a (4 · A) · b (5 · R) · f (6 · R)</b></p>
+        <p class="alt">Notice the shape: two lines of setup, two of action, two of result. If your story has no line 5 or 6, it isn't finished.</p>
+      </div>
+
+      <div class="h3">Activity 2 · Fix the answer <span class="sm">— rewrite in <i>I</i>, and add the number</span></div>
+      <ol>
+        <li>"We improved the customer service a lot."</li>
+        <li>"We had a problem with a client and we solved it."</li>
+        <li>"I'm very organized and responsible."</li>
+        <li>"We trained the new people."</li>
+        <li>"In my last job we sold more than the year before."</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2 — model answers</div>
+        <ol>
+          <li>I <b>rewrote</b> our reply templates, and our response time <b>dropped from 12 hours to 4</b>.</li>
+          <li>A client <b>had waited</b> two weeks for a refund. I <b>called</b> him, <b>issued</b> the refund the same day, and he <b>renewed</b> in March.</li>
+          <li>I <b>track</b> 40 accounts in one sheet and I <b>haven't missed</b> a renewal date in two years.</li>
+          <li>I <b>trained</b> five new agents, and all five <b>passed</b> their first-month review.</li>
+          <li>I <b>closed</b> $120,000 last year — <b>15% more</b> than the year before.</li>
+        </ol>
+        <p class="alt">Accept any version with (a) <i>I</i>, (b) a concrete action and (c) a number or a clear result.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-headphones></ico-headphones> Model Interview · "Tell me about a time…"</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Mark (hiring manager):</span> <span class="tg">Tell me about a time a project didn't go to plan.</span></p>
+        <p class="line"><span class="spk">Ana:</span> Sure. Last year <span class="tg">we were launching</span> a new booking system for 200 clinics.</p>
+        <p class="line"><span class="spk">Ana:</span> <span class="tg">I was responsible for</span> moving the fifty biggest accounts.</p>
+        <p class="line"><span class="spk">Ana:</span> Two weeks in, we found that the data import <span class="tg">had deleted</span> some client histories.</p>
+        <p class="line"><span class="spk">Ana:</span> <span class="tg">First, I called</span> every affected clinic the same morning. <span class="tg">Then I built</span> a one-page recovery guide in Spanish. <span class="tg">After that, I ran</span> two live sessions a day for a week.</p>
+        <p class="line"><span class="spk">Ana:</span> <span class="tg">As a result</span>, 48 of the 50 migrated on time, and support tickets dropped by 30% that month.</p>
+        <p class="line"><span class="spk b">Mark:</span> What would you do differently?</p>
+        <p class="line"><span class="spk">Ana:</span> <span class="tg">In hindsight</span>, I'd have tested the import with five accounts before running all fifty.</p>
+        <p class="line"><span class="spk b">Mark:</span> That's the answer I was hoping for.</p>
+      </div>
+      <div class="qs">
+        <p class="lead-sm"><b>True or false?</b> Write T or F — and <b>correct the false ones</b> out loud.</p>
+        <p><span class="qn">1.</span> Ana was in charge of all 200 clinics. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">2.</span> The problem was that some client histories were deleted. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">3.</span> She describes three concrete actions. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">4.</span> She gives two numbers in the result. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">5.</span> She blames the IT team for the error. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">6.</span> She says what she would change next time. &nbsp;→&nbsp; ___</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · true or false</div>
+        <ol>
+          <li><b>False</b> — she was responsible for the <b>fifty biggest accounts</b>.</li>
+          <li><b>True.</b> "The data import had deleted some client histories."</li>
+          <li><b>True.</b> Called every clinic → built a guide → ran two sessions a day.</li>
+          <li><b>True.</b> 48 of 50 on time, and tickets down 30%.</li>
+          <li><b>False</b> — she never blames anyone. <span class="alt">Blaming is the fastest way to lose a behavioral question.</span></li>
+          <li><b>True.</b> "In hindsight, I'd have tested the import with five accounts first."</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>Three stories, 60 seconds each.</b> The student prepares one story for each prompt, then tells it while the tutor times it and holds up the missing letter — <b>S</b>, <b>T</b>, <b>A</b> or <b>R</b> — the moment it's skipped.</p>
+      <ul>
+        <li>Tell me about a time you <b>solved a difficult problem</b>.</li>
+        <li>Tell me about a time you <b>disagreed with someone</b> at work.</li>
+        <li>Tell me about something you're <b>proud of</b>.</li>
+      </ul>
+      <div class="scaffold">
+        <b>S:</b> Last <span class="gap">when</span>, we were <span class="gap">-ing background</span>. &nbsp;<b>T:</b> I was responsible for <span class="gap">your part</span>. &nbsp;<b>A:</b> First I <span class="gap">verb</span>, then I <span class="gap">verb</span>, after that I <span class="gap">verb</span>. &nbsp;<b>R:</b> As a result, <span class="gap">number / outcome</span>.
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Nine out of ten learners stop after the Action — they never say how it ended, because in Spanish the result is often implied. Hold up the <b>R</b> card and wait; don't prompt in words. Second thing to hunt: stories told in <i>we</i>. A useful jolt is to ask "And what did <b>you</b> do while that was happening?" Keep the three stories — they get reused in lesson 04's full mock.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pin></ico-pin> Homework</span>
+      <div class="hw"><b>Write</b> your three STAR stories (about 80 words each) and <b>record one</b> of them, aiming for 60 seconds. Each one must end with a number or a clear outcome — if you can't find one, pick a different story.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 3 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l3">
+    <div class="lesson-head">
+      <div class="lnum">03</div>
+      <div><span class="ttl">Tough Questions &amp; Salary</span>
+      <span class="es">Las preguntas incómodas y el sueldo · Grammar: <i>would / could</i> hipotético + lenguaje diplomático</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-target></ico-target> Objective</span>
+      <div class="objective">By the end of the lesson, the student can handle the <b>uncomfortable questions</b> — weakness, failure, conflict, why you left, gaps — and <b>talk about money</b> with a range instead of a panic answer.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>What's the worst question you've ever been asked in an interview?</li>
+          <li>Is it rude to talk about salary where you live? What happens if you don't?</li>
+          <li>Finish this sentence honestly: "My biggest weakness at work is…"</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-book></ico-book> Present · Language &amp; Structure <span class="min">15 min</span></span>
+
+      <div class="h3">A · The tough six <span class="sm">— and the shape of a safe answer</span></div>
+      <table class="tb">
+        <tr><th style="width:38%">The question</th><th>The shape that works</th></tr>
+        <tr><td><b>What's your biggest weakness?</b></td><td>Something <b>real</b> + what you <b>do about it</b>. Never a fake strength.</td></tr>
+        <tr><td><b>Tell me about a failure.</b></td><td>Own it in one line → what you changed → what happened next.</td></tr>
+        <tr><td><b>Tell me about a conflict with a manager.</b></td><td>Calm + how it was <b>resolved</b>. Never badmouth anyone.</td></tr>
+        <tr><td><b>Why did you leave / why the gap?</b></td><td>One honest sentence, no drama, then forward: "and what I'm looking for now is…"</td></tr>
+        <tr><td><b>You seem over/under-qualified.</b></td><td>Name it, then give the reason it works for both sides.</td></tr>
+        <tr><td><b>What are your salary expectations?</b></td><td>A <b>range</b> + "what's the range for this role?"</td></tr>
+      </table>
+      <div class="grid2">
+        <div class="cell"><span class="gh">Weakness — the pattern</span>"I <b>used to</b> take on too much and then miss small deadlines. Now I <b>block</b> my calendar and I <b>tell</b> my manager what I'm dropping. It hasn't happened in a year."<br><span class="x">"I'm a perfectionist."</span> <span class="sp">nadie lo cree</span></div>
+        <div class="cell"><span class="gh">Why you left — the pattern</span>"The company reduced the support team, and my role went with it." · "I'd learned everything that role could teach me, and I wanted enterprise clients."<br><span class="x">"My boss was terrible."</span> <span class="sp">siempre juega en tu contra</span></div>
+      </div>
+
+      <div class="h3">B · Money <span class="sm">— the two sentences to memorize</span></div>
+      <div class="mailbox">
+        <div class="mh">SALARY · YOUR SCRIPT</div>
+        "Based on my research for this kind of role, <b>I'm looking at a range between X and Y</b>.<br>
+        <b>Could you tell me what the range is for this position?</b>"<br><br>
+        If they push first: "<b>I'd rather hear the range you have budgeted</b> — I'm flexible for the right opportunity."
+      </div>
+      <p class="lead-sm"><span class=lang-tag>US</span> In the US salary is usually discussed <b>per year</b> ($45,000 a year), and in many states the company must publish the range — check the ad before you answer. For remote contractor roles it's often <b>per hour</b> or per month.</p>
+
+      <div class="h3">C · Grammar — hypothetical and diplomatic language</div>
+      <table class="tb">
+        <tr><th style="width:40%">Structure</th><th>Example</th></tr>
+        <tr><td><b>would / 'd</b> for hypothetical questions</td><td>What <b>would</b> you do if a client shouted at you? — I<b>'d</b> listen first, then offer two options.</td></tr>
+        <tr><td><b>It would depend on…</b></td><td>It <b>would depend on</b> how urgent the other task was.</td></tr>
+        <tr><td><b>I'd say / I'd probably</b> <span class="sp">suaviza</span></td><td><b>I'd say</b> my main strength is… · <b>I'd probably</b> start by asking my manager.</td></tr>
+        <tr><td><b>I tend to…</b> <span class="sp">habla de tu patrón</span></td><td>I <b>tend to</b> over-prepare, which is usually good and sometimes slow.</td></tr>
+        <tr><td><b>should have / would have</b> <span class="sp">reflexión</span></td><td>I <b>should have</b> asked earlier. · <b>In hindsight</b> I <b>would have</b> tested it first.</td></tr>
+      </table>
+      <div class="bridge">
+        <div class="bh">Puente al español · las que suenan mal sin que te des cuenta</div>
+        <ul>
+          <li>«Estoy de acuerdo» → <span class="ok">I agree.</span> <span class="x">I am agree.</span> · «No estoy de acuerdo» → <span class="ok">I disagree</span> / <span class="ok">I see it differently.</span></li>
+          <li>«Depende» → <span class="ok">It depends <b>on</b> the situation.</span> <span class="x">It depends of…</span></li>
+          <li>«Renuncié» → <span class="ok">I resigned</span> / <span class="ok">I left.</span> <span class="x">I renounced.</span> · «Me despidieron» → <b>I was laid off</b> (por recorte) / <b>I was let go</b>.</li>
+          <li>«Sensible» → <b>sensitive</b>. <i>Sensible</i> en inglés significa <b>sensato</b> — decir "I'm very sensible" suena raro, no sentimental.</li>
+          <li>«Molesto» → <b>annoyed / upset</b>. <i>Molested</i> es gravísimo: nunca lo uses.</li>
+        </ul>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch</div>
+        "<b>I'd rather not go into detail</b>, but the short version is…" · "That's <b>something I'm actively working on</b>." · "<b>My understanding is</b> that the range for this role is…" · "<b>I'm flexible for the right opportunity</b>, but I wouldn't go below X." · "<b>That's a fair question</b> — let me give you a concrete example."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Good answer or bad answer? <span class="sm">— and why</span></div>
+      <ol>
+        <li>"My biggest weakness is that I work too hard."</li>
+        <li>"I left because my manager never listened to anyone."</li>
+        <li>"I used to miss small deadlines when I took on too much. Now I block my calendar and flag it early."</li>
+        <li>"Salary? Whatever you think is fair."</li>
+        <li>"I don't have experience with Salesforce, but I learned Zendesk in two weeks and I'd do the same here."</li>
+        <li>"We had a conflict, but honestly it was his fault."</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li><b>Bad</b> — fake weakness. Nobody believes it, and it wastes the question.</li>
+          <li><b>Bad</b> — badmouthing. The interviewer imagines you saying it about them next year.</li>
+          <li><b>Good</b> — real, plus the fix, plus evidence it's under control.</li>
+          <li><b>Bad</b> — you lose money and look unprepared. Give a range and ask for theirs.</li>
+          <li><b>Good</b> — admits the gap and replaces it with proof of fast learning.</li>
+          <li><b>Bad</b> — blame. Say what <b>you</b> did to resolve it instead.</li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Make it diplomatic <span class="sm">— rewrite each line</span></div>
+      <ol>
+        <li>"No, that's wrong." <i>(disagreeing with the interviewer)</i></li>
+        <li>"I hated my last job."</li>
+        <li>"I don't know."</li>
+        <li>"I want at least $2,000 a month, that's final."</li>
+        <li>"That's impossible in two weeks."</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2 — model answers</div>
+        <ol>
+          <li>"<b>I see it differently</b> — in my experience, the refunds usually come from billing, not shipping."</li>
+          <li>"<b>It wasn't the right fit for me</b> long term. What I'm looking for now is…"</li>
+          <li>"<b>I'm not sure</b> — but here's how I'd find out: …" <span class="alt">nunca "I don't know" a secas</span></li>
+          <li>"<b>I'm looking at a range</b> between $2,000 and $2,400, and <b>I'm flexible for the right opportunity</b>. What's the range for this role?"</li>
+          <li>"<b>That would be tight.</b> I <b>could</b> deliver the core features in two weeks, and the rest the following week — <b>would that work</b>?"</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-headphones></ico-headphones> Model Interview · the uncomfortable round</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Mark:</span> <span class="tg">What would you say is your biggest weakness?</span></p>
+        <p class="line"><span class="spk">Ana:</span> I <span class="tg">used to take on</span> too much and then miss small deadlines. Now I block my calendar and I tell my manager early what I'm dropping. It hasn't happened in about a year.</p>
+        <p class="line"><span class="spk b">Mark:</span> And why did you leave your previous company?</p>
+        <p class="line"><span class="spk">Ana:</span> They reduced the support team, and my role went with it. <span class="tg">What I'm looking for now</span> is a place where I can stay with enterprise accounts.</p>
+        <p class="line"><span class="spk b">Mark:</span> <span class="tg">What would you do</span> if a client shouted at you on a call?</p>
+        <p class="line"><span class="spk">Ana:</span> I<span class="tg">'d listen</span> first without interrupting, then apologize for the situation, and offer two concrete options. <span class="tg">It would depend on</span> what went wrong, but I never argue on the call.</p>
+        <p class="line"><span class="spk b">Mark:</span> Fair. <span class="tg">What are your salary expectations?</span></p>
+        <p class="line"><span class="spk">Ana:</span> Based on my research for this kind of role, <span class="tg">I'm looking at a range between $1,800 and $2,200 a month</span>. <span class="tg">Could you tell me the range</span> for this position?</p>
+        <p class="line"><span class="spk b">Mark:</span> We budgeted $1,700 to $2,000.</p>
+        <p class="line"><span class="spk">Ana:</span> That works for me, and <span class="tg">I'm flexible for the right opportunity</span> — I'd want to understand the review cycle.</p>
+      </div>
+      <div class="qs">
+        <p class="lead-sm"><b>True or false?</b> Write T or F — and <b>correct the false ones</b> out loud.</p>
+        <p><span class="qn">1.</span> Ana says her weakness is being a perfectionist. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">2.</span> She explains what she does now to control that weakness. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">3.</span> She left her last job because of a fight with her manager. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">4.</span> For the angry client, her first step is to apologize. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">5.</span> She gives a salary range and asks for theirs. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">6.</span> Their range is higher than hers. &nbsp;→&nbsp; ___</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · true or false</div>
+        <ol>
+          <li><b>False</b> — she says she <b>used to take on too much and miss small deadlines</b>. A real one.</li>
+          <li><b>True.</b> She blocks her calendar and tells her manager early.</li>
+          <li><b>False</b> — the support team was <b>reduced</b> and her role went with it.</li>
+          <li><b>False</b> — first she <b>listens without interrupting</b>; the apology comes second.</li>
+          <li><b>True.</b> $1,800–$2,200, then "Could you tell me the range?"</li>
+          <li><b>False</b> — theirs is slightly <b>lower</b> ($1,700–$2,000). <span class="alt">Por eso se da un rango: el suyo empieza donde el de ellos termina, y la conversación sigue.</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · Produce <span class="min">15 min</span></span>
+      <p><b>The hot seat.</b> Six tough questions, fired one after another, no pauses to prepare. The tutor keeps a straight face and says nothing between answers — the silence is part of the test.</p>
+      <ol>
+        <li>What's your biggest weakness?</li>
+        <li>Why did you leave your last job?</li>
+        <li>Tell me about a time you failed.</li>
+        <li>What would you do if you disagreed with your manager's decision?</li>
+        <li>You don't have experience with our software. Why should we hire you?</li>
+        <li>What are your salary expectations?</li>
+      </ol>
+      <p><b>Then swap:</b> the student interviews the tutor with the same six, and grades the answers. Judging someone else's answer is the fastest way to hear your own.</p>
+      <div class="scaffold">
+        I used to <span class="gap">weakness</span>, so now I <span class="gap">what you do about it</span>. &nbsp;·&nbsp; I<span class="gap">'d</span> <span class="gap">first step</span>, and then <span class="gap">second step</span>. It would depend on <span class="gap">factor</span>. &nbsp;·&nbsp; I'm looking at a range between <span class="gap">X</span> and <span class="gap">Y</span>. Could you tell me the range for this role?
+      </div>
+      <div class="tnote"><b>Teacher note:</b> Don't soften the hot seat — the discomfort is the point, and it's far cheaper here than in the real interview. Three things to catch: blame (any version of "it was their fault"), the fake weakness, and going silent on salary. If the student freezes, teach the time-buying phrase and make them use it out loud: <i>"That's a fair question — let me think for a second."</i> Two seconds of silence sounds thoughtful; ten sounds lost.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pin></ico-pin> Homework</span>
+      <div class="hw"><b>Write</b> your answers to three questions — your real weakness, why you left (or why you're looking), and your salary range with the research behind it. Then <b>record the salary answer</b>: it's the one people rush, and it's the one worth money.</div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- ============================ LESSON 4 ============================== -->
+  <!-- ==================================================================== -->
+  <section class="lesson l4">
+    <div class="lesson-head">
+      <div class="lnum">04</div>
+      <div><span class="ttl">Your Questions, the Close &amp; Follow-up</span>
+      <span class="es">Tus preguntas, el cierre y el seguimiento · Grammar: preguntas indirectas + disponibilidad</span></div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-target></ico-target> Objective</span>
+      <div class="objective">By the end of the lesson, the student can <b>ask questions that improve their odds</b>, <b>close the interview deliberately</b>, <b>send the thank-you email</b>, and answer the offer questions (start date, notice, next steps).</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-fire></ico-fire> Warm-up <span class="min">5 min</span></span>
+      <div class="warmup">
+        <ul>
+          <li>"Do you have any questions for us?" — what did you answer the last time?</li>
+          <li>Have you ever sent a thank-you email after an interview? Do people do it where you live?</li>
+          <li>How soon could you actually start a new job — honestly?</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-book></ico-book> Present · Language &amp; Structure <span class="min">15 min</span></span>
+
+      <div class="h3">A · Questions that make you look like the hire <span class="sm">— pick three, never zero</span></div>
+      <table class="tb">
+        <tr><th style="width:30%">About…</th><th>Ask</th></tr>
+        <tr><td><b>The role</b></td><td>What does success look like in the first 90 days? · What does a typical week look like?</td></tr>
+        <tr><td><b>The team</b></td><td>How is the team structured? · Who would I work with most closely?</td></tr>
+        <tr><td><b>The measure</b></td><td>How do you measure success in this position?</td></tr>
+        <tr><td><b>The honest one</b></td><td>What's the hardest part of this job? <span class="sp">se responde con la verdad y te da información real</span></td></tr>
+        <tr><td><b>The process</b></td><td>What are the next steps? · When can I expect to hear back?</td></tr>
+        <tr><td><b>The closing one</b> <ico-star></ico-star></td><td>Is there anything about my experience you'd like me to expand on? <span class="sp">te da la última oportunidad de arreglar una duda</span></td></tr>
+      </table>
+      <p class="lead-sm"><b>Never ask</b> what a 30-second search would answer ("What does the company do?"), and don't open with vacation days — save benefits for the offer conversation.</p>
+
+      <div class="h3">B · Grammar — indirect questions and availability</div>
+      <table class="tb">
+        <tr><th style="width:44%">Direct <span class="sp">correcta pero seca</span></th><th>Indirect <span class="sp">para la entrevista</span></th></tr>
+        <tr><td>How is the team structured?</td><td><b>Could you tell me</b> how the team <b>is</b> structured?</td></tr>
+        <tr><td>When do you decide?</td><td><b>Do you know</b> when you'<b>ll</b> be making a decision?</td></tr>
+        <tr><td>Is the role remote?</td><td><b>I was wondering whether</b> the role <b>is</b> fully remote.</td></tr>
+        <tr><td colspan="2"><b>Availability:</b> I<b>'m available</b> from May 2. · I<b>'d need to give</b> two weeks' notice. · I <b>could start</b> immediately. · I<b>'m currently interviewing</b> with one other company. <span class="sp">honesto y sube tu valor, si es verdad</span></td></tr>
+      </table>
+
+      <div class="h3">C · The close <span class="sm">— the last 60 seconds are yours</span></div>
+      <ol class="steps">
+        <li><b>Ask your two or three questions</b><span class="sp">"Could you tell me what success looks like in the first 90 days?"</span></li>
+        <li><b>Say you want it — out loud</b><span class="sp">"Having heard the details, I'm even more interested in this role."</span></li>
+        <li><b>Offer to clear up any doubt</b><span class="sp">"Is there anything about my experience you'd like me to expand on?"</span></li>
+        <li><b>Confirm the next step and the timeline</b><span class="sp">"What are the next steps, and when can I expect to hear back?"</span></li>
+      </ol>
+
+      <div class="h3">D · The thank-you email <span class="sm">— same day, four lines</span></div>
+      <div class="mailbox">
+        <div class="mh">SUBJECT: THANK YOU — CUSTOMER SUCCESS INTERVIEW (ANA RÍOS)</div>
+        Dear Mark,<br><br>
+        Thank you for your time today. I enjoyed hearing about the migration you're planning for the LatAm clinics.<br>
+        Our conversation made me more interested in the role — the retention work is exactly what I do best, and I'd be glad to walk you through my numbers in more detail.<br>
+        Please let me know if you need anything else from me.<br><br>
+        Best regards,<br>
+        Ana Ríos
+      </div>
+      <p class="lead-sm">One concrete detail from the conversation is what makes it land. A generic thank-you is forgettable; "the migration for the LatAm clinics" proves you listened.</p>
+      <div class="grid2">
+        <div class="cell"><span class="gh">No answer after a week?</span>"I'm following up on our interview last Tuesday. I'm still very interested, and I'd be happy to answer any questions." <span class="sp">una vez. Si no contestan, otra a las dos semanas. Nunca una tercera.</span></div>
+        <div class="cell"><span class="gh">If they say no</span>"Thank you for letting me know. I enjoyed the conversation — if something opens up on your team later, I'd be glad to talk again." <span class="sp">la puerta abierta trae trabajo meses después</span></div>
+      </div>
+      <div class="cell" style="margin-top:10px"><span class="gh"><ico-warn></ico-warn> Video-call checklist — 10 minutes before</span>
+        Test the link · light <b>in front</b> of you, not behind · camera at eye level · plain background · headphones · phone as backup and their number to hand · job ad, CV and your three questions <b>on paper</b> · and know the phrase for when it breaks: <b>"Sorry, you're breaking up — could you repeat that?"</b>
+      </div>
+      <div class="bridge">
+        <div class="bh">Puente al español · el cierre y el después</div>
+        <ul>
+          <li>«Quedo atento a su respuesta» → <span class="ok">I look forward to hearing from you.</span> <span class="x">I stay attentive.</span></li>
+          <li>«¿Cuándo me avisan?» → <span class="ok">When can I expect to hear back?</span> — es una pregunta normal y correcta, no insistente.</li>
+          <li>«Preaviso» → <b>notice period</b>: "I'd need to give two weeks' notice."</li>
+          <li>«Me interesa mucho el puesto» → <span class="ok">I'm very interested in this role.</span> Decirlo en voz alta <b>sí cambia decisiones</b>: en EE.UU. se espera que lo digas, no que se sobreentienda.</li>
+          <li>El <b>thank-you email</b> casi no se usa en Latinoamérica y en EE.UU. se espera el mismo día. Es gratis y te distingue.</li>
+        </ul>
+      </div>
+      <div class="stretch">
+        <div class="st-h">B2 stretch</div>
+        "I'd <b>welcome the opportunity</b> to…" · "Could you <b>share what the next steps look like</b>?" · "<b>Just to make sure I understood</b> — the role reports to you directly?" · "I'm <b>weighing a couple of options</b>, so a timeline would help." · "<b>Thank you for the candid answer</b>."
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pencil></ico-pencil> Controlled Practice <span class="min">15 min</span></span>
+
+      <div class="h3">Activity 1 · Good question or bad question?</div>
+      <ol>
+        <li>"What does your company do exactly?"</li>
+        <li>"What does success look like in the first 90 days?"</li>
+        <li>"How many vacation days do I get?"</li>
+        <li>"What's the hardest part of this job?"</li>
+        <li>"Did I get the job?"</li>
+        <li>"Is there anything about my experience you'd like me to expand on?"</li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 1</div>
+        <ol>
+          <li><b>Bad</b> — that's on their homepage. It says you didn't prepare.</li>
+          <li><b>Good</b> — shows you're already thinking about doing the work.</li>
+          <li><b>Bad</b> <span class="alt">now</span> — perfectly fine once there's an offer.</li>
+          <li><b>Good</b> — honest answers here tell you what you're signing up for.</li>
+          <li><b>Bad</b> — puts them on the spot. Ask about <b>next steps and timeline</b> instead.</li>
+          <li><b>Good</b> — your last chance to fix a doubt they haven't said out loud.</li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 2 · Complete the thank-you email</div>
+      <div class="mailbox">
+        Dear Mark,<br><br>
+        Thank you ___ (1) your time today. I enjoyed ___ (2) about the migration you're planning.<br>
+        Our conversation made me ___ (3) interested in the role — the retention work is exactly what I ___ (4) best.<br>
+        Please ___ (5) me know if you need anything else.<br><br>
+        ___ (6) regards,<br>
+        Ana Ríos
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · Activity 2</div>
+        <ol>
+          <li><b>for</b></li><li><b>hearing</b> <span class="alt">(enjoy + -ing)</span></li><li><b>more</b> <span class="alt">(o: even more)</span></li><li><b>do</b></li><li><b>let</b></li><li><b>Best</b></li>
+        </ol>
+      </div>
+
+      <div class="h3">Activity 3 · Make the question indirect</div>
+      <ol>
+        <li>How is the team structured? <i>(Could you tell me…)</i></li>
+        <li>When will you decide? <i>(Do you know…)</i></li>
+        <li>Is the role fully remote? <i>(I was wondering…)</i></li>
+        <li>What are the next steps? <i>(Could you tell me…)</i></li>
+      </ol>
+      <div class="key">
+        <div class="kh">Answer key · Activity 3</div>
+        <ol>
+          <li>Could you tell me <b>how the team is structured</b>?</li>
+          <li>Do you know <b>when you'll be making a decision</b>?</li>
+          <li>I was wondering <b>whether / if the role is fully remote</b><b>.</b> <span class="alt">punto, no signo de pregunta</span></li>
+          <li>Could you tell me <b>what the next steps are</b>?</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-headphones></ico-headphones> Model Interview · the last five minutes</span>
+      <div class="dialogue">
+        <p class="line"><span class="spk b">Mark:</span> We're almost out of time. <span class="tg">Do you have any questions for us?</span></p>
+        <p class="line"><span class="spk">Ana:</span> Yes, three. <span class="tg">Could you tell me what success looks like</span> in the first 90 days?</p>
+        <p class="line"><span class="spk b">Mark:</span> Keeping the renewal rate above 85% and learning our product properly.</p>
+        <p class="line"><span class="spk">Ana:</span> That's clear, thank you. And <span class="tg">what's the hardest part of this job?</span></p>
+        <p class="line"><span class="spk b">Mark:</span> Honestly? The clinics are small and busy, so people don't answer the phone.</p>
+        <p class="line"><span class="spk">Ana:</span> That I know well — it's why I book walkthroughs by message first. <span class="tg">Having heard the details, I'm even more interested</span> in this role.</p>
+        <p class="line"><span class="spk">Ana:</span> <span class="tg">Is there anything about my experience you'd like me to expand on?</span></p>
+        <p class="line"><span class="spk b">Mark:</span> Good question — maybe how you handle a client who wants a discount.</p>
+        <p class="line"><span class="spk">Ana:</span> I never lead with price. I ask what's not working, fix that first, and offer terms instead of a discount when I can.</p>
+        <p class="line"><span class="spk b">Mark:</span> Perfect. We'll be in touch.</p>
+        <p class="line"><span class="spk">Ana:</span> <span class="tg">Could you tell me what the next steps are</span>, and when I can expect to hear back?</p>
+        <p class="line"><span class="spk b">Mark:</span> A final call with my director, and we'll email you by Friday.</p>
+      </div>
+      <div class="qs">
+        <p class="lead-sm"><b>True or false?</b> Write T or F — and <b>correct the false ones</b> out loud.</p>
+        <p><span class="qn">1.</span> Ana asks about vacation days. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">2.</span> Success in 90 days means keeping renewals above 85%. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">3.</span> Mark says the hardest part is the software. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">4.</span> Ana states clearly that she wants the job. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">5.</span> Her closing question gives Mark a chance to raise a doubt. &nbsp;→&nbsp; ___</p>
+        <p><span class="qn">6.</span> She leaves without knowing the timeline. &nbsp;→&nbsp; ___</p>
+      </div>
+      <div class="key">
+        <div class="kh">Answer key · true or false</div>
+        <ol>
+          <li><b>False</b> — she asks about the first 90 days, the hardest part, and the next steps.</li>
+          <li><b>True.</b> Above 85%, plus learning the product.</li>
+          <li><b>False</b> — it's that <b>the clinics are busy and don't answer the phone</b>.</li>
+          <li><b>True.</b> "Having heard the details, I'm even more interested in this role."</li>
+          <li><b>True</b> — and it works: Mark raises the discount question, and she answers it.</li>
+          <li><b>False</b> — a final call with the director, and an email <b>by Friday</b>.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-commentdots></ico-commentdots> Free Practice · the full mock <span class="min">15 min</span></span>
+      <p><b>The whole thing, start to finish, recorded.</b> Use the student's real job ad. No stopping, no corrections, no restarts — 10 to 12 minutes:</p>
+      <ol>
+        <li>Tell me about yourself. <span class="sp">lesson 01</span></li>
+        <li>Why do you want this job?</li>
+        <li>Tell me about a time something went wrong. <span class="sp">lesson 02, STAR</span></li>
+        <li>What's your biggest weakness? <span class="sp">lesson 03</span></li>
+        <li>What are your salary expectations? <span class="sp">lesson 03</span></li>
+        <li>Do you have any questions for us? <span class="sp">lesson 04</span></li>
+      </ol>
+      <p>Then score it together with the rubric below, and pick <b>one</b> thing to fix before the real interview.</p>
+      <table class="tb rubric">
+        <tr><th style="width:26%">What we score</th><th style="width:37%">1–2 · not yet</th><th>4–5 · ready</th></tr>
+        <tr><td>Structure</td><td>Answers wander or stop after one line.</td><td>Every answer has a shape: 4 beats, or S–T–A–R.</td></tr>
+        <tr><td>Evidence</td><td>Adjectives only: "responsible, proactive".</td><td>Numbers and named examples in at least four answers.</td></tr>
+        <tr><td>Ownership</td><td>Tells stories in <i>we</i>; blames others.</td><td>Says <b>I</b> did, owns the mistake, no blame.</td></tr>
+        <tr><td>Language</td><td>Breaks down under pressure; long silences.</td><td>Simple, correct sentences; buys time out loud when needed.</td></tr>
+        <tr><td>Close</td><td>"No questions." Ends flat.</td><td>Asks two or three, states interest, confirms next steps.</td></tr>
+      </table>
+      <div class="tnote"><b>Teacher note:</b> Record it — audio is enough — and send it to the student with the scores. The debrief that works: <b>three things that were genuinely good, then one</b> to change. Not five. Candidates who hear five fixes change nothing; one gets practised. If the score is 1–2 on Ownership, that's always the first fix — it's the one interviewers punish hardest and the one the student can change fastest.</div>
+    </div>
+
+    <div class="block">
+      <span class="btag"><ico-pin></ico-pin> Homework · course finale</span>
+      <div class="hw"><b>Two things.</b> (1) Record the full mock again at home, alone, with the camera on — watch it once, and write down the single thing you'd change. (2) Write the <b>thank-you email</b> for the interview you just practised: four lines, and one concrete detail from the conversation.</div>
+    </div>
+  </section>
+
+  <div class="recap">
+    <div class="rh">Course complete</div>
+    Four lessons, and the student walks out with a <b>90-second story</b>, <b>three STAR examples</b>, an answer for <b>weakness, why you left and salary</b>, a set of <b>questions to ask</b>, and a <b>thank-you email</b> — plus a recording of themselves doing all of it under pressure. Natural next steps: <a href="job-search-a2b1-course.html">English for the Job Hunt</a> if the CV and the application email still need work, or <a href="business-english-b1-course.html">Business English B1–B2</a> for the first months on the job.
+  </div>
+
+</div><!-- /wrap -->
+
+<footer>
+  <b>ENGLISH for ALL</b><br>
+  Job Interviews in English · B1 core · <ico-star></ico-star> B2 stretch · 4-lesson PPP course · Rank Up career track
+</footer>
+
+<script>
+  function setView(mode){
+    document.body.classList.remove('teacher','student');
+    document.body.classList.add(mode);
+    document.getElementById('btnTeacher').classList.toggle('on', mode==='teacher');
+    document.getElementById('btnStudent').classList.toggle('on', mode==='student');
+    document.getElementById('viewNote').textContent = (mode==='teacher')
+      ? 'Answer keys & teacher notes are visible.'
+      : 'Student handout — keys & teacher notes are hidden.';
+  }
+</script>
+</body>
+</html>

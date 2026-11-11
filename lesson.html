@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-rankup.png">
 <link rel="apple-touch-icon" href="icon-rankup.png">
 <meta name="robots" content="noindex">
@@ -13,7 +14,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20260902c">
+<link rel="stylesheet" href="lesson.css?v=20261111">
+<link rel="stylesheet" href="assets/icons.css?v=1">
 </head>
 <body>
 <div class="side-deco left" id="decoLeft"></div>
@@ -342,7 +344,7 @@ function build(L){
   const id = new URLSearchParams(location.search).get("id");
   if(!id){ document.getElementById("lessonRoot").innerHTML = '<div class="card">Falta <code>?id=</code>. Ej: <code>lesson.html?id=a2-l3</code></div>'; return; }
   fetch("lessons/"+id+".json", {cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(build)
-    .catch(()=>{ document.getElementById("lessonRoot").innerHTML = '<div class="card">No pude cargar la lección <code>'+id+'</code>.</div>'; });
+    .catch(()=>{ document.getElementById("lessonRoot").innerHTML = '<div class="card">No pude cargar la lección <code>'+String(id).replace(/[^\w-]/g,'')+'</code>.</div>'; });
 })();
 
 // ================= shared interactive logic =================
@@ -462,7 +464,7 @@ function seeRank(){
   if(window.launchConfetti) launchConfetti(); victory();
 }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script>
   function launchConfetti(){ if(typeof confetti!=="function")return; var c=["#00e5ff","#ff3df0","#9d4dff","#ffc83d"]; confetti({particleCount:140,spread:90,startVelocity:45,origin:{y:0.3},colors:c,zIndex:60}); setTimeout(function(){confetti({particleCount:90,angle:60,spread:75,origin:{x:0,y:0.65},colors:c,zIndex:60});},150); setTimeout(function(){confetti({particleCount:90,angle:120,spread:75,origin:{x:1,y:0.65},colors:c,zIndex:60});},300); }
   document.querySelectorAll("[data-aos]").forEach(function(el){el.removeAttribute("data-aos");el.removeAttribute("data-aos-delay");}); // AOS removed); }

@@ -1,8 +1,8 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v8";   // v8: rebuilt IELTS listening clips (l2-1..3, l6-1..2)
+const CACHE = "rankup-v9";   // v9: shared assets/icons.css, slimmer pages
 const CORE = [
-  "index.html", "lesson.html", "lesson.css",
+  "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
   "city.html", "neon-cafe.html", "neon-office.html", "cards.html", "manifest.json",
   "logo.png", "bg-cafe.jpg", "nebula.jpg", "map-city.jpg",
   "icon-192.png", "icon-rankup.png",

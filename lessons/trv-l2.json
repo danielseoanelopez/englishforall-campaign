@@ -256,7 +256,7 @@
           "q": "___ yet? <span class=\"es\">(you / check in)</span>",
           "options": [
             "Have you checked in",
-            "Did you check in"
+            "Did you checked in"
           ],
           "answer": 0
         },
@@ -264,7 +264,7 @@
           "type": "mcq",
           "q": "She ___ the tour. <span class=\"es\">(already / finish)</span>",
           "options": [
-            "already finished",
+            "have already finished",
             "has already finished"
           ],
           "answer": 1
@@ -503,7 +503,7 @@
           "d": "Usaste el <b>present perfect</b> con for/since/already/yet/just al menos <b>3 veces</b>, y bien."
         },
         {
-          "c": "Se entiende de una",
+          "c": "Se entiende a la primera",
           "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
         }
       ]

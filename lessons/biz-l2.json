@@ -1,7 +1,7 @@
 {
   "level": "B1",
   "num": 2,
-  "totalLessons": 4,
+  "totalLessons": 8,
   "world": "BUSINESS CLASS",
   "track": "Business Class",
   "key": "rankup_BIZ_l2",
@@ -561,7 +561,7 @@
           "d": "Usaste los modales (<b>should / could / might</b>) y las frases de tacto al menos <b>3 veces</b>, y bien."
         },
         {
-          "c": "Se entiende de una",
+          "c": "Se entiende a la primera",
           "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
         }
       ]

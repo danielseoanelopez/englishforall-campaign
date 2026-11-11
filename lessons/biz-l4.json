@@ -1,7 +1,7 @@
 {
   "level": "B1",
   "num": 4,
-  "totalLessons": 4,
+  "totalLessons": 8,
   "world": "BUSINESS CLASS",
   "track": "Business Class",
   "key": "rankup_BIZ_l4",
@@ -254,9 +254,9 @@
       "items": [
         {
           "type": "mcq",
-          "q": "\"If we reduce the price, they order more.\"",
+          "q": "\"If we will reduce the price, they will order more.\"",
           "options": [
-            "Incorrect (needs \"they will order more\")",
+            "Incorrect (no \"will\" after \"if\": \"If we reduce the price…\")",
             "Correct"
           ],
           "answer": 0
@@ -563,10 +563,14 @@
           "d": "Usaste el <b>1st y 2nd conditional</b> y las frases de negociación al menos <b>3 veces</b>, y bien."
         },
         {
-          "c": "Se entiende de una",
+          "c": "Se entiende a la primera",
           "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
         }
       ]
     }
-  ]
+  ],
+  "next": {
+    "href": "lesson.html?id=biz-l5",
+    "label": "SIGUIENTE ▸"
+  }
 }

@@ -418,9 +418,9 @@
           "type": "mcq",
           "q": "What does Sam's mother do?",
           "options": [
-            "A teacher",
-            "A student",
-            "A doctor"
+            "She is a teacher",
+            "She is a student",
+            "She is a doctor"
           ],
           "answer": 0
         }
@@ -523,7 +523,7 @@
           "d": "Usaste <b>have / has</b> y los posesivos al menos <b>3 veces</b>, y bien."
         },
         {
-          "c": "Se entiende de una",
+          "c": "Se entiende a la primera",
           "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
         }
       ]

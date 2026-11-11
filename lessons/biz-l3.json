@@ -1,7 +1,7 @@
 {
   "level": "B1",
   "num": 3,
-  "totalLessons": 4,
+  "totalLessons": 8,
   "world": "BUSINESS CLASS",
   "track": "Business Class",
   "key": "rankup_BIZ_l3",
@@ -441,11 +441,11 @@
         },
         {
           "type": "mcq",
-          "q": "What is your task after listening?",
+          "q": "What happened to the shipment?",
           "options": [
-            "Forward his message to the accounts team without changes",
-            "Reply to him in the same direct tone, but shorter",
-            "Rewrite his requests as a polite, professional email"
+            "It arrived at the wrong address",
+            "It was canceled",
+            "It got delayed"
           ],
           "answer": 2
         }
@@ -529,7 +529,7 @@
           "d": "Usaste el lenguaje indirecto y educado, y las 6 partes del email al menos <b>3 veces</b>, y bien."
         },
         {
-          "c": "Se entiende de una",
+          "c": "Se entiende a la primera",
           "d": "Se entiende sin releer: ideas unidas, sin traducir literal del español."
         }
       ]

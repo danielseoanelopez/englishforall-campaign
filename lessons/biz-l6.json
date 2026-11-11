@@ -1,0 +1,350 @@
+{
+  "level": "B1",
+  "num": 6,
+  "totalLessons": 8,
+  "world": "BUSINESS CLASS",
+  "track": "Business Class",
+  "key": "rankup_BIZ_l6",
+  "title": "PHONE<br>&amp; VIDEO CALLS",
+  "titlePlain": "Phone & Video Calls (Business)",
+  "subtitle": "Business English &middot; B1 &middot; ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "index.html",
+    "label": "◄ MAPA"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "stage": "<ico-recycle></ico-recycle> REPASO EXPRESS <span class=\"es\">· lección anterior</span>",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
+      "intro": "Recupera la lección de presentaciones. Une cada frase con su significado — sin mirar atrás.",
+      "pairs": [
+        { "l": "To sum up…", "r": "En resumen…" },
+        { "l": "a key takeaway", "r": "una idea clave" },
+        { "l": "to be on track", "r": "ir en tiempo" },
+        { "l": "so far", "r": "hasta ahora" },
+        { "l": "a milestone", "r": "un hito" }
+      ]
+    },
+    {
+      "type": "grammar",
+      "title": "<ico-phone></ico-phone> ON THE CALL",
+      "intro": "Las frases que salvan una llamada: abrir, pedir que repitan, compartir pantalla y cerrar.",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            { "h": "Abrir", "body": "<b>Hi, this is Ana from Lumen.</b> · Is this a good time? · Do you have five minutes?<br><span class=\"es\">Al teléfono se dice <b>this is</b>, no \"I am\".</span>" },
+            { "h": "No te escucho", "body": "Can you hear me OK? · You're breaking up. · Could you speak up a little? · Sorry, could you repeat that?" },
+            { "h": "Gestionar", "body": "Let me share my screen. · Can I put you on hold for a second? · Sorry — you go ahead. · Can I call you back in ten?" },
+            { "h": "Cerrar", "body": "Let me take a message. · I'll pass that on. · Thanks for your time — talk soon." }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b><ico-warn></ico-warn> El voicemail en 4 tiempos:</b> quién eres → por qué llamas → qué necesitas → tu número. <b>Di el número despacio y dos veces</b>: todo lo demás se puede repetir por email; el número, no."
+        },
+        {
+          "type": "stretch",
+          "h": "B2 STRETCH · control fino de la llamada",
+          "body": "\"I'm afraid the line is quite poor — <b>would you mind if I called you right back?</b>\" · \"<b>Just to make sure we're on the same page</b>…\" · \"Sorry to interrupt, but <b>could I jump in here?</b>\" · \"<b>Before we wrap up</b>, could we confirm the next steps?\""
+        }
+      ],
+      "stage": "① CALL LANGUAGE <span class=\"es\">· abrir · reparar · cerrar</span>"
+    },
+    {
+      "type": "grammar",
+      "title": "<ico-book></ico-book> REPORTED SPEECH",
+      "intro": "Contar lo que dijo otra persona. La regla base: el verbo <b>da un paso atrás</b> en el tiempo.",
+      "parts": [
+        {
+          "type": "cells",
+          "cells": [
+            { "h": "Presente → pasado", "body": "\"I <b>am</b> busy.\" → He said he <b>was</b> busy.<br>\"I <b>can't</b> hear you.\" → He said he <b>couldn't</b> hear me." },
+            { "h": "will → would", "body": "\"I<b>'ll call</b> you back.\" → She said she <b>would call</b> me back." },
+            { "h": "Pasado → past perfect", "body": "\"We <b>finished</b> it.\" → They said they <b>had finished</b> it." },
+            { "h": "Preguntas", "body": "\"<b>Are</b> you free?\" → She asked <b>if</b> I <b>was</b> free.<br>\"<b>What time is</b> the call?\" → He asked <b>what time the call was</b>. <span class=\"es\">sin \"did\", orden normal</span>" }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b><ico-warn></ico-warn> say vs. tell:</b> <b>tell</b> necesita persona, <b>say</b> no. <span class=\"ok\">He told <b>me</b> he was late.</span> <span class=\"ok\">He said he was late.</span> <span class=\"x\">He said me…</span> <span class=\"x\">He told that…</span><br>Y las palabras de tiempo se mueven: today → <b>that day</b> · tomorrow → <b>the next day</b> · here → <b>there</b>."
+        },
+        {
+          "type": "stretch",
+          "h": "B2 STRETCH · verbos que dicen más que <i>said</i>",
+          "body": "<b>offer</b> + to → \"He <b>offered to send</b> the file.\" · <b>suggest</b> + -ing → \"She <b>suggested moving</b> the call.\" · <b>promise</b> + to → \"They <b>promised to fix</b> it.\" · <b>complain</b> (that) → \"He <b>complained that</b> nobody had answered.\" · <b>confirm</b> (that) → \"They <b>confirmed that</b> the invoice had been paid.\""
+        },
+        {
+          "type": "vocab",
+          "btn": "<ico-bookmark></ico-bookmark> Ver vocabulario clave",
+          "items": [
+            { "en": "to call someone back", "sp": "devolver la llamada", "chunk": true },
+            { "en": "to put someone on hold", "sp": "poner en espera", "chunk": true },
+            { "en": "to leave a voicemail", "sp": "dejar un mensaje de voz", "chunk": true },
+            { "en": "to take a message", "sp": "tomar un recado", "chunk": true },
+            { "en": "to pass something on", "sp": "pasar / transmitir algo", "chunk": true },
+            { "en": "to share your screen", "sp": "compartir pantalla", "chunk": true },
+            { "en": "You're breaking up.", "sp": "Se te corta.", "chunk": true },
+            { "en": "to speak up", "sp": "hablar más fuerte", "chunk": true },
+            { "en": "to follow up", "sp": "dar seguimiento", "chunk": true },
+            { "en": "to get back to someone", "sp": "contestarle a alguien después", "chunk": true }
+          ]
+        }
+      ],
+      "stage": "② GRAMMAR <span class=\"es\">· contar lo que dijeron</span>"
+    },
+    {
+      "type": "story",
+      "title": "<ico-star></ico-star> THE CALL AND THE MESSAGE",
+      "intro": "Una videollamada con mala conexión, un voicemail… y alguien que tiene que <b>pasar el recado</b>. Ahí es donde vive el reported speech.",
+      "cast": [
+        { "en": "Ana", "sp": "atiende y pasa el recado" },
+        { "en": "Toni", "sp": "llama y deja el mensaje" }
+      ],
+      "stage": "③ THE STORY <span class=\"es\">· llamar y pasar el recado</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-1",
+      "icon": "<ico-pencil></ico-pencil>",
+      "title": "REPORT IT",
+      "intro": "Alguien dijo algo por teléfono. Cuéntaselo a tu colega.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "\"I'm in a meeting.\" → He said he <b class=\"tg\">___</b> in a meeting.",
+          "options": ["is", "was", "has been"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "\"We'll send the invoice on Friday.\" → They said they <b class=\"tg\">___</b> the invoice on Friday.",
+          "options": ["will send", "would send", "sent"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "\"Did you get my email?\" → He asked <b class=\"tg\">___</b> I had gotten his email.",
+          "options": ["if", "that", "what"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "\"Where is the report?\" → He asked <b class=\"tg\">___</b>.",
+          "options": ["where was the report", "where is the report", "where the report was"],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "\"Please call me back.\" → She <b class=\"tg\">___</b> call her back.",
+          "options": ["asked me to", "said me to", "told to"],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Cuenta la última llamada de trabajo que tuviste: \"He said…\", \"She asked if…\", \"They told me…\" — tres frases, en voz alta.",
+        "starter": "A client called yesterday. He said the order hadn't arrived, and he asked if we could send it again…"
+      },
+      "stage": "④ PRACTICE <span class=\"es\">· elige la respuesta</span>"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-2",
+      "icon": "<ico-circlecheck></ico-circlecheck>",
+      "title": "RIGHT OR WRONG?",
+      "intro": "Frases de llamada y de recado: unas funcionan, otras te delatan.",
+      "items": [
+        {
+          "type": "mcq",
+          "q": "\"Hello, I am Ana.\" — al teléfono.",
+          "options": ["Incorrect — \"Hi, this is Ana.\"", "Correct"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "\"He said me that he was busy.\"",
+          "options": ["Incorrect — \"He told me…\" o \"He said that…\"", "Correct"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "No escuchas bien al cliente. ¿Qué dices?",
+          "options": ["What? Speak!", "Sorry, you're breaking up — could you repeat that?", "I don't understand nothing."],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "¿Qué NO puede faltar en un voicemail?",
+          "options": ["Tu número, dicho despacio", "El nombre de tu jefe", "Una disculpa larga"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "\"She said she <b class=\"tg\">___</b> call me the next day.\"",
+          "options": ["will", "would", "wanted"],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase correcta.",
+      "items": [
+        {
+          "words": ["Hi", "this", "is", "Ana", "from", "Lumen"],
+          "answer": "Hi this is Ana from Lumen"
+        },
+        {
+          "words": ["He", "said", "he", "would", "call", "me", "back"],
+          "answer": "He said he would call me back"
+        },
+        {
+          "words": ["She", "asked", "if", "I", "was", "free", "at", "three"],
+          "answer": "She asked if I was free at three"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "LO QUE DIJO vs. LO QUE CUENTAS",
+      "intro": "La misma llamada, dos versiones: la <b>directa</b> (lo que oíste) y la <b>indirecta</b> (lo que le cuentas a tu colega). Cambiar bien de una a otra es toda la lección.",
+      "pair": {
+        "a": "\"I'll send the file this afternoon.\"",
+        "b": "He said he would send the file that afternoon."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál es lo que la persona dijo por teléfono?",
+          "options": ["A — direct speech", "B — reported speech", "Las dos igual"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Qué pasó con <i>will</i> al pasar a B?",
+          "options": ["Desapareció", "Se convirtió en <b>would</b>", "Se convirtió en <b>was</b>"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Tu jefe pregunta qué dijo el cliente. ¿Qué contestas?",
+          "options": ["He said he will send it this afternoon and he asks if we can wait.", "He said he would send it that afternoon and asked if we could wait.", "He say he send it and ask we wait."],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "\"Can you call me tomorrow?\" — ¿cómo lo cuentas al día siguiente?",
+          "options": ["She asked if I could call her that day.", "She asked can I call her tomorrow.", "She said me to call tomorrow."],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-3",
+      "title": "AUDIO 1 · THE VIDEO CALL",
+      "desc": "Una videollamada con mala conexión. Fíjate en las frases de <b>reparación</b>: repetir, hablar más fuerte, compartir pantalla.",
+      "src": "biz-l6-1.mp3",
+      "dur": "0:46",
+      "speakers": "<ico-commentdots></ico-commentdots> Ana + Toni",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Why does Ana turn her camera off?",
+          "options": ["She is not ready", "The connection is poor", "She is in a meeting"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does Ana need from Toni?",
+          "options": ["His approval for a discount", "A new invoice", "A longer contract"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does Toni do at the end?",
+          "options": ["He approves it immediately", "He says no", "He asks to call back in ten minutes"],
+          "answer": 2
+        }
+      ],
+      "speaking": {
+        "prompt": "Eres Ana. Abre la llamada, di que no escuchas bien, y pide la aprobación antes del viernes."
+      },
+      "transcript": [
+        { "spk": "Ana", "html": "Hi Toni, <span class=\"tg\">can you hear me OK?</span>" },
+        { "spk": "Toni", "html": "Hi Ana — <span class=\"tg\">you're breaking up</span> a little. <span class=\"tg\">Could you speak up?</span>", "b": true },
+        { "spk": "Ana", "html": "Is that better? Let me turn my camera off — the connection is poor today." },
+        { "spk": "Toni", "html": "Much better. <span class=\"tg\">Is this still a good time</span> for you?", "b": true },
+        { "spk": "Ana", "html": "It is. <span class=\"tg\">Let me share my screen</span> — can you see the invoice?" },
+        { "spk": "Toni", "html": "Sorry — you go ahead. Yes, I can see it now.", "b": true },
+        { "spk": "Ana", "html": "Great. The client asked for a discount, so I need your approval before Friday." },
+        { "spk": "Toni", "html": "<span class=\"tg\">Can I call you back in ten?</span> I want to check the numbers first.", "b": true },
+        { "spk": "Ana", "html": "Perfect. Thanks for your time — talk soon." }
+      ],
+      "stage": "⑤ LISTENING <span class=\"es\">· la llamada y el recado</span>"
+    },
+    {
+      "type": "listening",
+      "id": "ex-4",
+      "title": "AUDIO 2 · THE VOICEMAIL, THEN THE MESSAGE",
+      "desc": "Primero el <b>voicemail</b> de Toni. Después, Ana le cuenta el recado a un colega. La misma información, dos gramáticas.",
+      "src": "biz-l6-2.mp3",
+      "dur": "0:27",
+      "speakers": "<ico-commentdots></ico-commentdots> Toni + Ana",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What is Toni calling about?",
+          "options": ["A meeting on Friday", "The Delta Foods order", "A new client"],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does he ask Ana to do?",
+          "options": ["Check with the supplier and call him back", "Cancel the order", "Send a new invoice"],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How does Ana report it? \"He said the order still <b>___</b> arrived.\"",
+          "options": ["hasn't", "hadn't", "doesn't"],
+          "answer": 1
+        }
+      ],
+      "transcript": [
+        { "spk": "Toni", "html": "Hi Ana, <span class=\"tg\">this is Toni</span>. I'm calling about the Delta Foods order — it still hasn't arrived. Could you check with the supplier and call me back before six? I'm at five five five, oh one four two." },
+        { "spk": "Ana", "html": "Toni called about Delta Foods. He <span class=\"tg\">said the order still hadn't arrived</span>, and he <span class=\"tg\">asked me to check</span> with the supplier.", "b": true },
+        { "spk": "Ana", "html": "He also <span class=\"tg\">asked if I could call him back</span> before six.", "b": true }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> THE MESSAGE NOTE",
+      "intro": "Alguien llamó a tu jefe y tú tomaste el recado. Escribe la nota: <b>4 frases en reported speech</b> con lo que dijo y lo que pidió.",
+      "checklist": [
+        "Quién llamó, de dónde y cuándo",
+        "<b>2 frases</b> con <i>He/She said (that)…</i>",
+        "<b>1 pregunta</b> con <i>He/She asked if…</i>",
+        "<b>1 petición</b> con <i>asked me to…</i>"
+      ],
+      "placeholder": "Mr. Vega from Delta Foods called this morning. He said...",
+      "example": "<span class=\"gap\">___</span> from <span class=\"gap\">___</span> called <span class=\"gap\">___</span>. He said (that) <span class=\"gap\">___</span>. He also said <span class=\"gap\">___</span>. He asked if <span class=\"gap\">___</span>, and he asked me to <span class=\"gap\">___</span>. His number is <span class=\"gap\">___</span>.",
+      "exampleLabel": "COMPLETA LA NOTA — 4 frases en reported speech",
+      "hw": "Deja un <b>voicemail real</b> de 30 segundos (WhatsApp vale) con los 4 tiempos: quién · por qué · qué necesitas · tu número. Después escribe lo que dijiste en estilo indirecto.",
+      "stage": "⑥ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
+      "rubric": [
+        { "c": "Tarea completa", "d": "La nota tiene quién llamó, qué dijo, qué preguntó y qué pidió." },
+        { "c": "Objetivo de la lección", "d": "Usaste <b>reported speech</b> bien al menos <b>4 veces</b>, con <i>said / told / asked if / asked me to</i>." },
+        { "c": "Se entiende a la primera", "d": "Tu jefe podría actuar solo con esa nota, sin volver a escuchar el mensaje." }
+      ]
+    }
+  ]
+}
