@@ -17,27 +17,27 @@
       "type": "match",
       "id": "ex-review",
       "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
-      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
+      "intro": "Antes de empezar, recupera lo de la lección 2. Une cada frase con su significado — sin mirar atrás.",
       "pairs": [
         {
-          "l": "Engineer",
-          "r": "ingeniero/a"
+          "l": "I am twenty years old.",
+          "r": "tengo veinte años"
         },
         {
-          "l": "Job",
-          "r": "trabajo"
+          "l": "She is an engineer.",
+          "r": "ella es ingeniera"
         },
         {
-          "l": "Years old",
-          "r": "años (de edad)"
+          "l": "Are you a student?",
+          "r": "¿eres estudiante?"
         },
         {
-          "l": "How old are you?",
-          "r": "¿cuántos años tienes?"
+          "l": "I am not a teacher.",
+          "r": "no soy profesor"
         },
         {
-          "l": "Student",
-          "r": "estudiante"
+          "l": "What is your job?",
+          "r": "¿a qué te dedicas?"
         }
       ]
     },
@@ -45,140 +45,331 @@
       "type": "grammar",
       "tag": "números, días y la hora",
       "title": "<ico-book></ico-book> NUMBERS · DAYS · TIME",
-      "intro": "Aprende los números, los días y cómo decir la hora. Estudia con las tarjetas y practica.",
-      "cells": [
-        {
-          "h": "<ico-listol></ico-listol> Numbers",
-          "body": "11 eleven · 12 twelve <i>(¡irregulares!)</i><br>13 thir<code>teen</code> ≠ 30 thir<code>ty</code><br>14 four<code>teen</code> ≠ 40 for<code>ty</code><br>15 fif<code>teen</code> ≠ 50 fif<code>ty</code><br><i>El acento manda: thirTEEN ↗ / THIRty ↘</i>",
-          "say": "eleven; twelve; thirteen; thirty; fourteen; forty; fifteen; fifty"
-        },
-        {
-          "h": "<ico-clock></ico-clock> Time",
-          "body": "<i>La aguja larga manda:</i><br>arriba = <code>o'clock</code> · abajo = <code>half past</code><br>derecha = <code>quarter past</code> · izquierda = <code>quarter to</code><br><i>Ojo:</i> <code>quarter to four</code> = 3:45 (¡dice la hora que <b>viene</b>!)",
-          "clocks": [
-            {
-              "t": "3:00",
-              "en": "three o'clock"
-            },
-            {
-              "t": "3:15",
-              "en": "quarter past three"
-            },
-            {
-              "t": "3:30",
-              "en": "half past three"
-            },
-            {
-              "t": "3:45",
-              "en": "quarter to four"
-            }
-          ]
-        },
-        {
-          "h": "<ico-calendar></ico-calendar> at / on / in",
-          "body": "<i>Las preposiciones de tiempo son palabras pequeñas que van antes de la hora, el día o el mes:</i><br><code>at</code> + hora: at six <i>(a las seis)</i><br><code>on</code> + día: on Monday <i>(el lunes)</i><br><code>in</code> + mes: in June <i>(en junio)</i>",
-          "say": "at six; on Monday; in June"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='x'>in Monday</span> → <span class='ok'>on Monday</span><br><span class='x'>on six o'clock</span> → <span class='ok'>at six</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Los días</b> de la semana:",
-      "ladder": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver números y tiempo",
+      "intro": "Cuatro pasos: <b style='color:var(--gold)'>los números</b>, <b style='color:var(--gold)'>los días</b>, <b style='color:var(--gold)'>la hora</b> y las palabras pequeñas <b style='color:var(--gold)'>at / on / in</b>. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario del día a día",
       "vocab": [
         {
-          "en": "O'clock",
-          "sp": "en punto"
-        },
-        {
-          "en": "Half past",
-          "sp": "y media"
-        },
-        {
-          "en": "Quarter past",
-          "sp": "y cuarto"
-        },
-        {
-          "en": "Quarter to",
-          "sp": "menos cuarto"
-        },
-        {
-          "en": "Today / Tomorrow",
-          "sp": "hoy / mañana"
+          "en": "Phone number",
+          "sp": "número de teléfono"
         },
         {
           "en": "Week / Weekend",
           "sp": "semana / fin de semana"
         },
         {
-          "en": "What time is it?",
-          "sp": "¿qué hora es?"
+          "en": "I get up",
+          "sp": "me levanto"
         },
         {
-          "en": "Phone number",
-          "sp": "número de teléfono"
+          "en": "I have breakfast",
+          "sp": "desayuno"
+        },
+        {
+          "en": "I have lunch",
+          "sp": "almuerzo / como"
+        },
+        {
+          "en": "I finish work",
+          "sp": "termino de trabajar"
+        },
+        {
+          "en": "I relax",
+          "sp": "descanso"
+        },
+        {
+          "en": "I don't work",
+          "sp": "no trabajo"
+        },
+        {
+          "en": "January / June / December",
+          "sp": "enero / junio / diciembre"
+        },
+        {
+          "en": "My birthday",
+          "sp": "mi cumpleaños"
         }
       ],
-      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>unir horas</b> <ico-link></ico-link>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>memoria</b> <ico-brain></ico-brain>. <ico-check></ico-check> CHECK donde lo veas."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>relojes</b> <ico-clock></ico-clock>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>memoria</b> <ico-brain></ico-brain>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · LOS NÚMEROS</b>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "zero, one, two, three, four, five",
+              "sp": "0 · 1 · 2 · 3 · 4 · 5"
+            },
+            {
+              "en": "six, seven, eight, nine, ten",
+              "sp": "6 · 7 · 8 · 9 · 10"
+            },
+            {
+              "en": "eleven, twelve",
+              "sp": "11 · 12 — irregulares: apréndelos de memoria."
+            },
+            {
+              "en": "thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen",
+              "sp": "13 a 19 — todos terminan en <b>-teen</b>."
+            },
+            {
+              "en": "twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety",
+              "sp": "20 · 30 · 40 … 90 — todos terminan en <b>-ty</b>."
+            },
+            {
+              "en": "twenty-one, thirty-five, ninety-nine, one hundred",
+              "sp": "21 · 35 · 99 · 100 — decena + guion + unidad."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> -teen no es -ty",
+              "body": "<code>13</code> thir<b>TEEN</b> ≠ <code>30</code> <b>THIR</b>ty &nbsp;·&nbsp; <code>15</code> fif<b>TEEN</b> ≠ <code>50</code> <b>FIF</b>ty<br>La fuerza de la voz cambia: en <b>-teen</b> va al final, en <b>-ty</b> va al principio.<br>Ortografía: <span class='ok'>forty</span> <s class='x'>fourty</s> &nbsp;·&nbsp; <span class='ok'>fifteen</span> <s class='x'>fiveteen</s><br>Los teléfonos se dicen número por número: <code>555-1234</code> = five, five, five, one, two, three, four."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · LOS DÍAS DE LA SEMANA</b>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Monday, Tuesday, Wednesday",
+              "sp": "lunes · martes · miércoles"
+            },
+            {
+              "en": "Thursday, Friday",
+              "sp": "jueves · viernes"
+            },
+            {
+              "en": "Saturday, Sunday",
+              "sp": "sábado · domingo — juntos son <b>the weekend</b> (el fin de semana)."
+            },
+            {
+              "en": "today, tomorrow",
+              "sp": "hoy · mañana"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Los días siempre van con mayúscula</b> en inglés: <b>M</b>onday, no monday. Y ojo con dos que suenan parecido: <b>Tuesday</b> (martes) y <b>Thursday</b> (jueves)."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · LA HORA</b> <span class='es'>— hay dos formas de decirla, y vas a oír las dos</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "What time is it?",
+              "sp": "¿Qué hora es?"
+            },
+            {
+              "en": "It's three o'clock.",
+              "sp": "Son las tres en punto (3:00). <b>O'clock</b> solo se usa con la hora exacta."
+            },
+            {
+              "en": "It's three fifteen.",
+              "sp": "3:15 — la forma fácil: hora + minutos."
+            },
+            {
+              "en": "It's three thirty.",
+              "sp": "3:30"
+            },
+            {
+              "en": "It's three forty-five.",
+              "sp": "3:45"
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-clock></ico-clock> La otra forma: past / to",
+              "body": "Muy común, sobre todo en inglés británico. <i>La aguja larga manda:</i><br>abajo = <code>half past</code> <span class='es'>(y media)</span> · derecha = <code>quarter past</code> <span class='es'>(y cuarto)</span> · izquierda = <code>quarter to</code> <span class='es'>(menos cuarto)</span><br><i>Ojo:</i> <code>quarter to four</code> = 3:45. Dice la hora que <b>viene</b>, igual que «cuatro menos cuarto».",
+              "clocks": [
+                {
+                  "t": "3:00",
+                  "en": "three o'clock"
+                },
+                {
+                  "t": "3:15",
+                  "en": "quarter past three"
+                },
+                {
+                  "t": "3:30",
+                  "en": "half past three"
+                },
+                {
+                  "t": "3:45",
+                  "en": "quarter to four"
+                }
+              ]
+            },
+            {
+              "h": "<ico-bulb></ico-bulb> a.m. y p.m.",
+              "body": "Al hablar no se usa el reloj de 24 horas: <span class='ok'>seven p.m.</span> <s class='x'>nineteen o'clock</s><br><code>a.m.</code> = de la medianoche al mediodía · <code>p.m.</code> = del mediodía a la medianoche."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · AT / ON / IN</b> <span class='es'>— la palabra pequeña antes de la hora, el día o el mes</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "at six o'clock",
+              "sp": "a las seis — <b>at</b> + hora."
+            },
+            {
+              "en": "at night",
+              "sp": "por la noche — también con <b>at</b>."
+            },
+            {
+              "en": "on Monday",
+              "sp": "el lunes — <b>on</b> + día."
+            },
+            {
+              "en": "on the weekend",
+              "sp": "el fin de semana (en inglés británico: <b>at the weekend</b>)."
+            },
+            {
+              "en": "in June",
+              "sp": "en junio — <b>in</b> + mes. Los meses también van con mayúscula."
+            },
+            {
+              "en": "in the morning, in the afternoon, in the evening",
+              "sp": "por la mañana · por la tarde · por la noche (temprano)."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> Errores típicos",
+              "body": "<s class='x'>in Monday</s> → <span class='ok'>on Monday</span><br><s class='x'>on six o'clock</s> → <span class='ok'>at six o'clock</span><br>En español dices «<b>el</b> lunes». En inglés no lleva <i>the</i>: <s class='x'>the Monday</s> → <span class='ok'>on Monday</span>"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "flashcards",
       "id": "fc-days",
-      "title": "FLASHCARDS · días de la semana",
-      "intro": "Toca cada tarjeta para ver el día en español.",
+      "title": "FLASHCARDS · los días",
+      "intro": "Toca cada tarjeta para ver el día en español. Di cada uno en voz alta.",
       "cards": [
         {
           "front": "Monday",
           "back": "lunes"
         },
         {
+          "front": "Tuesday",
+          "back": "martes"
+        },
+        {
           "front": "Wednesday",
           "back": "miércoles"
+        },
+        {
+          "front": "Thursday",
+          "back": "jueves"
         },
         {
           "front": "Friday",
           "back": "viernes"
         },
         {
-          "front": "weekend",
-          "back": "fin de semana"
+          "front": "Saturday",
+          "back": "sábado"
         },
         {
-          "front": "What time is it?",
-          "back": "¿Qué hora es?"
+          "front": "Sunday",
+          "back": "domingo"
         },
         {
-          "front": "o'clock",
-          "back": "en punto"
+          "front": "the weekend",
+          "back": "el fin de semana"
         },
         {
-          "front": "half past",
-          "back": "y media"
+          "front": "today",
+          "back": "hoy"
         },
         {
-          "front": "quarter past / quarter to",
-          "back": "y cuarto / menos cuarto"
-        },
-        {
-          "front": "thirteen ≠ thirty",
-          "back": "trece ≠ treinta"
-        },
-        {
-          "front": "fifteen ≠ fifty",
-          "back": "quince ≠ cincuenta"
+          "front": "tomorrow",
+          "back": "mañana"
         }
       ],
-      "deckLabel": "días, horas y números"
+      "deckLabel": "días de la semana"
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-num",
+      "title": "¿QUÉ NÚMERO ES?",
+      "icon": "<ico-listol></ico-listol>",
+      "intro": "Elige cómo se escribe cada número.",
+      "items": [
+        {
+          "q": "<b>8</b>",
+          "options": [
+            "eight",
+            "eighty",
+            "eighteen"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "<b>12</b>",
+          "options": [
+            "twenty",
+            "twelve",
+            "two"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "<b>16</b>",
+          "options": [
+            "sixty",
+            "six",
+            "sixteen"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "<b>40</b>",
+          "options": [
+            "fourteen",
+            "forty",
+            "four"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "<b>27</b>",
+          "options": [
+            "twenty-seven",
+            "seventy-two",
+            "twelve-seven"
+          ],
+          "answer": 0
+        }
+      ]
     },
     {
       "type": "match",
@@ -205,6 +396,10 @@
         {
           "l": "11:00",
           "r": "eleven o'clock"
+        },
+        {
+          "l": "9:45",
+          "r": "quarter to ten"
         }
       ],
       "speakSide": "r",
@@ -334,6 +529,33 @@
             "at"
           ],
           "answer": 1
+        },
+        {
+          "q": "I study English ___ the morning.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "I relax ___ the weekend.",
+          "options": [
+            "on",
+            "in",
+            "of"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The café is closed ___ night.",
+          "options": [
+            "in",
+            "at",
+            "on"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -373,14 +595,14 @@
       "type": "listening",
       "id": "ex-l2",
       "title": "AUDIO 2 · MY DAY",
-      "desc": "Marcos cuenta los horarios de su día. Escucha las horas.",
+      "desc": "Marcos cuenta los horarios de su día. Escucha las horas y los días. <span class='es'>Pista: <b>get up</b> = levantarse · <b>have breakfast / lunch</b> = desayunar / almorzar · <b>finish work</b> = terminar de trabajar.</span>",
       "src": "a1-l3-2.mp3",
-      "dur": "0:17",
+      "dur": "0:19",
       "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
           "type": "mcq",
-          "q": "What time does Marcos have breakfast?",
+          "q": "What time is breakfast?",
           "options": [
             "At half past seven",
             "At half past eight",
@@ -400,11 +622,11 @@
         },
         {
           "type": "mcq",
-          "q": "What does Marcos do on Saturday and Sunday?",
+          "q": "Which days are free for Marcos?",
           "options": [
-            "He works",
-            "He relaxes",
-            "He studies"
+            "Monday and Friday",
+            "Saturday and Sunday",
+            "Sunday and Monday"
           ],
           "answer": 1
         }
@@ -417,22 +639,22 @@
         {
           "spk": "Marcos",
           "b": true,
-          "html": "Here is my day. I get up <span class='tg'>at seven o'clock</span>. I have breakfast <span class='tg'>at half past seven</span>. My English class is <span class='tg'>at nine</span>. I have lunch <span class='tg'>at one o'clock</span>. I finish work <span class='tg'>at five</span>. <span class='tg'>On Saturday and Sunday</span>, I don't work — I relax!"
+          "html": "Here is my day. I get up <span class='tg'>at seven o'clock</span>. I have breakfast <span class='tg'>at half past seven</span>. My English class is <span class='tg'>at nine</span>. I have lunch <span class='tg'>at one o'clock</span>. I finish work <span class='tg'>at five</span>. <span class='tg'>On Saturday and Sunday</span>, I don't work. I relax!"
         }
       ]
     },
     {
       "type": "writing",
       "title": "<ico-pen></ico-pen> MY SCHEDULE",
-      "intro": "Escribe tu horario en 4–5 frases:",
+      "intro": "Escribe tu horario en 4–5 frases cortas:",
       "checklist": [
-        "Usa <b>at</b> + la hora (at seven, at half past eight)",
-        "Usa <b>on</b> + el día (on Monday)",
-        "Di 3 cosas y a qué hora las haces",
-        "Di qué haces el fin de semana"
+        "Usa <b>at</b> + la hora (at seven o'clock, at eight thirty)",
+        "Usa <b>on</b> + el día (on Monday, on the weekend)",
+        "Di 3 cosas y a qué hora las haces: <b>I get up… I have lunch… I finish work…</b>",
+        "Cierra con el fin de semana: <b>On the weekend, I relax.</b>"
       ],
       "placeholder": "I get up at...",
-      "example": "I get up at (time). My English class is at (time) on (day) and (day). I have lunch at (time). I finish work at (time). On the weekend, I (activity)!",
+      "example": "I get up at <span class=\"gap\">hora</span>. My English class is at <span class=\"gap\">hora</span> on <span class=\"gap\">día</span>. I have lunch at <span class=\"gap\">hora</span>. I finish work at <span class=\"gap\">hora</span>. On the weekend, I <span class=\"gap\">relax / don't work</span>!",
       "hw": "Escribe tu horario y mándamelo por WhatsApp.",
       "rubric": [
         {
@@ -445,51 +667,115 @@
         },
         {
           "c": "Se entiende a la primera",
-          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+          "d": "Un lector lo entiende sin releer: frases cortas y completas, días con mayúscula y sin traducir literal del español."
         }
       ]
     }
   ],
-  "voices": {
-    "ana": "en-US-AriaNeural",
-    "tom": "en-US-GuyNeural",
-    "marcos": "en-US-GuyNeural"
-  },
   "audioRate": "-5%",
-  "audioScripts": [
-    {
-      "file": "a1-l3-1.mp3",
-      "lines": [
-        [
-          "ana",
-          "Hi Tom! What's your phone number?"
-        ],
-        [
-          "tom",
-          "It's five, five, five, one, two, three, four."
-        ],
-        [
-          "ana",
-          "Thanks. And what time is our English class?"
-        ],
-        [
-          "tom",
-          "It's at four o'clock on Monday. And there's another at half past five on Wednesday."
-        ],
-        [
-          "ana",
-          "OK. See you on Monday at four!"
-        ]
-      ]
-    },
-    {
-      "file": "a1-l3-2.mp3",
-      "lines": [
-        [
-          "marcos",
-          "Here is my day. I get up at seven o'clock. I have breakfast at half past seven. My English class is at nine. I have lunch at one o'clock. I finish work at five. On Saturday and Sunday, I don't work, I relax!"
-        ]
-      ]
-    }
-  ]
+  "say": {
+    "dir": "say/a1-l3",
+    "keys": [
+      "555-1234",
+      "555-1243",
+      "555-4321",
+      "are-you-a-student",
+      "at",
+      "at-five-o-clock",
+      "at-four-o-clock",
+      "at-half-past-eight",
+      "at-half-past-five",
+      "at-half-past-four",
+      "at-half-past-seven",
+      "at-night",
+      "at-nine-o-clock",
+      "at-one-o-clock",
+      "at-seven-o-clock",
+      "at-six-o-clock",
+      "eight",
+      "eighteen",
+      "eighty",
+      "eleven-o-clock",
+      "eleven-twelve",
+      "fifteen",
+      "fifty",
+      "forty",
+      "four",
+      "fourteen",
+      "friday",
+      "half-past-five",
+      "half-past-three",
+      "i-am-not-a-teacher",
+      "i-am-twenty-years-old",
+      "i-don-t-work",
+      "i-finish-work",
+      "i-get-up",
+      "i-have-breakfast",
+      "i-have-lunch",
+      "i-relax",
+      "in",
+      "in-june",
+      "in-the-morning-in-the-afternoon-in-the-evening",
+      "it-s-three-fifteen",
+      "it-s-three-forty-five",
+      "it-s-three-o-clock",
+      "it-s-three-thirty",
+      "january-june-december",
+      "monday",
+      "monday-and-friday",
+      "monday-tuesday-wednesday",
+      "my-birthday",
+      "of",
+      "on",
+      "on-monday",
+      "on-the-weekend",
+      "phone-number",
+      "quarter-past-eight",
+      "quarter-past-three",
+      "quarter-to-four",
+      "quarter-to-seven",
+      "quarter-to-ten",
+      "saturday",
+      "saturday-and-sunday",
+      "saturday-sunday",
+      "seventy-two",
+      "she-is-an-engineer",
+      "six",
+      "six-seven-eight-nine-ten",
+      "sixteen",
+      "sixty",
+      "sunday",
+      "sunday-and-monday",
+      "the-weekend",
+      "thirteen",
+      "thirteen-fourteen-fifteen-sixteen-seventeen-eighteen-nineteen",
+      "thirty",
+      "three-o-clock",
+      "thursday",
+      "thursday-friday",
+      "today",
+      "today-tomorrow",
+      "tomorrow",
+      "tuesday",
+      "twelve",
+      "twelve-seven",
+      "twenty",
+      "twenty-one-thirty-five-ninety-nine-one-hundred",
+      "twenty-seven",
+      "twenty-thirty-forty-fifty-sixty-seventy-eighty-ninety",
+      "two",
+      "two-o-clock",
+      "wednesday",
+      "week-weekend",
+      "what-is-tom-s-phone-number",
+      "what-is-your-job",
+      "what-time-is-breakfast",
+      "what-time-is-his-english-class",
+      "what-time-is-it",
+      "what-time-is-the-monday-class",
+      "what-time-is-the-wednesday-class",
+      "which-days-are-free-for-marcos",
+      "zero-one-two-three-four-five"
+    ]
+  }
 }
