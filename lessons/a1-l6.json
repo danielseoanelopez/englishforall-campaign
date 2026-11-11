@@ -21,95 +21,207 @@
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
-          "l": "Book <ico-bookopen></ico-bookopen>",
-          "r": "libro"
-        },
-        {
-          "l": "Bag <ico-user></ico-user>",
+          "l": "Bag <ico-briefcase></ico-briefcase>",
           "r": "mochila / bolso"
         },
         {
-          "l": "Key <ico-key></ico-key>",
-          "r": "llave"
-        },
-        {
-          "l": "Chair <ico-chair></ico-chair>",
-          "r": "silla"
-        },
-        {
           "l": "Pen <ico-pen></ico-pen>",
-          "r": "lapicera"
+          "r": "bolígrafo"
+        },
+        {
+          "l": "There are two books.",
+          "r": "Hay dos libros."
+        },
+        {
+          "l": "Under / Next to",
+          "r": "debajo de / al lado de"
+        },
+        {
+          "l": "On the table",
+          "r": "sobre la mesa"
         }
       ]
     },
     {
       "type": "grammar",
       "tag": "preguntas y respuestas",
-      "title": "<ico-book></ico-book> QUESTIONS · do / does / can / Wh-",
-      "intro": "Aprende a hacer y responder preguntas simples. Es la última lección antes del examen del mundo A1.",
-      "cells": [
-        {
-          "h": "<ico-question></ico-question> do / does",
-          "body": "<code>Do</code> you like tea?<br><code>Does</code> she work here?<br>Yes, I <code>do</code>. / No, I <code>don't</code>."
-        },
-        {
-          "h": "<ico-dumbbell></ico-dumbbell> can",
-          "body": "<code>Can</code> you swim?<br>Yes, I <code>can</code>.<br>No, I <code>can't</code>."
-        },
-        {
-          "h": "<ico-spell></ico-spell> Question words",
-          "body": "<code>What</code> · <code>Where</code> · <code>When</code><br><code>Who</code> · <code>How</code> · <code>Why</code>"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='x'>You like coffee?</span><br><span class='ok'>Do you like coffee?</span><br><span class='x'>She do</span> → <span class='ok'>She does</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Question words</b> — qué preguntan:",
-      "ladder": [
-        "What?",
-        "Where?",
-        "When?",
-        "Who?",
-        "How?",
-        "Why?"
-      ],
-      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver palabras de pregunta",
+      "title": "<ico-book></ico-book> QUESTIONS · do / be / can / Wh-",
+      "intro": "Cuatro pasos para hacer y responder preguntas: <b style='color:var(--gold)'>do / does</b>, <b style='color:var(--gold)'>be</b>, <b style='color:var(--gold)'>can</b> y las palabras <b style='color:var(--gold)'>What, Where, When…</b> Es la última lección antes del examen del mundo A1. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver verbos y palabras de pregunta",
       "vocab": [
         {
-          "en": "What…?",
-          "sp": "¿qué…?"
+          "en": "Live / Work / Study",
+          "sp": "vivir / trabajar / estudiar"
         },
         {
-          "en": "Where…?",
-          "sp": "¿dónde…?"
+          "en": "Like / Play / Cook",
+          "sp": "gustar / jugar, tocar / cocinar"
         },
         {
-          "en": "When…?",
-          "sp": "¿cuándo…?"
+          "en": "Swim / See my friends",
+          "sp": "nadar / ver a mis amigos"
         },
         {
-          "en": "Who…?",
-          "sp": "¿quién…?"
+          "en": "Usually / Travel",
+          "sp": "normalmente / viajar"
         },
         {
-          "en": "How…?",
-          "sp": "¿cómo…?"
+          "en": "On weekends",
+          "sp": "los fines de semana"
         },
         {
-          "en": "Why…?",
-          "sp": "¿por qué…?"
-        },
-        {
-          "en": "Can you…?",
-          "sp": "¿sabes / puedes…?"
+          "en": "Because…",
+          "sp": "porque… (la respuesta a Why?)"
         },
         {
           "en": "Do you like…?",
           "sp": "¿te gusta…?"
+        },
+        {
+          "en": "Can you…?",
+          "sp": "¿sabes…? / ¿puedes…?"
         }
       ],
-      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>elegir respuestas</b> <ico-comments></ico-comments>, <b>unir</b> <ico-link></ico-link>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>completar</b> <ico-filepen></ico-filepen>. <ico-check></ico-check> CHECK donde lo veas."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>elegir respuestas</b> <ico-comments></ico-comments>, <b>unir</b> <ico-link></ico-link>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · DO / DOES</b> <span class='es'>— preguntas con verbos</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Do you like music?",
+              "sp": "¿Te gusta la música? — con I / you / we / they."
+            },
+            {
+              "en": "Yes, I do. / No, I don't.",
+              "sp": "Sí. / No."
+            },
+            {
+              "en": "Does she work here?",
+              "sp": "¿Ella trabaja aquí? — con he / she / it."
+            },
+            {
+              "en": "Yes, she does. / No, she doesn't.",
+              "sp": "Sí. / No."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>En español basta con la entonación</b> («¿Te gusta el café?»). En inglés hace falta <b>do</b>: <s class='x'>You like coffee?</s> → <span class='ok'>Do you like coffee?</span><br>Y después de <b>does</b> el verbo va sin -s, igual que con have: <s class='x'>Does she works?</s> → <span class='ok'>Does she work?</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · PREGUNTAS CON BE</b> <span class='es'>— sin do</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Are you a student?",
+              "sp": "¿Eres estudiante? — <b>be</b> pasa adelante."
+            },
+            {
+              "en": "Yes, I am. / No, I'm not.",
+              "sp": "Sí. / No."
+            },
+            {
+              "en": "Is Tom from Canada?",
+              "sp": "¿Tom es de Canadá?"
+            },
+            {
+              "en": "Yes, he is. / No, he isn't.",
+              "sp": "Sí. / No."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> be y do no se mezclan",
+              "body": "<s class='x'>Do you are a student?</s> → <span class='ok'>Are you a student?</span><br><s class='x'>Are you like music?</s> → <span class='ok'>Do you like music?</span><br>La respuesta corta no se contrae: <s class='x'>Yes, I'm.</s> → <span class='ok'>Yes, I am.</span>"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · CAN</b> <span class='es'>— saber o poder hacer algo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I can cook.",
+              "sp": "Sé cocinar."
+            },
+            {
+              "en": "I can't swim.",
+              "sp": "No sé nadar."
+            },
+            {
+              "en": "Can you swim?",
+              "sp": "¿Sabes nadar?"
+            },
+            {
+              "en": "Yes, I can. / No, I can't.",
+              "sp": "Sí. / No."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Can no lleva to, ni do, ni -s:</b> <s class='x'>I can to swim.</s> → <span class='ok'>I can swim.</span> &nbsp;·&nbsp; <s class='x'>Do you can swim?</s> → <span class='ok'>Can you swim?</span> &nbsp;·&nbsp; <s class='x'>He cans</s> → <span class='ok'>He can</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · WHAT, WHERE, WHEN…</b> <span class='es'>— palabras de pregunta</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Where do you live?",
+              "sp": "¿Dónde vives? — <b>Where</b> = lugar."
+            },
+            {
+              "en": "What do you do?",
+              "sp": "¿A qué te dedicas? — pregunta por tu trabajo: <i>I'm an engineer.</i>"
+            },
+            {
+              "en": "When is your class?",
+              "sp": "¿Cuándo es tu clase? — <b>When</b> = día u hora."
+            },
+            {
+              "en": "Who is she?",
+              "sp": "¿Quién es ella? — <b>Who</b> = persona."
+            },
+            {
+              "en": "How old are you?",
+              "sp": "¿Cuántos años tienes? — <b>How</b> = cómo; <b>How old</b> = edad."
+            },
+            {
+              "en": "Why do you study English? Because…",
+              "sp": "¿Por qué…? Porque… — en inglés son dos palabras distintas."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-bulb></ico-bulb> El orden de la pregunta",
+              "body": "palabra de pregunta + <code>do / does</code> + persona + verbo<br><span class='ok'>Where do you live?</span> &nbsp;·&nbsp; <span class='ok'>What does she do?</span><br>Con be: palabra de pregunta + <code>be</code> + persona: <span class='ok'>Where are you from?</span><br><s class='x'>Where you live?</s> <s class='x'>What she does?</s>"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "flashcards",
@@ -138,16 +250,16 @@
           "back": "¿Cómo?"
         },
         {
-          "front": "Why?",
-          "back": "¿Por qué?"
+          "front": "Why? — Because…",
+          "back": "¿Por qué? — Porque…"
         },
         {
-          "front": "How much…?",
-          "back": "¿Cuánto cuesta…?"
+          "front": "How old…?",
+          "back": "¿Cuántos años…?"
         },
         {
           "front": "How many…?",
-          "back": "¿Cuántos…?"
+          "back": "¿Cuántos/as…?"
         },
         {
           "front": "Yes, I do / No, I don't",
@@ -155,7 +267,7 @@
         },
         {
           "front": "Yes, I can / No, I can't",
-          "back": "Sí, puedo / No puedo"
+          "back": "Sí / No (con can)"
         }
       ],
       "deckLabel": "preguntas y respuestas"
@@ -164,21 +276,21 @@
       "type": "dialogue",
       "id": "ex-dlg",
       "title": "ELIGE LA RESPUESTA",
-      "intro": "Alguien te hace una pregunta. Elige la mejor respuesta.",
+      "intro": "Ana te hace preguntas. Elige la respuesta correcta: ojo con do, be y can.",
       "lines": [
         {
           "spk": "Ana",
-          "html": "What's your name?"
+          "html": "Hi! Are you a new student?"
         },
         {
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
-            "I'm fine.",
-            "My name is Pablo.",
-            "I'm from Spain."
+            "Yes, I do.",
+            "Yes, I'm.",
+            "Yes, I am."
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "spk": "Ana",
@@ -191,35 +303,49 @@
           "options": [
             "I'm from Mexico.",
             "I'm a teacher.",
-            "Yes, I do."
+            "Yes, I am."
           ],
           "answer": 0
         },
         {
           "spk": "Ana",
+          "html": "What do you do?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I'm fine, thanks.",
+            "I'm a nurse.",
+            "I'm twenty years old."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Ana",
+          "b": true,
           "html": "Can you cook?"
         },
         {
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
-            "It's Monday.",
-            "I'm from Brazil.",
-            "Yes, I can."
+            "Yes, I do.",
+            "Yes, I can.",
+            "Yes, I cook."
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "spk": "Ana",
-          "b": true,
           "html": "Do you like music?"
         },
         {
           "gap": true,
           "q": "Tu respuesta:",
           "options": [
-            "On Monday.",
-            "I'm twenty.",
+            "Yes, I like.",
+            "Yes, I am.",
             "Yes, I do."
           ],
           "answer": 2
@@ -251,6 +377,10 @@
         {
           "l": "How…?",
           "r": "de qué manera"
+        },
+        {
+          "l": "Why…?",
+          "r": "una razón"
         }
       ]
     },
@@ -383,7 +513,7 @@
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "do / does / can",
+      "title": "do / does / be / can / Wh-",
       "intro": "Elige la palabra correcta para cada pregunta.",
       "items": [
         {
@@ -405,6 +535,33 @@
           "answer": 0
         },
         {
+          "q": "Does Tom ___ in Toronto?",
+          "options": [
+            "lives",
+            "live",
+            "is"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "___ you a student?",
+          "options": [
+            "Do",
+            "Are",
+            "Can"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "___ Ana from Mexico?",
+          "options": [
+            "Does",
+            "Do",
+            "Is"
+          ],
+          "answer": 2
+        },
+        {
           "q": "___ you swim? — No, I can't.",
           "options": [
             "Are",
@@ -414,22 +571,175 @@
           "answer": 2
         },
         {
-          "q": "What ___ they do?",
+          "q": "I can ___ the guitar.",
           "options": [
-            "are",
-            "do",
-            "does"
+            "play",
+            "to play",
+            "plays"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "___ do you live? — In Mexico City.",
+          "options": [
+            "What",
+            "Where",
+            "When"
           ],
           "answer": 1
         },
         {
-          "q": "___ he like football?",
+          "q": "___ is your class? — On Monday.",
           "options": [
-            "Does",
-            "Is",
-            "Do"
+            "When",
+            "Who",
+            "Where"
           ],
           "answer": 0
+        },
+        {
+          "q": "___ is she? — She's my sister.",
+          "options": [
+            "What",
+            "How",
+            "Who"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA PREGUNTA",
+      "intro": "Toca las palabras para formar la pregunta.",
+      "items": [
+        {
+          "words": [
+            "Where",
+            "do",
+            "you",
+            "live"
+          ],
+          "answer": "Where do you live"
+        },
+        {
+          "words": [
+            "Does",
+            "she",
+            "work",
+            "here"
+          ],
+          "answer": "Does she work here"
+        },
+        {
+          "words": [
+            "Are",
+            "you",
+            "a",
+            "student"
+          ],
+          "answer": "Are you a student"
+        },
+        {
+          "words": [
+            "Can",
+            "you",
+            "cook"
+          ],
+          "answer": "Can you cook"
+        },
+        {
+          "words": [
+            "What",
+            "does",
+            "Tom",
+            "do"
+          ],
+          "answer": "What does Tom do"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · AT THE SCHOOL",
+      "desc": "Emma, la recepcionista, le hace preguntas a Leo. Escucha Why, When y Who.",
+      "src": "a1-l6-2.mp3",
+      "dur": "0:24",
+      "speakers": "<ico-commentdots></ico-commentdots> Emma + Leo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Is Leo a new student?",
+          "options": [
+            "Yes, he is",
+            "No, he isn't",
+            "He doesn't say"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why does Leo study English?",
+          "options": [
+            "Because he wants to travel",
+            "Because he has a new job",
+            "Because his sister lives in Canada"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "When is his class?",
+          "options": [
+            "On Monday at six",
+            "On Monday at seven",
+            "On Sunday at six"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Answer: Why do you study English? When is your class? Who is your teacher?",
+        "starter": "I study English because I want to (verb). My class is on (day) at (time). My teacher is (name)."
+      },
+      "transcript": [
+        {
+          "spk": "Emma",
+          "html": "Hi! <span class='tg'>Are you</span> a new student?"
+        },
+        {
+          "spk": "Leo",
+          "b": true,
+          "html": "Yes, <span class='tg'>I am</span>. My name is Leo."
+        },
+        {
+          "spk": "Emma",
+          "html": "Nice to meet you, Leo. <span class='tg'>Why do you</span> study English?"
+        },
+        {
+          "spk": "Leo",
+          "b": true,
+          "html": "<span class='tg'>Because</span> I want to travel."
+        },
+        {
+          "spk": "Emma",
+          "html": "Great! <span class='tg'>When is</span> your class?"
+        },
+        {
+          "spk": "Leo",
+          "b": true,
+          "html": "On Monday, at six o'clock."
+        },
+        {
+          "spk": "Emma",
+          "html": "And <span class='tg'>who is</span> your teacher?"
+        },
+        {
+          "spk": "Leo",
+          "b": true,
+          "html": "Her name is Ms. Clark."
         }
       ]
     },
@@ -440,12 +750,13 @@
       "checklist": [
         "Where do you live? — <b>I live in…</b>",
         "What do you do? — <b>I'm a… / I study…</b>",
-        "Do you like…? — <b>Yes, I do / No, I don't</b>",
-        "Can you…? — <b>Yes, I can / No, I can't</b>"
+        "Do you like…? — <b>I like… / I don't like…</b>",
+        "Can you…? — <b>I can… / I can't…</b>",
+        "Why do you study English? — <b>Because…</b>"
       ],
       "placeholder": "I live in...",
-      "example": "I live in (city). I'm a (job) and I work in (place). I like (thing) and I play (instrument / sport). I can (verb), but I can't (verb). On weekends, I (activity).",
-      "hw": "Responde las preguntas y graba un audio. Mándame ambos por WhatsApp. ¡Después, a por el examen del mundo A1!",
+      "example": "I live in <span class=\"gap\">ciudad</span>. I'm a <span class=\"gap\">trabajo</span> / I study <span class=\"gap\">materia</span>. I like <span class=\"gap\">cosa</span>, but I don't like <span class=\"gap\">cosa</span>. I can <span class=\"gap\">verbo</span>, but I can't <span class=\"gap\">verbo</span>. On weekends, I usually <span class=\"gap\">actividad</span>. I study English because <span class=\"gap\">razón</span>.",
+      "hw": "Responde las preguntas y graba un audio. Mándame ambos por WhatsApp. ¡Y después, al examen del mundo A1!",
       "rubric": [
         {
           "c": "Tarea completa",
@@ -462,48 +773,108 @@
       ]
     }
   ],
-  "voices": {
-    "ana": "en-US-AriaNeural",
-    "tom": "en-US-GuyNeural"
-  },
   "audioRate": "-5%",
-  "audioScripts": [
-    {
-      "file": "a1-l6-1.mp3",
-      "lines": [
-        [
-          "ana",
-          "Where do you live, Tom?"
-        ],
-        [
-          "tom",
-          "I live in Toronto."
-        ],
-        [
-          "ana",
-          "Do you like sports?"
-        ],
-        [
-          "tom",
-          "Yes, I do. I play football."
-        ],
-        [
-          "ana",
-          "Can you swim?"
-        ],
-        [
-          "tom",
-          "No, I can't, but I want to learn."
-        ],
-        [
-          "ana",
-          "What do you do on weekends?"
-        ],
-        [
-          "tom",
-          "I usually see my friends."
-        ]
-      ]
-    }
-  ]
+  "say": {
+    "dir": "say/a1-l6",
+    "keys": [
+      "are",
+      "are-you-a-student",
+      "are-you-swim",
+      "bag",
+      "because",
+      "because-he-has-a-new-job",
+      "because-he-wants-to-travel",
+      "because-his-sister-lives-in-canada",
+      "can",
+      "can-tom-swim",
+      "can-you",
+      "can-you-cook",
+      "can-you-play-the-guitar",
+      "can-you-swim",
+      "do",
+      "do-you-like",
+      "do-you-like-music",
+      "do-you-play-the-guitar",
+      "do-you-swim",
+      "does",
+      "does-she-work-here",
+      "he-can-play-but-he-doesn-t-play",
+      "he-doesn-t-play-and-he-can-t-play",
+      "he-doesn-t-say",
+      "he-goes-swimming",
+      "he-plays-but-he-can-t-play",
+      "he-sees-his-friends",
+      "he-usually-plays-football",
+      "hi-are-you-a-new-student",
+      "how",
+      "how-many",
+      "how-old",
+      "how-old-are-you",
+      "i-can-cook",
+      "i-can-t-swim",
+      "i-m-a-nurse",
+      "i-m-a-teacher",
+      "i-m-fine-thanks",
+      "i-m-from-mexico",
+      "i-m-twenty-years-old",
+      "is",
+      "is-leo-a-new-student",
+      "is-tom-from-canada",
+      "like-play-cook",
+      "live",
+      "live-work-study",
+      "lives",
+      "madrid",
+      "mexico-city",
+      "no-he-can-t",
+      "no-he-isn-t",
+      "on-monday-at-seven",
+      "on-monday-at-six",
+      "on-sunday-at-six",
+      "on-the-table",
+      "on-weekends",
+      "pen",
+      "play",
+      "plays",
+      "si-lo-haces-normalmente-h-bito",
+      "si-quieres-hacerlo-ahora",
+      "si-sabes-hacerlo-habilidad",
+      "si-te-gusta-hacerlo",
+      "swim-see-my-friends",
+      "there-are-two-books",
+      "to-play",
+      "toronto",
+      "under-next-to",
+      "usually-travel",
+      "what",
+      "what-do-you-do",
+      "what-does-tom-do-on-weekends",
+      "when",
+      "when-is-his-class",
+      "when-is-your-class",
+      "where",
+      "where-are-you-from",
+      "where-do-you-live",
+      "where-does-tom-live",
+      "who",
+      "who-is-she",
+      "why",
+      "why-because",
+      "why-do-you-study-english-because",
+      "why-does-leo-study-english",
+      "yes-he-can",
+      "yes-he-is",
+      "yes-he-is-no-he-isn-t",
+      "yes-i-am",
+      "yes-i-am-no-i-m-not",
+      "yes-i-can",
+      "yes-i-can-no-i-can-t",
+      "yes-i-cook",
+      "yes-i-do",
+      "yes-i-do-no-i-don-t",
+      "yes-i-like",
+      "yes-i-m",
+      "yes-she-does-no-she-doesn-t"
+    ]
+  }
 }
