@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon-rankup.png">
-<link rel="apple-touch-icon" href="icon-rankup.png">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <meta name="robots" content="noindex">
 <title>English for All &middot; Rank Up Campaign &middot; Mapa</title>
 <meta name="description" content="Mapa de campaña English for All — sube de nivel de A1 a C2, lección a lección.">
@@ -19,11 +19,10 @@
 <meta property="og:site_name" content="English for All">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+<link rel="preload" href="assets/fonts/press-start-2p-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css?v=1">
+<link rel="stylesheet" href="assets/brands.css?v=1">
+<script src="assets/progress.js?v=1"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <style>
   :root {
@@ -48,7 +47,7 @@
   }
   body::before {
     content: ""; position: fixed; inset: 0; z-index: -1;
-    background: linear-gradient(rgba(5, 5, 14, 0.68), rgba(5, 5, 14, 0.82)), url("nebula.jpg") center / cover no-repeat;
+    background: linear-gradient(rgba(5, 5, 14, 0.68), rgba(5, 5, 14, 0.82)), url("nebula.webp") center / cover no-repeat;
   }
   .container { max-width: 880px; margin: 0 auto; position: relative; z-index: 2; }
 
@@ -76,7 +75,7 @@
   .home { background: var(--panel); border: 2px solid var(--gold); border-radius: 18px; padding: 22px 24px; margin-bottom: 26px; box-shadow: 0 0 16px #ffc83d44, inset 0 0 20px #ffc83d11; text-align: center; }
   .home .ht { font-family: "Press Start 2P", monospace; font-size: 0.92rem; color: var(--gold); text-shadow: 0 0 10px #ffc83d88; letter-spacing: 1px; margin-bottom: 12px; }
   .home p { font-size: 0.96rem; }
-  .home .path { font-family: "Press Start 2P", monospace; font-size: 0.6rem; letter-spacing: 1px; margin: 14px 0 4px; color: var(--muted); }
+  .home .path { font-family: "Press Start 2P", monospace; font-size: 0.62rem; letter-spacing: 1px; margin: 14px 0 4px; color: var(--muted); }
   .home .path b { color: var(--cyan); text-shadow: 0 0 8px var(--cyan); }
   .ov-bar { height: 14px; background: #0c0c22; border: 1px solid var(--gold); border-radius: 8px; overflow: hidden; box-shadow: inset 0 0 8px #000; margin: 16px 0 8px; }
   .ov-fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--cyan), var(--magenta), var(--gold)); box-shadow: 0 0 12px var(--gold); transition: width 0.5s; }
@@ -99,7 +98,7 @@
   .w-name { font-family: "Press Start 2P", monospace; font-size: 0.82rem; color: #fff; text-shadow: 0 0 6px var(--accent); letter-spacing: 1px; line-height: 1.5; }
   .w-theme { color: var(--muted); font-size: 0.84rem; margin-top: 5px; }
   .w-right { flex-shrink: 0; text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
-  .w-pill { font-family: "Press Start 2P", monospace; font-size: 0.5rem; letter-spacing: 1px; padding: 5px 9px; border-radius: 20px; border: 1px solid currentColor; white-space: nowrap; }
+  .w-pill { font-family: "Press Start 2P", monospace; font-size: 0.62rem; letter-spacing: 1px; padding: 5px 9px; border-radius: 20px; border: 1px solid currentColor; white-space: nowrap; }
   .w-pill.open { color: var(--green); } .w-pill.cur { color: var(--gold); } .w-pill.lock { color: var(--muted); }
   .w-stars { font-size: 0.82rem; color: var(--gold); letter-spacing: 1px; }
   .w-chev { flex-shrink: 0; color: var(--accent); font-size: 1rem; transition: transform 0.2s; }
@@ -124,7 +123,7 @@
   .lstatus { flex-shrink: 0; text-align: right; font-size: 0.84rem; letter-spacing: 1px; white-space: nowrap; }
   .lstars { color: var(--gold); } .lstars .off { opacity: 0.25; }
   .lstatus .play { color: var(--cyan); } .lstatus .soon { color: var(--muted); } .lstatus .lk { color: var(--muted); }
-  .boss-sep { display: flex; align-items: center; gap: 10px; margin: 14px 2px 2px; font-family: "Press Start 2P", monospace; font-size: 0.56rem; color: var(--gold); letter-spacing: 1px; text-shadow: 0 0 8px #ffc83d55; }
+  .boss-sep { display: flex; align-items: center; gap: 10px; margin: 14px 2px 2px; font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: var(--gold); letter-spacing: 1px; text-shadow: 0 0 8px #ffc83d55; }
   .boss-sep::before, .boss-sep::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
 
   /* Teacher bar */
@@ -166,7 +165,7 @@
 
 .spk-btn>*,.mute-btn>*{margin-right:0;width:62%;height:62%}.btn>ico-play{margin-right:.3em}
 .sw{display:inline-block;width:.85em;height:.85em;border-radius:50%;background:var(--c);border:1px solid #ffffff55;vertical-align:-.1em;margin-right:.28em;box-shadow:0 0 6px var(--c)}
-.lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:.52rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
+.lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:0.62rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
 </style>
 <link rel="stylesheet" href="assets/icons.css?v=1">
 </head>
@@ -177,7 +176,7 @@
 <div class="container">
 
   <div class="brand" data-aos="fade-up">
-    <img class="logo" src="logo.png" alt="English for All — Rank Up">
+    <img class="logo" src="logo.webp" alt="English for All — Rank Up">
   </div>
 
   <header data-aos="fade-up" data-aos-delay="80">
@@ -542,19 +541,16 @@ render();
 // ===== A7: move progress between devices =====
 function progressKeys(){ return Object.keys(localStorage).filter(function(k){ return k.indexOf("rankup_") === 0; }); }
 function exportProgress(){
-  var o = {}; progressKeys().forEach(function(k){ o[k] = localStorage.getItem(k); });
-  if (!Object.keys(o).length) { alert("Todavía no tienes progreso guardado. Completa una lección primero."); return; }
-  var code = btoa(JSON.stringify(o));
+  if (!EFA.hasProgress()) { alert("Todavía no tienes progreso guardado. Completa una lección primero."); return; }
+  var code = EFA.exportSave();
   try { navigator.clipboard.writeText(code); } catch (e) {}
-  window.prompt("Tu código de progreso (ya copiado). Guárdalo y pégalo en el otro dispositivo:", code);
+  window.prompt("Tu código de progreso (ya copiado). Sirve para la Academia y para Rank Up City. Guárdalo y pégalo en el otro dispositivo:", code);
 }
 function importProgress(){
   var code = window.prompt("Pega aquí tu código de progreso:");
   if (!code) return;
   try {
-    var o = JSON.parse(atob(code.trim()));
-    var n = 0;
-    Object.keys(o).forEach(function(k){ if (k.indexOf("rankup_") === 0) { localStorage.setItem(k, o[k]); n++; } });
+    var n = EFA.importSave(code);
     alert("Progreso restaurado (" + n + " registros). Recargando…");
     location.href = location.pathname;
   } catch (e) { alert("Ese código no es válido. Copia el código completo, sin espacios."); }

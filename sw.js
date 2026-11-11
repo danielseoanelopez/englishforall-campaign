@@ -1,15 +1,17 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v9";   // v9: shared assets/icons.css, slimmer pages
+const CACHE = "rankup-v10";  // v10: WebP images, self-hosted fonts + brand icons
 const CORE = [
   "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
+  "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=1",
+  "assets/fonts/press-start-2p-latin.woff2", "assets/fonts/share-tech-mono-latin.woff2",
   "city.html", "neon-cafe.html", "neon-office.html", "cards.html", "manifest.json",
-  "logo.png", "bg-cafe.jpg", "nebula.jpg", "map-city.jpg",
+  "logo.webp", "bg-cafe.webp", "nebula.webp", "map-city.webp",
   "icon-192.png", "icon-rankup.png",
-  "sprite-mia.png", "sprite-jack.png", "sprite-vera.png", "sprite-vera-inspector.png",
-  "sprite-dan.png", "sprite-totti.png", "sprite-enri.png",
-  "item-flatwhite.png", "item-latte.png", "item-tea.png", "item-juice.png",
-  "item-avotoast.png", "item-bagel.png", "item-muffin.png", "item-cookie.png"
+  "sprite-mia.webp", "sprite-jack.webp", "sprite-vera.webp", "sprite-vera-inspector.webp",
+  "sprite-dan.webp", "sprite-totti.webp", "sprite-enri.webp",
+  "item-flatwhite.webp", "item-latte.webp", "item-tea.webp", "item-juice.webp",
+  "item-avotoast.webp", "item-bagel.webp", "item-muffin.webp", "item-cookie.webp"
 ];
 
 self.addEventListener("install", e => {

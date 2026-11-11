@@ -4,17 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon-rankup.png">
-<link rel="apple-touch-icon" href="icon-rankup.png">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <meta name="robots" content="noindex">
 <title id="pageTitle">English for All · Rank Up</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+<link rel="preload" href="assets/fonts/press-start-2p-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css?v=1">
+<link rel="stylesheet" href="assets/brands.css?v=1">
+<script src="assets/progress.js?v=1"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20261111">
+<link rel="stylesheet" href="lesson.css?v=20261111b">
 <link rel="stylesheet" href="assets/icons.css?v=1">
 </head>
 <body>
@@ -23,7 +22,7 @@
 <a class="backmap" href="index.html">◄ MAPA</a>
 <button class="mute-btn" id="muteBtn" onclick="toggleMute()" aria-label="Sonido"><ico-volume></ico-volume></button>
 <div class="container">
-  <div class="brand" data-aos="fade-up"><img class="logo" src="logo.png" alt="English for All — Rank Up"></div>
+  <div class="brand" data-aos="fade-up"><img class="logo" src="logo.webp" alt="English for All — Rank Up"></div>
   <header data-aos="fade-up" data-aos-delay="80">
     <p class="crumb" id="crumb"></p>
     <h1 id="h1"></h1>
@@ -55,6 +54,7 @@
       <p>Envíame tu <b>tarea escrita</b> + tu <b>grabación leyéndola</b> por WhatsApp y lo corregimos juntos. ¡Vas por buen camino!</p>
       <a class="btn wa-btn" id="waCta" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WHATSAPP</a>
       <a class="btn next-btn" id="nextCta" href="index.html">◄ MAPA</a>
+      <a class="btn game-btn" id="gameCta" href="city.html"><ico-gamepad></ico-gamepad> <span>JUEGA EN RANK UP CITY</span></a>
       <p class="es" style="margin-top:12px"><a href="index.html" style="color:var(--cyan)">◄ Volver al mapa de campaña</a></p>
     </div>
     <div class="btn-row"><button class="btn" onclick="location.reload()">↻ TRY AGAIN</button></div>
@@ -306,6 +306,8 @@ function build(L){
   document.getElementById("sub").innerHTML = esc(L.subtitle||"");
   if(L.resultTitle) document.getElementById("resultName").textContent = L.resultTitle;
   if(L.rankup) document.getElementById("rankupLine").textContent = L.rankup;
+  { const g=document.getElementById("gameCta"), G={A1:["neon-cafe.html","PRACTICA EN EL NEON CAFÉ"],A2:["neon-office.html","PRACTICA EN LA OFFICE TOWER"]}[L.level];
+    if(g && G){ g.href=G[0]; g.querySelector("span").textContent=G[1]; } }
   if(L.next){ const n=document.getElementById("nextCta"); n.href=L.next.href; n.textContent=L.next.label; }
   document.getElementById("footer").innerHTML = `<span class="b">ENGLISH <em>for ALL</em></span><span class="sep"><ico-star></ico-star></span>Rank Up<span class="sep"><ico-star></ico-star></span>${esc(L.level)} · Lesson ${esc(L.num)}`;
 
@@ -444,7 +446,7 @@ function mFlip(id, cardId){
   } else { blip(); }
 }
 function updateProgress(){ const done=Object.keys(scores).length; document.getElementById("progressFill").style.width=(done/Math.max(EXERCISES.length,1)*100)+"%"; document.getElementById("progressLabel").textContent=`${done} / ${EXERCISES.length}`; }
-function saveStars(stars){ try{ const prev=parseInt(localStorage.getItem(LESSON_KEY)||"0",10); if(stars>prev) localStorage.setItem(LESSON_KEY,String(stars)); }catch(e){} }
+function saveStars(stars){ try{ const prev=parseInt(localStorage.getItem(LESSON_KEY)||"0",10); if(stars>prev) localStorage.setItem(LESSON_KEY,String(stars)); }catch(e){} if(window.EFA) EFA.bumpStreak(); }
 function sendHomework(el){ var nf=document.getElementById("studentName"); var name=(nf?nf.value.trim():"")||"Alumno/a"; var msg="¡Hola Daniel! Soy "+name+". Terminé la lección \""+LESSON_NAME+"\". Te envío mi tarea: mi escrito y un audio leyendo en voz alta."; el.href=SOCIAL.whatsapp+"?text="+encodeURIComponent(msg); return true; }
 
 function seeRank(){

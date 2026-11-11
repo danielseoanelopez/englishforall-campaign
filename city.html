@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>Rank Up City — English for All</title>
-<link rel="icon" href="icon-rankup.png">
-<link rel="apple-touch-icon" href="icon-rankup.png">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <meta name="theme-color" content="#05050e">
 <link rel="manifest" href="manifest.json">
+<script src="assets/progress.js?v=1"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Rank Up City — learn English like a game">
@@ -19,9 +20,8 @@
 <meta name="twitter:title" content="Rank Up City — learn English like a game">
 <meta name="twitter:description" content="Serve customers, level up your English, rank up. Play free.">
 <meta name="twitter:image" content="https://danielseoanelopez.github.io/englishforall-campaign/og-city.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/press-start-2p-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css?v=1">
 <style>
 :root {
   --cyan: #00e5ff; --magenta: #ff3df0; --purple: #9d4dff; --gold: #ffc83d;
@@ -43,7 +43,7 @@ body {
 }
 body::before {
   content: ""; position: fixed; inset: 0; z-index: -1;
-  background: linear-gradient(rgba(5,5,14,0.72), rgba(5,5,14,0.86)), url("nebula.jpg") center / cover no-repeat;
+  background: linear-gradient(rgba(5,5,14,0.72), rgba(5,5,14,0.86)), url("nebula.webp") center / cover no-repeat;
 }
 .wrap { max-width: 480px; margin: 0 auto; position: relative; z-index: 2; }
 .marquee { text-align: center; margin-bottom: 10px; }
@@ -53,7 +53,7 @@ h1 { font-family: "Press Start 2P", monospace; font-size: clamp(1rem, 4.6vw, 1.5
 .sub::before, .sub::after { content:"";display:inline-block;width:.7em;height:.7em;vertical-align:.05em;background-color:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z'/%3E%3C/svg%3E") no-repeat center/contain; color: var(--cyan); }
 
 .strip { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
-.pod { display: inline-flex; align-items: center; gap: 8px; background: var(--panel); border: 1.5px solid var(--pc, #2a3a5a); border-radius: 12px; padding: 8px 13px; font-family: "Press Start 2P", monospace; font-size: 0.56rem; letter-spacing: 1px; color: var(--pc, var(--muted)); text-decoration: none; box-shadow: 0 0 10px var(--pg, transparent); }
+.pod { display: inline-flex; align-items: center; gap: 8px; background: var(--panel); border: 1.5px solid var(--pc, #2a3a5a); border-radius: 12px; padding: 8px 13px; font-family: "Press Start 2P", monospace; font-size: 0.62rem; letter-spacing: 1px; color: var(--pc, var(--muted)); text-decoration: none; box-shadow: 0 0 10px var(--pg, transparent); }
 a.pod:hover { transform: translateY(-2px); }
 .pod .big { font-size: 0.82rem; }
 
@@ -62,14 +62,14 @@ a.pod:hover { transform: translateY(-2px); }
 .spot { position: absolute; transform: translate(-50%, -50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 2px; background: rgba(8,10,28,0.74); border: 2px solid var(--sc, #3a4a6a); border-radius: 11px; padding: 5px 7px; cursor: pointer; box-shadow: 0 0 12px var(--sg, transparent); line-height: 1; }
 .spot:hover { z-index: 3; }
 .spot.locked { border-style: dashed; }
-.spot .lv { font-family: "Press Start 2P", monospace; font-size: 0.52rem; color: var(--sc); text-shadow: 0 0 6px var(--sg); }
+.spot .lv { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: var(--sc); text-shadow: 0 0 6px var(--sg); }
 .spot.locked .lv { color: #93a0c0; }
-.spot .nm { font-family: "Press Start 2P", monospace; font-size: 0.44rem; color: #eaf7ff; letter-spacing: 0.5px; }
-.spot .paw { font-family: "Press Start 2P", monospace; font-size: 0.42rem; color: #ffc83d; margin-top: 2px; }
+.spot .nm { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: #eaf7ff; letter-spacing: 0.5px; }
+.spot .paw { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: #ffc83d; margin-top: 2px; }
 .spot .track { display: flex; gap: 4px; justify-content: center; margin: 4px 0 2px; }
 .spot .td { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--sc); background: transparent; box-shadow: 0 0 4px var(--sg); }
 .spot .td.on { background: var(--sc); }
-.spot .play { font-family: "Press Start 2P", monospace; font-size: 0.42rem; color: #3dffa0; margin-top: 1px; }
+.spot .play { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: #3dffa0; margin-top: 1px; }
 .spot .lk { font-size: 0.72rem; }
 @keyframes ring { 0%, 100% { box-shadow: 0 0 0 2px var(--sc), 0 0 14px var(--sg); } 50% { box-shadow: 0 0 0 4px var(--sc), 0 0 24px var(--sg); } }
 .spot.open { animation: ring 1.9s ease-in-out infinite; }
@@ -82,12 +82,12 @@ a.pod:hover { transform: translateY(-2px); }
 .catimg { flex-shrink: 0; width: 78px; cursor: pointer; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6)); transition: transform 0.12s; }
 .catimg:hover { transform: translateY(-3px); }
 .catbub { flex: 1; border: 2px solid var(--cc); background: #0c0e26; border-radius: 14px; padding: 9px 13px; }
-.catbub .cwho { font-family: "Press Start 2P", monospace; font-size: 0.48rem; color: var(--cc); letter-spacing: 1px; margin-bottom: 5px; }
+.catbub .cwho { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: var(--cc); letter-spacing: 1px; margin-bottom: 5px; }
 .catbub .csay { font-size: 0.9rem; line-height: 1.5; }
 .catbub .chint { font-size: 0.68rem; color: #5a6a8a; margin-top: 5px; }
 
 .actions { display: flex; gap: 9px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
-.btn { display: inline-flex; align-items: center; gap: 7px; font-family: "Press Start 2P", monospace; font-size: 0.58rem; background: linear-gradient(180deg, #2b0a2f, #170618); color: #ffb3f8; border: 2px solid #ff6cf5; border-radius: 11px; padding: 12px 16px; cursor: pointer; letter-spacing: 1px; text-shadow: none; box-shadow: 0 0 16px #ff3df055, inset 0 0 14px #ff3df022; text-decoration: none; }
+.btn { display: inline-flex; align-items: center; gap: 7px; font-family: "Press Start 2P", monospace; font-size: 0.62rem; background: linear-gradient(180deg, #2b0a2f, #170618); color: #ffb3f8; border: 2px solid #ff6cf5; border-radius: 11px; padding: 12px 16px; cursor: pointer; letter-spacing: 1px; text-shadow: none; box-shadow: 0 0 16px #ff3df055, inset 0 0 14px #ff3df022; text-decoration: none; }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 0 26px #ff3df0aa, inset 0 0 18px #ff3df044; }
 .btn.cyan { background: linear-gradient(180deg, #0b2a34, #061620); border-color: #4ae0f5; box-shadow: 0 0 16px #00e5ff55, inset 0 0 14px #00e5ff22; color: #8df3ff; text-shadow: none; }
 .btn.gold { background: linear-gradient(180deg, #2f2408, #1a1405); border-color: #ffd45e; box-shadow: 0 0 16px #ffc83d55, inset 0 0 14px #ffc83d22; color: #ffdc8a; text-shadow: none; }
@@ -120,7 +120,7 @@ a.pod:hover { transform: translateY(-2px); }
 
 .spk-btn>*,.mute-btn>*{margin-right:0;width:62%;height:62%}.btn>ico-play{margin-right:.3em}
 .sw{display:inline-block;width:.85em;height:.85em;border-radius:50%;background:var(--c);border:1px solid #ffffff55;vertical-align:-.1em;margin-right:.28em;box-shadow:0 0 6px var(--c)}
-.lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:.52rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
+.lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:0.62rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
 </style>
 <link rel="stylesheet" href="assets/icons.css?v=1">
 </head>
@@ -129,20 +129,20 @@ a.pod:hover { transform: translateY(-2px); }
 <input type="checkbox" id="hapticSwitch" switch aria-hidden="true" tabindex="-1" style="position:fixed;left:-9999px;top:-9999px;width:0;height:0;opacity:0;pointer-events:none">
 <label for="hapticSwitch" aria-hidden="true" style="position:fixed;left:-9999px;top:-9999px;width:0;height:0;opacity:0;pointer-events:none"></label>
 <div class="wrap">
-  <div class="marquee"><img src="logo.png" alt="English for All — Rank Up"></div>
+  <div class="marquee"><img src="logo.webp" alt="English for All — Rank Up"></div>
   <h1>RANK UP CITY</h1>
   <div class="sub">Your journey · A1 to C2</div>
 
   <div class="strip">
     <span class="pod" style="--pc: #ff9d3d; --pg: #ff9d3d33;" id="streakPod"><ico-fire></ico-fire> <span class="big" id="streakN">0</span> DAY STREAK</span>
-    <a class="pod" href="cards.html" style="--pc: var(--gold); --pg: #ffc83d33;"><ico-clone></ico-clone> CARDS <span class="big" id="cardsN">0/8</span></a>
+    <a class="pod" href="cards.html" style="--pc: var(--gold); --pg: #ffc83d33;"><ico-clone></ico-clone> CARDS <span class="big" id="cardsN">0/15</span></a>
   </div>
 
   <div class="map" id="map"></div>
 
   <div class="cats">
     <div class="catrow">
-      <img class="catimg" id="tottiImg" src="sprite-totti.png" alt="Totti">
+      <img class="catimg" id="tottiImg" src="sprite-totti.webp" alt="Totti">
       <div class="catbub" style="--cc: #b5b5d0;">
         <div class="cwho">TOTTI · your guide</div>
         <div class="csay" id="tottiSay"></div>
@@ -150,7 +150,7 @@ a.pod:hover { transform: translateY(-2px); }
       </div>
     </div>
     <div class="catrow rev">
-      <img class="catimg" id="enriImg" src="sprite-enri.png" alt="Enri" style="width:96px;">
+      <img class="catimg" id="enriImg" src="sprite-enri.webp" alt="Enri" style="width:96px;">
       <div class="catbub" style="--cc: #ff9d3d;">
         <div class="cwho">ENRI · moral support</div>
         <div class="csay" id="enriSay">...zzz...</div>
@@ -238,7 +238,7 @@ const NODES = [
 
 function renderMap() {
   const map = document.getElementById("map");
-  map.innerHTML = '<img class="mapimg" src="map-city.jpg" alt="Rank Up City map — six neon districts">';
+  map.innerHTML = '<img class="mapimg" src="map-city.webp" alt="Rank Up City map — six neon districts">';
   NODES.forEach(n => {
     const b = document.createElement("button");
     b.className = "spot " + (n.open ? "open" : "locked");
@@ -296,32 +296,20 @@ document.getElementById("enriImg").addEventListener("click", () => { ei = (ei + 
 function dayStr(d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
 let streak = {};
 try { streak = JSON.parse(localStorage.getItem("nc_streak") || "{}"); } catch (e) {}
-(function () {
-  const today = dayStr(new Date());
-  if (streak.last !== today) {
-    const yest = dayStr(new Date(Date.now() - 86400000));
-    streak.count = (streak.last === yest) ? (streak.count || 0) + 1 : 1;
-    streak.last = today; streak.best = Math.max(streak.best || 0, streak.count);
-    localStorage.setItem("nc_streak", JSON.stringify(streak));
-  }
-})();
-document.getElementById("streakN").textContent = streak.count || 0;
+/* the streak counts days you PLAY (a finished shift or lesson) - see assets/progress.js */
+document.getElementById("streakN").textContent = EFA.streakNow();
 
 /* ---------- card count ---------- */
 const CARDS_PER_STAGE = { s1: 2, s2: 1, s3: 2, s4: 1, sb: 1 };   // mirrors CARDS in cards.html
 let cardsGot = CAFE_STAGES.reduce((n, s) => n + (prog[s] ? CARDS_PER_STAGE[s] : 0), 0);
 if (prog.sb && prog.sb.best >= 12) cardsGot++;
-document.getElementById("cardsN").textContent = cardsGot + "/8";
+const OFFICE_CARDS = { s1: 2, s2: 1, s3: 1, s4: 1, sb: 1 };       // mirrors the office cards in cards.html
+cardsGot += OFFICE_STAGES.reduce((n, s) => n + (oprog[s] ? OFFICE_CARDS[s] : 0), 0);
+if (oprog.sb && oprog.sb.best >= 15) cardsGot++;
+document.getElementById("cardsN").textContent = cardsGot + "/15";
 
 /* ---------- save / load ---------- */
-function encodeSave() {
-  const json = JSON.stringify({ v: 1, p: prog, o: oprog, s: streak });
-  return btoa(String.fromCharCode.apply(null, new TextEncoder().encode(json)));
-}
-function decodeSave(code) {
-  const bin = atob(code.trim());
-  return JSON.parse(new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))));
-}
+function encodeSave() { return EFA.exportSave(); }
 const saveModal = document.getElementById("saveModal"), loadModal = document.getElementById("loadModal");
 document.getElementById("saveBtn").addEventListener("click", () => { blip(); document.getElementById("saveText").value = encodeSave(); saveModal.classList.add("on"); });
 document.getElementById("saveClose").addEventListener("click", () => saveModal.classList.remove("on"));
@@ -336,11 +324,7 @@ document.getElementById("applyBtn").addEventListener("click", () => {
   const code = document.getElementById("loadText").value;
   if (!code.trim()) return;
   try {
-    const data = decodeSave(code);
-    if (!data || typeof data.p !== "object") throw new Error("bad");
-    localStorage.setItem("nc_prog", JSON.stringify(data.p));
-    if (data.o && typeof data.o === "object") localStorage.setItem("no_prog", JSON.stringify(data.o));
-    if (data.s) localStorage.setItem("nc_streak", JSON.stringify(data.s));
+    EFA.importSave(code);
     alert("Progress restored! / ¡Progreso restaurado!");
     location.reload();
   } catch (e) { alert("That code doesn't look right. / Ese código no es válido."); }
