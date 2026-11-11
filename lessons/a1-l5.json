@@ -44,71 +44,191 @@
     {
       "type": "grammar",
       "tag": "objetos y lugares",
-      "title": "<ico-book></ico-book> a / an · this/that · there is/are",
-      "intro": "Aprende objetos de cada día y cómo decir dónde están. Estudia con las tarjetas y juega con las imágenes.",
-      "cells": [
-        {
-          "h": "a / an",
-          "body": "<code>a</code> book, <code>a</code> pen<br><code>an</code> apple, <code>an</code> umbrella<br><span class='es'>(an + vocal: a-e-i-o-u)</span>"
-        },
-        {
-          "h": "this / that",
-          "body": "<code>this</code> (aquí)<br><code>that</code> (allí)<br>What's <code>this</code>? It's a phone."
-        },
-        {
-          "h": "there is / are",
-          "body": "<code>There is</code> a chair. (1)<br><code>There are</code> two chairs. (2+)<br>plurales: book → book<code>s</code>"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='x'>a apple</span> → <span class='ok'>an apple</span><br><span class='x'>there is two</span> → <span class='ok'>there are two</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Lugares</b> — dónde están las cosas:",
-      "ladder": [
-        "in",
-        "on",
-        "under",
-        "next to",
-        "behind",
-        "in front of"
-      ],
+      "title": "<ico-book></ico-book> a / an · this / that · there is / are",
+      "intro": "Cinco pasos: <b style='color:var(--gold)'>a / an</b> y los plurales, <b style='color:var(--gold)'>los objetos</b>, <b style='color:var(--gold)'>this / that</b>, <b style='color:var(--gold)'>there is / there are</b> y <b style='color:var(--gold)'>dónde está</b> cada cosa. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
       "vocabBtn": "<ico-bookmark></ico-bookmark> Ver objetos y lugares",
       "vocab": [
         {
-          "en": "Book <ico-bookopen></ico-bookopen>",
-          "sp": "libro"
+          "en": "Book / Pen",
+          "sp": "libro / bolígrafo"
         },
         {
-          "en": "Pen <ico-pen></ico-pen>",
-          "sp": "lapicera"
+          "en": "Phone / Key",
+          "sp": "teléfono / llave"
         },
         {
-          "en": "Phone <ico-mobile></ico-mobile>",
-          "sp": "teléfono"
+          "en": "Bag / Umbrella",
+          "sp": "mochila, bolso / paraguas"
         },
         {
-          "en": "Key <ico-key></ico-key>",
-          "sp": "llave"
+          "en": "Table / Chair",
+          "sp": "mesa / silla"
         },
         {
-          "en": "Bag <ico-user></ico-user>",
-          "sp": "mochila / bolso"
+          "en": "Desk / Window",
+          "sp": "escritorio / ventana"
         },
         {
-          "en": "Chair <ico-chair></ico-chair>",
-          "sp": "silla"
+          "en": "An apple",
+          "sp": "una manzana"
         },
         {
-          "en": "Table",
-          "sp": "mesa"
+          "en": "In / On / Under",
+          "sp": "dentro de / sobre / debajo de"
         },
         {
-          "en": "Window <ico-window></ico-window>",
-          "sp": "ventana"
+          "en": "Next to / Behind / In front of",
+          "sp": "al lado de / detrás de / delante de"
         }
       ],
-      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>imágenes</b> <ico-image></ico-image>, <b>memoria</b> <ico-brain></ico-brain>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>completar</b> <ico-filepen></ico-filepen>. <ico-check></ico-check> CHECK donde lo veas."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>imágenes</b> <ico-image></ico-image>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · A / AN</b> <span class='es'>— un, una</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "a book, a pen, a key",
+              "sp": "un libro, un bolígrafo, una llave — <b>a</b> antes de consonante."
+            },
+            {
+              "en": "an apple, an umbrella",
+              "sp": "una manzana, un paraguas — <b>an</b> antes de vocal (a, e, i, o, u)."
+            },
+            {
+              "en": "one book, two books",
+              "sp": "Plural: casi siempre + <b>s</b>. Con plural no hay <b>a</b>."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>En inglés el «un/una» no se omite</b> con profesiones: «Soy ingeniero» → <s class='x'>I'm engineer.</s> → <span class='ok'>I'm an engineer.</span><br>Y nunca con plural: <s class='x'>a books</s> → <span class='ok'>two books</span> / <span class='ok'>books</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · OBJETOS DE CADA DÍA</b>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "a phone, a bag, an umbrella",
+              "sp": "un teléfono, una mochila o bolso, un paraguas"
+            },
+            {
+              "en": "a table, a chair, a desk",
+              "sp": "una mesa, una silla, un escritorio"
+            },
+            {
+              "en": "a window, a door",
+              "sp": "una ventana, una puerta"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · THIS / THAT</b> <span class='es'>— cerca o lejos</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "What's this?",
+              "sp": "¿Qué es esto? — algo cerca, en tu mano."
+            },
+            {
+              "en": "It's a phone.",
+              "sp": "Es un teléfono. — la respuesta empieza con <b>It's</b>."
+            },
+            {
+              "en": "What's that?",
+              "sp": "¿Qué es eso? — algo lejos, allá."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · THERE IS / THERE ARE</b> <span class='es'>— hay</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "There is a chair.",
+              "sp": "Hay una silla. — una cosa."
+            },
+            {
+              "en": "There are two chairs.",
+              "sp": "Hay dos sillas. — dos o más."
+            },
+            {
+              "en": "There isn't a TV.",
+              "sp": "No hay televisor."
+            },
+            {
+              "en": "Is there an umbrella?",
+              "sp": "¿Hay un paraguas?"
+            },
+            {
+              "en": "Yes, there is. / No, there isn't.",
+              "sp": "Sí. / No."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> «Hay» son dos palabras",
+              "body": "En español <b>hay</b> sirve para todo; en inglés cambia con el número.<br><s class='x'>There is two books.</s> → <span class='ok'>There are two books.</span><br>Y no se traduce con have ni con is solo: <s class='x'>Have a chair.</s> <s class='x'>Is a chair.</s> → <span class='ok'>There is a chair.</span>"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · ¿DÓNDE ESTÁ?</b> <span class='es'>— in, on, under…</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The phone is in the bag.",
+              "sp": "El teléfono está <b>dentro de</b> la mochila."
+            },
+            {
+              "en": "The book is on the table.",
+              "sp": "El libro está <b>sobre</b> la mesa."
+            },
+            {
+              "en": "The keys are under the chair.",
+              "sp": "Las llaves están <b>debajo de</b> la silla."
+            },
+            {
+              "en": "The desk is next to the window.",
+              "sp": "El escritorio está <b>al lado de</b> la ventana."
+            },
+            {
+              "en": "The bag is behind the door.",
+              "sp": "La mochila está <b>detrás de</b> la puerta."
+            },
+            {
+              "en": "The chair is in front of the desk.",
+              "sp": "La silla está <b>delante de</b> el escritorio."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>«En» tiene dos traducciones:</b> dentro = <b>in</b>, encima = <b>on</b>. «El libro está en la mesa» → <s class='x'>in the table</s> → <span class='ok'>on the table</span>"
+        }
+      ]
     },
     {
       "type": "flashcards",
@@ -122,7 +242,7 @@
         },
         {
           "front": "pen",
-          "back": "lapicera"
+          "back": "bolígrafo"
         },
         {
           "front": "phone",
@@ -134,30 +254,30 @@
         },
         {
           "front": "bag",
-          "back": "mochila"
+          "back": "mochila / bolso"
         },
         {
           "front": "umbrella",
           "back": "paraguas"
         },
         {
-          "front": "home",
-          "back": "casa"
+          "front": "table",
+          "back": "mesa"
         },
         {
-          "front": "school",
-          "back": "escuela"
+          "front": "chair",
+          "back": "silla"
         },
         {
-          "front": "shop",
-          "back": "tienda"
+          "front": "desk",
+          "back": "escritorio"
         },
         {
-          "front": "park",
-          "back": "parque"
+          "front": "window",
+          "back": "ventana"
         }
       ],
-      "deckLabel": "objetos y lugares"
+      "deckLabel": "objetos"
     },
     {
       "type": "picMatch",
@@ -165,10 +285,6 @@
       "title": "UNE OBJETO E IMAGEN",
       "intro": "Toca la imagen y luego la palabra correcta.",
       "pairs": [
-        {
-          "img": "<ico-bookopen></ico-bookopen>",
-          "word": "book"
-        },
         {
           "img": "<ico-key></ico-key>",
           "word": "key"
@@ -186,32 +302,12 @@
           "word": "umbrella"
         },
         {
-          "img": "<ico-user></ico-user>",
+          "img": "<ico-briefcase></ico-briefcase>",
           "word": "bag"
-        }
-      ]
-    },
-    {
-      "type": "memory",
-      "id": "mem-obj",
-      "title": "MEMORY · objeto y palabra",
-      "intro": "Encuentra cada imagen con su palabra. Toca dos cartas.",
-      "pairs": [
-        {
-          "a": "<ico-pen></ico-pen>",
-          "b": "pen"
         },
         {
-          "a": "<ico-window></ico-window>",
-          "b": "window"
-        },
-        {
-          "a": "<ico-apple></ico-apple>",
-          "b": "apple"
-        },
-        {
-          "a": "⌚",
-          "b": "watch"
+          "img": "<ico-apple></ico-apple>",
+          "word": "apple"
         }
       ]
     },
@@ -219,7 +315,7 @@
       "type": "contrast",
       "id": "ex-contrast",
       "title": "THIS vs THAT",
-      "intro": "La lección te enseña this y that, pero nunca los practicas. Las dos frases son correctas: lo que cambia es <b>qué tan lejos está la cosa</b>.",
+      "intro": "Las dos frases son correctas: lo que cambia es <b>qué tan lejos está la cosa</b>.",
       "pair": {
         "a": "What's this?",
         "b": "What's that?"
@@ -250,7 +346,7 @@
           "q": "Tu amigo señala un edificio a lo lejos. ¿Qué pregunta?",
           "options": [
             "What's this?",
-            "What's these?",
+            "What's here?",
             "What's that?"
           ],
           "answer": 2
@@ -280,11 +376,11 @@
           "type": "mcq",
           "q": "What is in the bag?",
           "options": [
-            "A book, a key and an apple",
-            "A book, a pen and a phone",
-            "A pen, a phone and an umbrella"
+            "A pen and a phone",
+            "A key and a phone",
+            "A pen and an umbrella"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "mcq",
@@ -344,33 +440,42 @@
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "a / an / there is / there are",
+      "title": "a / an · there is / are · in / on / under",
       "intro": "Elige la opción correcta.",
       "items": [
         {
           "q": "It's ___ apple.",
           "options": [
-            "the",
+            "a",
             "an",
-            "a"
+            "the"
           ],
           "answer": 1
         },
         {
-          "q": "It's ___ book.",
+          "q": "Tom is ___.",
           "options": [
-            "a",
-            "an",
-            "two"
+            "engineer",
+            "an engineer",
+            "a engineer"
           ],
-          "answer": 0
+          "answer": 1
+        },
+        {
+          "q": "I have two ___.",
+          "options": [
+            "book",
+            "books",
+            "a books"
+          ],
+          "answer": 1
         },
         {
           "q": "___ a chair in the room.",
           "options": [
             "There is",
             "There are",
-            "It is"
+            "Have"
           ],
           "answer": 0
         },
@@ -384,13 +489,187 @@
           "answer": 2
         },
         {
-          "q": "I have ___ umbrella.",
+          "q": "___ an umbrella in your bag?",
           "options": [
-            "a",
-            "an",
-            "the"
+            "Is there",
+            "Are there",
+            "There is"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "No, there ___ a TV in my room.",
+          "options": [
+            "aren't",
+            "isn't",
+            "don't"
           ],
           "answer": 1
+        },
+        {
+          "q": "The book is ___ the table.",
+          "options": [
+            "on",
+            "in",
+            "under"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "My phone is ___ my bag.",
+          "options": [
+            "on",
+            "in",
+            "behind"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The keys aren't on the chair. They're ___ the chair.",
+          "options": [
+            "on",
+            "next",
+            "under"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase.",
+      "items": [
+        {
+          "words": [
+            "There",
+            "is",
+            "a",
+            "pen",
+            "on",
+            "the",
+            "table"
+          ],
+          "answer": "There is a pen on the table"
+        },
+        {
+          "words": [
+            "There",
+            "are",
+            "two",
+            "books",
+            "in",
+            "my",
+            "bag"
+          ],
+          "answer": "There are two books in my bag"
+        },
+        {
+          "words": [
+            "Is",
+            "there",
+            "an",
+            "umbrella"
+          ],
+          "answer": "Is there an umbrella"
+        },
+        {
+          "words": [
+            "The",
+            "keys",
+            "are",
+            "under",
+            "the",
+            "chair"
+          ],
+          "answer": "The keys are under the chair"
+        },
+        {
+          "words": [
+            "My",
+            "desk",
+            "is",
+            "next",
+            "to",
+            "the",
+            "window"
+          ],
+          "answer": "My desk is next to the window"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · WHERE ARE MY KEYS?",
+      "desc": "Tom busca sus cosas y Ana lo ayuda. Escucha in / on / under / next to.",
+      "src": "a1-l5-2.mp3",
+      "dur": "0:16",
+      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Where are Tom's keys?",
+          "options": [
+            "Under the chair",
+            "On the table",
+            "In his bag"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Where is his phone?",
+          "options": [
+            "In his bag",
+            "Under the chair",
+            "On the table"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is next to the phone?",
+          "options": [
+            "The books",
+            "The keys",
+            "An apple"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Look around you. Say where three things are. Use <i>in / on / under / next to</i>.",
+        "starter": "My phone is on the (place). My keys are in my (thing). My bag is next to the (thing)."
+      },
+      "transcript": [
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "Ana, <span class='tg'>where are</span> my keys?"
+        },
+        {
+          "spk": "Ana",
+          "html": "Are they <span class='tg'>on the table</span>?"
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "No, they aren't."
+        },
+        {
+          "spk": "Ana",
+          "html": "Look! They're <span class='tg'>under the chair</span>."
+        },
+        {
+          "spk": "Tom",
+          "b": true,
+          "html": "Thanks! And <span class='tg'>where is</span> my phone?"
+        },
+        {
+          "spk": "Ana",
+          "html": "It's <span class='tg'>in your bag</span>, <span class='tg'>next to</span> the books."
         }
       ]
     },
@@ -402,10 +681,10 @@
         "Usa <b>There is</b> (1) y <b>There are</b> (2+)",
         "Usa <b>a</b> y <b>an</b> correctamente",
         "Nombra <b>4–5 objetos</b> (book, pen, phone, key…)",
-        "Di dónde están (<b>on the table</b>, <b>in the bag</b>)"
+        "Di dónde están: <b>in / on / under / next to</b>"
       ],
       "placeholder": "On my desk, there is...",
-      "example": "On my desk, there is a (object) and a (object). There are (number) (objects) and a (object). There is a (object) next to the (object). My (things) are in my (place). I like my desk!",
+      "example": "On my desk, there is a <span class=\"gap\">objeto</span> and an <span class=\"gap\">objeto con vocal</span>. There are <span class=\"gap\">número</span> <span class=\"gap\">objetos</span>. My <span class=\"gap\">objeto</span> is next to the <span class=\"gap\">objeto</span>. My keys are <span class=\"gap\">in / on / under</span> the <span class=\"gap\">lugar</span>. There isn't a <span class=\"gap\">objeto</span>.",
       "hw": "Escribe tu descripción y mándame una foto + el texto por WhatsApp.",
       "rubric": [
         {
@@ -423,40 +702,103 @@
       ]
     }
   ],
-  "voices": {
-    "ana": "en-US-AriaNeural",
-    "tom": "en-US-GuyNeural"
-  },
   "audioRate": "-5%",
-  "audioScripts": [
-    {
-      "file": "a1-l5-1.mp3",
-      "lines": [
-        [
-          "ana",
-          "Tom, what's in your bag?"
-        ],
-        [
-          "tom",
-          "Let me see. There is a book, a pen, and my phone."
-        ],
-        [
-          "ana",
-          "Only one book?"
-        ],
-        [
-          "tom",
-          "No, there are two books. And my keys are here too."
-        ],
-        [
-          "ana",
-          "Is there an umbrella?"
-        ],
-        [
-          "tom",
-          "No, there isn't. But there is an apple for lunch!"
-        ]
-      ]
-    }
-  ]
+  "say": {
+    "dir": "say/a1-l5",
+    "keys": [
+      "a",
+      "a-book-a-pen-a-key",
+      "a-books",
+      "a-engineer",
+      "a-key-and-a-phone",
+      "a-pen-and-a-phone",
+      "a-pen-and-an-umbrella",
+      "a-phone-a-bag-an-umbrella",
+      "a-sandwich",
+      "a-table-a-chair-a-desk",
+      "a-this",
+      "a-window-a-door",
+      "an",
+      "an-apple",
+      "an-apple-an-umbrella",
+      "an-engineer",
+      "apple",
+      "are-there",
+      "aren-t",
+      "b-that",
+      "bag",
+      "bag-umbrella",
+      "behind",
+      "book",
+      "book-pen",
+      "books",
+      "brother-sister",
+      "chair",
+      "desk",
+      "desk-window",
+      "do-you-have",
+      "don-t",
+      "engineer",
+      "have",
+      "how-many-books-are-there",
+      "in",
+      "in-his-bag",
+      "in-on-under",
+      "is-there",
+      "is-there-an-umbrella",
+      "isn-t",
+      "it-is",
+      "it-s-a-phone",
+      "key",
+      "las-dos-igual",
+      "mother-father",
+      "next",
+      "next-to-behind-in-front-of",
+      "ninguna-de-las-dos",
+      "nothing",
+      "on",
+      "on-the-table",
+      "one",
+      "one-book-two-books",
+      "pen",
+      "phone",
+      "phone-key",
+      "table",
+      "table-chair",
+      "tall-short",
+      "that-is-a-book",
+      "the",
+      "the-bag-is-behind-the-door",
+      "the-book-is-on-the-table",
+      "the-books",
+      "the-chair-is-in-front-of-the-desk",
+      "the-desk-is-next-to-the-window",
+      "the-keys",
+      "the-keys-are-under-the-chair",
+      "the-phone-is-in-the-bag",
+      "there-are",
+      "there-are-two-chairs",
+      "there-is",
+      "there-is-a-chair",
+      "there-isn-t-a-tv",
+      "these-is-a-book",
+      "this-is-a-book",
+      "three",
+      "two",
+      "umbrella",
+      "under",
+      "under-the-chair",
+      "what-does-tom-have-for-lunch",
+      "what-is-in-the-bag",
+      "what-is-next-to-the-phone",
+      "what-s-here",
+      "what-s-that",
+      "what-s-this",
+      "where-are-tom-s-keys",
+      "where-is-his-phone",
+      "window",
+      "years-old",
+      "yes-there-is-no-there-isn-t"
+    ]
+  }
 }
