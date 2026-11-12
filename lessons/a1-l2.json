@@ -578,7 +578,7 @@
       "desc": "María presenta a su amigo Leo. Escucha su país, trabajo y edad. <span class='es'>Pista: <b>he works in</b> = él trabaja en · <b>friendly</b> = amable.</span>",
       "src": "a1-l2-2.mp3",
       "dur": "0:13",
-      "speakers": "<ico-commentdots></ico-commentdots> María",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-maria.webp' alt='' loading='lazy'>María",
       "questions": [
         {
           "type": "mcq",

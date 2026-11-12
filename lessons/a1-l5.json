@@ -265,7 +265,7 @@
           "back": "mesa"
         },
         {
-          "front": "chair",
+          "front": "<img class='job' src='obj-chair.webp' alt='chair' loading='lazy'> chair",
           "back": "silla"
         },
         {
@@ -294,7 +294,7 @@
           "word": "phone"
         },
         {
-          "img": "<ico-chair></ico-chair>",
+          "img": "<img class='job' src='obj-chair.webp' alt='chair' loading='lazy'>",
           "word": "chair"
         },
         {
@@ -306,7 +306,7 @@
           "word": "bag"
         },
         {
-          "img": "<ico-apple></ico-apple>",
+          "img": "<img class='job' src='obj-apple.webp' alt='apple' loading='lazy'>",
           "word": "apple"
         }
       ]
