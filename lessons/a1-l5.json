@@ -403,6 +403,16 @@
             "A sandwich"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Is there an umbrella in the bag?",
+          "options": [
+            "Yes, there is",
+            "No, there isn't",
+            "He doesn't say"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -639,6 +649,16 @@
             "An apple"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Are the keys on the table?",
+          "options": [
+            "No, they aren't",
+            "Yes, they are",
+            "She doesn't say"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -724,6 +744,7 @@
       "an-apple-an-umbrella",
       "an-engineer",
       "apple",
+      "are-the-keys-on-the-table",
       "are-there",
       "aren-t",
       "bag",
@@ -740,12 +761,14 @@
       "don-t",
       "engineer",
       "have",
+      "he-doesn-t-say",
       "how-many-books-are-there",
       "in",
       "in-his-bag",
       "in-on-under",
       "is-there",
       "is-there-an-umbrella",
+      "is-there-an-umbrella-in-the-bag",
       "isn-t",
       "it-is",
       "it-s-a-phone",
@@ -753,6 +776,8 @@
       "mother-father",
       "next",
       "next-to-behind-in-front-of",
+      "no-there-isn-t",
+      "no-they-aren-t",
       "nothing",
       "on",
       "on-the-table",
@@ -761,6 +786,7 @@
       "pen",
       "phone",
       "phone-key",
+      "she-doesn-t-say",
       "table",
       "table-chair",
       "tall-short",
@@ -796,7 +822,9 @@
       "where-is-his-phone",
       "window",
       "years-old",
-      "yes-there-is-no-there-isn-t"
+      "yes-there-is",
+      "yes-there-is-no-there-isn-t",
+      "yes-they-are"
     ]
   }
 }

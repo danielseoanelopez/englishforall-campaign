@@ -476,6 +476,16 @@
             "He goes swimming"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does Tom want to learn?",
+          "options": [
+            "To cook",
+            "To drive",
+            "To swim"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -700,6 +710,16 @@
             "On Sunday at six"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Who is Leo's teacher?",
+          "options": [
+            "Ms. Clark",
+            "Ms. Smith",
+            "Mr. Clark"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -828,6 +848,9 @@
       "lives",
       "madrid",
       "mexico-city",
+      "mr-clark",
+      "ms-clark",
+      "ms-smith",
       "no-he-can-t",
       "no-he-isn-t",
       "on-monday-at-seven",
@@ -840,13 +863,17 @@
       "plays",
       "swim-see-my-friends",
       "there-are-two-books",
+      "to-cook",
+      "to-drive",
       "to-play",
+      "to-swim",
       "toronto",
       "under-next-to",
       "usually-travel",
       "what",
       "what-do-you-do",
       "what-does-tom-do-on-weekends",
+      "what-does-tom-want-to-learn",
       "when",
       "when-is-his-class",
       "when-is-your-class",
@@ -855,6 +882,7 @@
       "where-do-you-live",
       "where-does-tom-live",
       "who",
+      "who-is-leo-s-teacher",
       "who-is-she",
       "why",
       "why-because",

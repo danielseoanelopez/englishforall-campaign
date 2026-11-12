@@ -47,7 +47,7 @@
       "title": "<ico-book></ico-book> TO BE · I am, you are, he is",
       "intro": "Para dar datos personales (país, trabajo, edad) usas un solo verbo: <b style='color:var(--gold)'>to be</b>. En español son dos, <b>ser</b> y <b>estar</b>; en inglés es el mismo para los dos.",
       "cells": [],
-      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver países y trabajos",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver más trabajos y palabras",
       "vocab": [
         {
           "en": "Country",
@@ -58,44 +58,12 @@
           "sp": "trabajo"
         },
         {
-          "en": "Teacher",
-          "sp": "profesor/a"
-        },
-        {
-          "en": "Doctor",
-          "sp": "médico/a"
-        },
-        {
-          "en": "Engineer",
-          "sp": "ingeniero/a"
-        },
-        {
-          "en": "Student",
-          "sp": "estudiante"
-        },
-        {
           "en": "How old are you?",
           "sp": "¿cuántos años tienes?"
         },
         {
           "en": "Years old",
           "sp": "años (de edad)"
-        },
-        {
-          "en": "Nurse",
-          "sp": "enfermero/a"
-        },
-        {
-          "en": "Cook",
-          "sp": "cocinero/a"
-        },
-        {
-          "en": "Police officer",
-          "sp": "policía"
-        },
-        {
-          "en": "Waiter",
-          "sp": "mesero/a · camarero/a"
         },
         {
           "en": "Driver",
@@ -110,12 +78,12 @@
           "sp": "vendedor/a"
         },
         {
-          "en": "Programmer",
-          "sp": "programador/a"
+          "en": "He works in a hospital.",
+          "sp": "Él trabaja en un hospital."
         },
         {
-          "en": "Dentist",
-          "sp": "dentista"
+          "en": "Friendly",
+          "sp": "amable"
         }
       ],
       "note": "<b>Cómo funciona:</b> esta lección tiene <b>tarjetas</b> <ico-clone></ico-clone>, <b>imágenes</b> <ico-image></ico-image>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y un <b>juego de memoria</b> <ico-brain></ico-brain>. <ico-check></ico-check> CHECK donde lo veas.",
@@ -387,6 +355,16 @@
             "Twenty"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Where is Ana from?",
+          "options": [
+            "Canada",
+            "Brazil",
+            "Mexico"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -493,7 +471,7 @@
           "answer": 2
         },
         {
-          "q": "Leo ___ not a teacher. He is a doctor.",
+          "q": "Bruno ___ not a teacher. He is a doctor.",
           "options": [
             "are",
             "is",
@@ -540,6 +518,38 @@
             "an"
           ],
           "answer": 1
+        },
+        {
+          "q": "He is ___ nurse.",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Tom is ___ engineer from Canada.",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "She is ___ excellent cook.",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "He is ___ police officer.",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -575,14 +585,14 @@
       "type": "listening",
       "id": "ex-l2",
       "title": "AUDIO 2 · THIS IS MY FRIEND",
-      "desc": "María presenta a su amigo Leo. Escucha su país, trabajo y edad. <span class='es'>Pista: <b>he works in</b> = él trabaja en · <b>friendly</b> = amable.</span>",
+      "desc": "María presenta a su amigo Bruno. Escucha su país, trabajo y edad. <span class='es'>Pista: <b>he works in</b> = él trabaja en · <b>friendly</b> = amable.</span>",
       "src": "a1-l2-2.mp3",
       "dur": "0:13",
       "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-maria.webp' alt='' loading='lazy'>María",
       "questions": [
         {
           "type": "mcq",
-          "q": "What is Leo's job?",
+          "q": "What is Bruno's job?",
           "options": [
             "A teacher",
             "A doctor",
@@ -592,7 +602,7 @@
         },
         {
           "type": "mcq",
-          "q": "Where is Leo from?",
+          "q": "Where is Bruno from?",
           "options": [
             "Mexico",
             "Brazil",
@@ -602,11 +612,21 @@
         },
         {
           "type": "mcq",
-          "q": "How old is Leo?",
+          "q": "How old is Bruno?",
           "options": [
             "Thirty",
             "Twenty",
             "Forty"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Where does Bruno work?",
+          "options": [
+            "In a big hospital",
+            "In a school",
+            "In a restaurant"
           ],
           "answer": 0
         }
@@ -618,7 +638,7 @@
       "transcript": [
         {
           "spk": "María",
-          "html": "Hello! This is my friend Leo. He is <span class='tg'>from Brazil</span>. He is <span class='tg'>a doctor</span>, and he works in a big hospital in São Paulo. He is <span class='tg'>thirty</span> years old, and he is very friendly!"
+          "html": "Hello! This is my friend Bruno. He is <span class='tg'>from Brazil</span>. He is <span class='tg'>a doctor</span>, and he works in a big hospital in São Paulo. He is <span class='tg'>thirty</span> years old, and he is very friendly!"
         }
       ]
     },
@@ -669,6 +689,7 @@
       "are-you-a-student",
       "argentina",
       "brazil",
+      "canada",
       "cook",
       "country",
       "dentist",
@@ -676,15 +697,17 @@
       "driver",
       "engineer",
       "forty",
+      "friendly",
       "good-evening",
       "good-night",
       "have",
       "he-is",
       "he-is-a-doctor",
+      "he-works-in-a-hospital",
       "how-are-you",
       "how-old-are-you",
       "how-old-is-ana",
-      "how-old-is-leo",
+      "how-old-is-bruno",
       "i-am",
       "i-am-a-student",
       "i-am-an-engineer",
@@ -692,6 +715,9 @@
       "i-am-not-a-teacher",
       "i-am-twenty-years-old",
       "i-m-from",
+      "in-a-big-hospital",
+      "in-a-restaurant",
+      "in-a-school",
       "is",
       "is-he-a-doctor",
       "it-is",
@@ -701,7 +727,6 @@
       "nice-to-meet-you",
       "nurse",
       "police-officer",
-      "programmer",
       "she-is",
       "she-is-from-brazil",
       "shop-assistant",
@@ -718,11 +743,13 @@
       "united-states",
       "waiter",
       "we-are",
-      "what-is-leo-s-job",
+      "what-is-bruno-s-job",
       "what-is-tom-s-job",
       "what-is-your-job",
       "where-are-you-from",
-      "where-is-leo-from",
+      "where-does-bruno-work",
+      "where-is-ana-from",
+      "where-is-bruno-from",
       "who-is-a-student",
       "years-old",
       "you-are"

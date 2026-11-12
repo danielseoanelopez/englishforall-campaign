@@ -188,7 +188,7 @@ const FORM_ENDPOINT = "https://formspree.io/f/mbdewbrp";
 function copyDiscord(el){var r=el.innerHTML;var done=function(){el.innerHTML='<ico-check></ico-check>'+(el.classList.contains("btn")?" ¡COPIADO!":"");setTimeout(function(){el.innerHTML=r;},1500);};try{navigator.clipboard.writeText(SOCIAL.discord).then(done,done);}catch(e){done();}return false;}
 
 const SECTIONS = { A:"PARTE A · GRAMÁTICA Y USO", B:"PARTE B · VOCABULARIO", C:"PARTE C · LISTENING (escucha y responde)", D:"PARTE D · READING" };
-const READING = "Hi! My name is Lucy. I'm from London. I'm twenty-two years old. I'm a nurse. I have one brother and one sister. I like music and football. My English class is on Monday at six o'clock.";
+const READING = "Hi! My name is Kate. I'm from London. I'm twenty-two years old. I'm a nurse. I have one brother and one sister. I like music and football. My English class is on Monday at six o'clock.";
 
 const QUESTIONS = [
   { sec:"A", q:"She ___ a teacher.", o:["are","is","am"], a:1, fb:"3ra persona singular: she is." },
@@ -200,21 +200,21 @@ const QUESTIONS = [
   { sec:"A", q:"___ two books on the table.", o:["There is","There are","It is"], a:1, fb:"plural (2+) -> there are." },
   { sec:"A", q:"___ you like coffee?", o:["Does","Are","Do"], a:2, fb:"pregunta con 'you' -> Do you...?" },
   { sec:"A", q:"___ you swim?", o:["Do","Are","Can"], a:2, fb:"habilidad -> Can you...?" },
-  { sec:"A", q:"The class is ___ Monday.", o:["in","at","on"], a:2, fb:"on + dia de la semana." },
-  { sec:"B", q:"A person who teaches is a ___.", o:["cook","teacher","doctor"], a:1, fb:"teacher = profe." },
-  { sec:"B", q:"You write with a ___.", o:["chair","key","pen"], a:2, fb:"pen = lapicera." },
+  { sec:"A", q:"The class is ___ Monday.", o:["in","at","on"], a:2, fb:"on + día de la semana." },
+  { sec:"B", q:"A person who teaches is a ___.", o:["cook","teacher","doctor"], a:1, fb:"teacher = profesor/a." },
+  { sec:"B", q:"You write with a ___.", o:["chair","key","pen"], a:2, fb:"pen = bolígrafo." },
   { sec:"B", q:"You see a friend in the morning. You say:", o:["Goodbye!","Good morning!","Good night!"], a:1, fb:"saludo de la mañana." },
-  { sec:"B", q:"A person who works in a hospital is a ___.", o:["doctor","teacher","cook"], a:0, fb:"doctor = medico." },
+  { sec:"B", q:"A person who works in a hospital is a ___.", o:["doctor","teacher","cook"], a:0, fb:"doctor = médico/a." },
   { sec:"B", q:"You open a door with a ___.", o:["pen","key","book"], a:1, fb:"key = llave." },
   { sec:"B", q:"Someone gives you a gift. You say:", o:["Please!","Thank you!","Sorry!"], a:1, fb:"agradecer = thank you." },
   { sec:"C", q:"What is Sara's job?", o:["A doctor","A teacher","A nurse"], a:0, fb:"'I'm a doctor.'", audio:"a1f1.mp3" },
   { sec:"C", q:"What time does the shop open?", o:["At six","At nine","At ten"], a:1, fb:"'opens at nine o'clock'.", audio:"a1f2.mp3" },
   { sec:"C", q:"How many brothers does the person have?", o:["Two","One","Three"], a:0, fb:"'I have two brothers'.", audio:"a1f3.mp3" },
   { sec:"C", q:"Where does the person work?", o:["In a school","In a shop","In a hospital"], a:2, fb:"'I work in a hospital'.", audio:"a1f4.mp3" },
-  { sec:"D", q:"Where is Lucy from?", o:["London","Toronto","Madrid"], a:0, fb:"'I'm from London'." },
-  { sec:"D", q:"What is Lucy's job?", o:["A nurse","A teacher","A doctor"], a:0, fb:"'I'm a nurse'." },
+  { sec:"D", q:"Where is Kate from?", o:["London","Toronto","Madrid"], a:0, fb:"'I'm from London'." },
+  { sec:"D", q:"What is Kate's job?", o:["A nurse","A teacher","A doctor"], a:0, fb:"'I'm a nurse'." },
   { sec:"D", q:"When is her English class?", o:["On Monday at six","On Sunday","On Friday at nine"], a:0, fb:"'on Monday at six o'clock'." },
-  { sec:"D", q:"How old is Lucy?", o:["Thirty-two","Twelve","Twenty-two"], a:2, fb:"'I'm twenty-two years old'." }
+  { sec:"D", q:"How old is Kate?", o:["Thirty-two","Twelve","Twenty-two"], a:2, fb:"'I'm twenty-two years old'." }
 ];
 
 function shuffled(n){ const a=[...Array(n).keys()]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }

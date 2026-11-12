@@ -19,16 +19,8 @@
       "title": "<ico-book></ico-book> SAY HELLO · saludar y presentarte",
       "intro": "En esta primera lección aprendes tres cosas: <b style='color:var(--gold)'>saludar</b>, <b style='color:var(--gold)'>presentarte</b> y <b style='color:var(--gold)'>hacer tres preguntas básicas</b>. Lee cada frase, toca el altavoz para escucharla y repítela en voz alta.",
       "cells": [],
-      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de saludos",
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver más palabras útiles",
       "vocab": [
-        {
-          "en": "Hello / Hi",
-          "sp": "hola"
-        },
-        {
-          "en": "Goodbye / Bye",
-          "sp": "adiós / hasta luego"
-        },
         {
           "en": "Please",
           "sp": "por favor"
@@ -38,36 +30,32 @@
           "sp": "gracias"
         },
         {
-          "en": "What's your name?",
-          "sp": "¿cómo te llamas?"
+          "en": "You're welcome",
+          "sp": "de nada"
         },
         {
-          "en": "My name is…",
-          "sp": "me llamo…"
+          "en": "And you?",
+          "sp": "¿y tú?"
         },
         {
-          "en": "Nice to meet you",
-          "sp": "mucho gusto / encantado"
-        },
-        {
-          "en": "Where are you from?",
-          "sp": "¿de dónde eres?"
-        },
-        {
-          "en": "How are you?",
-          "sp": "¿cómo estás?"
+          "en": "I'm fine, thanks.",
+          "sp": "Estoy bien, gracias."
         },
         {
           "en": "This is…",
           "sp": "te presento a…"
         },
         {
-          "en": "A friend / A teacher",
-          "sp": "un amigo / un profesor"
+          "en": "Welcome!",
+          "sp": "¡bienvenido! / ¡bienvenida!"
         },
         {
-          "en": "See you (soon)!",
-          "sp": "¡nos vemos (pronto)!"
+          "en": "Excuse me / Sorry",
+          "sp": "disculpa / perdón"
+        },
+        {
+          "en": "A friend / A teacher",
+          "sp": "un amigo / un profesor"
         }
       ],
       "note": "<b>Cómo funciona:</b> esta lección mezcla <b>escucha</b> <ico-headphones></ico-headphones>, <b>situaciones</b> <ico-link></ico-link>, <b>elegir respuestas</b> <ico-comments></ico-comments> y <b>ordenar palabras</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada uno. ¡Sin traductor!",
@@ -323,6 +311,16 @@
             "Nervous"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Where is Tom from?",
+          "options": [
+            "Canada",
+            "Mexico",
+            "Brazil"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -493,6 +491,16 @@
             "On the first floor"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is the name of the school?",
+          "options": [
+            "City English School",
+            "Star English School",
+            "Sun English School"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -614,7 +622,10 @@
       "afternoon",
       "and-you",
       "ben",
+      "brazil",
       "canada",
+      "city-english-school",
+      "excuse-me-sorry",
       "good-afternoon",
       "good-evening",
       "good-morning",
@@ -649,18 +660,24 @@
       "see-you",
       "see-you-soon",
       "spain",
+      "star-english-school",
+      "sun-english-school",
       "thank-you-thanks",
       "this-is",
       "this-is-my-friend-tom",
       "tired",
       "tom",
+      "welcome",
       "what-is-the-man-s-name",
+      "what-is-the-name-of-the-school",
       "what-s-your-name",
       "what-time-of-day-is-it",
       "where-are-you-from",
       "where-is-ana-from",
       "where-is-leo-s-class",
-      "who-is-leo"
+      "where-is-tom-from",
+      "who-is-leo",
+      "you-re-welcome"
     ]
   }
 }

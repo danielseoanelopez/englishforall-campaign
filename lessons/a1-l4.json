@@ -522,6 +522,16 @@
             "Blonde"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Who is very tall?",
+          "options": [
+            "Lucy",
+            "Tom",
+            "Max"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -752,6 +762,16 @@
             "Marcos"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does Marcos have?",
+          "options": [
+            "A guitar",
+            "A TV",
+            "A piano"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -800,7 +820,10 @@
     "dir": "say/a1-l4",
     "keys": [
       "a-car-a-house",
+      "a-guitar",
       "a-pet-a-dog-a-cat",
+      "a-piano",
+      "a-tv",
       "am",
       "are",
       "aunt",
@@ -852,6 +875,7 @@
       "is",
       "isn-t",
       "leo",
+      "lucy",
       "marcos",
       "max",
       "me",
@@ -889,6 +913,7 @@
       "their",
       "they",
       "this-is-my-sister",
+      "tom",
       "tom-has-a-car",
       "tom-s-sister",
       "two-brothers-and-one-sister",
@@ -896,10 +921,12 @@
       "we",
       "week-weekend",
       "what-color-is-lucy-s-hair",
+      "what-does-marcos-have",
       "what-is-his-brother-s-name",
       "what-is-on-the-desk",
       "what-s-your-name",
       "who-has-a-big-room",
+      "who-is-very-tall",
       "yes-he-does",
       "yes-he-does-no-he-doesn-t",
       "yes-i-am-two-sisters",

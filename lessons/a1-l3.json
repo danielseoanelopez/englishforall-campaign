@@ -368,6 +368,33 @@
             "twelve-seven"
           ],
           "answer": 0
+        },
+        {
+          "q": "13",
+          "options": [
+            "thirty",
+            "thirteen",
+            "three"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "50",
+          "options": [
+            "fifty",
+            "fifteen",
+            "five"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "19",
+          "options": [
+            "ninety",
+            "nine",
+            "nineteen"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -443,6 +470,16 @@
             "At half past five"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Which day is the four o'clock class?",
+          "options": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -629,6 +666,16 @@
             "Sunday and Monday"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What time does Marcos finish work?",
+          "options": [
+            "At one o'clock",
+            "At five",
+            "At seven"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -681,6 +728,7 @@
       "555-4321",
       "are-you-a-student",
       "at",
+      "at-five",
       "at-five-o-clock",
       "at-four-o-clock",
       "at-half-past-eight",
@@ -690,6 +738,7 @@
       "at-night",
       "at-nine-o-clock",
       "at-one-o-clock",
+      "at-seven",
       "at-seven-o-clock",
       "at-six-o-clock",
       "eight",
@@ -699,6 +748,7 @@
       "eleven-twelve",
       "fifteen",
       "fifty",
+      "five",
       "forty",
       "four",
       "fourteen",
@@ -725,6 +775,9 @@
       "monday-and-friday",
       "monday-tuesday-wednesday",
       "my-birthday",
+      "nine",
+      "nineteen",
+      "ninety",
       "of",
       "on",
       "on-monday",
@@ -750,6 +803,7 @@
       "thirteen",
       "thirteen-fourteen-fifteen-sixteen-seventeen-eighteen-nineteen",
       "thirty",
+      "three",
       "three-o-clock",
       "thursday",
       "thursday-friday",
@@ -769,11 +823,13 @@
       "week-weekend",
       "what-is-tom-s-phone-number",
       "what-is-your-job",
+      "what-time-does-marcos-finish-work",
       "what-time-is-breakfast",
       "what-time-is-his-english-class",
       "what-time-is-it",
       "what-time-is-the-monday-class",
       "what-time-is-the-wednesday-class",
+      "which-day-is-the-four-o-clock-class",
       "which-days-are-free-for-marcos",
       "zero-one-two-three-four-five"
     ]
