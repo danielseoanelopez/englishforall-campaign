@@ -157,6 +157,66 @@
           "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · LA FAMILIA</b>"
         },
         {
+          "type": "tree",
+          "top": [
+            {
+              "en": "grandfather",
+              "sp": "abuelo"
+            },
+            {
+              "en": "grandmother",
+              "sp": "abuela"
+            }
+          ],
+          "branches": [
+            {
+              "couple": [
+                {
+                  "en": "father",
+                  "sp": "padre"
+                },
+                {
+                  "en": "mother",
+                  "sp": "madre"
+                }
+              ],
+              "kids": [
+                {
+                  "en": "me",
+                  "sp": "yo",
+                  "me": true
+                },
+                {
+                  "en": "brother",
+                  "sp": "hermano"
+                },
+                {
+                  "en": "sister",
+                  "sp": "hermana"
+                }
+              ]
+            },
+            {
+              "couple": [
+                {
+                  "en": "uncle",
+                  "sp": "tío"
+                },
+                {
+                  "en": "aunt",
+                  "sp": "tía"
+                }
+              ],
+              "kids": [
+                {
+                  "en": "cousin",
+                  "sp": "primo / prima"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "type": "phrases",
           "items": [
             {
@@ -182,6 +242,19 @@
             {
               "en": "aunt, uncle, cousin",
               "sp": "tía · tío · primo/prima (<b>cousin</b> sirve para los dos)."
+            }
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "My father's brother is my uncle.",
+              "sp": "El hermano de mi padre es mi tío."
+            },
+            {
+              "en": "My uncle's son is my cousin.",
+              "sp": "El hijo de mi tío es mi primo."
             }
           ]
         },
@@ -730,6 +803,7 @@
       "a-pet-a-dog-a-cat",
       "am",
       "are",
+      "aunt",
       "aunt-uncle",
       "aunt-uncle-cousin",
       "ben",
@@ -748,6 +822,8 @@
       "doesn-t",
       "don-t",
       "father",
+      "grandfather",
+      "grandmother",
       "grandmother-grandfather",
       "half-past",
       "has",
@@ -778,9 +854,12 @@
       "leo",
       "marcos",
       "max",
+      "me",
       "mother",
       "mother-father",
       "my",
+      "my-father-s-brother-is-my-uncle",
+      "my-uncle-s-son-is-my-cousin",
       "nice-what-s-your-sister-s-name",
       "no-he-doesn-t",
       "no-i-doesn-t",
@@ -813,6 +892,7 @@
       "tom-has-a-car",
       "tom-s-sister",
       "two-brothers-and-one-sister",
+      "uncle",
       "we",
       "week-weekend",
       "what-color-is-lucy-s-hair",

@@ -149,6 +149,12 @@ function grammarHtml(g, gi){
       if(p.type==="p")       h += `<p>${esc(p.html)}</p>`;
       else if(p.type==="cells")  h += `<div class="gram-grid">${(p.cells||[]).map(c=>`<div class="gram-cell"><span class="gh">${esc(c.h)}</span>${esc(c.body)}${c.clocks?clockRow(c.clocks):""}</div>`).join("")}</div>`;
       else if(p.type==="phrases") h += `<ul class="phrase-list">${(p.items||[]).map(x=>`<li><span class="en">${esc(x.en)}${spkBtn(x.en,"mini")}</span><span class="sp">${esc(x.sp)}</span></li>`).join("")}</ul>`;
+      else if(p.type==="tree") {   // family tree: one couple on top, branches of couple + children
+        const nd = x => `<div class="ft-node${x.me?" me":""}" onclick="this.querySelector('.spk-btn')?.click()"><span class="en">${esc(x.en)}${spkBtn(x.en,"mini")}</span><span class="sp">${esc(x.sp)}</span></div>`;
+        h += `<div class="ftree"><div class="ft-row ft-top">${(p.top||[]).map(nd).join("")}</div><div class="ft-branches">${
+          (p.branches||[]).map(br=>`<div class="ft-branch"><div class="ft-row">${(br.couple||[]).map(nd).join("")}</div><div class="ft-row ft-kids">${(br.kids||[]).map(nd).join("")}</div></div>`).join("")
+        }</div></div>`;
+      }
       else if(p.type==="chips")  h += `<div class="freq-bar">${(p.items||[]).map((c,ci)=>`<span class="chip">${esc(c)}</span>${ci<p.items.length-1?'<span class="arrow">›</span>':''}`).join("")}</div>`;
       else if(p.type==="stretch") h += `<div class="stretch"><div class="sh"><ico-star></ico-star> ${esc(p.h||"B2 STRETCH")}</div>${esc(p.body)}</div>`;
       else if(p.type==="note")   h += `<div class="note${p.gold?" gold":""}">${esc(p.body)}</div>`;

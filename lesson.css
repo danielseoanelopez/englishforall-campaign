@@ -330,3 +330,28 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .avatar { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 5px; box-shadow: 0 0 0 1px var(--cyan, #00e5ff); }
 .gloss .avatar { width: 40px; height: 40px; margin-right: 8px; }
 .story-img { display: block; width: 100%; max-width: 384px; margin: 10px auto 12px; border-radius: 10px; }
+
+/* Family tree (A1 L4 grammar step 3) — drawn in CSS so the words stay readable and tappable */
+.ftree { margin: 12px 0 14px; display: flex; flex-direction: column; align-items: center; }
+.ft-row { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; position: relative; }
+.ft-top { margin-bottom: 14px; }
+.ft-top::after { content: ""; position: absolute; left: 50%; bottom: -14px; height: 14px; border-left: 2px solid var(--cyan, #00e5ff); }
+.ft-branches { display: flex; gap: 10px; width: 100%; position: relative; padding-top: 16px; }
+.ft-branches::before { content: ""; position: absolute; top: 0; left: 25%; right: 25%; border-top: 2px solid var(--cyan, #00e5ff); }
+.ft-branch { flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; }
+.ft-branch::before { content: ""; position: absolute; top: -16px; left: 50%; height: 16px; border-left: 2px solid var(--cyan, #00e5ff); }
+.ft-kids { margin-top: 14px; }
+.ft-kids::before { content: ""; position: absolute; top: -14px; left: 50%; height: 14px; border-left: 2px solid var(--cyan, #00e5ff); }
+.ft-node { border: 1px solid rgba(0, 229, 255, .45); border-radius: 8px; padding: 5px 7px; text-align: center; background: rgba(5, 5, 14, .55); min-width: 62px; }
+.ft-node .en { display: block; font-weight: 700; font-size: .82rem; white-space: nowrap; }
+.ft-node .sp { display: block; font-size: .68rem; opacity: .8; }
+.ft-node.me { border-color: var(--gold, #ffc83d); box-shadow: 0 0 8px rgba(255, 200, 61, .35); }
+.ft-node { cursor: pointer; }
+@media (max-width: 560px) {   /* phones: keep the tree shape — smaller boxes, tap the box to hear it */
+  .ft-row, .ft-kids { flex-wrap: nowrap; gap: 3px; }
+  .ft-branches { gap: 4px; }
+  .ft-node { min-width: 0; padding: 4px 5px; }
+  .ft-node .en { font-size: .62rem; }
+  .ft-node .sp { font-size: .54rem; }
+  .ft-node .spk-btn { display: none; }
+}
