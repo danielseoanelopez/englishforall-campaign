@@ -460,7 +460,8 @@
             "A — 1st conditional",
             "B — 2nd conditional"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -470,7 +471,8 @@
             "A — 1st conditional",
             "B — 2nd conditional"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -747,7 +749,6 @@
   "say": {
     "dir": "say/b1-l4",
     "keys": [
-      "a-1st-conditional",
       "a-bigger-budget",
       "a-change-of-scope",
       "a-mobile-app",
@@ -761,7 +762,6 @@
       "as-soon-as",
       "ask-priya-for-a-bigger-budget",
       "at-no-extra-cost",
-      "b-2nd-conditional",
       "budget",
       "can-we-meet-halfway",
       "can-you-guarantee-the-deadline",
@@ -799,10 +799,8 @@
       "if-you-will-pay-more-we-build-both",
       "if-you-won-t-confirm-we-don-t-start",
       "is",
-      "las-dos-igual",
       "more-payment-options",
       "more-time-to-plan-it",
-      "ninguna-de-las-dos",
       "out-of-nowhere",
       "priya-approves-a-bigger-budget",
       "priya-s-budget",

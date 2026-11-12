@@ -268,6 +268,24 @@
             "at"
           ],
           "answer": 1
+        },
+        {
+          "q": "I'll see you ___ the coffee break.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Our main office is ___ New York.",
+          "options": [
+            "at",
+            "on",
+            "in"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -322,6 +340,52 @@
             "In the morning."
           ],
           "answer": 1
+        },
+        {
+          "q": "\"What's your role?\"",
+          "options": [
+            "I'm in charge of the sales team.",
+            "It's on the fifth floor.",
+            "Nice to meet you too."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "\"Good to see you again! How have you been?\"",
+          "options": [
+            "I'm Ana.",
+            "I've been great, thanks. Busy, but good!",
+            "Yes, I do."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "match",
+      "id": "ex-match",
+      "title": "¿QUIÉN HACE QUÉ?",
+      "intro": "Une cada puesto con lo que hace esa persona. Fíjate en la -s: he / she <b>manages</b>, <b>builds</b>, <b>helps</b>.",
+      "pairs": [
+        {
+          "l": "an accountant",
+          "r": "takes care of the money and the budgets"
+        },
+        {
+          "l": "a sales rep",
+          "r": "talks to clients and sells products"
+        },
+        {
+          "l": "a developer",
+          "r": "builds and fixes apps and websites"
+        },
+        {
+          "l": "customer support",
+          "r": "answers questions and solves problems"
+        },
+        {
+          "l": "an assistant",
+          "r": "helps the manager and organizes meetings"
         }
       ]
     },
@@ -360,6 +424,30 @@
             "room"
           ],
           "answer": "She walked into the room"
+        },
+        {
+          "words": [
+            "Hi",
+            "I",
+            "don't",
+            "think",
+            "we've",
+            "met"
+          ],
+          "answer": "Hi I don't think we've met"
+        },
+        {
+          "words": [
+            "We",
+            "have",
+            "meetings",
+            "on",
+            "Mondays",
+            "in",
+            "the",
+            "morning"
+          ],
+          "answer": "We have meetings on Mondays in the morning"
         }
       ]
     },
@@ -401,6 +489,16 @@
             "At the main entrance, after the talks"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What time is the coffee break?",
+          "options": [
+            "At nine",
+            "At eleven",
+            "At noon"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -456,7 +554,7 @@
       "title": "AUDIO 2 · SARA'S VOICEMAIL",
       "desc": "Sara deja un mensaje antes de una reunión. Fíjate en su <b>puesto</b> y en el <b>cuándo</b> y <b>dónde</b>.",
       "src": "biz-l1-2.mp3",
-      "dur": "0:35",
+      "dur": "0:33",
       "speakers": "<ico-commentdots></ico-commentdots> Sara",
       "questions": [
         {
@@ -488,6 +586,16 @@
             "At the downtown office, on the fifth floor"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Who is going to join the meeting?",
+          "options": [
+            "David, the project lead",
+            "Toni, from marketing",
+            "Ana, the coordinator"
+          ],
+          "answer": 0
         }
       ],
       "transcript": [
@@ -530,5 +638,85 @@
   "next": {
     "href": "lesson.html?id=biz-l2",
     "label": "SIGUIENTE ▸"
+  },
+  "say": {
+    "dir": "say/biz-l1",
+    "keys": [
+      "a-client",
+      "a-coworker-colleague",
+      "a-developer",
+      "a-marketing-specialist-at-brightbox",
+      "a-networking-event",
+      "a-project-coordinator-at-lumen-design",
+      "a-sales-rep",
+      "about-three-years-now",
+      "account-manager-at-northwind",
+      "accountant-i-take-care-of-the-money-and-the-budgets",
+      "an-account-manager-at-northwind",
+      "an-accountant",
+      "an-assistant",
+      "ana-the-coordinator",
+      "assistant-i-help-my-manager-and-organize-meetings",
+      "at",
+      "at-eleven",
+      "at-nine",
+      "at-noon",
+      "at-the-coffee-break-by-the-main-entrance",
+      "at-the-downtown-office-on-the-fifth-floor",
+      "at-the-downtown-office-on-the-first-floor",
+      "at-the-main-entrance-after-the-talks",
+      "at-the-main-office-by-the-front-entrance",
+      "at-the-office",
+      "customer-support",
+      "customer-support-i-answer-questions-and-solve-problems",
+      "david-the-project-lead",
+      "developer-i-build-and-fix-our-apps-and-websites",
+      "hi-i-don-t-think-we-ve-met-i-m",
+      "how-s-it-going-how-have-you-been",
+      "i-m-a-manager",
+      "i-m-a-project-manager-at-a-software-company",
+      "i-m-ana",
+      "i-m-in-charge-of-the-sales-team",
+      "i-manage-a-team",
+      "i-ve-been-great-thanks-busy-but-good",
+      "in",
+      "in-the-morning",
+      "into",
+      "it-s-on-the-fifth-floor",
+      "it-was-great-thanks-i-went-hiking-how-about-you",
+      "manager-i-manage-a-team-and-plan-our-projects",
+      "marketing-specialist-at-brightbox",
+      "nice-to-meet-you",
+      "nice-to-meet-you-good-to-see-you-again",
+      "nice-to-meet-you-too",
+      "on",
+      "on-friday-at-ten-in-the-morning",
+      "on-monday",
+      "on-monday-at-eleven",
+      "on-monday-at-nine-in-the-morning",
+      "on-the-fifth-floor-by-the-meeting-rooms",
+      "on-the-weekend",
+      "on-thursday-at-ten-in-the-morning",
+      "on-thursday-in-the-afternoon",
+      "project-coordinator-at-lumen-design",
+      "responsibility",
+      "sales-rep-i-talk-to-clients-and-sell-our-products",
+      "to",
+      "to-be-in-charge-of",
+      "tomorrow-at-nine",
+      "toni-from-marketing",
+      "what-do-you-do-what-s-your-role",
+      "what-is-sara-s-job",
+      "what-is-toni-s-job",
+      "what-time-is-the-coffee-break",
+      "when-do-the-talks-start",
+      "when-is-the-meeting",
+      "where-is-the-meeting",
+      "where-will-they-meet-later",
+      "who-is-going-to-join-the-meeting",
+      "yes-i-do",
+      "yes-it-is",
+      "yes-it-is-it-s-bigger-than-i-expected"
+    ]
   }
 }

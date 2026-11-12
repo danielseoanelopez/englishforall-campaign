@@ -120,8 +120,37 @@
     {
       "type": "grammar",
       "title": "<ico-book></ico-book> PRESENT SIMPLE · like",
-      "intro": "",
+      "intro": "El <b>present simple</b> cuenta lo que haces todos los días. Solo cambia con he / she / it, que lleva <b>-s</b>.",
       "parts": [
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I get up at seven.",
+              "sp": "Me levanto a las siete. — <b>at</b> + hora."
+            },
+            {
+              "en": "She gets up at nine.",
+              "sp": "Con he / she / it el verbo lleva <b>-s</b>."
+            },
+            {
+              "en": "I don't work on Sunday.",
+              "sp": "Negativo: don't / doesn't + verbo."
+            },
+            {
+              "en": "What time do you get up?",
+              "sp": "¿A qué hora te levantas?"
+            },
+            {
+              "en": "I go to work by bus.",
+              "sp": "<b>by</b> + transporte: by bus, by train, by car."
+            },
+            {
+              "en": "I like coffee. I don't like Mondays.",
+              "sp": "<b>like</b> + cosa: me gusta / no me gusta."
+            }
+          ]
+        },
         {
           "type": "cells",
           "cells": [
@@ -142,6 +171,11 @@
               "body": "I <b>like</b> coffee · I <b>like</b> reading · She <b>doesn't like</b> Mondays"
             }
           ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Me gusta ≠ «me likes».</b> En inglés la persona va primero: <s class='x'>Me like coffee.</s> → <span class='ok'>I like coffee.</span> Y el transporte va con by, sin artículo: <s class='x'>in the bus</s> → <span class='ok'>by bus</span>"
         },
         {
           "type": "stretch",
@@ -223,6 +257,24 @@
             "start"
           ],
           "answer": 1
+        },
+        {
+          "q": "My sister ___ (have) breakfast at eight.",
+          "options": [
+            "have",
+            "haves",
+            "has"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "We ___ (go) to bed at eleven.",
+          "options": [
+            "go",
+            "goes",
+            "going"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -286,6 +338,56 @@
             "are"
           ],
           "answer": 1
+        },
+        {
+          "q": "Negativo: \"We ___ TV in the morning.\"",
+          "options": [
+            "doesn't watch",
+            "don't watch",
+            "not watch"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Pregunta: \"___ she work from home?\"",
+          "options": [
+            "Do",
+            "Is",
+            "Does"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "ex-mem",
+      "title": "MEMORIA · LA HORA",
+      "intro": "Encuentra cada hora y su reloj. La carta con palabras se lee en voz alta.",
+      "pairs": [
+        {
+          "a": "seven o'clock",
+          "b": "7:00"
+        },
+        {
+          "a": "half past seven",
+          "b": "7:30"
+        },
+        {
+          "a": "a quarter past eight",
+          "b": "8:15"
+        },
+        {
+          "a": "a quarter to nine",
+          "b": "8:45"
+        },
+        {
+          "a": "six thirty",
+          "b": "6:30"
+        },
+        {
+          "a": "eleven o'clock",
+          "b": "11:00"
         }
       ]
     },
@@ -324,6 +426,26 @@
             "one"
           ],
           "answer": "We have lunch at one"
+        },
+        {
+          "words": [
+            "What",
+            "time",
+            "do",
+            "you",
+            "get",
+            "up"
+          ],
+          "answer": "What time do you get up"
+        },
+        {
+          "words": [
+            "He",
+            "doesn't",
+            "like",
+            "Mondays"
+          ],
+          "answer": "He doesn't like Mondays"
         }
       ]
     },
@@ -363,6 +485,16 @@
             "Yes, at six.",
             "No, at nine.",
             "We don't know."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Where does Nora work?",
+          "options": [
+            "In an office",
+            "From home",
+            "In a hospital"
           ],
           "answer": 1
         }
@@ -440,6 +572,16 @@
             "Sleep late and see friends"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What time does the person go to bed?",
+          "options": [
+            "At ten",
+            "At five",
+            "At eleven"
+          ],
+          "answer": 2
         }
       ],
       "transcript": [
@@ -478,5 +620,101 @@
   "next": {
     "href": "lesson.html?id=a1c-l4",
     "label": "SIGUIENTE ▸"
+  },
+  "say": {
+    "dir": "say/a1c-l3",
+    "keys": [
+      "a-quarter-past-eight",
+      "a-quarter-past-to",
+      "a-quarter-to-nine",
+      "are",
+      "at-eight-o-clock",
+      "at-eleven",
+      "at-five",
+      "at-nine",
+      "at-seven",
+      "at-seven-thirty",
+      "at-six-thirty",
+      "at-ten",
+      "by-bicycle",
+      "by-bus",
+      "by-car",
+      "by-train",
+      "do",
+      "does",
+      "does-nora-get-up-early",
+      "doesn-t-like",
+      "doesn-t-watch",
+      "doesn-t-work",
+      "don-t-like",
+      "don-t-watch",
+      "don-t-work",
+      "early-late",
+      "eleven-o-clock",
+      "engineer",
+      "from-home",
+      "get-up",
+      "go",
+      "go-home",
+      "go-to-bed",
+      "go-to-work-by-train",
+      "go-to-work-school",
+      "goes",
+      "going",
+      "gos",
+      "half-past-seven",
+      "half-past-seven-7-30",
+      "has",
+      "have",
+      "have-breakfast-lunch-dinner",
+      "haves",
+      "how-does-dan-go-to-work",
+      "how-does-the-person-go-to-work",
+      "i-don-t-work-on-sunday",
+      "i-get-up-at-seven",
+      "i-go-to-work-by-bus",
+      "i-like-coffee-i-don-t-like-mondays",
+      "in-a-hospital",
+      "in-an-office",
+      "in-the-morning-at-night",
+      "is",
+      "mother-father",
+      "no-at-nine",
+      "not-like",
+      "not-watch",
+      "not-works",
+      "parents",
+      "police-officer",
+      "seven-o-clock",
+      "she-gets-up-at-nine",
+      "six-thirty",
+      "sleep-late-and-see-friends",
+      "start",
+      "starting",
+      "starts",
+      "studies",
+      "study",
+      "study-work-cook",
+      "studys",
+      "take-a-shower",
+      "teacher",
+      "watch",
+      "watch-tv",
+      "watches",
+      "watchs",
+      "we-don-t-know",
+      "what-does-the-person-do-on-weekends",
+      "what-time-do-you-get-up",
+      "what-time-does-dan-get-up",
+      "what-time-does-the-person-get-up-on-weekdays",
+      "what-time-does-the-person-go-to-bed",
+      "what-time-is-it",
+      "where-does-nora-work",
+      "work",
+      "work-in-the-morning-and-study",
+      "working",
+      "works",
+      "yes-at-six"
+    ]
   }
 }

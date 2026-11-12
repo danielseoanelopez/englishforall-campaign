@@ -21,11 +21,26 @@
       "title": "<ico-recycle></ico-recycle> REPASO EXPRESS",
       "intro": "Recupera la lección de presentaciones. Une cada frase con su significado — sin mirar atrás.",
       "pairs": [
-        { "l": "To sum up…", "r": "En resumen…" },
-        { "l": "a key takeaway", "r": "una idea clave" },
-        { "l": "to be on track", "r": "ir en tiempo" },
-        { "l": "so far", "r": "hasta ahora" },
-        { "l": "a milestone", "r": "un hito" }
+        {
+          "l": "To sum up…",
+          "r": "En resumen…"
+        },
+        {
+          "l": "a key takeaway",
+          "r": "una idea clave"
+        },
+        {
+          "l": "to be on track",
+          "r": "ir en tiempo"
+        },
+        {
+          "l": "so far",
+          "r": "hasta ahora"
+        },
+        {
+          "l": "a milestone",
+          "r": "un hito"
+        }
       ]
     },
     {
@@ -36,10 +51,22 @@
         {
           "type": "cells",
           "cells": [
-            { "h": "Abrir", "body": "<b>Hi, this is Ana from Lumen.</b> · Is this a good time? · Do you have five minutes?<br><span class=\"es\">Al teléfono se dice <b>this is</b>, no \"I am\".</span>" },
-            { "h": "No te escucho", "body": "Can you hear me OK? · You're breaking up. · Could you speak up a little? · Sorry, could you repeat that?" },
-            { "h": "Gestionar", "body": "Let me share my screen. · Can I put you on hold for a second? · Sorry — you go ahead. · Can I call you back in ten?" },
-            { "h": "Cerrar", "body": "Let me take a message. · I'll pass that on. · Thanks for your time — talk soon." }
+            {
+              "h": "Abrir",
+              "body": "<b>Hi, this is Ana from Lumen.</b> · Is this a good time? · Do you have five minutes?<br><span class=\"es\">Al teléfono se dice <b>this is</b>, no \"I am\".</span>"
+            },
+            {
+              "h": "No te escucho",
+              "body": "Can you hear me OK? · You're breaking up. · Could you speak up a little? · Sorry, could you repeat that?"
+            },
+            {
+              "h": "Gestionar",
+              "body": "Let me share my screen. · Can I put you on hold for a second? · Sorry — you go ahead. · Can I call you back in ten?"
+            },
+            {
+              "h": "Cerrar",
+              "body": "Let me take a message. · I'll pass that on. · Thanks for your time — talk soon."
+            }
           ]
         },
         {
@@ -63,10 +90,22 @@
         {
           "type": "cells",
           "cells": [
-            { "h": "Presente → pasado", "body": "\"I <b>am</b> busy.\" → He said he <b>was</b> busy.<br>\"I <b>can't</b> hear you.\" → He said he <b>couldn't</b> hear me." },
-            { "h": "will → would", "body": "\"I<b>'ll call</b> you back.\" → She said she <b>would call</b> me back." },
-            { "h": "Pasado → past perfect", "body": "\"We <b>finished</b> it.\" → They said they <b>had finished</b> it." },
-            { "h": "Preguntas", "body": "\"<b>Are</b> you free?\" → She asked <b>if</b> I <b>was</b> free.<br>\"<b>What time is</b> the call?\" → He asked <b>what time the call was</b>. <span class=\"es\">sin \"did\", orden normal</span>" }
+            {
+              "h": "Presente → pasado",
+              "body": "\"I <b>am</b> busy.\" → He said he <b>was</b> busy.<br>\"I <b>can't</b> hear you.\" → He said he <b>couldn't</b> hear me."
+            },
+            {
+              "h": "will → would",
+              "body": "\"I<b>'ll call</b> you back.\" → She said she <b>would call</b> me back."
+            },
+            {
+              "h": "Pasado → past perfect",
+              "body": "\"We <b>finished</b> it.\" → They said they <b>had finished</b> it."
+            },
+            {
+              "h": "Preguntas",
+              "body": "\"<b>Are</b> you free?\" → She asked <b>if</b> I <b>was</b> free.<br>\"<b>What time is</b> the call?\" → He asked <b>what time the call was</b>. <span class=\"es\">sin \"did\", orden normal</span>"
+            }
           ]
         },
         {
@@ -83,16 +122,56 @@
           "type": "vocab",
           "btn": "<ico-bookmark></ico-bookmark> Ver vocabulario clave",
           "items": [
-            { "en": "to call someone back", "sp": "devolver la llamada", "chunk": true },
-            { "en": "to put someone on hold", "sp": "poner en espera", "chunk": true },
-            { "en": "to leave a voicemail", "sp": "dejar un mensaje de voz", "chunk": true },
-            { "en": "to take a message", "sp": "tomar un recado", "chunk": true },
-            { "en": "to pass something on", "sp": "pasar / transmitir algo", "chunk": true },
-            { "en": "to share your screen", "sp": "compartir pantalla", "chunk": true },
-            { "en": "You're breaking up.", "sp": "Se te corta.", "chunk": true },
-            { "en": "to speak up", "sp": "hablar más fuerte", "chunk": true },
-            { "en": "to follow up", "sp": "dar seguimiento", "chunk": true },
-            { "en": "to get back to someone", "sp": "contestarle a alguien después", "chunk": true }
+            {
+              "en": "to call someone back",
+              "sp": "devolver la llamada",
+              "chunk": true
+            },
+            {
+              "en": "to put someone on hold",
+              "sp": "poner en espera",
+              "chunk": true
+            },
+            {
+              "en": "to leave a voicemail",
+              "sp": "dejar un mensaje de voz",
+              "chunk": true
+            },
+            {
+              "en": "to take a message",
+              "sp": "tomar un recado",
+              "chunk": true
+            },
+            {
+              "en": "to pass something on",
+              "sp": "pasar / transmitir algo",
+              "chunk": true
+            },
+            {
+              "en": "to share your screen",
+              "sp": "compartir pantalla",
+              "chunk": true
+            },
+            {
+              "en": "You're breaking up.",
+              "sp": "Se te corta.",
+              "chunk": true
+            },
+            {
+              "en": "to speak up",
+              "sp": "hablar más fuerte",
+              "chunk": true
+            },
+            {
+              "en": "to follow up",
+              "sp": "dar seguimiento",
+              "chunk": true
+            },
+            {
+              "en": "to get back to someone",
+              "sp": "contestarle a alguien después",
+              "chunk": true
+            }
           ]
         }
       ],
@@ -103,8 +182,14 @@
       "title": "<ico-star></ico-star> THE CALL AND THE MESSAGE",
       "intro": "Una videollamada con mala conexión, un voicemail… y alguien que tiene que <b>pasar el recado</b>. Ahí es donde vive el reported speech.",
       "cast": [
-        { "en": "Ana", "sp": "atiende y pasa el recado" },
-        { "en": "Toni", "sp": "llama y deja el mensaje" }
+        {
+          "en": "Ana",
+          "sp": "atiende y pasa el recado"
+        },
+        {
+          "en": "Toni",
+          "sp": "llama y deja el mensaje"
+        }
       ],
       "stage": "③ THE STORY <span class=\"es\">· llamar y pasar el recado</span>"
     },
@@ -118,32 +203,70 @@
         {
           "type": "mcq",
           "q": "\"I'm in a meeting.\" → He said he <b class=\"tg\">___</b> in a meeting.",
-          "options": ["is", "was", "has been"],
+          "options": [
+            "is",
+            "was",
+            "has been"
+          ],
           "answer": 1
         },
         {
           "type": "mcq",
           "q": "\"We'll send the invoice on Friday.\" → They said they <b class=\"tg\">___</b> the invoice on Friday.",
-          "options": ["will send", "would send", "sent"],
+          "options": [
+            "will send",
+            "would send",
+            "sent"
+          ],
           "answer": 1
         },
         {
           "type": "mcq",
           "q": "\"Did you get my email?\" → He asked <b class=\"tg\">___</b> I had gotten his email.",
-          "options": ["if", "that", "what"],
+          "options": [
+            "if",
+            "that",
+            "what"
+          ],
           "answer": 0
         },
         {
           "type": "mcq",
           "q": "\"Where is the report?\" → He asked <b class=\"tg\">___</b>.",
-          "options": ["where was the report", "where is the report", "where the report was"],
+          "options": [
+            "where was the report",
+            "where is the report",
+            "where the report was"
+          ],
           "answer": 2
         },
         {
           "type": "mcq",
           "q": "\"Please call me back.\" → She <b class=\"tg\">___</b> call her back.",
-          "options": ["asked me to", "said me to", "told to"],
+          "options": [
+            "asked me to",
+            "said me to",
+            "told to"
+          ],
           "answer": 0
+        },
+        {
+          "q": "\"I can't hear you.\" → She said she ___ hear me.",
+          "options": [
+            "can't",
+            "couldn't",
+            "didn't"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "\"Are you free at three?\" → He asked ___ I was free at three.",
+          "options": [
+            "that",
+            "do",
+            "if"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -162,32 +285,96 @@
         {
           "type": "mcq",
           "q": "\"Hello, I am Ana.\" — al teléfono.",
-          "options": ["Incorrect — \"Hi, this is Ana.\"", "Correct"],
+          "options": [
+            "Incorrect — \"Hi, this is Ana.\"",
+            "Correct"
+          ],
           "answer": 0
         },
         {
           "type": "mcq",
           "q": "\"He said me that he was busy.\"",
-          "options": ["Incorrect — \"He told me…\" o \"He said that…\"", "Correct"],
+          "options": [
+            "Incorrect — \"He told me…\" o \"He said that…\"",
+            "Correct"
+          ],
           "answer": 0
         },
         {
           "type": "mcq",
           "q": "No escuchas bien al cliente. ¿Qué dices?",
-          "options": ["What? Speak!", "Sorry, you're breaking up — could you repeat that?", "I don't understand nothing."],
+          "options": [
+            "What? Speak!",
+            "Sorry, you're breaking up — could you repeat that?",
+            "I don't understand nothing."
+          ],
           "answer": 1
         },
         {
           "type": "mcq",
           "q": "¿Qué NO puede faltar en un voicemail?",
-          "options": ["Tu número, dicho despacio", "El nombre de tu jefe", "Una disculpa larga"],
-          "answer": 0
+          "options": [
+            "Tu número, dicho despacio",
+            "El nombre de tu jefe",
+            "Una disculpa larga"
+          ],
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
           "q": "\"She said she <b class=\"tg\">___</b> call me the next day.\"",
-          "options": ["will", "would", "wanted"],
+          "options": [
+            "will",
+            "would",
+            "wanted"
+          ],
           "answer": 1
+        },
+        {
+          "q": "Quieres mostrar un documento en la videollamada. ¿Qué dices?",
+          "options": [
+            "Look my screen.",
+            "Let me share my screen — can you see it?",
+            "I show you now screen."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "\"She told that she was late.\"",
+          "options": [
+            "Incorrect — \"She said that…\" o \"She told me that…\"",
+            "Correct"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "match",
+      "id": "ex-match",
+      "title": "LO QUE DIJO → CÓMO LO CUENTAS",
+      "intro": "Une cada frase directa con su versión en reported speech.",
+      "pairs": [
+        {
+          "l": "\"I'm busy.\"",
+          "r": "He said he was busy."
+        },
+        {
+          "l": "\"I'll call you.\"",
+          "r": "He said he would call me."
+        },
+        {
+          "l": "\"Did you see it?\"",
+          "r": "He asked if I had seen it."
+        },
+        {
+          "l": "\"Call me back.\"",
+          "r": "He asked me to call him back."
+        },
+        {
+          "l": "\"Where is Ana?\"",
+          "r": "He asked where Ana was."
         }
       ]
     },
@@ -198,16 +385,59 @@
       "intro": "Toca las palabras para formar la frase correcta.",
       "items": [
         {
-          "words": ["Hi", "this", "is", "Ana", "from", "Lumen"],
+          "words": [
+            "Hi",
+            "this",
+            "is",
+            "Ana",
+            "from",
+            "Lumen"
+          ],
           "answer": "Hi this is Ana from Lumen"
         },
         {
-          "words": ["He", "said", "he", "would", "call", "me", "back"],
+          "words": [
+            "He",
+            "said",
+            "he",
+            "would",
+            "call",
+            "me",
+            "back"
+          ],
           "answer": "He said he would call me back"
         },
         {
-          "words": ["She", "asked", "if", "I", "was", "free", "at", "three"],
+          "words": [
+            "She",
+            "asked",
+            "if",
+            "I",
+            "was",
+            "free",
+            "at",
+            "three"
+          ],
           "answer": "She asked if I was free at three"
+        },
+        {
+          "words": [
+            "Sorry",
+            "you're",
+            "breaking",
+            "up"
+          ],
+          "answer": "Sorry you're breaking up"
+        },
+        {
+          "words": [
+            "Could",
+            "you",
+            "repeat",
+            "that",
+            "please"
+          ],
+          "answer": "Could you repeat that please"
         }
       ]
     },
@@ -224,25 +454,43 @@
         {
           "type": "mcq",
           "q": "¿Cuál es lo que la persona dijo por teléfono?",
-          "options": ["A — direct speech", "B — reported speech", "Las dos igual"],
-          "answer": 0
+          "options": [
+            "A — direct speech",
+            "B — reported speech",
+            "Las dos igual"
+          ],
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
           "q": "¿Qué pasó con <i>will</i> al pasar a B?",
-          "options": ["Desapareció", "Se convirtió en <b>would</b>", "Se convirtió en <b>was</b>"],
-          "answer": 1
+          "options": [
+            "Desapareció",
+            "Se convirtió en <b>would</b>",
+            "Se convirtió en <b>was</b>"
+          ],
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
           "q": "Tu jefe pregunta qué dijo el cliente. ¿Qué contestas?",
-          "options": ["He said he will send it this afternoon and he asks if we can wait.", "He said he would send it that afternoon and asked if we could wait.", "He say he send it and ask we wait."],
+          "options": [
+            "He said he will send it this afternoon and he asks if we can wait.",
+            "He said he would send it that afternoon and asked if we could wait.",
+            "He say he send it and ask we wait."
+          ],
           "answer": 1
         },
         {
           "type": "mcq",
           "q": "\"Can you call me tomorrow?\" — ¿cómo lo cuentas al día siguiente?",
-          "options": ["She asked if I could call her that day.", "She asked can I call her tomorrow.", "She said me to call tomorrow."],
+          "options": [
+            "She asked if I could call her that day.",
+            "She asked can I call her tomorrow.",
+            "She said me to call tomorrow."
+          ],
           "answer": 0
         }
       ]
@@ -259,35 +507,88 @@
         {
           "type": "mcq",
           "q": "Why does Ana turn her camera off?",
-          "options": ["She is not ready", "The connection is poor", "She is in a meeting"],
+          "options": [
+            "She is not ready",
+            "The connection is poor",
+            "She is in a meeting"
+          ],
           "answer": 1
         },
         {
           "type": "mcq",
           "q": "What does Ana need from Toni?",
-          "options": ["His approval for a discount", "A new invoice", "A longer contract"],
+          "options": [
+            "His approval for a discount",
+            "A new invoice",
+            "A longer contract"
+          ],
           "answer": 0
         },
         {
           "type": "mcq",
           "q": "What does Toni do at the end?",
-          "options": ["He approves it immediately", "He says no", "He asks to call back in ten minutes"],
+          "options": [
+            "He approves it immediately",
+            "He says no",
+            "He asks to call back in ten minutes"
+          ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Ana share on her screen?",
+          "options": [
+            "The contract",
+            "The invoice",
+            "A photo"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
         "prompt": "Eres Ana. Abre la llamada, di que no escuchas bien, y pide la aprobación antes del viernes."
       },
       "transcript": [
-        { "spk": "Ana", "html": "Hi Toni, <span class=\"tg\">can you hear me OK?</span>" },
-        { "spk": "Toni", "html": "Hi Ana — <span class=\"tg\">you're breaking up</span> a little. <span class=\"tg\">Could you speak up?</span>", "b": true },
-        { "spk": "Ana", "html": "Is that better? Let me turn my camera off — the connection is poor today." },
-        { "spk": "Toni", "html": "Much better. <span class=\"tg\">Is this still a good time</span> for you?", "b": true },
-        { "spk": "Ana", "html": "It is. <span class=\"tg\">Let me share my screen</span> — can you see the invoice?" },
-        { "spk": "Toni", "html": "Sorry — you go ahead. Yes, I can see it now.", "b": true },
-        { "spk": "Ana", "html": "Great. The client asked for a discount, so I need your approval before Friday." },
-        { "spk": "Toni", "html": "<span class=\"tg\">Can I call you back in ten?</span> I want to check the numbers first.", "b": true },
-        { "spk": "Ana", "html": "Perfect. Thanks for your time — talk soon." }
+        {
+          "spk": "Ana",
+          "html": "Hi Toni, <span class=\"tg\">can you hear me OK?</span>"
+        },
+        {
+          "spk": "Toni",
+          "html": "Hi Ana — <span class=\"tg\">you're breaking up</span> a little. <span class=\"tg\">Could you speak up?</span>",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "Is that better? Let me turn my camera off — the connection is poor today."
+        },
+        {
+          "spk": "Toni",
+          "html": "Much better. <span class=\"tg\">Is this still a good time</span> for you?",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "It is. <span class=\"tg\">Let me share my screen</span> — can you see the invoice?"
+        },
+        {
+          "spk": "Toni",
+          "html": "Sorry — you go ahead. Yes, I can see it now.",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "Great. The client asked for a discount, so I need your approval before Friday."
+        },
+        {
+          "spk": "Toni",
+          "html": "<span class=\"tg\">Can I call you back in ten?</span> I want to check the numbers first.",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "Perfect. Thanks for your time — talk soon."
+        }
       ],
       "stage": "⑤ LISTENING <span class=\"es\">· la llamada y el recado</span>"
     },
@@ -303,26 +604,59 @@
         {
           "type": "mcq",
           "q": "What is Toni calling about?",
-          "options": ["A meeting on Friday", "The Delta Foods order", "A new client"],
+          "options": [
+            "A meeting on Friday",
+            "The Delta Foods order",
+            "A new client"
+          ],
           "answer": 1
         },
         {
           "type": "mcq",
           "q": "What does he ask Ana to do?",
-          "options": ["Check with the supplier and call him back", "Cancel the order", "Send a new invoice"],
+          "options": [
+            "Check with the supplier and call him back",
+            "Cancel the order",
+            "Send a new invoice"
+          ],
           "answer": 0
         },
         {
           "type": "mcq",
           "q": "How does Ana report it? \"He said the order still <b>___</b> arrived.\"",
-          "options": ["hasn't", "hadn't", "doesn't"],
+          "options": [
+            "hasn't",
+            "hadn't",
+            "doesn't"
+          ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "By what time should Ana call back?",
+          "options": [
+            "Before five",
+            "Tomorrow morning",
+            "Before six"
+          ],
+          "answer": 2
         }
       ],
       "transcript": [
-        { "spk": "Toni", "html": "Hi Ana, <span class=\"tg\">this is Toni</span>. I'm calling about the Delta Foods order — it still hasn't arrived. Could you check with the supplier and call me back before six? I'm at five five five, oh one four two." },
-        { "spk": "Ana", "html": "Toni called about Delta Foods. He <span class=\"tg\">said the order still hadn't arrived</span>, and he <span class=\"tg\">asked me to check</span> with the supplier.", "b": true },
-        { "spk": "Ana", "html": "He also <span class=\"tg\">asked if I could call him back</span> before six.", "b": true }
+        {
+          "spk": "Toni",
+          "html": "Hi Ana, <span class=\"tg\">this is Toni</span>. I'm calling about the Delta Foods order — it still hasn't arrived. Could you check with the supplier and call me back before six? I'm at five five five, oh one four two."
+        },
+        {
+          "spk": "Ana",
+          "html": "Toni called about Delta Foods. He <span class=\"tg\">said the order still hadn't arrived</span>, and he <span class=\"tg\">asked me to check</span> with the supplier.",
+          "b": true
+        },
+        {
+          "spk": "Ana",
+          "html": "He also <span class=\"tg\">asked if I could call him back</span> before six.",
+          "b": true
+        }
       ]
     },
     {
@@ -341,10 +675,116 @@
       "hw": "Deja un <b>voicemail real</b> de 30 segundos (WhatsApp vale) con los 4 tiempos: quién · por qué · qué necesitas · tu número. Después escribe lo que dijiste en estilo indirecto.",
       "stage": "⑥ WRITING <span class=\"es\">· en clase o tarea (HW)</span>",
       "rubric": [
-        { "c": "Tarea completa", "d": "La nota tiene quién llamó, qué dijo, qué preguntó y qué pidió." },
-        { "c": "Objetivo de la lección", "d": "Usaste <b>reported speech</b> bien al menos <b>4 veces</b>, con <i>said / told / asked if / asked me to</i>." },
-        { "c": "Se entiende a la primera", "d": "Tu jefe podría actuar solo con esa nota, sin volver a escuchar el mensaje." }
+        {
+          "c": "Tarea completa",
+          "d": "La nota tiene quién llamó, qué dijo, qué preguntó y qué pidió."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>reported speech</b> bien al menos <b>4 veces</b>, con <i>said / told / asked if / asked me to</i>."
+        },
+        {
+          "c": "Se entiende a la primera",
+          "d": "Tu jefe podría actuar solo con esa nota, sin volver a escuchar el mensaje."
+        }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/biz-l6",
+    "keys": [
+      "a-key-takeaway",
+      "a-longer-contract",
+      "a-meeting-on-friday",
+      "a-milestone",
+      "a-new-client",
+      "a-new-invoice",
+      "a-photo",
+      "asked-me-to",
+      "before-five",
+      "before-six",
+      "by-what-time-should-ana-call-back",
+      "call-me-back",
+      "can-t",
+      "cancel-the-order",
+      "check-with-the-supplier-and-call-him-back",
+      "correct",
+      "couldn-t",
+      "did-you-see-it",
+      "didn-t",
+      "do",
+      "doesn-t",
+      "hadn-t",
+      "has-been",
+      "hasn-t",
+      "he-approves-it-immediately",
+      "he-asks-to-call-back-in-ten-minutes",
+      "he-said-he-will-send-it-this-afternoon-and-he-asks-if-we-can-wait",
+      "he-said-he-would-send-it-that-afternoon-and-asked-if-we-could-wait",
+      "he-said-he-would-send-the-file-that-afternoon",
+      "he-say-he-send-it-and-ask-we-wait",
+      "he-says-no",
+      "his-approval-for-a-discount",
+      "how-does-ana-report-it-he-said-the-order-still-arrived",
+      "i-don-t-understand-nothing",
+      "i-ll-call-you",
+      "i-ll-send-the-file-this-afternoon",
+      "i-m-busy",
+      "i-show-you-now-screen",
+      "if",
+      "incorrect-he-told-me-o-he-said-that",
+      "incorrect-hi-this-is-ana",
+      "incorrect-she-said-that-o-she-told-me-that",
+      "is",
+      "let-me-share-my-screen-can-you-see-it",
+      "look-my-screen",
+      "said-me-to",
+      "send-a-new-invoice",
+      "sent",
+      "she-asked-can-i-call-her-tomorrow",
+      "she-asked-if-i-could-call-her-that-day",
+      "she-is-in-a-meeting",
+      "she-is-not-ready",
+      "she-said-me-to-call-tomorrow",
+      "so-far",
+      "sorry-you-re-breaking-up-could-you-repeat-that",
+      "that",
+      "the-connection-is-poor",
+      "the-contract",
+      "the-delta-foods-order",
+      "the-invoice",
+      "to-be-on-track",
+      "to-call-someone-back",
+      "to-follow-up",
+      "to-get-back-to-someone",
+      "to-leave-a-voicemail",
+      "to-pass-something-on",
+      "to-put-someone-on-hold",
+      "to-share-your-screen",
+      "to-speak-up",
+      "to-sum-up",
+      "to-take-a-message",
+      "told-to",
+      "tomorrow-morning",
+      "wanted",
+      "was",
+      "what",
+      "what-does-ana-need-from-toni",
+      "what-does-ana-share-on-her-screen",
+      "what-does-he-ask-ana-to-do",
+      "what-does-toni-do-at-the-end",
+      "what-is-toni-calling-about",
+      "what-speak",
+      "where-is-ana",
+      "where-is-the-report",
+      "where-the-report-was",
+      "where-was-the-report",
+      "why-does-ana-turn-her-camera-off",
+      "will",
+      "will-send",
+      "would",
+      "would-send",
+      "you-re-breaking-up"
+    ]
+  }
 }

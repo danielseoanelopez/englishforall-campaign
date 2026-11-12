@@ -323,7 +323,8 @@
             "B — past simple",
             "Las dos dicen lo mismo"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -333,7 +334,8 @@
             "Ninguna de las dos",
             "A — present perfect"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -716,11 +718,9 @@
     "dir": "say/b1-l1",
     "keys": [
       "a-goal",
-      "a-present-perfect",
       "a-quick-update-on",
       "about-a-year",
       "already",
-      "b-past-simple",
       "david",
       "deployed-it-to-production",
       "do-done",
@@ -770,10 +770,8 @@
       "i-worked-on-that-project-for-three-months",
       "i-worked-there-for-two-years",
       "just",
-      "las-dos-dicen-lo-mismo",
       "launched",
       "make-made",
-      "ninguna-de-las-dos",
       "nowhere-yet",
       "performance-review",
       "priya",

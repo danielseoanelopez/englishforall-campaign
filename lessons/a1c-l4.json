@@ -141,8 +141,33 @@
     {
       "type": "grammar",
       "title": "<ico-book></ico-book> there is/are · can · preposiciones",
-      "intro": "",
+      "intro": "En español «hay» sirve para uno o varios. En inglés cambia: <b>there is</b> (uno) y <b>there are</b> (varios). Con <b>can</b> pides cosas, y las preposiciones dicen dónde está cada lugar.",
       "parts": [
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "There is a bank near here.",
+              "sp": "Hay un banco cerca. — uno: <b>there is</b>."
+            },
+            {
+              "en": "There are two cafés on this street.",
+              "sp": "Hay dos cafés en esta calle. — varios: <b>there are</b>."
+            },
+            {
+              "en": "Is there a pharmacy near here?",
+              "sp": "¿Hay una farmacia cerca? — Yes, there is. / No, there isn't."
+            },
+            {
+              "en": "The bank is next to the café.",
+              "sp": "El banco está al lado del café."
+            },
+            {
+              "en": "Go straight and turn left.",
+              "sp": "Sigue derecho y dobla a la izquierda. — turn right = a la derecha."
+            }
+          ]
+        },
         {
           "type": "cells",
           "cells": [
@@ -163,6 +188,11 @@
               "body": "<span class=\"ok\">The bank is next to the café.</span><br><span class=\"ok\">It's on Main Street.</span>"
             }
           ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>«Hay» no siempre es there is.</b> <s class='x'>There is two banks.</s> → <span class='ok'>There are two banks.</span> Y para pedir, la pregunta suena mejor que la orden: <s class='x'>I want a coffee.</s> → <span class='ok'>Can I have a coffee, please?</span>"
         },
         {
           "type": "stretch",
@@ -244,6 +274,24 @@
             "There are"
           ],
           "answer": 1
+        },
+        {
+          "q": "___ any restaurants on this street?",
+          "options": [
+            "Are there",
+            "Is there",
+            "There are"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "No, ___ a bank here. Sorry.",
+          "options": [
+            "there aren't",
+            "there isn't",
+            "isn't there"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -307,6 +355,52 @@
             "in"
           ],
           "answer": 0
+        },
+        {
+          "q": "Is there a supermarket ___ here?",
+          "options": [
+            "on",
+            "in",
+            "near"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "The cat is ___ the box. (adentro)",
+          "options": [
+            "in",
+            "on",
+            "next to"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "match",
+      "id": "ex-match",
+      "title": "PREGUNTA Y RESPUESTA",
+      "intro": "Une cada pregunta con la respuesta que le corresponde.",
+      "pairs": [
+        {
+          "l": "Can I help you?",
+          "r": "Yes, can I have a tea, please?"
+        },
+        {
+          "l": "Anything else?",
+          "r": "No, thank you."
+        },
+        {
+          "l": "How much is it?",
+          "r": "It's six dollars."
+        },
+        {
+          "l": "Is there a bank near here?",
+          "r": "Yes, there is. It's on Main Street."
+        },
+        {
+          "l": "Where is the café?",
+          "r": "It's behind the bank."
         }
       ]
     },
@@ -349,6 +443,28 @@
             "hotel"
           ],
           "answer": "The park is next to the hotel"
+        },
+        {
+          "words": [
+            "Is",
+            "there",
+            "a",
+            "pharmacy",
+            "near",
+            "here"
+          ],
+          "answer": "Is there a pharmacy near here"
+        },
+        {
+          "words": [
+            "The",
+            "café",
+            "is",
+            "behind",
+            "the",
+            "bank"
+          ],
+          "answer": "The café is behind the bank"
         }
       ]
     },
@@ -370,7 +486,8 @@
             "A — Can I have…, please?",
             "B — I want…"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -380,7 +497,8 @@
             "Es más larga",
             "Usa palabras más difíciles"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -440,6 +558,16 @@
             "No",
             "Yes, a coffee",
             "Yes, a cake"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does the waiter say at the end?",
+          "options": [
+            "Have a nice day!",
+            "See you tomorrow!",
+            "Anything else?"
           ],
           "answer": 0
         }
@@ -517,6 +645,16 @@
             "A park"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Is the café big?",
+          "options": [
+            "Yes, it's very big.",
+            "No, it's small.",
+            "It doesn't say."
+          ],
+          "answer": 1
         }
       ],
       "transcript": [
@@ -551,5 +689,90 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/a1c-l4",
+    "keys": [
+      "a-caf",
+      "a-cake",
+      "a-coffee-and-a-sandwich",
+      "a-hotel",
+      "a-park",
+      "a-salad-and-an-orange-juice",
+      "a-sandwich-a-salad",
+      "a-tea-and-a-chocolate-cake",
+      "anything-else",
+      "anything-else-no-thank-you",
+      "are",
+      "are-there",
+      "bank-station",
+      "behind",
+      "bread-an-egg",
+      "caf-shop",
+      "can-i-have-a-coffee-please",
+      "can-i-have-the-check-please",
+      "can-i-help-you",
+      "coffee-tea-water",
+      "could-i-have-a-tea-and-a-cake-please",
+      "does-the-customer-want-anything-else",
+      "early-late",
+      "fruit-chicken",
+      "give-me-the-check",
+      "go-home",
+      "go-straight-and-turn-left",
+      "half-past-seven-7-30",
+      "have-a-nice-day",
+      "here-you-are",
+      "hotel-restaurant",
+      "how-much-is-it",
+      "i-want-a-coffee",
+      "i-want-a-tea-and-a-cake",
+      "i-want-the-check",
+      "in",
+      "in-the-morning-at-night",
+      "is",
+      "is-the-caf-big",
+      "is-there",
+      "is-there-a-bank-near-here",
+      "is-there-a-pharmacy-near-here",
+      "isn-t-there",
+      "it-doesn-t-say",
+      "juice-soda",
+      "market",
+      "near",
+      "next-to",
+      "next-to-the-station-on-main-street",
+      "no",
+      "no-it-s-small",
+      "no-there-isn-t",
+      "on",
+      "on-main-street-next-to-a-supermarket",
+      "on-second-street-behind-the-big-park",
+      "park-supermarket",
+      "pharmacy",
+      "see-you-tomorrow",
+      "six-dollars",
+      "tea-and-cake-now",
+      "ten-dollars",
+      "the-bank-is-next-to-the-caf",
+      "there-are",
+      "there-are-two-caf-s-on-this-street",
+      "there-aren-t",
+      "there-is",
+      "there-is-a-bank-near-here",
+      "there-isn-t",
+      "two-dollars",
+      "watch-tv",
+      "we-don-t-know",
+      "what-does-the-customer-order",
+      "what-does-the-waiter-say-at-the-end",
+      "what-s-behind-the-bank",
+      "where-is-the-bank",
+      "where-is-the-caf",
+      "yes-a-cake",
+      "yes-a-coffee",
+      "yes-it-s-very-big",
+      "yes-there-is"
+    ]
+  }
 }

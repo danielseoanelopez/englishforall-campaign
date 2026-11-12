@@ -329,7 +329,8 @@
             "A — this",
             "B — that"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -339,7 +340,8 @@
             "A — this",
             "B — that"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -716,7 +718,6 @@
       "a-phone-a-bag-an-umbrella",
       "a-sandwich",
       "a-table-a-chair-a-desk",
-      "a-this",
       "a-window-a-door",
       "an",
       "an-apple",
@@ -725,7 +726,6 @@
       "apple",
       "are-there",
       "aren-t",
-      "b-that",
       "bag",
       "bag-umbrella",
       "behind",
@@ -750,11 +750,9 @@
       "it-is",
       "it-s-a-phone",
       "key",
-      "las-dos-igual",
       "mother-father",
       "next",
       "next-to-behind-in-front-of",
-      "ninguna-de-las-dos",
       "nothing",
       "on",
       "on-the-table",

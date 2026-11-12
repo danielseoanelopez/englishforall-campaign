@@ -42,7 +42,7 @@
     {
       "type": "grammar",
       "title": "<ico-envelope></ico-envelope> THE 6 PARTS OF AN EMAIL",
-      "intro": "",
+      "intro": "Un email profesional tiene siempre estas seis partes, en este orden. Si falta una, se nota.",
       "parts": [
         {
           "type": "cells",
@@ -72,6 +72,36 @@
               "body": "Best regards, / Sincerely,"
             }
           ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I hope you are doing well.",
+              "sp": "Apertura cordial."
+            },
+            {
+              "en": "I am writing to follow up on the report.",
+              "sp": "Dices por qué escribes, en la primera línea."
+            },
+            {
+              "en": "Could you please send me the report?",
+              "sp": "Pedido educado."
+            },
+            {
+              "en": "I would appreciate it if you could reply by Friday.",
+              "sp": "Todavía más formal."
+            },
+            {
+              "en": "I look forward to your reply.",
+              "sp": "Cierre clásico: quedo atento a tu respuesta."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Dos preposiciones que se escapan:</b> <s class='x'>I look forward your reply.</s> → <span class='ok'>I look forward to your reply.</span> · <s class='x'>Would you mind to send it?</s> → <span class='ok'>Would you mind sending it?</span>"
         }
       ],
       "stage": "① EMAIL STRUCTURE <span class=\"es\">· partes + cortesía</span>"
@@ -253,6 +283,24 @@
             "I'll get back to you."
           ],
           "answer": 0
+        },
+        {
+          "q": "You need a reply by Friday.",
+          "options": [
+            "Reply by Friday.",
+            "I would appreciate it if you could reply by Friday.",
+            "I need your reply Friday."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "You want to move the meeting.",
+          "options": [
+            "Would it be possible to move the meeting to Thursday?",
+            "Move the meeting to Thursday.",
+            "We move the meeting to Thursday, OK?"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -316,6 +364,57 @@
             "Thank you for your help. Best regards,"
           ],
           "answer": 2
+        },
+        {
+          "q": "Complete: \"Would you mind ___ the document?\"",
+          "options": [
+            "to review",
+            "review",
+            "reviewing"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Complete: \"I look forward ___ your reply.\"",
+          "options": [
+            "to",
+            "for",
+            "at"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "match",
+      "id": "ex-match",
+      "title": "ARMA EL EMAIL",
+      "intro": "Une cada parte del email con su ejemplo.",
+      "speakSide": "r",
+      "pairs": [
+        {
+          "l": "Subject line",
+          "r": "Meeting Request: Q2 Sales Strategy"
+        },
+        {
+          "l": "Greeting",
+          "r": "Dear Ms. Lopez,"
+        },
+        {
+          "l": "Opening",
+          "r": "I hope you are doing well."
+        },
+        {
+          "l": "Request",
+          "r": "Could you please send me the report?"
+        },
+        {
+          "l": "Closing",
+          "r": "I look forward to your reply."
+        },
+        {
+          "l": "Sign-off",
+          "r": "Best regards,"
         }
       ]
     },
@@ -355,6 +454,31 @@
             "help"
           ],
           "answer": "Thank you for your help"
+        },
+        {
+          "words": [
+            "I",
+            "am",
+            "writing",
+            "to",
+            "follow",
+            "up",
+            "on",
+            "the",
+            "report"
+          ],
+          "answer": "I am writing to follow up on the report"
+        },
+        {
+          "words": [
+            "I",
+            "look",
+            "forward",
+            "to",
+            "your",
+            "reply"
+          ],
+          "answer": "I look forward to your reply"
         }
       ]
     },
@@ -376,7 +500,8 @@
             "B — Could you please…?",
             "Las dos sirven igual"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -386,7 +511,8 @@
             "Convierte la orden en una pregunta",
             "Es más corta"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -448,6 +574,16 @@
             "It got delayed"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What doesn't make sense to Mark?",
+          "options": [
+            "The delivery date",
+            "The numbers in the last part",
+            "The price of the shipment"
+          ],
+          "answer": 1
         }
       ],
       "transcript": [
@@ -496,6 +632,16 @@
             "The price of the shipment and the refund policy"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which team is Elena from?",
+          "options": [
+            "The accounts team",
+            "The design team",
+            "The sales team"
+          ],
+          "answer": 0
         }
       ],
       "transcript": [
@@ -538,5 +684,108 @@
   "next": {
     "href": "lesson.html?id=biz-l4",
     "label": "SIGUIENTE ▸"
+  },
+  "say": {
+    "dir": "say/biz-l3",
+    "keys": [
+      "a-clear-subject-line-dear-name",
+      "a-goal-target",
+      "a-greeting",
+      "a-loyalty-program",
+      "a-reply",
+      "a-request",
+      "a-shipment",
+      "a-sign-off",
+      "a-subject-line",
+      "an-agenda",
+      "an-attachment",
+      "at",
+      "because-it-is-very-informal",
+      "best-regards",
+      "can-you-at-3",
+      "come-at-3",
+      "confused-and-unsure-about-the-numbers",
+      "contractions-like-don-t-won-t",
+      "could-you-please-send-me-the-report",
+      "dear-ms-lopez",
+      "delayed",
+      "direct-and-informal-not-very-polite",
+      "do-it-thanks",
+      "fix-it-soon-bye",
+      "for",
+      "formal-and-polite-but-a-little-cold",
+      "give-me-an-update",
+      "hey",
+      "how-does-mark-sound",
+      "i-am-writing-to-follow-up-on-the-report",
+      "i-hope-you-are-doing-well",
+      "i-ll-get-back-to-you",
+      "i-ll-ping-you",
+      "i-look-forward-to-your-reply",
+      "i-need-it-now",
+      "i-need-your-reply-friday",
+      "i-want-the-report",
+      "i-will-get-back-to-you",
+      "i-would-appreciate-an-update-on-the-project",
+      "i-would-appreciate-it-if-you-could-reply-by-friday",
+      "i-would-appreciate-it-if-you-could-send-it-today",
+      "in-advance",
+      "it-arrived-at-the-wrong-address",
+      "it-got-delayed",
+      "it-was-canceled",
+      "meeting-request-q2-sales-strategy",
+      "move-the-meeting-to-thursday",
+      "no-subject",
+      "please-send-it-over-before-the-end-of-today",
+      "reply-by-friday",
+      "review",
+      "review-this",
+      "review-this-document",
+      "reviewing",
+      "send-it-today",
+      "send-me-the-report",
+      "stuff",
+      "thank-you-for-your-help-best-regards",
+      "the-accounts-team",
+      "the-delivery-date",
+      "the-design-team",
+      "the-new-delivery-date-and-possible-solutions",
+      "the-numbers-in-the-last-part",
+      "the-price-of-the-shipment",
+      "the-price-of-the-shipment-and-the-refund-policy",
+      "the-reason-for-the-delay-and-who-is-at-fault",
+      "the-report-today-a-meeting-about-the-numbers-and-a-refund",
+      "the-report-today-an-explanation-of-the-numbers-and-the-shipment-fixed",
+      "the-report-tomorrow-a-call-about-the-numbers-and-a-new-date",
+      "the-sales-team",
+      "to",
+      "to-blame-a-person-directly",
+      "to-cancel-a-meeting",
+      "to-complain-about-a-coworker",
+      "to-focus-on-the-action-not-the-person-more-diplomatic",
+      "to-follow-up-on",
+      "to-follow-up-on-the-report",
+      "to-look-into",
+      "to-make-a-decision",
+      "to-make-a-suggestion",
+      "to-reach-out",
+      "to-review",
+      "update-me-now",
+      "we-move-the-meeting-to-thursday-ok",
+      "what-does-she-ask-about-the-shipment",
+      "what-doesn-t-make-sense-to-mark",
+      "what-happened-to-the-shipment",
+      "what-three-things-does-mark-want",
+      "whenever-you-have-a-moment-could-you-please-send-it-over",
+      "which-polite-phrase-does-she-use",
+      "which-team-is-elena-from",
+      "why-is-elena-calling",
+      "would-it-be-possible-to-move-the-meeting-to-thursday",
+      "would-you-be-able-to-attend-at-3-p-m",
+      "would-you-be-able-to-send-it-today",
+      "would-you-mind-reviewing-this-document",
+      "yo",
+      "you-must-review-this"
+    ]
   }
 }

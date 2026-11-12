@@ -23,7 +23,7 @@
         },
         {
           "l": "a connection",
-          "r": "un enlace (vuelo/tren para continuar)"
+          "r": "una conexión (vuelo o tren para continuar)"
         },
         {
           "l": "to board",
@@ -90,7 +90,7 @@
             },
             {
               "en": "the Wi-Fi is down",
-              "sp": "el Wi-Fi no anda"
+              "sp": "el Wi-Fi no funciona"
             },
             {
               "en": "dirty / noisy",
@@ -112,8 +112,33 @@
     {
       "type": "grammar",
       "title": "<ico-book></ico-book> PRESENT PERFECT · for/since · already/yet/just",
-      "intro": "",
+      "intro": "El <b>present perfect</b> conecta el pasado con ahora: es el tiempo perfecto para reportar algo que <b>sigue</b> sin funcionar.",
       "parts": [
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The heating hasn't worked since last night.",
+              "sp": "No funciona desde anoche, y sigue así."
+            },
+            {
+              "en": "I've been here for two days.",
+              "sp": "<b>for</b> + cantidad de tiempo · <b>since</b> + punto de inicio."
+            },
+            {
+              "en": "I've already tried the control.",
+              "sp": "<b>already</b> = ya."
+            },
+            {
+              "en": "Has the taxi arrived yet?",
+              "sp": "<b>yet</b> = ¿ya…? en preguntas; «todavía no» en negativas."
+            },
+            {
+              "en": "I'm afraid there's a problem with my room.",
+              "sp": "<b>I'm afraid…</b> suaviza la queja: «me temo que…»."
+            }
+          ]
+        },
         {
           "type": "cells",
           "cells": [
@@ -134,6 +159,11 @@
               "body": "<span class=\"es\">hasn't worked <b>since</b> I arrived (sigue ahora) vs. It <b>broke</b> yesterday (tiempo terminado)</span>"
             }
           ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>En español usas presente</b> («No funciona desde anoche»). En inglés, si empezó antes y sigue, va present perfect: <s class='x'>It doesn't work since last night.</s> → <span class='ok'>It hasn't worked since last night.</span> Con yesterday o ago vuelve el past simple: It broke <b>two hours ago</b>."
         },
         {
           "type": "stretch",
@@ -210,6 +240,22 @@
             "since"
           ],
           "answer": 1
+        },
+        {
+          "q": "I haven't slept well ___ two days.",
+          "options": [
+            "for",
+            "since"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We've been friends ___ we were children.",
+          "options": [
+            "for",
+            "since"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -268,6 +314,50 @@
             "has already finished"
           ],
           "answer": 1
+        },
+        {
+          "q": "They ___ the room yet. (not / clean)",
+          "options": [
+            "haven't cleaned",
+            "didn't clean"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We ___ at seven last night. (check in)",
+          "options": [
+            "have checked in",
+            "checked in"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "match",
+      "id": "ex-match",
+      "title": "DEL PROBLEMA AL PEDIDO",
+      "intro": "Quejarse bien es pedir una solución. Une cada problema con el pedido educado que lo resuelve.",
+      "pairs": [
+        {
+          "l": "The room is very cold.",
+          "r": "Could you send someone to fix the heating?"
+        },
+        {
+          "l": "There's no hot water.",
+          "r": "Could you check the shower, please?"
+        },
+        {
+          "l": "The room next door is noisy.",
+          "r": "Would it be possible to change rooms?"
+        },
+        {
+          "l": "The Wi-Fi is down.",
+          "r": "Could you restart the router, please?"
+        },
+        {
+          "l": "I paid twice by mistake.",
+          "r": "Could I get a refund, please?"
         }
       ]
     },
@@ -310,6 +400,28 @@
             "yet"
           ],
           "answer": "Has my taxi been booked yet"
+        },
+        {
+          "words": [
+            "I've",
+            "been",
+            "here",
+            "since",
+            "Monday"
+          ],
+          "answer": "I've been here since Monday"
+        },
+        {
+          "words": [
+            "Could",
+            "you",
+            "send",
+            "someone",
+            "to",
+            "fix",
+            "it"
+          ],
+          "answer": "Could you send someone to fix it"
         }
       ]
     },
@@ -331,7 +443,8 @@
             "Las dos igual",
             "A — present perfect"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -341,11 +454,12 @@
             "A — present perfect",
             "B — past simple"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
-          "q": "Llevas dos días sin Wi-Fi y sigue sin andar. ¿Qué dices?",
+          "q": "Llevas dos días sin Wi-Fi y sigue sin funcionar. ¿Qué dices?",
           "options": [
             "The Wi-Fi hasn't worked for two days.",
             "The Wi-Fi doesn't work two days ago.",
@@ -403,6 +517,16 @@
             "No, reception will book it later"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What is the receptionist going to do?",
+          "options": [
+            "Change the room",
+            "Call a taxi",
+            "Send someone up right now"
+          ],
+          "answer": 2
         }
       ],
       "transcript": [
@@ -474,6 +598,16 @@
             "The room next door is noisy"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Which room is the person in?",
+          "options": [
+            "305",
+            "204",
+            "350"
+          ],
+          "answer": 0
         }
       ],
       "transcript": [
@@ -512,5 +646,85 @@
   "next": {
     "href": "lesson.html?id=trv-l3",
     "label": "SIGUIENTE ▸"
+  },
+  "say": {
+    "dir": "say/trv-l2",
+    "keys": [
+      "a-connection",
+      "a-delay-luggage",
+      "a-deposit-a-refund",
+      "a-host",
+      "a-leak-to-fix",
+      "a-reservation-booking",
+      "a-single-double-room",
+      "arrived",
+      "broke",
+      "call-a-taxi",
+      "change-the-room",
+      "checked-in",
+      "did-you-checked-in",
+      "didn-t-clean",
+      "dirty-noisy",
+      "for",
+      "for-a-week",
+      "go-straight",
+      "has-already-finished",
+      "has-broken",
+      "has-the-guest-tried-the-control",
+      "has-the-taxi-arrived-yet",
+      "have-already-finished",
+      "have-arrived",
+      "have-been",
+      "have-checked-in",
+      "have-you-checked-in",
+      "haven-t-cleaned",
+      "i-already-tried-it-twice-yesterday",
+      "i-m-afraid-there-s-a-problem-with-my-room",
+      "i-paid-twice-by-mistake",
+      "i-try-it-twice-already",
+      "i-ve-already-tried-it-twice",
+      "i-ve-already-tried-the-control",
+      "i-ve-been-here-for-two-days",
+      "is-the-morning-taxi-booked",
+      "no-not-yet-she-will-try-it",
+      "no-reception-will-book-it-later",
+      "reception-a-key-card",
+      "send-someone-up-right-now",
+      "she-says-it-isn-t-there",
+      "since",
+      "since-monday",
+      "since-tuesday",
+      "since-when-has-the-person-been-at-the-hotel",
+      "the-bed-is-too-small-and-hard",
+      "the-heating-ac-isn-t-working",
+      "the-heating-didn-t-work-last-night",
+      "the-heating-hasn-t-worked-since-last-night",
+      "the-heating-is-too-cold-at-night",
+      "the-room-is-very-cold",
+      "the-room-next-door-is-being-cleaned",
+      "the-room-next-door-is-noisy",
+      "the-wi-fi-didn-t-work-for-two-days",
+      "the-wi-fi-doesn-t-work-two-days-ago",
+      "the-wi-fi-hasn-t-worked-for-two-days",
+      "the-wi-fi-hasn-t-worked-since-last-night",
+      "the-wi-fi-hasn-t-worked-since-this-morning",
+      "the-wi-fi-is-down",
+      "there-s-no-hot-water",
+      "there-s-no-hot-water-in-the-bathroom",
+      "there-s-no-hot-water-since-monday-evening",
+      "to-board",
+      "to-catch-miss-a-train",
+      "to-check-in-out",
+      "to-complain",
+      "was",
+      "what-is-one-problem",
+      "what-is-the-receptionist-going-to-do",
+      "what-s-the-problem-and-since-when",
+      "which-room-is-the-person-in",
+      "why-can-t-the-person-sleep",
+      "yes-already-twice",
+      "yes-confirmed-for-eight-o-clock",
+      "yes-just-confirmed-for-7-a-m"
+    ]
   }
 }

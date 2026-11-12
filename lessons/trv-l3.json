@@ -94,7 +94,7 @@
             },
             {
               "en": "bland",
-              "sp": "soso (sin sabor)"
+              "sp": "insípido, sin sabor"
             },
             {
               "en": "sweet / sour",
@@ -112,8 +112,33 @@
     {
       "type": "grammar",
       "title": "<ico-book></ico-book> COMPARATIVES &amp; SUPERLATIVES · quantifiers",
-      "intro": "",
+      "intro": "Para recomendar hay que comparar: mejor que, el más barato, no tan picante. Y los <b>cuantificadores</b> dicen cuánto hay.",
       "parts": [
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The pasta is better than the pizza.",
+              "sp": "Comparas dos: comparativo + <b>than</b>."
+            },
+            {
+              "en": "It's the cheapest place in town.",
+              "sp": "El número uno: <b>the</b> + -est · <b>in</b> town."
+            },
+            {
+              "en": "It's not as spicy as the curry.",
+              "sp": "No es tan picante como el curry."
+            },
+            {
+              "en": "Is there any milk? Yes, there's some.",
+              "sp": "<b>any</b> en preguntas y negativas · <b>some</b> en afirmativas."
+            },
+            {
+              "en": "How much sugar? How many people?",
+              "sp": "<b>much</b> + lo que no se cuenta · <b>many</b> + lo que se cuenta."
+            }
+          ]
+        },
         {
           "type": "cells",
           "cells": [
@@ -134,6 +159,11 @@
               "body": "<b>some</b> (+) / <b>any</b> (?/–) · <b>many</b>/<b>a few</b> (contables) · <b>much</b>/<b>a little</b> (incontables)"
             }
           ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>En español es «más» para todo y «cuánto» para todo. En inglés no:</b> <s class='x'>more better</s> → <span class='ok'>better</span> · <s class='x'>the best of the city</s> → <span class='ok'>the best in the city</span> · <s class='x'>How much people?</s> → <span class='ok'>How many people?</span>"
         },
         {
           "type": "stretch",
@@ -215,6 +245,24 @@
             "more expensive"
           ],
           "answer": 0
+        },
+        {
+          "q": "The curry is ___ than the pasta. (spicy)",
+          "options": [
+            "more spicy",
+            "spicier",
+            "the spiciest"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "This soup isn't as ___ as the one yesterday. (good)",
+          "options": [
+            "good",
+            "better",
+            "best"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -278,6 +326,56 @@
             "a few"
           ],
           "answer": 2
+        },
+        {
+          "q": "We don't have ___ bread left.",
+          "options": [
+            "some",
+            "many",
+            "any"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Can I have ___ water, please?",
+          "options": [
+            "some",
+            "any",
+            "many"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "ex-mem",
+      "title": "MEMORIA · EL NÚMERO UNO",
+      "intro": "Encuentra cada adjetivo y su superlativo. Las cartas se leen en voz alta.",
+      "pairs": [
+        {
+          "a": "good",
+          "b": "the best"
+        },
+        {
+          "a": "bad",
+          "b": "the worst"
+        },
+        {
+          "a": "cheap",
+          "b": "the cheapest"
+        },
+        {
+          "a": "tasty",
+          "b": "the tastiest"
+        },
+        {
+          "a": "expensive",
+          "b": "the most expensive"
+        },
+        {
+          "a": "spicy",
+          "b": "the spiciest"
         }
       ]
     },
@@ -323,6 +421,30 @@
             "curry"
           ],
           "answer": "It is not as spicy as the curry"
+        },
+        {
+          "words": [
+            "Is",
+            "there",
+            "any",
+            "milk",
+            "for",
+            "the",
+            "coffee"
+          ],
+          "answer": "Is there any milk for the coffee"
+        },
+        {
+          "words": [
+            "It's",
+            "the",
+            "most",
+            "expensive",
+            "restaurant",
+            "I",
+            "know"
+          ],
+          "answer": "It's the most expensive restaurant I know"
         }
       ]
     },
@@ -344,7 +466,8 @@
             "A — comparativo (cheaper than)",
             "B — superlativo (the cheapest)"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -354,7 +477,8 @@
             "Ninguna de las dos",
             "B — superlativo"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -414,6 +538,16 @@
             "No, not as spicy as the curry",
             "Yes, it's the spiciest on the menu",
             "No, it's sweeter than the curry"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What do they decide to share?",
+          "options": [
+            "Some bread and a salad",
+            "The curry",
+            "A dessert"
           ],
           "answer": 0
         }
@@ -487,6 +621,16 @@
             "The second one"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which restaurant is better if you like meat?",
+          "options": [
+            "The first one",
+            "The second one",
+            "Neither"
+          ],
+          "answer": 1
         }
       ],
       "transcript": [
@@ -525,5 +669,94 @@
   "next": {
     "href": "lesson.html?id=trv-l4",
     "label": "SIGUIENTE ▸"
+  },
+  "say": {
+    "dir": "say/trv-l3",
+    "keys": [
+      "a-deposit-a-refund",
+      "a-dessert",
+      "a-few",
+      "a-host",
+      "a-leak-to-fix",
+      "a-little",
+      "a-menu",
+      "a-starter-main-dessert",
+      "a-tip",
+      "any",
+      "bad",
+      "best",
+      "better",
+      "bland",
+      "both",
+      "both-the-same",
+      "cheap",
+      "cheaper",
+      "delicious-tasty",
+      "expensive",
+      "fresh-filling",
+      "good",
+      "gooder",
+      "how-much-sugar-how-many-people",
+      "i-m-allergic-to",
+      "is-it-more-or-less-expensive-than-the-place-next-door",
+      "is-the-pasta-very-spicy",
+      "is-there-any-milk-yes-there-s-some",
+      "it-s-better-restaurant-in-the-neighborhood",
+      "it-s-not-as-spicy-as-the-curry",
+      "it-s-the-best-restaurant-in-the-neighborhood",
+      "it-s-the-better-than-the-neighborhood",
+      "it-s-the-cheapest-place-in-town",
+      "many",
+      "more-expensive",
+      "more-spicy",
+      "more-tasty",
+      "most-cheap",
+      "much",
+      "neither",
+      "neither-of-them",
+      "no-it-s-sweeter-than-the-curry",
+      "no-not-as-spicy-as-the-curry",
+      "salty",
+      "some",
+      "some-bread-and-a-salad",
+      "spicier",
+      "spicy",
+      "spicy-greasy",
+      "sweet-sour",
+      "tastier",
+      "tasty",
+      "the-baddest",
+      "the-best",
+      "the-cheapest",
+      "the-check-bill",
+      "the-curry",
+      "the-curry-it-s-the-spiciest-on-the-menu",
+      "the-expensivest",
+      "the-first-one",
+      "the-most-expensive",
+      "the-pasta-is-better-than-the-pizza",
+      "the-pasta-is-the-best-than-the-pizza",
+      "the-pasta-is-the-better",
+      "the-pasta-it-s-the-best-in-the-neighborhood",
+      "the-pizza-it-s-cheaper-than-next-door",
+      "the-same",
+      "the-second-one",
+      "the-spiciest",
+      "the-tastiest",
+      "the-worst",
+      "there-s-no-hot-water",
+      "this-caf-is-cheaper-than-the-one-next-door",
+      "this-caf-is-the-cheapest-in-town",
+      "to-book-a-table-to-order",
+      "to-check-in-out",
+      "what-do-they-decide-to-share",
+      "what-does-leo-recommend-and-why",
+      "which-has-the-best-desserts",
+      "which-one-is-friendlier",
+      "which-restaurant-is-better-if-you-like-meat",
+      "which-restaurant-is-cheaper",
+      "worse",
+      "yes-it-s-the-spiciest-on-the-menu"
+    ]
   }
 }

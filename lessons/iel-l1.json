@@ -285,7 +285,8 @@
             "Una sola vez",
             "Tres veces"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -295,7 +296,8 @@
             "Un ensayo de 250 palabras",
             "Escribir una carta de 150 palabras"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -315,7 +317,8 @@
             "Frases simples correctas que respondan la pregunta",
             "Hacer frases muy largas"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -325,7 +328,28 @@
             "La sociedad y el futuro del planeta",
             "Ti: tu casa, tu trabajo, tu tiempo libre"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "q": "¿Qué pasa si respondes solo «Yes» en Part 1?",
+          "options": [
+            "Nada: es lo que se espera",
+            "Pierdes puntos: hay que extender la respuesta",
+            "Te descalifican"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "q": "El IELTS se puntúa con…",
+          "options": [
+            "Bandas de 0 a 9",
+            "Un porcentaje de 0 a 100",
+            "Aprobado o reprobado"
+          ],
+          "answer": 0,
+          "mute": true
         }
       ]
     },
@@ -371,6 +395,34 @@
             "stressful"
           ],
           "answer": "To be honest it can be stressful"
+        },
+        {
+          "words": [
+            "I",
+            "usually",
+            "go",
+            "to",
+            "the",
+            "gym",
+            "because",
+            "I",
+            "sit",
+            "all",
+            "day"
+          ],
+          "answer": "I usually go to the gym because I sit all day"
+        },
+        {
+          "words": [
+            "I've",
+            "worked",
+            "there",
+            "for",
+            "about",
+            "four",
+            "years"
+          ],
+          "answer": "I've worked there for about four years"
         }
       ]
     },
@@ -392,7 +444,8 @@
             "A — respuesta corta",
             "B — respuesta + razón + detalle"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -402,7 +455,8 @@
             "Una razón y un detalle",
             "Vocabulario difícil"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -421,6 +475,73 @@
             "Unos 20–30 segundos",
             "Una sola palabra",
             "Dos o tres minutos"
+          ],
+          "answer": 0,
+          "mute": true
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "TU PART 1",
+      "intro": "El examinador te pregunta. Elige la respuesta que puntúa: respuesta + razón o detalle, sin quedarte corto y sin exagerar.",
+      "lines": [
+        {
+          "spk": "Examiner",
+          "html": "Where are you from?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I'm from Lima. It's a big city on the coast, and I've lived there all my life.",
+            "Lima.",
+            "I'm from Lima, which is a marvelous metropolis with a plethora of attractions."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Examiner",
+          "html": "Do you work or study?",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I work. I'm a receptionist at a hotel, and I've worked there for two years.",
+            "Work.",
+            "Yes."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Examiner",
+          "html": "Do you enjoy your job?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Yes, most of the time, because I like talking to people. But the hours can be long.",
+            "Yes, I enjoy.",
+            "My job is a job that I do every day in my work."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Examiner",
+          "html": "What do you do in your free time?",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I usually go running, because I sit all day at work. I also like cooking.",
+            "Many things.",
+            "I like running, swimming, tennis, football, cooking, reading, music and films."
           ],
           "answer": 0
         }
@@ -464,6 +585,16 @@
             "It's stressful in winter, when the hospital is busy"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Why did Marta choose nursing?",
+          "options": [
+            "Because the pay is good",
+            "Because she likes helping people",
+            "Because her mother is a nurse"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -547,6 +678,16 @@
             "She cooks dinner with her partner"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is Marta's favorite day of the week?",
+          "options": [
+            "Saturday",
+            "Sunday",
+            "Friday"
+          ],
+          "answer": 0
         }
       ],
       "transcript": [
@@ -610,5 +751,96 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/iel-l1",
+    "keys": [
+      "11-14-minutos-en-3-partes",
+      "30-minutos-en-4-secciones",
+      "60-minutos-por-escrito",
+      "a-coworker-a-colleague",
+      "about-four-years",
+      "about-two-years",
+      "almost-ten-years",
+      "at-work-mostly-in-emails",
+      "barcelona-on-the-north-east-coast",
+      "because-for-example",
+      "because-her-mother-is-a-nurse",
+      "because-her-partner-goes-with-her",
+      "because-it-s-near-her-house",
+      "because-she-likes-helping-people",
+      "because-she-sits-all-day-at-work",
+      "because-the-pay-is-good",
+      "cooking-is-an-activity-that-many-people-enjoys-in-their-free-time-for-relaxing-t",
+      "do-you-enjoy-your-job",
+      "do-you-work-or-study",
+      "do-you-work-yes-i-do",
+      "do-you-work-yes-i-do-i-m-a-nurse-at-a-private-hospital-and-i-ve-worked-there-for",
+      "english-is-very-important-nowadays-and-i-believe-everybody-in-the-world-should-l",
+      "free-time-hobbies",
+      "friday",
+      "hometown",
+      "how-does-she-mostly-use-english",
+      "how-long-has-she-worked-at-the-hospital",
+      "i-like-football-tennis-swimming-running-cycling-reading-cooking-and-also-watchin",
+      "i-like-running-swimming-tennis-football-cooking-reading-music-and-films",
+      "i-m-from-lima-it-s-a-big-city-on-the-coast-and-i-ve-lived-there-all-my-life",
+      "i-m-from-lima-which-is-a-marvelous-metropolis-with-a-plethora-of-attractions",
+      "i-m-from-valencia",
+      "i-m-from-valencia-on-the-east-coast-and-i-ve-lived-there-all-my-life",
+      "i-mainly-play-football-i-train-twice-a-week-with-a-local-team-after-work",
+      "i-moved-there-about-three-years-ago-because-i-found-a-cheaper-apartment-near-my-",
+      "i-started-learning-english-at-school-when-i-was-ten-and-my-teacher-was-really-go",
+      "i-usually-go-running-because-i-sit-all-day-at-work-i-also-like-cooking",
+      "i-work",
+      "i-work-i-m-a-nurse-in-a-hospital-because-i-like-helping-people-i-ve-worked-there",
+      "i-work-i-m-a-receptionist-at-a-hotel-and-i-ve-worked-there-for-two-years",
+      "it-depends-actually",
+      "it-s-pretty-quiet-there-s-a-park-at-the-end-of-my-street-and-some-small-shops",
+      "it-s-stressful-in-winter-when-the-hospital-is-busy",
+      "lima",
+      "madrid-in-the-center-of-the-country",
+      "many-things",
+      "my-hometown-is-a-marvelous-and-picturesque-location-which-offers-a-plethora-of-m",
+      "my-job-is-a-job-that-i-do-every-day-in-my-work",
+      "my-neighborhood-is-like-a-normal-neighborhood-it-s-the-neighborhood-where-i-live",
+      "neighborhood",
+      "not-very-often-i-use-it-at-work-maybe-twice-a-week-mostly-for-writing-emails",
+      "nothing-special-really-just-the-normal-things-that-everybody-does-after-work-you",
+      "saturday",
+      "she-cooks-dinner-with-her-partner",
+      "she-doesn-t-get-on-with-her-colleagues-at-work",
+      "she-goes-for-a-walk-by-the-sea",
+      "she-sleeps-late-and-stays-home",
+      "she-speaks-it-every-day-with-clients",
+      "she-teaches-it-at-a-school",
+      "stressful",
+      "sunday",
+      "the-hospital-is-too-far-from-where-she-lives",
+      "these-days-at-the-moment",
+      "to-be-honest",
+      "to-commute-to-get-to-work",
+      "to-relax-to-get-together",
+      "valencia",
+      "valencia-on-the-east-coast-of-spain",
+      "weekdays-weekends",
+      "well-i-d-say",
+      "what-do-you-do-in-your-free-time",
+      "what-does-she-do-on-saturday-evenings",
+      "what-does-she-say-is-difficult-about-her-job",
+      "what-is-marta-s-favorite-day-of-the-week",
+      "where-are-you-from",
+      "where-is-marta-from",
+      "why-did-marta-choose-nursing",
+      "why-does-marta-go-to-the-gym",
+      "work",
+      "yes",
+      "yes-a-lot-i-cook-on-weekends-because-i-get-home-late-during-the-week",
+      "yes-i-enjoy",
+      "yes-i-like-my-hometown-because-my-hometown-is-the-town-where-i-was-born",
+      "yes-i-love-cooking-well-actually-i-don-t-cook-much-i-mean-sometimes-but-not-real",
+      "yes-it-s-quite-small-so-everyone-knows-each-other-but-there-isn-t-much-to-do",
+      "yes-most-of-the-time-because-i-like-talking-to-people-but-the-hours-can-be-long"
+    ]
+  }
 }

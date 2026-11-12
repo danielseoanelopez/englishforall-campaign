@@ -19,7 +19,7 @@
       "pairs": [
         {
           "l": "a connection",
-          "r": "un enlace (vuelo/tren para continuar)"
+          "r": "una conexión (vuelo o tren para continuar)"
         },
         {
           "l": "a delay / luggage",
@@ -65,7 +65,7 @@
             },
             {
               "en": "to book / to check in",
-              "sp": "reservar / facturar"
+              "sp": "reservar / hacer el check-in"
             },
             {
               "en": "to board",
@@ -73,7 +73,7 @@
             },
             {
               "en": "a connection",
-              "sp": "un enlace (vuelo/tren para continuar)"
+              "sp": "una conexión (vuelo o tren para continuar)"
             },
             {
               "en": "a delay / luggage",
@@ -120,8 +120,33 @@
     {
       "type": "grammar",
       "title": "<ico-book></ico-book> FUTURE FORMS · will / going to / -ing",
-      "intro": "",
+      "intro": "Tres futuros, tres mensajes: <b>going to</b> es un plan, <b>-ing</b> es algo ya reservado, y <b>will</b> es lo que decides u ofreces en el momento.",
       "parts": [
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We're going to visit Rome.",
+              "sp": "Plan o intención: lo decidiste, pero no hay reserva."
+            },
+            {
+              "en": "We're flying on Friday at six.",
+              "sp": "Ya tiene día y hora: está reservado."
+            },
+            {
+              "en": "I'll take the train.",
+              "sp": "Lo decides en este momento."
+            },
+            {
+              "en": "I'll help you with your bags.",
+              "sp": "Ofreces ayuda."
+            },
+            {
+              "en": "How do I get to the station?",
+              "sp": "¿Cómo llego a la estación? — <b>get to</b> = llegar a."
+            }
+          ]
+        },
         {
           "type": "cells",
           "cells": [
@@ -142,6 +167,11 @@
               "body": "What <b>are</b> you <b>doing</b> this weekend?<br>What time <b>are</b> you <b>leaving</b>?"
             }
           ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>En español ofreces en presente</b> («Te ayudo»). En inglés va will: <s class='x'>I carry it for you.</s> → <span class='ok'>I'll carry it for you.</span> Y «llegar a» un lugar no es arrive to: <s class='x'>How do I arrive to the station?</s> → <span class='ok'>How do I get to the station?</span>"
         },
         {
           "type": "stretch",
@@ -223,6 +253,24 @@
             "is going to rain"
           ],
           "answer": 2
+        },
+        {
+          "q": "I think it ___ a great trip. (predicción, tu opinión)",
+          "options": [
+            "will be",
+            "is being",
+            "be"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "A: The phone's ringing. B: I ___ it! (decisión ahora)",
+          "options": [
+            "'m going to get",
+            "'ll get",
+            "get"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -286,6 +334,24 @@
             "next"
           ],
           "answer": 2
+        },
+        {
+          "q": "The café is ___ the bank, on the other side of the street.",
+          "options": [
+            "next",
+            "opposite",
+            "on"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "How do I ___ to the station?",
+          "options": [
+            "arrive",
+            "reach",
+            "get"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -328,56 +394,106 @@
             "left"
           ],
           "answer": "Go straight and turn left"
+        },
+        {
+          "words": [
+            "How",
+            "do",
+            "I",
+            "get",
+            "to",
+            "the",
+            "station"
+          ],
+          "answer": "How do I get to the station"
+        },
+        {
+          "words": [
+            "I'll",
+            "carry",
+            "it",
+            "for",
+            "you"
+          ],
+          "answer": "I'll carry it for you"
         }
       ]
     },
     {
-      "type": "contrast",
-      "id": "ex-contrast",
-      "title": "GOING TO vs PRESENT CONTINUOUS",
-      "intro": "Las dos hablan del futuro. Una es una <b>intención</b>; la otra es un <b>plan ya cerrado</b>, con fecha o reserva.",
-      "pair": {
-        "a": "I'm going to visit Rome.",
-        "b": "I'm flying to Rome on Tuesday."
-      },
-      "items": [
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "AYUDA AL TURISTA",
+      "intro": "Un turista te para en la calle. Elige la respuesta correcta: direcciones, ofertas y planes.",
+      "lines": [
         {
-          "type": "mcq",
-          "q": "¿Cuál suena a plan ya cerrado, con boletos comprados?",
+          "spk": "Tourist",
+          "html": "Excuse me, how do I get to the station?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
           "options": [
-            "B — present continuous",
-            "Las dos igual",
-            "A — going to"
+            "Go straight for two blocks, then turn left.",
+            "You go to straight two blocks, then left.",
+            "Straight and turning left two blocks."
           ],
           "answer": 0
         },
         {
-          "type": "mcq",
-          "q": "¿Cuál es una intención, sin fecha fija todavía?",
+          "spk": "Tourist",
+          "html": "Is it far?",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
           "options": [
-            "A — going to",
-            "B — present continuous",
-            "Ninguna de las dos"
+            "No, it's near. It's next to the museum.",
+            "No, is near of the museum.",
+            "No, it's next the museum."
           ],
           "answer": 0
         },
         {
-          "type": "mcq",
-          "q": "Ya reservaste el hotel para el sábado. ¿Qué dices?",
-          "options": [
-            "I will stay at a hotel on Saturday.",
-            "I'm staying at the Blue Hotel on Saturday.",
-            "I'm going to stay at a hotel some day."
-          ],
-          "answer": 1
+          "spk": "Tourist",
+          "html": "Great. What time does the next train leave?"
         },
         {
-          "type": "mcq",
-          "q": "Miras nubes negras: hay evidencia. ¿Qué dices?",
+          "gap": true,
+          "q": "Tu respuesta:",
           "options": [
-            "It's going to rain.",
-            "It will rain.",
-            "It rains."
+            "It leaves at eight.",
+            "It will to leave at eight.",
+            "It leaving at eight."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Tourist",
+          "html": "Thanks! Oh, my bag is really heavy…",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Don't worry, I'll carry it for you.",
+            "Don't worry, I carry it for you.",
+            "Don't worry, I'm carrying it for you."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Tourist",
+          "html": "That's very kind! Are you traveling today too?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Yes, I'm meeting a friend at the airport at six.",
+            "Yes, I meet a friend at the airport at six.",
+            "Yes, I will meeting a friend at six."
           ],
           "answer": 0
         }
@@ -389,7 +505,7 @@
       "title": "AUDIO 1 · THE WEEKEND PLAN",
       "desc": "Nao y Ben planean el sábado. Fíjate en el <b>transporte</b>, la <b>hora</b> y el <b>lugar</b>.",
       "src": "trv-l1-1.mp3",
-      "dur": "0:31",
+      "dur": "0:30",
       "speakers": "<ico-commentdots></ico-commentdots> Nao + Ben",
       "questions": [
         {
@@ -421,6 +537,16 @@
             "Next to the museum"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What is Nao going to bring?",
+          "options": [
+            "A map",
+            "Her camera",
+            "Some food"
+          ],
+          "answer": 1
         }
       ],
       "transcript": [
@@ -460,7 +586,7 @@
       "title": "AUDIO 2 · MY NEXT TRIP",
       "desc": "Alguien cuenta su próximo viaje. Fíjate en el <b>destino</b> y los <b>planes</b>.",
       "src": "trv-l1-2.mp3",
-      "dur": "0:22",
+      "dur": "0:19",
       "speakers": "<ico-commentdots></ico-commentdots> monólogo",
       "questions": [
         {
@@ -490,6 +616,16 @@
             "The hotels",
             "The train",
             "The flights"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "When is the person flying?",
+          "options": [
+            "On the fifth",
+            "Next week",
+            "On the fifteenth"
           ],
           "answer": 0
         }
@@ -530,5 +666,112 @@
   "next": {
     "href": "lesson.html?id=trv-l2",
     "label": "SIGUIENTE ▸"
+  },
+  "say": {
+    "dir": "say/trv-l1",
+    "keys": [
+      "a-block-on-the-corner",
+      "a-connection",
+      "a-delay-luggage",
+      "a-flight",
+      "a-map",
+      "a-platform-a-gate",
+      "am-going-to-learn",
+      "am-having",
+      "am-learning",
+      "are-flying",
+      "arrive",
+      "be",
+      "behind",
+      "behind-the-bank-on-the-left",
+      "by-bus-from-the-station",
+      "by-car-along-the-coast",
+      "by-the-early-train",
+      "carry",
+      "china",
+      "cross",
+      "cross-the-street",
+      "don-t-worry-i-carry-it-for-you",
+      "don-t-worry-i-ll-carry-it-for-you",
+      "don-t-worry-i-m-carrying-it-for-you",
+      "eight",
+      "excuse-me-how-do-i-get-to-the-station",
+      "fly",
+      "get",
+      "go",
+      "go-straight",
+      "go-straight-for-two-blocks-then-turn-left",
+      "great-what-time-does-the-next-train-leave",
+      "have",
+      "her-camera",
+      "how-are-they-traveling-on-saturday",
+      "how-do-i-get-to",
+      "how-do-i-get-to-the-station",
+      "how-long-are-they-staying",
+      "i-ll-help-you-with-your-bags",
+      "i-ll-take-the-train",
+      "in",
+      "is-being",
+      "is-going-to-rain",
+      "is-it-far",
+      "it-leaves-at-eight",
+      "it-leaving-at-eight",
+      "it-will-to-leave-at-eight",
+      "japan",
+      "kyoto-only",
+      "learn",
+      "ll-carry",
+      "ll-get",
+      "m-carrying",
+      "m-going-to-get",
+      "next",
+      "next-to-opposite-near",
+      "next-to-the-museum",
+      "next-week",
+      "nine",
+      "no-is-near-of-the-museum",
+      "no-it-s-near-it-s-next-to-the-museum",
+      "no-it-s-next-the-museum",
+      "on",
+      "on-the-coast-past-the-museum",
+      "on-the-fifteenth",
+      "on-the-fifth",
+      "one-way-round-trip",
+      "opposite",
+      "rained",
+      "rains",
+      "reach",
+      "seven",
+      "some-food",
+      "straight-and-turning-left-two-blocks",
+      "thanks-oh-my-bag-is-really-heavy",
+      "that-s-very-kind-are-you-traveling-today-too",
+      "the-flights",
+      "the-hotels",
+      "the-train",
+      "to-board",
+      "to-book-to-check-in",
+      "to-catch-miss-a-train",
+      "turn",
+      "turn-left-right",
+      "two-days",
+      "two-months",
+      "two-weeks",
+      "we-re-flying-on-friday-at-six",
+      "we-re-going-to-visit-rome",
+      "what-haven-t-they-booked-yet",
+      "what-is-nao-going-to-bring",
+      "what-time-does-the-train-leave",
+      "when-is-the-person-flying",
+      "where-is-the-person-going",
+      "where-is-the-station",
+      "will-be",
+      "will-fly",
+      "will-have",
+      "yes-i-m-meeting-a-friend-at-the-airport-at-six",
+      "yes-i-meet-a-friend-at-the-airport-at-six",
+      "yes-i-will-meeting-a-friend-at-six",
+      "you-go-to-straight-two-blocks-then-left"
+    ]
   }
 }

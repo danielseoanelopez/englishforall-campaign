@@ -132,8 +132,33 @@
     {
       "type": "grammar",
       "title": "<ico-book></ico-book> HAVE / HAS · posesivos",
-      "intro": "",
+      "intro": "Para decir lo que tienes usas <b>have</b>; con he / she / it cambia a <b>has</b>. Los posesivos (my, his, her…) dicen de quién es algo.",
       "parts": [
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I have two brothers.",
+              "sp": "Tengo dos hermanos."
+            },
+            {
+              "en": "She has a dog.",
+              "sp": "Con he / she / it: <b>has</b>."
+            },
+            {
+              "en": "Do you have a big family?",
+              "sp": "Pregunta con do. Respuesta: Yes, I do. / No, I don't."
+            },
+            {
+              "en": "His name is Tom. Her name is Ana.",
+              "sp": "<b>his</b> = de él · <b>her</b> = de ella. En español los dos son «su»."
+            },
+            {
+              "en": "My mother is a teacher.",
+              "sp": "Las profesiones llevan <b>a / an</b>."
+            }
+          ]
+        },
         {
           "type": "cells",
           "cells": [
@@ -154,6 +179,11 @@
               "body": "<span class=\"ok\">This is my sister.</span><br><span class=\"ok\">His name is Tom.</span> · <span class=\"ok\">Her job is nice.</span>"
             }
           ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Tres trampas del español:</b> <s class='x'>She is teacher.</s> → <span class='ok'>She is a teacher.</span> · <s class='x'>He has thirty years.</s> → <span class='ok'>He is thirty years old.</span> · «su nombre» puede ser <b>his</b> name o <b>her</b> name: mira de quién hablas."
         },
         {
           "type": "stretch",
@@ -230,6 +260,30 @@
             "have"
           ],
           "answer": 0
+        },
+        {
+          "q": "She doesn't ___ a car.",
+          "options": [
+            "has",
+            "have"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "___ you have any brothers?",
+          "options": [
+            "Do",
+            "Does"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "My parents ___ two dogs.",
+          "options": [
+            "has",
+            "have"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -293,6 +347,52 @@
             "his"
           ],
           "answer": 1
+        },
+        {
+          "q": "My parents are teachers. ___ school is big. (they)",
+          "options": [
+            "Their",
+            "Our",
+            "His"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "This is my brother. ___ wife is a nurse. (he)",
+          "options": [
+            "Her",
+            "Your",
+            "His"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "match",
+      "id": "ex-match",
+      "title": "¿QUIÉN ES?",
+      "intro": "Une cada descripción con el familiar. Fíjate en la <b>'s</b>: my mother's sister = la hermana de mi madre.",
+      "pairs": [
+        {
+          "l": "my mother's sister",
+          "r": "my aunt"
+        },
+        {
+          "l": "my father's father",
+          "r": "my grandfather"
+        },
+        {
+          "l": "my aunt's son",
+          "r": "my cousin"
+        },
+        {
+          "l": "my parents' daughter",
+          "r": "my sister"
+        },
+        {
+          "l": "my mother's husband",
+          "r": "my father"
         }
       ]
     },
@@ -330,6 +430,26 @@
             "doctor"
           ],
           "answer": "My father is a doctor"
+        },
+        {
+          "words": [
+            "Does",
+            "your",
+            "sister",
+            "have",
+            "a",
+            "job"
+          ],
+          "answer": "Does your sister have a job"
+        },
+        {
+          "words": [
+            "Her",
+            "name",
+            "is",
+            "Ana"
+          ],
+          "answer": "Her name is Ana"
         }
       ]
     },
@@ -351,7 +471,8 @@
             "Las dos igual",
             "A — have"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -361,7 +482,8 @@
             "A — have",
             "B — be"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -423,6 +545,16 @@
             "She is a doctor"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does Sam's father do?",
+          "options": [
+            "He is a driver",
+            "He is a doctor",
+            "He is a cook"
+          ],
+          "answer": 2
         }
       ],
       "transcript": [
@@ -494,6 +626,16 @@
             "Max"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Is it a big family?",
+          "options": [
+            "No, it's small.",
+            "Yes, it's very big.",
+            "We don't know."
+          ],
+          "answer": 0
         }
       ],
       "transcript": [
@@ -532,5 +674,85 @@
   "next": {
     "href": "lesson.html?id=a1c-l3",
     "label": "SIGUIENTE ▸"
+  },
+  "say": {
+    "dir": "say/a1c-l2",
+    "keys": [
+      "a-cook",
+      "a-doctor",
+      "a-teacher",
+      "ana",
+      "aunt-uncle",
+      "big-small",
+      "brother-sister",
+      "cousin",
+      "do",
+      "do-you-have-a-big-family",
+      "doctor-nurse",
+      "does",
+      "driver",
+      "engineer",
+      "grandmother-grandfather",
+      "has",
+      "have",
+      "he-has-thirty-years",
+      "he-has-thirty-years-old",
+      "he-is-a-cook",
+      "he-is-a-doctor",
+      "he-is-a-driver",
+      "he-is-thirty-years-old",
+      "her",
+      "his",
+      "his-name-is-tom-her-name-is-ana",
+      "how-many-brothers-does-sam-have",
+      "how-many-sisters",
+      "husband-wife",
+      "i-have-two-brothers",
+      "is-it-a-big-family",
+      "leo",
+      "light-blue-dark-light",
+      "manager",
+      "max",
+      "mother-father",
+      "my",
+      "my-aunt-s-son",
+      "my-father-s-father",
+      "my-mother-is-a-teacher",
+      "my-mother-s-husband",
+      "my-mother-s-sister",
+      "my-parents-daughter",
+      "no-it-s-small",
+      "one",
+      "our",
+      "parents",
+      "police-officer",
+      "red-blue-green",
+      "she-has-a-dog",
+      "she-has-green-eyed",
+      "she-has-green-eyes",
+      "she-has-long-hair",
+      "she-is-a-doctor",
+      "she-is-a-student",
+      "she-is-a-teacher",
+      "she-is-green-eyes",
+      "she-is-tall",
+      "son-daughter",
+      "student",
+      "tall-short",
+      "teacher",
+      "their",
+      "three",
+      "two",
+      "waiter-cook",
+      "we-don-t-know",
+      "what-does-sam-s-father-do",
+      "what-does-sam-s-mother-do",
+      "what-is-sam-s-brother-s-job",
+      "what-is-the-brother-s-job",
+      "what-s-the-pet-s-name",
+      "yellow-black-white",
+      "yes-it-s-very-big",
+      "your"
+    ]
   }
 }

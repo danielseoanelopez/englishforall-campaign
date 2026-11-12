@@ -386,7 +386,8 @@
             "Durante la llamada",
             "Antes de la llamada"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -396,7 +397,8 @@
             "Empezaste después",
             "Ya estabas escribiéndolo"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -734,7 +736,6 @@
       "almost-two-hours",
       "am-watching",
       "an-alert-came-in",
-      "antes-de-la-llamada",
       "are",
       "are-we-all-agreed",
       "as",
@@ -749,10 +750,7 @@
       "crashed",
       "crashes",
       "david",
-      "despu-s-de-la-llamada",
       "did",
-      "durante-la-llamada",
-      "empezaste-despu-s",
       "fall",
       "fell",
       "find",
@@ -778,7 +776,6 @@
       "let-s-move-on-to",
       "logs",
       "marcos",
-      "no-lo-escribiste",
       "not-enough-memory-on-the-main-server",
       "on",
       "on-call",
@@ -833,8 +830,7 @@
       "while",
       "while-i-was-checking-the-logs-i-found-the-problem",
       "who-called-marcos-that-night",
-      "writing-the-launch-report",
-      "ya-estabas-escribi-ndolo"
+      "writing-the-launch-report"
     ]
   }
 }

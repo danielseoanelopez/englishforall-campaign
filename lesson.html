@@ -129,7 +129,7 @@ function qHtml(q, name, num, sp){
   else { opts = q.options; correct = q.answer; }
   const order = shuffle(opts.map((_,i)=>i));
   const numHtml = (num!=null) ? `<span class="qnum">${String(num).padStart(2,"0")}</span>` : "";
-  const optSpeak = sp.opt && q.type !== "trueFalse";
+  const optSpeak = sp.opt && q.type !== "trueFalse" && !q.mute;   // mute: the options are Spanish or labels, no speaker
   return `<div class="q" data-correct="${LET[correct]}"><p>${numHtml}${esc(q.q)}${sp.q?spkBtn(q.q,"mini"):""}</p>${
     order.map(oi=>`<label class="option"><input type="radio" name="${name}" value="${LET[oi]}"><span>${esc(opts[oi])}</span>${optSpeak?spkBtn(opts[oi]):""}</label>`).join("")
   }</div>`;

@@ -500,7 +500,8 @@
             "La otra persona — es un pedido",
             "Nadie: es una pregunta general"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -510,7 +511,8 @@
             "Los dos al mismo tiempo",
             "Yo — es un ofrecimiento"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -801,13 +803,10 @@
       "i-m-sorry-she-s-in-a-meeting-right-now",
       "i-shall",
       "in-a-meeting",
-      "la-otra-persona-es-un-pedido",
       "last-night",
       "like",
-      "los-dos-al-mismo-tiempo",
       "make",
       "marcos",
-      "nadie-es-una-pregunta-general",
       "no-a-call-is-fine",
       "no-thanks",
       "no-thanks-i-m-fine",
@@ -866,8 +865,7 @@
       "yes-please-that-would-be-great",
       "yes-today",
       "yes-tomorrow",
-      "yes-you-speak",
-      "yo-es-un-ofrecimiento"
+      "yes-you-speak"
     ]
   }
 }

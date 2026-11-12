@@ -107,6 +107,31 @@
       "intro": "El adjetivo va <b>antes del sustantivo</b> (a red car) o <b>después de to be</b> (The car is red). ¡El adjetivo <b>no cambia</b>!",
       "parts": [
         {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "It's a red car.",
+              "sp": "El adjetivo va <b>antes</b> de la cosa: al revés que en español (un auto rojo)."
+            },
+            {
+              "en": "The car is red.",
+              "sp": "O después de <b>is / are</b>."
+            },
+            {
+              "en": "They are big cars.",
+              "sp": "El adjetivo nunca cambia: sin -s y sin femenino."
+            },
+            {
+              "en": "This is my phone. That is my car.",
+              "sp": "<b>this</b> = cerca de ti · <b>that</b> = lejos."
+            },
+            {
+              "en": "These are my keys. Those are my shoes.",
+              "sp": "Varios: <b>these</b> (cerca) · <b>those</b> (lejos)."
+            }
+          ]
+        },
+        {
           "type": "cells",
           "cells": [
             {
@@ -126,6 +151,11 @@
               "body": "<b style=\"color:var(--purple)\">cerca:</b> this (uno) · these (varios)<br> <b style=\"color:var(--purple)\">lejos:</b> that (uno) · those (varios)"
             }
           ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Dos errores de traducción directa:</b> <s class='x'>a car red</s> → <span class='ok'>a red car</span> · <s class='x'>two bigs cars</s> → <span class='ok'>two big cars</span> Y recuerda <b>an</b> antes de sonido de vocal: an <b>o</b>ld book."
         },
         {
           "type": "stretch",
@@ -202,6 +232,30 @@
             "It is a city big."
           ],
           "answer": 0
+        },
+        {
+          "q": "¿Cuál es correcta?",
+          "options": [
+            "two big cars",
+            "two bigs cars"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Cuál es correcta?",
+          "options": [
+            "These shoes are news.",
+            "These shoes are new."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Cuál es correcta?",
+          "options": [
+            "a old book",
+            "an old book"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -255,6 +309,24 @@
             "This"
           ],
           "answer": 1
+        },
+        {
+          "q": "Are <b class=\"tg\">___</b> your keys? (varios, cerca)",
+          "options": [
+            "this",
+            "these",
+            "that"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "<b class=\"tg\">___</b> is my friend Leo. (uno, cerca: lo presentas)",
+          "options": [
+            "This",
+            "Those",
+            "These"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -292,58 +364,58 @@
             "old"
           ],
           "answer": "That house is old"
+        },
+        {
+          "words": [
+            "Those",
+            "shoes",
+            "are",
+            "very",
+            "expensive"
+          ],
+          "answer": "Those shoes are very expensive"
+        },
+        {
+          "words": [
+            "It's",
+            "a",
+            "small",
+            "black",
+            "phone"
+          ],
+          "answer": "It's a small black phone"
         }
       ]
     },
     {
-      "type": "contrast",
-      "id": "ex-contrast",
-      "title": "THIS vs THAT",
-      "intro": "Las dos son correctas. Lo que cambia es <b>qué tan lejos está la cosa</b> de ti.",
-      "pair": {
-        "a": "What's this?",
-        "b": "What's that?"
-      },
-      "items": [
+      "type": "memory",
+      "id": "ex-mem",
+      "title": "MEMORIA · COLORES",
+      "intro": "Encuentra cada color y su nombre. La carta con la palabra se lee en voz alta.",
+      "pairs": [
         {
-          "type": "mcq",
-          "q": "¿Cuál usas para algo que tienes en la mano?",
-          "options": [
-            "A — this",
-            "Las dos igual",
-            "B — that"
-          ],
-          "answer": 0
+          "a": "red",
+          "b": "<span class=sw style='--c:#ff4d4d;width:2em;height:2em;margin:0'></span>"
         },
         {
-          "type": "mcq",
-          "q": "¿Cuál usas para algo lejos, del otro lado del cuarto?",
-          "options": [
-            "A — this",
-            "B — that",
-            "Ninguna de las dos"
-          ],
-          "answer": 1
+          "a": "blue",
+          "b": "<span class=sw style='--c:#4d8dff;width:2em;height:2em;margin:0'></span>"
         },
         {
-          "type": "mcq",
-          "q": "Tu amigo señala un edificio a lo lejos. ¿Qué pregunta?",
-          "options": [
-            "What's that?",
-            "What's these?",
-            "What's this?"
-          ],
-          "answer": 0
+          "a": "green",
+          "b": "<span class=sw style='--c:#3dffa0;width:2em;height:2em;margin:0'></span>"
         },
         {
-          "type": "mcq",
-          "q": "Tienes un libro en la mano. ¿Qué dices?",
-          "options": [
-            "That is a book.",
-            "This is a book.",
-            "These is a book."
-          ],
-          "answer": 1
+          "a": "yellow",
+          "b": "<span class=sw style='--c:#ffd93d;width:2em;height:2em;margin:0'></span>"
+        },
+        {
+          "a": "orange",
+          "b": "<span class=sw style='--c:#ff9f43;width:2em;height:2em;margin:0'></span>"
+        },
+        {
+          "a": "pink",
+          "b": "<span class=sw style='--c:#ff7eb6;width:2em;height:2em;margin:0'></span>"
         }
       ]
     },
@@ -385,6 +457,16 @@
             "Yes, it is."
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Is the phone big?",
+          "options": [
+            "No, it's very small.",
+            "Yes, it's very big.",
+            "It doesn't say."
+          ],
+          "answer": 0
         }
       ],
       "transcript": [
@@ -456,6 +538,16 @@
             "We don't know."
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What color are the walls?",
+          "options": [
+            "Black",
+            "White",
+            "Blue"
+          ],
+          "answer": 1
         }
       ],
       "transcript": [
@@ -494,5 +586,72 @@
   "next": {
     "href": "lesson.html?id=a1c-l2",
     "label": "SIGUIENTE ▸"
+  },
+  "say": {
+    "dir": "say/a1c-l1",
+    "keys": [
+      "a-car",
+      "a-car-red",
+      "a-new-phone",
+      "a-old-book",
+      "a-red-car",
+      "a-red-guitar",
+      "an-new-phone",
+      "an-old-book",
+      "big-small",
+      "black",
+      "blue",
+      "expensive-cheap",
+      "good-bad",
+      "green",
+      "happy-sad",
+      "is-it-expensive",
+      "is-the-phone-big",
+      "is-the-room-big",
+      "it-doesn-t-say",
+      "it-is-a-big-city",
+      "it-is-a-city-big",
+      "it-s-a-red-car",
+      "light-blue-dark-light",
+      "no-it-isn-t",
+      "no-it-s-small",
+      "no-it-s-very-small",
+      "old-new",
+      "orange",
+      "orange-pink-gray-brown",
+      "pink",
+      "red",
+      "red-blue-green",
+      "she-is-a-nice-person",
+      "she-is-a-person-nice",
+      "tall-short",
+      "that",
+      "the-blue-chair",
+      "the-book-is-old",
+      "the-book-old-is",
+      "the-brown-table",
+      "the-car-is-red",
+      "these",
+      "these-are-my-keys-those-are-my-shoes",
+      "these-shoes-are-new",
+      "these-shoes-are-news",
+      "they-are-big-cars",
+      "this",
+      "this-is-my-phone-that-is-my-car",
+      "those",
+      "two-big-cars",
+      "two-bigs-cars",
+      "we-don-t-know",
+      "what-color-are-the-walls",
+      "what-color-is-it",
+      "what-color-is-the-desk",
+      "what-is-it",
+      "what-is-the-favorite-thing",
+      "white",
+      "yellow",
+      "yellow-black-white",
+      "yes-it-is",
+      "yes-it-s-very-big"
+    ]
   }
 }

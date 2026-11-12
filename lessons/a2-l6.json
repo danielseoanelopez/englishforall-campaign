@@ -336,7 +336,8 @@
             "A — going to",
             "B — present continuous"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -346,7 +347,8 @@
             "B — present continuous",
             "Ninguna de las dos"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -766,7 +768,6 @@
     "dir": "say/a2-l6",
     "keys": [
       "a-goal",
-      "a-going-to",
       "a-new-laptop",
       "a-plan",
       "a-presentation",
@@ -782,7 +783,6 @@
       "are-going-to",
       "are-you-going-to-start-next-month",
       "at",
-      "b-present-continuous",
       "be",
       "better-worse",
       "cheaper-than",
@@ -828,7 +828,6 @@
       "is",
       "isn-t",
       "it-s-going-to-be-big",
-      "las-dos-suenan-igual",
       "lead-the-design",
       "london-on-vacation",
       "madrid-for-work",
@@ -839,7 +838,6 @@
       "much-faster",
       "next-month",
       "next-week",
-      "ninguna-de-las-dos",
       "not",
       "on",
       "on-friday",

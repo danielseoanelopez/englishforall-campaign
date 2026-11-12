@@ -412,7 +412,8 @@
             "Si lo haces normalmente (hábito)",
             "Si te gusta hacerlo"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -839,7 +840,6 @@
       "si-lo-haces-normalmente-h-bito",
       "si-quieres-hacerlo-ahora",
       "si-sabes-hacerlo-habilidad",
-      "si-te-gusta-hacerlo",
       "swim-see-my-friends",
       "there-are-two-books",
       "to-play",

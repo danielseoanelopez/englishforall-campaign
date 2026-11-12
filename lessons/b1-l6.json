@@ -342,7 +342,8 @@
             "B — present continuous",
             "Las dos igual"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -352,7 +353,8 @@
             "Ninguna de las dos",
             "A — will"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -686,10 +688,8 @@
   "say": {
     "dir": "say/b1-l6",
     "keys": [
-      "a-will",
       "are",
       "at",
-      "b-present-continuous",
       "by",
       "by-friday",
       "by-the-end-of-the-month",
@@ -733,7 +733,6 @@
       "it-s-going-to-rain",
       "it-will-rain",
       "it-won-t-be-ready-this-year",
-      "las-dos-igual",
       "launch-the-mobile-app-early",
       "launching-the-mobile-app",
       "ll",
@@ -748,7 +747,6 @@
       "next-friday",
       "next-quarter",
       "next-year",
-      "ninguna-de-las-dos",
       "on-monday",
       "open-a-new-office-in-mexico",
       "our-main-goal-is-to",

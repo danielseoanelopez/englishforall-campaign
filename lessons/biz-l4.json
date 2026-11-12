@@ -42,8 +42,38 @@
     {
       "type": "grammar",
       "title": "<ico-handshake></ico-handshake> MAKE THE DEAL",
-      "intro": "",
+      "intro": "Negociar no es pelear: es buscar el punto donde ganan los dos. Estas frases abren la puerta sin ceder de más.",
       "parts": [
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Is there any flexibility on the price?",
+              "sp": "¿Hay algo de flexibilidad en el precio? — abres sin exigir."
+            },
+            {
+              "en": "What if we agree to a long-term contract?",
+              "sp": "¿Y si…? — propones sin comprometerte."
+            },
+            {
+              "en": "Would you be willing to meet us halfway?",
+              "sp": "¿Estarían dispuestos a llegar a un punto medio?"
+            },
+            {
+              "en": "We can agree to that if you pay a deposit.",
+              "sp": "Aceptas, pero con una condición."
+            },
+            {
+              "en": "I'm confident we can find a solution.",
+              "sp": "Suenas seguro y cooperativo a la vez."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>What if + verbo, sin to ni will:</b> <s class='x'>What if we to split the cost?</s> → <span class='ok'>What if we split the cost?</span> · <s class='x'>What if we will order more?</s> → <span class='ok'>What if we order more?</span>"
+        },
         {
           "type": "cells",
           "cells": [
@@ -71,7 +101,7 @@
     {
       "type": "grammar",
       "title": "<ico-book></ico-book> CONDITIONALS FOR NEGOTIATION",
-      "intro": "",
+      "intro": "Toda negociación es un condicional: «si tú haces esto, yo hago aquello». Para ofertas reales, el <b>first conditional</b>.",
       "parts": [
         {
           "type": "cells",
@@ -237,6 +267,24 @@
             "would"
           ],
           "answer": 2
+        },
+        {
+          "q": "If you ___ the deposit today, we will start tomorrow.",
+          "options": [
+            "will pay",
+            "pay",
+            "paid"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "We won't sign ___ you include free shipping.",
+          "options": [
+            "unless",
+            "as long as",
+            "if not"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -299,6 +347,24 @@
             "could"
           ],
           "answer": 2
+        },
+        {
+          "q": "\"Unless you don't confirm, we can't proceed.\"",
+          "options": [
+            "Correct",
+            "Incorrect (unless ya es negativo: \"Unless you confirm…\")"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "q": "Which keeps the door open?",
+          "options": [
+            "That's our final price.",
+            "Is there any flexibility on the delivery date?",
+            "Impossible."
+          ],
+          "answer": 1
         }
       ]
     },
@@ -345,6 +411,33 @@
             "it"
           ],
           "answer": "If we had more time we would add it"
+        },
+        {
+          "words": [
+            "Is",
+            "there",
+            "any",
+            "flexibility",
+            "on",
+            "the",
+            "price"
+          ],
+          "answer": "Is there any flexibility on the price"
+        },
+        {
+          "words": [
+            "We",
+            "can",
+            "start",
+            "as",
+            "long",
+            "as",
+            "the",
+            "deposit",
+            "is",
+            "paid"
+          ],
+          "answer": "We can start as long as the deposit is paid"
         }
       ]
     },
@@ -366,7 +459,8 @@
             "Las dos igual",
             "B — 2nd conditional"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -376,7 +470,8 @@
             "A — 1st conditional",
             "B — 2nd conditional"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -397,6 +492,86 @@
             "If we lowered the price, would you commit to a year?"
           ],
           "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "TÚ ERES EL COMPRADOR",
+      "intro": "Negocia con el proveedor. Elige la jugada profesional y bien dicha.",
+      "lines": [
+        {
+          "spk": "Supplier",
+          "html": "Our price is fifty dollars per unit."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Is there any flexibility on the price?",
+            "Is there any flexible in the price?",
+            "It's too expensive. No."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Supplier",
+          "html": "We could offer five percent off.",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "What if we place a larger order? Would you consider ten percent?",
+            "What if we will place a larger order?",
+            "Five is nothing. Give me ten."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Supplier",
+          "html": "Ten percent is difficult for us."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Would you be willing to meet us halfway?",
+            "Would you be willing meet us in the half?",
+            "Then goodbye."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Supplier",
+          "html": "We can do eight percent if you sign a one-year contract.",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "That works for us, as long as delivery is included.",
+            "That works for us, unless delivery is included.",
+            "That works for us, if delivery will be included."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Supplier",
+          "html": "Agreed. Delivery is included."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Great. I'm confident this is a fair deal for both sides.",
+            "Great. I'm confident this is a fair deal for the both side.",
+            "OK."
+          ],
+          "answer": 0
         }
       ]
     },
@@ -438,6 +613,16 @@
             "Yes — a fair deal for both sides"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "How much discount does the supplier offer at first?",
+          "options": [
+            "Ten percent",
+            "Five percent",
+            "Twenty percent"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -507,6 +692,16 @@
             "A longer contract of one year"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does the client decide in the end?",
+          "options": [
+            "To wait a week",
+            "To cancel the order",
+            "To proceed with the order"
+          ],
+          "answer": 2
         }
       ],
       "transcript": [
@@ -572,5 +767,117 @@
   "next": {
     "href": "lesson.html?id=biz-l5",
     "label": "SIGUIENTE ▸"
+  },
+  "say": {
+    "dir": "say/biz-l4",
+    "keys": [
+      "a-bigger-discount-on-the-whole-order",
+      "a-contract",
+      "a-counteroffer",
+      "a-deposit",
+      "a-discount",
+      "a-larger-order-and-an-express-shipping-fee",
+      "a-larger-order-then-a-one-year-contract",
+      "a-long-term-contract",
+      "a-longer-contract-of-one-year",
+      "a-quote",
+      "a-request",
+      "a-shipment",
+      "a-twenty-percent-bigger-order",
+      "agreed-delivery-is-included",
+      "an-attachment",
+      "an-express-shipping-fee",
+      "an-immediate-payment-and-a-bigger-deposit",
+      "as-long-as",
+      "because",
+      "by-friday",
+      "by-monday",
+      "can",
+      "correct",
+      "could",
+      "delivery-by-wednesday",
+      "did",
+      "do-they-reach-an-agreement",
+      "five-is-nothing-give-me-ten",
+      "five-percent",
+      "flexibility",
+      "free-express-shipping",
+      "gave",
+      "giving",
+      "great-i-m-confident-this-is-a-fair-deal-for-both-sides",
+      "great-i-m-confident-this-is-a-fair-deal-for-the-both-side",
+      "how-much-discount-does-the-supplier-offer-at-first",
+      "i-m-confident-we-can-find-a-solution",
+      "if",
+      "if-not",
+      "if-the-buyer-commits-to-a-one-year-contract",
+      "if-the-buyer-increases-the-order-by-twenty-percent",
+      "if-the-buyer-pays-the-full-amount-today",
+      "if-we-lower-the-price-will-you-commit-to-a-year",
+      "if-we-lowered-the-price-will-you-commit-to-a-year",
+      "if-we-lowered-the-price-would-you-commit-to-a-year",
+      "if-you-place-a-larger-order-we-ll-give-you-a-discount",
+      "if-you-place-a-larger-order-we-will-give-you-a-discount",
+      "if-you-placed-a-larger-order-we-d-give-you-a-discount",
+      "if-you-placed-a-larger-order-we-would-give-you-a-discount",
+      "if-you-will-place-a-larger-order-we-give-you-a-discount",
+      "impossible",
+      "in-two-weeks",
+      "incorrect",
+      "incorrect-no-will-after-if-if-we-reduce-the-price",
+      "is-there-any-flexibility-on-the-delivery-date",
+      "is-there-any-flexibility-on-the-price",
+      "is-there-any-flexible-in-the-price",
+      "it-s-too-expensive-no",
+      "mutual-benefit",
+      "no",
+      "no-they-give-up",
+      "not-yet-they-need-another-meeting",
+      "ok",
+      "or",
+      "our-price-is-fifty-dollars-per-unit",
+      "paid",
+      "pay",
+      "take-it-or-leave-it",
+      "ten-percent",
+      "ten-percent-is-difficult-for-us",
+      "terms",
+      "that-s-our-final-price",
+      "that-works-for-us-as-long-as-delivery-is-included",
+      "that-works-for-us-if-delivery-will-be-included",
+      "that-works-for-us-unless-delivery-is-included",
+      "then-goodbye",
+      "to-cancel-the-order",
+      "to-look-into",
+      "to-meet-halfway",
+      "to-negotiate-a-deal",
+      "to-proceed-with-the-order",
+      "to-reach-out",
+      "to-wait-a-week",
+      "twenty-percent",
+      "under-what-condition-does-the-supplier-give-10",
+      "unless",
+      "upfront",
+      "we-can-agree-to-that-if-you-pay-a-deposit",
+      "we-can-do-eight-percent-if-you-sign-a-one-year-contract",
+      "we-could-offer-five-percent-off",
+      "what-condition-does-the-supplier-set-for-wednesday",
+      "what-does-the-buyer-offer-for-a-lower-price",
+      "what-does-the-client-decide-in-the-end",
+      "what-does-the-client-want-instead",
+      "what-if-we-agree-to-a-long-term-contract",
+      "what-if-we-place-a-larger-order-would-you-consider-ten-percent",
+      "what-if-we-will-place-a-larger-order",
+      "whatever-you-want",
+      "when-can-they-deliver-if-the-order-is-confirmed-today",
+      "will",
+      "will-give",
+      "will-pay",
+      "would",
+      "would-you-be-willing-meet-us-in-the-half",
+      "would-you-be-willing-to-meet-us-halfway",
+      "yes-a-fair-deal-for-both-sides",
+      "you-have-no-choice"
+    ]
   }
 }

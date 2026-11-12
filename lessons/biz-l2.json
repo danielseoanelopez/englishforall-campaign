@@ -45,6 +45,36 @@
       "intro": "En una reunión, la clave es ser <b>claro pero educado</b>. Aquí tienes las 4 movidas básicas (B1) y sus versiones <ico-star></ico-star> B2.",
       "parts": [
         {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "In my opinion, we should focus on our customers.",
+              "sp": "Opinar."
+            },
+            {
+              "en": "That's a fair point.",
+              "sp": "Acordar: reconoces que el otro tiene razón en algo."
+            },
+            {
+              "en": "I see your point, but I'm not sure that's enough.",
+              "sp": "Discrepar con tacto: primero reconoces, después «but»."
+            },
+            {
+              "en": "Why don't we test it first?",
+              "sp": "Sugerir. — Why don't we + verbo."
+            },
+            {
+              "en": "How about offering a small discount?",
+              "sp": "Sugerir. — How about + verbo<b>-ing</b>."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Dos errores que delatan al hispanohablante:</b> <s class='x'>I'm agree.</s> → <span class='ok'>I agree.</span> · <s class='x'>How about to offer a discount?</s> → <span class='ok'>How about offering a discount?</span>"
+        },
+        {
           "type": "cells",
           "cells": [
             {
@@ -250,6 +280,26 @@
             "Agreeing"
           ],
           "answer": 1
+        },
+        {
+          "q": "\"Why don't we ask the customers first?\"",
+          "options": [
+            "Opinion",
+            "Agreeing",
+            "Disagreeing",
+            "Suggestion"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "\"That makes sense. Exactly.\"",
+          "options": [
+            "Agreeing",
+            "Suggestion",
+            "Opinion",
+            "Disagreeing"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -314,6 +364,24 @@
             "Do it fast."
           ],
           "answer": 0
+        },
+        {
+          "q": "You ___ take a break — you look tired. (recomendación)",
+          "options": [
+            "must not",
+            "should",
+            "can't"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "It ___ be beneficial to test it first. (posibilidad)",
+          "options": [
+            "might",
+            "must",
+            "has to"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -352,6 +420,29 @@
             "budget"
           ],
           "answer": "Could we focus on the budget"
+        },
+        {
+          "words": [
+            "Why",
+            "don't",
+            "we",
+            "start",
+            "a",
+            "loyalty",
+            "program"
+          ],
+          "answer": "Why don't we start a loyalty program"
+        },
+        {
+          "words": [
+            "We",
+            "must",
+            "set",
+            "a",
+            "clear",
+            "budget"
+          ],
+          "answer": "We must set a clear budget"
         }
       ]
     },
@@ -373,7 +464,8 @@
             "B — reconoce antes de discrepar",
             "Las dos igual"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -383,7 +475,8 @@
             "Ninguna de las dos",
             "B — I see your point, but…"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -404,6 +497,86 @@
             "I don't agree at all."
           ],
           "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "TU TURNO EN LA REUNIÓN",
+      "intro": "Estás en la reunión de ventas. Elige la intervención profesional y bien dicha.",
+      "lines": [
+        {
+          "spk": "Facilitator",
+          "html": "Sales are down. What do you think we should do?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "In my opinion, we should talk to our customers.",
+            "In my opinion, we should to talk to our customers.",
+            "For me opinion, we talk to customers."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Facilitator",
+          "html": "Diego wants to cut prices by fifty percent.",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I see his point, but I'm not sure that's a good idea.",
+            "I'm not agree. That's a bad idea.",
+            "No. He is wrong."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Facilitator",
+          "html": "OK. Do you have another idea?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "How about offering a small discount for referrals?",
+            "How about to offer a small discount?",
+            "Why don't we offering a discount?"
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Facilitator",
+          "html": "I like that. Maria thinks we need a clear budget first.",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "That's a fair point. I agree.",
+            "That's a fair point. I'm agree.",
+            "Fair point. I agreeing."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Facilitator",
+          "html": "Great. So what's the next step?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "We should test it for one month.",
+            "We should testing it for one month.",
+            "We must to test it for one month."
+          ],
+          "answer": 0
         }
       ]
     },
@@ -445,6 +618,16 @@
             "Launch the loyalty program and the referral discount now"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does Maria say they must set?",
+          "options": [
+            "A new price",
+            "A sales deadline",
+            "A clear budget"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -528,6 +711,16 @@
             "Next year"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does the speaker think of the plan?",
+          "options": [
+            "It's a strong plan",
+            "It's too expensive",
+            "It's too risky"
+          ],
+          "answer": 0
         }
       ],
       "transcript": [
@@ -570,5 +763,108 @@
   "next": {
     "href": "lesson.html?id=biz-l3",
     "label": "SIGUIENTE ▸"
+  },
+  "say": {
+    "dir": "say/biz-l2",
+    "keys": [
+      "a-budget",
+      "a-clear-budget",
+      "a-client",
+      "a-coworker-colleague",
+      "a-deadline",
+      "a-fair-point",
+      "a-goal-target",
+      "a-loyalty-program",
+      "a-loyalty-program-for-existing-customers",
+      "a-new-price",
+      "a-price-cut-for-the-whole-product-line",
+      "a-proposal",
+      "a-referral-discount-for-new-customers",
+      "a-sales-deadline",
+      "agreeing",
+      "an-agenda",
+      "can",
+      "can-t",
+      "cancel-the-loyalty-program-and-cut-prices-instead",
+      "could",
+      "diego-wants-to-cut-prices-by-fifty-percent",
+      "disagreeing",
+      "do-it-fast",
+      "does-diego-fully-agree-with-maria",
+      "fair-point-i-agreeing",
+      "feedback",
+      "fix-this-now",
+      "for-me-opinion-we-talk-to-customers",
+      "four",
+      "great-so-what-s-the-next-step",
+      "has-to",
+      "hi-i-don-t-think-we-ve-met-i-m",
+      "hire-an-outside-consultant-to-run-the-program",
+      "how-about-offering-a-small-discount",
+      "how-about-offering-a-small-discount-for-referrals",
+      "how-about-to-offer-a-small-discount",
+      "how-many-things-did-they-agree-on",
+      "i-disagree",
+      "i-disagree-that-won-t-work",
+      "i-don-t-agree-at-all",
+      "i-like-that-maria-thinks-we-need-a-clear-budget-first",
+      "i-m-not-agree-that-s-a-bad-idea",
+      "i-see-his-point-but-i-m-not-sure-that-s-a-good-idea",
+      "i-see-your-point-but-i-m-not-sure-that-s-enough",
+      "i-see-your-point-but-i-see-it-differently",
+      "i-take-your-point-but-i-d-suggest-we-test-it-first",
+      "in-four-weeks",
+      "in-my-opinion-we-should-focus-on-our-customers",
+      "in-my-opinion-we-should-talk-to-our-customers",
+      "in-my-opinion-we-should-to-talk-to-our-customers",
+      "it-s-a-strong-plan",
+      "it-s-too-expensive",
+      "it-s-too-risky",
+      "launch-the-loyalty-program-and-the-referral-discount-now",
+      "might",
+      "must",
+      "must-not",
+      "next-year",
+      "no-he-is-wrong",
+      "no-he-politely-disagrees-he-wants-new-customers-too",
+      "no-he-rejects-the-idea-and-proposes-another-one",
+      "no-let-s-do-it-my-way",
+      "ok-do-you-have-another-idea",
+      "on-the-weekend",
+      "one",
+      "opinion",
+      "raise-the-prices-before-launching-the-discount",
+      "responsibility",
+      "revenue-costs",
+      "sales-are-down-what-do-you-think-we-should-do",
+      "set-a-clear-budget-send-the-numbers-by-friday",
+      "should",
+      "should-not",
+      "suggestion",
+      "test-the-referral-discount-for-one-month-with-a-budget",
+      "that-s-a-fair-point",
+      "that-s-a-fair-point-although",
+      "that-s-a-fair-point-i-agree",
+      "that-s-a-fair-point-i-m-agree",
+      "to-agree-to-disagree",
+      "to-make-a-decision",
+      "to-make-a-suggestion",
+      "tomorrow",
+      "two",
+      "we-must-to-test-it-for-one-month",
+      "we-should-test-it-for-one-month",
+      "we-should-testing-it-for-one-month",
+      "what-do-they-decide-to-do-first",
+      "what-does-maria-say-they-must-set",
+      "what-does-maria-suggest-first",
+      "what-does-the-speaker-think-of-the-plan",
+      "what-must-they-do-before-they-start",
+      "when-will-they-review-the-results",
+      "why-don-t-we-offering-a-discount",
+      "why-don-t-we-test-it-first",
+      "yes-he-agrees-with-the-loyalty-program-completely",
+      "you-re-wrong-about-that",
+      "you-should-complete-this-by-the-end-of-the-day"
+    ]
   }
 }

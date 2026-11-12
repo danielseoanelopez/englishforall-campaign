@@ -310,7 +310,8 @@
             "Las dos igual",
             "A — must be"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -320,7 +321,8 @@
             "B — might be",
             "A — must be"
           ],
-          "answer": 1
+          "answer": 1,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -680,11 +682,9 @@
   "say": {
     "dir": "say/b1-l5",
     "keys": [
-      "a-must-be",
       "a-trade-off",
       "according-to-marcos-what-might-the-real-problem-be",
       "at-no-extra-cost",
-      "b-might-be",
       "can-t",
       "can-we-look-at-the-evidence-together",
       "change-the-payment-system-today",
@@ -716,14 +716,12 @@
       "it-might-be-worth-testing-the-speed",
       "it-must-be",
       "it-must-be-the-payment-system",
-      "las-dos-igual",
       "last-month",
       "let-s-test-it-and-see",
       "might",
       "must",
       "must-not",
       "mustn-t",
-      "ninguna-de-las-dos",
       "on-friday",
       "on-tuesday",
       "people-stay-longer-on-the-new-home-page",

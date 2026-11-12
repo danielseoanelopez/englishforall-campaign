@@ -61,7 +61,7 @@
             },
             {
               "en": "to break down",
-              "sp": "averiarse (el coche)"
+              "sp": "descomponerse (el auto)"
             },
             {
               "en": "a delay / sightseeing",
@@ -112,8 +112,33 @@
     {
       "type": "grammar",
       "title": "<ico-book></ico-book> PAST SIMPLE vs. PAST CONTINUOUS",
-      "intro": "",
+      "intro": "Una buena anécdota mezcla dos tiempos: el <b>fondo</b> (was / were + -ing) y los <b>hechos</b> (past simple).",
       "parts": [
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We were waiting for our bags when they announced the delay.",
+              "sp": "Fondo en continuo; el hecho que interrumpe, en past simple."
+            },
+            {
+              "en": "While we were driving, the car broke down.",
+              "sp": "<b>while</b> + continuo."
+            },
+            {
+              "en": "Suddenly, the lights went off.",
+              "sp": "De repente, se apagaron las luces."
+            },
+            {
+              "en": "In the end, we found the hotel.",
+              "sp": "Al final, encontramos el hotel."
+            },
+            {
+              "en": "Oh no! What happened next?",
+              "sp": "Quien escucha también habla: reacciona y pregunta."
+            }
+          ]
+        },
         {
           "type": "cells",
           "cells": [
@@ -134,6 +159,11 @@
               "body": "<b>when</b> + pasado simple (corta)<br><b>while</b> + past continuous (larga)"
             }
           ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>«Al final» de una historia es in the end:</b> <s class='x'>At the end, we found it.</s> → <span class='ok'>In the end, we found it.</span> Y el hecho que interrumpe es corto: <s class='x'>…when the phone was ringing.</s> → <span class='ok'>…when the phone rang.</span>"
         },
         {
           "type": "stretch",
@@ -210,6 +240,22 @@
             "shone"
           ],
           "answer": 0
+        },
+        {
+          "q": "I ___ a photo when my phone died. (take)",
+          "options": [
+            "was taking",
+            "took"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We got to the station and ___ the tickets. (buy)",
+          "options": [
+            "were buying",
+            "bought"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -273,6 +319,24 @@
             "while"
           ],
           "answer": 0
+        },
+        {
+          "q": "We were having dinner ___ the lights went off.",
+          "options": [
+            "while",
+            "when",
+            "then"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "First we visited the museum. ___ we had lunch.",
+          "options": [
+            "Then",
+            "While",
+            "Suddenly"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -284,17 +348,19 @@
       "items": [
         {
           "words": [
-            "I",
-            "was",
-            "watching",
-            "a",
-            "film",
-            "when",
+            "We",
+            "were",
+            "waiting",
+            "at",
             "the",
-            "phone",
-            "rang"
+            "gate",
+            "when",
+            "I",
+            "heard",
+            "my",
+            "name"
           ],
-          "answer": "I was watching a film when the phone rang"
+          "answer": "We were waiting at the gate when I heard my name"
         },
         {
           "words": [
@@ -320,58 +386,105 @@
             "bags"
           ],
           "answer": "In the end we found the bags"
+        },
+        {
+          "words": [
+            "What",
+            "happened",
+            "next"
+          ],
+          "answer": "What happened next"
+        },
+        {
+          "words": [
+            "We",
+            "didn't",
+            "have",
+            "a",
+            "phone",
+            "signal"
+          ],
+          "answer": "We didn't have a phone signal"
         }
       ]
     },
     {
-      "type": "contrast",
-      "id": "ex-contrast",
-      "title": "PAST SIMPLE vs PAST CONTINUOUS",
-      "intro": "Cambia una palabra y cambia <b>el orden de los hechos</b>. Léelas con cuidado.",
-      "pair": {
-        "a": "When the taxi arrived, we had breakfast.",
-        "b": "When the taxi arrived, we were having breakfast."
-      },
-      "items": [
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "REACCIONA A LA HISTORIA",
+      "intro": "Tu amigo te cuenta su viaje. Un buen oyente reacciona y pregunta: elige la respuesta natural y bien dicha.",
+      "lines": [
         {
-          "type": "mcq",
-          "q": "En A, ¿cuándo desayunaron?",
-          "options": [
-            "Antes de que llegara el taxi",
-            "Durante el viaje",
-            "Después de que llegó el taxi"
-          ],
-          "answer": 2
+          "spk": "Friend",
+          "html": "You won't believe my trip. On the first day, I lost my passport."
         },
         {
-          "type": "mcq",
-          "q": "En B, ¿cuándo desayunaron?",
+          "gap": true,
+          "q": "Tu respuesta:",
           "options": [
-            "Empezaron después",
-            "Ya estaban desayunando",
-            "No desayunaron"
+            "Oh no! What did you do?",
+            "Oh no! What you did?",
+            "That's amazing!"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
-          "type": "mcq",
-          "q": "Estabas conduciendo y el coche se averió. ¿Qué dices?",
-          "options": [
-            "I drove when the car broke down.",
-            "I drive when the car broke down.",
-            "I was driving when the car broke down."
-          ],
-          "answer": 2
+          "spk": "Friend",
+          "html": "I went to the police station. While I was waiting, a man came in with it!",
+          "b": true
         },
         {
-          "type": "mcq",
-          "q": "El vuelo salió a las nueve en punto — acción puntual. ¿Qué dices?",
+          "gap": true,
+          "q": "Tu respuesta:",
           "options": [
-            "The flight was leaving at nine.",
-            "The flight leaves at nine.",
-            "The flight left at nine."
+            "Really? Lucky you!",
+            "Really? That's awful!",
+            "Really? What were you doing next?"
           ],
-          "answer": 2
+          "answer": 0
+        },
+        {
+          "spk": "Friend",
+          "html": "And the next day, our car broke down in the mountains."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "That's awful! What happened next?",
+            "That's amazing! What was happening next?",
+            "In the end?"
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Friend",
+          "html": "A farmer helped us. In the end, we stayed at his house and had a great night.",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "That's amazing! So it ended well.",
+            "That's awful! So it ended well.",
+            "That's amazing! So it was ending well."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Friend",
+          "html": "So, what about you? How was your weekend?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Quiet. I stayed home and watched a film.",
+            "Quiet. I was stay home and watch a film.",
+            "Quiet. I am staying home yesterday."
+          ],
+          "answer": 0
         }
       ]
     },
@@ -413,6 +526,16 @@
             "A little boring after the hike"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Where did Max travel?",
+          "options": [
+            "Mexico",
+            "Japan",
+            "Peru"
+          ],
+          "answer": 2
         }
       ],
       "transcript": [
@@ -484,6 +607,16 @@
             "Cold and bad, with no food"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How long did they wait for help?",
+          "options": [
+            "An hour",
+            "All night",
+            "Ten minutes"
+          ],
+          "answer": 0
         }
       ],
       "transcript": [
@@ -518,5 +651,101 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/trv-l4",
+    "keys": [
+      "a-delay-sightseeing",
+      "a-farmer",
+      "a-farmer-helped-us-in-the-end-we-stayed-at-his-house-and-had-a-great-night",
+      "a-friend",
+      "a-little-boring-after-the-hike",
+      "a-police-officer",
+      "a-starter-main-dessert",
+      "a-tip",
+      "all-night",
+      "an-hour",
+      "and-the-next-day-our-car-broke-down-in-the-mountains",
+      "boring-they-slept-in-the-car",
+      "bought",
+      "cold-and-bad-with-no-food",
+      "drove",
+      "eating-dinner-at-the-hotel",
+      "filling-out-the-forms",
+      "fresh-filling",
+      "great-the-best-part-of-the-trip",
+      "hiking-in-the-mountains",
+      "how-long-did-they-wait-for-help",
+      "how-was-the-night",
+      "how-was-the-rest-of-the-trip",
+      "i-m-allergic-to",
+      "i-went-to-the-police-station-while-i-was-waiting-a-man-came-in-with-it",
+      "in-the-end",
+      "in-the-end-we-found-the-hotel",
+      "it-snowed-on-the-mountain-road",
+      "japan",
+      "lost",
+      "mexico",
+      "missed",
+      "oh-no-really",
+      "oh-no-what-did-you-do",
+      "oh-no-what-happened-next",
+      "oh-no-what-you-did",
+      "perfect-the-best-trip-ever",
+      "peru",
+      "quiet-i-am-staying-home-yesterday",
+      "quiet-i-stayed-home-and-watched-a-film",
+      "quiet-i-was-stay-home-and-watch-a-film",
+      "really-lucky-you",
+      "really-that-s-awful",
+      "really-what-were-you-doing-next",
+      "salty",
+      "shone",
+      "so-what-about-you-how-was-your-weekend",
+      "suddenly",
+      "suddenly-the-lights-went-off",
+      "ten-minutes",
+      "terrible-from-start-to-finish",
+      "that-s-amazing",
+      "that-s-amazing-awful",
+      "that-s-amazing-so-it-ended-well",
+      "that-s-amazing-so-it-was-ending-well",
+      "that-s-amazing-what-was-happening-next",
+      "that-s-awful-so-it-ended-well",
+      "that-s-awful-what-happened-next",
+      "the-car-broke-down",
+      "then",
+      "then-suddenly",
+      "they-announced-the-bags-were-lost",
+      "they-announced-the-flight-was-delayed",
+      "they-found-the-bags-on-the-belt",
+      "they-got-lost-in-the-mountains",
+      "to-break-down",
+      "to-end-up-somewhere",
+      "to-get-lost",
+      "to-miss-a-flight",
+      "to-run-out-of-money",
+      "took",
+      "waited",
+      "was-driving",
+      "was-losing",
+      "was-shining",
+      "was-taking",
+      "we-were-waiting-for-our-bags-when-they-announced-the-delay",
+      "were-buying",
+      "were-missing",
+      "were-waiting",
+      "what-happened-next",
+      "what-happened-while-they-were-driving",
+      "what-happened-while-they-were-waiting-for-their-bags",
+      "what-were-they-doing-when-the-bags-were-found",
+      "when",
+      "when-while",
+      "where-did-max-travel",
+      "while",
+      "while-we-were-driving-the-car-broke-down",
+      "who-helped-them",
+      "you-won-t-believe-my-trip-on-the-first-day-i-lost-my-passport"
+    ]
+  }
 }
