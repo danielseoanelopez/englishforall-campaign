@@ -253,11 +253,11 @@ function picMatchHtml(b, id){
 }
 function memoryHtml(b, id){
   const cards=[];
-  (b.pairs||[]).forEach((p,i)=>{ cards.push({pair:i, face:p.a}); cards.push({pair:i, face:p.b}); });
+  (b.pairs||[]).forEach((p,i)=>{ cards.push({pair:i, face:p.a}); cards.push({pair:i, face:p.b, mute:b.speakSide==="a"}); });
   const sh = shuffle(cards);
   memoryState[id] = { flipped:[], matched:0, total:(b.pairs||[]).length, lock:false };
   return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-brain></ico-brain> ${esc(b.title||'MEMORY · encuentra los pares')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}" id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><img class="mem-back" src="mem-back.webp" alt="" aria-hidden="true" draggable="false"><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
+  <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}"${c.mute?' data-mute="1"':""} id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><img class="mem-back" src="mem-back.webp" alt="" aria-hidden="true" draggable="false"><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
   <div class="mem-status" id="${id}-status">0 / ${(b.pairs||[]).length} pares</div></div>`;
 }
 function fcDeckHtml(cards){
@@ -460,7 +460,7 @@ function mFlip(id, cardId){
   card.classList.add("flip"); st.flipped.push(card);
   // read the face aloud if it's a word (flag-only faces stay silent)
   const faceSay = sayText((card.querySelector(".mem-face")||{innerHTML:""}).innerHTML);
-  if(faceSay && /[a-z]/i.test(faceSay)) speak(faceSay);
+  if(faceSay && /[a-z]/i.test(faceSay) && !card.dataset.mute) speak(faceSay);   // speakSide:"a" = the b faces are Spanish, keep them silent
   if(st.flipped.length===2){
     st.lock=true; const a=st.flipped[0], bb=st.flipped[1];
     if(a.dataset.pair===bb.dataset.pair){

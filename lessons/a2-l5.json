@@ -24,20 +24,20 @@
           "r": "devolver la llamada"
         },
         {
-          "l": "Attach a file",
-          "r": "adjuntar un archivo"
+          "l": "Shall I help you?",
+          "r": "¿Te ayudo?"
         },
         {
-          "l": "Would you mind…?",
-          "r": "¿te molestaría…?"
+          "l": "Can I have…?",
+          "r": "¿Me das…?"
         },
         {
-          "l": "A favor",
-          "r": "un favor"
+          "l": "A mistake",
+          "r": "un error"
         },
         {
-          "l": "Book a room",
-          "r": "reservar una sala"
+          "l": "Right now",
+          "r": "en este momento"
         }
       ]
     },
@@ -45,36 +45,9 @@
       "type": "grammar",
       "tag": "comparatives",
       "title": "<ico-book></ico-book> COMPARATIVES · comparar A con B",
-      "intro": "Para comparar dos cosas usamos el <b style='color:var(--gold)'>comparativo</b> + <code>than</code>. Repasa y practica.",
-      "cells": [
-        {
-          "h": "+er · adj. cortos",
-          "body": "cheap → <code>cheaper</code><br>fast → <code>faster</code><br>big → <code>bigger</code> <span class='es'>(doble g)</span>"
-        },
-        {
-          "h": "more · adj. largos",
-          "body": "<code>more expensive</code><br><code>more comfortable</code><br><code>more reliable</code>"
-        },
-        {
-          "h": "<ico-star></ico-star> Irregulares",
-          "body": "good → <code>better</code><br>bad → <code>worse</code><br>far → <code>further</code>"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "siempre <code>than</code>: A is faster <b>than</b> B<br><span class='x'>more bigger</span> · <span class='x'>more better</span><br><span class='ok'>bigger</span> · <span class='ok'>better</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Adjetivos útiles</b> para describir cosas y personas:",
-      "ladder": [
-        "fast",
-        "cheap",
-        "light",
-        "powerful",
-        "reliable",
-        "comfortable",
-        "modern"
-      ],
-      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario para describir",
+      "intro": "Para decidir hay que comparar: ¿cuál es <b>más barato</b>, <b>más rápido</b>, <b>mejor</b>? En inglés el <b style='color:var(--gold)'>comparativo</b> se forma de dos maneras, según el largo del adjetivo. Cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver adjetivos opuestos",
       "vocab": [
         {
           "en": "Cheap / Expensive",
@@ -82,7 +55,7 @@
         },
         {
           "en": "Light / Heavy",
-          "sp": "liviano / pesado"
+          "sp": "ligero / pesado"
         },
         {
           "en": "Fast / Slow",
@@ -90,50 +63,192 @@
         },
         {
           "en": "Big / Small",
-          "sp": "grande / chico"
+          "sp": "grande / pequeño"
         },
         {
-          "en": "Reliable",
-          "sp": "confiable"
+          "en": "Easy / Difficult",
+          "sp": "fácil / difícil"
         },
         {
-          "en": "Comfortable",
-          "sp": "cómodo"
+          "en": "Young / Old",
+          "sp": "joven / viejo"
         },
         {
-          "en": "Battery / Screen",
-          "sp": "batería / pantalla"
+          "en": "Busy",
+          "sp": "ocupado, con mucho trabajo"
         },
         {
-          "en": "Worth it",
-          "sp": "vale la pena"
+          "en": "The black one",
+          "sp": "el negro — <b>one</b> evita repetir la cosa"
         }
       ],
-      "note": "<b>Cómo funciona:</b> une adjetivos <ico-link></ico-link>, completa comparativos <ico-filepen></ico-filepen> y escucha al equipo comparar <ico-headphones></ico-headphones>. <ico-check></ico-check> CHECK en cada uno."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>memoria</b> <ico-clone></ico-clone>, <b>completar</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>elegir respuestas</b> <ico-comments></ico-comments> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · ADJETIVOS CORTOS</b> <span class='es'>— adjetivo + er + than</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The silver laptop is cheaper than the black one.",
+              "sp": "La laptop plateada es más barata que la negra."
+            },
+            {
+              "en": "The black one is faster.",
+              "sp": "La negra es más rápida. — si ya se sabe con qué comparas, no hace falta than."
+            },
+            {
+              "en": "The new office is bigger than the old one.",
+              "sp": "La oficina nueva es más grande que la vieja."
+            },
+            {
+              "en": "This month is busier than last month.",
+              "sp": "Este mes hay más trabajo que el mes pasado."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-pen></ico-pen> Cómo se escribe -er",
+              "body": "Casi siempre <code>+er</code>: cheap → cheap<b>er</b> · fast → fast<b>er</b><br>Termina en -e → solo <code>+r</code>: large → large<b>r</b><br>Consonante-vocal-consonante → dobla la última: big → bi<b>gger</b><br>Termina en -y → <code>-ier</code>: busy → bus<b>ier</b> · heavy → heav<b>ier</b> · easy → eas<b>ier</b>"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>«Que» se dice than, no that.</b> <s class='x'>cheaper that mine</s> → <span class='ok'>cheaper than mine</span> Suenan parecido, pero <b>that</b> es «eso / ese»."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · ADJETIVOS LARGOS</b> <span class='es'>— more + adjetivo + than</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The black one is more expensive.",
+              "sp": "La negra es más cara."
+            },
+            {
+              "en": "This chair is more comfortable than that one.",
+              "sp": "Esta silla es más cómoda que esa."
+            },
+            {
+              "en": "Carla is more organized than Ben.",
+              "sp": "Carla es más organizada que Ben."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-target></ico-target> ¿-er o more?",
+              "body": "Una sílaba → <code>-er</code>: fast<b>er</b>, cheap<b>er</b><br>Dos sílabas que terminan en -y → <code>-ier</code>: bus<b>ier</b>, eas<b>ier</b><br>Dos sílabas o más → <code>more</code>: <b>more</b> modern, <b>more</b> expensive, <b>more</b> reliable"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Nunca los dos juntos.</b> En español siempre es «más…», por eso sale solo: <s class='x'>more cheaper</s> → <span class='ok'>cheaper</span> · <s class='x'>expensiver</s> → <span class='ok'>more expensive</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · LOS IRREGULARES</b> <span class='es'>— good y bad no siguen la regla</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Her English is better than mine.",
+              "sp": "Su inglés es mejor que el mío. — good → <b>better</b>"
+            },
+            {
+              "en": "My old laptop was worse.",
+              "sp": "Mi laptop vieja era peor. — bad → <b>worse</b>"
+            },
+            {
+              "en": "The battery is better, but the screen is worse.",
+              "sp": "La batería es mejor, pero la pantalla es peor."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Igual que en español</b> («más bueno» suena raro: dices «mejor»): <s class='x'>more good / gooder</s> → <span class='ok'>better</span> · <s class='x'>more bad</s> → <span class='ok'>worse</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · ¿CUÁNTO MÁS?</b> <span class='es'>— un poco, mucho, y más + cosa</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "It's a little heavier.",
+              "sp": "Es un poco más pesada."
+            },
+            {
+              "en": "It's much faster.",
+              "sp": "Es mucho más rápida."
+            },
+            {
+              "en": "Carla has more experience than Ben.",
+              "sp": "Carla tiene más experiencia que Ben. — <b>more</b> + cosa."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Con un comparativo, «mucho» es much, no very.</b> <s class='x'>very faster</s> → <span class='ok'>much faster</span> · <s class='x'>very more expensive</s> → <span class='ok'>much more expensive</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · EL MÁS…</b> <span class='es'>— cuando eliges uno entre todos</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "It's the cheapest laptop in the store.",
+              "sp": "Es la laptop más barata de la tienda. — corto: <b>the</b> + adjetivo + <b>est</b>."
+            },
+            {
+              "en": "This is the most reliable model.",
+              "sp": "Este es el modelo más confiable. — largo: <b>the most</b> + adjetivo."
+            },
+            {
+              "en": "Carla is the best candidate.",
+              "sp": "Carla es la mejor candidata. — good → better → <b>the best</b>."
+            },
+            {
+              "en": "It's the worst idea.",
+              "sp": "Es la peor idea. — bad → worse → <b>the worst</b>."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>«De la tienda» = in the store.</b> Después de «el más…», los lugares van con <b>in</b>: <s class='x'>the cheapest of the store</s> → <span class='ok'>the cheapest in the store</span>"
+        }
+      ]
     },
     {
       "type": "flashcards",
       "id": "fc-vocab",
-      "title": "FLASHCARDS · adjetivos",
-      "intro": "Toca cada tarjeta para ver la traducción.",
+      "title": "FLASHCARDS · para describir",
+      "intro": "Toca cada tarjeta para ver la traducción. Estas palabras salen en los audios.",
       "deckLabel": "comparar y describir",
       "cards": [
-        {
-          "front": "cheap / expensive",
-          "back": "barato / caro"
-        },
-        {
-          "front": "light / heavy",
-          "back": "liviano / pesado"
-        },
-        {
-          "front": "fast / slow",
-          "back": "rápido / lento"
-        },
-        {
-          "front": "big / small",
-          "back": "grande / chico"
-        },
         {
           "front": "reliable",
           "back": "confiable"
@@ -143,20 +258,36 @@
           "back": "cómodo"
         },
         {
-          "front": "better",
-          "back": "mejor"
+          "front": "powerful",
+          "back": "potente"
         },
         {
-          "front": "worse",
-          "back": "peor"
+          "front": "confident",
+          "back": "seguro de sí mismo"
         },
         {
-          "front": "…er than",
-          "back": "más … que"
+          "front": "organized",
+          "back": "organizado"
         },
         {
-          "front": "the …est",
-          "back": "el/la más …"
+          "front": "creative",
+          "back": "creativo"
+        },
+        {
+          "front": "experience",
+          "back": "experiencia"
+        },
+        {
+          "front": "battery",
+          "back": "batería"
+        },
+        {
+          "front": "screen",
+          "back": "pantalla"
+        },
+        {
+          "front": "a good choice",
+          "back": "una buena elección"
         }
       ]
     },
@@ -164,7 +295,7 @@
       "type": "story",
       "tag": "comparar para decidir",
       "title": "<ico-star></ico-star> MAKING DECISIONS",
-      "intro": "El equipo decide entre opciones: qué laptop comprar y a qué candidato contratar. Para decidir, comparan.",
+      "intro": "Semana de decisiones: Marcos necesita una laptop nueva, el equipo tiene dos candidatos para un puesto, y hay que elegir hotel para un viaje. Para decidir, comparan.",
       "cast": [
         {
           "en": "Sofia",
@@ -177,34 +308,34 @@
       ]
     },
     {
-      "type": "match",
-      "id": "ex-match",
-      "title": "UNE ADJETIVO E INGLÉS",
-      "intro": "Toca la palabra en inglés y luego su traducción.",
+      "type": "memory",
+      "id": "ex-mem",
+      "title": "MEMORIA · OPUESTOS",
+      "intro": "Encuentra cada adjetivo y su opuesto. Las cartas se leen en voz alta.",
       "pairs": [
         {
-          "l": "cheap",
-          "r": "barato"
+          "a": "cheap",
+          "b": "expensive"
         },
         {
-          "l": "expensive",
-          "r": "caro"
+          "a": "light",
+          "b": "heavy"
         },
         {
-          "l": "light",
-          "r": "liviano"
+          "a": "fast",
+          "b": "slow"
         },
         {
-          "l": "heavy",
-          "r": "pesado"
+          "a": "big",
+          "b": "small"
         },
         {
-          "l": "reliable",
-          "r": "confiable"
+          "a": "easy",
+          "b": "difficult"
         },
         {
-          "l": "fast",
-          "r": "rápido"
+          "a": "better",
+          "b": "worse"
         }
       ]
     },
@@ -212,7 +343,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "COMPLETA EL COMPARATIVO",
-      "intro": "Elige el comparativo correcto.",
+      "intro": "Elige la opción correcta. Piensa: ¿corto, largo o irregular?",
       "items": [
         {
           "q": "This laptop is ___ than mine.",
@@ -224,13 +355,13 @@
           "answer": 0
         },
         {
-          "q": "The black one is more ___ than the silver one.",
+          "q": "The black one is ___ than the silver one.",
           "options": [
-            "expensive",
             "expensiver",
-            "expensives"
+            "more expensive",
+            "most expensive"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "q": "Her English is ___ than mine.",
@@ -242,22 +373,22 @@
           "answer": 2
         },
         {
-          "q": "This phone is ___ than that one.",
+          "q": "This phone is cheaper ___ that one.",
           "options": [
-            "cheapest",
-            "cheaper",
-            "more cheap"
+            "that",
+            "than",
+            "of"
           ],
           "answer": 1
         },
         {
           "q": "The new office is ___ than the old one.",
           "options": [
-            "more big",
-            "biggest",
-            "bigger"
+            "bigger",
+            "biger",
+            "more big"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
           "q": "My old laptop was ___ than this one.",
@@ -269,13 +400,40 @@
           "answer": 2
         },
         {
-          "q": "This month was ___ than last month.",
+          "q": "This month is ___ than last month.",
           "options": [
-            "more busy",
+            "busier",
             "busyer",
-            "busier"
+            "more busy"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The black laptop is ___ faster than the silver one.",
+          "options": [
+            "very",
+            "much",
+            "more"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "This is the ___ model in the store.",
+          "options": [
+            "cheaper",
+            "more cheap",
+            "cheapest"
           ],
           "answer": 2
+        },
+        {
+          "q": "Carla has ___ experience than Ben.",
+          "options": [
+            "more",
+            "much",
+            "most"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -285,38 +443,48 @@
       "title": "AUDIO 1 · CHOOSING A NEW LAPTOP",
       "desc": "Marcos necesita una laptop y Sofia lo ayuda a comparar dos modelos.",
       "src": "comparatives-1.mp3",
-      "dur": "0:46",
+      "dur": "0:49",
       "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
           "q": "Which laptop is cheaper?",
           "options": [
+            "The black one",
             "The silver one",
-            "They cost the same",
-            "The black one"
+            "They cost the same"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "Why is the silver one better for travel?",
           "options": [
-            "It has a bigger screen",
-            "It is faster",
-            "It is lighter"
+            "It's lighter",
+            "It's faster",
+            "It has a bigger screen"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is more important for Marcos?",
+          "options": [
+            "A lower price",
+            "A lighter laptop",
+            "A bigger screen"
           ],
           "answer": 2
         },
         {
           "type": "mcq",
-          "q": "What is worse about the silver one?",
+          "q": "Which laptop does Marcos choose?",
           "options": [
-            "The screen is smaller",
-            "The price is higher",
-            "The battery is better"
+            "The silver one",
+            "The black one",
+            "A different one"
           ],
-          "answer": 0
+          "answer": 1
         }
       ],
       "speaking": {
@@ -326,39 +494,123 @@
       "transcript": [
         {
           "spk": "Marcos",
-          "b": true,
           "html": "Sofia, I need a new laptop for work. Can you help me choose?"
         },
         {
           "spk": "Sofia",
-          "html": "Sure! The silver one is <span class='tg'>cheaper</span>, but the black one is <span class='tg'>faster</span>."
+          "html": "Sure! Look at these two. The silver one is <span class='tg'>cheaper</span>, but the black one is <span class='tg'>faster</span>.",
+          "b": true
         },
         {
           "spk": "Marcos",
-          "b": true,
-          "html": "How big is the difference?"
+          "html": "Is the black one <span class='tg'>much more expensive</span>?"
         },
         {
           "spk": "Sofia",
-          "html": "The black one is <span class='tg'>more expensive</span>, but it has a <span class='tg'>better</span> battery."
+          "html": "A little. But it has a <span class='tg'>better</span> battery.",
+          "b": true
         },
         {
           "spk": "Marcos",
-          "b": true,
           "html": "Is it <span class='tg'>heavier</span>?"
         },
         {
           "spk": "Sofia",
-          "html": "A little. The silver one is <span class='tg'>lighter</span>, so it's <span class='tg'>better</span> for travel. But the screen is <span class='tg'>smaller</span>."
+          "html": "Yes, a little heavier. The silver one is <span class='tg'>lighter</span>, so it's <span class='tg'>better</span> for travel. But its screen is <span class='tg'>smaller</span>.",
+          "b": true
         },
         {
           "spk": "Marcos",
-          "b": true,
-          "html": "I think the black one is <span class='tg'>more powerful</span>. The battery is <span class='tg'>more important</span> for me."
+          "html": "Hmm. I don't travel much, so a <span class='tg'>bigger</span> screen is <span class='tg'>more important</span> for me."
         },
         {
           "spk": "Sofia",
-          "html": "Good choice. It's also <span class='tg'>more reliable</span>."
+          "html": "Then the black one is <span class='tg'>the best</span> choice. It's also <span class='tg'>more reliable</span>.",
+          "b": true
+        },
+        {
+          "spk": "Marcos",
+          "html": "Great. I'll take the black one!"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "ELIGE EL HOTEL",
+      "intro": "Sofia y tú eligen hotel para un viaje de trabajo. Responde comparando: solo una opción está bien formada.",
+      "lines": [
+        {
+          "spk": "Sofia",
+          "html": "We need a hotel for the work trip. The Park Hotel is 90 dollars. The City Hotel is 120."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "The Park Hotel is cheaper.",
+            "The Park Hotel is more cheap.",
+            "The Park Hotel is cheapest than."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Sofia",
+          "b": true,
+          "html": "But the City Hotel is next to the client's office."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "So it's more good for us.",
+            "So it's better for us.",
+            "So it's gooder for us."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Sofia",
+          "html": "Are the rooms bigger at the City Hotel?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Yes, they're more big.",
+            "Yes, they're biger.",
+            "Yes, they're much bigger."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Sofia",
+          "b": true,
+          "html": "Which one is more comfortable?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "The City Hotel is more comfortable than the Park Hotel.",
+            "The City Hotel is comfortabler.",
+            "The City Hotel is more comfortable that the Park Hotel."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Sofia",
+          "html": "OK. So which hotel do we book?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "The City Hotel. It's the most best.",
+            "The City Hotel. It's the best choice.",
+            "The City Hotel. It's the better of all."
+          ],
+          "answer": 1
         }
       ]
     },
@@ -366,9 +618,9 @@
       "type": "listening",
       "id": "ex-l2",
       "title": "AUDIO 2 · COMPARING TWO CANDIDATES",
-      "desc": "Sofia y Marcos comparan a dos candidatos para un puesto.",
+      "desc": "Sofia y Marcos comparan a dos candidatos para un puesto: Carla y Ben.",
       "src": "comparatives-3.mp3",
-      "dur": "0:52",
+      "dur": "0:46",
       "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
@@ -376,76 +628,154 @@
           "q": "Who has more experience?",
           "options": [
             "Ben",
-            "They have the same",
-            "Ana"
+            "Carla",
+            "They have the same"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What is Ben better at?",
           "options": [
-            "He is faster and more creative",
-            "He is more organized and reliable",
-            "His English is better than Ana's"
+            "He's faster and more creative",
+            "He's more organized",
+            "His English is better"
           ],
           "answer": 0
         },
         {
           "type": "mcq",
-          "q": "Why do they choose Ana?",
+          "q": "Who is more confident in meetings?",
           "options": [
-            "She is the more relaxed one",
-            "She is faster in meetings now",
-            "Experience is more important"
+            "Carla",
+            "Sofia",
+            "Ben"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Why do they choose Carla?",
+          "options": [
+            "Experience is more important",
+            "She is younger",
+            "She is more creative"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
         "prompt": "Compare two people you know (two colleagues, two friends). Use <i>more…</i> and <i>better</i>.",
-        "starter": "Ana has more experience than Ben, but Ben is more (adjective)."
+        "starter": "Carla has more experience than Ben, but Ben is more (adjective)."
       },
       "transcript": [
         {
           "spk": "Sofia",
-          "html": "We have two candidates. Can you help me decide?"
+          "html": "Marcos, we have two candidates for the new job, Carla and Ben. Can you help me decide?"
         },
         {
           "spk": "Marcos",
-          "b": true,
-          "html": "Of course. Tell me about them."
+          "html": "Of course. Tell me about them.",
+          "b": true
         },
         {
           "spk": "Sofia",
-          "html": "Ana has <span class='tg'>more experience</span>. Ben is <span class='tg'>younger</span>, but he's <span class='tg'>faster</span> and <span class='tg'>more creative</span>."
+          "html": "Carla has <span class='tg'>more experience</span>. Ben is <span class='tg'>younger</span>, but he's <span class='tg'>faster</span> and <span class='tg'>more creative</span>."
         },
         {
           "spk": "Marcos",
-          "b": true,
-          "html": "Is Ana's English <span class='tg'>better</span>?"
+          "html": "Is Carla's English <span class='tg'>better</span>?",
+          "b": true
         },
         {
           "spk": "Sofia",
-          "html": "A bit <span class='tg'>better</span>. But Ben is <span class='tg'>more confident</span> in meetings."
+          "html": "A little better. But Ben is <span class='tg'>more confident</span> in meetings."
         },
         {
           "spk": "Marcos",
-          "b": true,
-          "html": "Who is <span class='tg'>more reliable</span>?"
+          "html": "And who is <span class='tg'>more organized</span>?",
+          "b": true
         },
         {
           "spk": "Sofia",
-          "html": "Ana is <span class='tg'>more organized</span>. Ben is <span class='tg'>more relaxed</span>."
+          "html": "Carla. She's <span class='tg'>much more organized</span> than Ben."
         },
         {
           "spk": "Marcos",
-          "b": true,
-          "html": "I think experience is <span class='tg'>more important</span>. Ana is the <span class='tg'>safer</span> choice."
+          "html": "Then I think Carla is <span class='tg'>the best</span> choice. For this job, experience is <span class='tg'>more important</span>.",
+          "b": true
         },
         {
           "spk": "Sofia",
-          "html": "I agree. Let's offer the job to Ana."
+          "html": "I agree. Let's offer the job to Carla."
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA COMPARACIÓN",
+      "intro": "Toca las palabras para formar la frase. ¿Dónde va than?",
+      "items": [
+        {
+          "words": [
+            "The",
+            "black",
+            "laptop",
+            "is",
+            "faster",
+            "than",
+            "the",
+            "silver",
+            "one"
+          ],
+          "answer": "The black laptop is faster than the silver one"
+        },
+        {
+          "words": [
+            "Her",
+            "English",
+            "is",
+            "better",
+            "than",
+            "mine"
+          ],
+          "answer": "Her English is better than mine"
+        },
+        {
+          "words": [
+            "This",
+            "chair",
+            "is",
+            "more",
+            "comfortable",
+            "than",
+            "that",
+            "one"
+          ],
+          "answer": "This chair is more comfortable than that one"
+        },
+        {
+          "words": [
+            "It's",
+            "much",
+            "cheaper",
+            "than",
+            "the",
+            "old",
+            "model"
+          ],
+          "answer": "It's much cheaper than the old model"
+        },
+        {
+          "words": [
+            "Carla",
+            "is",
+            "the",
+            "best",
+            "candidate"
+          ],
+          "answer": "Carla is the best candidate"
         }
       ]
     },
@@ -457,10 +787,10 @@
         "Usa <b>2 comparativos cortos</b> (cheaper, faster, bigger…) + <b>than</b>",
         "Usa <b>2 comparativos largos</b> (more expensive, more comfortable…)",
         "Usa <b>1 irregular</b> (better / worse)",
-        "Termina con tu opinión: <b>I think … is better because …</b>"
+        "Termina con tu elección: <b>I think … is the best choice because …</b>"
       ],
       "placeholder": "My phone is better than...",
-      "example": "My new (thing) is better than my old one. It is (comparative) and (comparative), and the (part) is (comparative). The old one was (comparative), but the (part) was worse. The new one is more (adjective), but it is more (adjective) for (use).",
+      "example": "My new <span class=\"gap\">cosa</span> is better than my old one. It is <span class=\"gap\">comparativo corto</span> and <span class=\"gap\">comparativo corto</span>. The <span class=\"gap\">parte</span> is more <span class=\"gap\">adjetivo largo</span>, but the <span class=\"gap\">parte</span> is worse. It is much <span class=\"gap\">comparativo</span> than <span class=\"gap\">otra cosa</span>. I think <span class=\"gap\">cosa</span> is the best choice because <span class=\"gap\">razón</span>.",
       "hw": "Escribe tu comparación y después grábate defendiéndola <b>sin leer</b>: ¿cuál eliges y por qué? Envíame ambos por WhatsApp.",
       "rubric": [
         {
@@ -477,5 +807,135 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/a2-l5",
+    "keys": [
+      "a-bigger-screen",
+      "a-different-one",
+      "a-good-choice",
+      "a-lighter-laptop",
+      "a-lower-price",
+      "a-mistake",
+      "are-the-rooms-bigger-at-the-city-hotel",
+      "badder",
+      "battery",
+      "ben",
+      "better",
+      "big",
+      "big-small",
+      "biger",
+      "bigger",
+      "busier",
+      "busy",
+      "busyer",
+      "but-the-city-hotel-is-next-to-the-client-s-office",
+      "call-back",
+      "can-i-have",
+      "carla",
+      "carla-has-more-experience-than-ben",
+      "carla-is-more-organized-than-ben",
+      "carla-is-the-best-candidate",
+      "cheap",
+      "cheap-expensive",
+      "cheaper",
+      "cheapest",
+      "comfortable",
+      "confident",
+      "creative",
+      "difficult",
+      "easy",
+      "easy-difficult",
+      "expensive",
+      "expensiver",
+      "experience",
+      "experience-is-more-important",
+      "fast",
+      "fast-slow",
+      "faster",
+      "fastest",
+      "gooder",
+      "he-s-faster-and-more-creative",
+      "he-s-more-organized",
+      "heavy",
+      "her-english-is-better-than-mine",
+      "his-english-is-better",
+      "it-has-a-bigger-screen",
+      "it-s-a-little-heavier",
+      "it-s-faster",
+      "it-s-lighter",
+      "it-s-much-faster",
+      "it-s-the-cheapest-laptop-in-the-store",
+      "it-s-the-worst-idea",
+      "light",
+      "light-heavy",
+      "more",
+      "more-bad",
+      "more-big",
+      "more-busy",
+      "more-cheap",
+      "more-expensive",
+      "more-fast",
+      "more-good",
+      "most",
+      "most-expensive",
+      "much",
+      "my-old-laptop-was-worse",
+      "of",
+      "ok-so-which-hotel-do-we-book",
+      "organized",
+      "powerful",
+      "reliable",
+      "right-now",
+      "screen",
+      "shall-i-help-you",
+      "she-is-more-creative",
+      "she-is-younger",
+      "slow",
+      "small",
+      "so-it-s-better-for-us",
+      "so-it-s-gooder-for-us",
+      "so-it-s-more-good-for-us",
+      "sofia",
+      "than",
+      "that",
+      "the-battery-is-better-but-the-screen-is-worse",
+      "the-black-one",
+      "the-black-one-is-faster",
+      "the-black-one-is-more-expensive",
+      "the-city-hotel-is-comfortabler",
+      "the-city-hotel-is-more-comfortable-than-the-park-hotel",
+      "the-city-hotel-is-more-comfortable-that-the-park-hotel",
+      "the-city-hotel-it-s-the-best-choice",
+      "the-city-hotel-it-s-the-better-of-all",
+      "the-city-hotel-it-s-the-most-best",
+      "the-new-office-is-bigger-than-the-old-one",
+      "the-park-hotel-is-cheaper",
+      "the-park-hotel-is-cheapest-than",
+      "the-park-hotel-is-more-cheap",
+      "the-silver-laptop-is-cheaper-than-the-black-one",
+      "the-silver-one",
+      "they-cost-the-same",
+      "they-have-the-same",
+      "this-chair-is-more-comfortable-than-that-one",
+      "this-is-the-most-reliable-model",
+      "this-month-is-busier-than-last-month",
+      "very",
+      "we-need-a-hotel-for-the-work-trip-the-park-hotel-is-90-dollars-the-city-hotel-is",
+      "what-is-ben-better-at",
+      "what-is-more-important-for-marcos",
+      "which-laptop-does-marcos-choose",
+      "which-laptop-is-cheaper",
+      "which-one-is-more-comfortable",
+      "who-has-more-experience",
+      "who-is-more-confident-in-meetings",
+      "why-do-they-choose-carla",
+      "why-is-the-silver-one-better-for-travel",
+      "worse",
+      "yes-they-re-biger",
+      "yes-they-re-more-big",
+      "yes-they-re-much-bigger",
+      "young-old"
+    ]
+  }
 }

@@ -20,24 +20,24 @@
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
-          "l": "Task",
-          "r": "tarea"
+          "l": "I'll get back to you.",
+          "r": "Te respondo pronto."
         },
         {
-          "l": "Team lead",
-          "r": "líder / supervisor"
+          "l": "Attached",
+          "r": "adjunto"
         },
         {
-          "l": "Issue",
-          "r": "asunto / problema"
+          "l": "Wait for…",
+          "r": "esperar (algo)"
         },
         {
-          "l": "Pending",
-          "r": "pendiente"
+          "l": "Could you confirm…?",
+          "r": "¿Podrías confirmar…?"
         },
         {
-          "l": "Details",
-          "r": "detalles"
+          "l": "Not yet",
+          "r": "todavía no"
         }
       ]
     },
@@ -45,117 +45,270 @@
       "type": "grammar",
       "tag": "past simple",
       "title": "<ico-book></ico-book> PAST SIMPLE · acciones terminadas",
-      "intro": "Usamos el <b style='color:var(--gold)'>past simple</b> para acciones <b>terminadas</b> en el pasado (ayer, la semana pasada, en 2021). Repasa y luego practica con varios ejercicios.",
-      "cells": [
-        {
-          "h": "<ico-check></ico-check> Affirmative",
-          "body": "Regular <code>+ed</code>: work → <code>worked</code><br>study → <code>studied</code><br>Irregular: go → <code>went</code>, have → <code>had</code>"
-        },
-        {
-          "h": "<ico-xmark></ico-xmark> Negative",
-          "body": "<code>didn't</code> + verbo base<br>I <code>didn't work</code><br>she <code>didn't go</code> <span class='es'>(no \"didn't went\")</span>"
-        },
-        {
-          "h": "? Questions",
-          "body": "<code>Did</code> you work?<br>What <code>did</code> you do?<br><span class='es'>Yes, I did. / No, I didn't.</span>"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='ok'>She went home.</span><br><span class='x'>She goed home.</span><br><span class='ok'>They were late.</span> <span class='es'>(was/were = pasado de \"to be\")</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Marcadores de tiempo</b> — dicen <b>cuándo</b> pasó:",
-      "ladder": [
-        "yesterday",
-        "last night",
-        "last week",
-        "two days ago",
-        "in 2021",
-        "this morning"
-      ],
-      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver verbos irregulares",
+      "intro": "El <b style='color:var(--gold)'>past simple</b> cuenta acciones <b>terminadas</b>: ayer, la semana pasada, en 2021. La buena noticia: hay <b>una sola forma para todas las personas</b>. Cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver palabras de los audios",
       "vocab": [
         {
-          "en": "Go → went",
-          "sp": "ir → fue/fui"
+          "en": "Startup",
+          "sp": "empresa nueva y pequeña"
         },
         {
-          "en": "Have → had",
-          "sp": "tener → tuvo/tuve"
+          "en": "Bug",
+          "sp": "error en el código"
         },
         {
-          "en": "Make → made",
-          "sp": "hacer → hizo/hice"
+          "en": "Launch",
+          "sp": "lanzar / lanzamiento"
         },
         {
-          "en": "Get → got",
-          "sp": "conseguir → consiguió"
+          "en": "Download",
+          "sp": "descargar"
         },
         {
-          "en": "Find → found",
-          "sp": "encontrar → encontró"
+          "en": "Graduate",
+          "sp": "graduarse"
         },
         {
-          "en": "Meet → met",
-          "sp": "conocer → conoció"
+          "en": "After that",
+          "sp": "después de eso"
         },
         {
-          "en": "Build → built",
-          "sp": "construir → construyó"
+          "en": "At midnight",
+          "sp": "a medianoche"
         },
         {
-          "en": "Leave → left",
-          "sp": "irse → dejó"
+          "en": "Thousands of people",
+          "sp": "miles de personas"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar frases</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>ordenar palabras</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>memoria</b> <ico-clone></ico-clone>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen>, <b>comparar</b> <ico-comments></ico-comments> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · VERBOS REGULARES</b> <span class='es'>— verbo + ed</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I worked at a startup.",
+              "sp": "Trabajé en una startup."
+            },
+            {
+              "en": "She finished the report last week.",
+              "sp": "Ella terminó el informe la semana pasada."
+            },
+            {
+              "en": "We planned everything.",
+              "sp": "Planeamos todo."
+            },
+            {
+              "en": "He studied computer science.",
+              "sp": "Estudió informática."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-pen></ico-pen> Cómo se escribe -ed",
+              "body": "Casi siempre <code>+ed</code>: work → work<b>ed</b> · start → start<b>ed</b><br>Termina en -e → solo <code>+d</code>: love → love<b>d</b> · create → create<b>d</b><br>Consonante + y → <code>-ied</code>: study → stud<b>ied</b><br>Verbo corto (consonante-vocal-consonante) → dobla la última: plan → pla<b>nned</b> · stop → sto<b>pped</b>"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Una forma para todos.</b> En español cambias cada persona (trabajé, trabajaste, trabajó…). En inglés no: I worked, she worked, they worked. Y sin -s: <s class='x'>She workeds.</s> → <span class='ok'>She worked.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · CÓMO SUENA -ED</b> <span class='es'>— casi nunca es una sílaba extra</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "worked, helped, fixed",
+              "sp": "Suena <b>/t/</b>: «workt», «helpt», «fikst». Una sola sílaba."
+            },
+            {
+              "en": "planned, loved, studied",
+              "sp": "Suena <b>/d/</b>: «pland», «lovd»."
+            },
+            {
+              "en": "started, tested, wanted",
+              "sp": "Suena <b>/ɪd/</b>: aquí sí hay sílaba extra, porque el verbo termina en <b>t</b> o <b>d</b>."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>El error más típico al hablar:</b> leer la «e». <s class='x'>work-ED (dos sílabas)</s> → <span class='ok'>workt (una sílaba)</span>. Solo se pronuncia la sílaba extra después de <b>t</b> o <b>d</b>: star-ted, nee-ded."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · VERBOS IRREGULARES</b> <span class='es'>— no llevan -ed: se aprenden de memoria</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I went to the office.",
+              "sp": "Fui a la oficina. — go → <b>went</b>"
+            },
+            {
+              "en": "We had a problem.",
+              "sp": "Tuvimos un problema. — have → <b>had</b>"
+            },
+            {
+              "en": "She wrote the code.",
+              "sp": "Ella escribió el código. — write → <b>wrote</b>"
+            },
+            {
+              "en": "I found this job.",
+              "sp": "Encontré este trabajo. — find → <b>found</b>"
+            },
+            {
+              "en": "They built the app.",
+              "sp": "Construyeron la app. — build → <b>built</b>"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>No inventes el -ed:</b> <s class='x'>She goed home.</s> → <span class='ok'>She went home.</span> · <s class='x'>They builded the app.</s> → <span class='ok'>They built the app.</span> Los diez más útiles están en las tarjetas de abajo."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · NEGATIVO Y PREGUNTA</b> <span class='es'>— did / didn't + verbo base</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I didn't work yesterday.",
+              "sp": "No trabajé ayer. — <b>didn't</b> + verbo sin -ed."
+            },
+            {
+              "en": "She didn't go home.",
+              "sp": "No se fue a casa. — go, no went."
+            },
+            {
+              "en": "Did you finish the report?",
+              "sp": "¿Terminaste el informe? — Yes, I did. / No, I didn't."
+            },
+            {
+              "en": "Where did you work before?",
+              "sp": "¿Dónde trabajaste antes? — palabra de pregunta + did + persona + verbo."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>El pasado se marca una sola vez.</b> Si ya está <b>did</b>, el verbo vuelve a su forma base (igual que con does): <s class='x'>She didn't went.</s> → <span class='ok'>She didn't go.</span> · <s class='x'>Did you finished?</s> → <span class='ok'>Did you finish?</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · WAS / WERE Y CUÁNDO PASÓ</b> <span class='es'>— el pasado de be, y las palabras de tiempo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I was at home last night.",
+              "sp": "Estuve en casa anoche. — I / he / she / it <b>was</b>."
+            },
+            {
+              "en": "They were late.",
+              "sp": "Llegaron tarde. — you / we / they <b>were</b>."
+            },
+            {
+              "en": "Were you at the office? Yes, I was.",
+              "sp": "<b>Be</b> no usa did: was / were pasa adelante."
+            },
+            {
+              "en": "Two years ago, I started a new job.",
+              "sp": "Hace dos años… — <b>ago</b> va <b>después</b> del tiempo."
+            },
+            {
+              "en": "I graduated in twenty nineteen.",
+              "sp": "Me gradué en 2019. — los años se leen de dos en dos: 20 · 19."
+            }
+          ]
+        },
+        {
+          "type": "chips",
+          "items": [
+            "yesterday",
+            "last night",
+            "last week",
+            "two days ago",
+            "in 2021"
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> Errores típicos",
+              "body": "<s class='x'>Did you were late?</s> → <span class='ok'>Were you late?</span><br><s class='x'>ago two years</s> → <span class='ok'>two years ago</span><br>«La semana pasada» va sin the: <s class='x'>the last week</s> → <span class='ok'>last week</span>"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "flashcards",
       "id": "fc-vocab",
       "title": "FLASHCARDS · verbos irregulares",
-      "intro": "Toca cada tarjeta para ver la traducción.",
+      "intro": "Toca cada tarjeta para ver el pasado. Di los dos en voz alta: go, went.",
       "deckLabel": "verbos irregulares",
       "cards": [
         {
           "front": "go → went",
-          "back": "ir → fue"
+          "back": "ir → fui / fue"
         },
         {
           "front": "have → had",
-          "back": "tener → tuvo"
+          "back": "tener → tuve / tuvo"
         },
         {
           "front": "make → made",
-          "back": "hacer → hizo"
+          "back": "hacer → hice / hizo"
         },
         {
           "front": "get → got",
-          "back": "conseguir → consiguió"
+          "back": "conseguir → conseguí"
         },
         {
           "front": "find → found",
-          "back": "encontrar → encontró"
-        },
-        {
-          "front": "meet → met",
-          "back": "conocer → conoció"
+          "back": "encontrar → encontré"
         },
         {
           "front": "build → built",
-          "back": "construir → construyó"
+          "back": "construir → construí"
         },
         {
           "front": "leave → left",
-          "back": "irse → se fue"
+          "back": "irse → me fui"
+        },
+        {
+          "front": "write → wrote",
+          "back": "escribir → escribí"
+        },
+        {
+          "front": "send → sent",
+          "back": "enviar → envié"
         },
         {
           "front": "see → saw",
-          "back": "ver → vio"
-        },
-        {
-          "front": "take → took",
-          "back": "tomar → tomó"
+          "back": "ver → vi"
         }
       ]
     },
@@ -163,7 +316,7 @@
       "type": "story",
       "tag": "mirando al pasado",
       "title": "<ico-star></ico-star> STORIES FROM THE TEAM",
-      "intro": "Marcos habla del <b>pasado</b>: su trabajo anterior y el primer gran proyecto del equipo. Primero practica las formas, después escucha las historias.",
+      "intro": "Hoy el equipo mira hacia atrás. Marcos cuenta su <b>trabajo anterior</b> y Sofia recuerda el primer gran lanzamiento del equipo… y la noche en que casi sale mal.",
       "cast": [
         {
           "en": "Sofia",
@@ -176,49 +329,184 @@
       ]
     },
     {
-      "type": "gapFill",
-      "id": "ex-gap",
-      "title": "COMPLETA EN PASADO",
-      "intro": "Elige la forma correcta del pasado simple.",
-      "items": [
+      "type": "memory",
+      "id": "ex-mem",
+      "title": "MEMORIA · ¿CUÁNDO PASÓ?",
+      "intro": "Encuentra las parejas: la expresión de tiempo y su significado.",
+      "pairs": [
         {
-          "q": "Yesterday I ___ to the office early.",
+          "a": "yesterday",
+          "b": "ayer"
+        },
+        {
+          "a": "last night",
+          "b": "anoche"
+        },
+        {
+          "a": "last week",
+          "b": "la semana pasada"
+        },
+        {
+          "a": "two days ago",
+          "b": "hace dos días"
+        },
+        {
+          "a": "this morning",
+          "b": "esta mañana"
+        },
+        {
+          "a": "last year",
+          "b": "el año pasado"
+        }
+      ],
+      "speakSide": "a"
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · MARCOS'S LAST JOB",
+      "desc": "Sofia le pregunta a Marcos por su trabajo anterior. Fíjate en los verbos en pasado.",
+      "src": "past-simple-1.mp3",
+      "dur": "0:51",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Where did Marcos work before?",
           "options": [
-            "went",
-            "go",
-            "goed"
+            "At a university",
+            "At a big company",
+            "At a small startup"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What did he do there?",
+          "options": [
+            "He built websites and fixed bugs",
+            "He wrote reports",
+            "He taught new students"
           ],
           "answer": 0
         },
         {
-          "q": "She ___ the report last week.",
+          "type": "mcq",
+          "q": "What was the problem at his last job?",
           "options": [
-            "finish",
-            "finished",
-            "finishs"
+            "The team wasn't nice",
+            "The days were very long",
+            "He didn't like websites"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "When did Marcos graduate?",
+          "options": [
+            "In 2019",
+            "In 2021",
+            "In 2023"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Describe Marcos's last job. Use <i>worked</i>, <i>built</i> and <i>studied</i>.",
+        "starter": "He worked at a small startup for two years. He built (what) and fixed (what)."
+      },
+      "transcript": [
+        {
+          "spk": "Sofia",
+          "html": "So Marcos, tell me about your last job. Where <span class='tg'>did you work</span> before?"
+        },
+        {
+          "spk": "Marcos",
+          "html": "I <span class='tg'>worked</span> at a small startup for two years. I <span class='tg'>started</span> there in 2021.",
+          "b": true
+        },
+        {
+          "spk": "Sofia",
+          "html": "Nice! What <span class='tg'>did you do</span> there?"
+        },
+        {
+          "spk": "Marcos",
+          "html": "I <span class='tg'>built</span> websites and <span class='tg'>fixed</span> bugs. I also <span class='tg'>helped</span> the new developers.",
+          "b": true
+        },
+        {
+          "spk": "Sofia",
+          "html": "<span class='tg'>Did you like</span> it?"
+        },
+        {
+          "spk": "Marcos",
+          "html": "Yes, I did. The team <span class='tg'>was</span> great, but the days <span class='tg'>were</span> very long.",
+          "b": true
+        },
+        {
+          "spk": "Sofia",
+          "html": "Why <span class='tg'>did you leave</span>?"
+        },
+        {
+          "spk": "Marcos",
+          "html": "The big project <span class='tg'>finished</span>, so I <span class='tg'>looked</span> for a new job, and I <span class='tg'>found</span> this one!",
+          "b": true
+        },
+        {
+          "spk": "Sofia",
+          "html": "And <span class='tg'>did you study</span> computer science?"
+        },
+        {
+          "spk": "Marcos",
+          "html": "Yes, I <span class='tg'>studied</span> at university for four years. I <span class='tg'>graduated</span> in 2019.",
+          "b": true
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "COMPLETA EN PASADO",
+      "intro": "Elige la opción correcta. Ojo: regular, irregular, did o was / were.",
+      "items": [
+        {
+          "q": "Yesterday I ___ to the office early.",
+          "options": [
+            "go",
+            "went",
+            "goed"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "She ___ the report last week.",
+          "options": [
+            "finished",
+            "finish",
+            "finishs"
+          ],
+          "answer": 0
         },
         {
           "q": "They ___ at home last night.",
           "options": [
             "was",
-            "are",
+            "did",
             "were"
           ],
           "answer": 2
         },
         {
-          "q": "___ you like the new project?",
+          "q": "___ you finish the report yesterday?",
           "options": [
             "Did",
-            "Was",
+            "Were",
             "Do"
           ],
           "answer": 0
         },
         {
-          "q": "He ___ go to work yesterday — it was a holiday.",
+          "q": "He ___ go to work yesterday. It was Sunday.",
           "options": [
             "don't",
             "wasn't",
@@ -230,148 +518,98 @@
           "q": "We ___ a problem, but we fixed it.",
           "options": [
             "haved",
-            "has",
-            "had"
+            "had",
+            "has"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
-          "q": "She ___ me an email yesterday.",
+          "q": "She didn't ___ me an email.",
           "options": [
             "sent",
-            "send",
-            "sended"
+            "sended",
+            "send"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "They ___ the app two years ago.",
           "options": [
-            "builded",
             "built",
+            "builded",
             "build"
           ],
+          "answer": 0
+        },
+        {
+          "q": "I started this job two years ___.",
+          "options": [
+            "last",
+            "ago",
+            "before"
+          ],
           "answer": 1
+        },
+        {
+          "q": "Where ___ you yesterday? I called you.",
+          "options": [
+            "did",
+            "was",
+            "were"
+          ],
+          "answer": 2
         }
       ]
     },
     {
-      "type": "listening",
-      "id": "ex-l1",
-      "title": "AUDIO 1 · MARCOS'S LAST JOB",
-      "desc": "Sofia entrevista a Marcos sobre su trabajo anterior. Fíjate en los verbos en pasado.",
-      "src": "past-simple-1.mp3",
-      "dur": "0:58",
-      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
-      "questions": [
-        {
-          "type": "mcq",
-          "q": "Where did Marcos work before?",
-          "options": [
-            "At a university in Mexico City",
-            "At a big software company in Mexico City",
-            "At a small startup in Mexico City"
-          ],
-          "answer": 2
-        },
-        {
-          "type": "mcq",
-          "q": "What did he do at his last job?",
-          "options": [
-            "He taught computer science at university",
-            "He wrote reports and fixed bugs",
-            "He built websites and fixed bugs"
-          ],
-          "answer": 2
-        },
-        {
-          "type": "mcq",
-          "q": "When did Marcos graduate?",
-          "options": [
-            "In 2021",
-            "In 2019",
-            "In 2022"
-          ],
-          "answer": 1
-        }
-      ],
-      "speaking": {
-        "prompt": "Describe Marcos's last job. Use <i>worked</i>, <i>built</i> and <i>studied</i>.",
-        "starter": "He worked at a small startup for two years, where he built (what he built)."
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "WAS vs WENT",
+      "intro": "Las dos frases están en pasado, pero una usa <b>be</b> y la otra un <b>verbo de acción</b>. Eso cambia el negativo y la pregunta.",
+      "pair": {
+        "a": "She was at the office yesterday.",
+        "b": "She went to the office yesterday."
       },
-      "transcript": [
-        {
-          "spk": "Sofia",
-          "html": "So Marcos, tell me about your last job. Where <span class='tg'>did you work</span> before?"
-        },
-        {
-          "spk": "Marcos",
-          "b": true,
-          "html": "I <span class='tg'>worked</span> at a small startup in Mexico City for two years. I <span class='tg'>started</span> there in 2021."
-        },
-        {
-          "spk": "Sofia",
-          "html": "Nice! What <span class='tg'>did you do</span> there?"
-        },
-        {
-          "spk": "Marcos",
-          "b": true,
-          "html": "I <span class='tg'>built</span> websites and <span class='tg'>fixed</span> bugs. I also <span class='tg'>helped</span> the new developers."
-        },
-        {
-          "spk": "Sofia",
-          "html": "Why <span class='tg'>did you leave</span>?"
-        },
-        {
-          "spk": "Marcos",
-          "b": true,
-          "html": "The big project <span class='tg'>finished</span> and the team <span class='tg'>got</span> smaller. So I <span class='tg'>looked</span> for a new job and <span class='tg'>found</span> this one."
-        },
-        {
-          "spk": "Sofia",
-          "html": "<span class='tg'>Did you study</span> computer science?"
-        },
-        {
-          "spk": "Marcos",
-          "b": true,
-          "html": "Yes, I <span class='tg'>studied</span> at university for four years, and I <span class='tg'>graduated</span> in 2019."
-        }
-      ]
-    },
-    {
-      "type": "order",
-      "id": "ex-order",
-      "title": "ORDENA LA FRASE EN PASADO",
-      "intro": "Toca las palabras para formar la frase correcta.",
       "items": [
         {
-          "words": [
-            "I",
-            "worked",
-            "at",
-            "a",
-            "startup"
+          "type": "mcq",
+          "q": "¿Cuál es el negativo de A?",
+          "options": [
+            "She didn't was at the office.",
+            "She wasn't at the office.",
+            "She didn't be at the office."
           ],
-          "answer": "I worked at a startup"
+          "answer": 1
         },
         {
-          "words": [
-            "She",
-            "didn't",
-            "go",
-            "home"
+          "type": "mcq",
+          "q": "¿Cuál es el negativo de B?",
+          "options": [
+            "She didn't go to the office.",
+            "She didn't went to the office.",
+            "She wasn't go to the office."
           ],
-          "answer": "She didn't go home"
+          "answer": 0
         },
         {
-          "words": [
-            "Did",
-            "you",
-            "finish",
-            "the",
-            "report"
+          "type": "mcq",
+          "q": "¿Cuál es la pregunta de B?",
+          "options": [
+            "Was she go to the office?",
+            "Did she went to the office?",
+            "Did she go to the office?"
           ],
-          "answer": "Did you finish the report"
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Were you at home last night? — ¿Qué respondes?",
+          "options": [
+            "Yes, I did.",
+            "Yes, I was.",
+            "Yes, I were."
+          ],
+          "answer": 1
         }
       ]
     },
@@ -381,7 +619,7 @@
       "title": "AUDIO 2 · THE BIG LAUNCH",
       "desc": "Sofia cuenta el primer gran lanzamiento del equipo. Escucha el orden: first, then, after that.",
       "src": "past-simple-2.mp3",
-      "dur": "0:37",
+      "dur": "0:33",
       "speakers": "<ico-commentdots></ico-commentdots> Sofia",
       "questions": [
         {
@@ -396,10 +634,20 @@
         },
         {
           "type": "mcq",
-          "q": "What did they do the night before the launch?",
+          "q": "What did they find the night before the launch?",
           "options": [
-            "They went home early to sleep",
-            "They tested the app and wrote the code",
+            "A big bug",
+            "A new client",
+            "A better name"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What did they do that night?",
+          "options": [
+            "They went home early",
+            "They launched the app",
             "They worked late and ordered pizza"
           ],
           "answer": 2
@@ -408,21 +656,91 @@
           "type": "mcq",
           "q": "How many people downloaded the app on the first day?",
           "options": [
-            "A few dozen",
             "Hundreds",
-            "Thousands"
+            "Thousands",
+            "Millions"
           ],
-          "answer": 2
+          "answer": 1
         }
       ],
       "speaking": {
         "prompt": "Tell the launch story in order. Use <i>first</i>, <i>then</i> and <i>after that</i>.",
-        "starter": "First, the team planned the app for three months. Then they (next step). After that, they (final step)."
+        "starter": "First, the team planned the app for three months. Then they (next step). After that, they (next step)."
       },
       "transcript": [
         {
           "spk": "Sofia",
-          "html": "Two years <span class='tg'>ago</span>, we <span class='tg'>created</span> a new app. <span class='tg'>First</span>, we <span class='tg'>planned</span> everything for three months. <span class='tg'>Then</span> we <span class='tg'>wrote</span> the code. <span class='tg'>After that</span>, we <span class='tg'>tested</span> it. The night before, we <span class='tg'>worked</span> late and <span class='tg'>ordered</span> pizza. The next morning, we <span class='tg'>launched</span> the app. Thousands of people <span class='tg'>downloaded</span> it on the first day! The client <span class='tg'>loved</span> it, and we <span class='tg'>celebrated</span>."
+          "html": "Two years <span class='tg'>ago</span>, we <span class='tg'>created</span> a new app for a client. First, we <span class='tg'>planned</span> everything for three months. Then we <span class='tg'>wrote</span> the code. After that, we <span class='tg'>tested</span> it.",
+          "b": true
+        },
+        {
+          "spk": "Sofia",
+          "html": "But the night before the launch, we <span class='tg'>found</span> a big bug! We <span class='tg'>didn't go</span> home. We <span class='tg'>worked</span> late and <span class='tg'>ordered</span> pizza. At midnight, we <span class='tg'>fixed</span> it.",
+          "b": true
+        },
+        {
+          "spk": "Sofia",
+          "html": "The next morning, we <span class='tg'>launched</span> the app. Thousands of people <span class='tg'>downloaded</span> it on the first day! The client <span class='tg'>loved</span> it, and we <span class='tg'>celebrated</span>.",
+          "b": true
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE EN PASADO",
+      "intro": "Toca las palabras para formar la frase. Ojo con did y con ago.",
+      "items": [
+        {
+          "words": [
+            "I",
+            "worked",
+            "at",
+            "a",
+            "startup",
+            "two",
+            "years",
+            "ago"
+          ],
+          "answer": "I worked at a startup two years ago"
+        },
+        {
+          "words": [
+            "She",
+            "didn't",
+            "go",
+            "home"
+          ],
+          "answer": "She didn't go home"
+        },
+        {
+          "words": [
+            "Where",
+            "did",
+            "you",
+            "work",
+            "before"
+          ],
+          "answer": "Where did you work before"
+        },
+        {
+          "words": [
+            "Did",
+            "you",
+            "finish",
+            "the",
+            "report"
+          ],
+          "answer": "Did you finish the report"
+        },
+        {
+          "words": [
+            "We",
+            "were",
+            "late",
+            "yesterday"
+          ],
+          "answer": "We were late yesterday"
         }
       ]
     },
@@ -437,7 +755,7 @@
         "Usa un marcador de tiempo (<b>last year</b>, <b>two years ago</b>, <b>in 2021</b>)"
       ],
       "placeholder": "Two years ago, I worked at...",
-      "example": "(Time) ago, I worked at (place). I started (when) and (past action). I had (something / someone). One day, (a problem), but (how you fixed it). I left the job (when) to (reason).",
+      "example": "<span class=\"gap\">tiempo</span> ago, I worked at <span class=\"gap\">lugar</span>. I started in <span class=\"gap\">año</span>. I <span class=\"gap\">verbo en pasado</span> and <span class=\"gap\">verbo en pasado</span>. One day, we had <span class=\"gap\">un problema</span>, but we <span class=\"gap\">solución en pasado</span>. I didn't <span class=\"gap\">verbo base</span>. I left in <span class=\"gap\">año</span>.",
       "hw": "Escribe tu historia y después grábate contándola <b>sin leer</b> (mira solo tus notas). Envíame el texto y el audio por WhatsApp.",
       "rubric": [
         {
@@ -450,62 +768,136 @@
         },
         {
           "c": "Se entiende a la primera",
-          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+          "d": "Un lector lo entiende sin releer: ideas en orden con <b>first, then, after that, but</b>, sin traducir literal del español."
         }
       ]
     }
   ],
-  "voices": {
-    "sofia": "en-GB-SoniaNeural",
-    "marcos": "en-US-GuyNeural"
-  },
   "audioRate": "-8%",
-  "audioScripts": [
-    {
-      "file": "past-simple-1.mp3",
-      "lines": [
-        [
-          "sofia",
-          "So Marcos, tell me about your last job. Where did you work before?"
-        ],
-        [
-          "marcos",
-          "I worked at a small startup in Mexico City for two years. I started there in 2021."
-        ],
-        [
-          "sofia",
-          "Nice! What did you do there?"
-        ],
-        [
-          "marcos",
-          "I built websites and fixed bugs. I also helped the new developers on the team."
-        ],
-        [
-          "sofia",
-          "Why did you leave?"
-        ],
-        [
-          "marcos",
-          "The big project finished and the team got smaller. So I looked for a new job, and I found this one."
-        ],
-        [
-          "sofia",
-          "Did you study computer science?"
-        ],
-        [
-          "marcos",
-          "Yes, I studied at university for four years, and I graduated in 2019."
-        ]
-      ]
-    },
-    {
-      "file": "past-simple-2.mp3",
-      "lines": [
-        [
-          "sofia",
-          "Two years ago, we created a new app for a client. First, we planned everything for three months. Then we designed the app and wrote the code. After that, we tested it many times. The night before the launch, we worked late and ordered pizza. The next morning, we launched the app. Thousands of people downloaded it on the very first day! The client loved it, and the whole team celebrated."
-        ]
-      ]
-    }
-  ]
+  "say": {
+    "dir": "say/a2-l3",
+    "keys": [
+      "a-better-name",
+      "a-big-bug",
+      "a-new-client",
+      "after-that",
+      "ago",
+      "at-a-big-company",
+      "at-a-small-startup",
+      "at-a-university",
+      "at-midnight",
+      "attached",
+      "before",
+      "bug",
+      "build",
+      "build-built",
+      "builded",
+      "built",
+      "could-you-confirm",
+      "did",
+      "did-she-go-to-the-office",
+      "did-she-went-to-the-office",
+      "did-you-finish-the-report",
+      "didn-t",
+      "do",
+      "don-t",
+      "download",
+      "find-found",
+      "finish",
+      "finished",
+      "finishs",
+      "get-got",
+      "go",
+      "go-went",
+      "goed",
+      "graduate",
+      "had",
+      "has",
+      "have-had",
+      "haved",
+      "he-built-websites-and-fixed-bugs",
+      "he-didn-t-like-websites",
+      "he-studied-computer-science",
+      "he-taught-new-students",
+      "he-wrote-reports",
+      "how-long-did-the-team-plan-the-app",
+      "how-many-people-downloaded-the-app-on-the-first-day",
+      "hundreds",
+      "i-didn-t-work-yesterday",
+      "i-found-this-job",
+      "i-graduated-in-twenty-nineteen",
+      "i-ll-get-back-to-you",
+      "i-was-at-home-last-night",
+      "i-went-to-the-office",
+      "i-worked-at-a-startup",
+      "in-2019",
+      "in-2021",
+      "in-2023",
+      "last",
+      "last-night",
+      "last-week",
+      "last-year",
+      "launch",
+      "leave-left",
+      "make-made",
+      "millions",
+      "not-yet",
+      "planned-loved-studied",
+      "see-saw",
+      "send",
+      "send-sent",
+      "sended",
+      "sent",
+      "she-didn-t-be-at-the-office",
+      "she-didn-t-go-home",
+      "she-didn-t-go-to-the-office",
+      "she-didn-t-was-at-the-office",
+      "she-didn-t-went-to-the-office",
+      "she-finished-the-report-last-week",
+      "she-was-at-the-office-yesterday",
+      "she-wasn-t-at-the-office",
+      "she-wasn-t-go-to-the-office",
+      "she-went-to-the-office-yesterday",
+      "she-wrote-the-code",
+      "started-tested-wanted",
+      "startup",
+      "the-days-were-very-long",
+      "the-team-wasn-t-nice",
+      "they-built-the-app",
+      "they-launched-the-app",
+      "they-went-home-early",
+      "they-were-late",
+      "they-worked-late-and-ordered-pizza",
+      "this-morning",
+      "thousands",
+      "thousands-of-people",
+      "three-months",
+      "three-weeks",
+      "three-years",
+      "two-days-ago",
+      "two-years-ago-i-started-a-new-job",
+      "wait-for",
+      "was",
+      "was-she-go-to-the-office",
+      "wasn-t",
+      "we-had-a-problem",
+      "we-planned-everything",
+      "went",
+      "were",
+      "were-you-at-the-office-yes-i-was",
+      "what-did-he-do-there",
+      "what-did-they-do-that-night",
+      "what-did-they-find-the-night-before-the-launch",
+      "what-was-the-problem-at-his-last-job",
+      "when-did-marcos-graduate",
+      "where-did-marcos-work-before",
+      "where-did-you-work-before",
+      "worked-helped-fixed",
+      "write-wrote",
+      "yes-i-did",
+      "yes-i-was",
+      "yes-i-were",
+      "yesterday"
+    ]
+  }
 }

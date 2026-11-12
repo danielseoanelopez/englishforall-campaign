@@ -21,24 +21,24 @@
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
-          "l": "Worth it",
-          "r": "vale la pena"
+          "l": "Cheaper than",
+          "r": "más barato que"
         },
         {
-          "l": "Big / Small",
-          "r": "grande / chico"
+          "l": "Better / Worse",
+          "r": "mejor / peor"
         },
         {
-          "l": "Fast / Slow",
-          "r": "rápido / lento"
+          "l": "The best",
+          "r": "el mejor"
         },
         {
-          "l": "Light / Heavy",
-          "r": "liviano / pesado"
+          "l": "Much faster",
+          "r": "mucho más rápido"
         },
         {
-          "l": "Comfortable",
-          "r": "cómodo"
+          "l": "Reliable",
+          "r": "confiable"
         }
       ]
     },
@@ -46,76 +46,218 @@
       "type": "grammar",
       "tag": "going to / present continuous",
       "title": "<ico-book></ico-book> PLANES A FUTURO · going to / present continuous",
-      "intro": "Dos formas de hablar del futuro: <b style='color:var(--gold)'>going to</b> (planes) y el <b style='color:var(--gold)'>present continuous</b> (citas con día/hora). Es la última lección antes del examen.",
-      "cells": [
-        {
-          "h": "<ico-target></ico-target> be going to (planes)",
-          "body": "am/is/are + <code>going to</code> + base<br>I'm <code>going to study</code>.<br>We're <code>going to launch</code> it."
-        },
-        {
-          "h": "<ico-calendar></ico-calendar> present continuous (citas)",
-          "body": "am/is/are + verbo<code>-ing</code> + hora<br>I'm <code>meeting</code> the client at 3.<br>We're <code>flying</code> on Monday."
-        },
-        {
-          "h": "? / negative",
-          "body": "<code>Are you going to</code> start?<br>I'm <code>not going to</code> wait.<br><span class='es'>Yes, I am. / No, I'm not.</span>"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "no olvides <code>be</code>: <span class='x'>I going to go</span><br><span class='ok'>I'm going to go.</span><br>going to = plan · present cont. = cita fija"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Marcadores de futuro</b> — cuándo va a pasar:",
-      "ladder": [
-        "tomorrow",
-        "tonight",
-        "next week",
-        "on Monday",
-        "next month",
-        "in summer"
-      ],
-      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de planes",
+      "intro": "Dos formas de hablar del futuro: <b style='color:var(--gold)'>going to</b> para lo que piensas hacer, y el <b style='color:var(--gold)'>present continuous</b> para lo que ya tiene día y hora. Es la última lección antes del examen del mundo A2. Cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver palabras de los audios",
       "vocab": [
         {
-          "en": "A plan / A goal",
-          "sp": "un plan / una meta"
+          "en": "A travel company",
+          "sp": "una empresa de viajes"
         },
         {
-          "en": "To arrange",
-          "sp": "organizar / acordar"
+          "en": "Lead the design",
+          "sp": "dirigir el diseño"
         },
         {
-          "en": "A trip",
-          "sp": "un viaje"
+          "en": "Hire",
+          "sp": "contratar"
         },
         {
-          "en": "To fly",
-          "sp": "volar / viajar en avión"
+          "en": "Give a presentation",
+          "sp": "dar una presentación"
         },
         {
-          "en": "To book (a table)",
-          "sp": "reservar (una mesa)"
+          "en": "Fly home",
+          "sp": "volver a casa en avión"
         },
         {
-          "en": "To launch",
-          "sp": "lanzar"
+          "en": "Relax",
+          "sp": "descansar, relajarse"
         },
         {
-          "en": "To improve",
-          "sp": "mejorar"
+          "en": "Maybe",
+          "sp": "tal vez"
         },
         {
-          "en": "Excited about",
-          "sp": "entusiasmado con"
+          "en": "All day",
+          "sp": "todo el día"
         }
       ],
-      "note": "<b>Cómo funciona:</b> escucha los planes <ico-headphones></ico-headphones>, completa <ico-filepen></ico-filepen> y ordena <ico-puzzle></ico-puzzle>. ¡Última lección del mundo A2 — después viene el examen!"
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>comparar</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen>, <b>unir</b> <ico-link></ico-link> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · GOING TO</b> <span class='es'>— lo que piensas hacer</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'm going to study more English.",
+              "sp": "Voy a estudiar más inglés. — am / is / are + <b>going to</b> + verbo."
+            },
+            {
+              "en": "We're going to start a new project.",
+              "sp": "Vamos a empezar un proyecto nuevo."
+            },
+            {
+              "en": "She's going to lead the design.",
+              "sp": "Ella va a dirigir el diseño."
+            },
+            {
+              "en": "It's going to be big.",
+              "sp": "Va a ser grande."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Es casi igual al español «voy a + verbo»,</b> pero en inglés no puede faltar <b>be</b>: <s class='x'>I going to study.</s> → <span class='ok'>I'm going to study.</span> · <s class='x'>She going to lead.</s> → <span class='ok'>She's going to lead.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · NEGATIVO Y PREGUNTA</b> <span class='es'>— con be, sin do</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'm not going to work on Friday.",
+              "sp": "No voy a trabajar el viernes."
+            },
+            {
+              "en": "Are you going to start next month?",
+              "sp": "¿Vas a empezar el mes que viene? — Yes, I am. / No, I'm not."
+            },
+            {
+              "en": "What are we going to build?",
+              "sp": "¿Qué vamos a construir?"
+            },
+            {
+              "en": "When is she going to send the plan?",
+              "sp": "¿Cuándo va a enviar el plan?"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Aquí manda be, no do.</b> <s class='x'>Do you going to start?</s> → <span class='ok'>Are you going to start?</span> · <s class='x'>I don't going to work.</s> → <span class='ok'>I'm not going to work.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · PRESENT CONTINUOUS</b> <span class='es'>— citas ya cerradas: be + verbo-ing + día u hora</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'm meeting the client at ten.",
+              "sp": "Me reúno con el cliente a las diez."
+            },
+            {
+              "en": "We're having lunch at one.",
+              "sp": "Almorzamos a la una."
+            },
+            {
+              "en": "I'm flying to Madrid on Monday.",
+              "sp": "Vuelo a Madrid el lunes."
+            },
+            {
+              "en": "I'm not working on Friday.",
+              "sp": "No trabajo el viernes."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-pen></ico-pen> Cómo se escribe -ing",
+              "body": "Casi siempre <code>+ing</code>: meet → meet<b>ing</b> · fly → fly<b>ing</b> · work → work<b>ing</b><br>Termina en -e → se va la e: have → hav<b>ing</b> · give → giv<b>ing</b><br>Consonante-vocal-consonante → dobla la última: run → ru<b>nning</b> · plan → pla<b>nning</b>"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>En español usas el presente</b> («El lunes vuelo a Madrid»). En inglés, para una cita personal, hace falta be + -ing: <s class='x'>On Monday I fly to Madrid.</s> → <span class='ok'>On Monday I'm flying to Madrid.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · ¿CUÁL USO?</b> <span class='es'>— intención o cita cerrada</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'm going to visit my sister.",
+              "sp": "Lo decidiste, pero todavía no hay fecha: <b>intención</b>."
+            },
+            {
+              "en": "I'm visiting my sister on Saturday.",
+              "sp": "Ya quedaron: hay día, hora o boleto. <b>Cita cerrada</b>."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Pista rápida:</b> si en la frase hay un día o una hora y ya está acordado con alguien, usa <b>-ing</b>. Si es solo tu plan, usa <b>going to</b>. Las dos formas se entienden: lo que cambia es qué tan firme suena."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · ¿CUÁNDO?</b> <span class='es'>— las palabras de futuro</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "tonight",
+            "tomorrow",
+            "on Monday",
+            "next week",
+            "next month",
+            "in summer"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "tomorrow morning",
+              "sp": "mañana por la mañana"
+            },
+            {
+              "en": "the day after tomorrow",
+              "sp": "pasado mañana"
+            },
+            {
+              "en": "next week",
+              "sp": "la próxima semana — sin the."
+            },
+            {
+              "en": "I'm excited about the trip.",
+              "sp": "Estoy entusiasmado con el viaje. — excited <b>about</b>."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> Errores típicos",
+              "body": "<s class='x'>the next week</s> → <span class='ok'>next week</span><br><s class='x'>in Monday</s> → <span class='ok'>on Monday</span> <span class='es'>(on + día · at + hora · in + mes o estación)</span><br><s class='x'>tomorrow in the morning</s> → <span class='ok'>tomorrow morning</span>"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "flashcards",
       "id": "fc-vocab",
       "title": "FLASHCARDS · planes",
-      "intro": "Toca cada tarjeta para ver la traducción.",
+      "intro": "Toca cada tarjeta para ver la traducción. Son palabras para hablar de metas y viajes.",
       "deckLabel": "planes y calendario",
       "cards": [
         {
@@ -132,31 +274,31 @@
         },
         {
           "front": "to fly",
-          "back": "volar"
+          "back": "volar, viajar en avión"
         },
         {
-          "front": "to book a table",
-          "back": "reservar una mesa"
+          "front": "to book a flight",
+          "back": "reservar un vuelo"
         },
         {
           "front": "to launch",
           "back": "lanzar"
         },
         {
-          "front": "tonight",
-          "back": "esta noche"
+          "front": "to improve",
+          "back": "mejorar"
         },
         {
-          "front": "tomorrow morning",
-          "back": "mañana por la mañana"
+          "front": "to hire",
+          "back": "contratar"
         },
         {
-          "front": "next week",
-          "back": "la próxima semana"
+          "front": "a presentation",
+          "back": "una presentación"
         },
         {
-          "front": "the day after tomorrow",
-          "back": "pasado mañana"
+          "front": "excited about",
+          "back": "entusiasmado con"
         }
       ]
     },
@@ -164,7 +306,7 @@
       "type": "story",
       "tag": "planeando lo que viene",
       "title": "<ico-star></ico-star> WHAT'S NEXT?",
-      "intro": "El equipo mira hacia adelante: un proyecto nuevo y un viaje de trabajo. Después de esta lección viene el <b>examen del mundo A2</b>.",
+      "intro": "El equipo mira hacia adelante: un proyecto nuevo, dos developers más y el viaje de Marcos a Madrid. Después de esta lección viene el <b>examen del mundo A2</b>.",
       "cast": [
         {
           "en": "Sofia",
@@ -190,21 +332,21 @@
           "type": "mcq",
           "q": "¿Cuál suena a plan ya cerrado, con fecha acordada?",
           "options": [
+            "Las dos suenan igual",
             "A — going to",
-            "B — present continuous",
-            "Las dos suenan igual"
+            "B — present continuous"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "¿Cuál es una intención, algo que decidiste pero sin fecha fija?",
           "options": [
-            "Ninguna de las dos",
+            "A — going to",
             "B — present continuous",
-            "A — going to"
+            "Ninguna de las dos"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
           "type": "mcq",
@@ -212,7 +354,7 @@
           "options": [
             "I'm flying to Madrid on Tuesday.",
             "I'm going to fly to Madrid some day.",
-            "I will fly to Madrid on Tuesday."
+            "I flew to Madrid on Tuesday."
           ],
           "answer": 0
         },
@@ -220,11 +362,11 @@
           "type": "mcq",
           "q": "Quieres mejorar tu inglés este año, pero todavía no organizaste nada. ¿Qué dices?",
           "options": [
+            "I'm studying English at six tonight.",
             "I'm going to study more English.",
-            "I'm studying more English tonight.",
-            "I study more English this year."
+            "I study more English the next year."
           ],
-          "answer": 0
+          "answer": 1
         }
       ]
     },
@@ -241,31 +383,41 @@
           "type": "mcq",
           "q": "What are they going to build?",
           "options": [
-            "A website for a travel agency",
-            "An app for a bank in Madrid",
-            "An app for a travel company"
+            "A website for a bank",
+            "An app for a travel company",
+            "A new laptop"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "type": "mcq",
           "q": "What is Marcos going to do on the project?",
           "options": [
-            "Hire developers",
             "Lead the design",
+            "Hire developers",
             "Write the code"
           ],
           "answer": 2
         },
         {
           "type": "mcq",
-          "q": "When is the first meeting?",
+          "q": "How many new developers are they going to hire?",
+          "options": [
+            "Two",
+            "Three",
+            "Ten"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "When is Sofia going to send the plan?",
           "options": [
             "On Monday",
             "Next month",
             "Tomorrow"
           ],
-          "answer": 0
+          "answer": 2
         }
       ],
       "speaking": {
@@ -279,8 +431,8 @@
         },
         {
           "spk": "Marcos",
-          "b": true,
-          "html": "Yes! What <span class='tg'>are we going to build</span>?"
+          "html": "Yes! What <span class='tg'>are we going to build</span>?",
+          "b": true
         },
         {
           "spk": "Sofia",
@@ -288,21 +440,30 @@
         },
         {
           "spk": "Marcos",
-          "b": true,
-          "html": "How <span class='tg'>are we going to organize</span> the team?"
+          "html": "Great! Who <span class='tg'>is going to lead</span> the design?",
+          "b": true
         },
         {
           "spk": "Sofia",
-          "html": "I'm <span class='tg'>going to lead</span> the design, and you're <span class='tg'>going to write</span> the code."
+          "html": "I am. And you're <span class='tg'>going to write</span> the code."
         },
         {
           "spk": "Marcos",
-          "b": true,
-          "html": "When <span class='tg'>are we going to start</span>?"
+          "html": "<span class='tg'>Are we going to have</span> a bigger team?",
+          "b": true
         },
         {
           "spk": "Sofia",
-          "html": "We're <span class='tg'>going to have</span> the first meeting on Monday. I'm <span class='tg'>going to send</span> the plan tomorrow."
+          "html": "Yes, we're <span class='tg'>going to hire</span> two new developers."
+        },
+        {
+          "spk": "Marcos",
+          "html": "Perfect. When <span class='tg'>are we going to start</span>?",
+          "b": true
+        },
+        {
+          "spk": "Sofia",
+          "html": "The first meeting is on Monday. I'm <span class='tg'>going to send</span> the plan tomorrow."
         }
       ]
     },
@@ -310,7 +471,7 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "COMPLETA EL FUTURO",
-      "intro": "Elige going to o present continuous.",
+      "intro": "Elige la opción correcta. Ojo con be, con -ing y con las preposiciones de tiempo.",
       "items": [
         {
           "q": "Next month we ___ start a new project.",
@@ -322,7 +483,7 @@
           "answer": 0
         },
         {
-          "q": "I can't meet on Friday — I ___ the client at three.",
+          "q": "I can't meet on Friday. I ___ the client at three.",
           "options": [
             "meet",
             "am meeting",
@@ -331,31 +492,105 @@
           "answer": 1
         },
         {
-          "q": "She ___ run a marathon this year.",
+          "q": "She ___ going to run a marathon this year.",
           "options": [
-            "is going to",
-            "goes to",
-            "going"
+            "are",
+            "be",
+            "is"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "q": "On Monday, I ___ to Madrid at nine.",
           "options": [
             "flew",
-            "fly",
-            "am flying"
+            "am flying",
+            "flying"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "q": "I'm ___ going to use the translator so much.",
           "options": [
-            "isn't",
             "not",
-            "don't"
+            "don't",
+            "isn't"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "___ you going to start tomorrow?",
+          "options": [
+            "Do",
+            "Is",
+            "Are"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "We're ___ lunch with the client at one.",
+          "options": [
+            "have",
+            "having",
+            "haveing"
           ],
           "answer": 1
+        },
+        {
+          "q": "What are you going to ___ this weekend?",
+          "options": [
+            "do",
+            "doing",
+            "to do"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "They ___ going to hire two developers.",
+          "options": [
+            "is",
+            "am",
+            "are"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "I'm seeing the doctor ___ Tuesday.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "match",
+      "id": "ex-match",
+      "title": "UNE LA SITUACIÓN CON LA FRASE",
+      "intro": "¿Qué dirías en cada situación? Toca la situación y luego la frase.",
+      "speakSide": "r",
+      "pairs": [
+        {
+          "l": "Ya tienes el boleto para el lunes.",
+          "r": "I'm flying on Monday."
+        },
+        {
+          "l": "Decidiste hacer más ejercicio.",
+          "r": "I'm going to exercise more."
+        },
+        {
+          "l": "Tienes cita con el cliente a las diez.",
+          "r": "I'm meeting the client at ten."
+        },
+        {
+          "l": "Decidiste no usar tanto el traductor.",
+          "r": "I'm not going to use the translator so much."
+        },
+        {
+          "l": "Preguntas por los planes de alguien.",
+          "r": "What are you going to do?"
         }
       ]
     },
@@ -365,16 +600,16 @@
       "title": "AUDIO 2 · A WORK TRIP",
       "desc": "Marcos cuenta su agenda para un viaje. Fíjate en el present continuous con horas.",
       "src": "plans-2.mp3",
-      "dur": "0:33",
+      "dur": "0:24",
       "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
           "type": "mcq",
           "q": "Where is Marcos traveling next week?",
           "options": [
-            "London, on holiday",
+            "London, on vacation",
             "Madrid, for work",
-            "Mexico City"
+            "Madrid, on vacation"
           ],
           "answer": 1
         },
@@ -382,21 +617,31 @@
           "type": "mcq",
           "q": "What is he doing on Tuesday?",
           "options": [
-            "Flying to Madrid in the morning",
-            "Giving a presentation to the whole team",
-            "Meeting the client and having lunch"
+            "He's flying to Madrid",
+            "He's giving a presentation",
+            "He's meeting the client and having lunch"
           ],
           "answer": 2
         },
         {
           "type": "mcq",
-          "q": "What is Marcos doing on Friday?",
+          "q": "When is he giving a presentation?",
           "options": [
-            "He is relaxing, not working",
-            "He is giving his presentation",
-            "He is flying back home to Mexico"
+            "On Wednesday",
+            "On Monday",
+            "On Friday"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is Marcos going to do on Friday?",
+          "options": [
+            "He's flying home",
+            "He's going to relax",
+            "He's meeting the client"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -406,8 +651,23 @@
       "transcript": [
         {
           "spk": "Marcos",
-          "b": true,
-          "html": "Next week is <span class='tg'>going to be</span> busy, because I'm <span class='tg'>traveling</span> to Madrid for work. On Monday, I'm <span class='tg'>flying</span> to Madrid at nine. On Tuesday, I'm <span class='tg'>meeting</span> the client at ten, and we're <span class='tg'>having</span> lunch at one. On Wednesday, I'm <span class='tg'>giving</span> a presentation. I'm <span class='tg'>not working</span> on Friday, so I'm <span class='tg'>going to relax</span>."
+          "html": "Next week is <span class='tg'>going to be</span> busy, because I'm <span class='tg'>traveling</span> to Madrid for work.",
+          "b": true
+        },
+        {
+          "spk": "Marcos",
+          "html": "On Monday, I'm <span class='tg'>flying</span> to Madrid at nine. On Tuesday, I'm <span class='tg'>meeting</span> the client at ten, and we're <span class='tg'>having</span> lunch at one.",
+          "b": true
+        },
+        {
+          "spk": "Marcos",
+          "html": "On Wednesday, I'm <span class='tg'>giving</span> a presentation to the team. On Thursday, I'm <span class='tg'>flying</span> home.",
+          "b": true
+        },
+        {
+          "spk": "Marcos",
+          "html": "I'm <span class='tg'>not working</span> on Friday, so I'm <span class='tg'>going to relax</span>. Maybe I'm going to sleep all day!",
+          "b": true
         }
       ]
     },
@@ -415,7 +675,7 @@
       "type": "order",
       "id": "ex-order",
       "title": "ORDENA EL PLAN",
-      "intro": "Toca las palabras para formar la frase.",
+      "intro": "Toca las palabras para formar la frase. Ojo con las preguntas.",
       "items": [
         {
           "words": [
@@ -430,25 +690,46 @@
         },
         {
           "words": [
-            "I",
-            "am",
+            "I'm",
             "meeting",
             "the",
-            "client"
+            "client",
+            "at",
+            "ten"
           ],
-          "answer": "I am meeting the client"
+          "answer": "I'm meeting the client at ten"
         },
         {
           "words": [
-            "She",
-            "is",
+            "Are",
+            "you",
             "going",
             "to",
-            "run",
-            "a",
-            "marathon"
+            "start",
+            "tomorrow"
           ],
-          "answer": "She is going to run a marathon"
+          "answer": "Are you going to start tomorrow"
+        },
+        {
+          "words": [
+            "I'm",
+            "not",
+            "working",
+            "on",
+            "Friday"
+          ],
+          "answer": "I'm not working on Friday"
+        },
+        {
+          "words": [
+            "What",
+            "are",
+            "we",
+            "going",
+            "to",
+            "build"
+          ],
+          "answer": "What are we going to build"
         }
       ]
     },
@@ -463,7 +744,7 @@
         "Usa un marcador de futuro (<b>next week</b>, <b>on Monday</b>, <b>in summer</b>)"
       ],
       "placeholder": "Next month, I'm going to...",
-      "example": "Next (month / week), I'm going to (plan). I'm going to (activity) every (day / evening). On (day), I'm (arrangement) at (time), and on (day), I'm (arrangement). In (season), I'm going to (plan). I'm really excited!",
+      "example": "Next <span class=\"gap\">month / year</span>, I'm going to <span class=\"gap\">plan</span>. I'm going to <span class=\"gap\">actividad</span> every <span class=\"gap\">day / week</span>. I'm not going to <span class=\"gap\">verbo</span>. On <span class=\"gap\">día</span>, I'm <span class=\"gap\">verbo-ing</span> <span class=\"gap\">persona</span> at <span class=\"gap\">hora</span>. In <span class=\"gap\">estación</span>, I'm going to <span class=\"gap\">plan</span>. I'm excited about <span class=\"gap\">cosa</span>!",
       "hw": "Escribe tus planes y después grábate contándolos <b>sin leer</b>. Envíame ambos por WhatsApp. Después, ¡a por el examen del mundo A2!",
       "rubric": [
         {
@@ -480,5 +761,119 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/a2-l6",
+    "keys": [
+      "a-goal",
+      "a-going-to",
+      "a-new-laptop",
+      "a-plan",
+      "a-presentation",
+      "a-travel-company",
+      "a-trip",
+      "a-website-for-a-bank",
+      "all-day",
+      "am",
+      "am-flying",
+      "am-meeting",
+      "an-app-for-a-travel-company",
+      "are",
+      "are-going-to",
+      "are-you-going-to-start-next-month",
+      "at",
+      "b-present-continuous",
+      "be",
+      "better-worse",
+      "cheaper-than",
+      "do",
+      "doing",
+      "don-t",
+      "excited-about",
+      "flew",
+      "fly-home",
+      "flying",
+      "give-a-presentation",
+      "go-to",
+      "going-to",
+      "have",
+      "haveing",
+      "having",
+      "he-s-flying-home",
+      "he-s-flying-to-madrid",
+      "he-s-giving-a-presentation",
+      "he-s-going-to-relax",
+      "he-s-meeting-the-client",
+      "he-s-meeting-the-client-and-having-lunch",
+      "hire",
+      "hire-developers",
+      "how-many-new-developers-are-they-going-to-hire",
+      "i-flew-to-madrid-on-tuesday",
+      "i-m-excited-about-the-trip",
+      "i-m-flying-on-monday",
+      "i-m-flying-to-madrid-on-monday",
+      "i-m-flying-to-madrid-on-tuesday",
+      "i-m-going-to-exercise-more",
+      "i-m-going-to-fly-to-madrid-some-day",
+      "i-m-going-to-study-more-english",
+      "i-m-going-to-visit-my-sister",
+      "i-m-meeting-the-client-at-ten",
+      "i-m-not-going-to-use-the-translator-so-much",
+      "i-m-not-going-to-work-on-friday",
+      "i-m-not-working-on-friday",
+      "i-m-studying-english-at-six-tonight",
+      "i-m-visiting-my-sister-on-saturday",
+      "i-study-more-english-the-next-year",
+      "in",
+      "is",
+      "isn-t",
+      "it-s-going-to-be-big",
+      "las-dos-suenan-igual",
+      "lead-the-design",
+      "london-on-vacation",
+      "madrid-for-work",
+      "madrid-on-vacation",
+      "maybe",
+      "meet",
+      "met",
+      "much-faster",
+      "next-month",
+      "next-week",
+      "ninguna-de-las-dos",
+      "not",
+      "on",
+      "on-friday",
+      "on-monday",
+      "on-wednesday",
+      "relax",
+      "reliable",
+      "she-s-going-to-lead-the-design",
+      "ten",
+      "the-best",
+      "the-day-after-tomorrow",
+      "three",
+      "to-book-a-flight",
+      "to-do",
+      "to-fly",
+      "to-hire",
+      "to-improve",
+      "to-launch",
+      "tomorrow",
+      "tomorrow-morning",
+      "two",
+      "we-re-going-to-start-a-new-project",
+      "we-re-having-lunch-at-one",
+      "what-are-they-going-to-build",
+      "what-are-we-going-to-build",
+      "what-are-you-going-to-do",
+      "what-is-he-doing-on-tuesday",
+      "what-is-marcos-going-to-do-on-friday",
+      "what-is-marcos-going-to-do-on-the-project",
+      "when-is-he-giving-a-presentation",
+      "when-is-she-going-to-send-the-plan",
+      "when-is-sofia-going-to-send-the-plan",
+      "where-is-marcos-traveling-next-week",
+      "write-the-code"
+    ]
+  }
 }
