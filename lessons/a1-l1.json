@@ -212,21 +212,25 @@
       "cast": [
         {
           "en": "Ana",
-          "sp": "una estudiante de México"
+          "sp": "<img class='avatar' src='face-ana.webp' alt='' loading='lazy'>una estudiante de México"
         },
         {
           "en": "Tom",
-          "sp": "un ingeniero de Canadá"
+          "sp": "<img class='avatar' src='face-tom.webp' alt='' loading='lazy'>un ingeniero de Canadá"
         },
         {
           "en": "Emma",
-          "sp": "la recepcionista"
+          "sp": "<img class='avatar' src='face-emma.webp' alt='' loading='lazy'>la recepcionista"
         },
         {
           "en": "Leo",
-          "sp": "un estudiante nuevo"
+          "sp": "<img class='avatar' src='face-leo.webp' alt='' loading='lazy'>un estudiante nuevo"
         }
-      ]
+      ],
+      "img": {
+        "src": "cast-a1.webp",
+        "alt": "Ana, Tom y Emma"
+      }
     },
     {
       "type": "flashcards",
@@ -288,7 +292,7 @@
       "desc": "Ana y Tom se conocen por primera vez. Escucha los nombres y de dónde son.",
       "src": "a1-l1-1.mp3",
       "dur": "0:17",
-      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-ana.webp' alt='' loading='lazy'>Ana + <img class='avatar' src='face-tom.webp' alt='' loading='lazy'>Tom",
       "questions": [
         {
           "type": "mcq",
@@ -458,7 +462,7 @@
       "desc": "Leo llega a una escuela de inglés. Escucha el saludo y dónde está su clase. <span class='es'>Pista: <b>floor</b> = piso · <b>first, second, third</b> = primero, segundo, tercero.</span>",
       "src": "a1-l1-2.mp3",
       "dur": "0:15",
-      "speakers": "<ico-commentdots></ico-commentdots> Emma + Leo",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-emma.webp' alt='' loading='lazy'>Emma + <img class='avatar' src='face-leo.webp' alt='' loading='lazy'>Leo",
       "questions": [
         {
           "type": "mcq",

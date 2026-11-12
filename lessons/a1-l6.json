@@ -443,7 +443,7 @@
       "desc": "Ana le hace preguntas a Tom. Escucha las respuestas.",
       "src": "a1-l6-1.mp3",
       "dur": "0:15",
-      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-ana.webp' alt='' loading='lazy'>Ana + <img class='avatar' src='face-tom.webp' alt='' loading='lazy'>Tom",
       "questions": [
         {
           "type": "mcq",
@@ -667,7 +667,7 @@
       "desc": "Emma, la recepcionista, le hace preguntas a Leo. Escucha Why, When y Who.",
       "src": "a1-l6-2.mp3",
       "dur": "0:24",
-      "speakers": "<ico-commentdots></ico-commentdots> Emma + Leo",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-emma.webp' alt='' loading='lazy'>Emma + <img class='avatar' src='face-leo.webp' alt='' loading='lazy'>Leo",
       "questions": [
         {
           "type": "mcq",

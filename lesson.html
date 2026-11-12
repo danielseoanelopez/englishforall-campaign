@@ -171,7 +171,7 @@ function grammarHtml(g, gi){
 }
 function storyHtml(s){
   return (s.stage === false ? "" : `<div class="stage-tag">${s.stage ? esc(s.stage) : `<ico-star></ico-star> THE STORY <span class="es">· ${esc(s.tag)}</span>`}</div>`) + `
-  <div class="card alt" data-aos="fade-up"><div class="panel-title">${esc(s.title)}</div><p>${esc(s.intro)}</p>
+  <div class="card alt" data-aos="fade-up"><div class="panel-title">${esc(s.title)}</div>${s.img ? `<img class="story-img" src="${escAttr(s.img.src)}" alt="${escAttr(s.img.alt||'')}" loading="lazy">` : ""}<p>${esc(s.intro)}</p>
   <div class="gloss">${(s.cast||[]).map(c=>`<div class="term"><span class="en">${esc(c.en)}</span> <span class="sp">${noFlags(c.sp)}</span></div>`).join("")}</div></div>`;
 }
 function listeningHtml(b, id, alt){

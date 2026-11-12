@@ -418,7 +418,7 @@
       "desc": "Ana le pregunta a Tom por su familia. Escucha have y has.",
       "src": "a1-l4-1.mp3",
       "dur": "0:17",
-      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-ana.webp' alt='' loading='lazy'>Ana + <img class='avatar' src='face-tom.webp' alt='' loading='lazy'>Tom",
       "questions": [
         {
           "type": "mcq",
@@ -648,7 +648,7 @@
       "desc": "Marcos describe su cuarto y sus cosas. Escucha have / don't have.",
       "src": "a1-l4-2.mp3",
       "dur": "0:18",
-      "speakers": "<ico-commentdots></ico-commentdots> Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-marcos.webp' alt='' loading='lazy'>Marcos",
       "questions": [
         {
           "type": "mcq",

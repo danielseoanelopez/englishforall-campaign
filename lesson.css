@@ -325,3 +325,8 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 /* ===== result screen: jump to the matching game ===== */
 .game-btn { background: linear-gradient(180deg, #2f0a33, #1a061c); border-color: #ff7df5; box-shadow: 0 0 16px #ff3df055, inset 0 0 14px #ff3df022; margin-top: 14px; color: #ffb3fa; text-shadow: none; }
 .game-btn:hover { box-shadow: 0 0 26px #ff3df0aa, inset 0 0 18px #ff3df044; }
+
+/* A1 pixel portraits (2026-11-11): speaker avatars, cast avatars, story banner */
+.avatar { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 5px; box-shadow: 0 0 0 1px var(--cyan, #00e5ff); }
+.gloss .avatar { width: 40px; height: 40px; margin-right: 8px; }
+.story-img { display: block; width: 100%; max-width: 384px; margin: 10px auto 12px; border-radius: 10px; }

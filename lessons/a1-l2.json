@@ -356,7 +356,7 @@
       "desc": "Ana y Tom hablan de su trabajo, su país y su edad. Fíjate en quién dice qué.",
       "src": "a1-l2-1.mp3",
       "dur": "0:15",
-      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-ana.webp' alt='' loading='lazy'>Ana + <img class='avatar' src='face-tom.webp' alt='' loading='lazy'>Tom",
       "questions": [
         {
           "type": "mcq",

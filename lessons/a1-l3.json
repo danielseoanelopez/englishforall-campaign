@@ -412,7 +412,7 @@
       "desc": "Ana y Tom hablan de un número y de horarios de clase.",
       "src": "a1-l3-1.mp3",
       "dur": "0:18",
-      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-ana.webp' alt='' loading='lazy'>Ana + <img class='avatar' src='face-tom.webp' alt='' loading='lazy'>Tom",
       "questions": [
         {
           "type": "mcq",
@@ -598,7 +598,7 @@
       "desc": "Marcos cuenta los horarios de su día. Escucha las horas y los días. <span class='es'>Pista: <b>get up</b> = levantarse · <b>have breakfast / lunch</b> = desayunar / almorzar · <b>finish work</b> = terminar de trabajar.</span>",
       "src": "a1-l3-2.mp3",
       "dur": "0:19",
-      "speakers": "<ico-commentdots></ico-commentdots> Marcos",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-marcos.webp' alt='' loading='lazy'>Marcos",
       "questions": [
         {
           "type": "mcq",

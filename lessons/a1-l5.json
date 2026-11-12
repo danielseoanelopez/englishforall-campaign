@@ -245,19 +245,19 @@
           "back": "bolígrafo"
         },
         {
-          "front": "phone",
+          "front": "<img class='job' src='obj-phone.webp' alt='phone' loading='lazy'> phone",
           "back": "teléfono"
         },
         {
-          "front": "key",
+          "front": "<img class='job' src='obj-key.webp' alt='key' loading='lazy'> key",
           "back": "llave"
         },
         {
-          "front": "bag",
+          "front": "<img class='job' src='obj-bag.webp' alt='bag' loading='lazy'> bag",
           "back": "mochila / bolso"
         },
         {
-          "front": "umbrella",
+          "front": "<img class='job' src='obj-umbrella.webp' alt='umbrella' loading='lazy'> umbrella",
           "back": "paraguas"
         },
         {
@@ -286,11 +286,11 @@
       "intro": "Toca la imagen y luego la palabra correcta.",
       "pairs": [
         {
-          "img": "<ico-key></ico-key>",
+          "img": "<img class='job' src='obj-key.webp' alt='key' loading='lazy'>",
           "word": "key"
         },
         {
-          "img": "<ico-mobile></ico-mobile>",
+          "img": "<img class='job' src='obj-phone.webp' alt='phone' loading='lazy'>",
           "word": "phone"
         },
         {
@@ -298,11 +298,11 @@
           "word": "chair"
         },
         {
-          "img": "<ico-umbrella></ico-umbrella>",
+          "img": "<img class='job' src='obj-umbrella.webp' alt='umbrella' loading='lazy'>",
           "word": "umbrella"
         },
         {
-          "img": "<ico-briefcase></ico-briefcase>",
+          "img": "<img class='job' src='obj-bag.webp' alt='bag' loading='lazy'>",
           "word": "bag"
         },
         {
@@ -370,7 +370,7 @@
       "desc": "Ana y Tom hablan de las cosas en una mochila. Escucha los objetos.",
       "src": "a1-l5-1.mp3",
       "dur": "0:15",
-      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-ana.webp' alt='' loading='lazy'>Ana + <img class='avatar' src='face-tom.webp' alt='' loading='lazy'>Tom",
       "questions": [
         {
           "type": "mcq",
@@ -606,7 +606,7 @@
       "desc": "Tom busca sus cosas y Ana lo ayuda. Escucha in / on / under / next to.",
       "src": "a1-l5-2.mp3",
       "dur": "0:16",
-      "speakers": "<ico-commentdots></ico-commentdots> Ana + Tom",
+      "speakers": "<ico-commentdots></ico-commentdots> <img class='avatar' src='face-ana.webp' alt='' loading='lazy'>Ana + <img class='avatar' src='face-tom.webp' alt='' loading='lazy'>Tom",
       "questions": [
         {
           "type": "mcq",
