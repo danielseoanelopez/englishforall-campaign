@@ -45,38 +45,8 @@
       "type": "grammar",
       "tag": "past narration",
       "title": "<ico-book></ico-book> PAST CONTINUOUS vs PAST SIMPLE",
-      "intro": "Para contar historias usamos los dos: el <b style='color:var(--gold)'>past continuous</b> (was/were + -ing) pinta la escena de fondo, y el <b style='color:var(--gold)'>past simple</b> cuenta las acciones que pasaron. Repasa y luego practica.",
-      "cells": [
-        {
-          "h": "<ico-check></ico-check> Form",
-          "body": "I / he / she <code>was working</code><br>you / we / they <code>were working</code><br><span class='es'>was/were + verbo-ing</span>"
-        },
-        {
-          "h": "<ico-clapper></ico-clapper> Escena vs acción",
-          "body": "<span class='ok'>I <b>was watching</b> a film</span> <span class='es'>(fondo, en progreso)</span><br><span class='ok'>when my phone <b>rang</b>.</span> <span class='es'>(acción corta)</span>"
-        },
-        {
-          "h": "<ico-link></ico-link> while / when",
-          "body": "<code>While</code> + continuo: <i>While I was checking…</i><br><code>When</code> + simple: <i>When the server crashed…</i>"
-        },
-        {
-          "h": "<ico-stopwatch></ico-stopwatch> as soon as",
-          "body": "<code>As soon as</code> = en cuanto:<br><i>As soon as we fixed it, the site came back.</i>"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "Evento terminado = past simple:<br><span class='ok'>The server crashed at eleven.</span><br><span class='x'>The server was crashing at eleven.</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Secuenciadores</b> — ordenan tu historia y suenan naturales:",
-      "ladder": [
-        "First…",
-        "Then…",
-        "Suddenly…",
-        "As soon as…",
-        "After that…",
-        "In the end…"
-      ],
+      "intro": "Para contar bien una historia necesitas dos tiempos: el <b style='color:var(--gold)'>past continuous</b> (was / were + -ing) pinta la <b>escena de fondo</b>, y el <b style='color:var(--gold)'>past simple</b> cuenta <b>lo que pasó</b>. Cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
       "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de la crisis",
       "vocab": [
         {
@@ -128,7 +98,133 @@
           "sp": "una caída del servidor"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>ordenar</b> <ico-puzzle></ico-puzzle>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>memory</b> <ico-brain></ico-brain>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>ordenar</b> <ico-puzzle></ico-puzzle>, <b>comparar</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>memoria</b> <ico-clone></ico-clone>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · LA FORMA</b> <span class='es'>— was / were + verbo-ing</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I was working late.",
+              "sp": "Estaba trabajando hasta tarde. — I / he / she / it <b>was</b>."
+            },
+            {
+              "en": "We were testing the site.",
+              "sp": "Estábamos probando el sitio. — you / we / they <b>were</b>."
+            },
+            {
+              "en": "What were you doing at eleven?",
+              "sp": "¿Qué estabas haciendo a las once?"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Es tu «estaba + -ando / -iendo».</b> Sin was / were no hay tiempo: <s class='x'>I working late.</s> → <span class='ok'>I was working late.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · ESCENA + ACCIÓN</b> <span class='es'>— algo estaba pasando cuando otra cosa lo interrumpió</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I was watching a film when my phone rang.",
+              "sp": "Estaba viendo una película cuando sonó el teléfono."
+            },
+            {
+              "en": "Sofia was writing the report when an alert appeared.",
+              "sp": "La acción larga va en continuo; la que interrumpe, en past simple."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>La acción que interrumpe es corta y completa: past simple.</b> <s class='x'>…when my phone was ringing.</s> → <span class='ok'>…when my phone rang.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · WHILE / WHEN</b> <span class='es'>— cada palabra pide un tiempo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "While I was checking the logs, I found the problem.",
+              "sp": "<b>While</b> (mientras) + continuo."
+            },
+            {
+              "en": "When the server crashed, I was sleeping.",
+              "sp": "<b>When</b> (cuando) + past simple."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Un evento puntual con hora exacta va en past simple</b>, aunque en español digas «se estaba cayendo»: <s class='x'>The server was crashing at eleven.</s> → <span class='ok'>The server crashed at eleven.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · ¿ANTES O DURANTE?</b> <span class='es'>— un tiempo distinto cambia el orden de los hechos</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "When the client called, I wrote the report.",
+              "sp": "Primero llamó; <b>después</b> escribí. Dos acciones seguidas."
+            },
+            {
+              "en": "When the client called, I was writing the report.",
+              "sp": "Cuando llamó, <b>ya estaba</b> escribiendo."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · HILAR LA HISTORIA</b> <span class='es'>— las palabras que la hacen avanzar</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "First…",
+            "Then…",
+            "Suddenly…",
+            "As soon as…",
+            "After that…",
+            "In the end…"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Suddenly, the website went down.",
+              "sp": "De repente, el sitio se cayó."
+            },
+            {
+              "en": "As soon as we fixed it, the site came back.",
+              "sp": "En cuanto lo arreglamos, el sitio volvió. — as soon as + past simple."
+            },
+            {
+              "en": "In the end, the client never noticed.",
+              "sp": "Al final, el cliente nunca se dio cuenta."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>«Al final» de una historia es in the end.</b> <s class='x'>At the end, we fixed it.</s> → <span class='ok'>In the end, we fixed it.</span> <span class='es'>(at the end of… = al final de algo: at the end of the meeting)</span>"
+        }
+      ]
     },
     {
       "type": "flashcards",
@@ -243,6 +339,32 @@
             "problem"
           ],
           "answer": "While I was checking the logs I found the problem"
+        },
+        {
+          "words": [
+            "As",
+            "soon",
+            "as",
+            "we",
+            "fixed",
+            "it",
+            "the",
+            "site",
+            "came",
+            "back"
+          ],
+          "answer": "As soon as we fixed it the site came back"
+        },
+        {
+          "words": [
+            "What",
+            "were",
+            "you",
+            "doing",
+            "at",
+            "eleven"
+          ],
+          "answer": "What were you doing at eleven"
         }
       ]
     },
@@ -334,6 +456,16 @@
             "Almost two hours",
             "About one hour",
             "About ten minutes"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Who called Marcos that night?",
+          "options": [
+            "Priya",
+            "Sofia",
+            "David"
           ],
           "answer": 1
         }
@@ -444,6 +576,24 @@
             "have"
           ],
           "answer": 1
+        },
+        {
+          "q": "What ___ you doing when the alert came in?",
+          "options": [
+            "did",
+            "were",
+            "was"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "___ the end, we fixed it together.",
+          "options": [
+            "At",
+            "On",
+            "In"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -517,6 +667,16 @@
             "Writing the launch report"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Sofia say about Marcos in the end?",
+          "options": [
+            "He worked really fast",
+            "He was sleeping",
+            "He didn't help"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -542,7 +702,7 @@
         "Cierra con cómo terminó todo (<b>In the end,…</b>)"
       ],
       "placeholder": "It was a normal Friday. I was…",
-      "example": "It was a normal Tuesday and I was… — sigue tú: interrumpe con when + past simple, mete un while, dos secuenciadores, y cierra con In the end…",
+      "example": "It was a normal <span class=\"gap\">día</span>. I was <span class=\"gap\">verbo-ing</span> when <span class=\"gap\">past simple</span>. Suddenly, <span class=\"gap\">past simple</span>. While I was <span class=\"gap\">verbo-ing</span>, I <span class=\"gap\">past simple</span>. As soon as <span class=\"gap\">past simple</span>, <span class=\"gap\">past simple</span>. In the end, <span class=\"gap\">cómo terminó</span>.",
       "hw": "Escribe tu historia y después grábate contándola <b>sin leer</b> — es una anécdota, no una lectura. Envíame el texto y el audio por WhatsApp.",
       "rubric": [
         {
@@ -559,5 +719,122 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/b1-l3",
+    "keys": [
+      "a-server-outage",
+      "a-wrong-setting-in-the-new-payment-system",
+      "about-one-hour",
+      "about-ten-minutes",
+      "according-to-marcos-how-long-was-the-site-down",
+      "according-to-sofia-who-saw-the-problem-first",
+      "action-item",
+      "alert",
+      "almost-two-hours",
+      "am-watching",
+      "an-alert-came-in",
+      "antes-de-la-llamada",
+      "are",
+      "are-we-all-agreed",
+      "as",
+      "as-soon-as",
+      "as-soon-as-we-fixed-it-the-site-came-back",
+      "at",
+      "break",
+      "broke",
+      "came",
+      "checking-the-logs",
+      "come",
+      "crashed",
+      "crashes",
+      "david",
+      "despu-s-de-la-llamada",
+      "did",
+      "durante-la-llamada",
+      "empezaste-despu-s",
+      "fall",
+      "fell",
+      "find",
+      "found",
+      "go",
+      "had",
+      "have",
+      "he-didn-t-help",
+      "he-was-sleeping",
+      "he-worked-really-fast",
+      "how-long-does-sofia-say-the-site-was-down",
+      "i-had-dinner-when-the-alert-came-in",
+      "i-have-dinner-when-the-alert-came-in",
+      "i-was-having-dinner-when-the-alert-came-in",
+      "i-was-watching-a-film-when-my-phone-rang",
+      "i-was-working-late",
+      "in",
+      "in-the-end",
+      "in-the-end-the-client-never-noticed",
+      "is",
+      "it-turned-out-that",
+      "let-s-get-started",
+      "let-s-move-on-to",
+      "logs",
+      "marcos",
+      "no-lo-escribiste",
+      "not-enough-memory-on-the-main-server",
+      "on",
+      "on-call",
+      "out-of-nowhere",
+      "outage",
+      "priya",
+      "rang",
+      "restarting-the-payment-service",
+      "ring",
+      "server",
+      "sleeping",
+      "sofia",
+      "sofia-was-writing-the-report-when-an-alert-appeared",
+      "suddenly",
+      "suddenly-the-website-went-down",
+      "ten-minutes",
+      "the-server-crashed-at-eleven",
+      "the-server-has-crashed-at-eleven",
+      "the-server-was-crashing-at-eleven",
+      "the-site-went-down",
+      "the-whole-time",
+      "to-be-down",
+      "to-be-on-call",
+      "to-be-on-the-same-page",
+      "to-crash",
+      "to-fix",
+      "to-get-it-back-up",
+      "to-keep-an-eye-on",
+      "to-look-into-the-logs",
+      "to-restart",
+      "too-many-requests-from-the-payment-system",
+      "was",
+      "was-crashing",
+      "was-finding",
+      "was-watching",
+      "watched",
+      "watching-a-film",
+      "watching-a-film-at-home",
+      "we-were-testing-the-site",
+      "went",
+      "were",
+      "were-having",
+      "what-did-he-find-while-he-was-checking-the-logs",
+      "what-does-sofia-say-about-marcos-in-the-end",
+      "what-was-marcos-doing-when-his-phone-rang",
+      "what-was-sofia-doing-when-the-alert-appeared",
+      "what-were-you-doing-at-eleven",
+      "when",
+      "when-the-client-called-i-was-writing-the-report",
+      "when-the-client-called-i-wrote-the-report",
+      "when-the-server-crashed-i-was-sleeping",
+      "while",
+      "while-i-was-checking-the-logs-i-found-the-problem",
+      "who-called-marcos-that-night",
+      "writing-the-launch-report",
+      "ya-estabas-escribi-ndolo"
+    ]
+  }
 }

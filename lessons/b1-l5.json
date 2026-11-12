@@ -45,38 +45,8 @@
       "type": "grammar",
       "tag": "deducción y tacto",
       "title": "<ico-book></ico-book> MUST / MIGHT / CAN'T + SUAVIZAR",
-      "intro": "Dos herramientas de B1: los <b style='color:var(--gold)'>modales de deducción</b> (must / might / can't) para decir qué tan seguro estás, y las <b style='color:var(--gold)'>frases suavizantes</b> para dar opiniones sin sonar agresivo.",
-      "cells": [
-        {
-          "h": "<ico-circlecheck></ico-circlecheck> must be",
-          "body": "Casi seguro que SÍ:<br><span class='ok'>The server <b>must be</b> overloaded — look at these numbers.</span>"
-        },
-        {
-          "h": "<ico-circleq></ico-circleq> might / could be",
-          "body": "Posible, no seguro:<br><span class='ok'>It <b>might be</b> a caching problem.</span>"
-        },
-        {
-          "h": "<ico-ban></ico-ban> can't be",
-          "body": "Casi seguro que NO:<br><span class='ok'>It <b>can't be</b> the design — we tested it twice.</span>"
-        },
-        {
-          "h": "<ico-feather></ico-feather> Suavizar tu opinión",
-          "body": "<code>I'd suggest…</code><br><code>It might be worth + -ing</code><br><code>Have you considered…?</code>"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='x'>You must change it.</span> <span class='es'>(orden)</span><br><span class='ok'>It might be worth changing it.</span> <span class='es'>(sugerencia)</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Escala de certeza</b> — de seguro que no a seguro que sí:",
-      "ladder": [
-        "can't be 0%",
-        "probably isn't",
-        "might be",
-        "could be",
-        "probably is",
-        "must be 100%"
-      ],
+      "intro": "Dos herramientas para discutir con datos: los <b style='color:var(--gold)'>modales de deducción</b> (must / might / can't) dicen qué tan seguro estás, y las <b style='color:var(--gold)'>frases suavizantes</b> te dejan opinar sin sonar agresivo. Cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
       "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario del debate",
       "vocab": [
         {
@@ -125,10 +95,137 @@
         },
         {
           "en": "a trade-off",
-          "sp": "un costo-beneficio"
+          "sp": "una concesión: ganas algo y pierdes algo"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> <ico-clone></ico-clone>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>comparar</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · MUST BE</b> <span class='es'>— casi seguro que sí</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The server must be overloaded. Look at these numbers.",
+              "sp": "El servidor debe de estar sobrecargado."
+            },
+            {
+              "en": "Someone must be working late.",
+              "sp": "Alguien debe de estar trabajando hasta tarde. — ves las luces, sacas la conclusión."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Aquí must no es obligación:</b> es una deducción, como «debe de ser» o «seguro que es». La evidencia te lleva a la conclusión."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · MIGHT / COULD BE</b> <span class='es'>— posible, pero no seguro</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "It might be a caching problem.",
+              "sp": "Podría ser un problema de caché."
+            },
+            {
+              "en": "The checkout could be loading too slowly.",
+              "sp": "El checkout podría estar cargando demasiado lento."
+            },
+            {
+              "en": "She might be in a meeting.",
+              "sp": "Quizás esté en una reunión."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · CAN'T BE</b> <span class='es'>— casi seguro que no</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "can't be 0%",
+            "might be",
+            "could be",
+            "must be 100%"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "It can't be the design. We tested it twice.",
+              "sp": "No puede ser el diseño."
+            },
+            {
+              "en": "He can't be a beginner. His French is perfect.",
+              "sp": "No puede ser principiante."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Lo contrario de must be no es mustn't.</b> <s class='x'>It mustn't be the design.</s> → <span class='ok'>It can't be the design.</span> <span class='es'>(mustn't = prohibido)</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · SUAVIZAR TU OPINIÓN</b> <span class='es'>— sugerir en vez de ordenar</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'd suggest a one-week test.",
+              "sp": "Sugeriría una prueba de una semana."
+            },
+            {
+              "en": "It might be worth testing the speed.",
+              "sp": "Podría valer la pena probar la velocidad. — worth + verbo<b>-ing</b>."
+            },
+            {
+              "en": "Have you considered a faster option?",
+              "sp": "¿Han considerado una opción más rápida?"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>«You must change it» es una orden.</b> Para sugerir: <s class='x'>It might be worth to test it.</s> → <span class='ok'>It might be worth testing it.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · DISCREPAR CON DATOS</b> <span class='es'>— reconoces, discrepas, muestras evidencia, propones</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I take your point, but I see it differently.",
+              "sp": "Entiendo tu punto, pero yo lo veo distinto."
+            },
+            {
+              "en": "With respect, the data suggests something else.",
+              "sp": "Con todo respeto, los datos sugieren otra cosa."
+            },
+            {
+              "en": "Can we look at the evidence together?",
+              "sp": "¿Miramos juntos la evidencia?"
+            },
+            {
+              "en": "If I'm wrong, we go back to the old design. Fair?",
+              "sp": "Ofreces una salida: eso baja la tensión."
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "story",
@@ -403,6 +500,24 @@
             "might"
           ],
           "answer": 2
+        },
+        {
+          "q": "It might be worth ___ a faster payment option.",
+          "options": [
+            "trying",
+            "to try",
+            "try"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We tested the design twice. It ___ be the problem.",
+          "options": [
+            "must",
+            "might",
+            "can't"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -448,6 +563,26 @@
             "differently"
           ],
           "answer": "I take your point but I see it differently"
+        },
+        {
+          "words": [
+            "It",
+            "can't",
+            "be",
+            "the",
+            "design"
+          ],
+          "answer": "It can't be the design"
+        },
+        {
+          "words": [
+            "The",
+            "data",
+            "suggests",
+            "something",
+            "else"
+          ],
+          "answer": "The data suggests something else"
         }
       ]
     },
@@ -489,6 +624,16 @@
             "Pushing back with data"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "When did the team switch to the faster payment option?",
+          "options": [
+            "On Tuesday",
+            "On Friday",
+            "Last month"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -510,11 +655,11 @@
         "Reconoce su punto primero (<b>I take your point…</b>)",
         "Marca tu desacuerdo con tacto (<b>I see it differently / With respect,…</b>)",
         "Usa un modal de deducción (<b>must / might / can't be</b>)",
-        "Apoyate en evidencia (<b>The data suggests…</b>)",
+        "Apóyate en evidencia (<b>The data suggests…</b>)",
         "Propón un paso siguiente (<b>I'd suggest… / It might be worth…</b>)"
       ],
       "placeholder": "Hi …, I take your point about…",
-      "example": "I take your point about the redesign — it's an important call… — sigue tú: marca tu desacuerdo con tacto, mete un modal de deducción, apóyate en datos y propón un siguiente paso.",
+      "example": "I take your point about <span class=\"gap\">su idea</span>. However, I see it differently. It can't be <span class=\"gap\">causa descartada</span>, because <span class=\"gap\">evidencia</span>. It might be <span class=\"gap\">causa posible</span>. The data suggests <span class=\"gap\">dato</span>. I'd suggest <span class=\"gap\">siguiente paso</span>. It might be worth <span class=\"gap\">verbo-ing</span> first.",
       "hw": "Escribe tu respuesta y después grábate <b>diciéndola sin leer</b>, con tono calmado y profesional. Envíame texto y audio por WhatsApp.",
       "rubric": [
         {
@@ -531,5 +676,99 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/b1-l5",
+    "keys": [
+      "a-must-be",
+      "a-trade-off",
+      "according-to-marcos-what-might-the-real-problem-be",
+      "at-no-extra-cost",
+      "b-might-be",
+      "can-t",
+      "can-we-look-at-the-evidence-together",
+      "change-the-payment-system-today",
+      "couldn-t",
+      "evidence",
+      "fixing-the-design-quickly",
+      "go-back-to-the-old-design-on-friday",
+      "have-you-considered",
+      "have-you-considered-a-faster-option",
+      "he-can-t-be-a-beginner",
+      "he-can-t-be-a-beginner-his-french-is-perfect",
+      "he-might-not-be-a-beginner",
+      "he-mustn-t-be-a-beginner",
+      "how-does-marcos-know-it-can-t-be-the-design",
+      "i-d-suggest",
+      "i-d-suggest-a-one-week-test",
+      "i-see-it-differently",
+      "i-take-your-point",
+      "i-take-your-point-but",
+      "i-take-your-point-but-i-see-it-differently",
+      "if-i-m-wrong-we-go-back-to-the-old-design-fair",
+      "if-you-confirm-by",
+      "it-can-t-be",
+      "it-can-t-be-the-design-we-tested-it-twice",
+      "it-might-be-a-caching-problem",
+      "it-might-be-the-payment-system",
+      "it-might-be-worth-ing",
+      "it-might-be-worth-testing",
+      "it-might-be-worth-testing-the-speed",
+      "it-must-be",
+      "it-must-be-the-payment-system",
+      "las-dos-igual",
+      "last-month",
+      "let-s-test-it-and-see",
+      "might",
+      "must",
+      "must-not",
+      "mustn-t",
+      "ninguna-de-las-dos",
+      "on-friday",
+      "on-tuesday",
+      "people-stay-longer-on-the-new-home-page",
+      "pushing-back-with-data",
+      "run-a-one-week-test-on-checkout-speed",
+      "sales-went-up-right-after-the-redesign",
+      "she-might-be-in-a-meeting",
+      "someone-can-t-be-working-late",
+      "someone-might-work-late",
+      "someone-must-be-working-late",
+      "the-checkout-could-be-loading-too-slowly",
+      "the-checkout-page-loading-slowly",
+      "the-checkout-speed",
+      "the-checkout-took-nine-seconds-on-phones",
+      "the-data-suggests",
+      "the-design-was-driving-people-away",
+      "the-home-page-loading-slowly",
+      "the-home-page-took-nine-seconds-to-load",
+      "the-new-design",
+      "the-new-design-of-the-home-page",
+      "the-old-design-had-the-same-problem",
+      "the-payment-system",
+      "the-server-must-be-overloaded-look-at-these-numbers",
+      "they-dropped-more",
+      "they-recovered",
+      "they-stayed-the-same",
+      "to-back-it-up-with-evidence",
+      "to-come-in-under-budget",
+      "to-meet-you-halfway",
+      "to-push-back",
+      "to-push-back-on-something",
+      "to-try",
+      "trade-off",
+      "try",
+      "trying",
+      "unless",
+      "what-did-the-test-show",
+      "what-do-they-agree-to-do",
+      "what-does-priya-thank-marcos-for",
+      "what-does-priya-think-is-the-problem",
+      "what-happened-to-sales-after-the-fix",
+      "when-did-the-team-switch-to-the-faster-payment-option",
+      "with-respect",
+      "with-respect-the-data-suggests-something-else",
+      "working-over-the-weekend"
+    ]
+  }
 }

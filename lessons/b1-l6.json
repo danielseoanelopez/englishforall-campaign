@@ -45,37 +45,8 @@
       "type": "grammar",
       "tag": "futuro",
       "title": "<ico-book></ico-book> WILL vs GOING TO vs -ING",
-      "intro": "El inglés tiene tres futuros y cada uno dice algo distinto: <b style='color:var(--gold)'>will</b> (decisión ahora / promesa / predicción), <b style='color:var(--gold)'>going to</b> (plan / evidencia) y <b style='color:var(--gold)'>present continuous</b> (cita ya fijada).",
-      "cells": [
-        {
-          "h": "<ico-bolt></ico-bolt> will",
-          "body": "Decisión del momento, promesa, predicción:<br><span class='ok'>I<b>'ll</b> get it!</span> <span class='es'>(ahora)</span><br><span class='ok'>I<b>'ll</b> send it tonight, promise.</span>"
-        },
-        {
-          "h": "<ico-target></ico-target> going to",
-          "body": "Plan / intención, o evidencia visible:<br><span class='ok'>I'm <b>going to</b> improve the checkout.</span><br><span class='ok'>Look at those clouds — it's <b>going to</b> rain.</span>"
-        },
-        {
-          "h": "<ico-calendar></ico-calendar> present continuous",
-          "body": "Cita / arreglo ya fijado (con fecha):<br><span class='ok'>I'm <b>meeting</b> the designers on Monday.</span>"
-        },
-        {
-          "h": "⏰ by + tiempo",
-          "body": "<code>by Friday</code> = antes del/para el viernes<br><code>by then</code> = para entonces<br><span class='ok'>I'll have it done <b>by</b> the fifteenth.</span>"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='x'>I will meet the designers on Monday at 9.</span> <span class='es'>(cita fijada → continuous)</span><br><span class='ok'>I'm meeting the designers on Monday at 9.</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>¿Qué tan planeado está?</b> — de improvisado a agendado:",
-      "ladder": [
-        "I'll get it! (ahora)",
-        "I think it'll rain (predicción)",
-        "I'm going to learn Python (intención)",
-        "It's going to rain — look! (evidencia)",
-        "I'm meeting Ana at 9 (agendado)"
-      ],
+      "intro": "El inglés tiene tres futuros y cada uno dice algo distinto: <b style='color:var(--gold)'>will</b> (decisión del momento, promesa, predicción), <b style='color:var(--gold)'>going to</b> (plan o evidencia) y <b style='color:var(--gold)'>present continuous</b> (cita ya agendada). Cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
       "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de planificación",
       "vocab": [
         {
@@ -127,7 +98,129 @@
           "sp": "el próximo trimestre"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>memory</b> <ico-brain></ico-brain>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>unir</b> <ico-link></ico-link>. Haz el <ico-check></ico-check> CHECK en cada ejercicio. Al terminar… te espera el <b>BOSS</b> <ico-crown></ico-crown>."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>memoria</b> <ico-clone></ico-clone>, <b>comparar</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>unir</b> <ico-link></ico-link>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · WILL</b> <span class='es'>— decides en el momento, o prometes</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'll get it!",
+              "sp": "¡Yo atiendo! — lo decides ahora mismo."
+            },
+            {
+              "en": "I'll send it tonight. I promise.",
+              "sp": "Te lo envío esta noche. Lo prometo."
+            },
+            {
+              "en": "I'll have it done by the fifteenth.",
+              "sp": "Lo tendré listo para el quince."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>En español esto va en presente</b> («Yo atiendo», «Te lo envío»). En inglés necesita will: <s class='x'>I get it!</s> → <span class='ok'>I'll get it!</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · WILL PARA PREDECIR</b> <span class='es'>— lo que crees que va a pasar</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I think sales will double next year.",
+              "sp": "Creo que las ventas se van a duplicar el año que viene."
+            },
+            {
+              "en": "The page will load in under two seconds.",
+              "sp": "La página va a cargar en menos de dos segundos."
+            },
+            {
+              "en": "It won't be ready this year.",
+              "sp": "No va a estar lista este año. — <b>won't</b> = will not."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · GOING TO</b> <span class='es'>— plan ya decidido, o evidencia a la vista</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'm going to improve the checkout speed.",
+              "sp": "Voy a mejorar la velocidad del checkout. — ya lo tenías decidido."
+            },
+            {
+              "en": "GreenMarket is going to expand.",
+              "sp": "GreenMarket se va a expandir."
+            },
+            {
+              "en": "Look at those clouds. It's going to rain.",
+              "sp": "Mira esas nubes: va a llover. — lo ves venir."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · PRESENT CONTINUOUS</b> <span class='es'>— ya está en el calendario</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'm meeting the designers on Monday.",
+              "sp": "Me reúno con los diseñadores el lunes."
+            },
+            {
+              "en": "We're launching the app in October.",
+              "sp": "Lanzamos la app en octubre."
+            },
+            {
+              "en": "He's visiting our office next Friday.",
+              "sp": "Visita nuestra oficina el próximo viernes."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Si tiene día y hora y ya está acordado, usa -ing.</b> Con will suena a que lo decides ahora: <s class='x'>I will meet the designers on Monday at nine.</s> → <span class='ok'>I'm meeting the designers on Monday at nine.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · BY + FECHA LÍMITE</b> <span class='es'>— para cuándo estará listo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "by Friday",
+              "sp": "para el viernes — ese día como máximo."
+            },
+            {
+              "en": "by the end of the month",
+              "sp": "para fin de mes"
+            },
+            {
+              "en": "by then",
+              "sp": "para entonces"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>By no es until.</b> By = fecha límite; until = «hasta», algo que dura todo ese tiempo: <s class='x'>I'll finish it until Friday.</s> → <span class='ok'>I'll finish it by Friday.</span> · I'll work <b>until</b> six."
+        }
+      ]
     },
     {
       "type": "flashcards",
@@ -228,7 +321,8 @@
           "a": "by then",
           "b": "para entonces"
         }
-      ]
+      ],
+      "speakSide": "a"
     },
     {
       "type": "contrast",
@@ -445,6 +539,24 @@
             "'ll meet"
           ],
           "answer": 0
+        },
+        {
+          "q": "I'll work on it ___ six, then I'm going home.",
+          "options": [
+            "by",
+            "until",
+            "in"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "I think sales ___ double next year.",
+          "options": [
+            "will",
+            "are",
+            "going"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -518,6 +630,16 @@
             "She is going to be on holiday"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "When is David visiting the office?",
+          "options": [
+            "Next Friday",
+            "On Monday",
+            "In October"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -543,7 +665,7 @@
         "1 predicción (I think… will…)"
       ],
       "placeholder": "Next quarter is going to be big for me. First, I'm going to…",
-      "example": "Next quarter is going to be big for me… — sigue tú: dos planes con going to, una cita fija con present continuous, una promesa con will y dos fechas con by.",
+      "example": "Next quarter is going to be big for me. I'm going to <span class=\"gap\">plan</span> and I'm going to <span class=\"gap\">plan</span>. I'm <span class=\"gap\">verbo-ing</span> <span class=\"gap\">persona / lugar</span> on <span class=\"gap\">fecha</span>. I'll <span class=\"gap\">promesa</span> by <span class=\"gap\">fecha límite</span>. By the end of <span class=\"gap\">mes</span>, I'll <span class=\"gap\">logro</span>. I think <span class=\"gap\">algo</span> will <span class=\"gap\">predicción</span>.",
       "hw": "Escribe tu roadmap y después grábate presentándolo <b>sin leer</b>, como si fuera tu pitch. Envíame ambos por WhatsApp. ¡Y prepárate: el BOSS te espera! <ico-crown></ico-crown>",
       "rubric": [
         {
@@ -560,5 +682,116 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/b1-l6",
+    "keys": [
+      "a-will",
+      "are",
+      "at",
+      "b-present-continuous",
+      "by",
+      "by-friday",
+      "by-the-end-of-the-month",
+      "by-the-end-of-the-year",
+      "by-then",
+      "david-asked-for-him-by-name",
+      "did",
+      "expand-to-three-new-countries",
+      "forecast",
+      "from-monday-on",
+      "goal",
+      "goes",
+      "going",
+      "greenmarket-is-going-to-expand",
+      "growth",
+      "he-has-grown-a-lot-this-quarter",
+      "he-s-visiting-our-office-next-friday",
+      "here-s-my-forecast",
+      "i-ll-get-it",
+      "i-ll-have-it-done-by",
+      "i-ll-have-it-done-by-the-fifteenth",
+      "i-ll-send-it-tonight-i-promise",
+      "i-ll-send-you-the-report",
+      "i-m-getting-it",
+      "i-m-going-to",
+      "i-m-going-to-get-it",
+      "i-m-going-to-improve-the-checkout-speed",
+      "i-m-meeting-him-at-9",
+      "i-m-meeting-the-designers-on-monday",
+      "i-m-sending-the-report-at-five",
+      "i-take-your-point-but",
+      "i-think-sales-will-double-next-year",
+      "in",
+      "in-october",
+      "in-two-weeks",
+      "is-going",
+      "is-going-to",
+      "it-can-t-be",
+      "it-rains",
+      "it-s-all-arranged",
+      "it-s-going-to-rain",
+      "it-will-rain",
+      "it-won-t-be-ready-this-year",
+      "las-dos-igual",
+      "launch-the-mobile-app-early",
+      "launching-the-mobile-app",
+      "ll",
+      "ll-meet",
+      "look-at-those-clouds-it-s-going-to-rain",
+      "m-going-to",
+      "m-meeting",
+      "meet",
+      "meeting-priya-about-the-roadmap",
+      "meeting-the-designers",
+      "milestone",
+      "next-friday",
+      "next-quarter",
+      "next-year",
+      "ninguna-de-las-dos",
+      "on-monday",
+      "open-a-new-office-in-mexico",
+      "our-main-goal-is-to",
+      "pitch",
+      "presenting-the-expansion-plan",
+      "presenting-to-the-client",
+      "quarter",
+      "rains",
+      "roadmap",
+      "sales-will-double-next-year",
+      "sales-will-grow-ten-percent",
+      "sales-will-stay-the-same",
+      "she-is-going-to-be-on-holiday",
+      "the-big-pitch",
+      "the-checkout-speed",
+      "the-data-suggests",
+      "the-day-after-tomorrow",
+      "the-mobile-app-design",
+      "the-page-will-load-in-under-two-seconds",
+      "the-payment-system",
+      "this-week",
+      "to-be-on-the-roadmap",
+      "to-expand",
+      "to-expand-into-new-markets",
+      "to-hold-someone-to-something",
+      "to-look-ahead",
+      "to-push-back-on-something",
+      "until",
+      "visiting-the-client-s-office",
+      "was-going-to",
+      "we-re-launching-the-app-in-october",
+      "we-re-on-course-to",
+      "what-is-david-going-to-do",
+      "what-is-marcos-doing-next-friday",
+      "what-is-marcos-going-to-improve-first",
+      "what-is-priya-s-forecast",
+      "what-is-sofia-doing-on-monday",
+      "when-are-they-launching-the-mobile-app",
+      "when-is-david-visiting-the-office",
+      "why-does-priya-want-marcos-to-present",
+      "will",
+      "with-respect",
+      "would"
+    ]
+  }
 }

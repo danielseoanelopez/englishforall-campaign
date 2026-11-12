@@ -45,37 +45,8 @@
       "type": "grammar",
       "tag": "conditionals",
       "title": "<ico-book></ico-book> CONDICIONALES · 1st & 2nd",
-      "intro": "Para negociar necesitas condicionales: el <b style='color:var(--gold)'>1st conditional</b> para cosas posibles y reales, y el <b style='color:var(--gold)'>2nd conditional</b> para situaciones hipotéticas. Repasa y luego practica.",
-      "cells": [
-        {
-          "h": "1️⃣ First conditional",
-          "body": "<code>If + present, will + verbo</code><br><span class='ok'>If you confirm today, we <b>will start</b> Monday.</span> <span class='es'>(posible / real)</span>"
-        },
-        {
-          "h": "2️⃣ Second conditional",
-          "body": "<code>If + past, would + verbo</code><br><span class='ok'>If we <b>had</b> more time, we <b>would add</b> more features.</span> <span class='es'>(hipotético)</span>"
-        },
-        {
-          "h": "<ico-ban></ico-ban> unless",
-          "body": "<code>unless</code> = if not:<br><i>We can't start <b>unless</b> you confirm.</i> <span class='es'>(a menos que)</span>"
-        },
-        {
-          "h": "<ico-handshake></ico-handshake> as long as",
-          "body": "<code>as long as</code> = siempre que:<br><i>We'll finish on time <b>as long as</b> nothing changes.</i>"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='x'>If you will confirm…</span><br><span class='ok'>If you confirm…</span> <span class='es'>(no 'will' después de if)</span><br><span class='ok'>If I <b>were</b> you, I'd…</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Escala de negociación</b> — frases con condicionales, de más directa a más diplomática:",
-      "ladder": [
-        "If you don't pay, we stop.",
-        "Unless you confirm, we can't start.",
-        "If you confirm today, we'll start Monday.",
-        "As long as the scope stays, we're fine.",
-        "If we had more budget, we'd do it all."
-      ],
+      "intro": "Negociar es hablar de condiciones: «si haces esto, hacemos aquello». El <b style='color:var(--gold)'>1st conditional</b> es para ofertas reales; el <b style='color:var(--gold)'>2nd conditional</b>, para lo hipotético. Cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
       "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de negociación",
       "vocab": [
         {
@@ -127,7 +98,125 @@
           "sp": "cerrar el trato"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> <ico-filepen></ico-filepen>, <b>elegir respuestas</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>unir</b> <ico-link></ico-link>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>completar</b> <ico-filepen></ico-filepen>, <b>elegir respuestas</b> <ico-comments></ico-comments>, <b>comparar</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>unir</b> <ico-link></ico-link>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · FIRST CONDITIONAL</b> <span class='es'>— posible y real: If + presente, will + verbo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "If you confirm today, we'll start on Monday.",
+              "sp": "Si confirmas hoy, empezamos el lunes. — una oferta real."
+            },
+            {
+              "en": "If you want the extra feature, there will be an extra cost.",
+              "sp": "Condición y consecuencia."
+            },
+            {
+              "en": "We'll call you if the site crashes again.",
+              "sp": "El orden es libre. Si <b>if</b> va segundo, no lleva coma."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Después de if nunca va will,</b> aunque hables del futuro: <s class='x'>If you will confirm today…</s> → <span class='ok'>If you confirm today…</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · SECOND CONDITIONAL</b> <span class='es'>— hipotético: If + pasado, would + verbo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "If we had more time, we would add a mobile app.",
+              "sp": "Si tuviéramos más tiempo, agregaríamos una app. — pero no lo tenemos."
+            },
+            {
+              "en": "If the budget were bigger, we'd hire another developer.",
+              "sp": "<b>we'd</b> = we would. Con be se usa <b>were</b> para todas las personas."
+            },
+            {
+              "en": "If I were you, I'd ask for two more weeks.",
+              "sp": "Yo que tú, pediría dos semanas más. — la fórmula para aconsejar."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Es tu «si tuviera…, haría…».</b> El pasado aquí no habla de ayer: marca que es imaginario. Y would va solo en la otra mitad: <s class='x'>If we would have more time…</s> → <span class='ok'>If we had more time…</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · ¿REAL O HIPOTÉTICO?</b> <span class='es'>— la misma oferta, dos mensajes</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "If you confirm today, we'll start on Monday.",
+              "sp": "La oferta está <b>sobre la mesa</b>: esperas que confirme."
+            },
+            {
+              "en": "If you confirmed today, we'd start on Monday.",
+              "sp": "Suena a «imaginemos que…»: más suave y con menos compromiso."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · UNLESS / AS LONG AS</b> <span class='es'>— poner condiciones</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We can't start unless you confirm.",
+              "sp": "No podemos empezar a menos que confirmes. — <b>unless</b> = if not."
+            },
+            {
+              "en": "We'll deliver on time as long as the scope doesn't change.",
+              "sp": "Entregamos a tiempo siempre que el alcance no cambie."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Unless ya trae el «no» adentro:</b> <s class='x'>unless you don't confirm</s> → <span class='ok'>unless you confirm</span> Y donde el español usa subjuntivo (confirmes, cambie), el inglés usa presente normal."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · FRASES PARA CERRAR EL TRATO</b> <span class='es'>— cortas, y se usan todo el tiempo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The best I can do is ten percent.",
+              "sp": "Lo máximo que puedo ofrecer es diez por ciento."
+            },
+            {
+              "en": "Can we meet halfway?",
+              "sp": "¿Llegamos a un punto medio?"
+            },
+            {
+              "en": "That sounds fair.",
+              "sp": "Me parece justo."
+            },
+            {
+              "en": "Deal?",
+              "sp": "¿Trato hecho? — y se responde igual: <b>Deal.</b>"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "flashcards",
@@ -303,7 +392,7 @@
           "options": [
             "If you will pay more, we build both.",
             "If you increase the budget a little, we'll build both.",
-            "No. Goodbye."
+            "That's impossible. Choose one."
           ],
           "answer": 1
         },
@@ -317,7 +406,7 @@
           "q": "Respondes a la hipótesis (2nd conditional):",
           "options": [
             "If we have a bigger budget, we will added apps.",
-            "I am from the web team.",
+            "If we would have a bigger budget, we add a mobile app.",
             "If we had a bigger budget, we would add a mobile app too."
           ],
           "answer": 2
@@ -332,7 +421,7 @@
           "options": [
             "Yes — as long as the scope doesn't change, we'll deliver on time.",
             "Unless we deliver, the deadline is Friday.",
-            "It was last week."
+            "Yes, if the scope won't change, we deliver."
           ],
           "answer": 0
         },
@@ -345,7 +434,7 @@
           "gap": true,
           "q": "Explicas la consecuencia con tacto:",
           "options": [
-            "She is a teacher.",
+            "If you won't confirm, we don't start.",
             "Unless you confirm this week, we can't start until next month.",
             "If you don't confirm, is your problem."
           ],
@@ -575,6 +664,16 @@
             "She thinks it was smart"
           ],
           "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Marcos joke about at the end?",
+          "options": [
+            "The server crashing again",
+            "The ten percent discount",
+            "Priya's budget"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
@@ -627,7 +726,7 @@
         "Cierra pidiendo confirmación (<i>Could you confirm by…?</i>)"
       ],
       "placeholder": "Hi David, Thanks for your message about…",
-      "example": "Thanks for your message about the extra features — it's a great idea… — sigue tú: una condición real (1st), una hipótesis (2nd), un unless o as long as, y cierra pidiendo confirmación.",
+      "example": "Hi <span class=\"gap\">nombre</span>,<br>Thanks for your message about <span class=\"gap\">pedido</span>. If you <span class=\"gap\">presente</span>, we will <span class=\"gap\">verbo</span>. If we had <span class=\"gap\">algo</span>, we would <span class=\"gap\">verbo</span>. We can deliver by <span class=\"gap\">fecha</span> as long as <span class=\"gap\">condición</span>. Could you confirm by <span class=\"gap\">día</span>?<br>Best regards,<br><span class=\"gap\">tu nombre</span>",
       "hw": "Escribe tu contraoferta y envíamela por WhatsApp. Después grábate <b>diciéndosela al cliente en voz alta, sin leer</b> — tono tranquilo y firme.",
       "rubric": [
         {
@@ -644,5 +743,128 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/b1-l4",
+    "keys": [
+      "a-1st-conditional",
+      "a-bigger-budget",
+      "a-change-of-scope",
+      "a-mobile-app",
+      "a-new-logo",
+      "a-smaller-scope",
+      "am",
+      "and-if-i-don-t-confirm-this-week",
+      "and-what-would-you-do-with-a-bigger-budget-hypothetically",
+      "as-long-as",
+      "as-long-as-nothing-changes",
+      "as-soon-as",
+      "ask-priya-for-a-bigger-budget",
+      "at-no-extra-cost",
+      "b-2nd-conditional",
+      "budget",
+      "can-we-meet-halfway",
+      "can-you-guarantee-the-deadline",
+      "david-confirms-phase-two-on-friday",
+      "deal",
+      "deliver-the-website-on-the-fifteenth",
+      "discount",
+      "extra-cost",
+      "fifty-percent",
+      "had",
+      "have",
+      "if",
+      "if-i-were-you",
+      "if-i-were-you-i-d-ask-for-two-more-weeks",
+      "if-the-budget-were-bigger-we-d-hire-another-developer",
+      "if-the-site-crashes-again",
+      "if-we-had-a-bigger-budget-we-would-add-a-mobile-app-too",
+      "if-we-had-more-budget",
+      "if-we-had-more-budget-we-will-build-it",
+      "if-we-had-more-budget-we-would-build-it",
+      "if-we-had-more-time-we-would-add-a-mobile-app",
+      "if-we-have-a-bigger-budget-we-will-added-apps",
+      "if-we-have-more-budget-we-will-build-it",
+      "if-we-would-have-a-bigger-budget-we-add-a-mobile-app",
+      "if-you-confirm-by",
+      "if-you-confirm-today",
+      "if-you-confirm-today-we-ll-start-monday",
+      "if-you-confirm-today-we-ll-start-on-monday",
+      "if-you-confirmed-today-we-d-start-monday",
+      "if-you-confirmed-today-we-d-start-on-monday",
+      "if-you-don-t-confirm-is-your-problem",
+      "if-you-increase-the-budget-a-little-we-ll-build-both",
+      "if-you-want-the-extra-feature-there-will-be-an-extra-cost",
+      "if-you-will-confirm-today-we-start-monday",
+      "if-you-will-pay-more-we-build-both",
+      "if-you-won-t-confirm-we-don-t-start",
+      "is",
+      "las-dos-igual",
+      "more-payment-options",
+      "more-time-to-plan-it",
+      "ninguna-de-las-dos",
+      "out-of-nowhere",
+      "priya-approves-a-bigger-budget",
+      "priya-s-budget",
+      "scope",
+      "she-thinks-it-was-risky",
+      "she-thinks-it-was-smart",
+      "she-thinks-it-was-too-cheap",
+      "start-planning-phase-two-next-week",
+      "started",
+      "ten-percent",
+      "that-s-impossible-choose-one",
+      "that-sounds-fair",
+      "that-works-for-us",
+      "the-app-becomes-phase-two-with-a-discount",
+      "the-app-is-built-now-at-thirty-percent-more",
+      "the-app-is-dropped-and-the-site-launches-early",
+      "the-best-i-can-do-is",
+      "the-best-i-can-do-is-ten-percent",
+      "the-scope-does-not-change-again",
+      "the-server-crashing-again",
+      "the-site-went-down",
+      "the-ten-percent-discount",
+      "thirty-percent",
+      "to-close-the-deal",
+      "to-come-in-under-budget",
+      "to-confirm",
+      "to-deliver",
+      "to-keep-an-eye-on",
+      "to-look-into-the-logs",
+      "to-meet-you-halfway",
+      "to-negotiate",
+      "to-push-it-to-phase-two",
+      "unless",
+      "unless-we-deliver-the-deadline-is-friday",
+      "unless-you-confirm-this-week-we-can-t-start-until-next-month",
+      "unless-you-sign",
+      "want",
+      "wanted",
+      "was",
+      "we-can-t-start-unless-you-confirm",
+      "we-ll-call-you-if-the-site-crashes-again",
+      "we-ll-deliver-on-time-as-long-as-the-scope-doesn-t-change",
+      "we-need-the-app-and-the-website-for-the-same-price",
+      "were",
+      "what-discount-did-marcos-offer-david",
+      "what-do-they-agree-in-the-end",
+      "what-does-david-want-to-add-to-the-project",
+      "what-does-marcos-joke-about-at-the-end",
+      "what-does-sofia-think-of-the-deal",
+      "what-is-marcos-s-condition-for-delivering-on-the-fifteenth",
+      "what-is-priya-s-condition-for-building-the-app",
+      "what-will-sofia-do-if-david-confirms-on-friday",
+      "will",
+      "will-be",
+      "will-have",
+      "will-start",
+      "will-want",
+      "would",
+      "would-have",
+      "would-start",
+      "yes-as-long-as-the-scope-doesn-t-change-we-ll-deliver-on-time",
+      "yes-if-the-scope-won-t-change-we-deliver"
+    ]
+  }
 }

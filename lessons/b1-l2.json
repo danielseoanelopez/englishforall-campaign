@@ -21,7 +21,7 @@
       "pairs": [
         {
           "l": "to give / get feedback",
-          "r": "dar / recibir devolución"
+          "r": "dar / recibir comentarios"
         },
         {
           "l": "to meet a deadline",
@@ -45,37 +45,8 @@
       "type": "grammar",
       "tag": "meetings",
       "title": "<ico-book></ico-book> RUNNING A MEETING · frases clave",
-      "intro": "En B1, no solo participas en reuniones: las <b style='color:var(--gold)'>diriges</b>. Aprende a estructurar, estar de acuerdo o discrepar, e interrumpir con educación. Repasa y luego practica.",
-      "cells": [
-        {
-          "h": "<ico-mic></ico-mic> Estructurar",
-          "body": "<code>Let's get started.</code><br><code>Let's move on to…</code><br><code>Let's wrap up.</code> <span class='es'>(cerrar)</span>"
-        },
-        {
-          "h": "<ico-thumbup></ico-thumbup> De acuerdo",
-          "body": "<code>I completely agree.</code><br><code>Good point.</code><br><code>You're right.</code>"
-        },
-        {
-          "h": "<ico-thumbdown></ico-thumbdown> Discrepar (con tacto)",
-          "body": "<code>I see your point, but…</code><br><code>I'm not sure I agree.</code><br><code>I'd say…</code>"
-        },
-        {
-          "h": "<ico-hand></ico-hand> Interrumpir / aclarar",
-          "body": "<code>Sorry to jump in, but…</code><br><code>Can I add something?</code><br><code>Could you clarify that?</code>"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='x'>You're wrong.</span> <span class='es'>(brusco)</span><br><span class='ok'>I see your point, but I'm not sure that works.</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Escala de diplomacia</b> — de brusco (<ico-xmark></ico-xmark>) a profesional (<ico-check></ico-check>). En el trabajo, movete a la derecha:",
-      "ladder": [
-        "No.",
-        "I don't think so.",
-        "I'm not sure I agree.",
-        "I see your point, but…",
-        "That's a good idea, though maybe…"
-      ],
+      "intro": "En B1 ya no solo participas en reuniones: las <b style='color:var(--gold)'>diriges</b>. Eso pide frases para abrir, estar de acuerdo, discrepar sin sonar brusco, proponer y cerrar. Cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
       "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de reuniones",
       "vocab": [
         {
@@ -127,7 +98,151 @@
           "sp": "tarea pendiente"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>unir</b> <ico-link></ico-link>, <b>elegir respuestas</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>unir</b> <ico-link></ico-link>, <b>elegir respuestas</b> <ico-comments></ico-comments>, <b>completar</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · ABRIR Y LLEVAR EL RITMO</b> <span class='es'>— tú marcas los tiempos</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Let's get started.",
+              "sp": "Empecemos."
+            },
+            {
+              "en": "Let's keep it short.",
+              "sp": "Hagámoslo breve."
+            },
+            {
+              "en": "Sofia, could you start with GreenMarket?",
+              "sp": "Das la palabra con nombre + could you."
+            },
+            {
+              "en": "Let's move on to the next steps.",
+              "sp": "Pasemos a los próximos pasos. — cambias de tema."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Let's + verbo</b> es la forma natural de dirigir sin dar órdenes: incluye a todos. Va sin to: <s class='x'>Let's to start.</s> → <span class='ok'>Let's start.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · ESTAR DE ACUERDO</b> <span class='es'>— corto y claro</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I completely agree.",
+              "sp": "Estoy totalmente de acuerdo."
+            },
+            {
+              "en": "Good point.",
+              "sp": "Buen punto."
+            },
+            {
+              "en": "You're right.",
+              "sp": "Tienes razón."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>El error más común de un hispanohablante en reuniones:</b> <s class='x'>I'm agree.</s> → <span class='ok'>I agree.</span> <b>Agree</b> ya es el verbo, no lleva am. Y «tener razón» es <b>be right</b>: <s class='x'>You have reason.</s> → <span class='ok'>You're right.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · DISCREPAR CON TACTO</b> <span class='es'>— primero reconoces, después el «pero»</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "No.",
+            "I don't think so.",
+            "I'm not sure I agree.",
+            "I see your point, but…"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I see your point, but we might miss the deadline.",
+              "sp": "Entiendo tu punto, pero podríamos no llegar a la fecha."
+            },
+            {
+              "en": "I'm not sure I agree.",
+              "sp": "No estoy seguro de estar de acuerdo. — suave, deja la puerta abierta."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>De izquierda a derecha, cada frase es más diplomática.</b> «You're wrong» suena a ataque: critica la idea, no a la persona. <b>Might</b> (podría) también suaviza: no afirmas, adviertes."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · PROPONER</b> <span class='es'>— ideas en forma de pregunta o sugerencia</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "What if we show them a demo first?",
+              "sp": "¿Y si primero les mostramos una demo?"
+            },
+            {
+              "en": "I'd suggest we launch on Friday as planned.",
+              "sp": "Sugeriría que lancemos el viernes como estaba previsto."
+            },
+            {
+              "en": "Could we plan it for the next phase?",
+              "sp": "¿Podríamos planearlo para la próxima fase?"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Suggest no lleva «to» ni persona directa.</b> <s class='x'>I suggest you to wait.</s> → <span class='ok'>I'd suggest we wait.</span> · <s class='x'>I suggest to launch on Friday.</s> → <span class='ok'>I'd suggest launching on Friday.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · INTERRUMPIR, ACLARAR Y CERRAR</b> <span class='es'>— sin perder el control de la reunión</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Sorry to jump in, but can I add something?",
+              "sp": "Perdón que interrumpa, ¿puedo agregar algo?"
+            },
+            {
+              "en": "Could you clarify that?",
+              "sp": "¿Podrías aclarar eso?"
+            },
+            {
+              "en": "So, to confirm the next steps: we launch on Friday.",
+              "sp": "Antes de cerrar, repites los acuerdos en voz alta."
+            },
+            {
+              "en": "Are we all agreed?",
+              "sp": "¿Estamos todos de acuerdo?"
+            },
+            {
+              "en": "Let's wrap up. Thanks, everyone.",
+              "sp": "Vamos cerrando. Gracias a todos."
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "flashcards",
@@ -234,7 +349,7 @@
       "type": "dialogue",
       "id": "ex-dlg",
       "title": "ELIGE LA RESPUESTA DIPLOMÁTICA",
-      "intro": "Estás en una reunión. Elige la opción más profesional y educada.",
+      "intro": "Estás en una reunión. Las tres opciones se entienden, pero solo una suena profesional y está bien dicha.",
       "lines": [
         {
           "spk": "Priya",
@@ -245,7 +360,7 @@
           "q": "Discrepas, pero con tacto:",
           "options": [
             "I see your point, but maybe we could delay it instead of canceling?",
-            "Whatever you say.",
+            "I'm not agree. We can't cancel it.",
             "No, that's a bad idea."
           ],
           "answer": 0
@@ -259,8 +374,8 @@
           "gap": true,
           "q": "Tomas la palabra y resumes:",
           "options": [
-            "It was last week.",
-            "I don't know, ask David.",
+            "Sofia already knows where we are.",
+            "Why? You were in the last meeting.",
             "Sure. So far, we've finished the design and we're testing the payments."
           ],
           "answer": 2
@@ -274,8 +389,8 @@
           "q": "Quieres interrumpir con cortesía:",
           "options": [
             "Sorry to jump in, but can we focus on the next steps?",
-            "Stop talking, please.",
-            "Yes, I went there yesterday."
+            "Stop, please. This isn't important.",
+            "Can you finish? We don't have time."
           ],
           "answer": 0
         },
@@ -288,8 +403,8 @@
           "q": "Confirmas y cierras la reunión:",
           "options": [
             "Yes, I think we're all on the same page. Let's wrap up.",
-            "I'm from Mexico.",
-            "She is a teacher."
+            "Yes. Bye, everyone.",
+            "I'm agree. The meeting is finish."
           ],
           "answer": 0
         }
@@ -354,6 +469,24 @@
             "close"
           ],
           "answer": 1
+        },
+        {
+          "q": "I completely ___ with Sofia.",
+          "options": [
+            "agree",
+            "am agree",
+            "agreeing"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "So, to ___ the next steps: we launch on Friday.",
+          "options": [
+            "confirm",
+            "clarify",
+            "wrap"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -393,6 +526,16 @@
             "Launch the chat on Friday",
             "Show the client a demo first",
             "Ask the client to wait a month"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "When do they start the live chat?",
+          "options": [
+            "On Friday",
+            "On Monday",
+            "Next month"
           ],
           "answer": 1
         }
@@ -465,18 +608,28 @@
             "see",
             "your",
             "point",
-            "but"
+            "but",
+            "we",
+            "might",
+            "miss",
+            "the",
+            "deadline"
           ],
-          "answer": "I see your point but"
+          "answer": "I see your point but we might miss the deadline"
         },
         {
           "words": [
             "Sorry",
             "to",
             "jump",
-            "in"
+            "in",
+            "but",
+            "can",
+            "I",
+            "add",
+            "something"
           ],
-          "answer": "Sorry to jump in"
+          "answer": "Sorry to jump in but can I add something"
         },
         {
           "words": [
@@ -489,6 +642,31 @@
             "steps"
           ],
           "answer": "Could we focus on the next steps"
+        },
+        {
+          "words": [
+            "What",
+            "if",
+            "we",
+            "show",
+            "them",
+            "a",
+            "demo",
+            "first"
+          ],
+          "answer": "What if we show them a demo first"
+        },
+        {
+          "words": [
+            "Let's",
+            "move",
+            "on",
+            "to",
+            "the",
+            "next",
+            "steps"
+          ],
+          "answer": "Let's move on to the next steps"
         }
       ]
     },
@@ -498,16 +676,16 @@
       "title": "AUDIO 2 · THE CLIENT SYNC",
       "desc": "Marcos llama a David. El cliente presiona por la función nueva. Marcos gestiona sus expectativas.",
       "src": "b1-l2-2.mp3",
-      "dur": "1:08",
+      "dur": "1:07",
       "speakers": "<ico-commentdots></ico-commentdots> Marcos + David",
       "questions": [
         {
           "type": "mcq",
-          "q": "When does Marcos suggest launching the live chat?",
+          "q": "What does David want by Friday?",
           "options": [
-            "Next Monday",
-            "This Friday",
-            "The following month"
+            "The live chat",
+            "A new design",
+            "A summary email"
           ],
           "answer": 0
         },
@@ -528,6 +706,16 @@
             "The chat will be ready by Friday",
             "The site will launch next week",
             "The chat will be ready by Monday"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What is Marcos going to send David after the call?",
+          "options": [
+            "A demo video",
+            "The test results",
+            "A summary email"
           ],
           "answer": 2
         }
@@ -596,7 +784,7 @@
         "Cierra (<i>Let me know if you have any questions.</i>)"
       ],
       "placeholder": "Hi team, Following our meeting today,",
-      "example": "Hi team, following our meeting today, here's a quick recap… — sigue tú: dos acuerdos, una propuesta con I'd suggest, y los next steps con responsable y fecha.",
+      "example": "Hi team,<br>Following our meeting today, here is a quick recap. We agreed to <span class=\"gap\">acuerdo 1</span>. We also agreed to <span class=\"gap\">acuerdo 2</span>. I'd suggest we <span class=\"gap\">propuesta</span>.<br>Next steps: <span class=\"gap\">persona</span> will <span class=\"gap\">tarea</span> by <span class=\"gap\">día</span>, and <span class=\"gap\">persona</span> will <span class=\"gap\">tarea</span> by <span class=\"gap\">día</span>.<br>Let me know if you have any questions.<br><span class=\"gap\">tu nombre</span>",
       "hw": "Escribe tu email de resumen y envíamelo por WhatsApp. Después grábate <b>presentando los next steps en voz alta, sin leer</b>, como si cerraras la reunión.",
       "rubric": [
         {
@@ -613,5 +801,120 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/b1-l2",
+    "keys": [
+      "a-demo-video",
+      "a-live-chat",
+      "a-new-design",
+      "a-new-logo",
+      "a-payment-system",
+      "a-quick-update-on",
+      "a-summary-email",
+      "action-item",
+      "add-it-before-friday-s-launch",
+      "agenda",
+      "agree",
+      "agreeing",
+      "am-agree",
+      "and-back-in-2019-we-also-tried-a-different-layout-and-then-we-changed-the-colors",
+      "are-we-all-agreed",
+      "ask-the-client-to-drop-it",
+      "ask-the-client-to-wait-a-month",
+      "because",
+      "but",
+      "can-you-finish-we-don-t-have-time",
+      "clarify",
+      "close",
+      "confirm",
+      "could",
+      "could-we-plan-it-for-the-next-phase",
+      "could-you-clarify-that",
+      "cut",
+      "do",
+      "enter",
+      "go",
+      "good-point",
+      "how",
+      "i-completely-agree",
+      "i-d-suggest-we-launch-on-friday-as-planned",
+      "i-m-agree-the-meeting-is-finish",
+      "i-m-not-agree-we-can-t-cancel-it",
+      "i-m-not-sure-i-agree",
+      "i-see-your-point-but",
+      "i-see-your-point-but-maybe-we-could-delay-it-instead-of-canceling",
+      "i-see-your-point-but-we-might-miss-the-deadline",
+      "jump",
+      "launch-the-chat-on-friday",
+      "let-s-get-started",
+      "let-s-keep-it-short",
+      "let-s-move-on-to",
+      "let-s-move-on-to-the-next-steps",
+      "let-s-wrap-up",
+      "let-s-wrap-up-thanks-everyone",
+      "marcos-can-you-summarize-where-we-are-with-greenmarket",
+      "minutes",
+      "moving-on",
+      "must",
+      "next-month",
+      "next-steps",
+      "no-that-s-a-bad-idea",
+      "on-friday",
+      "on-monday",
+      "order",
+      "plan-it-for-the-next-phase",
+      "show-the-client-a-demo-first",
+      "so",
+      "so-are-we-all-agreed-on-the-new-plan",
+      "so-far-this-quarter",
+      "so-to-confirm-the-next-steps-we-launch-on-friday",
+      "sofia-already-knows-where-we-are",
+      "sofia-could-you-start-with-greenmarket",
+      "sorry-to-jump-in-but",
+      "sorry-to-jump-in-but-can-i-add-something",
+      "sorry-to-jump-in-but-can-we-focus-on-the-next-steps",
+      "stop-please-this-isn-t-important",
+      "suggest",
+      "sure-so-far-we-ve-finished-the-design-and-we-re-testing-the-payments",
+      "the-chat-will-be-ready-by-friday",
+      "the-chat-will-be-ready-by-monday",
+      "the-client-has-not-confirmed-it",
+      "the-designers-are-not-available",
+      "the-live-chat",
+      "the-site-will-launch-next-week",
+      "the-test-results",
+      "they-might-rush-it-and-cause-bugs",
+      "to-be-on-the-same-page",
+      "to-chair-a-meeting",
+      "to-confirm-the-next-steps",
+      "to-fall-behind-schedule",
+      "to-follow-up",
+      "to-follow-up-on",
+      "to-give-get-feedback",
+      "to-meet-a-deadline",
+      "to-run-chair-a-meeting",
+      "to-wrap-up",
+      "want",
+      "we-re-behind-schedule-i-think-we-should-cancel-the-new-feature",
+      "we-re-on-the-same-page",
+      "what",
+      "what-does-david-want-by-friday",
+      "what-does-marcos-promise-david",
+      "what-does-marcos-suggest-about-the-new-feature",
+      "what-does-sofia-suggest-as-a-compromise",
+      "what-does-the-client-want-to-add",
+      "what-if-we",
+      "what-if-we-show-them-a-demo-first",
+      "what-is-marcos-going-to-send-david-after-the-call",
+      "when-do-they-start-the-live-chat",
+      "why",
+      "why-doesn-t-marcos-want-to-add-the-chat-by-friday",
+      "why-you-were-in-the-last-meeting",
+      "wrap",
+      "yes-bye-everyone",
+      "yes-i-think-we-re-all-on-the-same-page-let-s-wrap-up",
+      "you-re-right"
+    ]
+  }
 }

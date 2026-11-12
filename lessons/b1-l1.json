@@ -20,24 +20,24 @@
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
-          "l": "A trip",
-          "r": "un viaje"
+          "l": "I'm going to…",
+          "r": "voy a…"
         },
         {
-          "l": "To fly",
-          "r": "volar / viajar en avión"
+          "l": "The day after tomorrow",
+          "r": "pasado mañana"
         },
         {
-          "l": "To arrange",
-          "r": "organizar / acordar"
+          "l": "To hire",
+          "r": "contratar"
         },
         {
-          "l": "To launch",
-          "r": "lanzar"
+          "l": "A goal",
+          "r": "una meta"
         },
         {
-          "l": "To improve",
-          "r": "mejorar"
+          "l": "Excited about",
+          "r": "entusiasmado con"
         }
       ]
     },
@@ -45,38 +45,8 @@
       "type": "grammar",
       "tag": "present perfect",
       "title": "<ico-book></ico-book> PRESENT PERFECT vs PAST SIMPLE",
-      "intro": "Usamos el <b style='color:var(--gold)'>present perfect</b> (have/has + participio) para acciones con resultado <i>ahora</i> o sin tiempo específico. El <b style='color:var(--gold)'>past simple</b> es para tiempo terminado y concreto. Repasa y luego practica.",
-      "cells": [
-        {
-          "h": "<ico-check></ico-check> Form",
-          "body": "I / you / we / they <code>have worked</code><br>he / she / it <code>has worked</code><br><span class='es'>have/has + participio (worked, done, gone)</span>"
-        },
-        {
-          "h": "<ico-link></ico-link> vs Past Simple",
-          "body": "<span class='ok'>I've finished it.</span> <span class='es'>(resultado ahora)</span><br><span class='ok'>I finished it yesterday.</span> <span class='es'>(tiempo terminado)</span>"
-        },
-        {
-          "h": "⏳ for / since",
-          "body": "<code>for</code> + período: <i>for three months</i><br><code>since</code> + punto: <i>since March</i>"
-        },
-        {
-          "h": "<ico-check></ico-check> already / yet / just",
-          "body": "<code>already</code> = ya <span class='es'>(afirmativo)</span><br><code>yet</code> = todavía <span class='es'>(? y negativo)</span><br><code>just</code> = recién / justo"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='ok'>Have you finished yet?</span><br><span class='x'>Did you finish yet?</span><br><span class='ok'>I've worked here for a year.</span> <span class='es'>(no 'since a year')</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Palabras señal</b> del present perfect — te avisan que uses have/has + participio:",
-      "ladder": [
-        "just — recién",
-        "already — ya",
-        "yet — todavía",
-        "ever / never",
-        "for + período",
-        "since + punto"
-      ],
+      "intro": "El <b style='color:var(--gold)'>present perfect</b> (have / has + participio) conecta el pasado con <b>ahora</b>: lo que ya está hecho, lo que falta y lo que empezó y sigue. El <b style='color:var(--gold)'>past simple</b> queda para momentos terminados. Cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
       "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario del review",
       "vocab": [
         {
@@ -105,7 +75,7 @@
         },
         {
           "en": "to give / get feedback",
-          "sp": "dar / recibir devolución"
+          "sp": "dar / recibir comentarios"
         },
         {
           "en": "so far this quarter",
@@ -128,7 +98,147 @@
           "sp": "evaluación de desempeño"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>flashcards</b> <ico-clone></ico-clone>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>completar</b> <ico-filepen></ico-filepen>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>comparar</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · LA FORMA</b> <span class='es'>— have / has + participio</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I've finished the design.",
+              "sp": "He terminado el diseño. — I've = I have."
+            },
+            {
+              "en": "She has worked here for a year.",
+              "sp": "Con he / she / it: <b>has</b>."
+            },
+            {
+              "en": "I haven't tested it.",
+              "sp": "Negativo: haven't / hasn't + participio."
+            },
+            {
+              "en": "Have you launched it? Yes, I have.",
+              "sp": "Pregunta: have / has pasa adelante. Respuesta corta sin el verbo."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>El participio regular es igual al pasado</b> (worked, finished). Los irregulares tienen tercera forma: do → did → <b>done</b>. Están en las tarjetas de abajo. Ojo: <s class='x'>I have finish.</s> → <span class='ok'>I have finished.</span> · <s class='x'>She have worked.</s> → <span class='ok'>She has worked.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · ¿AHORA O AYER?</b> <span class='es'>— present perfect vs past simple</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I've finished the report.",
+              "sp": "Lo importante es el resultado <b>ahora</b>: está listo. No dices cuándo."
+            },
+            {
+              "en": "I finished the report yesterday.",
+              "sp": "Dices <b>cuándo</b>, y ese momento ya terminó: past simple."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>En español «Ya terminé» sirve para los dos casos; en inglés no.</b> Si aparece yesterday, last week, in 2019 o ago, va past simple: <s class='x'>I've finished it yesterday.</s> → <span class='ok'>I finished it yesterday.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · FOR / SINCE</b> <span class='es'>— empezó antes y sigue ahora</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I've worked on this site for three months.",
+              "sp": "<b>for</b> + cantidad de tiempo: for three months, for a year."
+            },
+            {
+              "en": "I've been here since last March.",
+              "sp": "<b>since</b> + punto de inicio: since March, since 2019, since Monday."
+            },
+            {
+              "en": "How long have you been on the team?",
+              "sp": "¿Cuánto tiempo llevas en el equipo?"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>En español usas el presente</b> («Trabajo aquí desde marzo»). En inglés, si sigue ahora, va present perfect: <s class='x'>I work here since March.</s> → <span class='ok'>I've worked here since March.</span> · <s class='x'>since three months</s> → <span class='ok'>for three months</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · ALREADY / YET / JUST</b> <span class='es'>— ya, todavía no, recién</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I've already sent the update.",
+              "sp": "<b>already</b> = ya. Va entre have y el participio."
+            },
+            {
+              "en": "I haven't tested it yet.",
+              "sp": "<b>yet</b> = todavía (no). Va al final de la frase negativa."
+            },
+            {
+              "en": "Have you launched it yet?",
+              "sp": "En preguntas, <b>yet</b> = ¿ya…?"
+            },
+            {
+              "en": "I've just deployed it.",
+              "sp": "<b>just</b> = recién, hace un momento."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> Cada una en su lugar",
+              "body": "<s class='x'>I've sent already the update.</s> → <span class='ok'>I've already sent the update.</span><br><s class='x'>I haven't yet tested it.</s> → <span class='ok'>I haven't tested it yet.</span><br><s class='x'>Did you finish yet?</s> → <span class='ok'>Have you finished yet?</span>"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · EVER / NEVER</b> <span class='es'>— experiencias: alguna vez o nunca</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Have you ever worked with this client?",
+              "sp": "¿Alguna vez has trabajado con este cliente?"
+            },
+            {
+              "en": "I've never missed a deadline.",
+              "sp": "Nunca he incumplido una fecha límite."
+            },
+            {
+              "en": "I've been to Madrid twice.",
+              "sp": "He estado en Madrid dos veces. — <b>been to</b> = fui y volví."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Never ya es negativo:</b> <s class='x'>I haven't never worked there.</s> → <span class='ok'>I've never worked there.</span> Y si cuentas <b>cuándo</b> fue, vuelve el past simple: I went to Madrid <b>last year</b>."
+        }
+      ]
     },
     {
       "type": "story",
@@ -239,7 +349,7 @@
           "type": "mcq",
           "q": "Te fuiste de tu trabajo anterior en marzo. ¿Qué dices?",
           "options": [
-            "I've been working there for two years.",
+            "I work there for two years.",
             "I worked there for two years.",
             "I've worked there for two years."
           ],
@@ -285,6 +395,16 @@
             "To production already"
           ],
           "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How long has Marcos been on the team?",
+          "options": [
+            "For three months",
+            "About a year",
+            "Since 2019"
+          ],
+          "answer": 1
         }
       ],
       "speaking": {
@@ -420,6 +540,84 @@
             "have launch"
           ],
           "answer": 0
+        },
+        {
+          "q": "Have you ___ worked with a client like this?",
+          "options": [
+            "ever",
+            "yet",
+            "since"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I've ___ deployed it. Two minutes ago!",
+          "options": [
+            "yet",
+            "just",
+            "for"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase. ¿Dónde van already, yet y just?",
+      "items": [
+        {
+          "words": [
+            "I've",
+            "already",
+            "sent",
+            "the",
+            "update"
+          ],
+          "answer": "I've already sent the update"
+        },
+        {
+          "words": [
+            "Have",
+            "you",
+            "finished",
+            "the",
+            "report",
+            "yet"
+          ],
+          "answer": "Have you finished the report yet"
+        },
+        {
+          "words": [
+            "She",
+            "has",
+            "worked",
+            "here",
+            "since",
+            "March"
+          ],
+          "answer": "She has worked here since March"
+        },
+        {
+          "words": [
+            "I",
+            "haven't",
+            "tested",
+            "it",
+            "yet"
+          ],
+          "answer": "I haven't tested it yet"
+        },
+        {
+          "words": [
+            "We've",
+            "just",
+            "deployed",
+            "the",
+            "site"
+          ],
+          "answer": "We've just deployed the site"
         }
       ]
     },
@@ -461,6 +659,16 @@
             "Priya"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Who doesn't know the news yet?",
+          "options": [
+            "David",
+            "Sofia",
+            "Priya"
+          ],
+          "answer": 2
         }
       ],
       "speaking": {
@@ -486,7 +694,7 @@
         "Contrasta con <b>past simple</b> + tiempo específico (<i>Last week I…</i>)"
       ],
       "placeholder": "This month I've…",
-      "example": "This quarter I've achieved a lot… — sigue tú: dos logros con already / yet, uno con for o since, y cierra contrastando con past simple (Last week I…).",
+      "example": "This month I've <span class=\"gap\">participio + logro</span>. I've already <span class=\"gap\">participio</span>, but I haven't <span class=\"gap\">participio</span> yet. I've <span class=\"gap\">participio</span> <span class=\"gap\">algo</span> for <span class=\"gap\">cantidad de tiempo</span>. I've been <span class=\"gap\">dónde / qué</span> since <span class=\"gap\">punto de inicio</span>. Last week I <span class=\"gap\">past simple</span>.",
       "hw": "Escribe tu párrafo y después grábate contándolo <b>sin leer</b> — apóyate solo en tus 4–5 logros anotados. Envíame el texto y el audio por WhatsApp.",
       "rubric": [
         {
@@ -503,5 +711,114 @@
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/b1-l1",
+    "keys": [
+      "a-goal",
+      "a-present-perfect",
+      "a-quick-update-on",
+      "about-a-year",
+      "already",
+      "b-past-simple",
+      "david",
+      "deployed-it-to-production",
+      "do-done",
+      "ever",
+      "excited-about",
+      "finish",
+      "finished",
+      "finished-the-main-design",
+      "finished-the-payment-tests",
+      "fixed-the-two-bugs",
+      "for",
+      "for-about-a-year",
+      "for-three-months",
+      "from",
+      "give-given",
+      "go-gone-been",
+      "has-worked",
+      "have-finished",
+      "have-launch",
+      "have-launched",
+      "have-spoken",
+      "have-worked",
+      "have-you-ever-worked-with-this-client",
+      "have-you-launched-it-yes-i-have",
+      "have-you-launched-it-yet",
+      "how-long-has-marcos-been-on-the-team",
+      "how-long-has-marcos-worked-on-the-greenmarket-site",
+      "how-long-have-you-been-on-the-team",
+      "i-am-here-since-2019",
+      "i-finished-the-report-yesterday",
+      "i-haven-t-tested-it",
+      "i-haven-t-tested-it-yet",
+      "i-m-going-to",
+      "i-ve-already-sent-the-update",
+      "i-ve-been-here-since-2019",
+      "i-ve-been-here-since-last-march",
+      "i-ve-been-to-madrid-twice",
+      "i-ve-finished-the-design",
+      "i-ve-finished-the-report",
+      "i-ve-just-deployed-it",
+      "i-ve-never-missed-a-deadline",
+      "i-ve-worked-on-this-project-for-three-months",
+      "i-ve-worked-on-this-site-for-three-months",
+      "i-ve-worked-there-for-two-years",
+      "i-was-here-since-2019",
+      "i-work-there-for-two-years",
+      "i-worked-on-that-project-for-three-months",
+      "i-worked-there-for-two-years",
+      "just",
+      "las-dos-dicen-lo-mismo",
+      "launched",
+      "make-made",
+      "ninguna-de-las-dos",
+      "nowhere-yet",
+      "performance-review",
+      "priya",
+      "see-seen",
+      "send-sent",
+      "sent-the-client-an-update",
+      "she-has-worked-here-for-a-year",
+      "since",
+      "since-2019",
+      "since-last-march",
+      "so-far-this-quarter",
+      "sofia",
+      "speak",
+      "speak-spoken",
+      "spoke",
+      "take-taken",
+      "tested-the-payment-system",
+      "the-day-after-tomorrow",
+      "the-main-design",
+      "the-payment-tests",
+      "the-performance-review",
+      "think-thought",
+      "to-be-on-track",
+      "to-be-up-to-speed",
+      "to-deploy-to-production",
+      "to-fall-behind-schedule",
+      "to-give-get-feedback",
+      "to-have-a-lot-on-my-plate",
+      "to-hire",
+      "to-hit-a-milestone",
+      "to-meet-a-deadline",
+      "to-production-already",
+      "to-ship-a-feature",
+      "to-the-test-server-only",
+      "what-has-marcos-just-finished",
+      "what-hasn-t-he-done-yet",
+      "what-hasn-t-marcos-done-yet",
+      "where-has-marcos-deployed-the-site",
+      "who-does-marcos-want-to-check-the-site-first",
+      "who-doesn-t-know-the-news-yet",
+      "work",
+      "worked",
+      "works",
+      "write-written",
+      "yet"
+    ]
+  }
 }
