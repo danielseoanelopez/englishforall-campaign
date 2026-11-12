@@ -1,0 +1,746 @@
+{
+  "level": "B1",
+  "num": 1,
+  "totalLessons": 2,
+  "world": "GRAMMAR LAB",
+  "track": "Grammar Lab",
+  "key": "rankup_LAB_usuk",
+  "title": "TWO<br>ENGLISHES",
+  "titlePlain": "Two Englishes — US vs UK (B1)",
+  "subtitle": "US vs UK &middot; vocabulario, ortografía, gramática y acento &middot; B1 &middot; ~40 min",
+  "rankup": "LESSON CLEAR!",
+  "blocks": [
+    {
+      "type": "grammar",
+      "tag": "us vs uk",
+      "title": "<ico-book></ico-book> US vs UK · el mapa de las dos Englishes",
+      "intro": "Todo lo que aprendes en English for All es <b style='color:var(--gold)'>inglés americano</b>. Pero el mundo está lleno de inglés británico: series, libros, exámenes, colegas. Esta lección no te pide hablarlo: te enseña a <b>reconocerlo</b>. Tú hablas americano y entiendes los dos. Cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver más pares US · UK",
+      "vocab": [
+        {
+          "en": "truck",
+          "sp": "UK: <b>lorry</b> — camión"
+        },
+        {
+          "en": "trash",
+          "sp": "UK: <b>rubbish</b> — basura"
+        },
+        {
+          "en": "line",
+          "sp": "UK: <b>queue</b> — fila"
+        },
+        {
+          "en": "gas",
+          "sp": "UK: <b>petrol</b> — gasolina"
+        },
+        {
+          "en": "sidewalk",
+          "sp": "UK: <b>pavement</b> — acera"
+        },
+        {
+          "en": "movie",
+          "sp": "UK: <b>film</b> — película"
+        },
+        {
+          "en": "store",
+          "sp": "UK: <b>shop</b> — tienda"
+        },
+        {
+          "en": "mail",
+          "sp": "UK: <b>post</b> — correo"
+        }
+      ],
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>completar</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>elegir respuestas</b> <ico-comments></ico-comments>, <b>unir</b> <ico-link></ico-link>, <b>memoria</b> <ico-clone></ico-clone> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · LA MISMA COSA, DOS PALABRAS</b> <span class='es'>— vocabulario</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I live in an apartment.",
+              "sp": "UK: a <b>flat</b>."
+            },
+            {
+              "en": "Take the elevator to the third floor.",
+              "sp": "UK: the <b>lift</b>."
+            },
+            {
+              "en": "We're on vacation.",
+              "sp": "UK: on <b>holiday</b>."
+            },
+            {
+              "en": "Do you want some cookies?",
+              "sp": "UK: <b>biscuits</b>."
+            },
+            {
+              "en": "I'd like some fries.",
+              "sp": "UK: <b>chips</b>."
+            },
+            {
+              "en": "Let's watch the soccer game.",
+              "sp": "UK: the <b>football match</b>."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Ninguna de las dos es «incorrecta»: una es americana y la otra británica.</b> Si oyes la británica, entiéndela. Cuando hables o escribas, elige la americana y no las mezcles."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · LA MISMA PALABRA, OTRO SIGNIFICADO</b> <span class='es'>— aquí están los malentendidos</span>"
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> Cuatro trampas",
+              "body": "<code>first floor</code> — US: el piso de la calle (planta baja) · UK: un piso arriba<br><code>chips</code> — US: papas de bolsa · UK: papas fritas <span class='es'>(las de bolsa son crisps)</span><br><code>football</code> — US: fútbol americano · UK: fútbol<br><code>pants</code> — US: pantalones · UK: ropa interior <span class='es'>(los pantalones son trousers)</span>"
+            }
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "My apartment is on the second floor.",
+              "sp": "En US subes <b>un</b> piso. Un británico diría «first floor» para ese mismo piso."
+            },
+            {
+              "en": "Happy holidays!",
+              "sp": "En US, <b>holiday</b> es un día festivo, no tus vacaciones."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · LA ORTOGRAFÍA</b> <span class='es'>— cuatro patrones y ya</span>"
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-pen></ico-pen> US · UK",
+              "body": "<code>-or</code> · -our: col<b>or</b> · colour — favor<b></b>ite · favourite<br><code>-ize</code> · -ise: organ<b>ize</b> · organise — real<b>ize</b> · realise<br><code>-er</code> · -re: cent<b>er</b> · centre — theat<b>er</b> · theatre<br><code>una L</code> · dos L: trave<b>l</b>ing · travelling — cance<b>l</b>ed · cancelled"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Se pronuncian igual: solo cambia cómo se escriben.</b> Lo único que se nota mal es mezclarlas en un mismo texto: <s class='x'>My favorite colour</s> → <span class='ok'>My favorite color</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · LA GRAMÁTICA</b> <span class='es'>— pocas diferencias, pero se oyen mucho</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Do you have a car?",
+              "sp": "UK: <b>Have you got</b> a car?"
+            },
+            {
+              "en": "I don't have time.",
+              "sp": "UK: I <b>haven't got</b> time."
+            },
+            {
+              "en": "I just ate.",
+              "sp": "UK: I<b>'ve just eaten</b>. — en US el pasado simple con just es lo más común."
+            },
+            {
+              "en": "See you on the weekend.",
+              "sp": "UK: <b>at</b> the weekend."
+            },
+            {
+              "en": "Monday through Friday",
+              "sp": "UK: Monday <b>to</b> Friday."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-calendar></ico-calendar> La fecha, la trampa más cara",
+              "body": "US: mes primero — <code>July 4</code> = <code>7/4</code><br>UK: día primero — <code>4 July</code> = <code>4/7</code><br>Así, <b>7/4</b> es el 4 de julio en Estados Unidos y el 7 de abril en el Reino Unido. Si dudas, escribe el mes con letras."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · EL ACENTO</b> <span class='es'>— las mismas palabras, otra música</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "water, better, later",
+              "sp": "US: la <b>t</b> entre vocales suena como una d suave. UK: una t clara."
+            },
+            {
+              "en": "car, computer, four",
+              "sp": "US: la <b>r</b> final se pronuncia. UK: casi desaparece."
+            },
+            {
+              "en": "I can't dance.",
+              "sp": "US: la <b>a</b> de cat. UK: una a larga, como en «father»."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Es lo que más cambia y lo que menos importa para que te entiendan.</b> En el Audio 2 vas a oír el mismo párrafo con los dos acentos: mismas palabras, otra música."
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "fc-vocab",
+      "title": "FLASHCARDS · de UK a US",
+      "intro": "En cada tarjeta hay una palabra británica. Antes de girarla, di la americana en voz alta.",
+      "deckLabel": "palabra británica → americana",
+      "cards": [
+        {
+          "front": "flat",
+          "back": "apartment · departamento"
+        },
+        {
+          "front": "lift",
+          "back": "elevator · ascensor"
+        },
+        {
+          "front": "holiday",
+          "back": "vacation · vacaciones"
+        },
+        {
+          "front": "biscuit",
+          "back": "cookie · galleta"
+        },
+        {
+          "front": "chips",
+          "back": "fries · papas fritas"
+        },
+        {
+          "front": "crisps",
+          "back": "chips · papas de bolsa"
+        },
+        {
+          "front": "football",
+          "back": "soccer · fútbol"
+        },
+        {
+          "front": "trousers",
+          "back": "pants · pantalones"
+        },
+        {
+          "front": "autumn",
+          "back": "fall · otoño"
+        },
+        {
+          "front": "the ground floor",
+          "back": "the first floor · planta baja"
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "mismo idioma… más o menos",
+      "title": "<ico-star></ico-star> JACK AT THE NEON CAFÉ",
+      "intro": "Jack, el cliente de siempre del Neon Café, habla inglés británico. Mia habla inglés americano. Hoy Jack pide algo en el mostrador, y media frase no significa lo que él cree. Primero practicas, después los escuchas.",
+      "cast": [
+        {
+          "en": "Jack",
+          "sp": "habla inglés británico <b style='color:var(--magenta)'>(UK)</b>"
+        },
+        {
+          "en": "Mia",
+          "sp": "habla inglés americano <b style='color:var(--cyan)'>(US)</b>"
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "¿CÓMO LO DICES TÚ?",
+      "intro": "Elige la opción <b>americana</b>. Ojo: a veces otra opción también existe, pero es británica.",
+      "items": [
+        {
+          "q": "I live in an ___ on Pine Street.",
+          "options": [
+            "apartment",
+            "flat",
+            "floor"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "___ you have a pet?",
+          "options": [
+            "Have",
+            "Do",
+            "Are"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "We took the ___ to the fifth floor.",
+          "options": [
+            "lift",
+            "ladder",
+            "elevator"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "My favorite ___ is blue.",
+          "options": [
+            "colour",
+            "color",
+            "collor"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "I'm going on ___ in July: two weeks at the beach.",
+          "options": [
+            "vacation",
+            "holiday",
+            "holidays"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "See you ___ the weekend!",
+          "options": [
+            "at",
+            "in",
+            "on"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "The meeting is on 7/4. In the US, that is ___.",
+          "options": [
+            "April 7",
+            "July 4",
+            "either one"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "No, thanks. I ___ lunch.",
+          "options": [
+            "just ate",
+            "have just eat",
+            "just eaten"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · JACK ORDERS A SNACK",
+      "desc": "Jack pide en británico; Mia contesta en americano. Fíjate en qué palabras «traduce» ella.",
+      "src": "us-uk-1.mp3",
+      "dur": "0:45",
+      "speakers": "<ico-commentdots></ico-commentdots> Jack (UK) + Mia (US)",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What does Jack want to eat?",
+          "options": [
+            "Fries",
+            "Cookies",
+            "A sandwich"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What is \"a lift\" in American English?",
+          "options": [
+            "An elevator",
+            "An apartment",
+            "A cookie"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "In American English, which floor is Jack's flat on?",
+          "options": [
+            "The first floor",
+            "The basement",
+            "The second floor"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "How long is Jack's vacation?",
+          "options": [
+            "Two days",
+            "Two weeks",
+            "Two months"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Say Jack's order in <i>American</i> English.",
+        "starter": "Do you have any cookies? And where is the (word)? My (word) is on the (number) floor."
+      },
+      "transcript": [
+        {
+          "spk": "Jack",
+          "html": "Morning! <span class='tg'>Have you got</span> any <span class='tg'>biscuits</span>?"
+        },
+        {
+          "spk": "Mia",
+          "html": "Biscuits? Oh, you mean <span class='tg'>cookies</span>! Yes, we have chocolate cookies.",
+          "b": true
+        },
+        {
+          "spk": "Jack",
+          "html": "Lovely. Two, please. And where is the <span class='tg'>lift</span>? My <span class='tg'>flat</span> is on the <span class='tg'>first floor</span>, and I am very tired."
+        },
+        {
+          "spk": "Mia",
+          "html": "The <span class='tg'>elevator</span> is over there. But the first floor is this floor. Do you mean the <span class='tg'>second floor</span>?",
+          "b": true
+        },
+        {
+          "spk": "Jack",
+          "html": "This country is very confusing."
+        },
+        {
+          "spk": "Mia",
+          "html": "You say flat, I say <span class='tg'>apartment</span>. You say holiday, I say <span class='tg'>vacation</span>.",
+          "b": true
+        },
+        {
+          "spk": "Jack",
+          "html": "I am on <span class='tg'>holiday</span>, actually. Two weeks!"
+        },
+        {
+          "spk": "Mia",
+          "html": "Nice! Enjoy your vacation. Here are your cookies.",
+          "b": true
+        },
+        {
+          "spk": "Jack",
+          "html": "Cheers! Same language… more or less."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "ENTIENDE A JACK",
+      "intro": "Jack te habla en británico. Elige la respuesta de alguien que <b>sí</b> lo entendió.",
+      "lines": [
+        {
+          "spk": "Jack",
+          "html": "Have you got a lift in this building?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Yes, the elevator is over there.",
+            "Yes, I can drive you home.",
+            "No, I don't lift weights."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Jack",
+          "html": "I'm on holiday until Friday.",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Nice! Enjoy your vacation.",
+            "Oh, which holiday is it today?",
+            "Happy holidays! Merry Christmas!"
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Jack",
+          "html": "My flat is on the first floor."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "So you walk up one floor.",
+            "So you live at street level.",
+            "Oh no. Do you have a spare tire?"
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Jack",
+          "html": "Fancy some chips with that?",
+          "b": true
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Sure, I love fries.",
+            "Sure, I love chips from a bag.",
+            "No, thanks. I don't play poker."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Jack",
+          "html": "Shall we watch the football tonight?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Sure. Soccer, right?",
+            "Sure. Who is the quarterback?",
+            "Sorry, I don't have a ball."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "match",
+      "id": "ex-match",
+      "title": "DE BRITÁNICO A AMERICANO",
+      "intro": "Une cada frase británica con su versión americana. Aquí cambia la gramática, no el vocabulario.",
+      "speakSide": "r",
+      "pairs": [
+        {
+          "l": "Have you got a pen?",
+          "r": "Do you have a pen?"
+        },
+        {
+          "l": "I haven't got time.",
+          "r": "I don't have time."
+        },
+        {
+          "l": "I've just eaten.",
+          "r": "I just ate."
+        },
+        {
+          "l": "See you at the weekend.",
+          "r": "See you on the weekend."
+        },
+        {
+          "l": "It's 4 July.",
+          "r": "It's July 4."
+        },
+        {
+          "l": "Monday to Friday",
+          "r": "Monday through Friday"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE SAME WORDS, TWICE",
+      "desc": "El mismo párrafo, dos veces: primero Mia, después Jack. Las palabras no cambian. Escucha qué sí cambia.",
+      "src": "us-uk-2.mp3",
+      "dur": "0:25",
+      "speakers": "<ico-commentdots></ico-commentdots> Mia (US), then Jack (UK)",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Who speaks first?",
+          "options": [
+            "Jack, with the British accent",
+            "Mia, with the American accent",
+            "They speak together"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Are the words the same in both versions?",
+          "options": [
+            "Yes. Only the accent changes.",
+            "No. Jack uses British words.",
+            "No. Mia says more."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "In Mia's version, the t in \"water\" and \"better\" sounds like…",
+          "options": [
+            "a strong t",
+            "nothing: it is silent",
+            "a soft d"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Who pronounces the r at the end of \"computer\" and \"later\"?",
+          "options": [
+            "Mia",
+            "Jack",
+            "Nobody"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Read the paragraph out loud, copying the <i>American</i> version: soft t, clear r.",
+        "starter": "I can't talk right now. My schedule is crazy…"
+      },
+      "transcript": [
+        {
+          "spk": "Mia",
+          "html": "I <span class='tg'>can't</span> talk right now. My schedule is crazy. I need twenty bottles of <span class='tg'>water</span> and a <span class='tg'>better</span> computer. Call me <span class='tg'>later</span>, at about eight thirty."
+        },
+        {
+          "spk": "Jack",
+          "html": "I <span class='tg'>can't</span> talk right now. My schedule is crazy. I need twenty bottles of <span class='tg'>water</span> and a <span class='tg'>better</span> computer. Call me <span class='tg'>later</span>, at about eight thirty.",
+          "b": true
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "ex-mem",
+      "title": "MEMORIA · US Y UK",
+      "intro": "Encuentra la palabra americana y su pareja británica. Son las del cuadro «más pares».",
+      "pairs": [
+        {
+          "a": "truck",
+          "b": "lorry"
+        },
+        {
+          "a": "trash",
+          "b": "rubbish"
+        },
+        {
+          "a": "line",
+          "b": "queue"
+        },
+        {
+          "a": "gas",
+          "b": "petrol"
+        },
+        {
+          "a": "sidewalk",
+          "b": "pavement"
+        },
+        {
+          "a": "movie",
+          "b": "film"
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE AMERICANA",
+      "intro": "Toca las palabras para formar la frase, tal como la dirías tú.",
+      "items": [
+        {
+          "words": [
+            "Do",
+            "you",
+            "have",
+            "any",
+            "cookies"
+          ],
+          "answer": "Do you have any cookies"
+        },
+        {
+          "words": [
+            "I",
+            "just",
+            "ate",
+            "lunch"
+          ],
+          "answer": "I just ate lunch"
+        },
+        {
+          "words": [
+            "We",
+            "took",
+            "a",
+            "vacation",
+            "in",
+            "July"
+          ],
+          "answer": "We took a vacation in July"
+        },
+        {
+          "words": [
+            "The",
+            "elevator",
+            "is",
+            "on",
+            "the",
+            "first",
+            "floor"
+          ],
+          "answer": "The elevator is on the first floor"
+        },
+        {
+          "words": [
+            "See",
+            "you",
+            "on",
+            "the",
+            "weekend"
+          ],
+          "answer": "See you on the weekend"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> EL EMAIL DE JACK",
+      "intro": "Jack te escribió desde la playa, en británico puro:<br><i>«I'm on holiday! My flat has got a lift, the colour of the sea is amazing, and I eat biscuits and chips every day. Football on TV every night!»</i><br>Reescríbelo en <b>inglés americano</b> y agrega dos frases tuyas.",
+      "checklist": [
+        "Cambia las <b>6 palabras</b> británicas por las americanas",
+        "Corrige <b>has got</b> → <b>has</b>",
+        "Corrige la ortografía: <b>colour</b> → <b>color</b>",
+        "Agrega 2 frases tuyas en americano (usa <b>on the weekend</b> o <b>I just…</b>)"
+      ],
+      "placeholder": "I'm on vacation! My…",
+      "example": "I'm on <span class=\"gap\">palabra US</span>! My <span class=\"gap\">palabra US</span> has an <span class=\"gap\">palabra US</span>, the <span class=\"gap\">ortografía US</span> of the sea is amazing, and I eat <span class=\"gap\">palabra US</span> and <span class=\"gap\">palabra US</span> every day. <span class=\"gap\">deporte, en US</span> on TV every night! On the weekend, I <span class=\"gap\">tu frase</span>.",
+      "hw": "Escribe tu versión y después grábate leyéndola con <b>acento americano</b>: t suave en «water», r clara al final. Envíame ambos por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Cambiaste las seis palabras, el has got y la ortografía, y agregaste tus dos frases."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Todo el texto quedó en <b>inglés americano</b>, sin mezclar formas británicas."
+        },
+        {
+          "c": "Se entiende a la primera",
+          "d": "Un lector lo entiende sin releer: frases completas, sin traducir literal del español."
+        }
+      ]
+    }
+  ]
+}

@@ -273,8 +273,12 @@ renderMap();
 const nextStage = CAFE_STAGES.find(s => !prog[s]);
 const cafeDone = CAFE_STAGES.filter(s => prog[s]).length;
 const STAGE_NAMES = { s1: "First shift", s2: "Rush hour", s3: "Lost & found", s4: "Quiz night", sb: "The inspection (BOSS)" };
+const OFFICE_NAMES = { s1: "First day", s2: "Work stories", s3: "The client call", s4: "The big project", sb: "The interview (BOSS)" };
+const officeNext = OFFICE_STAGES.find(s => !oprog[s]);
 let tottiMain;
-if (bossDone) tottiMain = "Café Master. Hm. Not unimpressive. And look — the Office Tower's lights just came on. Dan pulled some strings, got you a desk job. Go on, tap the gold building.";
+if (bossDone && !officeNext) tottiMain = "Café Master. Office star. Hm. I am almost proud. Head office is building the Detective Agency next. Until it opens, train at the Academy.";
+else if (bossDone && officePaws > 0) tottiMain = "You've earned " + officePaws + " paws at the Office. Next stop: \"" + OFFICE_NAMES[officeNext] + "\" at the Office Tower. Don't embarrass me.";
+else if (bossDone) tottiMain = "Café Master. Hm. Not unimpressive. And look — the Office Tower's lights just came on. Dan pulled some strings, got you a desk job. Go on, tap the gold building.";
 else if (cafeDone === 0) tottiMain = "New in the city? Tap the Neon Café — the cyan one with the coffee sign. Dan needs a barista, and I need someone to judge.";
 else tottiMain = "You've earned " + cafePaws + " paws. Next stop: \"" + STAGE_NAMES[nextStage] + "\" at the Café. Don't embarrass me.";
 const TOTTI_TIPS = [
