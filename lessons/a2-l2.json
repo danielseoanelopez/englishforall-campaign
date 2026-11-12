@@ -20,24 +20,24 @@
       "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada palabra con su significado — sin mirar atrás.",
       "pairs": [
         {
-          "l": "Finish work",
-          "r": "terminar el trabajo"
+          "l": "She is never late.",
+          "r": "Nunca llega tarde."
         },
         {
-          "l": "Standup meeting",
-          "r": "reunión breve diaria"
+          "l": "Twice a week",
+          "r": "dos veces por semana"
         },
         {
-          "l": "Wake up",
-          "r": "despertarse"
+          "l": "Log off",
+          "r": "desconectarse"
         },
         {
-          "l": "Check emails",
-          "r": "revisar correos"
+          "l": "Work late",
+          "r": "trabajar hasta tarde"
         },
         {
-          "l": "Have breakfast",
-          "r": "desayunar"
+          "l": "How often…?",
+          "r": "¿cada cuánto…?"
         }
       ]
     },
@@ -45,75 +45,206 @@
       "type": "grammar",
       "tag": "frases de trabajo",
       "title": "<ico-bookmark></ico-bookmark> FRASES CLAVE · teléfono y email",
-      "intro": "Frases útiles para el trabajo remoto. Apréndelas, luego practica con los ejercicios y los audios.",
-      "cells": [
-        {
-          "h": "<ico-phone></ico-phone> Empezar",
-          "body": "<code>Do you have a minute?</code><br><code>Are you available?</code><br>Let me <code>check</code> that for you."
-        },
-        {
-          "h": "<ico-envelope></ico-envelope> Pedir / confirmar",
-          "body": "<code>Could you confirm</code> the details?<br>Can you <code>send</code> me…?<br>It's <code>attached</code> to the email."
-        },
-        {
-          "h": "⏳ Estado",
-          "body": "I'm <code>waiting for</code> an update.<br>There's a task <code>pending</code>.<br>I'll <code>get back to you</code> soon."
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='ok'>price estimate</span> = cotización<br><span class='ok'>request</span> = solicitud<br><span class='es'>'attach' = adjuntar (un archivo)</span>"
-        }
-      ],
-      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario nuevo",
+      "intro": "Esta lección no es de gramática: son <b style='color:var(--gold)'>frases hechas</b> que usas tal cual en llamadas y emails de trabajo. Cinco pasos, del «¿tienes un minuto?» al «Best regards». Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver palabras de los audios",
       "vocab": [
         {
-          "en": "Team lead",
-          "sp": "líder / supervisor"
+          "en": "Client",
+          "sp": "cliente"
         },
         {
-          "en": "Price estimate",
-          "sp": "cotización"
+          "en": "Product list",
+          "sp": "lista de productos"
         },
         {
-          "en": "Request",
-          "sp": "solicitud"
+          "en": "Online payment system",
+          "sp": "sistema de pago en línea"
         },
         {
-          "en": "Issue",
-          "sp": "asunto / problema"
+          "en": "The web team",
+          "sp": "el equipo web"
         },
         {
-          "en": "Available",
-          "sp": "disponible"
+          "en": "Most of the details",
+          "sp": "la mayoría de los detalles"
         },
         {
-          "en": "Pending",
-          "sp": "pendiente"
+          "en": "The price goes up.",
+          "sp": "El precio sube."
         },
         {
-          "en": "Details",
-          "sp": "detalles"
+          "en": "If you confirm today…",
+          "sp": "Si confirmas hoy…"
         },
         {
-          "en": "Update",
-          "sp": "actualización"
-        },
-        {
-          "en": "Task",
-          "sp": "tarea"
-        },
-        {
-          "en": "Attached",
-          "sp": "adjunto"
+          "en": "Next Monday",
+          "sp": "el próximo lunes"
         }
       ],
-      "note": "<b>Cómo funciona:</b> primero <b>une</b> <ico-link></ico-link> el vocabulario, después <b>escucha</b> <ico-headphones></ico-headphones> y <b>completa</b> <ico-filepen></ico-filepen> los emails. <ico-check></ico-check> CHECK en cada uno."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>unir</b> <ico-link></ico-link>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · EMPEZAR UNA LLAMADA</b> <span class='es'>— antes de hablar, pregunta si pueden</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Do you have a minute?",
+              "sp": "¿Tienes un minuto?"
+            },
+            {
+              "en": "Are you available for a quick call?",
+              "sp": "¿Estás disponible para una llamada rápida?"
+            },
+            {
+              "en": "Sure, I'm available.",
+              "sp": "Claro, estoy disponible."
+            },
+            {
+              "en": "This is Marcos from the web team.",
+              "sp": "Habla Marcos, del equipo web. — así te presentas por teléfono."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Por teléfono eres «this», no «I».</b> <s class='x'>Hi, I am Marcos.</s> → <span class='ok'>Hi, this is Marcos.</span> En español dices «habla Marcos» o «soy Marcos»; en inglés, <b>This is…</b>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · PEDIR Y CONFIRMAR</b> <span class='es'>— Can you…? / Could you…?</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Can you send me the product list?",
+              "sp": "¿Puedes enviarme la lista de productos? — con compañeros."
+            },
+            {
+              "en": "Could you confirm the details?",
+              "sp": "¿Podrías confirmar los detalles? — <b>could</b> es más amable: úsalo con clientes."
+            },
+            {
+              "en": "Could you please send me the price estimate today?",
+              "sp": "Con <b>please</b> suena todavía más cortés."
+            },
+            {
+              "en": "Of course. / Sure, no problem.",
+              "sp": "Por supuesto. / Claro, no hay problema."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Después de can / could, el verbo va limpio:</b> sin to, sin -s, sin -ing. <s class='x'>Could you to confirm?</s> → <span class='ok'>Could you confirm?</span> · <s class='x'>Can you sending it?</s> → <span class='ok'>Can you send it?</span> <span class='es'>(Las peticiones se ven a fondo en la lección 4.)</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · DECIR CÓMO VA EL TRABAJO</b> <span class='es'>— listo, casi listo o pendiente</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The estimate is almost ready.",
+              "sp": "La cotización está casi lista."
+            },
+            {
+              "en": "It isn't ready yet.",
+              "sp": "Todavía no está lista. — <b>yet</b> va al final de la frase negativa."
+            },
+            {
+              "en": "There's one task pending.",
+              "sp": "Hay una tarea pendiente."
+            },
+            {
+              "en": "I'm waiting for an update from the client.",
+              "sp": "Estoy esperando noticias del cliente. — <b>update</b> = información nueva."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Esperar algo = wait <u>for</u>.</b> En español «espero el email» no lleva nada; en inglés siempre va <b>for</b>: <s class='x'>I'm waiting an update.</s> → <span class='ok'>I'm waiting for an update.</span> · <s class='x'>I'm waiting the client.</s> → <span class='ok'>I'm waiting for the client.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · PROMETER CON I'LL</b> <span class='es'>— lo que vas a hacer ahora o pronto</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'll call them now.",
+              "sp": "Los llamo ahora. — <b>I'll</b> = I will + verbo."
+            },
+            {
+              "en": "I'll send you the estimate today.",
+              "sp": "Te envío la cotización hoy."
+            },
+            {
+              "en": "I'll get back to you soon.",
+              "sp": "Te respondo pronto. — <b>get back to you</b> = volver a contactarte con la respuesta."
+            },
+            {
+              "en": "Let me check that for you.",
+              "sp": "Déjame revisarlo. — ofreces ayuda."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>En español prometes en presente</b> («Te llamo ahora»). En inglés hace falta <b>I'll</b>: <s class='x'>I call you now.</s> → <span class='ok'>I'll call you now.</span> Y el verbo va limpio: <s class='x'>I'll sending it.</s> → <span class='ok'>I'll send it.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · EL EMAIL</b> <span class='es'>— saludo, motivo, archivo y cierre</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Hi David,",
+              "sp": "Saludo + coma. Más formal: <b>Dear David,</b>"
+            },
+            {
+              "en": "Thank you for your email.",
+              "sp": "Gracias por tu email. — <b>thank you for</b> + cosa."
+            },
+            {
+              "en": "The product list is attached.",
+              "sp": "La lista de productos va adjunta. — <b>attached</b> = adjunto (un archivo)."
+            },
+            {
+              "en": "Best regards,",
+              "sp": "Saludos cordiales, — y debajo, tu nombre."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> Palabras que engañan",
+              "body": "<code>request</code> = solicitud, pedido <span class='es'>(no «requisito»)</span><br><code>issue</code> = problema o tema a resolver<br><code>price estimate</code> = cotización <span class='es'>(«cotization» no existe)</span><br><code>attached</code> = adjunto: <s class='x'>The list is adjunct.</s> → <span class='ok'>The list is attached.</span>"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "flashcards",
       "id": "fc-vocab",
       "title": "FLASHCARDS · trabajo remoto",
-      "intro": "Toca cada tarjeta para ver la traducción.",
+      "intro": "Toca cada tarjeta para ver la traducción. Son las palabras clave de la historia.",
       "deckLabel": "trabajo remoto y email",
       "cards": [
         {
@@ -126,35 +257,35 @@
         },
         {
           "front": "issue",
-          "back": "asunto / problema"
-        },
-        {
-          "front": "pending",
-          "back": "pendiente"
-        },
-        {
-          "front": "update",
-          "back": "actualización"
-        },
-        {
-          "front": "attached",
-          "back": "adjunto"
-        },
-        {
-          "front": "available",
-          "back": "disponible"
+          "back": "problema / asunto"
         },
         {
           "front": "task",
           "back": "tarea"
         },
         {
-          "front": "as soon as possible",
-          "back": "lo antes posible"
+          "front": "update",
+          "back": "novedad / actualización"
         },
         {
-          "front": "Best regards",
-          "back": "Saludos cordiales"
+          "front": "details",
+          "back": "detalles"
+        },
+        {
+          "front": "available",
+          "back": "disponible"
+        },
+        {
+          "front": "pending",
+          "back": "pendiente"
+        },
+        {
+          "front": "attached",
+          "back": "adjunto"
+        },
+        {
+          "front": "almost ready",
+          "back": "casi listo"
         }
       ]
     },
@@ -162,7 +293,7 @@
       "type": "story",
       "tag": "el proyecto GreenMarket",
       "title": "<ico-star></ico-star> THE STORY · GREENMARKET",
-      "intro": "Sigues una historia de trabajo remoto: un nuevo cliente (GreenMarket) pide una cotización para su web.",
+      "intro": "Sigues una historia de trabajo remoto: un cliente nuevo, GreenMarket, pide una cotización para su sitio web. Primero hablan Sofia y Marcos; después, Marcos llama al cliente.",
       "cast": [
         {
           "en": "Sofia",
@@ -170,7 +301,7 @@
         },
         {
           "en": "Marcos",
-          "sp": "su compañero"
+          "sp": "el developer"
         },
         {
           "en": "David",
@@ -181,32 +312,32 @@
     {
       "type": "match",
       "id": "ex-match",
-      "title": "UNE VOCABULARIO E INGLÉS",
-      "intro": "Toca la palabra en inglés y luego su significado.",
+      "title": "UNE LA FRASE CON SU USO",
+      "intro": "¿Para qué sirve cada frase? Toca la frase y luego su uso.",
       "pairs": [
         {
-          "l": "price estimate",
-          "r": "cotización"
+          "l": "Do you have a minute?",
+          "r": "empezar una llamada"
         },
         {
-          "l": "request",
-          "r": "solicitud"
+          "l": "Could you confirm the details?",
+          "r": "pedir algo con amabilidad"
         },
         {
-          "l": "pending",
-          "r": "pendiente"
+          "l": "I'm waiting for an update.",
+          "r": "decir que esperas noticias"
         },
         {
-          "l": "attached",
-          "r": "adjunto"
+          "l": "I'll get back to you soon.",
+          "r": "prometer una respuesta"
         },
         {
-          "l": "available",
-          "r": "disponible"
+          "l": "It isn't ready yet.",
+          "r": "decir que algo no está listo"
         },
         {
-          "l": "update",
-          "r": "actualización"
+          "l": "Best regards,",
+          "r": "cerrar un email"
         }
       ]
     },
@@ -216,48 +347,58 @@
       "title": "AUDIO 1 · THE VIDEO CALL",
       "desc": "Sofia llama a Marcos. ¿Cuál es el problema con el cliente?",
       "src": "audio1_video_call.mp3",
-      "dur": "1:18",
+      "dur": "1:02",
       "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
           "type": "mcq",
           "q": "What does GreenMarket want?",
           "options": [
-            "A meeting with the new team lead",
-            "An update on the product list",
-            "A price estimate for the website"
+            "A meeting with the team lead",
+            "A price estimate for the website",
+            "A new product list"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "When do they need it?",
+          "options": [
+            "Today",
+            "Tomorrow",
+            "Next Monday"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why isn't the price estimate ready?",
+          "options": [
+            "Marcos isn't available today",
+            "Sofia has the details",
+            "Marcos is waiting for the product list"
           ],
           "answer": 2
         },
         {
           "type": "mcq",
-          "q": "Why is the price estimate not ready yet?",
+          "q": "Who calls the client now?",
           "options": [
-            "He did not receive the product list from David yet",
-            "He is not available for a call today",
-            "He is waiting for an update from the client"
-          ],
-          "answer": 2
-        },
-        {
-          "type": "mcq",
-          "q": "What does Sofia offer to do?",
-          "options": [
-            "Call the client herself",
-            "Send the estimate today",
-            "Write the product list"
+            "Sofia",
+            "Marcos",
+            "David"
           ],
           "answer": 0
         }
       ],
       "speaking": {
-        "prompt": "Explain the problem with the price estimate. Use <i>pending</i> and <i>waiting for an update</i>.",
-        "starter": "The estimate isn't ready because there's a task pending — Marcos is (what he's doing)."
+        "prompt": "Explain the problem with the price estimate. Use <i>pending</i> and <i>waiting for</i>.",
+        "starter": "The estimate isn't ready yet. There's one task pending: Marcos is waiting for (what)."
       },
       "transcript": [
         {
           "spk": "Sofia",
-          "html": "Hi Marcos, do you have a minute? Are you <span class='tg'>available</span> for a quick call?"
+          "html": "Hi Marcos, <span class='tg'>do you have a minute</span>? Are you <span class='tg'>available</span> for a quick call?"
         },
         {
           "spk": "Marcos",
@@ -266,21 +407,30 @@
         },
         {
           "spk": "Sofia",
-          "html": "It's about GreenMarket, the new client. They sent us a <span class='tg'>request</span> this morning. They want a <span class='tg'>price estimate</span> for the website today."
+          "html": "Yes, don't worry. It's about GreenMarket, the new client. We have a <span class='tg'>request</span> from them."
         },
         {
           "spk": "Marcos",
           "b": true,
-          "html": "OK. I already have most of the <span class='tg'>details</span>. The estimate is almost ready."
+          "html": "What do they need?"
         },
         {
           "spk": "Sofia",
-          "html": "Is it <span class='tg'>attached</span> to your email? I didn't see it."
+          "html": "They want a <span class='tg'>price estimate</span> for the website, and they need it today."
         },
         {
           "spk": "Marcos",
           "b": true,
-          "html": "Not yet, sorry. There's still one <span class='tg'>task pending</span>. I'm <span class='tg'>waiting for an update</span> from the client."
+          "html": "OK, no problem. I have most of the <span class='tg'>details</span>. The estimate is <span class='tg'>almost ready</span>."
+        },
+        {
+          "spk": "Sofia",
+          "html": "Is it <span class='tg'>attached</span> to your email? I can't see it."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Not yet, sorry. There's still one <span class='tg'>task pending</span>. I'm <span class='tg'>waiting for an update</span> from the client: I need the product list."
         },
         {
           "spk": "Sofia",
@@ -296,24 +446,33 @@
     {
       "type": "gapFill",
       "id": "ex-gap",
-      "title": "COMPLETA EL EMAIL / LA LLAMADA",
-      "intro": "Elige la palabra correcta para cada frase de trabajo.",
+      "title": "COMPLETA LA FRASE DE TRABAJO",
+      "intro": "Elige la opción correcta. A veces es la forma del verbo y a veces la palabra.",
       "items": [
         {
           "q": "Let me ___ that for you.",
           "options": [
+            "check",
             "checks",
-            "checking",
-            "check"
+            "checking"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
           "q": "Could you please ___ the details?",
           "options": [
-            "confirming",
             "confirms",
-            "confirm"
+            "confirm",
+            "to confirm"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "I'm waiting ___ an update from the client.",
+          "options": [
+            "to",
+            "at",
+            "for"
           ],
           "answer": 2
         },
@@ -327,22 +486,117 @@
           "answer": 1
         },
         {
-          "q": "I'm ___ for an update from the client.",
+          "q": "The product list is ___ to this email.",
           "options": [
-            "wait",
-            "waits",
-            "waiting"
+            "attach",
+            "attaching",
+            "attached"
           ],
           "answer": 2
         },
         {
-          "q": "The product list is ___ to my email.",
+          "q": "There's one task ___. I need one more day.",
           "options": [
-            "attaching",
-            "attach",
+            "pending",
+            "available",
             "attached"
           ],
+          "answer": 0
+        },
+        {
+          "q": "Sorry, I'm not ___ at ten. I have a meeting.",
+          "options": [
+            "pending",
+            "attached",
+            "available"
+          ],
           "answer": 2
+        },
+        {
+          "q": "Hi David, this ___ Marcos from the web team.",
+          "options": [
+            "am",
+            "is",
+            "be"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The estimate isn't ready ___.",
+          "options": [
+            "yet",
+            "soon",
+            "almost"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We have a ___ from the client: they want a new website.",
+          "options": [
+            "task",
+            "request",
+            "minute"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "ORDENA LA FRASE",
+      "intro": "Toca las palabras para formar la frase de trabajo.",
+      "items": [
+        {
+          "words": [
+            "Do",
+            "you",
+            "have",
+            "a",
+            "minute"
+          ],
+          "answer": "Do you have a minute"
+        },
+        {
+          "words": [
+            "Could",
+            "you",
+            "confirm",
+            "the",
+            "details"
+          ],
+          "answer": "Could you confirm the details"
+        },
+        {
+          "words": [
+            "I'm",
+            "waiting",
+            "for",
+            "an",
+            "update"
+          ],
+          "answer": "I'm waiting for an update"
+        },
+        {
+          "words": [
+            "I'll",
+            "get",
+            "back",
+            "to",
+            "you",
+            "soon"
+          ],
+          "answer": "I'll get back to you soon"
+        },
+        {
+          "words": [
+            "The",
+            "estimate",
+            "isn't",
+            "ready",
+            "yet"
+          ],
+          "answer": "The estimate isn't ready yet"
         }
       ]
     },
@@ -352,57 +606,67 @@
       "title": "AUDIO 2 · THE CLIENT CALL",
       "desc": "Marcos llama a David para confirmar los detalles del proyecto.",
       "src": "audio3_client_call.mp3",
-      "dur": "1:15",
+      "dur": "1:05",
       "speakers": "<ico-commentdots></ico-commentdots> Marcos + David",
       "questions": [
         {
           "type": "mcq",
           "q": "What does David want to add to the project?",
           "options": [
-            "A longer list of products",
-            "A second website for the shop",
+            "A longer product list",
+            "A second website",
             "An online payment system"
           ],
           "answer": 2
         },
         {
           "type": "mcq",
-          "q": "What happens to the price estimate with the payment system?",
+          "q": "What happens to the price with the payment system?",
           "options": [
-            "It is a little higher",
-            "It stays the same",
-            "It is a little lower"
+            "It goes up a little",
+            "It doesn't change",
+            "It goes down a little"
           ],
           "answer": 0
         },
         {
           "type": "mcq",
-          "q": "When can the team start?",
+          "q": "When does Marcos send the final price estimate?",
           "options": [
-            "This afternoon, when the email arrives",
-            "Next Monday, if David confirms today",
-            "Next month, after the payment system"
+            "Next Monday",
+            "This afternoon",
+            "Tomorrow morning"
           ],
           "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "When can the team start?",
+          "options": [
+            "Next Monday",
+            "This afternoon",
+            "Next month"
+          ],
+          "answer": 0
         }
       ],
       "speaking": {
-        "prompt": "Why is the price estimate higher now? Explain in 1–2 sentences.",
-        "starter": "Because the client also wants an online payment system, so (result)."
+        "prompt": "Why does the price go up? Explain in 1–2 sentences.",
+        "starter": "The price goes up because David also wants (what)."
       },
       "transcript": [
         {
           "spk": "Marcos",
-          "html": "Hi David, this is Marcos from the web team. Thanks for the product list. Do you have a minute?"
+          "html": "Hi David, <span class='tg'>this is Marcos</span> from the web team. Thank you for the product list. Do you have a minute?"
         },
         {
           "spk": "David",
           "b": true,
-          "html": "Hi Marcos! Yes, of course. Did you get everything you need?"
+          "html": "Hi Marcos! Yes, of course. Do you have everything you need?"
         },
         {
           "spk": "Marcos",
-          "html": "Almost. I have the <span class='tg'>details</span>, but do you need the online payment system too?"
+          "html": "Almost. I have the <span class='tg'>details</span>, but I have one question. Do you need an online payment system too?"
         },
         {
           "spk": "David",
@@ -411,16 +675,16 @@
         },
         {
           "spk": "Marcos",
-          "html": "Perfect. With the payment system, the <span class='tg'>price estimate</span> is a little higher."
+          "html": "Perfect. With the payment system, the price goes up a little."
         },
         {
           "spk": "David",
           "b": true,
-          "html": "That's OK. Could you send me the final <span class='tg'>price estimate</span> today?"
+          "html": "That's OK. <span class='tg'>Could you send me</span> the final <span class='tg'>price estimate</span> today?"
         },
         {
           "spk": "Marcos",
-          "html": "Of course. It will be <span class='tg'>attached</span> to my email this afternoon."
+          "html": "Of course. <span class='tg'>I'll send it</span> this afternoon."
         },
         {
           "spk": "David",
@@ -430,6 +694,11 @@
         {
           "spk": "Marcos",
           "html": "If you confirm today, we can start next Monday."
+        },
+        {
+          "spk": "David",
+          "b": true,
+          "html": "Perfect. <span class='tg'>I'll confirm</span> today. Thank you, Marcos!"
         }
       ]
     },
@@ -438,13 +707,13 @@
       "title": "<ico-pen></ico-pen> A SHORT WORK EMAIL",
       "intro": "Escribe un email corto (4–6 frases) a un cliente o compañero:",
       "checklist": [
-        "Saluda y di por qué escribes",
+        "Saluda (<b>Hi David,</b>) y di por qué escribes",
         "Usa <b>2 palabras nuevas</b> (price estimate, request, attached, pending…)",
         "Pide o confirma algo (<b>Could you confirm…?</b>)",
-        "Cierra: <b>I'll get back to you soon.</b>"
+        "Cierra: <b>I'll get back to you soon.</b> + <b>Best regards,</b>"
       ],
       "placeholder": "Hi David,",
-      "example": "Hi (name), Thank you for your (email / request). The (document) is almost ready — I'm just waiting for (something). I attached the (document) to this email. Could you (request)? I'll get back to you (when). Best, (your name)",
+      "example": "Hi <span class=\"gap\">nombre</span>,<br>Thank you for your <span class=\"gap\">email / request</span>. The <span class=\"gap\">documento</span> is almost ready. I'm waiting for <span class=\"gap\">algo</span>. Could you confirm <span class=\"gap\">qué</span>? I'll get back to you <span class=\"gap\">cuándo</span>.<br>Best regards,<br><span class=\"gap\">tu nombre</span>",
       "hw": "Escribe tu email y envíamelo por WhatsApp. Después grábate <b>explicando en voz alta</b> de qué trata, sin leerlo.",
       "rubric": [
         {
@@ -453,13 +722,111 @@
         },
         {
           "c": "Objetivo de la lección",
-          "d": "Usaste las fórmulas de email (<b>Could you… / I’ll… / attached</b>) al menos <b>3 veces</b>, y bien."
+          "d": "Usaste las fórmulas de email (<b>Could you… / I'll… / attached</b>) al menos <b>3 veces</b>, y bien."
         },
         {
           "c": "Se entiende a la primera",
-          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+          "d": "Un lector lo entiende sin releer: saludo, motivo, pedido y cierre, sin traducir literal del español."
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/a2-l2",
+    "keys": [
+      "a-longer-product-list",
+      "a-meeting-with-the-team-lead",
+      "a-new-product-list",
+      "a-price-estimate-for-the-website",
+      "a-second-website",
+      "almost",
+      "almost-ready",
+      "am",
+      "an-online-payment-system",
+      "are-you-available-for-a-quick-call",
+      "at",
+      "attach",
+      "attached",
+      "attaching",
+      "available",
+      "be",
+      "best-regards",
+      "can-you-send-me-the-product-list",
+      "check",
+      "checking",
+      "checks",
+      "client",
+      "confirm",
+      "confirms",
+      "could-you-confirm-the-details",
+      "could-you-please-send-me-the-price-estimate-today",
+      "david",
+      "details",
+      "do-you-have-a-minute",
+      "for",
+      "hi-david",
+      "how-often",
+      "i-ll-call-them-now",
+      "i-ll-get-back-to-you-soon",
+      "i-ll-send-you-the-estimate-today",
+      "i-m-waiting-for-an-update",
+      "i-m-waiting-for-an-update-from-the-client",
+      "if-you-confirm-today",
+      "is",
+      "issue",
+      "it-doesn-t-change",
+      "it-goes-down-a-little",
+      "it-goes-up-a-little",
+      "it-isn-t-ready-yet",
+      "let-me-check-that-for-you",
+      "log-off",
+      "marcos",
+      "marcos-is-waiting-for-the-product-list",
+      "marcos-isn-t-available-today",
+      "minute",
+      "most-of-the-details",
+      "next-monday",
+      "next-month",
+      "of-course-sure-no-problem",
+      "online-payment-system",
+      "pending",
+      "price-estimate",
+      "product-list",
+      "request",
+      "send",
+      "sending",
+      "sends",
+      "she-is-never-late",
+      "sofia",
+      "sofia-has-the-details",
+      "soon",
+      "sure-i-m-available",
+      "task",
+      "thank-you-for-your-email",
+      "the-estimate-is-almost-ready",
+      "the-price-goes-up",
+      "the-product-list-is-attached",
+      "the-web-team",
+      "there-s-one-task-pending",
+      "this-afternoon",
+      "this-is-marcos-from-the-web-team",
+      "to",
+      "to-confirm",
+      "today",
+      "tomorrow",
+      "tomorrow-morning",
+      "twice-a-week",
+      "update",
+      "what-does-david-want-to-add-to-the-project",
+      "what-does-greenmarket-want",
+      "what-happens-to-the-price-with-the-payment-system",
+      "when-can-the-team-start",
+      "when-do-they-need-it",
+      "when-does-marcos-send-the-final-price-estimate",
+      "who-calls-the-client-now",
+      "why-isn-t-the-price-estimate-ready",
+      "work-late",
+      "yet"
+    ]
+  }
 }
