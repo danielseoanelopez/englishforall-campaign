@@ -190,32 +190,32 @@ const FORM_ENDPOINT = "https://formspree.io/f/mbdewbrp";
 function copyDiscord(el){var r=el.innerHTML;var done=function(){el.innerHTML='<ico-check></ico-check>'+(el.classList.contains("btn")?" ¡COPIADO!":"");setTimeout(function(){el.innerHTML=r;},1500);};try{navigator.clipboard.writeText(SOCIAL.discord).then(done,done);}catch(e){done();}return false;}
 
 const SECTIONS = { A:"PARTE A · GRAMÁTICA Y USO", B:"PARTE B · VOCABULARIO", C:"PARTE C · LISTENING (escucha y responde)", D:"PARTE D · READING" };
-const READING = "Hi Sam,\nThanks for your message! Last week we finished the new project. It was hard work, but I am happy with the result. The new app is faster and easier than the old one.\nNext week we are going to launch it. On Monday, I am meeting the client at ten to show her the app. We usually start at nine, but that day we are starting earlier.\nOne more thing: could you help me with the slides? I am not very good at design!\nSee you soon,\nMarcos";
+const READING = "Hi Sam,\nThanks for your message! Last week we finished the new project. It was hard work, but I am happy with the result. The new app is faster and easier than the old one.\nNext week we are going to launch it. On Monday, I am meeting the client at ten to show her the app. We usually start at nine, but that day we are starting earlier.\nOne more thing: could you help me with the presentation? I am not very good at design!\nSee you soon,\nMarcos";
 
 const QUESTIONS = [
   { sec:"A", q:"My sister ____ in a hospital.", o:["working","works","work"], a:1, fb:"Present simple, 3ra persona: she works (+s)." },
-  { sec:"A", q:"She ____ late for work.", o:["never is","be never","is never"], a:2, fb:"El adverbio de frecuencia va despues de 'to be': 'is never'." },
+  { sec:"A", q:"She ____ late for work.", o:["never is","be never","is never"], a:2, fb:"El adverbio de frecuencia va después de 'to be': 'is never'." },
   { sec:"A", q:"Yesterday I ____ a great film.", o:["see","seen","saw"], a:2, fb:"Pasado simple de 'see' = saw." },
   { sec:"A", q:"They ____ at home last night.", o:["was","is","were"], a:2, fb:"'They' -> were (pasado de 'to be')." },
-  { sec:"A", q:"We ____ to work yesterday - it was a holiday.", o:["didn't went","didn't go","don't go"], a:1, fb:"Negativo en pasado: didn't + verbo base = didn't go." },
-  { sec:"A", q:"____ you help me with this, please?", o:["Could","Do","Are"], a:0, fb:"Pedido cortes: 'Could you...?' + verbo base." },
+  { sec:"A", q:"We ____ to work yesterday. It was Sunday.", o:["didn't went","didn't go","don't go"], a:1, fb:"Negativo en pasado: didn't + verbo base = didn't go." },
+  { sec:"A", q:"____ you help me with this, please?", o:["Could","Do","Are"], a:0, fb:"Pedido cortés: 'Could you...?' + verbo base." },
   { sec:"A", q:"You look tired. ____ I make you a coffee?", o:["Do","Shall","Am"], a:1, fb:"Ofrecimiento: 'Shall I...?'." },
   { sec:"A", q:"This book is ____ than the other one.", o:["more interesting","interesting","most interesting"], a:0, fb:"Adjetivo largo: 'more interesting than'." },
   { sec:"A", q:"Her English is ____ than mine.", o:["gooder","more good","better"], a:2, fb:"Comparativo irregular: good -> better." },
   { sec:"A", q:"I can't meet on Friday. I ____ a client at three.", o:["met","am meeting","meet"], a:1, fb:"Cita fija futura -> present continuous: 'I'm meeting...'." },
-  { sec:"B", q:"Every morning I ____ a shower.", o:["take","make","do"], a:0, fb:"'take a shower' (no make/do)." },
+  { sec:"B", q:"We're going to ____ two new developers for the project.", o:["hire","launch","improve"], a:0, fb:"hire = contratar." },
   { sec:"B", q:"We work from home, so we ____ at nine and check our messages.", o:["log on","hang up","wake up"], a:0, fb:"Trabajo remoto: 'log on' = conectarse." },
-  { sec:"B", q:"Could you ____ the file to your email?", o:["book","attach","cost"], a:1, fb:"'attach a file' = adjuntar un archivo." },
+  { sec:"B", q:"She's in a meeting right now. Can I ____ a message?", o:["make","take","do"], a:1, fb:"'take a message' = tomar un mensaje." },
   { sec:"B", q:"You send a document with an email. It is ___.", o:["deleted","printed","attached"], a:2, fb:"attached = adjunto." },
-  { sec:"B", q:"The day a project must be finished is the ___.", o:["break","deadline","agenda"], a:1, fb:"deadline = fecha limite." },
-  { sec:"B", q:"A person you work with is a ___.", o:["colleague","client","student"], a:0, fb:"colleague = companero de trabajo." },
+  { sec:"B", q:"The estimate isn't ready. There is one task ___.", o:["available","pending","attached"], a:1, fb:"pending = pendiente." },
+  { sec:"B", q:"A person you work with is a ___.", o:["colleague","client","student"], a:0, fb:"colleague = compañero de trabajo." },
   { sec:"C", q:"What did the person do in the afternoon?", o:["Wrote a new report","Fixed two problems on the website","Had three meetings"], a:1, fb:"'In the afternoon, I fixed two problems on the website.'", audio:"a2f1.mp3" },
-  { sec:"C", q:"What does Emma ask Marcos to do?", o:["Send the report today","Call her tomorrow","Book a meeting room"], a:0, fb:"'Could you send me the report today?'", audio:"a2f2.mp3" },
+  { sec:"C", q:"What does Nina ask Marcos to do?", o:["Send the report today","Call her tomorrow","Book a meeting room"], a:0, fb:"'Could you send me the report today?'", audio:"a2f2.mp3" },
   { sec:"C", q:"Why is the black laptop the better choice for work?", o:["It is lighter","It is cheaper","It is faster and more reliable"], a:2, fb:"'The black one is faster and more reliable.'", audio:"a2f3.mp3" },
   { sec:"C", q:"What is the person going to do on Friday?", o:["Relax at home","Fly to Madrid","Meet a client"], a:0, fb:"'On Friday I'm not working, so I'm going to relax at home.'", audio:"a2f4.mp3" },
   { sec:"D", q:"When did Marcos finish the new project?", o:["Next week","Last week","On Monday"], a:1, fb:"'Last week we finished the new project.'" },
   { sec:"D", q:"How is the new app compared to the old one?", o:["Bigger and heavier","Faster and easier","Slower but cheaper"], a:1, fb:"'The new app is faster and easier than the old one.'" },
-  { sec:"D", q:"What does Marcos ask Sam to do?", o:["Call the client","Help with the slides","Book a restaurant"], a:1, fb:"'Could you help me with the slides?'" },
+  { sec:"D", q:"What does Marcos ask Sam to do?", o:["Call the client","Help with the presentation","Book a room"], a:1, fb:"'Could you help me with the presentation?'" },
   { sec:"D", q:"What time is Marcos meeting the client on Monday?", o:["At nine","At three","At ten"], a:2, fb:"'On Monday, I am meeting the client at ten.'" }
 ];
 
