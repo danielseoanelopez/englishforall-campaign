@@ -45,89 +45,239 @@
       "type": "grammar",
       "tag": "present simple",
       "title": "<ico-book></ico-book> PRESENT SIMPLE & FREQUENCY",
-      "intro": "Usamos el <b style='color:var(--gold)'>present simple</b> para rutinas y cosas que pasan siempre. Repasa y luego practica con varios ejercicios.",
-      "cells": [
-        {
-          "h": "<ico-check></ico-check> Affirmative",
-          "body": "I / you / we / they <code>work</code><br>he / she / it <code>works</code> <span class='es'>(+s)</span>"
-        },
-        {
-          "h": "<ico-xmark></ico-xmark> Negative",
-          "body": "I <code>don't</code> work<br>she <code>doesn't</code> work"
-        },
-        {
-          "h": "? Questions",
-          "body": "<code>Do</code> you work?<br><code>Does</code> she work?<br>What time <code>do</code> you start?"
-        },
-        {
-          "h": "<ico-warn></ico-warn> Watch out",
-          "body": "<span class='ok'>She works here.</span><br><span class='x'>She work here.</span><br><span class='ok'>He doesn't work.</span> <span class='es'>(no \"doesn't works\")</span>"
-        }
-      ],
-      "ladderLabel": "<b style='color:var(--purple)'>Adverbios de frecuencia</b> — van antes del verbo: <i>I <u>always</u> check emails.</i>",
-      "ladder": [
-        "always 100%",
-        "usually",
-        "often",
-        "sometimes",
-        "rarely",
-        "never 0%"
-      ],
-      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de rutina",
+      "intro": "En A1 ya usaste <b>do / does</b> para preguntar. Ahora armamos la rutina completa en <b style='color:var(--gold)'>present simple</b>: lo que haces <b>siempre, a veces o nunca</b>. Son cinco pasos. Toca el altavoz de cada línea y repite en voz alta.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver palabras de los audios",
       "vocab": [
         {
-          "en": "Wake up",
-          "sp": "despertarse"
+          "en": "Team lead",
+          "sp": "jefa / jefe de equipo"
         },
         {
-          "en": "Get up",
-          "sp": "levantarse"
+          "en": "Developer",
+          "sp": "programador / programadora"
         },
         {
-          "en": "Have breakfast",
-          "sp": "desayunar"
+          "en": "Colleague",
+          "sp": "compañero / compañera de trabajo"
         },
         {
-          "en": "Log on / Log off",
-          "sp": "conectarse / desconectarse"
+          "en": "Website",
+          "sp": "sitio web"
         },
         {
-          "en": "Check emails",
-          "sp": "revisar correos"
+          "en": "Nervous",
+          "sp": "nervioso / nerviosa"
         },
         {
-          "en": "Standup meeting",
-          "sp": "reunión breve diaria"
+          "en": "Quick / Short",
+          "sp": "rápido / corto"
         },
         {
-          "en": "Take a break",
-          "sp": "tomar un descanso"
+          "en": "On weekends",
+          "sp": "los fines de semana"
         },
         {
-          "en": "Finish work",
-          "sp": "terminar el trabajo"
+          "en": "Go for a walk",
+          "sp": "salir a caminar"
         }
       ],
-      "note": "<b>Cómo funciona:</b> esta lección mezcla <b>completar</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. Haz el <ico-check></ico-check> CHECK en cada ejercicio."
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>completar</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>elegir respuestas</b> <ico-comments></ico-comments> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · LA RUTINA</b> <span class='es'>— present simple en afirmativo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I start at nine.",
+              "sp": "Empiezo a las nueve. — con I / you / we / they el verbo no cambia."
+            },
+            {
+              "en": "We work remotely.",
+              "sp": "Trabajamos a distancia."
+            },
+            {
+              "en": "She starts at nine.",
+              "sp": "Ella empieza a las nueve. — con he / she / it el verbo lleva <b>-s</b>."
+            },
+            {
+              "en": "Marcos works remotely.",
+              "sp": "Un nombre (Marcos, my manager, the team) cuenta como he / she / it."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-pen></ico-pen> Cómo se escribe la -s",
+              "body": "Casi siempre <code>+s</code>: work → work<b>s</b> · start → start<b>s</b> · play → play<b>s</b><br>Termina en -ch, -sh, -ss, -x, -o → <code>+es</code>: watch → watch<b>es</b> · finish → finish<b>es</b> · go → go<b>es</b><br>Consonante + y → <code>-ies</code>: study → stud<b>ies</b> <span class='es'>(pero play → plays: antes de la y hay vocal)</span><br>Irregular: have → <b>has</b>"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>La -s es solo para he / she / it.</b> En español cada persona cambia el verbo (trabajo, trabajas, trabaja…); en inglés solo cambia una: <s class='x'>She work here.</s> → <span class='ok'>She works here.</span> · <s class='x'>They works here.</s> → <span class='ok'>They work here.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · NEGATIVO Y PREGUNTA</b> <span class='es'>— don't / doesn't · do / does</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I don't work on weekends.",
+              "sp": "No trabajo los fines de semana. — <b>don't</b> + verbo."
+            },
+            {
+              "en": "He doesn't work on weekends.",
+              "sp": "Con he / she / it: <b>doesn't</b> + verbo <b>sin -s</b>."
+            },
+            {
+              "en": "Do you work remotely?",
+              "sp": "¿Trabajas a distancia? — Yes, I do. / No, I don't."
+            },
+            {
+              "en": "Does she work remotely?",
+              "sp": "¿Ella trabaja a distancia? — Yes, she does. / No, she doesn't."
+            },
+            {
+              "en": "What time does the team start?",
+              "sp": "¿A qué hora empieza el equipo? — palabra de pregunta + do / does + persona + verbo."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>La -s se usa una sola vez.</b> Si ya está en doe<b>s</b> o doe<b>s</b>n't, el verbo queda limpio: <s class='x'>He doesn't works.</s> → <span class='ok'>He doesn't work.</span> · <s class='x'>Does she starts at nine?</s> → <span class='ok'>Does she start at nine?</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · ¿CON QUÉ FRECUENCIA?</b> <span class='es'>— los adverbios, de 100% a 0%</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "always 100%",
+            "usually",
+            "often",
+            "sometimes",
+            "rarely",
+            "never 0%"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I always check my emails first.",
+              "sp": "Siempre reviso primero mis correos. — el adverbio va <b>antes del verbo</b>."
+            },
+            {
+              "en": "She usually starts at nine.",
+              "sp": "Normalmente empieza a las nueve. <b>Normally</b> significa lo mismo."
+            },
+            {
+              "en": "I rarely work late.",
+              "sp": "Casi nunca trabajo hasta tarde. <b>Hardly ever</b> significa lo mismo."
+            },
+            {
+              "en": "She is never late.",
+              "sp": "Nunca llega tarde. — con <b>be</b> (am / is / are) el adverbio va <b>después</b>."
+            }
+          ]
+        },
+        {
+          "type": "cells",
+          "cells": [
+            {
+              "h": "<ico-warn></ico-warn> Errores típicos",
+              "body": "En español el orden es libre («Reviso siempre…»). En inglés no:<br><s class='x'>I check always my emails.</s> → <span class='ok'>I always check my emails.</span><br><s class='x'>She never is late.</s> → <span class='ok'>She is never late.</span><br><b>Never</b> ya es negativo, no lleva don't: <s class='x'>I don't never work late.</s> → <span class='ok'>I never work late.</span>"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · HOW OFTEN…?</b> <span class='es'>— preguntar y responder con qué frecuencia</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "How often do you have meetings?",
+              "sp": "¿Cada cuánto tienes reuniones?"
+            },
+            {
+              "en": "Every day. / Every morning.",
+              "sp": "Todos los días. / Todas las mañanas. — <b>every</b> + singular, sin «the»."
+            },
+            {
+              "en": "Once a week. / Twice a week.",
+              "sp": "Una vez por semana. / Dos veces por semana."
+            },
+            {
+              "en": "I have a meeting every Friday.",
+              "sp": "Estas expresiones van <b>al final</b> de la frase."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Todos los días = every day</b>, no <s class='x'>all the days</s> → <span class='ok'>every day</span>. Y va al final: <s class='x'>I every day check my emails.</s> → <span class='ok'>I check my emails every day.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · CUENTA TU DÍA</b> <span class='es'>— las frases de rutina, en orden</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I wake up at seven.",
+              "sp": "Me despierto a las siete (abro los ojos)."
+            },
+            {
+              "en": "I get up at seven fifteen.",
+              "sp": "Me levanto a las siete y cuarto (salgo de la cama)."
+            },
+            {
+              "en": "I have breakfast.",
+              "sp": "Desayuno. — las comidas van con <b>have</b>: have breakfast, have lunch, have dinner."
+            },
+            {
+              "en": "First, I check my emails. Then we have a meeting.",
+              "sp": "<b>First</b> (primero) y <b>then</b> (después) ponen tu día en orden."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Sin «me» y sin «the».</b> En inglés no hay verbo reflexivo aquí: <s class='x'>I wake up me.</s> → <span class='ok'>I wake up.</span> Y las comidas van sin artículo: <s class='x'>I have the breakfast.</s> → <span class='ok'>I have breakfast.</span>"
+        }
+      ]
     },
     {
       "type": "flashcards",
       "id": "fc-vocab",
-      "title": "FLASHCARDS · rutinas",
-      "intro": "Toca cada tarjeta para ver la traducción.",
-      "deckLabel": "rutina y frecuencia",
+      "title": "FLASHCARDS · el día de trabajo",
+      "intro": "Toca cada tarjeta para ver la traducción. Estas palabras salen en los audios.",
+      "deckLabel": "trabajo y rutina",
       "cards": [
         {
-          "front": "wake up",
-          "back": "despertarse"
+          "front": "log on",
+          "back": "conectarse"
         },
         {
-          "front": "get up",
-          "back": "levantarse"
-        },
-        {
-          "front": "have breakfast",
-          "back": "desayunar"
+          "front": "log off",
+          "back": "desconectarse"
         },
         {
           "front": "check emails",
@@ -138,24 +288,28 @@
           "back": "tomar un descanso"
         },
         {
+          "front": "a meeting",
+          "back": "una reunión"
+        },
+        {
+          "front": "a report",
+          "back": "un informe"
+        },
+        {
+          "front": "work late",
+          "back": "trabajar hasta tarde"
+        },
+        {
+          "front": "work remotely",
+          "back": "trabajar a distancia"
+        },
+        {
+          "front": "a busy day",
+          "back": "un día con mucho trabajo"
+        },
+        {
           "front": "finish work",
-          "back": "terminar el trabajo"
-        },
-        {
-          "front": "always",
-          "back": "siempre"
-        },
-        {
-          "front": "usually",
-          "back": "normalmente"
-        },
-        {
-          "front": "hardly ever",
-          "back": "casi nunca"
-        },
-        {
-          "front": "never",
-          "back": "nunca"
+          "back": "terminar de trabajar"
         }
       ]
     },
@@ -163,11 +317,11 @@
       "type": "story",
       "tag": "conoce al equipo",
       "title": "<ico-star></ico-star> MARCOS'S FIRST WEEK",
-      "intro": "Marcos empieza en un equipo de trabajo remoto. Su jefa, Sofia, le explica la rutina. Practica las formas y después escucha.",
+      "intro": "¿Te acuerdas de Marcos? Ahora tiene su primer trabajo: es developer en un equipo remoto. Su jefa, Sofia, le explica la rutina. Practica las formas y después escucha.",
       "cast": [
         {
           "en": "Sofia",
-          "sp": "la <b style='color:var(--magenta)'>team lead</b>"
+          "sp": "la <b style='color:var(--magenta)'>team lead</b> (jefa de equipo)"
         },
         {
           "en": "Marcos",
@@ -179,25 +333,25 @@
       "type": "gapFill",
       "id": "ex-gap",
       "title": "COMPLETA EN PRESENTE",
-      "intro": "Elige la forma correcta del present simple.",
+      "intro": "Elige la opción correcta. Ojo con la -s, con do / does y con el lugar del adverbio.",
       "items": [
         {
           "q": "She ___ her emails every morning.",
           "options": [
-            "checking",
+            "checks",
             "check",
-            "checks"
+            "checking"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
           "q": "We ___ at nine o'clock.",
           "options": [
             "starts",
-            "starting",
-            "start"
+            "start",
+            "starting"
           ],
-          "answer": 2
+          "answer": 1
         },
         {
           "q": "He ___ work on weekends.",
@@ -209,49 +363,67 @@
           "answer": 2
         },
         {
-          "q": "___ you work remotely?",
+          "q": "___ the team start at nine?",
           "options": [
-            "Does",
             "Do",
-            "Are"
+            "Does",
+            "Is"
           ],
           "answer": 1
         },
         {
-          "q": "Marcos always ___ a coffee in the morning.",
+          "q": "Sofia ___ lunch at one.",
           "options": [
-            "needs",
-            "needing",
-            "need"
+            "have",
+            "haves",
+            "has"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "She ___ late for the meeting.",
+          "options": [
+            "is never",
+            "never is",
+            "doesn't never"
           ],
           "answer": 0
-        },
-        {
-          "q": "She is ___ late for the meeting. (0%)",
-          "options": [
-            "often",
-            "always",
-            "never"
-          ],
-          "answer": 2
-        },
-        {
-          "q": "My manager ___ the report every Friday.",
-          "options": [
-            "reviewing",
-            "review",
-            "reviews"
-          ],
-          "answer": 2
         },
         {
           "q": "He ___ English every day before work.",
           "options": [
             "studys",
-            "study",
-            "studies"
+            "studies",
+            "study"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Marcos ___ a video after work.",
+          "options": [
+            "watchs",
+            "watch",
+            "watches"
           ],
           "answer": 2
+        },
+        {
+          "q": "I ___ work late. Only on busy days.",
+          "options": [
+            "rarely",
+            "always",
+            "every day"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How often do you take a break? — ___ a day.",
+          "options": [
+            "Two",
+            "Twice",
+            "Second"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -261,7 +433,7 @@
       "title": "AUDIO 1 · THE WELCOME CALL",
       "desc": "Sofia le da la bienvenida a Marcos y le explica la rutina del equipo.",
       "src": "daily-routines-1.mp3",
-      "dur": "1:12",
+      "dur": "1:05",
       "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
       "questions": [
         {
@@ -278,21 +450,31 @@
           "type": "mcq",
           "q": "What does Sofia always do first?",
           "options": [
-            "She has a short meeting",
             "She checks her emails",
+            "She has a short meeting",
             "She writes her reports"
           ],
-          "answer": 1
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How often does the team have a meeting?",
+          "options": [
+            "Once a week",
+            "Every afternoon",
+            "Every morning"
+          ],
+          "answer": 2
         },
         {
           "type": "mcq",
           "q": "When does Sofia write reports?",
           "options": [
-            "In the morning",
             "In the afternoon",
-            "Before lunch"
+            "In the morning",
+            "On weekends"
           ],
-          "answer": 1
+          "answer": 0
         }
       ],
       "speaking": {
@@ -320,7 +502,16 @@
         },
         {
           "spk": "Sofia",
-          "html": "We <span class='tg'>usually start</span> at nine. I <span class='tg'>always check</span> my emails first, then we have a short meeting."
+          "html": "We <span class='tg'>usually start</span> at nine o'clock. I <span class='tg'>always check</span> my emails first, and then we have a short meeting."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>Do</span> you have a meeting <span class='tg'>every day</span>?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "Yes, <span class='tg'>every morning</span>. It's quick. We only talk for ten minutes."
         },
         {
           "spk": "Marcos",
@@ -329,11 +520,101 @@
         },
         {
           "spk": "Sofia",
-          "html": "I usually take a break at eleven, and we have lunch at one. I <span class='tg'>often</span> write reports in the afternoon."
+          "html": "I usually take a break at eleven, and we have lunch at one. In the afternoon, I <span class='tg'>often write</span> reports."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "What time do you finish?"
         },
         {
           "spk": "Sofia",
-          "html": "I normally finish at five, but I <span class='tg'>never</span> work on weekends. Family time!"
+          "html": "I <span class='tg'>normally finish</span> at five, and I <span class='tg'>never work</span> on weekends. Family time!"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "That sounds great. Thank you, Sofia."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "ELIGE LA RESPUESTA",
+      "intro": "Sofia te pregunta por tu rutina. Elige la respuesta correcta: ojo con do / does, la -s y el lugar del adverbio.",
+      "lines": [
+        {
+          "spk": "Sofia",
+          "html": "What time do you start work?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I start at nine.",
+            "I starts at nine.",
+            "I'm start at nine."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Sofia",
+          "b": true,
+          "html": "Do you work on weekends?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "No, I'm not.",
+            "No, I don't.",
+            "No, I doesn't."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Sofia",
+          "html": "How often do you have meetings?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "At ten o'clock.",
+            "Yes, I do.",
+            "Twice a week."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Sofia",
+          "b": true,
+          "html": "Does your manager work remotely?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Yes, she does.",
+            "Yes, she do.",
+            "Yes, she works."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Sofia",
+          "html": "Are you often late?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "No, I never late.",
+            "No, I don't never late.",
+            "No, I'm never late."
+          ],
+          "answer": 2
         }
       ]
     },
@@ -341,7 +622,7 @@
       "type": "order",
       "id": "ex-order",
       "title": "ORDENA LA FRASE",
-      "intro": "Toca las palabras para formar la frase.",
+      "intro": "Toca las palabras para formar la frase. El adverbio tiene su lugar.",
       "items": [
         {
           "words": [
@@ -355,15 +636,6 @@
         },
         {
           "words": [
-            "We",
-            "start",
-            "at",
-            "nine"
-          ],
-          "answer": "We start at nine"
-        },
-        {
-          "words": [
             "He",
             "doesn't",
             "work",
@@ -371,6 +643,38 @@
             "weekends"
           ],
           "answer": "He doesn't work on weekends"
+        },
+        {
+          "words": [
+            "She",
+            "is",
+            "never",
+            "late"
+          ],
+          "answer": "She is never late"
+        },
+        {
+          "words": [
+            "What",
+            "time",
+            "does",
+            "the",
+            "team",
+            "start"
+          ],
+          "answer": "What time does the team start"
+        },
+        {
+          "words": [
+            "How",
+            "often",
+            "do",
+            "you",
+            "take",
+            "a",
+            "break"
+          ],
+          "answer": "How often do you take a break"
         }
       ]
     },
@@ -378,9 +682,9 @@
       "type": "listening",
       "id": "ex-l2",
       "title": "AUDIO 2 · MARCOS'S DAY",
-      "desc": "Marcos describe su propio día. Vive en otra zona horaria.",
+      "desc": "Marcos se presenta al equipo y cuenta su día, de la mañana a la tarde.",
       "src": "daily-routines-2.mp3",
-      "dur": "0:49",
+      "dur": "0:33",
       "speakers": "<ico-commentdots></ico-commentdots> Marcos",
       "questions": [
         {
@@ -395,34 +699,64 @@
         },
         {
           "type": "mcq",
-          "q": "When does Marcos often work on the website?",
+          "q": "What time does Marcos log on?",
           "options": [
-            "Late at night, when nobody writes",
-            "In the morning, because it is quiet",
-            "In the afternoon, after he has lunch"
+            "At seven o'clock",
+            "At eight thirty",
+            "At one"
           ],
           "answer": 1
         },
         {
           "type": "mcq",
+          "q": "When does Marcos often work on the website?",
+          "options": [
+            "In the morning",
+            "In the afternoon",
+            "Late at night"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
           "q": "How often does Marcos work late?",
           "options": [
-            "Every day, until six",
-            "Never, he always logs off",
-            "Rarely, only on busy days"
+            "Every day",
+            "Rarely",
+            "Never"
           ],
-          "answer": 2
+          "answer": 1
         }
       ],
       "speaking": {
         "prompt": "What is Marcos's morning routine? Tell it in 2–3 sentences.",
-        "starter": "He usually wakes up at seven, has breakfast and a coffee, and then (next action)."
+        "starter": "He usually wakes up at seven. First, he has breakfast. Then he (next action)."
       },
       "transcript": [
         {
           "spk": "Marcos",
           "b": true,
-          "html": "Hi everyone, I'm Marcos, the new developer. I usually <span class='tg'>wake up</span> at seven. First, I <span class='tg'>have breakfast</span> and drink a big coffee. I <span class='tg'>always</span> need coffee! Then I <span class='tg'>log on</span> at eight thirty. I <span class='tg'>often</span> work on the website in the morning, because it's quiet. I usually <span class='tg'>have lunch</span> at one. I <span class='tg'>rarely</span> work late, but on busy days I finish at six. I <span class='tg'>never</span> forget to log off!"
+          "html": "Hi everyone, I'm Marcos, the new developer. This is my day."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I usually <span class='tg'>wake up</span> at seven o'clock. First, I <span class='tg'>have breakfast</span> and drink a big coffee. I <span class='tg'>always</span> need coffee!"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Then I <span class='tg'>log on</span> at eight thirty. I <span class='tg'>often</span> work on the website in the morning, because it's quiet."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I usually <span class='tg'>have lunch</span> at one, and <span class='tg'>sometimes</span> I go for a short walk. In the afternoon, I have meetings with the team."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I <span class='tg'>rarely</span> work late, but on busy days I finish at six. I <span class='tg'>never</span> forget to log off!"
         }
       ]
     },
@@ -433,11 +767,11 @@
       "checklist": [
         "Usa <b>I + verbo</b> (I wake up, I start…)",
         "Una frase con <b>he/she + verbo+s</b> (My colleague <b>works</b>…)",
-        "Usa <b>3 adverbios de frecuencia</b> (always / usually / often / sometimes / never)",
-        "Incluye horas (<b>at nine</b>, <b>in the morning</b>)"
+        "Usa <b>3 adverbios de frecuencia</b> (always / usually / often / sometimes / rarely / never)",
+        "Incluye horas y <b>first / then</b> (<b>at nine</b>, <b>in the morning</b>)"
       ],
       "placeholder": "I usually wake up at...",
-      "example": "I usually wake up at (time). I always (routine) before work. I start at (time) and I often (activity) first. My colleague (name) usually (activity) in the afternoon. I never (activity) on Sundays.",
+      "example": "I usually wake up at <span class=\"gap\">hora</span>. First, I <span class=\"gap\">rutina</span>. Then I start work at <span class=\"gap\">hora</span>. I always <span class=\"gap\">actividad</span> in the morning. My colleague <span class=\"gap\">nombre</span> usually <span class=\"gap\">verbo + s</span> in the afternoon. I never <span class=\"gap\">actividad</span> on weekends.",
       "hw": "Escribe tu rutina. Después grábate contándola <b>sin leer</b> — anota solo 4–5 palabras clave y habla desde ahí. Envíame el texto y el audio por WhatsApp.",
       "rubric": [
         {
@@ -450,9 +784,132 @@
         },
         {
           "c": "Se entiende a la primera",
-          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+          "d": "Un lector lo entiende sin releer: ideas unidas con <b>first, then, and, but</b>, sin traducir literal del español."
         }
       ]
     }
-  ]
+  ],
+  "say": {
+    "dir": "say/a2-l1",
+    "keys": [
+      "a-busy-day",
+      "a-meeting",
+      "a-quiet-room",
+      "a-report",
+      "always",
+      "are-you-often-late",
+      "at-eight-thirty",
+      "at-eleven",
+      "at-nine-o-clock",
+      "at-one",
+      "at-seven-o-clock",
+      "at-ten-o-clock",
+      "breakfast",
+      "can-you",
+      "check",
+      "check-emails",
+      "checking",
+      "checks",
+      "coffee",
+      "colleague",
+      "developer",
+      "do",
+      "do-you-work-on-weekends",
+      "do-you-work-remotely",
+      "does",
+      "does-she-work-remotely",
+      "does-your-manager-work-remotely",
+      "doesn-t",
+      "doesn-t-never",
+      "don-t",
+      "every-afternoon",
+      "every-day",
+      "every-day-every-morning",
+      "every-morning",
+      "finish-work",
+      "first-i-check-my-emails-then-we-have-a-meeting",
+      "go-for-a-walk",
+      "has",
+      "have",
+      "haves",
+      "he-doesn-t-work-on-weekends",
+      "how",
+      "how-often-do-you-have-meetings",
+      "how-often-does-marcos-work-late",
+      "how-often-does-the-team-have-a-meeting",
+      "i-always-check-my-emails-first",
+      "i-don-t-work-on-weekends",
+      "i-get-up-at-seven-fifteen",
+      "i-have-a-meeting-every-friday",
+      "i-have-breakfast",
+      "i-m-start-at-nine",
+      "i-rarely-work-late",
+      "i-start-at-nine",
+      "i-starts-at-nine",
+      "i-wake-up-at-seven",
+      "in-the-afternoon",
+      "in-the-morning",
+      "is",
+      "is-never",
+      "isn-t",
+      "late-at-night",
+      "log-off",
+      "log-on",
+      "marcos-works-remotely",
+      "nervous",
+      "never",
+      "never-is",
+      "no-i-doesn-t",
+      "no-i-don-t",
+      "no-i-don-t-never-late",
+      "no-i-m-never-late",
+      "no-i-m-not",
+      "no-i-never-late",
+      "on-weekends",
+      "once-a-week",
+      "once-a-week-twice-a-week",
+      "quick-short",
+      "rarely",
+      "second",
+      "she-checks-her-emails",
+      "she-has-a-short-meeting",
+      "she-is-never-late",
+      "she-starts-at-nine",
+      "she-usually-starts-at-nine",
+      "she-writes-her-reports",
+      "start",
+      "starting",
+      "starts",
+      "studies",
+      "study",
+      "studys",
+      "take-a-break",
+      "team-lead",
+      "twice",
+      "twice-a-week",
+      "two",
+      "watch",
+      "watches",
+      "watchs",
+      "we-work-remotely",
+      "website",
+      "what-does-marcos-always-need-in-the-morning",
+      "what-does-sofia-always-do-first",
+      "what-time-do-you-start-work",
+      "what-time-does-marcos-log-on",
+      "what-time-does-the-team-start",
+      "what-time-does-the-team-usually-start",
+      "when-does-marcos-often-work-on-the-website",
+      "when-does-sofia-write-reports",
+      "where",
+      "who",
+      "why",
+      "work-late",
+      "work-remotely",
+      "yes-i-do",
+      "yes-she-do",
+      "yes-she-does",
+      "yes-she-works"
+    ]
+  }
 }
