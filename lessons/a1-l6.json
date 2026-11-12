@@ -402,7 +402,8 @@
             "Si quieres hacerlo ahora",
             "Si sabes hacerlo (habilidad)"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -837,9 +838,6 @@
       "pen",
       "play",
       "plays",
-      "si-lo-haces-normalmente-h-bito",
-      "si-quieres-hacerlo-ahora",
-      "si-sabes-hacerlo-habilidad",
       "swim-see-my-friends",
       "there-are-two-books",
       "to-play",

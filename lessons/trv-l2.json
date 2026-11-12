@@ -607,7 +607,8 @@
             "204",
             "350"
           ],
-          "answer": 0
+          "answer": 0,
+          "mute": true
         }
       ],
       "transcript": [

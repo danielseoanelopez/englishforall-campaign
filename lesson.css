@@ -88,8 +88,8 @@ p { margin-bottom: 8px; }
 .verbal { margin-top: 16px; border-top: 1px dashed #2a4a6a; padding-top: 12px; }
 .verbal .vq { font-size: 0.98rem; }
 .verbal .mic { color: var(--magenta); margin-right: 6px; }
-.gloss { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 6px; }
-@media (min-width: 620px) { .gloss { grid-template-columns: 1fr 1fr; } }
+.gloss { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; margin-top: 6px; }
+@media (min-width: 620px) { .gloss { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 .term { border: 1px solid #2a4a6a; border-radius: 10px; padding: 9px 13px; background: #181a3a88; }
 .term .en { color: var(--text); }
 .term .sp { color: var(--muted); font-size: 0.85rem; display: block; }
@@ -194,8 +194,8 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .match-r { display: flex; align-items: center; gap: 8px; }
 .match-r .spk-btn.mini { margin-left: auto; }
 .freq-bar .chip { display: inline-flex; align-items: center; }
-.term .en { display: flex; align-items: center; }
-.term .en .spk-btn.mini { margin-left: auto; }
+.term .en { display: block; overflow: hidden; }   /* block + floated speaker: long sentences with <b> wrap as normal text (flex split them into columns and overflowed on phones) */
+.term .en .spk-btn.mini { float: right; margin-left: 8px; }
 /* Picture match (emoji vocab) */
 .match-l.pic { display: flex; align-items: center; gap: 12px; }
 .match-l.pic .pic-em { font-size: 1.9rem; line-height: 1; }

@@ -307,7 +307,8 @@
             "60 minutos, por escrito",
             "11–14 minutos, en 3 partes"
           ],
-          "answer": 2
+          "answer": 2,
+          "mute": true
         },
         {
           "type": "mcq",
@@ -755,9 +756,6 @@
   "say": {
     "dir": "say/iel-l1",
     "keys": [
-      "11-14-minutos-en-3-partes",
-      "30-minutos-en-4-secciones",
-      "60-minutos-por-escrito",
       "a-coworker-a-colleague",
       "about-four-years",
       "about-two-years",
