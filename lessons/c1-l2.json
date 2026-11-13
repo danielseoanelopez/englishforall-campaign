@@ -1,0 +1,832 @@
+{
+  "level": "C1",
+  "num": 2,
+  "totalLessons": 6,
+  "world": "ADVANCED OPERATOR",
+  "ui": "en",
+  "key": "rankup_C1_L2",
+  "title": "COHESION &amp;<br>LINKING",
+  "titlePlain": "Cohesion & Linking — The Thread (C1)",
+  "subtitle": "Speaking &amp; Writing · C1 · ~50 min",
+  "rankup": "EPISODE CLEAR!",
+  "next": {
+    "href": "lesson.html?id=c1-l3",
+    "label": "LESSON 3 ▸ INVERSION & EMPHASIS"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> EPISODE RECAP · last lesson",
+      "intro": "Before we go on air: match each phrase from the last episode with its meaning.",
+      "pairs": [
+        {
+          "l": "to raise concerns",
+          "r": "to say that something worries you"
+        },
+        {
+          "l": "a slim chance",
+          "r": "a very small possibility"
+        },
+        {
+          "l": "cut corners",
+          "r": "do it badly to save time"
+        },
+        {
+          "l": "back to square one",
+          "r": "starting again"
+        },
+        {
+          "l": "the elephant in the room",
+          "r": "the problem nobody mentions"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "discourse markers & reference",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· discourse markers &amp; reference</span>",
+      "title": "<ico-book></ico-book> THE THREAD",
+      "intro": "A listener cannot go back and reread. To keep them with you, you need two things: <b style='color:var(--gold)'>signposts</b> that say where the next sentence is going, and <b style='color:var(--gold)'>pointing words</b> that link back without repeating. That is cohesion.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show the marker list",
+      "vocab": [
+        {
+          "en": "that said / having said that",
+          "sp": "concession: what comes next limits what I just said"
+        },
+        {
+          "en": "even so",
+          "sp": "concession: a surprising result"
+        },
+        {
+          "en": "mind you",
+          "sp": "concession, spoken: an afterthought"
+        },
+        {
+          "en": "what's more / on top of that",
+          "sp": "addition: one more point in the same direction"
+        },
+        {
+          "en": "anyway / as I was saying",
+          "sp": "return: back to the main line"
+        },
+        {
+          "en": "to cut a long story short",
+          "sp": "summary: jumping to the end"
+        },
+        {
+          "en": "the former / the latter",
+          "sp": "reference: the first / the second of two"
+        },
+        {
+          "en": "do so",
+          "sp": "substitution: replaces a verb phrase"
+        },
+        {
+          "en": "such",
+          "sp": "reference: of the kind just mentioned"
+        }
+      ],
+      "note": "<b>How it works:</b> two versions of the same monologue <ico-headphones></ico-headphones>, compare <ico-comments></ico-comments>, gap-fill <ico-filepen></ico-filepen>, rewrite <ico-pen></ico-pen>, order <ico-puzzle></ico-puzzle> and memory. Press <ico-check></ico-check> CHECK wherever you see it.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · SIGNPOSTS AND POINTING BACK</b> <span class='es'>— the two halves of cohesion</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The show ran long. That said, nobody left.",
+              "sp": "A signpost: «That said» warns you that a contrast is coming."
+            },
+            {
+              "en": "We tried two formats. The latter worked.",
+              "sp": "Pointing back: «the latter» = the second format. No repetition."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · CONCESSION</b> <span class='es'>— yes, but. They open the second sentence and take a comma</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The studio is small. That said, it sounds great.",
+              "sp": "That said, = I accept the first point; here is the other side."
+            },
+            {
+              "en": "It was expensive. Even so, we bought it.",
+              "sp": "Even so, = in spite of that (a surprising result)."
+            },
+            {
+              "en": "He's always late. Mind you, he's never missed a show.",
+              "sp": "Mind you, = spoken; an afterthought that softens what you said."
+            },
+            {
+              "en": "It was a disaster. Having said that, I'd do it again.",
+              "sp": "Having said that, = a little more formal than «that said»."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · SPOKEN MARKERS</b> <span class='es'>— add a point, come back, jump to the end</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The app is fast. What's more, it's free.",
+              "sp": "Addition."
+            },
+            {
+              "en": "I missed the bus. On top of that, it started to rain.",
+              "sp": "Addition, usually of bad news."
+            },
+            {
+              "en": "Anyway, as I was saying, the car broke down.",
+              "sp": "Return: you wandered off, and now you come back."
+            },
+            {
+              "en": "To cut a long story short, we missed the show.",
+              "sp": "Summary: you skip the details."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · POINT BACK WITHOUT REPEATING</b> <span class='es'>— the former, the latter, do so, such, one</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We could cut the news or the weather. The former is longer; the latter is more popular.",
+              "sp": "the former = the news · the latter = the weather. Only with two things."
+            },
+            {
+              "en": "Listeners asked us to change the time, and we did so.",
+              "sp": "did so = changed the time."
+            },
+            {
+              "en": "Such complaints are rare.",
+              "sp": "such = of the kind I just mentioned."
+            },
+            {
+              "en": "I liked the first script more than the second one.",
+              "sp": "one = script."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · THE OVERUSE TEST</b>"
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Read it aloud.</b> If every sentence opens with a marker, half of them are noise. A marker earns its place only when the direction changes: a contrast, an extra point, a return, the end. Two or three in a minute of speech is plenty."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> SPANISH TRAP</b> <span class='es'>— conectores que se parecen y no son iguales</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "On the other hand, the price is fair.",
+              "sp": "«Por otro lado» = <b>on</b> the other hand. Nunca by ni in."
+            },
+            {
+              "en": "Lastly, I'd like to thank the team.",
+              "sp": "«Por último» = lastly. <i>At last</i> significa «por fin»."
+            },
+            {
+              "en": "Even though it rained, we went.",
+              "sp": "«Aunque» = even though + frase."
+            },
+            {
+              "en": "It rained. Even so, we went.",
+              "sp": "«Aun así» = even so, y empieza frase nueva."
+            },
+            {
+              "en": "Even Theo was on time.",
+              "sp": "«Hasta, incluso» = even, solo."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>By the other hand,…</s> → <span class='ok'>On the other hand,…</span> · <s class='x'>Even it rained, we went.</s> → <span class='ok'>Even though it rained, we went.</span> · Y recuerda: <i>actually</i> = en realidad, no «actualmente»."
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "episode 2",
+      "title": "<ico-star></ico-star> THE THREAD",
+      "intro": "Every week, Theo, the co-host, records a monologue. This week's runs seven minutes, and it wanders. Roz hands you the transcript: «Make it three, and make it flow.»<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>to ramble</b> = to talk for too long without a clear line · <b>to cut a long story short</b> · <b>to lose the thread</b>.",
+      "cast": [
+        {
+          "en": "Theo",
+          "sp": "the co-host, a born storyteller"
+        },
+        {
+          "en": "Roz",
+          "sp": "the producer: «Make it flow.»"
+        },
+        {
+          "en": "You",
+          "sp": "the <b style='color:var(--magenta)'>script editor</b> tonight"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE RAMBLE",
+      "desc": "Theo's first take, before any editing. The story is good. Listen to how he joins his ideas, and to where he loses the thread.",
+      "src": "c1-l2-1.mp3",
+      "dur": "1:38",
+      "speakers": "<ico-commentdots></ico-commentdots> Theo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Why did Theo start cycling to work?",
+          "options": [
+            "His car broke down",
+            "He wanted to save money",
+            "His brother gave him a bicycle"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What did he notice on the third day?",
+          "options": [
+            "A boat",
+            "The river",
+            "A red light"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Why is this version hard to follow?",
+          "options": [
+            "He speaks too fast",
+            "He uses too many rare words",
+            "Nearly every idea is joined with \"and\" or \"so\", and he wanders off the story"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Which phrase shows that he has lost the thread?",
+          "options": [
+            "Where was I?",
+            "Eleven years!",
+            "Three weeks is a long time."
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Rescue one part of the ramble. Say the 'car broke down' section again in three sentences, with one marker.",
+        "starter": "In March, the car broke down, and… A neighbor lent me… Even so,…"
+      },
+      "transcript": [
+        {
+          "spk": "Theo",
+          "html": "So, this week I want to talk about bicycles. And I never liked bicycles. And I never liked cyclists, really, because they go through red lights, and they ride on the sidewalk, and so I always took the car. And the car is comfortable, and the car is warm, and I've had my car for eleven years. Eleven years! My brother sold me that car. He lives by the coast now, my brother, and he's got a boat, which is, well, that's another story. Where was I? The car."
+        },
+        {
+          "spk": "Theo",
+          "html": "So the car broke down in March. And the garage said three weeks. And three weeks is a long time. And so my neighbor lent me a bicycle, an old green bicycle, and I didn't want the bicycle, but I took the bicycle. And the first day was terrible, and it rained, and I arrived late, and I arrived wet. And the second day was terrible."
+        },
+        {
+          "spk": "Theo",
+          "html": "And so on the third day something happened, and I noticed the river. And I've lived in this city for twenty years, and I never noticed the river on my way to work. And I noticed a bakery, and I noticed that I wasn't angry when I arrived. And in the car I'm always angry when I arrive."
+        },
+        {
+          "spk": "Theo",
+          "html": "And so the garage called, and the car was ready, and I got the car back, and the car was fine. And so I drove the car for a week. And I was angry for a week. And so I bought a bicycle. And I still don't like cyclists who go through red lights. And so that's what I wanted to say about bicycles."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "UNLINKED vs LINKED",
+      "intro": "The same three facts about the rooftop studio. In one version the listener has to do the work; in the other, the speaker does it.",
+      "pair": {
+        "a": "The studio is small. It is cold. We love it.",
+        "b": "The studio is small and cold. Even so, we love it."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "Which version is easier to follow?",
+          "options": [
+            "A — three separate facts",
+            "B — linked",
+            "They are the same"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "What does \"Even so\" tell the listener?",
+          "options": [
+            "The opposite of what you'd expect is coming",
+            "An example is coming",
+            "The story is ending"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which marker could replace \"Even so\" in B?",
+          "options": [
+            "What's more,",
+            "The latter,",
+            "That said,"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Add one more good thing about the studio. Which sentence works?",
+          "options": [
+            "Even so, the view is amazing.",
+            "What's more, the view is amazing.",
+            "The former, the view is amazing."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which sentence is correct?",
+          "options": [
+            "Even though it was late, we stayed.",
+            "Even so it was late, we stayed.",
+            "Even it was late, we stayed."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "CHOOSE THE MARKER",
+      "intro": "Read both sentences first. Which way does the second one go: contrast, addition, return, summary, or pointing back?",
+      "items": [
+        {
+          "q": "The tickets were expensive. ___, we bought them.",
+          "options": [
+            "Even so",
+            "What's more",
+            "The former"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The guest was funny. ___, she was on time.",
+          "options": [
+            "Even so",
+            "What's more",
+            "To cut a long story short"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Sorry, I got distracted. ___, as I was saying, the car broke down.",
+          "options": [
+            "What's more",
+            "Even so",
+            "Anyway"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "We missed the bus, the train was late and the taxi got lost. ___, we arrived at midnight.",
+          "options": [
+            "To cut a long story short",
+            "Mind you",
+            "The latter"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We tested a morning show and a night show. ___ had more listeners.",
+          "options": [
+            "Such",
+            "The latter",
+            "Do so"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "They asked us to shorten the program, and we ___.",
+          "options": [
+            "did such",
+            "made so",
+            "did so"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "He never reads the script. ___, his show is the most popular.",
+          "options": [
+            "Mind you",
+            "To cut a long story short",
+            "The former"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "___ it was raining, we recorded outside.",
+          "options": [
+            "Even so",
+            "Even though",
+            "Even"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "First the news, then the weather and, ___, the interview.",
+          "options": [
+            "at last",
+            "at least",
+            "lastly"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "The rent is high. ___, the location is perfect.",
+          "options": [
+            "On the other hand",
+            "By the other hand",
+            "In the other hand"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE EDIT",
+      "desc": "The same story after the edit: half the length, and you never get lost. Compare it with Audio 1: what was cut, and which markers do the work?",
+      "src": "c1-l2-2.mp3",
+      "dur": "1:07",
+      "speakers": "<ico-commentdots></ico-commentdots> Theo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "In Audio 1, Theo said \"I didn't want the bicycle, but I took the bicycle.\" Which marker does the job now?",
+          "options": [
+            "What's more",
+            "Even so",
+            "Anyway"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What was cut from the first version?",
+          "options": [
+            "The brother and his boat",
+            "The river",
+            "The broken car"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "\"I went back to the former for one week, and then I bought the latter.\" What is \"the latter\"?",
+          "options": [
+            "The car",
+            "The garage",
+            "A bicycle"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Which marker introduces the one opinion Theo has not changed?",
+          "options": [
+            "Mind you",
+            "What's more",
+            "To cut a long story short"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Tell me in 30 seconds about something you changed your mind about. Use one concession marker and finish with 'To cut a long story short,…'.",
+        "starter": "For years, I… Then… Even so,… To cut a long story short,…"
+      },
+      "transcript": [
+        {
+          "spk": "Theo",
+          "html": "This week: something I changed my mind about. Bicycles. For years I couldn't stand them, or the people who rode them. Cyclists went through red lights and rode on the sidewalk, so I stayed in my car."
+        },
+        {
+          "spk": "Theo",
+          "html": "Then, in March, the car broke down, and the garage needed three weeks. A neighbor lent me an old green bicycle. I didn't want it. <span class='tg'>Even so</span>, I took it. The first two days were miserable: I arrived late and wet. On the third day, though, I noticed the river. I've lived in this city for twenty years, and I had never once seen it on my way to work. <span class='tg'>What's more</span>, I arrived calm. In the car, I never do."
+        },
+        {
+          "spk": "Theo",
+          "html": "When the garage called, I had a choice: the car or a bicycle. I went back to <span class='tg'>the former</span> for one week, and then I bought <span class='tg'>the latter</span>. <span class='tg'>Mind you</span>, I still can't stand cyclists who go through red lights. <span class='tg'>Anyway, to cut a long story short</span>: I was wrong about bicycles. Just not about all cyclists."
+        }
+      ]
+    },
+    {
+      "type": "transform",
+      "id": "ex-tr",
+      "title": "JOIN THEM",
+      "intro": "Link the two ideas with the marker in gold. The first sentence is already in the box when it stays the same.",
+      "items": [
+        {
+          "source": "It was expensive. We bought it.",
+          "cue": "even so",
+          "start": "It was expensive. ",
+          "answers": [
+            "It was expensive. Even so, we bought it."
+          ],
+          "why": "Even so, + a surprising result."
+        },
+        {
+          "source": "The studio is small. It sounds great.",
+          "cue": "that said",
+          "start": "The studio is small. ",
+          "answers": [
+            "The studio is small. That said, it sounds great."
+          ],
+          "why": "That said, + the other side."
+        },
+        {
+          "source": "The guest was late. She forgot her notes.",
+          "cue": "what's more",
+          "start": "The guest was late. ",
+          "answers": [
+            "The guest was late. What's more, she forgot her notes.",
+            "The guest was late. What's more, she had forgotten her notes."
+          ],
+          "why": "What's more, + a second point in the same direction."
+        },
+        {
+          "source": "It was raining. We recorded outside.",
+          "cue": "even though",
+          "start": "Even though ",
+          "answers": [
+            "Even though it was raining, we recorded outside.",
+            "We recorded outside even though it was raining."
+          ],
+          "why": "even though + clause, in the same sentence."
+        },
+        {
+          "source": "We could cut the news or the weather. The weather is more popular.",
+          "cue": "the latter",
+          "start": "We could cut the news or the weather. ",
+          "answers": [
+            "We could cut the news or the weather. The latter is more popular."
+          ],
+          "why": "the latter = the second of the two."
+        },
+        {
+          "source": "They asked us to change the time. We changed the time.",
+          "cue": "did so",
+          "start": "They asked us to change the time, and ",
+          "answers": [
+            "They asked us to change the time, and we did so."
+          ],
+          "why": "did so replaces «changed the time»."
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "BUILD THE PARAGRAPH",
+      "intro": "Each chip is one sentence. The markers and pointing words tell you the order.",
+      "items": [
+        {
+          "words": [
+            "I used to hate mornings.",
+            "Then I got a dog.",
+            "Now I'm up at six every day.",
+            "What's more, I enjoy it."
+          ],
+          "answer": "I used to hate mornings. Then I got a dog. Now I'm up at six every day. What's more, I enjoy it."
+        },
+        {
+          "words": [
+            "The studio is on the roof.",
+            "In winter, it is freezing up there.",
+            "Even so, nobody wants to move.",
+            "After all, the view is too good to lose."
+          ],
+          "answer": "The studio is on the roof. In winter, it is freezing up there. Even so, nobody wants to move. After all, the view is too good to lose."
+        },
+        {
+          "words": [
+            "We had two guests last night, a chef and a pilot.",
+            "The former talked about bread.",
+            "The latter talked about storms.",
+            "Both were excellent."
+          ],
+          "answer": "We had two guests last night, a chef and a pilot. The former talked about bread. The latter talked about storms. Both were excellent."
+        },
+        {
+          "words": [
+            "My train was canceled.",
+            "On top of that, it started to rain.",
+            "Anyway, I got here in the end.",
+            "So, what did I miss?"
+          ],
+          "answer": "My train was canceled. On top of that, it started to rain. Anyway, I got here in the end. So, what did I miss?"
+        },
+        {
+          "words": [
+            "Radio is cheap to make.",
+            "That said, it is hard to make well.",
+            "For one thing, you need a good script.",
+            "Without one, even a great host will ramble."
+          ],
+          "answer": "Radio is cheap to make. That said, it is hard to make well. For one thing, you need a good script. Without one, even a great host will ramble."
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "mem-markers",
+      "title": "MEMORY · the marker and its job",
+      "intro": "Find each marker and what it does. Tap two cards.",
+      "pairs": [
+        {
+          "a": "even so",
+          "b": "a surprising contrast"
+        },
+        {
+          "a": "what's more",
+          "b": "one more point"
+        },
+        {
+          "a": "as I was saying",
+          "b": "back to the topic"
+        },
+        {
+          "a": "to cut a long story short",
+          "b": "jump to the end"
+        },
+        {
+          "a": "the latter",
+          "b": "the second of two"
+        },
+        {
+          "a": "mind you",
+          "b": "an afterthought"
+        }
+      ],
+      "speakSide": "a"
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> THE THREE-MINUTE SCRIPT",
+      "intro": "Write a short monologue for the show (about 120 words): <b>something I changed my mind about</b>. It will be read aloud, so the listener must never get lost.",
+      "checklist": [
+        "One concession marker (<b>that said / even so / mind you / having said that</b>)",
+        "One addition marker (<b>what's more / on top of that</b>)",
+        "One return or summary marker (<b>anyway / as I was saying / to cut a long story short</b>)",
+        "One pointing word (<b>the former / the latter / do so / such / one</b>)",
+        "The words of the day, and no more than four markers in total: pass the overuse test"
+      ],
+      "placeholder": "For years, I…",
+      "example": "For years, I <span class=\"gap\">old opinion</span>. Then <span class=\"gap\">what happened</span>. <span class=\"gap\">concession marker</span>, <span class=\"gap\">the surprise</span>. What's more, <span class=\"gap\">a second reason</span>. I had two choices: <span class=\"gap\">A</span> or <span class=\"gap\">B</span>. I chose the <span class=\"gap\">former / latter</span>. To cut a long story short, <span class=\"gap\">new opinion</span>.",
+      "hw": "Write your script, then <b>record it without rambling</b>: under one minute, one take. Send me the text and the audio on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "About 120 words, with a clear before and after: what you thought, what happened, what you think now."
+        },
+        {
+          "c": "Lesson target",
+          "d": "One marker of each kind and one pointing word, each used with the right meaning and punctuation, and not one more than you need."
+        },
+        {
+          "c": "Clear the first time",
+          "d": "A listener follows it in one hearing. No word-for-word translation from Spanish."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c1-l2",
+    "keys": [
+      "a-bicycle",
+      "a-boat",
+      "a-red-light",
+      "a-slim-chance",
+      "anyway",
+      "anyway-as-i-was-saying",
+      "anyway-as-i-was-saying-the-car-broke-down",
+      "as-i-was-saying",
+      "at-last",
+      "at-least",
+      "back-to-square-one",
+      "by-the-other-hand",
+      "cut-corners",
+      "did-so",
+      "did-such",
+      "do-so",
+      "eleven-years",
+      "even",
+      "even-it-was-late-we-stayed",
+      "even-so",
+      "even-so-it-was-late-we-stayed",
+      "even-so-the-view-is-amazing",
+      "even-theo-was-on-time",
+      "even-though",
+      "even-though-it-rained-we-went",
+      "even-though-it-was-late-we-stayed",
+      "even-though-it-was-raining-we-recorded-outside",
+      "he-s-always-late-mind-you-he-s-never-missed-a-show",
+      "he-speaks-too-fast",
+      "he-uses-too-many-rare-words",
+      "he-wanted-to-save-money",
+      "his-brother-gave-him-a-bicycle",
+      "his-car-broke-down",
+      "i-liked-the-first-script-more-than-the-second-one",
+      "i-missed-the-bus-on-top-of-that-it-started-to-rain",
+      "i-went-back-to-the-former-for-one-week-and-then-i-bought-the-latter-what-is-the-",
+      "in-audio-1-theo-said-i-didn-t-want-the-bicycle-but-i-took-the-bicycle-which-mark",
+      "in-the-other-hand",
+      "it-rained-even-so-we-went",
+      "it-was-a-disaster-having-said-that-i-d-do-it-again",
+      "it-was-expensive-even-so-we-bought-it",
+      "it-was-expensive-we-bought-it",
+      "it-was-raining-we-recorded-outside",
+      "lastly",
+      "lastly-i-d-like-to-thank-the-team",
+      "listeners-asked-us-to-change-the-time-and-we-did-so",
+      "made-so",
+      "mind-you",
+      "nearly-every-idea-is-joined-with-and-or-so-and-he-wanders-off-the-story",
+      "on-the-other-hand",
+      "on-the-other-hand-the-price-is-fair",
+      "such",
+      "such-complaints-are-rare",
+      "that-said",
+      "that-said-having-said-that",
+      "the-app-is-fast-what-s-more-it-s-free",
+      "the-broken-car",
+      "the-brother-and-his-boat",
+      "the-car",
+      "the-elephant-in-the-room",
+      "the-former",
+      "the-former-the-latter",
+      "the-former-the-view-is-amazing",
+      "the-garage",
+      "the-guest-was-late-she-forgot-her-notes",
+      "the-guest-was-late-what-s-more-she-forgot-her-notes",
+      "the-latter",
+      "the-river",
+      "the-show-ran-long-that-said-nobody-left",
+      "the-studio-is-small-and-cold-even-so-we-love-it",
+      "the-studio-is-small-it-is-cold-we-love-it",
+      "the-studio-is-small-it-sounds-great",
+      "the-studio-is-small-that-said-it-sounds-great",
+      "they-asked-us-to-change-the-time-and-we-did-so",
+      "they-asked-us-to-change-the-time-we-changed-the-time",
+      "three-weeks-is-a-long-time",
+      "to-cut-a-long-story-short",
+      "to-cut-a-long-story-short-we-missed-the-show",
+      "to-raise-concerns",
+      "we-could-cut-the-news-or-the-weather-the-former-is-longer-the-latter-is-more-pop",
+      "we-could-cut-the-news-or-the-weather-the-latter-is-more-popular",
+      "we-could-cut-the-news-or-the-weather-the-weather-is-more-popular",
+      "we-tried-two-formats-the-latter-worked",
+      "what-did-he-notice-on-the-third-day",
+      "what-s-more",
+      "what-s-more-on-top-of-that",
+      "what-s-more-the-view-is-amazing",
+      "what-was-cut-from-the-first-version",
+      "where-was-i",
+      "which-marker-introduces-the-one-opinion-theo-has-not-changed",
+      "which-phrase-shows-that-he-has-lost-the-thread",
+      "why-did-theo-start-cycling-to-work",
+      "why-is-this-version-hard-to-follow"
+    ]
+  }
+}
