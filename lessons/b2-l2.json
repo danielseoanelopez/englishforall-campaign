@@ -1,0 +1,874 @@
+{
+  "level": "B2",
+  "num": 2,
+  "totalLessons": 6,
+  "world": "THE PROFESSIONAL",
+  "key": "rankup_B2_L2",
+  "title": "PRESEN&shy;TATIONS",
+  "titlePlain": "Presentations — The Expansion Plan (B2)",
+  "subtitle": "Speaking &amp; Listening · B2 · ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=b2-l3",
+    "label": "LESSON 3 ▸ THE PASSIVE VOICE"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada expresión con su significado, sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "track record",
+          "r": "historial comprobado de resultados"
+        },
+        {
+          "l": "to oversee",
+          "r": "supervisar"
+        },
+        {
+          "l": "to take ownership",
+          "r": "hacerse cargo"
+        },
+        {
+          "l": "a setback",
+          "r": "un contratiempo"
+        },
+        {
+          "l": "to handle pressure",
+          "r": "manejar la presión"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "describir tendencias",
+      "title": "<ico-book></ico-book> ROSE SHARPLY vs A SHARP RISE",
+      "intro": "Una presentación tiene tres partes y cada una se abre con una frase fija. Y los números no se leen: se cuentan como <b style='color:var(--gold)'>tendencias</b>, con verbo + adverbio o con adjetivo + sustantivo.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver frases para presentar",
+      "vocab": [
+        {
+          "en": "Let me start with a question.",
+          "sp": "déjenme empezar con una pregunta"
+        },
+        {
+          "en": "First,… Then,… Finally,…",
+          "sp": "primero,… después,… por último,…"
+        },
+        {
+          "en": "As you can see on this chart,…",
+          "sp": "como pueden ver en este gráfico,…"
+        },
+        {
+          "en": "Let's take a look at the numbers.",
+          "sp": "veamos los números"
+        },
+        {
+          "en": "This brings me to my next point.",
+          "sp": "esto me lleva al siguiente punto"
+        },
+        {
+          "en": "a rise / a fall / a drop",
+          "sp": "una subida / una caída / una baja"
+        },
+        {
+          "en": "sharply / steadily / slightly",
+          "sp": "bruscamente / de forma constante / ligeramente"
+        },
+        {
+          "en": "by twenty percent",
+          "sp": "un veinte por ciento (la diferencia)"
+        },
+        {
+          "en": "to five thousand",
+          "sp": "hasta cinco mil (el punto final)"
+        },
+        {
+          "en": "That covers the first part.",
+          "sp": "con eso termina la primera parte"
+        },
+        {
+          "en": "Thank you for listening.",
+          "sp": "gracias por su atención"
+        }
+      ],
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>memory</b>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>comparar</b> <ico-comments></ico-comments>, <b>completar</b> <ico-filepen></ico-filepen> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · TRES PARTES, TRES FRASES</b> <span class='es'>— abrir, cambiar de tema, cerrar</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Today I'd like to walk you through our plan.",
+              "sp": "Abrir: dices de qué vas a hablar."
+            },
+            {
+              "en": "Moving on to the budget.",
+              "sp": "Cambiar de tema: avisas que empieza otra parte."
+            },
+            {
+              "en": "To sum up, phase two is on track.",
+              "sp": "Cerrar: repites la idea clave."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · SUBE, BAJA, SE MANTIENE</b> <span class='es'>— los verbos de tendencia</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "rise · grow · climb",
+            "fall · drop · decline",
+            "level off · remain stable"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Orders rose in the spring.",
+              "sp": "Los pedidos subieron en primavera. (rise · rose · risen)"
+            },
+            {
+              "en": "Costs fell last quarter.",
+              "sp": "Los costos bajaron el trimestre pasado. (fall · fell · fallen)"
+            },
+            {
+              "en": "Sales leveled off in the summer.",
+              "sp": "Las ventas se estabilizaron en verano."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · ¿CUÁNTO Y QUÉ TAN RÁPIDO?</b> <span class='es'>— el adverbio va después del verbo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Sales rose sharply.",
+              "sp": "Subieron mucho y de golpe."
+            },
+            {
+              "en": "Orders grew steadily.",
+              "sp": "Crecieron poco a poco, sin parar."
+            },
+            {
+              "en": "Costs fell slightly.",
+              "sp": "Bajaron apenas un poco."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · DALE LA VUELTA</b> <span class='es'>— verbo + adverbio ↔ adjetivo + sustantivo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "There was a sharp rise in sales.",
+              "sp": "= Sales rose sharply."
+            },
+            {
+              "en": "There was steady growth in orders.",
+              "sp": "= Orders grew steadily."
+            },
+            {
+              "en": "There was a slight fall in costs.",
+              "sp": "= Costs fell slightly."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>El adverbio pierde el -ly y pasa adelante:</b> rose <b>sharply</b> → a <b>sharp</b> rise. Después del sustantivo va <b>in</b>: <s class='x'>a rise of sales</s> → <span class='ok'>a rise in sales</span>."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · BY, TO, FROM, AT</b> <span class='es'>— la preposición cambia el dato</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Orders rose by 20%.",
+              "sp": "<b>by</b> = la diferencia."
+            },
+            {
+              "en": "Orders rose to 5,000.",
+              "sp": "<b>to</b> = el punto de llegada."
+            },
+            {
+              "en": "Orders rose from 2,000 to 5,000.",
+              "sp": "<b>from… to…</b> = de dónde a dónde."
+            },
+            {
+              "en": "Sales peaked at 6,000 in November.",
+              "sp": "<b>at</b> = el punto más alto (o el nivel donde se quedan)."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> TRAMPA DEL ESPAÑOL</b> <span class='es'>— cuatro errores típicos al presentar</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Thank you for attending this presentation.",
+              "sp": "«Asistir a» = attend. Nunca <i>assist to</i>."
+            },
+            {
+              "en": "I'm going to present our results.",
+              "sp": "«Exponer» = present. <i>Expose</i> es dejar algo al descubierto."
+            },
+            {
+              "en": "Sales grew by 20%.",
+              "sp": "Sin artículo: «un 20%» = 20%."
+            },
+            {
+              "en": "Prices rose, so we raised our salaries.",
+              "sp": "<b>rise</b>: algo sube solo. <b>raise</b>: tú lo subes."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>Sales grew a 20%.</s> → <span class='ok'>Sales grew by 20%.</span> · <s class='x'>We rose our prices.</s> → <span class='ok'>We raised our prices.</span>"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "PRESENTATION WORDS · toca para girar",
+      "intro": "Diez palabras para guiar a tu público. Las vas a escuchar en los dos audios.",
+      "cards": [
+        {
+          "front": "to walk someone through",
+          "back": "explicar algo paso a paso"
+        },
+        {
+          "front": "an overview",
+          "back": "una visión general"
+        },
+        {
+          "front": "to move on to",
+          "back": "pasar a (otro tema)"
+        },
+        {
+          "front": "a breakdown",
+          "back": "un desglose"
+        },
+        {
+          "front": "roughly",
+          "back": "aproximadamente"
+        },
+        {
+          "front": "to peak",
+          "back": "llegar al punto más alto"
+        },
+        {
+          "front": "to level off",
+          "back": "estabilizarse"
+        },
+        {
+          "front": "a key takeaway",
+          "back": "la idea clave para llevarse"
+        },
+        {
+          "front": "to sum up",
+          "back": "resumir, para cerrar"
+        },
+        {
+          "front": "to take questions",
+          "back": "responder preguntas del público"
+        }
+      ],
+      "deckLabel": "presentaciones"
+    },
+    {
+      "type": "story",
+      "tag": "el plan de expansión",
+      "title": "<ico-star></ico-star> THE EXPANSION PLAN",
+      "intro": "Primer trabajo de Marcos como líder interino: presentar la fase dos de GreenMarket ante la junta directiva de David. La noche anterior, Sofia lo escucha ensayar… y lo detiene en la <b style='color:var(--gold)'>primera diapositiva</b>.",
+      "cast": [
+        {
+          "en": "Marcos",
+          "sp": "presenta mañana"
+        },
+        {
+          "en": "Sofia",
+          "sp": "su <b style='color:var(--magenta)'>coach</b> esta noche"
+        },
+        {
+          "en": "David",
+          "sp": "el cliente, con su junta"
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "mem-sign",
+      "title": "MEMORY · the phrase and its job",
+      "intro": "Cada frase tiene un trabajo dentro de la presentación. Toca dos cartas y encuentra las parejas.",
+      "pairs": [
+        {
+          "a": "Did you know that…?",
+          "b": "enganchar al público"
+        },
+        {
+          "a": "Let me walk you through…",
+          "b": "dar el mapa de la charla"
+        },
+        {
+          "a": "Let's move on to…",
+          "b": "cambiar de tema"
+        },
+        {
+          "a": "As you can see here,…",
+          "b": "señalar un gráfico"
+        },
+        {
+          "a": "To sum up,…",
+          "b": "cerrar con la idea clave"
+        },
+        {
+          "a": "I'll take questions at the end.",
+          "b": "decir cuándo preguntar"
+        }
+      ],
+      "speakSide": "a"
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE DRY RUN",
+      "desc": "La noche antes: Marcos ensaya frente a Sofia y lee sus diapositivas una por una. Ella le arregla el comienzo y los números.",
+      "src": "b2-l2-1.mp3",
+      "dur": "1:42",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos + Sofia",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What was wrong with Marcos's opening?",
+          "options": [
+            "He was reading his slides",
+            "He started with a question",
+            "He forgot the numbers"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which phrase does Sofia give him to change topic?",
+          "options": [
+            "Slide two.",
+            "Let me walk you through three things.",
+            "Moving on to the budget."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What is the corrected number sentence?",
+          "options": [
+            "Orders rose sharply from 2,000 to 3,500.",
+            "Orders rose steadily from 2,000 to 3,500.",
+            "Orders rose steadily by 3,500."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "How does Marcos feel at the end?",
+          "options": [
+            "Annoyed by all the corrections",
+            "Too nervous to present",
+            "More confident about tomorrow"
+          ],
+          "answer": 2
+        }
+      ],
+      "speaking": {
+        "prompt": "Give Marcos's new opening yourself: a hook question, then the three-part map.",
+        "starter": "What if I told you (surprising fact)? Today I'd like to walk you through three things: (1), (2) and (3)."
+      },
+      "transcript": [
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Okay, Sofia, here goes. \"Good morning. My name is Marcos. This presentation is about GreenMarket phase two. Slide one. In January, we had two thousand orders. In June, we had three thousand five hundred orders. In…\""
+        },
+        {
+          "spk": "Sofia",
+          "html": "Stop, stop. Marcos, you're reading your slides. The board can read. Start with a hook, a question, and then give them the map."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "A hook?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "Something like: \"What if I told you GreenMarket could double its orders in one year?\" Then the map: \"Today <span class='tg'>I'd like to walk you through</span> three things: where we are, where we're going, and what we need from you.\""
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Okay, I like that. And the numbers?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "Don't list them. Tell me the trend. What happened between January and June?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Orders went from two thousand to three thousand five hundred. A little more every month."
+        },
+        {
+          "spk": "Sofia",
+          "html": "So say it like a story: \"Orders <span class='tg'>rose steadily</span> from two thousand to three thousand five hundred.\""
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "\"Orders rose steadily from two thousand to three thousand five hundred.\" That does sound better."
+        },
+        {
+          "spk": "Sofia",
+          "html": "Much better. And when you change topic, don't just say \"slide two.\" Say \"<span class='tg'>Moving on to</span> the budget.\""
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "\"Moving on to the budget.\" Got it. You know, an hour ago I wanted to call in sick tomorrow. Now I think I want to do this."
+        },
+        {
+          "spk": "Sofia",
+          "html": "Good. One more run, and then go home and sleep."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "ROSE SHARPLY vs A SHARP RISE",
+      "intro": "El mismo dato, dicho de dos formas. Mira qué palabra cambia de forma al pasar de una a la otra.",
+      "pair": {
+        "a": "Sales rose sharply.",
+        "b": "There was a sharp rise in sales."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Dicen lo mismo?",
+          "options": [
+            "Sí: es el mismo dato",
+            "No: A es una subida más grande",
+            "No: B habla del futuro"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "En B, ¿en qué se convierte el verbo «rose»?",
+          "options": [
+            "En el adjetivo «sharp»",
+            "En el sustantivo «rise»",
+            "Desaparece"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "¿Y el adverbio «sharply»?",
+          "options": [
+            "Queda igual",
+            "Pasa a ser el sustantivo",
+            "Pasa a ser el adjetivo «sharp»"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Di de otra forma: «Costs fell slightly.»",
+          "options": [
+            "There was a slightly fall in costs.",
+            "There was a slight fall in costs.",
+            "There was a slight fall of costs."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Di de otra forma: «There was steady growth in orders.»",
+          "options": [
+            "Orders grew steadily.",
+            "Orders grew steady.",
+            "Orders steadily growth."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "THE RIGHT WORD FOR THE CHART",
+      "intro": "Elige la preposición o la forma correcta (adverbio, adjetivo o verbo).",
+      "items": [
+        {
+          "q": "Sales rose ___ 20% last year.",
+          "options": [
+            "by",
+            "in",
+            "of"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Orders went up from 2,000 ___ 5,000.",
+          "options": [
+            "by",
+            "at",
+            "to"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "There was a ___ drop in costs.",
+          "options": [
+            "sharply",
+            "sharp",
+            "sharpen"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Costs dropped ___ in March.",
+          "options": [
+            "sharp",
+            "sharpen",
+            "sharply"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Orders peaked ___ 6,200 in November.",
+          "options": [
+            "at",
+            "on",
+            "by"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "There was a slight rise ___ prices.",
+          "options": [
+            "of",
+            "in",
+            "on"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "After a strong spring, sales ___ in the summer.",
+          "options": [
+            "raised off",
+            "rose off",
+            "leveled off"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "We ___ our prices in January.",
+          "options": [
+            "raised",
+            "rose",
+            "risen"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE REAL THING",
+      "desc": "Al día siguiente, frente a la junta de David: el comienzo ya pulido, con un gráfico de pedidos del año.",
+      "src": "b2-l2-2.mp3",
+      "dur": "0:53",
+      "speakers": "<ico-commentdots></ico-commentdots> Marcos",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How many things does Marcos say he will cover?",
+          "options": [
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Why did orders dip in August?",
+          "options": [
+            "Many customers were on vacation",
+            "The website was down",
+            "Prices went up"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "When did orders peak, and at what number?",
+          "options": [
+            "In July, at 5,000",
+            "In November, at 5,000",
+            "In November, at 6,200"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "When will Marcos take questions?",
+          "options": [
+            "After each chart",
+            "At the end",
+            "Before the plan"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Describe the same chart in four sentences: the rise, the dip, the peak, and one sentence to sum up.",
+        "starter": "Orders rose (adverb) from (number) to (number). In August, they (verb + adverb). They peaked at (number) in (month). To sum up, (key takeaway)."
+      },
+      "transcript": [
+        {
+          "spk": "Marcos",
+          "html": "Good morning, everyone. What if I told you that GreenMarket could double its orders in one year? Well, it already has. Today <span class='tg'>I'd like to walk you through</span> three things: where we are, where we're going, and what we need from you. Let's start with where we are. As you can see on this chart, orders <span class='tg'>rose steadily</span> from two thousand in January to five thousand in July. They <span class='tg'>dipped slightly</span> in August, when many customers were on vacation, and then they climbed again. In November, orders <span class='tg'>peaked at</span> six thousand two hundred. That is a rise of more than two hundred percent in eleven months. <span class='tg'>To sum up</span> the first part: growth has been strong and steady, and the summer dip was small. I'll take questions at the end. Now, <span class='tg'>moving on to</span> where we're going. In phase two, we plan to open in three new cities."
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "SIGNPOST IT",
+      "intro": "Toca las palabras para armar las frases que guían una presentación.",
+      "items": [
+        {
+          "words": [
+            "Let",
+            "me",
+            "walk",
+            "you",
+            "through",
+            "our",
+            "plan"
+          ],
+          "answer": "Let me walk you through our plan"
+        },
+        {
+          "words": [
+            "I'd",
+            "like",
+            "to",
+            "start",
+            "with",
+            "a",
+            "question"
+          ],
+          "answer": "I'd like to start with a question"
+        },
+        {
+          "words": [
+            "Let's",
+            "move",
+            "on",
+            "to",
+            "the",
+            "budget"
+          ],
+          "answer": "Let's move on to the budget"
+        },
+        {
+          "words": [
+            "As",
+            "you",
+            "can",
+            "see",
+            "on",
+            "this",
+            "chart"
+          ],
+          "answer": "As you can see on this chart"
+        },
+        {
+          "words": [
+            "I'll",
+            "take",
+            "questions",
+            "at",
+            "the",
+            "end"
+          ],
+          "answer": "I'll take questions at the end"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> MY 60 SECONDS",
+      "intro": "Escribe el primer minuto de una presentación sobre tu trabajo, tu proyecto o tu ciudad (6–8 frases). Inventa los números si hace falta.",
+      "checklist": [
+        "Empieza con una pregunta que enganche (<b>What if I told you…? / Did you know that…?</b>)",
+        "Da el mapa en tres partes (<b>Today I'd like to walk you through…</b>)",
+        "Un dato como verbo + adverbio (<b>rose sharply</b>) y el mismo como adjetivo + sustantivo (<b>a sharp rise in…</b>)",
+        "Preposiciones correctas: <b>by / to / from… to… / at</b>",
+        "Cierra con <b>To sum up,…</b>"
+      ],
+      "placeholder": "What if I told you…",
+      "example": "<span class=\"gap\">pregunta gancho</span>? Today I'd like to walk you through <span class=\"gap\">tema</span>. First, <span class=\"gap\">parte 1</span>. Then, <span class=\"gap\">parte 2</span>. Finally, <span class=\"gap\">parte 3</span>. As you can see, <span class=\"gap\">qué</span> <span class=\"gap\">verbo + adverbio</span> from <span class=\"gap\">número</span> to <span class=\"gap\">número</span>. In other words, there was a <span class=\"gap\">adjetivo + sustantivo</span> in <span class=\"gap\">qué</span>. To sum up, <span class=\"gap\">idea clave</span>.",
+      "hw": "Escribe tu minuto y después grábate <b>presentándolo de pie, sin leer</b>, en 60 segundos. Envíame texto y audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna: gancho, mapa, dato y cierre."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Describiste la tendencia de las dos formas (<b>verbo + adverbio</b> y <b>adjetivo + sustantivo</b>) con la preposición correcta."
+        },
+        {
+          "c": "Se entiende a la primera",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/b2-l2",
+    "keys": [
+      "a-breakdown",
+      "a-key-takeaway",
+      "a-rise-a-fall-a-drop",
+      "a-setback",
+      "after-each-chart",
+      "an-overview",
+      "annoyed-by-all-the-corrections",
+      "as-you-can-see-here",
+      "as-you-can-see-on-this-chart",
+      "at",
+      "at-the-end",
+      "before-the-plan",
+      "by",
+      "by-twenty-percent",
+      "costs-fell-last-quarter",
+      "costs-fell-slightly",
+      "did-you-know-that",
+      "first-then-finally",
+      "four",
+      "he-forgot-the-numbers",
+      "he-started-with-a-question",
+      "he-was-reading-his-slides",
+      "how-does-marcos-feel-at-the-end",
+      "how-many-things-does-marcos-say-he-will-cover",
+      "i-ll-take-questions-at-the-end",
+      "i-m-going-to-present-our-results",
+      "in",
+      "in-july-at-5-000",
+      "in-november-at-5-000",
+      "in-november-at-6-200",
+      "let-me-start-with-a-question",
+      "let-me-walk-you-through",
+      "let-me-walk-you-through-three-things",
+      "let-s-move-on-to",
+      "let-s-take-a-look-at-the-numbers",
+      "leveled-off",
+      "many-customers-were-on-vacation",
+      "more-confident-about-tomorrow",
+      "moving-on-to-the-budget",
+      "of",
+      "on",
+      "orders-grew-steadily",
+      "orders-grew-steady",
+      "orders-rose-by-20",
+      "orders-rose-from-2-000-to-5-000",
+      "orders-rose-in-the-spring",
+      "orders-rose-sharply-from-2-000-to-3-500",
+      "orders-rose-steadily-by-3-500",
+      "orders-rose-steadily-from-2-000-to-3-500",
+      "orders-rose-to-5-000",
+      "orders-steadily-growth",
+      "prices-rose-so-we-raised-our-salaries",
+      "prices-went-up",
+      "raised",
+      "raised-off",
+      "risen",
+      "rose",
+      "rose-off",
+      "roughly",
+      "sales-grew-by-20",
+      "sales-leveled-off-in-the-summer",
+      "sales-peaked-at-6-000-in-november",
+      "sales-rose-sharply",
+      "sharp",
+      "sharpen",
+      "sharply",
+      "sharply-steadily-slightly",
+      "slide-two",
+      "thank-you-for-attending-this-presentation",
+      "thank-you-for-listening",
+      "that-covers-the-first-part",
+      "the-website-was-down",
+      "there-was-a-sharp-rise-in-sales",
+      "there-was-a-slight-fall-in-costs",
+      "there-was-a-slight-fall-of-costs",
+      "there-was-a-slightly-fall-in-costs",
+      "there-was-steady-growth-in-orders",
+      "this-brings-me-to-my-next-point",
+      "three",
+      "to",
+      "to-five-thousand",
+      "to-handle-pressure",
+      "to-level-off",
+      "to-move-on-to",
+      "to-oversee",
+      "to-peak",
+      "to-sum-up",
+      "to-sum-up-phase-two-is-on-track",
+      "to-take-ownership",
+      "to-take-questions",
+      "to-walk-someone-through",
+      "today-i-d-like-to-walk-you-through-our-plan",
+      "too-nervous-to-present",
+      "track-record",
+      "two",
+      "what-is-the-corrected-number-sentence",
+      "what-was-wrong-with-marcos-s-opening",
+      "when-did-orders-peak-and-at-what-number",
+      "when-will-marcos-take-questions",
+      "which-phrase-does-sofia-give-him-to-change-topic",
+      "why-did-orders-dip-in-august"
+    ]
+  }
+}
