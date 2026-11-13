@@ -323,6 +323,7 @@
             "The prices were updated at 2 am.",
             "The prices were updated at two a.m.",
             "The prices were updated by them at 2 a.m.",
+            "The prices were updated at 2 a.m. by them.",
             "At 2 a.m. the prices were updated."
           ],
           "why": "Plural → were."
@@ -618,7 +619,7 @@
           "options": [
             "The file was deleted.",
             "The file deleted.",
-            "The file was deleted by a person."
+            "The file has deleted."
           ],
           "answer": 0
         }
@@ -822,8 +823,8 @@
       "the-error-was-fixed-at-four",
       "the-error-will-be-fixed-today",
       "the-file-deleted",
+      "the-file-has-deleted",
       "the-file-was-deleted",
-      "the-file-was-deleted-by-a-person",
       "the-files-were-deleted",
       "the-full-report-will-be-delivered",
       "the-new-prices-were-not-checked",

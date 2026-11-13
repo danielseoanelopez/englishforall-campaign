@@ -51,7 +51,7 @@
       "vocab": [
         {
           "en": "to take a message",
-          "sp": "tomar un recado"
+          "sp": "tomar un mensaje"
         },
         {
           "en": "to pass something on",
@@ -71,7 +71,7 @@
         },
         {
           "en": "to take notes",
-          "sp": "tomar apuntes"
+          "sp": "tomar notas"
         },
         {
           "en": "What exactly did he say?",
@@ -292,7 +292,7 @@
       "type": "story",
       "tag": "el mensaje",
       "title": "<ico-star></ico-star> WHO SAID WHAT?",
-      "intro": "David llama mientras Priya está en un vuelo. Marcos atiende, toma apuntes y esa noche tiene que contarle todo. <b style='color:var(--gold)'>Cada palabra importa</b>: David está decidiendo si renueva el contrato.",
+      "intro": "David llama mientras Priya está en un vuelo. Marcos atiende, toma notas y esa noche tiene que contarle todo. <b style='color:var(--gold)'>Cada palabra importa</b>: David está decidiendo si renueva el contrato.",
       "cast": [
         {
           "en": "David",
@@ -300,7 +300,7 @@
         },
         {
           "en": "Marcos",
-          "sp": "toma el recado… <b style='color:var(--magenta)'>¿bien?</b>"
+          "sp": "toma el mensaje… <b style='color:var(--magenta)'>¿bien?</b>"
         },
         {
           "en": "Priya",
@@ -683,7 +683,9 @@
           "start": "David said ",
           "answers": [
             "David said he was not happy.",
-            "David said that he was not happy."
+            "David said that he was not happy.",
+            "David said he was unhappy.",
+            "David said that he was unhappy."
           ],
           "why": "am → was."
         },
@@ -771,7 +773,7 @@
     {
       "type": "writing",
       "title": "<ico-pen></ico-pen> THE CALL NOTES",
-      "intro": "Un cliente llamó y dijo estas cinco cosas. Escribe los apuntes para Priya en estilo indirecto (5 frases): <br>«The service is too slow.» · «Can you deliver by Monday?» · «If this happens again, I'll cancel.» · «OK, I'll wait one more week.» · «Why don't we talk every Friday?»",
+      "intro": "Un cliente llamó y dijo estas cinco cosas. Escribe las notas para Priya en estilo indirecto (5 frases): <br>«The service is too slow.» · «Can you deliver by Monday?» · «If this happens again, I'll cancel.» · «OK, I'll wait one more week.» · «Why don't we talk every Friday?»",
       "checklist": [
         "Una afirmación con <b>said that</b> + un paso atrás",
         "Una pregunta con <b>asked whether</b> + orden de afirmación",
@@ -781,7 +783,7 @@
       ],
       "placeholder": "David said that the service…",
       "example": "David said that <span class=\"gap\">la queja, un paso atrás</span>. He asked whether <span class=\"gap\">sujeto + could…</span>. He warned us that <span class=\"gap\">qué pasaría</span>. He agreed to <span class=\"gap\">verbo</span>. He suggested <span class=\"gap\">verbo-ing</span>.",
-      "hw": "Escribe los apuntes y después grábate <b>contándole la llamada a Priya, sin leer</b>. Envíame texto y audio por WhatsApp.",
+      "hw": "Escribe las notas y después grábate <b>contándole la llamada a Priya, sin leer</b>. Envíame texto y audio por WhatsApp.",
       "rubric": [
         {
           "c": "Tarea completa",
