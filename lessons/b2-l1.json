@@ -1,0 +1,932 @@
+{
+  "level": "B2",
+  "num": 1,
+  "totalLessons": 6,
+  "world": "THE PROFESSIONAL",
+  "key": "rankup_B2_L1",
+  "title": "JOB<br>INTERVIEWS",
+  "titlePlain": "Job Interviews — The Promotion (B2)",
+  "subtitle": "Speaking &amp; Listening · B2 · ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=b2-l2",
+    "label": "LESSON 2 ▸ PRESENTATIONS"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · B1 final",
+      "intro": "Antes de empezar, recupera lo de la última clase de B1. Une cada expresión con su significado, sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "to look ahead",
+          "r": "mirar hacia adelante"
+        },
+        {
+          "l": "by the end of the month",
+          "r": "para fin de mes"
+        },
+        {
+          "l": "I'll have it done by…",
+          "r": "lo tendré listo para…"
+        },
+        {
+          "l": "it's all arranged",
+          "r": "está todo arreglado"
+        },
+        {
+          "l": "we're on course to…",
+          "r": "vamos camino a…"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "contar tu experiencia",
+      "title": "<ico-book></ico-book> I'VE DONE vs I'VE BEEN DOING",
+      "intro": "En una entrevista cuentas tu experiencia con dos formas: el <b style='color:var(--gold)'>present perfect simple</b> para resultados que se pueden contar y el <b style='color:var(--gold)'>continuous</b> para lo que sigues haciendo. Después, el método <b style='color:var(--gold)'>STAR</b> para contar una historia en cuatro líneas.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver frases de entrevista",
+      "vocab": [
+        {
+          "en": "Tell me about a time when…",
+          "sp": "cuéntame de una vez en que…"
+        },
+        {
+          "en": "What would you say is your biggest strength?",
+          "sp": "¿cuál dirías que es tu mayor fortaleza?"
+        },
+        {
+          "en": "Where do you see yourself in five years?",
+          "sp": "¿dónde te ves en cinco años?"
+        },
+        {
+          "en": "so far",
+          "sp": "hasta ahora"
+        },
+        {
+          "en": "since March",
+          "sp": "desde marzo"
+        },
+        {
+          "en": "for two years",
+          "sp": "desde hace dos años"
+        },
+        {
+          "en": "The situation was…",
+          "sp": "la situación era…"
+        },
+        {
+          "en": "My task was to…",
+          "sp": "mi tarea era…"
+        },
+        {
+          "en": "As a result,…",
+          "sp": "como resultado,…"
+        },
+        {
+          "en": "Since then,…",
+          "sp": "desde entonces,…"
+        },
+        {
+          "en": "Do you have any questions for us?",
+          "sp": "¿tienes alguna pregunta para nosotros?"
+        }
+      ],
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>comparar</b> <ico-comments></ico-comments>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>ordenar</b> <ico-puzzle></ico-puzzle>, <b>diálogo</b> y <b>completar</b> <ico-filepen></ico-filepen>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · RESULTADOS QUE SE CUENTAN</b> <span class='es'>— have + participio</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I've led three launches.",
+              "sp": "Dirigí tres lanzamientos (y cuentan para hoy)."
+            },
+            {
+              "en": "I've managed two teams so far.",
+              "sp": "Hasta ahora he dirigido dos equipos."
+            },
+            {
+              "en": "We've cut delivery times by half.",
+              "sp": "Redujimos los tiempos de entrega a la mitad: un resultado."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · ALGO QUE SIGUES HACIENDO</b> <span class='es'>— have been + -ing, con for / since</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I've been leading the daily standups since March.",
+              "sp": "Dirijo las reuniones diarias desde marzo, y sigo."
+            },
+            {
+              "en": "I've been working with this client for a year.",
+              "sp": "Trabajo con este cliente desde hace un año."
+            },
+            {
+              "en": "How long have you been working here?",
+              "sp": "¿Cuánto tiempo hace que trabajas aquí?"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>for</b> + cuánto tiempo (<i>for a year</i>) · <b>since</b> + cuándo empezó (<i>since March</i>). En español dices «trabajo aquí desde 2022», en presente: <s class='x'>I work here since 2022.</s> → <span class='ok'>I've been working here since 2022.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · VERBOS DE ESTADO: SIEMPRE SIMPLE</b> <span class='es'>— know, want, believe, have (tener)</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I've known Priya for five years.",
+              "sp": "Conozco a Priya desde hace cinco años."
+            },
+            {
+              "en": "I've always wanted to lead a team.",
+              "sp": "Siempre quise liderar un equipo."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Un estado no es una actividad:</b> no lleva -ing. <s class='x'>I've been knowing her for years.</s> → <span class='ok'>I've known her for years.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · STAR EN CUATRO LÍNEAS</b> <span class='es'>— Situation, Task, Action, Result</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Last year, our website crashed on launch night.",
+              "sp": "S · la situación, en pasado simple."
+            },
+            {
+              "en": "My task was to get it back online fast.",
+              "sp": "T · tu tarea, en pasado simple."
+            },
+            {
+              "en": "I checked the logs and restarted the payment service.",
+              "sp": "A · lo que hiciste tú: pasado simple con «I»."
+            },
+            {
+              "en": "As a result, the site was back in an hour, and we've had no downtime since.",
+              "sp": "R · el resultado, en pasado + present perfect para lo que sigue siendo cierto."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · VERBOS FUERTES PARA LA ACCIÓN</b> <span class='es'>— que se note que fuiste tú</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I took ownership of the problem.",
+              "sp": "Me hice cargo del problema."
+            },
+            {
+              "en": "I stepped up when my manager was away.",
+              "sp": "Di un paso al frente cuando mi jefa no estaba."
+            },
+            {
+              "en": "I oversaw the move to the new server.",
+              "sp": "Supervisé el cambio al nuevo servidor."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> TRAMPA DEL ESPAÑOL</b> <span class='es'>— palabras que parecen iguales y no lo son</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Currently, I'm leading a team of four.",
+              "sp": "«Actualmente» = currently. <i>Actually</i> significa «en realidad»."
+            },
+            {
+              "en": "I have a degree in marketing.",
+              "sp": "«Carrera universitaria» = degree. <i>Career</i> es tu trayectoria profesional."
+            },
+            {
+              "en": "I attended the training in May.",
+              "sp": "«Asistir a» = attend. <i>Assist</i> significa «ayudar»."
+            },
+            {
+              "en": "I'm thirty years old.",
+              "sp": "La edad va con <b>be</b>, nunca con have."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>Actually I work in sales.</s> → <span class='ok'>Currently, I work in sales.</span> · <s class='x'>I have thirty years.</s> → <span class='ok'>I'm thirty.</span>"
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "el ascenso",
+      "title": "<ico-star></ico-star> THE PROMOTION",
+      "intro": "Después del gran pitch, Priya abre un puesto nuevo: <b style='color:var(--gold)'>Team Lead</b>. Marcos se postula… y también Carla, una candidata de afuera con un currículum muy fuerte. Primero, una entrevista de práctica con Priya. <ico-crown></ico-crown>",
+      "cast": [
+        {
+          "en": "Priya",
+          "sp": "abre el puesto y entrevista"
+        },
+        {
+          "en": "Marcos",
+          "sp": "quiere el puesto"
+        },
+        {
+          "en": "Carla",
+          "sp": "la <b style='color:var(--magenta)'>rival</b> de afuera"
+        },
+        {
+          "en": "Sofia",
+          "sp": "le da feedback"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "INTERVIEW WORDS · toca para girar",
+      "intro": "Las palabras que se escuchan en cualquier entrevista en inglés. Aparecen en los audios.",
+      "cards": [
+        {
+          "front": "track record",
+          "back": "historial comprobado de resultados"
+        },
+        {
+          "front": "to oversee",
+          "back": "supervisar"
+        },
+        {
+          "front": "to take ownership",
+          "back": "hacerse cargo, asumir la responsabilidad"
+        },
+        {
+          "front": "to step up",
+          "back": "dar un paso al frente"
+        },
+        {
+          "front": "a setback",
+          "back": "un contratiempo"
+        },
+        {
+          "front": "deadline-driven",
+          "back": "que trabaja bien con fechas límite"
+        },
+        {
+          "front": "transferable skills",
+          "back": "habilidades que sirven en otro puesto"
+        },
+        {
+          "front": "room to grow",
+          "back": "espacio para crecer"
+        },
+        {
+          "front": "to handle pressure",
+          "back": "manejar la presión"
+        },
+        {
+          "front": "a strength / an area to improve",
+          "back": "una fortaleza / algo a mejorar"
+        }
+      ],
+      "deckLabel": "entrevistas"
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "I'VE WRITTEN vs I'VE BEEN WRITING",
+      "intro": "Las dos hablan del mismo informe, pero una mira el resultado y la otra la actividad. ¿Cómo sabes si está terminado?",
+      "pair": {
+        "a": "I've written the report.",
+        "b": "I've been writing the report."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál dice que el informe está terminado?",
+          "options": [
+            "A — I've written",
+            "B — I've been writing",
+            "Las dos"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Estás cansado y tu café se enfrió. ¿Cuál explica por qué?",
+          "options": [
+            "A — I've written",
+            "B — I've been writing",
+            "Ninguna"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál puede seguir con «…and I've sent it to Priya»?",
+          "options": [
+            "B — I've been writing",
+            "A — I've written",
+            "Ninguna"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Priya: «How many reports have you written this week?» ¿Qué respondes?",
+          "options": [
+            "I've been writing three.",
+            "I write three.",
+            "I've written three."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Son las once y empezaste a las nueve. Todavía no terminaste. ¿Qué dices?",
+          "options": [
+            "I've been writing the report since nine.",
+            "I've written the report since nine.",
+            "I write the report since nine."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE INTERVIEW",
+      "desc": "Entrevista de práctica: Priya le pide a Marcos una historia de algo que salió mal. Él elige la noche en que se cayó el sitio.",
+      "src": "b2-l1-1.mp3",
+      "dur": "1:48",
+      "speakers": "<ico-commentdots></ico-commentdots> Priya + Marcos",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Which of Marcos's experiences is still going on?",
+          "options": [
+            "Fixing the payment system",
+            "Leading the daily standups",
+            "Managing the night team"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What did Marcos do on the night of the crash?",
+          "options": [
+            "He called the client to explain the problem",
+            "He asked Sofia to restart the server",
+            "He found the problem in the logs and restarted the payment service"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Priya's last comment imply?",
+          "options": [
+            "He should talk about his own actions",
+            "He should give more credit to Sofia",
+            "His story was too short"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What was the result of his action?",
+          "options": [
+            "The site was down all night, but the client didn't notice",
+            "The site was back in about an hour, with no downtime since",
+            "The client complained, but renewed the contract"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Retell Marcos's crash story as a STAR answer in four sentences, using 'I' for the Action.",
+        "starter": "Last year, (situation). My task was to (task). I (action) and I (action). As a result, (result), and we've had no downtime since."
+      },
+      "transcript": [
+        {
+          "spk": "Priya",
+          "html": "Thanks for coming in, Marcos. I know it's strange to be interviewed by your own manager, so let's keep it simple. <span class='tg'>Tell me about a time</span> something went wrong at work."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Sure. Last year, on the night of the GreenMarket launch, the website crashed at about eleven o'clock. Sofia called me, and the site was completely down."
+        },
+        {
+          "spk": "Priya",
+          "html": "I remember that night. What was your task?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>My task was to</span> get the site back online before the client noticed. So we logged on, we checked the logs, and we found the problem: the payment system was sending too many requests. We restarted the payment service, and we stayed online until everything was stable."
+        },
+        {
+          "spk": "Priya",
+          "html": "And the result?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>The result?</span> The site was back in about an hour, and the client never noticed. <span class='tg'>We've had</span> no downtime since."
+        },
+        {
+          "spk": "Priya",
+          "html": "Good. Now, a Team Lead does more than fix problems. What are you doing now that shows you're ready?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Well, <span class='tg'>I've been leading</span> the daily standups since March. And <span class='tg'>I've handled</span> three launches, so I know what can go wrong, and when."
+        },
+        {
+          "spk": "Priya",
+          "html": "That's useful. One more thing. In your crash story, you said \"we\" a lot. We logged on, we found it, we restarted it. Who is \"we\"?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Oh. Well, Sofia called me, but I found the problem, and I restarted the service. That part was me."
+        },
+        {
+          "spk": "Priya",
+          "html": "Then say \"I\", Marcos. The panel can't promote \"we\"."
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "BUILD THE ANSWER",
+      "intro": "La primera es una respuesta STAR completa: ordena las cuatro partes. Las demás son frases de entrevista.",
+      "items": [
+        {
+          "words": [
+            "Last year, our website crashed on launch night.",
+            "My task was to get it back online fast.",
+            "I checked the logs and restarted the payment service.",
+            "As a result, we've had no downtime since."
+          ],
+          "answer": "Last year, our website crashed on launch night. My task was to get it back online fast. I checked the logs and restarted the payment service. As a result, we've had no downtime since."
+        },
+        {
+          "words": [
+            "I've",
+            "been",
+            "working",
+            "here",
+            "for",
+            "two",
+            "years"
+          ],
+          "answer": "I've been working here for two years"
+        },
+        {
+          "words": [
+            "How",
+            "long",
+            "have",
+            "you",
+            "been",
+            "leading",
+            "the",
+            "team?"
+          ],
+          "answer": "How long have you been leading the team?"
+        },
+        {
+          "words": [
+            "I've",
+            "known",
+            "Priya",
+            "since",
+            "2019"
+          ],
+          "answer": "I've known Priya since 2019"
+        },
+        {
+          "words": [
+            "I",
+            "took",
+            "ownership",
+            "of",
+            "the",
+            "problem"
+          ],
+          "answer": "I took ownership of the problem"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "YOU'RE THE CANDIDATE",
+      "intro": "Priya te entrevista. Una respuesta es demasiado modesta, otra suena arrogante y una es la correcta.",
+      "lines": [
+        {
+          "spk": "Priya",
+          "html": "So, why do you want this role?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I don't know if I'm ready, but I can try.",
+            "I've been leading the standups since March, and I'm ready for more.",
+            "Honestly, I'm the best person here. It's obvious."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Priya",
+          "html": "What would you say is your biggest strength?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I'm good at everything, really.",
+            "Maybe I'm okay with computers?",
+            "I handle pressure well. During the crash, I stayed calm and fixed it in an hour."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Priya",
+          "html": "And an area to improve?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Delegating. I've been sharing more tasks with the team since spring.",
+            "I don't have any weaknesses.",
+            "There are too many to list, honestly."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Priya",
+          "html": "Tell me about a setback."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "My setbacks are always someone else's fault.",
+            "A launch slipped by a week. I took ownership and told the client early.",
+            "I'd rather not talk about failures."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Priya",
+          "html": "Do you have any questions for us?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "No, nothing.",
+            "When do I get the bigger salary?",
+            "Yes. What would success look like in the first six months?"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "SIMPLE OR CONTINUOUS?",
+      "intro": "Elige la forma correcta: resultado que se cuenta, actividad que sigue, o verbo de estado.",
+      "items": [
+        {
+          "q": "I ___ three teams so far.",
+          "options": [
+            "have managed",
+            "have been managing",
+            "manage"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "She's been working here ___ 2021.",
+          "options": [
+            "for",
+            "since",
+            "from"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "We've been testing the new app ___ two weeks.",
+          "options": [
+            "since",
+            "during",
+            "for"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "I ___ Priya for five years.",
+          "options": [
+            "have been knowing",
+            "have known",
+            "know"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "You look tired. — Yes, I ___ on this report since eight.",
+          "options": [
+            "am working",
+            "work",
+            "have been working"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "How many interviews ___ this week?",
+          "options": [
+            "have you done",
+            "have you been doing",
+            "are you doing"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I ___ to lead a team.",
+          "options": [
+            "have always been wanting",
+            "have always wanted",
+            "am always wanting"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Marcos ___ the daily standups since March.",
+          "options": [
+            "leads",
+            "is leading",
+            "has been leading"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE FEEDBACK",
+      "desc": "Esa noche, Sofia le deja un mensaje de voz a Marcos: dos cosas que hizo bien y dos que tiene que arreglar antes del panel.",
+      "src": "b2-l1-2.mp3",
+      "dur": "0:50",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Which two things did Marcos do well?",
+          "options": [
+            "Short answers and strong numbers",
+            "A clear structure and strong numbers",
+            "A clear structure and saying \"I\""
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "How long did the crash story take?",
+          "options": [
+            "Nearly four minutes",
+            "Under two minutes",
+            "Thirty seconds"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does Sofia want him to practice tonight?",
+          "options": [
+            "The whole interview with Priya",
+            "One thirty-second answer using \"I\"",
+            "The crash story, with more detail"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does Sofia suggest about the panel?",
+          "options": [
+            "It wants to hear about the whole team",
+            "It prefers long, detailed answers",
+            "It cares about what Marcos did himself"
+          ],
+          "answer": 2
+        }
+      ],
+      "speaking": {
+        "prompt": "Do Sofia's exercise: answer 'Tell me about a time you handled pressure' in 30 seconds, using 'I' every time.",
+        "starter": "Last (month / year), (situation). I had to (task), so I (action). As a result, (result)."
+      },
+      "transcript": [
+        {
+          "spk": "Sofia",
+          "html": "Hi Marcos, it's Sofia. Priya told me about your practice interview, and it's mostly good news. Two things went really well. Your crash story had a clear structure: situation, task, action, result. And your numbers were strong. Three launches, no downtime since. That's a <span class='tg'>track record</span>. But there are two things to fix before the panel. First, your answers are too long. Priya timed you, and the crash story took nearly four minutes. Keep every answer under two. Second, stop saying \"we\". The panel wants to know what you did, not what the team did. So here's your homework for tonight: one answer, thirty seconds, and use \"I\" every time. Call me if you want to rehearse. Good luck!"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> MY STAR STORY",
+      "intro": "Escribe tu respuesta a «Tell me about a time something went wrong at work» (5–7 frases), con el método STAR.",
+      "checklist": [
+        "Situación y tarea en pasado (<b>I was working at… / My task was to…</b>)",
+        "Acción con <b>I</b>, no con <b>we</b>, y al menos un verbo fuerte (<b>I took ownership / I oversaw</b>)",
+        "Resultado concreto, con un número si puedes",
+        "Una frase con <b>I've + participio</b> (resultado) y una con <b>I've been + -ing</b> + for/since",
+        "Nada de <b>actually</b> por «actualmente»"
+      ],
+      "placeholder": "In 2023, I was working at…",
+      "example": "In <span class=\"gap\">año</span>, I was working at <span class=\"gap\">empresa / puesto</span> when <span class=\"gap\">qué pasó</span>. My task was to <span class=\"gap\">tu tarea</span>. I <span class=\"gap\">acción 1</span> and <span class=\"gap\">acción 2</span>. As a result, <span class=\"gap\">resultado</span>. Since then, I've <span class=\"gap\">participio + lo que sigue</span>.",
+      "hw": "Escribe tu historia y después grábate <b>contándola en menos de dos minutos, sin leer</b>. Envíame texto y audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna y la historia tiene las cuatro partes de STAR."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>I've done</b> y <b>I've been doing</b> bien, con for / since, y la acción está contada con <b>I</b>."
+        },
+        {
+          "c": "Se entiende a la primera",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/b2-l1",
+    "keys": [
+      "a-clear-structure-and-saying-i",
+      "a-clear-structure-and-strong-numbers",
+      "a-launch-slipped-by-a-week-i-took-ownership-and-told-the-client-early",
+      "a-setback",
+      "a-strength-an-area-to-improve",
+      "am-always-wanting",
+      "am-working",
+      "and-an-area-to-improve",
+      "are-you-doing",
+      "as-a-result",
+      "as-a-result-the-site-was-back-in-an-hour-and-we-ve-had-no-downtime-since",
+      "by-the-end-of-the-month",
+      "currently-i-m-leading-a-team-of-four",
+      "deadline-driven",
+      "delegating-i-ve-been-sharing-more-tasks-with-the-team-since-spring",
+      "do-you-have-any-questions-for-us",
+      "during",
+      "fixing-the-payment-system",
+      "for",
+      "for-two-years",
+      "from",
+      "has-been-leading",
+      "have-always-been-wanting",
+      "have-always-wanted",
+      "have-been-knowing",
+      "have-been-managing",
+      "have-been-working",
+      "have-known",
+      "have-managed",
+      "have-you-been-doing",
+      "have-you-done",
+      "he-asked-sofia-to-restart-the-server",
+      "he-called-the-client-to-explain-the-problem",
+      "he-found-the-problem-in-the-logs-and-restarted-the-payment-service",
+      "he-should-give-more-credit-to-sofia",
+      "he-should-talk-about-his-own-actions",
+      "his-story-was-too-short",
+      "honestly-i-m-the-best-person-here-it-s-obvious",
+      "how-long-did-the-crash-story-take",
+      "how-long-have-you-been-working-here",
+      "i-attended-the-training-in-may",
+      "i-checked-the-logs-and-restarted-the-payment-service",
+      "i-d-rather-not-talk-about-failures",
+      "i-don-t-have-any-weaknesses",
+      "i-don-t-know-if-i-m-ready-but-i-can-try",
+      "i-handle-pressure-well-during-the-crash-i-stayed-calm-and-fixed-it-in-an-hour",
+      "i-have-a-degree-in-marketing",
+      "i-ll-have-it-done-by",
+      "i-m-good-at-everything-really",
+      "i-m-thirty-years-old",
+      "i-oversaw-the-move-to-the-new-server",
+      "i-stepped-up-when-my-manager-was-away",
+      "i-took-ownership-of-the-problem",
+      "i-ve-always-wanted-to-lead-a-team",
+      "i-ve-been-leading-the-daily-standups-since-march",
+      "i-ve-been-leading-the-standups-since-march-and-i-m-ready-for-more",
+      "i-ve-been-working-with-this-client-for-a-year",
+      "i-ve-been-writing-the-report",
+      "i-ve-been-writing-the-report-since-nine",
+      "i-ve-been-writing-three",
+      "i-ve-known-priya-for-five-years",
+      "i-ve-led-three-launches",
+      "i-ve-managed-two-teams-so-far",
+      "i-ve-written-the-report",
+      "i-ve-written-the-report-since-nine",
+      "i-ve-written-three",
+      "i-write-the-report-since-nine",
+      "i-write-three",
+      "is-leading",
+      "it-cares-about-what-marcos-did-himself",
+      "it-prefers-long-detailed-answers",
+      "it-s-all-arranged",
+      "it-wants-to-hear-about-the-whole-team",
+      "know",
+      "last-year-our-website-crashed-on-launch-night",
+      "leading-the-daily-standups",
+      "leads",
+      "manage",
+      "managing-the-night-team",
+      "maybe-i-m-okay-with-computers",
+      "my-setbacks-are-always-someone-else-s-fault",
+      "my-task-was-to",
+      "my-task-was-to-get-it-back-online-fast",
+      "nearly-four-minutes",
+      "no-nothing",
+      "one-thirty-second-answer-using-i",
+      "room-to-grow",
+      "short-answers-and-strong-numbers",
+      "since",
+      "since-march",
+      "since-then",
+      "so-far",
+      "so-why-do-you-want-this-role",
+      "tell-me-about-a-setback",
+      "tell-me-about-a-time-when",
+      "the-client-complained-but-renewed-the-contract",
+      "the-crash-story-with-more-detail",
+      "the-site-was-back-in-about-an-hour-with-no-downtime-since",
+      "the-site-was-down-all-night-but-the-client-didn-t-notice",
+      "the-situation-was",
+      "the-whole-interview-with-priya",
+      "there-are-too-many-to-list-honestly",
+      "thirty-seconds",
+      "to-handle-pressure",
+      "to-look-ahead",
+      "to-oversee",
+      "to-step-up",
+      "to-take-ownership",
+      "track-record",
+      "transferable-skills",
+      "under-two-minutes",
+      "we-re-on-course-to",
+      "we-ve-cut-delivery-times-by-half",
+      "what-did-marcos-do-on-the-night-of-the-crash",
+      "what-does-priya-s-last-comment-imply",
+      "what-does-sofia-suggest-about-the-panel",
+      "what-does-sofia-want-him-to-practice-tonight",
+      "what-was-the-result-of-his-action",
+      "what-would-you-say-is-your-biggest-strength",
+      "when-do-i-get-the-bigger-salary",
+      "where-do-you-see-yourself-in-five-years",
+      "which-of-marcos-s-experiences-is-still-going-on",
+      "which-two-things-did-marcos-do-well",
+      "work",
+      "yes-what-would-success-look-like-in-the-first-six-months"
+    ]
+  }
+}
