@@ -1,0 +1,1091 @@
+{
+  "level": "C1",
+  "num": 5,
+  "totalLessons": 6,
+  "world": "ADVANCED OPERATOR",
+  "ui": "en",
+  "key": "rankup_C1_L5",
+  "title": "FAST-SPEECH<br>LISTENING",
+  "titlePlain": "Fast-Speech Listening — Too Fast? (C1)",
+  "subtitle": "Listening &amp; Pronunciation · C1 · ~50 min",
+  "rankup": "EPISODE CLEAR!",
+  "next": {
+    "href": "lesson.html?id=c1-l6",
+    "label": "LESSON 6 ▸ CROSS-CULTURAL COMMUNICATION"
+  },
+  "clips": {
+    "dir": "clips/c1-l5",
+    "note": "Recorded by studio/scripts/generate_clips.py. 'text' is what the voice reads (respelled for the natural versions); the page never shows it.",
+    "items": [
+      {
+        "file": "pair-careful.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "-10%",
+        "text": "What do you want to do?"
+      },
+      {
+        "file": "pair-natural.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "+12%",
+        "text": "Whaddaya wanna do?"
+      },
+      {
+        "file": "c1-natural.mp3",
+        "voice": "en-US-AndrewNeural",
+        "rate": "+12%",
+        "text": "I'm gonna hafta call you back."
+      },
+      {
+        "file": "c1-careful.mp3",
+        "voice": "en-US-AndrewNeural",
+        "rate": "-10%",
+        "text": "I am going to have to call you back."
+      },
+      {
+        "file": "c2-natural.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "+12%",
+        "text": "Whaddaya wanna eat?"
+      },
+      {
+        "file": "c2-careful.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "-10%",
+        "text": "What do you want to eat?"
+      },
+      {
+        "file": "c3-natural.mp3",
+        "voice": "en-US-AndrewNeural",
+        "rate": "+12%",
+        "text": "She shoulda told me."
+      },
+      {
+        "file": "c3-careful.mp3",
+        "voice": "en-US-AndrewNeural",
+        "rate": "-10%",
+        "text": "She should have told me."
+      },
+      {
+        "file": "c4-natural.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "+12%",
+        "text": "I can't hear you."
+      },
+      {
+        "file": "c4-careful.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "-10%",
+        "text": "I can not hear you."
+      },
+      {
+        "file": "c5-natural.mp3",
+        "voice": "en-US-AndrewNeural",
+        "rate": "+12%",
+        "text": "Lemme know, cuz I gotta book it."
+      },
+      {
+        "file": "c5-careful.mp3",
+        "voice": "en-US-AndrewNeural",
+        "rate": "-10%",
+        "text": "Let me know, because I have got to book it."
+      },
+      {
+        "file": "g1.mp3",
+        "voice": "en-US-GuyNeural",
+        "rate": "+12%",
+        "text": "D'you wanna come with us?"
+      },
+      {
+        "file": "g2.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "+12%",
+        "text": "I kinda like it."
+      },
+      {
+        "file": "g3.mp3",
+        "voice": "en-US-AndrewNeural",
+        "rate": "+12%",
+        "text": "Gimme a second."
+      },
+      {
+        "file": "g4.mp3",
+        "voice": "en-US-GuyNeural",
+        "rate": "+12%",
+        "text": "We coulda won."
+      },
+      {
+        "file": "g5.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "+12%",
+        "text": "I can do Monday, but I can't do Tuesday."
+      },
+      {
+        "file": "g6.mp3",
+        "voice": "en-US-AndrewNeural",
+        "rate": "+12%",
+        "text": "It's cuz of the rain."
+      },
+      {
+        "file": "g7.mp3",
+        "voice": "en-US-GuyNeural",
+        "rate": "+12%",
+        "text": "I hafta leave at six."
+      },
+      {
+        "file": "g8.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "+12%",
+        "text": "She's gonna love it."
+      },
+      {
+        "file": "o1.mp3",
+        "voice": "en-US-AndrewNeural",
+        "rate": "+12%",
+        "text": "Whaddaya gonna do?"
+      },
+      {
+        "file": "o2.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "+12%",
+        "text": "I shoulda called you."
+      },
+      {
+        "file": "o3.mp3",
+        "voice": "en-US-GuyNeural",
+        "rate": "+12%",
+        "text": "Lemme see what I can do."
+      },
+      {
+        "file": "o4.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "+12%",
+        "text": "D'you wanna grab a coffee?"
+      },
+      {
+        "file": "o5.mp3",
+        "voice": "en-US-AndrewNeural",
+        "rate": "+12%",
+        "text": "I gotta go, cuz it's late."
+      },
+      {
+        "file": "shadow.mp3",
+        "voice": "en-US-JennyNeural",
+        "rate": "+12%",
+        "text": "So I was gonna take the bus, but I didn't wanna wait, cuz it was kinda cold. I shoulda checked the schedule. Anyway, whaddaya doing this weekend? If you wanna grab a coffee, gimme a call. I can do Saturday, but I can't do Sunday. I hafta help my brother move."
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> EPISODE RECAP · last lesson",
+      "intro": "Before we go on air: match each debate phrase with the move it makes.",
+      "pairs": [
+        {
+          "l": "Granted,… ; however,…",
+          "r": "concede, then turn"
+        },
+        {
+          "l": "It overlooks…",
+          "r": "something was forgotten"
+        },
+        {
+          "l": "Arguably,…",
+          "r": "it can be argued, not proved"
+        },
+        {
+          "l": "If I could just finish…",
+          "r": "keep the floor"
+        },
+        {
+          "l": "to sit on the fence",
+          "r": "to avoid choosing a side"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "connected speech",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· connected speech</span>",
+      "title": "<ico-book></ico-book> WHADDAYA MEAN, TOO FAST?",
+      "intro": "Native speakers are not really faster. They <b style='color:var(--gold)'>blend, shrink and drop</b> the small words so that the important ones land on the beat. Learn what disappears and your ear will stop looking for it. One rule first: <b style='color:var(--gold)'>recognize all of it; say it only in casual speech; never write it in an email</b>.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show the street vocabulary",
+      "vocab": [
+        {
+          "en": "a bench",
+          "sp": "a long seat in a street or park"
+        },
+        {
+          "en": "the sidewalk",
+          "sp": "the part of the street where people walk"
+        },
+        {
+          "en": "a parking garage",
+          "sp": "a building for parking cars"
+        },
+        {
+          "en": "downtown",
+          "sp": "the center of a city"
+        },
+        {
+          "en": "a gas station",
+          "sp": "a place that sells fuel, and sandwiches at midnight"
+        },
+        {
+          "en": "ages ago",
+          "sp": "a long time ago"
+        },
+        {
+          "en": "on a good day",
+          "sp": "when everything goes well"
+        },
+        {
+          "en": "I'm not kidding.",
+          "sp": "I'm serious"
+        },
+        {
+          "en": "to pick up",
+          "sp": "to answer the phone"
+        },
+        {
+          "en": "to get the gist",
+          "sp": "to understand the main idea, not every word"
+        }
+      ],
+      "note": "<b>How it works:</b> this lesson is for your ears. The gold <ico-play></ico-play> buttons play real-speed clips: compare <ico-comments></ico-comments>, listening <ico-headphones></ico-headphones>, gap-fill <ico-filepen></ico-filepen>, order <ico-puzzle></ico-puzzle>, flashcards <ico-clone></ico-clone> and memory. Use headphones if you can.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · THE BEAT</b> <span class='es'>— content words are loud; grammar words are small</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I want to go to the store.",
+              "sp": "Three beats: WANT, GO, STORE. «I», «to» and «to the» shrink to fit between them."
+            },
+            {
+              "en": "Can you give me a hand?",
+              "sp": "Two beats: GIVE, HAND. The rest is almost a whisper."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · THE REDUCTIONS</b> <span class='es'>— two or three words become one sound</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "going to → gonna",
+            "want to → wanna",
+            "got to → gotta",
+            "have to → hafta",
+            "kind of → kinda",
+            "let me → lemme",
+            "give me → gimme",
+            "because → 'cause",
+            "do you → d'you",
+            "what do you → whaddaya",
+            "should have → shoulda"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'm gonna be late.",
+              "sp": "I am going to be late."
+            },
+            {
+              "en": "Do you wanna come?",
+              "sp": "Do you want to come?"
+            },
+            {
+              "en": "I gotta go.",
+              "sp": "I have got to go."
+            },
+            {
+              "en": "We shoulda left earlier.",
+              "sp": "We should have left earlier. The same happens with coulda and woulda."
+            },
+            {
+              "en": "Whaddaya think?",
+              "sp": "What do you think?"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · LINKING</b> <span class='es'>— a final consonant jumps onto the next vowel</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Turn it off.",
+              "sp": "Sounds like «tur-ni-toff»: three words, one piece."
+            },
+            {
+              "en": "Pick it up.",
+              "sp": "Sounds like «pi-ki-tup»."
+            },
+            {
+              "en": "An hour and a half.",
+              "sp": "Sounds like «a-nou-ran-a-half»."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · SOUNDS THAT VANISH OR CHANGE</b> <span class='es'>— the dropped T and the quick D</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "See you next day. Most people know.",
+              "sp": "The T between two consonants disappears: «nex day», «mos people»."
+            },
+            {
+              "en": "A lot of water is better.",
+              "sp": "Between vowels, American T becomes a quick D: «a lodda wadder is bedder»."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · CAN vs CAN'T</b> <span class='es'>— listen to the vowel, not the T</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I can do it.",
+              "sp": "«can» is weak and short, almost «kn»: I kn DO it. The stress is on DO."
+            },
+            {
+              "en": "I can't do it.",
+              "sp": "«can't» keeps its full vowel and takes the stress: I CAN'T do it. The T is often silent."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>If the word is long and loud, it is «can't».</b> If you can hardly hear it, it is «can». When it matters (a date, a price, a yes or no), check: <i>Sorry, was that can or can't?</i>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> SPANISH TRAP</b> <span class='es'>— el ritmo del español juega en contra</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I was at the office for an hour.",
+              "sp": "En español cada sílaba pesa lo mismo. En inglés solo suenan fuertes OFF- y HOUR; lo demás casi desaparece. Si pronuncias todo igual, te entienden; si esperas oírlo todo igual, no entiendes."
+            },
+            {
+              "en": "I am going to send the report today.",
+              "sp": "<i>Gonna</i>, <i>wanna</i> y <i>gotta</i> se dicen, no se escriben: en un correo, siempre la forma completa."
+            },
+            {
+              "en": "I can't make it tomorrow.",
+              "sp": "El error más caro: oír <i>can</i> donde dijeron <i>can't</i>. Escucha la vocal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "episode 5",
+      "title": "<ico-star></ico-star> TOO FAST?",
+      "intro": "Roz hands you a microphone and sends you out into the street: one question for anyone who will stop. «Nobody out there speaks like a textbook,» she says. «You won't catch every word. Get the gist first, then go back for the details.»<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b>: <b>to mumble</b> = to speak quietly and unclearly · <b>get the gist</b> · <b>catch every word</b>.",
+      "cast": [
+        {
+          "en": "Roz",
+          "sp": "wants five voices for Friday's show"
+        },
+        {
+          "en": "Sam, Kit, Robin, Max",
+          "sp": "stopped in the street"
+        },
+        {
+          "en": "Marcos",
+          "sp": "a passer-by you may recognize"
+        },
+        {
+          "en": "You",
+          "sp": "hold the <b style='color:var(--magenta)'>microphone</b>"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "CAREFUL vs NATURAL",
+      "intro": "The same sentence twice: once as the textbook says it, once as people say it. Then five more. Play the natural clip first and decide; use the careful one to check yourself.",
+      "pair": {
+        "a": "What do you want to do?",
+        "b": "Whaddaya wanna do?"
+      },
+      "pairClips": {
+        "a": {
+          "src": "pair-careful.mp3",
+          "label": "careful"
+        },
+        "b": {
+          "src": "pair-natural.mp3",
+          "label": "natural"
+        }
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "What are the full words?",
+          "clip": [
+            {
+              "src": "c1-natural.mp3",
+              "label": "natural"
+            },
+            {
+              "src": "c1-careful.mp3",
+              "label": "careful"
+            }
+          ],
+          "options": [
+            "I am going to have to call you back.",
+            "I am going after I call you back.",
+            "I am not going to call you back."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What are the full words?",
+          "clip": [
+            {
+              "src": "c2-natural.mp3",
+              "label": "natural"
+            },
+            {
+              "src": "c2-careful.mp3",
+              "label": "careful"
+            }
+          ],
+          "options": [
+            "Where do you want to eat?",
+            "What do you want to eat?",
+            "What did you want to eat?"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What are the full words?",
+          "clip": [
+            {
+              "src": "c3-natural.mp3",
+              "label": "natural"
+            },
+            {
+              "src": "c3-careful.mp3",
+              "label": "careful"
+            }
+          ],
+          "options": [
+            "She should tell me.",
+            "She would have told me.",
+            "She should have told me."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Can, or can't?",
+          "clip": [
+            {
+              "src": "c4-natural.mp3",
+              "label": "natural"
+            },
+            {
+              "src": "c4-careful.mp3",
+              "label": "careful"
+            }
+          ],
+          "options": [
+            "I can't hear you.",
+            "I can hear you.",
+            "I could hear you."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What are the full words?",
+          "clip": [
+            {
+              "src": "c5-natural.mp3",
+              "label": "natural"
+            },
+            {
+              "src": "c5-careful.mp3",
+              "label": "careful"
+            }
+          ],
+          "options": [
+            "Let me go, because I have got to book it.",
+            "Let me know, because I have got to book it.",
+            "Let me know, because I forgot to book it."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE STREET",
+      "desc": "Five people, one question: «What would you change about this place?» This is natural speed. Every question below depends on one small, reduced word. Listen twice before you open the transcript.",
+      "src": "c1-l5-1.mp3",
+      "dur": "1:34",
+      "speakers": "<ico-commentdots></ico-commentdots> Roz · Sam · Kit · Robin · Max · Marcos",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Sam says the city \"coulda fixed that ages ago.\" What does that mean?",
+          "options": [
+            "The city had the chance to fix it, and didn't",
+            "The city fixed it a long time ago",
+            "The city is going to fix it soon"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is it that Robin can NOT sleep through?",
+          "options": [
+            "The traffic",
+            "The bars on the street",
+            "Both of them"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Max says \"We shoulda built a garage ten years ago.\" Was it built?",
+          "options": [
+            "Yes, ten years ago",
+            "Yes, but it is too small",
+            "No, and now it will cost three times as much"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Marcos want?",
+          "options": [
+            "More places open late",
+            "A job with a team overseas",
+            "Fewer gas stations"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Answer the street question yourself in twenty seconds, at natural speed. Use two reductions.",
+        "starter": "What would I change? Honestly, I'd… 'cause… They shoulda… I'm gonna…"
+      },
+      "transcript": [
+        {
+          "spk": "Roz",
+          "html": "Street interviews for Friday's show. One question: what would you change about this place? Here's what people told us."
+        },
+        {
+          "spk": "Sam",
+          "html": "What would I change? Honestly, the buses. I <span class='tg'>gotta</span> be at the bakery by five, and the first bus is at five thirty. I've been asking for an early bus for, like, three years. They <span class='tg'>coulda</span> fixed that ages ago. So now I ride my bike, <span class='tg'>'cause</span> I've got no choice."
+        },
+        {
+          "spk": "Kit",
+          "html": "Oh, I <span class='tg'>dunno</span>. The sidewalks, I guess. My mom <span class='tg'>can't</span> walk very far, and there's nowhere to sit down. I'm not kidding, there isn't a single bench between here and the clinic. Just <span class='tg'>gimme</span> a few benches and I'll stop complaining. Well, <span class='tg'>kinda</span>."
+        },
+        {
+          "spk": "Robin",
+          "html": "<span class='tg'>Lemme</span> think. You know what? I wouldn't change much. People complain a lot, but I've lived in bigger cities, and this one's a lot better than they think. If I <span class='tg'>hafta</span> pick something, it's the noise at night. I <span class='tg'>can</span> sleep through traffic, but I <span class='tg'>can't</span> sleep through the bars on my street."
+        },
+        {
+          "spk": "Max",
+          "html": "The parking. <span class='tg'>D'you</span> know how long it takes to park near my store? Twenty minutes, on a good day. We <span class='tg'>shoulda</span> built a garage ten years ago, when the land was cheap. Now it's <span class='tg'>gonna</span> cost three times as much. But hey, nobody asked me."
+        },
+        {
+          "spk": "Marcos",
+          "html": "<span class='tg'>Whaddaya</span> mean, change? I love this place. Okay, okay, one thing. I <span class='tg'>wanna</span> see more places open late. I work with a team overseas, so I finish at midnight, and by then all you can get is a gas station sandwich. That's <span class='tg'>gotta</span> change."
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "WHAT DID THEY SAY?",
+      "intro": "Play each clip (as many times as you need) and choose the full form of what you heard.",
+      "items": [
+        {
+          "q": "___ come with us?",
+          "clip": "g1.mp3",
+          "options": [
+            "Do you want to",
+            "Did you want to",
+            "Do you have to"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I ___ like it.",
+          "clip": "g2.mp3",
+          "options": [
+            "can't",
+            "kind of",
+            "can"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "___ a second.",
+          "clip": "g3.mp3",
+          "options": [
+            "Get me",
+            "Let me",
+            "Give me"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "We ___ won.",
+          "clip": "g4.mp3",
+          "options": [
+            "could have",
+            "could",
+            "couldn't have"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which day is possible?",
+          "clip": "g5.mp3",
+          "options": [
+            "Tuesday, not Monday",
+            "Monday, not Tuesday",
+            "Both days"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "q": "It's ___ the rain.",
+          "clip": "g6.mp3",
+          "options": [
+            "caused by",
+            "the cost of",
+            "because of"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "I ___ leave at six.",
+          "clip": "g7.mp3",
+          "options": [
+            "have to",
+            "had to",
+            "want to"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "She ___ love it.",
+          "clip": "g8.mp3",
+          "options": [
+            "was going to",
+            "is going to",
+            "has gone to"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "REBUILD THE SENTENCE",
+      "intro": "Play the fast clip, then put the full, written sentence back together.",
+      "items": [
+        {
+          "clip": "o1.mp3",
+          "words": [
+            "What",
+            "are",
+            "you",
+            "going",
+            "to",
+            "do?"
+          ],
+          "answer": "What are you going to do?"
+        },
+        {
+          "clip": "o2.mp3",
+          "words": [
+            "I",
+            "should",
+            "have",
+            "called",
+            "you"
+          ],
+          "answer": "I should have called you"
+        },
+        {
+          "clip": "o3.mp3",
+          "words": [
+            "Let",
+            "me",
+            "see",
+            "what",
+            "I",
+            "can",
+            "do"
+          ],
+          "answer": "Let me see what I can do"
+        },
+        {
+          "clip": "o4.mp3",
+          "words": [
+            "Do",
+            "you",
+            "want",
+            "to",
+            "grab",
+            "a",
+            "coffee?"
+          ],
+          "answer": "Do you want to grab a coffee?"
+        },
+        {
+          "clip": "o5.mp3",
+          "words": [
+            "I",
+            "have",
+            "got",
+            "to",
+            "go",
+            "because",
+            "it",
+            "is",
+            "late"
+          ],
+          "answer": "I have got to go because it is late"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "THE REDUCTIONS · tap to flip",
+      "intro": "The sound on the front, the written form on the back. Tap the speaker, then say the full form before you flip.",
+      "cards": [
+        {
+          "front": "gonna",
+          "back": "going to · «I'm gonna call her.» = I am going to call her."
+        },
+        {
+          "front": "wanna",
+          "back": "want to · «Do you wanna eat?» = Do you want to eat?"
+        },
+        {
+          "front": "gotta",
+          "back": "(have) got to · «I gotta go.» = I have got to go."
+        },
+        {
+          "front": "hafta",
+          "back": "have to · «I hafta work.» = I have to work."
+        },
+        {
+          "front": "kinda",
+          "back": "kind of · «It's kinda cold.» = It is kind of cold."
+        },
+        {
+          "front": "lemme",
+          "back": "let me · «Lemme think.» = Let me think."
+        },
+        {
+          "front": "gimme",
+          "back": "give me · «Gimme a minute.» = Give me a minute."
+        },
+        {
+          "front": "'cause",
+          "back": "because · «I left 'cause it was late.» = I left because it was late."
+        },
+        {
+          "front": "whaddaya",
+          "back": "what do you / what are you · «Whaddaya think?» = What do you think?"
+        },
+        {
+          "front": "shoulda, coulda, woulda",
+          "back": "should have, could have, would have · «I shoulda called.» = I should have called."
+        }
+      ],
+      "deckLabel": "reductions"
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE VOICEMAIL",
+      "desc": "Kit calls the station back and leaves a fast message: a street, a time and a phone number. Take notes as you listen, the way you would at work.",
+      "src": "c1-l5-2.mp3",
+      "dur": "0:39",
+      "speakers": "<ico-commentdots></ico-commentdots> Kit",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Which street does Kit want to show the reporter?",
+          "options": [
+            "Garden Avenue",
+            "Garden Street",
+            "Clinic Street"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "When can Kit meet?",
+          "options": [
+            "Thursday at 4:15",
+            "Friday at 4:15",
+            "Thursday at 4:50"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is Kit's number?",
+          "options": [
+            "555-0124",
+            "555-1042",
+            "555-0142"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Why is Friday impossible?",
+          "options": [
+            "Kit is working late",
+            "Kit is taking a parent to the doctor",
+            "Kit will be at the debate"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Call Kit back and leave a message: confirm the street, the day and the time, and give your own number twice.",
+        "starter": "Hi Kit, this is (name) from The Signal. I'm calling to confirm: (street), (day) at (time). My number is… That's…"
+      },
+      "transcript": [
+        {
+          "spk": "Kit",
+          "html": "Hi, this is Kit, I called in after the debate. Listen, I'm <span class='tg'>gonna</span> be quick <span class='tg'>'cause</span> I'm at work. You asked about benches, and I <span class='tg'>wanna</span> show your reporter the worst spot. It's on Garden Street, between the clinic and the pharmacy. Not Garden Avenue. Garden Street. I <span class='tg'>can</span> meet somebody Thursday at four fifteen, but I <span class='tg'>can't</span> do Friday. I <span class='tg'>hafta</span> take my mom to the doctor. <span class='tg'>Lemme</span> give you my number. It's five five five, zero one four two. That's five five five, zero one four two. If I don't pick up, just leave a message and I'll call you right back. Thanks a lot!"
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "mem-red",
+      "title": "MEMORY · what you hear and what you write",
+      "intro": "Find each reduction and its full form. Tap a card to hear it.",
+      "pairs": [
+        {
+          "a": "d'you",
+          "b": "do you"
+        },
+        {
+          "a": "dunno",
+          "b": "don't know"
+        },
+        {
+          "a": "kinda",
+          "b": "kind of"
+        },
+        {
+          "a": "gotta",
+          "b": "have got to"
+        },
+        {
+          "a": "coulda",
+          "b": "could have"
+        },
+        {
+          "a": "lemme",
+          "b": "let me"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-mic></ico-mic> SHADOW IT",
+      "intro": "This week's task is spoken. Play the twenty-second clip. First, write it down below in <b>full, written forms</b> (no gonna, no wanna). Then <b>shadow it</b>: play it again and speak along with the voice, half a second behind, copying the rhythm.",
+      "clip": {
+        "src": "shadow.mp3",
+        "label": "the clip to shadow"
+      },
+      "checklist": [
+        "<b>Stress:</b> the content words are loud, the small words almost disappear",
+        "<b>Linking:</b> no pause between a final consonant and the next vowel",
+        "At least <b>two reductions</b>, said the way the voice says them",
+        "<b>Can</b> short and weak; <b>can't</b> long and stressed",
+        "Your written version uses <b>only full forms</b>"
+      ],
+      "placeholder": "So I was going to take the bus, but…",
+      "example": "So I was <span class=\"gap\">2 words</span> take the bus, but I did not <span class=\"gap\">2 words</span> wait, <span class=\"gap\">1 word</span> it was <span class=\"gap\">2 words</span> cold. I <span class=\"gap\">2 words</span> checked the schedule. Anyway, <span class=\"gap\">3 words</span> doing this weekend? If you <span class=\"gap\">2 words</span> grab a coffee, <span class=\"gap\">2 words</span> a call. I <span class=\"gap\">can / can't</span> do Saturday, but I <span class=\"gap\">can / can't</span> do Sunday. I <span class=\"gap\">2 words</span> help my brother move.",
+      "hw": "Shadow the clip five times, then <b>record yourself saying it alone</b>, at the same speed. Send me the recording and your written version on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "You sent the recording and the written version, and the written version has no reductions in it."
+        },
+        {
+          "c": "Lesson target",
+          "d": "Rhythm first: stressed content words, weak grammar words, linked sounds, and at least two reductions that sound natural."
+        },
+        {
+          "c": "Clear the first time",
+          "d": "I understand every sentence of your recording without looking at the text."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c1-l5",
+    "keys": [
+      "555-0124",
+      "555-0142",
+      "555-1042",
+      "a-bench",
+      "a-gas-station",
+      "a-job-with-a-team-overseas",
+      "a-lot-of-water-is-better",
+      "a-parking-garage",
+      "ages-ago",
+      "an-hour-and-a-half",
+      "arguably",
+      "because-of",
+      "both-of-them",
+      "can",
+      "can-t",
+      "can-you-give-me-a-hand",
+      "cause",
+      "caused-by",
+      "clinic-street",
+      "could",
+      "could-have",
+      "coulda",
+      "couldn-t-have",
+      "d-you",
+      "did-you-want-to",
+      "do-you",
+      "do-you-have-to",
+      "do-you-wanna-come",
+      "do-you-want-to",
+      "don-t-know",
+      "downtown",
+      "dunno",
+      "fewer-gas-stations",
+      "friday-at-4-15",
+      "garden-avenue",
+      "garden-street",
+      "get-me",
+      "gimme",
+      "give-me",
+      "gonna",
+      "gotta",
+      "granted-however",
+      "had-to",
+      "hafta",
+      "has-gone-to",
+      "have-got-to",
+      "have-to",
+      "i-am-going-after-i-call-you-back",
+      "i-am-going-to-have-to-call-you-back",
+      "i-am-going-to-send-the-report-today",
+      "i-am-not-going-to-call-you-back",
+      "i-can-do-it",
+      "i-can-hear-you",
+      "i-can-t-do-it",
+      "i-can-t-hear-you",
+      "i-can-t-make-it-tomorrow",
+      "i-could-hear-you",
+      "i-gotta-go",
+      "i-m-gonna-be-late",
+      "i-m-not-kidding",
+      "i-want-to-go-to-the-store",
+      "i-was-at-the-office-for-an-hour",
+      "if-i-could-just-finish",
+      "is-going-to",
+      "it-overlooks",
+      "kind-of",
+      "kinda",
+      "kit-is-taking-a-parent-to-the-doctor",
+      "kit-is-working-late",
+      "kit-will-be-at-the-debate",
+      "lemme",
+      "let-me",
+      "let-me-go-because-i-have-got-to-book-it",
+      "let-me-know-because-i-forgot-to-book-it",
+      "let-me-know-because-i-have-got-to-book-it",
+      "max-says-we-shoulda-built-a-garage-ten-years-ago-was-it-built",
+      "more-places-open-late",
+      "no-and-now-it-will-cost-three-times-as-much",
+      "on-a-good-day",
+      "pick-it-up",
+      "sam-says-the-city-coulda-fixed-that-ages-ago-what-does-that-mean",
+      "see-you-next-day-most-people-know",
+      "she-should-have-told-me",
+      "she-should-tell-me",
+      "she-would-have-told-me",
+      "shoulda-coulda-woulda",
+      "the-bars-on-the-street",
+      "the-city-fixed-it-a-long-time-ago",
+      "the-city-had-the-chance-to-fix-it-and-didn-t",
+      "the-city-is-going-to-fix-it-soon",
+      "the-cost-of",
+      "the-sidewalk",
+      "the-traffic",
+      "thursday-at-4-15",
+      "thursday-at-4-50",
+      "to-get-the-gist",
+      "to-pick-up",
+      "to-sit-on-the-fence",
+      "turn-it-off",
+      "wanna",
+      "want-to",
+      "was-going-to",
+      "we-shoulda-left-earlier",
+      "whaddaya",
+      "whaddaya-think",
+      "whaddaya-wanna-do",
+      "what-did-you-want-to-eat",
+      "what-do-you-want-to-do",
+      "what-do-you-want-to-eat",
+      "what-does-marcos-want",
+      "what-is-it-that-robin-can-not-sleep-through",
+      "what-is-kit-s-number",
+      "when-can-kit-meet",
+      "where-do-you-want-to-eat",
+      "which-street-does-kit-want-to-show-the-reporter",
+      "why-is-friday-impossible",
+      "yes-but-it-is-too-small",
+      "yes-ten-years-ago"
+    ]
+  }
+}

@@ -186,6 +186,12 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 @keyframes spkPulse { 0%, 100% { box-shadow: 0 0 7px #ffc83d55; } 50% { box-shadow: 0 0 16px #ffc83daa; } }
 .dlg-line .spk-btn { margin: 0 8px 0 0; vertical-align: middle; width: 30px; height: 30px; font-size: 0.85rem; }
 /* Mini speaker — for grammar cells, ladder chips, vocab terms, questions, flashcards, match games */
+/* clip: a recorded mp3 on one item (fast-speech lessons) */
+.clip-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 12px; }
+.contrast-pair .clip-row { margin: 0 0 0 auto; }
+.clip-btn { display: inline-flex; align-items: center; gap: 7px; padding: 7px 13px; border: 1px solid var(--gold); border-radius: 9px; background: #ffc83d12; color: var(--gold); font-family: 'Share Tech Mono', monospace; font-size: 0.82rem; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; transition: box-shadow 0.15s, background 0.15s, transform 0.1s; }
+.clip-btn:hover { background: #ffc83d22; box-shadow: 0 0 10px #ffc83d55; transform: translateY(-1px); }
+.clip-btn.playing { background: #00e5ff1c; border-color: var(--cyan); color: var(--cyan); animation: spkPulse 0.65s ease-in-out infinite; }
 .spk-btn.mini { width: 24px; height: 24px; font-size: 0.72rem; border-radius: 7px; margin-left: 6px; }
 .q > p .spk-btn.mini { vertical-align: middle; margin-left: 8px; }
 .fc-front .spk-btn.mini { position: static; margin: 0; flex: 0 0 auto; }

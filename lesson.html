@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/brands.css?v=1">
 <script src="assets/progress.js?v=1"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20261114">
+<link rel="stylesheet" href="lesson.css?v=20261115">
 <link rel="stylesheet" href="assets/icons.css?v=1">
 </head>
 <body>
@@ -124,6 +124,24 @@ function clockRow(items){
 }
 function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
+// clip: a recorded mp3 attached to one item (fast-speech lessons). "clip": "file.mp3" or
+//   "clip": [{ "src": "a.mp3", "label": "careful" }, { "src": "b.mp3", "label": "natural" }]
+//   Works on any mcq question (listening, gapFill, contrast, dialogue), an order item, contrast "pairClips": {a, b}, and writing.
+function clipRow(c, dir){
+  if(!c) return "";
+  const list = (Array.isArray(c) ? c : [c]).map(x => typeof x === "string" ? { src:x } : x);
+  const base = (dir || (LESSON && LESSON.clips && LESSON.clips.dir) || "");
+  return `<span class="clip-row">${list.map(x=>`<button type="button" class="clip-btn" data-clip="${escAttr((base && !/\//.test(x.src) ? base + "/" : "") + x.src)}" onclick="event.preventDefault();event.stopPropagation();playClip(this)"><ico-play></ico-play> ${esc(x.label || T("ESCUCHAR","LISTEN"))}</button>`).join("")}</span>`;
+}
+function playClip(btn){
+  document.querySelectorAll(".clip-btn.playing, .spk-btn.playing").forEach(b=>b.classList.remove("playing"));
+  try{ if("speechSynthesis" in window) speechSynthesis.cancel(); }catch(e){}
+  const stop = () => btn.classList.remove("playing");
+  sayPlayer.onended = stop; sayPlayer.onerror = stop;
+  sayPlayer.src = btn.dataset.clip; btn.classList.add("playing");
+  const pr = sayPlayer.play(); if(pr && pr.catch) pr.catch(stop);
+}
+
 // ---------- question helper (mcq / trueFalse) — used by listening, gapFill, dialogue ----------
 function qHtml(q, name, num, sp){
   sp = sp || {};                       // sp.q: speak the question line · sp.opt: speak each option
@@ -133,7 +151,7 @@ function qHtml(q, name, num, sp){
   const order = shuffle(opts.map((_,i)=>i));
   const numHtml = (num!=null) ? `<span class="qnum">${String(num).padStart(2,"0")}</span>` : "";
   const optSpeak = sp.opt && q.type !== "trueFalse" && !q.mute;   // mute: the options are Spanish or labels, no speaker
-  return `<div class="q" data-correct="${LET[correct]}"><p>${numHtml}${esc(q.q)}${sp.q?spkBtn(q.q,"mini"):""}</p>${
+  return `<div class="q" data-correct="${LET[correct]}"><p>${numHtml}${esc(q.q)}${sp.q?spkBtn(q.q,"mini"):""}</p>${q.clip?clipRow(q.clip):""}${
     order.map(oi=>`<label class="option"><input type="radio" name="${name}" value="${LET[oi]}"><span>${esc(opts[oi])}</span>${optSpeak?spkBtn(opts[oi]):""}</label>`).join("")
   }</div>`;
 }
@@ -198,10 +216,10 @@ function listeningHtml(b, id, alt){
 function contrastHtml(b, id){
   const p = b.pair || {};
   return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-shuffle></ico-shuffle> ${esc(b.title||T('¿QUÉ CAMBIA?','WHAT CHANGES?'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  <div class="contrast-pair">
-    <div class="cp"><span class="cp-l">A</span><span class="cp-t">${esc(p.a)}</span>${spkBtn(p.a,"mini")}</div>
-    <div class="cp"><span class="cp-l">B</span><span class="cp-t">${esc(p.b)}</span>${spkBtn(p.b,"mini")}</div>
-  </div>
+  ${b.pair ? `<div class="contrast-pair">
+    <div class="cp"><span class="cp-l">A</span><span class="cp-t">${esc(p.a)}</span>${b.pairClips ? clipRow(b.pairClips.a) : spkBtn(p.a,"mini")}</div>
+    <div class="cp"><span class="cp-l">B</span><span class="cp-t">${esc(p.b)}</span>${b.pairClips ? clipRow(b.pairClips.b) : spkBtn(p.b,"mini")}</div>
+  </div>` : ""}
   ${(b.items||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {})).join("")}
   <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
@@ -236,7 +254,7 @@ function orderHtml(b, id){
   orderState[id] = { answers:(b.items||[]).map(it=>it.answer) };
   const body = (b.items||[]).map((it,k)=>{
     const words = shuffle(it.words);
-    return `<div class="order-item" id="${id}-it-${k}"><div class="order-line" id="${id}-line-${k}"></div>
+    return `<div class="order-item" id="${id}-it-${k}">${it.clip?clipRow(it.clip):""}<div class="order-line" id="${id}-line-${k}"></div>
       <div class="order-bank" id="${id}-bank-${k}">${words.map(w=>`<button type="button" class="word" onclick="oMove('${id}',${k},this)">${esc(w)}</button>`).join("")}</div></div>`;
   }).join("");
   return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-puzzle></ico-puzzle> ${esc(b.title||T('ORDENA LAS PALABRAS','PUT THE WORDS IN ORDER'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
@@ -316,7 +334,7 @@ function fcNextDeck(id){
 }
 function writingHtml(w){
   return (w.stage === false ? "" : `<div class="stage-tag">${w.stage ? esc(w.stage) : `<ico-pen></ico-pen> WRITING <span class="es">· ${T('en clase o tarea (HW)','in class or as homework')}</span>`}</div>`) + `
-  <div class="card purple" data-aos="fade-up"><div class="panel-title">${esc(w.title)}</div><p>${esc(w.intro)}</p>
+  <div class="card purple" data-aos="fade-up"><div class="panel-title">${esc(w.title)}</div><p>${esc(w.intro)}</p>${w.clip?`<p>${clipRow(w.clip)}</p>`:""}
   <ul class="checklist">${(w.checklist||[]).map(li=>`<li class="ck" role="checkbox" aria-checked="false" tabindex="0" onclick="ckToggle(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();ckToggle(this);}">${esc(li)}</li>`).join("")}</ul>
   <textarea class="writing-area" id="writingBox" placeholder="${escAttr(w.placeholder||'')}"></textarea>
   <button class="toggle-btn" data-show="<ico-bulb></ico-bulb> ${T('Guía para empezar','A frame to start')}" data-hide="<ico-eyeslash></ico-eyeslash> ${T('Ocultar guía','Hide the frame')}" onclick="toggleReveal('mw', this)"><ico-bulb></ico-bulb> ${T('Guía para empezar','A frame to start')}</button>
