@@ -310,7 +310,8 @@
           "source": "This studio should not close under any circumstances.",
           "start": "Under no circumstances ",
           "answers": [
-            "Under no circumstances should this studio close."
+            "Under no circumstances should this studio close.",
+            "Under no circumstances should this studio be closed."
           ],
           "why": "should + this studio. The «not» is already inside «no»."
         },
