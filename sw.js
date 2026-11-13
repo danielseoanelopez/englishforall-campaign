@@ -1,11 +1,12 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v31";  // v19: A1 L4 family tree
+const CACHE = "rankup-v32";  // v19: A1 L4 family tree
 const CORE = [
   "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
   "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=1",
   "assets/fonts/press-start-2p-latin.woff2", "assets/fonts/share-tech-mono-latin.woff2",
-  "city.html", "neon-cafe.html", "neon-office.html", "cards.html", "manifest.json",
+  "city.html", "neon-cafe.html", "neon-office.html", "game.html", "cards.html", "manifest.json",
+  "assets/game.js?v=1", "assets/game.css?v=1", "games/cafe.json", "games/office.json",
   "logo.webp", "bg-cafe.webp", "nebula.webp", "map-city.webp",
   "icon-192.png", "icon-rankup.png",
   "sprite-mia.webp", "sprite-jack.webp", "sprite-vera.webp", "sprite-vera-inspector.webp",
@@ -35,7 +36,7 @@ self.addEventListener("fetch", e => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   const isHTML = req.mode === "navigate" || url.pathname.endsWith(".html");
-  const isLessonData = /\/lessons\/[^/]+\.json$/.test(url.pathname);
+  const isLessonData = /\/(lessons|games)\/[^/]+\.json$/.test(url.pathname);   // lesson and game content
 
   if (isHTML || isLessonData) {
     // network-first so new deploys always win when online
@@ -43,7 +44,7 @@ self.addEventListener("fetch", e => {
       fetch(req)
         .then(res => { const copy = res.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return res; })
         .catch(() => caches.match(req).then(r => r || caches.match(
-          url.pathname.indexOf("city") > -1 || url.pathname.indexOf("neon") > -1 ? "city.html" : "index.html")))
+          /city|neon|game/.test(url.pathname) && !isLessonData ? "city.html" : "index.html")))
     );
     return;
   }

@@ -1,0 +1,193 @@
+{
+  "id": "office",
+  "building": 2,
+  "level": "A2",
+  "title": "THE OFFICE TOWER",
+  "progKey": "no_prog",
+  "audioPrefix": "no-",
+  "exam": {
+    "href": "a2-final.html",
+    "label": "OFFICIAL A2 EXAM"
+  },
+  "text": {
+    "marquee": "RANK UP CITY · BUILDING 2 · THE OFFICE TOWER",
+    "tagline": "Take the calls. Answer the emails.<br>Ace the interview.",
+    "taglineEs": "Escucha, responde y arma frases. Suma patitas <ico-paw></ico-paw> en cada turno.",
+    "pawsLabel": "OFFICE PAWS",
+    "help": "Easy: READ the message, then PICK the best reply — or TAP the words to build a sentence and hit SEND. Stuck? Enri's PURR BOOST gives you a hint. You've got this.",
+    "bossTag": "INTERVIEW",
+    "bossWinTitle": "PROMOTED!",
+    "bossWin": "YES! You did it — the Office Tower is yours. You're promoted! Rank up to B1. The Detective Agency is next... when you're ready.",
+    "gameOver": "Hey — a tough first week gets EVERYBODY. Take a breath and run it back. Enri believes in you. Probably."
+  },
+  "scene": {
+    "label": "Your desk at the Office Tower",
+    "class": "office",
+    "customers": false,
+    "art": "<svg viewBox=\"0 0 560 240\" preserveAspectRatio=\"xMidYMid slice\" style=\"position:absolute;inset:0;width:100%;height:100%;z-index:1\" aria-hidden=\"true\"><rect x=\"24\" y=\"26\" width=\"150\" height=\"120\" rx=\"6\" fill=\"#060a1e\" stroke=\"#00e5ff\" stroke-width=\"2\"/><g opacity=\"0.85\"><rect x=\"34\" y=\"86\" width=\"16\" height=\"52\" fill=\"#0e2a44\"/><rect x=\"56\" y=\"66\" width=\"18\" height=\"72\" fill=\"#13324f\"/><rect x=\"80\" y=\"98\" width=\"14\" height=\"40\" fill=\"#0e2a44\"/><rect x=\"100\" y=\"54\" width=\"20\" height=\"84\" fill=\"#15203f\"/><rect x=\"126\" y=\"90\" width=\"16\" height=\"48\" fill=\"#0e2a44\"/><rect x=\"148\" y=\"72\" width=\"16\" height=\"66\" fill=\"#13324f\"/></g><g fill=\"#ffc83d\"><circle cx=\"62\" cy=\"80\" r=\"1.6\"/><circle cx=\"108\" cy=\"70\" r=\"1.6\"/><circle cx=\"154\" cy=\"88\" r=\"1.6\"/><circle cx=\"40\" cy=\"100\" r=\"1.4\"/></g><line x1=\"99\" y1=\"26\" x2=\"99\" y2=\"146\" stroke=\"#00e5ff\" stroke-width=\"1\" opacity=\"0.5\"/><rect x=\"0\" y=\"176\" width=\"560\" height=\"64\" fill=\"#0c1030\"/><rect x=\"0\" y=\"171\" width=\"560\" height=\"7\" fill=\"#9d4dff\" opacity=\"0.9\"/><rect x=\"250\" y=\"96\" width=\"120\" height=\"76\" rx=\"6\" fill=\"#04101c\" stroke=\"#00e5ff\" stroke-width=\"2.5\"/><g opacity=\"0.9\"><rect x=\"262\" y=\"108\" width=\"60\" height=\"6\" rx=\"3\" fill=\"#3dffa0\"/><rect x=\"262\" y=\"122\" width=\"90\" height=\"6\" rx=\"3\" fill=\"#ff3df0\"/><rect x=\"262\" y=\"136\" width=\"46\" height=\"6\" rx=\"3\" fill=\"#00e5ff\"/><rect x=\"262\" y=\"150\" width=\"74\" height=\"6\" rx=\"3\" fill=\"#3dffa0\"/></g><rect x=\"300\" y=\"172\" width=\"20\" height=\"6\" fill=\"#0a1430\"/><rect x=\"384\" y=\"110\" width=\"92\" height=\"62\" rx=\"6\" fill=\"#04101c\" stroke=\"#ff3df0\" stroke-width=\"2.5\"/><g opacity=\"0.85\"><rect x=\"394\" y=\"120\" width=\"52\" height=\"5\" rx=\"2\" fill=\"#00e5ff\"/><rect x=\"394\" y=\"132\" width=\"70\" height=\"5\" rx=\"2\" fill=\"#ffc83d\"/><rect x=\"394\" y=\"144\" width=\"40\" height=\"5\" rx=\"2\" fill=\"#ff3df0\"/><rect x=\"394\" y=\"156\" width=\"60\" height=\"5\" rx=\"2\" fill=\"#3dffa0\"/></g><g stroke=\"#ffc83d\" stroke-width=\"2\" fill=\"none\"><rect x=\"196\" y=\"150\" width=\"40\" height=\"22\" rx=\"4\" fill=\"#0c1030\"/><path d=\"M204 150c0-6 24-6 24 0\"/></g><g><rect x=\"150\" y=\"150\" width=\"20\" height=\"20\" rx=\"3\" fill=\"#0c1030\" stroke=\"#3dffa0\" stroke-width=\"2\"/><path d=\"M170 155c7 0 7 10 0 10\" fill=\"none\" stroke=\"#3dffa0\" stroke-width=\"2\"/></g></svg>"
+  },
+  "summaryCards": {
+    "boss": {
+      "icon": "crown",
+      "name": "THE DIRECTOR",
+      "quote": "Results. I like results."
+    },
+    "epic": {
+      "img": "sprite-enri.webp",
+      "name": "ENRI",
+      "quote": "I don't chase success. I nap and it finds me."
+    },
+    "common": {
+      "img": "building-office.webp",
+      "name": "OFFICE PASS",
+      "quote": "Everyone starts on day one. Clock in and retry!"
+    }
+  },
+  "cast": {
+    "dan": {
+      "name": "DAN",
+      "sub": "manager (comms)",
+      "ava": "headset",
+      "color": "var(--cyan)"
+    },
+    "sofia": {
+      "name": "SOFIA",
+      "sub": "team lead <span class=lang-tag>UK</span>",
+      "ava": null,
+      "color": "var(--magenta)"
+    },
+    "marcos": {
+      "name": "MARCOS",
+      "sub": "developer ",
+      "ava": null,
+      "color": "var(--green)"
+    },
+    "laura": {
+      "name": "LAURA",
+      "sub": "client",
+      "ava": null,
+      "color": "var(--gold)"
+    },
+    "director": {
+      "name": "DIRECTOR",
+      "sub": "head office",
+      "ava": null,
+      "color": "var(--purple)"
+    }
+  },
+  "avatars": {
+    "headset": "sprite-dan.webp",
+    "cat": "sprite-enri.webp"
+  },
+  "order": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "sb"
+  ],
+  "stages": {
+    "s1": {
+      "num": "2-1",
+      "name": "First day",
+      "tag": "Routines & work emails",
+      "intro": "New hire! Welcome to the Office Tower. Up here it's calls, chats and emails — no coffee, but the game's the same: read the message, then PICK or BUILD the right English. Totti's still watching. Let's go.",
+      "introKey": "s1-intro",
+      "tutorial": true,
+      "words": [
+        "I usually…",
+        "every day",
+        "How often…?",
+        "Best regards"
+      ],
+      "rounds": [
+        {"type":"talk","who":"sofia","line":"Hi! I'm Sofia, the team lead. Welcome aboard! What do you usually do every morning before work?","keys":{"line":"s1-r1-line","retry":"s1-r1-retry","thanks":"s1-r1-thanks"},"retryLine":"Every morning — your ROUTINE. What do you usually do?","thanks":"Ha, a coffee person. We'll get along.","options":["I usually check my email and make a coffee.","I checked my email yesterday.","I'm going to check my email."],"correct":0,"par":16},
+        {"type":"talk","who":"marcos","line":"Hey, I'm Marcos, a developer. We work from home on Fridays. How often do you work remotely?","keys":{"line":"s1-r2-line","retry":"s1-r2-retry","thanks":"s1-r2-thanks"},"retryLine":"How OFTEN — once a week? Twice?","thanks":"Same as me. The commute is brutal.","options":["I work from home twice a week.","I worked from home last week.","I'm working from home now."],"correct":0,"par":16},
+        {"type":"compose","who":"sofia","line":"First task — reply to this email. Start it politely.","note":"EMAIL — Hi, can you send the report? — Laura (client)","keys":{"line":"s1-r3-line","retry":"s1-r3-retry","thanks":"s1-r3-thanks"},"retryLine":"Start with a polite thank-you.","thanks":"Perfect. Polite and professional.","answer":"Thank you for your email","words":["your","Thank","email","for","you"],"par":22},
+        {"type":"talk","who":"marcos","line":"I just messaged you 'Welcome to the team!' on the chat. What do you reply?","keys":{"line":"s1-r4-line","retry":"s1-r4-retry","thanks":"s1-r4-thanks"},"retryLine":"He said welcome — be friendly!","thanks":"You'll fit right in.","options":["Thanks, Marcos! Nice to meet you.","You're welcome, Marcos!","Welcome, Marcos! Nice to meet you."],"correct":0,"par":15},
+        {"type":"compose","who":"sofia","line":"Now finish the email. Sign off like a professional.","keys":{"line":"s1-r5-line","retry":"s1-r5-retry","thanks":"s1-r5-thanks"},"retryLine":"End it politely — 'Best…'.","thanks":"Signed and sent. Welcome aboard!","answer":"Best regards and thank you","alts":["Thank you and best regards"],"words":["regards","Best","you","and","thank"],"par":22}
+      ]
+    },
+    "s2": {
+      "num": "2-2",
+      "name": "Work stories",
+      "tag": "Past simple",
+      "intro": "Coffee break — well, virtual coffee. The team swaps work stories, and it's all PAST tense up here: worked, built, didn't. Listen and answer.",
+      "introKey": "s2-intro",
+      "words": [
+        "worked",
+        "didn't",
+        "Did you…?",
+        "last year"
+      ],
+      "rounds": [
+        {"type":"talk","who":"marcos","line":"So, before this job — where did you work?","keys":{"line":"s2-r1-line","retry":"s2-r1-retry","thanks":"s2-r1-thanks"},"retryLine":"Before — in the PAST. Use 'worked'.","thanks":"A startup! Same as me. Small world.","options":["I worked at a small startup for two years.","I work at a startup.","I'm working at a startup."],"correct":0,"par":16},
+        {"type":"compose","who":"marcos","line":"Nice. Tell me what you did there — build the sentence.","keys":{"line":"s2-r2-line","retry":"s2-r2-retry","thanks":"s2-r2-thanks"},"retryLine":"Past simple — 'built', 'fixed'.","thanks":"A real developer. Respect.","answer":"I built websites and fixed bugs","alts":["I fixed bugs and built websites"],"words":["built","I","fixed","websites","bugs","and"],"par":24},
+        {"type":"talk","who":"sofia","line":"And why did you leave your last job?","keys":{"line":"s2-r3-line","retry":"s2-r3-retry","thanks":"s2-r3-thanks"},"retryLine":"Why did you LEAVE? A past reason.","thanks":"Makes sense. Their loss, our gain.","options":["The project finished, so I looked for something new.","The project finishes next week.","I don't leave my job."],"correct":0,"par":18},
+        {"type":"compose","who":"sofia","line":"One more — make it negative. You didn't study computer science, right?","keys":{"line":"s2-r4-line","retry":"s2-r4-retry","thanks":"s2-r4-thanks"},"retryLine":"Negative past — 'didn't' + base verb.","thanks":"Self-taught. Even better.","answer":"I didn't study computer science","words":["didn't","I","computer","study","science"],"par":22},
+        {"type":"talk","who":"marcos","line":"Quick one — did you finish the report I sent yesterday?","keys":{"line":"s2-r5-line","retry":"s2-r5-retry","thanks":"s2-r5-thanks"},"retryLine":"'Did you…?' → 'Yes, I did.'","thanks":"Legend. You're fast.","options":["Yes, I did. I sent it back this morning.","Yes, I do.","Yes, I will finish it."],"correct":0,"par":15}
+      ]
+    },
+    "s3": {
+      "num": "2-3",
+      "name": "The client call",
+      "tag": "Requests, offers & comparatives",
+      "intro": "Big moment — a client's on the line. Be POLITE: could, would, can. And she'll compare our plans, so know your comparatives. Breathe. Totti's listening.",
+      "introKey": "s3-intro",
+      "words": [
+        "Could you…?",
+        "I'd be happy to",
+        "cheaper than",
+        "more powerful"
+      ],
+      "rounds": [
+        {"type":"talk","who":"laura","line":"Hello, this is Laura, the client. Could you send me your two plans?","keys":{"line":"s3-r1-line","retry":"s3-r1-retry","thanks":"s3-r1-thanks"},"retryLine":"Be polite and helpful — you'd be happy to…","thanks":"Wonderful, thank you so much.","options":["Of course — I'd be happy to send them right now.","No, send them yourself.","I sent them yesterday."],"correct":0,"par":16},
+        {"type":"talk","who":"laura","line":"Thanks. Which plan is cheaper?","note":"PLANS — Basic: $40/mo · Pro: $75/mo","keys":{"line":"s3-r2-line","retry":"s3-r2-retry","thanks":"s3-r2-thanks"},"retryLine":"Compare the TWO plans — 'cheaper THAN'.","thanks":"Clear. I like that.","options":["The Basic plan is cheaper than the Pro plan.","The Basic plan is the cheapest.","The Basic plan is more cheap."],"correct":0,"par":18},
+        {"type":"compose","who":"laura","line":"And why is the Pro plan better? Tell me.","keys":{"line":"s3-r3-line","retry":"s3-r3-retry","thanks":"s3-r3-thanks"},"retryLine":"Use 'more + adjective'.","thanks":"Convincing. Go on.","answer":"The Pro plan is more powerful","words":["Pro","The","plan","more","is","powerful"],"par":24},
+        {"type":"talk","who":"laura","line":"Good. Could you start the project next week?","keys":{"line":"s3-r4-line","retry":"s3-r4-retry","thanks":"s3-r4-thanks"},"retryLine":"Polite ability — 'we could…'.","thanks":"Perfect. Let's do it.","options":["Yes, we could start on Monday.","Yes, we start yesterday.","No, we can't never."],"correct":0,"par":16},
+        {"type":"compose","who":"dan","line":"Close the call politely — offer to help more.","keys":{"line":"s3-r5-line","retry":"s3-r5-retry","thanks":"s3-r5-thanks"},"retryLine":"Offer more help — 'Please call me if…'.","thanks":"Smooth. The client loves you.","answer":"Please call me if you need help","alts":["If you need help please call me"],"words":["call","Please","me","need","if","you","help"],"par":24}
+      ]
+    },
+    "s4": {
+      "num": "2-4",
+      "name": "The big project",
+      "tag": "Plans: going to / present continuous",
+      "intro": "We won the client! Now we plan the project. Talk FUTURE: 'going to', and present continuous for arrangements. Let's build it.",
+      "introKey": "s4-intro",
+      "words": [
+        "going to",
+        "We're launching…",
+        "next Monday",
+        "this week"
+      ],
+      "rounds": [
+        {"type":"talk","who":"sofia","line":"So — what's the plan? When are we going to start?","keys":{"line":"s4-r1-line","retry":"s4-r1-retry","thanks":"s4-r1-thanks"},"retryLine":"A future plan — 'going to start'.","thanks":"Monday it is.","options":["We're going to start on Monday.","We started on Monday.","We start Monday always."],"correct":0,"par":16},
+        {"type":"compose","who":"marcos","line":"Put my task on the board. I'm building the app this week.","keys":{"line":"s4-r2-line","retry":"s4-r2-retry","thanks":"s4-r2-thanks"},"retryLine":"Present continuous — 'I am building…'.","thanks":"On it. Added to the board.","answer":"I am building the app this week","alts":["This week I am building the app"],"words":["am","I","building","app","the","week","this"],"par":24},
+        {"type":"talk","who":"laura","line":"One more question — what are you doing on Friday?","keys":{"line":"s4-r3-line","retry":"s4-r3-retry","thanks":"s4-r3-thanks"},"retryLine":"An arrangement for Friday — 'We're launching…'.","thanks":"Big day. I'll bring the pizza.","options":["We're launching the app on Friday.","We launched the app on Friday.","We launch always on Friday."],"correct":0,"par":16},
+        {"type":"compose","who":"sofia","line":"Tell the team the goal. Use 'going to'.","keys":{"line":"s4-r4-line","retry":"s4-r4-retry","thanks":"s4-r4-thanks"},"retryLine":"'going to' + base verb.","thanks":"That's the spirit.","answer":"We are going to finish on time","words":["are","We","going","finish","to","time","on"],"par":24},
+        {"type":"talk","who":"marcos","line":"Last thing — are you nervous about the launch?","keys":{"line":"s4-r5-line","retry":"s4-r5-retry","thanks":"s4-r5-thanks"},"retryLine":"Predict the future — 'it's going to be…'.","thanks":"That's confidence. Let's ship it.","options":["A little, but I think it's going to be great.","Yes, it was great.","No, I launched it yesterday."],"correct":0,"par":15}
+      ]
+    },
+    "sb": {
+      "num": "2-B",
+      "name": "The interview",
+      "tag": "BOSS · everything you learned",
+      "boss": true,
+      "intro": "This is it. The Director came down for your interview — everything you've learned: your past, polite requests, comparisons, your plans. Ace it and you rank up to B1. Go get it.",
+      "introKey": "sb-intro",
+      "words": [
+        "I worked…",
+        "I could…",
+        "faster than",
+        "I'm going to…"
+      ],
+      "rounds": [
+        {"type":"talk","who":"director","sub":"your interview","line":"Let's begin. Tell me about your last job.","keys":{"line":"sb-r1-line","retry":"sb-r1-retry","thanks":"sb-r1-thanks"},"retryLine":"Your LAST job — past simple.","thanks":"Hm. Experience. Noted.","options":["I worked at a startup, where I built websites.","I work at a startup now.","I'm going to work at a startup."],"correct":0,"par":20},
+        {"type":"compose","who":"director","sub":"your interview","line":"Everyone says they work hard. Prove it — one thing you did last year.","keys":{"line":"sb-r2-line","retry":"sb-r2-retry","thanks":"sb-r2-thanks"},"retryLine":"Past simple, and add a time marker.","thanks":"Results. I like results.","answer":"Last year I finished a big project","alts":["I finished a big project last year"],"words":["year","Last","finished","I","big","a","project"],"par":26},
+        {"type":"talk","who":"director","sub":"your interview","line":"Could you work under pressure, with a hard deadline?","keys":{"line":"sb-r3-line","retry":"sb-r3-retry","thanks":"sb-r3-thanks"},"retryLine":"Polite ability — 'I could…'.","thanks":"Good. Pressure is this job.","options":["Yes, I could. I work well with deadlines.","Yes, I can yesterday.","No, I couldn't never."],"correct":0,"par":20},
+        {"type":"compose","who":"director","sub":"your interview","line":"Why are you better than the other candidates?","keys":{"line":"sb-r4-line","retry":"sb-r4-retry","thanks":"sb-r4-thanks"},"retryLine":"Compare yourself — 'faster THAN…'.","thanks":"Confidence, backed by skill. Good.","answer":"I learn faster than the others","words":["learn","I","faster","the","than","others"],"par":26},
+        {"type":"talk","who":"director","sub":"your interview","line":"Final question. Where do you see yourself next year?","keys":{"line":"sb-r5-line","retry":"sb-r5-retry","thanks":"sb-r5-thanks"},"retryLine":"Your future plan — 'going to…'.","thanks":"...The job is yours. Welcome to B1. Rank up, rookie.","options":["I'm going to grow and take on bigger projects.","I grew last year.","I don't know nothing."],"correct":0,"par":20}
+      ]
+    }
+  }
+}
