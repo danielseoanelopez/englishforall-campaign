@@ -1,0 +1,936 @@
+{
+  "level": "B2",
+  "num": 4,
+  "totalLessons": 6,
+  "world": "THE PROFESSIONAL",
+  "key": "rankup_B2_L4",
+  "title": "REPORTED<br>SPEECH",
+  "titlePlain": "Reported Speech — Who Said What? (B2)",
+  "subtitle": "Grammar &amp; Listening · B2 · ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=b2-l5",
+    "label": "LESSON 5 ▸ NEGOTIATION"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada expresión con su significado, sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "an outage",
+          "r": "una caída del servicio"
+        },
+        {
+          "l": "to look into",
+          "r": "investigar, revisar a fondo"
+        },
+        {
+          "l": "a root cause",
+          "r": "la causa de fondo"
+        },
+        {
+          "l": "a statement",
+          "r": "un comunicado"
+        },
+        {
+          "l": "to prevent",
+          "r": "evitar que pase"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "quién dijo qué",
+      "title": "<ico-book></ico-book> HE SAID, SHE ASKED",
+      "intro": "Para contar lo que dijo otra persona, el verbo da <b style='color:var(--gold)'>un paso atrás</b> en el tiempo y cambian los pronombres. Con seis verbos más precisos que <i>say</i>, tu resumen dice también <b style='color:var(--gold)'>con qué intención</b> se dijo.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario de la llamada",
+      "vocab": [
+        {
+          "en": "to take a message",
+          "sp": "tomar un recado"
+        },
+        {
+          "en": "to pass something on",
+          "sp": "transmitir un mensaje"
+        },
+        {
+          "en": "word for word",
+          "sp": "palabra por palabra"
+        },
+        {
+          "en": "to renew a contract",
+          "sp": "renovar un contrato"
+        },
+        {
+          "en": "to get back to someone",
+          "sp": "volver a contactar a alguien con una respuesta"
+        },
+        {
+          "en": "to take notes",
+          "sp": "tomar apuntes"
+        },
+        {
+          "en": "What exactly did he say?",
+          "sp": "¿qué dijo exactamente?"
+        },
+        {
+          "en": "the next day",
+          "sp": "al día siguiente"
+        },
+        {
+          "en": "the day before",
+          "sp": "el día anterior"
+        },
+        {
+          "en": "I have options.",
+          "sp": "tengo otras opciones"
+        }
+      ],
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen>, <b>comparar</b> <ico-comments></ico-comments>, <b>reescribir</b> <ico-pen></ico-pen> y <b>memory</b>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · UN PASO ATRÁS</b> <span class='es'>— is → was · will → would · did → had done</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "He said he was unhappy.",
+              "sp": "«I'm unhappy.» — am → was."
+            },
+            {
+              "en": "He said they would renew the contract.",
+              "sp": "«We will renew the contract.» — will → would, we → they."
+            },
+            {
+              "en": "He said he had seen the report.",
+              "sp": "«I saw the report.» — saw → had seen."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · SAY ALGO, TELL A ALGUIEN</b> <span class='es'>— tell siempre lleva persona</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "He said that the price was too high.",
+              "sp": "say + lo que dijo."
+            },
+            {
+              "en": "He told me that the price was too high.",
+              "sp": "tell + a quién + lo que dijo."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · PREGUNTAS: ORDEN DE AFIRMACIÓN</b> <span class='es'>— sin do, sin inversión, sin signo de pregunta</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "He asked when we could start.",
+              "sp": "«When can you start?» — sujeto antes del verbo."
+            },
+            {
+              "en": "He asked whether we could add an app.",
+              "sp": "«Can you add an app?» — pregunta de sí o no: whether / if."
+            },
+            {
+              "en": "She asked where the report was.",
+              "sp": "«Where is the report?» — was va al final."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · TAMBIÉN CAMBIAN EL TIEMPO Y EL LUGAR</b>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "tomorrow → the next day",
+            "yesterday → the day before",
+            "today → that day",
+            "here → there",
+            "this → that"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "He said he would call the next day.",
+              "sp": "«I'll call tomorrow.»"
+            },
+            {
+              "en": "She said she had landed the day before.",
+              "sp": "«I landed yesterday.»"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · VERBOS MÁS PRECISOS QUE «SAY»</b> <span class='es'>— cada uno con su estructura</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "He promised to send the report.",
+              "sp": "promise + <b>to</b>."
+            },
+            {
+              "en": "He agreed to wait until Friday.",
+              "sp": "agree + <b>to</b>."
+            },
+            {
+              "en": "She refused to give a discount.",
+              "sp": "refuse + <b>to</b>."
+            },
+            {
+              "en": "He warned us that he might leave.",
+              "sp": "warn + persona + <b>that</b>."
+            },
+            {
+              "en": "He admitted making a mistake.",
+              "sp": "admit + <b>-ing</b>."
+            },
+            {
+              "en": "She suggested meeting on Monday.",
+              "sp": "suggest + <b>-ing</b>."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> TRAMPA DEL ESPAÑOL</b> <span class='es'>— «me dijo», «me preguntó dónde estaba», «me sugirió que»</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "He told me the truth.",
+              "sp": "«Me dijo» = he told me. Nunca <i>he said me</i>."
+            },
+            {
+              "en": "He asked me where the report was.",
+              "sp": "En español el verbo va antes («dónde estaba el informe»); en inglés, al final."
+            },
+            {
+              "en": "She suggested that I call David.",
+              "sp": "«Me sugirió que llamara» = suggested that I call / suggested calling. Nunca <i>suggested me to</i>."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>He said me that…</s> → <span class='ok'>He told me that…</span> · <s class='x'>He asked me where was the report.</s> → <span class='ok'>He asked me where the report was.</span> · <s class='x'>She suggested me to call.</s> → <span class='ok'>She suggested calling.</span>"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "REPORTING VERBS · toca para girar",
+      "intro": "Diez verbos para resumir una conversación con precisión. Aprende cada uno con su estructura.",
+      "cards": [
+        {
+          "front": "to promise to do",
+          "back": "prometer hacer algo"
+        },
+        {
+          "front": "to agree to do",
+          "back": "aceptar hacer algo"
+        },
+        {
+          "front": "to refuse to do",
+          "back": "negarse a hacer algo"
+        },
+        {
+          "front": "to warn someone that…",
+          "back": "advertirle a alguien que…"
+        },
+        {
+          "front": "to admit doing",
+          "back": "admitir haber hecho algo"
+        },
+        {
+          "front": "to deny doing",
+          "back": "negar haber hecho algo"
+        },
+        {
+          "front": "to suggest doing",
+          "back": "sugerir hacer algo"
+        },
+        {
+          "front": "to insist on doing",
+          "back": "insistir en hacer algo"
+        },
+        {
+          "front": "to point out that…",
+          "back": "señalar que…, hacer notar que…"
+        },
+        {
+          "front": "to remind someone to do",
+          "back": "recordarle a alguien que haga algo"
+        }
+      ],
+      "deckLabel": "verbos para reportar"
+    },
+    {
+      "type": "story",
+      "tag": "el mensaje",
+      "title": "<ico-star></ico-star> WHO SAID WHAT?",
+      "intro": "David llama mientras Priya está en un vuelo. Marcos atiende, toma apuntes y esa noche tiene que contarle todo. <b style='color:var(--gold)'>Cada palabra importa</b>: David está decidiendo si renueva el contrato.",
+      "cast": [
+        {
+          "en": "David",
+          "sp": "llama con condiciones"
+        },
+        {
+          "en": "Marcos",
+          "sp": "toma el recado… <b style='color:var(--magenta)'>¿bien?</b>"
+        },
+        {
+          "en": "Priya",
+          "sp": "en un vuelo hasta la noche"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE CALL",
+      "desc": "David llama y Priya no está. Escucha con atención qué pide exactamente: lo vas a necesitar para el segundo audio.",
+      "src": "b2-l4-1.mp3",
+      "dur": "1:33",
+      "speakers": "<ico-commentdots></ico-commentdots> David + Marcos",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Why can't David speak to Priya?",
+          "options": [
+            "She is in a meeting",
+            "She is on a flight",
+            "She is on vacation"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "On what condition will David renew the contract?",
+          "options": [
+            "If he gets a 20% discount",
+            "If the mobile app is free",
+            "If the report arrives on Friday"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does David want by Friday?",
+          "options": [
+            "The mobile app",
+            "A new incident report",
+            "An answer"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Why does David mention another agency?",
+          "options": [
+            "He has already decided to leave",
+            "To put pressure on Priya's team",
+            "To recommend it to Marcos"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Report three things David said, each with a different verb: said, asked, warned.",
+        "starter": "David said (that) he… He asked whether we… He warned us that he…"
+      },
+      "transcript": [
+        {
+          "spk": "David",
+          "html": "Marcos? It's David. I need to speak to Priya."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Hi, David. I'm afraid Priya's on a flight until this evening. Can I <span class='tg'>take a message</span>?"
+        },
+        {
+          "spk": "David",
+          "html": "You'd better write this down. First, I'm still not happy about the pricing incident. The report was good, but my board is nervous."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I understand. I'll tell her."
+        },
+        {
+          "spk": "David",
+          "html": "Second, the contract. It ends next month. I will renew it, but only if I get a discount. Twenty percent."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Twenty percent. I can't agree to that myself, but I'll <span class='tg'>pass it on</span>."
+        },
+        {
+          "spk": "David",
+          "html": "I know you can't. I need an answer by Friday. Not next week. Friday."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "An answer by Friday. Got it."
+        },
+        {
+          "spk": "David",
+          "html": "And one more thing. My customers keep asking for a mobile app. Can your team add one?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "A mobile app. I think so, but let me check with Priya."
+        },
+        {
+          "spk": "David",
+          "html": "Do that. And Marcos, I'm talking to another agency tomorrow. I'm not saying I'll leave. I'm saying I have options."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Understood. Priya will call you as soon as she lands."
+        },
+        {
+          "spk": "David",
+          "html": "Good. Goodbye, Marcos."
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "ONE STEP BACK",
+      "intro": "Pasa cada frase a estilo indirecto: el verbo retrocede un tiempo, y cambian pronombres y palabras de tiempo.",
+      "items": [
+        {
+          "q": "«I'm unhappy.» → He said he ___ unhappy.",
+          "options": [
+            "was",
+            "is being",
+            "will be"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "«We will renew.» → He said they ___ renew.",
+          "options": [
+            "will",
+            "would",
+            "did"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "«I saw the report.» → He said he ___ the report.",
+          "options": [
+            "sees",
+            "has seeing",
+            "had seen"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "«Can you add an app?» → He asked whether we ___ add an app.",
+          "options": [
+            "could",
+            "can to",
+            "did"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "«I'll call tomorrow.» → He said he would call ___.",
+          "options": [
+            "yesterday",
+            "the next day",
+            "the day before"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "He ___ me that the price was too high.",
+          "options": [
+            "said",
+            "asked",
+            "told"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "«Where is Priya?» → He asked where ___.",
+          "options": [
+            "Priya was",
+            "was Priya",
+            "is Priya"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "«I have options.» → He said he ___ options.",
+          "options": [
+            "has had",
+            "had",
+            "is having"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "HE SAID vs HE TOLD ME",
+      "intro": "Los dos significan «dijo», pero no se construyen igual. Uno necesita siempre a quién se lo dijo.",
+      "pair": {
+        "a": "He said that the board was nervous.",
+        "b": "He told me that the board was nervous."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál necesita siempre una persona después del verbo?",
+          "options": [
+            "A — said",
+            "B — told",
+            "Las dos"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es correcta?",
+          "options": [
+            "He said me the truth.",
+            "He told to me the truth.",
+            "He told me the truth."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "No quieres decir a quién se lo dijo. ¿Cuál es correcta?",
+          "options": [
+            "He said that he was busy.",
+            "He told that he was busy.",
+            "He said me that he was busy."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Ella dio una instrucción. ¿Cuál es correcta?",
+          "options": [
+            "She said us to wait.",
+            "She told us to wait.",
+            "She told to wait us."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Priya quiere los detalles de la llamada. ¿Qué pregunta?",
+          "options": [
+            "What did he tell?",
+            "What did he said?",
+            "What did he say?"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE REPORT",
+      "desc": "Esa noche, Marcos le cuenta la llamada a Priya. Casi todo está bien… pero un detalle no es lo que David dijo. Compara con el primer audio.",
+      "src": "b2-l4-2.mp3",
+      "dur": "1:10",
+      "speakers": "<ico-commentdots></ico-commentdots> Priya + Marcos",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "According to Marcos, how did David feel about the incident?",
+          "options": [
+            "He was still not happy",
+            "He was satisfied with the report",
+            "He had forgotten about it"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Compare with Audio 1. Which part of Marcos's report is wrong?",
+          "options": [
+            "David asked for a 20% discount",
+            "David wanted the app by Friday",
+            "David was talking to another agency"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What did Marcos tell David about the discount?",
+          "options": [
+            "That Priya would accept it",
+            "That 20% was impossible",
+            "That he couldn't agree to it himself"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What could Marcos's mistake cost the team?",
+          "options": [
+            "Priya might say no to something David never asked for",
+            "David might get the app for free",
+            "Priya might miss her next flight"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Fix Marcos's report. Tell Priya what David really said about Friday and about the app.",
+        "starter": "Actually, David said he needed (what) by Friday. About the app, he only asked whether (what)."
+      },
+      "transcript": [
+        {
+          "spk": "Priya",
+          "html": "Okay, Marcos, I've landed. What exactly did David say?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "I took notes. First, <span class='tg'>he said he was</span> still not happy about the pricing incident. He said the report was good, but his board was nervous."
+        },
+        {
+          "spk": "Priya",
+          "html": "Fair enough. And the contract?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>He said he would</span> renew it, but only if he got a discount. He asked for twenty percent."
+        },
+        {
+          "spk": "Priya",
+          "html": "Twenty! Did you agree to anything?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "No. <span class='tg'>I told him I couldn't</span> agree to that myself."
+        },
+        {
+          "spk": "Priya",
+          "html": "Good. What else?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>He asked whether we could</span> add a mobile app. And he said he wanted the app by Friday."
+        },
+        {
+          "spk": "Priya",
+          "html": "The app by Friday? That's impossible. If that's his condition, I'll have to tell him no."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>He also warned us that</span> he was talking to another agency the next day."
+        },
+        {
+          "spk": "Priya",
+          "html": "Then we can't afford any mistakes. Send me your notes, word for word."
+        }
+      ]
+    },
+    {
+      "type": "transform",
+      "id": "ex-tr",
+      "title": "DIRECT → REPORTED",
+      "intro": "Reescribe lo que se dijo en estilo indirecto. Un paso atrás en el tiempo; en las preguntas, orden de afirmación.",
+      "items": [
+        {
+          "source": "\"I'm not happy,\" David said.",
+          "start": "David said ",
+          "answers": [
+            "David said he was not happy.",
+            "David said that he was not happy."
+          ],
+          "why": "am → was."
+        },
+        {
+          "source": "\"I will renew the contract,\" he said.",
+          "start": "He said ",
+          "answers": [
+            "He said he would renew the contract.",
+            "He said that he would renew the contract."
+          ],
+          "why": "will → would."
+        },
+        {
+          "source": "\"Can you add an app?\" he asked us.",
+          "start": "He asked us ",
+          "answers": [
+            "He asked us whether we could add an app.",
+            "He asked us if we could add an app."
+          ],
+          "why": "Pregunta de sí o no: whether / if + sujeto + could."
+        },
+        {
+          "source": "\"Where is Priya?\" he asked.",
+          "start": "He asked ",
+          "answers": [
+            "He asked where Priya was.",
+            "He asked me where Priya was."
+          ],
+          "why": "Orden de afirmación: Priya was, no was Priya."
+        },
+        {
+          "source": "\"I need an answer by Friday,\" he said.",
+          "start": "He said ",
+          "answers": [
+            "He said he needed an answer by Friday.",
+            "He said that he needed an answer by Friday."
+          ],
+          "why": "need → needed."
+        },
+        {
+          "source": "\"I'll send the notes,\" Marcos said.",
+          "cue": "promise",
+          "start": "Marcos promised ",
+          "answers": [
+            "Marcos promised to send the notes.",
+            "Marcos promised that he would send the notes.",
+            "Marcos promised he would send the notes."
+          ],
+          "why": "promise + to + verbo."
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "mem-report",
+      "title": "MEMORY · the quote and the report",
+      "intro": "Une cada frase dicha con su resumen. El verbo del resumen te dice la intención.",
+      "pairs": [
+        {
+          "a": "\"I didn't touch it!\"",
+          "b": "He denied touching it."
+        },
+        {
+          "a": "\"OK, I'll wait until Friday.\"",
+          "b": "He agreed to wait."
+        },
+        {
+          "a": "\"I won't give a discount.\"",
+          "b": "She refused to give a discount."
+        },
+        {
+          "a": "\"Be careful. I might leave.\"",
+          "b": "He warned us that he might leave."
+        },
+        {
+          "a": "\"Yes, it was my mistake.\"",
+          "b": "He admitted making a mistake."
+        },
+        {
+          "a": "\"Why don't we meet on Monday?\"",
+          "b": "She suggested meeting on Monday."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> THE CALL NOTES",
+      "intro": "Un cliente llamó y dijo estas cinco cosas. Escribe los apuntes para Priya en estilo indirecto (5 frases): <br>«The service is too slow.» · «Can you deliver by Monday?» · «If this happens again, I'll cancel.» · «OK, I'll wait one more week.» · «Why don't we talk every Friday?»",
+      "checklist": [
+        "Una afirmación con <b>said that</b> + un paso atrás",
+        "Una pregunta con <b>asked whether</b> + orden de afirmación",
+        "Una advertencia con <b>warned us that</b>",
+        "<b>agreed to</b> + verbo",
+        "<b>suggested</b> + verbo-ing"
+      ],
+      "placeholder": "David said that the service…",
+      "example": "David said that <span class=\"gap\">la queja, un paso atrás</span>. He asked whether <span class=\"gap\">sujeto + could…</span>. He warned us that <span class=\"gap\">qué pasaría</span>. He agreed to <span class=\"gap\">verbo</span>. He suggested <span class=\"gap\">verbo-ing</span>.",
+      "hw": "Escribe los apuntes y después grábate <b>contándole la llamada a Priya, sin leer</b>. Envíame texto y audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Reportaste las cinco frases del cliente, cada una con su verbo."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "El tiempo retrocede un paso, la pregunta va en orden de afirmación y cada verbo lleva su estructura (<b>to</b> / <b>that</b> / <b>-ing</b>)."
+        },
+        {
+          "c": "Se entiende a la primera",
+          "d": "Un lector lo entiende sin releer, y nada cambia el sentido de lo que dijo el cliente."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/b2-l4",
+    "keys": [
+      "a-new-incident-report",
+      "a-root-cause",
+      "a-statement",
+      "according-to-marcos-how-did-david-feel-about-the-incident",
+      "an-answer",
+      "an-outage",
+      "asked",
+      "be-careful-i-might-leave",
+      "can-to",
+      "can-you-add-an-app-he-asked-us",
+      "compare-with-audio-1-which-part-of-marcos-s-report-is-wrong",
+      "could",
+      "david-asked-for-a-20-discount",
+      "david-might-get-the-app-for-free",
+      "david-said-he-was-not-happy",
+      "david-wanted-the-app-by-friday",
+      "david-was-talking-to-another-agency",
+      "did",
+      "had",
+      "had-seen",
+      "has-had",
+      "has-seeing",
+      "he-admitted-making-a-mistake",
+      "he-agreed-to-wait",
+      "he-agreed-to-wait-until-friday",
+      "he-asked-me-where-the-report-was",
+      "he-asked-us-whether-we-could-add-an-app",
+      "he-asked-when-we-could-start",
+      "he-asked-where-priya-was",
+      "he-asked-whether-we-could-add-an-app",
+      "he-denied-touching-it",
+      "he-had-forgotten-about-it",
+      "he-has-already-decided-to-leave",
+      "he-promised-to-send-the-report",
+      "he-said-he-had-seen-the-report",
+      "he-said-he-needed-an-answer-by-friday",
+      "he-said-he-was-unhappy",
+      "he-said-he-would-call-the-next-day",
+      "he-said-he-would-renew-the-contract",
+      "he-said-me-that-he-was-busy",
+      "he-said-me-the-truth",
+      "he-said-that-he-was-busy",
+      "he-said-that-the-board-was-nervous",
+      "he-said-that-the-price-was-too-high",
+      "he-said-they-would-renew-the-contract",
+      "he-told-me-that-the-board-was-nervous",
+      "he-told-me-that-the-price-was-too-high",
+      "he-told-me-the-truth",
+      "he-told-that-he-was-busy",
+      "he-told-to-me-the-truth",
+      "he-warned-us-that-he-might-leave",
+      "he-was-satisfied-with-the-report",
+      "he-was-still-not-happy",
+      "i-didn-t-touch-it",
+      "i-have-options",
+      "i-ll-send-the-notes-marcos-said",
+      "i-m-not-happy-david-said",
+      "i-need-an-answer-by-friday-he-said",
+      "i-will-renew-the-contract-he-said",
+      "i-won-t-give-a-discount",
+      "if-he-gets-a-20-discount",
+      "if-the-mobile-app-is-free",
+      "if-the-report-arrives-on-friday",
+      "is-being",
+      "is-having",
+      "is-priya",
+      "marcos-promised-to-send-the-notes",
+      "ok-i-ll-wait-until-friday",
+      "on-what-condition-will-david-renew-the-contract",
+      "priya-might-miss-her-next-flight",
+      "priya-might-say-no-to-something-david-never-asked-for",
+      "priya-was",
+      "said",
+      "sees",
+      "she-asked-where-the-report-was",
+      "she-is-in-a-meeting",
+      "she-is-on-a-flight",
+      "she-is-on-vacation",
+      "she-refused-to-give-a-discount",
+      "she-said-she-had-landed-the-day-before",
+      "she-said-us-to-wait",
+      "she-suggested-meeting-on-monday",
+      "she-suggested-that-i-call-david",
+      "she-told-to-wait-us",
+      "she-told-us-to-wait",
+      "that-20-was-impossible",
+      "that-he-couldn-t-agree-to-it-himself",
+      "that-priya-would-accept-it",
+      "the-day-before",
+      "the-mobile-app",
+      "the-next-day",
+      "to-admit-doing",
+      "to-agree-to-do",
+      "to-deny-doing",
+      "to-get-back-to-someone",
+      "to-insist-on-doing",
+      "to-look-into",
+      "to-pass-something-on",
+      "to-point-out-that",
+      "to-prevent",
+      "to-promise-to-do",
+      "to-put-pressure-on-priya-s-team",
+      "to-recommend-it-to-marcos",
+      "to-refuse-to-do",
+      "to-remind-someone-to-do",
+      "to-renew-a-contract",
+      "to-suggest-doing",
+      "to-take-a-message",
+      "to-take-notes",
+      "to-warn-someone-that",
+      "told",
+      "was",
+      "was-priya",
+      "what-could-marcos-s-mistake-cost-the-team",
+      "what-did-he-said",
+      "what-did-he-say",
+      "what-did-he-tell",
+      "what-did-marcos-tell-david-about-the-discount",
+      "what-does-david-want-by-friday",
+      "what-exactly-did-he-say",
+      "where-is-priya-he-asked",
+      "why-can-t-david-speak-to-priya",
+      "why-does-david-mention-another-agency",
+      "why-don-t-we-meet-on-monday",
+      "will",
+      "will-be",
+      "word-for-word",
+      "would",
+      "yes-it-was-my-mistake",
+      "yesterday"
+    ]
+  }
+}
