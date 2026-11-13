@@ -12,7 +12,9 @@
    optional: sub, note, preIntro + preIntroKey, twist, trayLabel, countryThanks
      order    order[]            build the tray from the building's menu
      talk     options[], correct choose the reply
-     compose  words[], answer, alts[]   tap word chips into a sentence
+     compose  words[], answer, alts[], optional[]   tap word chips into a sentence
+              (alts = other correct orders; optional = words the sentence is also correct without)
+   Boss stages show the character's reply after each round and Totti's judgment once, at the end.
 */
 (function () {
 "use strict";
@@ -463,6 +465,11 @@ function buildTalkUI(R) {
 }
 
 /* compose: tap word chips into a sentence */
+function composeAccepted(R) {
+  let out = [R.answer].concat(R.alts || []).map(a => a.toLowerCase());
+  (R.optional || []).forEach(o => { o = o.toLowerCase(); out = out.concat(out.map(a => a.split(" ").filter(w => w !== o).join(" "))); });
+  return out;
+}
 function buildComposeUI(R) {
   const pool = shuffled(R.words);
   S.tray = [];
@@ -495,7 +502,7 @@ function buildComposeUI(R) {
   wireHint(() => 'Prrrr... it should read: "' + R.answer + '". You didn\'t hear it from me. *yawn*', () => document.querySelector(".tray"));
   document.getElementById("serveBtn").addEventListener("click", () => {
     const got = S.tray.map(i => pool[i]).join(" ").toLowerCase();
-    if ([R.answer].concat(R.alts || []).some(a => a.toLowerCase() === got)) succeed(R);
+    if (composeAccepted(R).indexOf(got) !== -1) succeed(R);
     else fail(R);
   });
   startTimer(R.par, stage.querySelector(".scene-tag"));
@@ -515,7 +522,8 @@ function succeed(R) {
   S.pawsTotal += paws; S.xp += xp + bonus; S.coins += tip; hud();
   coinFx(); if (st.boss) fanfare();
   if (bonus > 0) { tone(1568, 0.09); tone(2093, 0.14, "square", 0.09); }
-  showResult(R, paws, xp, tip, bonus, elapsed);
+  if (st.boss) showReply(R, xp, tip, bonus, elapsed);
+  else showResult(R, paws, xp, tip, bonus, elapsed);
 }
 
 function fail(R) {
@@ -552,6 +560,41 @@ function showResult(R, paws, xp, tip, bonus, elapsed) {
   const btn = el('<div class="center" style="margin-top:16px;"><button class="btn cyan">' + (next ? "<ico-play></ico-play> NEXT ROUND" : "<ico-flag></ico-flag> END SHIFT") + '</button></div>');
   stage.appendChild(btn);
   btn.querySelector("button").addEventListener("click", () => { blip(); next ? startRound(S.round + 1) : showSummary(); });
+}
+
+/* boss stages: no judgment between questions — the character answers and the next question comes */
+function showReply(R, xp, tip, bonus, elapsed) {
+  const st = STAGES[S.sid];
+  const next = S.round + 1 < st.rounds.length;
+  stage.innerHTML = '<div class="scene-tag">ROUND ' + (S.round + 1) + ' OF ' + st.rounds.length + ' · <ico-check></ico-check> ANSWERED</div>' + sceneHTML(R.who === "dan" ? null : R.who);
+  stage.appendChild(bubble(R.who, R.thanks, R.keys.thanks, R.sub));
+  stage.appendChild(el('<p class="px center" style="font-size:0.62rem; color:var(--green); margin-top:4px;">+$' + tip + ' TIP &nbsp; +' + xp + ' XP' +
+    (bonus > 0 ? ' &nbsp; <span style="color:var(--gold)"><ico-bolt></ico-bolt> +' + bonus + ' SPEED</span>' : '') + '</p>'));
+  say(R.keys.thanks, R.thanks);
+  const btn = el('<div class="center" style="margin-top:16px;"><button class="btn cyan">' + (next ? "<ico-play></ico-play> NEXT QUESTION" : ic("paw", 15) + " TOTTI'S JUDGMENT") + '</button></div>');
+  stage.appendChild(btn);
+  btn.querySelector("button").addEventListener("click", () => { blip(); next ? startRound(S.round + 1) : showVerdict(); });
+}
+/* Totti judges the whole boss stage once */
+function showVerdict() {
+  const st = STAGES[S.sid];
+  const max = maxPaws(S.sid);
+  const paws = S.pawsTotal >= max ? 3 : S.pawsTotal >= max * 0.66 ? 2 : 1;
+  haptic(paws >= 3 ? [12, 45, 12, 45, 90] : [50]);
+  const quips = { 3: "...Acceptable. *slow blink of approval*", 2: "Adequate. I have seen worse.", 1: "*judges you silently* ...Next time, LISTEN." };
+  stopVoice();
+  stage.innerHTML =
+    '<div class="scene-tag">' + st.name.toUpperCase() + ' · COMPLETE</div>' +
+    '<div class="center">' +
+      '<div class="ava" style="--c:var(--gold); margin:14px auto 9px; width:68px; height:68px;"><img src="sprite-totti.webp" alt="" style="object-position:42% 4%"></div>' +
+      '<div class="px" style="font-size:0.62rem; color:var(--gold); letter-spacing:1px;">TOTTI\'S JUDGMENT</div>' +
+      '<div style="margin:10px 0;">' + pawRow(paws) + '</div>' +
+      '<p style="font-size:0.88rem; color:var(--muted); font-style:italic;">"' + quips[paws] + '"</p>' +
+      '<p class="px" style="font-size:0.62rem; color:var(--green); margin-top:12px;">PAWS ' + S.pawsTotal + '/' + max + '</p>' +
+    '</div>';
+  const btn = el('<div class="center" style="margin-top:16px;"><button class="btn cyan"><ico-flag></ico-flag> SEE RESULTS</button></div>');
+  stage.appendChild(btn);
+  btn.querySelector("button").addEventListener("click", () => { blip(); showSummary(); });
 }
 
 function showSummary() {
