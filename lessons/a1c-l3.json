@@ -188,10 +188,10 @@
     {
       "type": "story",
       "title": "<ico-star></ico-star> A NORMAL DAY",
-      "intro": "Nora y Dan hablan de su día. Primero <b>practicas</b>, y luego los <b>escuchas</b> en 2 audios: un <b>diálogo</b> y una <b>descripción</b> de la semana.",
+      "intro": "Maya y Dan hablan de su día. Primero <b>practicas</b>, y luego los <b>escuchas</b> en 2 audios: un <b>diálogo</b> y una <b>descripción</b> de la semana.",
       "cast": [
         {
-          "en": "Nora",
+          "en": "Maya",
           "sp": "trabaja desde casa"
         },
         {
@@ -199,7 +199,7 @@
           "sp": "va al trabajo en autobús"
         }
       ],
-      "stage": "② THE STORY <span class=\"es\">· Nora y Dan</span>"
+      "stage": "② THE STORY <span class=\"es\">· Maya y Dan</span>"
     },
     {
       "type": "gapFill",
@@ -453,10 +453,10 @@
       "type": "listening",
       "id": "ex-3",
       "title": "AUDIO 1 · A NORMAL DAY",
-      "desc": "Nora y Dan hablan de su rutina. Fíjate en las <b>horas</b> y el <b>transporte</b>.",
+      "desc": "Maya y Dan hablan de su rutina. Fíjate en las <b>horas</b> y el <b>transporte</b>.",
       "src": "a1c-l3-1.mp3",
       "dur": "0:33",
-      "speakers": "<ico-commentdots></ico-commentdots> Nora + Dan",
+      "speakers": "<ico-commentdots></ico-commentdots> Maya + Dan",
       "questions": [
         {
           "type": "mcq",
@@ -480,7 +480,7 @@
         },
         {
           "type": "mcq",
-          "q": "Does Nora get up early?",
+          "q": "Does Maya get up early?",
           "options": [
             "Yes, at six.",
             "No, at nine.",
@@ -490,7 +490,7 @@
         },
         {
           "type": "mcq",
-          "q": "Where does Nora work?",
+          "q": "Where does Maya work?",
           "options": [
             "In an office",
             "From home",
@@ -501,7 +501,7 @@
       ],
       "transcript": [
         {
-          "spk": "Nora",
+          "spk": "Maya",
           "html": "What time do you get up?"
         },
         {
@@ -510,7 +510,7 @@
           "b": true
         },
         {
-          "spk": "Nora",
+          "spk": "Maya",
           "html": "Do you go to work by car?"
         },
         {
@@ -519,7 +519,7 @@
           "b": true
         },
         {
-          "spk": "Nora",
+          "spk": "Maya",
           "html": "I work from home. I like it!"
         },
         {
@@ -528,11 +528,11 @@
           "b": true
         },
         {
-          "spk": "Nora",
+          "spk": "Maya",
           "html": "No, I don't. I get up at <span class=\"tg\">nine</span>."
         }
       ],
-      "stage": "④ LISTENING <span class=\"es\">· escucha a Nora y Dan</span>"
+      "stage": "④ LISTENING <span class=\"es\">· escucha a Maya y Dan</span>"
     },
     {
       "type": "listening",
@@ -642,7 +642,7 @@
       "by-train",
       "do",
       "does",
-      "does-nora-get-up-early",
+      "does-maya-get-up-early",
       "doesn-t-like",
       "doesn-t-watch",
       "doesn-t-work",
@@ -709,7 +709,7 @@
       "what-time-does-the-person-get-up-on-weekdays",
       "what-time-does-the-person-go-to-bed",
       "what-time-is-it",
-      "where-does-nora-work",
+      "where-does-maya-work",
       "work",
       "work-in-the-morning-and-study",
       "working",

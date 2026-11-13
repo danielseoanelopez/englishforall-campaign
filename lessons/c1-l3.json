@@ -207,7 +207,7 @@
               "sp": "«No solo vino…» → Not only <b>did he come</b>."
             },
             {
-              "en": "Only Nora knows the answer.",
+              "en": "Only Alex knows the answer.",
               "sp": "Aquí no hay inversión: <i>only</i> acompaña al sujeto, no abre una frase de tiempo o condición."
             }
           ]
@@ -215,7 +215,7 @@
         {
           "type": "note",
           "gold": true,
-          "body": "<s class='x'>Never I have seen this.</s> → <span class='ok'>Never have I seen this.</span> · <s class='x'>Not only he came…</s> → <span class='ok'>Not only did he come…</span> · <s class='x'>Only does Nora know.</s> → <span class='ok'>Only Nora knows.</span>"
+          "body": "<s class='x'>Never I have seen this.</s> → <span class='ok'>Never have I seen this.</span> · <s class='x'>Not only he came…</s> → <span class='ok'>Not only did he come…</span> · <s class='x'>Only does Alex know.</s> → <span class='ok'>Only Alex knows.</span>"
         }
       ]
     },
@@ -264,10 +264,10 @@
       "type": "story",
       "tag": "episode 3",
       "title": "<ico-star></ico-star> THE HEADLINE",
-      "intro": "Bad news at the Radio Tower: the city council wants to close the rooftop studio. Nora will answer on air tonight with an editorial. Her first draft says «I have never been so proud of this station.» True, but flat. It needs a headline.<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>a landmark</b> = a place everyone knows · <b>stand your ground</b> · <b>keep someone company</b>.",
+      "intro": "Bad news at the Radio Tower: the city council wants to close the rooftop studio. Alex will answer on air tonight with an editorial. Her first draft says «I have never been so proud of this station.» True, but flat. It needs a headline.<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>a landmark</b> = a place everyone knows · <b>stand your ground</b> · <b>keep someone company</b>.",
       "cast": [
         {
-          "en": "Nora",
+          "en": "Alex",
           "sp": "writes and reads the editorial"
         },
         {
@@ -365,14 +365,14 @@
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · THE EDITORIAL",
-      "desc": "Nora on air, answering the council's plan to close the rooftop studio. Count the inversions: she uses each one exactly where it matters.",
+      "desc": "Alex on air, answering the council's plan to close the rooftop studio. Count the inversions: she uses each one exactly where it matters.",
       "src": "c1-l3-1.mp3",
       "dur": "1:30",
-      "speakers": "<ico-commentdots></ico-commentdots> Nora",
+      "speakers": "<ico-commentdots></ico-commentdots> Alex",
       "questions": [
         {
           "type": "mcq",
-          "q": "What are Nora's three reasons for keeping the studio?",
+          "q": "What are Alex's three reasons for keeping the studio?",
           "options": [
             "It is the only local newsroom, it is cheap to run, and it belongs to the listeners",
             "It is old, it is famous, and it makes money for the city",
@@ -392,7 +392,7 @@
         },
         {
           "type": "mcq",
-          "q": "Who is Nora really speaking to at the end?",
+          "q": "Who is Alex really speaking to at the end?",
           "options": [
             "Listeners who work nights",
             "Her co-host",
@@ -412,33 +412,33 @@
         }
       ],
       "speaking": {
-        "prompt": "Read Nora's three inverted lines aloud, with a pause before each one: 'Never have I…', 'Not only does it…', 'Under no circumstances…'.",
+        "prompt": "Read Alex's three inverted lines aloud, with a pause before each one: 'Never have I…', 'Not only does it…', 'Under no circumstances…'.",
         "starter": "Never have I been prouder of this station. Not only does it inform this city, it keeps it company. Under no circumstances should it go quiet."
       },
       "transcript": [
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Good evening. Tonight I'm not here to read the news. I'm here because of it. Last week, the city council announced a plan to close the rooftop studio of the Radio Tower, the room I am speaking from right now. They call it a saving. I'd like to tell you what it would cost."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "<span class='tg'>Never have I been</span> prouder of this station than in the last few days. Hundreds of you have written to us. Some of you have listened since before I was born."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Let me give you three reasons why this studio matters. First, it is the only local newsroom this city has left. <span class='tg'>Not only does it inform</span> this city, it keeps it company. Ask anyone who works nights. Second, it costs less than you think: less per year than the council spends on fireworks. And third, it belongs to you. Your grandparents paid for this tower, brick by brick."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "When the council met last Tuesday, they expected no one to notice. <span class='tg'>Little did they know</span> that four thousand of you would sign a letter in three days."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "So tonight I am speaking to the nine people who will vote next month. You have the numbers in front of you. Now you have the letters as well. <span class='tg'>Rarely does a city get</span> the chance to keep something that still works. <span class='tg'>Under no circumstances should it</span> go quiet."
         },
         {
-          "spk": "Nora",
-          "html": "I'm Nora. This is The Signal. And we are staying on the air."
+          "spk": "Alex",
+          "html": "I'm Alex. This is The Signal. And we are staying on the air."
         }
       ]
     },
@@ -579,9 +579,9 @@
           "type": "mcq",
           "q": "Which is correct?",
           "options": [
-            "Only does Nora know the answer.",
-            "Only Nora knows the answer.",
-            "Only knows Nora the answer."
+            "Only does Alex know the answer.",
+            "Only Alex knows the answer.",
+            "Only knows Alex the answer."
           ],
           "answer": 1
         }
@@ -832,9 +832,9 @@
       "not-only-does-it-inform-the-city-it-also-keeps-it-company",
       "not-only-we-do-bring-you-the-news",
       "not-until-midnight-did-the-last-caller-hang-up",
-      "only-does-nora-know-the-answer",
-      "only-knows-nora-the-answer",
-      "only-nora-knows-the-answer",
+      "only-alex-knows-the-answer",
+      "only-does-alex-know-the-answer",
+      "only-knows-alex-the-answer",
       "only-then-did-i-understand",
       "only-then-only-when",
       "only-when-the-city-sleeps",
@@ -878,14 +878,14 @@
       "we-had-no-sooner-gone-on-air-than-the-lights-went-out",
       "we-rarely-hear-good-news",
       "were",
-      "what-are-nora-s-three-reasons-for-keeping-the-studio",
+      "what-are-alex-s-three-reasons-for-keeping-the-studio",
       "what-does-little-did-they-know-introduce",
       "what-is-the-corrected-line",
       "what-s-more",
       "when",
       "which-promo-has-a-mistake",
       "which-sentence-carries-her-strongest-demand",
-      "who-is-nora-really-speaking-to-at-the-end"
+      "who-is-alex-really-speaking-to-at-the-end"
     ]
   }
 }

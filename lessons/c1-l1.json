@@ -273,7 +273,7 @@
       "intro": "Your first day at <b style='color:var(--gold)'>The Signal</b>, the city's talk-radio show. You are the new producer's assistant. Roz, the producer, hands you a headset: «You hit the ground running here.» Tonight's guest, Sam, changed careers at forty.<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>candid</b> = honest, even when it is uncomfortable · <b>hit the ground running</b> · <b>take a risk</b>.",
       "cast": [
         {
-          "en": "Nora",
+          "en": "Alex",
           "sp": "the host"
         },
         {
@@ -375,10 +375,10 @@
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · THE INTERVIEW",
-      "desc": "Nora interviews Sam, who left accounting at forty to open a bakery. Listen for the word partners: there are eight collocations and several idioms.",
+      "desc": "Alex interviews Sam, who left accounting at forty to open a bakery. Listen for the word partners: there are eight collocations and several idioms.",
       "src": "c1-l1-1.mp3",
       "dur": "1:52",
-      "speakers": "<ico-commentdots></ico-commentdots> Nora + Sam",
+      "speakers": "<ico-commentdots></ico-commentdots> Alex + Sam",
       "questions": [
         {
           "type": "mcq",
@@ -412,7 +412,7 @@
         },
         {
           "type": "mcq",
-          "q": "Which phrase does Nora use to raise the uncomfortable topic?",
+          "q": "Which phrase does Alex use to raise the uncomfortable topic?",
           "options": [
             "the elephant in the room",
             "back to square one",
@@ -427,16 +427,16 @@
       },
       "transcript": [
         {
-          "spk": "Nora",
-          "html": "You're listening to The Signal. I'm Nora, and my guest tonight did something most of us only talk about. At forty, Sam walked out of a safe job in accounting and opened a bakery. Sam, welcome."
+          "spk": "Alex",
+          "html": "You're listening to The Signal. I'm Alex, and my guest tonight did something most of us only talk about. At forty, Sam walked out of a safe job in accounting and opened a bakery. Sam, welcome."
         },
         {
           "spk": "Sam",
           "b": true,
-          "html": "Thanks, Nora. It's great to be here."
+          "html": "Thanks, Alex. It's great to be here."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Eighteen years with the same firm. What made you <span class='tg'>take the risk</span>?"
         },
         {
@@ -445,7 +445,7 @@
           "html": "Honestly? I was <span class='tg'>bitterly disappointed</span> with where I'd ended up. I was good at my job, I always <span class='tg'>met my deadlines</span>, but I'd stopped <span class='tg'>making an effort</span>. So I <span class='tg'>did some research</span>, I ran the numbers, as accountants do, and I <span class='tg'>drew a conclusion</span>: it was now or never."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "And did you <span class='tg'>hit the ground running</span>?"
         },
         {
@@ -454,7 +454,7 @@
           "html": "Not at all. It was <span class='tg'>a steep learning curve</span>. I knew how to read a balance sheet, but I had no idea how to bake three hundred loaves before six in the morning. In the first month, I <span class='tg'>cut corners</span> with a cheaper flour, and my customers noticed right away. So it was <span class='tg'>back to square one</span>."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Let's talk about <span class='tg'>the elephant in the room</span>. Money. You went from a good salary to, well, what exactly?"
         },
         {
@@ -463,7 +463,7 @@
           "html": "To nothing, for the first year. My family <span class='tg'>raised concerns</span>, and they were right to. It was <span class='tg'>highly unlikely</span> that I'd ever earn the same again. And I still don't."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "That's very candid. So, any regrets?"
         },
         {
@@ -472,7 +472,7 @@
           "html": "You know, losing that salary was <span class='tg'>a blessing in disguise</span>. It forced me to keep the business small and simple. I work harder than I ever did, and on Sunday nights I look forward to Monday. I couldn't say that once in eighteen years."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Sam, thank you. After the break, your calls."
         }
       ]
@@ -681,9 +681,9 @@
           "gap": true,
           "q": "Your reply:",
           "options": [
-            "That has sense. Nora will do you feel at home.",
-            "It's logic. Nora makes very good questions.",
-            "That makes sense. Nora will make you feel at home."
+            "That has sense. Alex will do you feel at home.",
+            "It's logic. Alex makes very good questions.",
+            "That makes sense. Alex will make you feel at home."
           ],
           "answer": 2
         },
@@ -721,7 +721,7 @@
       "type": "listening",
       "id": "ex-l2",
       "title": "AUDIO 2 · THE NOTES",
-      "desc": "You drafted an introduction for Sam. Roz sends you a voice memo with her notes: four word partners to fix before Nora reads it on air.",
+      "desc": "You drafted an introduction for Sam. Roz sends you a voice memo with her notes: four word partners to fix before Alex reads it on air.",
       "src": "c1-l1-2.mp3",
       "dur": "0:59",
       "speakers": "<ico-commentdots></ico-commentdots> Roz",
@@ -768,20 +768,20 @@
         }
       ],
       "speaking": {
-        "prompt": "Record a 30-second introduction for Sam, as Nora would read it. Use three collocations from this lesson.",
+        "prompt": "Record a 30-second introduction for Sam, as Alex would read it. Use three collocations from this lesson.",
         "starter": "My guest tonight took a risk that… After eighteen years, Sam drew a conclusion:… It was highly unlikely that…"
       },
       "transcript": [
         {
           "spk": "Roz",
-          "html": "Hi, it's Roz. I've read your draft intro for Sam, and it's nearly there. But four word partners need fixing before Nora reads it on air. One. You wrote \"Sam made a research.\" We don't make research. We <span class='tg'>do research</span>. Two. \"He did a big effort.\" It's \"<span class='tg'>made</span> a big effort.\" Three. \"He got stuck in strong traffic on the way here.\" Traffic is <span class='tg'>heavy</span>, not strong. And four. \"Sam won a lot of money as an accountant.\" You win a prize. You <span class='tg'>earn</span> money. Oh, and one more thing. You've got three idioms in two sentences. Pick one and cut the rest. The idea is good, though, and the story <span class='tg'>makes sense</span>. Fix those and send it back before five. Thanks!"
+          "html": "Hi, it's Roz. I've read your draft intro for Sam, and it's nearly there. But four word partners need fixing before Alex reads it on air. One. You wrote \"Sam made a research.\" We don't make research. We <span class='tg'>do research</span>. Two. \"He did a big effort.\" It's \"<span class='tg'>made</span> a big effort.\" Three. \"He got stuck in strong traffic on the way here.\" Traffic is <span class='tg'>heavy</span>, not strong. And four. \"Sam won a lot of money as an accountant.\" You win a prize. You <span class='tg'>earn</span> money. Oh, and one more thing. You've got three idioms in two sentences. Pick one and cut the rest. The idea is good, though, and the story <span class='tg'>makes sense</span>. Fix those and send it back before five. Thanks!"
         }
       ]
     },
     {
       "type": "writing",
       "title": "<ico-pen></ico-pen> THE GUEST INTRO",
-      "intro": "Write the introduction Nora will read on air for a guest of your choice: someone you admire, real or invented (about 80 words).",
+      "intro": "Write the introduction Alex will read on air for a guest of your choice: someone you admire, real or invented (about 80 words).",
       "checklist": [
         "Three collocations from this lesson (<b>take a risk, raise concerns, highly unlikely…</b>)",
         "<b>Exactly one</b> idiom: no more",
@@ -869,7 +869,7 @@
       "it-is-close-the-idea-works-the-partners-need-fixing",
       "it-is-ready-to-go-on-air",
       "it-s-highly-unlikely",
-      "it-s-logic-nora-makes-very-good-questions",
+      "it-s-logic-alex-makes-very-good-questions",
       "learning-to-bake-in-large-quantities",
       "learning-to-read-a-balance-sheet",
       "learning-to-speak-on-the-radio",
@@ -909,9 +909,9 @@
       "strong",
       "strongly",
       "take",
-      "that-has-sense-nora-will-do-you-feel-at-home",
+      "that-has-sense-alex-will-do-you-feel-at-home",
       "that-makes-sense",
-      "that-makes-sense-nora-will-make-you-feel-at-home",
+      "that-makes-sense-alex-will-make-you-feel-at-home",
       "that-s-perfectly-normal",
       "the-draft-needs-two-more",
       "the-elephant-in-the-room",
@@ -944,7 +944,7 @@
       "what-does-roz-think-of-the-draft-overall",
       "what-was-the-big-risk-sam-took",
       "which-adjective-does-she-want-with-traffic",
-      "which-phrase-does-nora-use-to-raise-the-uncomfortable-topic",
+      "which-phrase-does-alex-use-to-raise-the-uncomfortable-topic",
       "yes-the-lost-salary-still-hurts",
       "you-ll-have-to-hit-the-ground-running"
     ]

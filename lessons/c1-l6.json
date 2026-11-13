@@ -312,7 +312,7 @@
       "intro": "It's the monthly World Panel. A listener has sent in a business idea, and four guests review it on air. All four dislike it. <b style='color:var(--gold)'>Only one says so.</b> Roz gives you one job: count the real noes.<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>blunt</b> = saying exactly what you think · <b>read between the lines</b> · <b>come across as</b>.",
       "cast": [
         {
-          "en": "Nora",
+          "en": "Alex",
           "sp": "hosts, and checks what people mean"
         },
         {
@@ -336,7 +336,7 @@
       "desc": "The idea: a café where you pay for the time you stay, not for what you drink. Four guests give their opinion. Listen for what each one says, and for what each one means.",
       "src": "c1-l6-1.mp3",
       "dur": "2:03",
-      "speakers": "<ico-commentdots></ico-commentdots> Nora + Max + Kit + Robin + Sam",
+      "speakers": "<ico-commentdots></ico-commentdots> Alex + Max + Kit + Robin + Sam",
       "questions": [
         {
           "type": "mcq",
@@ -363,14 +363,14 @@
           "q": "Whose feedback could the listener most easily mistake for approval?",
           "options": [
             "Max's",
-            "Nora's",
+            "Alex's",
             "Sam's"
           ],
           "answer": 2
         },
         {
           "type": "mcq",
-          "q": "Which phrase does Nora use to find out what they really think?",
+          "q": "Which phrase does Alex use to find out what they really think?",
           "options": [
             "Just so I'm clear",
             "I'll be direct",
@@ -385,7 +385,7 @@
       },
       "transcript": [
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Welcome to the World Panel. Every month, a listener sends us a business idea, and four guests tell us what they think. Tonight's idea: a café where you pay for the time you stay, not for what you drink. Five dollars an hour, coffee included. Max, you run a store. Would you invest?"
         },
         {
@@ -393,7 +393,7 @@
           "html": "No. I'll be direct: the numbers don't work. One customer with a laptop takes a table for four hours and pays twenty dollars. You'd lose money on every table. I wouldn't put a cent into it."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Clear enough. Kit?"
         },
         {
@@ -401,7 +401,7 @@
           "html": "Well, it's certainly <span class='tg'>an interesting idea</span>. <span class='tg'>I was wondering</span> whether the price had been tested with real customers. <span class='tg'>It might be an idea to</span> try it for a month before signing a lease."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Robin?"
         },
         {
@@ -409,7 +409,7 @@
           "html": "It's <span class='tg'>not bad at all</span>, as a concept. <span class='tg'>I'm just not sure it's going to work</span> in this city, at this moment. With a few changes, who knows?"
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "And Sam, you opened a bakery from nothing."
         },
         {
@@ -417,7 +417,7 @@
           "html": "It's very brave. Very original. I'd say the author should definitely keep thinking about it. <span class='tg'>I'll bear it in mind</span> if I ever expand."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Hmm. Let me check something, because our listener is hearing \"interesting,\" \"not bad,\" and \"brave.\" <span class='tg'>Just so I'm clear</span>: would any of you put your own money into this café? Kit?"
         },
         {
@@ -425,7 +425,7 @@
           "html": "Honestly? No."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Robin?"
         },
         {
@@ -433,7 +433,7 @@
           "html": "Not as it is, no."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Sam?"
         },
         {
@@ -441,7 +441,7 @@
           "html": "No. Sorry."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "So that's four noes, and only Max said the word. To our listener: <span class='tg'>read between the lines</span>. Kit gave you the most useful advice tonight, and she never said \"no\" at all. Test the price first. We'll be right back."
         }
       ]
@@ -573,7 +573,7 @@
           "answer": 0
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "You look worried. Is everything okay?"
         },
         {
@@ -587,7 +587,7 @@
           "answer": 1
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Of course. Is tomorrow morning all right?"
         },
         {
@@ -821,6 +821,7 @@
       "a-polite-no",
       "a-promise-to-invest-later",
       "afraid",
+      "alex-s",
       "appreciate",
       "back-up-that-file",
       "blunt",
@@ -891,7 +892,6 @@
       "no",
       "no-i-don-t-want-to",
       "none-of-them",
-      "nora-s",
       "not-bad-at-all",
       "of-course-is-tomorrow-morning-all-right",
       "oh-that-s-a-pity-are-you-sure",
@@ -935,7 +935,7 @@
       "what-does-theo-suggest-in-place-of-you-must-check-the-numbers",
       "what-was-the-problem-with-the-listener-s-email",
       "which-of-these-is-not-one-of-the-three-problem-lines",
-      "which-phrase-does-nora-use-to-find-out-what-they-really-think",
+      "which-phrase-does-alex-use-to-find-out-what-they-really-think",
       "who-knows",
       "whose-feedback-could-the-listener-most-easily-mistake-for-approval",
       "will",

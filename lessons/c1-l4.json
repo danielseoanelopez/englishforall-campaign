@@ -250,10 +250,10 @@
       "type": "story",
       "tag": "episode 4",
       "title": "<ico-star></ico-star> DEBATE NIGHT",
-      "intro": "Once a month, The Signal hands the studio over to an argument. Tonight's motion: <b style='color:var(--gold)'>«This city should close its center to cars.»</b> Priya argues for, Max against, and Nora keeps the peace. Your job: time the speakers and note every move.<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>a premise</b> = the idea an argument stands on · <b>sit on the fence</b> · <b>concede a point</b>.",
+      "intro": "Once a month, The Signal hands the studio over to an argument. Tonight's motion: <b style='color:var(--gold)'>«This city should close its center to cars.»</b> Priya argues for, Max against, and Alex keeps the peace. Your job: time the speakers and note every move.<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>a premise</b> = the idea an argument stands on · <b>sit on the fence</b> · <b>concede a point</b>.",
       "cast": [
         {
-          "en": "Nora",
+          "en": "Alex",
           "sp": "the moderator"
         },
         {
@@ -323,10 +323,10 @@
       "type": "listening",
       "id": "ex-l1",
       "title": "AUDIO 1 · THE DEBATE",
-      "desc": "Priya and Max on the motion, with Nora in the chair. Each of them makes a claim, gives evidence, concedes one point and rebuts another. There is one interruption: listen to how it is handled.",
+      "desc": "Priya and Max on the motion, with Alex in the chair. Each of them makes a claim, gives evidence, concedes one point and rebuts another. There is one interruption: listen to how it is handled.",
       "src": "c1-l4-1.mp3",
       "dur": "2:29",
-      "speakers": "<ico-commentdots></ico-commentdots> Nora + Priya + Max",
+      "speakers": "<ico-commentdots></ico-commentdots> Alex + Priya + Max",
       "questions": [
         {
           "type": "mcq",
@@ -375,15 +375,15 @@
       },
       "transcript": [
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Welcome to Debate Night on The Signal. Tonight's motion: \"This city should close its center to cars.\" Arguing for, Priya, who runs a technology team downtown. Arguing against, Max, who owns a furniture store on Main Street. Priya, you have the floor."
         },
         {
           "spk": "Priya",
-          "html": "Thank you, Nora. My claim is simple: closing the center to cars would make this city healthier and richer. Here is the evidence. In the three cities of our size that have done it, air pollution in the center fell by a third within two years. And people on foot stay longer and spend more. So this isn't about hating cars. It's about what a center is for."
+          "html": "Thank you, Alex. My claim is simple: closing the center to cars would make this city healthier and richer. Here is the evidence. In the three cities of our size that have done it, air pollution in the center fell by a third within two years. And people on foot stay longer and spend more. So this isn't about hating cars. It's about what a center is for."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Max?"
         },
         {
@@ -405,7 +405,7 @@
           "html": "<span class='tg'>If I could just finish my point</span>, Max. A construction site is not a pedestrian street. In the cities I mentioned, delivery vans are allowed in before ten a.m., and stores like yours deliver for free."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Max, would that change your mind?"
         },
         {
@@ -414,7 +414,7 @@
           "html": "<span class='tg'>Granted</span>, morning deliveries would help. <span class='tg'>However</span>, somebody has to pay for free delivery, and <span class='tg'>arguably</span> it would be small stores like mine."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "We're almost out of time. One sentence each, please."
         },
         {
@@ -427,7 +427,7 @@
           "html": "Close the center if you must, but not before you've asked the people who work there."
         },
         {
-          "spk": "Nora",
+          "spk": "Alex",
           "html": "Thank you both. Listeners, the lines are open."
         }
       ]
