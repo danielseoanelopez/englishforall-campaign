@@ -1,0 +1,947 @@
+{
+  "level": "C1",
+  "num": 4,
+  "totalLessons": 6,
+  "world": "ADVANCED OPERATOR",
+  "ui": "en",
+  "key": "rankup_C1_L4",
+  "title": "DEBATING",
+  "titlePlain": "Debating — Debate Night (C1)",
+  "subtitle": "Speaking &amp; Listening · C1 · ~50 min",
+  "rankup": "EPISODE CLEAR!",
+  "next": {
+    "href": "lesson.html?id=c1-l5",
+    "label": "LESSON 5 ▸ FAST-SPEECH LISTENING"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> EPISODE RECAP · last lesson",
+      "intro": "Before we go on air: join the two halves of each inverted sentence.",
+      "pairs": [
+        {
+          "l": "Rarely…",
+          "r": "…do we get a second chance."
+        },
+        {
+          "l": "No sooner had we started…",
+          "r": "…than the power failed."
+        },
+        {
+          "l": "Hardly had I sat down…",
+          "r": "…when the phone rang."
+        },
+        {
+          "l": "Under no circumstances…",
+          "r": "…should this studio close."
+        },
+        {
+          "l": "Only then…",
+          "r": "…did I understand."
+        }
+      ],
+      "speakSide": "none"
+    },
+    {
+      "type": "grammar",
+      "tag": "the argument move set",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· the argument move set</span>",
+      "title": "<ico-book></ico-book> CLAIM, CONCEDE, REBUT",
+      "intro": "A debate is not a fight. It is a set of <b style='color:var(--gold)'>moves</b>: make a claim, back it up, give the other side what is true, and then turn. Five moves, and the phrases that signal each one.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show the debate vocabulary",
+      "vocab": [
+        {
+          "en": "the motion",
+          "sp": "the statement that the two sides argue about"
+        },
+        {
+          "en": "to argue for / against",
+          "sp": "to give reasons to support or oppose something"
+        },
+        {
+          "en": "a claim",
+          "sp": "what you say is true"
+        },
+        {
+          "en": "a premise",
+          "sp": "the idea an argument is built on"
+        },
+        {
+          "en": "to concede a point",
+          "sp": "to admit that the other side is right about one thing"
+        },
+        {
+          "en": "to rebut",
+          "sp": "to answer an argument and show why it is weak"
+        },
+        {
+          "en": "to hold the floor",
+          "sp": "to keep speaking; to have the right to speak"
+        },
+        {
+          "en": "a moderator",
+          "sp": "the person who runs the debate"
+        },
+        {
+          "en": "to sit on the fence",
+          "sp": "to avoid choosing a side"
+        },
+        {
+          "en": "a closing statement",
+          "sp": "your last, short summary of your case"
+        }
+      ],
+      "note": "<b>How it works:</b> flashcards <ico-clone></ico-clone>, listening <ico-headphones></ico-headphones>, a dialogue where you take a seat in the debate, gap-fill <ico-filepen></ico-filepen>, compare <ico-comments></ico-comments> and order <ico-puzzle></ico-puzzle>. Press <ico-check></ico-check> CHECK wherever you see it.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · CLAIM, EVIDENCE, SO WHAT</b> <span class='es'>— an opinion with nothing behind it is only an opinion</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Closing the center to cars would make this city healthier.",
+              "sp": "The claim: one sentence, no hedging."
+            },
+            {
+              "en": "In cities that have done it, air pollution has fallen by a third.",
+              "sp": "The evidence: a number, a case, an example."
+            },
+            {
+              "en": "So this isn't about comfort. It's about health.",
+              "sp": "The «so what»: why the evidence matters."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · CONCEDE, THEN TURN</b> <span class='es'>— give them what is true, and keep your ground</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Granted, deliveries would be harder; however, they can be scheduled.",
+              "sp": "Granted, + their point; however, + yours."
+            },
+            {
+              "en": "That's a fair point, but it overlooks the people who live there.",
+              "sp": "A fair point = I accept it. It overlooks = it forgets something."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · ATTACK THE ARGUMENT, NOT THE PERSON</b>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'd challenge the premise that stores need parking.",
+              "sp": "You question the idea underneath the argument."
+            },
+            {
+              "en": "With respect, the evidence points the other way.",
+              "sp": "You disagree with the evidence, not with the speaker."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>You clearly don't understand business.</s> → <span class='ok'>I'd challenge the premise that this is bad for business.</span> The first one loses the audience, even if you are right."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · HEDGE THE WEAK, BOOST THE STRONG</b> <span class='es'>— be exactly as sure as your evidence</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "arguably",
+            "the evidence suggests",
+            "it is clear that",
+            "undoubtedly"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Arguably, the plan would help small stores.",
+              "sp": "Hedge: I can argue it, but I can't prove it."
+            },
+            {
+              "en": "The evidence suggests that sales would rise.",
+              "sp": "Hedge: suggests, not proves."
+            },
+            {
+              "en": "Undoubtedly, the air would be cleaner.",
+              "sp": "Boost: nobody can reasonably deny it."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · FLOOR MANAGEMENT</b> <span class='es'>— keep it, take it, give it back</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "If I could just finish my point.",
+              "sp": "Keep the floor: firm, never angry."
+            },
+            {
+              "en": "Can I come in here?",
+              "sp": "Take the floor: you ask before you interrupt."
+            },
+            {
+              "en": "Let me pick up on that.",
+              "sp": "Take the floor by building on what was said."
+            },
+            {
+              "en": "Sorry, go ahead.",
+              "sp": "Give it back."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> SPANISH TRAP</b> <span class='es'>— cinco errores que se oyen en cualquier debate</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I agree with you.",
+              "sp": "<i>Agree</i> ya es verbo: nunca I am agree."
+            },
+            {
+              "en": "It depends on the street.",
+              "sp": "«Depende de» = depends <b>on</b>, nunca of."
+            },
+            {
+              "en": "We discussed the plan. Then they argued about money.",
+              "sp": "<i>Discuss</i> = conversar sobre un tema. «Discutir» (pelear) = <b>argue</b>."
+            },
+            {
+              "en": "She is very sensible: she always plans ahead.",
+              "sp": "<i>Sensible</i> = sensato. «Sensible» en español = <b>sensitive</b>."
+            },
+            {
+              "en": "That's a strong argument.",
+              "sp": "<i>Argument</i> es un razonamiento, además de una pelea."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>I am agree.</s> → <span class='ok'>I agree.</span> · <s class='x'>It depends of the price.</s> → <span class='ok'>It depends on the price.</span>"
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "episode 4",
+      "title": "<ico-star></ico-star> DEBATE NIGHT",
+      "intro": "Once a month, The Signal hands the studio over to an argument. Tonight's motion: <b style='color:var(--gold)'>«This city should close its center to cars.»</b> Priya argues for, Max against, and Nora keeps the peace. Your job: time the speakers and note every move.<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>a premise</b> = the idea an argument stands on · <b>sit on the fence</b> · <b>concede a point</b>.",
+      "cast": [
+        {
+          "en": "Nora",
+          "sp": "the moderator"
+        },
+        {
+          "en": "Priya",
+          "sp": "argues <b style='color:var(--magenta)'>for</b>: she runs a tech team downtown"
+        },
+        {
+          "en": "Max",
+          "sp": "argues <b style='color:var(--magenta)'>against</b>: he owns a furniture store"
+        },
+        {
+          "en": "You",
+          "sp": "keep time and take notes"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "THE MOVE PHRASES · tap to flip",
+      "intro": "Ten phrases, each one a move. Before you flip, say which move it is: concede, rebut, hedge, boost, or manage the floor.",
+      "cards": [
+        {
+          "front": "Granted,… ; however,…",
+          "back": "concede, then turn · «Granted, it's expensive; however, it works.»"
+        },
+        {
+          "front": "That's a fair point, but…",
+          "back": "concede, then turn · «That's a fair point, but it isn't the whole story.»"
+        },
+        {
+          "front": "It overlooks…",
+          "back": "rebut: something was forgotten · «It overlooks the people who live there.»"
+        },
+        {
+          "front": "I'd challenge the premise that…",
+          "back": "rebut: question the idea underneath · «I'd challenge the premise that cars bring customers.»"
+        },
+        {
+          "front": "Arguably,…",
+          "back": "hedge: it can be argued, not proved · «Arguably, it's the best plan we have.»"
+        },
+        {
+          "front": "The evidence suggests…",
+          "back": "hedge with data · «The evidence suggests that sales rise.»"
+        },
+        {
+          "front": "Undoubtedly,…",
+          "back": "boost: nobody can deny it · «Undoubtedly, the air would be cleaner.»"
+        },
+        {
+          "front": "If I could just finish…",
+          "back": "keep the floor · «If I could just finish my point, Max.»"
+        },
+        {
+          "front": "Can I come in here?",
+          "back": "take the floor politely · «Can I come in here? I have the numbers.»"
+        },
+        {
+          "front": "Let me pick up on that.",
+          "back": "take the floor by building on the last point · «Let me pick up on that, because it matters.»"
+        }
+      ],
+      "deckLabel": "debate moves"
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE DEBATE",
+      "desc": "Priya and Max on the motion, with Nora in the chair. Each of them makes a claim, gives evidence, concedes one point and rebuts another. There is one interruption: listen to how it is handled.",
+      "src": "c1-l4-1.mp3",
+      "dur": "2:29",
+      "speakers": "<ico-commentdots></ico-commentdots> Nora + Priya + Max",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What is Max's main evidence?",
+          "options": [
+            "His sales fell by forty percent when his street was closed for repairs",
+            "Air pollution fell by a third in three cities",
+            "People on foot stay longer and spend more"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which point does Priya concede?",
+          "options": [
+            "That cleaner air is not a priority",
+            "That stores selling large items would need a different solution",
+            "That deliveries should stop completely"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which phrase does Priya use to take the floor back?",
+          "options": [
+            "Can I come in here?",
+            "Granted,…",
+            "If I could just finish my point"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What has happened to Max's position by the end?",
+          "options": [
+            "It has softened: he could accept the plan if store owners are consulted first",
+            "It has hardened: he now rejects any change",
+            "He has changed sides completely"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "You are the next speaker. Concede one point to Max and then turn it, in two sentences.",
+        "starter": "Granted, (Max's point); however, (your point). / That's a fair point, but it overlooks (what)."
+      },
+      "transcript": [
+        {
+          "spk": "Nora",
+          "html": "Welcome to Debate Night on The Signal. Tonight's motion: \"This city should close its center to cars.\" Arguing for, Priya, who runs a technology team downtown. Arguing against, Max, who owns a furniture store on Main Street. Priya, you have the floor."
+        },
+        {
+          "spk": "Priya",
+          "html": "Thank you, Nora. My claim is simple: closing the center to cars would make this city healthier and richer. Here is the evidence. In the three cities of our size that have done it, air pollution in the center fell by a third within two years. And people on foot stay longer and spend more. So this isn't about hating cars. It's about what a center is for."
+        },
+        {
+          "spk": "Nora",
+          "html": "Max?"
+        },
+        {
+          "spk": "Max",
+          "b": true,
+          "html": "<span class='tg'>Undoubtedly</span>, cleaner air is a good thing. Nobody is arguing for pollution. But <span class='tg'>I'd challenge the premise that</span> people on foot spend more in every kind of store. I sell sofas. Nobody carries a sofa home on a bicycle. Last year, when my street was closed for six weeks of repairs, my sales fell by forty percent. That's not a theory. That's my accounts."
+        },
+        {
+          "spk": "Priya",
+          "html": "<span class='tg'>That's a fair point</span>, Max, and I won't pretend otherwise: stores that sell large items would need a different solution. But <span class='tg'>it overlooks</span> one thing. Your street was closed for repairs, with noise and dust and no plan. That's not the same as"
+        },
+        {
+          "spk": "Max",
+          "b": true,
+          "html": "It's exactly the same for my customers. They couldn't park, so they"
+        },
+        {
+          "spk": "Priya",
+          "html": "<span class='tg'>If I could just finish my point</span>, Max. A construction site is not a pedestrian street. In the cities I mentioned, delivery vans are allowed in before ten a.m., and stores like yours deliver for free."
+        },
+        {
+          "spk": "Nora",
+          "html": "Max, would that change your mind?"
+        },
+        {
+          "spk": "Max",
+          "b": true,
+          "html": "<span class='tg'>Granted</span>, morning deliveries would help. <span class='tg'>However</span>, somebody has to pay for free delivery, and <span class='tg'>arguably</span> it would be small stores like mine."
+        },
+        {
+          "spk": "Nora",
+          "html": "We're almost out of time. One sentence each, please."
+        },
+        {
+          "spk": "Priya",
+          "html": "<span class='tg'>The evidence suggests</span> that centers without cars do better, so let's solve the delivery problem instead of keeping the traffic."
+        },
+        {
+          "spk": "Max",
+          "b": true,
+          "html": "Close the center if you must, but not before you've asked the people who work there."
+        },
+        {
+          "spk": "Nora",
+          "html": "Thank you both. Listeners, the lines are open."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "TAKE MAX'S SEAT",
+      "intro": "You argue against the motion; Priya argues for it. Choose the reply that concedes and then turns. The other two either attack the person or give up the point.",
+      "lines": [
+        {
+          "spk": "Priya",
+          "html": "Cities without cars in the center are simply better places to live."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "You only say that because you don't own a store.",
+            "That may be true for residents. But I'd challenge the premise that it's better for every business.",
+            "You're probably right. I have nothing to add."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Priya",
+          "html": "Air pollution fell by a third in three cities."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Granted, the air improved. However, those cities had better public transportation than we do.",
+            "Those numbers are obviously invented.",
+            "Well, if the numbers say so, I give up."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Priya",
+          "html": "People on foot stay longer and spend more."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "You've clearly never worked in a store.",
+            "I suppose that's the end of my argument, then.",
+            "That's a fair point for cafés, but it overlooks stores that sell heavy goods."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Priya",
+          "html": "Vans can deliver before ten in the morning."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Arguably, that would help. Even so, somebody has to pay for it.",
+            "That's a ridiculous idea, like all your ideas.",
+            "Fine. You win."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Priya",
+          "html": "But you're ignoring the people who"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Stop interrupting me! It's so rude.",
+            "If I could just finish, Priya. I'm almost done.",
+            "Sorry, sorry. Go ahead. I'll stop."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "HEDGE OR BOOST?",
+      "intro": "How sure can you be? Choose the word that matches the strength of the evidence, and watch the Spanish traps.",
+      "items": [
+        {
+          "q": "___, cleaner air is a good thing. Nobody disagrees with that.",
+          "options": [
+            "Undoubtedly",
+            "Arguably",
+            "Supposedly"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "___, the plan would help small stores, though nobody can prove it yet.",
+          "options": [
+            "Undoubtedly",
+            "Arguably",
+            "Clearly"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "We only have two studies, but the evidence ___ that people on foot spend more.",
+          "options": [
+            "depends",
+            "agrees",
+            "suggests"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "It ___ the kind of store.",
+          "options": [
+            "depends on",
+            "depends of",
+            "depends from"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I ___ with you on that point.",
+          "options": [
+            "am agree",
+            "agree",
+            "am agreed"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "That's a fair point, but it ___ the people who live there.",
+          "options": [
+            "oversees",
+            "looks over",
+            "overlooks"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "I'd challenge the ___ that stores need parking.",
+          "options": [
+            "premise",
+            "promise",
+            "prize"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "___, deliveries would be harder; however, they can be scheduled.",
+          "options": [
+            "Guaranteed",
+            "Granted",
+            "Grateful"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "YOU'RE WRONG vs I'D CHALLENGE THAT",
+      "intro": "Both say «I disagree». One ends the conversation; the other continues it.",
+      "pair": {
+        "a": "You're wrong.",
+        "b": "I'd challenge that."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "Which one goes after the idea, not the person?",
+          "options": [
+            "A — You're wrong.",
+            "B — I'd challenge that.",
+            "Both"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which one is likely to make the other person stop listening?",
+          "options": [
+            "A — You're wrong.",
+            "B — I'd challenge that.",
+            "Neither"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "What does \"I'd\" (I would) do in B?",
+          "options": [
+            "It puts the sentence in the past",
+            "It makes the speaker sound unsure of the facts",
+            "It softens the move: firm, but not an insult"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Your opponent makes a good point. Which reply keeps you in the debate?",
+          "options": [
+            "That's a fair point, but it overlooks the cost.",
+            "That's a fair point. I was wrong about everything.",
+            "That's a stupid point."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which is correct?",
+          "options": [
+            "I am agree with you up to a point.",
+            "I agree with you up to a point.",
+            "I agree to you up to a point."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE VOICEMAILS",
+      "desc": "After the debate, three listeners call in: Sam, Kit and Robin. Each one has twenty seconds. Who agrees with the motion, who disagrees, and who sits on the fence?",
+      "src": "c1-l4-2.mp3",
+      "dur": "1:02",
+      "speakers": "<ico-commentdots></ico-commentdots> Sam + Kit + Robin",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Where does Sam stand on the motion?",
+          "options": [
+            "Sam disagrees with it",
+            "Sam agrees with it",
+            "Sam sits on the fence"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Where does Robin stand?",
+          "options": [
+            "Robin sits on the fence",
+            "Robin agrees with it",
+            "Robin disagrees with it"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which caller raises a point that neither debater mentioned?",
+          "options": [
+            "Sam",
+            "Robin",
+            "Kit"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Which phrase tells you that Robin has not chosen a side?",
+          "options": [
+            "I can see both sides.",
+            "I'm in.",
+            "My answer is no."
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Leave your own twenty-second voicemail on the motion. Start by conceding one point to the other side.",
+        "starter": "Hi, this is (name). Granted, (the other side's point). However, (your position), because (your reason)."
+      },
+      "transcript": [
+        {
+          "spk": "Sam",
+          "html": "Hi, this is Sam, the baker from a few weeks ago. I'm with Priya on this one. My bread goes out before six in the morning anyway, so the delivery rule wouldn't hurt me at all. And honestly, I'd love customers who aren't in a hurry to get back to their cars. Close it. I'm in."
+        },
+        {
+          "spk": "Kit",
+          "html": "Hello, Kit here. I have to disagree. My mother is eighty-two, and she can't walk more than a block. If I can't drive her to her doctor downtown, she simply doesn't go. Nobody mentioned people like her tonight. Until they do, my answer is no."
+        },
+        {
+          "spk": "Robin",
+          "html": "Hi, it's Robin. Honestly, <span class='tg'>I can see both sides</span>. Priya's numbers are impressive. <span class='tg'>That said</span>, Max knows his own street better than any study does. I'd want to see a three-month trial before I decide. Sorry. I know that's not much of an answer."
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "BUILD THE MOVE",
+      "intro": "Tap the words in order to build each debate move.",
+      "items": [
+        {
+          "words": [
+            "Granted,",
+            "it",
+            "is",
+            "expensive;",
+            "however,",
+            "it",
+            "works"
+          ],
+          "answer": "Granted, it is expensive; however, it works"
+        },
+        {
+          "words": [
+            "That's",
+            "a",
+            "fair",
+            "point,",
+            "but",
+            "it",
+            "overlooks",
+            "the",
+            "cost"
+          ],
+          "answer": "That's a fair point, but it overlooks the cost"
+        },
+        {
+          "words": [
+            "I'd",
+            "challenge",
+            "the",
+            "premise",
+            "that",
+            "stores",
+            "need",
+            "parking"
+          ],
+          "answer": "I'd challenge the premise that stores need parking"
+        },
+        {
+          "words": [
+            "If",
+            "I",
+            "could",
+            "just",
+            "finish",
+            "my",
+            "point"
+          ],
+          "answer": "If I could just finish my point"
+        },
+        {
+          "words": [
+            "I",
+            "see",
+            "what",
+            "you",
+            "mean,",
+            "but",
+            "I",
+            "still",
+            "disagree"
+          ],
+          "answer": "I see what you mean, but I still disagree"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> MY CLOSING STATEMENT",
+      "intro": "The debate is ending and you have one minute. Write your closing statement <b>for or against</b> the motion «This city should close its center to cars» (about 120 words).",
+      "checklist": [
+        "Your <b>claim</b> in the first sentence",
+        "One piece of <b>evidence</b> (a number, a case, an example), with a hedge or a booster that fits it",
+        "One <b>concession</b> to the other side (<b>Granted,… / That's a fair point, but…</b>)",
+        "One <b>rebuttal</b> that goes after the idea, not the person (<b>I'd challenge the premise that… / It overlooks…</b>)",
+        "A last line people will remember, and the words of the day"
+      ],
+      "placeholder": "Tonight we have heard two views of this city…",
+      "example": "<span class=\"gap\">your claim</span>. <span class=\"gap\">Undoubtedly / Arguably / The evidence suggests that</span> <span class=\"gap\">evidence</span>. Granted, <span class=\"gap\">the other side's best point</span>; however, <span class=\"gap\">your answer</span>. I'd challenge the premise that <span class=\"gap\">the idea you reject</span>. <span class=\"gap\">last line</span>.",
+      "hw": "Write your statement, then <b>record it in under one minute</b>, standing up, as if the audience were in front of you. Send me the text and the audio on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "About 120 words, clearly for or against, with claim, evidence, concession, rebuttal and close."
+        },
+        {
+          "c": "Lesson target",
+          "d": "The concession really gives something and the rebuttal really answers it; hedges and boosters match the strength of the evidence."
+        },
+        {
+          "c": "Clear the first time",
+          "d": "A listener follows it in one hearing. No word-for-word translation from Spanish."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c1-l4",
+    "keys": [
+      "a-claim",
+      "a-closing-statement",
+      "a-moderator",
+      "a-premise",
+      "agree",
+      "agrees",
+      "air-pollution-fell-by-a-third-in-three-cities",
+      "am-agree",
+      "am-agreed",
+      "arguably",
+      "arguably-that-would-help-even-so-somebody-has-to-pay-for-it",
+      "arguably-the-plan-would-help-small-stores",
+      "but-you-re-ignoring-the-people-who",
+      "can-i-come-in-here",
+      "cities-without-cars-in-the-center-are-simply-better-places-to-live",
+      "clearly",
+      "closing-the-center-to-cars-would-make-this-city-healthier",
+      "depends",
+      "depends-from",
+      "depends-of",
+      "depends-on",
+      "fine-you-win",
+      "granted",
+      "granted-deliveries-would-be-harder-however-they-can-be-scheduled",
+      "granted-however",
+      "granted-the-air-improved-however-those-cities-had-better-public-transportation-t",
+      "grateful",
+      "guaranteed",
+      "he-has-changed-sides-completely",
+      "his-sales-fell-by-forty-percent-when-his-street-was-closed-for-repairs",
+      "i-agree-to-you-up-to-a-point",
+      "i-agree-with-you",
+      "i-agree-with-you-up-to-a-point",
+      "i-am-agree-with-you-up-to-a-point",
+      "i-can-see-both-sides",
+      "i-d-challenge-that",
+      "i-d-challenge-the-premise-that",
+      "i-d-challenge-the-premise-that-stores-need-parking",
+      "i-m-in",
+      "i-suppose-that-s-the-end-of-my-argument-then",
+      "if-i-could-just-finish",
+      "if-i-could-just-finish-my-point",
+      "if-i-could-just-finish-priya-i-m-almost-done",
+      "in-cities-that-have-done-it-air-pollution-has-fallen-by-a-third",
+      "it-depends-on-the-street",
+      "it-has-hardened-he-now-rejects-any-change",
+      "it-has-softened-he-could-accept-the-plan-if-store-owners-are-consulted-first",
+      "it-overlooks",
+      "kit",
+      "let-me-pick-up-on-that",
+      "looks-over",
+      "my-answer-is-no",
+      "overlooks",
+      "oversees",
+      "people-on-foot-stay-longer-and-spend-more",
+      "premise",
+      "prize",
+      "promise",
+      "robin",
+      "robin-agrees-with-it",
+      "robin-disagrees-with-it",
+      "robin-sits-on-the-fence",
+      "sam",
+      "sam-agrees-with-it",
+      "sam-disagrees-with-it",
+      "sam-sits-on-the-fence",
+      "she-is-very-sensible-she-always-plans-ahead",
+      "so-this-isn-t-about-comfort-it-s-about-health",
+      "sorry-go-ahead",
+      "sorry-sorry-go-ahead-i-ll-stop",
+      "stop-interrupting-me-it-s-so-rude",
+      "suggests",
+      "supposedly",
+      "that-cleaner-air-is-not-a-priority",
+      "that-deliveries-should-stop-completely",
+      "that-may-be-true-for-residents-but-i-d-challenge-the-premise-that-it-s-better-fo",
+      "that-s-a-fair-point-but",
+      "that-s-a-fair-point-but-it-overlooks-the-cost",
+      "that-s-a-fair-point-but-it-overlooks-the-people-who-live-there",
+      "that-s-a-fair-point-for-caf-s-but-it-overlooks-stores-that-sell-heavy-goods",
+      "that-s-a-fair-point-i-was-wrong-about-everything",
+      "that-s-a-ridiculous-idea-like-all-your-ideas",
+      "that-s-a-strong-argument",
+      "that-s-a-stupid-point",
+      "that-stores-selling-large-items-would-need-a-different-solution",
+      "the-evidence-suggests",
+      "the-evidence-suggests-that-sales-would-rise",
+      "the-motion",
+      "those-numbers-are-obviously-invented",
+      "to-argue-for-against",
+      "to-concede-a-point",
+      "to-hold-the-floor",
+      "to-rebut",
+      "to-sit-on-the-fence",
+      "undoubtedly",
+      "undoubtedly-the-air-would-be-cleaner",
+      "vans-can-deliver-before-ten-in-the-morning",
+      "we-discussed-the-plan-then-they-argued-about-money",
+      "well-if-the-numbers-say-so-i-give-up",
+      "what-has-happened-to-max-s-position-by-the-end",
+      "what-is-max-s-main-evidence",
+      "where-does-robin-stand",
+      "where-does-sam-stand-on-the-motion",
+      "which-caller-raises-a-point-that-neither-debater-mentioned",
+      "which-phrase-does-priya-use-to-take-the-floor-back",
+      "which-phrase-tells-you-that-robin-has-not-chosen-a-side",
+      "which-point-does-priya-concede",
+      "with-respect-the-evidence-points-the-other-way",
+      "you-only-say-that-because-you-don-t-own-a-store",
+      "you-re-probably-right-i-have-nothing-to-add",
+      "you-re-wrong",
+      "you-ve-clearly-never-worked-in-a-store"
+    ]
+  }
+}
