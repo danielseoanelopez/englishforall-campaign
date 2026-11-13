@@ -1,0 +1,958 @@
+{
+  "level": "C1",
+  "num": 6,
+  "totalLessons": 6,
+  "world": "ADVANCED OPERATOR",
+  "ui": "en",
+  "key": "rankup_C1_L6",
+  "title": "CROSS-CULTURAL<br>COMMUNICATION",
+  "titlePlain": "Cross-Cultural Communication — Lost in Translation (C1)",
+  "subtitle": "Speaking &amp; Listening · C1 · ~50 min",
+  "rankup": "EPISODE CLEAR!",
+  "next": {
+    "href": "c1-final.html",
+    "label": "<ico-crown></ico-crown> BOSS ▸ LIVE AT NINE"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> EPISODE RECAP · last lesson",
+      "intro": "Before we go on air: match what you hear with what you write.",
+      "pairs": [
+        {
+          "l": "gonna",
+          "r": "going to"
+        },
+        {
+          "l": "hafta",
+          "r": "have to"
+        },
+        {
+          "l": "lemme",
+          "r": "let me"
+        },
+        {
+          "l": "shoulda",
+          "r": "should have"
+        },
+        {
+          "l": "whaddaya",
+          "r": "what do you"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "directness & softeners",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· directness &amp; softeners</span>",
+      "title": "<ico-book></ico-book> WHAT IS SAID, WHAT IS MEANT",
+      "intro": "Perfect grammar can still sound rude, and a polite phrase can hide a «no». This lesson is about <b style='color:var(--gold)'>how direct to be</b> and how to hear what people mean. One thing first: styles vary by <b style='color:var(--gold)'>person and workplace</b>, not by passport. You are learning signals to listen for, not rules about anyone.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show tonight's vocabulary",
+      "vocab": [
+        {
+          "en": "blunt",
+          "sp": "saying exactly what you think, without softening it"
+        },
+        {
+          "en": "tactful",
+          "sp": "careful not to upset people"
+        },
+        {
+          "en": "to come across as",
+          "sp": "to give a certain impression: «He came across as rude.»"
+        },
+        {
+          "en": "to read between the lines",
+          "sp": "to understand what is meant but not said"
+        },
+        {
+          "en": "to take something at face value",
+          "sp": "to believe it means exactly what it says"
+        },
+        {
+          "en": "a hint",
+          "sp": "an indirect suggestion"
+        },
+        {
+          "en": "to turn something down",
+          "sp": "to say no to an offer or invitation"
+        },
+        {
+          "en": "to be tied up",
+          "sp": "to be busy and not available"
+        },
+        {
+          "en": "to go ahead",
+          "sp": "to start doing something that was planned"
+        },
+        {
+          "en": "I owe you one.",
+          "sp": "thank you: I'll return the favor"
+        }
+      ],
+      "note": "<b>How it works:</b> flashcards <ico-clone></ico-clone>, listening <ico-headphones></ico-headphones>, compare <ico-comments></ico-comments>, a dialogue with three difficult moments, gap-fill <ico-filepen></ico-filepen> and memory. Press <ico-check></ico-check> CHECK wherever you see it.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · THE DIRECTNESS SCALE</b> <span class='es'>— one request, five ways</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Send me the file.",
+              "sp": "1 · An order. Fine in an emergency, or between close friends."
+            },
+            {
+              "en": "Can you send me the file?",
+              "sp": "2 · Direct, friendly."
+            },
+            {
+              "en": "Could you send me the file, please?",
+              "sp": "3 · The safe default at work."
+            },
+            {
+              "en": "Would you mind sending me the file?",
+              "sp": "4 · Polite: you are asking for a favor."
+            },
+            {
+              "en": "I was wondering if you could send me the file when you get a chance.",
+              "sp": "5 · Very soft: for someone senior, or someone you don't know."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · SOFTENERS AND DISTANCE</b> <span class='es'>— the past tense makes a request smaller</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I was wondering if you had a minute.",
+              "sp": "Past forms (was, had) for a present request: more distance, less pressure."
+            },
+            {
+              "en": "I wanted to ask about the deadline.",
+              "sp": "«I wanted» is softer than «I want»."
+            },
+            {
+              "en": "It might be an idea to check the numbers again.",
+              "sp": "A suggestion dressed as a possibility."
+            },
+            {
+              "en": "Would it be possible to move the meeting?",
+              "sp": "You ask about the possibility, not about the person."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · UNDERSTATEMENT</b> <span class='es'>— what these phrases often mean</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "That's an interesting idea.",
+              "sp": "Often: I'm not convinced."
+            },
+            {
+              "en": "I'll bear it in mind.",
+              "sp": "Often: I heard you, and I probably won't do it."
+            },
+            {
+              "en": "It's not bad at all.",
+              "sp": "Often: it's good."
+            },
+            {
+              "en": "With respect, I see it differently.",
+              "sp": "Always: I'm about to disagree."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>«Often» is the important word.</b> Some people say «interesting» and mean interesting. Tone, the face and what comes next tell you which one it is. If you can't tell, go to step 5."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · FIVE WAYS TO SAY NO</b> <span class='es'>— without the word «no»</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I'd love to, but I'm tied up on Friday.",
+              "sp": "Warm feeling + reason."
+            },
+            {
+              "en": "I'm not sure that's going to work.",
+              "sp": "Doubt instead of refusal."
+            },
+            {
+              "en": "That might be difficult.",
+              "sp": "Usually a clear no."
+            },
+            {
+              "en": "Let me get back to you.",
+              "sp": "Not now. Sometimes a real «later», sometimes a soft no."
+            },
+            {
+              "en": "I'm going to have to pass this time.",
+              "sp": "A no that leaves the door open."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · WHEN IN DOUBT, CHECK</b> <span class='es'>— asking is not rude; guessing is risky</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Just so I'm clear, is that a yes?",
+              "sp": "The friendliest way to turn a hint into an answer."
+            },
+            {
+              "en": "So, to confirm: you'd like me to go ahead?",
+              "sp": "You say what you understood and let them correct you."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> SPANISH TRAP</b> <span class='es'>— amable en español, una orden en inglés</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Could I get a coffee, please?",
+              "sp": "«Dame un café» suena amable en español. <i>Give me a coffee</i> suena a orden."
+            },
+            {
+              "en": "Thanks so much. I really appreciate it.",
+              "sp": "El inglés espera más <b>please</b> y <b>thank you</b> que el español, incluso entre colegas."
+            },
+            {
+              "en": "You might want to check the date.",
+              "sp": "<i>You must check</i> como consejo suena a orden. Para aconsejar: you should, you might want to."
+            },
+            {
+              "en": "I'd like the report by Friday.",
+              "sp": "«Quiero» = <b>I'd like</b>. <i>I want</i> suena a exigencia."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>Give me a coffee.</s> → <span class='ok'>Could I get a coffee, please?</span> · <s class='x'>You must call him.</s> → <span class='ok'>You might want to call him.</span> · <s class='x'>I want the report.</s> → <span class='ok'>I'd like the report.</span>"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "WHAT IT OFTEN MEANS · tap to flip",
+      "intro": "Ten phrases that do not always mean what they say. Guess the likely meaning before you flip.",
+      "cards": [
+        {
+          "front": "That's an interesting idea.",
+          "back": "often: I'm not convinced · listen for what comes next"
+        },
+        {
+          "front": "I'll bear it in mind.",
+          "back": "often: I heard you, and I probably won't do it"
+        },
+        {
+          "front": "Not bad at all.",
+          "back": "often: it's good · understatement as praise"
+        },
+        {
+          "front": "With respect,…",
+          "back": "I'm about to disagree with you"
+        },
+        {
+          "front": "It might be an idea to…",
+          "back": "I think you should… · a soft suggestion"
+        },
+        {
+          "front": "I was wondering if…",
+          "back": "I'm asking you for something, politely"
+        },
+        {
+          "front": "I'm not sure that's going to work.",
+          "back": "usually: no"
+        },
+        {
+          "front": "Let me get back to you.",
+          "back": "not now · sometimes a soft no"
+        },
+        {
+          "front": "Could we look at this again?",
+          "back": "I don't like this version yet"
+        },
+        {
+          "front": "I hear what you're saying.",
+          "back": "I've listened, and I still disagree"
+        }
+      ],
+      "deckLabel": "coded phrases"
+    },
+    {
+      "type": "story",
+      "tag": "episode 6",
+      "title": "<ico-star></ico-star> LOST IN TRANSLATION",
+      "intro": "It's the monthly World Panel. A listener has sent in a business idea, and four guests review it on air. All four dislike it. <b style='color:var(--gold)'>Only one says so.</b> Roz gives you one job: count the real noes.<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>blunt</b> = saying exactly what you think · <b>read between the lines</b> · <b>come across as</b>.",
+      "cast": [
+        {
+          "en": "Nora",
+          "sp": "hosts, and checks what people mean"
+        },
+        {
+          "en": "Max, Kit, Robin, Sam",
+          "sp": "the panel: from blunt to very indirect"
+        },
+        {
+          "en": "Theo",
+          "sp": "reads a listener's email"
+        },
+        {
+          "en": "You",
+          "sp": "count the <b style='color:var(--magenta)'>real</b> noes"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE PANEL",
+      "desc": "The idea: a café where you pay for the time you stay, not for what you drink. Four guests give their opinion. Listen for what each one says, and for what each one means.",
+      "src": "c1-l6-1.mp3",
+      "dur": "2:03",
+      "speakers": "<ico-commentdots></ico-commentdots> Nora + Max + Kit + Robin + Sam",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How many of the four guests would invest in the café?",
+          "options": [
+            "None of them",
+            "One of them",
+            "Three of them"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does Sam's \"I'll bear it in mind\" signal here?",
+          "options": [
+            "A promise to invest later",
+            "A polite no",
+            "Real enthusiasm"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Whose feedback could the listener most easily mistake for approval?",
+          "options": [
+            "Max's",
+            "Nora's",
+            "Sam's"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Which phrase does Nora use to find out what they really think?",
+          "options": [
+            "Just so I'm clear",
+            "I'll be direct",
+            "Who knows?"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Give the listener your own feedback on the café idea in three sentences: honest, but not blunt. Finish with one useful suggestion.",
+        "starter": "There's a lot I like about… I was wondering if… It might be an idea to…"
+      },
+      "transcript": [
+        {
+          "spk": "Nora",
+          "html": "Welcome to the World Panel. Every month, a listener sends us a business idea, and four guests tell us what they think. Tonight's idea: a café where you pay for the time you stay, not for what you drink. Five dollars an hour, coffee included. Max, you run a store. Would you invest?"
+        },
+        {
+          "spk": "Max",
+          "html": "No. I'll be direct: the numbers don't work. One customer with a laptop takes a table for four hours and pays twenty dollars. You'd lose money on every table. I wouldn't put a cent into it."
+        },
+        {
+          "spk": "Nora",
+          "html": "Clear enough. Kit?"
+        },
+        {
+          "spk": "Kit",
+          "html": "Well, it's certainly <span class='tg'>an interesting idea</span>. <span class='tg'>I was wondering</span> whether the price had been tested with real customers. <span class='tg'>It might be an idea to</span> try it for a month before signing a lease."
+        },
+        {
+          "spk": "Nora",
+          "html": "Robin?"
+        },
+        {
+          "spk": "Robin",
+          "html": "It's <span class='tg'>not bad at all</span>, as a concept. <span class='tg'>I'm just not sure it's going to work</span> in this city, at this moment. With a few changes, who knows?"
+        },
+        {
+          "spk": "Nora",
+          "html": "And Sam, you opened a bakery from nothing."
+        },
+        {
+          "spk": "Sam",
+          "html": "It's very brave. Very original. I'd say the author should definitely keep thinking about it. <span class='tg'>I'll bear it in mind</span> if I ever expand."
+        },
+        {
+          "spk": "Nora",
+          "html": "Hmm. Let me check something, because our listener is hearing \"interesting,\" \"not bad,\" and \"brave.\" <span class='tg'>Just so I'm clear</span>: would any of you put your own money into this café? Kit?"
+        },
+        {
+          "spk": "Kit",
+          "html": "Honestly? No."
+        },
+        {
+          "spk": "Nora",
+          "html": "Robin?"
+        },
+        {
+          "spk": "Robin",
+          "html": "Not as it is, no."
+        },
+        {
+          "spk": "Nora",
+          "html": "Sam?"
+        },
+        {
+          "spk": "Sam",
+          "html": "No. Sorry."
+        },
+        {
+          "spk": "Nora",
+          "html": "So that's four noes, and only Max said the word. To our listener: <span class='tg'>read between the lines</span>. Kit gave you the most useful advice tonight, and she never said \"no\" at all. Test the price first. We'll be right back."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "THE ORDER vs THE REQUEST",
+      "intro": "Both get you the file. Think about how each one lands on the person who reads it.",
+      "pair": {
+        "a": "Send me the file.",
+        "b": "Could you send me the file when you get a chance?"
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "Which one reads as an order, even from a friendly person?",
+          "options": [
+            "A — Send me the file.",
+            "B — Could you send me…?",
+            "Neither"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "What does \"when you get a chance\" add?",
+          "options": [
+            "Urgency",
+            "Room: there is no pressure on time",
+            "A deadline"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "You are writing to a colleague you hardly know. Which is safest?",
+          "options": [
+            "Send me the file.",
+            "I need the file. Now.",
+            "I was wondering if you could send me the file."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "You need it urgently, and you still want to be polite. Which one?",
+          "options": [
+            "Could you send me the file by three? Sorry for the rush.",
+            "Send it by three.",
+            "You must send it by three."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which is advice, not an order?",
+          "options": [
+            "You must back up that file.",
+            "You might want to back up that file.",
+            "Back up that file."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "THREE DIFFICULT MOMENTS",
+      "intro": "After the show: you turn down an invitation (you can't go on Friday), give honest feedback (you think Roz's new opening is too long), and ask a favor. Pick the reply that is honest and keeps the relationship.",
+      "lines": [
+        {
+          "spk": "Theo",
+          "html": "A few of us are going for dinner after the show on Friday. You should come!"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "No. I don't want to.",
+            "I'd love to, but I'm tied up on Friday. Next time, definitely.",
+            "I can't. I have something better to do."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Theo",
+          "html": "Oh, that's a pity. Are you sure?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "I'm afraid so. But thanks for asking. I really appreciate it.",
+            "I said no already.",
+            "Yes. Stop asking."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Roz",
+          "html": "So, what did you think of my new opening for the show? Be honest."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "It's boring. Cut it.",
+            "It's perfect. Don't change a thing.",
+            "There's a lot I like. I was wondering if the first minute might be a little long."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Roz",
+          "html": "Too long? Hmm. What would you do?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "It might be an idea to start with the music and cut the first two lines.",
+            "You must cut the first two lines.",
+            "I don't know. It's your job, not mine."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Nora",
+          "html": "You look worried. Is everything okay?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Look at my script.",
+            "I wanted to ask you a favor. Would you mind looking at my script when you get a chance?",
+            "I want you to check my script today."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Nora",
+          "html": "Of course. Is tomorrow morning all right?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Tomorrow? I need it now.",
+            "OK.",
+            "That would be great. Thanks so much. I owe you one."
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "SOFTEN IT",
+      "intro": "Choose the word that makes the sentence polite and natural.",
+      "items": [
+        {
+          "q": "I was ___ if you could help me with this.",
+          "options": [
+            "wondering",
+            "wanting",
+            "waiting"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "It ___ be an idea to check the numbers again.",
+          "options": [
+            "must",
+            "might",
+            "will"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Would you ___ sending me the file?",
+          "options": [
+            "like",
+            "want",
+            "mind"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Could I ___ a coffee, please?",
+          "options": [
+            "get",
+            "want",
+            "give"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "You ___ want to save that before you close it.",
+          "options": [
+            "must",
+            "might",
+            "have"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "I'd love to, but I'm ___ I can't make it on Friday.",
+          "options": [
+            "fear",
+            "scared",
+            "afraid"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Just so I'm ___, is that a yes?",
+          "options": [
+            "clear",
+            "clean",
+            "cleared"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I'd ___ an answer by five, if possible.",
+          "options": [
+            "thank",
+            "appreciate",
+            "grateful"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "mem-coded",
+      "title": "MEMORY · the phrase and the likely meaning",
+      "intro": "Find each coded phrase and what it most often means. Tap two cards.",
+      "pairs": [
+        {
+          "a": "That's an interesting idea.",
+          "b": "I'm not convinced."
+        },
+        {
+          "a": "I'll bear it in mind.",
+          "b": "Probably not."
+        },
+        {
+          "a": "Not bad at all.",
+          "b": "It's good."
+        },
+        {
+          "a": "With respect,…",
+          "b": "I disagree."
+        },
+        {
+          "a": "That might be difficult.",
+          "b": "No."
+        },
+        {
+          "a": "Could we look at this again?",
+          "b": "I don't like it yet."
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE EMAIL",
+      "desc": "Theo reads a message from a listener who offended his new manager with an email in which every word was correct. Find the three lines that did the damage.",
+      "src": "c1-l6-2.mp3",
+      "dur": "1:08",
+      "speakers": "<ico-commentdots></ico-commentdots> Theo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What was the problem with the listener's email?",
+          "options": [
+            "It was full of grammar mistakes",
+            "It was correct, but it read like a list of orders",
+            "It was far too long"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does Theo suggest in place of \"You must check the numbers\"?",
+          "options": [
+            "You might want to check the numbers.",
+            "You have to check the numbers.",
+            "Check the numbers now."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which of these is NOT one of the three problem lines?",
+          "options": [
+            "Send me the sales report today.",
+            "I want an answer before five.",
+            "Hello Dana."
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Theo mean by \"Same message, different music\"?",
+          "options": [
+            "The content was fine; the tone was the problem",
+            "The listener should have called instead",
+            "The message itself was wrong"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Say the listener's email again, politely: a greeting, the request, the suggestion, the deadline and a thank-you.",
+        "starter": "Hi Dana, could you… You might want to… I'd appreciate… Thanks so much."
+      },
+      "transcript": [
+        {
+          "spk": "Theo",
+          "html": "Now, a letter. It comes from a listener who has started a new job, and he writes: \"Theo, I think I offended my new manager, and I don't know how. This is the email I sent her.\" Here it is. \"Hello Dana. Send me the sales report today. You must check the numbers before, because last time there were errors. I want an answer before five. Regards.\""
+        },
+        {
+          "spk": "Theo",
+          "html": "He says every word is correct. And it is. So where's the problem? Three lines. \"Send me the report\" is an order. Try \"<span class='tg'>Could you send me</span> the report?\" \"You must check\" sounds like a boss talking down. Try \"<span class='tg'>You might want to</span> check.\" And \"I want an answer\" is a demand. \"<span class='tg'>I'd appreciate</span> an answer\" gets the same result."
+        },
+        {
+          "spk": "Theo",
+          "html": "Oh, and not one \"please\" or \"thank you\" in four lines. At his last office, he tells me, that was perfectly friendly. At this one, it isn't. Same message, different music."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> SAY NO, KEEP THE FRIEND",
+      "intro": "A colleague asks you to cover their shift on Saturday, or to finish their report, or to lend them money: you choose. You can't, or you don't want to. Write your reply (about 80 words).",
+      "checklist": [
+        "<b>The word «no» does not appear</b>",
+        "One softener (<b>I'd love to, but… / I'm afraid… / I'm not sure that's going to work</b>)",
+        "One honest reason, in one sentence",
+        "One alternative: something you <b>can</b> do",
+        "The words of the day: <b>blunt</b>, <b>read between the lines</b>, <b>come across as</b>"
+      ],
+      "placeholder": "Hi …, thanks for thinking of me.",
+      "example": "Hi <span class=\"gap\">name</span>, thanks for <span class=\"gap\">-ing form</span>. I'd love to help, but <span class=\"gap\">softener + what you can't do</span>. <span class=\"gap\">your reason, one sentence</span>. I don't want to come across as <span class=\"gap\">adjective</span>, so <span class=\"gap\">what you want them to understand</span>. What I can do is <span class=\"gap\">your alternative</span>. Would that <span class=\"gap\">verb</span>?",
+      "hw": "Write your reply, then <b>record yourself saying it</b> as you would face to face: warm voice, no hurry. Send me the text and the audio on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "About 80 words: the colleague understands that the answer is no, why, and what you can offer."
+        },
+        {
+          "c": "Lesson target",
+          "d": "No «no», one softener, one reason and one alternative; nothing in it reads as an order or an excuse."
+        },
+        {
+          "c": "Clear the first time",
+          "d": "The reader does not have to guess. Polite and clear at the same time."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c1-l6",
+    "keys": [
+      "a-few-of-us-are-going-for-dinner-after-the-show-on-friday-you-should-come",
+      "a-hint",
+      "a-polite-no",
+      "a-promise-to-invest-later",
+      "afraid",
+      "appreciate",
+      "back-up-that-file",
+      "blunt",
+      "can-you-send-me-the-file",
+      "check-the-numbers-now",
+      "clean",
+      "clear",
+      "cleared",
+      "could-i-get-a-coffee-please",
+      "could-we-look-at-this-again",
+      "could-you-send-me-the-file-by-three-sorry-for-the-rush",
+      "could-you-send-me-the-file-please",
+      "could-you-send-me-the-file-when-you-get-a-chance",
+      "fear",
+      "get",
+      "give",
+      "gonna",
+      "grateful",
+      "hafta",
+      "have",
+      "hello-dana",
+      "how-many-of-the-four-guests-would-invest-in-the-caf",
+      "i-can-t-i-have-something-better-to-do",
+      "i-d-like-the-report-by-friday",
+      "i-d-love-to-but-i-m-tied-up-on-friday",
+      "i-d-love-to-but-i-m-tied-up-on-friday-next-time-definitely",
+      "i-disagree",
+      "i-don-t-know-it-s-your-job-not-mine",
+      "i-don-t-like-it-yet",
+      "i-hear-what-you-re-saying",
+      "i-ll-be-direct",
+      "i-ll-bear-it-in-mind",
+      "i-m-afraid-so-but-thanks-for-asking-i-really-appreciate-it",
+      "i-m-going-to-have-to-pass-this-time",
+      "i-m-not-convinced",
+      "i-m-not-sure-that-s-going-to-work",
+      "i-need-the-file-now",
+      "i-owe-you-one",
+      "i-said-no-already",
+      "i-want-an-answer-before-five",
+      "i-want-you-to-check-my-script-today",
+      "i-wanted-to-ask-about-the-deadline",
+      "i-wanted-to-ask-you-a-favor-would-you-mind-looking-at-my-script-when-you-get-a-c",
+      "i-was-wondering-if",
+      "i-was-wondering-if-you-could-send-me-the-file",
+      "i-was-wondering-if-you-could-send-me-the-file-when-you-get-a-chance",
+      "i-was-wondering-if-you-had-a-minute",
+      "it-might-be-an-idea-to",
+      "it-might-be-an-idea-to-check-the-numbers-again",
+      "it-might-be-an-idea-to-start-with-the-music-and-cut-the-first-two-lines",
+      "it-s-boring-cut-it",
+      "it-s-good",
+      "it-s-not-bad-at-all",
+      "it-s-perfect-don-t-change-a-thing",
+      "it-was-correct-but-it-read-like-a-list-of-orders",
+      "it-was-far-too-long",
+      "it-was-full-of-grammar-mistakes",
+      "just-so-i-m-clear",
+      "just-so-i-m-clear-is-that-a-yes",
+      "lemme",
+      "let-me-get-back-to-you",
+      "like",
+      "look-at-my-script",
+      "max-s",
+      "might",
+      "mind",
+      "must",
+      "no",
+      "no-i-don-t-want-to",
+      "none-of-them",
+      "nora-s",
+      "not-bad-at-all",
+      "of-course-is-tomorrow-morning-all-right",
+      "oh-that-s-a-pity-are-you-sure",
+      "ok",
+      "one-of-them",
+      "probably-not",
+      "real-enthusiasm",
+      "sam-s",
+      "scared",
+      "send-it-by-three",
+      "send-me-the-file",
+      "send-me-the-sales-report-today",
+      "shoulda",
+      "so-to-confirm-you-d-like-me-to-go-ahead",
+      "so-what-did-you-think-of-my-new-opening-for-the-show-be-honest",
+      "tactful",
+      "thank",
+      "thanks-so-much-i-really-appreciate-it",
+      "that-might-be-difficult",
+      "that-s-an-interesting-idea",
+      "that-would-be-great-thanks-so-much-i-owe-you-one",
+      "the-content-was-fine-the-tone-was-the-problem",
+      "the-listener-should-have-called-instead",
+      "the-message-itself-was-wrong",
+      "there-s-a-lot-i-like-i-was-wondering-if-the-first-minute-might-be-a-little-long",
+      "three-of-them",
+      "to-be-tied-up",
+      "to-come-across-as",
+      "to-go-ahead",
+      "to-read-between-the-lines",
+      "to-take-something-at-face-value",
+      "to-turn-something-down",
+      "tomorrow-i-need-it-now",
+      "too-long-hmm-what-would-you-do",
+      "waiting",
+      "want",
+      "wanting",
+      "whaddaya",
+      "what-does-sam-s-i-ll-bear-it-in-mind-signal-here",
+      "what-does-theo-mean-by-same-message-different-music",
+      "what-does-theo-suggest-in-place-of-you-must-check-the-numbers",
+      "what-was-the-problem-with-the-listener-s-email",
+      "which-of-these-is-not-one-of-the-three-problem-lines",
+      "which-phrase-does-nora-use-to-find-out-what-they-really-think",
+      "who-knows",
+      "whose-feedback-could-the-listener-most-easily-mistake-for-approval",
+      "will",
+      "with-respect",
+      "with-respect-i-see-it-differently",
+      "wondering",
+      "would-it-be-possible-to-move-the-meeting",
+      "would-you-mind-sending-me-the-file",
+      "yes-stop-asking",
+      "you-have-to-check-the-numbers",
+      "you-look-worried-is-everything-okay",
+      "you-might-want-to-back-up-that-file",
+      "you-might-want-to-check-the-date",
+      "you-might-want-to-check-the-numbers",
+      "you-must-back-up-that-file",
+      "you-must-cut-the-first-two-lines",
+      "you-must-send-it-by-three"
+    ]
+  }
+}
