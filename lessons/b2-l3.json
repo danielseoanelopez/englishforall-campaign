@@ -1,0 +1,881 @@
+{
+  "level": "B2",
+  "num": 3,
+  "totalLessons": 6,
+  "world": "THE PROFESSIONAL",
+  "key": "rankup_B2_L3",
+  "title": "THE PASSIVE<br>VOICE",
+  "titlePlain": "The Passive Voice — The Incident Report (B2)",
+  "subtitle": "Grammar &amp; Listening · B2 · ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=b2-l4",
+    "label": "LESSON 4 ▸ REPORTED SPEECH"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada expresión con su significado, sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "to walk someone through",
+          "r": "explicar algo paso a paso"
+        },
+        {
+          "l": "an overview",
+          "r": "una visión general"
+        },
+        {
+          "l": "to peak",
+          "r": "llegar al punto más alto"
+        },
+        {
+          "l": "to level off",
+          "r": "estabilizarse"
+        },
+        {
+          "l": "to sum up",
+          "r": "resumir, para cerrar"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "hechos sin culpables",
+      "title": "<ico-book></ico-book> THE PASSIVE: BE + PARTICIPLE",
+      "intro": "Cuando algo sale mal, un profesional cuenta <b style='color:var(--gold)'>qué pasó y qué se está haciendo</b>, sin señalar a nadie. Para eso sirve la voz pasiva: <b style='color:var(--gold)'>be + participio</b>.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver vocabulario del incidente",
+      "vocab": [
+        {
+          "en": "an incident report",
+          "sp": "un informe del incidente"
+        },
+        {
+          "en": "by mistake",
+          "sp": "por error"
+        },
+        {
+          "en": "a scheduled update",
+          "sp": "una actualización programada"
+        },
+        {
+          "en": "to go live",
+          "sp": "salir al público, publicarse"
+        },
+        {
+          "en": "to take the store offline",
+          "sp": "sacar la tienda de línea"
+        },
+        {
+          "en": "to honor an order",
+          "sp": "respetar un pedido"
+        },
+        {
+          "en": "to restore the prices",
+          "sp": "restablecer los precios"
+        },
+        {
+          "en": "from now on",
+          "sp": "de ahora en adelante"
+        },
+        {
+          "en": "to double-check",
+          "sp": "revisar dos veces"
+        },
+        {
+          "en": "We apologize for the confusion.",
+          "sp": "Pedimos disculpas por la confusión."
+        }
+      ],
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>reescribir</b> <ico-pen></ico-pen> (aquí escribes tú la frase), <b>completar</b> <ico-filepen></ico-filepen>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>comparar</b> <ico-comments></ico-comments> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · ¿PARA QUÉ?</b> <span class='es'>— importa la acción, no quién la hizo</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Marcos sent the wrong prices.",
+              "sp": "Activa: el foco está en Marcos."
+            },
+            {
+              "en": "The wrong prices were sent.",
+              "sp": "Pasiva: el foco está en lo que pasó."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · BE + PARTICIPIO</b> <span class='es'>— solo cambia «be»; el participio nunca</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The file was deleted.",
+              "sp": "Un archivo: <b>was</b> deleted."
+            },
+            {
+              "en": "The files were deleted.",
+              "sp": "Varios archivos: <b>were</b> deleted."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · CUATRO TIEMPOS, UN SOLO VERBO</b> <span class='es'>— el tiempo lo marca «be»</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "was fixed",
+            "has been fixed",
+            "is being fixed",
+            "will be fixed"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The error was fixed at four.",
+              "sp": "Pasado: momento terminado."
+            },
+            {
+              "en": "The error has been fixed.",
+              "sp": "Present perfect: ya está, y es noticia ahora."
+            },
+            {
+              "en": "The error is being fixed right now.",
+              "sp": "Presente continuo: en este momento."
+            },
+            {
+              "en": "The error will be fixed today.",
+              "sp": "Futuro: una promesa."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>is being</b> y <b>has been</b> son las dos que más cuestan. <b>being</b> = está en proceso. <b>been</b> = ya terminó. <s class='x'>It is been investigated.</s> → <span class='ok'>It is being investigated.</span>"
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · ¿CUÁNDO PONER «BY»?</b> <span class='es'>— solo si quién lo hizo es noticia</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The prices were updated at 2 a.m.",
+              "sp": "Sin by: no importa quién."
+            },
+            {
+              "en": "The site was built by a team of three.",
+              "sp": "Con by: el dato interesante es quién."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · UN PASO MÁS: HAVE SOMETHING DONE</b> <span class='es'>— otra persona lo hace por ti</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We had the system checked.",
+              "sp": "Hicimos revisar el sistema (lo revisó alguien más)."
+            },
+            {
+              "en": "We're having the process reviewed.",
+              "sp": "Estamos haciendo revisar el proceso."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> TRAMPA DEL ESPAÑOL</b> <span class='es'>— el «se» y dos verbos rebeldes</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The email was sent yesterday.",
+              "sp": "«Se envió el correo ayer»: donde el español usa <b>se</b>, el inglés usa la pasiva."
+            },
+            {
+              "en": "What happened last night?",
+              "sp": "<i>Happen</i> nunca va en pasiva: a nadie «lo pasan»."
+            },
+            {
+              "en": "I was born in Lima.",
+              "sp": "«Nací» siempre es pasiva en inglés: <b>was born</b>."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>It was happened at 2 a.m.</s> → <span class='ok'>It happened at 2 a.m.</span> · <s class='x'>I born in 1995.</s> → <span class='ok'>I was born in 1995.</span>"
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "el incidente",
+      "title": "<ico-star></ico-star> THE INCIDENT",
+      "intro": "A las dos de la mañana, una actualización puso <b style='color:var(--gold)'>todos los productos de GreenMarket a $0.99</b>. Entraron doscientos pedidos antes de que alguien lo notara. David quiere un nombre; Priya quiere un comunicado.",
+      "cast": [
+        {
+          "en": "David",
+          "sp": "furioso: «Who did this?»"
+        },
+        {
+          "en": "Priya",
+          "sp": "pasa de la culpa a los <b style='color:var(--magenta)'>hechos</b>"
+        },
+        {
+          "en": "Marcos",
+          "sp": "tiene la cronología"
+        },
+        {
+          "en": "Sofia",
+          "sp": "lee el comunicado"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "CRISIS WORDS · toca para girar",
+      "intro": "El vocabulario de un incidente bien manejado. Aparece en la llamada y en el comunicado.",
+      "cards": [
+        {
+          "front": "an outage",
+          "back": "una caída del servicio"
+        },
+        {
+          "front": "to issue a refund",
+          "back": "emitir un reembolso"
+        },
+        {
+          "front": "to be affected",
+          "back": "verse afectado"
+        },
+        {
+          "front": "to look into",
+          "back": "investigar, revisar a fondo"
+        },
+        {
+          "front": "to resolve",
+          "back": "resolver"
+        },
+        {
+          "front": "a root cause",
+          "back": "la causa de fondo"
+        },
+        {
+          "front": "to be notified",
+          "back": "ser avisado"
+        },
+        {
+          "front": "a statement",
+          "back": "un comunicado"
+        },
+        {
+          "front": "to prevent",
+          "back": "evitar que pase"
+        },
+        {
+          "front": "accountability",
+          "back": "responsabilidad, rendir cuentas"
+        }
+      ],
+      "deckLabel": "manejo de crisis"
+    },
+    {
+      "type": "transform",
+      "id": "ex-tr",
+      "title": "ACTIVE → PASSIVE",
+      "intro": "Reescribe cada frase en voz pasiva: importa qué pasó, no quién lo hizo. Mantén el mismo tiempo verbal.",
+      "items": [
+        {
+          "source": "Someone deleted the file.",
+          "start": "The file ",
+          "answers": [
+            "The file was deleted.",
+            "The file was deleted by someone."
+          ],
+          "why": "Pasado simple → was + participio."
+        },
+        {
+          "source": "They updated the prices at 2 a.m.",
+          "start": "The prices ",
+          "answers": [
+            "The prices were updated at 2 a.m.",
+            "The prices were updated at 2 am.",
+            "The prices were updated at two a.m.",
+            "The prices were updated by them at 2 a.m.",
+            "At 2 a.m. the prices were updated."
+          ],
+          "why": "Plural → were."
+        },
+        {
+          "source": "We have fixed the error.",
+          "start": "The error ",
+          "answers": [
+            "The error has been fixed.",
+            "The error has been fixed by us."
+          ],
+          "why": "have fixed → has been fixed."
+        },
+        {
+          "source": "The team is investigating the cause.",
+          "start": "The cause ",
+          "answers": [
+            "The cause is being investigated.",
+            "The cause is being investigated by the team."
+          ],
+          "why": "is investigating → is being investigated."
+        },
+        {
+          "source": "We will notify every customer today.",
+          "start": "Every customer ",
+          "answers": [
+            "Every customer will be notified today.",
+            "Every customer will be notified today by us.",
+            "Every customer will be notified by us today."
+          ],
+          "why": "will notify → will be notified."
+        },
+        {
+          "source": "Nobody checked the new prices.",
+          "start": "The new prices ",
+          "answers": [
+            "The new prices were not checked.",
+            "The new prices were not checked by anybody.",
+            "The new prices were not checked by anyone.",
+            "The new prices were never checked."
+          ],
+          "why": "«Nobody» desaparece y el verbo pasa a negativo: were not checked."
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "WHICH TENSE OF BE?",
+      "intro": "El participio no cambia. Elige la forma de «be» que corresponde al tiempo de la frase.",
+      "items": [
+        {
+          "q": "The prices ___ updated at 2 a.m. last night.",
+          "options": [
+            "were",
+            "was",
+            "have been"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The error ___ found at four o'clock this morning.",
+          "options": [
+            "were",
+            "is being",
+            "was"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Don't worry. The problem ___ already been fixed.",
+          "options": [
+            "is",
+            "has",
+            "was"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Right now, the cause ___ investigated.",
+          "options": [
+            "is being",
+            "has been",
+            "was"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Every customer ___ notified tomorrow.",
+          "options": [
+            "was",
+            "has been",
+            "will be"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Two hundred orders ___ placed before anyone noticed.",
+          "options": [
+            "was",
+            "were",
+            "are being"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The process ___ changed since the incident.",
+          "options": [
+            "has been",
+            "will be",
+            "is"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We didn't do it ourselves. We ___ the system checked by an expert.",
+          "options": [
+            "were",
+            "had",
+            "been"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE CRISIS CALL",
+      "desc": "David llama furioso y pide un nombre. Priya y Marcos le dan otra cosa: los hechos, en orden.",
+      "src": "b2-l3-1.mp3",
+      "dur": "1:38",
+      "speakers": "<ico-commentdots></ico-commentdots> David + Priya + Marcos",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "When were the prices updated, and when was the error found?",
+          "options": [
+            "Updated at 2 a.m., found at 4 a.m.",
+            "Updated at 4 a.m., found at 4:30",
+            "Updated at midnight, found at 2 a.m."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is the situation with the store now?",
+          "options": [
+            "It is still offline",
+            "It has been fixed and is back online",
+            "It is being rebuilt"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What will happen today?",
+          "options": [
+            "The full report will be delivered",
+            "All the orders will be canceled",
+            "Every customer will be notified"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Why does Priya avoid naming anyone?",
+          "options": [
+            "She believes the process failed, not one person",
+            "She has no idea what happened",
+            "She thinks David already knows"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "You are Priya. Give David the four facts again, all in the passive: the update, the discovery, the fix, the next step.",
+        "starter": "The prices were (verb) at (time). The error was (verb) at (time). It has been (verb). Every customer will be (verb) today."
+      },
+      "transcript": [
+        {
+          "spk": "David",
+          "html": "Priya, I'm looking at the numbers now. Every product on my site, ninety-nine cents. Two hundred orders! Who did this?"
+        },
+        {
+          "spk": "Priya",
+          "html": "David, I understand you're upset, and you have every right to be. Let me give you the facts first."
+        },
+        {
+          "spk": "David",
+          "html": "I don't want facts. I want a name."
+        },
+        {
+          "spk": "Priya",
+          "html": "The facts will help you more than a name. Marcos?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "The prices <span class='tg'>were updated</span> at two a.m., in a scheduled update. A file with test prices <span class='tg'>was uploaded</span> by mistake. The error <span class='tg'>was found</span> at four, and the store <span class='tg'>was taken</span> offline right away."
+        },
+        {
+          "spk": "David",
+          "html": "Two hours. Two hundred orders in two hours."
+        },
+        {
+          "spk": "Priya",
+          "html": "Yes. And here is where we are now. It <span class='tg'>has been fixed</span>. The correct prices <span class='tg'>were restored</span> at four thirty, and the store is back online."
+        },
+        {
+          "spk": "David",
+          "html": "And how did a test file get onto my live site?"
+        },
+        {
+          "spk": "Priya",
+          "html": "It <span class='tg'>is being investigated</span>. You'll have a full report on the root cause by Thursday. I'm not going to guess, and I'm not going to blame one person for a process that failed."
+        },
+        {
+          "spk": "David",
+          "html": "Hmm. And my customers?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Every customer <span class='tg'>will be notified</span> today. The email <span class='tg'>is being written</span> right now."
+        },
+        {
+          "spk": "David",
+          "html": "Fine. Thursday, Priya. I want that report on my desk."
+        },
+        {
+          "spk": "Priya",
+          "html": "You'll have it."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "WHO DID IT vs WHAT HAPPENED",
+      "intro": "Las dos frases cuentan el mismo hecho. Una apunta a una persona; la otra, a lo que pasó.",
+      "pair": {
+        "a": "Marcos sent the wrong prices.",
+        "b": "The wrong prices were sent."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál señala a una persona?",
+          "options": [
+            "A — Marcos sent…",
+            "B — …were sent",
+            "Las dos"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál va mejor en un comunicado público?",
+          "options": [
+            "A — Marcos sent…",
+            "B — …were sent",
+            "Ninguna"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "¿Qué información tiene A que B no tiene?",
+          "options": [
+            "Cuándo pasó",
+            "Qué se envió",
+            "Quién lo hizo"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "El dato interesante es quién construyó el sitio. ¿Qué dices?",
+          "options": [
+            "The site built by Sofia's team.",
+            "The site was built by Sofia's team.",
+            "The site was build by Sofia's team."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "No sabes quién borró el archivo, y no importa. ¿Qué dices?",
+          "options": [
+            "The file was deleted.",
+            "The file deleted.",
+            "The file was deleted by a person."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "BUILD THE PASSIVE",
+      "intro": "Toca las palabras en orden. Atención a «is being» y «has been».",
+      "items": [
+        {
+          "words": [
+            "The",
+            "cause",
+            "is",
+            "being",
+            "investigated"
+          ],
+          "answer": "The cause is being investigated"
+        },
+        {
+          "words": [
+            "The",
+            "error",
+            "has",
+            "been",
+            "fixed"
+          ],
+          "answer": "The error has been fixed"
+        },
+        {
+          "words": [
+            "Every",
+            "customer",
+            "will",
+            "be",
+            "notified",
+            "today"
+          ],
+          "answer": "Every customer will be notified today"
+        },
+        {
+          "words": [
+            "The",
+            "store",
+            "was",
+            "taken",
+            "offline",
+            "at",
+            "four"
+          ],
+          "answer": "The store was taken offline at four"
+        },
+        {
+          "words": [
+            "We",
+            "had",
+            "the",
+            "system",
+            "checked"
+          ],
+          "answer": "We had the system checked"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE STATEMENT",
+      "desc": "El jueves, Sofia lee el comunicado público de GreenMarket. Fíjate: ni un solo nombre, todo en pasiva.",
+      "src": "b2-l3-2.mp3",
+      "dur": "0:44",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What will happen to the two hundred orders?",
+          "options": [
+            "They will be canceled",
+            "They will be honored",
+            "They will be charged at the full price"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What has been changed?",
+          "options": [
+            "The update process",
+            "The payment system",
+            "The website design"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How will price updates be checked from now on?",
+          "options": [
+            "By the client every morning",
+            "By one person at 2 a.m.",
+            "By two people before they go live"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Why doesn't the statement say who made the mistake?",
+          "options": [
+            "Nobody knows what caused it",
+            "A public statement is about actions, not blame",
+            "The person has left the company"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Think of a mistake at your work or school. Say three facts about it in the passive, with no names.",
+        "starter": "(Something) was (verb) by mistake. The problem was (verb) at (time). It has been (verb)."
+      },
+      "transcript": [
+        {
+          "spk": "Sofia",
+          "html": "A statement from GreenMarket. Early on Tuesday morning, incorrect prices <span class='tg'>were shown</span> on our website for two hours. During that time, two hundred orders <span class='tg'>were placed</span> at ninety-nine cents per item. The error <span class='tg'>was found</span> at four a.m., and the correct prices <span class='tg'>were restored</span> shortly after. All two hundred orders <span class='tg'>will be honored</span>. No customer <span class='tg'>will be charged</span> more than the price that was shown. Every affected customer <span class='tg'>has been notified</span> by email. The cause <span class='tg'>has been identified</span>, and our update process <span class='tg'>has been changed</span>. From now on, every price update <span class='tg'>will be checked</span> by two people before it goes live. We apologize for the confusion, and we thank our customers for their patience."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> THE INCIDENT REPORT",
+      "intro": "Escribe el informe de un error real o inventado en tu trabajo (5–7 frases). Sin nombres: solo hechos y próximos pasos.",
+      "checklist": [
+        "Qué pasó y cuándo, en pasiva pasada (<b>was / were + participio</b>)",
+        "Qué ya se resolvió (<b>has been + participio</b>)",
+        "Qué se está haciendo ahora (<b>is being + participio</b>)",
+        "Qué se hará para evitarlo (<b>will be + participio</b>)",
+        "<b>by</b> solo si quién lo hizo es un dato importante"
+      ],
+      "placeholder": "On Monday, March 3, …",
+      "example": "On <span class=\"gap\">fecha</span>, <span class=\"gap\">qué</span> was <span class=\"gap\">participio</span>. The problem was found at <span class=\"gap\">hora</span>. It has been <span class=\"gap\">participio</span>. The cause is being <span class=\"gap\">participio</span>. To prevent this, <span class=\"gap\">qué</span> will be <span class=\"gap\">participio</span>.",
+      "hw": "Escribe tu informe y después grábate <b>leyéndolo como un comunicado oficial</b>: despacio y con tono neutral. Envíame texto y audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna: qué pasó, qué se hizo y qué se hará."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste la pasiva en al menos <b>tres tiempos</b> distintos y bien formada (be + participio)."
+        },
+        {
+          "c": "Se entiende a la primera",
+          "d": "Un lector lo entiende sin releer: ideas unidas con conectores, sin traducir literal del español."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/b2-l3",
+    "keys": [
+      "a-public-statement-is-about-actions-not-blame",
+      "a-root-cause",
+      "a-scheduled-update",
+      "a-statement",
+      "accountability",
+      "all-the-orders-will-be-canceled",
+      "an-incident-report",
+      "an-outage",
+      "an-overview",
+      "are-being",
+      "been",
+      "by-mistake",
+      "by-one-person-at-2-a-m",
+      "by-the-client-every-morning",
+      "by-two-people-before-they-go-live",
+      "every-customer-will-be-notified",
+      "every-customer-will-be-notified-today",
+      "from-now-on",
+      "had",
+      "has",
+      "has-been",
+      "have-been",
+      "how-will-price-updates-be-checked-from-now-on",
+      "i-was-born-in-lima",
+      "is",
+      "is-being",
+      "it-has-been-fixed-and-is-back-online",
+      "it-is-being-rebuilt",
+      "it-is-still-offline",
+      "marcos-sent-the-wrong-prices",
+      "nobody-checked-the-new-prices",
+      "nobody-knows-what-caused-it",
+      "she-believes-the-process-failed-not-one-person",
+      "she-has-no-idea-what-happened",
+      "she-thinks-david-already-knows",
+      "someone-deleted-the-file",
+      "the-cause-is-being-investigated",
+      "the-email-was-sent-yesterday",
+      "the-error-has-been-fixed",
+      "the-error-is-being-fixed-right-now",
+      "the-error-was-fixed-at-four",
+      "the-error-will-be-fixed-today",
+      "the-file-deleted",
+      "the-file-was-deleted",
+      "the-file-was-deleted-by-a-person",
+      "the-files-were-deleted",
+      "the-full-report-will-be-delivered",
+      "the-new-prices-were-not-checked",
+      "the-payment-system",
+      "the-person-has-left-the-company",
+      "the-prices-were-updated-at-2-a-m",
+      "the-site-built-by-sofia-s-team",
+      "the-site-was-build-by-sofia-s-team",
+      "the-site-was-built-by-a-team-of-three",
+      "the-site-was-built-by-sofia-s-team",
+      "the-team-is-investigating-the-cause",
+      "the-update-process",
+      "the-website-design",
+      "the-wrong-prices-were-sent",
+      "they-updated-the-prices-at-2-a-m",
+      "they-will-be-canceled",
+      "they-will-be-charged-at-the-full-price",
+      "they-will-be-honored",
+      "to-be-affected",
+      "to-be-notified",
+      "to-double-check",
+      "to-go-live",
+      "to-honor-an-order",
+      "to-issue-a-refund",
+      "to-level-off",
+      "to-look-into",
+      "to-peak",
+      "to-prevent",
+      "to-resolve",
+      "to-restore-the-prices",
+      "to-sum-up",
+      "to-take-the-store-offline",
+      "to-walk-someone-through",
+      "updated-at-2-a-m-found-at-4-a-m",
+      "updated-at-4-a-m-found-at-4-30",
+      "updated-at-midnight-found-at-2-a-m",
+      "was",
+      "we-apologize-for-the-confusion",
+      "we-had-the-system-checked",
+      "we-have-fixed-the-error",
+      "we-re-having-the-process-reviewed",
+      "we-will-notify-every-customer-today",
+      "were",
+      "what-happened-last-night",
+      "what-has-been-changed",
+      "what-is-the-situation-with-the-store-now",
+      "what-will-happen-to-the-two-hundred-orders",
+      "what-will-happen-today",
+      "when-were-the-prices-updated-and-when-was-the-error-found",
+      "why-does-priya-avoid-naming-anyone",
+      "why-doesn-t-the-statement-say-who-made-the-mistake",
+      "will-be"
+    ]
+  }
+}
