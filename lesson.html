@@ -36,7 +36,7 @@
   <div id="lessonRoot"></div>
 
   <div class="btn-row" id="finalRow" data-aos="fade-up" style="display:none">
-    <div style="margin-bottom:14px"><input id="studentName" type="text" placeholder="Tu nombre" autocomplete="given-name" style="width:100%;max-width:320px;padding:10px 14px;background:#10122a;border:2px solid var(--cyan);border-radius:10px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:0.95rem;outline:none;box-shadow:inset 0 0 10px #00e5ff22"><br><span class="es" style="font-size:0.78rem;display:inline-block;margin-top:7px"><ico-lock></ico-lock> Tu nombre + score se le envían a tu profe para tu seguimiento.</span></div>
+    <div style="margin-bottom:14px"><input id="studentName" type="text" placeholder="Tu nombre" autocomplete="given-name" style="width:100%;max-width:320px;padding:10px 14px;background:#10122a;border:2px solid var(--cyan);border-radius:10px;color:var(--text);font-family:'Share Tech Mono',monospace;font-size:0.95rem;outline:none;box-shadow:inset 0 0 10px #00e5ff22"><br><span class="es" style="font-size:0.78rem;display:inline-block;margin-top:7px"><span id="nameNote"><ico-lock></ico-lock> Tu nombre + score se le envían a tu profe para tu seguimiento.</span></span></div>
     <button class="btn" id="rankBtn" onclick="seeRank()"><ico-star></ico-star> SEE MY RANK</button>
     <p class="es" id="rankWarn" style="display:none; color:var(--red); margin-top:10px"><ico-warn></ico-warn> Completa todos los ejercicios primero (botón <ico-check></ico-check> CHECK en cada uno).</p>
     <div style="margin-top:18px"><a class="btn wa-btn" id="hwWa" href="#" onclick="return sendHomework(this)"><i class="fa-brands fa-whatsapp"></i> ENVIAR MI TAREA</a></div>
@@ -48,14 +48,14 @@
     <div class="stars" id="starRow"></div>
     <p class="score" id="scoreText"></p>
     <p class="rankup" id="rankupLine">LESSON CLEAR!</p>
-    <p class="rankup-sub">¡Practica un poco cada día y sube de nivel!</p>
+    <p class="rankup-sub" id="rankupSub">¡Practica un poco cada día y sube de nivel!</p>
     <div class="contact-box">
-      <div class="panel-title"><ico-star></ico-star> ¿DUDAS? LO VEMOS EN CLASE</div>
-      <p>Envíame tu <b>tarea escrita</b> + tu <b>grabación leyéndola</b> por WhatsApp y lo corregimos juntos. ¡Vas por buen camino!</p>
+      <div class="panel-title" id="contactTitle"><ico-star></ico-star> ¿DUDAS? LO VEMOS EN CLASE</div>
+      <p id="contactText">Envíame tu <b>tarea escrita</b> + tu <b>grabación leyéndola</b> por WhatsApp y lo corregimos juntos. ¡Vas por buen camino!</p>
       <a class="btn wa-btn" id="waCta" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WHATSAPP</a>
       <a class="btn next-btn" id="nextCta" href="index.html">◄ MAPA</a>
       <a class="btn game-btn" id="gameCta" href="city.html"><ico-gamepad></ico-gamepad> <span>JUEGA EN RANK UP CITY</span></a>
-      <p class="es" style="margin-top:12px"><a href="index.html" style="color:var(--cyan)">◄ Volver al mapa de campaña</a></p>
+      <p class="es" style="margin-top:12px"><a href="index.html" id="backLink" style="color:var(--cyan)">◄ Volver al mapa de campaña</a></p>
     </div>
     <div class="btn-row"><button class="btn" onclick="location.reload()">↻ TRY AGAIN</button></div>
   </div>
@@ -87,6 +87,7 @@ let LESSON = null, LESSON_KEY = "", LESSON_NAME = "", EXERCISES = [];
 const scores = {};                 // blockId -> {correct,total}
 const matchState = {}, orderState = {}, memoryState = {}, fcState = {}, transformState = {}, spotState = {};
 const uiEn = () => !!(LESSON && LESSON.ui === "en");
+const T = (es, en) => uiEn() ? en : es;   // built-in labels: Spanish by default, English when the lesson sets "ui": "en" (C1, C2)
 const esc = s => String(s == null ? "" : s);
 const escAttr = s => String(s == null ? "" : s).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 const stripTags = s => String(s == null ? "" : s).replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
@@ -96,7 +97,7 @@ const sayText = s => stripTags(s).replace(/[\u{1F1E6}-\u{1F1FF}\u{1F300}-\u{1FAF
 // speaker button: tap to hear the text read aloud (Web Speech). Used across every block type.
 // Rendered as <span role="button"> — NOT <button> — because it must live inside flashcards,
 // match tiles and option labels, and HTML forbids nesting a button inside a button.
-function spkBtn(text, extra){ const say = escAttr(sayText(text)); if(!say) return ""; return `<span class="spk-btn${extra?" "+extra:""}" role="button" tabindex="0" title="Escuchar y repetir" aria-label="Escuchar y repetir" data-say="${say}" onclick="event.preventDefault();event.stopPropagation();speakText(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();speakText(this);}"><ico-volume></ico-volume></span>`; }
+function spkBtn(text, extra){ const say = escAttr(sayText(text)); if(!say) return ""; return `<span class="spk-btn${extra?" "+extra:""}" role="button" tabindex="0" title="${T('Escuchar y repetir','Listen and repeat')}" aria-label="${T('Escuchar y repetir','Listen and repeat')}" data-say="${say}" onclick="event.preventDefault();event.stopPropagation();speakText(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();speakText(this);}"><ico-volume></ico-volume></span>`; }
 // noFlags: characters are introduced by role only — never with a country flag (students guess the accent themselves)
 function noFlags(s){ return String(s==null?"":s).replace(/<img[^>]*class=['"]flag['"][^>]*>/g,"").replace(/\s+/g," ").trim(); }
 // analog clock faces for the time exercises — pure SVG so they stay crisp and on-palette
@@ -161,7 +162,7 @@ function grammarHtml(g, gi){
       else if(p.type==="stretch") h += `<div class="stretch"><div class="sh"><ico-star></ico-star> ${esc(p.h||"B2 STRETCH")}</div>${esc(p.body)}</div>`;
       else if(p.type==="note")   h += `<div class="note${p.gold?" gold":""}">${esc(p.body)}</div>`;
       else if(p.type==="gloss")  h += `<div class="gloss">${(p.items||[]).map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div>`;
-      else if(p.type==="vocab")  h += `<button class="toggle-btn" data-show="${esc(p.btn||'<ico-bookmark></ico-bookmark> Ver vocabulario')}" data-hide="<ico-bookmark></ico-bookmark> Ocultar" onclick="toggleReveal('${vid2}', this)">${esc(p.btn||'<ico-bookmark></ico-bookmark> Ver vocabulario')}</button><div class="reveal" id="${vid2}"><div class="gloss" style="margin-top:12px">${(p.items||[]).map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
+      else if(p.type==="vocab")  h += `<button class="toggle-btn" data-show="${esc(p.btn||T('<ico-bookmark></ico-bookmark> Ver vocabulario','<ico-bookmark></ico-bookmark> Show vocabulary'))}" data-hide="<ico-bookmark></ico-bookmark> ${T('Ocultar','Hide')}" onclick="toggleReveal('${vid2}', this)">${esc(p.btn||T('<ico-bookmark></ico-bookmark> Ver vocabulario','<ico-bookmark></ico-bookmark> Show vocabulary'))}</button><div class="reveal" id="${vid2}"><div class="gloss" style="margin-top:12px">${(p.items||[]).map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
     });
   }
   if(g.phrases && g.phrases.length){
@@ -171,7 +172,7 @@ function grammarHtml(g, gi){
     h += `<div class="stretch"><div class="sh"><ico-star></ico-star> ${esc(st.h||"B2 STRETCH")}</div>${esc(st.body)}</div>`;
   });
   if(g.vocab && g.vocab.length){
-    h += `<button class="toggle-btn" data-show="${esc(g.vocabBtn||'<ico-bookmark></ico-bookmark> Ver vocabulario')}" data-hide="<ico-bookmark></ico-bookmark> Ocultar vocabulario" onclick="toggleReveal('${vid}', this)">${esc(g.vocabBtn||'<ico-bookmark></ico-bookmark> Ver vocabulario')}</button>
+    h += `<button class="toggle-btn" data-show="${esc(g.vocabBtn||T('<ico-bookmark></ico-bookmark> Ver vocabulario','<ico-bookmark></ico-bookmark> Show vocabulary'))}" data-hide="<ico-bookmark></ico-bookmark> ${T('Ocultar vocabulario','Hide vocabulary')}" onclick="toggleReveal('${vid}', this)">${esc(g.vocabBtn||T('<ico-bookmark></ico-bookmark> Ver vocabulario','<ico-bookmark></ico-bookmark> Show vocabulary'))}</button>
     <div class="reveal" id="${vid}"><div class="gloss" style="margin-top:14px">${g.vocab.map(v=>`<div class="term${v.chunk?" chunk":""}"><span class="en">${esc(v.en)}${v.tag?`<span class="tag">${esc(v.tag)}</span>`:""}${spkBtn(v.en,"mini")}</span><span class="sp">${esc(v.sp)}</span></div>`).join("")}</div></div>`;
   }
   if(g.note) h += `<div class="note">${esc(g.note)}</div>`;
@@ -188,15 +189,15 @@ function listeningHtml(b, id, alt){
   h += (b.questions||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {q:true, opt:true})).join("");
   h += `<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div>`;
   if(b.speaking) h += `<div class="verbal"><p class="vq"><span class="mic"><ico-mic></ico-mic></span><b>Speaking:</b> ${esc(b.speaking.prompt)}</p>
-    <button class="toggle-btn" data-show="<ico-bulb></ico-bulb> Pista para empezar" data-hide="<ico-eyeslash></ico-eyeslash> Ocultar" onclick="toggleReveal('${id}-m', this)"><ico-bulb></ico-bulb> Pista para empezar</button>
-    <div class="reveal model-box" id="${id}-m"><span class="lbl">EMPIEZA ASÍ</span>${esc(b.speaking.starter)}</div></div>`;
-  if(b.transcript && b.transcript.length) h += `<button class="toggle-btn" data-show="<ico-file></ico-file> Mostrar transcripción" data-hide="<ico-file></ico-file> Ocultar transcripción" onclick="toggleReveal('${id}-t', this)"><ico-file></ico-file> Mostrar transcripción</button>
+    <button class="toggle-btn" data-show="<ico-bulb></ico-bulb> ${T('Pista para empezar','A hint to start')}" data-hide="<ico-eyeslash></ico-eyeslash> ${T('Ocultar','Hide')}" onclick="toggleReveal('${id}-m', this)"><ico-bulb></ico-bulb> ${T('Pista para empezar','A hint to start')}</button>
+    <div class="reveal model-box" id="${id}-m"><span class="lbl">${T('EMPIEZA ASÍ','START LIKE THIS')}</span>${esc(b.speaking.starter)}</div></div>`;
+  if(b.transcript && b.transcript.length) h += `<button class="toggle-btn" data-show="<ico-file></ico-file> ${T('Mostrar transcripción','Show transcript')}" data-hide="<ico-file></ico-file> ${T('Ocultar transcripción','Hide transcript')}" onclick="toggleReveal('${id}-t', this)"><ico-file></ico-file> ${T('Mostrar transcripción','Show transcript')}</button>
     <div class="reveal transcript" id="${id}-t">${b.transcript.map(l=>`<p class="line"><span class="spk ${l.b?'b':''}">${esc(l.spk)}:</span> ${esc(l.html)}</p>`).join("")}</div>`;
   return h + `</div>`;
 }
 function contrastHtml(b, id){
   const p = b.pair || {};
-  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-shuffle></ico-shuffle> ${esc(b.title||'¿QUÉ CAMBIA?')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-shuffle></ico-shuffle> ${esc(b.title||T('¿QUÉ CAMBIA?','WHAT CHANGES?'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="contrast-pair">
     <div class="cp"><span class="cp-l">A</span><span class="cp-t">${esc(p.a)}</span>${spkBtn(p.a,"mini")}</div>
     <div class="cp"><span class="cp-l">B</span><span class="cp-t">${esc(p.b)}</span>${spkBtn(p.b,"mini")}</div>
@@ -205,10 +206,10 @@ function contrastHtml(b, id){
   <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function gapFillHtml(b, id){
-  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">${esc(b.icon || "<ico-filepen></ico-filepen>")} ${esc(b.title||'COMPLETA LA FRASE')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title">${esc(b.icon || "<ico-filepen></ico-filepen>")} ${esc(b.title||T('COMPLETA LA FRASE','COMPLETE THE SENTENCE'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   ${(b.items||[]).map((q,qi)=>qHtml(q, id+"q"+qi, qi+1, {opt:true})).join("")}
   <div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div>
-  ${b.speaking?`<div class="verbal"><p class="vq"><span class="mic"><ico-mic></ico-mic></span><b>Speaking:</b> ${esc(b.speaking.prompt)}</p>${b.speaking.starter?`<button class="toggle-btn" data-show="<ico-bulb></ico-bulb> Pista para empezar" data-hide="<ico-eyeslash></ico-eyeslash> Ocultar" onclick="toggleReveal('${id}-m', this)"><ico-bulb></ico-bulb> Pista para empezar</button><div class="reveal model-box" id="${id}-m"><span class="lbl">EMPIEZA ASÍ</span>${esc(b.speaking.starter)}</div>`:""}</div>`:""}</div>`;
+  ${b.speaking?`<div class="verbal"><p class="vq"><span class="mic"><ico-mic></ico-mic></span><b>Speaking:</b> ${esc(b.speaking.prompt)}</p>${b.speaking.starter?`<button class="toggle-btn" data-show="<ico-bulb></ico-bulb> ${T('Pista para empezar','A hint to start')}" data-hide="<ico-eyeslash></ico-eyeslash> ${T('Ocultar','Hide')}" onclick="toggleReveal('${id}-m', this)"><ico-bulb></ico-bulb> ${T('Pista para empezar','A hint to start')}</button><div class="reveal model-box" id="${id}-m"><span class="lbl">${T('EMPIEZA ASÍ','START LIKE THIS')}</span>${esc(b.speaking.starter)}</div>`:""}</div>`:""}</div>`;
 }
 function dialogueHtml(b, id){
   let n=0;
@@ -216,14 +217,14 @@ function dialogueHtml(b, id){
     if(l.gap) return qHtml(l, id+"q"+(n++), null, {opt:true});
     return `<p class="dlg-line">${spkBtn(l.html)}<span class="spk ${l.b?'b':''}">${esc(l.spk)}:</span> ${esc(l.html)}</p>`;
   }).join("");
-  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-comments></ico-comments> ${esc(b.title||'ELIGE LA RESPUESTA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-comments></ico-comments> ${esc(b.title||T('ELIGE LA RESPUESTA','CHOOSE THE REPLY'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   ${body}<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function matchHtml(b, id){
   matchState[id] = { sel:null, slots:{}, pairs:b.pairs };
   const rights = shuffle(b.pairs.map(p=>p.r));
   const side = b.speakSide || "l";   // which column is English: "l" (default), "r", or "none"
-  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-link></ico-link> ${esc(b.title||'UNE LOS PARES')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-link></ico-link> ${esc(b.title||T('UNE LOS PARES','MATCH THE PAIRS'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="match-grid"><div class="match-col">${
     b.pairs.map((p,i)=>`<button type="button" class="match-l${b.clock?" clockface":""}" id="${id}-l-${i}" onclick="mLeft('${id}',${i})">${b.clock?`${clockSvg(p.l)}<span class="clock-digital">${esc(p.l)}</span>`:`<span>${esc(p.l)}</span>`}<span class="ml-slot" id="${id}-slot-${i}"></span>${side==="l"?spkBtn(p.l,"mini"):""}</button>`).join("")
   }</div><div class="match-col">${
@@ -238,7 +239,7 @@ function orderHtml(b, id){
     return `<div class="order-item" id="${id}-it-${k}"><div class="order-line" id="${id}-line-${k}"></div>
       <div class="order-bank" id="${id}-bank-${k}">${words.map(w=>`<button type="button" class="word" onclick="oMove('${id}',${k},this)">${esc(w)}</button>`).join("")}</div></div>`;
   }).join("");
-  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-puzzle></ico-puzzle> ${esc(b.title||'ORDENA LAS PALABRAS')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-puzzle></ico-puzzle> ${esc(b.title||T('ORDENA LAS PALABRAS','PUT THE WORDS IN ORDER'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   ${body}<div class="btn-row"><button class="btn check" onclick="checkOrder('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 // transform: the student TYPES the rewritten sentence (active → passive, direct → reported, casual → formal…).
@@ -274,7 +275,7 @@ function picMatchHtml(b, id){
   const pairs = (b.pairs||[]).map(p=>({l:p.img, r:p.word}));
   matchState[id] = { sel:null, slots:{}, pairs };
   const rights = shuffle(pairs.map(p=>p.r));
-  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-image></ico-image> ${esc(b.title||'UNE IMAGEN Y PALABRA')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-image></ico-image> ${esc(b.title||T('UNE IMAGEN Y PALABRA','MATCH PICTURE AND WORD'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="match-grid"><div class="match-col">${
     pairs.map((p,i)=>`<button type="button" class="match-l pic" id="${id}-l-${i}" onclick="mLeft('${id}',${i})"><span class="pic-em">${esc(p.l)}</span><span class="ml-slot" id="${id}-slot-${i}"></span></button>`).join("")
   }</div><div class="match-col">${
@@ -287,9 +288,9 @@ function memoryHtml(b, id){
   (b.pairs||[]).forEach((p,i)=>{ cards.push({pair:i, face:p.a}); cards.push({pair:i, face:p.b, mute:b.speakSide==="a"}); });
   const sh = shuffle(cards);
   memoryState[id] = { flipped:[], matched:0, total:(b.pairs||[]).length, lock:false };
-  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-brain></ico-brain> ${esc(b.title||'MEMORY · encuentra los pares')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-brain></ico-brain> ${esc(b.title||T('MEMORY · encuentra los pares','MEMORY · find the pairs'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   <div class="mem-grid">${sh.map((c,k)=>`<button type="button" class="mem-card" data-pair="${c.pair}"${c.mute?' data-mute="1"':""} id="${id}-c-${k}" onclick="mFlip('${id}','${id}-c-${k}')"><img class="mem-back" src="mem-back.webp" alt="" aria-hidden="true" draggable="false"><span class="mem-face">${esc(c.face)}</span></button>`).join("")}</div>
-  <div class="mem-status" id="${id}-status">0 / ${(b.pairs||[]).length} pares</div></div>`;
+  <div class="mem-status" id="${id}-status">0 / ${(b.pairs||[]).length} ${T('pares','pairs')}</div></div>`;
 }
 function fcDeckHtml(cards){
   return (cards||[]).map(c=>`<button type="button" class="flashcard" onclick="this.classList.toggle('flipped'); blip();"><span class="fc-inner"><span class="fc-front">${esc(c.front)}${spkBtn(c.front,"mini fc-spk")}</span><span class="fc-back">${esc(c.back)}</span></span></button>`).join("");
@@ -297,31 +298,31 @@ function fcDeckHtml(cards){
 function flashcardsHtml(b, id){
   const decks = [{label: b.deckLabel||"", cards: b.cards||[]}].concat(b.altDecks||[]);
   fcState[id] = { decks: decks, cur: 0 };
-  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-clone></ico-clone> ${esc(b.title||'FLASHCARDS · toca para girar')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
-  ${decks.length>1?`<p class="fc-round" id="${id}-round"><ico-rotate></ico-rotate> RONDA 1/${decks.length}${decks[0].label?` · ${esc(decks[0].label)}`:''}</p>`:''}
+  return `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-clone></ico-clone> ${esc(b.title||T('FLASHCARDS · toca para girar','FLASHCARDS · tap to flip'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  ${decks.length>1?`<p class="fc-round" id="${id}-round"><ico-rotate></ico-rotate> ${T('RONDA','ROUND')} 1/${decks.length}${decks[0].label?` · ${esc(decks[0].label)}`:''}</p>`:''}
   <div class="fc-deck" id="${id}-deck">${fcDeckHtml(decks[0].cards)}</div>
-  <p class="es" style="margin-top:8px"><ico-pointer></ico-pointer> Toca cada tarjeta para ver la traducción.</p>
-  ${decks.length>1?`<button type="button" class="toggle-btn" id="${id}-next" onclick="fcNextDeck('${id}')"><ico-rotate></ico-rotate> Otra ronda: ${esc(decks[1].label||'más cartas')}</button>`:''}</div>`;
+  <p class="es" style="margin-top:8px"><ico-pointer></ico-pointer> ${T('Toca cada tarjeta para ver la traducción.','Tap each card to see what it means.')}</p>
+  ${decks.length>1?`<button type="button" class="toggle-btn" id="${id}-next" onclick="fcNextDeck('${id}')"><ico-rotate></ico-rotate> ${T('Otra ronda','Another round')}: ${esc(decks[1].label||T('más cartas','more cards'))}</button>`:''}</div>`;
 }
 function fcNextDeck(id){
   const st=fcState[id]; st.cur=(st.cur+1)%st.decks.length;
   const d=st.decks[st.cur];
   document.getElementById(id+"-deck").innerHTML = fcDeckHtml(d.cards);
   const r=document.getElementById(id+"-round");
-  if(r) r.innerHTML = `<ico-rotate></ico-rotate> RONDA ${st.cur+1}/${st.decks.length}${d.label?` · ${esc(d.label)}`:''}`;
+  if(r) r.innerHTML = `<ico-rotate></ico-rotate> ${T('RONDA','ROUND')} ${st.cur+1}/${st.decks.length}${d.label?` · ${esc(d.label)}`:''}`;
   const nd=st.decks[(st.cur+1)%st.decks.length];
-  document.getElementById(id+"-next").innerHTML = `<ico-rotate></ico-rotate> Otra ronda: ${nd.label||'más cartas'}`;
+  document.getElementById(id+"-next").innerHTML = `<ico-rotate></ico-rotate> ${T('Otra ronda','Another round')}: ${nd.label||T('más cartas','more cards')}`;
   blip();
 }
 function writingHtml(w){
-  return (w.stage === false ? "" : `<div class="stage-tag">${w.stage ? esc(w.stage) : `<ico-pen></ico-pen> WRITING <span class="es">· en clase o tarea (HW)</span>`}</div>`) + `
+  return (w.stage === false ? "" : `<div class="stage-tag">${w.stage ? esc(w.stage) : `<ico-pen></ico-pen> WRITING <span class="es">· ${T('en clase o tarea (HW)','in class or as homework')}</span>`}</div>`) + `
   <div class="card purple" data-aos="fade-up"><div class="panel-title">${esc(w.title)}</div><p>${esc(w.intro)}</p>
   <ul class="checklist">${(w.checklist||[]).map(li=>`<li class="ck" role="checkbox" aria-checked="false" tabindex="0" onclick="ckToggle(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();ckToggle(this);}">${esc(li)}</li>`).join("")}</ul>
   <textarea class="writing-area" id="writingBox" placeholder="${escAttr(w.placeholder||'')}"></textarea>
-  <button class="toggle-btn" data-show="<ico-bulb></ico-bulb> Guía para empezar" data-hide="<ico-eyeslash></ico-eyeslash> Ocultar guía" onclick="toggleReveal('mw', this)"><ico-bulb></ico-bulb> Guía para empezar</button>
-  <div class="reveal model-box" id="mw"><span class="lbl">EMPIEZA ASÍ</span>${esc(w.example)}</div>
-  ${(w.rubric&&w.rubric.length)?`<div class="rubric"><div class="rh"><ico-circlecheck></ico-circlecheck> ASÍ SE CORRIGE</div>${w.rubric.map(r=>`<div class="rrow"><b>${esc(r.c)}</b><span>${esc(r.d)}</span></div>`).join("")}</div>`:""}
-  <div class="note gold"><b><ico-pin></ico-pin> Tarea (HW):</b> ${esc(w.hw)}</div></div>`;
+  <button class="toggle-btn" data-show="<ico-bulb></ico-bulb> ${T('Guía para empezar','A frame to start')}" data-hide="<ico-eyeslash></ico-eyeslash> ${T('Ocultar guía','Hide the frame')}" onclick="toggleReveal('mw', this)"><ico-bulb></ico-bulb> ${T('Guía para empezar','A frame to start')}</button>
+  <div class="reveal model-box" id="mw"><span class="lbl">${T('EMPIEZA ASÍ','START LIKE THIS')}</span>${esc(w.example)}</div>
+  ${(w.rubric&&w.rubric.length)?`<div class="rubric"><div class="rh"><ico-circlecheck></ico-circlecheck> ${T('ASÍ SE CORRIGE','HOW IT IS MARKED')}</div>${w.rubric.map(r=>`<div class="rrow"><b>${esc(r.c)}</b><span>${esc(r.d)}</span></div>`).join("")}</div>`:""}
+  <div class="note gold"><b><ico-pin></ico-pin> ${T('Tarea (HW):','Homework:')}</b> ${esc(w.hw)}</div></div>`;
 }
 
 // ---------- assemble ----------
@@ -333,8 +334,24 @@ function legacyBlocks(L){
   if(L.writing){ b.push(Object.assign({type:"writing"}, L.writing)); }
   return b;
 }
+// English page chrome for lessons with "ui": "en" (the Spanish text in the HTML is the default)
+function applyEnUi(){
+  const set = (sel, html) => { const el = document.querySelector(sel); if(el) el.innerHTML = html; };
+  document.documentElement.lang = "en";
+  set(".backmap", "◄ MAP"); set("#nextCta", "◄ MAP"); set("#backLink", "◄ Back to the campaign map");
+  const nm = document.getElementById("studentName"); if(nm) nm.placeholder = "Your name";
+  const mu = document.getElementById("muteBtn"); if(mu) mu.setAttribute("aria-label", "Sound");
+  set("#nameNote", "<ico-lock></ico-lock> Your name + score are sent to your teacher, so he can follow your progress.");
+  set("#rankWarn", "<ico-warn></ico-warn> Finish every exercise first (the <ico-check></ico-check> CHECK button on each one).");
+  set("#hwWa", '<i class="fa-brands fa-whatsapp"></i> SEND MY HOMEWORK');
+  set("#rankupSub", "A little practice every day, and you level up!");
+  set("#contactTitle", "<ico-star></ico-star> QUESTIONS? WE'LL GO OVER THEM IN CLASS");
+  set("#contactText", "Send me your <b>written task</b> + your <b>recording</b> on WhatsApp and we'll correct them together. You're on the right track!");
+  set("#gameCta span", "PLAY IN RANK UP CITY");
+}
 function build(L){
   LESSON = L; LESSON_KEY = L.key; LESSON_NAME = L.titlePlain;
+  if(uiEn()) applyEnUi();
   SAY = (L.say && L.say.dir && Array.isArray(L.say.keys)) ? { dir: L.say.dir, keys: new Set(L.say.keys) } : null;
   document.getElementById("pageTitle").textContent = "English for All · " + (L.titlePlain||"Lesson");
   document.getElementById("crumb").innerHTML = L.track
@@ -549,7 +566,7 @@ function mFlip(id, cardId){
     if(a.dataset.pair===bb.dataset.pair){
       okBeep();
       setTimeout(()=>{ a.classList.add("matched"); bb.classList.add("matched"); st.flipped=[]; st.lock=false; st.matched++;
-        document.getElementById(id+"-status").innerHTML = st.matched+" / "+st.total+" pares"+(st.matched===st.total?"  <ico-star></ico-star> ¡Completo!":""); }, 320);
+        document.getElementById(id+"-status").innerHTML = st.matched+" / "+st.total+T(" pares"," pairs")+(st.matched===st.total?"  <ico-star></ico-star> "+T("¡Completo!","Complete!"):""); }, 320);
     } else { noBeep(); setTimeout(()=>{ a.classList.remove("flip"); bb.classList.remove("flip"); st.flipped=[]; st.lock=false; }, 850); }
   } else { blip(); }
 }

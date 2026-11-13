@@ -1,0 +1,952 @@
+{
+  "level": "C1",
+  "num": 1,
+  "totalLessons": 6,
+  "world": "ADVANCED OPERATOR",
+  "ui": "en",
+  "key": "rankup_C1_L1",
+  "title": "IDIOMS &amp;<br>COLLOCATIONS",
+  "titlePlain": "Idioms & Collocations — On Air (C1)",
+  "subtitle": "Vocabulary &amp; Listening · C1 · ~50 min",
+  "rankup": "EPISODE CLEAR!",
+  "next": {
+    "href": "lesson.html?id=c1-l2",
+    "label": "LESSON 2 ▸ COHESION & LINKING"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> EPISODE RECAP · from B2",
+      "intro": "Before we go on air: five formal phrases from the end of B2. Match each one with its everyday version.",
+      "pairs": [
+        {
+          "l": "at your earliest convenience",
+          "r": "as soon as you can"
+        },
+        {
+          "l": "regarding",
+          "r": "about"
+        },
+        {
+          "l": "to purchase",
+          "r": "to buy"
+        },
+        {
+          "l": "we apologize for",
+          "r": "sorry about"
+        },
+        {
+          "l": "further information",
+          "r": "more details"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "collocations & idioms",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· collocations &amp; idioms</span>",
+      "title": "<ico-book></ico-book> WORD PARTNERS",
+      "intro": "At C1 your grammar is rarely the problem. What gives you away is the <b style='color:var(--gold)'>word partner</b>: the verb, adverb or adjective a native speaker expects next to a word. Five steps, then ten idioms and the rule for using them.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show today's collocations",
+      "vocab": [
+        {
+          "en": "to raise concerns",
+          "sp": "to say that something worries you"
+        },
+        {
+          "en": "to meet a deadline",
+          "sp": "to finish on time"
+        },
+        {
+          "en": "to draw a conclusion",
+          "sp": "to decide what the facts mean"
+        },
+        {
+          "en": "to make an effort",
+          "sp": "to try hard"
+        },
+        {
+          "en": "to do research",
+          "sp": "to study a subject carefully"
+        },
+        {
+          "en": "to take a risk",
+          "sp": "to do something that might go wrong"
+        },
+        {
+          "en": "highly unlikely",
+          "sp": "almost certainly not going to happen"
+        },
+        {
+          "en": "bitterly disappointed",
+          "sp": "extremely disappointed"
+        },
+        {
+          "en": "deeply concerned",
+          "sp": "very worried"
+        },
+        {
+          "en": "perfectly normal",
+          "sp": "completely normal"
+        },
+        {
+          "en": "heavy traffic",
+          "sp": "a lot of cars, moving slowly"
+        },
+        {
+          "en": "a slim chance",
+          "sp": "a very small possibility"
+        }
+      ],
+      "note": "<b>How it works:</b> flashcards <ico-clone></ico-clone>, memory, listening <ico-headphones></ico-headphones>, gap-fill <ico-filepen></ico-filepen>, compare <ico-comments></ico-comments> and a dialogue. Press <ico-check></ico-check> CHECK wherever you see it.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · WHAT A COLLOCATION IS</b> <span class='es'>— not grammar, not logic: habit</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We got stuck in heavy traffic.",
+              "sp": "Not strong traffic, not big traffic. Nothing explains it; English speakers just say it this way."
+            },
+            {
+              "en": "He has a strong accent.",
+              "sp": "But an accent is strong."
+            },
+            {
+              "en": "There's a slim chance of rain.",
+              "sp": "And a small chance is slim."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · MAKE, DO, TAKE, HAVE</b> <span class='es'>— four small verbs, four sets of partners</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "make an effort · a mistake · a decision",
+            "do research · your best · business",
+            "take a risk · a break · notes",
+            "have a look · a word · doubts"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I made an effort to arrive early.",
+              "sp": "make + effort."
+            },
+            {
+              "en": "We did some research on tonight's guest.",
+              "sp": "do + research (uncountable: some research, never a research)."
+            },
+            {
+              "en": "She took a risk and changed careers.",
+              "sp": "take + risk."
+            },
+            {
+              "en": "Let's have a look at the script.",
+              "sp": "have + look."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · THREE MORE VERB PARTNERS</b> <span class='es'>— the ones you hear on the news</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Listeners raised concerns about the new schedule.",
+              "sp": "raise + concerns."
+            },
+            {
+              "en": "We always meet our deadlines.",
+              "sp": "meet + deadline."
+            },
+            {
+              "en": "What conclusion did you draw?",
+              "sp": "draw + conclusion."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · INTENSIFIERS THAT PAIR</b> <span class='es'>— «very» always works; these sound like C1</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "It's highly unlikely.",
+              "sp": "highly + unlikely, likely, successful, recommended."
+            },
+            {
+              "en": "I was bitterly disappointed.",
+              "sp": "bitterly + disappointed, cold, divided."
+            },
+            {
+              "en": "We're deeply concerned.",
+              "sp": "deeply + concerned, grateful, sorry."
+            },
+            {
+              "en": "That's perfectly normal.",
+              "sp": "perfectly + normal, clear, happy."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · IDIOMS: ONE PER PARAGRAPH</b> <span class='es'>— and no clichés on air</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "You'll have to hit the ground running.",
+              "sp": "One idiom, in the right place: it sounds natural."
+            },
+            {
+              "en": "At the end of the day, we need to think outside the box.",
+              "sp": "Two tired clichés in one sentence. Listeners stop listening."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>The rule of one.</b> An idiom is seasoning: one per paragraph adds flavor, three is a costume. Idioms are informal, so keep them out of contracts and formal emails."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> SPANISH TRAP</b> <span class='es'>— los compañeros de palabra que el español cambia</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Can I ask a question?",
+              "sp": "«Hacer una pregunta» = <b>ask</b> a question, nunca make."
+            },
+            {
+              "en": "I made a mistake.",
+              "sp": "«Cometer un error» = <b>make</b> a mistake, nunca do."
+            },
+            {
+              "en": "That makes sense.",
+              "sp": "«Tiene sentido» = it <b>makes</b> sense, nunca has."
+            },
+            {
+              "en": "She earns good money.",
+              "sp": "«Ganar dinero» trabajando = <b>earn</b>. <i>Win</i> es para premios y partidos."
+            },
+            {
+              "en": "I met someone new at the party.",
+              "sp": "«Conocer a alguien» por primera vez = <b>meet</b>, no know."
+            },
+            {
+              "en": "We drove home in heavy rain.",
+              "sp": "«Lluvia fuerte» = <b>heavy</b> rain, nunca strong."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>make a question</s> → <span class='ok'>ask a question</span> · <s class='x'>do a mistake</s> → <span class='ok'>make a mistake</span> · <s class='x'>it has sense</s> → <span class='ok'>it makes sense</span> · <s class='x'>strong rain</s> → <span class='ok'>heavy rain</span>"
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "episode 1",
+      "stage": "<ico-star></ico-star> THE STORY <span class=\"es\">· episode 1</span>",
+      "title": "<ico-star></ico-star> ON AIR",
+      "intro": "Your first day at <b style='color:var(--gold)'>The Signal</b>, the city's talk-radio show. You are the new producer's assistant. Roz, the producer, hands you a headset: «You hit the ground running here.» Tonight's guest, Sam, changed careers at forty.<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>candid</b> = honest, even when it is uncomfortable · <b>hit the ground running</b> · <b>take a risk</b>.",
+      "cast": [
+        {
+          "en": "Nora",
+          "sp": "the host"
+        },
+        {
+          "en": "Roz",
+          "sp": "the producer, your boss"
+        },
+        {
+          "en": "Sam",
+          "sp": "tonight's guest"
+        },
+        {
+          "en": "You",
+          "sp": "the new <b style='color:var(--magenta)'>producer's assistant</b>"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "TEN IDIOMS · tap to flip",
+      "intro": "Say what you think it means before you flip the card. Five of them are in tonight's interview.",
+      "cards": [
+        {
+          "front": "hit the ground running",
+          "back": "start something new at full speed · «She hit the ground running on day one.»"
+        },
+        {
+          "front": "a steep learning curve",
+          "back": "a lot to learn in a short time · «The first month was a steep learning curve.»"
+        },
+        {
+          "front": "cut corners",
+          "back": "do something badly to save time or money · «They cut corners, and it shows.»"
+        },
+        {
+          "front": "the elephant in the room",
+          "back": "the obvious problem nobody mentions · «Let's talk about the elephant in the room.»"
+        },
+        {
+          "front": "back to square one",
+          "back": "starting again from the beginning · «The plan failed, so it's back to square one.»"
+        },
+        {
+          "front": "on the same page",
+          "back": "in agreement about what to do · «Are we all on the same page?»"
+        },
+        {
+          "front": "a game changer",
+          "back": "something that changes a situation completely · «The new studio is a game changer.»"
+        },
+        {
+          "front": "play it by ear",
+          "back": "decide as things happen, without a plan · «No script tonight. Let's play it by ear.»"
+        },
+        {
+          "front": "the tip of the iceberg",
+          "back": "a small visible part of a bigger problem · «These complaints are the tip of the iceberg.»"
+        },
+        {
+          "front": "a blessing in disguise",
+          "back": "something bad that turns out to be good · «Losing that job was a blessing in disguise.»"
+        }
+      ],
+      "deckLabel": "idioms"
+    },
+    {
+      "type": "memory",
+      "id": "mem-idioms",
+      "title": "MEMORY · idiom and plain meaning",
+      "intro": "Find each idiom and what it means in plain English. Tap two cards.",
+      "pairs": [
+        {
+          "a": "cut corners",
+          "b": "do it badly to save time"
+        },
+        {
+          "a": "the elephant in the room",
+          "b": "the problem nobody mentions"
+        },
+        {
+          "a": "back to square one",
+          "b": "starting again"
+        },
+        {
+          "a": "on the same page",
+          "b": "in agreement"
+        },
+        {
+          "a": "play it by ear",
+          "b": "decide as you go"
+        },
+        {
+          "a": "a blessing in disguise",
+          "b": "bad luck that turns out well"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE INTERVIEW",
+      "desc": "Nora interviews Sam, who left accounting at forty to open a bakery. Listen for the word partners: there are eight collocations and several idioms.",
+      "src": "c1-l1-1.mp3",
+      "dur": "1:52",
+      "speakers": "<ico-commentdots></ico-commentdots> Nora + Sam",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What does \"a steep learning curve\" refer to in Sam's story?",
+          "options": [
+            "Learning to bake in large quantities",
+            "Learning to read a balance sheet",
+            "Learning to speak on the radio"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What was the big risk Sam took?",
+          "options": [
+            "Borrowing money from family",
+            "Leaving a safe job to open a bakery",
+            "Opening a second shop"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Does Sam regret the decision?",
+          "options": [
+            "Yes: the lost salary still hurts",
+            "Sam hasn't decided yet",
+            "No: the money is worse, but the work is better"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Which phrase does Nora use to raise the uncomfortable topic?",
+          "options": [
+            "the elephant in the room",
+            "back to square one",
+            "a blessing in disguise"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Retell Sam's story in four sentences. Use two collocations and one idiom from the interview.",
+        "starter": "Sam took a risk and… At first, it was… Sam's family raised concerns because… In the end,…"
+      },
+      "transcript": [
+        {
+          "spk": "Nora",
+          "html": "You're listening to The Signal. I'm Nora, and my guest tonight did something most of us only talk about. At forty, Sam walked out of a safe job in accounting and opened a bakery. Sam, welcome."
+        },
+        {
+          "spk": "Sam",
+          "b": true,
+          "html": "Thanks, Nora. It's great to be here."
+        },
+        {
+          "spk": "Nora",
+          "html": "Eighteen years with the same firm. What made you <span class='tg'>take the risk</span>?"
+        },
+        {
+          "spk": "Sam",
+          "b": true,
+          "html": "Honestly? I was <span class='tg'>bitterly disappointed</span> with where I'd ended up. I was good at my job, I always <span class='tg'>met my deadlines</span>, but I'd stopped <span class='tg'>making an effort</span>. So I <span class='tg'>did some research</span>, I ran the numbers, as accountants do, and I <span class='tg'>drew a conclusion</span>: it was now or never."
+        },
+        {
+          "spk": "Nora",
+          "html": "And did you <span class='tg'>hit the ground running</span>?"
+        },
+        {
+          "spk": "Sam",
+          "b": true,
+          "html": "Not at all. It was <span class='tg'>a steep learning curve</span>. I knew how to read a balance sheet, but I had no idea how to bake three hundred loaves before six in the morning. In the first month, I <span class='tg'>cut corners</span> with a cheaper flour, and my customers noticed right away. So it was <span class='tg'>back to square one</span>."
+        },
+        {
+          "spk": "Nora",
+          "html": "Let's talk about <span class='tg'>the elephant in the room</span>. Money. You went from a good salary to, well, what exactly?"
+        },
+        {
+          "spk": "Sam",
+          "b": true,
+          "html": "To nothing, for the first year. My family <span class='tg'>raised concerns</span>, and they were right to. It was <span class='tg'>highly unlikely</span> that I'd ever earn the same again. And I still don't."
+        },
+        {
+          "spk": "Nora",
+          "html": "That's very candid. So, any regrets?"
+        },
+        {
+          "spk": "Sam",
+          "b": true,
+          "html": "You know, losing that salary was <span class='tg'>a blessing in disguise</span>. It forced me to keep the business small and simple. I work harder than I ever did, and on Sunday nights I look forward to Monday. I couldn't say that once in eighteen years."
+        },
+        {
+          "spk": "Nora",
+          "html": "Sam, thank you. After the break, your calls."
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "PICK THE PARTNER",
+      "intro": "All three options are real English words. Only one is the partner a native speaker expects.",
+      "items": [
+        {
+          "q": "Can I ___ a question?",
+          "options": [
+            "ask",
+            "make",
+            "do"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Sorry, I ___ a mistake in the script.",
+          "options": [
+            "did",
+            "made",
+            "had"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "We need to ___ more research before the show.",
+          "options": [
+            "make",
+            "take",
+            "do"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "It's ___ unlikely that the guest will cancel.",
+          "options": [
+            "highly",
+            "strongly",
+            "bitterly"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "She was ___ disappointed when the show was canceled.",
+          "options": [
+            "highly",
+            "bitterly",
+            "heavily"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "There was ___ traffic, so the guest arrived late.",
+          "options": [
+            "strong",
+            "hard",
+            "heavy"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Several listeners ___ concerns about the new schedule.",
+          "options": [
+            "raised",
+            "rose",
+            "lifted"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We always ___ our deadlines.",
+          "options": [
+            "reach",
+            "meet",
+            "arrive"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "There's only a ___ chance that it will rain.",
+          "options": [
+            "thin",
+            "narrow",
+            "slim"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "That doesn't ___ sense.",
+          "options": [
+            "make",
+            "have",
+            "do"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "WHAT SOUNDS NATIVE?",
+      "intro": "Both sentences are understood. Only one is what a native speaker would say.",
+      "pair": {
+        "a": "I did an effort.",
+        "b": "I made an effort."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "Which one sounds natural?",
+          "options": [
+            "A — I did an effort",
+            "B — I made an effort",
+            "Both sound natural"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Why is the other one wrong?",
+          "options": [
+            "The tense is wrong",
+            "The word order is wrong",
+            "\"Effort\" pairs with \"make\": habit, not grammar"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which sounds natural?",
+          "options": [
+            "We drove through heavy rain.",
+            "We drove through strong rain.",
+            "We drove through a big rain."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which sounds natural?",
+          "options": [
+            "Let's do a look at the script.",
+            "Let's have a look at the script.",
+            "Let's make a look at the script."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which sounds natural?",
+          "options": [
+            "He wins a good salary.",
+            "He gains a good salary.",
+            "He earns a good salary."
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "SMALL TALK BEFORE THE SHOW",
+      "intro": "Sam arrives at the studio and you keep the guest company. Pick the reply with the right word partners.",
+      "lines": [
+        {
+          "spk": "Sam",
+          "html": "Hi! Sorry I'm a bit late. The traffic was terrible."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "No problem. Strong traffic is very normal here.",
+            "No problem at all. Heavy traffic is perfectly normal at this hour.",
+            "Don't worry. The traffic was very big today."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Sam",
+          "html": "Is this your first week here?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "My first day. It's a steep learning curve, but I'm enjoying it.",
+            "My first day. I knew a lot of new people this morning.",
+            "My first day. I have a strong learning curve."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Sam",
+          "html": "I'm a little nervous, to be honest. I've never been on the radio."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "That has sense. Nora will do you feel at home.",
+            "It's logic. Nora makes very good questions.",
+            "That makes sense. Nora will make you feel at home."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Sam",
+          "html": "Do you know what she's going to ask me?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Roughly. She did some research on your story, but she likes to play it by ear.",
+            "Roughly. She made a research, but she likes to play by ears.",
+            "Roughly. She did researches about you and plays it for ear."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Sam",
+          "html": "Okay. Any last advice?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Be yourself. And if you do a mistake, keep going.",
+            "Be yourself. And if you make a mistake, keep going.",
+            "Be yourself. And if you have a mistake, continue."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE NOTES",
+      "desc": "You drafted an introduction for Sam. Roz sends you a voice memo with her notes: four word partners to fix before Nora reads it on air.",
+      "src": "c1-l1-2.mp3",
+      "dur": "0:59",
+      "speakers": "<ico-commentdots></ico-commentdots> Roz",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How does Roz correct \"made a research\"?",
+          "options": [
+            "took research",
+            "had research",
+            "did research"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Which adjective does she want with \"traffic\"?",
+          "options": [
+            "heavy",
+            "strong",
+            "big"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does Roz say about the idioms in the draft?",
+          "options": [
+            "They are used with the wrong meaning",
+            "There are too many: keep one",
+            "The draft needs two more"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does Roz think of the draft overall?",
+          "options": [
+            "It has to be rewritten from the start",
+            "It is ready to go on air",
+            "It is close: the idea works, the partners need fixing"
+          ],
+          "answer": 2
+        }
+      ],
+      "speaking": {
+        "prompt": "Record a 30-second introduction for Sam, as Nora would read it. Use three collocations from this lesson.",
+        "starter": "My guest tonight took a risk that… After eighteen years, Sam drew a conclusion:… It was highly unlikely that…"
+      },
+      "transcript": [
+        {
+          "spk": "Roz",
+          "html": "Hi, it's Roz. I've read your draft intro for Sam, and it's nearly there. But four word partners need fixing before Nora reads it on air. One. You wrote \"Sam made a research.\" We don't make research. We <span class='tg'>do research</span>. Two. \"He did a big effort.\" It's \"<span class='tg'>made</span> a big effort.\" Three. \"He got stuck in strong traffic on the way here.\" Traffic is <span class='tg'>heavy</span>, not strong. And four. \"Sam won a lot of money as an accountant.\" You win a prize. You <span class='tg'>earn</span> money. Oh, and one more thing. You've got three idioms in two sentences. Pick one and cut the rest. The idea is good, though, and the story <span class='tg'>makes sense</span>. Fix those and send it back before five. Thanks!"
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> THE GUEST INTRO",
+      "intro": "Write the introduction Nora will read on air for a guest of your choice: someone you admire, real or invented (about 80 words).",
+      "checklist": [
+        "Three collocations from this lesson (<b>take a risk, raise concerns, highly unlikely…</b>)",
+        "<b>Exactly one</b> idiom: no more",
+        "The words of the day: <b>candid</b>, <b>hit the ground running</b> or <b>take a risk</b> can count toward the points above",
+        "No clichés (<b>think outside the box</b>, <b>at the end of the day</b>)",
+        "Check the Spanish traps: <b>ask</b> a question, <b>make</b> a mistake, <b>earn</b> money"
+      ],
+      "placeholder": "My guest tonight…",
+      "example": "My guest tonight <span class=\"gap\">who + what they did</span>. At <span class=\"gap\">age / moment</span>, <span class=\"gap\">name</span> took a risk: <span class=\"gap\">the risk</span>. It was highly unlikely that <span class=\"gap\">what could go wrong</span>. <span class=\"gap\">one sentence with your idiom</span>. Tonight, in a candid conversation, <span class=\"gap\">what we will hear</span>. Please welcome <span class=\"gap\">name</span>.",
+      "hw": "Write your intro, then <b>record yourself reading it like a radio host</b>: slow, warm, with pauses. Send me the text and the audio on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "About 80 words, and it works as an introduction: we know who the guest is and why we should listen."
+        },
+        {
+          "c": "Lesson target",
+          "d": "Three correct collocations, exactly one idiom used with the right meaning, and the words of the day."
+        },
+        {
+          "c": "Clear the first time",
+          "d": "A listener understands it without hearing it twice. No word-for-word translation from Spanish."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c1-l1",
+    "keys": [
+      "a-blessing-in-disguise",
+      "a-game-changer",
+      "a-slim-chance",
+      "a-steep-learning-curve",
+      "arrive",
+      "ask",
+      "at-the-end-of-the-day-we-need-to-think-outside-the-box",
+      "at-your-earliest-convenience",
+      "back-to-square-one",
+      "bad-luck-that-turns-out-well",
+      "be-yourself-and-if-you-do-a-mistake-keep-going",
+      "be-yourself-and-if-you-have-a-mistake-continue",
+      "be-yourself-and-if-you-make-a-mistake-keep-going",
+      "big",
+      "bitterly",
+      "bitterly-disappointed",
+      "borrowing-money-from-family",
+      "can-i-ask-a-question",
+      "cut-corners",
+      "decide-as-you-go",
+      "deeply-concerned",
+      "did",
+      "did-research",
+      "do",
+      "do-it-badly-to-save-time",
+      "do-you-know-what-she-s-going-to-ask-me",
+      "does-sam-regret-the-decision",
+      "don-t-worry-the-traffic-was-very-big-today",
+      "further-information",
+      "had",
+      "had-research",
+      "hard",
+      "have",
+      "he-earns-a-good-salary",
+      "he-gains-a-good-salary",
+      "he-has-a-strong-accent",
+      "he-wins-a-good-salary",
+      "heavily",
+      "heavy",
+      "heavy-traffic",
+      "hi-sorry-i-m-a-bit-late-the-traffic-was-terrible",
+      "highly",
+      "highly-unlikely",
+      "hit-the-ground-running",
+      "how-does-roz-correct-made-a-research",
+      "i-did-an-effort",
+      "i-m-a-little-nervous-to-be-honest-i-ve-never-been-on-the-radio",
+      "i-made-a-mistake",
+      "i-made-an-effort",
+      "i-made-an-effort-to-arrive-early",
+      "i-met-someone-new-at-the-party",
+      "i-was-bitterly-disappointed",
+      "in-agreement",
+      "is-this-your-first-week-here",
+      "it-has-to-be-rewritten-from-the-start",
+      "it-is-close-the-idea-works-the-partners-need-fixing",
+      "it-is-ready-to-go-on-air",
+      "it-s-highly-unlikely",
+      "it-s-logic-nora-makes-very-good-questions",
+      "learning-to-bake-in-large-quantities",
+      "learning-to-read-a-balance-sheet",
+      "learning-to-speak-on-the-radio",
+      "leaving-a-safe-job-to-open-a-bakery",
+      "let-s-do-a-look-at-the-script",
+      "let-s-have-a-look-at-the-script",
+      "let-s-make-a-look-at-the-script",
+      "lifted",
+      "listeners-raised-concerns-about-the-new-schedule",
+      "made",
+      "make",
+      "meet",
+      "my-first-day-i-have-a-strong-learning-curve",
+      "my-first-day-i-knew-a-lot-of-new-people-this-morning",
+      "my-first-day-it-s-a-steep-learning-curve-but-i-m-enjoying-it",
+      "narrow",
+      "no-problem-at-all-heavy-traffic-is-perfectly-normal-at-this-hour",
+      "no-problem-strong-traffic-is-very-normal-here",
+      "no-the-money-is-worse-but-the-work-is-better",
+      "okay-any-last-advice",
+      "on-the-same-page",
+      "opening-a-second-shop",
+      "perfectly-normal",
+      "play-it-by-ear",
+      "raised",
+      "reach",
+      "regarding",
+      "rose",
+      "roughly-she-did-researches-about-you-and-plays-it-for-ear",
+      "roughly-she-did-some-research-on-your-story-but-she-likes-to-play-it-by-ear",
+      "roughly-she-made-a-research-but-she-likes-to-play-by-ears",
+      "sam-hasn-t-decided-yet",
+      "she-earns-good-money",
+      "she-took-a-risk-and-changed-careers",
+      "slim",
+      "starting-again",
+      "strong",
+      "strongly",
+      "take",
+      "that-has-sense-nora-will-do-you-feel-at-home",
+      "that-makes-sense",
+      "that-makes-sense-nora-will-make-you-feel-at-home",
+      "that-s-perfectly-normal",
+      "the-draft-needs-two-more",
+      "the-elephant-in-the-room",
+      "the-problem-nobody-mentions",
+      "the-tip-of-the-iceberg",
+      "there-are-too-many-keep-one",
+      "there-s-a-slim-chance-of-rain",
+      "they-are-used-with-the-wrong-meaning",
+      "thin",
+      "to-do-research",
+      "to-draw-a-conclusion",
+      "to-make-an-effort",
+      "to-meet-a-deadline",
+      "to-purchase",
+      "to-raise-concerns",
+      "to-take-a-risk",
+      "took-research",
+      "we-always-meet-our-deadlines",
+      "we-apologize-for",
+      "we-did-some-research-on-tonight-s-guest",
+      "we-drove-home-in-heavy-rain",
+      "we-drove-through-a-big-rain",
+      "we-drove-through-heavy-rain",
+      "we-drove-through-strong-rain",
+      "we-got-stuck-in-heavy-traffic",
+      "we-re-deeply-concerned",
+      "what-conclusion-did-you-draw",
+      "what-does-a-steep-learning-curve-refer-to-in-sam-s-story",
+      "what-does-roz-say-about-the-idioms-in-the-draft",
+      "what-does-roz-think-of-the-draft-overall",
+      "what-was-the-big-risk-sam-took",
+      "which-adjective-does-she-want-with-traffic",
+      "which-phrase-does-nora-use-to-raise-the-uncomfortable-topic",
+      "yes-the-lost-salary-still-hurts",
+      "you-ll-have-to-hit-the-ground-running"
+    ]
+  }
+}
