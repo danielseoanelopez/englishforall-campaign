@@ -1,0 +1,960 @@
+{
+  "level": "B2",
+  "num": 5,
+  "totalLessons": 6,
+  "world": "THE PROFESSIONAL",
+  "key": "rankup_B2_L5",
+  "title": "NEGOTIATION",
+  "titlePlain": "Negotiation — The Contract (B2)",
+  "subtitle": "Speaking &amp; Listening · B2 · ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=b2-l6",
+    "label": "LESSON 6 ▸ FORMAL WRITING"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada verbo con su significado, sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "to refuse to do",
+          "r": "negarse a hacer algo"
+        },
+        {
+          "l": "to warn someone that…",
+          "r": "advertirle a alguien que…"
+        },
+        {
+          "l": "to admit doing",
+          "r": "admitir haber hecho algo"
+        },
+        {
+          "l": "to deny doing",
+          "r": "negar haber hecho algo"
+        },
+        {
+          "l": "to point out that…",
+          "r": "señalar que…"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "condiciones para negociar",
+      "title": "<ico-book></ico-book> IF WE WERE TO… PROVIDED THAT…",
+      "intro": "Negociar es poner condiciones. Aquí tienes tres herramientas: <b style='color:var(--gold)'>were to</b> para tantear sin comprometerte, cuatro <b style='color:var(--gold)'>conectores de condición</b>, y el <b style='color:var(--gold)'>tercer condicional</b> para analizar el trato cuando ya terminó.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver frases de la mesa",
+      "vocab": [
+        {
+          "en": "an offer / a counteroffer",
+          "sp": "una oferta / una contraoferta"
+        },
+        {
+          "en": "to be willing to",
+          "sp": "estar dispuesto a"
+        },
+        {
+          "en": "to pay upfront",
+          "sp": "pagar por adelantado"
+        },
+        {
+          "en": "to extend the contract",
+          "sp": "extender el contrato"
+        },
+        {
+          "en": "to sign for two years",
+          "sp": "firmar por dos años"
+        },
+        {
+          "en": "in exchange for",
+          "sp": "a cambio de"
+        },
+        {
+          "en": "I can't go higher than that.",
+          "sp": "no puedo subir más que eso"
+        },
+        {
+          "en": "That's our final offer.",
+          "sp": "esa es nuestra oferta final"
+        },
+        {
+          "en": "We have a deal.",
+          "sp": "trato hecho"
+        },
+        {
+          "en": "What would you have done differently?",
+          "sp": "¿qué habrías hecho distinto?"
+        }
+      ],
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>diálogo</b>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>completar</b> <ico-filepen></ico-filepen>, <b>comparar</b> <ico-comments></ico-comments> y <b>ordenar</b> <ico-puzzle></ico-puzzle>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · LO QUE YA SABES DE B1</b> <span class='es'>— oferta real y oferta hipotética</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "If you sign today, we'll give you 10% off.",
+              "sp": "Primer condicional: una oferta real, sobre la mesa."
+            },
+            {
+              "en": "If we had more time, we would add the app.",
+              "sp": "Segundo condicional: hipotético, no está pasando."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · WERE TO: TANTEAR EL TERRENO</b> <span class='es'>— propones sin comprometerte</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "If we were to extend the contract, would you be willing to pay upfront?",
+              "sp": "Si extendiéramos el contrato, ¿estarían dispuestos a pagar por adelantado?"
+            },
+            {
+              "en": "If we were to offer 10%, would you sign for two years?",
+              "sp": "Todavía no ofreces nada: solo preguntas qué pasaría."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>If + were to + verbo</b>, y en la otra mitad <b>would</b>. Es más suave que el primer condicional: si dicen que no, tú no ofreciste nada."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · CUATRO CONECTORES DE CONDICIÓN</b> <span class='es'>— siempre que, mientras, a menos que, si no</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We can offer 10%, provided that you sign for two years.",
+              "sp": "<b>provided that</b> = siempre que, con la condición de que."
+            },
+            {
+              "en": "The price stays the same as long as you're with us.",
+              "sp": "<b>as long as</b> = mientras, siempre y cuando."
+            },
+            {
+              "en": "We can't lower the price unless you extend the contract.",
+              "sp": "<b>unless</b> = a menos que (= if… not)."
+            },
+            {
+              "en": "We need an answer by Friday. Otherwise, the offer ends.",
+              "sp": "<b>otherwise</b> = si no, de lo contrario. Empieza frase nueva y lleva coma."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · TERCER CONDICIONAL: EL ANÁLISIS</b> <span class='es'>— if + had + participio, would have + participio</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "If we hadn't offered the discount, he would have walked away.",
+              "sp": "Si no hubiéramos ofrecido el descuento, se habría ido. (Pero lo ofrecimos.)"
+            },
+            {
+              "en": "If we'd started with ten, we would have ended at fifteen.",
+              "sp": "Aquí <b>we'd</b> = we had."
+            },
+            {
+              "en": "I'd have asked for three years.",
+              "sp": "Aquí <b>I'd</b> = I would. Suenan igual; la palabra siguiente te dice cuál es."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · LA FÓRMULA DEL INTERCAMBIO</b> <span class='es'>— doy esto, siempre que tú des aquello</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We could deliver a month early, provided that the app moves to phase three.",
+              "sp": "We could + lo que das, provided that you + lo que pides."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> TRAMPA DEL ESPAÑOL</b> <span class='es'>— tres calcos que se oyen en toda negociación</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "If I had known, I would have called.",
+              "sp": "«Si hubiera sabido»: después de <b>if</b> va <b>had</b>, nunca would have."
+            },
+            {
+              "en": "Both sides had to compromise.",
+              "sp": "<i>Compromise</i> = ceder un poco cada uno. «Compromiso» es <i>commitment</i>."
+            },
+            {
+              "en": "We need to discuss the price.",
+              "sp": "«Discutir sobre» = discuss, sin about."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>If I would have known,…</s> → <span class='ok'>If I had known,…</span> · <s class='x'>Let's discuss about the price.</s> → <span class='ok'>Let's discuss the price.</span>"
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "el contrato",
+      "title": "<ico-star></ico-star> THE CONTRACT",
+      "intro": "Día de la renovación. David quiere un 20% de descuento; el límite de Priya es 10%. Carla, que ya trabaja con el equipo, encontró el verdadero problema de David: <b style='color:var(--gold)'>su propia fecha límite</b>.",
+      "cast": [
+        {
+          "en": "David",
+          "sp": "pide 20% o se va"
+        },
+        {
+          "en": "Priya",
+          "sp": "no puede pasar de 10%"
+        },
+        {
+          "en": "Marcos",
+          "sp": "lleva un dato a la mesa"
+        },
+        {
+          "en": "Carla",
+          "sp": "encontró la <b style='color:var(--magenta)'>palanca</b>"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "DEAL WORDS · toca para girar",
+      "intro": "Diez palabras que se oyen en cualquier mesa de negociación.",
+      "cards": [
+        {
+          "front": "a deal-breaker",
+          "back": "una condición que rompe el trato"
+        },
+        {
+          "front": "a concession",
+          "back": "una concesión, algo que cedes"
+        },
+        {
+          "front": "leverage",
+          "back": "ventaja para presionar, palanca"
+        },
+        {
+          "front": "the bottom line",
+          "back": "el límite final; lo esencial"
+        },
+        {
+          "front": "to walk away",
+          "back": "levantarse de la mesa, retirarse"
+        },
+        {
+          "front": "to sweeten the deal",
+          "back": "mejorar la oferta con un extra"
+        },
+        {
+          "front": "non-negotiable",
+          "back": "innegociable"
+        },
+        {
+          "front": "terms",
+          "back": "las condiciones del acuerdo"
+        },
+        {
+          "front": "win-win",
+          "back": "en que ganan las dos partes"
+        },
+        {
+          "front": "to sign off on",
+          "back": "dar la aprobación final a"
+        }
+      ],
+      "deckLabel": "negociación"
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "NAME YOUR PRICE",
+      "intro": "Negocias tu tarifa como freelancer. Una respuesta cede demasiado, otra es demasiado dura y una es la correcta.",
+      "lines": [
+        {
+          "spk": "Client",
+          "html": "Fifty dollars an hour? That's more than we planned to pay."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Oh, sorry. I can do it for twenty-five.",
+            "I understand. What budget did you have in mind?",
+            "Then find someone cheaper. Good luck."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Client",
+          "html": "We were thinking of thirty-five."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "I could do forty-five, provided that you book twenty hours a month.",
+            "Okay, thirty-five is fine, I guess.",
+            "Thirty-five is an insult."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Client",
+          "html": "Twenty hours is a lot. What if we can only promise ten?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Twenty hours or nothing.",
+            "Then ten hours at thirty. No problem.",
+            "If you were to pay upfront, I'd be willing to do ten hours at forty-five."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Client",
+          "html": "Upfront is fine. But we need the first project by Friday."
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Friday works, as long as I get the materials tomorrow.",
+            "Friday? That's your problem, not mine.",
+            "Sure. I'll work all night if I have to."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Client",
+          "html": "Deal. Can you put that in writing?"
+        },
+        {
+          "gap": true,
+          "q": "Tu respuesta:",
+          "options": [
+            "Oh, we don't need anything in writing. I trust you.",
+            "Of course. I'll send the terms today so you can sign off on them.",
+            "Only after you pay me."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE TABLE",
+      "desc": "David llega pidiendo 20%. Oferta, contraoferta, punto muerto… y un dato que cambia la conversación.",
+      "src": "b2-l5-1.mp3",
+      "dur": "1:47",
+      "speakers": "<ico-commentdots></ico-commentdots> David + Priya + Marcos",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What does David ask for first?",
+          "options": [
+            "A 15% discount",
+            "A 20% discount",
+            "A two-year contract"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What is Priya's condition for the 10% discount?",
+          "options": [
+            "David signs for two years",
+            "David pays upfront",
+            "The mobile app is canceled"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What breaks the deadlock?",
+          "options": [
+            "Priya raises the discount to 15%",
+            "David calls the other agency",
+            "Marcos offers to deliver phase two a month early"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Who conceded more on the discount?",
+          "options": [
+            "David: he came down from 20% to 10%",
+            "Priya: she went up from 5% to 15%",
+            "Neither of them moved"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Make the two trades yourself, as Priya and Marcos did: one with 'provided that', one with 'If we were to…'.",
+        "starter": "We can offer (what), provided that you (condition). If we were to (idea), we could (benefit)."
+      },
+      "transcript": [
+        {
+          "spk": "David",
+          "html": "Let's not waste time. Twenty percent off, or I talk to the other agency."
+        },
+        {
+          "spk": "Priya",
+          "html": "Thank you for being direct, David. Twenty isn't possible. We could offer five."
+        },
+        {
+          "spk": "David",
+          "html": "Five? After the pricing incident? Fifteen is my <span class='tg'>bottom line</span>."
+        },
+        {
+          "spk": "Priya",
+          "html": "And ten is ours. I can't go higher than ten."
+        },
+        {
+          "spk": "David",
+          "html": "Then we have a problem."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "David, can I ask you something? Your board meets in September. And you promised them phase two before that meeting, didn't you?"
+        },
+        {
+          "spk": "David",
+          "html": "Who told you that?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "It was in your last email. So the real problem isn't the price. It's the date."
+        },
+        {
+          "spk": "David",
+          "html": "Go on."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "<span class='tg'>If we were to</span> move the mobile app to phase three, we could deliver phase two a month early. In August, before your board meets."
+        },
+        {
+          "spk": "David",
+          "html": "A month early. Hmm. And the discount?"
+        },
+        {
+          "spk": "Priya",
+          "html": "We can offer ten percent, <span class='tg'>provided that</span> you sign for two years instead of one."
+        },
+        {
+          "spk": "David",
+          "html": "Two years is a long time."
+        },
+        {
+          "spk": "Priya",
+          "html": "It is. But <span class='tg'>as long as</span> you're with us, the price stays the same. No increases. <span class='tg'>Otherwise</span>, we go back to a one-year contract at the normal rate."
+        },
+        {
+          "spk": "David",
+          "html": "Ten percent, two years, phase two in August, and the app waits."
+        },
+        {
+          "spk": "Priya",
+          "html": "That's the deal."
+        },
+        {
+          "spk": "David",
+          "html": "You know, I came here for twenty. Fine. Send me the terms. We have a deal."
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "SET THE CONDITION",
+      "intro": "Elige el conector o la forma verbal que hace lógica la condición.",
+      "items": [
+        {
+          "q": "We can offer 10%, ___ you sign for two years.",
+          "options": [
+            "provided that",
+            "unless",
+            "otherwise"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "We can't lower the price ___ you extend the contract.",
+          "options": [
+            "otherwise",
+            "unless",
+            "provided that"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "We need an answer by Friday. ___, the offer ends.",
+          "options": [
+            "Unless",
+            "As long as",
+            "Otherwise"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "The price stays the same ___ you're with us.",
+          "options": [
+            "as long as",
+            "unless",
+            "otherwise"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "If we ___ deliver early, would you sign today?",
+          "options": [
+            "would",
+            "were to",
+            "will"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "If we ___ offered the discount, he would have walked away.",
+          "options": [
+            "wouldn't have",
+            "didn't",
+            "hadn't"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "If she'd started with 10%, they ___ at 15%.",
+          "options": [
+            "would have ended",
+            "would end",
+            "had ended"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I won't sign ___ the terms are in writing.",
+          "options": [
+            "provided that",
+            "unless",
+            "otherwise"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "IF WE EXTEND vs IF WE WERE TO EXTEND",
+      "intro": "Las dos proponen lo mismo, pero una ya pone la oferta sobre la mesa y la otra solo explora la idea.",
+      "pair": {
+        "a": "If we extend the contract, will you pay upfront?",
+        "b": "If we were to extend the contract, would you be willing to pay upfront?"
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál suena a oferta firme?",
+          "options": [
+            "A — If we extend…",
+            "B — If we were to extend…",
+            "Las dos igual"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál explora la idea sin comprometerte?",
+          "options": [
+            "A — If we extend…",
+            "B — If we were to extend…",
+            "Ninguna"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Con «were to», ¿qué va en la otra mitad de la frase?",
+          "options": [
+            "will",
+            "had",
+            "would"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Suaviza: «If you pay today, we'll give you 5% off.»",
+          "options": [
+            "If you were to pay today, we would give you 5% off.",
+            "If you were pay today, we would give you 5% off.",
+            "If you would pay today, we will give you 5% off."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es correcta?",
+          "options": [
+            "If we would sign for two years, would you lower the price?",
+            "If we were to sign for two years, would you lower the price?",
+            "If we were to sign for two years, will you lower the price?"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "LOOKING BACK AT THE DEAL",
+      "intro": "Toca las palabras para armar frases con el tercer condicional: lo que habría pasado.",
+      "items": [
+        {
+          "words": [
+            "If",
+            "I",
+            "had",
+            "known,",
+            "I",
+            "would",
+            "have",
+            "called"
+          ],
+          "answer": "If I had known, I would have called"
+        },
+        {
+          "words": [
+            "He",
+            "would",
+            "have",
+            "walked",
+            "away",
+            "if",
+            "we",
+            "had",
+            "refused"
+          ],
+          "answer": "He would have walked away if we had refused"
+        },
+        {
+          "words": [
+            "If",
+            "we",
+            "had",
+            "started",
+            "with",
+            "ten,",
+            "we",
+            "would",
+            "have",
+            "ended",
+            "at",
+            "fifteen"
+          ],
+          "answer": "If we had started with ten, we would have ended at fifteen"
+        },
+        {
+          "words": [
+            "What",
+            "would",
+            "you",
+            "have",
+            "done",
+            "differently?"
+          ],
+          "answer": "What would you have done differently?"
+        },
+        {
+          "words": [
+            "I",
+            "would",
+            "have",
+            "asked",
+            "for",
+            "three",
+            "years"
+          ],
+          "answer": "I would have asked for three years"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE DEBRIEF",
+      "desc": "Después de la reunión, Carla y Marcos repasan el trato: qué salió bien y qué habrían hecho distinto.",
+      "src": "b2-l5-2.mp3",
+      "dur": "0:57",
+      "speakers": "<ico-commentdots></ico-commentdots> Carla + Marcos",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "According to Carla, what would have happened if Priya had started at 10%?",
+          "options": [
+            "David would have walked away",
+            "They would have ended at 15%",
+            "They would have ended at 5%"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Why does Carla think David was never going to walk away?",
+          "options": [
+            "He needed the August date too much",
+            "He liked the team too much",
+            "The other agency was too expensive"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What would Carla have done differently?",
+          "options": [
+            "Offered 20%",
+            "Refused any discount",
+            "Asked for a three-year contract"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Marcos's last line suggest?",
+          "options": [
+            "He wants to negotiate alone next time",
+            "He wants Carla in the next negotiation",
+            "He thinks Carla talks too much"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Think of a real negotiation of yours (a salary, a rent, a price). Say one thing you would have done differently.",
+        "starter": "If I had (past participle), I would have (past participle). Next time, I'll (plan)."
+      },
+      "transcript": [
+        {
+          "spk": "Carla",
+          "html": "So? How did it go?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "We have a deal. Ten percent, two years. And Carla, your tip about his board meeting saved us. <span class='tg'>If you hadn't found</span> that email, we <span class='tg'>would have argued</span> about the price all day."
+        },
+        {
+          "spk": "Carla",
+          "html": "I'm glad it helped. One thing, though. Priya opened at five percent, and you ended at ten. <span class='tg'>If she'd started</span> with ten, you <span class='tg'>would have ended</span> at fifteen."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "True. And if David had walked away, we would have lost our biggest client."
+        },
+        {
+          "spk": "Carla",
+          "html": "He was never going to walk away. He needed that August date too much. That was your <span class='tg'>leverage</span>."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "What would you have done differently?"
+        },
+        {
+          "spk": "Carla",
+          "html": "<span class='tg'>I'd have asked</span> for three years. He would have said yes."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Next time, you're coming to the table with us."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> THE COUNTER-OFFER 2.0",
+      "intro": "Un cliente (o tu jefe) te hizo una oferta que no te alcanza. Escribe tu contraoferta (5–7 frases): das algo, pides algo y dejas claro qué pasa si no hay acuerdo.",
+      "checklist": [
+        "Agradece la oferta antes de responder (<b>Thank you for…</b>)",
+        "Un intercambio con <b>We could…, provided that…</b>",
+        "Una idea tanteada con <b>If we were to…, would you be willing to…?</b>",
+        "La alternativa con <b>Otherwise,…</b> o <b>unless</b>",
+        "<b>discuss</b> sin about, y nada de <b>if… would have</b>"
+      ],
+      "placeholder": "Thank you for your offer of…",
+      "example": "Thank you for <span class=\"gap\">su oferta</span>. We could <span class=\"gap\">lo que das</span>, provided that <span class=\"gap\">lo que pides</span>. If we were to <span class=\"gap\">idea</span>, would you be willing to <span class=\"gap\">verbo</span>? Otherwise, <span class=\"gap\">la alternativa</span>.",
+      "hw": "Escribe tu contraoferta y después grábate <b>diciéndola en voz alta, con calma y sin leer</b>. Envíame texto y audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "Escribiste el número de frases que pide la consigna: agradeces, propones un intercambio y das la alternativa."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Usaste <b>provided that</b>, <b>were to + would</b> y <b>otherwise / unless</b>, bien formados."
+        },
+        {
+          "c": "Se entiende a la primera",
+          "d": "Un lector lo entiende sin releer, y el tono es firme pero cordial."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/b2-l5",
+    "keys": [
+      "a-15-discount",
+      "a-20-discount",
+      "a-concession",
+      "a-deal-breaker",
+      "a-two-year-contract",
+      "according-to-carla-what-would-have-happened-if-priya-had-started-at-10",
+      "an-offer-a-counteroffer",
+      "as-long-as",
+      "asked-for-a-three-year-contract",
+      "both-sides-had-to-compromise",
+      "david-calls-the-other-agency",
+      "david-he-came-down-from-20-to-10",
+      "david-pays-upfront",
+      "david-signs-for-two-years",
+      "david-would-have-walked-away",
+      "deal-can-you-put-that-in-writing",
+      "didn-t",
+      "fifty-dollars-an-hour-that-s-more-than-we-planned-to-pay",
+      "friday-that-s-your-problem-not-mine",
+      "friday-works-as-long-as-i-get-the-materials-tomorrow",
+      "had",
+      "had-ended",
+      "hadn-t",
+      "he-liked-the-team-too-much",
+      "he-needed-the-august-date-too-much",
+      "he-thinks-carla-talks-too-much",
+      "he-wants-carla-in-the-next-negotiation",
+      "he-wants-to-negotiate-alone-next-time",
+      "i-can-t-go-higher-than-that",
+      "i-could-do-forty-five-provided-that-you-book-twenty-hours-a-month",
+      "i-d-have-asked-for-three-years",
+      "i-understand-what-budget-did-you-have-in-mind",
+      "if-i-had-known-i-would-have-called",
+      "if-we-d-started-with-ten-we-would-have-ended-at-fifteen",
+      "if-we-extend-the-contract-will-you-pay-upfront",
+      "if-we-had-more-time-we-would-add-the-app",
+      "if-we-hadn-t-offered-the-discount-he-would-have-walked-away",
+      "if-we-were-to-extend-the-contract-would-you-be-willing-to-pay-upfront",
+      "if-we-were-to-offer-10-would-you-sign-for-two-years",
+      "if-we-were-to-sign-for-two-years-will-you-lower-the-price",
+      "if-we-were-to-sign-for-two-years-would-you-lower-the-price",
+      "if-we-would-sign-for-two-years-would-you-lower-the-price",
+      "if-you-sign-today-we-ll-give-you-10-off",
+      "if-you-were-pay-today-we-would-give-you-5-off",
+      "if-you-were-to-pay-today-we-would-give-you-5-off",
+      "if-you-were-to-pay-upfront-i-d-be-willing-to-do-ten-hours-at-forty-five",
+      "if-you-would-pay-today-we-will-give-you-5-off",
+      "in-exchange-for",
+      "leverage",
+      "marcos-offers-to-deliver-phase-two-a-month-early",
+      "neither-of-them-moved",
+      "non-negotiable",
+      "of-course-i-ll-send-the-terms-today-so-you-can-sign-off-on-them",
+      "offered-20",
+      "oh-sorry-i-can-do-it-for-twenty-five",
+      "oh-we-don-t-need-anything-in-writing-i-trust-you",
+      "okay-thirty-five-is-fine-i-guess",
+      "only-after-you-pay-me",
+      "otherwise",
+      "priya-raises-the-discount-to-15",
+      "priya-she-went-up-from-5-to-15",
+      "provided-that",
+      "refused-any-discount",
+      "sure-i-ll-work-all-night-if-i-have-to",
+      "terms",
+      "that-s-our-final-offer",
+      "the-bottom-line",
+      "the-mobile-app-is-canceled",
+      "the-other-agency-was-too-expensive",
+      "the-price-stays-the-same-as-long-as-you-re-with-us",
+      "then-find-someone-cheaper-good-luck",
+      "then-ten-hours-at-thirty-no-problem",
+      "they-would-have-ended-at-15",
+      "they-would-have-ended-at-5",
+      "thirty-five-is-an-insult",
+      "to-admit-doing",
+      "to-be-willing-to",
+      "to-deny-doing",
+      "to-extend-the-contract",
+      "to-pay-upfront",
+      "to-point-out-that",
+      "to-refuse-to-do",
+      "to-sign-for-two-years",
+      "to-sign-off-on",
+      "to-sweeten-the-deal",
+      "to-walk-away",
+      "to-warn-someone-that",
+      "twenty-hours-is-a-lot-what-if-we-can-only-promise-ten",
+      "twenty-hours-or-nothing",
+      "unless",
+      "upfront-is-fine-but-we-need-the-first-project-by-friday",
+      "we-can-offer-10-provided-that-you-sign-for-two-years",
+      "we-can-t-lower-the-price-unless-you-extend-the-contract",
+      "we-could-deliver-a-month-early-provided-that-the-app-moves-to-phase-three",
+      "we-have-a-deal",
+      "we-need-an-answer-by-friday-otherwise-the-offer-ends",
+      "we-need-to-discuss-the-price",
+      "we-were-thinking-of-thirty-five",
+      "were-to",
+      "what-breaks-the-deadlock",
+      "what-does-david-ask-for-first",
+      "what-does-marcos-s-last-line-suggest",
+      "what-is-priya-s-condition-for-the-10-discount",
+      "what-would-carla-have-done-differently",
+      "what-would-you-have-done-differently",
+      "who-conceded-more-on-the-discount",
+      "why-does-carla-think-david-was-never-going-to-walk-away",
+      "will",
+      "win-win",
+      "would",
+      "would-end",
+      "would-have-ended",
+      "wouldn-t-have"
+    ]
+  }
+}
