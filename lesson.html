@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/brands.css?v=1">
 <script src="assets/progress.js?v=1"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20261113">
+<link rel="stylesheet" href="lesson.css?v=20261114">
 <link rel="stylesheet" href="assets/icons.css?v=1">
 </head>
 <body>
@@ -74,17 +74,19 @@
 // ================= DATA-DRIVEN, BLOCK-BASED LESSON RENDERER =================
 // One renderer for every lesson. Lesson = lessons/<id>.json. Load: lesson.html?id=a2-l3
 // A lesson is an ordered list of BLOCKS. Block types:
-//   grammar · story · listening · gapFill · match · order · dialogue · writing
-// Scored blocks: listening, gapFill, dialogue, match, order. (grammar/story/writing not scored.)
+//   grammar · story · listening · gapFill · match · order · dialogue · writing · transform · spot
+// Scored blocks: listening, gapFill, dialogue, match, order, transform, spot. (grammar/story/writing not scored.)
+// Lesson-level "ui": "en" switches the engine's own labels to English (C1/C2 lessons).
 // Backward compatible: a lesson with top-level grammar/story/audios/writing (no "blocks")
 // is auto-assembled into the classic layout.
 const SOCIAL = { whatsapp:"https://wa.me/5491123709477", instagram:"https://www.instagram.com/englishforall_dan/", linkedin:"https://www.linkedin.com/in/danielseoanelopez/", taplink:"https://englishforall.taplink.site", discord:"daniel.s.20" };
 const FORM_ENDPOINT = "https://formspree.io/f/mbdewbrp";
-const SCORED = ["listening","gapFill","dialogue","match","order","picMatch","contrast"];
+const SCORED = ["listening","gapFill","dialogue","match","order","picMatch","contrast","transform","spot"];
 
 let LESSON = null, LESSON_KEY = "", LESSON_NAME = "", EXERCISES = [];
 const scores = {};                 // blockId -> {correct,total}
-const matchState = {}, orderState = {}, memoryState = {}, fcState = {};
+const matchState = {}, orderState = {}, memoryState = {}, fcState = {}, transformState = {}, spotState = {};
+const uiEn = () => !!(LESSON && LESSON.ui === "en");
 const esc = s => String(s == null ? "" : s);
 const escAttr = s => String(s == null ? "" : s).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 const stripTags = s => String(s == null ? "" : s).replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
@@ -239,6 +241,35 @@ function orderHtml(b, id){
   return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-puzzle></ico-puzzle> ${esc(b.title||'ORDENA LAS PALABRAS')}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
   ${body}<div class="btn-row"><button class="btn check" onclick="checkOrder('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
+// transform: the student TYPES the rewritten sentence (active → passive, direct → reported, casual → formal…).
+//   item: { source, cue?, start?, hint?, answers:[model, other accepted…], why? }
+// spot: the student TAPS the word(s) that should go or are wrong.
+//   item: { words:[…] | text:"…", target:[indexes], fix?, why? } · block.clean:true adds a "fine as it is" choice (target: [])
+function transformHtml(b, id){
+  transformState[id] = { items:(b.items||[]) };
+  const en = uiEn();
+  const body = (b.items||[]).map((it,k)=>`<div class="tr-item" id="${id}-it-${k}">
+    <p class="tr-src"><span class="qnum">${String(k+1).padStart(2,"0")}</span><span class="tr-t">${esc(it.source)}</span>${spkBtn(it.source,"mini")}</p>
+    ${it.cue?`<p class="tr-cue"><ico-shuffle></ico-shuffle> ${esc(it.cue)}</p>`:""}
+    <textarea class="tr-input" rows="1" id="${id}-in-${k}" oninput="trGrow(this)" placeholder="${escAttr(it.hint || (en?"Write your sentence…":"Escribe tu frase…"))}" aria-label="${en?"Your sentence":"Tu frase"} ${k+1}" autocomplete="off" autocorrect="off" autocapitalize="sentences" spellcheck="false" enterkeyhint="next" onkeydown="trKey(event,'${id}',${k})">${esc(it.start||"")}</textarea>
+    <div class="tr-fb" id="${id}-fb-${k}"></div></div>`).join("");
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-pen></ico-pen> ${esc(b.title||(en?'REWRITE THE SENTENCE':'REESCRIBE LA FRASE'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  ${body}<div class="btn-row"><button class="btn check" onclick="checkTransform('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
+}
+function spotWords(it){ return it.words ? it.words.slice() : String(it.text||"").trim().split(/\s+/); }
+function spotHtml(b, id){
+  spotState[id] = { items:(b.items||[]).map(it=>({ target:(it.target||[]).map(Number), sel:[], clean:false, fix:it.fix, why:it.why })) };
+  const en = uiEn();
+  const body = (b.items||[]).map((it,k)=>{
+    const n = (it.target||[]).length;
+    return `<div class="sp-item" id="${id}-it-${k}">
+      <p class="sp-n"><span class="qnum">${String(k+1).padStart(2,"0")}</span>${n>1?`<span class="es">${en?`Tap ${n} words`:`Toca ${n} palabras`}</span>`:""}</p>
+      <div class="sp-line">${spotWords(it).map((w,i)=>`<button type="button" class="word sp-w" data-i="${i}" aria-pressed="false" onclick="spTap('${id}',${k},this)">${esc(w)}</button>`).join("")}${b.clean?`<button type="button" class="sp-clean" aria-pressed="false" onclick="spClean('${id}',${k},this)"><ico-check></ico-check> ${en?"Fine as it is":"Está bien así"}</button>`:""}</div>
+      <div class="tr-fb" id="${id}-fb-${k}"></div></div>`;
+  }).join("");
+  return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-pen></ico-pen> ${esc(b.title||(en?'SPOT THE FLAW':'ENCUENTRA EL ERROR'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  ${body}<div class="btn-row"><button class="btn check" onclick="checkSpot('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
+}
 function picMatchHtml(b, id){
   const pairs = (b.pairs||[]).map(p=>({l:p.img, r:p.word}));
   matchState[id] = { sel:null, slots:{}, pairs };
@@ -333,6 +364,8 @@ function build(L){
       if(b.type==="order")    return orderHtml(b, id);
       if(b.type==="picMatch") return picMatchHtml(b, id);
       if(b.type==="contrast") return contrastHtml(b, id);
+      if(b.type==="transform") return transformHtml(b, id);
+      if(b.type==="spot")     return spotHtml(b, id);
     }
     if(b.type==="grammar") return grammarHtml(b, i);
     if(b.type==="story")   return storyHtml(b);
@@ -419,7 +452,7 @@ function shuffleOptions(){ document.querySelectorAll(".q[data-correct]").forEach
 function setScore(blockId, correct, total){
   scores[blockId] = {correct,total};
   const box=document.getElementById("score-"+blockId); const cls = correct===total?"good":(correct===0?"bad":"");
-  box.innerHTML=`<span class="${cls}">${correct} / ${total} correcto${total===1?"":"s"}</span>`+(correct===total?" <ico-star></ico-star> ¡Perfecto!":"");
+  box.innerHTML=`<span class="${cls}">${correct} / ${total} ${uiEn()?"correct":"correcto"+(total===1?"":"s")}</span>`+(correct===total?(uiEn()?" <ico-star></ico-star> Perfect!":" <ico-star></ico-star> ¡Perfecto!"):"");
   const btn=document.querySelector("#"+blockId+" .btn.check"); if(btn) btn.disabled=true;
   if(correct===total) okBeep(); else noBeep();
   updateProgress();
@@ -451,6 +484,56 @@ function norm(s){ return s.replace(/\s+/g," ").replace(/[.,!?]/g,"").trim().toLo
 function checkOrder(id){ const st=orderState[id]; st.done=true; let correct=0; st.answers.forEach((ans,k)=>{ const line=document.getElementById(id+"-line-"+k); const got=Array.prototype.map.call(line.querySelectorAll(".word"),w=>w.textContent).join(" "); const item=document.getElementById(id+"-it-"+k); if(norm(got)===norm(ans)){ correct++; item.classList.add("ok"); } else { item.classList.add("no"); if(!line.querySelector(".ans")) line.insertAdjacentHTML("beforeend",'<span class="ans"><ico-check></ico-check> '+ans+'</span>'); } line.querySelectorAll(".word").forEach(w=>w.disabled=true); });
   document.querySelectorAll("#"+id+" .word").forEach(w=>w.disabled=true);
   setScore(id, correct, st.answers.length);
+}
+
+// transform (typed rewrite): compare after normalizing case, punctuation, apostrophes and contractions
+function trNorm(s){ return String(s==null?"":s).toLowerCase().replace(/[‘’ʼ`´]/g,"'").replace(/[–—]/g," ").replace(/[.,!?;:"“”()]/g," ").replace(/\bcannot\b/g,"can not").replace(/\s+/g," ").trim(); }
+const TR_PRON = /^(he|she|it|that|there|here|what|who|where|when|how|this|everyone|everybody|someone|somebody|nobody|everything|something|nothing)$/;
+// every reading of the contractions in s: 's after a pronoun = is / has, 'd = had / would; the rest have one reading
+function trVariants(s){
+  let t = trNorm(s).replace(/\bwon't\b/g,"will not").replace(/\bcan't\b/g,"can not").replace(/\bshan't\b/g,"shall not").replace(/\blet's\b/g,"let us")
+    .replace(/n't\b/g," not").replace(/'m\b/g," am").replace(/'re\b/g," are").replace(/'ve\b/g," have").replace(/'ll\b/g," will");
+  let out = [""];
+  t.split(" ").forEach(w=>{
+    let alts = [w]; const m = w.match(/^(.+)'(s|d)$/);
+    if(m && m[2]==="d") alts = [m[1]+" had", m[1]+" would"];
+    else if(m && TR_PRON.test(m[1])) alts = [m[1]+" is", m[1]+" has"];
+    const next = []; out.forEach(o=>alts.forEach(a=>{ if(next.length<64) next.push((o?o+" ":"")+a); })); out = next;
+  });
+  return out;
+}
+function trMatch(input, answers){ const got = trVariants(input); return (answers||[]).some(a=>{ const want = trVariants(a); return got.some(g=>want.indexOf(g)!==-1); }); }
+function trGrow(el){ el.style.height="auto"; el.style.height=(el.scrollHeight+4)+"px"; }   // the box grows with the sentence (phones)
+function trKey(e, id, k){ if(e.key!=="Enter") return; e.preventDefault(); const nx=document.getElementById(id+"-in-"+(k+1)); if(nx) nx.focus(); else e.target.blur(); }
+function fbHtml(model, why){ return (model?`<span class="ans"><ico-check></ico-check> ${esc(model)}</span>${spkBtn(model,"mini")}`:"") + (why?`<span class="why">${esc(why)}</span>`:""); }
+function checkTransform(id){ const st=transformState[id]; if(st.done) return; st.done=true; let correct=0;
+  st.items.forEach((it,k)=>{ const inp=document.getElementById(id+"-in-"+k), item=document.getElementById(id+"-it-"+k);
+    const ok = !!inp.value.trim() && trMatch(inp.value, it.answers); if(ok) correct++;
+    item.classList.add(ok?"ok":"no"); inp.readOnly=true;
+    document.getElementById(id+"-fb-"+k).innerHTML = fbHtml((it.answers||[])[0], it.why); });
+  setScore(id, correct, st.items.length);
+}
+// spot (tap the flaw): one target = taps behave like a radio; several targets = toggle up to that many
+function spTap(id, k, btn){ const st=spotState[id]; if(st.done) return; const it=st.items[k], i=+btn.dataset.i, max=Math.max(1,it.target.length), line=btn.parentElement;
+  const at=it.sel.indexOf(i);
+  if(at!==-1) it.sel.splice(at,1);
+  else { if(it.sel.length>=max){ if(max>1) return; it.sel=[]; } it.sel.push(i); }
+  it.clean=false; const c=line.querySelector(".sp-clean"); if(c){ c.classList.remove("sel"); c.setAttribute("aria-pressed","false"); }
+  line.querySelectorAll(".sp-w").forEach(w=>{ const on=it.sel.indexOf(+w.dataset.i)!==-1; w.classList.toggle("sel",on); w.setAttribute("aria-pressed",on?"true":"false"); }); blip();
+}
+function spClean(id, k, btn){ const st=spotState[id]; if(st.done) return; const it=st.items[k]; it.clean=!it.clean; it.sel=[];
+  btn.classList.toggle("sel",it.clean); btn.setAttribute("aria-pressed",it.clean?"true":"false");
+  btn.parentElement.querySelectorAll(".sp-w").forEach(w=>{ w.classList.remove("sel"); w.setAttribute("aria-pressed","false"); }); blip();
+}
+function checkSpot(id){ const st=spotState[id]; if(st.done) return; st.done=true; let correct=0;
+  st.items.forEach((it,k)=>{ const item=document.getElementById(id+"-it-"+k);
+    const same = it.sel.length===it.target.length && it.target.every(i=>it.sel.indexOf(i)!==-1);
+    const ok = it.target.length ? same : (it.clean && !it.sel.length); if(ok) correct++;
+    item.classList.add(ok?"ok":"no");
+    item.querySelectorAll(".sp-w").forEach(w=>{ const i=+w.dataset.i; if(it.target.indexOf(i)!==-1) w.classList.add("hit"); else if(it.sel.indexOf(i)!==-1) w.classList.add("miss"); w.classList.remove("sel"); w.disabled=true; });
+    const c=item.querySelector(".sp-clean"); if(c){ c.disabled=true; if(!it.target.length) c.classList.add("hit"); else if(it.clean) c.classList.add("miss"); c.classList.remove("sel"); }
+    document.getElementById(id+"-fb-"+k).innerHTML = fbHtml(it.fix, it.why); });
+  setScore(id, correct, st.items.length);
 }
 
 // memory game (non-scored)

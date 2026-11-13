@@ -355,3 +355,26 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
   .ft-node .sp { font-size: .54rem; }
   .ft-node .spk-btn { display: none; }
 }
+/* transform (typed rewrite) + spot (tap the flaw) */
+.tr-item, .sp-item { margin-bottom: 18px; }
+.tr-src { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; line-height: 1.45; }
+.tr-src .tr-t { flex: 1 1 auto; }
+.tr-cue { color: var(--gold); font-size: 0.88rem; letter-spacing: 1px; margin: -2px 0 8px; }
+.tr-input { display: block; width: 100%; min-height: 48px; resize: none; overflow: hidden; padding: 10px 14px; background: #10122a; border: 2px solid var(--purple); border-radius: 10px; color: var(--text); font-family: "Share Tech Mono", monospace; font-size: 1rem; line-height: 1.4; box-shadow: inset 0 0 10px #9d4dff22; outline: none; }
+.tr-input:focus { border-color: var(--cyan); box-shadow: 0 0 10px #00e5ff55; }
+.tr-input::placeholder { color: var(--muted); opacity: 0.75; }
+.tr-item.ok .tr-input { border-color: var(--green); background: #3dffa00d; }
+.tr-item.no .tr-input { border-color: var(--red); background: #ff5d7a0d; }
+.tr-fb { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 8px; font-size: 0.92rem; line-height: 1.45; }
+.tr-fb:empty { display: none; }
+.tr-fb .ans { color: var(--green); }
+.tr-fb .why { flex: 1 0 100%; color: var(--muted); }
+.sp-n { display: flex; align-items: center; margin-bottom: 8px; min-height: 22px; }
+.sp-line { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+.sp-w, .sp-clean { min-height: 44px; }
+.sp-w.sel, .sp-clean.sel { border-color: var(--gold); background: #ffc83d1c; box-shadow: 0 0 10px #ffc83d55; }
+.sp-w.hit { border-color: var(--green); background: #3dffa016; color: var(--green); text-decoration: line-through; opacity: 1; }
+.sp-w.miss, .sp-clean.miss { border-color: var(--red); background: #ff5d7a16; opacity: 1; }
+.sp-clean { margin-left: 6px; padding: 8px 13px; border: 1px dashed var(--cyan); border-radius: 8px; background: none; color: var(--cyan); font-family: "Share Tech Mono", monospace; font-size: 0.88rem; cursor: pointer; }
+.sp-clean.hit { border-style: solid; border-color: var(--green); color: var(--green); background: #3dffa016; }
+.sp-clean:disabled { cursor: default; }
