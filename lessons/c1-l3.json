@@ -1,0 +1,890 @@
+{
+  "level": "C1",
+  "num": 3,
+  "totalLessons": 6,
+  "world": "ADVANCED OPERATOR",
+  "ui": "en",
+  "key": "rankup_C1_L3",
+  "title": "INVERSION &amp;<br>EMPHASIS",
+  "titlePlain": "Inversion & Emphasis — The Headline (C1)",
+  "subtitle": "Grammar &amp; Listening · C1 · ~50 min",
+  "rankup": "EPISODE CLEAR!",
+  "next": {
+    "href": "lesson.html?id=c1-l4",
+    "label": "LESSON 4 ▸ DEBATING"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> EPISODE RECAP · last lesson",
+      "intro": "Before we go on air: match each marker from the last episode with its job.",
+      "pairs": [
+        {
+          "l": "even so",
+          "r": "a surprising contrast"
+        },
+        {
+          "l": "what's more",
+          "r": "one more point"
+        },
+        {
+          "l": "the latter",
+          "r": "the second of two"
+        },
+        {
+          "l": "mind you",
+          "r": "an afterthought"
+        },
+        {
+          "l": "to cut a long story short",
+          "r": "jump to the end"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "negative inversion",
+      "title": "<ico-book></ico-book> NEVER HAVE I…",
+      "intro": "Put a negative or limiting word first, and the sentence turns around: the <b style='color:var(--gold)'>auxiliary jumps in front of the subject</b>, as in a question. It is the sound of speeches, editorials and formal writing, and it works because it is rare.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show tonight's vocabulary",
+      "vocab": [
+        {
+          "en": "an editorial",
+          "sp": "a piece that gives the opinion of the station or newspaper"
+        },
+        {
+          "en": "the city council",
+          "sp": "the group of people elected to run a city"
+        },
+        {
+          "en": "a landmark",
+          "sp": "a building or place that everyone knows"
+        },
+        {
+          "en": "to shut something down",
+          "sp": "to close it for good"
+        },
+        {
+          "en": "to go quiet",
+          "sp": "to stop broadcasting; to become silent"
+        },
+        {
+          "en": "to keep someone company",
+          "sp": "to stay with them so they are not alone"
+        },
+        {
+          "en": "at stake",
+          "sp": "in danger of being lost"
+        },
+        {
+          "en": "to speak up",
+          "sp": "to say publicly what you think"
+        },
+        {
+          "en": "to stand your ground",
+          "sp": "to refuse to give in"
+        },
+        {
+          "en": "to stay on the air",
+          "sp": "to keep broadcasting"
+        }
+      ],
+      "note": "<b>How it works:</b> flashcards <ico-clone></ico-clone>, rewrite <ico-pen></ico-pen>, listening <ico-headphones></ico-headphones>, gap-fill <ico-filepen></ico-filepen>, compare <ico-comments></ico-comments> and order <ico-puzzle></ico-puzzle>. Press <ico-check></ico-check> CHECK wherever you see it.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · WHAT MOVES</b> <span class='es'>— the auxiliary jumps before the subject</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I have never seen such a crowd.",
+              "sp": "Neutral order: subject + have."
+            },
+            {
+              "en": "Never have I seen such a crowd.",
+              "sp": "«Never» goes first, so have + I, exactly like a question."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · NO AUXILIARY? ADD DO, DOES, DID</b> <span class='es'>— again, like a question</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Rarely does a station last fifty years.",
+              "sp": "A station rarely lasts… → does + a station + last."
+            },
+            {
+              "en": "Little did they know that we were listening.",
+              "sp": "They did not know at all… → did + they + know."
+            },
+            {
+              "en": "Not only does it inform the city, it also keeps it company.",
+              "sp": "Only the first half is inverted."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · THE TIME PAIR</b> <span class='es'>— no sooner… than · hardly… when</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "No sooner had we gone on air than the lights went out.",
+              "sp": "One thing happened immediately after the other. No sooner… <b>than</b>."
+            },
+            {
+              "en": "Hardly had the show started when the phone rang.",
+              "sp": "Same meaning. Hardly… <b>when</b>."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · ONLY WHEN, NOT UNTIL</b> <span class='es'>— the inversion waits for the second half</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Only when the music stopped did we notice the silence.",
+              "sp": "Not «did the music stop»: the main clause is the one that turns."
+            },
+            {
+              "en": "Not until midnight did the last caller hang up.",
+              "sp": "The time phrase first, then did + subject."
+            },
+            {
+              "en": "Only then did I understand.",
+              "sp": "Short and strong."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · TWO MORE, AND A WARNING</b> <span class='es'>— under no circumstances · so… that</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Under no circumstances should this studio close.",
+              "sp": "The strongest «no» in English."
+            },
+            {
+              "en": "So loud was the applause that we stopped the show.",
+              "sp": "So + adjective first, then be + subject."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Register.</b> Inversion is powerful once in a text. Twice is the limit. Three times is theater. In everyday conversation it sounds like a speech, so keep it for writing, presentations and moments that matter."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> SPANISH TRAP</b> <span class='es'>— «Nunca he visto…»: el español no da la vuelta</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Never have I heard such nonsense.",
+              "sp": "En español «Nunca he oído…» mantiene el orden. En inglés, con Never al principio, hay que invertir."
+            },
+            {
+              "en": "Not only did he come, he also stayed all night.",
+              "sp": "«No solo vino…» → Not only <b>did he come</b>."
+            },
+            {
+              "en": "Only Nora knows the answer.",
+              "sp": "Aquí no hay inversión: <i>only</i> acompaña al sujeto, no abre una frase de tiempo o condición."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<s class='x'>Never I have seen this.</s> → <span class='ok'>Never have I seen this.</span> · <s class='x'>Not only he came…</s> → <span class='ok'>Not only did he come…</span> · <s class='x'>Only does Nora know.</s> → <span class='ok'>Only Nora knows.</span>"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "EIGHT TRIGGERS · tap to flip",
+      "intro": "Each card is a word that turns the sentence around. Try to build a sentence with it before you flip.",
+      "cards": [
+        {
+          "front": "Never…",
+          "back": "Never have I been prouder of this station."
+        },
+        {
+          "front": "Rarely… / Seldom…",
+          "back": "Rarely do we get a second chance."
+        },
+        {
+          "front": "Not only… (but) also",
+          "back": "Not only does it inform the city, it also keeps it company."
+        },
+        {
+          "front": "No sooner… than",
+          "back": "No sooner had we gone on air than the lights went out."
+        },
+        {
+          "front": "Hardly… when",
+          "back": "Hardly had the show started when the phone rang."
+        },
+        {
+          "front": "Under no circumstances…",
+          "back": "Under no circumstances should it go quiet."
+        },
+        {
+          "front": "Only then… / Only when…",
+          "back": "Only when the music stopped did we notice the silence."
+        },
+        {
+          "front": "Little did…",
+          "back": "Little did they know that we were listening."
+        }
+      ],
+      "deckLabel": "inversion triggers"
+    },
+    {
+      "type": "story",
+      "tag": "episode 3",
+      "title": "<ico-star></ico-star> THE HEADLINE",
+      "intro": "Bad news at the Radio Tower: the city council wants to close the rooftop studio. Nora will answer on air tonight with an editorial. Her first draft says «I have never been so proud of this station.» True, but flat. It needs a headline.<br><br><b style='color:var(--cyan)'>WORDS OF THE DAY</b> (they must appear in your writing): <b>a landmark</b> = a place everyone knows · <b>stand your ground</b> · <b>keep someone company</b>.",
+      "cast": [
+        {
+          "en": "Nora",
+          "sp": "writes and reads the editorial"
+        },
+        {
+          "en": "Theo",
+          "sp": "records the promos"
+        },
+        {
+          "en": "Roz",
+          "sp": "has a sharp ear for mistakes"
+        },
+        {
+          "en": "You",
+          "sp": "turn flat lines into <b style='color:var(--magenta)'>headlines</b>"
+        }
+      ]
+    },
+    {
+      "type": "transform",
+      "id": "ex-tr",
+      "title": "TURN IT AROUND",
+      "intro": "Rewrite each flat sentence so that it starts with the words already in the box. Remember: the auxiliary goes before the subject.",
+      "items": [
+        {
+          "source": "I have never been prouder of this station.",
+          "start": "Never ",
+          "answers": [
+            "Never have I been prouder of this station."
+          ],
+          "why": "have + I."
+        },
+        {
+          "source": "We rarely hear good news.",
+          "start": "Rarely ",
+          "answers": [
+            "Rarely do we hear good news."
+          ],
+          "why": "No auxiliary in the original, so add do."
+        },
+        {
+          "source": "This studio should not close under any circumstances.",
+          "start": "Under no circumstances ",
+          "answers": [
+            "Under no circumstances should this studio close."
+          ],
+          "why": "should + this studio. The «not» is already inside «no»."
+        },
+        {
+          "source": "They did not know that we were listening.",
+          "start": "Little ",
+          "answers": [
+            "Little did they know that we were listening.",
+            "Little did they know we were listening."
+          ],
+          "why": "did + they + know."
+        },
+        {
+          "source": "It not only informs the city, it also keeps it company.",
+          "start": "Not only ",
+          "answers": [
+            "Not only does it inform the city, it also keeps it company.",
+            "Not only does it inform the city, but it also keeps it company.",
+            "Not only does it inform the city, it keeps it company.",
+            "Not only does it inform the city but also keeps it company."
+          ],
+          "why": "does + it + inform: «informs» loses its -s. Only the first half turns."
+        },
+        {
+          "source": "The show had hardly started when the phone rang.",
+          "start": "Hardly ",
+          "answers": [
+            "Hardly had the show started when the phone rang."
+          ],
+          "why": "had + the show + started… when."
+        },
+        {
+          "source": "We had no sooner gone on air than the lights went out.",
+          "start": "No sooner ",
+          "answers": [
+            "No sooner had we gone on air than the lights went out."
+          ],
+          "why": "had + we + gone… than."
+        },
+        {
+          "source": "I understood only then.",
+          "start": "Only then ",
+          "answers": [
+            "Only then did I understand."
+          ],
+          "why": "did + I + understand: the past moves to «did»."
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE EDITORIAL",
+      "desc": "Nora on air, answering the council's plan to close the rooftop studio. Count the inversions: she uses each one exactly where it matters.",
+      "src": "c1-l3-1.mp3",
+      "dur": "1:30",
+      "speakers": "<ico-commentdots></ico-commentdots> Nora",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What are Nora's three reasons for keeping the studio?",
+          "options": [
+            "It is the only local newsroom, it is cheap to run, and it belongs to the listeners",
+            "It is old, it is famous, and it makes money for the city",
+            "It has the best view, the best hosts and the best music"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which sentence carries her strongest demand?",
+          "options": [
+            "Hundreds of you have written to us.",
+            "Under no circumstances should it go quiet.",
+            "It costs less than you think."
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Who is Nora really speaking to at the end?",
+          "options": [
+            "Listeners who work nights",
+            "Her co-host",
+            "The council members who will vote"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does \"Little did they know\" introduce?",
+          "options": [
+            "Something the council did not expect: the letter with four thousand names",
+            "Something the council had planned in secret",
+            "A fact about the fireworks budget"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Read Nora's three inverted lines aloud, with a pause before each one: 'Never have I…', 'Not only does it…', 'Under no circumstances…'.",
+        "starter": "Never have I been prouder of this station. Not only does it inform this city, it keeps it company. Under no circumstances should it go quiet."
+      },
+      "transcript": [
+        {
+          "spk": "Nora",
+          "html": "Good evening. Tonight I'm not here to read the news. I'm here because of it. Last week, the city council announced a plan to close the rooftop studio of the Radio Tower, the room I am speaking from right now. They call it a saving. I'd like to tell you what it would cost."
+        },
+        {
+          "spk": "Nora",
+          "html": "<span class='tg'>Never have I been</span> prouder of this station than in the last few days. Hundreds of you have written to us. Some of you have listened since before I was born."
+        },
+        {
+          "spk": "Nora",
+          "html": "Let me give you three reasons why this studio matters. First, it is the only local newsroom this city has left. <span class='tg'>Not only does it inform</span> this city, it keeps it company. Ask anyone who works nights. Second, it costs less than you think: less per year than the council spends on fireworks. And third, it belongs to you. Your grandparents paid for this tower, brick by brick."
+        },
+        {
+          "spk": "Nora",
+          "html": "When the council met last Tuesday, they expected no one to notice. <span class='tg'>Little did they know</span> that four thousand of you would sign a letter in three days."
+        },
+        {
+          "spk": "Nora",
+          "html": "So tonight I am speaking to the nine people who will vote next month. You have the numbers in front of you. Now you have the letters as well. <span class='tg'>Rarely does a city get</span> the chance to keep something that still works. <span class='tg'>Under no circumstances should it</span> go quiet."
+        },
+        {
+          "spk": "Nora",
+          "html": "I'm Nora. This is The Signal. And we are staying on the air."
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "WHICH AUXILIARY?",
+      "intro": "Look at the verb form that follows the gap. It tells you which auxiliary can stand in front of the subject.",
+      "items": [
+        {
+          "q": "Never ___ I heard such a silence.",
+          "options": [
+            "have",
+            "did",
+            "do"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Rarely ___ a radio station last fifty years.",
+          "options": [
+            "do",
+            "does",
+            "is"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Little ___ they know that the microphone was on.",
+          "options": [
+            "were",
+            "had",
+            "did"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "No sooner ___ we started than the power failed.",
+          "options": [
+            "had",
+            "did",
+            "have"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Under no circumstances ___ you touch that button.",
+          "options": [
+            "are",
+            "should",
+            "have"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Not only ___ she write the editorial, she also read it on air.",
+          "options": [
+            "was",
+            "has",
+            "did"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Only when the music stopped ___ we notice the noise.",
+          "options": [
+            "did",
+            "had",
+            "were"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Hardly had I sat down ___ the phone rang.",
+          "options": [
+            "than",
+            "when",
+            "then"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "FLAT vs HEADLINE",
+      "intro": "Same fact, same words. One is conversation; the other is a headline.",
+      "pair": {
+        "a": "I have never seen such a crowd.",
+        "b": "Never have I seen such a crowd."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "Which would you say to a friend over coffee?",
+          "options": [
+            "A — I have never seen…",
+            "B — Never have I seen…",
+            "Either one"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which belongs in a speech or an editorial?",
+          "options": [
+            "A — I have never seen…",
+            "B — Never have I seen…",
+            "Neither"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Apart from the position of \"never\", what changes in B?",
+          "options": [
+            "The tense",
+            "The meaning",
+            "The auxiliary comes before the subject"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which is correct?",
+          "options": [
+            "Rarely do we get a second chance.",
+            "Rarely we get a second chance.",
+            "Rarely we do get a second chance."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which is correct?",
+          "options": [
+            "Only does Nora know the answer.",
+            "Only Nora knows the answer.",
+            "Only knows Nora the answer."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "BUILD THE HEADLINE",
+      "intro": "Tap the words in order. The trigger goes first, then the auxiliary, then the subject.",
+      "items": [
+        {
+          "words": [
+            "Never",
+            "have",
+            "I",
+            "seen",
+            "such",
+            "a",
+            "crowd"
+          ],
+          "answer": "Never have I seen such a crowd"
+        },
+        {
+          "words": [
+            "Rarely",
+            "does",
+            "a",
+            "city",
+            "get",
+            "a",
+            "second",
+            "chance"
+          ],
+          "answer": "Rarely does a city get a second chance"
+        },
+        {
+          "words": [
+            "Under",
+            "no",
+            "circumstances",
+            "should",
+            "this",
+            "studio",
+            "close"
+          ],
+          "answer": "Under no circumstances should this studio close"
+        },
+        {
+          "words": [
+            "Little",
+            "did",
+            "they",
+            "know",
+            "that",
+            "we",
+            "were",
+            "listening"
+          ],
+          "answer": "Little did they know that we were listening"
+        },
+        {
+          "words": [
+            "Only",
+            "then",
+            "did",
+            "I",
+            "understand",
+            "the",
+            "problem"
+          ],
+          "answer": "Only then did I understand the problem"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE PROMOS",
+      "desc": "Theo records three ten-second promos for tomorrow, and Roz listens. All three use inversion. One of them gets it wrong.",
+      "src": "c1-l3-2.mp3",
+      "dur": "1:00",
+      "speakers": "<ico-commentdots></ico-commentdots> Roz + Theo",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Which promo has a mistake?",
+          "options": [
+            "Promo one",
+            "Promo two",
+            "Promo three"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What is the corrected line?",
+          "options": [
+            "Not only we do bring you the news…",
+            "Not only bring we you the news…",
+            "Not only do we bring you the news…"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "According to promo three, when does the real conversation begin?",
+          "options": [
+            "Only when the city sleeps",
+            "Tonight at nine",
+            "First thing in the morning"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How does Roz deal with the mistake?",
+          "options": [
+            "She rewrites the line for Theo",
+            "She makes Theo hear it, and he fixes it himself",
+            "She cancels the promo"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Record a ten-second promo for your own radio show, with one inversion and the time it is on.",
+        "starter": "Never has… / Only when… does… / Not only do we…, we also… (Name of your show). (Day and time)."
+      },
+      "transcript": [
+        {
+          "spk": "Roz",
+          "html": "Okay, Theo, three promos for tomorrow. Ten seconds each. Promo one."
+        },
+        {
+          "spk": "Theo",
+          "b": true,
+          "html": "\"<span class='tg'>Never has this city needed</span> its radio more. The Signal. Tonight at nine.\""
+        },
+        {
+          "spk": "Roz",
+          "html": "Good. Promo two."
+        },
+        {
+          "spk": "Theo",
+          "b": true,
+          "html": "\"Not only we bring you the news, we bring you the people behind it. The Signal. Weeknights at nine.\""
+        },
+        {
+          "spk": "Roz",
+          "html": "Hmm. Something's off in that one. Read me promo three."
+        },
+        {
+          "spk": "Theo",
+          "b": true,
+          "html": "\"<span class='tg'>Only when the city sleeps does</span> the real conversation begin. The Signal. After midnight, with Theo.\""
+        },
+        {
+          "spk": "Roz",
+          "html": "I love that one. Now go back to promo two and listen to yourself. \"Not only we bring.\""
+        },
+        {
+          "spk": "Theo",
+          "b": true,
+          "html": "Ah. \"<span class='tg'>Not only do we bring</span> you the news.\""
+        },
+        {
+          "spk": "Roz",
+          "html": "There it is. Record it again and we're done."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> MY EDITORIAL",
+      "intro": "Something you care about is in danger: a park, a library, a tradition, a small business. Write a short editorial defending it (about 100 words).",
+      "checklist": [
+        "<b>Exactly two</b> inversions, each one where it matters most",
+        "At least one with <b>do / does / did</b> (<b>Rarely do we… / Not only does it…</b>)",
+        "Two or three clear reasons, in plain word order",
+        "A strong last line (<b>Under no circumstances should…</b>)",
+        "The words of the day: <b>a landmark</b>, <b>stand your ground</b>, <b>keep someone company</b>"
+      ],
+      "placeholder": "Tonight I want to talk about…",
+      "example": "<span class=\"gap\">what is in danger, and who wants to close it</span>. Never have I <span class=\"gap\">past participle + how you feel</span>. Let me give you <span class=\"gap\">two / three</span> reasons. First, <span class=\"gap\">reason 1</span>. Second, <span class=\"gap\">reason 2</span>. <span class=\"gap\">reason 3, if you have one</span>. Under no circumstances should <span class=\"gap\">subject + verb</span>.",
+      "hw": "Write your editorial, then <b>record it as if you were on air</b>: slow down before each inversion. Send me the text and the audio on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "About 100 words, and it is clear what you are defending, from whom, and why."
+        },
+        {
+          "c": "Lesson target",
+          "d": "Exactly two inversions, both correctly formed (auxiliary before subject) and placed where they add force."
+        },
+        {
+          "c": "Clear the first time",
+          "d": "A listener follows it in one hearing. No word-for-word translation from Spanish."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c1-l3",
+    "keys": [
+      "a-fact-about-the-fireworks-budget",
+      "a-landmark",
+      "according-to-promo-three-when-does-the-real-conversation-begin",
+      "an-editorial",
+      "are",
+      "at-stake",
+      "did",
+      "do",
+      "does",
+      "even-so",
+      "first-thing-in-the-morning",
+      "had",
+      "hardly-had-the-show-started-when-the-phone-rang",
+      "hardly-when",
+      "has",
+      "have",
+      "her-co-host",
+      "how-does-roz-deal-with-the-mistake",
+      "hundreds-of-you-have-written-to-us",
+      "i-have-never-been-prouder-of-this-station",
+      "i-have-never-seen-such-a-crowd",
+      "i-understood-only-then",
+      "is",
+      "it-costs-less-than-you-think",
+      "it-has-the-best-view-the-best-hosts-and-the-best-music",
+      "it-is-old-it-is-famous-and-it-makes-money-for-the-city",
+      "it-is-the-only-local-newsroom-it-is-cheap-to-run-and-it-belongs-to-the-listeners",
+      "it-not-only-informs-the-city-it-also-keeps-it-company",
+      "listeners-who-work-nights",
+      "little-did",
+      "little-did-they-know-that-we-were-listening",
+      "mind-you",
+      "never",
+      "never-have-i-been-prouder-of-this-station",
+      "never-have-i-heard-such-nonsense",
+      "never-have-i-seen-such-a-crowd",
+      "no-sooner-had-we-gone-on-air-than-the-lights-went-out",
+      "no-sooner-than",
+      "not-only-bring-we-you-the-news",
+      "not-only-but-also",
+      "not-only-did-he-come-he-also-stayed-all-night",
+      "not-only-do-we-bring-you-the-news",
+      "not-only-does-it-inform-the-city-it-also-keeps-it-company",
+      "not-only-we-do-bring-you-the-news",
+      "not-until-midnight-did-the-last-caller-hang-up",
+      "only-does-nora-know-the-answer",
+      "only-knows-nora-the-answer",
+      "only-nora-knows-the-answer",
+      "only-then-did-i-understand",
+      "only-then-only-when",
+      "only-when-the-city-sleeps",
+      "only-when-the-music-stopped-did-we-notice-the-silence",
+      "promo-one",
+      "promo-three",
+      "promo-two",
+      "rarely-do-we-get-a-second-chance",
+      "rarely-do-we-hear-good-news",
+      "rarely-does-a-station-last-fifty-years",
+      "rarely-seldom",
+      "rarely-we-do-get-a-second-chance",
+      "rarely-we-get-a-second-chance",
+      "she-cancels-the-promo",
+      "she-makes-theo-hear-it-and-he-fixes-it-himself",
+      "she-rewrites-the-line-for-theo",
+      "should",
+      "so-loud-was-the-applause-that-we-stopped-the-show",
+      "something-the-council-did-not-expect-the-letter-with-four-thousand-names",
+      "something-the-council-had-planned-in-secret",
+      "than",
+      "the-city-council",
+      "the-council-members-who-will-vote",
+      "the-latter",
+      "the-show-had-hardly-started-when-the-phone-rang",
+      "then",
+      "they-did-not-know-that-we-were-listening",
+      "this-studio-should-not-close-under-any-circumstances",
+      "to-cut-a-long-story-short",
+      "to-go-quiet",
+      "to-keep-someone-company",
+      "to-shut-something-down",
+      "to-speak-up",
+      "to-stand-your-ground",
+      "to-stay-on-the-air",
+      "tonight-at-nine",
+      "under-no-circumstances",
+      "under-no-circumstances-should-it-go-quiet",
+      "under-no-circumstances-should-this-studio-close",
+      "was",
+      "we-had-no-sooner-gone-on-air-than-the-lights-went-out",
+      "we-rarely-hear-good-news",
+      "were",
+      "what-are-nora-s-three-reasons-for-keeping-the-studio",
+      "what-does-little-did-they-know-introduce",
+      "what-is-the-corrected-line",
+      "what-s-more",
+      "when",
+      "which-promo-has-a-mistake",
+      "which-sentence-carries-her-strongest-demand",
+      "who-is-nora-really-speaking-to-at-the-end"
+    ]
+  }
+}
