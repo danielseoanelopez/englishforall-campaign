@@ -1,0 +1,908 @@
+{
+  "level": "B2",
+  "num": 6,
+  "totalLessons": 6,
+  "world": "THE PROFESSIONAL",
+  "key": "rankup_B2_L6",
+  "title": "FORMAL<br>WRITING",
+  "titlePlain": "Formal Writing — Put It in Writing (B2)",
+  "subtitle": "Writing &amp; Listening · B2 · ~45 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "b2-final.html",
+    "label": "<ico-crown></ico-crown> BOSS ▸ THE PROMOTION PANEL"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> REPASO EXPRESS · lección anterior",
+      "intro": "Antes de empezar, recupera lo de la clase pasada. Une cada expresión con su significado, sin mirar atrás.",
+      "pairs": [
+        {
+          "l": "a deal-breaker",
+          "r": "una condición que rompe el trato"
+        },
+        {
+          "l": "leverage",
+          "r": "ventaja para presionar"
+        },
+        {
+          "l": "to walk away",
+          "r": "levantarse de la mesa"
+        },
+        {
+          "l": "terms",
+          "r": "las condiciones del acuerdo"
+        },
+        {
+          "l": "to sign off on",
+          "r": "dar la aprobación final a"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "registro formal",
+      "title": "<ico-book></ico-book> SAME MESSAGE, DIFFERENT SUIT",
+      "intro": "Un correo formal dice lo mismo que un chat, pero con otro traje: <b style='color:var(--gold)'>peticiones indirectas</b>, verbos más formales, conectores con su puntuación y <b style='color:var(--gold)'>ninguna contracción</b>. Lo importante es saber cuándo ponérselo.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Ver frases de correo formal",
+      "vocab": [
+        {
+          "en": "Dear Mr. Clark,",
+          "sp": "Estimado Sr. Clark:"
+        },
+        {
+          "en": "I am writing to confirm…",
+          "sp": "le escribo para confirmar…"
+        },
+        {
+          "en": "as agreed",
+          "sp": "según lo acordado"
+        },
+        {
+          "en": "as discussed",
+          "sp": "como conversamos"
+        },
+        {
+          "en": "Please find attached…",
+          "sp": "adjunto encontrará…"
+        },
+        {
+          "en": "a signed copy",
+          "sp": "una copia firmada"
+        },
+        {
+          "en": "Should you have any questions,…",
+          "sp": "si tiene alguna pregunta,…"
+        },
+        {
+          "en": "Please do not hesitate to contact me.",
+          "sp": "no dude en contactarme"
+        },
+        {
+          "en": "Sincerely,",
+          "sp": "atentamente,"
+        },
+        {
+          "en": "Best regards,",
+          "sp": "saludos cordiales, (un poco menos formal)"
+        }
+      ],
+      "note": "<b>Cómo funciona:</b> <b>tarjetas</b> <ico-clone></ico-clone>, <b>memory</b>, <b>escucha</b> <ico-headphones></ico-headphones>, <b>reescribir</b> <ico-pen></ico-pen>, <b>completar</b> <ico-filepen></ico-filepen> y <b>comparar</b> <ico-comments></ico-comments>. <ico-check></ico-check> CHECK donde lo veas.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · TRES REGISTROS, UN MENSAJE</b> <span class='es'>— chat, neutral, formal</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Hey, can you send me the contract?",
+              "sp": "Chat: a un colega cercano."
+            },
+            {
+              "en": "Could you send me the contract, please?",
+              "sp": "Neutral: a casi cualquier persona en el trabajo."
+            },
+            {
+              "en": "I would be grateful if you could send me the contract.",
+              "sp": "Formal: a un cliente nuevo, a un equipo legal, a una institución."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · CAMBIA EL VERBO</b> <span class='es'>— el corto es de chat; el largo, de carta</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "get → receive",
+            "ask for → request",
+            "need → require",
+            "tell → inform",
+            "fix → resolve"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We have received your payment.",
+              "sp": "get → receive."
+            },
+            {
+              "en": "We would like to request a meeting.",
+              "sp": "ask for → request."
+            },
+            {
+              "en": "Please inform us of any changes.",
+              "sp": "tell → inform (+ of)."
+            },
+            {
+              "en": "The issue has been resolved.",
+              "sp": "fix → resolve."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · PEDIR SIN ORDENAR</b> <span class='es'>— tres marcos para una petición formal</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I would be grateful if you could confirm the date.",
+              "sp": "Le agradecería que confirmara la fecha."
+            },
+            {
+              "en": "We would appreciate it if you could reply by Friday.",
+              "sp": "Agradeceríamos su respuesta antes del viernes."
+            },
+            {
+              "en": "Could you please return a signed copy?",
+              "sp": "¿Podría devolvernos una copia firmada?"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · CONECTORES FORMALES</b> <span class='es'>— empiezan la frase y llevan coma</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The price is fixed. However, the dates are flexible.",
+              "sp": "<b>However,</b> = sin embargo (contraste)."
+            },
+            {
+              "en": "The contract has been signed. Therefore, work can begin.",
+              "sp": "<b>Therefore,</b> = por lo tanto (consecuencia)."
+            },
+            {
+              "en": "Support is included. Furthermore, training will be free.",
+              "sp": "<b>Furthermore,</b> = además (suma)."
+            },
+            {
+              "en": "With regard to the app, it will be part of phase three.",
+              "sp": "<b>With regard to…,</b> = con respecto a (tema)."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · EL ESQUELETO</b> <span class='es'>— cinco partes, siempre en este orden</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "1 saludo",
+            "2 motivo",
+            "3 detalle",
+            "4 acción",
+            "5 cierre"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I am writing with regard to our meeting on Monday.",
+              "sp": "Motivo: por qué escribes, en la primera línea."
+            },
+            {
+              "en": "Please find the terms attached.",
+              "sp": "Detalle: los datos o el adjunto."
+            },
+            {
+              "en": "I would be grateful if you could return a signed copy.",
+              "sp": "Acción: qué necesitas que haga el lector."
+            },
+            {
+              "en": "I look forward to hearing from you.",
+              "sp": "Cierre: quedas a la espera. Después, <i>Sincerely,</i> y tu nombre completo."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> TRAMPA DEL ESPAÑOL</b> <span class='es'>— fórmulas que no se traducen</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Dear Ms. Clark,",
+              "sp": "«Estimados señores» → no uses <i>Dear Sirs</i>, ya suena anticuado. Dear Mr. / Ms. + apellido, o <i>Dear Hiring Team,</i>"
+            },
+            {
+              "en": "I look forward to hearing from you.",
+              "sp": "«Sin otro particular, quedo a la espera» no se traduce palabra por palabra: este es el cierre."
+            },
+            {
+              "en": "I am writing to you about the contract.",
+              "sp": "«Le escribo» = I am writing <b>to</b> you."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>look forward to + -ing</b>, porque aquí <i>to</i> es preposición: <s class='x'>I look forward to hear from you.</s> → <span class='ok'>I look forward to hearing from you.</span>"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "THE FORMAL VERSION · toca para girar",
+      "intro": "Adelante, la forma de carta. Atrás, la de chat y su significado. Antes de girar, intenta decir la informal.",
+      "cards": [
+        {
+          "front": "we apologize for",
+          "back": "informal: sorry about · pedimos disculpas por"
+        },
+        {
+          "front": "regarding",
+          "back": "informal: about · sobre, respecto de"
+        },
+        {
+          "front": "to purchase",
+          "back": "informal: to buy · comprar"
+        },
+        {
+          "front": "assistance",
+          "back": "informal: help · ayuda"
+        },
+        {
+          "front": "further information",
+          "back": "informal: more info · más información"
+        },
+        {
+          "front": "therefore",
+          "back": "informal: so · por lo tanto"
+        },
+        {
+          "front": "however",
+          "back": "informal: but · sin embargo"
+        },
+        {
+          "front": "to inquire",
+          "back": "informal: to ask · consultar, preguntar"
+        },
+        {
+          "front": "at your earliest convenience",
+          "back": "informal: soon · en cuanto le sea posible"
+        },
+        {
+          "front": "we appreciate",
+          "back": "informal: thanks for · agradecemos"
+        }
+      ],
+      "deckLabel": "informal → formal"
+    },
+    {
+      "type": "story",
+      "tag": "por escrito",
+      "title": "<ico-star></ico-star> PUT IT IN WRITING",
+      "intro": "El trato tiene que llegar por escrito al equipo legal de David, y la postulación a Team Lead necesita un correo de presentación. El primer borrador de Marcos empieza así: <b style='color:var(--gold)'>«Hey David, just checking in!!»</b>",
+      "cast": [
+        {
+          "en": "Marcos",
+          "sp": "escribe como en el chat"
+        },
+        {
+          "en": "Sofia",
+          "sp": "corrige <b style='color:var(--magenta)'>línea por línea</b>"
+        },
+        {
+          "en": "Priya",
+          "sp": "dicta la carta final"
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "mem-formal",
+      "title": "MEMORY · chat and letter",
+      "intro": "Encuentra cada forma de chat con su versión formal. Toca dos cartas.",
+      "pairs": [
+        {
+          "a": "get",
+          "b": "receive"
+        },
+        {
+          "a": "need",
+          "b": "require"
+        },
+        {
+          "a": "tell",
+          "b": "inform"
+        },
+        {
+          "a": "fix",
+          "b": "resolve"
+        },
+        {
+          "a": "Thanks a lot!",
+          "b": "Thank you for your assistance."
+        },
+        {
+          "a": "Talk soon!",
+          "b": "I look forward to hearing from you."
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE DRAFT",
+      "desc": "Sofia lee en voz alta el borrador de Marcos y lo arreglan línea por línea. Fíjate qué cambia en cada frase y por qué.",
+      "src": "b2-l6-1.mp3",
+      "dur": "1:29",
+      "speakers": "<ico-commentdots></ico-commentdots> Sofia + Marcos",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Why does this email need to be formal?",
+          "options": [
+            "David asked for a formal email",
+            "David's legal team will read it",
+            "Priya doesn't like informal emails"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What replaces \"just checking in\"?",
+          "options": [
+            "I am writing with regard to our agreement.",
+            "I am writing to say hello.",
+            "We are checking the agreement."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why does Sofia reject \"ASAP\"?",
+          "options": [
+            "It is too long",
+            "Lawyers don't know the word",
+            "It sounds like an order"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Sofia mean by \"Same message, different suit\"?",
+          "options": [
+            "The content is the same; only the style changed",
+            "Marcos should dress better for meetings",
+            "The new email says something different"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Say Marcos's four formal lines aloud, from memory: the reason for writing, the good news, the request, the close.",
+        "starter": "I am writing with regard to… We are pleased to confirm… I would be grateful if you could… I look forward to…"
+      },
+      "transcript": [
+        {
+          "spk": "Sofia",
+          "html": "Right, Marcos, let me read your draft. \"Hey David, just checking in! We're super happy about the deal. Can you send the signed contract ASAP? Thanks a lot, Marcos.\""
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "What's wrong with it? It's friendly."
+        },
+        {
+          "spk": "Sofia",
+          "html": "It's friendly for a chat. But this email goes to David's legal team. Lawyers will read it. Let's go line by line. \"Hey David.\""
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "\"Dear David\"?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "For his lawyers, \"<span class='tg'>Dear Mr. Clark</span>.\" Next: \"just checking in.\""
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Hmm. \"<span class='tg'>I am writing with regard to</span> our agreement.\""
+        },
+        {
+          "spk": "Sofia",
+          "html": "Much better. Now they know why you're writing. And notice: \"I am,\" not \"I'm.\" No contractions."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Okay. And \"We're super happy about the deal\"?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "\"<span class='tg'>We are pleased to confirm</span> the terms of the agreement.\""
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "And \"Can you send the signed contract ASAP?\""
+        },
+        {
+          "spk": "Sofia",
+          "html": "Never \"ASAP\" to a lawyer. It sounds like an order. Try a request."
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "\"<span class='tg'>I would be grateful if you could</span> return the signed contract <span class='tg'>at your earliest convenience</span>.\""
+        },
+        {
+          "spk": "Sofia",
+          "html": "Lovely. And the ending?"
+        },
+        {
+          "spk": "Marcos",
+          "b": true,
+          "html": "Not \"Thanks a lot.\" How about: \"<span class='tg'>I look forward to hearing from you.</span> Sincerely,\" and my full name?"
+        },
+        {
+          "spk": "Sofia",
+          "html": "Perfect. Same message, different suit."
+        }
+      ]
+    },
+    {
+      "type": "transform",
+      "id": "ex-tr",
+      "title": "CHAT → LETTER",
+      "intro": "Reescribe cada frase de chat en registro formal. Usa el comienzo que ya está escrito y la palabra dorada cuando la haya.",
+      "items": [
+        {
+          "source": "Can you send it?",
+          "start": "I would be grateful if ",
+          "answers": [
+            "I would be grateful if you could send it.",
+            "I would be grateful if you would send it."
+          ],
+          "why": "Petición indirecta: I would be grateful if you could + verbo."
+        },
+        {
+          "source": "Sorry about the mistake.",
+          "cue": "error",
+          "start": "We apologize ",
+          "answers": [
+            "We apologize for the error.",
+            "We apologize for the mistake."
+          ],
+          "why": "apologize + for."
+        },
+        {
+          "source": "We got your email.",
+          "cue": "receive",
+          "start": "We have ",
+          "answers": [
+            "We have received your email."
+          ],
+          "why": "get → receive."
+        },
+        {
+          "source": "Tell us if anything changes.",
+          "cue": "inform",
+          "start": "Please ",
+          "answers": [
+            "Please inform us if anything changes.",
+            "Please inform us of any changes."
+          ],
+          "why": "tell → inform."
+        },
+        {
+          "source": "We need your signature.",
+          "cue": "require",
+          "start": "We ",
+          "answers": [
+            "We require your signature."
+          ],
+          "why": "need → require."
+        },
+        {
+          "source": "Talk soon!",
+          "cue": "hear",
+          "start": "I look forward to ",
+          "answers": [
+            "I look forward to hearing from you.",
+            "I look forward to hearing from you soon."
+          ],
+          "why": "look forward to + -ing."
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "LINK IT FORMALLY",
+      "intro": "Elige el conector o la forma que corresponde en un correo formal.",
+      "items": [
+        {
+          "q": "The price is fixed. ___, the dates are flexible.",
+          "options": [
+            "However",
+            "Therefore",
+            "Furthermore"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The contract has been signed. ___, work can begin on Monday.",
+          "options": [
+            "However",
+            "Therefore",
+            "With regard to"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Support is included. ___, training will be free for the first month.",
+          "options": [
+            "However",
+            "With regard to",
+            "Furthermore"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "___ your question about the app, it will be part of phase three.",
+          "options": [
+            "With regard to",
+            "Furthermore",
+            "Therefore"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "I look forward to ___ from you.",
+          "options": [
+            "hear",
+            "hearing",
+            "heard"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "I would be grateful if you ___ confirm the date.",
+          "options": [
+            "can",
+            "are",
+            "could"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "We ___ for the delay.",
+          "options": [
+            "apologize",
+            "sorry",
+            "excuse"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Please find the terms ___.",
+          "options": [
+            "attach",
+            "attached",
+            "attaching"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "SORRY vs WE APOLOGIZE",
+      "intro": "Las dos piden disculpas por lo mismo. La diferencia es quién las va a leer.",
+      "pair": {
+        "a": "We're sorry about the mistake.",
+        "b": "We apologize for the error."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "¿Cuál le escribes a un colega cercano?",
+          "options": [
+            "A — We're sorry…",
+            "B — We apologize…",
+            "Ninguna"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál va en una carta a un equipo legal?",
+          "options": [
+            "A — We're sorry…",
+            "B — We apologize…",
+            "Las dos igual"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "¿Qué tiene A que un texto formal evita?",
+          "options": [
+            "Un verbo en pasado",
+            "Una pregunta",
+            "Una contracción"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es el cierre formal?",
+          "options": [
+            "I look forward to hearing from you.",
+            "Talk soon!",
+            "Waiting for your answer."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "¿Cuál es la petición más formal?",
+          "options": [
+            "Can you reply by Friday?",
+            "I would be grateful if you could reply by Friday.",
+            "Reply by Friday, please."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE DICTATION",
+      "desc": "Priya le dicta a Marcos la carta que confirma el trato. Atrapa los datos: duración, descuento y fechas.",
+      "src": "b2-l6-2.mp3",
+      "dur": "0:58",
+      "speakers": "<ico-commentdots></ico-commentdots> Priya",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "How long will the new contract run?",
+          "options": [
+            "One year",
+            "Two years",
+            "Three years"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "When does the new contract start?",
+          "options": [
+            "On April 1",
+            "On March 4",
+            "On March 15"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What should Mr. Clark do by March 15?",
+          "options": [
+            "Pay the monthly fee",
+            "Deliver phase two",
+            "Return a signed copy"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Why will the mobile app move to phase three?",
+          "options": [
+            "Because phase two will be delivered a month early",
+            "Because Mr. Clark canceled it",
+            "Because the discount was too big"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Read the closing of the letter aloud, slowly and clearly: 'Should you have any questions, please do not hesitate to contact me. I look forward to working with you.'",
+        "starter": "Should you have any questions, please do not hesitate to contact me. I look forward to working with you. Sincerely, (your full name)."
+      },
+      "transcript": [
+        {
+          "spk": "Priya",
+          "html": "Marcos, take this down, please. Dear Mr. Clark, <span class='tg'>I am writing to confirm</span> the terms agreed at our meeting on March the fourth. The new contract will run for two years, starting on April the first. <span class='tg'>As agreed</span>, a discount of ten percent will be applied to the monthly fee for the full two years. <span class='tg'>Furthermore</span>, phase two will be delivered in August, one month earlier than planned. The mobile app will <span class='tg'>therefore</span> move to phase three. <span class='tg'>Please find</span> the full terms <span class='tg'>attached</span>. <span class='tg'>I would be grateful if you could</span> return a signed copy by March the fifteenth. Should you have any questions, please do not hesitate to contact me. <span class='tg'>I look forward to</span> working with you. Sincerely, and then my full name. Got that? Good. Send it today."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> THE FORMAL EMAIL",
+      "intro": "Elige uno: una queja, una propuesta, o tu correo de presentación para un puesto. Escribe el correo completo (6–8 frases) con el esqueleto de cinco partes.",
+      "checklist": [
+        "Saludo con nombre (<b>Dear Mr. / Ms. …,</b>), nunca Dear Sirs",
+        "Motivo en la primera línea (<b>I am writing to… / with regard to…</b>)",
+        "Detalle con al menos dos conectores (<b>However, / Therefore, / Furthermore,</b>)",
+        "Una petición indirecta (<b>I would be grateful if you could…</b>)",
+        "Cierre (<b>I look forward to hearing from you.</b>) y <b>ninguna contracción</b>"
+      ],
+      "placeholder": "Dear Ms. …,",
+      "example": "Dear <span class=\"gap\">Mr. / Ms. + apellido</span>, I am writing <span class=\"gap\">to + motivo</span>. <span class=\"gap\">detalle 1</span>. However, <span class=\"gap\">detalle 2</span>. Therefore, <span class=\"gap\">consecuencia</span>. I would be grateful if you could <span class=\"gap\">acción</span>. I look forward to <span class=\"gap\">verbo-ing</span>. Sincerely, <span class=\"gap\">tu nombre completo</span>",
+      "hw": "Escribe tu correo y después grábate <b>leyéndolo en voz alta, despacio</b>, como si lo dictaras. Envíame texto y audio por WhatsApp.",
+      "rubric": [
+        {
+          "c": "Tarea completa",
+          "d": "El correo tiene las cinco partes del esqueleto y el número de frases que pide la consigna."
+        },
+        {
+          "c": "Objetivo de la lección",
+          "d": "Registro formal de principio a fin: verbos formales, petición indirecta, conectores con coma y <b>cero contracciones</b>."
+        },
+        {
+          "c": "Se entiende a la primera",
+          "d": "Un lector lo entiende sin releer y sabe exactamente qué tiene que hacer."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/b2-l6",
+    "keys": [
+      "a-deal-breaker",
+      "a-signed-copy",
+      "apologize",
+      "are",
+      "as-agreed",
+      "as-discussed",
+      "assistance",
+      "at-your-earliest-convenience",
+      "attach",
+      "attached",
+      "attaching",
+      "because-mr-clark-canceled-it",
+      "because-phase-two-will-be-delivered-a-month-early",
+      "because-the-discount-was-too-big",
+      "best-regards",
+      "can",
+      "can-you-reply-by-friday",
+      "can-you-send-it",
+      "could",
+      "could-you-please-return-a-signed-copy",
+      "could-you-send-me-the-contract-please",
+      "david-asked-for-a-formal-email",
+      "david-s-legal-team-will-read-it",
+      "dear-mr-clark",
+      "dear-ms-clark",
+      "deliver-phase-two",
+      "excuse",
+      "fix",
+      "further-information",
+      "furthermore",
+      "get",
+      "hear",
+      "heard",
+      "hearing",
+      "hey-can-you-send-me-the-contract",
+      "how-long-will-the-new-contract-run",
+      "however",
+      "i-am-writing-to-confirm",
+      "i-am-writing-to-say-hello",
+      "i-am-writing-to-you-about-the-contract",
+      "i-am-writing-with-regard-to-our-agreement",
+      "i-am-writing-with-regard-to-our-meeting-on-monday",
+      "i-look-forward-to-hearing-from-you",
+      "i-would-be-grateful-if-you-could-confirm-the-date",
+      "i-would-be-grateful-if-you-could-reply-by-friday",
+      "i-would-be-grateful-if-you-could-return-a-signed-copy",
+      "i-would-be-grateful-if-you-could-send-it",
+      "i-would-be-grateful-if-you-could-send-me-the-contract",
+      "inform",
+      "it-is-too-long",
+      "it-sounds-like-an-order",
+      "lawyers-don-t-know-the-word",
+      "leverage",
+      "marcos-should-dress-better-for-meetings",
+      "need",
+      "on-april-1",
+      "on-march-15",
+      "on-march-4",
+      "one-year",
+      "pay-the-monthly-fee",
+      "please-do-not-hesitate-to-contact-me",
+      "please-find-attached",
+      "please-find-the-terms-attached",
+      "please-inform-us-if-anything-changes",
+      "please-inform-us-of-any-changes",
+      "priya-doesn-t-like-informal-emails",
+      "receive",
+      "regarding",
+      "reply-by-friday-please",
+      "require",
+      "resolve",
+      "return-a-signed-copy",
+      "should-you-have-any-questions",
+      "sincerely",
+      "sorry",
+      "sorry-about-the-mistake",
+      "support-is-included-furthermore-training-will-be-free",
+      "talk-soon",
+      "tell",
+      "tell-us-if-anything-changes",
+      "terms",
+      "thank-you-for-your-assistance",
+      "thanks-a-lot",
+      "the-content-is-the-same-only-the-style-changed",
+      "the-contract-has-been-signed-therefore-work-can-begin",
+      "the-issue-has-been-resolved",
+      "the-new-email-says-something-different",
+      "the-price-is-fixed-however-the-dates-are-flexible",
+      "therefore",
+      "three-years",
+      "to-inquire",
+      "to-purchase",
+      "to-sign-off-on",
+      "to-walk-away",
+      "two-years",
+      "waiting-for-your-answer",
+      "we-apologize-for",
+      "we-apologize-for-the-error",
+      "we-appreciate",
+      "we-are-checking-the-agreement",
+      "we-got-your-email",
+      "we-have-received-your-email",
+      "we-have-received-your-payment",
+      "we-need-your-signature",
+      "we-re-sorry-about-the-mistake",
+      "we-require-your-signature",
+      "we-would-appreciate-it-if-you-could-reply-by-friday",
+      "we-would-like-to-request-a-meeting",
+      "what-does-sofia-mean-by-same-message-different-suit",
+      "what-replaces-just-checking-in",
+      "what-should-mr-clark-do-by-march-15",
+      "when-does-the-new-contract-start",
+      "why-does-sofia-reject-asap",
+      "why-does-this-email-need-to-be-formal",
+      "why-will-the-mobile-app-move-to-phase-three",
+      "with-regard-to",
+      "with-regard-to-the-app-it-will-be-part-of-phase-three"
+    ]
+  }
+}
