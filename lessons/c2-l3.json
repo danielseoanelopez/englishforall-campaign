@@ -1,0 +1,916 @@
+{
+  "level": "C2",
+  "num": 3,
+  "totalLessons": 6,
+  "world": "MASTERY",
+  "ui": "en",
+  "key": "rankup_C2_L3",
+  "title": "ACADEMIC<br>ARGUMENT",
+  "titlePlain": "Academic Argument — The Keynote (C2)",
+  "subtitle": "Listening &amp; Writing · C2 · ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=c2-l4",
+    "label": "LESSON 4 ▸ FIGURATIVE LANGUAGE"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> RECAP · last lesson",
+      "intro": "Last night's lesson, before this morning's keynote. Match each term or phrase with what it is.",
+      "pairs": [
+        {
+          "l": "understatement",
+          "r": "a small word for a big thing"
+        },
+        {
+          "l": "irony",
+          "r": "the words say the opposite of the facts"
+        },
+        {
+          "l": "deadpan",
+          "r": "funny words, serious face"
+        },
+        {
+          "l": "commence",
+          "r": "kick off, three rungs up"
+        },
+        {
+          "l": "Should you require…",
+          "r": "If you need…, in a formal letter"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "hedging, citing & limits",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· hedging, citing &amp; limits</span>",
+      "title": "<ico-book></ico-book> HOW SURE ARE YOU?",
+      "intro": "An academic argument is not a louder opinion. It is a claim made <b style='color:var(--gold)'>exactly as strong as its evidence</b>, with its sources named and its limits admitted. Five steps: how strong, how dense, who said it, where it stops, and three ways an argument cheats.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show the conference vocabulary",
+      "vocab": [
+        {
+          "en": "a keynote",
+          "sp": "the main speech at a conference"
+        },
+        {
+          "en": "obsolete",
+          "sp": "no longer needed, because something newer exists"
+        },
+        {
+          "en": "a claim",
+          "sp": "a statement that something is true"
+        },
+        {
+          "en": "a finding",
+          "sp": "a result of a study"
+        },
+        {
+          "en": "a sample",
+          "sp": "the group of people a study looked at"
+        },
+        {
+          "en": "a caveat",
+          "sp": "a warning that limits what you have just said"
+        },
+        {
+          "en": "to overstate",
+          "sp": "to say more than the evidence supports"
+        },
+        {
+          "en": "to hedge",
+          "sp": "to make a claim less absolute"
+        },
+        {
+          "en": "a fallacy",
+          "sp": "a mistake in reasoning that makes an argument look stronger than it is"
+        },
+        {
+          "en": "a bulletin",
+          "sp": "a short news sheet for the people at an event"
+        }
+      ],
+      "note": "<b>How it works:</b> flashcards <ico-clone></ico-clone>, the keynote <ico-headphones></ico-headphones>, gap-fill <ico-filepen></ico-filepen>, rewrite <ico-pen></ico-pen>, compare <ico-comments></ico-comments> and order <ico-puzzle></ico-puzzle>. Every option is grammatical; choose the one the evidence allows.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · CLAIM STRENGTH</b> <span class='es'>— four verbs, four levels of certainty</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "proves",
+            "shows",
+            "suggests",
+            "may indicate"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "This proves that the theorem is true.",
+              "sp": "Certain. Outside mathematics, almost never justified."
+            },
+            {
+              "en": "This shows that learners use the tools daily.",
+              "sp": "Strong: we observed it directly."
+            },
+            {
+              "en": "This suggests that the tools change how people study.",
+              "sp": "Probable: the evidence points that way."
+            },
+            {
+              "en": "This may indicate a shift in motivation.",
+              "sp": "Possible: one reading among several."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · NOMINALIZATION</b> <span class='es'>— turning the verb into a noun</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We decided to extend the study, and this surprised nobody.",
+              "sp": "Verb style: who did what is clear."
+            },
+            {
+              "en": "The decision to extend the study surprised nobody.",
+              "sp": "Noun style: denser, and the decision can now be the subject."
+            },
+            {
+              "en": "The rapid improvement of the learners encouraged the teachers.",
+              "sp": "= The learners improved rapidly, and this encouraged the teachers."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>What it buys and what it costs.</b> Nominalization packs a whole clause into a noun, so you can go on talking about it: that is why academic prose uses it. The price is clarity. «The implementation of the reduction of costs» hides who is doing what. One nominalization per sentence is usually enough."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · CITING VERBS AND THEIR VERDICTS</b> <span class='es'>— as in lesson 1, the verb judges</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Lane contends that machines cannot build trust.",
+              "sp": "She argues it firmly. I stay neutral."
+            },
+            {
+              "en": "Lane notes that the tools are improving.",
+              "sp": "She points it out, and I accept it as a fact."
+            },
+            {
+              "en": "Lane concedes that the tools are useful.",
+              "sp": "She admits it, although it does not help her case."
+            },
+            {
+              "en": "Critics claim that classrooms are obsolete.",
+              "sp": "They say so. I doubt it."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · LIMITS AND SIGNPOSTS</b> <span class='es'>— say where your claim stops, and where you are going</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "This is not to say that the tools are useless.",
+              "sp": "A limit: I block a conclusion you might jump to."
+            },
+            {
+              "en": "These findings are limited to adult learners.",
+              "sp": "A limit: who the study did not cover."
+            },
+            {
+              "en": "This raises the question of motivation.",
+              "sp": "A signpost: here is the next problem."
+            },
+            {
+              "en": "Taken together, these studies point in one direction.",
+              "sp": "A signpost: I am summing up the evidence."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · THREE WAYS AN ARGUMENT CHEATS</b> <span class='es'>— straw man, false dichotomy, hasty generalization</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "So you want to ban technology from schools?",
+              "sp": "Straw man: attacking a position that nobody took."
+            },
+            {
+              "en": "Either we embrace the machines or we fall behind.",
+              "sp": "False dichotomy: two options offered as if there were no others."
+            },
+            {
+              "en": "My cousin learned Italian from an app, so teachers are unnecessary.",
+              "sp": "Hasty generalization: one case, one enormous conclusion."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> CALQUE ALERT</b> <span class='es'>— three habits from Spanish academic prose</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The results suggest a link between the two.",
+              "sp": "English academic writing claims less than you expect. «This clearly demonstrates» is overclaiming unless it really does."
+            },
+            {
+              "en": "The study, which lasted two years, found a small effect.",
+              "sp": "Keep the subject and the main verb close. A reader of English should not wait forty words for the verb."
+            },
+            {
+              "en": "Taken together, the evidence points one way.",
+              "sp": "«In conclusion» is not the only way to end. In a short text, the last paragraph needs no label at all."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "the summit weekend · day 2",
+      "title": "<ico-star></ico-star> THE KEYNOTE",
+      "intro": "Saturday morning in the ballroom. Dr. Lane gives the keynote: <b style='color:var(--gold)'>«Will machines make language learning obsolete?»</b> Ms. Whitmore hands you a notebook. The summit bulletin goes to print at noon, and it needs a hundred-word summary of the talk: what Dr. Lane claims, on what evidence, and with what limits. Your own opinion is not required.",
+      "cast": [
+        {
+          "en": "Dr. Lane",
+          "sp": "the keynote speaker: precise, dry, careful"
+        },
+        {
+          "en": "Max and Kit",
+          "sp": "in the audience, with questions"
+        },
+        {
+          "en": "Ms. Whitmore",
+          "sp": "wants the summary by noon"
+        },
+        {
+          "en": "You",
+          "sp": "in the back row, <b style='color:var(--magenta)'>taking notes</b>"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "HEDGES AND CITING VERBS · tap to flip",
+      "intro": "Ten tools for claiming exactly as much as you can defend. Before you flip, say what each one does.",
+      "cards": [
+        {
+          "front": "It could be argued that…",
+          "back": "introduces a view without owning it · «It could be argued that we are slow to change.»"
+        },
+        {
+          "front": "The evidence suggests…",
+          "back": "a probable claim, resting on data · «The evidence suggests a modest effect.»"
+        },
+        {
+          "front": "may indicate",
+          "back": "a possible reading, no more · «This may indicate a shift.»"
+        },
+        {
+          "front": "to some extent",
+          "back": "partly true · «To some extent, the critics are right.»"
+        },
+        {
+          "front": "This is not to say that…",
+          "back": "blocks a conclusion the reader might jump to"
+        },
+        {
+          "front": "contends",
+          "back": "argues firmly; the writer stays neutral · «Lane contends that trust cannot be automated.»"
+        },
+        {
+          "front": "notes",
+          "back": "points out something accepted as true · «She notes that the sample was small.»"
+        },
+        {
+          "front": "concedes",
+          "back": "admits a point against her own case · «She concedes that the tools are useful.»"
+        },
+        {
+          "front": "This raises the question of…",
+          "back": "a signpost to the next problem"
+        },
+        {
+          "front": "Taken together,…",
+          "back": "a signpost: summing up several pieces of evidence"
+        }
+      ],
+      "deckLabel": "academic argument"
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE KEYNOTE",
+      "desc": "Dr. Lane's talk, complete. Take notes for the bulletin as you listen: her claim, her evidence, her limits. Notice which statements she makes flatly and which she hedges.",
+      "src": "c2-l3-1.mp3",
+      "dur": "3:01",
+      "speakers": "<ico-commentdots></ico-commentdots> Dr. Lane",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Which sentence states her central claim as she herself would word it?",
+          "options": [
+            "The evidence suggests that translation tools carry information well, and relationships less well.",
+            "The study proves that people who use translation tools cannot make friends.",
+            "Translation tools are a toy and will soon disappear."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which idea does she hedge most carefully?",
+          "options": [
+            "That the tools are remarkably good",
+            "That learning a language is what causes the extra friendships",
+            "That her study followed three hundred adults"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which fallacy does she accuse some critics of?",
+          "options": [
+            "A straw man",
+            "A hasty generalization",
+            "A false dichotomy"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What is her attitude to the tools?",
+          "options": [
+            "Respect: they are excellent at what they do, and not a replacement for learning",
+            "Hostility: she would like to see them banned",
+            "Indifference: she has never used them"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Report the keynote in three sentences, each with a different citing verb: concedes, contends, notes.",
+        "starter": "Dr. Lane concedes that… She contends, however, that… She notes that her sample…"
+      },
+      "transcript": [
+        {
+          "spk": "Dr. Lane",
+          "html": "Thank you. I have been asked a question this morning that I am supposed to answer with a yes or a no. Will machines make language learning obsolete? I am afraid I am going to disappoint you, because the honest answer is neither."
+        },
+        {
+          "spk": "Dr. Lane",
+          "html": "Let me begin with what <span class='tg'>I will concede</span> at once. The tools are good. They are, in fact, remarkably good. A traveler with a phone can now order dinner, read a contract and argue with a taxi driver in a language she has never studied. Ten years ago, that was science fiction. Anyone who tells you these tools are a toy has not used them recently."
+        },
+        {
+          "spk": "Dr. Lane",
+          "html": "So why are we all still here? <span class='tg'>It could be argued that</span> we are simply slow to change. I do not think the evidence supports that. In a study my colleagues and I ran over two years, we followed three hundred adults who had moved abroad for work. Half relied mainly on translation tools. Half took classes. After two years, both groups could get things done. They could shop, travel and fill in forms. But when we asked how many local friends they had made, the difference was striking. The learners reported, on average, three times as many."
+        },
+        {
+          "spk": "Dr. Lane",
+          "html": "Now, I want to be careful. <span class='tg'>This does not prove</span> that learning a language causes friendship. <span class='tg'>It may be that</span> sociable people choose classes in the first place. Our sample was small, and it was <span class='tg'>limited to</span> adults in three cities. What <span class='tg'>the evidence suggests</span>, and I would put it no more strongly than that, is this: translation tools transfer information very well, and relationships rather less well. A machine can carry my words across. It cannot make you feel that I bothered to learn yours."
+        },
+        {
+          "spk": "Dr. Lane",
+          "html": "Some critics present this as a choice: either we embrace the machines, or we defend the classroom. That is <span class='tg'>a false dichotomy</span>, and I would like to retire it this morning. Nobody asks whether calculators made mathematics obsolete. They changed what was worth doing by hand."
+        },
+        {
+          "spk": "Dr. Lane",
+          "html": "<span class='tg'>This raises the question of</span> what teachers are for. <span class='tg'>Arguably</span>, less and less for information, and more and more for the things information does not cover: timing, tact, humor, trust. Whether that is how things will turn out, I cannot tell you. Further research is needed, as people in my profession always say, usually when applying for money."
+        },
+        {
+          "spk": "Dr. Lane",
+          "html": "<span class='tg'>Taken together</span>, then: the tools are here, they are excellent, and they are not, on present evidence, a replacement. They are a bridge. And nobody ever fell in love with a bridge. Well. Perhaps an engineer. Thank you."
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "HOW MUCH CAN YOU CLAIM?",
+      "intro": "Read the evidence in each sentence, then choose the wording it allows. All the options are grammatical; only one is honest.",
+      "items": [
+        {
+          "q": "One study of twenty students ___ that the app helps. More research is needed.",
+          "options": [
+            "may indicate",
+            "proves",
+            "confirms"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Fifty studies in thirty countries all found the same thing. The evidence ___ that practice matters.",
+          "options": [
+            "may hint",
+            "shows",
+            "might possibly suggest"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "In mathematics, a correct demonstration ___ the theorem.",
+          "options": [
+            "suggests",
+            "may indicate",
+            "proves"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Sales rose after the ad, but they also rose in cities where it never ran. The ad ___ have helped.",
+          "options": [
+            "may",
+            "must",
+            "can only"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Lane ___ that the tools are useful, although this weakens her own case.",
+          "options": [
+            "claims",
+            "concedes",
+            "denies"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Critics ___ that classrooms are obsolete, but they offer little evidence.",
+          "options": [
+            "note",
+            "demonstrate",
+            "claim"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "The tools have limits. This is not to ___ that they are useless.",
+          "options": [
+            "say",
+            "prove",
+            "deny"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Each study is small. ___, they point in the same direction.",
+          "options": [
+            "By contrast",
+            "Taken together",
+            "For instance"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The findings are ___ to adults: we did not study children.",
+          "options": [
+            "extended",
+            "unrelated",
+            "limited"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Nobody has mentioned money yet. This ___ the question of who pays for the training.",
+          "options": [
+            "raises",
+            "answers",
+            "avoids"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "transform",
+      "id": "ex-tr",
+      "title": "VERB ↔ NOUN",
+      "intro": "The first three: pack the verb into a noun, starting with the words in the box. The last three: unpack the noun back into a verb. Same facts, different density.",
+      "items": [
+        {
+          "source": "We decided to extend the study, and this surprised nobody.",
+          "start": "The decision ",
+          "answers": [
+            "The decision to extend the study surprised nobody.",
+            "The decision to extend the study surprised no one."
+          ],
+          "why": "decided → the decision. The whole first clause becomes the subject."
+        },
+        {
+          "source": "The learners improved rapidly, and this encouraged the teachers.",
+          "start": "The rapid ",
+          "answers": [
+            "The rapid improvement of the learners encouraged the teachers.",
+            "The rapid improvement of learners encouraged the teachers.",
+            "The rapid improvement in the learners encouraged the teachers."
+          ],
+          "why": "improved rapidly → the rapid improvement: the adverb becomes an adjective."
+        },
+        {
+          "source": "The tools failed, and this delayed the project.",
+          "start": "The failure ",
+          "answers": [
+            "The failure of the tools delayed the project."
+          ],
+          "why": "failed → the failure of…"
+        },
+        {
+          "source": "The committee made a decision to cancel the event.",
+          "start": "The committee ",
+          "answers": [
+            "The committee decided to cancel the event."
+          ],
+          "why": "made a decision → decided: shorter and clearer."
+        },
+        {
+          "source": "There was a rapid increase in prices.",
+          "start": "Prices ",
+          "answers": [
+            "Prices increased rapidly.",
+            "Prices rapidly increased.",
+            "Prices rose rapidly."
+          ],
+          "why": "a rapid increase → increased rapidly."
+        },
+        {
+          "source": "We carried out an analysis of the data.",
+          "start": "We ",
+          "answers": [
+            "We analyzed the data.",
+            "We analysed the data."
+          ],
+          "why": "carried out an analysis of → analyzed."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "PROVES vs SUGGESTS",
+      "intro": "One small study found that learners who used an app scored higher. Two ways to report it.",
+      "pair": {
+        "a": "This proves that the app works.",
+        "b": "This suggests that the app works."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "Which sentence can one small study support?",
+          "options": [
+            "A — proves",
+            "B — suggests",
+            "Both equally"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which sentence can a critic defeat with a single counterexample?",
+          "options": [
+            "A — proves",
+            "B — suggests",
+            "Neither"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "What does the writer of B gain by claiming less?",
+          "options": [
+            "A shorter sentence",
+            "Certainty",
+            "Credibility: the claim matches the evidence"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which of these is a hasty generalization?",
+          "options": [
+            "My cousin learned Italian from an app, so teachers are unnecessary.",
+            "In our sample, app users learned more words.",
+            "Some learners may prefer apps."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Someone says: \"Apps can't replace conversation.\" Which reply is a straw man?",
+          "options": [
+            "What evidence is that based on?",
+            "So you think technology should be banned?",
+            "That may depend on the app."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "BUILD THE ARGUMENT",
+      "intro": "Each chip is one sentence. Put every paragraph in the order claim, evidence, limit, implication.",
+      "items": [
+        {
+          "words": [
+            "Translation tools do not replace language learning.",
+            "In a two-year study, learners made three times as many local friends.",
+            "Admittedly, the sample was small.",
+            "Even so, the result suggests that classes offer more than information."
+          ],
+          "answer": "Translation tools do not replace language learning. In a two-year study, learners made three times as many local friends. Admittedly, the sample was small. Even so, the result suggests that classes offer more than information."
+        },
+        {
+          "words": [
+            "Remote work may improve productivity.",
+            "One survey of five hundred employees found that output rose by ten percent.",
+            "However, the survey relied on what employees said about themselves.",
+            "If the finding holds, offices may need less space."
+          ],
+          "answer": "Remote work may improve productivity. One survey of five hundred employees found that output rose by ten percent. However, the survey relied on what employees said about themselves. If the finding holds, offices may need less space."
+        },
+        {
+          "words": [
+            "Reading fiction appears to build empathy.",
+            "In several experiments, readers scored higher on tests of understanding others.",
+            "These effects were measured only minutes after reading.",
+            "Whether they last is a question for future research."
+          ],
+          "answer": "Reading fiction appears to build empathy. In several experiments, readers scored higher on tests of understanding others. These effects were measured only minutes after reading. Whether they last is a question for future research."
+        },
+        {
+          "words": [
+            "Short naps seem to improve memory.",
+            "Students who slept for twenty minutes recalled more words than those who did not.",
+            "This is not to say that longer naps are better.",
+            "Schools might therefore consider a quiet period after lunch."
+          ],
+          "answer": "Short naps seem to improve memory. Students who slept for twenty minutes recalled more words than those who did not. This is not to say that longer naps are better. Schools might therefore consider a quiet period after lunch."
+        },
+        {
+          "words": [
+            "Cities with more trees tend to be cooler.",
+            "Satellite data show a difference of up to three degrees.",
+            "Trees, of course, are not the only factor.",
+            "Planting them is nevertheless a cheap place to start."
+          ],
+          "answer": "Cities with more trees tend to be cooler. Satellite data show a difference of up to three degrees. Trees, of course, are not the only factor. Planting them is nevertheless a cheap place to start."
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE Q&A",
+      "desc": "Two questions from the audience, one from Max and one from Kit. One of them is fair. The other attacks something Dr. Lane never said. Listen to how differently she answers them.",
+      "src": "c2-l3-2.mp3",
+      "dur": "1:03",
+      "speakers": "<ico-commentdots></ico-commentdots> Max + Dr. Lane + Kit",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Whose question misrepresents Dr. Lane's argument?",
+          "options": [
+            "Kit's",
+            "Max's",
+            "Both questions do"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What kind of move is Max's question?",
+          "options": [
+            "A straw man: it attacks a position she never took",
+            "A false dichotomy: it offers only two options",
+            "A fair request for more evidence"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How does Dr. Lane answer Kit?",
+          "options": [
+            "She says the question is irrelevant",
+            "She changes the subject",
+            "She accepts the weakness and describes a better study"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does her answer to Kit show about academic argument?",
+          "options": [
+            "Admitting a limit makes a careful claim more believable",
+            "A good speaker never admits a weakness",
+            "Questions from teachers are always fair"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Ask Dr. Lane one fair question about her study, as Kit did: name the limit you are asking about.",
+        "starter": "You mentioned that… Did you measure…? / I was wondering whether the result would hold for…"
+      },
+      "transcript": [
+        {
+          "spk": "Max",
+          "html": "Dr. Lane. Max. I run a store. So you're saying we should throw our phones away and all go back to school?"
+        },
+        {
+          "spk": "Dr. Lane",
+          "b": true,
+          "html": "No, and <span class='tg'>with respect</span>, that is not what I said. I said the tools are excellent, and I use them every day. My claim is narrower: they do not appear to replace the relationships that learning builds. I would be happy to defend that. I cannot defend a position I do not hold."
+        },
+        {
+          "spk": "Kit",
+          "html": "Kit. I teach high school. You mentioned that sociable people might simply choose classes. Did you measure how sociable people were before the study began?"
+        },
+        {
+          "spk": "Dr. Lane",
+          "b": true,
+          "html": "That is exactly the right question, and the honest answer is: only partly. We asked about it in a short survey at the start, and the two groups looked similar. But a survey is a weak instrument. <span class='tg'>I would concede</span> that a better study would follow the same people before and after. If you know anyone with funding, I am free at lunch."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> THE BULLETIN SUMMARY",
+      "intro": "Write the summary of Dr. Lane's keynote for the summit bulletin (about 100 words). Report what she said. <b>Your own opinion does not appear.</b>",
+      "checklist": [
+        "Her central claim, introduced with a <b>citing verb</b> (<b>contends / argues / suggests</b>), at the strength she gave it",
+        "One piece of <b>evidence</b> from her study, with the numbers",
+        "One <b>limit</b> she admitted (<b>She concedes that… / She notes that…</b>)",
+        "At least one <b>nominalization</b> (<b>the decision, the difference, the finding</b>), and no more than one per sentence",
+        "No <b>proves</b>, no <b>clearly demonstrates</b>, and no sentence beginning «I think»"
+      ],
+      "placeholder": "In Saturday's keynote, Dr. Lane…",
+      "example": "In Saturday's keynote, Dr. Lane <span class=\"gap\">citing verb</span> that <span class=\"gap\">her central claim, hedged as she hedged it</span>. She concedes that <span class=\"gap\">what she grants about the tools</span>. In a <span class=\"gap\">length</span> study of <span class=\"gap\">number and who</span>, <span class=\"gap\">the finding</span>. She notes, however, that <span class=\"gap\">one limit</span>. <span class=\"gap\">a last sentence with her image of the tools</span>.",
+      "hw": "Write your summary, then <b>record yourself reading it as a news item</b>: neutral voice, no opinion in the tone either. Send me the text and the audio on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "About 100 words that someone who missed the talk could rely on: claim, evidence, limit."
+        },
+        {
+          "c": "Lesson target",
+          "d": "Citing verbs carry the right verdict, the claim is no stronger than Dr. Lane made it, and the nominalizations are clear."
+        },
+        {
+          "c": "Precision",
+          "d": "Nothing in the summary is your opinion, and nothing in it is more certain than the talk was."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c2-l3",
+    "keys": [
+      "a-bulletin",
+      "a-caveat",
+      "a-claim",
+      "a-fair-request-for-more-evidence",
+      "a-fallacy",
+      "a-false-dichotomy",
+      "a-false-dichotomy-it-offers-only-two-options",
+      "a-finding",
+      "a-good-speaker-never-admits-a-weakness",
+      "a-hasty-generalization",
+      "a-keynote",
+      "a-sample",
+      "a-straw-man",
+      "a-straw-man-it-attacks-a-position-she-never-took",
+      "admitting-a-limit-makes-a-careful-claim-more-believable",
+      "answers",
+      "avoids",
+      "both-questions-do",
+      "by-contrast",
+      "can-only",
+      "claim",
+      "claims",
+      "commence",
+      "concedes",
+      "confirms",
+      "contends",
+      "critics-claim-that-classrooms-are-obsolete",
+      "deadpan",
+      "demonstrate",
+      "denies",
+      "deny",
+      "either-we-embrace-the-machines-or-we-fall-behind",
+      "extended",
+      "for-instance",
+      "hostility-she-would-like-to-see-them-banned",
+      "how-does-dr-lane-answer-kit",
+      "in-our-sample-app-users-learned-more-words",
+      "indifference-she-has-never-used-them",
+      "irony",
+      "it-could-be-argued-that",
+      "kit-s",
+      "lane-concedes-that-the-tools-are-useful",
+      "lane-contends-that-machines-cannot-build-trust",
+      "lane-notes-that-the-tools-are-improving",
+      "limited",
+      "max-s",
+      "may",
+      "may-hint",
+      "may-indicate",
+      "might-possibly-suggest",
+      "must",
+      "my-cousin-learned-italian-from-an-app-so-teachers-are-unnecessary",
+      "note",
+      "notes",
+      "obsolete",
+      "prices-increased-rapidly",
+      "prove",
+      "proves",
+      "questions-from-teachers-are-always-fair",
+      "raises",
+      "respect-they-are-excellent-at-what-they-do-and-not-a-replacement-for-learning",
+      "say",
+      "she-accepts-the-weakness-and-describes-a-better-study",
+      "she-changes-the-subject",
+      "she-says-the-question-is-irrelevant",
+      "should-you-require",
+      "shows",
+      "so-you-think-technology-should-be-banned",
+      "so-you-want-to-ban-technology-from-schools",
+      "some-learners-may-prefer-apps",
+      "suggests",
+      "taken-together",
+      "taken-together-the-evidence-points-one-way",
+      "taken-together-these-studies-point-in-one-direction",
+      "that-her-study-followed-three-hundred-adults",
+      "that-learning-a-language-is-what-causes-the-extra-friendships",
+      "that-may-depend-on-the-app",
+      "that-the-tools-are-remarkably-good",
+      "the-committee-decided-to-cancel-the-event",
+      "the-committee-made-a-decision-to-cancel-the-event",
+      "the-decision-to-extend-the-study-surprised-nobody",
+      "the-evidence-suggests",
+      "the-evidence-suggests-that-translation-tools-carry-information-well-and-relation",
+      "the-failure-of-the-tools-delayed-the-project",
+      "the-learners-improved-rapidly-and-this-encouraged-the-teachers",
+      "the-rapid-improvement-of-the-learners-encouraged-the-teachers",
+      "the-results-suggest-a-link-between-the-two",
+      "the-study-proves-that-people-who-use-translation-tools-cannot-make-friends",
+      "the-study-which-lasted-two-years-found-a-small-effect",
+      "the-tools-failed-and-this-delayed-the-project",
+      "there-was-a-rapid-increase-in-prices",
+      "these-findings-are-limited-to-adult-learners",
+      "this-is-not-to-say-that",
+      "this-is-not-to-say-that-the-tools-are-useless",
+      "this-may-indicate-a-shift-in-motivation",
+      "this-proves-that-the-app-works",
+      "this-proves-that-the-theorem-is-true",
+      "this-raises-the-question-of",
+      "this-raises-the-question-of-motivation",
+      "this-shows-that-learners-use-the-tools-daily",
+      "this-suggests-that-the-app-works",
+      "this-suggests-that-the-tools-change-how-people-study",
+      "to-hedge",
+      "to-overstate",
+      "to-some-extent",
+      "translation-tools-are-a-toy-and-will-soon-disappear",
+      "understatement",
+      "unrelated",
+      "we-analyzed-the-data",
+      "we-carried-out-an-analysis-of-the-data",
+      "we-decided-to-extend-the-study-and-this-surprised-nobody",
+      "what-does-her-answer-to-kit-show-about-academic-argument",
+      "what-evidence-is-that-based-on",
+      "what-is-her-attitude-to-the-tools",
+      "what-kind-of-move-is-max-s-question",
+      "which-fallacy-does-she-accuse-some-critics-of",
+      "which-idea-does-she-hedge-most-carefully",
+      "which-sentence-states-her-central-claim-as-she-herself-would-word-it",
+      "whose-question-misrepresents-dr-lane-s-argument"
+    ]
+  }
+}
