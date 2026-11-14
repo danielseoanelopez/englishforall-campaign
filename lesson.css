@@ -384,3 +384,10 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .sp-clean { margin-left: 6px; padding: 8px 13px; border: 1px dashed var(--cyan); border-radius: 8px; background: none; color: var(--cyan); font-family: "Share Tech Mono", monospace; font-size: 0.88rem; cursor: pointer; }
 .sp-clean.hit { border-style: solid; border-color: var(--green); color: var(--green); background: #3dffa016; }
 .sp-clean:disabled { cursor: default; }
+/* dialogue countdown ("timer": seconds) */
+.dlg-timer { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 6px 0 14px; }
+.dlg-timer .toggle-btn { margin: 0; }
+.dlg-bar { flex: 1 1 120px; height: 8px; background: #10122a; border: 1px solid var(--cyan); border-radius: 6px; overflow: hidden; }
+.dlg-bar i { display: block; height: 100%; width: 100%; background: var(--cyan); transition: width .2s linear; }
+.dlg-timer.out .dlg-bar i { background: var(--magenta); }
+.dlg-left { font-size: .85rem; color: var(--gold); min-width: 44px; }

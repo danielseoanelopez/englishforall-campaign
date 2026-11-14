@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/brands.css?v=1">
 <script src="assets/progress.js?v=1"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20261115">
+<link rel="stylesheet" href="lesson.css?v=20261116">
 <link rel="stylesheet" href="assets/icons.css?v=1">
 </head>
 <body>
@@ -236,8 +236,15 @@ function dialogueHtml(b, id){
     return `<p class="dlg-line">${spkBtn(l.html)}<span class="spk ${l.b?'b':''}">${esc(l.spk)}:</span> ${esc(l.html)}</p>`;
   }).join("");
   return `<div class="card alt" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-comments></ico-comments> ${esc(b.title||T('ELIGE LA RESPUESTA','CHOOSE THE REPLY'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
+  ${b.timer?`<div class="dlg-timer" id="${id}-tm" data-s="${+b.timer}"><button type="button" class="toggle-btn" onclick="dlgTimer('${id}',this)"><ico-stopwatch></ico-stopwatch> ${T('EMPEZAR EL RELOJ','START THE CLOCK')} · ${+b.timer}s</button><div class="dlg-bar"><i></i></div><span class="dlg-left"></span></div>`:''}
   ${body}<div class="btn-row"><button class="btn check" onclick="checkRadio('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
+// dialogue "timer": N seconds. A visible countdown for rapid-fire rounds. Not scored: it only adds pressure.
+function dlgTimer(id, btn){ const box=document.getElementById(id+"-tm"); if(box.dataset.on) return; box.dataset.on="1"; btn.disabled=true;
+  const total=+box.dataset.s, bar=box.querySelector("i"), left=box.querySelector(".dlg-left"), t0=Date.now();
+  const iv=setInterval(()=>{ const r=Math.max(0,total-(Date.now()-t0)/1000); bar.style.width=(r/total*100)+"%"; left.textContent=Math.ceil(r)+"s";
+    if(document.getElementById("score-"+id).textContent.trim()){ clearInterval(iv); left.textContent=T("¡A tiempo!","In time!"); }
+    else if(r<=0){ clearInterval(iv); box.classList.add("out"); left.textContent=T("¡Tiempo! Termina igualmente.","Time! Finish anyway."); noBeep(); } },200); blip(); }
 function matchHtml(b, id){
   matchState[id] = { sel:null, slots:{}, pairs:b.pairs };
   const rights = shuffle(b.pairs.map(p=>p.r));

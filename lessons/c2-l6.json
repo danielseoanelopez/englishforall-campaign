@@ -1,0 +1,1008 @@
+{
+  "level": "C2",
+  "num": 6,
+  "totalLessons": 6,
+  "world": "MASTERY",
+  "ui": "en",
+  "key": "rankup_C2_L6",
+  "title": "SPONTANEOUS<br>FLUENCY",
+  "titlePlain": "Spontaneous Fluency — Think on Your Feet (C2)",
+  "subtitle": "Speaking &amp; Listening · C2 · ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "c2-final.html",
+    "label": "<ico-crown></ico-crown> BOSS ▸ THE GALA"
+  },
+  "clips": {
+    "dir": "clips/c2-l6",
+    "note": "Recorded by studio/scripts/generate_clips.py. 'text' is what the voice reads; the page never shows it.",
+    "items": [
+      {
+        "file": "freeze.mp3",
+        "voice": "en-US-EricNeural",
+        "rate": "+0%",
+        "text": "We need a... um... sorry. I don't know the word. Sorry. My English is... sorry."
+      },
+      {
+        "file": "paraphrase.mp3",
+        "voice": "en-US-EricNeural",
+        "rate": "+0%",
+        "text": "We need a... what's the word... the thing you use to open a bottle of wine. A corkscrew, that's it."
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> RECAP · last lesson",
+      "intro": "This morning's red pen, before tonight's toast. Match each term with what it is.",
+      "pairs": [
+        {
+          "l": "redundant",
+          "r": "the idea is already there"
+        },
+        {
+          "l": "a dangling modifier",
+          "r": "an opening phrase with nothing to describe"
+        },
+        {
+          "l": "parallel structure",
+          "r": "same job, same shape"
+        },
+        {
+          "l": "a comma splice",
+          "r": "two sentences joined by a comma alone"
+        },
+        {
+          "l": "in order to",
+          "r": "«to», plus two words of furniture"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "buy time, paraphrase, repair",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· buy time, paraphrase, repair</span>",
+      "title": "<ico-book></ico-book> THINK ON YOUR FEET",
+      "intro": "Fluency is not speaking without problems. It is <b style='color:var(--gold)'>solving them without stopping</b>: a word goes missing, a sentence goes wrong, a question arrives that you have never thought about, and the listener hardly notices. Five tools, and then a toast.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show the vocabulary of speaking",
+      "vocab": [
+        {
+          "en": "a toast",
+          "sp": "a few words spoken before everyone raises a glass and drinks"
+        },
+        {
+          "en": "to raise a glass",
+          "sp": "to lift your drink in honor of someone"
+        },
+        {
+          "en": "impromptu",
+          "sp": "done without preparation"
+        },
+        {
+          "en": "a filler",
+          "sp": "a small word that fills a pause: well, so, I mean"
+        },
+        {
+          "en": "to buy time",
+          "sp": "to say something that gives you a moment to think"
+        },
+        {
+          "en": "to paraphrase",
+          "sp": "to say the same thing in other words"
+        },
+        {
+          "en": "to go blank",
+          "sp": "to forget, suddenly, everything you were going to say"
+        },
+        {
+          "en": "to lose the thread",
+          "sp": "to forget where your story was going"
+        },
+        {
+          "en": "to rehearse",
+          "sp": "to practice something before doing it in front of people"
+        },
+        {
+          "en": "to think on your feet",
+          "sp": "to find a good answer quickly, while you are speaking"
+        }
+      ],
+      "note": "<b>How it works:</b> flashcards <ico-clone></ico-clone>, rapid fire against the clock <ico-comments></ico-comments>, the rehearsal <ico-headphones></ico-headphones>, gap-fill <ico-filepen></ico-filepen>, two clips to compare and an answer to put in order <ico-puzzle></ico-puzzle>. The last task is not written. It is sixty seconds of you, standing up.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · SILENCE, AND THE FILLERS THAT HELP</b> <span class='es'>— pause in silence, or pause in words</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Well, that depends on the guest.",
+              "sp": "Well, so, I mean: short fillers. They hold your turn without filling it with noise."
+            },
+            {
+              "en": "That's a good question. Let me think.",
+              "sp": "A time-buyer: a whole sentence that says nothing and sounds fluent."
+            },
+            {
+              "en": "How should I put this?",
+              "sp": "Buys time before something delicate. You will also hear «How shall I put this?»"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Two seconds of silence sounds like thinking.</b> Two seconds of «ehhh» sounds like trouble. Good speakers pause more than you think, and they do it with their mouths closed."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · DESCRIBE THE WORD YOU LOST</b> <span class='es'>— say what it does, or what it is like</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "It's the thing you use to open a bottle of wine.",
+              "sp": "By function. (A corkscrew.)"
+            },
+            {
+              "en": "It's a kind of small towel for your face.",
+              "sp": "By category. (A washcloth.)"
+            },
+            {
+              "en": "She's the person who chooses the wine.",
+              "sp": "By role. (The sommelier.) Keep talking: the listener will usually hand you the word."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · CORRECT YOURSELF AND KEEP WALKING</b> <span class='es'>— a repair, not an apology</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The gala starts at seven. Or rather, the doors open at seven.",
+              "sp": "Or rather: a small correction in passing."
+            },
+            {
+              "en": "What I mean is, nobody will be turned away.",
+              "sp": "A reformulation: the same idea, said better the second time."
+            },
+            {
+              "en": "He left on Tuesday, sorry, Thursday.",
+              "sp": "One «sorry» inside the sentence, at full speed. It is a comma, not a stop."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · PREP: AN ANSWER IN THIRTY SECONDS</b> <span class='es'>— point, reason, example, point</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "Point",
+            "Reason",
+            "Example",
+            "Point"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "A good hotel remembers you.",
+              "sp": "Point: the answer, in one line."
+            },
+            {
+              "en": "Anyone can sell you a bed.",
+              "sp": "Reason: why you think so."
+            },
+            {
+              "en": "One guest finds green apples in her room every March.",
+              "sp": "Example: one small, concrete case."
+            },
+            {
+              "en": "So: a good hotel remembers you.",
+              "sp": "Point again. You land where you took off, and everyone knows you have finished."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · THE TOAST</b> <span class='es'>— thank, story, wish</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Thank you all for three remarkable days.",
+              "sp": "Thank: one or two sentences, and name someone."
+            },
+            {
+              "en": "On Friday night, a guest asked me which city his city view was of.",
+              "sp": "Story: one small, true moment. Thirty seconds at most."
+            },
+            {
+              "en": "May you all travel home safely, and come back soon.",
+              "sp": "Wish: look up from the glass."
+            },
+            {
+              "en": "To the guests!",
+              "sp": "The last words are always short. They tell the room what to do."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> CALQUE ALERT</b> <span class='es'>— three habits to leave at the door</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Well, I mean, it was a long night.",
+              "sp": "The long «ehhh» is a Spanish filler. In English it sounds like pain. Use well, so, I mean, or nothing."
+            },
+            {
+              "en": "It's a, what's the word, a corkscrew.",
+              "sp": "Not «how do you say…?» in the middle of a sentence: that asks your listener to become your teacher. «What's the word…» keeps the turn yours."
+            },
+            {
+              "en": "We have, or rather had, two hundred guests.",
+              "sp": "Do not stop to apologize for a mistake. Repair it in passing and keep going. Nobody is marking you; they are waiting for dessert."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "the summit weekend · one hour to the gala",
+      "title": "<ico-star></ico-star> THINK ON YOUR FEET",
+      "intro": "Sunday, seven o'clock. One hour to the gala. Ms. Whitmore opens her mouth to rehearse the toast, and nothing comes out: three days of welcoming two hundred guests have taken her voice. She writes on a napkin, turns it around and pushes it across the desk. One word. <b style='color:var(--gold)'>«You.»</b> Julian reads it upside down, looks at you, and smiles for the first time this weekend. Rex, passing with a sandwich, offers to coach.",
+      "cast": [
+        {
+          "en": "Ms. Whitmore",
+          "sp": "no voice, one napkin, complete confidence in you"
+        },
+        {
+          "en": "Rex",
+          "sp": "the coach: he does this every night, with strangers"
+        },
+        {
+          "en": "Julian",
+          "sp": "goes first, to show you how"
+        },
+        {
+          "en": "You",
+          "sp": "sixty seconds, a full ballroom, <b style='color:var(--magenta)'>no script</b>"
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "TEN PHRASES FOR A TIGHT CORNER · tap to flip",
+      "intro": "Each of these does one job. Before you flip, say when you would need it.",
+      "cards": [
+        {
+          "front": "That's a good question.",
+          "back": "buys time · you have no answer yet, and it does not show"
+        },
+        {
+          "front": "Let me think about that for a second.",
+          "back": "buys time · honest, calm, and it earns you a pause"
+        },
+        {
+          "front": "How should I put this?",
+          "back": "buys time before something delicate"
+        },
+        {
+          "front": "What's the word…",
+          "back": "tells the listener you are searching, and keeps your turn"
+        },
+        {
+          "front": "It's the thing you use to…",
+          "back": "describes a lost word by its function"
+        },
+        {
+          "front": "It's a kind of…",
+          "back": "describes a lost word by its category"
+        },
+        {
+          "front": "What I mean is…",
+          "back": "reformulates: the same idea, said better"
+        },
+        {
+          "front": "Or rather,…",
+          "back": "a small correction, with no apology"
+        },
+        {
+          "front": "Where was I?",
+          "back": "recovers the thread after an interruption or a blank"
+        },
+        {
+          "front": "Right. Go on.",
+          "back": "shows you are listening, and gives the turn back"
+        }
+      ],
+      "deckLabel": "fluency tools"
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "RAPID FIRE",
+      "intro": "On your way to the ballroom, six guests stop you with six questions. You have no time to prepare. Start the clock, and for each one choose the reply that <b>buys time or repairs gracefully</b>. One of the others freezes, and one says nothing at all.",
+      "timer": 75,
+      "lines": [
+        {
+          "spk": "Max",
+          "html": "Quick one. What's the best restaurant in town?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Um… the best… sorry. I don't know.",
+            "Good question. It depends what you're in the mood for.",
+            "There are several restaurants in town."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Kit",
+          "html": "What did you think of the keynote?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Let me think. I'd say it was careful, and I mean that as a compliment.",
+            "I thought… no. Sorry. I can't explain it.",
+            "It was a keynote."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Dr. Lane",
+          "html": "Why do hotels hide the light switches where nobody can find them?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "I'm sorry, I don't know anything about switches.",
+            "Because they do.",
+            "How should I put this? I suspect the architect never stayed the night."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Sol",
+          "html": "I need something to open this bottle."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Of course. You need a, what's the word, the thing you use to pull the cork. I'll send one up.",
+            "You need a… sorry. I forgot the word. Sorry. Sorry.",
+            "Yes. Bottles need to be opened."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Rex",
+          "html": "Be honest. Was my set funny?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "It was… I mean… no. Yes. Sorry.",
+            "Well, let me put it this way: Ms. Whitmore almost smiled.",
+            "Yes."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Vera",
+          "html": "And what, exactly, will you say in your toast?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "I don't know. I'm very nervous. Sorry.",
+            "Things about the hotel and the guests.",
+            "That's a very good question. Ask me again in an hour."
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE REHEARSAL",
+      "desc": "In the staff room, Rex fires three questions at Julian, with no warning, so that you can watch it done. Listen for the frame Julian uses, the word he loses, and what Rex says about mistakes.",
+      "src": "c2-l6-1.mp3",
+      "dur": "2:23",
+      "speakers": "<ico-commentdots></ico-commentdots> Rex + Julian",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Which frame does Julian use for his first answer?",
+          "options": [
+            "Point, reason, example, point",
+            "Thank, story, wish",
+            "Question, joke, apology"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How does he recover the word he has lost?",
+          "options": [
+            "He stops and apologizes until it comes back",
+            "He describes the thing until Rex hands him the word",
+            "He changes the subject"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What is Rex's advice about mistakes?",
+          "options": [
+            "Avoid them by learning the speech by heart",
+            "Apologize clearly each time, so that nobody is confused",
+            "Repair them and keep going: an audience forgives everything except fear"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Is Julian ready?",
+          "options": [
+            "Yes: he recovered every time, and Rex says he always was",
+            "No: two mistakes in one sentence prove that he is not",
+            "It is impossible to tell from the rehearsal"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Rex's first question, to you: what makes a good hotel? Thirty seconds, PREP, no preparation. Go.",
+        "starter": "Good question. A good hotel… (point). Because… (reason). For example,… So:… (point again)."
+      },
+      "transcript": [
+        {
+          "spk": "Rex",
+          "html": "Okay. Rules. I ask, you answer, and you do not get to think first. Thinking is for people with time. Ready?"
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "No."
+        },
+        {
+          "spk": "Rex",
+          "html": "Perfect. Question one. What makes a good hotel?"
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "<span class='tg'>That's a good question. Let me think.</span> A good hotel remembers you. That's the point. Because anyone can sell you a bed. What you can't buy is being expected. For example, we have a guest who comes every March, and every March there is a bowl of green apples in her room, because she once said she liked them. Eleven years ago. So: a good hotel remembers you."
+        },
+        {
+          "spk": "Rex",
+          "html": "Hear that? <span class='tg'>Point, reason, example, point.</span> He landed where he took off. Question two. What is the strangest thing a guest has ever asked you for?"
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "How should I put this? A guest once asked me for a, <span class='tg'>what's the word, the thing you</span> put under a door so the cold air doesn't come in. A kind of long cushion."
+        },
+        {
+          "spk": "Rex",
+          "html": "A draft stopper."
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "A draft stopper, thank you. At three in the morning. For a door that had no gap."
+        },
+        {
+          "spk": "Rex",
+          "html": "See what he did? He lost the word, he described it, and I handed it to him. He never stopped. Nobody in that ballroom will remember that you forgot \"draft stopper.\" They will remember if you stand there saying \"sorry\" for ten seconds. Question three. Why should anyone come back here?"
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "Because the rooms are, <span class='tg'>or rather</span>, because the beds… no. <span class='tg'>What I mean is</span>: you come back for the people. The building is just where we keep them."
+        },
+        {
+          "spk": "Rex",
+          "html": "Okay, that one you should save for tonight."
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "I made two mistakes in one sentence."
+        },
+        {
+          "spk": "Rex",
+          "html": "You made two corrections in one sentence. That's different. A mistake is when you stop. Listen. On stage, I get words wrong every night. <span class='tg'>The audience forgives everything except fear.</span> So you fix it, you keep walking, and you look like you meant it."
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "And if my mind goes completely blank?"
+        },
+        {
+          "spk": "Rex",
+          "html": "Then you smile, you say \"Where was I?\", and somebody will tell you. They always do. They're on your side. They want dessert."
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "Hm."
+        },
+        {
+          "spk": "Rex",
+          "html": "You're ready. You were ready before I got here. I just wanted the sandwich."
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "THE PHRASE FOR THE MOMENT",
+      "intro": "Eight tight corners. Choose the phrase that gets you out of each one. All three options are real English; only one does the job.",
+      "items": [
+        {
+          "q": "A guest asks something you have never thought about. You say: «___ Let me think.»",
+          "options": [
+            "That's a good question.",
+            "That's your problem.",
+            "That's not a question."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "You have lost the word «corkscrew». You say: «It's ___ open a bottle of wine.»",
+          "options": [
+            "the reason you have to",
+            "the thing you use to",
+            "the way you want to"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "You said Tuesday and meant Thursday. You say: «He left on Tuesday, ___ Thursday.»",
+          "options": [
+            "for example,",
+            "in addition,",
+            "or rather,"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Your sentence came out confused, so you start again: «___ nobody will be turned away.»",
+          "options": [
+            "What I mean is,",
+            "What I do is,",
+            "What it takes is,"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "You are about to say something delicate: «___ The soup was… memorable.»",
+          "options": [
+            "How should I know?",
+            "How should I put this?",
+            "How do you do?"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "A phone rang in the middle of your story, and you have lost the thread: «___ Ah, yes. The green apples.»",
+          "options": [
+            "Where am I?",
+            "Who was I?",
+            "Where was I?"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "You cannot remember «sommelier». You say: «She's ___ wine expert.»",
+          "options": [
+            "a kind of",
+            "a lack of",
+            "a couple of"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "A guest is telling you a long story, and you want to show that you are following. You say:",
+          "options": [
+            "Stop. My turn.",
+            "Right. Go on.",
+            "Sorry. What?"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "FREEZE vs PARAPHRASE",
+      "intro": "The same speaker, the same missing word, two ways out. Play both clips before you answer.",
+      "pair": {
+        "a": "We need a… um… sorry. I don't know the word. Sorry. My English is… sorry.",
+        "b": "We need a… what's the word… the thing you use to open a bottle of wine. A corkscrew, that's it."
+      },
+      "pairClips": {
+        "a": {
+          "src": "freeze.mp3",
+          "label": "A"
+        },
+        "b": {
+          "src": "paraphrase.mp3",
+          "label": "B"
+        }
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "After which clip does the listener know what the speaker needs?",
+          "options": [
+            "A",
+            "B",
+            "Both"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "In A, who now has to rescue the conversation?",
+          "options": [
+            "The listener",
+            "The speaker",
+            "Nobody: it is finished"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which words in B keep the turn while the speaker searches?",
+          "options": [
+            "\"We need\"",
+            "\"that's it\"",
+            "\"what's the word\""
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "The speaker in A apologizes three times. What do the apologies add?",
+          "options": [
+            "Nothing the listener can use",
+            "The politeness that the situation requires",
+            "The missing information"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "In B the word comes back in the end. And if it had not?",
+          "options": [
+            "The sentence would have failed",
+            "The description alone would have been enough",
+            "The speaker should then have apologized"
+          ],
+          "answer": 1,
+          "mute": true
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "BUILD A PREP ANSWER",
+      "intro": "Five instant answers have been shuffled. Each chip is one sentence. Put every answer in the order point, reason, example, point.",
+      "items": [
+        {
+          "words": [
+            "My advice is to arrive early.",
+            "The reason is simple: the first hour is when people actually talk.",
+            "Last year, for example, I met our keynote speaker at the coat check.",
+            "So, once again: arrive early."
+          ],
+          "answer": "My advice is to arrive early. The reason is simple: the first hour is when people actually talk. Last year, for example, I met our keynote speaker at the coat check. So, once again: arrive early."
+        },
+        {
+          "words": [
+            "I'd choose the small room at the back.",
+            "Mainly because it's quiet, and quiet is rare in a hotel.",
+            "The novelist on the sixth floor, for instance, has slept nine hours a night.",
+            "That's why I'd take the small room."
+          ],
+          "answer": "I'd choose the small room at the back. Mainly because it's quiet, and quiet is rare in a hotel. The novelist on the sixth floor, for instance, has slept nine hours a night. That's why I'd take the small room."
+        },
+        {
+          "words": [
+            "Yes, I think a toast should be short.",
+            "The reason is that after a minute, people look at their glasses and not at you.",
+            "At my cousin's wedding, for example, the toast lasted longer than the soup stayed warm.",
+            "So yes: keep it short."
+          ],
+          "answer": "Yes, I think a toast should be short. The reason is that after a minute, people look at their glasses and not at you. At my cousin's wedding, for example, the toast lasted longer than the soup stayed warm. So yes: keep it short."
+        },
+        {
+          "words": [
+            "A good concierge listens first.",
+            "That's because most guests don't ask for what they actually need.",
+            "Yesterday, for instance, a request for a taxi turned out to be a request for a pharmacy.",
+            "So the job begins with listening."
+          ],
+          "answer": "A good concierge listens first. That's because most guests don't ask for what they actually need. Yesterday, for instance, a request for a taxi turned out to be a request for a pharmacy. So the job begins with listening."
+        },
+        {
+          "words": [
+            "I would learn a little of the language before the trip.",
+            "The reason is that a few words change how people treat you.",
+            "In my experience, for example, even a bad «good morning» gets you a better table.",
+            "That's why I'd learn some first."
+          ],
+          "answer": "I would learn a little of the language before the trip. The reason is that a few words change how people treat you. In my experience, for example, even a bad «good morning» gets you a better table. That's why I'd learn some first."
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE TOAST",
+      "desc": "Before you write nothing down and go out there, Julian gives you his version, glass of water in hand. It is not yours and you cannot borrow it. Listen for the three parts, the time-buyer and the repair.",
+      "src": "c2-l6-2.mp3",
+      "dur": "1:04",
+      "speakers": "<ico-commentdots></ico-commentdots> Julian",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What are the three parts of the toast, in order?",
+          "options": [
+            "Story, thanks, joke",
+            "Thanks, story, wish",
+            "Wish, story, thanks"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Where does Julian buy time?",
+          "options": [
+            "With \"I timed it\"",
+            "With \"Please raise your glasses\"",
+            "With \"how should I put this\", just before he admits he was nervous"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "\"Or rather, she has moved up. To the sixth floor.\" What is he doing?",
+          "options": [
+            "Reformulating: a correction in passing, used for a small joke",
+            "Apologizing for a mistake",
+            "Changing the subject"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why does the toast end with three short words?",
+          "options": [
+            "He has forgotten the rest",
+            "The last words of a toast tell the room what to do",
+            "A longer ending would be rude"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Take Julian's story and tell it as yours, in your own words, in twenty seconds: the guest, the word «adequate», and what happened tonight.",
+        "starter": "On Friday, a guest told us her room was… How should I put this?… Tonight, the same guest…"
+      },
+      "transcript": [
+        {
+          "spk": "Julian",
+          "html": "Ladies and gentlemen. If I could have your attention for one minute. I timed it."
+        },
+        {
+          "spk": "Julian",
+          "html": "<span class='tg'>First, thank you.</span> To our speakers, who gave us something to argue about. To our cooks, who have been on their feet since five this morning. And to Ms. Whitmore, who has given so many welcomes this weekend that she has none left, and has had to borrow my voice."
+        },
+        {
+          "spk": "Julian",
+          "html": "<span class='tg'>A short story.</span> On Friday night, a guest came to the desk with a complaint. Her room, she said, was adequate. I have worked at that desk for a long time, and, <span class='tg'>how should I put this</span>, I was nervous. Tonight, the same guest asked whether she could stay until Wednesday. So I'd like to think we have moved up from adequate. <span class='tg'>Or rather</span>, she has moved up. To the sixth floor."
+        },
+        {
+          "spk": "Julian",
+          "html": "<span class='tg'>And a wish.</span> May you all travel home safely, may your luggage travel with you, and may you come back to us soon."
+        },
+        {
+          "spk": "Julian",
+          "html": "Please raise your glasses. To the guests."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "stage": "<ico-mic></ico-mic> SPEAKING TASK <span class=\"es\">· recorded, sent on WhatsApp</span>",
+      "title": "<ico-mic></ico-mic> MY TOAST",
+      "intro": "The ballroom is full, and Ms. Whitmore is pointing at you. <b>Record a 60-second toast</b> to the guests of the summit. There is no script: write <b>three key words</b> in the box, no more, and speak from them. You were there all weekend. You have the stories.",
+      "checklist": [
+        "<b>No script:</b> three key words in the box, and nothing read aloud",
+        "<b>Thank</b>: one or two sentences, and at least one person or group by name",
+        "<b>Story</b>: one small moment from the weekend (the note, the 2 a.m. check-in, the keynote, the reading, the card), thirty seconds at most",
+        "<b>Wish</b>, and then short last words: <b>To…!</b>",
+        "One <b>time-buyer</b> (<b>How should I put this?</b>) and one <b>reformulation</b> (<b>Or rather,… / What I mean is…</b>)",
+        "<b>One take.</b> If you make a mistake, repair it and keep walking"
+      ],
+      "placeholder": "Three key words only: THANK … · STORY … · WISH …",
+      "example": "Ladies and gentlemen, <span class=\"gap\">one line to get their attention</span>. First, thank you to <span class=\"gap\">who</span>, who <span class=\"gap\">what they did</span>. A short story: on <span class=\"gap\">which day</span>, <span class=\"gap\">one small moment you saw</span>. <span class=\"gap\">a time-buyer</span>, <span class=\"gap\">what you felt</span>. Or rather, <span class=\"gap\">say it better</span>. May you all <span class=\"gap\">your wish</span>. To <span class=\"gap\">two or three words</span>!",
+      "hw": "Record your toast in <b>one take</b>, 50 to 70 seconds, standing up, with a glass in your hand. Send me the recording on WhatsApp. No text this time.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "About sixty seconds, in one take, spoken and not read: thanks, one story, a wish, short last words."
+        },
+        {
+          "c": "Lesson target",
+          "d": "A time-buyer and a reformulation, used where they are needed and at full speed."
+        },
+        {
+          "c": "Fluency",
+          "d": "Mistakes are repaired in passing. There is no «ehhh», no «how do you say», and no stopping to apologize."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c2-l6",
+    "keys": [
+      "a-comma-splice",
+      "a-couple-of",
+      "a-dangling-modifier",
+      "a-filler",
+      "a-good-hotel-remembers-you",
+      "a-kind-of",
+      "a-lack-of",
+      "a-longer-ending-would-be-rude",
+      "a-toast",
+      "and-what-exactly-will-you-say-in-your-toast",
+      "anyone-can-sell-you-a-bed",
+      "apologize-clearly-each-time-so-that-nobody-is-confused",
+      "apologizing-for-a-mistake",
+      "avoid-them-by-learning-the-speech-by-heart",
+      "be-honest-was-my-set-funny",
+      "because-they-do",
+      "changing-the-subject",
+      "for-example",
+      "good-question-it-depends-what-you-re-in-the-mood-for",
+      "he-changes-the-subject",
+      "he-describes-the-thing-until-rex-hands-him-the-word",
+      "he-has-forgotten-the-rest",
+      "he-left-on-tuesday-sorry-thursday",
+      "he-stops-and-apologizes-until-it-comes-back",
+      "how-do-you-do",
+      "how-does-he-recover-the-word-he-has-lost",
+      "how-should-i-know",
+      "how-should-i-put-this",
+      "how-should-i-put-this-i-suspect-the-architect-never-stayed-the-night",
+      "i-don-t-know-i-m-very-nervous-sorry",
+      "i-m-sorry-i-don-t-know-anything-about-switches",
+      "i-need-something-to-open-this-bottle",
+      "i-thought-no-sorry-i-can-t-explain-it",
+      "impromptu",
+      "in-addition",
+      "in-order-to",
+      "is-julian-ready",
+      "it-is-impossible-to-tell-from-the-rehearsal",
+      "it-s-a-kind-of",
+      "it-s-a-kind-of-small-towel-for-your-face",
+      "it-s-a-what-s-the-word-a-corkscrew",
+      "it-s-the-thing-you-use-to",
+      "it-s-the-thing-you-use-to-open-a-bottle-of-wine",
+      "it-was-a-keynote",
+      "it-was-i-mean-no-yes-sorry",
+      "let-me-think-about-that-for-a-second",
+      "let-me-think-i-d-say-it-was-careful-and-i-mean-that-as-a-compliment",
+      "may-you-all-travel-home-safely-and-come-back-soon",
+      "no-two-mistakes-in-one-sentence-prove-that-he-is-not",
+      "of-course-you-need-a-what-s-the-word-the-thing-you-use-to-pull-the-cork-i-ll-sen",
+      "on-friday-night-a-guest-asked-me-which-city-his-city-view-was-of",
+      "one-guest-finds-green-apples-in-her-room-every-march",
+      "or-rather",
+      "or-rather-she-has-moved-up-to-the-sixth-floor-what-is-he-doing",
+      "parallel-structure",
+      "point-reason-example-point",
+      "question-joke-apology",
+      "quick-one-what-s-the-best-restaurant-in-town",
+      "redundant",
+      "reformulating-a-correction-in-passing-used-for-a-small-joke",
+      "repair-them-and-keep-going-an-audience-forgives-everything-except-fear",
+      "right-go-on",
+      "she-s-the-person-who-chooses-the-wine",
+      "so-a-good-hotel-remembers-you",
+      "sorry-what",
+      "stop-my-turn",
+      "story-thanks-joke",
+      "thank-story-wish",
+      "thank-you-all-for-three-remarkable-days",
+      "thanks-story-wish",
+      "that-s-a-good-question",
+      "that-s-a-good-question-let-me-think",
+      "that-s-a-very-good-question-ask-me-again-in-an-hour",
+      "that-s-not-a-question",
+      "that-s-your-problem",
+      "the-gala-starts-at-seven-or-rather-the-doors-open-at-seven",
+      "the-last-words-of-a-toast-tell-the-room-what-to-do",
+      "the-reason-you-have-to",
+      "the-thing-you-use-to",
+      "the-way-you-want-to",
+      "there-are-several-restaurants-in-town",
+      "things-about-the-hotel-and-the-guests",
+      "to-buy-time",
+      "to-go-blank",
+      "to-lose-the-thread",
+      "to-paraphrase",
+      "to-raise-a-glass",
+      "to-rehearse",
+      "to-the-guests",
+      "to-think-on-your-feet",
+      "um-the-best-sorry-i-don-t-know",
+      "we-have-or-rather-had-two-hundred-guests",
+      "we-need-a-um-sorry-i-don-t-know-the-word-sorry-my-english-is-sorry",
+      "we-need-a-what-s-the-word-the-thing-you-use-to-open-a-bottle-of-wine-a-corkscrew",
+      "well-i-mean-it-was-a-long-night",
+      "well-let-me-put-it-this-way-ms-whitmore-almost-smiled",
+      "well-that-depends-on-the-guest",
+      "what-are-the-three-parts-of-the-toast-in-order",
+      "what-did-you-think-of-the-keynote",
+      "what-i-do-is",
+      "what-i-mean-is",
+      "what-i-mean-is-nobody-will-be-turned-away",
+      "what-is-rex-s-advice-about-mistakes",
+      "what-it-takes-is",
+      "what-s-the-word",
+      "where-am-i",
+      "where-does-julian-buy-time",
+      "where-was-i",
+      "which-frame-does-julian-use-for-his-first-answer",
+      "who-was-i",
+      "why-do-hotels-hide-the-light-switches-where-nobody-can-find-them",
+      "why-does-the-toast-end-with-three-short-words",
+      "wish-story-thanks",
+      "with-how-should-i-put-this-just-before-he-admits-he-was-nervous",
+      "with-i-timed-it",
+      "with-please-raise-your-glasses",
+      "yes",
+      "yes-bottles-need-to-be-opened",
+      "yes-he-recovered-every-time-and-rex-says-he-always-was",
+      "you-need-a-sorry-i-forgot-the-word-sorry-sorry"
+    ]
+  }
+}
