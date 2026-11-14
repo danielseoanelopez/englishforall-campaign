@@ -177,3 +177,74 @@ body::before {
 .spk-btn>*,.mute-btn>*{margin-right:0;width:62%;height:62%}.btn>ico-play{margin-right:.3em}
 .sw{display:inline-block;width:.85em;height:.85em;border-radius:50%;background:var(--c);border:1px solid #ffffff55;vertical-align:-.1em;margin-right:.28em;box-shadow:0 0 6px var(--c)}
 .lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:0.62rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
+
+/* ============ MECHANICS FOR BUILDINGS 3–6 (assets/game.js) ============ */
+/* framed panel: document, evidence, door, clip, chart, keypad, the line to say */
+.gpanel { border: 1.5px solid var(--gold); background: #1a1508cc; border-radius: 12px; padding: 10px 13px 12px; margin: 0 0 12px; animation: popIn 0.25s ease-out; }
+.gpanel .gp-tag { font-family: "Press Start 2P", monospace; font-size: 0.56rem; letter-spacing: 1px; color: var(--gold); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.gpanel .gp-unit { color: var(--muted); }
+.gpanel .gp-body { font-size: 0.98rem; line-height: 1.55; color: var(--text); }
+.gpanel .gp-body p { margin: 0 0 6px; }
+.gpanel .gp-cue { margin-top: 8px; font-size: 0.85rem; color: var(--gold); }
+.gpanel.doc { border-color: #cbb98a; background: #f4ecd8; }
+.gpanel.doc .gp-tag { color: #6b5a2e; }
+.gpanel.doc .gp-body { color: #2a2416; font-family: "Share Tech Mono", monospace; }
+.gpanel.evidence { border-color: var(--magenta); background: #2a0a2a88; }
+.gpanel.evidence .gp-tag { color: var(--magenta); }
+.gpanel.door { border-color: var(--red); background: #2a0a1088; }
+.gpanel.door .gp-tag { color: var(--red); }
+.gpanel.clip, .gpanel.sayline { border-color: var(--cyan); background: #06202a88; }
+.gpanel.clip .gp-tag, .gpanel.sayline .gp-tag { color: var(--cyan); }
+.gpanel.sayline .gp-body { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.say-target { font-size: 1.08rem; flex: 1 1 220px; }
+.btn.small { padding: 8px 11px; font-size: 0.56rem; }
+.gq { font-size: 0.95rem; color: var(--gold); margin: 2px 0 0; }
+.gnote { font-size: 0.82rem; letter-spacing: 0.4px; }
+.opt.stmt { border-color: var(--c, var(--cyan)); }
+.opt.stmt .ol { color: var(--c, var(--cyan)); }
+/* sequences (timeline, toast): one line per chip */
+.seq-pool { display: grid; gap: 7px; margin-bottom: 14px; }
+.chip.seq-chip { display: flex; align-items: center; gap: 9px; width: 100%; text-align: left; line-height: 1.4; }
+.tray.seq .chips { display: grid; gap: 7px; }
+.seq-n { flex: 0 0 auto; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 11px; background: var(--green); color: #06140d; font-family: "Press Start 2P", monospace; font-size: 0.5rem; display: inline-flex; align-items: center; justify-content: center; }
+/* chart */
+.gchart { width: 100%; max-width: 420px; display: block; margin: 0 auto; }
+.gc-grid { stroke: #ffffff1c; stroke-width: 1; }
+.gc-ax { fill: var(--muted); font-family: "Share Tech Mono", monospace; font-size: 9px; }
+.gc-line { fill: none; stroke: var(--cyan); stroke-width: 2.4; stroke-linejoin: round; stroke-linecap: round; filter: drop-shadow(0 0 4px #00e5ff88); }
+.gc-dot { fill: var(--gold); }
+/* chamber countdown + keypad */
+.countdown { width: fit-content; margin: -4px auto 12px; padding: 6px 13px; border: 1px solid var(--green); border-radius: 20px; font-family: "Press Start 2P", monospace; font-size: 0.62rem; letter-spacing: 1px; color: var(--green); display: flex; align-items: center; gap: 8px; }
+.countdown.low { color: var(--red); border-color: var(--red); animation: blink 1s steps(2) infinite; }
+.countdown.hit { color: var(--red); border-color: var(--red); }
+.countdown .cd-lbl { color: var(--muted); margin-left: 6px; }
+.countdown .cd-code { color: var(--gold); letter-spacing: 3px; }
+.digit-found { font-size: 0.62rem; color: var(--gold); margin-top: 8px; }
+.digit-found b { font-size: 1rem; }
+.fix-line { font-size: 0.92rem; color: var(--green); margin-top: 10px; }
+.kp-display { font-family: "Press Start 2P", monospace; font-size: 1.3rem; letter-spacing: 6px; text-align: center; color: var(--green); background: #04120c; border: 1px solid #1f5a40; border-radius: 9px; padding: 14px 8px; margin-bottom: 12px; text-shadow: 0 0 10px #3dffa088; }
+.kp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 260px; margin: 0 auto; }
+.kp-key { font-family: "Press Start 2P", monospace; font-size: 0.85rem; padding: 15px 0; border-radius: 10px; border: 1.5px solid var(--cyan); background: #00e5ff0d; color: var(--cyan); cursor: pointer; }
+.kp-key:active { transform: scale(0.95); }
+.kp-key.ok { border-color: var(--green); color: var(--green); background: #3dffa011; }
+/* dead-air meter / round limit */
+.airmeter { display: flex; align-items: center; gap: 9px; max-width: 360px; margin: -4px auto 12px; font-family: "Press Start 2P", monospace; font-size: 0.56rem; letter-spacing: 1px; color: var(--red); }
+.airmeter .am-lbl::before { content: "● "; }
+.airmeter .am-bar { flex: 1; height: 9px; border: 1px solid #ff5d7a88; border-radius: 6px; overflow: hidden; background: #2a0a10; }
+.airmeter .am-fill { display: block; height: 100%; width: 100%; background: linear-gradient(90deg, #ff5d7a, #ffc83d); transition: width 0.1s linear; }
+.airmeter.low .am-fill { background: var(--red); }
+.airmeter.low { animation: blink 0.8s steps(2) infinite; }
+/* say */
+.saybox { border: 2px dashed #3a4a7a; border-radius: 12px; padding: 12px; margin: 12px 0; }
+.say-main { display: flex; gap: 9px; flex-wrap: wrap; align-items: center; }
+.say-rate { display: flex; gap: 9px; flex-wrap: wrap; width: 100%; margin-top: 4px; }
+.say-rate[hidden] { display: none; }
+.say-status { min-height: 1.3em; margin-top: 10px; font-size: 0.92rem; color: var(--gold); }
+.say-foot { margin-top: 8px; font-size: 0.78rem; line-height: 1.5; }
+.btn.mic.live { border-color: var(--red); color: #ffd0d8; box-shadow: 0 0 18px #ff5d7a88; animation: blink 0.9s steps(2) infinite; }
+.linkbtn { background: none; border: 0; padding: 0; color: var(--cyan); text-decoration: underline; font: inherit; cursor: pointer; }
+/* spot */
+.tray.spot .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip.spot-w.sel { border-color: var(--red); color: var(--red); background: #ff5d7a16; text-decoration: line-through; }
+.chip.spot-clean { margin-top: 10px; border-style: dashed; }
+.chip.spot-clean.sel { border-style: solid; border-color: var(--green); color: var(--green); background: #3dffa011; }

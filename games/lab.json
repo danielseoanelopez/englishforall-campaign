@@ -1,0 +1,737 @@
+{
+ "id": "lab",
+ "building": 0,
+ "level": "LAB",
+ "title": "THE MECHANICS LAB",
+ "progKey": "lab_prog",
+ "audioPrefix": "lab-",
+ "freePlay": true,
+ "exam": {
+  "href": "index.html",
+  "label": "BACK TO THE ACADEMY"
+ },
+ "text": {
+  "marquee": "RANK UP CITY · MECHANICS LAB (TEST)",
+  "tagline": "One stage per building that is still to come. Not a public game.",
+  "taglineEs": "Edificio de prueba para los nuevos tipos de ronda.",
+  "pawsLabel": "PAWS",
+  "selectLabel": "STAGE SELECT",
+  "startLabel": "START",
+  "overTitle": "STAGE OVER",
+  "endLabel": "END STAGE",
+  "help": "Read, listen, then pick, build or say the right English.",
+  "bossTag": "LIVE",
+  "bossWinTitle": "LAB COMPLETE!",
+  "bossWin": "Every mechanic works. Ship it.",
+  "gameOver": "Out of hearts. Run it back.",
+  "deadAir": "Dead air. The station went silent. Go again.",
+  "airLabel": "ON AIR"
+ },
+ "scene": {
+  "label": "Your desk at the Office Tower",
+  "class": "office",
+  "customers": false,
+  "art": "<svg viewBox=\"0 0 560 240\" preserveAspectRatio=\"xMidYMid slice\" style=\"position:absolute;inset:0;width:100%;height:100%;z-index:1\" aria-hidden=\"true\"><rect x=\"24\" y=\"26\" width=\"150\" height=\"120\" rx=\"6\" fill=\"#060a1e\" stroke=\"#00e5ff\" stroke-width=\"2\"/><g opacity=\"0.85\"><rect x=\"34\" y=\"86\" width=\"16\" height=\"52\" fill=\"#0e2a44\"/><rect x=\"56\" y=\"66\" width=\"18\" height=\"72\" fill=\"#13324f\"/><rect x=\"80\" y=\"98\" width=\"14\" height=\"40\" fill=\"#0e2a44\"/><rect x=\"100\" y=\"54\" width=\"20\" height=\"84\" fill=\"#15203f\"/><rect x=\"126\" y=\"90\" width=\"16\" height=\"48\" fill=\"#0e2a44\"/><rect x=\"148\" y=\"72\" width=\"16\" height=\"66\" fill=\"#13324f\"/></g><g fill=\"#ffc83d\"><circle cx=\"62\" cy=\"80\" r=\"1.6\"/><circle cx=\"108\" cy=\"70\" r=\"1.6\"/><circle cx=\"154\" cy=\"88\" r=\"1.6\"/><circle cx=\"40\" cy=\"100\" r=\"1.4\"/></g><line x1=\"99\" y1=\"26\" x2=\"99\" y2=\"146\" stroke=\"#00e5ff\" stroke-width=\"1\" opacity=\"0.5\"/><rect x=\"0\" y=\"176\" width=\"560\" height=\"64\" fill=\"#0c1030\"/><rect x=\"0\" y=\"171\" width=\"560\" height=\"7\" fill=\"#9d4dff\" opacity=\"0.9\"/><rect x=\"250\" y=\"96\" width=\"120\" height=\"76\" rx=\"6\" fill=\"#04101c\" stroke=\"#00e5ff\" stroke-width=\"2.5\"/><g opacity=\"0.9\"><rect x=\"262\" y=\"108\" width=\"60\" height=\"6\" rx=\"3\" fill=\"#3dffa0\"/><rect x=\"262\" y=\"122\" width=\"90\" height=\"6\" rx=\"3\" fill=\"#ff3df0\"/><rect x=\"262\" y=\"136\" width=\"46\" height=\"6\" rx=\"3\" fill=\"#00e5ff\"/><rect x=\"262\" y=\"150\" width=\"74\" height=\"6\" rx=\"3\" fill=\"#3dffa0\"/></g><rect x=\"300\" y=\"172\" width=\"20\" height=\"6\" fill=\"#0a1430\"/><rect x=\"384\" y=\"110\" width=\"92\" height=\"62\" rx=\"6\" fill=\"#04101c\" stroke=\"#ff3df0\" stroke-width=\"2.5\"/><g opacity=\"0.85\"><rect x=\"394\" y=\"120\" width=\"52\" height=\"5\" rx=\"2\" fill=\"#00e5ff\"/><rect x=\"394\" y=\"132\" width=\"70\" height=\"5\" rx=\"2\" fill=\"#ffc83d\"/><rect x=\"394\" y=\"144\" width=\"40\" height=\"5\" rx=\"2\" fill=\"#ff3df0\"/><rect x=\"394\" y=\"156\" width=\"60\" height=\"5\" rx=\"2\" fill=\"#3dffa0\"/></g><g stroke=\"#ffc83d\" stroke-width=\"2\" fill=\"none\"><rect x=\"196\" y=\"150\" width=\"40\" height=\"22\" rx=\"4\" fill=\"#0c1030\"/><path d=\"M204 150c0-6 24-6 24 0\"/></g><g><rect x=\"150\" y=\"150\" width=\"20\" height=\"20\" rx=\"3\" fill=\"#0c1030\" stroke=\"#3dffa0\" stroke-width=\"2\"/><path d=\"M170 155c7 0 7 10 0 10\" fill=\"none\" stroke=\"#3dffa0\" stroke-width=\"2\"/></g></svg>"
+ },
+ "summaryCards": {
+  "boss": {
+   "icon": "star",
+   "name": "Lab Pass",
+   "quote": "It works on my machine."
+  },
+  "epic": {
+   "icon": "bolt",
+   "name": "Test Pilot",
+   "quote": "Every round type, played."
+  },
+  "common": {
+   "icon": "file",
+   "name": "Lab Notes",
+   "quote": "Try again for a better card."
+  }
+ },
+ "cast": {
+  "dan": {
+   "name": "DAN",
+   "sub": "manager (comms)",
+   "ava": "headset",
+   "color": "var(--cyan)"
+  },
+  "priya": {
+   "name": "PRIYA",
+   "sub": "head of the agency",
+   "ava": null,
+   "color": "var(--purple)"
+  },
+  "mia": {
+   "name": "MIA",
+   "sub": "barista · witness",
+   "ava": null,
+   "color": "var(--magenta)"
+  },
+  "jack": {
+   "name": "JACK",
+   "sub": "witness",
+   "ava": null,
+   "color": "var(--cyan)"
+  },
+  "vera": {
+   "name": "VERA",
+   "sub": "witness",
+   "ava": null,
+   "color": "var(--gold)"
+  },
+  "os": {
+   "name": "VAULT OS",
+   "sub": "security system",
+   "ava": null,
+   "color": "var(--green)"
+  },
+  "walt": {
+   "name": "WALT",
+   "sub": "night guard · intercom",
+   "ava": null,
+   "color": "var(--gold)"
+  },
+  "roz": {
+   "name": "ROZ",
+   "sub": "producer",
+   "ava": null,
+   "color": "var(--magenta)"
+  },
+  "alex": {
+   "name": "ALEX",
+   "sub": "host",
+   "ava": null,
+   "color": "var(--cyan)"
+  },
+  "sol": {
+   "name": "SOL",
+   "sub": "novelist · room 412",
+   "ava": null,
+   "color": "var(--purple)"
+  },
+  "rex": {
+   "name": "REX",
+   "sub": "comedian · 2 a.m.",
+   "ava": null,
+   "color": "var(--gold)"
+  },
+  "whitmore": {
+   "name": "MS. WHITMORE",
+   "sub": "general manager",
+   "ava": null,
+   "color": "var(--red)"
+  },
+  "julian": {
+   "name": "JULIAN",
+   "sub": "senior concierge",
+   "ava": null,
+   "color": "var(--green)"
+  }
+ },
+ "avatars": {
+  "headset": "sprite-dan.webp",
+  "cat": "sprite-enri.webp"
+ },
+ "hint": {
+  "name": "TOTTI",
+  "sub": "Totti's nose",
+  "img": "sprite-totti.webp",
+  "pos": "42% 4%",
+  "color": "var(--gold)",
+  "label": "TOTTI'S NOSE",
+  "pre": "*sniffs, unwillingly* ",
+  "post": " ...Do not make me do that again."
+ },
+ "order": [
+  "agency",
+  "vault",
+  "radio",
+  "hotel",
+  "live"
+ ],
+ "stages": {
+  "agency": {
+   "num": "3",
+   "name": "The Agency",
+   "tag": "clue · timeline · contradiction · deduce",
+   "intro": "Detective Agency rounds: read the clue, order the events, find the statement that can't be true, and deduce with the right strength.",
+   "introKey": "lab-3-intro",
+   "words": [
+    "hasn't … yet",
+    "was cleaning when",
+    "might be",
+    "can't be"
+   ],
+   "rounds": [
+    {
+     "type": "clue",
+     "who": "priya",
+     "line": "Enri is missing. Start with the café. Mia left this note on the counter.",
+     "keys": {
+      "line": "a-r1-line",
+      "retry": "a-r1-retry",
+      "thanks": "a-r1-thanks"
+     },
+     "doc": {
+      "title": "MIA'S NOTE",
+      "html": "<p>8:15 a.m.</p><p>I've already served breakfast, but I haven't seen the orange cat yet. His cushion is still warm.</p><p>— Mia</p>"
+     },
+     "q": "Has Mia seen Enri today?",
+     "options": [
+      "No, she hasn't seen him yet.",
+      "Yes, she saw him at breakfast.",
+      "Yes, she has just fed him."
+     ],
+     "correct": 0,
+     "retryLine": "Read the note again. Look at 'yet'.",
+     "thanks": "Good. Nobody has seen him since last night.",
+     "par": 22
+    },
+    {
+     "type": "timeline",
+     "who": "mia",
+     "line": "It was a normal morning. I opened the café at seven. I was cleaning the counter when I heard the back door. Then I saw the empty cushion.",
+     "keys": {
+      "line": "a-r2-line",
+      "retry": "a-r2-retry",
+      "thanks": "a-r2-thanks"
+     },
+     "events": [
+      "Mia opened the café.",
+      "She was cleaning the counter.",
+      "She heard the back door.",
+      "She saw the empty cushion."
+     ],
+     "retryLine": "No, listen again. What came first?",
+     "thanks": "That's my morning, exactly.",
+     "par": 30
+    },
+    {
+     "type": "contradiction",
+     "who": "priya",
+     "line": "Two statements about ten o'clock last night. They can't both be true.",
+     "keys": {
+      "line": "a-r3-line",
+      "retry": "a-r3-retry",
+      "thanks": "a-r3-thanks"
+     },
+     "statements": [
+      {
+       "who": "jack",
+       "text": "I was reading inside at ten."
+      },
+      {
+       "who": "vera",
+       "text": "Jack was outside at ten."
+      }
+     ],
+     "evidence": "Jack's umbrella, by the door. It is still wet. It stopped raining at half past ten.",
+     "correct": 0,
+     "retryLine": "Look at the umbrella again. Who was in the rain?",
+     "thanks": "Right. Jack was outside. He isn't lying: he forgot he went out for the newspaper.",
+     "par": 25
+    },
+    {
+     "type": "deduce",
+     "who": "priya",
+     "line": "Now the evidence board. How sure can we be?",
+     "keys": {
+      "line": "a-r4-line",
+      "retry": "a-r4-retry",
+      "thanks": "a-r4-thanks"
+     },
+     "evidence": "There is orange hair on a delivery box. The box is big enough for a cat.",
+     "options": [
+      "He might be in the box.",
+      "He must be in the box.",
+      "He can't be in the box."
+     ],
+     "correct": 0,
+     "retryLine": "Careful. Hair on a box is a possibility, not proof.",
+     "thanks": "Exactly. It's possible. We check the truck.",
+     "par": 20
+    },
+    {
+     "type": "deduce",
+     "who": "priya",
+     "line": "And this one.",
+     "keys": {
+      "line": "a-r5-line",
+      "retry": "a-r5-retry",
+      "thanks": "a-r5-thanks"
+     },
+     "evidence": "The hotel's cameras show Vera in the lobby from nine until midnight.",
+     "options": [
+      "It might be Vera.",
+      "It can't be Vera.",
+      "It must be Vera."
+     ],
+     "correct": 1,
+     "retryLine": "She was on camera all night. So?",
+     "thanks": "Vera is off the list.",
+     "par": 20
+    }
+   ]
+  },
+  "vault": {
+   "num": "4",
+   "name": "The Vault",
+   "tag": "lock · chart · terminal · keypad",
+   "intro": "Vault rounds. One clock for the whole chamber: a wrong answer costs fifteen seconds. Every door gives you a digit. Enter all five at the keypad.",
+   "introKey": "lab-4-intro",
+   "words": [
+    "was locked",
+    "rose sharply",
+    "he said he would",
+    "if you were to"
+   ],
+   "rounds": [
+    {
+     "type": "lock",
+     "who": "os",
+     "line": "Door one. Passive voice required. Rewrite the sentence.",
+     "keys": {
+      "line": "v-r1-line",
+      "retry": "v-r1-retry",
+      "thanks": "v-r1-thanks"
+     },
+     "digit": 4,
+     "source": "Someone locked the door at nine.",
+     "answer": "The door was locked at nine",
+     "alts": [
+      "The door was locked at nine by someone"
+     ],
+     "words": [
+      "The",
+      "door",
+      "was",
+      "locked",
+      "at",
+      "nine",
+      "were",
+      "lock"
+     ],
+     "retryLine": "Rejected. The door is the subject.",
+     "thanks": "Accepted. Door one is open.",
+     "par": 30
+    },
+    {
+     "type": "chart",
+     "who": "os",
+     "line": "Identity check. Describe the power use on this floor tonight.",
+     "keys": {
+      "line": "v-r2-line",
+      "retry": "v-r2-retry",
+      "thanks": "v-r2-thanks"
+     },
+     "digit": 7,
+     "title": "POWER USE",
+     "unit": "kW",
+     "points": [
+      20,
+      21,
+      20,
+      22,
+      48,
+      47
+     ],
+     "labels": [
+      "8pm",
+      "9",
+      "10",
+      "11",
+      "12",
+      "1am"
+     ],
+     "options": [
+      "It rose sharply at midnight.",
+      "It fell steadily all night.",
+      "It leveled off at ten and then dropped."
+     ],
+     "correct": 0,
+     "retryLine": "Incorrect. Look at midnight.",
+     "thanks": "Correct. Somebody switched the vault on at midnight.",
+     "par": 25
+    },
+    {
+     "type": "terminal",
+     "who": "os",
+     "line": "One new message from David. Report it accurately.",
+     "keys": {
+      "line": "v-r3-line",
+      "retry": "v-r3-retry",
+      "thanks": "v-r3-thanks"
+     },
+     "digit": 1,
+     "clip": "v-r3-clip",
+     "clipText": "It's David. I'll send the code tomorrow.",
+     "options": [
+      "He said he would send the code the next day.",
+      "He said he will send the code yesterday.",
+      "He said he had sent the code the day before."
+     ],
+     "correct": 0,
+     "retryLine": "Inaccurate report. Play it again.",
+     "thanks": "Report filed.",
+     "par": 28
+    },
+    {
+     "type": "lock",
+     "who": "os",
+     "line": "Door two. Reported speech required.",
+     "keys": {
+      "line": "v-r4-line",
+      "retry": "v-r4-retry",
+      "thanks": "v-r4-thanks"
+     },
+     "digit": 9,
+     "source": "\"Where is the key?\" he asked.",
+     "cue": "He asked…",
+     "answer": "He asked where the key was",
+     "alts": [
+      "He asked me where the key was"
+     ],
+     "words": [
+      "He",
+      "asked",
+      "where",
+      "the",
+      "key",
+      "was",
+      "is",
+      "me"
+     ],
+     "retryLine": "Rejected. Statement word order, please.",
+     "thanks": "Accepted.",
+     "par": 30
+    },
+    {
+     "type": "talk",
+     "who": "walt",
+     "line": "I can't open it, mate. Rules are rules.",
+     "keys": {
+      "line": "v-r5-line",
+      "retry": "v-r5-retry",
+      "thanks": "v-r5-thanks"
+     },
+     "digit": 2,
+     "options": [
+      "If you were to open it, I would sign the log myself.",
+      "Open it now or I call your boss.",
+      "If you would open it, I will sign."
+     ],
+     "correct": 0,
+     "retryLine": "Nah. Try me again, politely, and get the grammar right.",
+     "thanks": "Well… if you sign the log. Go on, then.",
+     "par": 22
+    }
+   ],
+   "chamber": {
+    "seconds": 150,
+    "penalty": 15,
+    "refill": 40
+   }
+  },
+  "radio": {
+   "num": "5",
+   "name": "The Radio",
+   "tag": "say · fastear · onair",
+   "intro": "Radio rounds. You speak into the microphone, you catch fast speech, and you never leave dead air.",
+   "introKey": "lab-5-intro",
+   "words": [
+    "Never have I…",
+    "even so",
+    "whaddaya",
+    "can / can't"
+   ],
+   "rounds": [
+    {
+     "type": "say",
+     "who": "roz",
+     "line": "Mic check. Read the line on the card, nice and clear.",
+     "keys": {
+      "line": "r-r1-line",
+      "retry": "r-r1-retry",
+      "thanks": "r-r1-thanks",
+      "model": "r-r1-model"
+     },
+     "target": "Testing, one, two. This is The Signal.",
+     "accept": [
+      "Testing one two this is the signal",
+      "Testing 1 2 this is the signal"
+     ],
+     "retryLine": "Again, a bit closer to the mic.",
+     "thanks": "Levels are good. You sound like radio.",
+     "par": 25
+    },
+    {
+     "type": "fastear",
+     "who": "roz",
+     "line": "A caller, at full speed. What did they say?",
+     "keys": {
+      "line": "r-r2-line",
+      "retry": "r-r2-retry",
+      "thanks": "r-r2-thanks"
+     },
+     "clip": "r-r2-clip",
+     "clipText": "Whaddaya wanna do?",
+     "options": [
+      "What do you want to do?",
+      "What did you want to do?",
+      "Where do you want to go?"
+     ],
+     "correct": 0,
+     "retryLine": "Play it again. Listen to the first word.",
+     "thanks": "That's it. Whaddaya equals what do you.",
+     "par": 20
+    },
+    {
+     "type": "onair",
+     "who": "alex",
+     "line": "It rained all day. … thousands came.",
+     "sub": "host · you are live",
+     "keys": {
+      "line": "r-r3-line",
+      "retry": "r-r3-retry",
+      "thanks": "r-r3-thanks"
+     },
+     "air": 14,
+     "note": "Choose the link before the air runs out.",
+     "options": [
+      "Even so,",
+      "What's more,",
+      "To cut a long story short,"
+     ],
+     "correct": 0,
+     "retryLine": "Dead air! Pick the contrast.",
+     "thanks": "Even so, thousands came. Smooth.",
+     "par": 14
+    },
+    {
+     "type": "say",
+     "who": "alex",
+     "line": "Give me the headline for tonight.",
+     "keys": {
+      "line": "r-r4-line",
+      "retry": "r-r4-retry",
+      "thanks": "r-r4-thanks",
+      "model": "r-r4-model"
+     },
+     "target": "Never have I seen such a crowd.",
+     "retryLine": "Once more. Start with 'Never'.",
+     "thanks": "That's a headline.",
+     "par": 22
+    },
+    {
+     "type": "fastear",
+     "who": "roz",
+     "line": "Last one. Can, or can't?",
+     "keys": {
+      "line": "r-r5-line",
+      "retry": "r-r5-retry",
+      "thanks": "r-r5-thanks"
+     },
+     "clip": "r-r5-clip",
+     "clipText": "I can't do Thursday.",
+     "options": [
+      "I can't do Thursday.",
+      "I can do Thursday.",
+      "I could do Thursday."
+     ],
+     "correct": 0,
+     "retryLine": "Listen to the vowel, not the T.",
+     "thanks": "Right. A long, strong vowel means can't.",
+     "par": 20
+    }
+   ]
+  },
+  "hotel": {
+   "num": "6",
+   "name": "The Hotel",
+   "tag": "bestfit · spot · toast",
+   "intro": "Hotel rounds. Every option is correct English; choose the one that fits. Cut what should go. Then give the toast against the clock.",
+   "introKey": "lab-6-intro",
+   "words": [
+    "adequate",
+    "advance plans",
+    "answer in kind",
+    "thank · story · wish"
+   ],
+   "rounds": [
+    {
+     "type": "bestfit",
+     "who": "sol",
+     "line": "The room is… adequate.",
+     "keys": {
+      "line": "h-r1-line",
+      "retry": "h-r1-retry",
+      "thanks": "h-r1-thanks"
+     },
+     "options": [
+      "I'm sorry to hear it falls short. May I ask what would make it more comfortable?",
+      "Thank you! We are very proud of our rooms.",
+      "Adequate? It's one of the best rooms we've got."
+     ],
+     "correct": 0,
+     "retryLine": "I said adequate. I chose the word with care.",
+     "thanks": "How refreshing. Someone who listens.",
+     "par": 26
+    },
+    {
+     "type": "spot",
+     "who": "whitmore",
+     "line": "The welcome card. One word is doing no work. Remove it.",
+     "keys": {
+      "line": "h-r2-line",
+      "retry": "h-r2-retry",
+      "thanks": "h-r2-thanks"
+     },
+     "text": "We have made advance plans for the gala evening.",
+     "target": [
+      3
+     ],
+     "fix": "We have made plans for the gala evening.",
+     "retryLine": "No. Plans are always made in advance.",
+     "thanks": "Tighter. Thank you.",
+     "par": 24
+    },
+    {
+     "type": "spot",
+     "who": "whitmore",
+     "line": "And this sentence?",
+     "keys": {
+      "line": "h-r3-line",
+      "retry": "h-r3-retry",
+      "thanks": "h-r3-thanks"
+     },
+     "clean": true,
+     "text": "The lobby was small but beautifully lit.",
+     "target": [],
+     "retryLine": "I see nothing wrong with it. Do you?",
+     "thanks": "Quite. Not every sentence needs the red pen.",
+     "par": 20
+    },
+    {
+     "type": "bestfit",
+     "who": "rex",
+     "line": "Nine dollars for water. Is it famous water?",
+     "keys": {
+      "line": "h-r4-line",
+      "retry": "h-r4-retry",
+      "thanks": "h-r4-thanks"
+     },
+     "fitNote": "Every reply is correct English. Answer in kind, and stay professional.",
+     "options": [
+      "It has a very good agent, sir.",
+      "The price list is set by the management.",
+      "Yeah, it's a total rip-off, isn't it?"
+     ],
+     "correct": 0,
+     "retryLine": "Come on. Give me something to work with.",
+     "thanks": "Ha! You should be on stage.",
+     "par": 22
+    },
+    {
+     "type": "toast",
+     "who": "julian",
+     "line": "Ms. Whitmore has lost her voice. The toast is yours. Thirty seconds. Put it in order.",
+     "keys": {
+      "line": "h-r5-line",
+      "retry": "h-r5-retry",
+      "thanks": "h-r5-thanks"
+     },
+     "limit": 30,
+     "labels": [
+      "THANK",
+      "STORY",
+      "WISH",
+      "GLASS"
+     ],
+     "parts": [
+      "Thank you all for coming this weekend.",
+      "On Friday a novelist called her room 'adequate', and by Sunday she had put the concierge in her book.",
+      "May every one of you leave with a better chapter than you arrived with.",
+      "To the summit!"
+     ],
+     "retryLine": "Thank them first. Then the story. Then the wish.",
+     "thanks": "Perfect. Now go and say it.",
+     "par": 30
+    }
+   ]
+  },
+  "live": {
+   "num": "5-B",
+   "name": "Live at Nine",
+   "tag": "one meter across the stage",
+   "intro": "Broadcast mode: one dead-air meter runs across all three rounds. A good answer buys a little air back.",
+   "introKey": "lab-5-B-intro",
+   "words": [
+    "Can I come in here?",
+    "shoulda",
+    "We'll have to leave it there."
+   ],
+   "rounds": [
+    {
+     "type": "onair",
+     "who": "alex",
+     "line": "We're live. Take the floor.",
+     "keys": {
+      "line": "b-r1-line",
+      "retry": "b-r1-retry",
+      "thanks": "b-r1-thanks"
+     },
+     "options": [
+      "Can I come in here?",
+      "Shut up, everyone.",
+      "I am agree."
+     ],
+     "correct": 0,
+     "retryLine": "Politely!",
+     "thanks": "Go ahead.",
+     "par": 12
+    },
+    {
+     "type": "fastear",
+     "who": "roz",
+     "line": "Caller on line two.",
+     "keys": {
+      "line": "b-r2-line",
+      "retry": "b-r2-retry",
+      "thanks": "b-r2-thanks"
+     },
+     "clip": "b-r2-clip",
+     "clipText": "I shoulda called earlier.",
+     "options": [
+      "I should have called earlier.",
+      "I should call earlier.",
+      "I would have called earlier."
+     ],
+     "correct": 0,
+     "retryLine": "Again.",
+     "thanks": "Got it.",
+     "par": 14
+    },
+    {
+     "type": "say",
+     "who": "alex",
+     "line": "Close the show.",
+     "keys": {
+      "line": "b-r3-line",
+      "retry": "b-r3-retry",
+      "thanks": "b-r3-thanks",
+      "model": "b-r3-model"
+     },
+     "target": "We'll have to leave it there.",
+     "retryLine": "Once more.",
+     "thanks": "And we're out.",
+     "par": 14
+    }
+   ],
+   "boss": true,
+   "air": 45,
+   "airBack": 5
+  }
+ }
+}

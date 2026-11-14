@@ -1,12 +1,12 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v35";  // v19: A1 L4 family tree
+const CACHE = "rankup-v36";  // v19: A1 L4 family tree
 const CORE = [
   "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
   "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=1",
   "assets/fonts/press-start-2p-latin.woff2", "assets/fonts/share-tech-mono-latin.woff2",
   "city.html", "neon-cafe.html", "neon-office.html", "game.html", "cards.html", "manifest.json",
-  "assets/game.js?v=1", "assets/game.css?v=1", "games/cafe.json", "games/office.json",
+  "assets/game.js?v=2", "assets/game.css?v=2", "games/cafe.json", "games/office.json",
   "logo.webp", "bg-cafe.webp", "nebula.webp", "map-city.webp",
   "icon-192.png", "icon-rankup.png",
   "sprite-mia.webp", "sprite-jack.webp", "sprite-vera.webp", "sprite-vera-inspector.webp",
