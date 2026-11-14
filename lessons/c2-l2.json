@@ -1,0 +1,968 @@
+{
+  "level": "C2",
+  "num": 2,
+  "totalLessons": 6,
+  "world": "MASTERY",
+  "ui": "en",
+  "key": "rankup_C2_L2",
+  "title": "REGISTER &amp;<br>HUMOR",
+  "titlePlain": "Register & Humor — Read the Room (C2)",
+  "subtitle": "Speaking &amp; Listening · C2 · ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=c2-l3",
+    "label": "LESSON 3 ▸ ACADEMIC ARGUMENT"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> RECAP · last lesson",
+      "intro": "Yesterday's words, before today's guest arrives. Match each one with what it tells you about the speaker.",
+      "pairs": [
+        {
+          "l": "claimed",
+          "r": "I doubt it"
+        },
+        {
+          "l": "admitted",
+          "r": "it's true, and it was a fault"
+        },
+        {
+          "l": "ostensibly",
+          "r": "that's the official story"
+        },
+        {
+          "l": "admittedly",
+          "r": "I concede this point"
+        },
+        {
+          "l": "rather warm",
+          "r": "too warm, said politely"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "register & how jokes work",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· register &amp; how jokes work</span>",
+      "title": "<ico-book></ico-book> READ THE ROOM",
+      "intro": "Register is the distance you put between yourself and your listener. Humor is what happens when you <b style='color:var(--gold)'>play with that distance on purpose</b>. First the ladder, then the four ways English makes a joke without telling one, and then the moments to keep a straight face.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show the comedy vocabulary",
+      "vocab": [
+        {
+          "en": "to read the room",
+          "sp": "to notice the mood and adjust how you speak"
+        },
+        {
+          "en": "deadpan",
+          "sp": "saying something funny with a serious face and voice"
+        },
+        {
+          "en": "a punch line",
+          "sp": "the last line of a joke, where the laugh comes"
+        },
+        {
+          "en": "a set",
+          "sp": "a comedian's prepared performance"
+        },
+        {
+          "en": "tongue-in-cheek",
+          "sp": "not meant to be taken seriously"
+        },
+        {
+          "en": "to keep a straight face",
+          "sp": "to manage not to laugh"
+        },
+        {
+          "en": "a pun",
+          "sp": "a joke that uses two meanings of one word"
+        },
+        {
+          "en": "to backfire",
+          "sp": "to have the opposite effect from the one you wanted"
+        },
+        {
+          "en": "the minibar",
+          "sp": "the small fridge of expensive drinks in a hotel room"
+        },
+        {
+          "en": "to snap",
+          "sp": "here: to change suddenly"
+        }
+      ],
+      "note": "<b>How it works:</b> flashcards <ico-clone></ico-clone>, listening <ico-headphones></ico-headphones>, compare <ico-comments></ico-comments>, a dialogue with a comedian, gap-fill <ico-filepen></ico-filepen> and memory. Every option is grammatical; choose the one that fits the room.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · ONE MESSAGE, FIVE REGISTERS</b> <span class='es'>— frozen, formal, neutral, casual, intimate</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Guests are requested to vacate their rooms by noon.",
+              "sp": "Frozen: signs, contracts, rules. Nobody is speaking to anybody."
+            },
+            {
+              "en": "We would be grateful if you could check out by noon.",
+              "sp": "Formal: to a stranger, in writing."
+            },
+            {
+              "en": "Please check out by noon.",
+              "sp": "Neutral: polite and plain."
+            },
+            {
+              "en": "Checkout's at twelve, okay?",
+              "sp": "Casual: to someone you know."
+            },
+            {
+              "en": "Out by twelve, sleepyhead.",
+              "sp": "Intimate: family and close friends only."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · THE MARKERS</b> <span class='es'>— what moves a sentence up or down the ladder</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "contractions",
+            "phrasal verb ↔ Latin verb",
+            "vague words: stuff, sort of",
+            "how you address people"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We regret to inform you that the pool is closed.",
+              "sp": "No contraction, a Latin verb (inform), a fixed formula."
+            },
+            {
+              "en": "Sorry, the pool's closed.",
+              "sp": "A contraction and one word of apology."
+            },
+            {
+              "en": "The meeting has been postponed.",
+              "sp": "Latin verb + passive: formal."
+            },
+            {
+              "en": "They've put the meeting off.",
+              "sp": "Phrasal verb + contraction: casual."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · SAY LESS, OR SAY THE OPPOSITE</b> <span class='es'>— understatement and irony</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The delay was slightly inconvenient.",
+              "sp": "Understatement: said after nine hours in an airport. A small word for a big thing."
+            },
+            {
+              "en": "It's not the cheapest minibar in the world.",
+              "sp": "Understatement by negation: it is very expensive."
+            },
+            {
+              "en": "Lovely weather we're having.",
+              "sp": "Irony: said in a storm. The words say the opposite of the facts."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>How do you know it is a joke?</b> The facts and the words don't match, and the voice stays flat. That flat delivery has a name: <b>deadpan</b>. Nobody announces the joke, and nobody laughs at their own line."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · THREE MORE MECHANISMS</b> <span class='es'>— the list with a twist, the joke against yourself, the pun</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The room has everything: a bed, a view, and a neighbor who plays the trumpet.",
+              "sp": "The rule of three: two normal items set the pattern, the third breaks it."
+            },
+            {
+              "en": "I'd give you directions, but I once got lost in an elevator.",
+              "sp": "Self-deprecation: you are the target, so nobody is offended."
+            },
+            {
+              "en": "I asked for a wake-up call. Then I saw the bill.",
+              "sp": "A pun: a wake-up call is a phone call, and also a shock."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · WHEN NOT TO JOKE</b>"
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>Three red lights.</b> Bad news: the listener needs information, not wit. A power gap: a joke from below can sound like disrespect, and a joke from above can sound like mockery. Writing to strangers: without your voice and face, irony reads as a plain statement. And self-deprecation <b>backfires</b> when people don't yet know you are good at your job: in an interview, they may simply believe you."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> CALQUE ALERT</b> <span class='es'>— three habits that give you away</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "It was a fun evening, and Rex is a funny man.",
+              "sp": "Fun = enjoyable. Funny = it makes you laugh (or it is strange). A fun person is good company; a funny person tells jokes."
+            },
+            {
+              "en": "It loses something in translation.",
+              "sp": "A joke translated word for word is usually no longer a joke. Explain the situation and find the English mechanism: understatement works where your pun does not."
+            },
+            {
+              "en": "Thanks so much for last night!",
+              "sp": "To a friend, «I would be very grateful» and «I regret to inform you» are too high on the ladder. Over-formal chat sounds cold, or sarcastic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "UP AND DOWN THE LADDER · tap to flip",
+      "intro": "Six cards climb down from formal to casual; four name a way of being funny. Say the casual word, or an example of the joke, before you flip.",
+      "cards": [
+        {
+          "front": "commence, start, kick off",
+          "back": "formal · neutral · casual — «The ceremony will commence at eight.»"
+        },
+        {
+          "front": "purchase, buy, pick up",
+          "back": "formal · neutral · casual — «I picked up a couple of souvenirs.»"
+        },
+        {
+          "front": "depart, leave, head off",
+          "back": "formal · neutral · casual — «Right, I'm heading off.»"
+        },
+        {
+          "front": "inform, tell, fill someone in",
+          "back": "formal · neutral · casual — «Fill me in later.»"
+        },
+        {
+          "front": "assist, help, give someone a hand",
+          "back": "formal · neutral · casual — «Can you give me a hand?»"
+        },
+        {
+          "front": "require, need, could do with",
+          "back": "formal · neutral · casual — «I could do with a coffee.»"
+        },
+        {
+          "front": "understatement",
+          "back": "a small word for a big thing — «It's a bit damp», said in a flood"
+        },
+        {
+          "front": "irony",
+          "back": "the words say the opposite of the facts — «Great timing», to someone two hours late"
+        },
+        {
+          "front": "self-deprecation",
+          "back": "a joke against yourself — «I'm not lost. I'm exploring, badly.»"
+        },
+        {
+          "front": "deadpan",
+          "back": "funny words, serious face and voice: nobody announces the joke"
+        }
+      ],
+      "deckLabel": "register & humor"
+    },
+    {
+      "type": "story",
+      "tag": "the summit weekend · 2 a.m.",
+      "title": "<ico-star></ico-star> READ THE ROOM",
+      "intro": "It is two in the morning, and you are on the night desk with Julian. The revolving door turns and in walks Rex, the summit's comedian, six hours late and wide awake. He treats the front desk as an audience. He is halfway through a joke when <b style='color:var(--gold)'>Ms. Whitmore steps out of the elevator</b>.",
+      "cast": [
+        {
+          "en": "Rex",
+          "sp": "a comedian who is never off duty"
+        },
+        {
+          "en": "Julian",
+          "sp": "answers every joke with a straight face"
+        },
+        {
+          "en": "Ms. Whitmore",
+          "sp": "the manager: she wrote the price list"
+        },
+        {
+          "en": "You",
+          "sp": "on the <b style='color:var(--magenta)'>night desk</b>, trying not to laugh"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE LATE CHECK-IN",
+      "desc": "Rex checks in. Listen for how each joke works, for what Julian does with them, and for the exact moment the whole conversation climbs up the ladder.",
+      "src": "c2-l2-1.mp3",
+      "dur": "2:31",
+      "speakers": "<ico-commentdots></ico-commentdots> Rex + Julian + Ms. Whitmore",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Rex calls six hours on the runway \"slightly annoying.\" How does that joke work?",
+          "options": [
+            "Understatement: a small word for a big problem",
+            "A pun on two meanings of \"annoying\"",
+            "Self-deprecation: Rex is laughing at himself"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "The register changes when Ms. Whitmore arrives. Which of Rex's words marks the change?",
+          "options": [
+            "parsley",
+            "madam",
+            "binoculars"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Is Ms. Whitmore amused?",
+          "options": [
+            "Yes: she laughs at the water joke",
+            "She is angry, and she tells Rex so",
+            "She gives no sign of it: she stays entirely formal"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Julian's one-word reply \"Slightly\" do?",
+          "options": [
+            "It plays along: he repeats the understatement, deadpan",
+            "It corrects Rex's grammar",
+            "It shows that he missed the joke"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Tell me about your worst trip in three sentences, using understatement. Keep your voice flat.",
+        "starter": "The flight was slightly… It's not the most… in the world. I was a little… when…"
+      },
+      "transcript": [
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "Good evening! Or good morning. What is it, two a.m.? At two a.m., it's nobody's turn."
+        },
+        {
+          "spk": "Julian",
+          "html": "Good morning, sir. Welcome to the Grand Hotel. You must be here for the summit."
+        },
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "I'm the comedian. They always book one. It's like parsley. Nobody ordered it, but the plate looks empty without it."
+        },
+        {
+          "spk": "Julian",
+          "html": "Your room is ready. Five oh seven, river side."
+        },
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "River side. I've stayed in a river view before. Technically, it was true. You could see the river. With binoculars. From the roof. On a clear day. If you knew where the river was."
+        },
+        {
+          "spk": "Julian",
+          "html": "Ours is somewhat closer, sir."
+        },
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "And I looked at your minibar prices. Nine dollars for a bottle of water. <span class='tg'>That's a little on the high side.</span> For nine dollars, I'd expect the water to tuck me in."
+        },
+        {
+          "spk": "Julian",
+          "html": "The water does not offer that service, sir. I have asked."
+        },
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "You're good. You should do this for a living. How was my flight, you ask? Thank you for asking. We sat on the runway for six hours. Six. It was <span class='tg'>slightly annoying</span>."
+        },
+        {
+          "spk": "Julian",
+          "html": "<span class='tg'>Slightly</span>."
+        },
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "The pilot kept saying \"any minute now.\" I boarded that plane a young man. Listen, there are three things I do badly: flying, sleeping, and"
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Good morning. Is everything in order, Julian?"
+        },
+        {
+          "spk": "Julian",
+          "html": "Good morning, Ms. Whitmore. Our guest has just arrived for the summit. I was completing his registration."
+        },
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "Ah. Good morning, <span class='tg'>madam</span>. I do apologize for the hour. Your colleague has been extremely helpful."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "I am pleased to hear it. We were informed that your flight had been delayed. I trust the journey was not too tiring."
+        },
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "Not at all. It was most restful."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Excellent. Breakfast is served from seven. <span class='tg'>Should you require</span> anything further, Julian will assist you. Good night, gentlemen."
+        },
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "Did she just say \"should you require\"?"
+        },
+        {
+          "spk": "Julian",
+          "html": "She did, sir."
+        },
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "Does she ever laugh?"
+        },
+        {
+          "spk": "Julian",
+          "html": "Once. In March. We are still not sure why."
+        },
+        {
+          "spk": "Rex",
+          "b": true,
+          "html": "And, just checking, did she hear the water joke?"
+        },
+        {
+          "spk": "Julian",
+          "html": "I believe she has heard all the water jokes, sir. She wrote the price list."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "SLIGHTLY vs A DISASTER",
+      "intro": "The delay lasted nine hours. Both sentences describe it. One of them means exactly what it says.",
+      "pair": {
+        "a": "The delay was slightly inconvenient.",
+        "b": "The delay was a disaster."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "After a nine-hour delay, which sentence is understatement?",
+          "options": [
+            "A — slightly inconvenient",
+            "B — a disaster",
+            "Neither"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "What does the speaker of A really mean?",
+          "options": [
+            "It was only a small problem",
+            "It was a very big problem",
+            "There was no delay at all"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "How does the listener know that A is not meant literally?",
+          "options": [
+            "Because of the past tense",
+            "Because of the word \"delay\"",
+            "Because the small word does not match the known facts"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "It is pouring with rain. Which remark is ironic?",
+          "options": [
+            "Lovely weather we're having.",
+            "It's raining heavily.",
+            "I forgot my umbrella."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which line is a risk in an email to a client you have never met?",
+          "options": [
+            "We apologize for the error.",
+            "A small hiccup on our side deleted your account.",
+            "The issue has now been resolved."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "ANSWER IN KIND",
+      "intro": "Rex comes down to the desk and tries his material on you. One reply is correct but flat, one is unprofessional, and one plays along while staying a concierge. Choose that one.",
+      "lines": [
+        {
+          "spk": "Rex",
+          "html": "Is the gym open? I'm asking for a friend who exercises."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "The gym opens at six.",
+            "It opens at six, sir. Your friend will have it all to himself.",
+            "You, in a gym? Good one."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Rex",
+          "html": "My room has a \"city view.\" Which city?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "This one, sir, on most days.",
+            "The room faces north, toward the business district.",
+            "Don't blame me. I didn't build the place."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Rex",
+          "html": "Nine dollars for water. Is it famous water?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "The price list is set by the management.",
+            "Yeah, it's a total rip-off, isn't it?",
+            "It has a very good agent, sir."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Rex",
+          "html": "Be honest. Is the breakfast worth getting up for?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "I'm biased, sir, but the pancakes have their admirers.",
+            "Breakfast is served from seven to ten thirty.",
+            "Honestly? I never eat here."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Rex",
+          "html": "You're wasted on this desk. You should be on stage."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Thank you. I am satisfied with my current position.",
+            "Kind of you, sir. But I prefer an audience that has already paid.",
+            "I know. I'm much funnier than you."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "WHICH RUNG OF THE LADDER?",
+      "intro": "Each sentence tells you where it will be used. All three options are real English; one belongs on that rung.",
+      "items": [
+        {
+          "q": "(A printed program) The ceremony will ___ at eight o'clock.",
+          "options": [
+            "commence",
+            "get going",
+            "kick off"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "(A text to a friend) The party ___ at eight. Don't be late!",
+          "options": [
+            "commences",
+            "kicks off",
+            "is inaugurated"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "(A formal letter) We ___ to inform you that your reservation has been canceled.",
+          "options": [
+            "hate",
+            "are gutted",
+            "regret"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "(To a colleague, in the corridor) Can you ___ me a hand with these bags?",
+          "options": [
+            "give",
+            "provide",
+            "render"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "(A sign on a door) Guests are ___ to keep noise to a minimum.",
+          "options": [
+            "begged",
+            "requested",
+            "told"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "(To a friend) Sorry, I can't come. I've got loads of ___ to do.",
+          "options": [
+            "matters",
+            "items",
+            "stuff"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "(A formal email) Should you ___ any further assistance, please contact the desk.",
+          "options": [
+            "require",
+            "fancy",
+            "be after"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "(A message to a friend) Thanks ___ for last night. It was great fun.",
+          "options": [
+            "most sincerely",
+            "a lot",
+            "profoundly"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "mem-reg",
+      "title": "MEMORY · formal and casual twins",
+      "intro": "Find each formal word and the casual expression that means the same. Tap two cards.",
+      "pairs": [
+        {
+          "a": "commence",
+          "b": "kick off"
+        },
+        {
+          "a": "purchase",
+          "b": "pick up"
+        },
+        {
+          "a": "depart",
+          "b": "head off"
+        },
+        {
+          "a": "assist",
+          "b": "give a hand"
+        },
+        {
+          "a": "inform",
+          "b": "fill in"
+        },
+        {
+          "a": "require",
+          "b": "could do with"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THREE APOLOGIES",
+      "desc": "A suitcase has gone missing, and Julian has to tell three guests: a child, a regular guest and an ambassador. Same suitcase, same apology, three rungs of the ladder.",
+      "src": "c2-l2-2.mp3",
+      "dur": "1:10",
+      "speakers": "<ico-commentdots></ico-commentdots> Julian",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Who is the first apology for?",
+          "options": [
+            "The ambassador",
+            "The child",
+            "The regular guest"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which features make the third apology the most formal?",
+          "options": [
+            "\"I regret to inform you\" and the passive \"is being made\"",
+            "Contractions such as \"bag's\"",
+            "The offer of a hot chocolate"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What do all three apologies contain?",
+          "options": [
+            "Only the bad news",
+            "A joke to soften the news",
+            "The bad news, what is being done, and something offered in the meantime"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Julian mean by \"Three languages, and all of them are English\"?",
+          "options": [
+            "Register changes almost every word while the message stays the same",
+            "He speaks three foreign languages",
+            "The three guests come from three countries"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "The hotel restaurant is fully booked tonight. Say so twice: to a friend who works with you, and to a guest you have never met.",
+        "starter": "To a friend: Sorry, we're… How about…? · To a guest: I'm afraid… May I suggest…?"
+      },
+      "transcript": [
+        {
+          "spk": "Julian",
+          "html": "A suitcase has gone missing, and three guests need to be told. Number one. \"Hey, Leo. So, bad news: your bag's gone on a little adventure without you. We don't know where it is yet, but we're looking everywhere, okay? And until it comes back, how about a hot chocolate? On me.\""
+        },
+        {
+          "spk": "Julian",
+          "html": "Number two. \"Good evening, Mrs. Hart. Good to see you again. I'm so sorry about this, but your suitcase didn't arrive with the others. We're tracking it now, and I'll call your room the moment we know more. In the meantime, I've sent up a few things you might need.\""
+        },
+        {
+          "spk": "Julian",
+          "html": "Number three. \"Your Excellency, <span class='tg'>I regret to inform you</span> that one item of your luggage has been delayed in transit. Please accept our sincere apologies. Every effort <span class='tg'>is being made</span> to locate it, and you will be notified immediately. <span class='tg'>Should you require</span> anything in the meantime, the hotel is entirely at your disposal.\""
+        },
+        {
+          "spk": "Julian",
+          "html": "Same suitcase. Same apology. Three languages, and all of them are English."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> THE SAME NEWS, TWICE",
+      "intro": "The hotel pool is closed until Friday for repairs. Announce it twice: as a <b>formal notice</b> for the guest information folder (about 50 words), and as a <b>light sign</b> for the pool door (about 25 words) with <b>one piece of understatement</b>.",
+      "checklist": [
+        "<b>Notice:</b> no contractions, Latin verbs (<b>regret, inform, resume</b>), a passive, an alternative offered",
+        "<b>Sign:</b> contractions, short sentences, friendly address",
+        "<b>Exactly one</b> understatement on the sign, and none in the notice",
+        "The same three facts in both: closed, until Friday, why",
+        "<b>fun</b> and <b>funny</b> used correctly, if you use them at all"
+      ],
+      "placeholder": "NOTICE: We regret to inform our guests that…",
+      "example": "NOTICE: We regret to inform our guests that <span class=\"gap\">the fact</span> until <span class=\"gap\">day</span>, owing to <span class=\"gap\">the reason</span>. <span class=\"gap\">a passive sentence about what is being done</span>. Guests are invited to <span class=\"gap\">the alternative</span>. SIGN: Sorry! The pool's <span class=\"gap\">casual word for closed</span> till <span class=\"gap\">day</span>. <span class=\"gap\">your understatement about the state of the pool</span>. <span class=\"gap\">a friendly last line</span>",
+      "hw": "Write both texts, then <b>record yourself reading them</b>: the notice like Ms. Whitmore, the sign like Rex. Send me the text and the audio on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "A notice of about 50 words and a sign of about 25, with the same three facts in each."
+        },
+        {
+          "c": "Lesson target",
+          "d": "Each text stays on one rung of the ladder from the first word to the last, and the single understatement is recognizable as a joke."
+        },
+        {
+          "c": "Precision",
+          "d": "A guest reading either text knows what is closed, until when and what to do instead."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c2-l2",
+    "keys": [
+      "a-joke-to-soften-the-news",
+      "a-lot",
+      "a-pun",
+      "a-pun-on-two-meanings-of-annoying",
+      "a-punch-line",
+      "a-set",
+      "a-small-hiccup-on-our-side-deleted-your-account",
+      "admitted",
+      "admittedly",
+      "are-gutted",
+      "assist",
+      "assist-help-give-someone-a-hand",
+      "be-after",
+      "be-honest-is-the-breakfast-worth-getting-up-for",
+      "begged",
+      "binoculars",
+      "breakfast-is-served-from-seven-to-ten-thirty",
+      "checkout-s-at-twelve-okay",
+      "claimed",
+      "commence",
+      "commence-start-kick-off",
+      "commences",
+      "contractions-such-as-bag-s",
+      "could-do-with",
+      "deadpan",
+      "depart",
+      "depart-leave-head-off",
+      "don-t-blame-me-i-didn-t-build-the-place",
+      "fancy",
+      "fill-in",
+      "get-going",
+      "give",
+      "give-a-hand",
+      "guests-are-requested-to-vacate-their-rooms-by-noon",
+      "hate",
+      "he-speaks-three-foreign-languages",
+      "head-off",
+      "honestly-i-never-eat-here",
+      "i-asked-for-a-wake-up-call-then-i-saw-the-bill",
+      "i-d-give-you-directions-but-i-once-got-lost-in-an-elevator",
+      "i-forgot-my-umbrella",
+      "i-know-i-m-much-funnier-than-you",
+      "i-m-biased-sir-but-the-pancakes-have-their-admirers",
+      "i-regret-to-inform-you-and-the-passive-is-being-made",
+      "inform",
+      "inform-tell-fill-someone-in",
+      "irony",
+      "is-inaugurated",
+      "is-ms-whitmore-amused",
+      "is-the-gym-open-i-m-asking-for-a-friend-who-exercises",
+      "it-corrects-rex-s-grammar",
+      "it-has-a-very-good-agent-sir",
+      "it-loses-something-in-translation",
+      "it-opens-at-six-sir-your-friend-will-have-it-all-to-himself",
+      "it-plays-along-he-repeats-the-understatement-deadpan",
+      "it-s-not-the-cheapest-minibar-in-the-world",
+      "it-s-raining-heavily",
+      "it-shows-that-he-missed-the-joke",
+      "it-was-a-fun-evening-and-rex-is-a-funny-man",
+      "items",
+      "kick-off",
+      "kicks-off",
+      "kind-of-you-sir-but-i-prefer-an-audience-that-has-already-paid",
+      "lovely-weather-we-re-having",
+      "madam",
+      "matters",
+      "most-sincerely",
+      "my-room-has-a-city-view-which-city",
+      "nine-dollars-for-water-is-it-famous-water",
+      "only-the-bad-news",
+      "ostensibly",
+      "out-by-twelve-sleepyhead",
+      "parsley",
+      "pick-up",
+      "please-check-out-by-noon",
+      "profoundly",
+      "provide",
+      "purchase",
+      "purchase-buy-pick-up",
+      "rather-warm",
+      "register-changes-almost-every-word-while-the-message-stays-the-same",
+      "regret",
+      "render",
+      "requested",
+      "require",
+      "require-need-could-do-with",
+      "rex-calls-six-hours-on-the-runway-slightly-annoying-how-does-that-joke-work",
+      "self-deprecation",
+      "self-deprecation-rex-is-laughing-at-himself",
+      "she-gives-no-sign-of-it-she-stays-entirely-formal",
+      "she-is-angry-and-she-tells-rex-so",
+      "sorry-the-pool-s-closed",
+      "stuff",
+      "thank-you-i-am-satisfied-with-my-current-position",
+      "thanks-so-much-for-last-night",
+      "the-ambassador",
+      "the-bad-news-what-is-being-done-and-something-offered-in-the-meantime",
+      "the-child",
+      "the-delay-was-a-disaster",
+      "the-delay-was-slightly-inconvenient",
+      "the-gym-opens-at-six",
+      "the-issue-has-now-been-resolved",
+      "the-meeting-has-been-postponed",
+      "the-minibar",
+      "the-offer-of-a-hot-chocolate",
+      "the-price-list-is-set-by-the-management",
+      "the-register-changes-when-ms-whitmore-arrives-which-of-rex-s-words-marks-the-cha",
+      "the-regular-guest",
+      "the-room-faces-north-toward-the-business-district",
+      "the-room-has-everything-a-bed-a-view-and-a-neighbor-who-plays-the-trumpet",
+      "the-three-guests-come-from-three-countries",
+      "they-ve-put-the-meeting-off",
+      "this-one-sir-on-most-days",
+      "to-backfire",
+      "to-keep-a-straight-face",
+      "to-read-the-room",
+      "to-snap",
+      "told",
+      "tongue-in-cheek",
+      "understatement",
+      "understatement-a-small-word-for-a-big-problem",
+      "we-apologize-for-the-error",
+      "we-regret-to-inform-you-that-the-pool-is-closed",
+      "we-would-be-grateful-if-you-could-check-out-by-noon",
+      "what-do-all-three-apologies-contain",
+      "what-does-julian-mean-by-three-languages-and-all-of-them-are-english",
+      "what-does-julian-s-one-word-reply-slightly-do",
+      "which-features-make-the-third-apology-the-most-formal",
+      "who-is-the-first-apology-for",
+      "yeah-it-s-a-total-rip-off-isn-t-it",
+      "yes-she-laughs-at-the-water-joke",
+      "you-in-a-gym-good-one",
+      "you-re-wasted-on-this-desk-you-should-be-on-stage"
+    ]
+  }
+}
