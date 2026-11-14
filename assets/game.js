@@ -21,6 +21,7 @@
    Stage modes: "chamber": {seconds, penalty, refill} = one countdown + digits + keypad (Vault);
                 "air": N = one dead-air meter across the stage (Radio boss). Round "air" / "limit" = a meter for that round.
    Building options: "hint": {name, sub, img, pos, color, label, pre, post} replaces Enri as the hint giver;
+                     scene.enri: false hides the sleeping Enri; a cast member with "sprite": false is never drawn in the scene;
                      "freePlay": true opens every stage (test buildings); text.selectLabel / startLabel / overTitle / coinLabel.
 */
 (function () {
@@ -259,10 +260,10 @@ function sceneHTML(custId) {
   const bg = sc.bg ? ' style="background-image:url(\'' + sc.bg + '\')"' : "";
   return '<div class="scene-wrap"><div class="scene2' + (sc.class ? " " + sc.class : "") + '" role="img" aria-label="' + (sc.label || G.title) + '"' + bg + '>' +
     (sc.art || "") +
-    (sc.customers !== false && custId ? '<img class="sc-cust cust" src="' + custFile(custId) + '" alt="">' : '') +
+    (sc.customers !== false && custId && !(CAST[custId] && CAST[custId].sprite === false) ? '<img class="sc-cust cust" src="' + custFile(custId) + '" alt="">' : '') +
     (sc.bar ? '<div class="sc-bar"' + bg + '></div>' : '') +
-    '<img class="sc-enri" src="sprite-enri.webp" alt="">' +
-    '<span class="zz sc-z1">z</span><span class="zz2 sc-z2">z</span>' +
+    (sc.enri === false ? '' : '<img class="sc-enri" src="sprite-enri.webp" alt="">' +
+    '<span class="zz sc-z1">z</span><span class="zz2 sc-z2">z</span>') +
     '<img class="sc-tot" src="sprite-totti.webp" alt="">' +
   '</div></div>';
 }
@@ -1122,8 +1123,9 @@ function showGameOver(msg) {
       '<div class="title-big" style="color:var(--red); text-shadow: 0 0 16px var(--red);">' + (T.overTitle || "SHIFT OVER") + '</div>' +
     '</div>';
   const danSay = (typeof msg === "string" && msg) || T.gameOver || "Take a breath and run it back. Enri believes in you. Probably.";
-  stage.appendChild(bubble("dan", danSay, "dan-over"));
-  say("dan-over", danSay);
+  const overKey = (typeof msg === "string" && msg) ? "dan-deadair" : "dan-over";   // the dead-air message has its own clip
+  stage.appendChild(bubble("dan", danSay, overKey));
+  say(overKey, danSay);
   const btn = el('<div class="actions" style="justify-content:center; margin-top:16px;">' +
     '<button class="btn cyan" id="retryBtn">↻ TRY AGAIN</button>' +
     '<button class="btn" id="selBtn2">' + (T.selectLabel || "SHIFT SELECT") + '</button></div>');

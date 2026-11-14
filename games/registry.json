@@ -1,0 +1,155 @@
+{
+  "note": "Rank Up City: every building, its map spot, when it opens, its stages (max paws) and its album cards. Read by city.html and cards.html through EFA.registry() in assets/progress.js. To open a building: write games/<id>.json, record its clips, set ready: true here. A card needs: id, stage, name, rarity (COMMON RARE EPIC LEGENDARY SECRET), quote, and img or icon + color; perfect: true = a full score on that stage.",
+  "buildings": [
+    {
+      "id": "cafe", "name": "THE NEON CAFÉ", "short": "CAFÉ", "level": "A1", "place": "the Café",
+      "progKey": "nc_prog", "href": "neon-cafe.html", "play": { "icon": "mug", "label": "PLAY THE CAFÉ" },
+      "map": { "px": 77, "py": 24, "color": "#00e5ff" },
+      "ready": true, "opensAfter": null,
+      "welcome": "New in the city? Tap the Neon Café — the cyan one with the coffee sign. Dan needs a barista, and I need someone to judge.",
+      "allDone": "Café Master. Hm. Not unimpressive. Head office is building the next floor. Until it opens, train at the Academy.",
+      "stages": [
+        { "id": "s1", "name": "First shift", "max": 15 },
+        { "id": "s2", "name": "Rush hour", "max": 12 },
+        { "id": "s3", "name": "Lost & found", "max": 15 },
+        { "id": "s4", "name": "Quiz night", "max": 12 },
+        { "id": "sb", "name": "The inspection", "max": 12, "boss": true }
+      ],
+      "cards": [
+        { "id": "neoncup", "stage": "s1", "name": "NEON CUP", "rarity": "COMMON", "img": "item-flatwhite.webp", "quote": "Full of potential. Refill and retry." },
+        { "id": "mia", "stage": "s1", "name": "MIA", "rarity": "RARE", "img": "sprite-mia.webp", "quote": "The regular. Bright, kind, from Brazil." },
+        { "id": "jack", "stage": "s2", "name": "JACK", "rarity": "RARE", "img": "sprite-jack.webp", "quote": "Big order, bigger heart. Cheers, mate." },
+        { "id": "dan", "stage": "s3", "name": "DAN", "rarity": "RARE", "img": "sprite-dan.webp", "quote": "The manager on the radio. Believes in you." },
+        { "id": "enri", "stage": "s3", "name": "ENRI", "rarity": "EPIC", "img": "sprite-enri.webp", "quote": "I nap, and success finds me." },
+        { "id": "vera", "stage": "s4", "name": "VERA", "rarity": "EPIC", "img": "sprite-vera.webp", "quote": "One latte. And I am always watching." },
+        { "id": "totti", "stage": "sb", "name": "TOTTI", "rarity": "LEGENDARY", "img": "sprite-totti.webp", "quote": "I observe. I judge. Then I nap." },
+        { "id": "inspector", "stage": "sb", "perfect": true, "name": "INSPECTOR VERA", "rarity": "SECRET", "img": "sprite-vera-inspector.webp", "quote": "Inspection passed. A perfect café.", "how": "Perfect the inspection" }
+      ]
+    },
+    {
+      "id": "office", "name": "THE OFFICE TOWER", "short": "OFFICE", "level": "A2", "place": "the Office Tower",
+      "progKey": "no_prog", "href": "neon-office.html", "play": { "icon": "briefcase", "label": "PLAY THE OFFICE" },
+      "map": { "px": 35, "py": 19.5, "color": "#ffc83d" },
+      "ready": true, "opensAfter": "cafe",
+      "teaser": "The Office Tower — A2. Finish the Café first — beat the Inspection — and the lights come on. Almost there.",
+      "welcome": "Café Master. Hm. Not unimpressive. And look — the Office Tower's lights just came on. Dan pulled some strings, got you a desk job. Go on, tap the gold building.",
+      "allDone": "Café Master. Office star. Hm. I am almost proud. Head office is building the Detective Agency next. Until it opens, train at the Academy.",
+      "stages": [
+        { "id": "s1", "name": "First day", "max": 15 },
+        { "id": "s2", "name": "Work stories", "max": 15 },
+        { "id": "s3", "name": "The client call", "max": 15 },
+        { "id": "s4", "name": "The big project", "max": 15 },
+        { "id": "sb", "name": "The interview", "max": 15, "boss": true }
+      ],
+      "cards": [
+        { "id": "pass", "stage": "s1", "name": "OFFICE PASS", "rarity": "COMMON", "img": "building-office.webp", "quote": "Everyone starts on day one." },
+        { "id": "sofia", "stage": "s1", "name": "SOFIA", "rarity": "RARE", "icon": "people", "color": "var(--magenta)", "quote": "The team lead. Welcome aboard!" },
+        { "id": "marcos", "stage": "s2", "name": "MARCOS", "rarity": "RARE", "icon": "window", "color": "var(--green)", "quote": "The developer. Works from home on Fridays." },
+        { "id": "laura", "stage": "s3", "name": "LAURA", "rarity": "EPIC", "icon": "phone", "color": "var(--gold)", "quote": "The client. Could you send the two plans?" },
+        { "id": "launch", "stage": "s4", "name": "LAUNCH DAY", "rarity": "EPIC", "icon": "rocket", "color": "var(--cyan)", "quote": "We're launching the app on Friday." },
+        { "id": "director", "stage": "sb", "name": "THE DIRECTOR", "rarity": "LEGENDARY", "icon": "crown", "color": "var(--gold)", "quote": "Results. I like results." },
+        { "id": "offer", "stage": "sb", "perfect": true, "name": "JOB OFFER", "rarity": "SECRET", "icon": "trophy", "color": "var(--magenta)", "quote": "A perfect interview. You're hired.", "how": "Perfect the interview" }
+      ]
+    },
+    {
+      "id": "agency", "name": "THE DETECTIVE AGENCY", "short": "AGENCY", "level": "B1", "place": "the Agency",
+      "progKey": "da_prog", "href": "game.html?b=agency", "play": { "icon": "search", "label": "PLAY THE AGENCY" },
+      "map": { "px": 18, "py": 42, "color": "#9d4dff" },
+      "ready": true, "opensAfter": "office",
+      "teaser": "The Detective Agency — B1. Something's missing in the city. Beat the Office interview and the case is yours.",
+      "welcome": "Office star. Hm. Now listen. Enri is missing. His cushion is still warm. I am not worried. I am... curious. Priya at the Detective Agency needs a partner. The purple building. Go.",
+      "allDone": "Case closed. The cat is asleep on a room-service cart at the Grand Hotel, and I am not jealous. Head office is still building the Vault. Until it opens, train at the Academy.",
+      "stages": [
+        { "id": "s1", "name": "The briefing", "max": 15 },
+        { "id": "s2", "name": "The witnesses", "max": 15 },
+        { "id": "s3", "name": "The evidence board", "max": 15 },
+        { "id": "s4", "name": "The stakeout", "max": 15 },
+        { "id": "sb", "name": "The reveal", "max": 15, "boss": true }
+      ],
+      "cards": [
+        { "id": "casefile", "stage": "s1", "name": "CASE FILE", "rarity": "COMMON", "icon": "file", "color": "var(--cyan)", "quote": "Case one: a missing cat. Open." },
+        { "id": "priya", "stage": "s1", "name": "PRIYA", "rarity": "RARE", "icon": "user", "color": "var(--purple)", "quote": "Has anyone seen Enri today? Let's go around the table." },
+        { "id": "witnesses", "stage": "s2", "name": "THE WITNESSES", "rarity": "RARE", "icon": "people", "color": "var(--magenta)", "quote": "I was drinking my tea when I heard a noise." },
+        { "id": "board", "stage": "s3", "name": "THE EVIDENCE BOARD", "rarity": "EPIC", "icon": "pin", "color": "var(--gold)", "quote": "He must be near. He might be in the box." },
+        { "id": "box", "stage": "s4", "name": "THE DELIVERY BOX", "rarity": "EPIC", "icon": "box", "color": "var(--green)", "quote": "Unless we hurry, we'll miss the truck." },
+        { "id": "dettotti", "stage": "sb", "name": "DETECTIVE TOTTI", "rarity": "LEGENDARY", "img": "sprite-totti.webp", "quote": "I solved it. You helped. Slightly." },
+        { "id": "roomservice", "stage": "sb", "perfect": true, "name": "ROOM SERVICE ENRI", "rarity": "SECRET", "img": "sprite-enri.webp", "quote": "The hotel has room service. I told you, kid.", "how": "Perfect the reveal" }
+      ]
+    },
+    {
+      "id": "vault", "name": "THE CORPORATE VAULT", "short": "VAULT", "level": "B2", "place": "the Vault",
+      "progKey": "cv_prog", "href": "game.html?b=vault", "play": { "icon": "key", "label": "PLAY THE VAULT" },
+      "map": { "px": 29, "py": 63, "color": "#ff3df0" },
+      "ready": false, "opensAfter": "agency",
+      "teaser": "The Corporate Vault — B2. Locked tight. You'll have to talk your way out of this one.",
+      "welcome": "Case closed. Good. Now the Corporate Vault has locked itself, with you on the inside. Figuratively. For now. The pink building. Bring a watch.",
+      "allDone": "Out of the Vault before nine. Hm. Head office is still wiring the Radio Tower. Until it opens, train at the Academy.",
+      "stages": [
+        { "id": "s1", "name": "Identity check", "max": 15 },
+        { "id": "s2", "name": "The archive", "max": 15 },
+        { "id": "s3", "name": "The message room", "max": 15 },
+        { "id": "s4", "name": "The night guard", "max": 15 },
+        { "id": "sb", "name": "The final door", "max": 15, "boss": true }
+      ],
+      "cards": [
+        { "id": "badge", "stage": "s1", "name": "ACCESS BADGE", "rarity": "COMMON", "icon": "key", "color": "var(--cyan)", "quote": "Access granted. For now." },
+        { "id": "vaultos", "stage": "s1", "name": "VAULT OS", "rarity": "RARE", "icon": "lock", "color": "var(--green)", "quote": "Rewrite the sentence. Then the door opens." },
+        { "id": "archive", "stage": "s2", "name": "THE ARCHIVE", "rarity": "RARE", "icon": "file", "color": "var(--gold)", "quote": "The files have been moved." },
+        { "id": "redbutton", "stage": "s3", "name": "THE RED BUTTON", "rarity": "EPIC", "icon": "warn", "color": "var(--red)", "quote": "He warned me not to touch it." },
+        { "id": "walt", "stage": "s4", "name": "WALT", "rarity": "EPIC", "icon": "user", "color": "var(--gold)", "quote": "If you were to sign the log, mate…" },
+        { "id": "finaldoor", "stage": "sb", "name": "THE FINAL DOOR", "rarity": "LEGENDARY", "icon": "crown", "color": "var(--gold)", "quote": "Five locks. One morning. Open." },
+        { "id": "midnight", "stage": "sb", "perfect": true, "name": "OUT BY MIDNIGHT", "rarity": "SECRET", "icon": "stopwatch", "color": "var(--magenta)", "quote": "Not one second wasted.", "how": "Perfect the final door" }
+      ]
+    },
+    {
+      "id": "radio", "name": "THE RADIO TOWER", "short": "RADIO", "level": "C1", "place": "the Radio Tower",
+      "progKey": "rt_prog", "href": "game.html?b=radio", "play": { "icon": "mic", "label": "PLAY THE RADIO" },
+      "map": { "px": 78, "py": 47, "color": "#3dffa0" },
+      "ready": false, "opensAfter": "vault",
+      "teaser": "The Radio Tower — C1. My territory. You won't get in by tapping — you'll have to SPEAK.",
+      "welcome": "The Vault is open and so, apparently, is the Radio Tower. The Signal needs a new voice. Not mine; I don't do mornings. The green building. Speak up.",
+      "allDone": "Live at nine, and no dead air. Hm. The Grand Hotel is still getting ready for its summit. Until it opens, train at the Academy.",
+      "stages": [
+        { "id": "s1", "name": "Sound check", "max": 15 },
+        { "id": "s2", "name": "The morning show", "max": 15 },
+        { "id": "s3", "name": "The call-in hour", "max": 15 },
+        { "id": "s4", "name": "The panel", "max": 15 },
+        { "id": "sb", "name": "Live at nine", "max": 15, "boss": true }
+      ],
+      "cards": [
+        { "id": "presspass", "stage": "s1", "name": "PRESS PASS", "rarity": "COMMON", "icon": "headphones", "color": "var(--cyan)", "quote": "Testing, one, two. This is The Signal." },
+        { "id": "alex", "stage": "s1", "name": "ALEX", "rarity": "RARE", "icon": "mic", "color": "var(--cyan)", "quote": "You're on in ten. Breathe." },
+        { "id": "theo", "stage": "s2", "name": "THEO", "rarity": "RARE", "icon": "feather", "color": "var(--purple)", "quote": "Never have I seen such a crowd." },
+        { "id": "callers", "stage": "s3", "name": "THE CALLERS", "rarity": "EPIC", "icon": "phone", "color": "var(--magenta)", "quote": "Whaddaya wanna know?" },
+        { "id": "roz", "stage": "s4", "name": "ROZ", "rarity": "EPIC", "icon": "clapper", "color": "var(--gold)", "quote": "We'll have to leave it there." },
+        { "id": "onair", "stage": "sb", "name": "THE ON AIR LIGHT", "rarity": "LEGENDARY", "icon": "bolt", "color": "var(--red)", "quote": "Red means live. Live means you." },
+        { "id": "nodeadair", "stage": "sb", "perfect": true, "name": "NO DEAD AIR", "rarity": "SECRET", "icon": "music", "color": "var(--magenta)", "quote": "Three minutes. Not one second of silence.", "how": "Perfect Live at nine" }
+      ]
+    },
+    {
+      "id": "hotel", "name": "THE GRAND HOTEL", "short": "HOTEL", "level": "C2", "place": "the Grand Hotel",
+      "progKey": "gh_prog", "href": "game.html?b=hotel", "play": { "icon": "hotel", "label": "PLAY THE HOTEL" },
+      "map": { "px": 73, "py": 76, "color": "#ff5d7a" },
+      "ready": false, "opensAfter": "radio",
+      "teaser": "The Grand Hotel — C2. The summit of the city. The guests up there... talk back.",
+      "welcome": "The summit of the city. The Grand Hotel. The guests say less than they mean, the concierge says even less, and Enri lives there now, under a silver cover. The red building. Behave.",
+      "allDone": "Graduate. Hm. Every building, A1 to C2. I have nothing left to judge. ...I will find something.",
+      "stages": [
+        { "id": "s1", "name": "Check-in", "max": 15 },
+        { "id": "s2", "name": "The late arrival", "max": 15 },
+        { "id": "s3", "name": "The symposium", "max": 15 },
+        { "id": "s4", "name": "The critic's suite", "max": 15 },
+        { "id": "sb", "name": "The gala", "max": 15, "boss": true }
+      ],
+      "cards": [
+        { "id": "masterkey", "stage": "s1", "name": "MASTER KEY", "rarity": "COMMON", "icon": "key", "color": "var(--gold)", "quote": "Every door. Use it wisely." },
+        { "id": "sol", "stage": "s1", "name": "SOL", "rarity": "RARE", "icon": "feather", "color": "var(--purple)", "quote": "The room is… adequate." },
+        { "id": "rex", "stage": "s2", "name": "REX", "rarity": "RARE", "icon": "mic", "color": "var(--gold)", "quote": "Nine dollars for water. Is it famous water?" },
+        { "id": "julian", "stage": "s3", "name": "JULIAN", "rarity": "EPIC", "icon": "hotel", "color": "var(--green)", "quote": "Cut the furniture. Keep the grandmother." },
+        { "id": "whitmore", "stage": "s4", "name": "MS. WHITMORE", "rarity": "EPIC", "icon": "pen", "color": "var(--red)", "quote": "Make it shorter. Make it better." },
+        { "id": "fivestars", "stage": "sb", "name": "VERA'S FIVE STARS", "rarity": "LEGENDARY", "icon": "star", "color": "var(--gold)", "quote": "Adequate. (From her, that is five stars.)" },
+        { "id": "graduate", "stage": "sb", "perfect": true, "name": "GRADUATE", "rarity": "SECRET", "icon": "cap", "color": "var(--magenta)", "quote": "A1 to C2. The city is yours.", "how": "Perfect the gala" }
+      ]
+    }
+  ]
+}

@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="theme-color" content="#05050e">
 <link rel="manifest" href="manifest.json">
-<script src="assets/progress.js?v=1"></script>
+<script src="assets/progress.js?v=2"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Rank Up City — learn English like a game">
@@ -135,7 +135,7 @@ a.pod:hover { transform: translateY(-2px); }
 
   <div class="strip">
     <span class="pod" style="--pc: #ff9d3d; --pg: #ff9d3d33;" id="streakPod"><ico-fire></ico-fire> <span class="big" id="streakN">0</span> DAY STREAK</span>
-    <a class="pod" href="cards.html" style="--pc: var(--gold); --pg: #ffc83d33;"><ico-clone></ico-clone> CARDS <span class="big" id="cardsN">0/15</span></a>
+    <a class="pod" href="cards.html" style="--pc: var(--gold); --pg: #ffc83d33;"><ico-clone></ico-clone> CARDS <span class="big" id="cardsN">0</span></a>
   </div>
 
   <div class="map" id="map"></div>
@@ -213,46 +213,36 @@ function haptic(pattern) {
 const purr = () => { tone(220, 0.3, "sine", 0, 0.05); tone(196, 0.3, "sine", 0.15, 0.05); haptic([16, 34, 16, 34, 22]); };
 const denied = () => { tone(200, 0.12, "sawtooth", 0, 0.06); tone(150, 0.16, "sawtooth", 0.1, 0.06); };
 
-/* ---------- progress ---------- */
-let prog = {};
-try { prog = JSON.parse(localStorage.getItem("nc_prog") || "{}"); } catch (e) {}
-const CAFE_STAGES = ["s1", "s2", "s3", "s4", "sb"];
-const CAFE_MAX_TOTAL = 66;
-const cafePaws = CAFE_STAGES.reduce((t, s) => t + (prog[s] ? prog[s].best : 0), 0);
-const bossDone = !!prog.sb;
-
-const OFFICE_STAGES = ["s1", "s2", "s3", "s4", "sb"];
-let oprog = {};
-try { oprog = JSON.parse(localStorage.getItem("no_prog") || "{}"); } catch (e) {}
-const officePaws = OFFICE_STAGES.reduce((t, s) => t + (oprog[s] ? oprog[s].best : 0), 0);
-
-/* ---------- the map (hotspots over the art) ---------- */
-const NODES = [
-  { id: "cafe",   px: 77, py: 24,   color: "#00e5ff", level: "A1", short: "CAFÉ",   open: true, href: "neon-cafe.html" },
-  { id: "office", px: 35, py: 19.5, color: "#ffc83d", level: "A2", short: "OFFICE", open: bossDone, href: "neon-office.html", teaser: "The Office Tower — A2. Finish the Café first — beat the Inspection — and the lights come on. Almost there." },
-  { id: "agency", px: 18, py: 42,   color: "#9d4dff", level: "B1", short: "AGENCY", teaser: "The Detective Agency — B1. Something's missing in the city. We'll need your English to crack the case." },
-  { id: "vault",  px: 29, py: 63,   color: "#ff3df0", level: "B2", short: "VAULT",  teaser: "The Corporate Vault — B2. Locked tight. You'll have to talk your way out of this one." },
-  { id: "radio",  px: 78, py: 47,   color: "#3dffa0", level: "C1", short: "RADIO",  teaser: "The Radio Tower — C1. My territory. You won't get in by tapping — you'll have to SPEAK." },
-  { id: "hotel",  px: 73, py: 76,   color: "#ff5d7a", level: "C2", short: "HOTEL",  teaser: "The Grand Hotel — C2. The summit of the city. The guests up there... talk back." }
+/* ---------- the buildings: games/registry.json, shared with cards.html (see assets/progress.js) ---------- */
+const tottiSay = document.getElementById("tottiSay"), enriSay = document.getElementById("enriSay");
+const TOTTI_EXTRA = [
+  "Six districts, A1 to C2 — café to hotel. One long night across the city.",
+  "Pass the inspection to earn my Legendary card. Check your album.",
+  "Locked buildings show a padlock. They open as head office finishes them.",
+  "The Academy has the full lessons. The city is where you train.",
+  "Tap a building to travel there. Tap Enri to... watch him sleep."
 ];
+const ENRI_TIPS = ["...zzz...", "Prrrr... you again.", "I believe in you. From here. Horizontally.", "Two Purr Boosts per shift. Use them. I won't move.", "The hotel has room service. One day, kid.", "...five more minutes."];
+let TOTTI_TIPS = [tottiSay.textContent].concat(TOTTI_EXTRA);
+let ti = 0, ei = 0;
+document.getElementById("tottiImg").addEventListener("click", () => { ti = (ti + 1) % TOTTI_TIPS.length; tottiSay.textContent = TOTTI_TIPS[ti]; blip(); haptic([14, 40, 14]); });
+document.getElementById("enriImg").addEventListener("click", () => { ei = (ei + 1) % ENRI_TIPS.length; enriSay.textContent = ENRI_TIPS[ei]; purr(); });
 
-function renderMap() {
+/* the map (hotspots over the art): a building is open when it is ready and the building before it has its boss beaten */
+function renderMap(B) {
   const map = document.getElementById("map");
   map.innerHTML = '<img class="mapimg" src="map-city.webp" alt="Rank Up City map — six neon districts">';
-  NODES.forEach(n => {
+  B.forEach(n => {
     const b = document.createElement("button");
     b.className = "spot " + (n.open ? "open" : "locked");
-    b.style.left = n.px + "%"; b.style.top = n.py + "%";
-    b.style.setProperty("--sc", n.open ? n.color : "#3a4a6a");
-    b.style.setProperty("--sg", n.open ? n.color + "77" : "transparent");
+    b.style.left = n.map.px + "%"; b.style.top = n.map.py + "%";
+    b.style.setProperty("--sc", n.open ? n.map.color : "#3a4a6a");
+    b.style.setProperty("--sg", n.open ? n.map.color + "77" : "transparent");
     b.setAttribute("aria-label", n.short + (n.open ? " — play" : " — locked"));
     let inner = '<span class="lv">' + n.level + '</span><span class="nm">' + n.short + '</span>';
-    if (n.id === "cafe") {
-      const track = CAFE_STAGES.map(s => '<i class="td' + (prog[s] ? ' on' : '') + '"></i>').join('');
-      inner += '<span class="track">' + track + '</span><span class="play"><ico-play></ico-play> ' + (cafePaws > 0 ? "CONTINUE" : "PLAY") + '</span>';
-    } else if (n.id === "office" && n.open) {
-      const track = OFFICE_STAGES.map(s => '<i class="td' + (oprog[s] ? ' on' : '') + '"></i>').join('');
-      inner += '<span class="track">' + track + '</span><span class="play"><ico-play></ico-play> ' + (officePaws > 0 ? "CONTINUE" : "PLAY") + '</span>';
+    if (n.open) {
+      const track = n.stages.map(s => '<i class="td' + (n.prog[s.id] ? ' on' : '') + '"></i>').join('');
+      inner += '<span class="track">' + track + '</span><span class="play"><ico-play></ico-play> ' + (n.paws > 0 ? "CONTINUE" : "PLAY") + '</span>';
     } else inner += '<span class="lk"><ico-lock></ico-lock></span>';
     b.innerHTML = inner;
     b.addEventListener("click", () => {
@@ -261,40 +251,35 @@ function renderMap() {
         denied();
         b.classList.add("wiggle");
         setTimeout(() => b.classList.remove("wiggle"), 450);
-        document.getElementById("tottiSay").textContent = n.teaser;
+        tottiSay.textContent = n.teaser;
       }
     });
     map.appendChild(b);
   });
 }
-renderMap();
 
-/* ---------- cat guides ---------- */
-const nextStage = CAFE_STAGES.find(s => !prog[s]);
-const cafeDone = CAFE_STAGES.filter(s => prog[s]).length;
-const STAGE_NAMES = { s1: "First shift", s2: "Rush hour", s3: "Lost & found", s4: "Quiz night", sb: "The inspection (BOSS)" };
-const OFFICE_NAMES = { s1: "First day", s2: "Work stories", s3: "The client call", s4: "The big project", sb: "The interview (BOSS)" };
-const officeNext = OFFICE_STAGES.find(s => !oprog[s]);
-let tottiMain;
-if (bossDone && !officeNext) tottiMain = "Café Master. Office star. Hm. I am almost proud. Head office is building the Detective Agency next. Until it opens, train at the Academy.";
-else if (bossDone && officePaws > 0) tottiMain = "You've earned " + officePaws + " paws at the Office. Next stop: \"" + OFFICE_NAMES[officeNext] + "\" at the Office Tower. Don't embarrass me.";
-else if (bossDone) tottiMain = "Café Master. Hm. Not unimpressive. And look — the Office Tower's lights just came on. Dan pulled some strings, got you a desk job. Go on, tap the gold building.";
-else if (cafeDone === 0) tottiMain = "New in the city? Tap the Neon Café — the cyan one with the coffee sign. Dan needs a barista, and I need someone to judge.";
-else tottiMain = "You've earned " + cafePaws + " paws. Next stop: \"" + STAGE_NAMES[nextStage] + "\" at the Café. Don't embarrass me.";
-const TOTTI_TIPS = [
-  tottiMain,
-  "Six districts, A1 to C2 — café to hotel. One long night across the city.",
-  "Pass the inspection to earn my Legendary card. Check your album.",
-  "Locked buildings show a padlock. They open as head office finishes them.",
-  "The Academy has the full lessons. The city is where you train.",
-  "Tap a building to travel there. Tap Enri to... watch him sleep."
-];
-const ENRI_TIPS = ["...zzz...", "Prrrr... you again.", "I believe in you. From here. Horizontally.", "Two Purr Boosts per shift. Use them. I won't move.", "The hotel has room service. One day, kid.", "...five more minutes."];
-const tottiSay = document.getElementById("tottiSay"), enriSay = document.getElementById("enriSay");
-tottiSay.textContent = tottiMain;
-let ti = 0, ei = 0;
-document.getElementById("tottiImg").addEventListener("click", () => { ti = (ti + 1) % TOTTI_TIPS.length; tottiSay.textContent = TOTTI_TIPS[ti]; blip(); haptic([14, 40, 14]); });
-document.getElementById("enriImg").addEventListener("click", () => { ei = (ei + 1) % ENRI_TIPS.length; enriSay.textContent = ENRI_TIPS[ei]; purr(); });
+/* Totti's main line follows the first open building whose boss is not beaten yet */
+function tottiLine(B) {
+  if (!B.some(b => b.paws > 0)) return B[0].welcome;
+  const open = B.filter(b => b.open);
+  const cur = open.find(b => !b.done);
+  if (!cur) return open[open.length - 1].allDone;
+  if (cur.paws === 0) return cur.welcome;
+  const next = cur.stages.find(s => !cur.prog[s.id]) || cur.boss;
+  return "You've earned " + cur.paws + " paws at " + cur.place + '. Next stop: "' + next.name + (next.boss ? " (BOSS)" : "") + '". Don\'t embarrass me.';
+}
+
+EFA.registry().then(reg => {
+  const B = EFA.buildings(reg);
+  renderMap(B);
+  const main = tottiLine(B);
+  TOTTI_TIPS = [main].concat(TOTTI_EXTRA);
+  tottiSay.textContent = main;
+  /* card count: the album's own list, for every building that is open to the public */
+  let got = 0, total = 0;
+  B.filter(b => b.ready).forEach(b => b.cards.forEach(c => { total++; if (EFA.cardEarned(b, c)) got++; }));
+  document.getElementById("cardsN").textContent = got + "/" + total;
+}).catch(() => { tottiSay.textContent = "The map didn't load. Check your connection and tap back in."; });
 
 /* ---------- daily streak ---------- */
 function dayStr(d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
@@ -302,15 +287,6 @@ let streak = {};
 try { streak = JSON.parse(localStorage.getItem("nc_streak") || "{}"); } catch (e) {}
 /* the streak counts days you PLAY (a finished shift or lesson) - see assets/progress.js */
 document.getElementById("streakN").textContent = EFA.streakNow();
-
-/* ---------- card count ---------- */
-const CARDS_PER_STAGE = { s1: 2, s2: 1, s3: 2, s4: 1, sb: 1 };   // mirrors CARDS in cards.html
-let cardsGot = CAFE_STAGES.reduce((n, s) => n + (prog[s] ? CARDS_PER_STAGE[s] : 0), 0);
-if (prog.sb && prog.sb.best >= 12) cardsGot++;
-const OFFICE_CARDS = { s1: 2, s2: 1, s3: 1, s4: 1, sb: 1 };       // mirrors the office cards in cards.html
-cardsGot += OFFICE_STAGES.reduce((n, s) => n + (oprog[s] ? OFFICE_CARDS[s] : 0), 0);
-if (oprog.sb && oprog.sb.best >= 15) cardsGot++;
-document.getElementById("cardsN").textContent = cardsGot + "/15";
 
 /* ---------- save / load ---------- */
 function encodeSave() { return EFA.exportSave(); }

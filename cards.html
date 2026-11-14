@@ -9,6 +9,7 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="theme-color" content="#05050e">
 <link rel="manifest" href="manifest.json">
+<script src="assets/progress.js?v=2"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <link rel="preload" href="assets/fonts/press-start-2p-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css?v=1">
@@ -81,26 +82,17 @@ h1 { font-family: "Press Start 2P", monospace; font-size: clamp(0.95rem, 4.4vw, 
 <div class="wrap">
   <div class="marquee"><img src="logo.webp" alt="English for All — Rank Up"></div>
   <h1><ico-star></ico-star> CARD ALBUM <ico-star></ico-star></h1>
-  <div class="count" id="count">0 / 15 COLLECTED</div>
+  <div class="count" id="count">&nbsp;</div>
   <div class="bar"><div id="bar" style="width:0%"></div></div>
   <div class="grid" id="grid"></div>
-  <div class="actions">
-    <a class="btn cyan" href="neon-cafe.html"><ico-mug></ico-mug> PLAY THE CAFÉ</a>
-    <a class="btn cyan" href="neon-office.html"><ico-briefcase></ico-briefcase> PLAY THE OFFICE</a>
+  <div class="actions" id="actions">
     <a class="btn" href="city.html"><ico-city></ico-city> CITY MAP</a>
   </div>
 </div>
 
 <script>
 "use strict";
-let prog = {};
-try { prog = JSON.parse(localStorage.getItem("nc_prog") || "{}"); } catch (e) {}
-let oprog = {};
-try { oprog = JSON.parse(localStorage.getItem("no_prog") || "{}"); } catch (e) {}
-const OFFICE_MAX = 15;   // every Office Tower stage has 5 rounds x 3 paws
-const OFFICE_NAME = { s1: "First day", s2: "Work stories", s3: "The client call", s4: "The big project", sb: "The interview" };
-const MAXPAWS = { s1: 15, s2: 12, s3: 15, s4: 12, sb: 12 };
-const STAGE_NAME = { s1: "First shift", s2: "Rush hour", s3: "Lost & found", s4: "Quiz night", sb: "The inspection" };
+/* The cards come from games/registry.json (shared with city.html): one set per building that is open to the public. */
 const RARITY = {
   COMMON:    { c: "#00e5ff", g: "#00e5ff44" },
   RARE:      { c: "#3dffa0", g: "#3dffa044" },
@@ -108,73 +100,51 @@ const RARITY = {
   LEGENDARY: { c: "#ffc83d", g: "#ffc83d66" },
   SECRET:    { c: "#ff3df0", g: "#ff3df066" }
 };
-const CARDS = [
-  { id: "neoncup", stage: "s1", name: "NEON CUP", rarity: "COMMON", img: "item-flatwhite.webp", quote: "Full of potential. Refill and retry." },
-  { id: "mia",     stage: "s1", name: "MIA",      rarity: "RARE",   img: "sprite-mia.webp",  quote: "The regular. Bright, kind, from Brazil." },
-  { id: "jack",    stage: "s2", name: "JACK",     rarity: "RARE",   img: "sprite-jack.webp", quote: "Big order, bigger heart. Cheers, mate." },
-  { id: "dan",     stage: "s3", name: "DAN",      rarity: "RARE",   img: "sprite-dan.webp",  quote: "The manager on the radio. Believes in you." },
-  { id: "enri",    stage: "s3", name: "ENRI",     rarity: "EPIC",   img: "sprite-enri.webp", quote: "I nap, and success finds me." },
-  { id: "vera",    stage: "s4", name: "VERA",     rarity: "EPIC",   img: "sprite-vera.webp", quote: "One latte. And I am always watching." },
-  { id: "totti",   stage: "sb", name: "TOTTI",    rarity: "LEGENDARY", img: "sprite-totti.webp", quote: "I observe. I judge. Then I nap." },
-  { id: "inspector", stage: "sb", perfect: true, name: "INSPECTOR VERA", rarity: "SECRET", img: "sprite-vera-inspector.webp", quote: "Inspection passed. A perfect café." },
-  { id: "pass",     game: "office", stage: "s1", name: "OFFICE PASS", rarity: "COMMON", img: "building-office.webp", quote: "Everyone starts on day one." },
-  { id: "sofia",    game: "office", stage: "s1", name: "SOFIA",    rarity: "RARE", icon: "people", color: "var(--magenta)", quote: "The team lead. Welcome aboard!" },
-  { id: "marcos",   game: "office", stage: "s2", name: "MARCOS",   rarity: "RARE", icon: "window", color: "var(--green)", quote: "The developer. Works from home on Fridays." },
-  { id: "laura",    game: "office", stage: "s3", name: "LAURA",    rarity: "EPIC", icon: "phone", color: "var(--gold)", quote: "The client. Could you send the two plans?" },
-  { id: "launch",   game: "office", stage: "s4", name: "LAUNCH DAY", rarity: "EPIC", icon: "rocket", color: "var(--cyan)", quote: "We're launching the app on Friday." },
-  { id: "director", game: "office", stage: "sb", name: "THE DIRECTOR", rarity: "LEGENDARY", icon: "crown", color: "var(--gold)", quote: "Results. I like results." },
-  { id: "offer",    game: "office", stage: "sb", perfect: true, name: "JOB OFFER", rarity: "SECRET", icon: "trophy", color: "var(--magenta)", quote: "A perfect interview. You're hired." }
-];
-function progOf(c) { return (c.game === "office" ? oprog : prog)[c.stage]; }
-function maxOf(c) { return c.game === "office" ? OFFICE_MAX : MAXPAWS[c.stage]; }
 
-function earned(c) {
-  const p = progOf(c);
-  if (!p) return false;
-  if (c.perfect) return p.best >= maxOf(c);
-  return true;
-}
-
-const grid = document.getElementById("grid");
-let got = 0;
-let lastGame = null;
-CARDS.forEach(c => {
-  const game = c.game || "cafe";
-  if (game !== lastGame) {
-    lastGame = game;
-    const h = document.createElement("div"); h.className = "set-h";
-    h.textContent = game === "office" ? "THE OFFICE TOWER" : "THE NEON CAFÉ";
+function renderAlbum(B) {
+  const grid = document.getElementById("grid");
+  let got = 0, total = 0;
+  B.filter(b => b.ready).forEach(b => {
+    const h = document.createElement("div"); h.className = "set-h"; h.textContent = b.name;
     grid.appendChild(h);
-  }
-  const has = earned(c);
-  if (has) got++;
-  const r = RARITY[c.rarity];
-  const p = progOf(c);
-  const card = document.createElement("div");
-  card.className = "card" + (has ? "" : " locked");
-  card.style.setProperty("--rc", has ? r.c : "#2a3a5a");
-  card.style.setProperty("--rg", has ? r.g : "transparent");
-  if (has) {
-    card.innerHTML =
-      '<div class="rar">' + (c.rarity === "SECRET" ? "<ico-star></ico-star> SECRET <ico-star></ico-star>" : c.rarity) + '</div>' +
-      '<div class="face">' + (c.img ? '<img src="' + c.img + '" alt="' + c.name + '">' : '<span class="ficon" style="color:' + c.color + '"><ico-' + c.icon + '></ico-' + c.icon + '></span>') + '</div>' +
-      '<div class="cname">' + c.name + '</div>' +
-      '<div class="cquote">"' + c.quote + '"</div>' +
-      (p ? '<div class="cpaws">BEST ' + p.best + '/' + maxOf(c) + ' <ico-paw></ico-paw></div>' : "");
-  } else {
-    const how = c.game === "office" ? (c.perfect ? "Perfect the interview" : "Clear " + OFFICE_NAME[c.stage])
-                                     : (c.perfect ? "Perfect the inspection" : "Clear " + STAGE_NAME[c.stage]);
-    card.innerHTML =
-      '<div class="rar" style="color:#5a6a8a">' + (c.rarity === "SECRET" ? "??? SECRET" : c.rarity) + '</div>' +
-      '<div class="face"><span class="q">?</span></div>' +
-      '<div class="cname">? ? ?</div>' +
-      '<div class="clock"><ico-lock></ico-lock> ' + how + '</div>';
-  }
-  grid.appendChild(card);
-});
-
-document.getElementById("count").textContent = got + " / " + CARDS.length + " COLLECTED";
-document.getElementById("bar").style.width = Math.round(got / CARDS.length * 100) + "%";
+    b.cards.forEach(c => {
+      total++;
+      const st = b.stages.find(s => s.id === c.stage) || { name: c.stage, max: 15 };
+      const has = EFA.cardEarned(b, c);
+      if (has) got++;
+      const r = RARITY[c.rarity] || RARITY.COMMON;
+      const p = b.prog[c.stage];
+      const card = document.createElement("div");
+      card.className = "card" + (has ? "" : " locked");
+      card.style.setProperty("--rc", has ? r.c : "#2a3a5a");
+      card.style.setProperty("--rg", has ? r.g : "transparent");
+      if (has) {
+        card.innerHTML =
+          '<div class="rar">' + (c.rarity === "SECRET" ? "<ico-star></ico-star> SECRET <ico-star></ico-star>" : c.rarity) + '</div>' +
+          '<div class="face">' + (c.img ? '<img src="' + c.img + '" alt="' + c.name + '">' : '<span class="ficon" style="color:' + c.color + '"><ico-' + c.icon + '></ico-' + c.icon + '></span>') + '</div>' +
+          '<div class="cname">' + c.name + '</div>' +
+          '<div class="cquote">"' + c.quote + '"</div>' +
+          (p ? '<div class="cpaws">BEST ' + p.best + '/' + st.max + ' <ico-paw></ico-paw></div>' : "");
+      } else {
+        const how = c.how || (c.perfect ? "Perfect " : "Clear ") + st.name.replace(/^The /, "the ");
+        card.innerHTML =
+          '<div class="rar" style="color:#5a6a8a">' + (c.rarity === "SECRET" ? "??? SECRET" : c.rarity) + '</div>' +
+          '<div class="face"><span class="q">?</span></div>' +
+          '<div class="cname">? ? ?</div>' +
+          '<div class="clock"><ico-lock></ico-lock> ' + how + '</div>';
+      }
+      grid.appendChild(card);
+    });
+  });
+  document.getElementById("count").textContent = got + " / " + total + " COLLECTED";
+  document.getElementById("bar").style.width = (total ? Math.round(got / total * 100) : 0) + "%";
+  /* one PLAY button per building the player can enter, then the map */
+  const acts = document.getElementById("actions");
+  acts.innerHTML = B.filter(b => b.open).map(b => '<a class="btn cyan" href="' + b.href + '"><ico-' + b.play.icon + '></ico-' + b.play.icon + '> ' + b.play.label + '</a>').join("") +
+    '<a class="btn" href="city.html"><ico-city></ico-city> CITY MAP</a>';
+}
+EFA.registry().then(reg => renderAlbum(EFA.buildings(reg)))
+  .catch(() => { document.getElementById("count").textContent = "The album didn't load. Check your connection."; });
 
 /* ---------- background music ---------- */
 (function(){
