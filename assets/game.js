@@ -679,10 +679,10 @@ function buildClipChoiceUI(R, cfg) {
   if (R.q || cfg.q) stage.appendChild(el('<p class="gq">' + (R.q || cfg.q) + '</p>'));
   optionsUI(R, cfg.hint);
 }
-/* chart: read a small line chart, choose the sentence that describes it.   points[], labels[], title, unit, options[], correct */
+/* chart: read a small line chart, choose the sentence that describes it.   points[], labels[], title, unit, min, max, options[], correct */
 function chartSVG(R) {
   const pts = R.points || [], n = pts.length, W = 320, H = 150, L = 34, Rm = 12, Tp = 14, B = 26;
-  const lo = Math.min.apply(null, pts), hi = Math.max.apply(null, pts), span = (hi - lo) || 1;
+  const lo = R.min != null ? R.min : Math.min.apply(null, pts), hi = R.max != null ? R.max : Math.max.apply(null, pts), span = (hi - lo) || 1;   // min / max fix the axis, so a slight change looks slight
   const x = i => L + (n > 1 ? i * (W - L - Rm) / (n - 1) : 0), y = v => Tp + (H - Tp - B) * (1 - (v - lo) / span);
   const line = pts.map((v, i) => x(i).toFixed(1) + "," + y(v).toFixed(1)).join(" ");
   let s = '<svg class="gchart" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + (R.title || "chart") + '">';

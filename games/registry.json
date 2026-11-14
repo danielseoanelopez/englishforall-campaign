@@ -58,7 +58,7 @@
       "ready": true, "opensAfter": "office",
       "teaser": "The Detective Agency — B1. Something's missing in the city. Beat the Office interview and the case is yours.",
       "welcome": "Office star. Hm. Now listen. Enri is missing. His cushion is still warm. I am not worried. I am... curious. Priya at the Detective Agency needs a partner. The purple building. Go.",
-      "allDone": "Case closed. The cat is asleep on a room-service cart at the Grand Hotel, and I am not jealous. Head office is still building the Vault. Until it opens, train at the Academy.",
+      "allDone": "Case closed. The cat is asleep on a room-service cart at the Grand Hotel, and I am not jealous. Head office is still building the next floor. Until it opens, train at the Academy.",
       "stages": [
         { "id": "s1", "name": "The briefing", "max": 15 },
         { "id": "s2", "name": "The witnesses", "max": 15 },
@@ -80,7 +80,7 @@
       "id": "vault", "name": "THE CORPORATE VAULT", "short": "VAULT", "level": "B2", "place": "the Vault",
       "progKey": "cv_prog", "href": "game.html?b=vault", "play": { "icon": "key", "label": "PLAY THE VAULT" },
       "map": { "px": 29, "py": 63, "color": "#ff3df0" },
-      "ready": false, "opensAfter": "agency",
+      "ready": true, "opensAfter": "agency",
       "teaser": "The Corporate Vault — B2. Locked tight. You'll have to talk your way out of this one.",
       "welcome": "Case closed. Good. Now the Corporate Vault has locked itself, with you on the inside. Figuratively. For now. The pink building. Bring a watch.",
       "allDone": "Out of the Vault before nine. Hm. Head office is still wiring the Radio Tower. Until it opens, train at the Academy.",
