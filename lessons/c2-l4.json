@@ -1,0 +1,864 @@
+{
+  "level": "C2",
+  "num": 4,
+  "totalLessons": 6,
+  "world": "MASTERY",
+  "ui": "en",
+  "key": "rankup_C2_L4",
+  "title": "FIGURATIVE<br>LANGUAGE",
+  "titlePlain": "Figurative Language — Between the Lines (C2)",
+  "subtitle": "Reading &amp; Listening · C2 · ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=c2-l5",
+    "label": "LESSON 5 ▸ EDITING & POLISHING"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> RECAP · last lesson",
+      "intro": "This morning's keynote, before this evening's reading. Match each term with what it means.",
+      "pairs": [
+        {
+          "l": "proves",
+          "r": "certain: almost never justified"
+        },
+        {
+          "l": "suggests",
+          "r": "probable: the evidence points that way"
+        },
+        {
+          "l": "concedes",
+          "r": "admits a point against her own case"
+        },
+        {
+          "l": "a straw man",
+          "r": "attacking a position nobody took"
+        },
+        {
+          "l": "a false dichotomy",
+          "r": "two options, as if there were no others"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "metaphor, simile & wordplay",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· metaphor, simile &amp; wordplay</span>",
+      "title": "<ico-book></ico-book> BETWEEN THE LINES",
+      "intro": "You already speak in metaphors: you <i>spend</i> time, <i>defend</i> an opinion and <i>digest</i> bad news. This lesson makes the habit conscious, so that you can <b style='color:var(--gold)'>choose an image, keep it going, and tell a fresh one from a tired one</b>.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show the vocabulary of images",
+      "vocab": [
+        {
+          "en": "a metaphor",
+          "sp": "saying one thing is another: «the city is an orchestra»"
+        },
+        {
+          "en": "a simile",
+          "sp": "a comparison with like or as: «like an orchestra»"
+        },
+        {
+          "en": "an image",
+          "sp": "the picture a metaphor or simile puts in your mind"
+        },
+        {
+          "en": "to extend a metaphor",
+          "sp": "to keep one image going over several sentences"
+        },
+        {
+          "en": "a mixed metaphor",
+          "sp": "two images that fight each other in one sentence"
+        },
+        {
+          "en": "a cliché",
+          "sp": "an image used so often that nobody sees it anymore"
+        },
+        {
+          "en": "to tune up",
+          "sp": "what an orchestra does before it plays: each instrument finds its note"
+        },
+        {
+          "en": "out of tune",
+          "sp": "not on the right note; figuratively, not fitting in"
+        },
+        {
+          "en": "to simmer",
+          "sp": "to cook gently, just below boiling"
+        },
+        {
+          "en": "to come to the boil",
+          "sp": "to reach boiling point; figuratively, to become exciting (Vera's British form; in US English, «come to a boil»)"
+        }
+      ],
+      "note": "<b>How it works:</b> the reading comes first <ico-headphones></ico-headphones>, then flashcards <ico-clone></ico-clone>, compare <ico-comments></ico-comments>, gap-fill <ico-filepen></ico-filepen>, memory and a conversation with a critic. Every option is grammatical; choose the one that keeps the image whole.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · THE METAPHORS YOU ALREADY LIVE BY</b> <span class='es'>— four families hidden in everyday English</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "She defended her position and attacked mine.",
+              "sp": "Argument as war."
+            },
+            {
+              "en": "I spent an hour on it. Don't waste my time.",
+              "sp": "Time as money."
+            },
+            {
+              "en": "That plan is half-baked, but it's food for thought.",
+              "sp": "Ideas as food."
+            },
+            {
+              "en": "He is at a crossroads. She has come a long way.",
+              "sp": "Life as a journey."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · SIMILE OR METAPHOR</b> <span class='es'>— one compares, the other claims</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The lobby was like an aquarium.",
+              "sp": "Simile: the comparison is announced. Careful, clear, a little cooler."
+            },
+            {
+              "en": "The lobby was an aquarium.",
+              "sp": "Metaphor: no warning. Stronger, and it asks the reader to do the work."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · EXTEND IT, DON'T MIX IT</b> <span class='es'>— stay inside one picture</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The city is an orchestra. The buses are its brass, and the rain keeps time.",
+              "sp": "Extended: every new detail comes from the same picture."
+            },
+            {
+              "en": "We need to iron out the bottlenecks.",
+              "sp": "Mixed: nobody irons a bottle. Two images collide, and the reader laughs in the wrong place."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · DEAD, TIRED, FRESH</b> <span class='es'>— the life cycle of an image</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We camped at the foot of the mountain.",
+              "sp": "Dead: nobody pictures a foot. It is simply vocabulary now, and perfectly fine."
+            },
+            {
+              "en": "It was a rollercoaster of emotions.",
+              "sp": "A cliché: everybody has heard it, nobody feels it. Cut it or replace it."
+            },
+            {
+              "en": "The elevator sighed between floors.",
+              "sp": "Fresh: you have not read it before, and you can hear it."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · HEADLINE PUNS</b> <span class='es'>— find the word with two jobs</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Local bakery rises to the occasion.",
+              "sp": "Rises: the bakery succeeds, and bread rises."
+            },
+            {
+              "en": "Orchestra strike: talks end on a sour note.",
+              "sp": "A sour note: a wrong note in music, and a bad ending to a meeting."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>To decode a headline pun</b>, ask which word belongs both to the story and to the subject. Editors choose it on purpose; the second meaning is the joke."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> CALQUE ALERT</b> <span class='es'>— images that do not travel</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "They spared no expense on the gala.",
+              "sp": "Some Spanish images make no sense in English. Nobody here «throws the house through the window»; they spare no expense, or go all out."
+            },
+            {
+              "en": "She doesn't mince her words.",
+              "sp": "And nobody has «hairs on the tongue». When an image does not cross, translate the meaning and look for the English picture."
+            },
+            {
+              "en": "We'll cross that bridge when we come to it.",
+              "sp": "Watch for mixed images when you half-remember an idiom: you cross this bridge; you do not burn it when you get to it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "the summit weekend · saturday evening",
+      "title": "<ico-star></ico-star> BETWEEN THE LINES",
+      "intro": "Eight o'clock in the hotel library. Sol, now happily installed in her silent room on the sixth floor, reads from her new novel to forty guests. In the front row, with a notebook and a very sharp pencil, sits <b style='color:var(--gold)'>Vera, the critic</b>. You are at the back, by the door, in case anyone needs anything. Nobody does. Everyone is listening.",
+      "cast": [
+        {
+          "en": "Sol",
+          "sp": "reads a page built on a single image"
+        },
+        {
+          "en": "Vera",
+          "sp": "the critic: she will answer in images of her own"
+        },
+        {
+          "en": "Julian",
+          "sp": "pretending not to listen"
+        },
+        {
+          "en": "You",
+          "sp": "by the door, <b style='color:var(--magenta)'>reading between the lines</b>"
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE READING",
+      "desc": "Sol reads from chapter three. Her character, Ines, has come back to her city after eleven years and cannot sleep. Follow the one image that runs through the whole page, and notice the moment a second image slips in.",
+      "src": "c2-l4-1.mp3",
+      "dur": "2:11",
+      "speakers": "<ico-commentdots></ico-commentdots> Sol",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What does the central metaphor compare?",
+          "options": [
+            "The sounds of the city at night to an orchestra tuning up",
+            "Ines to the conductor of an orchestra",
+            "The hotel to a concert hall"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "How does Sol extend the image?",
+          "options": [
+            "She describes the weather in more and more detail",
+            "Each street sound becomes an instrument or a section: strings, drums, woodwinds, brass",
+            "She repeats the word \"orchestra\" in every sentence"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "\"Out of tune. Not the city. Me.\" What does Ines mean?",
+          "options": [
+            "The city has become noisy and ugly",
+            "She has forgotten how to play her instrument",
+            "She no longer fits into the life of the city"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What is the mood of the passage?",
+          "options": [
+            "Wistful, with a touch of dry humor at the end",
+            "Angry and bitter",
+            "Joyful and triumphant"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Add one more instrument to Sol's orchestra. Describe a sound from your own street at night as part of the music, in two sentences.",
+        "starter": "Then the (instrument) came in: (the sound from your street)…"
+      },
+      "transcript": [
+        {
+          "spk": "Sol",
+          "html": "Thank you. This is from the third chapter. Ines has come back to the city after eleven years, and she cannot sleep."
+        },
+        {
+          "spk": "Sol",
+          "html": "At night the city did not go quiet. <span class='tg'>It tuned up.</span> From the ninth floor she could hear it finding its note: a tram dragging its bow along the avenue, slow and low, and somewhere beneath it the kettledrum of a delivery truck taking a corner too fast. The traffic lights kept time for nobody. Green, amber, red. Green, amber, red. A conductor rehearsing in an empty hall."
+        },
+        {
+          "spk": "Sol",
+          "html": "She opened the window. <span class='tg'>The woodwinds</span> came in first, as they always had: the thin whistle of the bakery's fan, the cough of a shutter going up. Then <span class='tg'>the brass</span>, a motorbike three streets away, showing off. Every instrument was where she had left it. She could have written out <span class='tg'>the score</span> from memory."
+        },
+        {
+          "spk": "Sol",
+          "html": "And yet she could not find <span class='tg'>her own part</span>. Eleven years ago, she had known exactly where to come in. She had walked these streets on the beat, late for everything and somehow always on time. Now she stood at the window like a musician who has turned up for the wrong concert, holding an instrument nobody had asked for. The city played on, perfectly, without her. It had not replaced her. That would have been something. It had simply closed the gap, the way water closes over a stone."
+        },
+        {
+          "spk": "Sol",
+          "html": "<span class='tg'>Out of tune</span>, she thought. Not the city. Me."
+        },
+        {
+          "spk": "Sol",
+          "html": "Below, a street sweeper began his long, soft <span class='tg'>solo</span>, brushing the night toward the gutter. She listened until he reached the end of the block. Then, very quietly, so as not to disturb the orchestra, she hummed one note, just to see whether anything would answer."
+        },
+        {
+          "spk": "Sol",
+          "html": "A dog did. It was not the answer she had hoped for. But it was, she had to admit, an answer. Thank you."
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "FOUR FAMILIES · tap to flip",
+      "intro": "Ten expressions you may already use without seeing the picture inside them. Name the family before you flip: war, money, food or journey.",
+      "cards": [
+        {
+          "front": "to defend a position",
+          "back": "argument as war · to argue that your view is right"
+        },
+        {
+          "front": "to shoot down an idea",
+          "back": "argument as war · to reject it quickly and completely"
+        },
+        {
+          "front": "to waste time",
+          "back": "time as money · to use it badly"
+        },
+        {
+          "front": "to buy time",
+          "back": "time as money · to delay, so that you have longer to act"
+        },
+        {
+          "front": "a half-baked idea",
+          "back": "ideas as food · not thought through"
+        },
+        {
+          "front": "food for thought",
+          "back": "ideas as food · something worth thinking about"
+        },
+        {
+          "front": "to digest the news",
+          "back": "ideas as food · to take time to understand and accept it"
+        },
+        {
+          "front": "at a crossroads",
+          "back": "life as a journey · at a point where you must choose"
+        },
+        {
+          "front": "a dead end",
+          "back": "life as a journey · a situation with no way forward"
+        },
+        {
+          "front": "to come a long way",
+          "back": "life as a journey · to have made great progress"
+        }
+      ],
+      "deckLabel": "metaphor families"
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "THE SOUP AND THE CHAPTER",
+      "intro": "The same words about boiling. One sentence belongs in a kitchen, the other in a book review.",
+      "pair": {
+        "a": "The soup never came to the boil.",
+        "b": "The second chapter never comes to the boil."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "Which sentence is literal?",
+          "options": [
+            "A — the soup",
+            "B — the chapter",
+            "Both"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "In B, what is it that never happens?",
+          "options": [
+            "The author never finishes the chapter",
+            "The story never becomes exciting",
+            "The chapter is never printed"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which family of metaphor does B belong to?",
+          "options": [
+            "Argument as war",
+            "Life as a journey",
+            "Ideas and stories as food"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which sentence stays inside one image?",
+          "options": [
+            "The plot simmers for a hundred pages and then boils over.",
+            "The plot simmers for a hundred pages and then goes off the rails.",
+            "The plot simmers for a hundred pages and then scores a goal."
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which image is fresh, not a cliché?",
+          "options": [
+            "It was a rollercoaster of emotions.",
+            "The elevator sighed between floors.",
+            "At the end of the day, it is what it is."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "KEEP THE IMAGE WHOLE",
+      "intro": "Each sentence has started a picture. Choose the word that comes from the same picture. The other two are good English from the wrong family.",
+      "items": [
+        {
+          "q": "The debate was a battle: she defended her position and ___ his.",
+          "options": [
+            "attacked",
+            "digested",
+            "navigated"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Time is money in this office, so don't ___ it.",
+          "options": [
+            "swallow",
+            "waste",
+            "ambush"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The idea was half-baked, so I told him to put it back in the ___.",
+          "options": [
+            "bank",
+            "trenches",
+            "oven"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "After the divorce he was at a crossroads, unsure which ___ to take.",
+          "options": [
+            "road",
+            "bite",
+            "shot"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "The city is an orchestra, and the rain keeps ___.",
+          "options": [
+            "guard",
+            "time",
+            "watch"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The first chapter simmers; the second never comes to the ___.",
+          "options": [
+            "summit",
+            "finish line",
+            "boil"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "She has come a long way, and there is still a long ___ ahead.",
+          "options": [
+            "road",
+            "meal",
+            "battle"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "His argument was a house of cards: one question, and it ___.",
+          "options": [
+            "evaporated",
+            "collapsed",
+            "sank"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "mem-fam",
+      "title": "MEMORY · the expression and what it is",
+      "intro": "Find each expression and its label. Tap two cards.",
+      "pairs": [
+        {
+          "a": "to defend a position",
+          "b": "argument as war"
+        },
+        {
+          "a": "to waste time",
+          "b": "time as money"
+        },
+        {
+          "a": "a half-baked idea",
+          "b": "ideas as food"
+        },
+        {
+          "a": "at a crossroads",
+          "b": "life as a journey"
+        },
+        {
+          "a": "the foot of the mountain",
+          "b": "a dead metaphor"
+        },
+        {
+          "a": "a rollercoaster of emotions",
+          "b": "a cliché"
+        }
+      ],
+      "speakSide": "a"
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "KEEP VERA'S METAPHOR GOING",
+      "intro": "After the reading, Vera turns to you. She talks about the book as cooking. One reply stays in her kitchen, one mixes in a different image, and one is plain and flat. Stay in the kitchen.",
+      "lines": [
+        {
+          "spk": "Vera",
+          "html": "The opening simmers nicely, don't you think?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "It does. It really hits the ground running.",
+            "It does. She lets it heat slowly.",
+            "Yes. It is a good opening."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Vera",
+          "html": "But I'm not sure the middle ever comes to the boil."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Perhaps she turned the heat down on purpose.",
+            "Perhaps the train left the rails there.",
+            "Perhaps the middle is slower."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Vera",
+          "html": "And that stone in the water, in the middle of all the music. One ingredient too many?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Yes. It was the last nail in the coffin.",
+            "Yes. I noticed that sentence too.",
+            "A pinch too much, perhaps. The dish was already seasoned."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Vera",
+          "html": "The ending, though. The dog."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "A sharp little taste to finish. It cuts the sweetness.",
+            "It really knocks it out of the park.",
+            "The dog is funny."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Vera",
+          "html": "So. Would you recommend it?"
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Yes, I would.",
+            "I'd go back for a second helping.",
+            "It's a home run that hits all the right notes."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE REVIEW",
+      "desc": "Later that night, Vera dictates her notes for Monday's column. The review is itself made of images. Decide: is it a good review? And which family is she cooking with?",
+      "src": "c2-l4-2.mp3",
+      "dur": "1:02",
+      "speakers": "<ico-commentdots></ico-commentdots> Vera",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Is the review favorable overall?",
+          "options": [
+            "No: she finds nothing to praise",
+            "Mostly: she admires the craft, criticizes two things and expects more",
+            "Yes: it is praise from start to finish"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which family of metaphor does Vera use all the way through?",
+          "options": [
+            "Food and cooking",
+            "War",
+            "Journeys"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What does she criticize with \"one spice too many\"?",
+          "options": [
+            "The slow middle of the chapter",
+            "The joke about the dog",
+            "The image of the stone and the water, which does not belong with the music"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "\"Three stars, and a fourth on the table, waiting.\" What does this mean?",
+          "options": [
+            "She may give a fourth star if the rest of the book delivers",
+            "She has given the book four stars",
+            "She took one star away at the last minute"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Review the last film or series you watched in three sentences, all inside one family of metaphor: food, war or a journey.",
+        "starter": "The first half… (one image). The second half… (same family). In the end,… (same family)."
+      },
+      "transcript": [
+        {
+          "spk": "Vera",
+          "html": "Notes for Monday's column. Sol read a chapter of her new novel last night, in the hotel library, to forty people and one critic. The opening <span class='tg'>simmers</span>. She adds her <span class='tg'>ingredients</span> slowly, a tram here, a bakery there, and by the end of the page the whole city is <span class='tg'>on the stove</span>. It is patient cooking, and I admired it."
+        },
+        {
+          "spk": "Vera",
+          "html": "The middle, I am sorry to say, <span class='tg'>never comes to the boil</span>. The heroine stands at a window, and stands, and stands. I began to wish someone would <span class='tg'>turn up the heat</span>, or at least open the oven door. And one image is <span class='tg'>overseasoned</span>: in the middle of all that music, a stone drops into water. One spice too many."
+        },
+        {
+          "spk": "Vera",
+          "html": "But then comes the last line, with the dog, and it is perfectly judged: <span class='tg'>a sharp, dry finish</span> that sends you back for more. So. Is it a feast? Not yet. It is an excellent <span class='tg'>first course</span>, served by a cook who knows exactly what she is doing and is in no hurry to tell us. I shall stay for the main dish. Three stars, and a fourth on the table, waiting."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> MY CITY AS…",
+      "intro": "Describe your own city, or your neighborhood, through <b>one extended metaphor</b> of your choice: a kitchen, a ship, a theater, a body, a machine, an animal (about 100 words). Not an orchestra: that one is taken.",
+      "checklist": [
+        "<b>One image</b>, announced in the first or second sentence",
+        "Extended <b>at least three times</b>: three details that all come from the same picture",
+        "<b>No mixing:</b> nothing from a second picture slips in",
+        "<b>No clichés</b> from this lesson (<b>rollercoaster of emotions, at the end of the day, the city that never sleeps</b>)",
+        "One <b>simile</b> or one <b>fresh</b> image that is entirely yours"
+      ],
+      "placeholder": "My city is a…",
+      "example": "My city is <span class=\"gap\">your image</span>. <span class=\"gap\">a place in the city</span> is its <span class=\"gap\">a part of the image</span>, and <span class=\"gap\">the people or the traffic</span> <span class=\"gap\">a verb from the same picture</span>. At night, <span class=\"gap\">a third detail from the same picture</span>. As for me, I am <span class=\"gap\">your own place inside the image</span>.",
+      "hw": "Write your description, then <b>record yourself reading it slowly</b>, the way Sol read hers. Send me the text and the audio on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "About 100 words about a real place, built on one image from the first sentence to the last."
+        },
+        {
+          "c": "Lesson target",
+          "d": "The metaphor is extended at least three times without mixing, and there is not a cliché in it."
+        },
+        {
+          "c": "Precision",
+          "d": "A reader can see the place and the image at the same time, and nothing has to be explained."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c2-l4",
+    "keys": [
+      "a-clich",
+      "a-dead-end",
+      "a-false-dichotomy",
+      "a-half-baked-idea",
+      "a-metaphor",
+      "a-mixed-metaphor",
+      "a-pinch-too-much-perhaps-the-dish-was-already-seasoned",
+      "a-rollercoaster-of-emotions",
+      "a-sharp-little-taste-to-finish-it-cuts-the-sweetness",
+      "a-simile",
+      "a-straw-man",
+      "ambush",
+      "an-image",
+      "and-that-stone-in-the-water-in-the-middle-of-all-the-music-one-ingredient-too-ma",
+      "angry-and-bitter",
+      "at-a-crossroads",
+      "at-the-end-of-the-day-it-is-what-it-is",
+      "attacked",
+      "bank",
+      "battle",
+      "bite",
+      "boil",
+      "but-i-m-not-sure-the-middle-ever-comes-to-the-boil",
+      "collapsed",
+      "concedes",
+      "digested",
+      "each-street-sound-becomes-an-instrument-or-a-section-strings-drums-woodwinds-bra",
+      "evaporated",
+      "finish-line",
+      "food-and-cooking",
+      "food-for-thought",
+      "guard",
+      "he-is-at-a-crossroads-she-has-come-a-long-way",
+      "how-does-sol-extend-the-image",
+      "i-d-go-back-for-a-second-helping",
+      "i-spent-an-hour-on-it-don-t-waste-my-time",
+      "ines-to-the-conductor-of-an-orchestra",
+      "is-the-review-favorable-overall",
+      "it-does-it-really-hits-the-ground-running",
+      "it-does-she-lets-it-heat-slowly",
+      "it-really-knocks-it-out-of-the-park",
+      "it-s-a-home-run-that-hits-all-the-right-notes",
+      "it-was-a-rollercoaster-of-emotions",
+      "journeys",
+      "joyful-and-triumphant",
+      "local-bakery-rises-to-the-occasion",
+      "meal",
+      "mostly-she-admires-the-craft-criticizes-two-things-and-expects-more",
+      "navigated",
+      "no-she-finds-nothing-to-praise",
+      "orchestra-strike-talks-end-on-a-sour-note",
+      "out-of-tune",
+      "out-of-tune-not-the-city-me-what-does-ines-mean",
+      "oven",
+      "perhaps-she-turned-the-heat-down-on-purpose",
+      "perhaps-the-middle-is-slower",
+      "perhaps-the-train-left-the-rails-there",
+      "proves",
+      "road",
+      "sank",
+      "she-defended-her-position-and-attacked-mine",
+      "she-describes-the-weather-in-more-and-more-detail",
+      "she-doesn-t-mince-her-words",
+      "she-has-forgotten-how-to-play-her-instrument",
+      "she-has-given-the-book-four-stars",
+      "she-may-give-a-fourth-star-if-the-rest-of-the-book-delivers",
+      "she-no-longer-fits-into-the-life-of-the-city",
+      "she-repeats-the-word-orchestra-in-every-sentence",
+      "she-took-one-star-away-at-the-last-minute",
+      "shot",
+      "so-would-you-recommend-it",
+      "suggests",
+      "summit",
+      "swallow",
+      "that-plan-is-half-baked-but-it-s-food-for-thought",
+      "the-city-has-become-noisy-and-ugly",
+      "the-city-is-an-orchestra-the-buses-are-its-brass-and-the-rain-keeps-time",
+      "the-dog-is-funny",
+      "the-elevator-sighed-between-floors",
+      "the-ending-though-the-dog",
+      "the-foot-of-the-mountain",
+      "the-hotel-to-a-concert-hall",
+      "the-image-of-the-stone-and-the-water-which-does-not-belong-with-the-music",
+      "the-joke-about-the-dog",
+      "the-lobby-was-an-aquarium",
+      "the-lobby-was-like-an-aquarium",
+      "the-opening-simmers-nicely-don-t-you-think",
+      "the-plot-simmers-for-a-hundred-pages-and-then-boils-over",
+      "the-plot-simmers-for-a-hundred-pages-and-then-goes-off-the-rails",
+      "the-plot-simmers-for-a-hundred-pages-and-then-scores-a-goal",
+      "the-second-chapter-never-comes-to-the-boil",
+      "the-slow-middle-of-the-chapter",
+      "the-sounds-of-the-city-at-night-to-an-orchestra-tuning-up",
+      "the-soup-never-came-to-the-boil",
+      "they-spared-no-expense-on-the-gala",
+      "three-stars-and-a-fourth-on-the-table-waiting-what-does-this-mean",
+      "time",
+      "to-buy-time",
+      "to-come-a-long-way",
+      "to-come-to-the-boil",
+      "to-defend-a-position",
+      "to-digest-the-news",
+      "to-extend-a-metaphor",
+      "to-shoot-down-an-idea",
+      "to-simmer",
+      "to-tune-up",
+      "to-waste-time",
+      "trenches",
+      "war",
+      "waste",
+      "watch",
+      "we-camped-at-the-foot-of-the-mountain",
+      "we-ll-cross-that-bridge-when-we-come-to-it",
+      "we-need-to-iron-out-the-bottlenecks",
+      "what-does-she-criticize-with-one-spice-too-many",
+      "what-does-the-central-metaphor-compare",
+      "what-is-the-mood-of-the-passage",
+      "which-family-of-metaphor-does-vera-use-all-the-way-through",
+      "wistful-with-a-touch-of-dry-humor-at-the-end",
+      "yes-i-noticed-that-sentence-too",
+      "yes-i-would",
+      "yes-it-is-a-good-opening",
+      "yes-it-is-praise-from-start-to-finish",
+      "yes-it-was-the-last-nail-in-the-coffin"
+    ]
+  }
+}
