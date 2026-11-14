@@ -1,0 +1,977 @@
+{
+  "level": "C2",
+  "num": 1,
+  "totalLessons": 6,
+  "world": "MASTERY",
+  "ui": "en",
+  "key": "rankup_C2_L1",
+  "title": "NUANCE &amp;<br>PRECISION",
+  "titlePlain": "Nuance & Precision — The Right Word (C2)",
+  "subtitle": "Vocabulary &amp; Listening · C2 · ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=c2-l2",
+    "label": "LESSON 2 ▸ REGISTER & HUMOR"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> RECAP · from C1",
+      "intro": "Before you start at the Grand Hotel: five coded phrases from the end of C1. Match each one with what it usually means.",
+      "pairs": [
+        {
+          "l": "I'll bear it in mind.",
+          "r": "Probably not."
+        },
+        {
+          "l": "Not bad at all.",
+          "r": "It's good."
+        },
+        {
+          "l": "With respect,…",
+          "r": "I disagree."
+        },
+        {
+          "l": "That might be difficult.",
+          "r": "No."
+        },
+        {
+          "l": "Just so I'm clear,…",
+          "r": "I'm checking what you mean."
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "connotation, degree & stance",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· connotation, degree &amp; stance</span>",
+      "title": "<ico-book></ico-book> THE RIGHT WORD",
+      "intro": "At C2, nearly everything you say is correct. The question is no longer «is it right?» but <b style='color:var(--gold)'>«is it the word I mean?»</b> Near-synonyms state the same fact and pass different judgments. Five steps on how a single word carries an opinion.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show the hotel vocabulary",
+      "vocab": [
+        {
+          "en": "adequate",
+          "sp": "good enough, and no better"
+        },
+        {
+          "en": "connotation",
+          "sp": "the feeling a word carries, beyond its meaning"
+        },
+        {
+          "en": "a euphemism",
+          "sp": "a soft word for a hard fact"
+        },
+        {
+          "en": "understated",
+          "sp": "expressed with less force than the facts deserve"
+        },
+        {
+          "en": "to probe",
+          "sp": "to ask careful questions to find out more"
+        },
+        {
+          "en": "a brochure",
+          "sp": "a small printed booklet that advertises a place"
+        },
+        {
+          "en": "an upgrade",
+          "sp": "a better room or seat than the one you paid for"
+        },
+        {
+          "en": "to overlook the courtyard",
+          "sp": "to have a view of the inner yard"
+        },
+        {
+          "en": "to overlook the difference",
+          "sp": "to choose to ignore the difference"
+        },
+        {
+          "en": "partial",
+          "sp": "not complete: «a partial view»"
+        }
+      ],
+      "note": "<b>How it works:</b> compare <ico-comments></ico-comments>, flashcards <ico-clone></ico-clone>, listening <ico-headphones></ico-headphones>, gap-fill <ico-filepen></ico-filepen>, memory and a dialogue. From here on, <b>every option is grammatical</b>. You are choosing the one that fits.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · ONE FACT, THREE ATTITUDES</b> <span class='es'>— approving, neutral, critical</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "She is determined.",
+              "sp": "She doesn't give up, and I admire it."
+            },
+            {
+              "en": "She is stubborn.",
+              "sp": "She doesn't give up, and I wish she would."
+            },
+            {
+              "en": "She is pig-headed.",
+              "sp": "The same, and I have lost patience."
+            },
+            {
+              "en": "The hotel is affordable. It is inexpensive. It is cheap.",
+              "sp": "Good value · a neutral fact · possibly poor quality."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · REPORTING VERBS CARRY A VERDICT</b> <span class='es'>— the verb tells us what the speaker believes</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The brochure said the room was quiet.",
+              "sp": "Neutral: I pass it on."
+            },
+            {
+              "en": "The brochure claimed the room was quiet.",
+              "sp": "I doubt it."
+            },
+            {
+              "en": "The manager admitted the room was noisy.",
+              "sp": "It is true, and it was a fault."
+            },
+            {
+              "en": "The manager conceded that the view was limited.",
+              "sp": "It is true, and he accepted it unwillingly."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · GRADABLE AND ABSOLUTE</b> <span class='es'>— each kind takes its own modifiers</span>"
+        },
+        {
+          "type": "chips",
+          "items": [
+            "fairly · rather · somewhat · very + tired, warm, good",
+            "absolutely · utterly · completely + exhausted, boiling, superb"
+          ]
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "I was very tired. I was absolutely exhausted.",
+              "sp": "Tired has degrees; exhausted is already the top of the scale."
+            },
+            {
+              "en": "The room is rather warm.",
+              "sp": "Rather + a quality you would prefer to be otherwise: a polite complaint."
+            },
+            {
+              "en": "The plan is utterly ridiculous.",
+              "sp": "Utterly + an extreme adjective, usually a negative one."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · QUITE</b> <span class='es'>— one word, two directions</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The food was quite good.",
+              "sp": "With a gradable adjective. In American English: very good. In British English: fairly good, less than you hoped."
+            },
+            {
+              "en": "You are quite right. It is quite impossible.",
+              "sp": "With an absolute adjective: completely. The same on both sides of the Atlantic."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · STANCE ADVERBS</b> <span class='es'>— one word at the front tells us how to take the rest</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Arguably, it is the best room in the hotel.",
+              "sp": "A case can be made. I am not insisting."
+            },
+            {
+              "en": "Presumably, the view was better before the tower was built.",
+              "sp": "I suppose so; I have not checked."
+            },
+            {
+              "en": "Ostensibly, the upgrade was a gift.",
+              "sp": "That is the official story. I suspect another one."
+            },
+            {
+              "en": "Admittedly, the bed is comfortable.",
+              "sp": "I concede this point, against my own argument."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> CALQUE ALERT</b> <span class='es'>— four Spanish-shaped habits that survive at C2</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The breakfast was absolutely delicious.",
+              "sp": "Delicious and perfect are absolute: not «very delicious», not «very perfect»."
+            },
+            {
+              "en": "I intend to stay for a week.",
+              "sp": "To pretend is to act as if something were true. For a plan, use intend."
+            },
+            {
+              "en": "Eventually, they fixed the heating.",
+              "sp": "Eventually = in the end, after a long time. It never means «possibly»."
+            },
+            {
+              "en": "The manager was very sympathetic when I complained.",
+              "sp": "Sympathetic = understanding of someone's trouble. For a pleasant person, say nice, friendly or likeable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "the summit weekend · day 1",
+      "title": "<ico-star></ico-star> THE RIGHT WORD",
+      "intro": "The Grand Hotel is hosting a three-day summit of writers, academics, a comedian and a critic, and you are working the concierge desk with Julian. The first note of the weekend arrives from room 412. Sol, the novelist, describes her room in one word: <b style='color:var(--gold)'>«adequate»</b>. Julian reads it twice. «From a novelist, that is a complaint. Find out what kind.»",
+      "cast": [
+        {
+          "en": "Ms. Whitmore",
+          "sp": "the general manager: formal, exact"
+        },
+        {
+          "en": "Julian",
+          "sp": "the senior concierge: dry humor"
+        },
+        {
+          "en": "Sol",
+          "sp": "a novelist who chooses every word"
+        },
+        {
+          "en": "You",
+          "sp": "at the <b style='color:var(--magenta)'>concierge desk</b>, listening closely"
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "ADMITTED vs CLAIMED",
+      "intro": "One verb is different. Everything the speaker believes about the room changes with it.",
+      "pair": {
+        "a": "She admitted the room was noisy.",
+        "b": "She claimed the room was noisy."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "In which sentence does the speaker accept that the room really was noisy?",
+          "options": [
+            "A — admitted",
+            "B — claimed",
+            "In both"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "In which sentence does the speaker doubt it?",
+          "options": [
+            "A — admitted",
+            "B — claimed",
+            "In neither"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "In A, who is \"she\" most likely to be?",
+          "options": [
+            "A guest who wants a refund",
+            "A journalist visiting the hotel",
+            "Someone responsible for the room"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which is the natural partner for \"chance\"?",
+          "options": [
+            "a slim chance",
+            "a thin chance",
+            "a skinny chance"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Which sentence would the hotel print in its own brochure?",
+          "options": [
+            "Our rooms are cheap.",
+            "Our rooms are affordable.",
+            "Our rooms are basic."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "flashcards",
+      "id": "ex-fc",
+      "title": "THREE WORDS, ONE FACT · tap to flip",
+      "intro": "Each card has three words for the same fact, from approving to critical. Before you flip, decide which one you would want said about you.",
+      "cards": [
+        {
+          "front": "slim, thin, skinny",
+          "back": "approving · neutral · critical — «a slim figure», «thin walls», «he looks skinny»"
+        },
+        {
+          "front": "determined, stubborn, pig-headed",
+          "back": "approving · critical · insulting — the same refusal to give up"
+        },
+        {
+          "front": "said, claimed, admitted",
+          "back": "neutral · I doubt it · it's true and it was a fault"
+        },
+        {
+          "front": "affordable, inexpensive, cheap",
+          "back": "good value · neutral · maybe poor quality"
+        },
+        {
+          "front": "confident, self-assured, arrogant",
+          "back": "approving · approving and formal · critical"
+        },
+        {
+          "front": "curious, inquisitive, nosy",
+          "back": "approving · neutral · critical — «a nosy neighbor»"
+        },
+        {
+          "front": "thrifty, economical, stingy",
+          "back": "approving · neutral · critical — all three spend little"
+        },
+        {
+          "front": "youthful, young, childish",
+          "back": "approving · neutral · critical"
+        },
+        {
+          "front": "aroma, smell, stench",
+          "back": "pleasant · neutral · disgusting"
+        },
+        {
+          "front": "classic, old, dated",
+          "back": "approving · neutral · critical — «a dated lobby»"
+        }
+      ],
+      "deckLabel": "connotation"
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE NOTE",
+      "desc": "Julian goes up to room 412 and you go with him. Sol never raises her voice and never says what she wants. Listen to her adjectives, her adverbs and one verb.",
+      "src": "c2-l1-1.mp3",
+      "dur": "2:33",
+      "speakers": "<ico-commentdots></ico-commentdots> Julian + Sol",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What does Sol actually want?",
+          "options": [
+            "A cooler, quieter room",
+            "A room with a real river view",
+            "Her money back"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why does she say the brochure \"claimed\" a view of the river?",
+          "options": [
+            "She is quoting the brochure word for word",
+            "She doubts that the statement is true",
+            "She wants to praise the brochure"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What does \"a somewhat ambitious description\" tell us?",
+          "options": [
+            "The description is long and detailed",
+            "The description is modest",
+            "The description promises more than the room delivers"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "Is Sol angry?",
+          "options": [
+            "No: she is dissatisfied, but courteous and rather amused",
+            "Yes: she is furious and wants to leave",
+            "No: she is perfectly happy with the room"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Translate Sol into plain English. Say what she means by: 'rather warm', 'quite talkative' and 'a somewhat ambitious description'.",
+        "starter": "When she says 'rather warm', she means… By 'quite talkative', she means… 'A somewhat ambitious description' means…"
+      },
+      "transcript": [
+        {
+          "spk": "Julian",
+          "html": "Good afternoon. Room four twelve, I believe. I'm Julian, from the concierge desk. I received your note."
+        },
+        {
+          "spk": "Sol",
+          "b": true,
+          "html": "Ah. Yes. I do hope it wasn't taken as a complaint."
+        },
+        {
+          "spk": "Julian",
+          "html": "You described the room as \"adequate.\""
+        },
+        {
+          "spk": "Sol",
+          "b": true,
+          "html": "It is <span class='tg'>adequate</span>. It has a bed, a desk and a door. I have written novels in worse."
+        },
+        {
+          "spk": "Julian",
+          "html": "And in better, I imagine. May I ask about the temperature?"
+        },
+        {
+          "spk": "Sol",
+          "b": true,
+          "html": "<span class='tg'>Rather warm</span>. <span class='tg'>Not unpleasant</span>, exactly. One feels gently cooked."
+        },
+        {
+          "spk": "Julian",
+          "html": "I see. And the noise?"
+        },
+        {
+          "spk": "Sol",
+          "b": true,
+          "html": "The room is not noisy. The elevator next to it, however, is <span class='tg'>quite talkative</span>. It converses with itself until about two in the morning."
+        },
+        {
+          "spk": "Julian",
+          "html": "And the view? The brochure mentions a view of the river."
+        },
+        {
+          "spk": "Sol",
+          "b": true,
+          "html": "The brochure <span class='tg'>claimed</span> a view of the river. I would call that <span class='tg'>a somewhat ambitious description</span>. If I stand on the desk and lean to the left, there is, <span class='tg'>admittedly</span>, a suggestion of water. <span class='tg'>Presumably</span> the river."
+        },
+        {
+          "spk": "Julian",
+          "html": "Presumably."
+        },
+        {
+          "spk": "Sol",
+          "b": true,
+          "html": "Please don't misunderstand me. Your staff have been <span class='tg'>utterly charming</span>, and the breakfast is <span class='tg'>absolutely superb</span>. I am not an unreasonable woman. I simply came here to finish a chapter, and the chapter requires silence and, ideally, a temperature at which a person can think."
+        },
+        {
+          "spk": "Julian",
+          "html": "Then, if I may translate: you would like a cooler, quieter room, and the river is optional."
+        },
+        {
+          "spk": "Sol",
+          "b": true,
+          "html": "The river is entirely optional. You have understood me perfectly. How refreshing."
+        },
+        {
+          "spk": "Julian",
+          "html": "We have a room on the sixth floor, at the back. It overlooks the courtyard, which is not much to look at. But it is silent, and the windows open."
+        },
+        {
+          "spk": "Sol",
+          "b": true,
+          "html": "A window that opens. Now that is a luxury. Is it more expensive?"
+        },
+        {
+          "spk": "Julian",
+          "html": "<span class='tg'>Ostensibly</span>, yes. I think we can overlook the difference."
+        },
+        {
+          "spk": "Sol",
+          "b": true,
+          "html": "Julian, that is the most elegant sentence I have heard all week. I shall put you in the book."
+        },
+        {
+          "spk": "Julian",
+          "html": "As a hero, I hope."
+        },
+        {
+          "spk": "Sol",
+          "b": true,
+          "html": "As a concierge. It is higher praise."
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "WHICH ONE FITS?",
+      "intro": "All three options are correct English. Read the whole sentence: the context tells you the attitude, the degree or the stance.",
+      "items": [
+        {
+          "q": "I'm not criticizing her. I admire how ___ she is: she never gives up.",
+          "options": [
+            "determined",
+            "stubborn",
+            "pig-headed"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "He refuses to listen to anyone, and it has cost him two jobs. He is simply ___.",
+          "options": [
+            "determined",
+            "stubborn",
+            "resolute"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The brochure ___ that every room was quiet. I have my doubts.",
+          "options": [
+            "admitted",
+            "conceded",
+            "claimed"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "After three complaints, the manager finally ___ that the heating was broken.",
+          "options": [
+            "admitted",
+            "claimed",
+            "boasted"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "After twelve hours on the plane, I was absolutely ___.",
+          "options": [
+            "tired",
+            "exhausted",
+            "sleepy"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The soup was ___ cold, so I asked them to warm it up a little.",
+          "options": [
+            "utterly",
+            "absolutely",
+            "rather"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "We waited two hours for a sandwich. The service was ___ ridiculous.",
+          "options": [
+            "utterly",
+            "fairly",
+            "slightly"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "___, the upgrade was free. It appeared on the bill two days later.",
+          "options": [
+            "Admittedly",
+            "Ostensibly",
+            "Arguably"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "The hotel is small and, ___, a little old. But the staff are wonderful.",
+          "options": [
+            "ostensibly",
+            "presumably",
+            "admittedly"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Nobody answered the door. ___, they had already left.",
+          "options": [
+            "Presumably",
+            "Admittedly",
+            "Arguably"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "memory",
+      "id": "mem-twins",
+      "title": "MEMORY · the neutral word and its loaded twin",
+      "intro": "Find each neutral word and the critical one that states the same fact. Tap two cards.",
+      "pairs": [
+        {
+          "a": "thin",
+          "b": "skinny"
+        },
+        {
+          "a": "said",
+          "b": "claimed"
+        },
+        {
+          "a": "inexpensive",
+          "b": "cheap"
+        },
+        {
+          "a": "curious",
+          "b": "nosy"
+        },
+        {
+          "a": "old",
+          "b": "dated"
+        },
+        {
+          "a": "smell",
+          "b": "stench"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "id": "ex-dlg",
+      "title": "ANSWER IN HER KEY",
+      "intro": "Sol is in the lobby, and now she speaks to you. Every reply below is correct English. Choose the one that matches her register and her degree: no slang, no exaggeration.",
+      "lines": [
+        {
+          "spk": "Sol",
+          "html": "I trust the new room will be somewhat cooler."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Yeah, it's freezing up there. You'll love it.",
+            "Considerably cooler, I think you'll find. And the windows open.",
+            "It is the coldest room ever built in any hotel."
+          ],
+          "answer": 1
+        },
+        {
+          "spk": "Sol",
+          "html": "And is it quiet? I don't wish to be difficult."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Not at all. It overlooks the courtyard, and it is almost silent.",
+            "Don't worry, you're not that difficult.",
+            "It is absolutely, totally, one hundred percent silent, I swear."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Sol",
+          "html": "The breakfast, I must say, was rather good."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Rather good? It's the best breakfast in the world!",
+            "OK.",
+            "I'm delighted to hear it. I'll pass that on to the kitchen."
+          ],
+          "answer": 2
+        },
+        {
+          "spk": "Sol",
+          "html": "I'm afraid I was a little sharp in my note."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "Not in the least. It was admirably clear.",
+            "Yes, it was pretty rude, to be honest.",
+            "Your note was a masterpiece of world literature."
+          ],
+          "answer": 0
+        },
+        {
+          "spk": "Sol",
+          "html": "You have been most patient. Thank you."
+        },
+        {
+          "gap": true,
+          "q": "Your reply:",
+          "options": [
+            "No problem. It's my job, and I get paid for it.",
+            "It has been a pleasure. I hope the chapter goes well.",
+            "Patience is my greatest and most extraordinary quality."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE BROCHURE",
+      "desc": "Julian has told Ms. Whitmore about room 412. She dictates three corrections to the brochure, changes one word at a time, and explains nothing. Explaining is your job.",
+      "src": "c2-l1-2.mp3",
+      "dur": "1:11",
+      "speakers": "<ico-commentdots></ico-commentdots> Ms. Whitmore",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Which word does she finally choose for the view?",
+          "options": [
+            "stunning",
+            "partial",
+            "pleasant"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Why does she move from \"stunning\" to \"partial\"?",
+          "options": [
+            "To make the promise match what guests really get",
+            "To make the room sound more luxurious",
+            "Because \"stunning\" is too informal"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "Why \"affordable\" and not \"cheap\"?",
+          "options": [
+            "\"Affordable\" is shorter",
+            "\"Cheap\" is not a real word in brochures",
+            "\"Cheap\" can suggest poor quality; \"affordable\" suggests good value"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What is wrong with \"Guests have claimed that our breakfast is the best\"?",
+          "options": [
+            "\"Claimed\" makes the hotel sound as if it doubts its own guests",
+            "\"Claimed\" is old-fashioned",
+            "The sentence is not grammatical"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "Explain Ms. Whitmore's three changes to a new colleague, one sentence each. Use the word 'connotation' once.",
+        "starter": "She changed 'stunning' to 'partial' because… 'Cheap' became 'affordable' because… And 'claimed' became 'said' because…"
+      },
+      "transcript": [
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Julian tells me the brochure needs attention. Take this down, please. The sentence about the fourth-floor rooms. As printed: \"Our river rooms offer a stunning view of the water.\" No. \"Our river rooms offer a pleasant view of the water.\" Hmm. Still generous. \"Our river rooms offer a <span class='tg'>partial</span> view of the water.\" Yes. Partial. Print that."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Now the sentence about the price. As printed: \"Our rooms are cheap.\" Who wrote this? \"Our rooms are inexpensive.\" Better. No. \"Our rooms are <span class='tg'>affordable</span>.\" That is the one."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "And the last line. \"Guests have claimed that our breakfast is the best in the city.\" Claimed! Change it. \"Guests have <span class='tg'>said</span> that our breakfast is the best in the city.\" Said. Thank you. Read the three sentences back to me, would you? No, never mind. I trust you. Send it to the printer."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> ONE ROOM, THREE VOICES",
+      "intro": "The facts: a small room on the fourth floor, one window onto the street, old furniture, next to the elevator, ninety dollars a night. Describe it <b>three times, about 40 words each</b>: as the hotel's brochure, as an honest online review, and as a letter of complaint. <b>The facts never change. Only the words do.</b>",
+      "checklist": [
+        "<b>Brochure:</b> approving words for every fact (<b>cozy, classic, affordable, lively</b>)",
+        "<b>Honest review:</b> neutral words, with at least one stance adverb (<b>admittedly, presumably, arguably</b>)",
+        "<b>Complaint:</b> critical words and one reporting verb with a verdict (<b>claimed</b>)",
+        "Modifiers that fit: <b>rather / somewhat</b> with gradable adjectives, <b>absolutely / utterly</b> with absolute ones",
+        "No fact added and none left out, in any version"
+      ],
+      "placeholder": "BROCHURE: Our cozy fourth-floor rooms…",
+      "example": "BROCHURE: Our <span class=\"gap\">approving adjective</span> fourth-floor rooms, with <span class=\"gap\">approving word for old</span> furniture and a <span class=\"gap\">approving word for a street view</span>, are <span class=\"gap\">price word</span> at ninety dollars. REVIEW: The room is <span class=\"gap\">neutral adjective</span>. <span class=\"gap\">stance adverb</span>, <span class=\"gap\">one honest point</span>. COMPLAINT: The brochure <span class=\"gap\">reporting verb</span> that <span class=\"gap\">its promise</span>. In fact, <span class=\"gap\">critical version</span>.",
+      "hw": "Write the three versions, then <b>record yourself reading them in three different voices</b>: the salesperson, the reviewer, the unhappy guest. Send me the text and the audio on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "Three versions of about 40 words each, with the same five facts in every one."
+        },
+        {
+          "c": "Lesson target",
+          "d": "Each version is consistent in connotation; modifiers match their adjectives; the reporting verb and the stance adverb carry the attitude you intend."
+        },
+        {
+          "c": "Precision",
+          "d": "A reader could tell which version is which with the labels removed."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c2-l1",
+    "keys": [
+      "a-brochure",
+      "a-cooler-quieter-room",
+      "a-euphemism",
+      "a-room-with-a-real-river-view",
+      "a-skinny-chance",
+      "a-slim-chance",
+      "a-thin-chance",
+      "absolutely",
+      "adequate",
+      "admitted",
+      "admittedly",
+      "admittedly-the-bed-is-comfortable",
+      "affordable-inexpensive-cheap",
+      "affordable-is-shorter",
+      "an-upgrade",
+      "and-is-it-quiet-i-don-t-wish-to-be-difficult",
+      "arguably",
+      "arguably-it-is-the-best-room-in-the-hotel",
+      "aroma-smell-stench",
+      "because-stunning-is-too-informal",
+      "boasted",
+      "cheap",
+      "cheap-can-suggest-poor-quality-affordable-suggests-good-value",
+      "cheap-is-not-a-real-word-in-brochures",
+      "claimed",
+      "claimed-is-old-fashioned",
+      "claimed-makes-the-hotel-sound-as-if-it-doubts-its-own-guests",
+      "classic-old-dated",
+      "conceded",
+      "confident-self-assured-arrogant",
+      "connotation",
+      "considerably-cooler-i-think-you-ll-find-and-the-windows-open",
+      "curious",
+      "curious-inquisitive-nosy",
+      "dated",
+      "determined",
+      "determined-stubborn-pig-headed",
+      "don-t-worry-you-re-not-that-difficult",
+      "eventually-they-fixed-the-heating",
+      "exhausted",
+      "fairly",
+      "her-money-back",
+      "i-intend-to-stay-for-a-week",
+      "i-ll-bear-it-in-mind",
+      "i-m-afraid-i-was-a-little-sharp-in-my-note",
+      "i-m-delighted-to-hear-it-i-ll-pass-that-on-to-the-kitchen",
+      "i-trust-the-new-room-will-be-somewhat-cooler",
+      "i-was-very-tired-i-was-absolutely-exhausted",
+      "inexpensive",
+      "is-sol-angry",
+      "it-has-been-a-pleasure-i-hope-the-chapter-goes-well",
+      "it-is-absolutely-totally-one-hundred-percent-silent-i-swear",
+      "it-is-the-coldest-room-ever-built-in-any-hotel",
+      "just-so-i-m-clear",
+      "no-problem-it-s-my-job-and-i-get-paid-for-it",
+      "no-she-is-dissatisfied-but-courteous-and-rather-amused",
+      "no-she-is-perfectly-happy-with-the-room",
+      "nosy",
+      "not-at-all-it-overlooks-the-courtyard-and-it-is-almost-silent",
+      "not-bad-at-all",
+      "not-in-the-least-it-was-admirably-clear",
+      "ok",
+      "old",
+      "ostensibly",
+      "ostensibly-the-upgrade-was-a-gift",
+      "our-rooms-are-affordable",
+      "our-rooms-are-basic",
+      "our-rooms-are-cheap",
+      "partial",
+      "patience-is-my-greatest-and-most-extraordinary-quality",
+      "pig-headed",
+      "pleasant",
+      "presumably",
+      "presumably-the-view-was-better-before-the-tower-was-built",
+      "rather",
+      "rather-good-it-s-the-best-breakfast-in-the-world",
+      "resolute",
+      "said",
+      "said-claimed-admitted",
+      "she-admitted-the-room-was-noisy",
+      "she-claimed-the-room-was-noisy",
+      "she-doubts-that-the-statement-is-true",
+      "she-is-determined",
+      "she-is-pig-headed",
+      "she-is-quoting-the-brochure-word-for-word",
+      "she-is-stubborn",
+      "she-wants-to-praise-the-brochure",
+      "skinny",
+      "sleepy",
+      "slightly",
+      "slim-thin-skinny",
+      "smell",
+      "stench",
+      "stubborn",
+      "stunning",
+      "that-might-be-difficult",
+      "the-breakfast-i-must-say-was-rather-good",
+      "the-breakfast-was-absolutely-delicious",
+      "the-brochure-claimed-the-room-was-quiet",
+      "the-brochure-said-the-room-was-quiet",
+      "the-description-is-long-and-detailed",
+      "the-description-is-modest",
+      "the-description-promises-more-than-the-room-delivers",
+      "the-food-was-quite-good",
+      "the-hotel-is-affordable-it-is-inexpensive-it-is-cheap",
+      "the-manager-admitted-the-room-was-noisy",
+      "the-manager-conceded-that-the-view-was-limited",
+      "the-manager-was-very-sympathetic-when-i-complained",
+      "the-plan-is-utterly-ridiculous",
+      "the-room-is-rather-warm",
+      "the-sentence-is-not-grammatical",
+      "thin",
+      "thrifty-economical-stingy",
+      "tired",
+      "to-make-the-promise-match-what-guests-really-get",
+      "to-make-the-room-sound-more-luxurious",
+      "to-overlook-the-courtyard",
+      "to-overlook-the-difference",
+      "to-probe",
+      "understated",
+      "utterly",
+      "what-does-a-somewhat-ambitious-description-tell-us",
+      "what-does-sol-actually-want",
+      "what-is-wrong-with-guests-have-claimed-that-our-breakfast-is-the-best",
+      "which-word-does-she-finally-choose-for-the-view",
+      "why-affordable-and-not-cheap",
+      "why-does-she-move-from-stunning-to-partial",
+      "why-does-she-say-the-brochure-claimed-a-view-of-the-river",
+      "with-respect",
+      "yeah-it-s-freezing-up-there-you-ll-love-it",
+      "yes-it-was-pretty-rude-to-be-honest",
+      "yes-she-is-furious-and-wants-to-leave",
+      "you-are-quite-right-it-is-quite-impossible",
+      "you-have-been-most-patient-thank-you",
+      "your-note-was-a-masterpiece-of-world-literature",
+      "youthful-young-childish"
+    ]
+  }
+}
