@@ -1,0 +1,998 @@
+{
+  "level": "C2",
+  "num": 5,
+  "totalLessons": 6,
+  "world": "MASTERY",
+  "ui": "en",
+  "key": "rankup_C2_L5",
+  "title": "EDITING &amp;<br>POLISHING",
+  "titlePlain": "Editing & Polishing — The Red Pen (C2)",
+  "subtitle": "Editing &amp; Writing · C2 · ~50 min",
+  "rankup": "LESSON CLEAR!",
+  "next": {
+    "href": "lesson.html?id=c2-l6",
+    "label": "LESSON 6 ▸ SPONTANEOUS FLUENCY"
+  },
+  "blocks": [
+    {
+      "type": "match",
+      "id": "ex-review",
+      "title": "<ico-recycle></ico-recycle> RECAP · last lesson",
+      "intro": "Last night's reading, before this morning's red pen. Match each term or expression with what it means.",
+      "pairs": [
+        {
+          "l": "a simile",
+          "r": "a comparison announced with like or as"
+        },
+        {
+          "l": "a mixed metaphor",
+          "r": "two pictures fighting in one sentence"
+        },
+        {
+          "l": "a cliché",
+          "r": "an image nobody sees anymore"
+        },
+        {
+          "l": "at a crossroads",
+          "r": "at a point where you must choose"
+        },
+        {
+          "l": "food for thought",
+          "r": "something worth thinking about"
+        }
+      ]
+    },
+    {
+      "type": "grammar",
+      "tag": "cut, strengthen, balance, punctuate",
+      "stage": "<ico-book></ico-book> LANGUAGE <span class=\"es\">· cut, strengthen, balance, punctuate</span>",
+      "title": "<ico-book></ico-book> THE RED PEN",
+      "intro": "Good writing is rewriting. A first draft says everything; an edited one says it <b style='color:var(--gold)'>once, with the right verb, in a shape the reader can follow</b>. Five moves: cut, strengthen, balance, attach, and listen to the rhythm.",
+      "cells": [],
+      "vocabBtn": "<ico-bookmark></ico-bookmark> Show the editor's vocabulary",
+      "vocab": [
+        {
+          "en": "a draft",
+          "sp": "a version of a text that is not final yet"
+        },
+        {
+          "en": "to trim",
+          "sp": "to cut a little, so that what is left looks better"
+        },
+        {
+          "en": "redundant",
+          "sp": "not needed, because the idea is already there"
+        },
+        {
+          "en": "concise",
+          "sp": "saying a lot in few words"
+        },
+        {
+          "en": "parallel structure",
+          "sp": "the items of a list or pair built in the same grammatical shape"
+        },
+        {
+          "en": "a modifier",
+          "sp": "a word or phrase that describes another one"
+        },
+        {
+          "en": "a dangling modifier",
+          "sp": "an opening phrase with nothing in the sentence to describe"
+        },
+        {
+          "en": "a comma splice",
+          "sp": "two full sentences joined by a comma alone"
+        },
+        {
+          "en": "a semicolon",
+          "sp": "the mark ( ; ) that links two closely related sentences"
+        },
+        {
+          "en": "to proofread",
+          "sp": "to read a final text slowly, looking only for mistakes"
+        }
+      ],
+      "note": "<b>How it works:</b> first the red pen <ico-pen></ico-pen>, then the read-through <ico-headphones></ico-headphones>, rewrite <ico-pen></ico-pen>, compare <ico-comments></ico-comments>, punctuation <ico-filepen></ico-filepen> and order <ico-puzzle></ico-puzzle>. At this level the faulty sentences are almost right, which is what makes them hard to see.",
+      "parts": [
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>1 · CUT WHAT THE READER ALREADY KNOWS</b> <span class='es'>— if a word repeats the word beside it, one of them goes</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The gala needed months of planning.",
+              "sp": "Not «advance planning»: planning is always in advance."
+            },
+            {
+              "en": "Vera knows the history of every hotel in the city.",
+              "sp": "Not «past history»: history is always past."
+            },
+            {
+              "en": "To save time, we met online.",
+              "sp": "Not «in order to»: «to» says it in one word."
+            },
+            {
+              "en": "We cannot confirm your booking yet.",
+              "sp": "Not «at this point in time we are not in a position to confirm»."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>2 · VERBS DO THE WORK</b> <span class='es'>— find the verb hiding inside the noun</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We decided to move the dinner.",
+              "sp": "Not «we made the decision to move»."
+            },
+            {
+              "en": "She explained the new rules.",
+              "sp": "Not «she gave an explanation of the new rules»."
+            },
+            {
+              "en": "We hope you enjoy your stay.",
+              "sp": "Not «it is our hope that you will have an enjoyment of your stay»."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "gold": true,
+          "body": "<b>The other side of lesson 3.</b> There you packed verbs into nouns, because a journal wants density. A welcome card wants to be understood by a tired guest holding a glass. Know both moves, and choose by reader."
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>3 · PARALLEL LISTS</b> <span class='es'>— same job, same shape</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "The concierge greets guests, answers calls and solves problems.",
+              "sp": "Three verbs in one shape. Not «…and is solving problems»."
+            },
+            {
+              "en": "She came to listen, not to judge.",
+              "sp": "A balanced pair: to + verb on both sides."
+            },
+            {
+              "en": "The letter should be either shortened or rewritten.",
+              "sp": "After either… or…, both… and…, not only… but also…, the two halves match."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>4 · MODIFIERS NEXT TO WHAT THEY MODIFY</b> <span class='es'>— an opening phrase describes the subject that follows it</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "Walking into the lobby, the guests admired the chandelier.",
+              "sp": "Correct: the guests were walking."
+            },
+            {
+              "en": "Walking into the lobby, the chandelier impressed the guests.",
+              "sp": "A dangling modifier: the chandelier was not walking. The phrase has nothing to describe."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--cyan);display:inline-block;margin-top:14px'>5 · RHYTHM, AND THREE MARKS THAT MAKE IT</b> <span class='es'>— a short sentence after a long one lands</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "We have polished the silver, tuned the piano and counted the chairs twice. We are ready.",
+              "sp": "Long, then short. The short one is the one people remember."
+            },
+            {
+              "en": "He had one rule: never apologize twice.",
+              "sp": "The colon: here comes what I promised."
+            },
+            {
+              "en": "The first draft was long; the second was better.",
+              "sp": "The semicolon: two full sentences, closely linked."
+            },
+            {
+              "en": "The letter — all three hundred words of it — had to fit on a card.",
+              "sp": "A pair of dashes: an aside, louder than commas."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "html": "<b style='color:var(--magenta);display:inline-block;margin-top:14px'><ico-bolt></ico-bolt> CALQUE ALERT</b> <span class='es'>— three habits that survive at C2</span>"
+        },
+        {
+          "type": "phrases",
+          "items": [
+            {
+              "en": "It was late, so we went home.",
+              "sp": "Spanish lets a comma join two full sentences. English does not: «It was late, we went home» is a comma splice. Add a linking word, a semicolon or a period."
+            },
+            {
+              "en": "We received your form and forwarded it to the manager.",
+              "sp": "Not «forwarded the same». In modern English «the same» is not a pronoun; it survives only in old legal letters."
+            },
+            {
+              "en": "The color of the theater curtain was her favorite.",
+              "sp": "One spelling system per text: color, theater, favorite, or colour, theatre, favourite. Never one of each."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "tag": "the summit weekend · sunday morning",
+      "title": "<ico-star></ico-star> THE RED PEN",
+      "intro": "Sunday, ten o'clock. Tonight is the gala, and on every plate there will be a card with a welcome from the general manager. Ms. Whitmore's letter is three hundred words long. The card holds a hundred and twenty. And Vera will be at table one, reading it with her pencil out. Ms. Whitmore puts the draft on the desk between you and Julian: <b style='color:var(--gold)'>«Make it shorter. Make it better. You have an hour.»</b>",
+      "cast": [
+        {
+          "en": "Ms. Whitmore",
+          "sp": "the author, and not used to being edited"
+        },
+        {
+          "en": "Julian",
+          "sp": "holds the red pen, and enjoys it"
+        },
+        {
+          "en": "Vera",
+          "sp": "the reader everyone is afraid of"
+        },
+        {
+          "en": "You",
+          "sp": "the second pair of eyes: <b style='color:var(--magenta)'>cut, but lose nothing</b>"
+        }
+      ]
+    },
+    {
+      "type": "spot",
+      "id": "ex-sp",
+      "title": "THE RED PEN",
+      "intro": "Ten sentences from the hotel's files. Tap the word or phrase that should go or that is wrong: a word that repeats its neighbor, a list that breaks its pattern, an opening phrase that dangles. Two sentences are fine as they are.",
+      "clean": true,
+      "items": [
+        {
+          "text": "The gala needed months of advance planning.",
+          "target": [
+            5
+          ],
+          "fix": "The gala needed months of planning.",
+          "why": "Planning is always done in advance. The word adds nothing."
+        },
+        {
+          "words": [
+            "Walking into the lobby,",
+            "the chandelier",
+            "impressed",
+            "every guest."
+          ],
+          "target": [
+            0
+          ],
+          "fix": "Walking into the lobby, every guest was impressed by the chandelier.",
+          "why": "The opening phrase dangles: the chandelier was not walking. The subject after the comma must be the one doing it."
+        },
+        {
+          "text": "The concierge greets guests, answers calls and is solving problems.",
+          "target": [
+            7,
+            8
+          ],
+          "fix": "The concierge greets guests, answers calls and solves problems.",
+          "why": "Greets, answers… solves. The third verb must take the shape of the first two."
+        },
+        {
+          "text": "Each guest will receive a free gift at the door.",
+          "target": [
+            5
+          ],
+          "fix": "Each guest will receive a gift at the door.",
+          "why": "A gift is free by definition."
+        },
+        {
+          "text": "She came to listen, not to judge.",
+          "target": []
+        },
+        {
+          "text": "We moved the reading to the library in order to save time.",
+          "target": [
+            7,
+            8
+          ],
+          "fix": "We moved the reading to the library to save time.",
+          "why": "«In order to» means «to». Two words saved."
+        },
+        {
+          "text": "The reason for the delay is because the chef was ill.",
+          "target": [
+            6
+          ],
+          "fix": "The reason for the delay is that the chef was ill.",
+          "why": "«The reason» already says «because». The reason is that…"
+        },
+        {
+          "words": [
+            "At the age of six,",
+            "her mother",
+            "taught her",
+            "to read."
+          ],
+          "target": [
+            0
+          ],
+          "fix": "When she was six, her mother taught her to read.",
+          "why": "As written, the mother was six. The opening phrase needs its own subject."
+        },
+        {
+          "text": "We received your form and have forwarded the same to the manager.",
+          "target": [
+            7,
+            8
+          ],
+          "fix": "We received your form and have forwarded it to the manager.",
+          "why": "«The same» is not a pronoun in modern English. Use «it»."
+        },
+        {
+          "text": "The letter was short, warm and clear.",
+          "target": []
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l1",
+      "title": "AUDIO 1 · THE READ-THROUGH",
+      "desc": "Ms. Whitmore reads her draft aloud and allows Julian to stop her. Once or twice. Listen for what he cuts, why he cuts it, and the one sentence he will not touch.",
+      "src": "c2-l5-1.mp3",
+      "dur": "2:33",
+      "speakers": "<ico-commentdots></ico-commentdots> Ms. Whitmore + Julian",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "What does Julian cut first, and why?",
+          "options": [
+            "\"On behalf of the entire team\": the guests already know she has one",
+            "The sentence about the kitchen: nobody cares about the cooks",
+            "The grandmother's story: it is too personal"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is wrong with \"to listen, to laugh, and many new friendships were made\"?",
+          "options": [
+            "It is too informal for a gala",
+            "The third item breaks the pattern of the list",
+            "It repeats the same verb three times"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "Which sentence does he refuse to cut, and why?",
+          "options": [
+            "The opening, because it is polite",
+            "The ending, because it is already short",
+            "The grandmother's, because nobody else could have written it"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "What does Ms. Whitmore think of the result?",
+          "options": [
+            "She approves, although she will not quite say so",
+            "She is offended and will print her own version",
+            "She cannot tell the two versions apart"
+          ],
+          "answer": 0
+        }
+      ],
+      "speaking": {
+        "prompt": "«Cut the furniture. Keep the grandmother.» Explain in your own words what Julian means, in two or three sentences.",
+        "starter": "By furniture he means the sentences that… The grandmother stays because…"
+      },
+      "transcript": [
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Very well. I shall read it aloud, and you may stop me. Once or twice. \"Dear guests. On behalf of the entire team here at the Grand Hotel, it is my great pleasure and privilege to extend to each and every one of you a very warm welcome to this evening's gala dinner.\""
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "Stop. That's nearly forty words, and the guest has learned one thing: welcome. \"Dear guests, welcome to the gala.\" Six."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "It sounds rather bare."
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "It sounds like someone with a dinner to host. <span class='tg'>\"On behalf of the entire team\" goes first.</span> They know you have a team. They've met us."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Go on, then. \"Over the course of the past three days, we have had the opportunity to listen to speakers, to laugh, and many new friendships were made.\""
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "<span class='tg'>The list limps.</span> To listen, to laugh, and then a passive walks in. \"We have listened, laughed and made new friends.\" Three verbs, same shape."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Hm. \"In order to make this evening possible, our kitchen has been working since five o'clock this morning.\""
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "Lose the first seven words. Keep the kitchen."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "And this one, I suppose, goes entirely. \"When I was a girl, my grandmother kept a guest house with four rooms, and she used to say that a guest is a story that walks in through the door.\""
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "No. <span class='tg'>That one stays. Every word.</span>"
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "It is thirty-one words long, Julian. I counted."
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "It's the only sentence in the letter that nobody else could have written. <span class='tg'>Cut the furniture. Keep the grandmother.</span>"
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "I see. And the ending? \"In conclusion, I would like to take this opportunity to express the hope that you will have an enjoyment of the evening.\""
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "\"Enjoy the evening.\""
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Three words."
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "A short sentence after a long one. <span class='tg'>It lands.</span>"
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Show me what is left. Hm. It is considerably shorter."
+        },
+        {
+          "spk": "Julian",
+          "b": true,
+          "html": "A hundred and twenty words. It fits the card."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "<span class='tg'>I did not say it was worse.</span> Have it printed. And Julian. Do try not to look so pleased."
+        }
+      ]
+    },
+    {
+      "type": "transform",
+      "id": "ex-tr",
+      "title": "SAY IT IN FEWER WORDS",
+      "intro": "Six sentences from the first draft of the hotel's guest guide. Rewrite each one tighter, inside the word limit, without losing a fact. The first words are in the box.",
+      "items": [
+        {
+          "source": "Due to the fact that it was raining, the gala was moved indoors.",
+          "cue": "9 words or fewer",
+          "start": "Because ",
+          "answers": [
+            "Because it was raining, the gala was moved indoors.",
+            "Because of the rain, the gala was moved indoors.",
+            "Because it rained, the gala was moved indoors.",
+            "Because of rain, the gala was moved indoors."
+          ],
+          "why": "due to the fact that → because. Five words become one."
+        },
+        {
+          "source": "Ms. Whitmore gave an explanation of the new rules to the staff.",
+          "cue": "9 words or fewer",
+          "start": "Ms. Whitmore ",
+          "answers": [
+            "Ms. Whitmore explained the new rules to the staff.",
+            "Ms Whitmore explained the new rules to the staff."
+          ],
+          "why": "gave an explanation of → explained. The verb was hiding in the noun."
+        },
+        {
+          "source": "At this point in time, we are not in a position to confirm your booking.",
+          "cue": "6 words or fewer",
+          "start": "We cannot ",
+          "answers": [
+            "We cannot confirm your booking yet.",
+            "We cannot confirm your booking now.",
+            "We cannot yet confirm your booking.",
+            "We cannot confirm your booking.",
+            "We cannot confirm your booking today.",
+            "We cannot currently confirm your booking."
+          ],
+          "why": "are not in a position to → cannot · at this point in time → yet."
+        },
+        {
+          "source": "The reason why the dinner was late was because the chef was ill.",
+          "cue": "9 words or fewer",
+          "start": "The dinner was late ",
+          "answers": [
+            "The dinner was late because the chef was ill.",
+            "The dinner was late because the chef was sick."
+          ],
+          "why": "the reason why… was because → because. Say it once."
+        },
+        {
+          "source": "Each and every guest will receive a free gift.",
+          "cue": "6 words or fewer",
+          "start": "",
+          "hint": "Every…",
+          "answers": [
+            "Every guest will receive a gift.",
+            "Each guest will receive a gift.",
+            "Every guest will get a gift.",
+            "Each guest will get a gift.",
+            "Every guest receives a gift.",
+            "Each guest receives a gift.",
+            "Every guest gets a gift.",
+            "Each guest gets a gift.",
+            "All guests will receive a gift.",
+            "All guests receive a gift."
+          ],
+          "why": "each and every → every · a free gift → a gift."
+        },
+        {
+          "source": "It is our hope that you will have an enjoyment of your stay.",
+          "cue": "8 words or fewer",
+          "start": "We hope ",
+          "answers": [
+            "We hope you enjoy your stay.",
+            "We hope that you enjoy your stay.",
+            "We hope you will enjoy your stay.",
+            "We hope that you will enjoy your stay."
+          ],
+          "why": "it is our hope that → we hope · have an enjoyment of → enjoy."
+        }
+      ]
+    },
+    {
+      "type": "contrast",
+      "id": "ex-contrast",
+      "title": "BEFORE AND AFTER",
+      "intro": "One sentence from the hotel's guest guide, before and after the red pen.",
+      "pair": {
+        "a": "In order to ensure that each and every guest has an enjoyable experience, it is our intention to provide assistance at any point in time, day or night.",
+        "b": "We want every guest to enjoy their stay, so we will help at any time, day or night."
+      },
+      "items": [
+        {
+          "type": "mcq",
+          "q": "Which fact is in A but missing from B?",
+          "options": [
+            "That help is available at night",
+            "None: B says everything A says",
+            "That the help is for every guest"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "What happened to \"it is our intention to provide assistance\"?",
+          "options": [
+            "It became two plain verbs: want and help",
+            "It was cut, and its meaning was lost",
+            "It was moved to the end unchanged"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "What did \"each and every\" add to \"every\"?",
+          "options": [
+            "A second group of guests",
+            "A formal tone that the guide needs",
+            "Two words and nothing else"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which version has a human subject doing something?",
+          "options": [
+            "A — \"it is our intention\"",
+            "B — \"we want… we will help\"",
+            "Neither"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "type": "mcq",
+          "q": "Which of these is as tight as B?",
+          "options": [
+            "Should you need anything, call the desk.",
+            "In the event that you should find yourself in need of anything, please do not hesitate to call the desk.",
+            "If it is the case that you need anything, the desk can be called by you."
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "type": "gapFill",
+      "id": "ex-gap",
+      "title": "WHICH MARK?",
+      "intro": "Punctuation is part of the editing. Choose the mark, or the form, that the sentence needs. Read each one aloud first: the pause you make is usually the answer.",
+      "items": [
+        {
+          "q": "She packed three things ___ a notebook, a pencil and a very sharp opinion.",
+          "options": [
+            "a colon ( : )",
+            "a semicolon ( ; )",
+            "nothing at all"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "q": "It was late ___ we went home.",
+          "options": [
+            "a comma alone ( , )",
+            "a comma and «so» ( , so )",
+            "nothing at all"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "q": "The letter ___ all three hundred words of it ___ had to fit on one card.",
+          "options": [
+            "two semicolons ( ; ; )",
+            "two colons ( : : )",
+            "two dashes ( — — )"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "q": "He had one rule ___ never apologize twice.",
+          "options": [
+            "a colon ( : )",
+            "a semicolon ( ; )",
+            "a comma ( , )"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "q": "We cut the opening ___ however, we kept the story.",
+          "options": [
+            "a comma ( , )",
+            "a semicolon ( ; )",
+            "a colon ( : )"
+          ],
+          "answer": 1,
+          "mute": true
+        },
+        {
+          "q": "Ms. Whitmore, the general manager ___ will give the toast.",
+          "options": [
+            "a semicolon ( ; )",
+            "a dash ( — )",
+            "a comma ( , )"
+          ],
+          "answer": 2,
+          "mute": true
+        },
+        {
+          "q": "The hotel has changed ___ menu.",
+          "options": [
+            "its",
+            "it's",
+            "its'"
+          ],
+          "answer": 0,
+          "mute": true
+        },
+        {
+          "q": "The speakers flew in from Lima, Peru ___ Austin, Texas ___ and Cork, Ireland.",
+          "options": [
+            "two colons ( : : )",
+            "two semicolons ( ; ; )",
+            "two dashes ( — — )"
+          ],
+          "answer": 1,
+          "mute": true
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "id": "ex-order",
+      "title": "RESTORE THE BALANCE",
+      "intro": "Five balanced sentences have been taken apart. Rebuild each one. The matched parts have the same shape, and the punctuation tells you where each one goes.",
+      "items": [
+        {
+          "words": [
+            "We",
+            "came",
+            "to celebrate,",
+            "not",
+            "to compete."
+          ],
+          "answer": "We came to celebrate, not to compete."
+        },
+        {
+          "words": [
+            "The letter",
+            "should be",
+            "either",
+            "shortened",
+            "or",
+            "rewritten."
+          ],
+          "answer": "The letter should be either shortened or rewritten."
+        },
+        {
+          "words": [
+            "A good card",
+            "is",
+            "short,",
+            "clear",
+            "and",
+            "warm."
+          ],
+          "answer": "A good card is short, clear and warm."
+        },
+        {
+          "words": [
+            "Not only",
+            "did she cut",
+            "the letter,",
+            "but",
+            "she also",
+            "improved it."
+          ],
+          "answer": "Not only did she cut the letter, but she also improved it."
+        },
+        {
+          "words": [
+            "Editing",
+            "is",
+            "less about",
+            "adding words",
+            "than about",
+            "removing them."
+          ],
+          "answer": "Editing is less about adding words than about removing them."
+        }
+      ]
+    },
+    {
+      "type": "listening",
+      "id": "ex-l2",
+      "title": "AUDIO 2 · THE FINAL CARD",
+      "desc": "The card as it will be printed: a hundred and twenty words, read by their author. Open the transcript of Audio 1 beside it and compare. What survived, what changed shape, and what is new?",
+      "src": "c2-l5-2.mp3",
+      "dur": "0:49",
+      "speakers": "<ico-commentdots></ico-commentdots> Ms. Whitmore",
+      "questions": [
+        {
+          "type": "mcq",
+          "q": "Which sentence of the first draft survived word for word?",
+          "options": [
+            "The opening welcome",
+            "The grandmother's sentence",
+            "The ending"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mcq",
+          "q": "What became of \"In conclusion, I would like to take this opportunity to express the hope that…\"?",
+          "options": [
+            "It was moved to the beginning",
+            "It stayed, with one word changed",
+            "Three words: \"Enjoy the evening.\""
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mcq",
+          "q": "\"Eat well, stay late, and leave us a story worth telling.\" Why does this list work?",
+          "options": [
+            "Three commands in the same shape, and the last one returns to the grandmother's image",
+            "It rhymes",
+            "Each item uses a different tense"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mcq",
+          "q": "What is the effect of ending on \"Enjoy the evening.\"?",
+          "options": [
+            "It sounds unfinished",
+            "A short sentence after long ones: it lands",
+            "It makes the card more formal"
+          ],
+          "answer": 1
+        }
+      ],
+      "speaking": {
+        "prompt": "Read the final card aloud once, slowly. Then say which sentence you would still cut if the card held only a hundred words, and why.",
+        "starter": "If I had to lose twenty more words, I would cut… because the reader…"
+      },
+      "transcript": [
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Dear guests, welcome to the gala."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "For three days, we have <span class='tg'>listened, laughed and made new friends</span>. You have given us arguments, jokes and one unforgettable dog. Tonight is simply our way of saying thank you."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Our kitchen has been working since five o'clock this morning<span class='tg'>;</span> the silver is polished, the piano is tuned, and the chairs have been counted twice."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "When I was a girl, my grandmother kept a guest house with four rooms, and she used to say that <span class='tg'>a guest is a story that walks in through the door</span>. This weekend, two hundred stories walked through ours. We were glad of every one."
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "<span class='tg'>Eat well, stay late, and leave us a story worth telling.</span>"
+        },
+        {
+          "spk": "Ms. Whitmore",
+          "html": "Enjoy the evening."
+        }
+      ]
+    },
+    {
+      "type": "writing",
+      "title": "<ico-pen></ico-pen> HALF THE WORDS",
+      "intro": "This paragraph from the guest guide is <b>160 words</b> long. Return it in <b>80 or fewer</b> without losing a single fact.<br><br><i>«It should be noted that the hotel library, which is located on the second floor, is open to each and every guest on a daily basis from the hour of eight o'clock in the morning until the hour of ten o'clock at night. At the present moment in time, the library contains a total of approximately four thousand books, and it is important to mention that the majority of these books were donated as gifts by guests who stayed here in the past. In the event that a guest wishes to borrow a book and take it to his or her room, he or she is kindly requested to write his or her name down in the green notebook that can be found on the desk next to the door. It is our sincere hope that guests will make a decision to leave a book of their own behind when the time comes for them to depart from the hotel.»</i>",
+      "checklist": [
+        "<b>80 words or fewer.</b> Count them",
+        "All <b>seven facts</b> are still there: the floor, who may use it, the hours, the number of books, where most came from, how to borrow, what we hope",
+        "No <b>furniture</b>: no <b>it should be noted, each and every, at the present moment in time, in the event that</b>",
+        "<b>Verbs do the work</b>: no <b>make a decision</b>, no <b>is kindly requested to</b>",
+        "One <b>short sentence after a long one</b>, and one mark used for effect (<b>colon, semicolon or dash</b>)"
+      ],
+      "placeholder": "The hotel library…",
+      "example": "The hotel library, on <span class=\"gap\">the floor</span>, is open to <span class=\"gap\">who</span> <span class=\"gap\">when</span>. It holds <span class=\"gap\">how many</span> books<span class=\"gap\">a mark</span> <span class=\"gap\">where most of them came from</span>. To borrow one, <span class=\"gap\">what the guest does</span>. <span class=\"gap\">a short last sentence: what we hope</span>.",
+      "hw": "Write your 80 words, then <b>record both versions</b>, the 160 and yours, and time them. Send me your text, the audio and the two times on WhatsApp.",
+      "rubric": [
+        {
+          "c": "Task",
+          "d": "80 words or fewer, and a guest could still find the library, use it and borrow a book."
+        },
+        {
+          "c": "Lesson target",
+          "d": "Redundancy is gone, verbs carry the meaning, lists are parallel and no modifier dangles."
+        },
+        {
+          "c": "Precision",
+          "d": "Every one of the seven facts survives, and none has been changed on the way."
+        }
+      ]
+    }
+  ],
+  "say": {
+    "dir": "say/c2-l5",
+    "keys": [
+      "a-clich",
+      "a-comma-splice",
+      "a-dangling-modifier",
+      "a-draft",
+      "a-mixed-metaphor",
+      "a-modifier",
+      "a-semicolon",
+      "a-short-sentence-after-long-ones-it-lands",
+      "a-simile",
+      "at-a-crossroads",
+      "at-this-point-in-time-we-are-not-in-a-position-to-confirm-your-booking",
+      "because-it-was-raining-the-gala-was-moved-indoors",
+      "concise",
+      "due-to-the-fact-that-it-was-raining-the-gala-was-moved-indoors",
+      "each-and-every-guest-will-receive-a-free-gift",
+      "each-guest-will-receive-a-gift-at-the-door",
+      "each-item-uses-a-different-tense",
+      "eat-well-stay-late-and-leave-us-a-story-worth-telling-why-does-this-list-work",
+      "every-guest-will-receive-a-gift",
+      "food-for-thought",
+      "he-had-one-rule-never-apologize-twice",
+      "if-it-is-the-case-that-you-need-anything-the-desk-can-be-called-by-you",
+      "in-order-to-ensure-that-each-and-every-guest-has-an-enjoyable-experience-it-is-o",
+      "in-the-event-that-you-should-find-yourself-in-need-of-anything-please-do-not-hes",
+      "it-is-our-hope-that-you-will-have-an-enjoyment-of-your-stay",
+      "it-is-too-informal-for-a-gala",
+      "it-makes-the-card-more-formal",
+      "it-repeats-the-same-verb-three-times",
+      "it-rhymes",
+      "it-sounds-unfinished",
+      "it-stayed-with-one-word-changed",
+      "it-was-late-so-we-went-home",
+      "it-was-moved-to-the-beginning",
+      "ms-whitmore-explained-the-new-rules-to-the-staff",
+      "ms-whitmore-gave-an-explanation-of-the-new-rules-to-the-staff",
+      "on-behalf-of-the-entire-team-the-guests-already-know-she-has-one",
+      "parallel-structure",
+      "redundant",
+      "she-approves-although-she-will-not-quite-say-so",
+      "she-came-to-listen-not-to-judge",
+      "she-cannot-tell-the-two-versions-apart",
+      "she-explained-the-new-rules",
+      "she-is-offended-and-will-print-her-own-version",
+      "should-you-need-anything-call-the-desk",
+      "the-color-of-the-theater-curtain-was-her-favorite",
+      "the-concierge-greets-guests-answers-calls-and-solves-problems",
+      "the-dinner-was-late-because-the-chef-was-ill",
+      "the-ending",
+      "the-ending-because-it-is-already-short",
+      "the-first-draft-was-long-the-second-was-better",
+      "the-gala-needed-months-of-planning",
+      "the-grandmother-s-because-nobody-else-could-have-written-it",
+      "the-grandmother-s-sentence",
+      "the-grandmother-s-story-it-is-too-personal",
+      "the-letter-all-three-hundred-words-of-it-had-to-fit-on-a-card",
+      "the-letter-should-be-either-shortened-or-rewritten",
+      "the-opening-because-it-is-polite",
+      "the-opening-welcome",
+      "the-reason-for-the-delay-is-that-the-chef-was-ill",
+      "the-reason-why-the-dinner-was-late-was-because-the-chef-was-ill",
+      "the-sentence-about-the-kitchen-nobody-cares-about-the-cooks",
+      "the-third-item-breaks-the-pattern-of-the-list",
+      "three-commands-in-the-same-shape-and-the-last-one-returns-to-the-grandmother-s-i",
+      "three-words-enjoy-the-evening",
+      "to-proofread",
+      "to-save-time-we-met-online",
+      "to-trim",
+      "vera-knows-the-history-of-every-hotel-in-the-city",
+      "walking-into-the-lobby-every-guest-was-impressed-by-the-chandelier",
+      "walking-into-the-lobby-the-chandelier-impressed-the-guests",
+      "walking-into-the-lobby-the-guests-admired-the-chandelier",
+      "we-cannot-confirm-your-booking-yet",
+      "we-decided-to-move-the-dinner",
+      "we-have-polished-the-silver-tuned-the-piano-and-counted-the-chairs-twice-we-are-",
+      "we-hope-you-enjoy-your-stay",
+      "we-moved-the-reading-to-the-library-to-save-time",
+      "we-received-your-form-and-forwarded-it-to-the-manager",
+      "we-received-your-form-and-have-forwarded-it-to-the-manager",
+      "we-want-every-guest-to-enjoy-their-stay-so-we-will-help-at-any-time-day-or-night",
+      "what-became-of-in-conclusion-i-would-like-to-take-this-opportunity-to-express-th",
+      "what-does-julian-cut-first-and-why",
+      "what-does-ms-whitmore-think-of-the-result",
+      "what-is-the-effect-of-ending-on-enjoy-the-evening",
+      "what-is-wrong-with-to-listen-to-laugh-and-many-new-friendships-were-made",
+      "when-she-was-six-her-mother-taught-her-to-read",
+      "which-sentence-does-he-refuse-to-cut-and-why",
+      "which-sentence-of-the-first-draft-survived-word-for-word"
+    ]
+  }
+}
