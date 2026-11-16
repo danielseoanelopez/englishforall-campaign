@@ -881,7 +881,10 @@ function buildSayUI(R) {
     rate.querySelector("#rateClose").addEventListener("click", () => { S.tries = 2; pass(); });
   }
   sayHook = { heard: t => judge([t]), mode: () => (main.querySelector("#micBtn") ? "voice" : "record") };
-  if (SR && qs.get("voice") !== "off") voiceMode(); else recordMode(SR ? "" : "This browser has no voice check, so you record instead.");
+  /* iPhone and iPad (every iOS browser is Safari inside): the voice check is unreliable there, so record mode is the only mode */
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  if (SR && !isIOS && qs.get("voice") !== "off") voiceMode();
+  else recordMode(isIOS ? "On iPhone and iPad you record your line and rate it yourself." : SR ? "" : "This browser has no voice check, so you record instead.");
   startTimer(R.par, stage.querySelector(".scene-tag"));
 }
 
