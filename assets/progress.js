@@ -81,7 +81,7 @@
     });
     B.forEach(function (b) {
       var after = b.opensAfter ? B.filter(function (x) { return x.id === b.opensAfter; })[0] : null;
-      b.open = !!b.ready && (!after || after.done);
+      b.open = !!b.ready && (reg.unlockAll || !after || after.done);   // unlockAll in registry.json opens every building
     });
     return B;
   }

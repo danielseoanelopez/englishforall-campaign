@@ -1,4 +1,5 @@
 {
+  "unlockAll": true,
   "note": "Rank Up City: every building, its map spot, when it opens, its stages (max paws) and its album cards. Read by city.html and cards.html through EFA.registry() in assets/progress.js. To open a building: write games/<id>.json, record its clips, set ready: true here. A card needs: id, stage, name, rarity (COMMON RARE EPIC LEGENDARY SECRET), quote, and img or icon + color; perfect: true = a full score on that stage.",
   "buildings": [
     {

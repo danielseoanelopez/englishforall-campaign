@@ -1154,9 +1154,10 @@ function loadFailed() {
   stage.innerHTML = '<div class="center" style="padding:30px 0;"><p>Could not load this building.<br><span class="es">No pude cargar este edificio. Revisa tu conexión.</span></p>' +
     '<div style="margin-top:16px;"><a class="btn cyan" href="city.html"><ico-city></ico-city> CITY MAP</a></div></div>';
 }
-fetch("games/" + GAME_ID + ".json", { cache: "no-cache" })
-  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(boot, loadFailed);
+Promise.all([
+  fetch("games/" + GAME_ID + ".json", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+  window.EFA ? EFA.registry().catch(() => ({})) : Promise.resolve({})   // "unlockAll": true in registry.json opens every stage
+]).then(([g, reg]) => { if (reg && reg.unlockAll) g.freePlay = true; boot(g); }, loadFailed);
 
 /* for building-specific add-ons and for testing */
 window.RankUpGame = { id: GAME_ID, mechanics: MECH, get data() { return G; }, get state() { return S; },
