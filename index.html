@@ -22,7 +22,7 @@
 <link rel="preload" href="assets/fonts/press-start-2p-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css?v=1">
 <link rel="stylesheet" href="assets/brands.css?v=1">
-<script src="assets/progress.js?v=3"></script>
+<script src="assets/progress.js?v=4"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <style>
   :root {
@@ -290,6 +290,11 @@ const SOCIAL = {
 })();
 function copyDiscord(el){ var r=el.innerHTML; var done=function(){ el.innerHTML='<ico-check></ico-check>'; setTimeout(function(){el.innerHTML=r;},1500); }; try{ navigator.clipboard.writeText(SOCIAL.discord).then(done,done); }catch(e){ done(); } return false; }
 
+// ===== Test slice =====
+// ONLY_OPEN lists the Academy worlds students can open right now (null = every built world, the normal setup).
+// While it is set, the bonus tracks are locked too. ?profe=rankup still opens everything.
+const ONLY_OPEN = ["A1"];
+
 // ===== Teacher / reset params =====
 let TEACHER = false;
 try {
@@ -370,6 +375,7 @@ function starStr(n) { return '<span class="lstars">' + "<ico-star></ico-star>".r
 
 // A world is "built/playable" if it has at least one lesson with a url.
 function worldBuilt(w) { return w.lessons.some(l => l.url); }
+function worldOpen(w) { return TEACHER || (worldBuilt(w) && (!ONLY_OPEN || ONLY_OPEN.indexOf(w.id) >= 0)); }
 
 // ===== Render =====
 function render() {
@@ -380,7 +386,7 @@ function render() {
   CAMPAIGN.forEach((w, wi) => {
     const [accent, glow] = COLORS[w.color];
     const built = worldBuilt(w);
-    const unlocked = TEACHER || built;          // current slice: built worlds open, rest "coming soon"
+    const unlocked = worldOpen(w);              // built worlds open (only ONLY_OPEN while a test slice is set), rest locked
     let worldStars = 0, worldMax = 0;
 
     // lesson rows
@@ -490,7 +496,7 @@ render();
   var next = null;
   for (var i = 0; i < CAMPAIGN.length && !next; i++) {
     var w = CAMPAIGN[i];
-    if (!(TEACHER || worldBuilt(w))) continue;
+    if (!worldOpen(w)) continue;
     for (var j = 0; j < w.lessons.length; j++) {
       var l = w.lessons[j];
       if (l.url && getStars("rankup_" + w.id + "_L" + (j + 1)) === 0) {
@@ -606,10 +612,12 @@ function importProgress(){
   TRACKS.forEach(function (tr, ti) {
     var rows = "", earned = 0, max = 0;
     tr.lessons.forEach(function (l, i) {
-      var built = !!l.url;
+      var shut = !!ONLY_OPEN && !TEACHER && !!l.url;   // test slice: bonus tracks closed
+      var built = !!l.url && !shut;
       var st = built ? getStars(l.key) : 0;
       if (built) { earned += st; max += 5; }
-      var status = !built ? '<span class="soon">PRÓXIMA</span>'
+      var status = shut ? '<span class="lk"><ico-lock></ico-lock></span>'
+                 : !built ? '<span class="soon">PRÓXIMA</span>'
                  : (st > 0 ? starStr(st) : '<span class="play">JUGAR ▸</span>');
       var tag = built ? "a" : "div";
       rows += '<' + tag + ' class="lrow' + (built ? '' : ' locked') + '"' + (built ? ' href="' + l.url + '"' : '') + '>'
@@ -621,13 +629,13 @@ function importProgress(){
     var sep = '<div class="boss-sep">' + tr.badge + ' ' + tr.name.toUpperCase() + ' · '
             + (nBuilt === tr.lessons.length ? tr.lessons.length + ' LECCIONES'
                : nBuilt + ' DE ' + tr.lessons.length + ' LISTAS') + '</div>';
-    var expanded = ti === 0 ? "expanded" : "";
+    var expanded = ti === 0 && !(ONLY_OPEN && !TEACHER) ? "expanded" : "";
     host.insertAdjacentHTML("beforeend",
-      '<div class="world ' + expanded + '" style="--accent:' + tr.accent + ';--glow:' + tr.glow + '" data-aos="fade-up">'
+      '<div class="world ' + expanded + (ONLY_OPEN && !TEACHER ? ' locked' : '') + '" style="--accent:' + tr.accent + ';--glow:' + tr.glow + '" data-aos="fade-up">'
       + '<div class="w-head" role="button" tabindex="0" aria-expanded="false" onclick="toggleWorld(this)" onkeydown="wKey(event,this)">'
       + '<div class="w-badge">' + tr.badge + '</div>'
       + '<div class="w-meta"><div class="w-name">' + tr.name + '</div><div class="w-theme">' + tr.theme + (tr.min ? ' · ~' + tr.min + ' min/lección' : '') + '</div></div>'
-      + '<div class="w-right"><span class="w-pill open" style="color:' + tr.accent + '">' + tr.pill + '</span><div class="w-stars"><ico-star></ico-star> ' + earned + '/' + max + '</div></div>'
+      + '<div class="w-right">' + (ONLY_OPEN && !TEACHER ? '<span class="w-pill lock"><ico-lock></ico-lock> PRÓXIMO</span>' : '<span class="w-pill open" style="color:' + tr.accent + '">' + tr.pill + '</span>') + '<div class="w-stars"><ico-star></ico-star> ' + earned + '/' + max + '</div></div>'
       + '<div class="w-chev"><ico-play></ico-play></div></div>'
       + '<div class="w-body">' + sep + rows + '</div></div>');
   });
