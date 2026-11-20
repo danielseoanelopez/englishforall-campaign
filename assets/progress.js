@@ -81,7 +81,8 @@
     });
     B.forEach(function (b) {
       var after = b.opensAfter ? B.filter(function (x) { return x.id === b.opensAfter; })[0] : null;
-      b.open = !!b.ready && (!reg.onlyOpen || reg.onlyOpen.indexOf(b.id) >= 0)   // onlyOpen: a test slice, only these buildings
+      b.inSlice = !reg.onlyOpen || reg.onlyOpen.indexOf(b.id) >= 0;   // onlyOpen: a test slice; the other buildings are hidden
+      b.open = !!b.ready && b.inSlice
             && (reg.unlockAll || !after || after.done);                         // unlockAll opens every building (and every stage)
     });
     return B;

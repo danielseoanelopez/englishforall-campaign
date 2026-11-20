@@ -22,7 +22,7 @@
 <link rel="preload" href="assets/fonts/press-start-2p-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css?v=1">
 <link rel="stylesheet" href="assets/brands.css?v=1">
-<script src="assets/progress.js?v=4"></script>
+<script src="assets/progress.js?v=5"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <style>
   :root {
@@ -217,7 +217,7 @@
 
   <div id="worlds"></div>
 
-  <div class="boss-sep" style="margin:24px 2px 10px"><ico-star></ico-star> CURSOS TEMÁTICOS · SIDEQUESTS <ico-star></ico-star></div>
+  <div class="boss-sep" id="sideSep" style="margin:24px 2px 10px"><ico-star></ico-star> CURSOS TEMÁTICOS · SIDEQUESTS <ico-star></ico-star></div>
   <div id="sidequests"></div>
 
   <div class="social" id="socialBar">
@@ -387,6 +387,7 @@ function render() {
     const [accent, glow] = COLORS[w.color];
     const built = worldBuilt(w);
     const unlocked = worldOpen(w);              // built worlds open (only ONLY_OPEN while a test slice is set), rest locked
+    if (!unlocked && ONLY_OPEN) return;         // test slice: closed worlds are hidden, not shown locked
     let worldStars = 0, worldMax = 0;
 
     // lesson rows
@@ -566,6 +567,12 @@ function importProgress(){
 (function renderSidequests() {
   var host = document.getElementById("sidequests");
   if (!host) return;
+  if (ONLY_OPEN && !TEACHER) {   // test slice: no bonus tracks and no course guides on the page
+    host.style.display = "none";
+    ["sideSep"].forEach(function (id) { var e = document.getElementById(id); if (e) e.style.display = "none"; });
+    document.querySelectorAll(".docs-row").forEach(function (e) { e.style.display = "none"; });
+    return;
+  }
   var TRACKS = [
     { name: "Conversación A1", theme: "Inglés para principiantes · A1", badge: "<ico-comments></ico-comments>", accent: "var(--cyan)", glow: "#00e5ff55", pill: "A1",
       lessons: [

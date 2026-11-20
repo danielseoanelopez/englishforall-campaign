@@ -1,9 +1,9 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v43";  // v19: A1 L4 family tree
+const CACHE = "rankup-v44";  // v19: A1 L4 family tree
 const CORE = [
   "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
-  "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=4",
+  "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=5",
   "assets/fonts/press-start-2p-latin.woff2", "assets/fonts/share-tech-mono-latin.woff2",
   "city.html", "neon-cafe.html", "neon-office.html", "game.html", "cards.html", "manifest.json",
   "assets/game.js?v=6", "assets/game.css?v=2", "games/cafe.json", "games/office.json", "games/registry.json", "games/agency.json", "games/vault.json",

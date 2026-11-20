@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="theme-color" content="#05050e">
 <link rel="manifest" href="manifest.json">
-<script src="assets/progress.js?v=4"></script>
+<script src="assets/progress.js?v=5"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Rank Up City — learn English like a game">
@@ -232,7 +232,7 @@ document.getElementById("enriImg").addEventListener("click", () => { ei = (ei + 
 function renderMap(B) {
   const map = document.getElementById("map");
   map.innerHTML = '<img class="mapimg" src="map-city.webp" alt="Rank Up City map — six neon districts">';
-  B.forEach(n => {
+  B.filter(n => n.inSlice).forEach(n => {
     const b = document.createElement("button");
     b.className = "spot " + (n.open ? "open" : "locked");
     b.style.left = n.map.px + "%"; b.style.top = n.map.py + "%";
@@ -277,7 +277,7 @@ EFA.registry().then(reg => {
   tottiSay.textContent = main;
   /* card count: the album's own list, for every building that is open to the public */
   let got = 0, total = 0;
-  B.filter(b => b.ready).forEach(b => b.cards.forEach(c => { total++; if (EFA.cardEarned(b, c)) got++; }));
+  B.filter(b => b.ready && b.inSlice).forEach(b => b.cards.forEach(c => { total++; if (EFA.cardEarned(b, c)) got++; }));
   document.getElementById("cardsN").textContent = got + "/" + total;
 }).catch(() => { tottiSay.textContent = "The map didn't load. Check your connection and tap back in."; });
 
