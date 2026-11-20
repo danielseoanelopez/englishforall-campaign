@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/brands.css?v=1">
 <script src="assets/progress.js?v=5"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20261116">
+<link rel="stylesheet" href="lesson.css?v=20261120">
 <link rel="stylesheet" href="assets/icons.css?v=1">
 </head>
 <body>
@@ -258,10 +258,14 @@ function matchHtml(b, id){
   <div class="btn-row"><button class="btn check" onclick="checkMatch('${id}')"><ico-check></ico-check> CHECK</button></div><div class="ex-score" id="score-${id}"></div></div>`;
 }
 function orderHtml(b, id){
-  orderState[id] = { answers:(b.items||[]).map(it=>it.answer) };
+  orderState[id] = { answers:(b.items||[]).map(it=>it.answer), q:{} };
   const body = (b.items||[]).map((it,k)=>{
     const words = shuffle(it.words);
-    return `<div class="order-item" id="${id}-it-${k}">${it.clip?clipRow(it.clip):""}<div class="order-line" id="${id}-line-${k}"></div>
+    // questions get a fixed "?" at the end of the line (unless a word tile already carries the punctuation)
+    const ans = String(it.answer||"").trim();
+    const isQ = !/\?/.test((it.words||[]).join(" ")) && (/\?$/.test(ans) || (/^(what|where|who|whose|when|why|how|which|is|are|am|was|were|do|does|did|can|could|would|will|shall|should|have|has|may)\b/i.test(ans) && !/[.!]$/.test(ans)));
+    if(isQ) orderState[id].q[k] = true;
+    return `<div class="order-item" id="${id}-it-${k}">${it.clip?clipRow(it.clip):""}<div class="order-line${isQ?" q":""}" id="${id}-line-${k}"></div>
       <div class="order-bank" id="${id}-bank-${k}">${words.map(w=>`<button type="button" class="word" onclick="oMove('${id}',${k},this)">${esc(w)}</button>`).join("")}</div></div>`;
   }).join("");
   return (b.stage ? `<div class="stage-tag">${esc(b.stage)}</div>` : "") + `<div class="card" id="${id}" data-aos="fade-up"><div class="panel-title"><ico-puzzle></ico-puzzle> ${esc(b.title||T('ORDENA LAS PALABRAS','PUT THE WORDS IN ORDER'))}</div>${b.intro?`<p class="es">${esc(b.intro)}</p>`:''}
@@ -523,7 +527,7 @@ function checkMatch(id){ const st=matchState[id]; st.done=true; let correct=0; s
 // order
 function oMove(id, k, btn){ if(orderState[id].done) return; const line=document.getElementById(id+"-line-"+k), bank=document.getElementById(id+"-bank-"+k); (btn.parentElement===bank?line:bank).appendChild(btn); blip(); }
 function norm(s){ return s.replace(/\s+/g," ").replace(/[.,!?]/g,"").trim().toLowerCase(); }
-function checkOrder(id){ const st=orderState[id]; st.done=true; let correct=0; st.answers.forEach((ans,k)=>{ const line=document.getElementById(id+"-line-"+k); const got=Array.prototype.map.call(line.querySelectorAll(".word"),w=>w.textContent).join(" "); const item=document.getElementById(id+"-it-"+k); if(norm(got)===norm(ans)){ correct++; item.classList.add("ok"); } else { item.classList.add("no"); if(!line.querySelector(".ans")) line.insertAdjacentHTML("beforeend",'<span class="ans"><ico-check></ico-check> '+ans+'</span>'); } line.querySelectorAll(".word").forEach(w=>w.disabled=true); });
+function checkOrder(id){ const st=orderState[id]; st.done=true; let correct=0; st.answers.forEach((ans,k)=>{ const line=document.getElementById(id+"-line-"+k); const got=Array.prototype.map.call(line.querySelectorAll(".word"),w=>w.textContent).join(" "); const item=document.getElementById(id+"-it-"+k); if(norm(got)===norm(ans)){ correct++; item.classList.add("ok"); } else { item.classList.add("no"); if(!line.querySelector(".ans")) line.insertAdjacentHTML("beforeend",'<span class="ans"><ico-check></ico-check> '+ans+(st.q&&st.q[k]&&!/\?$/.test(String(ans).trim())?'?':'')+'</span>'); } line.querySelectorAll(".word").forEach(w=>w.disabled=true); });
   document.querySelectorAll("#"+id+" .word").forEach(w=>w.disabled=true);
   setScore(id, correct, st.answers.length);
 }

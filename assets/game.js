@@ -5,7 +5,7 @@
 
    Round types live in MECH at the bottom of the mechanics section. To add one, write
    build<Name>UI(R) and register it there; it gets the round object R and must end by calling
-   succeed(R) or fail(R). Everything else (HUD, hearts, timer, Totti's judgment, summary, cards,
+   succeed(R) or fail(R). Everything else (HUD, hearts, timer, round score, summary, cards,
    progress, music) is shared.
 
    Round fields every type uses:  type, who, line, keys{line,retry,thanks[,twist]}, retryLine, thanks, par
@@ -14,7 +14,7 @@
      talk     options[], correct choose the reply
      compose  words[], answer, alts[], optional[]   tap word chips into a sentence
               (alts = other correct orders; optional = words the sentence is also correct without)
-   Boss stages show the character's reply after each round and Totti's judgment once, at the end.
+   Boss stages show the character's reply after each round and the score once, at the end.
 
    Buildings 3–6 add (fields in studio/outlines/games-map.md §1b):
      clue, deduce, contradiction, timeline · lock, terminal, chart · say, fastear, onair · bestfit, spot, toast
@@ -235,7 +235,7 @@ function bubble(castKey, text, audioKey, subOverride) {
   if (audioKey) r.querySelector(".replay").addEventListener("click", () => say(audioKey, text));
   return r;
 }
-/* the hint giver: Enri by default; a building can name another one with "hint" (the Agency uses Totti's nose) */
+/* the hint giver: Enri by default; a building can name another one with "hint" */
 function hintWho() {
   return Object.assign({ name: "ENRI", sub: "purr boost", img: "sprite-enri.webp", pos: "22% 40%", color: "#ff9d3d", label: "PURR BOOST" }, G.hint || {});
 }
@@ -249,6 +249,7 @@ function enriBubble(text) {
     '<div class="ava"><img src="' + h.img + '" alt="" style="object-position:' + h.pos + '"></div>' +
     '<div class="bub"><div class="who">' + h.name + ' · ' + h.sub + '</div><div class="say">' + text + '</div></div></div>');
 }
+const SCORE_QUIPS = { 3: "Perfect!", 2: "Nice work!", 1: "Done! Listen again next time." };
 function pawRow(paws) {
   let s = '<div class="paws" style="color:var(--gold)">';
   for (let i = 0; i < 3; i++) s += i < paws ? ic("paw", 27) : '<span class="off">' + ic("paw", 27) + '</span>';
@@ -264,7 +265,6 @@ function sceneHTML(custId) {
     (sc.bar ? '<div class="sc-bar"' + bg + '></div>' : '') +
     (sc.enri === false ? '' : '<img class="sc-enri" src="sprite-enri.webp" alt="">' +
     '<span class="zz sc-z1">z</span><span class="zz2 sc-z2">z</span>') +
-    '<img class="sc-tot" src="sprite-totti.webp" alt="">' +
   '</div></div>';
 }
 
@@ -986,8 +986,8 @@ function fail(R) {
 
 function showResult(R, paws, xp, tip, bonus, elapsed) {
   const st = STAGES[S.sid];
-  haptic(paws >= 3 ? [12, 45, 12, 45, 90] : [50]);   // Totti's judgment buzz
-  const quips = { 3: "...Acceptable. *slow blink of approval*", 2: "Adequate. I have seen worse.", 1: "*judges you silently* ...Next time, LISTEN." };
+  haptic(paws >= 3 ? [12, 45, 12, 45, 90] : [50]);   // score buzz
+  const quips = SCORE_QUIPS;
   const c = CAST[R.who];
   const speedLine = '<p class="px" style="font-size:0.62rem; color:' + (bonus > 0 ? "var(--gold)" : "var(--muted)") + '; margin-top:8px;">' + ic("clock", 13) + ' TIME ' + elapsed.toFixed(1) + 'S' + (bonus > 0 ? ' · <ico-bolt></ico-bolt> SPEED BONUS +' + bonus + ' XP' : '') + '</p>';
   stage.innerHTML =
@@ -995,9 +995,7 @@ function showResult(R, paws, xp, tip, bonus, elapsed) {
     '<div class="center">' +
       '<div class="ava" style="--c:' + c.color + '; margin:8px auto; width:68px; height:68px;">' + avaInner(c, true) + '</div>' +
       '<p style="font-size:1rem; color:var(--muted); font-style:italic;">"' + R.thanks + '"</p>' +
-      '<div class="ava" style="--c:var(--gold); margin:16px auto 7px; width:46px; height:46px;"><img src="sprite-totti.webp" alt="" style="object-position:42% 4%"></div>' +
-      '<div class="px" style="font-size:0.62rem; color:var(--gold); letter-spacing:1px;">TOTTI\'S JUDGMENT</div>' +
-      '<div style="margin:8px 0;">' + pawRow(paws) + '</div>' +
+      '<div style="margin:16px 0 8px;">' + pawRow(paws) + '</div>' +
       '<p style="font-size:0.88rem; color:var(--muted); font-style:italic;">"' + quips[paws] + '"</p>' +
       '<p class="px" style="font-size:0.62rem; color:var(--green); margin-top:10px;">+$' + tip + ' TIP &nbsp; +' + xp + ' XP</p>' +
       (chamberOf() && R.digit != null ? '<p class="px digit-found">DIGIT FOUND · <b>' + R.digit + '</b></p>' : "") +
@@ -1021,24 +1019,22 @@ function showReply(R, xp, tip, bonus, elapsed) {
     (bonus > 0 ? ' &nbsp; <span style="color:var(--gold)"><ico-bolt></ico-bolt> +' + bonus + ' SPEED</span>' : '') +
     (chamberOf() && R.digit != null ? ' &nbsp; <span style="color:var(--gold)">DIGIT · ' + R.digit + '</span>' : '') + '</p>'));
   say(R.keys.thanks, R.thanks);
-  const btn = el('<div class="center" style="margin-top:16px;"><button class="btn cyan">' + (next ? "<ico-play></ico-play> NEXT QUESTION" : (chamberOf() && chamberCode().length ? "<ico-key></ico-key> TO THE KEYPAD" : ic("paw", 15) + " TOTTI'S JUDGMENT")) + '</button></div>');
+  const btn = el('<div class="center" style="margin-top:16px;"><button class="btn cyan">' + (next ? "<ico-play></ico-play> NEXT QUESTION" : (chamberOf() && chamberCode().length ? "<ico-key></ico-key> TO THE KEYPAD" : ic("paw", 15) + " SEE YOUR SCORE")) + '</button></div>');
   stage.appendChild(btn);
   btn.querySelector("button").addEventListener("click", () => { blip(); next ? startRound(S.round + 1) : endOfStage(); });
 }
-/* Totti judges the whole boss stage once */
+/* the boss stage is scored once, at the end */
 function showVerdict() {
   const st = STAGES[S.sid];
   const max = maxPaws(S.sid);
   const paws = S.pawsTotal >= max ? 3 : S.pawsTotal >= max * 0.66 ? 2 : 1;
   haptic(paws >= 3 ? [12, 45, 12, 45, 90] : [50]);
-  const quips = { 3: "...Acceptable. *slow blink of approval*", 2: "Adequate. I have seen worse.", 1: "*judges you silently* ...Next time, LISTEN." };
+  const quips = SCORE_QUIPS;
   stopVoice();
   stage.innerHTML =
     '<div class="scene-tag">' + st.name.toUpperCase() + ' · COMPLETE</div>' +
     '<div class="center">' +
-      '<div class="ava" style="--c:var(--gold); margin:14px auto 9px; width:68px; height:68px;"><img src="sprite-totti.webp" alt="" style="object-position:42% 4%"></div>' +
-      '<div class="px" style="font-size:0.62rem; color:var(--gold); letter-spacing:1px;">TOTTI\'S JUDGMENT</div>' +
-      '<div style="margin:10px 0;">' + pawRow(paws) + '</div>' +
+      '<div style="margin:18px 0 10px;">' + pawRow(paws) + '</div>' +
       '<p style="font-size:0.88rem; color:var(--muted); font-style:italic;">"' + quips[paws] + '"</p>' +
       '<p class="px" style="font-size:0.62rem; color:var(--green); margin-top:12px;">PAWS ' + S.pawsTotal + '/' + max + '</p>' +
     '</div>';

@@ -91,7 +91,7 @@
       "num": "2-1",
       "name": "First day",
       "tag": "Routines & work emails",
-      "intro": "New hire! Welcome to the Office Tower. Up here it's calls, chats and emails — no coffee, but the game's the same: read the message, then PICK or BUILD the right English. Totti's still watching. Let's go.",
+      "intro": "New hire! Welcome to the Office Tower. Up here it's calls, chats and emails — no coffee, but the game's the same: read the message, then PICK or BUILD the right English. Let's go.",
       "introKey": "s1-intro",
       "tutorial": true,
       "words": [
@@ -132,7 +132,7 @@
       "num": "2-3",
       "name": "The client call",
       "tag": "Requests, offers & comparatives",
-      "intro": "Big moment — a client's on the line. Be POLITE: could, would, can. And she'll compare our plans, so know your comparatives. Breathe. Totti's listening.",
+      "intro": "Big moment — a client's on the line. Be POLITE: could, would, can. And she'll compare our plans, so know your comparatives. Breathe.",
       "introKey": "s3-intro",
       "words": [
         "Could you…?",

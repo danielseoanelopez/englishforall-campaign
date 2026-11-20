@@ -142,19 +142,11 @@ a.pod:hover { transform: translateY(-2px); }
 
   <div class="cats">
     <div class="catrow">
-      <img class="catimg" id="tottiImg" src="sprite-totti.webp" alt="Totti">
-      <div class="catbub" style="--cc: #b5b5d0;">
-        <div class="cwho">TOTTI · your guide</div>
-        <div class="csay" id="tottiSay"></div>
-        <div class="chint">tap a building, or tap Totti for advice</div>
-      </div>
-    </div>
-    <div class="catrow rev">
       <img class="catimg" id="enriImg" src="sprite-enri.webp" alt="Enri" style="width:96px;">
       <div class="catbub" style="--cc: #ff9d3d;">
-        <div class="cwho">ENRI · moral support</div>
-        <div class="csay" id="enriSay">...zzz...</div>
-        <div class="chint">tap Enri at your own risk</div>
+        <div class="cwho">ENRI · your guide</div>
+        <div class="csay" id="enriSay"></div>
+        <div class="chint">tap a building, or tap Enri for tips</div>
       </div>
     </div>
   </div>
@@ -214,18 +206,17 @@ const purr = () => { tone(220, 0.3, "sine", 0, 0.05); tone(196, 0.3, "sine", 0.1
 const denied = () => { tone(200, 0.12, "sawtooth", 0, 0.06); tone(150, 0.16, "sawtooth", 0.1, 0.06); };
 
 /* ---------- the buildings: games/registry.json, shared with cards.html (see assets/progress.js) ---------- */
-const tottiSay = document.getElementById("tottiSay"), enriSay = document.getElementById("enriSay");
-const TOTTI_EXTRA = [
+const enriSay = document.getElementById("enriSay");
+const ENRI_EXTRA = [
   "Six districts, A1 to C2 — café to hotel. One long night across the city.",
-  "Pass the inspection to earn my Legendary card. Check your album.",
+  "Pass the inspection to win Totti's Legendary card. Check your album.",
+  "Stuck in a game? My Purr Boost gives you a hint. Two per shift.",
   "Locked buildings show a padlock. They open as head office finishes them.",
   "The Academy has the full lessons. The city is where you train.",
-  "Tap a building to travel there. Tap Enri to... watch him sleep."
+  "...zzz... Oh. You're still here. Tap a building!"
 ];
-const ENRI_TIPS = ["...zzz...", "Prrrr... you again.", "I believe in you. From here. Horizontally.", "Two Purr Boosts per shift. Use them. I won't move.", "The hotel has room service. One day, kid.", "...five more minutes."];
-let TOTTI_TIPS = [tottiSay.textContent].concat(TOTTI_EXTRA);
-let ti = 0, ei = 0;
-document.getElementById("tottiImg").addEventListener("click", () => { ti = (ti + 1) % TOTTI_TIPS.length; tottiSay.textContent = TOTTI_TIPS[ti]; blip(); haptic([14, 40, 14]); });
+let ENRI_TIPS = [""].concat(ENRI_EXTRA);
+let ei = 0;
 document.getElementById("enriImg").addEventListener("click", () => { ei = (ei + 1) % ENRI_TIPS.length; enriSay.textContent = ENRI_TIPS[ei]; purr(); });
 
 /* the map (hotspots over the art): a building is open when it is ready and the building before it has its boss beaten */
@@ -251,35 +242,35 @@ function renderMap(B) {
         denied();
         b.classList.add("wiggle");
         setTimeout(() => b.classList.remove("wiggle"), 450);
-        tottiSay.textContent = n.teaser;
+        enriSay.textContent = n.teaser;
       }
     });
     map.appendChild(b);
   });
 }
 
-/* Totti's main line follows the first open building whose boss is not beaten yet */
-function tottiLine(B) {
+/* Enri's main line follows the first open building whose boss is not beaten yet */
+function guideLine(B) {
   if (!B.some(b => b.paws > 0)) return B[0].welcome;
   const open = B.filter(b => b.open);
   const cur = open.find(b => !b.done);
   if (!cur) return open[open.length - 1].allDone;
   if (cur.paws === 0) return cur.welcome;
   const next = cur.stages.find(s => !cur.prog[s.id]) || cur.boss;
-  return "You've earned " + cur.paws + " paws at " + cur.place + '. Next stop: "' + next.name + (next.boss ? " (BOSS)" : "") + '". Don\'t embarrass me.';
+  return "You've earned " + cur.paws + " paws at " + cur.place + '. Next stop: "' + next.name + (next.boss ? " (BOSS)" : "") + '". You\'ve got this.';
 }
 
 EFA.registry().then(reg => {
   const B = EFA.buildings(reg);
   renderMap(B);
-  const main = tottiLine(B);
-  TOTTI_TIPS = [main].concat(TOTTI_EXTRA);
-  tottiSay.textContent = main;
+  const main = guideLine(B);
+  ENRI_TIPS = [main].concat(ENRI_EXTRA);
+  enriSay.textContent = main;
   /* card count: the album's own list, for every building that is open to the public */
   let got = 0, total = 0;
   B.filter(b => b.ready && b.inSlice).forEach(b => b.cards.forEach(c => { total++; if (EFA.cardEarned(b, c)) got++; }));
   document.getElementById("cardsN").textContent = got + "/" + total;
-}).catch(() => { tottiSay.textContent = "The map didn't load. Check your connection and tap back in."; });
+}).catch(() => { enriSay.textContent = "The map didn't load. Check your connection and tap back in."; });
 
 /* ---------- daily streak ---------- */
 function dayStr(d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }

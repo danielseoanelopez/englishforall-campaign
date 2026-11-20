@@ -125,7 +125,7 @@
       "num": "1-1",
       "name": "First shift",
       "tag": "Greetings, orders & meeting people",
-      "intro": "Rookie! Welcome to your first shift at the Neon Café. Customers order — you build the tray. And heads up: Totti checks every tray you serve. Good luck!",
+      "intro": "Rookie! Welcome to your first shift at the Neon Café. Customers order — you build the tray. Good luck!",
       "introKey": "dan-intro",
       "tutorial": true,
       "words": [
@@ -139,7 +139,7 @@
         {"type":"order","who":"jack","line":"Hello! One tea and two cookies, please.","keys":{"line":"jack-order","twist":"jack-twist","retry":"jack-retry","thanks":"jack-thanks"},"twist":"Oh wait — actually, make that an orange juice. No tea, sorry!","retryLine":"Hmm, that's not it. Remember — an orange juice and two cookies!","thanks":"Nice! Keep the change.","order":["juice","cookie","cookie"],"par":18},
         {"type":"talk","who":"mia","line":"Morning! I'm Mia, by the way. I'm from Brazil. Where are you from?","keys":{"line":"s2-r1-line","retry":"s2-r1-retry","thanks":"s2-r1-thanks"},"retryLine":"No, no — WHERE are you from? Your country!","thanks":"Nice! {country}! Cool.","countryThanks":true,"options":["I'm from {from}.","I from {from}.","I'm fine, thank you."],"correct":0,"par":15},
         {"type":"talk","who":"jack","line":"Hey! Are you the manager here?","keys":{"line":"s2-r2-line","retry":"s2-r2-retry","thanks":"s2-r2-thanks"},"retryLine":"Hmm? I asked about YOUR job.","thanks":"Barista! Nice to meet you, mate.","options":["No, I'm the barista.","No, I don't.","Yes, he is."],"correct":0,"par":15},
-        {"type":"order","who":"vera","preIntro":"Heads up, rookie — food critic at the door. Impress her and we're famous. And remember: Totti is watching.","preIntroKey":"dan-vera","line":"One latte. Two bagels. And a blueberry muffin. To go — I'm in a hurry.","keys":{"line":"vera-order","retry":"vera-retry","thanks":"vera-thanks"},"retryLine":"Wrong. Again: one latte, two bagels, and one blueberry muffin. Quickly, please.","thanks":"Hmm. Quick service. Noted.","order":["latte","bagel","bagel","muffin"],"par":32}
+        {"type":"order","who":"vera","preIntro":"Heads up, rookie — food critic at the door. Impress her and we're famous.","preIntroKey":"dan-vera","line":"One latte. Two bagels. And a blueberry muffin. To go — I'm in a hurry.","keys":{"line":"vera-order","retry":"vera-retry","thanks":"vera-thanks"},"retryLine":"Wrong. Again: one latte, two bagels, and one blueberry muffin. Quickly, please.","thanks":"Hmm. Quick service. Noted.","order":["latte","bagel","bagel","muffin"],"par":32}
       ]
     },
     "s2": {

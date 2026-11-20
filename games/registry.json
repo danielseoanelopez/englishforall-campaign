@@ -8,8 +8,8 @@
       "progKey": "nc_prog", "href": "neon-cafe.html", "play": { "icon": "mug", "label": "PLAY THE CAFÉ" },
       "map": { "px": 77, "py": 24, "color": "#00e5ff" },
       "ready": true, "opensAfter": null,
-      "welcome": "New in the city? Tap the Neon Café — the cyan one with the coffee sign. Dan needs a barista, and I need someone to judge.",
-      "allDone": "Café Master. Hm. Not unimpressive. Head office is building the next floor. Until it opens, train at the Academy.",
+      "welcome": "New in the city? Tap the Neon Café — the cyan one with the coffee sign. Dan needs a barista. I need a nap. Go on!",
+      "allDone": "Café Master! *happy purr* Head office is building the next floor. Until it opens, train at the Academy.",
       "stages": [
         { "id": "s1", "name": "First shift", "max": 15 },
         { "id": "s2", "name": "Rush hour", "max": 12 },
@@ -34,8 +34,8 @@
       "map": { "px": 35, "py": 19.5, "color": "#ffc83d" },
       "ready": true, "opensAfter": "cafe",
       "teaser": "The Office Tower — A2. Finish the Café first — beat the Inspection — and the lights come on. Almost there.",
-      "welcome": "Café Master. Hm. Not unimpressive. And look — the Office Tower's lights just came on. Dan pulled some strings, got you a desk job. Go on, tap the gold building.",
-      "allDone": "Café Master. Office star. Hm. I am almost proud. Head office is building the Detective Agency next. Until it opens, train at the Academy.",
+      "welcome": "Café Master! *purr* And look — the Office Tower's lights just came on. Dan pulled some strings, got you a desk job. Go on, tap the gold building.",
+      "allDone": "Café Master. Office star. I'm so proud I almost got up. Head office is building the Detective Agency next. Until it opens, train at the Academy.",
       "stages": [
         { "id": "s1", "name": "First day", "max": 15 },
         { "id": "s2", "name": "Work stories", "max": 15 },
@@ -59,8 +59,8 @@
       "map": { "px": 18, "py": 42, "color": "#9d4dff" },
       "ready": true, "opensAfter": "office",
       "teaser": "The Detective Agency — B1. Something's missing in the city. Beat the Office interview and the case is yours.",
-      "welcome": "Office star. Hm. Now listen. Enri is missing. His cushion is still warm. I am not worried. I am... curious. Priya at the Detective Agency needs a partner. The purple building. Go.",
-      "allDone": "Case closed. The cat is asleep on a room-service cart at the Grand Hotel, and I am not jealous. Head office is still building the next floor. Until it opens, train at the Academy.",
+      "welcome": "Office star! Now, a mystery. Priya at the Detective Agency needs a partner. The purple building. I'll supervise. From here.",
+      "allDone": "Case closed! Head office is still building the next floor. Until it opens, train at the Academy.",
       "stages": [
         { "id": "s1", "name": "The briefing", "max": 15 },
         { "id": "s2", "name": "The witnesses", "max": 15 },
@@ -108,7 +108,7 @@
       "progKey": "rt_prog", "href": "game.html?b=radio", "play": { "icon": "mic", "label": "PLAY THE RADIO" },
       "map": { "px": 78, "py": 47, "color": "#3dffa0" },
       "ready": true, "opensAfter": "vault",
-      "teaser": "The Radio Tower — C1. My territory. You won't get in by tapping — you'll have to SPEAK.",
+      "teaser": "The Radio Tower — C1. You won't get in by tapping — you'll have to SPEAK.",
       "welcome": "The Vault is open and so, apparently, is the Radio Tower. The Signal needs a new voice. Not mine; I don't do mornings. The green building. Speak up.",
       "allDone": "Live at nine, and no dead air. Hm. The Grand Hotel is still getting ready for its summit. Until it opens, train at the Academy.",
       "stages": [
@@ -134,8 +134,8 @@
       "map": { "px": 73, "py": 76, "color": "#ff5d7a" },
       "ready": true, "opensAfter": "radio",
       "teaser": "The Grand Hotel — C2. The summit of the city. The guests up there... talk back.",
-      "welcome": "The summit of the city. The Grand Hotel. The guests say less than they mean, the concierge says even less, and Enri lives there now, under a silver cover. The red building. Behave.",
-      "allDone": "Graduate. Hm. Every building, A1 to C2. I have nothing left to judge. ...I will find something.",
+      "welcome": "The summit of the city. The Grand Hotel. The guests say less than they mean, the concierge says even less, and I hear there's room service. The red building. Behave.",
+      "allDone": "Graduate! Every building, A1 to C2. Wake me up for the party.",
       "stages": [
         { "id": "s1", "name": "Check-in", "max": 15 },
         { "id": "s2", "name": "The late arrival", "max": 15 },
