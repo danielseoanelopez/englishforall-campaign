@@ -1,0 +1,41 @@
+{
+  "note": "The back of each album card (the big holo card that opens when you tap it). Key = the card id in registry.json. Cards without an entry open a simpler big card (art + quote). Audio: an mp3 from the games if there is one, otherwise the device voice reads 'say'.",
+  "cards": {
+    "mia": {
+      "subtitle": "THE REGULAR",
+      "bg": "bg-cafe.webp",
+      "profile": [
+        { "icon": "locationdot", "k": "FROM", "v": "BRAZIL", "flag": "flag-br.webp" },
+        { "icon": "calendar", "k": "FIRST SEEN", "v": "SHIFT 1-1 · FIRST SHIFT" },
+        { "icon": "mug", "k": "ROLE", "v": "THE CAFÉ REGULAR" },
+        { "icon": "cap", "k": "LEVEL", "v": "A1 · FIRST CONTACT" }
+      ],
+      "moves": [
+        { "icon": "mug", "name": "CAN I GET…?", "build": ["Can I get", "a flat white", "please?"], "say": "Can I get a flat white, please?", "audio": "nc-mia-order.mp3" },
+        { "icon": "flag", "name": "I'M FROM…", "build": ["I'm", "from", "Brazil."], "say": "I'm from Brazil.", "audio": "nc-s2-r1-line.mp3" },
+        { "icon": "question", "name": "WHERE ARE YOU FROM?", "build": ["Where", "are you", "from?"], "say": "Where are you from?" },
+        { "icon": "handshake", "name": "NICE TO MEET YOU", "build": ["Nice to", "meet", "you!"], "say": "Nice to meet you!" }
+      ],
+      "combo": {
+        "chips": ["HI! I'M MIA", "I'M FROM BRAZIL", "CAN I GET…?"],
+        "line": "Morning! I'm Mia. I'm from Brazil. Can I get a flat white, please?",
+        "label": "FULL ORDER COMBO!"
+      },
+      "stats": [
+        { "icon": "heart", "k": "KINDNESS", "v": 5 },
+        { "icon": "handshake", "k": "POLITENESS", "v": 5 },
+        { "icon": "search", "k": "CURIOSITY", "v": 5 },
+        { "icon": "clock", "k": "PATIENCE", "v": 4 },
+        { "icon": "bolt", "k": "COFFEE POWER", "v": "MAX" }
+      ],
+      "lore": "The first customer of your first shift. Mia comes to the Neon Café every morning, orders the same thing, and always has time to ask the new barista where they're from.",
+      "facts": [
+        { "icon": "mug", "t": "Same order every day: a flat white and an avocado toast." },
+        { "icon": "heart", "t": "Never forgets “please” and “thank you”." },
+        { "icon": "comments", "t": "Wants to know where everyone is from." }
+      ],
+      "quote": "Morning! I'm Mia. Where are you from?",
+      "medal": { "img": "item-flatwhite.webp", "label": "HER ORDER" }
+    }
+  }
+}

@@ -51,6 +51,8 @@ h1 { font-family: "Press Start 2P", monospace; font-size: clamp(0.95rem, 4.4vw, 
 .card { position: relative; border: 2px solid var(--rc, #2a3a5a); border-radius: 14px; background: #0c0c22; padding: 10px 8px 12px; text-align: center; box-shadow: 0 0 12px var(--rg, transparent); animation: popIn 0.35s ease-out backwards; }
 .card:nth-child(2){animation-delay:.04s}.card:nth-child(3){animation-delay:.08s}.card:nth-child(4){animation-delay:.12s}.card:nth-child(5){animation-delay:.16s}.card:nth-child(6){animation-delay:.2s}.card:nth-child(7){animation-delay:.24s}.card:nth-child(8){animation-delay:.28s}
 .card.locked { border-style: dashed; opacity: 0.7; }
+.card.tap { cursor: pointer; transition: transform 0.12s; } .card.tap:hover { transform: translateY(-3px); } .card.tap:active { transform: scale(0.96); }
+.tap-hint { text-align: center; font-size: 0.8rem; color: var(--muted); margin: -8px 0 14px; }
 .rar { font-family: "Press Start 2P", monospace; font-size: 0.62rem; letter-spacing: 1px; color: var(--rc); text-shadow: 0 0 6px var(--rg); }
 .face { height: 88px; display: flex; align-items: center; justify-content: center; margin: 8px 0 6px; }
 .face .ficon { font-size: 3.4rem; line-height: 1; filter: drop-shadow(0 0 10px currentColor); }
@@ -96,12 +98,15 @@ body { padding-top: calc(18px + env(safe-area-inset-top, 0px)); }
 }
 </style>
 <link rel="stylesheet" href="assets/icons.css?v=1">
+<link rel="stylesheet" href="assets/holocard.css?v=1">
+<script src="assets/holocard.js?v=1"></script>
 </head>
 <body>
 <div class="wrap">
   <h1><ico-star></ico-star> CARD ALBUM <ico-star></ico-star></h1>
   <div class="count" id="count">&nbsp;</div>
   <div class="bar"><div id="bar" style="width:0%"></div></div>
+  <p class="tap-hint">Tap a card to open it · toca una carta para abrirla</p>
   <div class="grid" id="grid"></div>
   <div class="actions" id="actions">
     <a class="btn" href="city.html"><ico-city></ico-city> CITY MAP</a>
@@ -119,9 +124,16 @@ const RARITY = {
   SECRET:    { c: "#ff3df0", g: "#ff3df066" }
 };
 
+const DETAILS = fetch("games/cards-detail.json", { cache: "no-cache" }).then(r => r.json()).then(j => j.cards || {}).catch(() => ({}));
+let CARD_NO = {}, CARD_TOTAL = 0;
+function openCard(b, c) {
+  DETAILS.then(d => HoloCard.open({ card: c, building: b, detail: d[c.id], no: CARD_NO[c.id], total: CARD_TOTAL }));
+}
 function renderAlbum(B) {
   const grid = document.getElementById("grid");
   let got = 0, total = 0;
+  CARD_NO = {}; CARD_TOTAL = 0;
+  B.forEach(b => (b.cards || []).forEach(c => { CARD_NO[c.id] = ++CARD_TOTAL; }));
   B.filter(b => b.ready && b.inSlice).forEach(b => {
     const h = document.createElement("div"); h.className = "set-h"; h.textContent = b.name;
     grid.appendChild(h);
@@ -137,6 +149,9 @@ function renderAlbum(B) {
       card.style.setProperty("--rc", has ? r.c : "#2a3a5a");
       card.style.setProperty("--rg", has ? r.g : "transparent");
       if (has) {
+        card.classList.add("tap"); card.setAttribute("role", "button"); card.tabIndex = 0;
+        card.addEventListener("click", () => openCard(b, c));
+        card.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openCard(b, c); } });
         card.innerHTML =
           '<div class="rar">' + (c.rarity === "SECRET" ? "<ico-star></ico-star> SECRET <ico-star></ico-star>" : c.rarity) + '</div>' +
           '<div class="face">' + (c.img ? '<img src="' + c.img + '" alt="' + c.name + '">' : '<span class="ficon" style="color:' + c.color + '"><ico-' + c.icon + '></ico-' + c.icon + '></span>') + '</div>' +
@@ -179,7 +194,13 @@ function renderAlbum(B) {
   acts.innerHTML = B.filter(b => b.open).map(b => '<a class="btn cyan" href="' + b.href + '"><ico-' + b.play.icon + '></ico-' + b.play.icon + '> ' + b.play.label + '</a>').join("") +
     '<a class="btn" href="city.html"><ico-city></ico-city> CITY MAP</a>';
 }
-EFA.registry().then(reg => renderAlbum(EFA.buildings(reg)))
+EFA.registry().then(reg => {
+  const B = EFA.buildings(reg);
+  renderAlbum(B);
+  /* cards.html?preview=<card id> opens one card straight away (to check a card before it is earned) */
+  const pv = new URLSearchParams(location.search).get("preview");
+  if (pv) B.forEach(b => (b.cards || []).forEach(c => { if (c.id === pv) openCard(b, c); }));
+})
   .catch(() => { document.getElementById("count").textContent = "The album didn't load. Check your connection."; });
 
 /* ---------- background music ---------- */

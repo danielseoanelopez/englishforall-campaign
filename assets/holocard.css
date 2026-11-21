@@ -1,0 +1,148 @@
+/* English for ALL · Rank Up — the big holo card (album card, tapped open). Sizes are in cqi: the card scales like a real card. */
+.hc-modal { position: fixed; inset: 0; z-index: 100; background: rgba(3, 3, 12, 0.88); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);
+  overflow-y: auto; -webkit-overflow-scrolling: touch; display: flex; justify-content: center; align-items: flex-start;
+  padding: calc(64px + env(safe-area-inset-top, 0px)) 10px 40px; opacity: 0; transition: opacity 0.2s; }
+.hc-modal.on { opacity: 1; }
+.hc-x { position: fixed; top: calc(12px + env(safe-area-inset-top, 0px)); right: 12px; z-index: 101; width: 46px; height: 46px; border-radius: 12px;
+  border: 2px solid #ff6cf5; background: rgba(20, 22, 48, 0.95); color: #ffb3f8; font-family: "Press Start 2P", monospace; font-size: 0.8rem; cursor: pointer; box-shadow: 0 0 12px #ff3df055; }
+.hc-stage { perspective: 1200px; width: min(96vw, 600px); }
+
+.hc { --c1: #ff3df0; --c2: #ffc83d; --c3: #3dffa0; --c4: #00e5ff; --c5: #9d4dff; --rc: #00e5ff;
+  container-type: inline-size; position: relative; width: 100%; border-radius: 4.2cqi; padding: 2.1cqi;
+  background: linear-gradient(115deg, var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c1)); background-size: 320% 320%;
+  animation: hcFoil 7s linear infinite; box-shadow: 0 0 28px color-mix(in srgb, var(--rc) 55%, transparent), 0 18px 40px rgba(0, 0, 0, 0.7);
+  transform-style: preserve-3d; transition: transform 0.15s ease-out; transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  font-family: "Share Tech Mono", monospace; color: #eaf7ff; line-height: 1.35; text-align: left; }
+.hc-modal .hc-stage { animation: hcIn 0.55s cubic-bezier(.2, .9, .3, 1.2) both; }
+@keyframes hcFoil { to { background-position: 320% 0; } }
+@keyframes hcIn { from { transform: rotateY(-100deg) scale(0.7); opacity: 0; } to { transform: none; opacity: 1; } }
+/* glitter on the foil */
+.hc::before { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; mix-blend-mode: overlay; opacity: 0.55;
+  background-image: radial-gradient(circle at 20% 30%, #fff 0.5px, transparent 1.4px), radial-gradient(circle at 70% 60%, #fff 0.5px, transparent 1.4px), radial-gradient(circle at 40% 80%, #fff 0.6px, transparent 1.6px);
+  background-size: 9px 9px, 13px 13px, 17px 17px; }
+/* light sheen that follows the finger */
+.hc-sheen { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 5; mix-blend-mode: soft-light;
+  background: radial-gradient(circle at var(--mx, 30%) var(--my, 20%), rgba(255, 255, 255, 0.55), transparent 45%); }
+.hc.r-COMMON { --c1: #00e5ff; --c2: #0a6f8a; --c3: #00e5ff; --c4: #3a4a8a; --c5: #00e5ff; --rc: #00e5ff; }
+.hc.r-RARE { --rc: #3dffa0; }
+.hc.r-EPIC { --c1: #9d4dff; --c2: #ff3df0; --c3: #5b2bd6; --c4: #ff9df5; --c5: #9d4dff; --rc: #9d4dff; }
+.hc.r-LEGENDARY { --c1: #ffc83d; --c2: #fff3b0; --c3: #c98a10; --c4: #ffe27a; --c5: #ff9d3d; --rc: #ffc83d; }
+.hc.r-SECRET { --c1: #ff3df0; --c2: #00e5ff; --c3: #ffc83d; --c4: #ff3df0; --c5: #3dffa0; --rc: #ff3df0; }
+
+.hc-in { position: relative; border-radius: 2.8cqi; overflow: hidden; padding: 2.2cqi; display: grid; gap: 1.6cqi;
+  background: radial-gradient(ellipse at 50% 0%, #1b1446 0%, #0a0a1f 55%, #05050e 100%);
+  box-shadow: inset 0 0 0 0.35cqi color-mix(in srgb, var(--rc) 70%, #000), inset 0 0 3cqi #000; }
+.hc-in::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0.08;
+  background-image: linear-gradient(#00e5ff 1px, transparent 1px), linear-gradient(90deg, #00e5ff 1px, transparent 1px); background-size: 6cqi 6cqi; }
+
+/* panels */
+.hc-p { position: relative; z-index: 1; border: 0.3cqi solid var(--pc, #00e5ff); border-radius: 1.8cqi; background: rgba(6, 7, 22, 0.82); padding: 1.3cqi 1.8cqi;
+  box-shadow: 0 0 1.6cqi color-mix(in srgb, var(--pc, #00e5ff) 35%, transparent), inset 0 0 1.6cqi color-mix(in srgb, var(--pc, #00e5ff) 12%, transparent); }
+.hc-h { font-family: "Press Start 2P", monospace; font-size: 1.95cqi; letter-spacing: 0.15cqi; color: var(--pc, #00e5ff); text-shadow: 0 0 1.2cqi var(--pc, #00e5ff);
+  text-align: center; margin: 0 0 0.9cqi; line-height: 1.45; }
+.hc-p.cyan { --pc: #00e5ff; } .hc-p.mag { --pc: #ff3df0; } .hc-p.gold { --pc: #ffc83d; } .hc-p.green { --pc: #3dffa0; } .hc-p.purple { --pc: #b07bff; }
+
+/* header */
+.hc-top { position: relative; z-index: 1; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 2cqi; }
+.hc-tag { font-family: "Press Start 2P", monospace; font-size: 1.7cqi; line-height: 1.7; text-align: center; color: var(--bc, #00e5ff); border: 0.3cqi solid var(--bc, #00e5ff);
+  border-radius: 1.6cqi; padding: 1.2cqi 1.4cqi; background: rgba(6, 7, 22, 0.85); text-shadow: 0 0 1cqi var(--bc, #00e5ff); }
+.hc-tag b { display: block; font-size: 3cqi; color: #fff; }
+.hc-title { text-align: center; min-width: 0; }
+.hc-name { font-family: "Press Start 2P", monospace; line-height: 1.15; letter-spacing: 0.4cqi; word-break: break-word;
+  background: linear-gradient(90deg, #ff3df0, #ffc83d, #3dffa0, #00e5ff, #b07bff, #ff3df0); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: hcFoil 6s linear infinite; filter: drop-shadow(0.45cqi 0.45cqi 0 #000) drop-shadow(0 0 1.4cqi rgba(255, 61, 240, 0.45)); }
+.hc-sub { font-family: "Press Start 2P", monospace; font-size: 2cqi; color: #8df3ff; letter-spacing: 0.4cqi; margin-top: 1.3cqi; text-shadow: 0 0 1cqi #00e5ff; }
+.hc-badge { font-family: "Press Start 2P", monospace; font-size: 1.7cqi; line-height: 1.75; text-align: center; color: var(--rc); border: 0.3cqi solid var(--rc); border-radius: 1.6cqi;
+  padding: 1.2cqi 1.4cqi; background: rgba(6, 7, 22, 0.85); text-shadow: 0 0 1cqi var(--rc); }
+
+/* art + profile */
+.hc-mid { position: relative; z-index: 1; display: grid; grid-template-columns: 42% 1fr; gap: 1.6cqi; }
+.hc-right { display: flex; flex-direction: column; gap: 1.6cqi; min-width: 0; }
+.hc-art { position: relative; border-radius: 2cqi; overflow: hidden; border: 0.35cqi solid var(--rc); min-height: 52cqi;
+  background-color: #0a0a1f; background-position: center; background-size: cover; background-repeat: no-repeat; box-shadow: 0 0 2cqi color-mix(in srgb, var(--rc) 50%, transparent); }
+.hc-art::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5, 5, 14, 0.15), rgba(5, 5, 14, 0.15) 55%, rgba(5, 5, 14, 0.85)); }
+.hc-art img.sprite { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 100%; height: 100%; object-fit: contain; object-position: 50% 100%; image-rendering: pixelated;
+  filter: drop-shadow(0 0 2cqi rgba(0, 0, 0, 0.8)); }
+.hc-art .ficon { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 22cqi; filter: drop-shadow(0 0 3cqi currentColor); }
+.hc-no { position: absolute; left: 1.4cqi; top: 1.4cqi; font-family: "Press Start 2P", monospace; font-size: 1.7cqi; line-height: 1.7; color: #ffc83d; text-shadow: 0.3cqi 0.3cqi 0 #000; background: rgba(5, 5, 14, 0.72); border-radius: 1cqi; padding: 0.8cqi 1.1cqi; }
+.hc-no b { display: block; color: #ff3df0; font-size: 2.2cqi; }
+.hc-prof { display: flex; flex-direction: column; }
+.hc-row { display: grid; grid-template-columns: 3.6cqi 1fr auto; align-items: center; gap: 1.2cqi; padding: 0.7cqi 0; border-bottom: 0.2cqi dashed rgba(0, 229, 255, 0.25); font-size: 2.4cqi; line-height: 1.25; }
+.hc-row:last-child { border-bottom: none; }
+.hc-row > .i { font-size: 3.2cqi; color: var(--pc, #00e5ff); display: flex; justify-content: center; }
+.hc-row .k { color: #7fd9e8; font-size: 1.8cqi; letter-spacing: 0.15cqi; display: block; }
+.hc-row .v { color: #fff; }
+.hc-row img.flag { width: 5.2cqi; border-radius: 0.6cqi; box-shadow: 0 0 1cqi rgba(0, 0, 0, 0.6); }
+
+/* key phrases */
+.hc-move { display: grid; grid-template-columns: 3.6cqi 1fr auto; align-items: center; gap: 1.2cqi; padding: 0.8cqi 0; border-bottom: 0.2cqi dashed rgba(255, 61, 240, 0.25); }
+.hc-move:last-child { border-bottom: none; }
+.hc-move > .i { font-size: 3.3cqi; color: #ffc83d; filter: drop-shadow(0 0 1cqi #ffc83d88); display: flex; justify-content: center; }
+.hc-move .nm { font-family: "Press Start 2P", monospace; font-size: 1.85cqi; color: #fff; letter-spacing: 0.1cqi; margin-bottom: 0.7cqi; line-height: 1.4; }
+.hc-build { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6cqi; font-size: 2.3cqi; }
+.hc-build .ch { border: 0.25cqi solid var(--cc); color: var(--cc); background: color-mix(in srgb, var(--cc) 12%, transparent); border-radius: 1cqi; padding: 0.2cqi 0.9cqi; white-space: nowrap; }
+.hc-build .pl { color: #5a6a8a; font-family: "Press Start 2P", monospace; font-size: 1.5cqi; }
+.hc-spk { width: 6cqi; height: 6cqi; min-width: 32px; min-height: 32px; border-radius: 50%; border: 0.3cqi solid #00e5ff; background: rgba(0, 229, 255, 0.1); color: #00e5ff;
+  display: flex; align-items: center; justify-content: center; font-size: 2.8cqi; cursor: pointer; box-shadow: 0 0 1.2cqi #00e5ff55; flex-shrink: 0; }
+.hc-spk.on { background: #00e5ff; color: #04131a; }
+
+/* combo */
+.hc-combo .chain { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.7cqi; }
+.hc-combo .cc { font-family: "Press Start 2P", monospace; font-size: 1.55cqi; line-height: 1.5; color: #fff; border: 0.3cqi solid #ffc83d; border-radius: 1.1cqi; padding: 0.7cqi 1cqi; background: rgba(255, 200, 61, 0.08); text-align: center; }
+.hc-combo .gt { color: #ffc83d; font-family: "Press Start 2P", monospace; font-size: 2cqi; }
+.hc-combo .line { display: flex; align-items: center; justify-content: center; gap: 1.2cqi; margin-top: 1cqi; font-size: 2.4cqi; font-style: italic; color: #eaf7ff; text-align: center; }
+.hc-combo .lbl { font-family: "Press Start 2P", monospace; font-size: 1.8cqi; color: #ffc83d; text-align: center; margin-top: 0.9cqi; text-shadow: 0 0 1.2cqi #ffc83d; }
+
+/* bottom three */
+.hc-bot { position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr 1fr 1.05fr; gap: 1.6cqi; }
+.hc-stat { display: grid; grid-template-columns: 3cqi auto 1fr; align-items: center; gap: 0 1cqi; padding: 0.55cqi 0; border-bottom: 0.2cqi dashed rgba(255, 200, 61, 0.22); }
+.hc-stat:last-child { border-bottom: none; }
+.hc-stat .i { color: #ffc83d; font-size: 2.5cqi; }
+.hc-stat .k { font-size: 1.85cqi; color: #8df3ff; letter-spacing: 0.05cqi; }
+.hc-stat .s { font-size: 2.55cqi; color: #ffc83d; letter-spacing: -0.1cqi; text-align: right; white-space: nowrap; text-shadow: 0 0 0.8cqi #ffc83d88; }
+.hc-stat .s .off { color: #3a3a5a; }
+.hc-stat .s.max { font-family: "Press Start 2P", monospace; font-size: 1.9cqi; color: #ff3df0; text-shadow: 0 0 1.2cqi #ff3df0; }
+.hc-lore { font-size: 2.25cqi; line-height: 1.4; color: #d6e8ff; }
+.hc-fact { display: grid; grid-template-columns: 3cqi 1fr; gap: 0.9cqi; align-items: start; font-size: 2.15cqi; line-height: 1.35; padding: 0.6cqi 0; border-bottom: 0.2cqi dashed rgba(176, 123, 255, 0.25); }
+.hc-fact:last-child { border-bottom: none; }
+.hc-fact .i { color: #ff3df0; font-size: 2.6cqi; }
+
+/* footer */
+.hc-foot { position: relative; z-index: 1; display: grid; grid-template-columns: auto 1fr auto; gap: 2cqi; align-items: center; }
+.hc-brand { font-family: "Press Start 2P", monospace; text-align: center; border: 0.3cqi solid #00e5ff; border-radius: 1.6cqi; padding: 1.2cqi 1.5cqi; background: rgba(6, 7, 22, 0.85); box-shadow: 0 0 1.4cqi #00e5ff44; }
+.hc-brand .b1 { font-size: 2.2cqi; color: #fff; text-shadow: 0 0 1cqi #00e5ff; }
+.hc-brand .b1 em { font-style: normal; color: #00e5ff; }
+.hc-brand .b2 { font-size: 2.4cqi; color: #ffc83d; margin-top: 0.9cqi; letter-spacing: 0.3cqi; }
+.hc-quote { position: relative; font-family: "Press Start 2P", monospace; font-size: 1.95cqi; line-height: 1.75; color: #ff9df5; text-align: center; padding: 1.8cqi 2cqi;
+  border: 0.3cqi solid #ffc83d; border-radius: 1cqi; background: rgba(6, 7, 22, 0.85); text-shadow: 0 0 1cqi #ff3df088; }
+.hc-quote::before, .hc-quote::after { content: ""; position: absolute; width: 2.6cqi; height: 2.6cqi; border: 0.35cqi solid #ffc83d; }
+.hc-quote::before { top: -1.1cqi; left: -1.1cqi; border-right: none; border-bottom: none; } .hc-quote::after { bottom: -1.1cqi; right: -1.1cqi; border-left: none; border-top: none; }
+.hc-medal { width: 14cqi; height: 14cqi; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;
+  background: radial-gradient(circle at 35% 30%, #fff3b0, #ffc83d 40%, #a86e08 100%); box-shadow: 0 0 2cqi #ffc83d88, inset 0 0 0 0.7cqi #7a4e04, inset 0 0 0 1.2cqi #ffe27a; }
+.hc-medal img { width: 62%; height: 62%; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 0.5cqi 0.6cqi rgba(0, 0, 0, 0.5)); }
+.hc-medal span { position: absolute; bottom: -0.6cqi; font-family: "Press Start 2P", monospace; font-size: 1.6cqi; color: #3a2400; background: #ffc83d; border-radius: 1cqi; padding: 0.4cqi 1cqi; white-space: nowrap; }
+
+/* lite card (no detail data yet) */
+.hc-lite .hc-art { min-height: 70cqi; }
+.hc-lite .hc-quote { font-size: 2.8cqi; }
+
+/* phones: stack */
+@container (max-width: 470px) {
+  .hc-mid { grid-template-columns: 1fr; }
+  .hc-art { min-height: 86cqi; }
+  .hc-stat { grid-template-columns: 5cqi auto 1fr; }
+  .hc-spk { width: 8cqi; height: 8cqi; font-size: 3.6cqi; }
+  .hc-combo .gt { font-size: 3cqi; }
+  .hc-no { font-size: 2.6cqi; } .hc-no b { font-size: 3.2cqi; }
+  .hc-bot { grid-template-columns: 1fr; }
+  .hc-h { font-size: 3.2cqi; }
+  .hc-row, .hc-build, .hc-lore, .hc-fact { font-size: 3.9cqi; }
+  .hc-row .k, .hc-stat .k { font-size: 3cqi; }
+  .hc-move .nm { font-size: 3.1cqi; }
+  .hc-combo .cc { font-size: 2.8cqi; } .hc-combo .line { font-size: 4cqi; }
+  .hc-stat .s { font-size: 4.4cqi; } .hc-combo .lbl { font-size: 2.6cqi; } .hc-brand .b2 { font-size: 3cqi; } .hc-stat .i { font-size: 4cqi; } .hc-stat .s.max { font-size: 3cqi; }
+  .hc-tag, .hc-badge { font-size: 2.5cqi; } .hc-sub { font-size: 2.8cqi; }
+  .hc-foot { grid-template-columns: 1fr auto; } .hc-quote { grid-column: 1 / -1; order: -1; font-size: 3cqi; }
+  .hc-brand .b1 { font-size: 3.2cqi; } .hc-medal { width: 22cqi; height: 22cqi; } .hc-medal span { font-size: 2.2cqi; }
+}
+@media (prefers-reduced-motion: reduce) { .hc, .hc-name, .hc-modal .hc-stage { animation: none !important; } }
