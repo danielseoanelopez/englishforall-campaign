@@ -460,7 +460,7 @@
           "options": [
             "a",
             "an",
-            "the"
+            "two"
           ],
           "answer": 1
         },
@@ -519,7 +519,7 @@
           "answer": 1
         },
         {
-          "q": "The book is ___ the table.",
+          "q": "The book is ___ the table. (encima)",
           "options": [
             "on",
             "in",
@@ -528,7 +528,7 @@
           "answer": 0
         },
         {
-          "q": "My phone is ___ my bag.",
+          "q": "My phone is ___ my bag. (adentro)",
           "options": [
             "on",
             "in",
@@ -707,7 +707,7 @@
       ],
       "placeholder": "On my desk, there is...",
       "example": "On my desk, there is a <span class=\"gap\">objeto</span> and an <span class=\"gap\">objeto con vocal</span>. There are <span class=\"gap\">número</span> <span class=\"gap\">objetos</span>. My <span class=\"gap\">objeto</span> is next to the <span class=\"gap\">objeto</span>. My keys are <span class=\"gap\">in / on / under</span> the <span class=\"gap\">lugar</span>. There isn't a <span class=\"gap\">objeto</span>.",
-      "hw": "Escribe tu descripción y mándame una foto + el texto por WhatsApp.",
+      "hw": "Escribe tu descripción y envíamela con el botón ENVIAR A MI PROFE (abajo). Si quieres, en clase me muestras una foto de tu cuarto.",
       "rubric": [
         {
           "c": "Tarea completa",

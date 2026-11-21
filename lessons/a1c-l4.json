@@ -308,9 +308,9 @@
       "items": [
         {
           "type": "mcq",
-          "q": "The café is <b class=\"tg\">___</b> Main Street.",
+          "q": "The café is <b class=\"tg\">___</b> Main Street, at number 12.",
           "options": [
-            "in",
+            "behind",
             "next to",
             "on"
           ],
@@ -318,7 +318,7 @@
         },
         {
           "type": "mcq",
-          "q": "The bank is <b class=\"tg\">___</b> the hotel.",
+          "q": "The bank is <b class=\"tg\">___</b> the hotel. (al lado)",
           "options": [
             "next to",
             "behind",
@@ -338,7 +338,7 @@
         },
         {
           "type": "mcq",
-          "q": "The station is <b class=\"tg\">___</b> the city center.",
+          "q": "The station is <b class=\"tg\">___</b> the city center. (adentro)",
           "options": [
             "on",
             "next to",
@@ -348,7 +348,7 @@
         },
         {
           "type": "mcq",
-          "q": "Your keys are <b class=\"tg\">___</b> the table.",
+          "q": "Your keys are <b class=\"tg\">___</b> the table. (encima)",
           "options": [
             "on",
             "behind",

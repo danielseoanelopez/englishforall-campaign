@@ -729,7 +729,7 @@
       ],
       "placeholder": "Hi David, Thanks for your message about…",
       "example": "Hi <span class=\"gap\">nombre</span>,<br>Thanks for your message about <span class=\"gap\">pedido</span>. If you <span class=\"gap\">presente</span>, we will <span class=\"gap\">verbo</span>. If we had <span class=\"gap\">algo</span>, we would <span class=\"gap\">verbo</span>. We can deliver by <span class=\"gap\">fecha</span> as long as <span class=\"gap\">condición</span>. Could you confirm by <span class=\"gap\">día</span>?<br>Best regards,<br><span class=\"gap\">tu nombre</span>",
-      "hw": "Escribe tu contraoferta y envíamela por WhatsApp. Después grábate <b>diciéndosela al cliente en voz alta, sin leer</b> — tono tranquilo y firme.",
+      "hw": "Escribe tu contraoferta y envíamela con el botón ENVIAR A MI PROFE (abajo). Después grábate <b>diciéndosela al cliente en voz alta, sin leer</b> — tono tranquilo y firme.",
       "rubric": [
         {
           "c": "Tarea completa",

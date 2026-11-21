@@ -594,7 +594,7 @@
       ],
       "placeholder": "Hello! My name is...",
       "example": "Hello! My name is <span class=\"gap\">nombre</span>. I'm from <span class=\"gap\">país</span>. I'm a <span class=\"gap\">student / teacher…</span>. I'm <span class=\"gap\">fine / great</span> today. Nice to meet you!",
-      "hw": "Escribe tu presentación y graba un audio diciéndola en voz alta. Envíame ambos por WhatsApp y lo corregimos. ¡Cualquier duda la vemos en clase!",
+      "hw": "Escribe tu presentación y graba un audio diciéndola en voz alta. Envíalo con el botón ENVIAR A MI PROFE (abajo) y lo corregimos. ¡Cualquier duda la vemos en clase!",
       "rubric": [
         {
           "c": "Tarea completa",

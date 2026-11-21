@@ -48,7 +48,7 @@ document.body.insertAdjacentHTML("afterbegin",
   '<input type="checkbox" id="hapticSwitch" switch aria-hidden="true" tabindex="-1" style="position:fixed;left:-9999px;top:-9999px;width:0;height:0;opacity:0;pointer-events:none">' +
   '<label for="hapticSwitch" aria-hidden="true" style="position:fixed;left:-9999px;top:-9999px;width:0;height:0;opacity:0;pointer-events:none"></label>' +
   '<div class="cab">' +
-    '<div class="marquee"><img src="logo.webp" alt="English for All — Rank Up"><div class="stage" id="marqueeTag">RANK UP CITY</div></div>' +
+    '<div class="marquee"><div class="stage" id="marqueeTag">RANK UP CITY</div></div>' +
     '<div class="screen">' +
       '<div class="hud">' +
         '<span class="hearts" id="hudHearts"><ico-heart></ico-heart><ico-heart></ico-heart><ico-heart></ico-heart></span>' +

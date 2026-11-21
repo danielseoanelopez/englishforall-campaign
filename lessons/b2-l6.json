@@ -766,7 +766,7 @@
       ],
       "placeholder": "Dear Ms. …,",
       "example": "Dear <span class=\"gap\">Mr. / Ms. + apellido</span>, I am writing <span class=\"gap\">to + motivo</span>. <span class=\"gap\">detalle 1</span>. However, <span class=\"gap\">detalle 2</span>. Therefore, <span class=\"gap\">consecuencia</span>. I would be grateful if you could <span class=\"gap\">acción</span>. I look forward to <span class=\"gap\">verbo-ing</span>. Sincerely, <span class=\"gap\">tu nombre completo</span>",
-      "hw": "Escribe tu correo y después grábate <b>leyéndolo en voz alta, despacio</b>, como si lo dictaras. Envíame texto y audio por WhatsApp.",
+      "hw": "Escribe tu correo y después grábate <b>leyéndolo en voz alta, despacio</b>, como si lo dictaras. Envíame texto y audio con el botón ENVIAR A MI PROFE (abajo).",
       "rubric": [
         {
           "c": "Tarea completa",

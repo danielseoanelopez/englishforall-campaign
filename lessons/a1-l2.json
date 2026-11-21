@@ -655,7 +655,7 @@
       ],
       "placeholder": "This is my friend...",
       "example": "This is my friend <span class=\"gap\">nombre</span>. <span class=\"gap\">He / She</span> is from <span class=\"gap\">país</span>. <span class=\"gap\">He / She</span> is <span class=\"gap\">a / an</span> <span class=\"gap\">trabajo</span>. <span class=\"gap\">He / She</span> is <span class=\"gap\">edad</span> years old. <span class=\"gap\">He / She</span> is very <span class=\"gap\">adjetivo</span>!",
-      "hw": "Escribe tu presentación de esa persona y graba un audio diciéndola en voz alta. Envíame ambos por WhatsApp.",
+      "hw": "Escribe tu presentación de esa persona y graba un audio diciéndola en voz alta. Envíalo con el botón ENVIAR A MI PROFE (abajo).",
       "rubric": [
         {
           "c": "Tarea completa",

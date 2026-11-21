@@ -785,7 +785,7 @@
       ],
       "placeholder": "Hi team, Following our meeting today,",
       "example": "Hi team,<br>Following our meeting today, here is a quick recap. We agreed to <span class=\"gap\">acuerdo 1</span>. We also agreed to <span class=\"gap\">acuerdo 2</span>. I'd suggest we <span class=\"gap\">propuesta</span>.<br>Next steps: <span class=\"gap\">persona</span> will <span class=\"gap\">tarea</span> by <span class=\"gap\">día</span>, and <span class=\"gap\">persona</span> will <span class=\"gap\">tarea</span> by <span class=\"gap\">día</span>.<br>Let me know if you have any questions.<br><span class=\"gap\">tu nombre</span>",
-      "hw": "Escribe tu email de resumen y envíamelo por WhatsApp. Después grábate <b>presentando los next steps en voz alta, sin leer</b>, como si cerraras la reunión.",
+      "hw": "Escribe tu email de resumen y envíamelo con el botón ENVIAR A MI PROFE (abajo). Después grábate <b>presentando los next steps en voz alta, sin leer</b>, como si cerraras la reunión.",
       "rubric": [
         {
           "c": "Tarea completa",

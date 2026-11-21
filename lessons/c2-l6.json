@@ -850,7 +850,7 @@
     },
     {
       "type": "writing",
-      "stage": "<ico-mic></ico-mic> SPEAKING TASK <span class=\"es\">· recorded, sent on WhatsApp</span>",
+      "stage": "<ico-mic></ico-mic> SPEAKING TASK <span class=\"es\">· recorded here, sent to your teacher</span>",
       "title": "<ico-mic></ico-mic> MY TOAST",
       "intro": "The ballroom is full, and Ms. Whitmore is pointing at you. <b>Record a 60-second toast</b> to the guests of the summit. There is no script: write <b>three key words</b> in the box, no more, and speak from them. You were there all weekend. You have the stories.",
       "checklist": [
@@ -863,7 +863,7 @@
       ],
       "placeholder": "Three key words only: THANK … · STORY … · WISH …",
       "example": "Ladies and gentlemen, <span class=\"gap\">one line to get their attention</span>. First, thank you to <span class=\"gap\">who</span>, who <span class=\"gap\">what they did</span>. A short story: on <span class=\"gap\">which day</span>, <span class=\"gap\">one small moment you saw</span>. <span class=\"gap\">a time-buyer</span>, <span class=\"gap\">what you felt</span>. Or rather, <span class=\"gap\">say it better</span>. May you all <span class=\"gap\">your wish</span>. To <span class=\"gap\">two or three words</span>!",
-      "hw": "Record your toast in <b>one take</b>, 50 to 70 seconds, standing up, with a glass in your hand. Send me the recording on WhatsApp. No text this time.",
+      "hw": "Record your toast in <b>one take</b>, 50 to 70 seconds, standing up, with a glass in your hand. Send me the recording with the SEND TO MY TEACHER button below. No text this time.",
       "rubric": [
         {
           "c": "Task",

@@ -1,0 +1,33 @@
+/* English for ALL · Rank Up — styles for assets/homework.js (recorder, writing check, send to teacher).
+   Same rules as the block at the end of lesson.css, for pages that do not load lesson.css (exams, prepositions). */
+.rec-box { margin-top: 12px; padding: 12px 14px; border: 1px dashed #ff3df066; border-radius: 12px; background: #ff3df008; }
+.rec-box.live { border-style: solid; border-color: var(--red); box-shadow: 0 0 14px #ff5d7a44; }
+.rec-box.has { border-color: #3dffa077; background: #3dffa008; }
+.rec-title { margin: 0 0 8px; color: var(--magenta); font-size: 0.95rem; }
+.rec-row { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.rec-btn { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1.5px solid var(--magenta); background: #ff3df012; color: #ffb3f8; font-family: "Press Start 2P", monospace; font-size: 0.6rem; letter-spacing: 1px; cursor: pointer; }
+.rec-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.rec-btn.rec-play { border-color: var(--cyan); background: #00e5ff10; color: var(--cyan); }
+.rec-btn.rec-del { border-color: #5a6a8a; background: none; color: var(--muted); padding: 0 12px; }
+.rec-box.live .rec-main { border-color: var(--red); color: #ffd0d8; background: #ff5d7a22; animation: recPulse 1s ease-in-out infinite; }
+@keyframes recPulse { 50% { box-shadow: 0 0 16px #ff5d7a99; } }
+.rec-time { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: var(--gold); min-width: 3.5em; }
+.rec-note { margin: 8px 0 0; font-size: 0.9rem; color: var(--muted); }
+.rec-box.has .rec-note { color: var(--green); }
+.w-check { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 8px; }
+.w-check .wc { font-size: 0.85rem; padding: 4px 10px; border-radius: 20px; border: 1px solid #3a4a7a; color: var(--muted); }
+.w-check .wc.ok { border-color: var(--green); color: var(--green); }
+.w-check .wc.bad { border-color: var(--red); color: var(--red); }
+.w-check .wc b { color: inherit; }
+.checklist li.ck.auto-ok:not(.done) { color: #9dffcf; }
+.hw-send { margin-top: 18px; }
+.btn.hw-btn { background: linear-gradient(180deg, #0a3325, #061c14); border-color: #5cffb8; color: #9dffcf; box-shadow: 0 0 16px #3dffa055, inset 0 0 14px #3dffa022; }
+.btn.hw-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.hw-status { margin-top: 10px; min-height: 1.3em; }
+.hw-status .good { color: var(--green); } .hw-status .bad { color: var(--red); }
+.hw-privacy { margin-top: 6px; font-size: 0.82rem; }
+@media (min-width: 768px) { .rec-btn { font-size: 0.66rem; min-height: 48px; } .rec-note, .w-check .wc { font-size: 1rem; } }
+.rec-btn > [class], .rec-btn > ico-mic, .rec-btn > ico-play, .rec-btn > ico-rotate, .rec-btn > ico-square { width: 1.3em; height: 1.3em; }
+#speakingCard .checklist li .rec-box { margin: 8px 0 14px; }
+#speakingCard .checklist li .rec-box p { margin-bottom: 0; }
+.hw-send .hw-status { font-size: 0.95rem; }

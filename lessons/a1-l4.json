@@ -393,7 +393,7 @@
       "intro": "Elige la opción correcta.",
       "items": [
         {
-          "q": "I ___ a sister.",
+          "q": "I ___ two sisters.",
           "options": [
             "have",
             "am",
@@ -424,7 +424,7 @@
           "options": [
             "is",
             "have",
-            "has"
+            "are"
           ],
           "answer": 0
         },
@@ -798,7 +798,7 @@
       ],
       "placeholder": "I have...",
       "example": "I have a <span class=\"gap\">big / small</span> family. I have <span class=\"gap\">número</span> brothers and <span class=\"gap\">número</span> sisters. My <span class=\"gap\">familiar</span> is <span class=\"gap\">edad</span> years old. <span class=\"gap\">He / She</span> has <span class=\"gap\">color</span> hair and <span class=\"gap\">color</span> eyes. <span class=\"gap\">His / Her</span> name is <span class=\"gap\">nombre</span>. I <span class=\"gap\">have / don't have</span> a pet.",
-      "hw": "Escribe sobre tu familia y mándamelo por WhatsApp.",
+      "hw": "Escribe sobre tu familia y mándamelo con el botón ENVIAR A MI PROFE (abajo).",
       "rubric": [
         {
           "c": "Tarea completa",

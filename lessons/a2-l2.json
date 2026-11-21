@@ -714,7 +714,7 @@
       ],
       "placeholder": "Hi David,",
       "example": "Hi <span class=\"gap\">nombre</span>,<br>Thank you for your <span class=\"gap\">email / request</span>. The <span class=\"gap\">documento</span> is almost ready. I'm waiting for <span class=\"gap\">algo</span>. Could you confirm <span class=\"gap\">qué</span>? I'll get back to you <span class=\"gap\">cuándo</span>.<br>Best regards,<br><span class=\"gap\">tu nombre</span>",
-      "hw": "Escribe tu email y envíamelo por WhatsApp. Después grábate <b>explicando en voz alta</b> de qué trata, sin leerlo.",
+      "hw": "Escribe tu email y envíamelo con el botón ENVIAR A MI PROFE (abajo). Después grábate <b>explicando en voz alta</b> de qué trata, sin leerlo.",
       "rubric": [
         {
           "c": "Tarea completa",

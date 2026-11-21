@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script src="assets/nozoom.js?v=1"></script>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -15,7 +16,7 @@
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <link rel="stylesheet" href="lesson.css?v=20261121b">
 <link rel="stylesheet" href="assets/icons.css?v=1">
-<script defer src="assets/homework.js?v=1"></script>
+<script defer src="assets/homework.js?v=2"></script>
 </head>
 <body>
 <div class="side-deco left" id="decoLeft"></div>
@@ -23,7 +24,6 @@
 <a class="backmap" href="index.html">◄ MAPA</a>
 <button class="mute-btn" id="muteBtn" onclick="toggleMute()" aria-label="Sonido"><ico-volume></ico-volume></button>
 <div class="container">
-  <div class="brand" data-aos="fade-up"><img class="logo" src="logo.webp" alt="English for All — Rank Up"></div>
   <header data-aos="fade-up" data-aos-delay="80">
     <p class="crumb" id="crumb"></p>
     <h1 id="h1"></h1>

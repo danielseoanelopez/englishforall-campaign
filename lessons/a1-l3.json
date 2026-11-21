@@ -702,7 +702,7 @@
       ],
       "placeholder": "I get up at...",
       "example": "I get up at <span class=\"gap\">hora</span>. My English class is at <span class=\"gap\">hora</span> on <span class=\"gap\">día</span>. I have lunch at <span class=\"gap\">hora</span>. I finish work at <span class=\"gap\">hora</span>. On the weekend, I <span class=\"gap\">relax / don't work</span>!",
-      "hw": "Escribe tu horario y mándamelo por WhatsApp.",
+      "hw": "Escribe tu horario y mándamelo con el botón ENVIAR A MI PROFE (abajo).",
       "rubric": [
         {
           "c": "Tarea completa",

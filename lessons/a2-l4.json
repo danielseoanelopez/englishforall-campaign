@@ -730,7 +730,7 @@
       ],
       "placeholder": "Hi! Could you...",
       "example": "A: Hi <span class=\"gap\">nombre</span>! Could you <span class=\"gap\">pedido</span> before <span class=\"gap\">hora</span>?<br>B: Sure, no problem. I'll <span class=\"gap\">acción</span> now.<br>A: Thanks! And can you <span class=\"gap\">pedido</span> too?<br>B: Sorry, I can't right now. I have <span class=\"gap\">razón</span>. Shall I <span class=\"gap\">ofrecimiento</span> tomorrow?<br>A: Yes, please. That would be great.",
-      "hw": "Escribe tu chat y después grábate haciendo <b>las dos voces sin leer</b>. Envíame ambos por WhatsApp.",
+      "hw": "Escribe tu chat y después grábate haciendo <b>las dos voces sin leer</b>. Envíalo con el botón ENVIAR A MI PROFE (abajo).",
       "rubric": [
         {
           "c": "Tarea completa",
