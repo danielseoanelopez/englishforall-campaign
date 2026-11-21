@@ -247,3 +247,35 @@ body::before {
 .chip.spot-w.sel { border-color: var(--red); color: var(--red); background: #ff5d7a16; text-decoration: line-through; }
 .chip.spot-clean { margin-top: 10px; border-style: dashed; }
 .chip.spot-clean.sel { border-style: solid; border-color: var(--green); color: var(--green); background: #3dffa011; }
+
+/* ============ TABLET (iPad) — bigger cabinet, clear of the iPad top bar, no dead space below ============ */
+/* safe area: keeps the buttons and logo clear of the iPad/iPhone status bar and multitasking dots */
+.map-btn, .mute-btn, .music-btn { top: calc(10px + env(safe-area-inset-top, 0px)); }
+body { padding-top: calc(18px + env(safe-area-inset-top, 0px)); }
+/* the A1 Spanish helper line under Dan's messages and round instructions */
+.bub .say-es { font-size: 0.86rem; color: var(--muted); margin-top: 4px; line-height: 1.45; }
+.tab-only { display: none; }
+.tray .tl .es { font-family: "Share Tech Mono", monospace; letter-spacing: 0; }
+.tip-es { font-size: 0.86rem; color: var(--muted); text-align: center; margin: -4px 0 10px; line-height: 1.45; }
+@media (min-width: 700px) and (min-height: 700px) {
+  body { display: flex; flex-direction: column; padding: calc(30px + env(safe-area-inset-top, 0px)) 16px 28px; }
+  .cab { width: 100%; margin: 0 auto; flex: 1 0 auto; display: flex; flex-direction: column; }
+  .screen { flex: 1 0 auto; display: flex; flex-direction: column; }   /* the game screen runs to the bottom: no dead space under it */
+  #stage { flex: 1 0 auto; }
+  .tab-only { display: block; }
+  .map-btn, .mute-btn, .music-btn { top: calc(20px + env(safe-area-inset-top, 0px)); }
+  .map-btn { left: 20px; } .mute-btn { right: 20px; } .music-btn { right: 72px; }
+  .marquee { margin-top: 44px; }                  /* the logo sits below the button row, not between the buttons */
+  .es, .bub .say-es, .tip-es { font-size: 0.92rem; color: #9fe6f2; }
+}
+@media (min-width: 700px) and (min-height: 700px) and (orientation: portrait) {
+  .cab { zoom: 1.3; }                             /* 560px cabinet → ~730px on an iPad in portrait */
+  .marquee { margin-top: 34px; }
+  .scene2 { height: 270px; }
+}
+@media (min-width: 900px) and (min-height: 700px) and (orientation: landscape) {
+  .cab { zoom: 1.12; max-width: min(820px, 84vw); }
+  .marquee { margin-top: 36px; }
+}
+/* phones: the logo drops below the fixed button row instead of sliding under it */
+@media (max-width: 699px) and (orientation: portrait) { .marquee { margin-top: 44px; } }

@@ -13,8 +13,9 @@
 <link rel="stylesheet" href="assets/brands.css?v=1">
 <script src="assets/progress.js?v=5"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
-<link rel="stylesheet" href="lesson.css?v=20261120">
+<link rel="stylesheet" href="lesson.css?v=20261121">
 <link rel="stylesheet" href="assets/icons.css?v=1">
+<script defer src="assets/homework.js?v=1"></script>
 </head>
 <body>
 <div class="side-deco left" id="decoLeft"></div>
@@ -425,6 +426,7 @@ function build(L){
   document.getElementById("finalRow").style.display = "";
   shuffleOptions();
   ckRestore();
+  if(window.HW) HW.init(L);   // speaking recorder + writing check + send to teacher (assets/homework.js)
   try { AOS.refreshHard(); } catch(e){}
 }
 
@@ -599,6 +601,9 @@ function mFlip(id, cardId){
     } else { noBeep(); setTimeout(()=>{ a.classList.remove("flip"); bb.classList.remove("flip"); st.flipped=[]; st.lock=false; }, 850); }
   } else { blip(); }
 }
+/* the bottom progress HUD steps aside at the very end of the page, where the final buttons are */
+(function(){ var t=0; function chk(){ t=0; var w=document.querySelector(".progress-wrap"); if(!w) return; var fr=document.getElementById("finalRow"), rs=document.getElementById("results"); var vis=function(e){ if(!e||e.offsetParent===null) return false; var r=e.getBoundingClientRect(); return r.top<window.innerHeight-70 && r.bottom>0; }; var nearEnd=(window.innerHeight+window.scrollY)>=document.documentElement.scrollHeight-60 || vis(fr) || vis(rs); w.classList.toggle("hide", nearEnd); }
+  addEventListener("scroll", function(){ if(!t) t=requestAnimationFrame(chk); }, {passive:true}); addEventListener("resize", chk); })();
 function updateProgress(){ const done=Object.keys(scores).length; document.getElementById("progressFill").style.width=(done/Math.max(EXERCISES.length,1)*100)+"%"; document.getElementById("progressLabel").textContent=`${done} / ${EXERCISES.length}`; }
 function saveStars(stars){ try{ const prev=parseInt(localStorage.getItem(LESSON_KEY)||"0",10); if(stars>prev) localStorage.setItem(LESSON_KEY,String(stars)); }catch(e){} if(window.EFA) EFA.bumpStreak(); }
 function sendHomework(el){ var nf=document.getElementById("studentName"); var name=(nf?nf.value.trim():"")||"Alumno/a"; var msg="¡Hola Daniel! Soy "+name+". Terminé la lección \""+LESSON_NAME+"\". Te envío mi tarea: mi escrito y un audio leyendo en voz alta."; el.href=SOCIAL.whatsapp+"?text="+encodeURIComponent(msg); return true; }
@@ -610,6 +615,7 @@ function seeRank(){
   saveStars(stars);
   document.getElementById("starRow").innerHTML="<ico-star></ico-star>".repeat(stars)+`<span class="off">${"<ico-star></ico-star>".repeat(5-stars)}</span>`;
   document.getElementById("scoreText").textContent=`SCORE: ${correct} / ${total}`;
+  window.__efaScore = `${correct}/${total} · ${stars}/5`;
   const studentName=(document.getElementById("studentName").value||"").trim()||"Alumno/a";
   const waMsg=`¡Hola Daniel! Soy ${studentName}. Terminé la Lección ${LESSON.num} (${LESSON.titlePlain}). Mi score: ${correct}/${total} (${stars}<ico-star></ico-star>). Aquí van mi tarea escrita y mi audio:`;
   document.getElementById("waCta").href=SOCIAL.whatsapp+"?text="+encodeURIComponent(waMsg);

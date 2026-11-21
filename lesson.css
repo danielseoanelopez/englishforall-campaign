@@ -395,3 +395,58 @@ footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px;
 .dlg-bar i { display: block; height: 100%; width: 100%; background: var(--cyan); transition: width .2s linear; }
 .dlg-timer.out .dlg-bar i { background: var(--magenta); }
 .dlg-left { font-size: .85rem; color: var(--gold); min-width: 44px; }
+
+/* ===== 2026-11-21 · iPad pass ===== */
+/* progress bar: a slim HUD pinned to the bottom of the screen, so it never covers the lesson or the top buttons */
+.progress-wrap { position: fixed; top: auto; left: 50%; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); width: min(560px, calc(100% - 24px)); margin: 0; display: flex; align-items: center; gap: 12px; padding: 9px 16px; border: 1px solid #9d4dff66; border-radius: 14px; background: rgba(8, 8, 22, 0.82); box-shadow: 0 0 18px #9d4dff33, 0 6px 22px #000a; z-index: 25; transition: opacity 0.25s, transform 0.25s; }
+.progress-wrap .progress-bar { flex: 1; height: 10px; }
+.progress-wrap .progress-label { margin: 0; flex: 0 0 auto; font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: var(--gold); letter-spacing: 1px; }
+.progress-wrap.hide { opacity: 0; transform: translateX(-50%) translateY(140%); pointer-events: none; }
+body { padding-bottom: calc(90px + env(safe-area-inset-bottom, 0px)); }
+/* MAPA + sound scroll away with the page everywhere (they used to sit on top of the cards while scrolling) */
+.backmap, .mute-btn { position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); }
+/* the speaker in vocabulary cards gets breathing room from the card's corner */
+.term { padding: 12px 14px; }
+.term .en .spk-btn.mini { margin: 2px 0 6px 12px; }
+@media (min-width: 768px) {
+  body { padding-top: calc(78px + env(safe-area-inset-top, 0px)); }
+  .backmap, .mute-btn { top: calc(20px + env(safe-area-inset-top, 0px)); }
+  .backmap { left: 20px; } .mute-btn { right: 20px; }
+  .term { padding: 14px 18px; }
+  .spk-btn.mini { width: 30px; height: 30px; font-size: 0.85rem; }
+  /* the small light-blue Spanish text: bigger and a little brighter on iPad */
+  .es, .sp, .term .sp, .phrase-list .sp, .stage-tag .es, .player .meta, .checklist li { font-size: 1.05rem; }
+  .clock-chip .ce, footer, .toggle-btn { font-size: 0.95rem; }
+  .es, .sp, .term .sp, .phrase-list .sp { color: #9fe6f2; }
+  .progress-wrap { width: min(640px, calc(100% - 48px)); padding: 11px 18px; }
+}
+
+/* ===== speaking recorder + writing check + send to teacher (assets/homework.js) ===== */
+.rec-box { margin-top: 12px; padding: 12px 14px; border: 1px dashed #ff3df066; border-radius: 12px; background: #ff3df008; }
+.rec-box.live { border-style: solid; border-color: var(--red); box-shadow: 0 0 14px #ff5d7a44; }
+.rec-box.has { border-color: #3dffa077; background: #3dffa008; }
+.rec-title { margin: 0 0 8px; color: var(--magenta); font-size: 0.95rem; }
+.rec-row { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.rec-btn { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1.5px solid var(--magenta); background: #ff3df012; color: #ffb3f8; font-family: "Press Start 2P", monospace; font-size: 0.6rem; letter-spacing: 1px; cursor: pointer; }
+.rec-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.rec-btn.rec-play { border-color: var(--cyan); background: #00e5ff10; color: var(--cyan); }
+.rec-btn.rec-del { border-color: #5a6a8a; background: none; color: var(--muted); padding: 0 12px; }
+.rec-box.live .rec-main { border-color: var(--red); color: #ffd0d8; background: #ff5d7a22; animation: recPulse 1s ease-in-out infinite; }
+@keyframes recPulse { 50% { box-shadow: 0 0 16px #ff5d7a99; } }
+.rec-time { font-family: "Press Start 2P", monospace; font-size: 0.62rem; color: var(--gold); min-width: 3.5em; }
+.rec-note { margin: 8px 0 0; font-size: 0.9rem; color: var(--muted); }
+.rec-box.has .rec-note { color: var(--green); }
+.w-check { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 8px; }
+.w-check .wc { font-size: 0.85rem; padding: 4px 10px; border-radius: 20px; border: 1px solid #3a4a7a; color: var(--muted); }
+.w-check .wc.ok { border-color: var(--green); color: var(--green); }
+.w-check .wc.bad { border-color: var(--red); color: var(--red); }
+.w-check .wc b { color: inherit; }
+.checklist li.ck.auto-ok:not(.done) { color: #9dffcf; }
+.hw-send { margin-top: 18px; }
+.btn.hw-btn { background: linear-gradient(180deg, #0a3325, #061c14); border-color: #5cffb8; color: #9dffcf; box-shadow: 0 0 16px #3dffa055, inset 0 0 14px #3dffa022; }
+.btn.hw-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.hw-status { margin-top: 10px; min-height: 1.3em; }
+.hw-status .good { color: var(--green); } .hw-status .bad { color: var(--red); }
+.hw-privacy { margin-top: 6px; font-size: 0.82rem; }
+@media (min-width: 768px) { .rec-btn { font-size: 0.66rem; min-height: 48px; } .rec-note, .w-check .wc { font-size: 1rem; } }
+.rec-btn > [class], .rec-btn > ico-mic, .rec-btn > ico-play, .rec-btn > ico-rotate, .rec-btn > ico-square { width: 1.3em; height: 1.3em; }

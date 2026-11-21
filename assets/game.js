@@ -28,6 +28,8 @@
 "use strict";
 
 const WHATSAPP = "https://wa.me/5491123709477";
+/* the FREE TRIAL LESSON buttons are off while the app is for regular students. Set to true to bring them back. */
+const SHOW_TRIAL = false;
 const qs = new URLSearchParams(location.search);
 const GAME_ID = String(document.body.dataset.game || qs.get("b") || "cafe").toLowerCase().replace(/[^a-z0-9-]/g, "");
 
@@ -203,7 +205,7 @@ function withCountry(R0) {
 }
 function pickCountry(done) {
   stage.innerHTML = '<div class="scene-tag">' + (T.setupTag || "PLAYER SETUP") + '</div>';
-  stage.appendChild(bubble("dan", "One thing before your shift. Where are you from?"));
+  stage.appendChild(bubble("dan", "One thing before your shift. Where are you from?", null, null, "Antes de empezar: ¿de dónde eres?"));
   const grid = el('<div class="country-grid"></div>');
   const choose = c => {
     c = cleanCountry(c); if (!c) return;
@@ -225,11 +227,13 @@ function pickCountry(done) {
 function avaInner(c, big) {
   return avaFile(c.ava) ? '<img src="' + avaFile(c.ava) + '" alt="">' : '<span class="avin"' + (big ? ' style="font-size:1.15rem"' : '') + '>' + c.name.charAt(0) + '</span>';
 }
-function bubble(castKey, text, audioKey, subOverride) {
+/* A1 buildings show a short Spanish helper line under Dan's messages and each round (building JSON "esHelp": false turns it off) */
+function esOn() { return G && G.esHelp !== false && (G.esHelp === true || G.level === "A1"); }
+function bubble(castKey, text, audioKey, subOverride, es) {
   const c = CAST[castKey];
   const r = el('<div class="row" style="--c:' + c.color + '">' +
     '<div class="ava">' + avaInner(c) + '</div>' +
-    '<div class="bub"><div class="who">' + c.name + ' · ' + (subOverride || c.sub) + '</div><div class="say">' + text + '</div></div>' +
+    '<div class="bub"><div class="who">' + c.name + ' · ' + (subOverride || c.sub) + '</div><div class="say">' + text + '</div>' + (es && esOn() ? '<div class="say-es">' + es + '</div>' : '') + '</div>' +
     (audioKey ? '<button class="replay" title="Listen again" aria-label="Listen again">' + ic("vol", 16) + '</button>' : "") +
   '</div>');
   if (audioKey) r.querySelector(".replay").addEventListener("click", () => say(audioKey, text));
@@ -330,7 +334,7 @@ function showSelect() {
   });
   const foot = el('<div class="actions" style="justify-content:center; margin-top:14px;">' +
     '<a class="btn cyan" href="city.html"><ico-city></ico-city> CITY MAP</a>' +
-    '<a class="btn gold" href="' + WHATSAPP + '?text=' + encodeURIComponent("Hola Dan! 🎮 I'm playing " + G.title + " and I want my FREE trial lesson! 🚀") + '" target="_blank" rel="noopener"> FREE TRIAL LESSON</a></div>');
+    (SHOW_TRIAL ? '<a class="btn gold" href="' + WHATSAPP + '?text=' + encodeURIComponent("Hola Dan! 🎮 I'm playing " + G.title + " and I want my FREE trial lesson! 🚀") + '" target="_blank" rel="noopener"> FREE TRIAL LESSON</a>' : '') + '</div>');
   stage.appendChild(foot);
   if (G.askCountry && COUNTRY) {
     const cf = el('<div class="country-foot"><button type="button"></button></div>');
@@ -346,8 +350,9 @@ function startStage(sid) {
   const st = STAGES[sid];
   spriteOverride = st.spriteOverride || {};
   document.getElementById("marqueeTag").textContent = "RANK UP CITY · STAGE " + st.num + " · " + st.name.toUpperCase();
-  stage.innerHTML = '<div class="scene-tag">STAGE ' + st.num + ' · ' + st.name.toUpperCase() + '</div>';
-  stage.appendChild(bubble("dan", st.intro, st.introKey));
+  stage.innerHTML = '<div class="scene-tag">STAGE ' + st.num + ' · ' + st.name.toUpperCase() + '</div>' +
+    '<div class="tab-only">' + sceneHTML(null) + '</div>';   // tablets: the scene fills the screen while Dan briefs you
+  stage.appendChild(bubble("dan", st.intro, st.introKey, null, st.introEs));
   say(st.introKey, st.intro);
 
   if (st.tutorial) {
@@ -358,7 +363,7 @@ function startStage(sid) {
     document.getElementById("c1").addEventListener("click", () => { blip(); startRound(0); });
     document.getElementById("c2").addEventListener("click", () => {
       blip(); choices.remove();
-      stage.appendChild(bubble("dan", T.help, "dan-help"));
+      stage.appendChild(bubble("dan", T.help, "dan-help", null, T.helpEs));
       say("dan-help", T.help);
       const go = el('<div class="actions" style="justify-content:flex-end; margin-top:14px;"><button class="btn cyan">OK — LET\'S GO!</button></div>');
       stage.appendChild(go);
@@ -379,10 +384,11 @@ function startRound(i) {
   stage.innerHTML = '<div class="scene-tag">ROUND ' + (i + 1) + ' OF ' + st.rounds.length + (st.boss ? " · <ico-warn></ico-warn> " + (T.bossTag || "BOSS") : "") + '</div>' + sceneHTML(custSprite);
 
   if (R.preIntro) {
-    stage.appendChild(bubble("dan", R.preIntro, R.preIntroKey));
+    stage.appendChild(bubble("dan", R.preIntro, R.preIntroKey, null, R.preIntroEs));
     TEXTS[R.preIntroKey] = R.preIntro;
   }
   stage.appendChild(bubble(R.who, R.line, R.keys.line, R.sub));
+  if (esOn()) { const tip = R.tipEs || (T.tipsEs || {})[R.type] || TIPS_ES[R.type]; if (tip) stage.appendChild(el('<p class="tip-es">' + tip + '</p>')); }
   if (R.note) stage.appendChild(el('<div class="note-board">' + R.note + '</div>'));
 
   (MECH[R.type] || MECH.talk)(R);
@@ -392,6 +398,13 @@ function startRound(i) {
   if (R.preIntro) { say(R.preIntroKey, R.preIntro); setTimeout(() => { if (S.round === i && S.sid === st.id) say(R.keys.line, R.line); }, 11000); }
   else say(R.keys.line, R.line);
 }
+
+/* the default Spanish instruction for each round type (A1 only). A building can override with text.tipsEs, a round with tipEs. */
+const TIPS_ES = {
+  order: "Escucha el pedido, toca la comida para armar la bandeja y pulsa SERVE.",
+  talk: "Escucha y elige la respuesta correcta.",
+  say: "Escucha el modelo y di la frase en voz alta."
+};
 
 /* ============ MECHANICS ============ */
 /* Enri's hint button, shared by every round type. hintText() returns what he says; the bubble goes before `anchor()`. */
@@ -1080,15 +1093,17 @@ function showSummary() {
       '<div class="cquote">"' + card.quote + '"</div>' +
     '</div>';
 
-  let danSay, danKey;
+  let danSay, danKey, danEs;
   if (isBossWin) {
-    danSay = T.bossWin; danKey = T.bossWinKey || "sb-win";
+    danSay = T.bossWin; danKey = T.bossWinKey || "sb-win"; danEs = T.bossWinEs;
   } else if (S.pawsTotal >= max * 0.75) {
     danSay = T.good || "Not bad, rookie. Not bad at ALL. Your prize is waiting — claim it!"; danKey = "dan-good";
+    danEs = T.goodEs || "¡Muy bien! Mira tu carta de premio.";
   } else {
     danSay = T.ok || "Hey, that was hard! Run it back for a better card — or claim your prize anyway."; danKey = "dan-ok";
+    danEs = T.okEs || "¡Era difícil! Juega otra vez para ganar una carta mejor.";
   }
-  stage.appendChild(bubble("dan", danSay, danKey));
+  stage.appendChild(bubble("dan", danSay, danKey, null, danEs));
   say(danKey, danSay);
 
   const iNext = ORDER.indexOf(S.sid) + 1;
@@ -1099,7 +1114,7 @@ function showSummary() {
     '<button class="btn cyan" id="selBtn">' + (T.selectLabel || "SHIFT SELECT") + '</button>' +
     '<a class="btn gold" href="cards.html"><ico-clone></ico-clone> CARD ALBUM</a>' +
     '<a class="btn" href="city.html"><ico-city></ico-city> CITY MAP</a>' +
-    '<a class="btn gold" href="' + waLink + '" target="_blank" rel="noopener"><ico-star></ico-star> CLAIM FREE TRIAL LESSON</a>' +
+    (SHOW_TRIAL ? '<a class="btn gold" href="' + waLink + '" target="_blank" rel="noopener"><ico-star></ico-star> CLAIM FREE TRIAL LESSON</a>' : '') +
     '<button class="btn" id="shareBtn"><ico-play></ico-play> SHARE SCORE</button></div>');
   stage.appendChild(acts);
 
@@ -1123,7 +1138,7 @@ function showGameOver(msg) {
     '</div>';
   const danSay = (typeof msg === "string" && msg) || T.gameOver || "Take a breath and run it back. Enri believes in you. Probably.";
   const overKey = (typeof msg === "string" && msg) ? "dan-deadair" : "dan-over";   // the dead-air message has its own clip
-  stage.appendChild(bubble("dan", danSay, overKey));
+  stage.appendChild(bubble("dan", danSay, overKey, null, (typeof msg === "string" && msg) ? null : (T.gameOverEs || "Se acabó el turno. Respira y vuelve a intentarlo.")));
   say(overKey, danSay);
   const btn = el('<div class="actions" style="justify-content:center; margin-top:16px;">' +
     '<button class="btn cyan" id="retryBtn">↻ TRY AGAIN</button>' +

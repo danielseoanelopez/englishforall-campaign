@@ -18,10 +18,13 @@
     "pawsLabel": "CAFÉ PAWS",
     "setupTag": "PLAYER SETUP · NEW BARISTA",
     "help": "Easy: LISTEN to the order, TAP the food to add it to your tray, then hit SERVE. If you're stuck, Enri's PURR BOOST gives you a hint. You've got this.",
+    "helpEs": "Escucha el pedido, toca la comida para ponerla en la bandeja y pulsa SERVE. Si te trabas, Enri te da una pista.",
     "bossTag": "INSPECTION",
     "bossWinTitle": "CAFÉ MASTER!",
     "bossWin": "YES! Rookie — you did it! The Neon Café is officially five stars. Rank up! The Office Tower is waiting for you... when you're ready.",
-    "gameOver": "Hey — the breakfast rush gets EVERYBODY. Take a breath and run it back. Enri believes in you. Probably."
+    "bossWinEs": "¡Lo lograste! El café tiene cinco estrellas. Siguiente parada: la Office Tower.",
+    "gameOver": "Hey — the breakfast rush gets EVERYBODY. Take a breath and run it back. Enri believes in you. Probably.",
+    "gameOverEs": "Se acabó el turno. Respira y vuelve a intentarlo."
   },
   "scene": {
     "label": "The Neon Café counter",
@@ -126,6 +129,7 @@
       "name": "First shift",
       "tag": "Greetings, orders & meeting people",
       "intro": "Rookie! Welcome to your first shift at the Neon Café. Customers order — you build the tray. Good luck!",
+      "introEs": "¡Bienvenido a tu primer turno! Los clientes piden y tú armas la bandeja.",
       "introKey": "dan-intro",
       "tutorial": true,
       "words": [
@@ -147,6 +151,7 @@
       "name": "Rush hour",
       "tag": "Numbers, prices & time",
       "intro": "Rush hour, rookie. Numbers, prices, times. Stay sharp.",
+      "introEs": "Hora pico: números, precios y horas. ¡Atento!",
       "introKey": "s3-intro",
       "words": [
         "How much is it?",
@@ -165,6 +170,7 @@
       "name": "Lost & found",
       "tag": "Have / has · there is / there are · places",
       "intro": "Busy day. Things are lost, mixed up, and the delivery just arrived. Fix it all with your words.",
+      "introEs": "Cosas perdidas, pedidos mezclados y una entrega nueva. Resuélvelo hablando.",
       "introKey": "s4-intro",
       "words": [
         "It has…",
@@ -185,6 +191,7 @@
       "name": "Quiz night",
       "tag": "Simple questions & answers",
       "intro": "It's QUIZ NIGHT at the café! Vera is the quizmaster. Answer fast, serve faster.",
+      "introEs": "¡Noche de preguntas! Vera hace las preguntas. Responde rápido.",
       "introKey": "s6-intro",
       "words": [
         "Can I…?",
@@ -207,6 +214,7 @@
         "vera": "sprite-vera-inspector.webp"
       },
       "intro": "Rookie... head office called. Vera is not just a critic — she is the CITY INSPECTOR. Everything you learned. One shift. Go.",
+      "introEs": "Vera es la inspectora de la ciudad. Usa todo lo que aprendiste. ¡Vamos!",
       "introKey": "sb-intro",
       "words": [
         "Good morning!",
