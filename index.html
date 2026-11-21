@@ -61,8 +61,8 @@
   .mute-btn { position: fixed; top: 12px; right: 12px; z-index: 30; width: 44px; height: 44px; border-radius: 10px; border: 2px solid var(--cyan); background: var(--panel); color: var(--cyan); font-size: 1.1rem; cursor: pointer; box-shadow: 0 0 10px #00e5ff44; transition: box-shadow 0.15s, transform 0.1s; }
   .mute-btn:hover { transform: translateY(-2px); box-shadow: 0 0 16px #00e5ff88; }
 
-  .brand { text-align: center; margin-bottom: 10px; letter-spacing: 2px; }
-  .brand .logo { height: 120px; max-width: 88%; object-fit: contain; background: #000; padding: 10px 18px; border: 2px solid var(--cyan); border-radius: 16px; box-shadow: 0 0 16px #00e5ff55, inset 0 0 12px #00e5ff22; filter: brightness(1.15) saturate(1.2); }
+  .brand { text-align: center; margin: 0 auto 14px; letter-spacing: 2px; }
+  .brand .logo { display: block; width: min(100%, 640px); height: auto; margin: 0 auto; background: #080b0a; padding: 4px; border: 2px solid var(--cyan); border-radius: 18px; box-shadow: 0 0 22px #00e5ff55, inset 0 0 12px #00e5ff22; filter: brightness(1.12) saturate(1.15); }
   header { text-align: center; margin-bottom: 22px; }
   header h1 {
     font-family: "Press Start 2P", monospace; font-size: clamp(1.05rem, 5vw, 2rem); color: var(--purple);
@@ -140,7 +140,7 @@
   footer .b em { font-style: normal; color: var(--cyan); }
   footer .sep { color: var(--gold); text-shadow: 0 0 8px #ffc83d88; margin: 0 8px; }
 
-  @media (min-width: 860px) { body { font-size: 18px; } .brand .logo { height: 140px; } }
+  @media (min-width: 860px) { body { font-size: 18px; } }
   @media (max-width: 520px) { .w-theme { display: none; } .w-head { gap: 11px; padding: 15px 14px; } .w-badge { width: 50px; height: 50px; font-size: 0.8rem; } }
   .home-cta .btn.cont { background: linear-gradient(180deg, #0a3325, #061c14); border-color: #5cffb8; color: #9dffcf; text-shadow: none; box-shadow: 0 0 16px #3dffa055, inset 0 0 14px #3dffa022; }
   .home-cta .btn.city { background: linear-gradient(180deg, #2f0a33, #1a061c); border-color: #ff7df5; color: #ffb3fa; text-shadow: none; box-shadow: 0 0 16px #ff3df055, inset 0 0 14px #ff3df022; }
@@ -183,6 +183,8 @@ body { padding-top: calc(24px + env(safe-area-inset-top, 0px)); }
 <div class="side-deco right" id="decoRight"></div>
 <button class="mute-btn" id="muteBtn" onclick="toggleMute()" aria-label="Sonido"><ico-volume></ico-volume></button>
 <div class="container">
+
+  <div class="brand"><img class="logo" src="logo-big.webp" width="900" height="593" alt="English for All — Rank Up"></div>
 
   <header data-aos="fade-up" data-aos-delay="80">
     <h1>RANK UP<br>CAMPAIGN</h1>
