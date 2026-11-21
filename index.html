@@ -163,6 +163,14 @@
                 padding: 10px 14px; margin: 0 0 14px; font-size: 0.86rem; color: var(--green); }
   .world.target { box-shadow: 0 0 0 2px var(--green), 0 0 22px #3dffa055; }
 
+/* ===== iPad / iPhone top bar: it blurs whatever sits under it, so the sound button and the logo start below it ===== */
+body { padding-top: calc(24px + env(safe-area-inset-top, 0px)); }
+.mute-btn { top: calc(12px + env(safe-area-inset-top, 0px)); }
+@media (max-width: 699px) and (orientation: portrait) { body { padding-top: calc(68px + env(safe-area-inset-top, 0px)); } }
+@media (min-width: 700px) and (min-height: 700px) {
+  body { padding-top: calc(80px + env(safe-area-inset-top, 0px)); }
+  .mute-btn { top: calc(20px + env(safe-area-inset-top, 0px)); right: 20px; }
+}
 .spk-btn>*,.mute-btn>*{margin-right:0;width:62%;height:62%}.btn>ico-play{margin-right:.3em}
 .sw{display:inline-block;width:.85em;height:.85em;border-radius:50%;background:var(--c);border:1px solid #ffffff55;vertical-align:-.1em;margin-right:.28em;box-shadow:0 0 6px var(--c)}
 .lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:0.62rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
@@ -194,7 +202,7 @@
     <div class="ov-bar"><div class="ov-fill" id="ovFill"></div></div>
     <div class="ov-label" id="ovLabel"><ico-star></ico-star> 0 / 0 estrellas</div>
     <div class="home-cta">
-      <a class="btn test" href="https://danielseoanelopez.github.io/englishforall/" target="_blank" rel="noopener"><ico-gamepad></ico-gamepad> TEST DE NIVEL</a>
+      <a class="btn test" href="level-test.html"><ico-gamepad></ico-gamepad> TEST DE NIVEL</a>
       <a class="btn city" href="city.html"><ico-city></ico-city> RANK UP CITY</a>
       <a class="btn cont" id="continueCta" href="#" style="display:none"></a>
     </div>

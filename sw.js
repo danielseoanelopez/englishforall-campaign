@@ -1,12 +1,12 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v46";  // v46: iPad layout, A1 Spanish help, in-lesson recorder
+const CACHE = "rankup-v47";  // v47: level test inside the app, iPad top spacing, bigger lesson headers, cards spread across the city
 const CORE = [
   "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
   "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=5",
   "assets/fonts/press-start-2p-latin.woff2", "assets/fonts/share-tech-mono-latin.woff2",
-  "city.html", "neon-cafe.html", "neon-office.html", "game.html", "cards.html", "manifest.json",
-  "assets/game.js?v=8", "assets/game.css?v=4", "assets/homework.js?v=1", "games/cafe.json", "games/office.json", "games/registry.json", "games/agency.json", "games/vault.json",
+  "city.html", "level-test.html", "neon-cafe.html", "neon-office.html", "game.html", "cards.html", "manifest.json",
+  "assets/game.js?v=9", "assets/game.css?v=4", "assets/homework.js?v=1", "games/cafe.json", "games/office.json", "games/registry.json", "games/agency.json", "games/vault.json",
   "games/radio.json", "games/hotel.json",
   "logo.webp", "bg-cafe.webp", "nebula.webp", "map-city.webp",
   "icon-192.png", "icon-rankup.png",

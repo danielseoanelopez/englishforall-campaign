@@ -21,8 +21,9 @@
     "helpEs": "Escucha el pedido, toca la comida para ponerla en la bandeja y pulsa SERVE. Si te trabas, Enri te da una pista.",
     "bossTag": "INSPECTION",
     "bossWinTitle": "CAFÉ MASTER!",
-    "bossWin": "YES! Rookie — you did it! The Neon Café is officially five stars. Rank up! The Office Tower is waiting for you... when you're ready.",
-    "bossWinEs": "¡Lo lograste! El café tiene cinco estrellas. Siguiente parada: la Office Tower.",
+    "bossWinKey": "sb-ranked",
+    "bossWin": "YES! You ranked up! The Neon Café is officially five stars. The Office Tower is waiting for you... when you're ready.",
+    "bossWinEs": "¡Subiste de rango! El café tiene cinco estrellas. Siguiente parada: la Office Tower.",
     "gameOver": "Hey — the breakfast rush gets EVERYBODY. Take a breath and run it back. Enri believes in you. Probably.",
     "gameOverEs": "Se acabó el turno. Respira y vuelve a intentarlo."
   },
@@ -34,14 +35,14 @@
   },
   "summaryCards": {
     "boss": {
-      "img": "sprite-totti.webp",
-      "name": "TOTTI",
-      "quote": "I observe. I judge. Then I nap."
+      "img": "sprite-vera-inspector.webp",
+      "name": "INSPECTOR VERA",
+      "quote": "One latte. And I am always watching."
     },
     "epic": {
-      "img": "sprite-enri.webp",
-      "name": "ENRI",
-      "quote": "I don't chase success. I nap and it finds me."
+      "img": "item-latte.webp",
+      "name": "PERFECT LATTE",
+      "quote": "Smooth service. Keep it up!"
     },
     "common": {
       "img": "item-flatwhite.webp",

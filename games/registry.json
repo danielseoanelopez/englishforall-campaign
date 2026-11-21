@@ -1,7 +1,7 @@
 {
   "unlockAll": true,
   "onlyOpen": ["cafe"],
-  "note": "Rank Up City: every building, its map spot, when it opens, its stages (max paws) and its album cards. Read by city.html and cards.html through EFA.registry() in assets/progress.js. To open a building: write games/<id>.json, record its clips, set ready: true here. A card needs: id, stage, name, rarity (COMMON RARE EPIC LEGENDARY SECRET), quote, and img or icon + color; perfect: true = a full score on that stage.",
+  "note": "Rank Up City: every building, its map spot, when it opens, its stages (max paws) and its album cards. Read by city.html and cards.html through EFA.registry() in assets/progress.js. To open a building: write games/<id>.json, record its clips, set ready: true here. A card needs: id, stage, name, rarity (COMMON RARE EPIC LEGENDARY SECRET), quote, and img or icon + color; perfect: true = a full score on that stage. One character, one card: each illustrated character is on ONE card in the whole city (the Café keeps its customers and one Vera, the Inspector; Dan is in the Office Tower; Totti and Enri are in the Detective Agency).",
   "buildings": [
     {
       "id": "cafe", "name": "THE NEON CAFÉ", "short": "CAFÉ", "level": "A1", "place": "the Café",
@@ -21,11 +21,8 @@
         { "id": "neoncup", "stage": "s1", "name": "NEON CUP", "rarity": "COMMON", "img": "item-flatwhite.webp", "quote": "Full of potential. Refill and retry." },
         { "id": "mia", "stage": "s1", "name": "MIA", "rarity": "RARE", "img": "sprite-mia.webp", "quote": "The regular. Bright, kind, from Brazil." },
         { "id": "jack", "stage": "s2", "name": "JACK", "rarity": "RARE", "img": "sprite-jack.webp", "quote": "Big order, bigger heart. Cheers, mate." },
-        { "id": "dan", "stage": "s3", "name": "DAN", "rarity": "RARE", "img": "sprite-dan.webp", "quote": "The manager on the radio. Believes in you." },
-        { "id": "enri", "stage": "s3", "name": "ENRI", "rarity": "EPIC", "img": "sprite-enri.webp", "quote": "I nap, and success finds me." },
-        { "id": "vera", "stage": "s4", "name": "VERA", "rarity": "EPIC", "img": "sprite-vera.webp", "quote": "One latte. And I am always watching." },
-        { "id": "totti", "stage": "sb", "name": "TOTTI", "rarity": "LEGENDARY", "img": "sprite-totti.webp", "quote": "I observe. I judge. Then I nap." },
-        { "id": "inspector", "stage": "sb", "perfect": true, "name": "INSPECTOR VERA", "rarity": "SECRET", "img": "sprite-vera-inspector.webp", "quote": "Inspection passed. A perfect café.", "how": "Perfect the inspection" }
+        { "id": "inspector", "stage": "sb", "name": "INSPECTOR VERA", "rarity": "LEGENDARY", "img": "sprite-vera-inspector.webp", "quote": "One latte. And I am always watching." },
+        { "id": "cafemaster", "stage": "sb", "perfect": true, "name": "PERFECT INSPECTION", "rarity": "SECRET", "icon": "trophy", "color": "var(--magenta)", "quote": "Five stars. Not one mistake.", "how": "Perfect the inspection" }
       ]
     },
     {
@@ -47,6 +44,7 @@
         { "id": "pass", "stage": "s1", "name": "OFFICE PASS", "rarity": "COMMON", "img": "building-office.webp", "quote": "Everyone starts on day one." },
         { "id": "sofia", "stage": "s1", "name": "SOFIA", "rarity": "RARE", "icon": "people", "color": "var(--magenta)", "quote": "The team lead. Welcome aboard!" },
         { "id": "marcos", "stage": "s2", "name": "MARCOS", "rarity": "RARE", "icon": "window", "color": "var(--green)", "quote": "The developer. Works from home on Fridays." },
+        { "id": "dan", "stage": "s2", "name": "DAN", "rarity": "EPIC", "img": "sprite-dan.webp", "quote": "The manager on the radio. Believes in you." },
         { "id": "laura", "stage": "s3", "name": "LAURA", "rarity": "EPIC", "icon": "phone", "color": "var(--gold)", "quote": "The client. Could you send the two plans?" },
         { "id": "launch", "stage": "s4", "name": "LAUNCH DAY", "rarity": "EPIC", "icon": "rocket", "color": "var(--cyan)", "quote": "We're launching the app on Friday." },
         { "id": "director", "stage": "sb", "name": "THE DIRECTOR", "rarity": "LEGENDARY", "icon": "crown", "color": "var(--gold)", "quote": "Results. I like results." },

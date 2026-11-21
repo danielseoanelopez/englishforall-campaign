@@ -121,6 +121,15 @@ a.pod:hover { transform: translateY(-2px); }
 .spk-btn>*,.mute-btn>*{margin-right:0;width:62%;height:62%}.btn>ico-play{margin-right:.3em}
 .sw{display:inline-block;width:.85em;height:.85em;border-radius:50%;background:var(--c);border:1px solid #ffffff55;vertical-align:-.1em;margin-right:.28em;box-shadow:0 0 6px var(--c)}
 .lang-tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:0.62rem;letter-spacing:1px;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:2px 5px;margin:0 2px;vertical-align:middle}
+
+/* ===== iPad / iPhone top bar: it blurs whatever sits under it, so the music button and the logo start below it ===== */
+body { padding-top: calc(18px + env(safe-area-inset-top, 0px)); }
+.music-btn { top: calc(10px + env(safe-area-inset-top, 0px)); }
+@media (max-width: 699px) and (orientation: portrait) { body { padding-top: calc(64px + env(safe-area-inset-top, 0px)); } }
+@media (min-width: 700px) and (min-height: 700px) {
+  body { padding-top: calc(80px + env(safe-area-inset-top, 0px)); }
+  .music-btn { top: calc(20px + env(safe-area-inset-top, 0px)); right: 20px; }
+}
 </style>
 <link rel="stylesheet" href="assets/icons.css?v=1">
 </head>
@@ -211,7 +220,7 @@ const denied = () => { tone(200, 0.12, "sawtooth", 0, 0.06); tone(150, 0.16, "sa
 const enriSay = document.getElementById("enriSay");
 const ENRI_EXTRA = [
   "Six districts, A1 to C2 — café to hotel. One long night across the city.",
-  "Pass the inspection to win Totti's Legendary card. Check your album.",
+  "Pass the inspection to win Vera's Legendary card. Totti's card? That one is hiding in another building.",
   "Stuck in a game? My Purr Boost gives you a hint. Two per shift.",
   "Locked buildings show a padlock. They open as head office finishes them.",
   "The Academy has the full lessons. The city is where you train.",

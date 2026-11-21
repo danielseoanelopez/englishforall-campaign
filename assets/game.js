@@ -1071,6 +1071,14 @@ function showSummary() {
   if (st.boss)            card = Object.assign({ rar: "<ico-star></ico-star> LEGENDARY <ico-star></ico-star>" }, SC.boss);
   else if (ratio >= 0.66) card = Object.assign({ rar: "◆ EPIC ◆" }, SC.epic);
   else                    card = Object.assign({ rar: "● COMMON ●" }, SC.common);
+  /* the prize is the album card this shift gives (games/registry.json), so the reveal and the album always agree;
+     shifts without an album card keep the summaryCards prize above */
+  const RANK = { COMMON: 1, RARE: 2, EPIC: 3, LEGENDARY: 4, SECRET: 5 };
+  const RLABEL = { COMMON: "● COMMON ●", RARE: "◆ RARE ◆", EPIC: "◆ EPIC ◆",
+    LEGENDARY: "<ico-star></ico-star> LEGENDARY <ico-star></ico-star>", SECRET: "<ico-star></ico-star> SECRET <ico-star></ico-star>" };
+  const won = (G.albumCards || []).filter(c => c.stage === S.sid && (!c.perfect || S.pawsTotal >= max))
+    .sort((a, b) => (RANK[b.rarity] || 0) - (RANK[a.rarity] || 0));
+  if (won.length) card = { rar: RLABEL[won[0].rarity] || won[0].rarity, img: won[0].img, icon: won[0].icon, name: won[0].name, quote: won[0].quote };
 
   const isBossWin = !!st.boss;
   const waMsg = encodeURIComponent("Hola Dan! 🎮 I finished stage " + st.num + " of " + G.title + " with " + S.pawsTotal + "/" + max + " paws 🐾 — I want to claim my FREE trial lesson! 🚀");
@@ -1168,7 +1176,12 @@ function loadFailed() {
 Promise.all([
   fetch("games/" + GAME_ID + ".json", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
   window.EFA ? EFA.registry().catch(() => ({})) : Promise.resolve({})   // "unlockAll": true in registry.json opens every stage
-]).then(([g, reg]) => { if (reg && reg.unlockAll) g.freePlay = true; boot(g); }, loadFailed);
+]).then(([g, reg]) => {
+  if (reg && reg.unlockAll) g.freePlay = true;
+  const me = reg && reg.buildings ? reg.buildings.find(b => b.id === GAME_ID) : null;
+  g.albumCards = me && me.cards ? me.cards : [];                          // the end-of-shift prize comes from the album
+  boot(g);
+}, loadFailed);
 
 /* for building-specific add-ons and for testing */
 window.RankUpGame = { id: GAME_ID, mechanics: MECH, get data() { return G; }, get state() { return S; },

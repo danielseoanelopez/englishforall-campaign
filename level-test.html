@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Test de nivel — Rank Up</title>
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#05050e">
+<link rel="manifest" href="manifest.json">
+<link rel="preload" href="assets/fonts/press-start-2p-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css?v=1">
+<link rel="stylesheet" href="assets/icons.css?v=1">
+<!--
+  The level test inside the app.
+  The test itself lives in ONE place: the englishforall repo (danielseoanelopez.github.io/englishforall/),
+  the same page Taplink opens. This page shows it in a frame, so in the installed app it opens
+  without the GitHub address bar, and every edit to the test shows up here too.
+  When the test finishes, "EMPEZAR A PRACTICAR" opens the Academy map here, in the app.
+-->
+<style>
+html, body { margin: 0; height: 100%; background: #05050e; overflow: hidden; }
+#test { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; display: block; background: #05050e; }
+.backmap { position: fixed; top: 12px; left: 12px; z-index: 30; display: inline-flex; align-items: center; gap: 7px; height: 44px; padding: 0 14px; border-radius: 10px; border: 2px solid #9d4dff; background: rgba(20, 22, 48, 0.93); color: #9d4dff; font-family: "Press Start 2P", monospace; font-size: 0.62rem; letter-spacing: 1px; text-decoration: none; box-shadow: 0 0 10px #9d4dff44; }
+.backmap:hover { box-shadow: 0 0 16px #9d4dff99; }
+@media (min-width: 768px) { .backmap { top: 20px; left: 20px; } }
+.loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; font-family: "Press Start 2P", monospace; font-size: 0.62rem; letter-spacing: 1px; color: #7fd9e8; z-index: 1; }
+.loading.gone { display: none; }
+</style>
+</head>
+<body>
+<div class="loading" id="loading">CARGANDO TEST…</div>
+<iframe id="test" title="Test de nivel de inglés" allow="autoplay; microphone; clipboard-write"></iframe>
+<a class="backmap" href="index.html" id="backBtn">◂ MAPA</a>
+
+<script>
+"use strict";
+(function () {
+  var TEST_URL = "../englishforall/";                 // the public test (same site, so the app can talk to it)
+  var frame = document.getElementById("test");
+  frame.src = TEST_URL + location.search;              // passes ?profe=rankup or ?reset=1 through
+
+  /* inside the app: room for the MAPA button, buttons clear of the iPad top bar */
+  var FIT_CSS =
+    "body{padding-top:72px!important}" +
+    ".mute-btn{top:12px!important;right:12px!important}" +
+    "@media (min-width:768px){body{padding-top:78px!important}.mute-btn{top:20px!important;right:20px!important}}";
+
+  /* a link to the campaign (the test's EMPEZAR A PRACTICAR button) opens the Academy map here, in the app */
+  function campaignTarget(href) {
+    var m = /englishforall-campaign\/?([^#]*)/.exec(href || "");
+    if (!m) return null;
+    var rest = m[1] || "";
+    if (!rest || rest.charAt(0) === "?") rest = "index.html" + rest;
+    return rest;
+  }
+
+  frame.addEventListener("load", function () {
+    document.getElementById("loading").className = "loading gone";
+    var doc;
+    try { doc = frame.contentDocument; } catch (e) { return; }   // a page from another site: leave it alone
+    if (!doc || !doc.head) return;
+    var st = doc.createElement("style"); st.textContent = FIT_CSS; doc.head.appendChild(st);
+    doc.addEventListener("click", function (e) {
+      var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+      if (!a) return;
+      var to = campaignTarget(a.href);
+      if (to) { e.preventDefault(); e.stopPropagation(); location.href = to; return; }
+      /* our own pages (Casos de éxito, Planes y precios…) open inside the frame, not in a new window */
+      try {
+        var u = new URL(a.href, doc.baseURI);
+        if (u.origin === location.origin && a.target === "_blank") a.removeAttribute("target");
+      } catch (err) {}
+    }, true);
+  });
+})();
+</script>
+</body>
+</html>
