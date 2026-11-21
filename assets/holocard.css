@@ -48,7 +48,7 @@
   border-radius: 1.6cqi; padding: 1.2cqi 1.4cqi; background: rgba(6, 7, 22, 0.85); text-shadow: 0 0 1cqi var(--bc, #00e5ff); }
 .hc-tag b { display: block; font-size: 3cqi; color: #fff; }
 .hc-title { text-align: center; min-width: 0; }
-.hc-name { font-family: "Press Start 2P", monospace; line-height: 1.15; letter-spacing: 0.4cqi; word-break: break-word;
+.hc-name { font-family: "Press Start 2P", monospace; line-height: 1.15; letter-spacing: 0.4cqi; word-break: keep-all; overflow-wrap: normal;
   background: linear-gradient(90deg, #ff3df0, #ffc83d, #3dffa0, #00e5ff, #b07bff, #ff3df0); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
   animation: hcFoil 6s linear infinite; filter: drop-shadow(0.45cqi 0.45cqi 0 #000) drop-shadow(0 0 1.4cqi rgba(255, 61, 240, 0.45)); }
 .hc-sub { font-family: "Press Start 2P", monospace; font-size: 2cqi; color: #8df3ff; letter-spacing: 0.4cqi; margin-top: 1.3cqi; text-shadow: 0 0 1cqi #00e5ff; }

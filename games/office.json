@@ -53,13 +53,13 @@
     "sofia": {
       "name": "SOFIA",
       "sub": "team lead <span class=lang-tag>UK</span>",
-      "ava": null,
+      "ava": "sofia",
       "color": "var(--magenta)"
     },
     "marcos": {
       "name": "MARCOS",
       "sub": "developer ",
-      "ava": null,
+      "ava": "marcos",
       "color": "var(--green)"
     },
     "laura": {
@@ -77,7 +77,9 @@
   },
   "avatars": {
     "headset": "sprite-dan.webp",
-    "cat": "sprite-enri.webp"
+    "cat": "sprite-enri.webp",
+    "sofia": "sprite-sofia.webp",
+    "marcos": "sprite-marcos.webp"
   },
   "order": [
     "s1",

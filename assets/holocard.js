@@ -17,7 +17,11 @@
     var on = Math.max(0, Math.min(5, v));
     return '<span class="s">' + "★".repeat(on) + '<span class="off">' + "★".repeat(5 - on) + "</span></span>";
   }
-  function nameSize(name) { var n = String(name).length; return Math.max(3.6, Math.min(8.6, 52 / Math.max(n, 1))) + "cqi"; }
+  function nameSize(name) {
+    var s = String(name), n = s.length, w = Math.max.apply(null, s.split(/\s+/).map(function (x) { return x.length; }));
+    var size = Math.max(3.4, Math.min(8.2, 44 / Math.max(n, 1)));
+    return Math.min(size, 46 / Math.max(w, 1) - 0.4) + "cqi";   /* the longest word always fits on one line */
+  }
 
   function say(text, audio, btn) {
     try { player.pause(); if (window.speechSynthesis) speechSynthesis.cancel(); } catch (e) {}
@@ -108,11 +112,18 @@
     document.body.appendChild(m); document.documentElement.style.overflow = "hidden";
     requestAnimationFrame(function () { m.classList.add("on"); });
     tilt(m.querySelector(".hc"));
+    fitName(m);
     m.addEventListener("click", function (e) {
       var s = e.target.closest(".hc-spk"); if (s) { say(s.dataset.say, s.dataset.audio, s); return; }
       if (e.target === m || e.target.closest(".hc-x")) close();
     });
     document.addEventListener("keydown", onKey);
+  }
+  /* shrink the title until its longest word fits the space it really has (phones have a narrower title column) */
+  function fitName(root) {
+    var n = root.querySelector(".hc-name"); if (!n) return;
+    var size = parseFloat(n.style.fontSize) || 8, guard = 0;
+    while (n.scrollWidth > n.clientWidth + 1 && size > 2.4 && guard++ < 40) { size -= 0.25; n.style.fontSize = size + "cqi"; }
   }
   function onKey(e) { if (e.key === "Escape") close(); }
   function close() {
