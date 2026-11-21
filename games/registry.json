@@ -22,7 +22,7 @@
         { "id": "mia", "stage": "s1", "name": "MIA", "rarity": "RARE", "img": "sprite-mia.webp", "quote": "The regular. Bright, kind, from Brazil." },
         { "id": "jack", "stage": "s2", "name": "JACK", "rarity": "RARE", "img": "sprite-jack.webp", "quote": "Big order, bigger heart. Cheers, mate." },
         { "id": "inspector", "stage": "sb", "name": "INSPECTOR VERA", "rarity": "LEGENDARY", "img": "sprite-vera-inspector.webp", "quote": "One latte. And I am always watching." },
-        { "id": "cafemaster", "stage": "sb", "perfect": true, "name": "PERFECT INSPECTION", "rarity": "SECRET", "icon": "trophy", "color": "var(--magenta)", "quote": "Five stars. Not one mistake.", "how": "Perfect the inspection" }
+        { "id": "cafemaster", "stage": "sb", "perfect": true, "name": "PERFECT INSPECTION", "rarity": "SECRET", "img": "card-cafe-master.webp", "quote": "Five stars. Not one mistake.", "how": "Perfect the inspection" }
       ]
     },
     {

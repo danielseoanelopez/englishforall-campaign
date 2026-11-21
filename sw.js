@@ -1,6 +1,6 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v57";  // v57: new Inspector Vera art (sprites are cache-first, so this refresh matters)
+const CACHE = "rankup-v58";  // v58: A1 album complete (Café Master trophy art)
 const CORE = [
   "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
   "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=5",
@@ -10,7 +10,7 @@ const CORE = [
   "games/radio.json", "games/hotel.json",
   "logo-flat.webp", "bg-cafe.webp", "nebula.webp", "map-city.webp",
   "icon-192.png", "icon-rankup.png",
-  "sprite-mia.webp", "sprite-jack.webp", "sprite-vera.webp", "sprite-vera-inspector.webp",
+  "sprite-mia.webp", "sprite-jack.webp", "sprite-vera.webp", "sprite-vera-inspector.webp", "card-cafe-master.webp",
   "sprite-dan.webp", "sprite-totti.webp", "sprite-enri.webp",
   "item-flatwhite.webp", "item-latte.webp", "item-tea.webp", "item-juice.webp",
   "item-avotoast.webp", "item-bagel.webp", "item-muffin.webp", "item-cookie.webp"
