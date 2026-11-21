@@ -5,37 +5,634 @@
       "subtitle": "THE REGULAR",
       "bg": "bg-cafe.webp",
       "profile": [
-        { "icon": "locationdot", "k": "FROM", "v": "BRAZIL", "flag": "flag-br.webp" },
-        { "icon": "calendar", "k": "FIRST SEEN", "v": "SHIFT 1-1 · FIRST SHIFT" },
-        { "icon": "mug", "k": "ROLE", "v": "THE CAFÉ REGULAR" },
-        { "icon": "cap", "k": "LEVEL", "v": "A1 · FIRST CONTACT" }
+        {
+          "icon": "locationdot",
+          "k": "FROM",
+          "v": "BRAZIL",
+          "flag": "flag-br.webp"
+        },
+        {
+          "icon": "calendar",
+          "k": "FIRST SEEN",
+          "v": "SHIFT 1-1 · FIRST SHIFT"
+        },
+        {
+          "icon": "mug",
+          "k": "ROLE",
+          "v": "THE CAFÉ REGULAR"
+        },
+        {
+          "icon": "cap",
+          "k": "LEVEL",
+          "v": "A1 · FIRST CONTACT"
+        }
       ],
       "moves": [
-        { "icon": "mug", "name": "CAN I GET…?", "build": ["Can I get", "a flat white", "please?"], "say": "Can I get a flat white, please?", "audio": "nc-mia-order.mp3" },
-        { "icon": "flag", "name": "I'M FROM…", "build": ["I'm", "from", "Brazil."], "say": "I'm from Brazil.", "audio": "nc-s2-r1-line.mp3" },
-        { "icon": "question", "name": "WHERE ARE YOU FROM?", "build": ["Where", "are you", "from?"], "say": "Where are you from?" },
-        { "icon": "handshake", "name": "NICE TO MEET YOU", "build": ["Nice to", "meet", "you!"], "say": "Nice to meet you!" }
+        {
+          "icon": "mug",
+          "name": "CAN I GET…?",
+          "build": [
+            "Can I get",
+            "a flat white",
+            "please?"
+          ],
+          "say": "Can I get a flat white, please?",
+          "audio": "nc-mia-order.mp3"
+        },
+        {
+          "icon": "flag",
+          "name": "I'M FROM…",
+          "build": [
+            "I'm",
+            "from",
+            "Brazil."
+          ],
+          "say": "I'm from Brazil.",
+          "audio": "nc-s2-r1-line.mp3"
+        },
+        {
+          "icon": "question",
+          "name": "WHERE ARE YOU FROM?",
+          "build": [
+            "Where",
+            "are you",
+            "from?"
+          ],
+          "say": "Where are you from?"
+        },
+        {
+          "icon": "handshake",
+          "name": "NICE TO MEET YOU",
+          "build": [
+            "Nice to",
+            "meet",
+            "you!"
+          ],
+          "say": "Nice to meet you!"
+        }
       ],
       "combo": {
-        "chips": ["HI! I'M MIA", "I'M FROM BRAZIL", "CAN I GET…?"],
+        "chips": [
+          "HI! I'M MIA",
+          "I'M FROM BRAZIL",
+          "CAN I GET…?"
+        ],
         "line": "Morning! I'm Mia. I'm from Brazil. Can I get a flat white, please?",
         "label": "FULL ORDER COMBO!"
       },
       "stats": [
-        { "icon": "heart", "k": "KINDNESS", "v": 5 },
-        { "icon": "handshake", "k": "POLITENESS", "v": 5 },
-        { "icon": "search", "k": "CURIOSITY", "v": 5 },
-        { "icon": "clock", "k": "PATIENCE", "v": 4 },
-        { "icon": "bolt", "k": "COFFEE POWER", "v": "MAX" }
+        {
+          "icon": "heart",
+          "k": "KINDNESS",
+          "v": 5
+        },
+        {
+          "icon": "handshake",
+          "k": "POLITENESS",
+          "v": 5
+        },
+        {
+          "icon": "search",
+          "k": "CURIOSITY",
+          "v": 5
+        },
+        {
+          "icon": "clock",
+          "k": "PATIENCE",
+          "v": 4
+        },
+        {
+          "icon": "bolt",
+          "k": "COFFEE POWER",
+          "v": "MAX"
+        }
       ],
       "lore": "The first customer of your first shift. Mia comes to the Neon Café every morning, orders the same thing, and always has time to ask the new barista where they're from.",
       "facts": [
-        { "icon": "mug", "t": "Same order every day: a flat white and an avocado toast." },
-        { "icon": "heart", "t": "Never forgets “please” and “thank you”." },
-        { "icon": "comments", "t": "Wants to know where everyone is from." }
+        {
+          "icon": "mug",
+          "t": "Same order every day: a flat white and an avocado toast."
+        },
+        {
+          "icon": "heart",
+          "t": "Never forgets “please” and “thank you”."
+        },
+        {
+          "icon": "comments",
+          "t": "Wants to know where everyone is from."
+        }
       ],
       "quote": "Morning! I'm Mia. Where are you from?",
-      "medal": { "img": "item-flatwhite.webp", "label": "HER ORDER" }
+      "medal": {
+        "img": "item-flatwhite.webp",
+        "label": "HER ORDER"
+      }
+    },
+    "neoncup": {
+      "subtitle": "YOUR FIRST CUP",
+      "bg": "bg-cafe.webp",
+      "profileTitle": "CARD PROFILE",
+      "profile": [
+        {
+          "icon": "star",
+          "k": "TYPE",
+          "v": "STARTER CARD"
+        },
+        {
+          "icon": "calendar",
+          "k": "FOUND",
+          "v": "SHIFT 1-1 · FIRST SHIFT"
+        },
+        {
+          "icon": "utensils",
+          "k": "MENU",
+          "v": "8 THINGS TO ORDER"
+        },
+        {
+          "icon": "cap",
+          "k": "LEVEL",
+          "v": "A1 · FIRST CONTACT"
+        }
+      ],
+      "movesTitle": "ORDER WORDS + HOW TO BUILD THEM",
+      "moves": [
+        {
+          "icon": "mug",
+          "name": "A / AN",
+          "build": [
+            "a latte",
+            "·",
+            "an orange juice"
+          ],
+          "say": "a latte. an orange juice."
+        },
+        {
+          "icon": "listol",
+          "name": "ONE → TWO",
+          "build": [
+            "one cookie",
+            "→",
+            "two cookies"
+          ],
+          "say": "one cookie. two cookies."
+        },
+        {
+          "icon": "handshake",
+          "name": "ASK POLITELY",
+          "build": [
+            "Can I get",
+            "a latte,",
+            "please?"
+          ],
+          "say": "Can I get a latte, please?"
+        },
+        {
+          "icon": "commentdots",
+          "name": "THE BARISTA SAYS",
+          "build": [
+            "What",
+            "can I get",
+            "you?"
+          ],
+          "say": "What can I get you?"
+        }
+      ],
+      "combo": {
+        "chips": [
+          "WHAT CAN I GET YOU?",
+          "A LATTE, PLEASE",
+          "HERE YOU GO!"
+        ],
+        "line": "What can I get you? — A latte, please. — Here you go!",
+        "label": "FIRST SERVE COMBO!"
+      },
+      "stats": [
+        {
+          "icon": "star",
+          "k": "POTENTIAL",
+          "v": 5
+        },
+        {
+          "icon": "heart",
+          "k": "WARMTH",
+          "v": 5
+        },
+        {
+          "icon": "palette",
+          "k": "FOAM ART",
+          "v": 3
+        },
+        {
+          "icon": "rotate",
+          "k": "REFILLS",
+          "v": "MAX"
+        }
+      ],
+      "lore": "Every barista starts with one cup. Fill it, serve it, refill it, try again. The Neon Café menu: flat white, latte, tea, orange juice, avocado toast, bagel, blueberry muffin and cookie.",
+      "facts": [
+        {
+          "icon": "spell",
+          "t": "a latte · a bagel (a + consonante)"
+        },
+        {
+          "icon": "spell",
+          "t": "an orange juice · an avocado toast (an + vocal)"
+        },
+        {
+          "icon": "listol",
+          "t": "one cookie → two cookies (+s = más de uno)"
+        }
+      ],
+      "quote": "Full of potential. Refill and retry.",
+      "medal": {
+        "img": "item-cookie.webp",
+        "label": "ON THE MENU"
+      }
+    },
+    "jack": {
+      "subtitle": "THE BIG ORDER",
+      "bg": "bg-cafe.webp",
+      "profile": [
+        {
+          "icon": "locationdot",
+          "k": "FROM",
+          "v": "??? · LISTEN & GUESS"
+        },
+        {
+          "icon": "calendar",
+          "k": "FIRST SEEN",
+          "v": "SHIFT 1-1 · FIRST SHIFT"
+        },
+        {
+          "icon": "briefcase",
+          "k": "ROLE",
+          "v": "OFFICE COFFEE RUN"
+        },
+        {
+          "icon": "cap",
+          "k": "LEVEL",
+          "v": "A1 · FIRST CONTACT"
+        }
+      ],
+      "moves": [
+        {
+          "icon": "listol",
+          "name": "ONE… AND TWO…",
+          "build": [
+            "One tea",
+            "and",
+            "two cookies,",
+            "please."
+          ],
+          "say": "Hello! One tea and two cookies, please.",
+          "audio": "nc-jack-order.mp3"
+        },
+        {
+          "icon": "shuffle",
+          "name": "ACTUALLY…",
+          "build": [
+            "Actually,",
+            "make that",
+            "an orange juice."
+          ],
+          "say": "Oh wait — actually, make that an orange juice. No tea, sorry!",
+          "audio": "nc-jack-twist.mp3"
+        },
+        {
+          "icon": "search",
+          "name": "WHERE ARE…?",
+          "build": [
+            "Where are",
+            "the napkins,",
+            "mate?"
+          ],
+          "say": "Where are the napkins, mate?",
+          "audio": "nc-s5-r3-line.mp3"
+        },
+        {
+          "icon": "question",
+          "name": "CAN I…?",
+          "build": [
+            "Can I",
+            "pay",
+            "by card?"
+          ],
+          "say": "Team question! Can I pay by card here?",
+          "audio": "nc-s6-r2-line.mp3"
+        }
+      ],
+      "combo": {
+        "chips": [
+          "HELLO!",
+          "THREE FLAT WHITES",
+          "ACTUALLY… FOUR!"
+        ],
+        "line": "Hello! Three flat whites and two bagels, please. Actually, make that four flat whites!",
+        "label": "OFFICE RUSH COMBO!"
+      },
+      "stats": [
+        {
+          "icon": "heart",
+          "k": "FRIENDLINESS",
+          "v": 5
+        },
+        {
+          "icon": "commentdots",
+          "k": "SLANG",
+          "v": 5
+        },
+        {
+          "icon": "shuffle",
+          "k": "CHANGES",
+          "v": 5
+        },
+        {
+          "icon": "clock",
+          "k": "PATIENCE",
+          "v": 3
+        },
+        {
+          "icon": "box",
+          "k": "ORDER SIZE",
+          "v": "MAX"
+        }
+      ],
+      "lore": "Jack does the coffee run for his whole office. He orders fast, changes his mind even faster, and always says thank you — usually with a “cheers, mate”. Listen to the END of his order!",
+      "facts": [
+        {
+          "icon": "shuffle",
+          "t": "He changes his order at the last second. Listen to the end!"
+        },
+        {
+          "icon": "mug",
+          "t": "His tea: LARGE, with no sugar."
+        },
+        {
+          "icon": "commentdots",
+          "t": "Says “mate”, “cheers” and “legend”. Where is he from? Listen and guess."
+        }
+      ],
+      "quote": "Oh wait — actually, make that an orange juice!",
+      "medal": {
+        "img": "item-tea.webp",
+        "label": "NO SUGAR"
+      }
+    },
+    "inspector": {
+      "subtitle": "THE CITY INSPECTOR",
+      "bg": "bg-cafe.webp",
+      "profile": [
+        {
+          "icon": "locationdot",
+          "k": "FROM",
+          "v": "??? · LISTEN & GUESS"
+        },
+        {
+          "icon": "calendar",
+          "k": "FIRST SEEN",
+          "v": "SHIFT 1-1 · AS A FOOD CRITIC"
+        },
+        {
+          "icon": "clipboard",
+          "k": "ROLE",
+          "v": "CRITIC → CITY INSPECTOR"
+        },
+        {
+          "icon": "crown",
+          "k": "LEVEL",
+          "v": "A1 BOSS · THE INSPECTION"
+        }
+      ],
+      "moves": [
+        {
+          "icon": "mug",
+          "name": "ORDER LIKE A BOSS",
+          "build": [
+            "One latte.",
+            "Two bagels.",
+            "To go."
+          ],
+          "say": "One latte. Two bagels. And a blueberry muffin. To go — I'm in a hurry.",
+          "audio": "nc-vera-order.mp3"
+        },
+        {
+          "icon": "clock",
+          "name": "WHAT TIME?",
+          "build": [
+            "half past two",
+            "=",
+            "2:30"
+          ],
+          "say": "I will collect my order at half past two. What time is that?",
+          "audio": "nc-s3-r3-line.mp3"
+        },
+        {
+          "icon": "target",
+          "name": "HOW MUCH IS IT?",
+          "build": [
+            "How much",
+            "is",
+            "it?"
+          ],
+          "say": "How much is it?"
+        },
+        {
+          "icon": "handshake",
+          "name": "THE PERFECT HELLO",
+          "build": [
+            "Good morning!",
+            "What can I",
+            "get you?"
+          ],
+          "say": "Good morning! What can I get you?"
+        }
+      ],
+      "combo": {
+        "chips": [
+          "$3 + $3",
+          "+ $2",
+          "= $8"
+        ],
+        "line": "A flat white is three dollars. A muffin is two. Two flat whites and one muffin? Eight dollars.",
+        "audio": "nc-sb-r2-line.mp3",
+        "label": "INSPECTION MATH COMBO!"
+      },
+      "stats": [
+        {
+          "icon": "eye",
+          "k": "NOTICING",
+          "v": 5
+        },
+        {
+          "icon": "stopwatch",
+          "k": "HURRY",
+          "v": 5
+        },
+        {
+          "icon": "clock",
+          "k": "PUNCTUALITY",
+          "v": 5
+        },
+        {
+          "icon": "heart",
+          "k": "SMILES",
+          "v": 1
+        },
+        {
+          "icon": "warn",
+          "k": "STRICTNESS",
+          "v": "MAX"
+        }
+      ],
+      "lore": "Everyone thought Vera was just a food critic in a hurry. Then head office called: she is the CITY INSPECTOR. One shift, four tests — orders, prices, changes and greetings. Pass, and the Neon Café stays open.",
+      "facts": [
+        {
+          "icon": "stopwatch",
+          "t": "Always orders “to go”. She is ALWAYS in a hurry."
+        },
+        {
+          "icon": "star",
+          "t": "Her best compliment: “Acceptable.”"
+        },
+        {
+          "icon": "question",
+          "t": "She was the quizmaster on the café's quiz night."
+        }
+      ],
+      "quote": "One latte. And I am always watching.",
+      "medal": {
+        "img": "item-latte.webp",
+        "label": "HER LATTE"
+      }
+    },
+    "cafemaster": {
+      "subtitle": "FIVE STARS · ZERO MISTAKES",
+      "bg": "bg-cafe.webp",
+      "profileTitle": "CARD PROFILE",
+      "profile": [
+        {
+          "icon": "lock",
+          "k": "UNLOCK",
+          "v": "PERFECT THE INSPECTION"
+        },
+        {
+          "icon": "calendar",
+          "k": "STAGE",
+          "v": "1-B · THE INSPECTION"
+        },
+        {
+          "icon": "trophy",
+          "k": "REWARD",
+          "v": "CAFÉ MASTER · RANK UP"
+        },
+        {
+          "icon": "city",
+          "k": "NEXT STOP",
+          "v": "THE OFFICE TOWER · A2"
+        }
+      ],
+      "movesTitle": "WHAT YOU MASTERED",
+      "moves": [
+        {
+          "icon": "mug",
+          "name": "ORDERS",
+          "build": [
+            "Two flat whites,",
+            "two bagels",
+            "and one muffin."
+          ],
+          "say": "Inspection, part one. Two flat whites, two bagels, and one muffin. All correct, please.",
+          "audio": "nc-sb-r1-line.mp3"
+        },
+        {
+          "icon": "target",
+          "name": "PRICES",
+          "build": [
+            "A flat white",
+            "is",
+            "three dollars."
+          ],
+          "say": "A flat white is three dollars.",
+          "audio": "nc-sb-r2-line.mp3"
+        },
+        {
+          "icon": "headphones",
+          "name": "LISTENING",
+          "build": [
+            "Actually —",
+            "make that",
+            "TWO cookies."
+          ],
+          "say": "Actually — make that TWO cookies. Are you listening?",
+          "audio": "nc-sb-r3-twist.mp3"
+        },
+        {
+          "icon": "handshake",
+          "name": "GREETINGS",
+          "build": [
+            "Good morning!",
+            "What can I",
+            "get you?"
+          ],
+          "say": "Good morning! What can I get you?"
+        }
+      ],
+      "combo": {
+        "chips": [
+          "GOOD MORNING!",
+          "WHAT CAN I GET YOU?",
+          "THAT'S $8, PLEASE"
+        ],
+        "line": "Good morning! What can I get you? … That's eight dollars, please. Have a nice day!",
+        "label": "CAFÉ MASTER COMBO!"
+      },
+      "stats": [
+        {
+          "icon": "mug",
+          "k": "ORDERS",
+          "v": 5
+        },
+        {
+          "icon": "target",
+          "k": "NUMBERS",
+          "v": 5
+        },
+        {
+          "icon": "headphones",
+          "k": "LISTENING",
+          "v": 5
+        },
+        {
+          "icon": "handshake",
+          "k": "MANNERS",
+          "v": 5
+        },
+        {
+          "icon": "paw",
+          "k": "PAWS",
+          "v": "MAX"
+        }
+      ],
+      "lore": "Inspection passed — with no mistakes. The café stays open, and even Vera said “Well done, barista.” The Neon Café is officially five stars. The Office Tower is waiting… when you're ready.",
+      "facts": [
+        {
+          "icon": "lock",
+          "t": "Only a PERFECT inspection unlocks this card."
+        },
+        {
+          "icon": "cap",
+          "t": "You used all of A1: orders, numbers, prices, time and greetings."
+        },
+        {
+          "icon": "city",
+          "t": "Next stop: the Office Tower (A2)."
+        }
+      ],
+      "quote": "Five stars. Not one mistake.",
+      "medal": {
+        "icon": "trophy",
+        "label": "CAFÉ MASTER"
+      }
     }
   }
 }

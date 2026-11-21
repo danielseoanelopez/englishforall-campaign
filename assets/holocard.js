@@ -53,19 +53,24 @@
     var foot = function (quote) {
       return '<div class="hc-foot"><div class="hc-brand"><div class="b1">ENGLISH <em>for</em> ALL</div><div class="b2">★★★★★</div></div>' +
         '<div class="hc-quote">“' + esc(quote) + '”</div>' +
-        (d && d.medal ? '<div class="hc-medal"><img src="' + esc(d.medal.img) + '" alt=""><span>' + esc(d.medal.label || "") + "</span></div>"
+        (d && d.medal ? '<div class="hc-medal">' + (d.medal.img ? '<img src="' + esc(d.medal.img) + '" alt="">' : '<b class="mi">' + ico(d.medal.icon || "star") + "</b>") + "<span>" + esc(d.medal.label || "") + "</span></div>"
           : '<div class="hc-medal"><span style="position:static;background:none;font-size:5cqi;color:#5a3a00">' + ico("paw") + "</span></div>") + "</div>";
     };
     if (!d) {
       return '<div class="hc hc-lite r-' + esc(r) + '"><div class="hc-sheen"></div><div class="hc-in">' + top +
         '<div class="hc-mid" style="grid-template-columns:1fr">' + art(c, null) + "</div>" + foot(c.quote || "") + "</div></div>";
     }
-    var prof = '<div class="hc-p cyan hc-prof"><div class="hc-h">CHARACTER PROFILE</div>' + (d.profile || []).map(function (p) {
+    var prof = '<div class="hc-p cyan hc-prof"><div class="hc-h">' + esc(d.profileTitle || "CHARACTER PROFILE") + "</div>" + (d.profile || []).map(function (p) {
       return '<div class="hc-row"><span class="i">' + ico(p.icon) + '</span><span><span class="k">' + esc(p.k) + '</span><span class="v">' + esc(p.v) + "</span></span>" +
         (p.flag ? '<img class="flag" src="' + esc(p.flag) + '" alt="">' : "<span></span>") + "</div>";
     }).join("") + "</div>";
     var moves = (d.moves && d.moves.length) ? '<div class="hc-p mag"><div class="hc-h">' + esc(d.movesTitle || "KEY PHRASES + HOW TO BUILD THEM") + "</div>" + d.moves.map(function (m) {
-      var build = (m.build || []).map(function (w, i) { return '<span class="ch" style="--cc:' + CHIP[i % CHIP.length] + '">' + esc(w) + "</span>"; }).join('<span class="pl">+</span>');
+      var SYM = /^[·→=\/>+|]$/, k = 0, prevChip = false;
+      var build = (m.build || []).map(function (w) {
+        if (SYM.test(String(w).trim())) { prevChip = false; return '<span class="pl sym">' + esc(w) + "</span>"; }
+        var out = (prevChip ? '<span class="pl">+</span>' : "") + '<span class="ch" style="--cc:' + CHIP[k++ % CHIP.length] + '">' + esc(w) + "</span>";
+        prevChip = true; return out;
+      }).join("");
       return '<div class="hc-move"><span class="i">' + ico(m.icon) + '</span><div><div class="nm">' + esc(m.name) + '</div><div class="hc-build">' + build + "</div></div>" + spk(m.say, m.audio) + "</div>";
     }).join("") + "</div>" : "";
     var combo = d.combo ? '<div class="hc-p gold hc-combo"><div class="hc-h">COMBO · PUT IT TOGETHER</div><div class="chain">' +

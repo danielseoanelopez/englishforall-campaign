@@ -1,12 +1,12 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v52";  // v50: Google Drive connected; big logo on Academy map; no logo elsewhere; zoom locked; in-app send (no WhatsApp)
+const CACHE = "rankup-v55";  // v50: Google Drive connected; big logo on Academy map; no logo elsewhere; zoom locked; in-app send (no WhatsApp)
 const CORE = [
   "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
   "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=5",
   "assets/fonts/press-start-2p-latin.woff2", "assets/fonts/share-tech-mono-latin.woff2",
   "city.html", "level-test.html", "neon-cafe.html", "neon-office.html", "game.html", "cards.html", "manifest.json",
-  "assets/game.js?v=10", "assets/game.css?v=4", "assets/homework.js?v=3", "assets/homework.css?v=1", "assets/nozoom.js?v=1", "assets/holocard.css?v=1", "assets/holocard.js?v=1", "games/cafe.json", "games/office.json", "games/registry.json", "games/agency.json", "games/vault.json",
+  "assets/game.js?v=10", "assets/game.css?v=4", "assets/homework.js?v=3", "assets/homework.css?v=1", "assets/nozoom.js?v=1", "assets/holocard.css?v=3", "assets/holocard.js?v=4", "games/cafe.json", "games/office.json", "games/registry.json", "games/agency.json", "games/vault.json",
   "games/radio.json", "games/hotel.json",
   "logo-flat.webp", "bg-cafe.webp", "nebula.webp", "map-city.webp",
   "icon-192.png", "icon-rankup.png",

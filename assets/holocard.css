@@ -81,6 +81,7 @@
 .hc-move .nm { font-family: "Press Start 2P", monospace; font-size: 1.85cqi; color: #fff; letter-spacing: 0.1cqi; margin-bottom: 0.7cqi; line-height: 1.4; }
 .hc-build { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6cqi; font-size: 2.3cqi; }
 .hc-build .ch { border: 0.25cqi solid var(--cc); color: var(--cc); background: color-mix(in srgb, var(--cc) 12%, transparent); border-radius: 1cqi; padding: 0.2cqi 0.9cqi; white-space: nowrap; }
+.hc-build .pl.sym { color: #ffc83d; font-size: 2.2cqi; }
 .hc-build .pl { color: #5a6a8a; font-family: "Press Start 2P", monospace; font-size: 1.5cqi; }
 .hc-spk { width: 6cqi; height: 6cqi; min-width: 32px; min-height: 32px; border-radius: 50%; border: 0.3cqi solid #00e5ff; background: rgba(0, 229, 255, 0.1); color: #00e5ff;
   display: flex; align-items: center; justify-content: center; font-size: 2.8cqi; cursor: pointer; box-shadow: 0 0 1.2cqi #00e5ff55; flex-shrink: 0; }
@@ -120,6 +121,7 @@
 .hc-medal { width: 14cqi; height: 14cqi; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;
   background: radial-gradient(circle at 35% 30%, #fff3b0, #ffc83d 40%, #a86e08 100%); box-shadow: 0 0 2cqi #ffc83d88, inset 0 0 0 0.7cqi #7a4e04, inset 0 0 0 1.2cqi #ffe27a; }
 .hc-medal img { width: 62%; height: 62%; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 0.5cqi 0.6cqi rgba(0, 0, 0, 0.5)); }
+.hc-medal .mi { font-size: 7cqi; color: #5a3a00; filter: drop-shadow(0 0.3cqi 0 #fff3b0); display: flex; }
 .hc-medal span { position: absolute; bottom: -0.6cqi; font-family: "Press Start 2P", monospace; font-size: 1.6cqi; color: #3a2400; background: #ffc83d; border-radius: 1cqi; padding: 0.4cqi 1cqi; white-space: nowrap; }
 
 /* lite card (no detail data yet) */
