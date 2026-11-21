@@ -10,7 +10,7 @@
    SET-UP: paste the web-app URL (…/exec) between the quotes on the HW_ENDPOINT line. Nothing else changes. */
 (function () {
   "use strict";
-  var HW_ENDPOINT = window.EFA_HW_ENDPOINT || "";   // ← Google Drive web app, e.g. "https://script.google.com/macros/s/AKfy…/exec"
+  var HW_ENDPOINT = window.EFA_HW_ENDPOINT || "https://script.google.com/macros/s/AKfycbwoF0NdeAXRLgC6bvgoFwZOZdxbn6jauRKZ9OIuw9xQgxCVImcWa7h20usS4Pl2_YRA/exec";   // ← Google Drive web app, e.g. "https://script.google.com/macros/s/AKfy…/exec"
   var FORM_ENDPOINT = "https://formspree.io/f/mbdewbrp";   // email fallback (text only)
   var APP_TAG = "efa-hw-1";        // the Drive script ignores anything without this tag
   var MAX_SEC = 60;                // longest take per recording (a recorder can ask for more)
