@@ -1,6 +1,6 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v56";  // v56: holo album cards (A1 backs), Sofia + Marcos art, Drive connected, flat logo, zoom locked
+const CACHE = "rankup-v57";  // v57: new Inspector Vera art (sprites are cache-first, so this refresh matters)
 const CORE = [
   "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
   "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=5",
