@@ -17,6 +17,22 @@
   var PROG = /^[a-z]{2,8}_prog$/;   // one progress object per building: nc_prog, no_prog, da_prog, cv_prog, rt_prog, gh_prog…
   function progKeys() { return keysWhere(function (k) { return PROG.test(k) && k !== "lab_prog"; }); }
 
+  /* ---------- fresh start ----------
+     Wipes every saved bit of progress on this device: lessons, bosses, game shifts (= cards), streak, country,
+     writing drafts and the level test. Keeps sound settings and teacher mode.
+     FRESH_START: change this date to reset EVERY device once, the next time it opens the app. */
+  var FRESH_START = "2026-11-21";
+  function isProgressKey(k) {
+    return k.indexOf("rankup_") === 0 || /^[a-z]{2,8}_prog$/.test(k) || k.indexOf("efa_w_") === 0 ||
+      ["nc_best", "nc_streak", "nc_country", "efa_progress", "efa_attempts", "efa_period"].indexOf(k) >= 0;
+  }
+  function resetAll() {
+    keysWhere(isProgressKey).forEach(function (k) { try { localStorage.removeItem(k); } catch (e) {} });
+  }
+  try {
+    if (get("efa_fresh") !== FRESH_START) { resetAll(); set("efa_fresh", FRESH_START); }
+  } catch (e) {}
+
   function bumpStreak() {
     var s = getJSON("nc_streak"), today = day(new Date());
     if (s.last === today) return s;
@@ -95,6 +111,6 @@
     return (p.best || 0) >= (st ? st.max || 15 : 15);
   }
 
-  window.EFA = { bumpStreak: bumpStreak, streakNow: streakNow, hasProgress: hasProgress, exportSave: exportSave, importSave: importSave,
+  window.EFA = { resetAll: resetAll, bumpStreak: bumpStreak, streakNow: streakNow, hasProgress: hasProgress, exportSave: exportSave, importSave: importSave,
                  registry: registry, buildings: buildings, cardEarned: cardEarned };
 })();

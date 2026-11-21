@@ -23,7 +23,7 @@
 <link rel="preload" href="assets/fonts/press-start-2p-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css?v=1">
 <link rel="stylesheet" href="assets/brands.css?v=1">
-<script src="assets/progress.js?v=5"></script>
+<script src="assets/progress.js?v=6"></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 <style>
   :root {
@@ -306,7 +306,7 @@ const ONLY_OPEN = ["A1"];
 let TEACHER = false;
 try {
   const p = new URLSearchParams(location.search);
-  if (p.get("reset") === "1") { Object.keys(localStorage).filter(k => k.indexOf("rankup_") === 0).forEach(k => localStorage.removeItem(k)); }
+  if (p.get("reset") === "1") { if (window.EFA && EFA.resetAll) EFA.resetAll(); else Object.keys(localStorage).filter(k => k.indexOf("rankup_") === 0).forEach(k => localStorage.removeItem(k)); }
   TEACHER = (p.get("profe") === "rankup");
   if (TEACHER) document.getElementById("profeBar").classList.add("on");
 } catch (e) {}

@@ -1,9 +1,9 @@
 /* Rank Up City service worker — offline play + installable app.
    Bump CACHE on each deploy that changes precached assets. */
-const CACHE = "rankup-v58";  // v58: A1 album complete (Café Master trophy art)
+const CACHE = "rankup-v59";  // v59: one-time fresh start for every device (assets/progress.js FRESH_START)
 const CORE = [
   "index.html", "lesson.html", "lesson.css", "assets/icons.css?v=1",
-  "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=5",
+  "assets/fonts.css?v=1", "assets/brands.css?v=1", "assets/progress.js?v=6",
   "assets/fonts/press-start-2p-latin.woff2", "assets/fonts/share-tech-mono-latin.woff2",
   "city.html", "level-test.html", "neon-cafe.html", "neon-office.html", "game.html", "cards.html", "manifest.json",
   "assets/game.js?v=10", "assets/game.css?v=4", "assets/homework.js?v=3", "assets/homework.css?v=1", "assets/nozoom.js?v=1", "assets/holocard.css?v=4", "assets/holocard.js?v=6", "games/cafe.json", "games/office.json", "games/registry.json", "games/agency.json", "games/vault.json",
